@@ -1,0 +1,22 @@
+{
+  "en_us": {
+    "container.satLinker": "SatLink Device",
+    "desc.gui.satlinker.chip": "§2Linking§r$The first slot will copy the satellite/chip's$frequency and paste it to the second slot.",
+    "desc.gui.satlinker.random": "§bSetup§r$The third slot will randomize the$satellite/chip's frequency.",
+    "block.hbm.machine_satlinker": "Satellite ID Manager",
+    "item.hbm.sat_coord": "Satellite Designator",
+    "item.hbm.sat_designator": "Satellite Laser Designator",
+    "config.jade.plugin_hbm.satellite_linker_state": "Satellite ID Manager",
+    "jade.hbm.satellite_linker.frequency": "Slot %s frequency: %s"
+  },
+  "zh_cn": {
+    "container.satLinker": "卫星ID管理",
+    "desc.gui.satlinker.chip": "第一个槽位将复制卫星或者芯片的频率配置$并将其复制到第二个槽位。",
+    "desc.gui.satlinker.random": "第三个槽位则会随机化锁卫星或者芯片的频率配置。",
+    "block.hbm.machine_satlinker": "卫星ID管理器",
+    "item.hbm.sat_coord": "卫星指示器",
+    "item.hbm.sat_designator": "卫星激光指示器",
+    "config.jade.plugin_hbm.satellite_linker_state": "卫星ID管理器",
+    "jade.hbm.satellite_linker.frequency": "槽位 %s 频率：%s"
+  }
+}

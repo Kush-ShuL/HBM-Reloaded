@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MBM",
+    "PSP",
+    "MBM"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:motor_desh"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltdurasteel"
+    },
+    "P": {
+      "item": "hbm:plate_desh"
+    },
+    "S": {
+      "item": "hbm:servo_set"
+    }
+  },
+  "result": {
+    "id": "hbm:servo_set_desh",
+    "count": 1
+  }
+}

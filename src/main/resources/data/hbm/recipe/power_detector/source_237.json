@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "IRI",
+    "CTC",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredstone"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+    },
+    "T": {
+      "item": "hbm:coil_tungsten"
+    }
+  },
+  "result": {
+    "id": "hbm:machine_detector",
+    "count": 1
+  }
+}

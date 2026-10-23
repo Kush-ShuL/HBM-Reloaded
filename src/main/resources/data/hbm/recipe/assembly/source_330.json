@@ -1,0 +1,143 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.reformer",
+  "duration": 200,
+  "power": 100,
+  "order": 106,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:machine_catalytic_reformer",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotniobium"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/shellsteel"
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_bismoid"
+        }
+      },
+      "count": 1
+    }
+  ],
+  "pools_528": [
+    "528.hardplastic"
+  ],
+  "expensive_input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_bronze_tubes"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotniobium"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor_bismuth"
+        }
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_bismoid"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_computer"
+        }
+      },
+      "count": 1
+    }
+  ]
+}

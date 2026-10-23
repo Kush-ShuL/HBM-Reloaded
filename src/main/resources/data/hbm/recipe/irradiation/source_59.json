@@ -1,0 +1,23 @@
+{
+  "type": "hbm:irradiation",
+  "input": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotpvc"
+    },
+    "count": 1
+  },
+  "fusion_only": false,
+  "key_kind": "dict",
+  "source_key": "hbm:legacy_ore_dict/ingotpvc",
+  "order": 16,
+  "solid_output": {
+    "id": "hbm:ingot_c4",
+    "count": 1
+  },
+  "fluid_output": {
+    "type": "COLLOID",
+    "amount": 250,
+    "pressure": 0
+  }
+}

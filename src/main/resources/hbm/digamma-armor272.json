@@ -1,0 +1,140 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "fau_helmet",
+      "id": "hbm:fau_helmet",
+      "legacyRegistryId": "hbm:item.fau_helmet",
+      "originalClass": "ArmorDigamma",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 273
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6264
+          },
+          "expression": "GameRegistry.registerItem(fau_helmet, fau_helmet.getUnlocalizedName())",
+          "arguments": [
+            "fau_helmet",
+            "fau_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.digamma.DigammaArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "power": {
+        "maxPower": 10000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "fau_plate",
+      "id": "hbm:fau_plate",
+      "legacyRegistryId": "hbm:item.fau_plate",
+      "originalClass": "ArmorDigamma",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 284
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6265
+          },
+          "expression": "GameRegistry.registerItem(fau_plate, fau_plate.getUnlocalizedName())",
+          "arguments": [
+            "fau_plate",
+            "fau_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.digamma.DigammaArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2400,
+      "power": {
+        "maxPower": 10000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "fau_legs",
+      "id": "hbm:fau_legs",
+      "legacyRegistryId": "hbm:item.fau_legs",
+      "originalClass": "ArmorDigamma",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 285
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6266
+          },
+          "expression": "GameRegistry.registerItem(fau_legs, fau_legs.getUnlocalizedName())",
+          "arguments": [
+            "fau_legs",
+            "fau_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.digamma.DigammaArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2250,
+      "power": {
+        "maxPower": 10000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "fau_boots",
+      "id": "hbm:fau_boots",
+      "legacyRegistryId": "hbm:item.fau_boots",
+      "originalClass": "ArmorDigamma",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 286
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6267
+          },
+          "expression": "GameRegistry.registerItem(fau_boots, fau_boots.getUnlocalizedName())",
+          "arguments": [
+            "fau_boots",
+            "fau_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.digamma.DigammaArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1950,
+      "power": {
+        "maxPower": 10000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    }
+  ]
+}

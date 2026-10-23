@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:crane_inserter",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "C C",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "B": {
+      "item": "hbm:conveyor"
+    }
+  }
+}

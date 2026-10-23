@@ -1,0 +1,44 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mpf10xenon",
+  "duration": 100,
+  "power": 100,
+  "order": 302,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:mp_fuselage_10_xenon",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:seg_10"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 3
+    }
+  ]
+}

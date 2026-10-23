@@ -1,0 +1,31 @@
+{
+  "type": "hbm:particle_accelerator",
+  "input1": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_strange"
+      }
+    },
+    "count": 1
+  },
+  "input2": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:powder_magic"
+      }
+    },
+    "count": 1
+  },
+  "momentum": 12500,
+  "output1": {
+    "id": "hbm:particle_sparkticle",
+    "count": 1
+  },
+  "order": 7,
+  "output2": {
+    "id": "hbm:dust",
+    "count": 1
+  }
+}

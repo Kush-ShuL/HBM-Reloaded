@@ -1,0 +1,342 @@
+{
+  "entries": [
+    {
+      "id": "hbm:circuit_vacuum_tube",
+      "symbol": "circuit_vacuum_tube",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 0,
+      "sourceEnumValue": "VACUUM_TUBE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_capacitor",
+      "symbol": "circuit_capacitor",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 1,
+      "sourceEnumValue": "CAPACITOR",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_capacitor_tantalium",
+      "symbol": "circuit_capacitor_tantalium",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 2,
+      "sourceEnumValue": "CAPACITOR_TANTALIUM",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_pcb",
+      "symbol": "circuit_pcb",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 3,
+      "sourceEnumValue": "PCB",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_silicon",
+      "symbol": "circuit_silicon",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 4,
+      "sourceEnumValue": "SILICON",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_chip",
+      "symbol": "circuit_chip",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 5,
+      "sourceEnumValue": "CHIP",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_chip_bismoid",
+      "symbol": "circuit_chip_bismoid",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 6,
+      "sourceEnumValue": "CHIP_BISMOID",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_analog",
+      "symbol": "circuit_analog",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 7,
+      "sourceEnumValue": "ANALOG",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_basic",
+      "symbol": "circuit_basic",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 8,
+      "sourceEnumValue": "BASIC",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_advanced",
+      "symbol": "circuit_advanced",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 9,
+      "sourceEnumValue": "ADVANCED",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_capacitor_board",
+      "symbol": "circuit_capacitor_board",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 10,
+      "sourceEnumValue": "CAPACITOR_BOARD",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_bismoid",
+      "symbol": "circuit_bismoid",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 11,
+      "sourceEnumValue": "BISMOID",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_controller_chassis",
+      "symbol": "circuit_controller_chassis",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 12,
+      "sourceEnumValue": "CONTROLLER_CHASSIS",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_controller",
+      "symbol": "circuit_controller",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 13,
+      "sourceEnumValue": "CONTROLLER",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_controller_advanced",
+      "symbol": "circuit_controller_advanced",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 14,
+      "sourceEnumValue": "CONTROLLER_ADVANCED",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_quantum",
+      "symbol": "circuit_quantum",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 15,
+      "sourceEnumValue": "QUANTUM",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_chip_quantum",
+      "symbol": "circuit_chip_quantum",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 16,
+      "sourceEnumValue": "CHIP_QUANTUM",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_controller_quantum",
+      "symbol": "circuit_controller_quantum",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 17,
+      "sourceEnumValue": "CONTROLLER_QUANTUM",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_atomic_clock",
+      "symbol": "circuit_atomic_clock",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 18,
+      "sourceEnumValue": "ATOMIC_CLOCK",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_numitron",
+      "symbol": "circuit_numitron",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 19,
+      "sourceEnumValue": "NUMITRON",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    },
+    {
+      "id": "hbm:circuit_crystal",
+      "symbol": "circuit_crystal",
+      "kind": "item",
+      "originalClass": "ItemCircuit",
+      "legacySourceField": "ModItems.circuit",
+      "sourceOrdinal": 20,
+      "sourceEnumValue": "CRYSTAL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2633
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    19,
+    1,
+    2,
+    18,
+    3,
+    4,
+    5,
+    6,
+    16,
+    7,
+    8,
+    9,
+    10,
+    11,
+    15,
+    20,
+    12,
+    13,
+    14,
+    17
+  ]
+}

@@ -1,0 +1,7 @@
+package com.hbm.machine.generator.industrialmemorial;
+import com.hbm.multiblock.DummyableBlock;import com.mojang.serialization.MapCodec;import net.minecraft.core.BlockPos;import net.minecraft.world.InteractionResult;import net.minecraft.world.entity.player.Player;import net.minecraft.world.level.Level;import net.minecraft.world.level.block.SoundType;import net.minecraft.world.level.block.entity.BlockEntity;import net.minecraft.world.level.block.state.BlockState;import net.minecraft.world.phys.BlockHitResult;
+/** Active source getDimensions/getOffset both zero; all old generator geometry/GUI code is commented. */
+public final class IndustrialMemorialBlock extends DummyableBlock {
+ public static final MapCodec<IndustrialMemorialBlock> CODEC=simpleCodec(ignored->new IndustrialMemorialBlock());public IndustrialMemorialBlock(){super(Properties.of().strength(5,6).sound(SoundType.STONE).noOcclusion());}@Override protected MapCodec<IndustrialMemorialBlock> codec(){return CODEC;}@Override public int[] dimensions(){return new int[]{0,0,0,0,0,0};}@Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return isCore(state)?new IndustrialMemorialBlockEntity(pos,state):new IndustrialMemorialProxy(pos,state);}
+ @Override protected InteractionResult useWithoutItem(BlockState state,Level level,BlockPos pos,Player player,BlockHitResult hit){if(level.isClientSide)return InteractionResult.SUCCESS;return !player.isShiftKeyDown()&&findCore(level,pos)!=null?InteractionResult.CONSUME:InteractionResult.PASS;}
+}

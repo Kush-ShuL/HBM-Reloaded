@@ -1,0 +1,46 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.th4",
+  "order": 5,
+  "r": 0.2,
+  "g": 0.2,
+  "b": 1.0,
+  "ignition_temp": 875000,
+  "output_temp": 4000000,
+  "neutron_flux": 500.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:gas_full",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 9,
+      "hbm:fluid_type": 9
+    }
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "TRITIUM",
+      "amount": 10,
+      "pressure": 0
+    },
+    {
+      "type": "HELIUM4",
+      "amount": 10,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:pellet_charged",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

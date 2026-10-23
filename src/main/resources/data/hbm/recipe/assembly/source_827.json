@@ -1,0 +1,63 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.launchpad",
+  "duration": 200,
+  "power": 100,
+  "order": 277,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:launch_pad_large",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      },
+      "count": 6
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/anyconcrete"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:steel_scaffold",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_advanced"
+        }
+      },
+      "count": 2
+    }
+  ]
+}

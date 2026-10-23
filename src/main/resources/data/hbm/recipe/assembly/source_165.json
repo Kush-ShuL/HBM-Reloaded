@@ -1,0 +1,49 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.entanglementkit",
+  "duration": 200,
+  "power": 100,
+  "order": 45,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:entanglement_kit",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripledurasteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredensegold"
+      },
+      "count": 16
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "XENON",
+      "amount": 8000,
+      "pressure": 0
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "dns_helmet",
+      "id": "hbm:dns_helmet",
+      "legacyRegistryId": "hbm:item.dns_helmet",
+      "originalClass": "ArmorDNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 290
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6268
+          },
+          "expression": "GameRegistry.registerItem(dns_helmet, dns_helmet.getUnlocalizedName())",
+          "arguments": [
+            "dns_helmet",
+            "dns_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dns.DnsArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "power": {
+        "maxPower": 1000000000,
+        "chargeRate": 1000000,
+        "damageConsumption": 100000,
+        "idleDrain": 115
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "dns_plate",
+      "id": "hbm:dns_plate",
+      "legacyRegistryId": "hbm:item.dns_plate",
+      "originalClass": "ArmorDNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 304
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6269
+          },
+          "expression": "GameRegistry.registerItem(dns_plate, dns_plate.getUnlocalizedName())",
+          "arguments": [
+            "dns_plate",
+            "dns_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dns.DnsArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2400,
+      "power": {
+        "maxPower": 1000000000,
+        "chargeRate": 1000000,
+        "damageConsumption": 100000,
+        "idleDrain": 115
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "dns_legs",
+      "id": "hbm:dns_legs",
+      "legacyRegistryId": "hbm:item.dns_legs",
+      "originalClass": "ArmorDNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 305
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6270
+          },
+          "expression": "GameRegistry.registerItem(dns_legs, dns_legs.getUnlocalizedName())",
+          "arguments": [
+            "dns_legs",
+            "dns_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dns.DnsArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2250,
+      "power": {
+        "maxPower": 1000000000,
+        "chargeRate": 1000000,
+        "damageConsumption": 100000,
+        "idleDrain": 115
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "dns_boots",
+      "id": "hbm:dns_boots",
+      "legacyRegistryId": "hbm:item.dns_boots",
+      "originalClass": "ArmorDNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 306
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6271
+          },
+          "expression": "GameRegistry.registerItem(dns_boots, dns_boots.getUnlocalizedName())",
+          "arguments": [
+            "dns_boots",
+            "dns_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dns.DnsArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1950,
+      "power": {
+        "maxPower": 1000000000,
+        "chargeRate": 1000000,
+        "damageConsumption": 100000,
+        "idleDrain": 115
+      }
+    }
+  ]
+}

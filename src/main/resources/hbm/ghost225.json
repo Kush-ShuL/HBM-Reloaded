@@ -1,0 +1,23 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_ntm_ghost",
+      "id": "hbm:entity_ntm_ghost",
+      "originalClass": "EntityGhost",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 135
+      },
+      "dimensions": [
+        0.6,
+        1.8
+      ],
+      "trackingRange": 1000,
+      "trackingUpdates": 1,
+      "velocityUpdates": true,
+      "egg": false
+    }
+  ]
+}

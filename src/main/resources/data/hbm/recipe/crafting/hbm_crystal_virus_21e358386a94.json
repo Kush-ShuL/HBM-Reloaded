@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:crystal_virus",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "STS",
+    "THT",
+    "STS"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:particle_strange"
+    },
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dusttungsten"
+    },
+    "H": {
+      "item": "hbm:crystal_horn"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "schnitzel_vegan",
+      "id": "hbm:schnitzel_vegan",
+      "legacyRegistryId": "hbm:item.schnitzel_vegan",
+      "originalClass": "ItemSchnitzelVegan",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3612
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5982
+          },
+          "expression": "GameRegistry.registerItem(schnitzel_vegan, schnitzel_vegan.getUnlocalizedName())",
+          "arguments": [
+            "schnitzel_vegan",
+            "schnitzel_vegan.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.veganschnitzel.VeganSchnitzelContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "food": {
+        "nutrition": 0,
+        "saturationModifier": 0.6,
+        "alwaysEdible": false,
+        "wolfFood": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:flame_politics",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "IPI",
+    " I "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyeblack"
+    }
+  }
+}

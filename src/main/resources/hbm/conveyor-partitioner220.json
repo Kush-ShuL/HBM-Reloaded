@@ -1,0 +1,49 @@
+{
+  "module": "conveyor-partitioner220",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crane_partitioner",
+      "id": "hbm:crane_partitioner",
+      "legacyRegistryId": "hbm:tile.crane_partitioner",
+      "originalClass": "CranePartitioner",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1917
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3204
+          },
+          "expression": "register(crane_partitioner)",
+          "arguments": [
+            "crane_partitioner"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasBlockEntity": true
+    }
+  ]
+}

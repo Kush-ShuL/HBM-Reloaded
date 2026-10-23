@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 8,
+  "source_key": "ore:ingotMingrade",
+  "source_hash": 507791894,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotmingrade"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_desh",
+    "count": 1
+  }
+}

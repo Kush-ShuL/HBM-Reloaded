@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:schrabidium_hoe",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IW",
+    " S",
+    " S"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+    },
+    "W": {
+      "item": "hbm:desh_hoe"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleToolRecipes)"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:fluid_duct_neo",
+    "count": 8,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "   ",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platealuminum"
+    }
+  }
+}

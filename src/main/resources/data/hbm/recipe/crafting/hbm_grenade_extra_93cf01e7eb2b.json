@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:grenade_extra",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    " T ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "T": {
+      "item": "hbm:ducttape"
+    }
+  }
+}

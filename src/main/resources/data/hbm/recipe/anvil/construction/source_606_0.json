@@ -1,0 +1,28 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:stamp_desh_flat",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:stamp_desh_circuit",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 3,
+  "tier_upper": -1,
+  "overlay": "SMITHING",
+  "order": 606000000
+}

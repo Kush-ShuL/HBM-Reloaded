@@ -1,0 +1,69 @@
+{
+  "input": {
+    "item": "hbm:bedrock_ore_base",
+    "amount": 1,
+    "NBT": [
+      "light",
+      "heavy",
+      "rare",
+      "actinide",
+      "nonmetal",
+      "crystal"
+    ]
+  },
+  "inputFluid": [
+    "WATER",
+    1000
+  ],
+  "outputFluid": [
+    "SLOP",
+    1000
+  ],
+  "duration": 600,
+  "powerPerTick": 200,
+  "outputs": [
+    {
+      "item": "hbm:bedrock_ore",
+      "metadata": 0,
+      "grade": "BASE",
+      "type": "LIGHT_METAL",
+      "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
+    },
+    {
+      "item": "hbm:bedrock_ore",
+      "metadata": 1,
+      "grade": "BASE",
+      "type": "HEAVY_METAL",
+      "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
+    },
+    {
+      "item": "hbm:bedrock_ore",
+      "metadata": 2,
+      "grade": "BASE",
+      "type": "RARE_EARTH",
+      "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
+    },
+    {
+      "item": "hbm:bedrock_ore",
+      "metadata": 3,
+      "grade": "BASE",
+      "type": "ACTINIDE",
+      "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
+    },
+    {
+      "item": "hbm:bedrock_ore",
+      "metadata": 4,
+      "grade": "BASE",
+      "type": "NON_METAL",
+      "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
+    },
+    {
+      "item": "hbm:bedrock_ore",
+      "metadata": 5,
+      "grade": "BASE",
+      "type": "CRYSTALLINE",
+      "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
+    }
+  ],
+  "outputBuffer": "six actual doubles; emit one per whole unit; retains full and fractional remainder when output slots are full"
+}

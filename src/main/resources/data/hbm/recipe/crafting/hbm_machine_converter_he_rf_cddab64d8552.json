@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:machine_converter_he_rf",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "WWW",
+    "III"
+  ],
+  "key": {
+    "R": {
+      "item": "hbm:circuit_capacitor"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredstone"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    }
+  }
+}

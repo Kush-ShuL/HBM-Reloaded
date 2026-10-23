@@ -1,0 +1,95 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.digimemer",
+  "order": 2147483647,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "mekanism:digital_miner"
+    },
+    {
+      "type": "hbm:general_mode",
+      "expression": "GeneralConfig.enableMekanismChanges"
+    }
+  ],
+  "duration": 1200,
+  "power": 100,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "mekanism:digital_miner",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextuplecopper"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/alloyultimate"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_bismoid"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_capacitor_board"
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:wire_dense",
+          "components": {
+            "hbm:legacy_metadata": 7900
+          }
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor_bismuth"
+        }
+      },
+      "count": 3
+    }
+  ]
+}

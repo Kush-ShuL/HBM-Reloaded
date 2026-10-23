@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:watch",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LYL",
+    "EWE",
+    "LYL"
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyeblue"
+    },
+    "W": {
+      "item": "minecraft:clock"
+    },
+    "Y": {
+      "item": "hbm:billet_yharonite"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:mp_stability_10_flat",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PSP",
+    "P P"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "S": {
+      "item": "hbm:steel_scaffold"
+    }
+  }
+}

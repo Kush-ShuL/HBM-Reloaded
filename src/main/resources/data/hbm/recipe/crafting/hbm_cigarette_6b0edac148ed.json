@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:cigarette",
+    "count": 16
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotasbestos"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/anytar"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetpolonium210"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_item",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  ]
+}

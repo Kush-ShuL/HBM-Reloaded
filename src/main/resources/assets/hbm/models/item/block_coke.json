@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:block/block_coke_coal",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 0
+      },
+      "model": "hbm:block/block_coke_coal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/block_coke_lignite"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:block/block_coke_petroleum"
+    }
+  ]
+}

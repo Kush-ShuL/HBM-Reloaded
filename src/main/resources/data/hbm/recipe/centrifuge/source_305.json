@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_coal"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_coal",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_coal",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_coal",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    }
+  ]
+}

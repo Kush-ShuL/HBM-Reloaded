@@ -1,0 +1,36 @@
+{
+  "type": "hbm:source_cart_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "C"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:semtex"
+    },
+    "C": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:cart",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0,
+          "minecraft:custom_data": {
+            "cartBase": 1
+          }
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "hbm:cart",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 4,
+      "minecraft:custom_data": {
+        "cartBase": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:radio_telex",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SCR",
+    "W#W",
+    "WWW"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:radio_torch_sender"
+    },
+    "C": {
+      "item": "hbm:crt_display"
+    },
+    "R": {
+      "item": "hbm:radio_torch_receiver"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plankwood"
+    },
+    "#": {
+      "item": "hbm:circuit_analog"
+    }
+  }
+}

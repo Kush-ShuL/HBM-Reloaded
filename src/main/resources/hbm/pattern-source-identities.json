@@ -1,0 +1,1328 @@
+{
+  "schema": 1,
+  "sourceDataVersion": 1343,
+  "entries": [
+    {
+      "sourceItem": "minecraft:dirt",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dirt"
+    },
+    {
+      "sourceItem": "minecraft:dirt",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:coarse_dirt"
+    },
+    {
+      "sourceItem": "minecraft:dirt",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:podzol"
+    },
+    {
+      "sourceItem": "minecraft:leaves",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:oak_leaves"
+    },
+    {
+      "sourceItem": "minecraft:leaves",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:spruce_leaves"
+    },
+    {
+      "sourceItem": "minecraft:leaves",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:birch_leaves"
+    },
+    {
+      "sourceItem": "minecraft:leaves",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:jungle_leaves"
+    },
+    {
+      "sourceItem": "minecraft:leaves2",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:acacia_leaves"
+    },
+    {
+      "sourceItem": "minecraft:leaves2",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dark_oak_leaves"
+    },
+    {
+      "sourceItem": "minecraft:log",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:oak_log"
+    },
+    {
+      "sourceItem": "minecraft:log",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:spruce_log"
+    },
+    {
+      "sourceItem": "minecraft:log",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:birch_log"
+    },
+    {
+      "sourceItem": "minecraft:log",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:jungle_log"
+    },
+    {
+      "sourceItem": "minecraft:log2",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:acacia_log"
+    },
+    {
+      "sourceItem": "minecraft:log2",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dark_oak_log"
+    },
+    {
+      "sourceItem": "minecraft:sapling",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:oak_sapling"
+    },
+    {
+      "sourceItem": "minecraft:sapling",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:spruce_sapling"
+    },
+    {
+      "sourceItem": "minecraft:sapling",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:birch_sapling"
+    },
+    {
+      "sourceItem": "minecraft:sapling",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:jungle_sapling"
+    },
+    {
+      "sourceItem": "minecraft:sapling",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:acacia_sapling"
+    },
+    {
+      "sourceItem": "minecraft:sapling",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dark_oak_sapling"
+    },
+    {
+      "sourceItem": "minecraft:planks",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:oak_planks"
+    },
+    {
+      "sourceItem": "minecraft:planks",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:spruce_planks"
+    },
+    {
+      "sourceItem": "minecraft:planks",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:birch_planks"
+    },
+    {
+      "sourceItem": "minecraft:planks",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:jungle_planks"
+    },
+    {
+      "sourceItem": "minecraft:planks",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:acacia_planks"
+    },
+    {
+      "sourceItem": "minecraft:planks",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dark_oak_planks"
+    },
+    {
+      "sourceItem": "minecraft:sand",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:sand"
+    },
+    {
+      "sourceItem": "minecraft:sand",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_sand"
+    },
+    {
+      "sourceItem": "minecraft:quartz_block",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:quartz_block"
+    },
+    {
+      "sourceItem": "minecraft:quartz_block",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:chiseled_quartz_block"
+    },
+    {
+      "sourceItem": "minecraft:quartz_block",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:quartz_pillar"
+    },
+    {
+      "sourceItem": "minecraft:anvil",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:anvil"
+    },
+    {
+      "sourceItem": "minecraft:anvil",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:chipped_anvil"
+    },
+    {
+      "sourceItem": "minecraft:anvil",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:damaged_anvil"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:white_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:magenta_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_blue_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:yellow_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lime_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:gray_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_gray_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 9,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cyan_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 10,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:purple_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 11,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:blue_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 12,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:brown_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 13,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:green_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 14,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_wool"
+    },
+    {
+      "sourceItem": "minecraft:wool",
+      "sourceMetadata": 15,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:black_wool"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:white_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:magenta_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_blue_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:yellow_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lime_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:gray_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_gray_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 9,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cyan_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 10,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:purple_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 11,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:blue_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 12,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:brown_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 13,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:green_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 14,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_carpet"
+    },
+    {
+      "sourceItem": "minecraft:carpet",
+      "sourceMetadata": 15,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:black_carpet"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:white_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:magenta_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_blue_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:yellow_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lime_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:gray_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_gray_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 9,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cyan_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 10,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:purple_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 11,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:blue_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 12,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:brown_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 13,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:green_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 14,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_hardened_clay",
+      "sourceMetadata": 15,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:black_terracotta"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:white_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:magenta_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_blue_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:yellow_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lime_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:gray_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_gray_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 9,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cyan_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 10,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:purple_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 11,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:blue_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 12,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:brown_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 13,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:green_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 14,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass",
+      "sourceMetadata": 15,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:black_stained_glass"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:white_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:magenta_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_blue_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:yellow_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lime_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:gray_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_gray_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 9,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cyan_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 10,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:purple_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 11,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:blue_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 12,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:brown_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 13,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:green_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 14,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:stained_glass_pane",
+      "sourceMetadata": 15,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:black_stained_glass_pane"
+    },
+    {
+      "sourceItem": "minecraft:cobblestone_wall",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cobblestone_wall"
+    },
+    {
+      "sourceItem": "minecraft:cobblestone_wall",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:mossy_cobblestone_wall"
+    },
+    {
+      "sourceItem": "minecraft:sandstone",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:sandstone"
+    },
+    {
+      "sourceItem": "minecraft:sandstone",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:chiseled_sandstone"
+    },
+    {
+      "sourceItem": "minecraft:sandstone",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cut_sandstone"
+    },
+    {
+      "sourceItem": "minecraft:stonebrick",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:stonebrick",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:mossy_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:stonebrick",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cracked_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:stonebrick",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:chiseled_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:monster_egg",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:infested_stone"
+    },
+    {
+      "sourceItem": "minecraft:monster_egg",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:infested_cobblestone"
+    },
+    {
+      "sourceItem": "minecraft:monster_egg",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:infested_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:monster_egg",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:infested_mossy_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:monster_egg",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:infested_cracked_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:monster_egg",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:infested_chiseled_stone_bricks"
+    },
+    {
+      "sourceItem": "minecraft:yellow_flower",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dandelion"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:poppy"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:blue_orchid"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:allium"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:azure_bluet"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:red_tulip"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_tulip"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:white_tulip"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_tulip"
+    },
+    {
+      "sourceItem": "minecraft:red_flower",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:oxeye_daisy"
+    },
+    {
+      "sourceItem": "minecraft:double_plant",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:sunflower"
+    },
+    {
+      "sourceItem": "minecraft:double_plant",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lilac"
+    },
+    {
+      "sourceItem": "minecraft:double_plant",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:tall_grass"
+    },
+    {
+      "sourceItem": "minecraft:double_plant",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:large_fern"
+    },
+    {
+      "sourceItem": "minecraft:double_plant",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:rose_bush"
+    },
+    {
+      "sourceItem": "minecraft:double_plant",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:peony"
+    },
+    {
+      "sourceItem": "minecraft:tallgrass",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dead_bush"
+    },
+    {
+      "sourceItem": "minecraft:tallgrass",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:grass"
+    },
+    {
+      "sourceItem": "minecraft:tallgrass",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:fern"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:stone_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:sandstone_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:petrified_oak_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cobblestone_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:brick_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:stone_brick_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:nether_brick_slab"
+    },
+    {
+      "sourceItem": "minecraft:stone_slab",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:quartz_slab"
+    },
+    {
+      "sourceItem": "minecraft:wooden_slab",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:oak_slab"
+    },
+    {
+      "sourceItem": "minecraft:wooden_slab",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:spruce_slab"
+    },
+    {
+      "sourceItem": "minecraft:wooden_slab",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:birch_slab"
+    },
+    {
+      "sourceItem": "minecraft:wooden_slab",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:jungle_slab"
+    },
+    {
+      "sourceItem": "minecraft:wooden_slab",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:acacia_slab"
+    },
+    {
+      "sourceItem": "minecraft:wooden_slab",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dark_oak_slab"
+    },
+    {
+      "sourceItem": "minecraft:coal",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:coal"
+    },
+    {
+      "sourceItem": "minecraft:coal",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:charcoal"
+    },
+    {
+      "sourceItem": "minecraft:fish",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cod"
+    },
+    {
+      "sourceItem": "minecraft:fish",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:salmon"
+    },
+    {
+      "sourceItem": "minecraft:fish",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:clownfish"
+    },
+    {
+      "sourceItem": "minecraft:fish",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pufferfish"
+    },
+    {
+      "sourceItem": "minecraft:cooked_fish",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cooked_cod"
+    },
+    {
+      "sourceItem": "minecraft:cooked_fish",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cooked_salmon"
+    },
+    {
+      "sourceItem": "minecraft:skull",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:skeleton_skull"
+    },
+    {
+      "sourceItem": "minecraft:skull",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:wither_skeleton_skull"
+    },
+    {
+      "sourceItem": "minecraft:skull",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:zombie_head"
+    },
+    {
+      "sourceItem": "minecraft:skull",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:player_head"
+    },
+    {
+      "sourceItem": "minecraft:skull",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:creeper_head"
+    },
+    {
+      "sourceItem": "minecraft:golden_apple",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:golden_apple"
+    },
+    {
+      "sourceItem": "minecraft:golden_apple",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:enchanted_golden_apple"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:ink_sac"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:rose_red"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cactus_green"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cocoa_beans"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lapis_lazuli"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:purple_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:cyan_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 7,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_gray_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 8,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:gray_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 9,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:pink_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 10,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:lime_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 11,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:dandelion_yellow"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 12,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:light_blue_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 13,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:magenta_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 14,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:orange_dye"
+    },
+    {
+      "sourceItem": "minecraft:dye",
+      "sourceMetadata": 15,
+      "hasSubtypes": true,
+      "flatteningTarget": "minecraft:bone_meal"
+    },
+    {
+      "sourceItem": "minecraft:deadbush",
+      "sourceMetadata": 0,
+      "hasSubtypes": false,
+      "flatteningTarget": "minecraft:dead_bush"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 50,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:creeper"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 51,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:skeleton"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 52,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:spider"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 54,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:zombie"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 55,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:slime"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 56,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:ghast"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 57,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:zombie_pigman"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 58,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:enderman"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 59,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:cave_spider"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 60,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:silverfish"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 61,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:blaze"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 62,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:magma_cube"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 65,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:bat"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 66,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:witch"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 90,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:pig"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 91,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:sheep"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 92,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:cow"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 93,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:chicken"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 94,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:squid"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 95,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:wolf"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 96,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:mooshroom"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 98,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:ocelot"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 100,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:horse"
+    },
+    {
+      "sourceItem": "minecraft:spawn_egg",
+      "sourceMetadata": 120,
+      "hasSubtypes": true,
+      "entityId1343": "minecraft:villager"
+    }
+  ],
+  "dynamicComponentFamilies": [
+    "minecraft:potion and minecraft:splash_potion share original minecraft:potion; base PotionContents+physical splash bit represent source metadata and custom effect/name NBT stays ignored",
+    "minecraft:filled_map original map metadata is existing MAP_ID; arbitrary other components are ignored"
+  ],
+  "ambiguousModernIdentities": [
+    "minecraft:dead_bush:old deadbush0 and tallgrass0 collapse; keep actual modern singleton rather than merge two old Item identities"
+  ],
+  "forbiddenInference": "No item tags or material-name resemblance is used. New white/black/brown dye, new wood species/eggs/banners/colored beds/granite/etc are not appended to old families."
+}

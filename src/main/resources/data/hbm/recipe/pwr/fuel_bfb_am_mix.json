@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NFN",
+    "NIN",
+    "NBN"
+  ],
+  "key": {
+    "F": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:billet_am_mix"
+      }
+    },
+    "I": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:plate_polymer"
+      }
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetbismuth"
+    },
+    "N": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:nugget_plutonium_fuel"
+      }
+    }
+  },
+  "result": {
+    "id": "hbm:pwr_fuel",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 13
+    }
+  }
+}

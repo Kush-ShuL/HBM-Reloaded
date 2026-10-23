@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:gas_empty",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S ",
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platecopper"
+    }
+  }
+}

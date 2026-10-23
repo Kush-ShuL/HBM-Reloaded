@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:block/rad_absorber_0",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/rad_absorber_1"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:block/rad_absorber_2"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:block/rad_absorber_3"
+    }
+  ]
+}

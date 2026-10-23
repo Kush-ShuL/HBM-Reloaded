@@ -1,0 +1,101 @@
+{
+  "entries": [
+    {
+      "symbol": "conveyor",
+      "id": "hbm:conveyor",
+      "kind": "block",
+      "originalClass": "BlockConveyor",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1904
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_express",
+      "id": "hbm:conveyor_express",
+      "kind": "block",
+      "originalClass": "BlockConveyorExpress",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1905
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_double",
+      "id": "hbm:conveyor_double",
+      "kind": "block",
+      "originalClass": "BlockConveyorDouble",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1906
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_triple",
+      "id": "hbm:conveyor_triple",
+      "kind": "block",
+      "originalClass": "BlockConveyorTriple",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1907
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_lift",
+      "id": "hbm:conveyor_lift",
+      "kind": "block",
+      "originalClass": "BlockConveyorLift",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1908
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_chute",
+      "id": "hbm:conveyor_chute",
+      "kind": "block",
+      "originalClass": "BlockConveyorChute",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1909
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_wand",
+      "id": "hbm:conveyor_wand",
+      "kind": "item",
+      "originalClass": "ItemConveyorWand",
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "regular",
+        "express",
+        "double",
+        "triple"
+      ],
+      "enumClass": "ConveyorType",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4391
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "crafting": 6,
+  "sharedEntity": "hbm:entity_c_item"
+}

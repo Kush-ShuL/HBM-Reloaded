@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:crt_display",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "SGS",
+    " T "
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustaluminum"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    "T": {
+      "item": "hbm:circuit_vacuum_tube"
+    }
+  }
+}

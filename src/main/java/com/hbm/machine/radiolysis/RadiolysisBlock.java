@@ -1,0 +1,11 @@
+package com.hbm.machine.radiolysis;
+import com.hbm.multiblock.DummyableBlock;import com.mojang.serialization.MapCodec;import net.minecraft.core.BlockPos;import net.minecraft.world.entity.LivingEntity;import net.minecraft.world.entity.player.Player;import net.minecraft.world.item.ItemStack;import net.minecraft.world.level.Level;import net.minecraft.world.level.block.SoundType;import net.minecraft.world.level.block.entity.*;import net.minecraft.world.level.block.state.BlockState;import net.minecraft.world.level.material.MapColor;
+/** Source3×3×3 body and four bottom-side proxy ports, placed atomically by native DummyableBlock. */
+public final class RadiolysisBlock extends DummyableBlock {
+ public RadiolysisBlock(){super(Properties.of().mapColor(MapColor.METAL).strength(10,6).sound(SoundType.STONE).requiresCorrectToolForDrops().noOcclusion());}
+ @Override protected MapCodec<? extends DummyableBlock> codec(){return MapCodec.unit(this);}@Override public int[] dimensions(){return new int[]{2,0,1,1,1,1};}@Override public int offset(){return 0;}
+ @Override public void setPlacedBy(Level level,BlockPos pos,BlockState state,LivingEntity entity,ItemStack stack){super.setPlacedBy(level,pos,state,entity,stack);if(!level.isClientSide)for(var port:RadiolysisBlockEntity.portPositions(pos))setPort(level,port,true);}
+ @Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return isCore(state)?new RadiolysisBlockEntity(pos,state):isPort(state)?new RadiolysisPort(pos,state):null;}
+ @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level,BlockState state,BlockEntityType<T> type){return isCore(state)?createTickerHelper(type,RadiolysisContent.ENTITY.get(),RadiolysisBlockEntity::tick):null;}
+ @Override protected net.minecraft.world.InteractionResult useWithoutItem(BlockState state,Level level,BlockPos pos,Player player,net.minecraft.world.phys.BlockHitResult hit){if(!level.isClientSide&&!player.isShiftKeyDown()){var tag=player.getPersistentData();var persistent=tag.getCompound(Player.PERSISTED_NBT_TAG);persistent.putLong("fbiMark",level.getGameTime()+24000);tag.put(Player.PERSISTED_NBT_TAG,persistent);}return super.useWithoutItem(state,level,pos,player,hit);}
+}

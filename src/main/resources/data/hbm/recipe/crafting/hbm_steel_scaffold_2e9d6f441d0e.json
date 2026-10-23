@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:steel_scaffold",
+    "count": 8,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:steel_scaffold"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyered"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.world.structure.tandem.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TandemPoolPlacementMixin",
+    "TandemSinglePaletteMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

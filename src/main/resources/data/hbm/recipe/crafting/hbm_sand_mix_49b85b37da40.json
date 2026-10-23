@@ -1,0 +1,49 @@
+{
+  "result": {
+    "id": "hbm:sand_mix",
+    "count": 8,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustpolonium210"
+    }
+  ]
+}

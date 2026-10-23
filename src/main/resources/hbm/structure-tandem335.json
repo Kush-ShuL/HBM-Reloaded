@@ -1,0 +1,46 @@
+{
+  "module": "structure-tandem335",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "wand_tandem",
+      "id": "hbm:wand_tandem",
+      "originalClass": "BlockWandTandem",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2372
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3523
+          },
+          "expression": "register(wand_tandem)",
+          "arguments": [
+            "wand_tandem"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "hasItem": true,
+      "maxStackSize": 64,
+      "creativeTab": null,
+      "blockEntity": "hbm:wand_tandem",
+      "hasBlockEntity": true,
+      "nativeProperties": {
+        "facing": [
+          "down",
+          "up",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      },
+      "registeredBy": "com.hbm.item.structuretandem.TandemContent",
+      "sourceField": "ModBlocks.wand_tandem",
+      "legacyBlockEntityAlias": "tileentity_wand_tandem"
+    }
+  ]
+}

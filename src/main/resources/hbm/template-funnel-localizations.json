@@ -1,0 +1,24 @@
+{
+  "en_us": {
+    "tile.machine_funnel.name": "Combinator Funnel",
+    "tile.machine_funnel.desc": "Automatically compresses items in a 2x2 or 3x3 crafting grid$Top: Input$Bottom: Output$Side: Output for clearing ingredients",
+    "container.machineFunnel": "Combinator Funnel",
+    "block.hbm.machine_funnel": "Combinator Funnel",
+    "gui.hbm.funnel.mode": "Mode: %s",
+    "gui.hbm.funnel.3x3": "3x3 only",
+    "gui.hbm.funnel.2x2": "2x2 only",
+    "gui.hbm.funnel.all": "3x3 then 2x2",
+    "tooltip.hbm.funnel.more_info": "Hold <%s> to display more info"
+  },
+  "zh_cn": {
+    "tile.machine_funnel.name": "组合漏斗",
+    "tile.machine_funnel.desc": "自动在2x2或3x3的合成格中压缩内部物品$顶面：输入$底面：输出$侧面：输出内部原料",
+    "container.machineFunnel": "组合漏斗",
+    "block.hbm.machine_funnel": "组合漏斗",
+    "gui.hbm.funnel.mode": "模式：%s",
+    "gui.hbm.funnel.3x3": "仅3x3",
+    "gui.hbm.funnel.2x2": "仅2x2",
+    "gui.hbm.funnel.all": "先3x3后2x2",
+    "tooltip.hbm.funnel.more_info": "按住 <%s> 显示更多信息"
+  }
+}

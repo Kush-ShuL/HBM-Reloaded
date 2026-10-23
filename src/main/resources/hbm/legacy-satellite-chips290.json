@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "sat_miner",
+      "id": "hbm:sat_miner",
+      "legacyRegistryId": "hbm:item.sat_miner",
+      "originalClass": "ItemSatChip",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3437
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5718
+          },
+          "expression": "GameRegistry.registerItem(sat_miner, sat_miner.getUnlocalizedName())",
+          "arguments": [
+            "sat_miner",
+            "sat_miner.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.satellite.legacychips.LegacySatelliteChipsContent",
+      "creativeTab": "none",
+      "maxStackSize": 1,
+      "frequencyStorage": "existingCUSTOM_DATA.freq",
+      "orbitalExecutionAlias": false
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_lunar_miner",
+      "id": "hbm:sat_lunar_miner",
+      "legacyRegistryId": "hbm:item.sat_lunar_miner",
+      "originalClass": "ItemSatChip",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3438
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5719
+          },
+          "expression": "GameRegistry.registerItem(sat_lunar_miner, sat_lunar_miner.getUnlocalizedName())",
+          "arguments": [
+            "sat_lunar_miner",
+            "sat_lunar_miner.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.satellite.legacychips.LegacySatelliteChipsContent",
+      "creativeTab": "none",
+      "maxStackSize": 1,
+      "frequencyStorage": "existingCUSTOM_DATA.freq",
+      "orbitalExecutionAlias": false
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_foeq",
+      "id": "hbm:sat_foeq",
+      "legacyRegistryId": "hbm:item.sat_foeq",
+      "originalClass": "ItemSatChip",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3435
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5716
+          },
+          "expression": "GameRegistry.registerItem(sat_foeq, sat_foeq.getUnlocalizedName())",
+          "arguments": [
+            "sat_foeq",
+            "sat_foeq.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.satellite.legacychips.LegacySatelliteChipsContent",
+      "creativeTab": "none",
+      "maxStackSize": 1,
+      "frequencyStorage": "existingCUSTOM_DATA.freq",
+      "orbitalExecutionAlias": false
+    }
+  ]
+}

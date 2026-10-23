@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "hbm:structure_pool",
+          "pool": "POOL_PILE_MAKESHIFT_WRENCH"
+        }
+      ]
+    }
+  ]
+}

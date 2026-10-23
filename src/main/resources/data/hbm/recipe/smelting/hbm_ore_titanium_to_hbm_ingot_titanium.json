@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_titanium"
+      },
+      {
+        "item": "hbm:deepslate_ore_titanium"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_titanium",
+    "count": 1
+  },
+  "experience": 3.0,
+  "cookingtime": 200
+}

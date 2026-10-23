@@ -1,0 +1,274 @@
+{
+  "module": "source-assembly286",
+  "entries": [],
+  "nativeRecipes": [
+    {
+      "name": "ass.astrominer",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1032
+      },
+      "expression": "new GenericRecipe(\"ass.astrominer\").setup(1_200, 25_000).outputItems(new ItemStack(ModItems.satellite, 1, EnumSatType.MINER_ASTRO.ordinal()))\n\t\t\t\t.inputItems(new OreDictStack(BIGMT.plateCast(), 16),\n\t\t\t\t\t\tnew ComparableStack(ModItems.photo_panel, 8),\n\t\t\t\t\t\tnew ComparableStack(ModItems.thruster_medium, 1),\n\t\t\t\t\t\tnew ComparableStack(ModItems.motor_bismuth, 4),\n\t\t\t\t\t\tnew ComparableStack(ModItems.part_generic, 16, EnumPartType.LDE),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 2, EnumCircuitType.CONTROLLER_ADVANCED))",
+      "status": "implemented_native_recipe",
+      "file": "data/hbm/recipe/assembly/source_1032.json"
+    },
+    {
+      "name": "ass.lunarminer",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1039
+      },
+      "expression": "new GenericRecipe(\"ass.lunarminer\").setup(1_200, 25_000).outputItems(new ItemStack(ModItems.satellite, 1, EnumSatType.MINER_LUNAR.ordinal()))\n\t\t\t\t.inputItems(new OreDictStack(BIGMT.plateCast(), 16),\n\t\t\t\t\t\tnew ComparableStack(ModItems.photo_panel, 8),\n\t\t\t\t\t\tnew ComparableStack(ModItems.thruster_medium, 1),\n\t\t\t\t\t\tnew ComparableStack(ModItems.motor_bismuth, 4),\n\t\t\t\t\t\tnew ComparableStack(ModItems.part_generic, 16, EnumPartType.LDE),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 2, EnumCircuitType.CONTROLLER_ADVANCED))",
+      "status": "implemented_native_recipe",
+      "file": "data/hbm/recipe/assembly/source_1039.json"
+    },
+    {
+      "name": "ass.orbitallaser",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1046
+      },
+      "expression": "new GenericRecipe(\"ass.orbitallaser\").setup(1_200, 25_000).outputItems(new ItemStack(ModItems.satellite, 1, EnumSatType.PRECISION_LASER.ordinal()))\n\t\t\t\t.inputItems(new OreDictStack(WEAPONSTEEL.shell(), 16),\n\t\t\t\t\t\tnew ComparableStack(ModItems.photo_panel, 32),\n\t\t\t\t\t\tnew ComparableStack(ModItems.battery_pack, 1, EnumBatteryPack.CAPACITOR_TANTALUM),\n\t\t\t\t\t\tnew ComparableStack(ModItems.crystal_redstone, 16),\n\t\t\t\t\t\tnew ComparableStack(ModItems.part_generic, 16, EnumPartType.LDE),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 3, EnumCircuitType.CONTROLLER_ADVANCED))",
+      "status": "implemented_native_recipe",
+      "file": "data/hbm/recipe/assembly/source_1046.json"
+    },
+    {
+      "name": "ass.deathray",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1053
+      },
+      "expression": "new GenericRecipe(\"ass.deathray\").setup(1_200, 25_000).outputItems(new ItemStack(ModItems.satellite, 1, EnumSatType.DEATH_RAY.ordinal()))\n\t\t\t\t.inputItems(new OreDictStack(WEAPONSTEEL.shell(), 32),\n\t\t\t\t\t\tnew OreDictStack(PURG.billet(), 32),\n\t\t\t\t\t\tnew ComparableStack(ModItems.battery_pack, 1, EnumBatteryPack.CAPACITOR_BISMUTH),\n\t\t\t\t\t\tnew OreDictStack(EMERALD.gem(), 32),\n\t\t\t\t\t\tnew ComparableStack(ModItems.part_generic, 16, EnumPartType.LDE),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 5, EnumCircuitType.CONTROLLER_ADVANCED))",
+      "status": "implemented_native_recipe",
+      "file": "data/hbm/recipe/assembly/source_1053.json"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1127
+      },
+      "expression": "new GenericRecipe(\"ass.digimemer\").setup(1_200, 100).outputItems(new ItemStack(mb, 1, 4)) .inputItems(new OreDictStack(BIGMT.plateCast(), 16), new OreDictStack(CU.plateWelded(), 12), new OreDictStack(\"alloyUltimate\", 32), new ComparableStack(ModItems.circuit, 16, EnumCircuitType.BISMOID), new ComparableStack(ModItems.circuit, 32, EnumCircuitType.CAPACITOR_BOARD), new ComparableStack(ModItems.wire_dense, 32, Mats.MAT_GOLD.id), new ComparableStack(ModItems.motor_bismuth, 3))",
+      "status": "implemented_native_recipe",
+      "name": "ass.digimemer",
+      "file": "data/hbm/recipe/assembly/source_1127.json",
+      "conditions": [
+        "GeneralConfig.enableMekanismChanges",
+        "Loader.isModLoaded(\"Mekanism\")",
+        "registered machine block present"
+      ],
+      "externalMapping": {
+        "modernVersion": "https://github.com/mekanism/Mekanism/blob/1.21.x/gradle.properties",
+        "oldMachineMetadata": "https://github.com/mekanism/Mekanism/blob/1.7.10/src/main/java/mekanism/common/block/BlockMachine.java#L1137",
+        "oldAlloyMembership": "https://github.com/mekanism/Mekanism/blob/1.7.10/src/main/java/mekanism/common/Mekanism.java#L990",
+        "modernMachine": "https://github.com/mekanism/Mekanism/blob/1.21.x/src/main/java/mekanism/common/registries/MekanismBlocks.java#L324",
+        "modernAlloy": "https://github.com/mekanism/Mekanism/blob/1.21.x/src/main/java/mekanism/common/registries/MekanismItems.java#L325",
+        "modernAtomicTier": "https://github.com/mekanism/Mekanism/blob/1.21.x/src/api/java/mekanism/api/tier/AlloyTier.java#L8"
+      }
+    }
+  ],
+  "reusedSourceBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 204
+      },
+      "expression": "new GenericRecipe(\"ass.sealcontroller\").setup(100, 100).outputItems(new ItemStack(ModBlocks.seal_controller, 1)) .inputItems(new OreDictStack(DURA.ingot(), 1), new OreDictStack(STEEL.plateCast(), 1), new OreDictStack(ANY_PLASTIC.ingot(), 4), new OreDictStack(MINGRADE.wireDense(), 4))",
+      "parserReason": "content is not migrated: ModBlocks.seal_controller",
+      "id": "hbm:assembly/source_204",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_204.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 214
+      },
+      "expression": "new GenericRecipe(\"ass.vaultdoor\").setup(600, 100).outputItems(new ItemStack(ModBlocks.vault_door, 1)) .inputItems(new OreDictStack(STEEL.ingot(), 32), new OreDictStack(DURA.ingot(), 32), new OreDictStack(PB.plateCast(), 8), new OreDictStack(ANY_RUBBER.ingot(), 12), new OreDictStack(DURA.bolt(), 32), new ComparableStack(ModItems.motor, 3))",
+      "parserReason": "content is not migrated: ModBlocks.vault_door",
+      "id": "hbm:assembly/source_214",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_214.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 216
+      },
+      "expression": "new GenericRecipe(\"ass.blastdoor\").setup(200, 100).outputItems(new ItemStack(ModBlocks.blast_door, 1)) .inputItems(new OreDictStack(STEEL.ingot(), 12), new OreDictStack(PB.plate(), 6), new OreDictStack(ANY_RUBBER.ingot(), 2), new OreDictStack(DURA.bolt(), 8), new ComparableStack(ModItems.motor, 1))",
+      "parserReason": "content is not migrated: ModBlocks.blast_door",
+      "id": "hbm:assembly/source_216",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_216.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 220
+      },
+      "expression": "new GenericRecipe(\"ass.seal\").setup(1_200, 100).outputItems(new ItemStack(ModBlocks.transition_seal, 1)) .inputItems(new ComparableStack(ModBlocks.cmb_brick_reinforced, 16), new OreDictStack(STEEL.plate(), 64), new OreDictStack(ANY_RUBBER.ingot(), 36), new OreDictStack(STEEL.block(), 32), new ComparableStack(ModItems.motor_desh, 16), new OreDictStack(KEY_YELLOW, 4))",
+      "parserReason": "content is not migrated: ModBlocks.transition_seal",
+      "id": "hbm:assembly/source_220",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_220.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 224
+      },
+      "expression": "new GenericRecipe(\"ass.vehicledoor\").setup(400, 100).outputItems(new ItemStack(ModBlocks.large_vehicle_door, 1)) .inputItems(new OreDictStack(STEEL.plateCast(), 16), new ComparableStack(ModItems.plate_polymer, 4), new ComparableStack(ModItems.motor, 4), new OreDictStack(DURA.bolt(), 16), new OreDictStack(KEY_GREEN, 4))",
+      "parserReason": "content is not migrated: ModBlocks.large_vehicle_door",
+      "id": "hbm:assembly/source_224",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_224.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 226
+      },
+      "expression": "new GenericRecipe(\"ass.waterdoor\").setup(200, 100).outputItems(new ItemStack(ModBlocks.water_door, 1)) .inputItems(new OreDictStack(STEEL.plate(), 16), new OreDictStack(DURA.bolt(), 4), new OreDictStack(KEY_RED, 1))",
+      "parserReason": "content is not migrated: ModBlocks.water_door",
+      "id": "hbm:assembly/source_226",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_226.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 228
+      },
+      "expression": "new GenericRecipe(\"ass.qedoor\").setup(400, 100).outputItems(new ItemStack(ModBlocks.qe_containment, 1)) .inputItems(new OreDictStack(STEEL.plateCast(), 6), new ComparableStack(ModItems.plate_polymer, 8), new ComparableStack(ModItems.motor, 2), new OreDictStack(DURA.bolt(), 32), new OreDictStack(KEY_BLACK, 4))",
+      "parserReason": "content is not migrated: ModBlocks.qe_containment",
+      "id": "hbm:assembly/source_228",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_228.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 230
+      },
+      "expression": "new GenericRecipe(\"ass.queslidingdoor\").setup(200, 100).outputItems(new ItemStack(ModBlocks.qe_sliding_door, 1)) .inputItems(new OreDictStack(STEEL.plate(), 4), new ComparableStack(ModItems.plate_polymer, 4), new ComparableStack(ModItems.motor, 2), new OreDictStack(DURA.bolt(), 4), new OreDictStack(KEY_WHITE, 4), new ComparableStack(Blocks.glass, 4))",
+      "parserReason": "content is not migrated: ModBlocks.qe_sliding_door",
+      "id": "hbm:assembly/source_230",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_230.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 232
+      },
+      "expression": "new GenericRecipe(\"ass.roundairlock\").setup(400, 100).outputItems(new ItemStack(ModBlocks.round_airlock_door, 1)) .inputItems(new OreDictStack(STEEL.plateCast(), 12), new ComparableStack(ModItems.plate_polymer, 16), new ComparableStack(ModItems.motor, 4), new OreDictStack(DURA.bolt(), 16), new OreDictStack(KEY_GREEN, 4))",
+      "parserReason": "content is not migrated: ModBlocks.round_airlock_door",
+      "id": "hbm:assembly/source_232",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_232.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 234
+      },
+      "expression": "new GenericRecipe(\"ass.secureaccess\").setup(400, 100).outputItems(new ItemStack(ModBlocks.secure_access_door, 1)) .inputItems(new OreDictStack(STEEL.plateCast(), 12), new ComparableStack(ModItems.plate_polymer, 8), new ComparableStack(ModItems.motor, 4), new OreDictStack(DURA.bolt(), 32), new OreDictStack(KEY_RED, 8))",
+      "parserReason": "content is not migrated: ModBlocks.secure_access_door",
+      "id": "hbm:assembly/source_234",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_234.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 236
+      },
+      "expression": "new GenericRecipe(\"ass.slidingseal\").setup(200, 100).outputItems(new ItemStack(ModBlocks.sliding_seal_door, 1)) .inputItems(new OreDictStack(STEEL.plate(), 12), new ComparableStack(ModItems.plate_polymer, 4), new ComparableStack(ModItems.motor, 2), new OreDictStack(DURA.bolt(), 4), new OreDictStack(KEY_WHITE, 2))",
+      "parserReason": "content is not migrated: ModBlocks.sliding_seal_door",
+      "id": "hbm:assembly/source_236",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_236.json",
+      "status": "existing_native_source_binding"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 951
+      },
+      "expression": "new GenericRecipe(\"ass.launchpadsoyuz\").setup(1_200, 5_000).outputItems(new ItemStack(ModBlocks.launchpad_soyuz, 1)) .inputItems(new ComparableStack(ModBlocks.concrete_rebar, 64), new OreDictStack(STEEL.plateWelded(), 48), new OreDictStack(ANY_RESISTANTALLOY.plateWelded(), 12), new OreDictStack(ANY_HARDPLASTIC.ingot(), 24), new ComparableStack(ModItems.motor, 24), new ComparableStack(ModItems.circuit, 1, EnumCircuitType.CONTROLLER_ADVANCED)) .inputItemsEx(new ComparableStack(ModBlocks.concrete_rebar, 64), new ComparableStack(ModItems.item_expensive, 32, EnumExpensiveType.FERRO_PLATING), new OreDictStack(ANY_HARDPLASTIC.ingot(), 64), new ComparableStack(ModItems.motor, 32), new ComparableStack(ModItems.circuit, 1, EnumCircuitType.CONTROLLER_ADVANCED))",
+      "parserReason": "content is not migrated: ModBlocks.launchpad_soyuz",
+      "id": "hbm:assembly/source_951",
+      "sourceResource": "src/main/resources/data/hbm/recipe/assembly/source_951.json",
+      "status": "existing_native_source_binding"
+    }
+  ],
+  "runtimeSourceBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1117
+      },
+      "expression": "new GenericRecipe(\"ass.package\" + type.getUnlocalizedName()).setup(40, 100).outputItems(new ItemStack(ModItems.fluid_pack_full, 1, type.getID())) .inputItems(new ComparableStack(ModItems.fluid_pack_empty)).inputFluids(new FluidStack(type, 32_000))",
+      "parserReason": "Unresolved literal source string \"ass.package\" + type.getUnlocalizedName()",
+      "status": "existing_runtime_source_binding",
+      "owner": "src/main/java/com/hbm/machine/assembler/AssemblerRecipeConfig.java:addPackaging",
+      "nativeIds": "hbm:assembly/package/<actual fluid ID>",
+      "semantics": "Actual nice-order fluids from index1; hasNoContainer skipped,32000mB,40ticks,100HE,real private pack/empty items; configuration replacement semantics unchanged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 1119
+      },
+      "expression": "new GenericRecipe(\"ass.unpackage\" + type.getUnlocalizedName()).setup(40, 100).setIcon(ItemFluidIcon.make(type, 32_000)).outputItems(new ItemStack(ModItems.fluid_pack_empty)) .inputItems(new ComparableStack(ModItems.fluid_pack_full, 1, type.getID())).outputFluids(new FluidStack(type, 32_000))",
+      "parserReason": "Unresolved literal source string \"ass.unpackage\" + type.getUnlocalizedName()",
+      "status": "existing_runtime_source_binding",
+      "owner": "src/main/java/com/hbm/machine/assembler/AssemblerRecipeConfig.java:addPackaging",
+      "nativeIds": "hbm:assembly/unpackage/<actual fluid ID>",
+      "semantics": "Actual nice-order fluids from index1; hasNoContainer skipped,32000mB,40ticks,100HE,real private pack/empty items; configuration replacement semantics unchanged"
+    }
+  ],
+  "counts": {
+    "sourceStatements": 19,
+    "newNativeRecipes": 5,
+    "existingNativeBindings": 12,
+    "existingDynamicBindings": 2,
+    "pending": 0
+  },
+  "productionJavaChanges": [
+    "src/main/java/com/hbm/config/GeneralModes.java",
+    "src/main/java/com/hbm/config/GeneralModeCondition.java"
+  ],
+  "trueOwners": [
+    "migration/work-in-progress/general-modes/main/com/hbm/config/GeneralModes.java",
+    "migration/work-in-progress/general-modes/main/com/hbm/config/GeneralModeCondition.java"
+  ],
+  "canonicalWriter": "tools/port_satellite_core.py:manufacturing selected-source adapter and original helpers",
+  "config": {
+    "file": "hbm-general-common.toml",
+    "field": "general.mekanismRecipeChangesEnabled",
+    "default": true,
+    "legacyConfigAlias": false
+  },
+  "sourceReadinessRepair": "Satellite source payloads3/4/5/6 were admitted in real resources113 and attack112 factories; only stale satellite-core descriptors blocked canonical assembly export",
+  "oldSaveCompatibility": false,
+  "validation": {
+    "sourceStaged": true,
+    "compiled": false,
+    "nativeLoaded": false,
+    "gameplayAccepted": false
+  },
+  "semantics": [
+    "Four satellites retain original six input lanes,1200ticks and25000HE,real metadata-to-sourceClassId distinction and actual existing orbital factory",
+    "Mekanism digital miner remains source final recipe after dynamic fluid packaging; max native order represents its tail position without touching default source list",
+    "All original source inputs/counts retained, including32 atomic-alloy ore membership; native item_exists plus mod_loaded plus the original boolean guard prevent absent optional content from being parsed as a placeholder",
+    "Only the configuration switch and original recipe adaptation added; no direct HE/fluid interoperability or duplicate satellite/assembly/ore-dictionary backend",
+    "Twelve existing door/launcher native recipe IDs and two existing runtime packaging loops are bound, not emitted a second time; explicit user recipe replacement remains authoritative"
+  ],
+  "externalPrimarySources": {
+    "modernVersion": "https://github.com/mekanism/Mekanism/blob/1.21.x/gradle.properties",
+    "oldMachineMetadata": "https://github.com/mekanism/Mekanism/blob/1.7.10/src/main/java/mekanism/common/block/BlockMachine.java#L1137",
+    "oldAlloyMembership": "https://github.com/mekanism/Mekanism/blob/1.7.10/src/main/java/mekanism/common/Mekanism.java#L990",
+    "modernMachine": "https://github.com/mekanism/Mekanism/blob/1.21.x/src/main/java/mekanism/common/registries/MekanismBlocks.java#L324",
+    "modernAlloy": "https://github.com/mekanism/Mekanism/blob/1.21.x/src/main/java/mekanism/common/registries/MekanismItems.java#L325",
+    "modernAtomicTier": "https://github.com/mekanism/Mekanism/blob/1.21.x/src/api/java/mekanism/api/tier/AlloyTier.java#L8"
+  }
+}

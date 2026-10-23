@@ -1,0 +1,25 @@
+{
+  "name": "Lunar Mining Ship",
+  "icon": [
+    "hbm:satellite_miner_lunar",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_miner_lunar",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Lunar Mining Ship",
+    "ru_RU": "Лунный астродобытчик",
+    "zh_CN": "月球采矿船"
+  },
+  "content": {
+    "en_US": "The lunar mining ship will, if connected to a satellite ID chip which is inserted into a cargo landing pad, land in regular intervals to deliver items mined on the moon. Do note that one mining ship can only supply a single cargo landing pad. Also keep the landing pad free of obstructions, as the drop ship may explode when impacting other blocks.<br><br>Unlike the [[asteroid mining ship|Asteroid Mining Ship]], the selection of items it can harvest is much smaller, however, the large quantities of moon turf it can produce are important for [[helium-3|Helium-3]], a powerful fuel for the [[fusion reactor|Fusion Reactor]].<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Лунный астродобытчик, если он связан с ID-чипом спутника, вставленным в грузовую посадочную площадку, будет регулярно приземляться для доставки ресурсов, добытых на Луне. Обратите внимание, что один астродобытчик может снабжать только одну посадочную площадку. Также держите посадочную площадку свободной от препятствий, так как астродобытчик может взорваться при столкновении с другими блоками.<br><br>В отличие от [[астероидного астродобытчика|Asteroid Mining Ship]], выбор добываемых им предметов гораздо меньше, однако большие объемы лунного грунта, которые он может добывать, важны для [[гелия-3|Helium-3]] мощного топлива для [[термоядерного реактора|Fusion Reactor]].<br><br>{{Template:SatOverview}}",
+    "zh_CN": "将已绑定采矿船的卫星 ID 芯片放入货运着陆平台后，月球采矿船会定期降落，运送在月球采集的物品。一艘采矿船只能为一座货运着陆平台供货。请保持着陆平台上方畅通，因为运输船撞到其他方块时可能爆炸。<br><br>与[[小行星采矿船|Asteroid Mining Ship]]相比，它能采集的物品种类少得多；不过，它能产出大量月壤，而月壤是获取[[氦-3|Helium-3]]的重要来源。氦-3是[[聚变反应堆|Fusion Reactor]]的强力燃料。<br><br>{{Template:SatOverview}}"
+  }
+}

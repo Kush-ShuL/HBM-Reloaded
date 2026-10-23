@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:deco_crt",
+  "metadata": 0,
+  "inventory": true,
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "hbm:block/crt_clean"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/deco_crt_1"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/deco_crt_2"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/deco_crt_3"
+    }
+  ]
+}

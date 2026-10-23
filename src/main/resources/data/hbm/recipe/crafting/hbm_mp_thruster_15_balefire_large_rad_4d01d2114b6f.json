@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:mp_thruster_15_balefire_large_rad",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CTC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+    },
+    "T": {
+      "type": "neoforge:components",
+      "items": "hbm:mp_thruster_15_balefire_large",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

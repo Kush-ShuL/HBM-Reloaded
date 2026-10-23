@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LRL",
+    "BRB",
+    "LRL"
+  ],
+  "key": {
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotlead"
+    },
+    "B": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "minecraft:iron_bars",
+        "count": 1
+      }
+    },
+    "R": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:rod_quad_empty",
+        "count": 1
+      }
+    }
+  },
+  "result": {
+    "id": "hbm:machine_waste_drum",
+    "count": 1
+  }
+}

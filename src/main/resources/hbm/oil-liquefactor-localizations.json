@@ -1,0 +1,20 @@
+{
+  "en_us": {
+    "block.hbm.machine_liquefactor": "Industrial Liquefaction Machine",
+    "container.machineLiquefactor": "Liquefactor",
+    "category.hbm.liquefaction": "Liquefaction",
+    "config.jade.plugin_hbm.liquefactor_status": "Liquefactor status",
+    "gui.hbm.liquefactor.progress": "Liquefaction",
+    "gui.hbm.liquefactor.consumption": "Consumption: %s HE/t",
+    "tooltip.hbm.liquefactor.dimensions": "Dimensions: 3 × 4 × 3"
+  },
+  "zh_cn": {
+    "block.hbm.machine_liquefactor": "工业液化机",
+    "container.machineLiquefactor": "液化机",
+    "category.hbm.liquefaction": "液化",
+    "config.jade.plugin_hbm.liquefactor_status": "液化器状态",
+    "gui.hbm.liquefactor.progress": "液化进度",
+    "gui.hbm.liquefactor.consumption": "耗能：%s HE/t",
+    "tooltip.hbm.liquefactor.dimensions": "尺寸：3 × 4 × 3"
+  }
+}

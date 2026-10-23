@@ -1,0 +1,46 @@
+{
+  "registered": [
+    {
+      "symbol": "pump_steam",
+      "id": "hbm:pump_steam",
+      "itemId": "hbm:pump_steam",
+      "kind": "block",
+      "originalClass": "MachinePump",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1748
+      },
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-port-target-compile-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pump_electric",
+      "id": "hbm:pump_electric",
+      "itemId": "hbm:pump_electric",
+      "kind": "block",
+      "originalClass": "MachinePump",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1749
+      },
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-port-target-compile-pending",
+      "runtimeValidated": false
+    }
+  ]
+}

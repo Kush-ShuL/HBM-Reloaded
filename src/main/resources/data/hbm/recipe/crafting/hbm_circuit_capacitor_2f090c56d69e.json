@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:circuit_capacitor",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IAI",
+    "W W"
+  ],
+  "key": {
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustaluminum"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+    }
+  }
+}

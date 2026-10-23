@@ -1,0 +1,98 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.soyuz",
+  "duration": 6000,
+  "power": 25000,
+  "order": 334,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:missile_soyuz",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/shelltitanium"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotrubber"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:rocket_fuel"
+        }
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:thruster_small"
+        }
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:thruster_medium"
+        }
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_controller"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:part_generic_lde"
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      },
+      "count": 4
+    }
+  ],
+  "pools_528": [
+    "528.soyuz"
+  ]
+}

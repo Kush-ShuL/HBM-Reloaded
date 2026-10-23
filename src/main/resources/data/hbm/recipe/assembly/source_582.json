@@ -1,0 +1,73 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.fusionblanket",
+  "duration": 100,
+  "power": 100,
+  "order": 186,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:fusion_component",
+            "count": 4,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextuplesteel"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotberyllium"
+      },
+      "count": 4
+    }
+  ],
+  "pools_528": [
+    "528.tcalloy"
+  ],
+  "expensive_input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_heavy_frame"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotberyllium"
+      },
+      "count": 4
+    }
+  ]
+}

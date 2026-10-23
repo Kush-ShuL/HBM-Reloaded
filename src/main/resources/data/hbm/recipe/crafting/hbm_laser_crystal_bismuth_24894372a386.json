@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:laser_crystal_bismuth",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QUQ",
+    "BCB",
+    "QTQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm:glass_quartz"
+    },
+    "U": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingoturanium"
+    },
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotthorium232"
+    },
+    "B": {
+      "item": "hbm:nugget_bismuth"
+    },
+    "C": {
+      "item": "hbm:crystal_rare"
+    }
+  }
+}

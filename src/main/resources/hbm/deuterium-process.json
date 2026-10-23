@@ -1,0 +1,17 @@
+{
+  "source": "legacy/src/main/java/com/hbm/handler/nei/DeuteriumHandler.java",
+  "legacyViewerKey": "ntmDeuterium",
+  "input": {
+    "type": "WATER",
+    "amount": 1000
+  },
+  "output": {
+    "type": "HEAVYWATER",
+    "amount": 20
+  },
+  "catalysts": [
+    "hbm:machine_deuterium_extractor",
+    "hbm:machine_deuterium_tower"
+  ],
+  "runtimeRecipeConfiguration": false
+}

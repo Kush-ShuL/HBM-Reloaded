@@ -1,0 +1,50 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.shellphosgene",
+  "duration": 100,
+  "power": 1000,
+  "order": 327,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:ammo_arty",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ammo_arty",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PHOSGENE",
+      "amount": 4000,
+      "pressure": 0
+    }
+  ]
+}

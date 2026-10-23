@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CDC",
+    "ISI",
+    "CDC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    },
+    "D": {
+      "item": "hbm:ducttape"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "S": {
+      "item": "hbm:pads_slime"
+    }
+  },
+  "result": {
+    "id": "hbm:pads_static",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:machine_tape_drive",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "CCC",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "C": {
+      "item": "hbm:circuit_pcb"
+    }
+  }
+}

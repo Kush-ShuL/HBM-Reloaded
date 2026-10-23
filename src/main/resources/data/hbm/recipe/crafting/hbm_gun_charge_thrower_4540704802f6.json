@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:gun_charge_thrower",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "BBL",
+    "GG "
+  ],
+  "key": {
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/barrelheavysteel"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gripsteel"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    }
+  }
+}

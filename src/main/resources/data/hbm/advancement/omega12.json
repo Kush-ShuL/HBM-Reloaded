@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:particle_digamma"
+    },
+    "title": {
+      "translate": "achievement.omega12"
+    },
+    "description": {
+      "translate": "achievement.omega12.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:omega12"
+      }
+    }
+  }
+}

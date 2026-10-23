@@ -1,0 +1,36 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.exgold",
+  "duration": 120,
+  "power": 100000,
+  "ignition_temp": 1000000,
+  "order": 11,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_gold_dust",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustgold"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustgold"
+      },
+      "count": 64
+    }
+  ]
+}

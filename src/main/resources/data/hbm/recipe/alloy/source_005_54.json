@@ -1,0 +1,50 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotcopper"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemcopper"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustcopper"
+      }
+    ]
+  },
+  "second": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotredstone"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateredstone"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemredstone"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustredstone"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_red_copper",
+    "count": 2
+  },
+  "order": 5
+}

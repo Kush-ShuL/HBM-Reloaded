@@ -1,0 +1,153 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_rtg",
+      "id": "hbm:machine_rtg_grey",
+      "originalClass": "MachineRTG",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1855"
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted",
+      "id": "hbm:pellet_rtg_depleted",
+      "originalClass": "ItemRTGPelletDepleted",
+      "creativeTab": "control",
+      "metadataRange": [
+        0,
+        5
+      ],
+      "names": [
+        "bismuth",
+        "mercury",
+        "neptunium",
+        "lead",
+        "zirconium",
+        "nickel"
+      ],
+      "enumClass": "DepletedRTGMaterial"
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_radium",
+      "id": "hbm:pellet_rtg_radium",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_weak",
+      "id": "hbm:pellet_rtg_weak",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg",
+      "id": "hbm:pellet_rtg",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_strontium",
+      "id": "hbm:pellet_rtg_strontium",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_cobalt",
+      "id": "hbm:pellet_rtg_cobalt",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_actinium",
+      "id": "hbm:pellet_rtg_actinium",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_americium",
+      "id": "hbm:pellet_rtg_americium",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_polonium",
+      "id": "hbm:pellet_rtg_polonium",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_gold",
+      "id": "hbm:pellet_rtg_gold",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_lead",
+      "id": "hbm:pellet_rtg_lead",
+      "originalClass": "ItemRTGPellet",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "block",
+      "symbol": "crate_lead",
+      "id": "hbm:crate_lead",
+      "originalClass": "BlockCrate",
+      "creativeTab": "consumable",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2171"
+    },
+    {
+      "kind": "block",
+      "symbol": "crate_metal",
+      "id": "hbm:crate_metal",
+      "originalClass": "BlockCrate",
+      "creativeTab": "consumable",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2172"
+    }
+  ],
+  "blockEntityAliases": {
+    "tileentity_machine_rtg": "hbm:machine_rtg"
+  },
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted",
+      "id": "hbm:pellet_rtg_depleted",
+      "originalClass": "ItemRTGPelletDepleted",
+      "creativeTab": "control",
+      "metadataRange": [
+        0,
+        5
+      ],
+      "names": [
+        "bismuth",
+        "mercury",
+        "neptunium",
+        "lead",
+        "zirconium",
+        "nickel"
+      ],
+      "enumClass": "DepletedRTGMaterial"
+    }
+  ]
+}

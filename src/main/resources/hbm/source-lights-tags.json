@@ -1,0 +1,16 @@
+{
+  "minecraft:mineable/pickaxe": [
+    "hbm:spotlight_incandescent",
+    "hbm:spotlight_incandescent_off",
+    "hbm:spotlight_fluoro",
+    "hbm:spotlight_fluoro_off",
+    "hbm:spotlight_halogen",
+    "hbm:spotlight_halogen_off"
+  ],
+  "minecraft:replaceable_by_trees": [
+    "hbm:spotlight_beam"
+  ],
+  "minecraft:leaves": [
+    "hbm:spotlight_beam"
+  ]
+}

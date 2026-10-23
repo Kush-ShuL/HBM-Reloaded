@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:network_separator",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SCS",
+    "DTD",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "D": {
+      "item": "hbm:coil_copper"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "T": {
+      "item": "hbm:machine_transformer"
+    }
+  }
+}

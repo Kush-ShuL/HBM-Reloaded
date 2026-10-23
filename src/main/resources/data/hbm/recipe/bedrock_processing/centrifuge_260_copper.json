@@ -1,0 +1,42 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "neoforge:components",
+    "items": "hbm:ore_seared",
+    "components": {
+      "hbm:legacy_metadata": 1
+    },
+    "strict": false
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:ore_enriched",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 1
+      }
+    },
+    {
+      "id": "hbm:ore_enriched",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 1
+      }
+    },
+    {
+      "id": "hbm:ore_byproduct",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 7
+      }
+    },
+    {
+      "id": "hbm:ore_byproduct",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 7
+      }
+    }
+  ]
+}

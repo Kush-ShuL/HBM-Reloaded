@@ -1,0 +1,97 @@
+{
+  "recipes": [
+    {
+      "particle": [
+        "item",
+        "hbm:particle_higgs",
+        1,
+        0
+      ],
+      "ingredient": [
+        "dict",
+        "ingotUranium",
+        1
+      ],
+      "output": [
+        "hbm:ingot_schraranium",
+        1,
+        0
+      ]
+    },
+    {
+      "particle": [
+        "item",
+        "hbm:particle_higgs",
+        1,
+        0
+      ],
+      "ingredient": [
+        "dict",
+        "ingotUranium238",
+        1
+      ],
+      "output": [
+        "hbm:ingot_schrabidium",
+        1,
+        0
+      ]
+    },
+    {
+      "particle": [
+        "item",
+        "hbm:particle_dark",
+        1,
+        0
+      ],
+      "ingredient": [
+        "dict",
+        "ingotPlutonium",
+        1
+      ],
+      "output": [
+        "hbm:ingot_euphemium",
+        1,
+        0
+      ]
+    },
+    {
+      "particle": [
+        "item",
+        "hbm:particle_sparkticle",
+        1,
+        0
+      ],
+      "ingredient": [
+        "item",
+        "hbm:item_expensive_degenerate_matter",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:ingot_dineutronium",
+        1,
+        0
+      ],
+      "sourceMode": "expensive"
+    },
+    {
+      "particle": [
+        "item",
+        "hbm:particle_sparkticle",
+        1,
+        0
+      ],
+      "ingredient": [
+        "dict",
+        "ingotSchrabidate",
+        1
+      ],
+      "output": [
+        "hbm:ingot_dineutronium",
+        1,
+        0
+      ],
+      "sourceMode": "normal"
+    }
+  ]
+}

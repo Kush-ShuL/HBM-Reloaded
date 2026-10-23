@@ -1,0 +1,28 @@
+{
+  "vertex": "hbm:nuclear_cloud_composite",
+  "fragment": "hbm:nuclear_cloud_composite",
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "Sampler1"
+    },
+    {
+      "name": "Sampler2"
+    },
+    {
+      "name": "Sampler3"
+    },
+    {
+      "name": "Sampler4"
+    },
+    {
+      "name": "Sampler5"
+    }
+  ],
+  "attributes": [
+    "Position",
+    "UV0"
+  ]
+}

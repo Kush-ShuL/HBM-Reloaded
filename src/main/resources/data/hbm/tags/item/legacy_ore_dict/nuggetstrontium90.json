@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:nugget_sr90",
+    {
+      "id": "#c:nuggets/sr90",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/strontium90",
+      "required": false
+    }
+  ]
+}

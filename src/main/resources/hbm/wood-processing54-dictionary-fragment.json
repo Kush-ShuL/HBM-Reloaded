@@ -1,0 +1,48 @@
+{
+  "source": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java#L59",
+  "order": [
+    "hbm:legacy_ore_dict/plankwood",
+    "hbm:legacy_ore_dict/treesapling"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/plankwood",
+      "raw": "plankWood"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/treesapling",
+      "raw": "treeSapling"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "raw": "plankWood",
+      "tag": "hbm:legacy_ore_dict/plankwood",
+      "members": [
+        "minecraft:oak_planks",
+        "minecraft:spruce_planks",
+        "minecraft:birch_planks",
+        "minecraft:jungle_planks",
+        "minecraft:acacia_planks",
+        "minecraft:dark_oak_planks"
+      ],
+      "sourceRegistration": "Blocks.planks with wildcard metadata",
+      "modernMapping": "The six original source wood species only; existing HBM additions remain additive."
+    },
+    {
+      "raw": "treeSapling",
+      "tag": "hbm:legacy_ore_dict/treesapling",
+      "members": [
+        "minecraft:oak_sapling",
+        "minecraft:spruce_sapling",
+        "minecraft:birch_sapling",
+        "minecraft:jungle_sapling",
+        "minecraft:acacia_sapling",
+        "minecraft:dark_oak_sapling"
+      ],
+      "sourceRegistration": "Blocks.sapling with wildcard metadata",
+      "modernMapping": "The six original source wood species only; existing HBM additions remain additive."
+    }
+  ]
+}

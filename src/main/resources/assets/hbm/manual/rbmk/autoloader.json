@@ -1,0 +1,23 @@
+{
+  "name": "RBMK Autoloader",
+  "icon": [
+    "hbm:tile.rbmk_autoloader",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.rbmk_autoloader"
+    ]
+  ],
+  "title": {
+    "en_US": "RBMK Autoloader",
+    "ru_RU": "Автозагрузчик стержней РБМК",
+    "zh_CN": "RBMK 自动装填器"
+  },
+  "content": {
+    "en_US": "The autoloader is an advanced component of an [[RBMK]] that can be placed on top of [[fuel channels|RBMK Fuel Channel]]. The autoloader has two inventory grids, one for fresh fuel, and one for spent fuel, as well as a selector for the fuel enrichment percentage (i.e. 100% - depletion percentage) which can be changed in 5% increments. If the [[fuel rod's|RBMK Fuel Rod]] enrichment of the connected fuel channel is lower than the configured percentage, the autoloader will drop down, remove the spent fuel and insert a new fuel rod. The autoloader can be automated using hoppers or conveyors, the item access ports are on the very top.",
+    "ru_RU": "Автозагрузчик — продвинутый компонент [[РБМК|RBMK]], который можно установить поверх [[топливных каналов|RBMK Fuel Channel]]. В автозагрузчике есть две сетки инвентаря: для свежего и отработанного топлива, а также селектор процента обогащения топлива (то есть 100% минус процент обеднения), изменяемый с шагом 5%. Если обогащение [[топливного стержня|RBMK Fuel Rod]] в подключённом топливном канале падает ниже заданного значения, автозагрузчик опускается, извлекает отработанное топливо и вставляет новый топливный стержень. Автозагрузчик можно автоматизировать с помощью воронок или конвейеров; порты доступа к предметам расположены на самом верху.",
+    "zh_CN": "自动装填器是[[RBMK反应堆|RBMK]]的高级部件，可放置在[[燃料通道|RBMK Fuel Channel]]顶部。它有两组物品栏，分别存放新燃料和乏燃料，并可设置燃料富集度阈值，即100%减去燃耗百分比，每次以5%为单位调整。若所连接[[燃料棒|RBMK Fuel Rod]]的富集度低于设定值，装填器便会下探，取出乏燃料并装入新棒。可用漏斗或传送带自动化，物品接口位于最顶部。"
+  }
+}

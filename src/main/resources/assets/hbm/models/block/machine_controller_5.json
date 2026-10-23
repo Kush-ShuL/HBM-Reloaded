@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/machine_controller_top",
+    "up": "hbm:block/machine_controller_top",
+    "north": "hbm:block/machine_controller_side",
+    "south": "hbm:block/machine_controller_side",
+    "west": "hbm:block/machine_controller_back",
+    "east": "hbm:block/machine_controller",
+    "particle": "hbm:block/machine_controller_side"
+  }
+}

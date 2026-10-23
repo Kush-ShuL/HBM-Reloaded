@@ -1,0 +1,38 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.drillsteel",
+  "duration": 100,
+  "power": 100,
+  "order": 117,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drillbit",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotsteel"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingottungsten"
+      },
+      "count": 4
+    }
+  ]
+}

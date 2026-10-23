@@ -1,0 +1,39 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+      },
+      "count": 8
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_armor_lunar",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 4,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 546000000
+}

@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:rbmk_display_blank",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B",
+    "D"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotboron"
+    },
+    "D": {
+      "item": "hbm:concrete_asbestos"
+    }
+  }
+}

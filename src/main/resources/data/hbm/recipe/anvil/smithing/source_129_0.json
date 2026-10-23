@@ -1,0 +1,22 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "minecraft:iron_sword",
+    "count": 1
+  },
+  "left": {
+    "ingredient": {
+      "item": "minecraft:iron_sword"
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "item": "minecraft:name_tag"
+    },
+    "count": 0
+  },
+  "kind": "rename",
+  "order": 129000000
+}

@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "t51_helmet",
+      "id": "hbm:t51_helmet",
+      "legacyRegistryId": "hbm:item.t51_helmet",
+      "originalClass": "ArmorT51",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:124",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1650
+    },
+    {
+      "kind": "item",
+      "symbol": "t51_plate",
+      "id": "hbm:t51_plate",
+      "legacyRegistryId": "hbm:item.t51_plate",
+      "originalClass": "ArmorT51",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:133",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 2400
+    },
+    {
+      "kind": "item",
+      "symbol": "t51_legs",
+      "id": "hbm:t51_legs",
+      "legacyRegistryId": "hbm:item.t51_legs",
+      "originalClass": "ArmorT51",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:134",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 2250
+    },
+    {
+      "kind": "item",
+      "symbol": "t51_boots",
+      "id": "hbm:t51_boots",
+      "legacyRegistryId": "hbm:item.t51_boots",
+      "originalClass": "ArmorT51",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:135",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1950
+    },
+    {
+      "kind": "item",
+      "symbol": "titanium_helmet",
+      "id": "hbm:titanium_helmet",
+      "legacyRegistryId": "hbm:item.titanium_helmet",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:62",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 275
+    },
+    {
+      "kind": "item",
+      "symbol": "titanium_plate",
+      "id": "hbm:titanium_plate",
+      "legacyRegistryId": "hbm:item.titanium_plate",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:63",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 400
+    },
+    {
+      "kind": "item",
+      "symbol": "titanium_legs",
+      "id": "hbm:titanium_legs",
+      "legacyRegistryId": "hbm:item.titanium_legs",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:64",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 375
+    },
+    {
+      "kind": "item",
+      "symbol": "titanium_boots",
+      "id": "hbm:titanium_boots",
+      "legacyRegistryId": "hbm:item.titanium_boots",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:65",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 325
+    },
+    {
+      "kind": "item",
+      "symbol": "fusion_core",
+      "id": "hbm:fusion_core_item",
+      "legacyRegistryId": "hbm:item.fusion_core",
+      "originalClass": "ItemFusionCore",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:3707",
+      "creativeTab": "control"
+    },
+    {
+      "kind": "item",
+      "symbol": "armor_battery",
+      "id": "hbm:armor_battery",
+      "legacyRegistryId": "hbm:item.armor_battery",
+      "originalClass": "ItemModBattery",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:2912",
+      "creativeTab": "consumable"
+    },
+    {
+      "kind": "item",
+      "symbol": "armor_battery_mk2",
+      "id": "hbm:armor_battery_mk2",
+      "legacyRegistryId": "hbm:item.armor_battery_mk2",
+      "originalClass": "ItemModBattery",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:2913",
+      "creativeTab": "consumable"
+    },
+    {
+      "kind": "item",
+      "symbol": "armor_battery_mk3",
+      "id": "hbm:armor_battery_mk3",
+      "legacyRegistryId": "hbm:item.armor_battery_mk3",
+      "originalClass": "ItemModBattery",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:2914",
+      "creativeTab": "consumable"
+    }
+  ],
+  "sourceMaterial": {
+    "t51": {
+      "baseDurability": 150,
+      "defense": [
+        3,
+        8,
+        6,
+        3
+      ],
+      "enchantability": 0,
+      "repair": "hbm:plate_armor_titanium"
+    },
+    "titanium": {
+      "baseDurability": 25,
+      "defense": [
+        3,
+        8,
+        6,
+        3
+      ],
+      "enchantability": 9,
+      "repair": "hbm:ingot_titanium"
+    }
+  },
+  "powered": {
+    "maxPower": 1000000,
+    "chargeRate": 10000,
+    "consumption": 1000,
+    "drain": 5,
+    "chargeTag": "charge"
+  },
+  "batteryUpgradeMultipliers": [
+    1.25,
+    1.5,
+    2
+  ],
+  "fusionCore": {
+    "amount": 2500000,
+    "stackSize": 1,
+    "isBattery": false,
+    "consumedInCreative": true
+  },
+  "recipes": [
+    "hbm:crafting/hbm_titanium_helmet_84fe2038c726",
+    "hbm:crafting/hbm_titanium_plate_2b45305a67d5",
+    "hbm:crafting/hbm_titanium_legs_5a89762fd57b",
+    "hbm:crafting/hbm_titanium_boots_17e5e1e4107c",
+    "hbm:crafting/hbm_t51_helmet_f6bb611e7cd8",
+    "hbm:crafting/hbm_t51_plate_484199ee4c19",
+    "hbm:crafting/hbm_t51_legs_924c35d7fc7b",
+    "hbm:crafting/hbm_t51_boots_0dc4de819053",
+    "hbm:crafting/hbm_armor_battery_c1ca054e2c35",
+    "hbm:crafting/hbm_armor_battery_mk2_1ae43cca5e99",
+    "hbm:crafting/hbm_armor_battery_mk3_bffc067efb78"
+  ]
+}

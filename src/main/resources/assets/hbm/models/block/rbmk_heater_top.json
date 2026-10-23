@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_heater",
+  "inventory": false,
+  "top": true,
+  "textures": {
+    "side": "hbm:block/rbmk/rbmk_heater_side",
+    "top": "hbm:block/rbmk/rbmk_heater_top",
+    "cover_top": "hbm:block/rbmk/rbmk_heater_cover_top",
+    "cover_side": "hbm:block/rbmk/rbmk_heater_cover_side",
+    "glass_top": "hbm:block/rbmk/rbmk_heater_glass_top",
+    "glass_side": "hbm:block/rbmk/rbmk_heater_glass_side",
+    "pipe_top": "hbm:block/rbmk/rbmk_heater_pipe_top",
+    "pipe_side": "hbm:block/rbmk/rbmk_heater_pipe_side",
+    "particle": "hbm:block/rbmk/rbmk_heater_side",
+    "bottom": "hbm:block/rbmk/rbmk_heater_top"
+  }
+}

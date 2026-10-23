@@ -1,0 +1,9 @@
+package com.hbm.entity.mob.ufo;
+import com.hbm.entity.mob.botprime.mixin.MaxHealthAttributeAccess;import com.hbm.exposure.*;import java.util.List;import net.minecraft.core.registries.Registries;import net.minecraft.world.entity.*;import net.minecraft.world.entity.ai.attributes.Attributes;import net.minecraft.world.item.ItemStack;import net.neoforged.bus.api.IEventBus;import net.neoforged.neoforge.registries.*;
+/** Actual EntityMappings.addEntity1000/1/velocity=true: source has no UFO spawn egg or random natural spawn registration. */
+public final class UfoContent {
+ private static final DeferredRegister<EntityType<?>> ENTITIES=DeferredRegister.create(Registries.ENTITY_TYPE,"hbm");private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
+ public static final DeferredHolder<EntityType<?>,EntityType<EntityUFO>> UFO=ENTITIES.register("entity_ntm_ufo",()->EntityType.Builder.<EntityUFO>of(EntityUFO::new,MobCategory.MONSTER).sized(15,4).eyeHeight(3.4F).fireImmune().clientTrackingRange(63).updateInterval(1).setShouldReceiveVelocityUpdates(true).build("hbm:entity_ntm_ufo"));public static final DeferredItem<UfoSpawnerItem> SPAWNER=ITEMS.register("spawn_ufo",UfoSpawnerItem::new);
+ public static void register(IEventBus bus){var limit=(MaxHealthAttributeAccess)Attributes.MAX_HEALTH.value();limit.hbm$setMaximum(Math.max(limit.hbm$getMaximum(),20000));ENTITIES.register(bus);ITEMS.register(bus);bus.addListener((net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent event)->event.put(UFO.get(),EntityUFO.attributes().build()));bus.addListener(UfoGroundCloud::register);HbmExposure.addProtection(new ExposureProtection(){@Override public boolean radiationImmune(LivingEntity entity){return entity instanceof EntityUFO;}});}
+ public static List<ItemStack> creativeStacks(String tab){return tab.equals("consumable")?List.of(new ItemStack(SPAWNER.get())):List.of();}private UfoContent(){}
+}

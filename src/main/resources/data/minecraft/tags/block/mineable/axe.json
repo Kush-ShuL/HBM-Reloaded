@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:pink_planks",
+    "#hbm:mineable/axe/world_fluid_reactions",
+    {
+      "id": "#hbm:mineable/axe_pylons",
+      "required": false
+    },
+    {
+      "id": "hbm:crate_can",
+      "required": false
+    },
+    "hbm:radio_telex",
+    "hbm:wood_barrier",
+    "hbm:wood_structure",
+    "hbm:crate_weapon",
+    "hbm:rail_wood",
+    "hbm:pink_log",
+    "hbm:pink_slab",
+    "hbm:pink_double_slab"
+  ]
+}

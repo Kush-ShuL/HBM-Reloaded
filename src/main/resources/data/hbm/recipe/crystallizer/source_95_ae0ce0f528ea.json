@@ -1,0 +1,38 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.95.32",
+  "duration": 100,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotsilicon"
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "OXYGEN",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "minecraft:quartz",
+            "count": 2
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.1,
+  "key_kind": "dict",
+  "source_key": "hbm:legacy_ore_dict/ingotsilicon",
+  "order": 32
+}

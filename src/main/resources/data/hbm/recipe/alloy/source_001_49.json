@@ -1,0 +1,50 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotiron"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateiron"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemiron"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustiron"
+      }
+    ]
+  },
+  "second": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanycoke"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateanycoke"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemanycoke"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustanycoke"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_steel",
+    "count": 1
+  },
+  "order": 1
+}

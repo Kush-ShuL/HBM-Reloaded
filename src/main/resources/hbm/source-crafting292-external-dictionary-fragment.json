@@ -1,0 +1,47 @@
+{
+  "order": [],
+  "names": [],
+  "memberships": [],
+  "registrations": [
+    {
+      "source": "Mekanism1.7.10 registerOreDict",
+      "raw": "alloyUltimate",
+      "tag": "hbm:legacy_ore_dict/alloyultimate",
+      "members": [
+        "mekanism:alloy_atomic"
+      ],
+      "condition": "ModList.isLoaded(\"mekanism\")",
+      "runtimeNameOwner": "GeneralModes(alloyUltimate)/SourceMekanismCrafting(other3)"
+    },
+    {
+      "source": "Mekanism1.7.10 registerOreDict",
+      "raw": "battery",
+      "tag": "hbm:legacy_ore_dict/battery",
+      "members": [
+        "mekanism:energy_tablet"
+      ],
+      "condition": "ModList.isLoaded(\"mekanism\")",
+      "runtimeNameOwner": "GeneralModes(alloyUltimate)/SourceMekanismCrafting(other3)"
+    },
+    {
+      "source": "Mekanism1.7.10 registerOreDict",
+      "raw": "alloyAdvanced",
+      "tag": "hbm:legacy_ore_dict/alloyadvanced",
+      "members": [
+        "mekanism:alloy_infused"
+      ],
+      "condition": "ModList.isLoaded(\"mekanism\")",
+      "runtimeNameOwner": "GeneralModes(alloyUltimate)/SourceMekanismCrafting(other3)"
+    },
+    {
+      "source": "Mekanism1.7.10 registerOreDict",
+      "raw": "ingotRefinedObsidian",
+      "tag": "hbm:legacy_ore_dict/ingotrefinedobsidian",
+      "members": [
+        "mekanism:ingot_refined_obsidian"
+      ],
+      "condition": "ModList.isLoaded(\"mekanism\")",
+      "runtimeNameOwner": "GeneralModes(alloyUltimate)/SourceMekanismCrafting(other3)"
+    }
+  ]
+}

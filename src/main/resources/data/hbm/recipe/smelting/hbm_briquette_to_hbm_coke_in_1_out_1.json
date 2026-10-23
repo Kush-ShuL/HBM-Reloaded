@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:briquette_lignite"
+  },
+  "result": {
+    "id": "hbm:coke_lignite",
+    "count": 1
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

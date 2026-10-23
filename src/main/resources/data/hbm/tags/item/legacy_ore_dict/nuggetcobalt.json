@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:fragment_cobalt",
+    "hbm:nugget_cobalt",
+    {
+      "id": "#c:nuggets/cobalt",
+      "required": false
+    }
+  ]
+}

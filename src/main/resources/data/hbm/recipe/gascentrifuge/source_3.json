@@ -1,0 +1,25 @@
+{
+  "type": "hbm:gascentrifuge",
+  "fluid": "WATZ",
+  "amount": 1000,
+  "results": [
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lead",
+      "count": 1
+    },
+    {
+      "id": "hbm:nuclear_waste_tiny",
+      "count": 1
+    },
+    {
+      "id": "hbm:dust",
+      "count": 2
+    }
+  ],
+  "high_speed": false,
+  "machines": 2
+}

@@ -1,0 +1,128 @@
+{
+  "entries": [
+    {
+      "symbol": "reactor_zirnox",
+      "id": "hbm:machine_zirnox",
+      "kind": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2234
+      },
+      "originalClass": "ReactorZirnox",
+      "creativeTab": "machine",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "zirnox_destroyed",
+      "id": "hbm:zirnox_destroyed",
+      "kind": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2235
+      },
+      "originalClass": "ZirnoxDestroyed",
+      "creativeTab": null,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "steel_grate",
+      "id": "hbm:steel_grate",
+      "kind": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1605
+      },
+      "originalClass": "BlockGrate",
+      "creativeTab": "block",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "steel_grate_wide",
+      "id": "hbm:steel_grate_wide",
+      "kind": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1606
+      },
+      "originalClass": "BlockGrate",
+      "creativeTab": "block",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "rod_zirnox",
+      "id": "hbm:rod_zirnox",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      },
+      "originalClass": "ItemZirnoxRod",
+      "creativeTab": "control",
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        10
+      ],
+      "names": [
+        "natural_uranium_fuel",
+        "uranium_fuel",
+        "th232",
+        "thorium_fuel",
+        "mox_fuel",
+        "plutonium_fuel",
+        "u233_fuel",
+        "u235_fuel",
+        "les_fuel",
+        "lithium",
+        "zfb_mox"
+      ],
+      "enumClass": "EnumZirnoxType",
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "natural_uranium_fuel"
+        },
+        {
+          "metadata": 1,
+          "name": "uranium_fuel"
+        },
+        {
+          "metadata": 2,
+          "name": "th232"
+        },
+        {
+          "metadata": 3,
+          "name": "thorium_fuel"
+        },
+        {
+          "metadata": 4,
+          "name": "mox_fuel"
+        },
+        {
+          "metadata": 5,
+          "name": "plutonium_fuel"
+        },
+        {
+          "metadata": 6,
+          "name": "u233_fuel"
+        },
+        {
+          "metadata": 7,
+          "name": "u235_fuel"
+        },
+        {
+          "metadata": 8,
+          "name": "les_fuel"
+        },
+        {
+          "metadata": 9,
+          "name": "lithium"
+        },
+        {
+          "metadata": 10,
+          "name": "zfb_mox"
+        }
+      ]
+    }
+  ]
+}

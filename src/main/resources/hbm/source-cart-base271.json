@@ -1,0 +1,28 @@
+{
+  "module": "source-cart-base271",
+  "entries": [],
+  "entities": [
+    {
+      "id": "hbm:entity_minecart_test",
+      "sourceId": "entity_minecart_test",
+      "sourceClass": "EntityMinecartTest",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:68",
+      "implementation": "com.hbm.railway.cart.SourceMinecartTest",
+      "sourceMinecartType": 9,
+      "trackingRangeBlocks": 1000,
+      "updateInterval": 1,
+      "velocityUpdates": true,
+      "sourceProducer": "Registered development entity only; no ItemModMinecart branch, item, egg, craft or natural producer."
+    }
+  ],
+  "sourceAssetBoundaries": [
+    {
+      "sourceReference": "legacy/src/main/java/com/hbm/render/entity/item/RenderMinecartTest.java:26",
+      "sourceTexture": "assets/hbm/textures/models/LilBoy2.png",
+      "modernReference": "hbm:textures/models/lilboy2.png",
+      "status": "source-archive-asset-missing",
+      "behavior": "Retain source geometry/reference and native missing-texture fallback; no fabricated PNG or unproven replacement.",
+      "notSubstituted": "The existing textures/models/lilboy.png is a different source texture with no proven mapping to this reference."
+    }
+  ]
+}

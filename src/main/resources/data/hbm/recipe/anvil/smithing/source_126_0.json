@@ -1,0 +1,32 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "hbm:mold",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 21
+    }
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+    },
+    "count": 9
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:mold_base",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "mold",
+  "prefix": "wireDense",
+  "exact_left": [],
+  "order": 126000000
+}

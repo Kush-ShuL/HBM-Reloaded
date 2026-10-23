@@ -1,0 +1,346 @@
+{
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 42
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.ingot_u238m2), new ComparableStack(ModItems.ingot_u238m2, 1, 1), new ComparableStack(ModItems.ingot_u238m2, 1, 2), new ComparableStack(ModItems.ingot_u238m2, 1, 3)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 0,
+        "inputs": [
+          {
+            "ingredient": {
+              "item": "hbm:ingot_u238m2"
+            },
+            "metadata": 1
+          },
+          {
+            "ingredient": {
+              "item": "hbm:ingot_u238m2"
+            },
+            "metadata": 2
+          },
+          {
+            "ingredient": {
+              "item": "hbm:ingot_u238m2"
+            },
+            "metadata": 3
+          }
+        ],
+        "result": {
+          "id": "hbm:ingot_u238m2",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 43
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.rod_of_discord), new ComparableStack(Items.ender_pearl), new ComparableStack(Items.blaze_rod), new ComparableStack(ModItems.nugget_euphemium)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 1,
+        "inputs": [
+          {
+            "ingredient": {
+              "item": "minecraft:ender_pearl"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "minecraft:blaze_rod"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:nugget_euphemium"
+            },
+            "metadata": 0
+          }
+        ],
+        "result": {
+          "id": "hbm:rod_of_discord",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 44
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.balefire_and_steel), new OreDictStack(STEEL.ingot()), new ComparableStack(ModItems.egg_balefire_shard)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 2,
+        "inputs": [
+          {
+            "ingredient": {
+              "tag": "hbm:legacy_ore_dict/ingotsteel"
+            },
+            "metadata": 32767
+          },
+          {
+            "ingredient": {
+              "item": "hbm:egg_balefire_shard"
+            },
+            "metadata": 0
+          }
+        ],
+        "result": {
+          "id": "hbm:balefire_and_steel",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 45
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.mysteryshovel), new ComparableStack(Items.iron_shovel), new ComparableStack(Items.bone), new ComparableStack(ModItems.ingot_starmetal), new ComparableStack(ModItems.ducttape)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 3,
+        "inputs": [
+          {
+            "ingredient": {
+              "item": "minecraft:iron_shovel"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "minecraft:bone"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:ingot_starmetal"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:ducttape"
+            },
+            "metadata": 0
+          }
+        ],
+        "result": {
+          "id": "hbm:mysteryshovel",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 46
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.ingot_electronium), new ComparableStack(ModItems.pellet_charged), new ComparableStack(ModItems.pellet_charged), new ComparableStack(ModItems.ingot_dineutronium), new ComparableStack(ModItems.ingot_dineutronium)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 4,
+        "inputs": [
+          {
+            "ingredient": {
+              "item": "hbm:pellet_charged"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:pellet_charged"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:ingot_dineutronium"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:ingot_dineutronium"
+            },
+            "metadata": 0
+          }
+        ],
+        "result": {
+          "id": "hbm:ingot_electronium",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 48
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.diamond_gavel),\n\t\t\t\tnew ComparableStack(ModBlocks.gravel_diamond),\n\t\t\t\tnew ComparableStack(ModBlocks.gravel_diamond),\n\t\t\t\tnew ComparableStack(ModBlocks.gravel_diamond),\n\t\t\t\tnew ComparableStack(ModItems.lead_gavel)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 5,
+        "inputs": [
+          {
+            "ingredient": {
+              "item": "hbm:gravel_diamond"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:gravel_diamond"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:gravel_diamond"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:lead_gavel"
+            },
+            "metadata": 0
+          }
+        ],
+        "result": {
+          "id": "hbm:diamond_gavel",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/MagicRecipes.java",
+        "line": 54
+      },
+      "expression": "recipes.add(new MagicRecipe(new ItemStack(ModItems.mese_gavel),\n\t\t\t\tnew ComparableStack(ModItems.shimmer_handle),\n\t\t\t\tnew ComparableStack(ModItems.powder_dineutronium),\n\t\t\t\tnew ComparableStack(ModItems.blades_desh),\n\t\t\t\tnew ComparableStack(ModItems.diamond_gavel)));",
+      "recipe": {
+        "type": "hbm:book_of_boxcars",
+        "order": 6,
+        "inputs": [
+          {
+            "ingredient": {
+              "item": "hbm:shimmer_handle"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:powder_dineutronium"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:blades_desh"
+            },
+            "metadata": 0
+          },
+          {
+            "ingredient": {
+              "item": "hbm:diamond_gavel"
+            },
+            "metadata": 0
+          }
+        ],
+        "result": {
+          "id": "hbm:mese_gavel",
+          "count": 1
+        }
+      },
+      "missingActualDependencies": [],
+      "status": "native_recipe_ready"
+    }
+  ],
+  "pool": [
+    {
+      "id": "hbm:book_of_",
+      "metadata": 0,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 0,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 1,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 2,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 3,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 4,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 5,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 6,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    },
+    {
+      "id": "hbm:stamp_book",
+      "metadata": 7,
+      "min": 1,
+      "max": 1,
+      "weight": 1
+    }
+  ]
+}

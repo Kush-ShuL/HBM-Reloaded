@@ -1,0 +1,50 @@
+{
+  "module": "conveyor-grabber223",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crane_grabber",
+      "id": "hbm:crane_grabber",
+      "legacyRegistryId": "hbm:tile.crane_grabber",
+      "originalClass": "CraneGrabber",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1912
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3193
+          },
+          "expression": "register(crane_grabber)",
+          "arguments": [
+            "crane_grabber"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventorySlots": 11,
+      "hasBlockEntity": true
+    }
+  ]
+}

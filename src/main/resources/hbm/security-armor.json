@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "security_helmet",
+      "id": "hbm:security_helmet",
+      "legacyRegistryId": "hbm:item.security_helmet",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:90",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1100
+    },
+    {
+      "kind": "item",
+      "symbol": "security_plate",
+      "id": "hbm:security_plate",
+      "legacyRegistryId": "hbm:item.security_plate",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:91",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1600
+    },
+    {
+      "kind": "item",
+      "symbol": "security_legs",
+      "id": "hbm:security_legs",
+      "legacyRegistryId": "hbm:item.security_legs",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:92",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1500
+    },
+    {
+      "kind": "item",
+      "symbol": "security_boots",
+      "id": "hbm:security_boots",
+      "legacyRegistryId": "hbm:item.security_boots",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:93",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1300
+    }
+  ],
+  "material": {
+    "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:142,302",
+    "name": "HBM_SECURITY",
+    "baseDurability": 100,
+    "durability": [
+      1100,
+      1600,
+      1500,
+      1300
+    ],
+    "defense": [
+      3,
+      8,
+      6,
+      3
+    ],
+    "enchantmentValue": 15,
+    "repair": "hbm:plate_kevlar",
+    "toughness": 0,
+    "knockbackResistance": 0
+  },
+  "protection": {
+    "physical": {
+      "DT": 5,
+      "DR": 0.5
+    },
+    "explosion": {
+      "DT": 2,
+      "DR": 0.25
+    },
+    "radiationExponents": [
+      0.165,
+      0.33,
+      0.24749999999999997,
+      0.0825
+    ],
+    "intrinsicHazardClasses": [],
+    "intrinsicFilter": false,
+    "authority": [
+      "com.hbm.damage.DefaultResistanceStats",
+      "com.hbm.armor.HazmatRegistry"
+    ]
+  },
+  "recipes": [
+    "hbm:crafting/hbm_security_helmet_ac9deac80acd",
+    "hbm:crafting/hbm_security_plate_6e84544b893d",
+    "hbm:crafting/hbm_security_legs_90f6c14fceba",
+    "hbm:crafting/hbm_security_boots_6466667e71e3"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "minecraft:clay_ball",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    },
+    {
+      "item": "hbm:dust"
+    },
+    {
+      "item": "hbm:dust"
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "WATER",
+      "amount": 1000
+    }
+  ]
+}

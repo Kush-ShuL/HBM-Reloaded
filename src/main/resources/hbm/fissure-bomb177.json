@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "fissure_bomb",
+      "id": "hbm:fissure_bomb",
+      "legacyRegistryId": "hbm:tile.fissure_bomb",
+      "originalClass": "BlockFissureBomb",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1746
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2890
+          },
+          "expression": "register(fissure_bomb)",
+          "arguments": [
+            "fissure_bomb"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "nuke",
+      "maxStackSize": 64,
+      "metadataRange": [
+        0,
+        15
+      ],
+      "nativeProperty": "ignite_on_break = (meta & 1) != 0",
+      "blockItem": true
+    }
+  ]
+}

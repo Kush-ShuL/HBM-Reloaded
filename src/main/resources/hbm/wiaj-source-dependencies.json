@@ -1,0 +1,92 @@
+{
+  "CanneryCentrifuge": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryCentrifuge.java",
+    "ready": true,
+    "symbols": [
+      "ModBlocks.barrel_tcalloy",
+      "ModBlocks.fluid_duct_neo",
+      "ModBlocks.machine_gascent",
+      "ModItems.nugget_u235",
+      "ModItems.nugget_u238",
+      "ModItems.upgrade_gc_speed"
+    ],
+    "pendingActualGameContent": []
+  },
+  "CanneryCrucible": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryCrucible.java",
+    "ready": true,
+    "symbols": [
+      "ModBlocks.foundry_basin",
+      "ModBlocks.machine_crucible",
+      "ModItems.mold"
+    ],
+    "pendingActualGameContent": []
+  },
+  "CanneryFirebox": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryFirebox.java",
+    "ready": true,
+    "symbols": [
+      "ModBlocks.heater_firebox",
+      "ModBlocks.machine_detector",
+      "ModBlocks.red_cable",
+      "ModItems.coke",
+      "ModItems.rocket_fuel",
+      "ModItems.solid_fuel",
+      "ModItems.solid_fuel_bf"
+    ],
+    "pendingActualGameContent": []
+  },
+  "CanneryFoundryChannel": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryFoundryChannel.java",
+    "ready": true,
+    "symbols": [
+      "ModBlocks.foundry_basin",
+      "ModBlocks.foundry_channel",
+      "ModBlocks.foundry_mold",
+      "ModBlocks.foundry_outlet",
+      "ModBlocks.foundry_tank",
+      "ModItems.mold"
+    ],
+    "pendingActualGameContent": []
+  },
+  "CannerySILEX": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CannerySILEX.java",
+    "ready": true,
+    "symbols": [
+      "ModBlocks.barrel_tcalloy",
+      "ModBlocks.brick_concrete",
+      "ModBlocks.fluid_duct_neo",
+      "ModBlocks.machine_silex",
+      "ModItems.laser_crystal_bismuth",
+      "ModItems.laser_crystal_cmb",
+      "ModItems.laser_crystal_co2",
+      "ModItems.laser_crystal_digamma",
+      "ModItems.laser_crystal_dnt"
+    ],
+    "pendingActualGameContent": []
+  },
+  "CanneryStirling": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryStirling.java",
+    "ready": true,
+    "symbols": [
+      "ModBlocks.machine_detector",
+      "ModBlocks.machine_stirling",
+      "ModBlocks.red_cable"
+    ],
+    "pendingActualGameContent": []
+  },
+  "CanneryWillow": {
+    "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryWillow.java",
+    "ready": false,
+    "symbols": [
+      "ModBlocks.dirt_oily",
+      "ModBlocks.plant_flower",
+      "ModBlocks.plant_tall",
+      "ModItems.plant_item"
+    ],
+    "pendingActualGameContent": [
+      "ModBlocks.plant_flower",
+      "ModBlocks.plant_tall"
+    ]
+  }
+}

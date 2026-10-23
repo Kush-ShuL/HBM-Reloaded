@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:coffee_radium",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:coffee"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetradium226"
+    }
+  ]
+}

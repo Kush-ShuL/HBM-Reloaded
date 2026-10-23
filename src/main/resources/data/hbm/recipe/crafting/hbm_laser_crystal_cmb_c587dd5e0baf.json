@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:laser_crystal_cmb",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QBQ",
+    "CSC",
+    "QBQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm:glass_quartz"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotschrabidate"
+    },
+    "S": {
+      "item": "hbm:cell_anti_schrabidium"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:wrench_flipped",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "D",
+    "W"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:iron_sword"
+    },
+    "D": {
+      "item": "hbm:ducttape"
+    },
+    "W": {
+      "item": "hbm:wrench"
+    }
+  }
+}

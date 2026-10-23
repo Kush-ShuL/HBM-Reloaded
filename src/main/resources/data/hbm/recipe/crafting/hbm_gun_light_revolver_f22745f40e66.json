@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:gun_light_revolver",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BRM",
+    "  G"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/barrellightsteel"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/receiverlightsteel"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gripwood"
+    }
+  }
+}

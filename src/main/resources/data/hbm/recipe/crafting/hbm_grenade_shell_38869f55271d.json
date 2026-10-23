@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:grenade_shell",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "B",
+    "W"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plankwood"
+    }
+  }
+}

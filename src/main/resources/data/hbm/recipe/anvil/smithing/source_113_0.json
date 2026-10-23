@@ -1,0 +1,74 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "hbm:mold",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 7
+    }
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:stamp_iron_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:mold_base",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "mold",
+  "prefix": "",
+  "exact_left": [
+    {
+      "id": "hbm:stamp_stone_flat",
+      "count": 1,
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    {
+      "id": "hbm:stamp_iron_flat",
+      "count": 1,
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    {
+      "id": "hbm:stamp_steel_flat",
+      "count": 1,
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    {
+      "id": "hbm:stamp_titanium_flat",
+      "count": 1,
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    {
+      "id": "hbm:stamp_obsidian_flat",
+      "count": 1,
+      "components": {
+        "minecraft:damage": 0
+      }
+    }
+  ],
+  "order": 113000000
+}

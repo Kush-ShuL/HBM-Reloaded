@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:cm_port",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "B",
+    "P"
+  ],
+  "key": {
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:cm_block",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  }
+}

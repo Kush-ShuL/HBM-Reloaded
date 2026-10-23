@@ -1,0 +1,72 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "wand",
+      "id": "hbm:wand_k",
+      "legacyRegistryId": "hbm:item.wand_k",
+      "originalClass": "ItemWand",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3768
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6379
+          },
+          "expression": "GameRegistry.registerItem(wand, wand.getUnlocalizedName())",
+          "arguments": [
+            "wand",
+            "wand.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.constructionwand.ConstructionWandContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "block",
+      "symbol": "wand_air",
+      "id": "hbm:wand_air",
+      "legacyRegistryId": "hbm:tile.wand_air",
+      "originalClass": "BlockWand",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2368
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3519
+          },
+          "expression": "register(wand_air)",
+          "arguments": [
+            "wand_air"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "registeredBy": "com.hbm.item.constructionwand.ConstructionWandContent",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "hasItem": true,
+      "exportAs": "minecraft:air",
+      "hardness": 0,
+      "explosionResistance": 0,
+      "collision": false,
+      "selectionBounds": [
+        0.0625,
+        0.0625,
+        0.0625,
+        0.9375,
+        0.9375,
+        0.9375
+      ],
+      "lightOpacity": 0
+    }
+  ]
+}

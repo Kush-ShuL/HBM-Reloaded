@@ -1,0 +1,23 @@
+{
+  "name": "Redstone-over-Radio Gauge",
+  "icon": [
+    "hbm:tile.rbmk_gauge",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.rbmk_gauge"
+    ]
+  ],
+  "title": {
+    "en_US": "Redstone-over-Radio Gauge",
+    "ru_RU": "Редстоун-по-радио измеритель",
+    "zh_CN": "无线红石仪表面板"
+  },
+  "content": {
+    "en_US": "Aesthetic [[redstone over radio|Redstone over Radio]] receiving device, needs to be configured with a scredriver first. Can represent numeric RoR values using a gauge needle. Up to four gauges can be enabled using the red buttons, each gauge can receive one value over its own RoR channel. Minimum and maximum values need to be configured before the gauge can be used, if the minimum is set to a higher value than the maximum, then the needle will run in reverse. The needle can exceed the maximum value by up to 50%, entering the red section of the gauge.<br><br>{{Template:RoRPanels}}",
+    "ru_RU": "Информационное устройство приёма [[редстоун-по-радио|Redstone over Radio]], которое необходимо сначала настроить с помощью отвёртки. Может отображать числовые значения РпР с помощью стрелки прибора. С помощью красных кнопок можно активировать до четырех индикаторов, каждый из которых может принимать одно значение по своему собственному каналу РпР. Перед использованием необходимо настроить минимальное и максимальное значения, если минимум установлен выше максимума, то стрелка будет двигаться в обратном направлении. Стрелка может превышать максимальное значение на величину до 50%, заходя в красную секцию прибора.<br><br>{{Template:RoRPanels}}",
+    "zh_CN": "一种用于显示的[[无线红石|Redstone over Radio]]接收设备，必须先用螺丝刀配置。它可用指针表示数值。通过红色按钮最多可启用四个仪表，各自在独立的 RoR 频道接收一个值。使用前必须设置最小值和最大值；若最小值大于最大值，指针方向会反转。指针最多可超出最大值50%，进入仪表的红色区域。<br><br>{{Template:RoRPanels}}"
+  }
+}

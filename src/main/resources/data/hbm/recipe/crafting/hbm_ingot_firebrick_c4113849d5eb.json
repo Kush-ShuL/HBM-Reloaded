@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:ingot_firebrick",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BN",
+    "NB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:brick"
+    },
+    "N": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+    }
+  ]
+}

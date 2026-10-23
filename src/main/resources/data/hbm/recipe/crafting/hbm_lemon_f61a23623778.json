@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:lemon",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "DSD",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyeyellow"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stone"
+    }
+  }
+}

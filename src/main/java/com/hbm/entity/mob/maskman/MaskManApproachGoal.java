@@ -1,0 +1,12 @@
+package com.hbm.entity.mob.maskman;
+import java.util.EnumSet;import net.minecraft.world.entity.ai.goal.Goal;import net.minecraft.world.entity.player.Player;import net.minecraft.world.level.pathfinder.Path;
+/** Source EntityAIMaskmanCasualApproach including its unusual away/toward ring, random Y and retry penalty. */
+final class MaskManApproachGoal extends Goal {
+ private final MaskMan mob;private Path path;private int pathTimer,failedPenalty,attackTick;private double lastX,lastY,lastZ;
+ MaskManApproachGoal(MaskMan mob){this.mob=mob;setFlags(EnumSet.of(Flag.MOVE,Flag.LOOK));}
+ @Override public boolean canUse(){var target=mob.getTarget();if(!(target instanceof Player)||!target.isAlive())return false;if(--pathTimer<=0){var pos=approach();path=mob.getNavigation().createPath(pos[0],pos[1],pos[2],0);pathTimer=4+mob.getRandom().nextInt(7);return path!=null;}return true;}
+ @Override public boolean canContinueToUse(){var target=mob.getTarget();return target!=null&&target.isAlive()&&!mob.getNavigation().isDone();}
+ @Override public void start(){mob.getNavigation().moveTo(path,1);pathTimer=0;}@Override public void stop(){mob.getNavigation().stop();}@Override public boolean requiresUpdateEveryTick(){return true;}
+ @Override public void tick(){var t=mob.getTarget();if(t==null)return;mob.getLookControl().setLookAt(t,30,30);double distance=mob.distanceToSqr(t.getX(),t.getBoundingBox().minY,t.getZ());pathTimer--;if(mob.getSensing().hasLineOfSight(t)&&pathTimer<=0&&((lastX==0&&lastY==0&&lastZ==0)||t.distanceToSqr(lastX,lastY,lastZ)>=1||mob.getRandom().nextFloat()<.05F)){lastX=t.getX();lastY=t.getBoundingBox().minY;lastZ=t.getZ();pathTimer=failedPenalty+4+mob.getRandom().nextInt(7);var current=mob.getNavigation().getPath();if(current!=null){var end=current.getEndNode();if(end!=null&&t.distanceToSqr(end.x,end.y,end.z)<1)failedPenalty=0;else failedPenalty+=10;}else failedPenalty+=10;if(distance>1024)pathTimer+=10;else if(distance>256)pathTimer+=5;var pos=approach();if(!mob.getNavigation().moveTo(pos[0],pos[1],pos[2],1))pathTimer+=15;}attackTick=Math.max(attackTick-1,0);}
+ private double[] approach(){var t=mob.getTarget();var delta=mob.position().subtract(t.position());double range=Math.min(delta.length(),20)-10;delta=delta.normalize();return new double[]{mob.getX()+delta.x*range+mob.getRandom().nextGaussian()*2,mob.getY()+delta.y-5+mob.getRandom().nextInt(11),mob.getZ()+delta.z*range+mob.getRandom().nextGaussian()*2};}
+}

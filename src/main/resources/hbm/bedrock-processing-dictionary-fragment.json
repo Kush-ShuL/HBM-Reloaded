@@ -1,0 +1,248 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/oreiron",
+    "hbm:legacy_ore_dict/orecopper",
+    "hbm:legacy_ore_dict/oreborax",
+    "hbm:legacy_ore_dict/oreasbestos",
+    "hbm:legacy_ore_dict/oreniobium",
+    "hbm:legacy_ore_dict/oretitanium",
+    "hbm:legacy_ore_dict/oretungsten",
+    "hbm:legacy_ore_dict/oregold",
+    "hbm:legacy_ore_dict/oreuranium",
+    "hbm:legacy_ore_dict/orethorium232",
+    "hbm:legacy_ore_dict/orechlorocalcite",
+    "hbm:legacy_ore_dict/orefluorite",
+    "hbm:legacy_ore_dict/orehematite",
+    "hbm:legacy_ore_dict/oremalachite",
+    "hbm:legacy_ore_dict/oreneodymium"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/oreiron",
+      "raw": "oreIron"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orecopper",
+      "raw": "oreCopper"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreborax",
+      "raw": "oreBorax"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreasbestos",
+      "raw": "oreAsbestos"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreniobium",
+      "raw": "oreNiobium"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oretitanium",
+      "raw": "oreTitanium"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oretungsten",
+      "raw": "oreTungsten"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oregold",
+      "raw": "oreGold"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreuranium",
+      "raw": "oreUranium"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orethorium232",
+      "raw": "oreThorium232"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orechlorocalcite",
+      "raw": "oreChlorocalcite"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orefluorite",
+      "raw": "oreFluorite"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orehematite",
+      "raw": "oreHematite"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oremalachite",
+      "raw": "oreMalachite"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreneodymium",
+      "raw": "oreNeodymium"
+    }
+  ],
+  "memberships": [
+    {
+      "tag": "hbm:legacy_ore_dict/oreiron",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orecopper",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreborax",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreasbestos",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 3
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreniobium",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oretitanium",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 5
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oretungsten",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 6
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oregold",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 7
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreuranium",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 8
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orethorium232",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 9
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orechlorocalcite",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 10
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orefluorite",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 11
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orehematite",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 12
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oremalachite",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 13
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreneodymium",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 14
+          }
+        }
+      ]
+    }
+  ]
+}

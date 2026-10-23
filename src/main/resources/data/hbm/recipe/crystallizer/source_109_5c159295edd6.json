@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.109.45",
+  "duration": 100,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:scrap_oil",
+          "count": 1
+        }
+      },
+      "count": 16
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "RADIOSOLVENT",
+      "amount": 100,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:nugget_arsenic",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.3,
+  "key_kind": "item",
+  "source_key": "hbm:scrap_oil",
+  "order": 45
+}

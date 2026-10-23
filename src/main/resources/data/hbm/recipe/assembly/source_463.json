@@ -1,0 +1,72 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capacitorspark",
+  "duration": 100,
+  "power": 100000,
+  "order": 153,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:battery_pack",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 11
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplecmbsteel"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:powder_spark_mix"
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:pellet_charged"
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_chip_quantum"
+        }
+      },
+      "count": 16
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PERFLUOROMETHYL_COLD",
+      "amount": 8000,
+      "pressure": 0
+    }
+  ],
+  "output_fluids": [
+    {
+      "type": "PERFLUOROMETHYL",
+      "amount": 8000,
+      "pressure": 0
+    }
+  ]
+}

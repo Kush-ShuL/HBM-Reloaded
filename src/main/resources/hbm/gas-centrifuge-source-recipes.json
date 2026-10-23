@@ -1,0 +1,251 @@
+{
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/GasCentrifugeRecipes.java",
+        "line": 98
+      },
+      "fluid": "UF6",
+      "amount": 1200,
+      "results": [
+        {
+          "id": "hbm:nugget_u238",
+          "count": 11
+        },
+        {
+          "id": "hbm:nugget_u235",
+          "count": 1
+        },
+        {
+          "id": "hbm:fluorite",
+          "count": 4
+        }
+      ],
+      "high_speed": true,
+      "machines": 4
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/GasCentrifugeRecipes.java",
+        "line": 99
+      },
+      "fluid": "UF6",
+      "amount": 1200,
+      "results": [
+        {
+          "id": "hbm:nugget_u238",
+          "count": 6
+        },
+        {
+          "id": "hbm:nugget_uranium_fuel",
+          "count": 6
+        },
+        {
+          "id": "hbm:fluorite",
+          "count": 4
+        }
+      ],
+      "high_speed": false,
+      "machines": 2
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/GasCentrifugeRecipes.java",
+        "line": 100
+      },
+      "fluid": "PUF6",
+      "amount": 900,
+      "results": [
+        {
+          "id": "hbm:nugget_pu238",
+          "count": 3
+        },
+        {
+          "id": "hbm:nugget_pu_mix",
+          "count": 6
+        },
+        {
+          "id": "hbm:fluorite",
+          "count": 3
+        }
+      ],
+      "high_speed": false,
+      "machines": 1
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/GasCentrifugeRecipes.java",
+        "line": 101
+      },
+      "fluid": "WATZ",
+      "amount": 1000,
+      "results": [
+        {
+          "id": "hbm:powder_iron",
+          "count": 1
+        },
+        {
+          "id": "hbm:powder_lead",
+          "count": 1
+        },
+        {
+          "id": "hbm:nuclear_waste_tiny",
+          "count": 1
+        },
+        {
+          "id": "hbm:dust",
+          "count": 2
+        }
+      ],
+      "high_speed": false,
+      "machines": 2
+    }
+  ],
+  "stages": [
+    {
+      "name": "NONE",
+      "consumed": 0,
+      "produced": 0,
+      "next": "null",
+      "high_speed": false,
+      "outputs": []
+    },
+    {
+      "name": "HEUF6",
+      "consumed": 300,
+      "produced": 0,
+      "next": "NONE",
+      "high_speed": true,
+      "outputs": [
+        {
+          "id": "hbm:nugget_u238",
+          "count": 2
+        },
+        {
+          "id": "hbm:nugget_u235",
+          "count": 1
+        },
+        {
+          "id": "hbm:fluorite",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "MEUF6",
+      "consumed": 200,
+      "produced": 100,
+      "next": "HEUF6",
+      "high_speed": false,
+      "outputs": [
+        {
+          "id": "hbm:nugget_u238",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "LEUF6",
+      "consumed": 300,
+      "produced": 200,
+      "next": "MEUF6",
+      "high_speed": false,
+      "outputs": [
+        {
+          "id": "hbm:nugget_u238",
+          "count": 1
+        },
+        {
+          "id": "hbm:fluorite",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "NUF6",
+      "consumed": 400,
+      "produced": 300,
+      "next": "LEUF6",
+      "high_speed": false,
+      "outputs": [
+        {
+          "id": "hbm:nugget_u238",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "PF6",
+      "consumed": 300,
+      "produced": 0,
+      "next": "NONE",
+      "high_speed": false,
+      "outputs": [
+        {
+          "id": "hbm:nugget_pu238",
+          "count": 1
+        },
+        {
+          "id": "hbm:nugget_pu_mix",
+          "count": 2
+        },
+        {
+          "id": "hbm:fluorite",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "MUD_HEAVY",
+      "consumed": 500,
+      "produced": 0,
+      "next": "NONE",
+      "high_speed": false,
+      "outputs": [
+        {
+          "id": "hbm:powder_iron",
+          "count": 1
+        },
+        {
+          "id": "hbm:dust",
+          "count": 1
+        },
+        {
+          "id": "hbm:nuclear_waste_tiny",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "MUD",
+      "consumed": 1000,
+      "produced": 500,
+      "next": "MUD_HEAVY",
+      "high_speed": false,
+      "outputs": [
+        {
+          "id": "hbm:powder_lead",
+          "count": 1
+        },
+        {
+          "id": "hbm:dust",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "conversions": [
+    {
+      "fluid": "UF6",
+      "stage": "NUF6"
+    },
+    {
+      "fluid": "PUF6",
+      "stage": "PF6"
+    },
+    {
+      "fluid": "WATZ",
+      "stage": "MUD"
+    }
+  ]
+}

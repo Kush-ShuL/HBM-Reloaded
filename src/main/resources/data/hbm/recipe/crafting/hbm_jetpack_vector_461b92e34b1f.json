@@ -1,0 +1,39 @@
+{
+  "result": {
+    "id": "hbm:jetpack_vector",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TCT",
+    "MJM",
+    "B B"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_advanced"
+    },
+    "T": {
+      "item": "hbm:tank_steel"
+    },
+    "J": {
+      "type": "neoforge:components",
+      "items": "hbm:jetpack_break",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "M": {
+      "item": "hbm:motor"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltdurasteel"
+    }
+  }
+}

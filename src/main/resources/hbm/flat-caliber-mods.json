@@ -1,0 +1,134 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_p9",
+      "id": "hbm:weapon_mod_caliber_p9",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 0,
+      "sourceEnum": "P9",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_p45",
+      "id": "hbm:weapon_mod_caliber_p45",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 1,
+      "sourceEnum": "P45",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_p22",
+      "id": "hbm:weapon_mod_caliber_p22",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 2,
+      "sourceEnum": "P22",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_m357",
+      "id": "hbm:weapon_mod_caliber_m357",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 3,
+      "sourceEnum": "M357",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_m44",
+      "id": "hbm:weapon_mod_caliber_m44",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 4,
+      "sourceEnum": "M44",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_r556",
+      "id": "hbm:weapon_mod_caliber_r556",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 5,
+      "sourceEnum": "R556",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_r762",
+      "id": "hbm:weapon_mod_caliber_r762",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 6,
+      "sourceEnum": "R762",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "weapon_mod_caliber_bmg50",
+      "id": "hbm:weapon_mod_caliber_bmg50",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.weapon_mod_caliber",
+      "sourceOrdinal": 7,
+      "sourceEnum": "BMG50",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/GunFactory.java",
+        "line": 90
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

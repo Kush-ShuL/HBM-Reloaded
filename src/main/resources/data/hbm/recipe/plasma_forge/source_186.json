@@ -1,0 +1,102 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.icfcontroller",
+  "duration": 800,
+  "power": 10000000,
+  "ignition_temp": 1000000,
+  "order": 31,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:icf_controller",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ingot_cft"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_bismoid"
+        }
+      },
+      "count": 16
+    }
+  ],
+  "expensive_input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_cmb_tubes"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ingot_cft"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_bismoid"
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_computer"
+        }
+      },
+      "count": 4
+    }
+  ],
+  "pools_528": [
+    "528.chlorophyte"
+  ]
+}

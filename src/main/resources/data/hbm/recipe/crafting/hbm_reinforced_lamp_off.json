@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "FFF",
+    "FBF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:iron_bars"
+    },
+    "B": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+  "result": {
+    "id": "hbm:reinforced_lamp_off",
+    "count": 1
+  }
+}

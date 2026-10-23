@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:flow_control_pump",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "SMS",
+    " G "
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgraphite"
+    },
+    "M": {
+      "item": "hbm:motor"
+    }
+  }
+}

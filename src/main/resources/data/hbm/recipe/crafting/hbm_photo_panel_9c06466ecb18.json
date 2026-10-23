@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:photo_panel",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "IPI",
+    " C "
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetsilicon"
+    },
+    "C": {
+      "item": "hbm:circuit_pcb"
+    }
+  }
+}

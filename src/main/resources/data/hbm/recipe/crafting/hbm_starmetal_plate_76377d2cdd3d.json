@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:starmetal_plate",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleArmorRecipes)"
+    }
+  ]
+}

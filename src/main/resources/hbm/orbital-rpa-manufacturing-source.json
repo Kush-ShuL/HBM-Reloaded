@@ -1,0 +1,42 @@
+[
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+      "line": 40
+    },
+    "sourceText": "registerPair(new GenericRecipe(\"precass.crystalcircuit\").setup(600, 20_000L)\n\t\t\t\t.inputItems(new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CHIP_QUANTUM),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_cft, 4),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 16, EnumCircuitType.PCB),\n\t\t\t\t\t\tnew OreDictStack(GOLD.wireFine(), 32))\n\t\t\t\t.inputItemsEx(new ComparableStack(ModItems.circuit, 8, EnumCircuitType.CHIP_QUANTUM),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 16, EnumCircuitType.CAPACITOR_TANTALIUM),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_cft, 4),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 16, EnumCircuitType.PCB),\n\t\t\t\t\t\tnew OreDictStack(BSCCO.wireDense(), 4)),\n\t\t\t\tDictFrame.fromOne(ModItems.orbital_assembly, EnumOrbitalAssembly.CRYSTAL_CIRCUIT), GeneralConfig.enableExpensiveMode ? 25 : 50, 100)",
+    "target": "existing hbm:precision_assembly runtime defaults; rebind after actual item index admission, no duplicate recipe"
+  },
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+      "line": 175
+    },
+    "sourceText": "this.register(new GenericRecipe(\"precass.rpahelmet\").setup(3 * min, 25_000L)\n\t\t\t\t.inputItems(new ComparableStack(ModItems.plate_armor_ajr, 12),\n\t\t\t\t\t\tnew OreDictStack(BIGMT.plateCast(), 4),\n\t\t\t\t\t\tnew ComparableStack(ModItems.circuit, 4, EnumCircuitType.ADVANCED),\n\t\t\t\t\t\tnew ComparableStack(ModItems.plate_kevlar, 8))\n\t\t\t\t.outputItems(new ItemStack(ModItems.rpa_helmet)).setPools(this.POOL_PREFIX_DISCOVER + \".rpa\"))",
+    "target": "existing hbm:precision_assembly runtime defaults; rebind after actual item index admission, no duplicate recipe"
+  },
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+      "line": 181
+    },
+    "sourceText": "this.register(new GenericRecipe(\"precass.rpaplate\").setup(3 * min, 25_000L)\n\t\t\t\t.inputItems(new ComparableStack(ModItems.plate_armor_ajr, 24),\n\t\t\t\t\t\tnew OreDictStack(BIGMT.plateCast(), 8),\n\t\t\t\t\t\tnew OreDictStack(BIGMT.mechanism(), 8),\n\t\t\t\t\t\tnew ComparableStack(ModItems.motor_desh, 8),\n\t\t\t\t\t\tnew ComparableStack(ModItems.plate_kevlar, 16),\n\t\t\t\t\t\tnew ComparableStack(ModItems.parts_legendary, 1, EnumLegendaryType.TIER2))\n\t\t\t\t.outputItems(new ItemStack(ModItems.rpa_plate)).setPools(this.POOL_PREFIX_DISCOVER + \".rpa\"))",
+    "target": "existing hbm:precision_assembly runtime defaults; rebind after actual item index admission, no duplicate recipe"
+  },
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+      "line": 189
+    },
+    "sourceText": "this.register(new GenericRecipe(\"precass.rpalegs\").setup(3 * min, 25_000L)\n\t\t\t\t.inputItems(new ComparableStack(ModItems.plate_armor_ajr, 24),\n\t\t\t\t\t\tnew OreDictStack(BIGMT.plateCast(), 8),\n\t\t\t\t\t\tnew ComparableStack(ModItems.motor_desh, 8),\n\t\t\t\t\t\tnew ComparableStack(ModItems.plate_kevlar, 16))\n\t\t\t\t.outputItems(new ItemStack(ModItems.rpa_legs)).setPools(this.POOL_PREFIX_DISCOVER + \".rpa\"))",
+    "target": "existing hbm:precision_assembly runtime defaults; rebind after actual item index admission, no duplicate recipe"
+  },
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+      "line": 195
+    },
+    "sourceText": "this.register(new GenericRecipe(\"precass.rpaboots\").setup(3 * min, 25_000L)\n\t\t\t\t.inputItems(new ComparableStack(ModItems.plate_armor_ajr, 12),\n\t\t\t\t\t\tnew OreDictStack(BIGMT.plateCast(), 4),\n\t\t\t\t\t\tnew ComparableStack(ModItems.plate_kevlar, 8))\n\t\t\t\t.outputItems(new ItemStack(ModItems.rpa_boots)).setPools(this.POOL_PREFIX_DISCOVER + \".rpa\"))",
+    "target": "existing hbm:precision_assembly runtime defaults; rebind after actual item index admission, no duplicate recipe"
+  }
+]

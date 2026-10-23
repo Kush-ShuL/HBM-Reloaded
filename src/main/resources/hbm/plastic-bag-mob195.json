@@ -1,0 +1,37 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_plastic_bag",
+      "id": "hbm:entity_plastic_bag",
+      "originalClass": "EntityPlasticBag",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 194
+      },
+      "trackingRangeBlocks": 80,
+      "nativeTrackingChunks": 5,
+      "trackingInterval": 3,
+      "velocityUpdates": true,
+      "mobCategory": "water_creature",
+      "width": 0.45,
+      "height": 0.45,
+      "sourceEggColors": [
+        13684944,
+        8421504
+      ]
+    }
+  ],
+  "modernSpawnEggs": [
+    {
+      "id": "hbm:plastic_bag_spawn_egg",
+      "modernHelperItem": true,
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:194 ->ModEntityList.registerEntity egg=true",
+      "sourceSharedItem": "minecraft:spawn_egg",
+      "hasSourceModItemsField": false,
+      "maxStackSize": 64,
+      "creativeTab": "minecraft:spawn_eggs"
+    }
+  ]
+}

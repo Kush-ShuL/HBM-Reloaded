@@ -1,0 +1,56 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.ivymike",
+  "duration": 600,
+  "power": 100,
+  "order": 209,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:nuke_mike",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:sphere_steel"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/shellaluminum"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_controller_advanced"
+        }
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dyelightgray"
+      },
+      "count": 16
+    }
+  ],
+  "pools_528": [
+    "528.controller"
+  ]
+}

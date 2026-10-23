@@ -1,0 +1,92 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.strandcaster",
+  "duration": 200,
+  "power": 100,
+  "order": 133,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:machine_strand_caster",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ingot_firebrick"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      },
+      "count": 6
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextuplecopper"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/shellsteel"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/anyconcrete"
+      },
+      "count": 8
+    }
+  ],
+  "expensive_input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_steel_plating"
+        }
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ingot_firebrick"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/shellsteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/anyconcrete"
+      },
+      "count": 8
+    }
+  ]
+}

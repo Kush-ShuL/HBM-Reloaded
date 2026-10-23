@@ -1,0 +1,70 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.himarssmallwp",
+  "duration": 100,
+  "power": 100,
+  "order": 252,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:ammo_himars",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:rocket_fuel"
+        }
+      },
+      "count": 48
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotwhitephosphorus"
+      },
+      "count": 18
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+      },
+      "count": 48
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_basic"
+        }
+      },
+      "count": 6
+    }
+  ]
+}

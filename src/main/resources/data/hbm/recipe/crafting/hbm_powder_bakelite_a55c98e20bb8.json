@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:powder_bakelite",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "AROMATICS",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "PETROLEUM",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmchemistryset"
+    }
+  ]
+}

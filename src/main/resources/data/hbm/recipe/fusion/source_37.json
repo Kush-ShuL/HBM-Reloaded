@@ -1,0 +1,36 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.dd",
+  "order": 0,
+  "r": 1.0,
+  "g": 0.2,
+  "b": 0.2,
+  "ignition_temp": 750000,
+  "output_temp": 1000000,
+  "neutron_flux": 50.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:gas_full",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 8,
+      "hbm:fluid_type": 8
+    }
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "DEUTERIUM",
+      "amount": 20,
+      "pressure": 0
+    }
+  ],
+  "output_fluids": [
+    {
+      "type": "HELIUM4",
+      "amount": 1000,
+      "pressure": 0
+    }
+  ]
+}

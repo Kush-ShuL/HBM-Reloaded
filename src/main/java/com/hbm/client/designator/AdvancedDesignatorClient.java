@@ -1,0 +1,3 @@
+package com.hbm.client.designator;
+import com.hbm.item.designator.advanced.ManualDesignatorItem;import net.minecraft.client.Minecraft;import net.neoforged.api.distmarker.Dist;import net.neoforged.bus.api.SubscribeEvent;import net.neoforged.fml.common.EventBusSubscriber;import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+@EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD) public final class AdvancedDesignatorClient{@SubscribeEvent public static void setup(FMLClientSetupEvent e){e.enqueueWork(()->ManualDesignatorItem.OPEN=hand->Minecraft.getInstance().setScreen(new ManualDesignatorScreen(hand)));}private AdvancedDesignatorClient(){}}

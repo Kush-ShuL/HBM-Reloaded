@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:plate_gold",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgold"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+    }
+  ]
+}

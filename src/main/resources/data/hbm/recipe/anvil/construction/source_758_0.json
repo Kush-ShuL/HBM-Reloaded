@@ -1,0 +1,62 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:deco_crt",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:crt_display",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:scrap",
+        "count": 2
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:wire_fine",
+        "count": 2,
+        "components": {
+          "hbm:legacy_metadata": 2900
+        }
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:wire_fine",
+        "count": 2,
+        "components": {
+          "hbm:legacy_metadata": 7900
+        }
+      },
+      "chance": 0.25
+    },
+    {
+      "stack": {
+        "id": "hbm:circuit_vacuum_tube",
+        "count": 1
+      },
+      "chance": 0.25
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 758000000
+}

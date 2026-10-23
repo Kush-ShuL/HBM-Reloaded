@@ -1,0 +1,139 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "structure_single",
+      "id": "hbm:structure_single",
+      "legacyRegistryId": "hbm:item.structure_single",
+      "originalClass": "ItemStructureSingle",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3772
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6382
+          },
+          "expression": "GameRegistry.registerItem(structure_single, structure_single.getUnlocalizedName())",
+          "arguments": [
+            "structure_single",
+            "structure_single.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.structureexport.StructureExportContent",
+      "creativeTab": null,
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "structure_solid",
+      "id": "hbm:structure_solid",
+      "legacyRegistryId": "hbm:item.structure_solid",
+      "originalClass": "ItemStructureSolid",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3773
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6383
+          },
+          "expression": "GameRegistry.registerItem(structure_solid, structure_solid.getUnlocalizedName())",
+          "arguments": [
+            "structure_solid",
+            "structure_solid.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.structureexport.StructureExportContent",
+      "creativeTab": null,
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "structure_pattern",
+      "id": "hbm:structure_pattern",
+      "legacyRegistryId": "hbm:item.structure_pattern",
+      "originalClass": "ItemStructurePattern",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3774
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6384
+          },
+          "expression": "GameRegistry.registerItem(structure_pattern, structure_pattern.getUnlocalizedName())",
+          "arguments": [
+            "structure_pattern",
+            "structure_pattern.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.structureexport.StructureExportContent",
+      "creativeTab": null,
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "structure_randomized",
+      "id": "hbm:structure_randomized",
+      "legacyRegistryId": "hbm:item.structure_randomized",
+      "originalClass": "ItemStructureRandomized",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3775
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6385
+          },
+          "expression": "GameRegistry.registerItem(structure_randomized, structure_randomized.getUnlocalizedName())",
+          "arguments": [
+            "structure_randomized",
+            "structure_randomized.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.structureexport.StructureExportContent",
+      "creativeTab": null,
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "structure_randomly",
+      "id": "hbm:structure_randomly",
+      "legacyRegistryId": "hbm:item.structure_randomly",
+      "originalClass": "ItemStructureRandomly",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3776
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6386
+          },
+          "expression": "GameRegistry.registerItem(structure_randomly, structure_randomly.getUnlocalizedName())",
+          "arguments": [
+            "structure_randomly",
+            "structure_randomly.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.structureexport.StructureExportContent",
+      "creativeTab": null,
+      "maxStackSize": 1
+    }
+  ]
+}

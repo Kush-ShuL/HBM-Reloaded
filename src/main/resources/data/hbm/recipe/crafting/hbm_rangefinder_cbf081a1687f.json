@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:rangefinder",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GRC",
+    "  S"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredstone"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    }
+  }
+}

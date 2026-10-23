@@ -1,0 +1,118 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.radar",
+  "duration": 300,
+  "power": 100,
+  "order": 130,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:machine_radar",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:magnetron"
+        }
+      },
+      "count": 5
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_basic"
+        }
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:crt_display"
+        }
+      },
+      "count": 4
+    }
+  ],
+  "expensive_input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_heavy_frame"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:magnetron"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_circuit"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:crt_display"
+        }
+      },
+      "count": 4
+    }
+  ]
+}

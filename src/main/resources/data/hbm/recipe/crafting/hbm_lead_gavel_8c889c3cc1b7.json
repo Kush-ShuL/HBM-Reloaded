@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:lead_gavel",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PIP",
+    "IGI",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:pellet_buckshot"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotlead"
+    },
+    "G": {
+      "type": "neoforge:components",
+      "items": "hbm:wood_gavel",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  }
+}

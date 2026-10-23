@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:ams_catalyst_blank",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TET",
+    "ETE",
+    "TET"
+  ],
+  "key": {
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dusttennessine"
+    },
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+    }
+  }
+}

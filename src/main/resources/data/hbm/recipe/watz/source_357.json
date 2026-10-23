@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MPM",
+    "PCP",
+    "PSP"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:motor_desh"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+    },
+    "C": {
+      "item": "hbm:circuit_bismoid"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+    }
+  },
+  "result": {
+    "id": "hbm:watz_pump",
+    "count": 1
+  }
+}

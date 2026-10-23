@@ -1,0 +1,47 @@
+{
+  "result": {
+    "id": "hbm:foundry_basin",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B B",
+    "B B",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:ingot_firebrick"
+    },
+    "S": {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:smooth_stone_slab"
+        },
+        {
+          "item": "minecraft:sandstone_slab"
+        },
+        {
+          "item": "minecraft:petrified_oak_slab"
+        },
+        {
+          "item": "minecraft:cobblestone_slab"
+        },
+        {
+          "item": "minecraft:brick_slab"
+        },
+        {
+          "item": "minecraft:stone_brick_slab"
+        },
+        {
+          "item": "minecraft:nether_brick_slab"
+        },
+        {
+          "item": "minecraft:quartz_slab"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SII",
+    "SCA",
+    "SPP"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "P": {
+      "item": "hbm:plate_polymer"
+    },
+    "C": {
+      "item": "hbm:sat_chip"
+    },
+    "A": {
+      "item": "hbm:circuit_advanced"
+    }
+  },
+  "result": {
+    "id": "hbm:sat_coord",
+    "count": 1
+  }
+}

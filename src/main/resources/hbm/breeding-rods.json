@@ -1,0 +1,373 @@
+{
+  "items": [
+    {
+      "symbol": "rod",
+      "id": "hbm:rod",
+      "kind": "item",
+      "originalClass": "ItemBreedingRod",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      },
+      "metadataRange": [
+        0,
+        16
+      ],
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "lithium",
+          "sourceEnum": "BreedingRodType.LITHIUM"
+        },
+        {
+          "metadata": 1,
+          "name": "tritium",
+          "sourceEnum": "BreedingRodType.TRITIUM"
+        },
+        {
+          "metadata": 2,
+          "name": "co",
+          "sourceEnum": "BreedingRodType.CO"
+        },
+        {
+          "metadata": 3,
+          "name": "co60",
+          "sourceEnum": "BreedingRodType.CO60"
+        },
+        {
+          "metadata": 4,
+          "name": "th232",
+          "sourceEnum": "BreedingRodType.TH232"
+        },
+        {
+          "metadata": 5,
+          "name": "thf",
+          "sourceEnum": "BreedingRodType.THF"
+        },
+        {
+          "metadata": 6,
+          "name": "u235",
+          "sourceEnum": "BreedingRodType.U235"
+        },
+        {
+          "metadata": 7,
+          "name": "np237",
+          "sourceEnum": "BreedingRodType.NP237"
+        },
+        {
+          "metadata": 8,
+          "name": "u238",
+          "sourceEnum": "BreedingRodType.U238"
+        },
+        {
+          "metadata": 9,
+          "name": "pu238",
+          "sourceEnum": "BreedingRodType.PU238"
+        },
+        {
+          "metadata": 10,
+          "name": "pu239",
+          "sourceEnum": "BreedingRodType.PU239"
+        },
+        {
+          "metadata": 11,
+          "name": "rgp",
+          "sourceEnum": "BreedingRodType.RGP"
+        },
+        {
+          "metadata": 12,
+          "name": "waste",
+          "sourceEnum": "BreedingRodType.WASTE"
+        },
+        {
+          "metadata": 13,
+          "name": "lead",
+          "sourceEnum": "BreedingRodType.LEAD"
+        },
+        {
+          "metadata": 14,
+          "name": "uranium",
+          "sourceEnum": "BreedingRodType.URANIUM"
+        },
+        {
+          "metadata": 15,
+          "name": "ra226",
+          "sourceEnum": "BreedingRodType.RA226"
+        },
+        {
+          "metadata": 16,
+          "name": "ac227",
+          "sourceEnum": "BreedingRodType.AC227"
+        }
+      ],
+      "names": [
+        "lithium",
+        "tritium",
+        "co",
+        "co60",
+        "th232",
+        "thf",
+        "u235",
+        "np237",
+        "u238",
+        "pu238",
+        "pu239",
+        "rgp",
+        "waste",
+        "lead",
+        "uranium",
+        "ra226",
+        "ac227"
+      ],
+      "enumClass": "BreedingRodType",
+      "creativeTab": "control",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "rod_dual",
+      "id": "hbm:rod_dual",
+      "kind": "item",
+      "originalClass": "ItemBreedingRod",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      },
+      "metadataRange": [
+        0,
+        16
+      ],
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "lithium",
+          "sourceEnum": "BreedingRodType.LITHIUM"
+        },
+        {
+          "metadata": 1,
+          "name": "tritium",
+          "sourceEnum": "BreedingRodType.TRITIUM"
+        },
+        {
+          "metadata": 2,
+          "name": "co",
+          "sourceEnum": "BreedingRodType.CO"
+        },
+        {
+          "metadata": 3,
+          "name": "co60",
+          "sourceEnum": "BreedingRodType.CO60"
+        },
+        {
+          "metadata": 4,
+          "name": "th232",
+          "sourceEnum": "BreedingRodType.TH232"
+        },
+        {
+          "metadata": 5,
+          "name": "thf",
+          "sourceEnum": "BreedingRodType.THF"
+        },
+        {
+          "metadata": 6,
+          "name": "u235",
+          "sourceEnum": "BreedingRodType.U235"
+        },
+        {
+          "metadata": 7,
+          "name": "np237",
+          "sourceEnum": "BreedingRodType.NP237"
+        },
+        {
+          "metadata": 8,
+          "name": "u238",
+          "sourceEnum": "BreedingRodType.U238"
+        },
+        {
+          "metadata": 9,
+          "name": "pu238",
+          "sourceEnum": "BreedingRodType.PU238"
+        },
+        {
+          "metadata": 10,
+          "name": "pu239",
+          "sourceEnum": "BreedingRodType.PU239"
+        },
+        {
+          "metadata": 11,
+          "name": "rgp",
+          "sourceEnum": "BreedingRodType.RGP"
+        },
+        {
+          "metadata": 12,
+          "name": "waste",
+          "sourceEnum": "BreedingRodType.WASTE"
+        },
+        {
+          "metadata": 13,
+          "name": "lead",
+          "sourceEnum": "BreedingRodType.LEAD"
+        },
+        {
+          "metadata": 14,
+          "name": "uranium",
+          "sourceEnum": "BreedingRodType.URANIUM"
+        },
+        {
+          "metadata": 15,
+          "name": "ra226",
+          "sourceEnum": "BreedingRodType.RA226"
+        },
+        {
+          "metadata": 16,
+          "name": "ac227",
+          "sourceEnum": "BreedingRodType.AC227"
+        }
+      ],
+      "names": [
+        "lithium",
+        "tritium",
+        "co",
+        "co60",
+        "th232",
+        "thf",
+        "u235",
+        "np237",
+        "u238",
+        "pu238",
+        "pu239",
+        "rgp",
+        "waste",
+        "lead",
+        "uranium",
+        "ra226",
+        "ac227"
+      ],
+      "enumClass": "BreedingRodType",
+      "creativeTab": "control",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "rod_quad",
+      "id": "hbm:rod_quad",
+      "kind": "item",
+      "originalClass": "ItemBreedingRod",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      },
+      "metadataRange": [
+        0,
+        16
+      ],
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "lithium",
+          "sourceEnum": "BreedingRodType.LITHIUM"
+        },
+        {
+          "metadata": 1,
+          "name": "tritium",
+          "sourceEnum": "BreedingRodType.TRITIUM"
+        },
+        {
+          "metadata": 2,
+          "name": "co",
+          "sourceEnum": "BreedingRodType.CO"
+        },
+        {
+          "metadata": 3,
+          "name": "co60",
+          "sourceEnum": "BreedingRodType.CO60"
+        },
+        {
+          "metadata": 4,
+          "name": "th232",
+          "sourceEnum": "BreedingRodType.TH232"
+        },
+        {
+          "metadata": 5,
+          "name": "thf",
+          "sourceEnum": "BreedingRodType.THF"
+        },
+        {
+          "metadata": 6,
+          "name": "u235",
+          "sourceEnum": "BreedingRodType.U235"
+        },
+        {
+          "metadata": 7,
+          "name": "np237",
+          "sourceEnum": "BreedingRodType.NP237"
+        },
+        {
+          "metadata": 8,
+          "name": "u238",
+          "sourceEnum": "BreedingRodType.U238"
+        },
+        {
+          "metadata": 9,
+          "name": "pu238",
+          "sourceEnum": "BreedingRodType.PU238"
+        },
+        {
+          "metadata": 10,
+          "name": "pu239",
+          "sourceEnum": "BreedingRodType.PU239"
+        },
+        {
+          "metadata": 11,
+          "name": "rgp",
+          "sourceEnum": "BreedingRodType.RGP"
+        },
+        {
+          "metadata": 12,
+          "name": "waste",
+          "sourceEnum": "BreedingRodType.WASTE"
+        },
+        {
+          "metadata": 13,
+          "name": "lead",
+          "sourceEnum": "BreedingRodType.LEAD"
+        },
+        {
+          "metadata": 14,
+          "name": "uranium",
+          "sourceEnum": "BreedingRodType.URANIUM"
+        },
+        {
+          "metadata": 15,
+          "name": "ra226",
+          "sourceEnum": "BreedingRodType.RA226"
+        },
+        {
+          "metadata": 16,
+          "name": "ac227",
+          "sourceEnum": "BreedingRodType.AC227"
+        }
+      ],
+      "names": [
+        "lithium",
+        "tritium",
+        "co",
+        "co60",
+        "th232",
+        "thf",
+        "u235",
+        "np237",
+        "u238",
+        "pu238",
+        "pu239",
+        "rgp",
+        "waste",
+        "lead",
+        "uranium",
+        "ra226",
+        "ac227"
+      ],
+      "enumClass": "BreedingRodType",
+      "creativeTab": "control",
+      "runtimeValidated": false
+    }
+  ]
+}

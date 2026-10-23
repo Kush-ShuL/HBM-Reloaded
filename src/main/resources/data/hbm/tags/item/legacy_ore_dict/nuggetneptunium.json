@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:nugget_neptunium",
+    {
+      "id": "#c:nuggets/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/neptunium237",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/np237",
+      "required": false
+    }
+  ]
+}

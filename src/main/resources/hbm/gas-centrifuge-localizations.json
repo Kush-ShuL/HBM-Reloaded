@@ -1,0 +1,42 @@
+{
+  "en_us": {
+    "container.gasCentrifuge": "Gas Centrifuge",
+    "desc.gui.gasCent.enrichment": "§2Enrichment§r$Uranium enrichment requires cascades.$Two-centrifuge cascades will give$uranium fuel, four-centrifuge cascades$will give total separation.",
+    "desc.gui.gasCent.output": "§6Fluid Transfer§r$Fluid can be transferred to another centrifuge$via the output port for further processing.",
+    "hbmpseudofluid.none": "Empty",
+    "hbmpseudofluid.heuf6": "Highly Enriched UF6",
+    "hbmpseudofluid.meuf6": "Medium Enriched UF6",
+    "hbmpseudofluid.leuf6": "Low Enriched UF6",
+    "hbmpseudofluid.nuf6": "Natural UF6",
+    "hbmpseudofluid.pf6": "Plutonium Hexafluoride",
+    "hbmpseudofluid.mud_heavy": "Heavy Sludge Fraction",
+    "hbmpseudofluid.mud": "Poisonous Sludge Gas",
+    "block.hbm.machine_gascent": "Gas Centrifuge",
+    "item.hbm.upgrade_gc_speed": "Gas Centrifuge Overclocking Upgrade",
+    "config.jade.plugin_hbm.gascentrifuge_state": "Gas Centrifuge",
+    "jei.hbm.gascentrifuge.machines": "%s G. Cents",
+    "upgrade.hbm.gascentrifuge.title": "Gas Centrifuge Upgrade",
+    "upgrade.hbm.gascentrifuge.separation": "Allows for total isotopic separation of HEUF6",
+    "upgrade.hbm.gascentrifuge.speed": "also your centrifuge goes sicko mode"
+  },
+  "zh_cn": {
+    "container.gasCentrifuge": "气体离心机",
+    "desc.gui.gasCent.enrichment": "§2浓缩§r$浓缩铀需要串联$两个离心机串联将离心出$铀燃料，四个离心机串联$将完全分离出铀235。",
+    "desc.gui.gasCent.output": "§6流体输送§r$流体可通过输出端口输送至另一台离心机$进行进一步处理。",
+    "hbmpseudofluid.none": "空",
+    "hbmpseudofluid.heuf6": "高浓缩六氟化铀",
+    "hbmpseudofluid.meuf6": "中浓缩六氟化铀",
+    "hbmpseudofluid.leuf6": "低浓缩六氟化铀",
+    "hbmpseudofluid.nuf6": "天然浓度六氟化铀",
+    "hbmpseudofluid.pf6": "六氟化钚",
+    "hbmpseudofluid.mud_heavy": "毒泥浆重馏分",
+    "hbmpseudofluid.mud": "毒泥浆气态物",
+    "block.hbm.machine_gascent": "气体离心机",
+    "item.hbm.upgrade_gc_speed": "气体离心机超频升级",
+    "config.jade.plugin_hbm.gascentrifuge_state": "气体离心机",
+    "jei.hbm.gascentrifuge.machines": "%s 台气体离心机",
+    "upgrade.hbm.gascentrifuge.title": "气体离心机升级",
+    "upgrade.hbm.gascentrifuge.separation": "允许高浓六氟化铀进行彻底同位素分离",
+    "upgrade.hbm.gascentrifuge.speed": "还能让你的离心机进入狂暴模式"
+  }
+}

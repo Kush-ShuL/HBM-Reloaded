@@ -1,0 +1,23 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_burning_foeq",
+      "id": "hbm:entity_burning_foeq",
+      "originalClass": "EntityBurningFOEQ",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 96
+      },
+      "width": 0.25,
+      "height": 0.25,
+      "trackingRangeBlocks": 1000,
+      "nativeTrackingChunks": 63,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "sourceRangeSquared": 100000,
+      "ignoreFrustum": true
+    }
+  ]
+}

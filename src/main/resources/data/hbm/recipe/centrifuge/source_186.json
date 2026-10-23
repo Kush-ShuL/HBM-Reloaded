@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:block_euphemium_cluster"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:nugget_euphemium",
+      "count": 7
+    },
+    {
+      "id": "hbm:powder_schrabidium",
+      "count": 4
+    },
+    {
+      "id": "hbm:ingot_starmetal",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_solinium",
+      "count": 2
+    }
+  ]
+}

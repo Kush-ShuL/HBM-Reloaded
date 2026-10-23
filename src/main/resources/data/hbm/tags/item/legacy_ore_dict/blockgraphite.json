@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_graphite",
+    {
+      "id": "#c:storage_blocks/graphite",
+      "required": false
+    }
+  ]
+}

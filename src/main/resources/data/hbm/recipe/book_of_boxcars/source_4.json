@@ -1,0 +1,34 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 4,
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "hbm:pellet_charged"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:pellet_charged"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ingot_dineutronium"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ingot_dineutronium"
+      },
+      "metadata": 0
+    }
+  ],
+  "result": {
+    "id": "hbm:ingot_electronium",
+    "count": 1
+  }
+}

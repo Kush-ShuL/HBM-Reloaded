@@ -1,0 +1,20 @@
+{
+  "weapon.fire.fatman": {
+    "sounds": [
+      "hbm:weapon/fire/fatman"
+    ]
+  },
+  "weapon.reload.fatmanfull": {
+    "sounds": [
+      "hbm:weapon/reload/fatmanfull"
+    ]
+  },
+  "weapon.mukeexplosion": {
+    "sounds": [
+      {
+        "name": "hbm:weapon/mukeexplosion",
+        "stream": false
+      }
+    ]
+  }
+}

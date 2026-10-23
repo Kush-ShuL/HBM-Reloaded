@@ -1,0 +1,25 @@
+{
+  "name": "Wideband Radio Emission Detector Satellite",
+  "icon": [
+    "hbm:satellite_detector",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_detector",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Wideband Radio Emission Detector Satellite",
+    "ru_RU": "Спутник-детектор широкополосного радиоизлучения",
+    "zh_CN": "宽频无线电辐射探测卫星"
+  },
+  "content": {
+    "en_US": "The wideband radio emission detector is a type of [[satellite|Satellite]] that can detect certain types of high-energy events from the entire map, albeit with low accuracy. The detector can only give a very rough idea of where such an event is taking place, for more accurate results, the area needs to be scanned wither with a [[spy satellite|Spy Satellite]] or [[narrowband scanner|Narrowband Emission Scanning Satellite]].<br><br>The types of events this satellite can pick up are as follows:<br>* Mini nuke explosions (low intensity, accuracy <10,000m)<br>* Radar (medium intensity, accuracy <2,500m)<br>* Particle accelerator operations (medium intensity, accuracy <2,500m)<br>Nuclear explosions (high intensity, accuracy <500m)<br><br>Events are timed, medium intense ones are the shortest lived as they only show up for half a second, while other events can show up for multiple seconds or even up to a minute. It is therefore important to scan any given area multiple times in rapid succession to get an accurate result.<br><br>* '§esurvey§r' will report any recent events that have not timed out yet. The detector's field of view covers the entire map, so there is no range limitations. All detected results are saved to an internal list.<br>* '§ecount§r' will write the amount of detected events to RX.<br>* '§egettype §e<index>§r' will write the type (LOW/MEDIUM/HIGH) of the specified event to RX.<br>* '§egetposition §e<index>§r' will write the estimated X/Z position of the specified event to RX. The coordinated are separated by semicolon.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Детектор широкополосного радиоизлучения — это тип [[спутника|Satellite]], который может обнаруживать определённые типы высокоэнергетических событий по всей карте, хотя и с низкой точностью. Детектор даёт лишь очень приблизительное представление о том, где именно происходит событие, поэтому для более точных результатов область необходимо отсканировать с помощью [[спутника-шпиона|Spy Satellite]] или [[узкополосного сканера|Narrowband Emission Scanning Satellite]].<br><br>Типы событий, которые может засечь этот спутник:<br>* Взрывы мини-ядерок (низкая интенсивность, точность <10 000м)<br>* Радар (средняя интенсивность, точность <2 500м)<br>* Работа ускорителей частиц (средняя интенсивность, точность <2 500м)<br>Ядерные взрывы (высокая интенсивность, точность <500м)<br><br>События ограничены по времени: события средней интенсивности являются самыми короткоживущими и отображаются всего полсекунды, в то время как другие могут висеть от нескольких секунд до минуты. Поэтому важно сканировать область несколько раз подряд с коротким интервалом, чтобы получить точный результат.<br><br>* '§esurvey§r' сообщит обо всех недавних событиях, время которых ещё не истекло. Зона обзора детектора покрывает всю карту, поэтому ограничений по дальности нет. Все обнаруженные результаты сохраняются во внутренний список.<br>* '§ecount§r' запишет количество обнаруженных событий в RX.<br>* '§egettype §eindex§r' запишет тип (LOW/MEDIUM/HIGH) указанного события в RX.<br>* '§egetposition §eindex§r' запишет примерные X/Z координаты указанного события в RX. Координаты разделяются точкой с запятой.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "宽频无线电辐射探测器是一种[[卫星|Satellite]]，能探测整张地图内某些高能事件，但精度较低。它只能大致判断事件发生的区域；要获得更准确的结果，还需用[[间谍卫星|Spy Satellite]]或[[窄频扫描卫星|Narrowband Emission Scanning Satellite]]扫描该区域。<br><br>它可探测以下事件：<br>* 迷你核爆炸：低强度，定位误差小于10,000米。<br>* 雷达：中强度，定位误差小于2,500米。<br>* 粒子加速器运行：中强度，定位误差小于2,500米。<br>核爆炸：高强度，定位误差小于500米。<br><br>事件有持续时间。中强度事件最短，只显示半秒；其他事件可能持续数秒，甚至一分钟。因此，需要在短时间内连续多次扫描，才能获得可靠结果。<br><br>* “§esurvey§r”：报告尚未过期的近期事件。探测视野覆盖整张地图，没有距离限制；所有结果都保存在内部列表中。<br>* “§ecount§r”：将探测到的事件数量写入 RX。<br>* “§egettype §e<index>§r”：将指定事件的类型 LOW/MEDIUM/HIGH 写入 RX。<br>* “§egetposition §e<index>§r”：将指定事件的估计 X/Z 坐标写入 RX，两个坐标以分号分隔。<br><br>{{Template:SatOverview}}"
+  }
+}

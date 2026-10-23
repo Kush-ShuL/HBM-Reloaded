@@ -1,0 +1,30 @@
+{
+  "entries": [
+    {
+      "symbol": "pellet_antimatter",
+      "id": "hbm:pellet_antimatter",
+      "kind": "item",
+      "originalClass": "ItemDrop",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2721
+      },
+      "legacyRegistryId": "hbm:item.pellet_antimatter",
+      "creativeTab": "control",
+      "maxStackSize": 64
+    },
+    {
+      "symbol": "gun_fatman",
+      "id": "hbm:gun_fatman",
+      "kind": "item",
+      "originalClass": "ItemGunBaseNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryCatapult.java",
+        "line": 194
+      },
+      "legacyRegistryId": "hbm:item.gun_fatman",
+      "creativeTab": "weapon",
+      "maxStackSize": 1
+    }
+  ]
+}

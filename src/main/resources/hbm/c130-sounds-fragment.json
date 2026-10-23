@@ -1,0 +1,26 @@
+{
+  "entity.bomberloop": {
+    "sounds": [
+      {
+        "name": "entity/bomber1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.planecrash": {
+    "sounds": [
+      {
+        "name": "entity/planecrash",
+        "stream": false
+      }
+    ]
+  },
+  "entity.planeshotdown": {
+    "sounds": [
+      {
+        "name": "entity/planeshotdown",
+        "stream": false
+      }
+    ]
+  }
+}

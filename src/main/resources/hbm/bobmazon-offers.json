@@ -1,0 +1,3399 @@
+{
+  "standard": [
+    {
+      "index": 0,
+      "product": {
+        "stack": {
+          "id": "minecraft:torch",
+          "count": 64
+        }
+      },
+      "requirement": "NONE",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 36
+      },
+      "expression": "new ItemStack(Blocks.torch, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(Blocks.torch, 64)",
+        "name_en_us": "new ItemStack(Blocks.torch, 64)",
+        "name_zh_cn": "new ItemStack(Blocks.torch, 64)"
+      }
+    },
+    {
+      "index": 1,
+      "product": {
+        "stack": {
+          "id": "hbm:definitelyfood",
+          "count": 16
+        }
+      },
+      "requirement": "NONE",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 37
+      },
+      "expression": "new ItemStack(ModItems.definitelyfood, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.definitelyfood, 16)",
+        "symbol": "definitelyfood",
+        "sourceClass": "ItemLemon",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3621
+        },
+        "name_en_us": "MRE",
+        "name_zh_cn": "完全不脏牌军粮",
+        "preview": "hbm:textures/gui/bobmazon/previews/definitelyfood.png"
+      }
+    },
+    {
+      "index": 2,
+      "product": {
+        "stack": {
+          "id": "hbm:nitra",
+          "count": 4
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 38
+      },
+      "expression": "new ItemStack(ModItems.nitra, 4)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 4,
+        "sourceExpression": "new ItemStack(ModItems.nitra, 4)",
+        "symbol": "nitra",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2124
+        },
+        "name_en_us": "Nitra",
+        "name_zh_cn": "Nitra",
+        "preview": "hbm:textures/gui/bobmazon/previews/nitra.png"
+      }
+    },
+    {
+      "index": 3,
+      "product": {
+        "stack": {
+          "id": "hbm:gun_kit_1",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 0
+          }
+        }
+      },
+      "requirement": "ASSEMBLY",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 39
+      },
+      "expression": "new ItemStack(ModItems.gun_kit_1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.gun_kit_1, 1)",
+        "symbol": "gun_kit_1",
+        "sourceClass": "ItemRepairKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2844
+        },
+        "name_en_us": "Gun Oil",
+        "name_zh_cn": "枪械润滑油",
+        "preview": "hbm:textures/gui/bobmazon/previews/gun_kit_1.png"
+      }
+    },
+    {
+      "index": 4,
+      "product": {
+        "stack": {
+          "id": "hbm:geiger_counter",
+          "count": 1
+        }
+      },
+      "requirement": "NONE",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 40
+      },
+      "expression": "new ItemStack(ModItems.geiger_counter, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.geiger_counter, 1)",
+        "symbol": "geiger_counter",
+        "sourceClass": "ItemGeigerCounter",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3832
+        },
+        "name_en_us": "Handheld Geiger Counter",
+        "name_zh_cn": "手持盖革计数器",
+        "preview": "hbm:textures/gui/bobmazon/previews/geiger_counter.png"
+      }
+    },
+    {
+      "index": 5,
+      "product": {
+        "stack": {
+          "id": "hbm:matchstick",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 41
+      },
+      "expression": "new ItemStack(ModItems.matchstick, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.matchstick, 16)",
+        "symbol": "matchstick",
+        "sourceClass": "ItemMatch",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 4294
+        },
+        "name_en_us": "Matchstick",
+        "name_zh_cn": "火柴",
+        "preview": "hbm:textures/gui/bobmazon/previews/matchstick.png"
+      }
+    },
+    {
+      "index": 6,
+      "product": {
+        "stack": {
+          "id": "hbm:blueprint_folder",
+          "count": 1
+        }
+      },
+      "requirement": "ASSEMBLY",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 43
+      },
+      "expression": "new ItemStack(ModItems.blueprint_folder, 1, 0)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.blueprint_folder, 1, 0)",
+        "symbol": "blueprint_folder",
+        "sourceClass": "ItemBlueprintFolder",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3863
+        },
+        "name_en_us": "Blueprint Booklet",
+        "name_zh_cn": "蓝图册",
+        "preview": "hbm:textures/gui/bobmazon/previews/blueprint_folder.png"
+      }
+    },
+    {
+      "index": 7,
+      "product": {
+        "stack": {
+          "id": "hbm:blueprint_folder",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "requirement": "OIL",
+      "cost": 256,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 44
+      },
+      "expression": "new ItemStack(ModItems.blueprint_folder, 1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.blueprint_folder, 1, 1)",
+        "symbol": "blueprint_folder",
+        "sourceClass": "ItemBlueprintFolder",
+        "sourceMetadata": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3863
+        },
+        "name_en_us": "Blueprint Booklet",
+        "name_zh_cn": "蓝图册",
+        "preview": "hbm:textures/gui/bobmazon/previews/blueprint_folder.png"
+      }
+    },
+    {
+      "index": 8,
+      "product": {
+        "stack": {
+          "id": "hbm:vending_machine",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 46
+      },
+      "expression": "new ItemStack(ModBlocks.vending_machine, 1, 0)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.vending_machine, 1, 0)",
+        "symbol": "vending_machine",
+        "sourceClass": "BlockVendingMachine",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1455
+        },
+        "name_en_us": "Vending Machine",
+        "name_zh_cn": "  自动售货机",
+        "preview": "hbm:textures/gui/bobmazon/previews/vending_machine.png"
+      }
+    },
+    {
+      "index": 9,
+      "product": {
+        "stack": {
+          "id": "hbm:vending_machine",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 47
+      },
+      "expression": "new ItemStack(ModBlocks.vending_machine, 1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.vending_machine, 1, 1)",
+        "symbol": "vending_machine",
+        "sourceClass": "BlockVendingMachine",
+        "sourceMetadata": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1455
+        },
+        "name_en_us": "Vending Machine",
+        "name_zh_cn": "  自动售货机",
+        "preview": "hbm:textures/gui/bobmazon/previews/vending_machine.png"
+      }
+    },
+    {
+      "index": 10,
+      "product": {
+        "stack": {
+          "id": "minecraft:jungle_sapling",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 12,
+      "rating": 9,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 49
+      },
+      "expression": "new ItemStack(Blocks.sapling, 1, 3)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(Blocks.sapling, 1, 3)",
+        "name_en_us": "new ItemStack(Blocks.sapling, 1, 3)",
+        "name_zh_cn": "new ItemStack(Blocks.sapling, 1, 3)"
+      }
+    },
+    {
+      "index": 11,
+      "product": {
+        "stack": {
+          "id": "hbm:plant_flower",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 16,
+      "rating": 5,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 50
+      },
+      "expression": "new ItemStack(ModBlocks.plant_flower, 1, 0)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plant_flower, 1, 0)",
+        "symbol": "plant_flower",
+        "sourceClass": "BlockNTMFlower",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1657
+        },
+        "name_en_us": "plant_flower",
+        "name_zh_cn": "plant_flower"
+      }
+    },
+    {
+      "index": 12,
+      "product": {
+        "stack": {
+          "id": "hbm:plant_flower",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 16,
+      "rating": 9,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 51
+      },
+      "expression": "new ItemStack(ModBlocks.plant_flower, 1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plant_flower, 1, 1)",
+        "symbol": "plant_flower",
+        "sourceClass": "BlockNTMFlower",
+        "sourceMetadata": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1657
+        },
+        "name_en_us": "plant_flower",
+        "name_zh_cn": "plant_flower"
+      }
+    },
+    {
+      "index": 13,
+      "product": {
+        "stack": {
+          "id": "hbm:plant_flower",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 16,
+      "rating": 3,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 52
+      },
+      "expression": "new ItemStack(ModBlocks.plant_flower, 1, 2)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plant_flower, 1, 2)",
+        "symbol": "plant_flower",
+        "sourceClass": "BlockNTMFlower",
+        "sourceMetadata": 2,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1657
+        },
+        "name_en_us": "plant_flower",
+        "name_zh_cn": "plant_flower"
+      }
+    },
+    {
+      "index": 14,
+      "product": {
+        "stack": {
+          "id": "hbm:plant_flower",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 3
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 4,
+      "rating": 10,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 53
+      },
+      "expression": "new ItemStack(ModBlocks.plant_flower, 1, 3)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plant_flower, 1, 3)",
+        "symbol": "plant_flower",
+        "sourceClass": "BlockNTMFlower",
+        "sourceMetadata": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1657
+        },
+        "name_en_us": "plant_flower",
+        "name_zh_cn": "plant_flower"
+      }
+    },
+    {
+      "index": 15,
+      "product": {
+        "stack": {
+          "id": "hbm:plant_flower",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      },
+      "requirement": "NUCLEAR",
+      "cost": 64,
+      "rating": 8,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 54
+      },
+      "expression": "new ItemStack(ModBlocks.plant_flower, 1, 4)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plant_flower, 1, 4)",
+        "symbol": "plant_flower",
+        "sourceClass": "BlockNTMFlower",
+        "sourceMetadata": 4,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1657
+        },
+        "name_en_us": "plant_flower",
+        "name_zh_cn": "plant_flower"
+      }
+    },
+    {
+      "index": 16,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 0)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 0)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 17,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 1)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 18,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 2)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 2)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 2,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 19,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 3
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 3)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 3)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 20,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 4)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 4)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 4,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 21,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 5
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 5)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 5)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 5,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 22,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 6
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 6)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 6)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 23,
+      "product": {
+        "stack": {
+          "id": "hbm:concrete_colored_ext",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 7
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 4,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 56
+      },
+      "expression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 7)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModBlocks.concrete_colored_ext, 16, 7)",
+        "symbol": "concrete_colored_ext",
+        "sourceClass": "BlockConcreteColoredExt",
+        "sourceMetadata": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1499
+        },
+        "name_en_us": "concrete_colored_ext",
+        "name_zh_cn": "concrete_colored_ext"
+      }
+    },
+    {
+      "index": 24,
+      "product": {
+        "stack": {
+          "id": "hbm:snowglobe",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 128,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 57
+      },
+      "expression": "new ItemStack(ModBlocks.snowglobe, 1, 0)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.snowglobe, 1, 0)",
+        "symbol": "snowglobe",
+        "sourceClass": "BlockSnowglobe",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1452
+        },
+        "name_en_us": "Snowglobe",
+        "name_zh_cn": "雪景球",
+        "preview": "hbm:textures/gui/bobmazon/previews/snowglobe.png"
+      }
+    },
+    {
+      "index": 25,
+      "product": {
+        "stack": {
+          "id": "hbm:snowglobe",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 128,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 57
+      },
+      "expression": "new ItemStack(ModBlocks.snowglobe, 1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.snowglobe, 1, 1)",
+        "symbol": "snowglobe",
+        "sourceClass": "BlockSnowglobe",
+        "sourceMetadata": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1452
+        },
+        "name_en_us": "Snowglobe",
+        "name_zh_cn": "雪景球",
+        "preview": "hbm:textures/gui/bobmazon/previews/snowglobe.png"
+      }
+    },
+    {
+      "index": 26,
+      "product": {
+        "stack": {
+          "id": "hbm:snowglobe",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 128,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 57
+      },
+      "expression": "new ItemStack(ModBlocks.snowglobe, 1, 2)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.snowglobe, 1, 2)",
+        "symbol": "snowglobe",
+        "sourceClass": "BlockSnowglobe",
+        "sourceMetadata": 2,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1452
+        },
+        "name_en_us": "Snowglobe",
+        "name_zh_cn": "雪景球",
+        "preview": "hbm:textures/gui/bobmazon/previews/snowglobe.png"
+      }
+    },
+    {
+      "index": 27,
+      "product": {
+        "stack": {
+          "id": "hbm:snowglobe",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 3
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 128,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 57
+      },
+      "expression": "new ItemStack(ModBlocks.snowglobe, 1, 3)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.snowglobe, 1, 3)",
+        "symbol": "snowglobe",
+        "sourceClass": "BlockSnowglobe",
+        "sourceMetadata": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1452
+        },
+        "name_en_us": "Snowglobe",
+        "name_zh_cn": "雪景球",
+        "preview": "hbm:textures/gui/bobmazon/previews/snowglobe.png"
+      }
+    },
+    {
+      "index": 28,
+      "product": {
+        "stack": {
+          "id": "hbm:snowglobe",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 128,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 57
+      },
+      "expression": "new ItemStack(ModBlocks.snowglobe, 1, 4)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.snowglobe, 1, 4)",
+        "symbol": "snowglobe",
+        "sourceClass": "BlockSnowglobe",
+        "sourceMetadata": 4,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1452
+        },
+        "name_en_us": "Snowglobe",
+        "name_zh_cn": "雪景球",
+        "preview": "hbm:textures/gui/bobmazon/previews/snowglobe.png"
+      }
+    },
+    {
+      "index": 29,
+      "product": {
+        "stack": {
+          "id": "hbm:snowglobe",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 5
+          }
+        }
+      },
+      "requirement": "CHEMICS",
+      "cost": 128,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 57
+      },
+      "expression": "new ItemStack(ModBlocks.snowglobe, 1, 5)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.snowglobe, 1, 5)",
+        "symbol": "snowglobe",
+        "sourceClass": "BlockSnowglobe",
+        "sourceMetadata": 5,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1452
+        },
+        "name_en_us": "Snowglobe",
+        "name_zh_cn": "雪景球",
+        "preview": "hbm:textures/gui/bobmazon/previews/snowglobe.png"
+      }
+    },
+    {
+      "index": 30,
+      "product": {
+        "stack": {
+          "id": "hbm:plushie",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "requirement": "OIL",
+      "cost": 16,
+      "rating": 10,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 58
+      },
+      "expression": "new ItemStack(ModBlocks.plushie, 1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plushie, 1, 1)",
+        "symbol": "plushie",
+        "sourceClass": "BlockPlushie",
+        "sourceMetadata": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1453
+        },
+        "name_en_us": "Yomi Plushie",
+        "name_zh_cn": "Yomi布娃娃",
+        "preview": "hbm:textures/gui/bobmazon/previews/plushie.png"
+      }
+    },
+    {
+      "index": 31,
+      "product": {
+        "stack": {
+          "id": "hbm:plushie",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "requirement": "OIL",
+      "cost": 16,
+      "rating": 10,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 58
+      },
+      "expression": "new ItemStack(ModBlocks.plushie, 1, 2)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plushie, 1, 2)",
+        "symbol": "plushie",
+        "sourceClass": "BlockPlushie",
+        "sourceMetadata": 2,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1453
+        },
+        "name_en_us": "Number Nine Plushie",
+        "name_zh_cn": "Number Nine布娃娃",
+        "preview": "hbm:textures/gui/bobmazon/previews/plushie.png"
+      }
+    },
+    {
+      "index": 32,
+      "product": {
+        "stack": {
+          "id": "hbm:plushie",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 3
+          }
+        }
+      },
+      "requirement": "OIL",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 58
+      },
+      "expression": "new ItemStack(ModBlocks.plushie, 1, 3)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plushie, 1, 3)",
+        "symbol": "plushie",
+        "sourceClass": "BlockPlushie",
+        "sourceMetadata": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1453
+        },
+        "name_en_us": "Hundun Plushie",
+        "name_zh_cn": "Hundun布娃娃",
+        "preview": "hbm:textures/gui/bobmazon/previews/plushie.png"
+      }
+    },
+    {
+      "index": 33,
+      "product": {
+        "stack": {
+          "id": "hbm:plushie",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      },
+      "requirement": "OIL",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 58
+      },
+      "expression": "new ItemStack(ModBlocks.plushie, 1, 4)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.plushie, 1, 4)",
+        "symbol": "plushie",
+        "sourceClass": "BlockPlushie",
+        "sourceMetadata": 4,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1453
+        },
+        "name_en_us": "Dragon Plushie",
+        "name_zh_cn": "Dragon布娃娃",
+        "preview": "hbm:textures/gui/bobmazon/previews/plushie.png"
+      }
+    }
+  ],
+  "special": [
+    {
+      "index": 0,
+      "product": {
+        "stack": {
+          "id": "minecraft:iron_ingot",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 60
+      },
+      "expression": "new ItemStack(Items.iron_ingot, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(Items.iron_ingot, 64)",
+        "name_en_us": "new ItemStack(Items.iron_ingot, 64)",
+        "name_zh_cn": "new ItemStack(Items.iron_ingot, 64)"
+      }
+    },
+    {
+      "index": 1,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_steel",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 61
+      },
+      "expression": "new ItemStack(ModItems.ingot_steel, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_steel, 64)",
+        "symbol": "ingot_steel",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2155
+        },
+        "name_en_us": "Steel Ingot",
+        "name_zh_cn": "钢锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_steel.png"
+      }
+    },
+    {
+      "index": 2,
+      "product": {
+        "stack": {
+          "id": "minecraft:copper_ingot",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 62
+      },
+      "expression": "new ItemStack(ModItems.ingot_copper, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_copper, 64)",
+        "symbol": "ingot_copper",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2148
+        },
+        "name_en_us": "Industrial Grade Copper Ingot",
+        "name_zh_cn": "工业级铜锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_copper.png"
+      }
+    },
+    {
+      "index": 3,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_red_copper",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 63
+      },
+      "expression": "new ItemStack(ModItems.ingot_red_copper, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_red_copper, 64)",
+        "symbol": "ingot_red_copper",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2149
+        },
+        "name_en_us": "Minecraft Grade Copper Ingot",
+        "name_zh_cn": "紫铜锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_red_copper.png"
+      }
+    },
+    {
+      "index": 4,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_titanium",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 64
+      },
+      "expression": "new ItemStack(ModItems.ingot_titanium, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_titanium, 64)",
+        "symbol": "ingot_titanium",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2117
+        },
+        "name_en_us": "Titanium Ingot",
+        "name_zh_cn": "钛锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_titanium.png"
+      }
+    },
+    {
+      "index": 5,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_tungsten",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 65
+      },
+      "expression": "new ItemStack(ModItems.ingot_tungsten, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_tungsten, 64)",
+        "symbol": "ingot_tungsten",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2150
+        },
+        "name_en_us": "Tungsten Ingot",
+        "name_zh_cn": "钨锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_tungsten.png"
+      }
+    },
+    {
+      "index": 6,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_cobalt",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 66
+      },
+      "expression": "new ItemStack(ModItems.ingot_cobalt, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_cobalt, 64)",
+        "symbol": "ingot_cobalt",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2118
+        },
+        "name_en_us": "Cobalt Ingot",
+        "name_zh_cn": "钴锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_cobalt.png"
+      }
+    },
+    {
+      "index": 7,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_desh",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 67
+      },
+      "expression": "new ItemStack(ModItems.ingot_desh, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_desh, 64)",
+        "symbol": "ingot_desh",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2263
+        },
+        "name_en_us": "Desh Ingot",
+        "name_zh_cn": "Desh锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_desh.png"
+      }
+    },
+    {
+      "index": 8,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_tantalium",
+          "count": 64
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 68
+      },
+      "expression": "new ItemStack(ModItems.ingot_tantalium, 64)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 64,
+        "sourceExpression": "new ItemStack(ModItems.ingot_tantalium, 64)",
+        "symbol": "ingot_tantalium",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2383
+        },
+        "name_en_us": "Tantalum Ingot",
+        "name_zh_cn": "钽锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_tantalium.png"
+      }
+    },
+    {
+      "index": 9,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_bismuth",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 69
+      },
+      "expression": "new ItemStack(ModItems.ingot_bismuth, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ingot_bismuth, 16)",
+        "symbol": "ingot_bismuth",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2379
+        },
+        "name_en_us": "Bismuth Ingot",
+        "name_zh_cn": "铋锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_bismuth.png"
+      }
+    },
+    {
+      "index": 10,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_schrabidium",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 70
+      },
+      "expression": "new ItemStack(ModItems.ingot_schrabidium, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ingot_schrabidium, 16)",
+        "symbol": "ingot_schrabidium",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2162
+        },
+        "name_en_us": "Schrabidium Ingot",
+        "name_zh_cn": "Sa326锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_schrabidium.png"
+      }
+    },
+    {
+      "index": 11,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_euphemium",
+          "count": 8
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 71
+      },
+      "expression": "new ItemStack(ModItems.ingot_euphemium, 8)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 8,
+        "sourceExpression": "new ItemStack(ModItems.ingot_euphemium, 8)",
+        "symbol": "ingot_euphemium",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3809
+        },
+        "name_en_us": "Euphemium Ingot",
+        "name_zh_cn": "Ep锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_euphemium.png"
+      }
+    },
+    {
+      "index": 12,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_dineutronium",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 72
+      },
+      "expression": "new ItemStack(ModItems.ingot_dineutronium, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.ingot_dineutronium, 1)",
+        "symbol": "ingot_dineutronium",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2265
+        },
+        "name_en_us": "Dineutronium Ingot",
+        "name_zh_cn": "双聚中子态素锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_dineutronium.png"
+      }
+    },
+    {
+      "index": 13,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_starmetal",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 8,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 73
+      },
+      "expression": "new ItemStack(ModItems.ingot_starmetal, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ingot_starmetal, 16)",
+        "symbol": "ingot_starmetal",
+        "sourceClass": "ItemStarmetal",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2268
+        },
+        "name_en_us": "§9Starmetal Ingot§r",
+        "name_zh_cn": "§9星辉锭§r",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_starmetal.png"
+      }
+    },
+    {
+      "index": 14,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_semtex",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 74
+      },
+      "expression": "new ItemStack(ModItems.ingot_semtex, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ingot_semtex, 16)",
+        "symbol": "ingot_semtex",
+        "sourceClass": "ItemLemon",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2169
+        },
+        "name_en_us": "Bar of Semtex",
+        "name_zh_cn": "塞姆汀塑胶炸药块",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_semtex.png"
+      }
+    },
+    {
+      "index": 15,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_u235",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 75
+      },
+      "expression": "new ItemStack(ModItems.ingot_u235, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ingot_u235, 16)",
+        "symbol": "ingot_u235",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2097
+        },
+        "name_en_us": "Uranium-235 Ingot",
+        "name_zh_cn": "铀-235锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_u235.png"
+      }
+    },
+    {
+      "index": 16,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_pu239",
+          "count": 16
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 76
+      },
+      "expression": "new ItemStack(ModItems.ingot_pu239, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ingot_pu239, 16)",
+        "symbol": "ingot_pu239",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2102
+        },
+        "name_en_us": "Plutonium-239 Ingot",
+        "name_zh_cn": "钚-239锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_pu239.png"
+      }
+    },
+    {
+      "index": 17,
+      "product": {
+        "stack": {
+          "id": "hbm:ammo_container",
+          "count": 16,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 77
+      },
+      "expression": "new ItemStack(ModItems.ammo_container, 16)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 16,
+        "sourceExpression": "new ItemStack(ModItems.ammo_container, 16)",
+        "symbol": "ammo_container",
+        "sourceClass": "ItemAmmoContainer",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3807
+        },
+        "name_en_us": "Ammo Container",
+        "name_zh_cn": "万能弹药盒",
+        "preview": "hbm:textures/gui/bobmazon/previews/ammo_container.png"
+      }
+    },
+    {
+      "index": 18,
+      "product": {
+        "stack": {
+          "id": "hbm:nuke_starter_kit",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 78
+      },
+      "expression": "new ItemStack(ModItems.nuke_starter_kit)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.nuke_starter_kit)",
+        "symbol": "nuke_starter_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3781
+        },
+        "name_en_us": "Atomic Science Starter Kit",
+        "name_zh_cn": "原子学入门工具箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/nuke_starter_kit.png"
+      }
+    },
+    {
+      "index": 19,
+      "product": {
+        "pending": "content is not migrated: ModItems.nuke_advanced_kit",
+        "expression": "new ItemStack(ModItems.nuke_advanced_kit)"
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 79
+      },
+      "expression": "new ItemStack(ModItems.nuke_advanced_kit)",
+      "pending": [
+        "content is not migrated: ModItems.nuke_advanced_kit"
+      ],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.nuke_advanced_kit)",
+        "symbol": "nuke_advanced_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3782
+        },
+        "name_en_us": "Atomic Science Advanced Kit",
+        "name_zh_cn": "原子学高级工具箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/nuke_advanced_kit.png"
+      }
+    },
+    {
+      "index": 20,
+      "product": {
+        "stack": {
+          "id": "hbm:nuke_commercially_kit",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 80
+      },
+      "expression": "new ItemStack(ModItems.nuke_commercially_kit)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.nuke_commercially_kit)",
+        "symbol": "nuke_commercially_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3783
+        },
+        "name_en_us": "Atomic Science Kit for Commercial Uses",
+        "name_zh_cn": "商用原子学工具箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/nuke_commercially_kit.png"
+      }
+    },
+    {
+      "index": 21,
+      "product": {
+        "stack": {
+          "id": "hbm:boy_kit",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 81
+      },
+      "expression": "new ItemStack(ModItems.boy_kit)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.boy_kit)",
+        "symbol": "boy_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3786
+        },
+        "name_en_us": "Little Boy Kit",
+        "name_zh_cn": "小男孩 套件",
+        "preview": "hbm:textures/gui/bobmazon/previews/boy_kit.png"
+      }
+    },
+    {
+      "index": 22,
+      "product": {
+        "stack": {
+          "id": "hbm:prototype_kit",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 10,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 82
+      },
+      "expression": "new ItemStack(ModItems.prototype_kit)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.prototype_kit)",
+        "symbol": "prototype_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3793
+        },
+        "name_en_us": "Prototype Kit",
+        "name_zh_cn": "原型 套件",
+        "preview": "hbm:textures/gui/bobmazon/previews/prototype_kit.png"
+      }
+    },
+    {
+      "index": 23,
+      "product": {
+        "stack": {
+          "id": "hbm:missile_kit",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 5,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 83
+      },
+      "expression": "new ItemStack(ModItems.missile_kit)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.missile_kit)",
+        "symbol": "missile_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3794
+        },
+        "name_en_us": "Missile Kit",
+        "name_zh_cn": "导弹工具箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/missile_kit.png"
+      }
+    },
+    {
+      "index": 24,
+      "product": {
+        "stack": {
+          "id": "hbm:jetpack_vector",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 84
+      },
+      "expression": "new ItemStack(ModItems.jetpack_vector)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.jetpack_vector)",
+        "symbol": "jetpack_vector",
+        "sourceClass": "JetpackVectorized",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 4285
+        },
+        "name_en_us": "Vectored Jetpack",
+        "name_zh_cn": "矢量喷气背包",
+        "preview": "hbm:textures/gui/bobmazon/previews/jetpack_vector.png"
+      }
+    },
+    {
+      "index": 25,
+      "product": {
+        "stack": {
+          "id": "hbm:jetpack_tank",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 85
+      },
+      "expression": "new ItemStack(ModItems.jetpack_tank)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.jetpack_tank)",
+        "symbol": "jetpack_tank",
+        "sourceClass": "ItemSyringe",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2843
+        },
+        "name_en_us": "Jetpack Reserve Fuel Tank",
+        "name_zh_cn": "喷气背包备用燃料罐",
+        "preview": "hbm:textures/gui/bobmazon/previews/jetpack_tank.png"
+      }
+    },
+    {
+      "index": 26,
+      "product": {
+        "stack": {
+          "id": "hbm:gun_kit_1",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 0
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 86
+      },
+      "expression": "new ItemStack(ModItems.gun_kit_1, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.gun_kit_1, 1)",
+        "symbol": "gun_kit_1",
+        "sourceClass": "ItemRepairKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2844
+        },
+        "name_en_us": "Gun Oil",
+        "name_zh_cn": "枪械润滑油",
+        "preview": "hbm:textures/gui/bobmazon/previews/gun_kit_1.png"
+      }
+    },
+    {
+      "index": 27,
+      "product": {
+        "stack": {
+          "id": "hbm:gun_kit_2",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 0
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 3,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 87
+      },
+      "expression": "new ItemStack(ModItems.gun_kit_2, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.gun_kit_2, 1)",
+        "symbol": "gun_kit_2",
+        "sourceClass": "ItemRepairKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2845
+        },
+        "name_en_us": "Gun Repair Kit",
+        "name_zh_cn": "枪械修理包",
+        "preview": "hbm:textures/gui/bobmazon/previews/gun_kit_2.png"
+      }
+    },
+    {
+      "index": 28,
+      "product": {
+        "stack": {
+          "id": "hbm:struct_launcher_core",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 3,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 88
+      },
+      "expression": "new ItemStack(ModBlocks.struct_launcher_core, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.struct_launcher_core, 1)",
+        "symbol": "struct_launcher_core",
+        "sourceClass": "BlockStruct",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1966
+        },
+        "name_en_us": "Compact Launcher Core Component",
+        "name_zh_cn": "紧凑型发射台核心组件",
+        "preview": "hbm:textures/gui/bobmazon/previews/struct_launcher_core.png"
+      }
+    },
+    {
+      "index": 29,
+      "product": {
+        "stack": {
+          "id": "hbm:struct_launcher_core_large",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 3,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 89
+      },
+      "expression": "new ItemStack(ModBlocks.struct_launcher_core_large, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.struct_launcher_core_large, 1)",
+        "symbol": "struct_launcher_core_large",
+        "sourceClass": "BlockStruct",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1967
+        },
+        "name_en_us": "Launch Table Core Component",
+        "name_zh_cn": "发射台核心组件",
+        "preview": "hbm:textures/gui/bobmazon/previews/struct_launcher_core_large.png"
+      }
+    },
+    {
+      "index": 30,
+      "product": {
+        "stack": {
+          "id": "hbm:struct_launcher",
+          "count": 40
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 7,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 90
+      },
+      "expression": "new ItemStack(ModBlocks.struct_launcher, 40)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 40,
+        "sourceExpression": "new ItemStack(ModBlocks.struct_launcher, 40)",
+        "symbol": "struct_launcher",
+        "sourceClass": "BlockGeneric",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1964
+        },
+        "name_en_us": "Launch Pad Component Block",
+        "name_zh_cn": "发射台部件",
+        "preview": "hbm:textures/gui/bobmazon/previews/struct_launcher.png"
+      }
+    },
+    {
+      "index": 31,
+      "product": {
+        "stack": {
+          "id": "hbm:struct_scaffold",
+          "count": 11
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 7,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 91
+      },
+      "expression": "new ItemStack(ModBlocks.struct_scaffold, 11)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 11,
+        "sourceExpression": "new ItemStack(ModBlocks.struct_scaffold, 11)",
+        "symbol": "struct_scaffold",
+        "sourceClass": "BlockGeneric",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 1965
+        },
+        "name_en_us": "Launch Pad Scaffold Block",
+        "name_zh_cn": "发射台骨架",
+        "preview": "hbm:textures/gui/bobmazon/previews/struct_scaffold.png"
+      }
+    },
+    {
+      "index": 32,
+      "product": {
+        "stack": {
+          "id": "hbm:loot_10",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 92
+      },
+      "expression": "new ItemStack(ModItems.loot_10, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.loot_10, 1)",
+        "symbol": "loot_10",
+        "sourceClass": "ItemLootCrate",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3803
+        },
+        "name_en_us": "Size 10 Missile Loot Crate",
+        "name_zh_cn": "10号导弹战利箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/loot_10.png"
+      }
+    },
+    {
+      "index": 33,
+      "product": {
+        "stack": {
+          "id": "hbm:loot_15",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 93
+      },
+      "expression": "new ItemStack(ModItems.loot_15, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.loot_15, 1)",
+        "symbol": "loot_15",
+        "sourceClass": "ItemLootCrate",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3804
+        },
+        "name_en_us": "Size 15 Missile Loot Crate",
+        "name_zh_cn": "15号导弹战利箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/loot_15.png"
+      }
+    },
+    {
+      "index": 34,
+      "product": {
+        "stack": {
+          "id": "hbm:loot_misc",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 94
+      },
+      "expression": "new ItemStack(ModItems.loot_misc, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.loot_misc, 1)",
+        "symbol": "loot_misc",
+        "sourceClass": "ItemLootCrate",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3805
+        },
+        "name_en_us": "General Missile Loot Crate",
+        "name_zh_cn": "普通导弹战利箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/loot_misc.png"
+      }
+    },
+    {
+      "index": 35,
+      "product": {
+        "stack": {
+          "id": "hbm:crate_can",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 1,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 95
+      },
+      "expression": "new ItemStack(ModBlocks.crate_can, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.crate_can, 1)",
+        "symbol": "crate_can",
+        "sourceClass": "BlockCanCrate",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 2174
+        },
+        "name_en_us": "Conserve Crate",
+        "name_zh_cn": "罐头补给箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/crate_can.png"
+      }
+    },
+    {
+      "index": 36,
+      "product": {
+        "stack": {
+          "id": "hbm:crate_ammo",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 2,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 96
+      },
+      "expression": "new ItemStack(ModBlocks.crate_ammo, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.crate_ammo, 1)",
+        "symbol": "crate_ammo",
+        "sourceClass": "BlockAmmoCrate",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 2175
+        },
+        "name_en_us": "Starmetal Crate",
+        "name_zh_cn": "星辉补给箱"
+      }
+    },
+    {
+      "index": 37,
+      "product": {
+        "stack": {
+          "id": "hbm:crucible",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 3
+          }
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 10,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 97
+      },
+      "expression": "new ItemStack(ModItems.crucible, 1, 3)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.crucible, 1, 3)",
+        "symbol": "crucible",
+        "sourceClass": "ItemCrucible",
+        "sourceMetadata": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3593
+        },
+        "name_en_us": "Crucible",
+        "name_zh_cn": "裁决剑",
+        "preview": "hbm:textures/gui/bobmazon/previews/crucible.png"
+      }
+    },
+    {
+      "index": 38,
+      "product": {
+        "stack": {
+          "id": "hbm:spawn_chopper",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 10,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 98
+      },
+      "expression": "new ItemStack(ModItems.spawn_chopper, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.spawn_chopper, 1)",
+        "symbol": "spawn_chopper",
+        "sourceClass": "ItemChopper",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3823
+        },
+        "name_en_us": "spawn_chopper",
+        "name_zh_cn": "spawn_chopper",
+        "preview": "hbm:textures/gui/bobmazon/previews/spawn_chopper.png"
+      }
+    },
+    {
+      "index": 39,
+      "product": {
+        "stack": {
+          "id": "hbm:spawn_worm",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 10,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 99
+      },
+      "expression": "new ItemStack(ModItems.spawn_worm, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.spawn_worm, 1)",
+        "symbol": "spawn_worm",
+        "sourceClass": "ItemChopper",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3824
+        },
+        "name_en_us": "Balls-O-Tron Prime",
+        "name_zh_cn": "机械蠕虫",
+        "preview": "hbm:textures/gui/bobmazon/previews/spawn_worm.png"
+      }
+    },
+    {
+      "index": 40,
+      "product": {
+        "stack": {
+          "id": "hbm:spawn_ufo",
+          "count": 1
+        }
+      },
+      "requirement": "STEEL",
+      "cost": 10,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 100
+      },
+      "expression": "new ItemStack(ModItems.spawn_ufo, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.spawn_ufo, 1)",
+        "symbol": "spawn_ufo",
+        "sourceClass": "ItemChopper",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3825
+        },
+        "name_en_us": "Martian Invasion Ship",
+        "name_zh_cn": "火星入侵者飞船",
+        "preview": "hbm:textures/gui/bobmazon/previews/spawn_ufo.png"
+      }
+    },
+    {
+      "index": 41,
+      "product": {
+        "stack": {
+          "id": "hbm:sat_laser",
+          "count": 1
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 8,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 101
+      },
+      "expression": "new ItemStack(ModItems.sat_laser, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.sat_laser, 1)",
+        "symbol": "sat_laser",
+        "sourceClass": "ItemSatChip",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3434
+        },
+        "name_en_us": "Orbital Death Ray (LEGACY)",
+        "name_zh_cn": "轨道死光炮（遗留）",
+        "preview": "hbm:textures/gui/bobmazon/previews/sat_laser.png"
+      }
+    },
+    {
+      "index": 42,
+      "product": {
+        "stack": {
+          "id": "hbm:sat_gerald",
+          "count": 1
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 32,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 102
+      },
+      "expression": "new ItemStack(ModItems.sat_gerald, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.sat_gerald, 1)",
+        "symbol": "sat_gerald",
+        "sourceClass": "ItemSatChip",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3439
+        },
+        "name_en_us": "Gerald The Construction Android",
+        "name_zh_cn": "Gerald建筑机器人",
+        "preview": "hbm:textures/gui/bobmazon/previews/sat_gerald.png"
+      }
+    },
+    {
+      "index": 43,
+      "product": {
+        "stack": {
+          "id": "hbm:billet_yharonite",
+          "count": 4
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 103
+      },
+      "expression": "new ItemStack(ModItems.billet_yharonite, 4)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 4,
+        "sourceExpression": "new ItemStack(ModItems.billet_yharonite, 4)",
+        "symbol": "billet_yharonite",
+        "sourceClass": "Item",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2247
+        },
+        "name_en_us": "Yharonite Billet",
+        "name_zh_cn": "犽戎龙素坯料",
+        "preview": "hbm:textures/gui/bobmazon/previews/billet_yharonite.png"
+      }
+    },
+    {
+      "index": 44,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_chainsteel",
+          "count": 1
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 104
+      },
+      "expression": "new ItemStack(ModItems.ingot_chainsteel, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.ingot_chainsteel, 1)",
+        "symbol": "ingot_chainsteel",
+        "sourceClass": "ItemHot",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2315
+        },
+        "name_en_us": "Heavy Chainsteel",
+        "name_zh_cn": "重链钢",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_chainsteel.png"
+      }
+    },
+    {
+      "index": 45,
+      "product": {
+        "stack": {
+          "id": "hbm:ingot_electronium",
+          "count": 1
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 105
+      },
+      "expression": "new ItemStack(ModItems.ingot_electronium, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.ingot_electronium, 1)",
+        "symbol": "ingot_electronium",
+        "sourceClass": "ItemCustomLore",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 2279
+        },
+        "name_en_us": "Electronium Ingot",
+        "name_zh_cn": "电素锭",
+        "preview": "hbm:textures/gui/bobmazon/previews/ingot_electronium.png"
+      }
+    },
+    {
+      "index": 46,
+      "product": {
+        "stack": {
+          "id": "hbm:book_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 106
+      },
+      "expression": "new ItemStack(ModItems.book_of_, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.book_of_, 1)",
+        "symbol": "book_of_",
+        "sourceClass": "ItemBook",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 4344
+        },
+        "name_en_us": "The Book of Boxcars",
+        "name_zh_cn": "车厢书",
+        "preview": "hbm:textures/gui/bobmazon/previews/book_of_.png"
+      }
+    },
+    {
+      "index": 47,
+      "product": {
+        "pending": "content is not migrated: ModItems.mese_pickaxe",
+        "expression": "new ItemStack(ModItems.mese_pickaxe, 1)"
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 107
+      },
+      "expression": "new ItemStack(ModItems.mese_pickaxe, 1)",
+      "pending": [
+        "content is not migrated: ModItems.mese_pickaxe"
+      ],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.mese_pickaxe, 1)",
+        "symbol": "mese_pickaxe",
+        "sourceClass": "ItemToolAbility",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 4207
+        },
+        "name_en_us": "Mese Pickaxe",
+        "name_zh_cn": "Mese镐",
+        "preview": "hbm:textures/gui/bobmazon/previews/mese_pickaxe.png"
+      }
+    },
+    {
+      "index": 48,
+      "product": {
+        "stack": {
+          "id": "hbm:mysteryshovel",
+          "count": 1
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 108
+      },
+      "expression": "new ItemStack(ModItems.mysteryshovel, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.mysteryshovel, 1)",
+        "symbol": "mysteryshovel",
+        "sourceClass": "ItemMS",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 4388
+        },
+        "name_en_us": "Brittle Spade",
+        "name_zh_cn": "易碎锹",
+        "preview": "hbm:textures/gui/bobmazon/previews/mysteryshovel.png"
+      }
+    },
+    {
+      "index": 49,
+      "product": {
+        "stack": {
+          "id": "hbm:ntm_dirt",
+          "count": 1
+        }
+      },
+      "requirement": "HIDDEN",
+      "cost": 16,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 109
+      },
+      "expression": "new ItemStack(ModBlocks.ntm_dirt, 1)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModBlocks.ntm_dirt, 1)",
+        "symbol": "ntm_dirt",
+        "sourceClass": "BlockNTMDirt",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+          "line": 2360
+        },
+        "name_en_us": "Dirt",
+        "name_zh_cn": "泥土"
+      }
+    },
+    {
+      "index": 50,
+      "product": {
+        "pending": "content is not migrated: ModItems.euphemium_kit",
+        "expression": "new ItemStack(ModItems.euphemium_kit, 1)"
+      },
+      "requirement": "HIDDEN",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 110
+      },
+      "expression": "new ItemStack(ModItems.euphemium_kit, 1)",
+      "pending": [
+        "content is not migrated: ModItems.euphemium_kit"
+      ],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "new ItemStack(ModItems.euphemium_kit, 1)",
+        "symbol": "euphemium_kit",
+        "sourceClass": "ItemStarterKit",
+        "sourceMetadata": 0,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+          "line": 3795
+        },
+        "name_en_us": "Euphemium Kit",
+        "name_zh_cn": "Ep工具箱",
+        "preview": "hbm:textures/gui/bobmazon/previews/euphemium_kit.png"
+      }
+    },
+    {
+      "index": 51,
+      "product": {
+        "kit": [
+          {
+            "stack": {
+              "id": "hbm:fusion_klystron",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:fusion_torus",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:fusion_mhdt",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:machine_intake",
+              "count": 3
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:battery_spark",
+              "count": 1
+            },
+            "fullBattery": true
+          },
+          {
+            "stack": {
+              "id": "hbm:machine_chemical_factory",
+              "count": 4
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:machine_fluidtank",
+              "count": 8
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:red_wire_coated",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:red_cable",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:fluid_barrel_full",
+              "count": 64,
+              "components": {
+                "hbm:legacy_metadata": 8,
+                "hbm:fluid_type": 8
+              }
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:fluid_barrel_full",
+              "count": 64,
+              "components": {
+                "hbm:legacy_metadata": 9,
+                "hbm:fluid_type": 9
+              }
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:fluid_barrel_full",
+              "count": 64,
+              "components": {
+                "hbm:legacy_metadata": 144,
+                "hbm:fluid_type": 144
+              }
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:red_pylon_large",
+              "count": 8
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:substation",
+              "count": 4
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:red_connector",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:wiring_red_copper",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:machine_chungus",
+              "count": 3
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:template_folder",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "minecraft:paper",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "minecraft:ink_sac",
+              "count": 64
+            }
+          }
+        ],
+        "color1": 16711935,
+        "color2": 8388736,
+        "resetName": true,
+        "name": "Fusion Man",
+        "lore": [
+          "For the nuclear physicist on the go"
+        ]
+      },
+      "requirement": "HIDDEN",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 112
+      },
+      "expression": "ItemKitCustom.create(\"Fusion Man\", \"For the nuclear physicist on the go\", 0xff00ff, 0x800080,\n\t\t\t\tnew ItemStack(ModBlocks.fusion_klystron),\n\t\t\t\tnew ItemStack(ModBlocks.fusion_torus),\n\t\t\t\tnew ItemStack(ModBlocks.fusion_mhdt),\n\t\t\t\tnew ItemStack(ModBlocks.machine_intake, 3),\n\t\t\t\tItemBattery.getFullBattery(ModItems.battery_spark),\n\t\t\t\tnew ItemStack(ModBlocks.machine_chemical_factory, 4),\n\t\t\t\tnew ItemStack(ModBlocks.machine_fluidtank, 8),\n\t\t\t\tnew ItemStack(ModBlocks.red_wire_coated, 64),\n\t\t\t\tnew ItemStack(ModBlocks.red_cable, 64),\n\t\t\t\tnew ItemStack(ModItems.fluid_barrel_full, 64, Fluids.DEUTERIUM.getID()),\n\t\t\t\tnew ItemStack(ModItems.fluid_barrel_full, 64, Fluids.TRITIUM.getID()),\n\t\t\t\tnew ItemStack(ModItems.fluid_barrel_full, 64, Fluids.PERFLUOROMETHYL.getID()),\n\t\t\t\tnew ItemStack(ModBlocks.red_pylon_large, 8),\n\t\t\t\tnew ItemStack(ModBlocks.substation, 4),\n\t\t\t\tnew ItemStack(ModBlocks.red_connector, 64),\n\t\t\t\tnew ItemStack(ModItems.wiring_red_copper, 1),\n\t\t\t\tnew ItemStack(ModBlocks.machine_chungus, 3),\n\t\t\t\tnew ItemStack(ModItems.template_folder, 1),\n\t\t\t\tnew ItemStack(Items.paper, 64),\n\t\t\t\tnew ItemStack(Items.dye, 64)\n\t\t\t\t)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "ItemKitCustom.create(\"Fusion Man\", \"For the nuclear physicist on the go\", 0xff00ff, 0x800080,\n\t\t\t\tnew ItemStack(ModBlocks.fusion_klystron),\n\t\t\t\tnew ItemStack(ModBlocks.fusion_torus),\n\t\t\t\tnew ItemStack(ModBlocks.fusion_mhdt),\n\t\t\t\tnew ItemStack(ModBlocks.machine_intake, 3),\n\t\t\t\tItemBattery.getFullBattery(ModItems.battery_spark),\n\t\t\t\tnew ItemStack(ModBlocks.machine_chemical_factory, 4),\n\t\t\t\tnew ItemStack(ModBlocks.machine_fluidtank, 8),\n\t\t\t\tnew ItemStack(ModBlocks.red_wire_coated, 64),\n\t\t\t\tnew ItemStack(ModBlocks.red_cable, 64),\n\t\t\t\tnew ItemStack(ModItems.fluid_barrel_full, 64, Fluids.DEUTERIUM.getID()),\n\t\t\t\tnew ItemStack(ModItems.fluid_barrel_full, 64, Fluids.TRITIUM.getID()),\n\t\t\t\tnew ItemStack(ModItems.fluid_barrel_full, 64, Fluids.PERFLUOROMETHYL.getID()),\n\t\t\t\tnew ItemStack(ModBlocks.red_pylon_large, 8),\n\t\t\t\tnew ItemStack(ModBlocks.substation, 4),\n\t\t\t\tnew ItemStack(ModBlocks.red_connector, 64),\n\t\t\t\tnew ItemStack(ModItems.wiring_red_copper, 1),\n\t\t\t\tnew ItemStack(ModBlocks.machine_chungus, 3),\n\t\t\t\tnew ItemStack(ModItems.template_folder, 1),\n\t\t\t\tnew ItemStack(Items.paper, 64),\n\t\t\t\tnew ItemStack(Items.dye, 64)\n\t\t\t\t)",
+        "name_en_us": "Fusion Man",
+        "name_zh_cn": "Fusion Man"
+      }
+    },
+    {
+      "index": 52,
+      "product": {
+        "kit": [
+          {
+            "stack": {
+              "id": "hbm:gun_m2",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_bmg50_du",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_bmg50_du",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_bmg50_du",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_bmg50_du",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_bmg50_du",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:gun_autoshotgun",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_g12_magnum",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_g12_magnum",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_g12_magnum",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_g12_explosive",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_g12_explosive",
+              "count": 64
+            }
+          }
+        ],
+        "color1": 65280,
+        "color2": 32768,
+        "resetName": true,
+        "name": "Maid's Cleaning Utensils",
+        "lore": [
+          "For the hard to reach spots"
+        ]
+      },
+      "requirement": "HIDDEN",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 135
+      },
+      "expression": "ItemKitCustom.create(\"Maid's Cleaning Utensils\", \"For the hard to reach spots\", 0x00ff00, 0x008000,\n\t\t\t\tnew ItemStack(ModItems.gun_m2),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.gun_autoshotgun),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_MAGNUM.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_MAGNUM.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_MAGNUM.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_EXPLOSIVE.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_EXPLOSIVE.ordinal())\n\t\t\t\t)",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "ItemKitCustom.create(\"Maid's Cleaning Utensils\", \"For the hard to reach spots\", 0x00ff00, 0x008000,\n\t\t\t\tnew ItemStack(ModItems.gun_m2),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.BMG50_DU.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.gun_autoshotgun),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_MAGNUM.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_MAGNUM.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_MAGNUM.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_EXPLOSIVE.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.G12_EXPLOSIVE.ordinal())\n\t\t\t\t)",
+        "name_en_us": "Maid's Cleaning Utensils",
+        "name_zh_cn": "Maid's Cleaning Utensils"
+      }
+    },
+    {
+      "index": 53,
+      "product": {
+        "kit": [
+          {
+            "stack": {
+              "id": "hbm:rod_of_discord",
+              "count": 1
+            },
+            "name": "Cock Joke",
+            "resetName": false
+          },
+          {
+            "stack": {
+              "id": "hbm:canned_conserve",
+              "count": 64,
+              "components": {
+                "hbm:legacy_metadata": 5
+              }
+            },
+            "name": "Class A Horse Semen",
+            "resetName": false
+          },
+          {
+            "stack": {
+              "id": "hbm:weapon_pipe_lead",
+              "count": 1,
+              "components": {
+                "minecraft:damage": 0
+              }
+            },
+            "name": "Get Nutted, Dumbass",
+            "resetName": false
+          },
+          {
+            "stack": {
+              "id": "hbm:gem_alexandrite",
+              "count": 1
+            }
+          }
+        ],
+        "color1": 0,
+        "color2": 0,
+        "resetName": false,
+        "name": "The Nut Bucket"
+      },
+      "requirement": "HIDDEN",
+      "cost": 64,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 150
+      },
+      "expression": "ItemKitNBT.create(\n\t\t\t\tnew ItemStack(ModItems.rod_of_discord).setStackDisplayName(\"Cock Joke\"),\n\t\t\t\tModItems.canned_conserve.stackFromEnum(64, EnumFoodType.SLIME).setStackDisplayName(\"Class A Horse Semen\"),\n\t\t\t\tnew ItemStack(ModItems.pipe_lead).setStackDisplayName(\"Get Nutted, Dumbass\"),\n\t\t\t\tnew ItemStack(ModItems.gem_alexandrite)\n\t\t\t\t).setStackDisplayName(\"The Nut Bucket\")",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "ItemKitNBT.create(\n\t\t\t\tnew ItemStack(ModItems.rod_of_discord).setStackDisplayName(\"Cock Joke\"),\n\t\t\t\tModItems.canned_conserve.stackFromEnum(64, EnumFoodType.SLIME).setStackDisplayName(\"Class A Horse Semen\"),\n\t\t\t\tnew ItemStack(ModItems.pipe_lead).setStackDisplayName(\"Get Nutted, Dumbass\"),\n\t\t\t\tnew ItemStack(ModItems.gem_alexandrite)\n\t\t\t\t).setStackDisplayName(\"The Nut Bucket\")",
+        "name_en_us": "The Nut Bucket",
+        "name_zh_cn": "The Nut Bucket"
+      }
+    },
+    {
+      "index": 54,
+      "product": {
+        "kit": [
+          {
+            "stack": {
+              "id": "hbm:rpa_helmet",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:rpa_plate",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:rpa_legs",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:rpa_boots",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:gun_minigun_lacunae",
+              "count": 1
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_capacitor_overcharge",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_capacitor_overcharge",
+              "count": 64
+            }
+          },
+          {
+            "stack": {
+              "id": "hbm:ammo_standard_capacitor_overcharge",
+              "count": 64
+            }
+          }
+        ],
+        "color1": 0,
+        "color2": 0,
+        "resetName": false,
+        "name": "Frenchie's Reward"
+      },
+      "requirement": "HIDDEN",
+      "cost": 32,
+      "rating": 0,
+      "comment": "No Ratings",
+      "author": "",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/BobmazonOfferFactory.java",
+        "line": 157
+      },
+      "expression": "ItemKitNBT.create(\n\t\t\t\tnew ItemStack(ModItems.rpa_helmet),\n\t\t\t\tnew ItemStack(ModItems.rpa_plate),\n\t\t\t\tnew ItemStack(ModItems.rpa_legs),\n\t\t\t\tnew ItemStack(ModItems.rpa_boots),\n\t\t\t\tnew ItemStack(ModItems.gun_minigun_lacunae),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.CAPACITOR_OVERCHARGE.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.CAPACITOR_OVERCHARGE.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.CAPACITOR_OVERCHARGE.ordinal())\n\t\t\t\t).setStackDisplayName(\"Frenchie's Reward\")",
+      "pending": [],
+      "sourceDisplay": {
+        "count": 1,
+        "sourceExpression": "ItemKitNBT.create(\n\t\t\t\tnew ItemStack(ModItems.rpa_helmet),\n\t\t\t\tnew ItemStack(ModItems.rpa_plate),\n\t\t\t\tnew ItemStack(ModItems.rpa_legs),\n\t\t\t\tnew ItemStack(ModItems.rpa_boots),\n\t\t\t\tnew ItemStack(ModItems.gun_minigun_lacunae),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.CAPACITOR_OVERCHARGE.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.CAPACITOR_OVERCHARGE.ordinal()),\n\t\t\t\tnew ItemStack(ModItems.ammo_standard, 64, EnumAmmo.CAPACITOR_OVERCHARGE.ordinal())\n\t\t\t\t).setStackDisplayName(\"Frenchie's Reward\")",
+        "name_en_us": "Frenchie's Reward",
+        "name_zh_cn": "Frenchie's Reward"
+      }
+    }
+  ],
+  "requirementIcons": {
+    "NONE": {
+      "id": "minecraft:book",
+      "count": 1
+    },
+    "STEEL": {
+      "id": "hbm:machine_blast_furnace",
+      "count": 1
+    },
+    "ASSEMBLY": {
+      "id": "hbm:machine_assembly_machine",
+      "count": 1
+    },
+    "CHEMICS": {
+      "id": "hbm:machine_chemical_plant",
+      "count": 1
+    },
+    "OIL": {
+      "id": "hbm:ingot_desh",
+      "count": 1
+    },
+    "NUCLEAR": {
+      "id": "hbm:ingot_tcalloy",
+      "count": 1
+    },
+    "HIDDEN": {
+      "id": "hbm:achievement_icon",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 9
+      }
+    }
+  }
+}

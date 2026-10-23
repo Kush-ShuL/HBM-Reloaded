@@ -1,0 +1,59 @@
+{
+  "parent": "hbm:item/pile_rod_ra226be",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 0
+      },
+      "model": "hbm:item/pile_rod_ra226be"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/pile_rod_po210be"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/pile_rod_zr"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/pile_rod_nu"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/pile_rod_pu239"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/pile_rod_rgp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/pile_rod_waste"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/pile_rod_thorium"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/pile_rod_thorium_fuel"
+    }
+  ]
+}

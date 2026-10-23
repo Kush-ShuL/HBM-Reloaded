@@ -1,0 +1,168 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_sawmill",
+      "id": "hbm:machine_sawmill",
+      "originalClass": "MachineSawmill",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1764",
+      "legacyBlockEntityId": "tileentity_sawmill",
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "machine_autosaw",
+      "id": "hbm:machine_autosaw",
+      "originalClass": "MachineAutosaw",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2203",
+      "legacyBlockEntityId": "tileentity_autosaw",
+      "stateProperties": []
+    }
+  ],
+  "sourceRecipes": {
+    "anvil": [
+      {
+        "id": "hbm:anvil/construction/source_360_0",
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+          "line": 360
+        },
+        "file": "data/hbm/recipe/anvil/construction/source_360_0.json",
+        "sourceControl": [],
+        "recipe": {
+          "type": "hbm:anvil_construction",
+          "inputs": [
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/plankwood"
+              },
+              "count": 16
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/platesteel"
+              },
+              "count": 6
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/ingotcopper"
+              },
+              "count": 8
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/ingotiron"
+              },
+              "count": 4
+            },
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:sawblade",
+                  "count": 1
+                }
+              },
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "stack": {
+                "id": "hbm:machine_sawmill",
+                "count": 1
+              },
+              "chance": 1.0
+            }
+          ],
+          "tier_lower": 2,
+          "tier_upper": -1,
+          "overlay": "CONSTRUCTION",
+          "order": 360000000
+        }
+      },
+      {
+        "id": "hbm:anvil/construction/source_406_0",
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+          "line": 406
+        },
+        "file": "data/hbm/recipe/anvil/construction/source_406_0.json",
+        "sourceControl": [],
+        "recipe": {
+          "type": "hbm:anvil_construction",
+          "inputs": [
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/platesteel"
+              },
+              "count": 4
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/ingotiron"
+              },
+              "count": 12
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/ingotcopper"
+              },
+              "count": 2
+            },
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:circuit_vacuum_tube",
+                  "count": 1
+                }
+              },
+              "count": 2
+            },
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:sawblade",
+                  "count": 1
+                }
+              },
+              "count": 1
+            }
+          ],
+          "outputs": [
+            {
+              "stack": {
+                "id": "hbm:machine_autosaw",
+                "count": 1
+              },
+              "chance": 1.0
+            }
+          ],
+          "tier_lower": 2,
+          "tier_upper": -1,
+          "overlay": "CONSTRUCTION",
+          "order": 406000000
+        }
+      }
+    ],
+    "sawbladeCraft": "hbm:crafting/hbm_sawblade_3ba3ac4016e4",
+    "sawmillDisplays": 4,
+    "pending": []
+  }
+}

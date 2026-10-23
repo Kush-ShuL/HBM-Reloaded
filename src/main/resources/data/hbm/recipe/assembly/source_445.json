@@ -1,0 +1,101 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.hpcondenser",
+  "duration": 600,
+  "power": 100,
+  "order": 148,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:machine_condenser_powered",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextuplesteel"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextupleanyresistantalloy"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor_desh"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:source_fluid_container",
+        "fluid": "LUBRICANT",
+        "amount": 1000
+      },
+      "count": 4
+    }
+  ],
+  "expensive_input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_ferro_plating"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor_desh"
+        }
+      },
+      "count": 5
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:source_fluid_container",
+        "fluid": "LUBRICANT",
+        "amount": 1000
+      },
+      "count": 16
+    }
+  ]
+}

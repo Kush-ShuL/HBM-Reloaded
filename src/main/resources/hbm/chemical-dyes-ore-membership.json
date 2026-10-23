@@ -1,0 +1,184 @@
+{
+  "source": {
+    "file": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java",
+    "lines": [
+      596,
+      606
+    ]
+  },
+  "metadataMembers": [
+    {
+      "ore": "dyeBlack",
+      "item": "hbm:chemical_dye",
+      "metadata": 0
+    },
+    {
+      "ore": "dyeBlack",
+      "item": "hbm:crayon",
+      "metadata": 0
+    },
+    {
+      "ore": "dyeRed",
+      "item": "hbm:chemical_dye",
+      "metadata": 1
+    },
+    {
+      "ore": "dyeRed",
+      "item": "hbm:crayon",
+      "metadata": 1
+    },
+    {
+      "ore": "dyeGreen",
+      "item": "hbm:chemical_dye",
+      "metadata": 2
+    },
+    {
+      "ore": "dyeGreen",
+      "item": "hbm:crayon",
+      "metadata": 2
+    },
+    {
+      "ore": "dyeBrown",
+      "item": "hbm:chemical_dye",
+      "metadata": 3
+    },
+    {
+      "ore": "dyeBrown",
+      "item": "hbm:crayon",
+      "metadata": 3
+    },
+    {
+      "ore": "dyeBlue",
+      "item": "hbm:chemical_dye",
+      "metadata": 4
+    },
+    {
+      "ore": "dyeBlue",
+      "item": "hbm:crayon",
+      "metadata": 4
+    },
+    {
+      "ore": "dyePurple",
+      "item": "hbm:chemical_dye",
+      "metadata": 5
+    },
+    {
+      "ore": "dyePurple",
+      "item": "hbm:crayon",
+      "metadata": 5
+    },
+    {
+      "ore": "dyeCyan",
+      "item": "hbm:chemical_dye",
+      "metadata": 6
+    },
+    {
+      "ore": "dyeCyan",
+      "item": "hbm:crayon",
+      "metadata": 6
+    },
+    {
+      "ore": "dyeLightGray",
+      "item": "hbm:chemical_dye",
+      "metadata": 7
+    },
+    {
+      "ore": "dyeLightGray",
+      "item": "hbm:crayon",
+      "metadata": 7
+    },
+    {
+      "ore": "dyeGray",
+      "item": "hbm:chemical_dye",
+      "metadata": 8
+    },
+    {
+      "ore": "dyeGray",
+      "item": "hbm:crayon",
+      "metadata": 8
+    },
+    {
+      "ore": "dyePink",
+      "item": "hbm:chemical_dye",
+      "metadata": 9
+    },
+    {
+      "ore": "dyePink",
+      "item": "hbm:crayon",
+      "metadata": 9
+    },
+    {
+      "ore": "dyeLime",
+      "item": "hbm:chemical_dye",
+      "metadata": 10
+    },
+    {
+      "ore": "dyeLime",
+      "item": "hbm:crayon",
+      "metadata": 10
+    },
+    {
+      "ore": "dyeYellow",
+      "item": "hbm:chemical_dye",
+      "metadata": 11
+    },
+    {
+      "ore": "dyeYellow",
+      "item": "hbm:crayon",
+      "metadata": 11
+    },
+    {
+      "ore": "dyeLightBlue",
+      "item": "hbm:chemical_dye",
+      "metadata": 12
+    },
+    {
+      "ore": "dyeLightBlue",
+      "item": "hbm:crayon",
+      "metadata": 12
+    },
+    {
+      "ore": "dyeMagenta",
+      "item": "hbm:chemical_dye",
+      "metadata": 13
+    },
+    {
+      "ore": "dyeMagenta",
+      "item": "hbm:crayon",
+      "metadata": 13
+    },
+    {
+      "ore": "dyeOrange",
+      "item": "hbm:chemical_dye",
+      "metadata": 14
+    },
+    {
+      "ore": "dyeOrange",
+      "item": "hbm:crayon",
+      "metadata": 14
+    },
+    {
+      "ore": "dyeWhite",
+      "item": "hbm:chemical_dye",
+      "metadata": 15
+    },
+    {
+      "ore": "dyeWhite",
+      "item": "hbm:crayon",
+      "metadata": 15
+    }
+  ],
+  "wildcardMembers": [
+    {
+      "ore": "dye",
+      "item": "hbm:chemical_dye",
+      "metadata": 32767
+    },
+    {
+      "ore": "dye",
+      "item": "hbm:crayon",
+      "metadata": 32767
+    }
+  ],
+  "note": "Requires metadata-aware native ore dictionary; never put whole sixteen-color items in one flat vanilla color Item tag."
+}

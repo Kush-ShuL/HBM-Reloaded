@@ -1,0 +1,39 @@
+{
+  "result": {
+    "id": "hbm:starmetal_hoe",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IS",
+    " B",
+    " I"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "S": {
+      "item": "hbm:ring_starmetal"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:cobalt_decorated_hoe",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleToolRecipes)"
+    }
+  ]
+}

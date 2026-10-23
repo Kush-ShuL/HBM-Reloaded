@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "toolbox",
+      "id": "hbm:toolbox",
+      "legacyRegistryId": "hbm:item.toolbox",
+      "originalClass": "ItemToolBox",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3801
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6418
+          },
+          "expression": "GameRegistry.registerItem(toolbox, toolbox.getUnlocalizedName())",
+          "arguments": [
+            "toolbox",
+            "toolbox.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolbox.ToolboxContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "inventorySlots": 24,
+      "inventoryStackLimit": 64,
+      "guiSize": [
+        176,
+        211
+      ]
+    }
+  ]
+}

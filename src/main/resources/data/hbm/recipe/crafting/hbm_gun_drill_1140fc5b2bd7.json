@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:gun_drill",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " GL",
+    "IBP",
+    " GL"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingottitanium"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blocksteel"
+    },
+    "P": {
+      "item": "hbm:piston_selenium"
+    }
+  }
+}

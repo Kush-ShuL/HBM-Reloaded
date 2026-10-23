@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:rod_dual",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 12
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:rod_dual_empty"
+    },
+    {
+      "item": "hbm:billet_nuclear_waste"
+    },
+    {
+      "item": "hbm:billet_nuclear_waste"
+    }
+  ]
+}

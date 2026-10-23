@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:mp_thruster_15_balefire_large_rad",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CTC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+    },
+    "T": {
+      "item": "hbm:mp_thruster_15_balefire_large"
+    }
+  }
+}

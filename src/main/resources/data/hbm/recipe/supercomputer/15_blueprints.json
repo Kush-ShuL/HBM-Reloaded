@@ -1,0 +1,49 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.blueprints",
+  "order": 15,
+  "duration": 18000,
+  "power": 50000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "minecraft:paper"
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dyeblue"
+      },
+      "count": 16
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:blueprint_folder",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "weight": 20
+        },
+        {
+          "stack": {
+            "id": "minecraft:paper",
+            "count": 16
+          },
+          "weight": 80
+        }
+      ],
+      "weighted": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "silo_hatch_large",
+      "id": "hbm:silo_hatch_large",
+      "legacyRegistryId": "hbm:tile.silo_hatch_large",
+      "originalClass": "BlockDoorGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2053
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ],
+  "sourceBlockEntityAlias": "tileentity_ntm_door",
+  "blockEntity": "hbm:generic_door",
+  "recipes": [
+    "hbm:assembly/source_240"
+  ]
+}

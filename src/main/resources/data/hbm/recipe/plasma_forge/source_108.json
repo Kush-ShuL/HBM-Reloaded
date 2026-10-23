@@ -1,0 +1,33 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldsteel",
+  "duration": 50,
+  "power": 500,
+  "ignition_temp": 500000,
+  "order": 14,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 30
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      },
+      "count": 2
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

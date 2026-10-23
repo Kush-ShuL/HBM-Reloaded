@@ -1,0 +1,121 @@
+{
+  "module": "source-vents193",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "vent_chlorine",
+      "id": "hbm:vent_chlorine",
+      "legacyRegistryId": "hbm:tile.vent_chlorine",
+      "originalClass": "BlockVent",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2291
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3487
+          },
+          "expression": "GameRegistry.registerBlock(vent_chlorine, vent_chlorine.getUnlocalizedName())",
+          "arguments": [
+            "vent_chlorine",
+            "vent_chlorine.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": true,
+      "nativeBlockEntity": "hbm:source_vent"
+    },
+    {
+      "kind": "block",
+      "symbol": "vent_cloud",
+      "id": "hbm:vent_cloud",
+      "legacyRegistryId": "hbm:tile.vent_cloud",
+      "originalClass": "BlockVent",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2292
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3488
+          },
+          "expression": "GameRegistry.registerBlock(vent_cloud, vent_cloud.getUnlocalizedName())",
+          "arguments": [
+            "vent_cloud",
+            "vent_cloud.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": true,
+      "nativeBlockEntity": "hbm:source_vent"
+    },
+    {
+      "kind": "block",
+      "symbol": "vent_pink_cloud",
+      "id": "hbm:vent_pink_cloud",
+      "legacyRegistryId": "hbm:tile.vent_pink_cloud",
+      "originalClass": "BlockVent",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2293
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3489
+          },
+          "expression": "GameRegistry.registerBlock(vent_pink_cloud, vent_pink_cloud.getUnlocalizedName())",
+          "arguments": [
+            "vent_pink_cloud",
+            "vent_pink_cloud.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": true,
+      "nativeBlockEntity": "hbm:source_vent"
+    },
+    {
+      "kind": "block",
+      "symbol": "vent_chlorine_seal",
+      "id": "hbm:vent_chlorine_seal",
+      "legacyRegistryId": "hbm:tile.vent_chlorine_seal",
+      "originalClass": "BlockClorineSeal",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2294
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3490
+          },
+          "expression": "GameRegistry.registerBlock(vent_chlorine_seal, vent_chlorine_seal.getUnlocalizedName())",
+          "arguments": [
+            "vent_chlorine_seal",
+            "vent_chlorine_seal.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": true,
+      "nativeBlockEntity": "hbm:chlorine_seal"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:screwdriver",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  I",
+    " I ",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "module": "laminate-pane199",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "reinforced_laminate_pane",
+      "id": "hbm:reinforced_laminate_pane",
+      "legacyRegistryId": "hbm:tile.reinforced_laminate_pane",
+      "originalClass": "BlockNTMGlassPane",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1474
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2654
+          },
+          "expression": "GameRegistry.registerBlock(reinforced_laminate_pane,ItemBlockBlastInfo.class, reinforced_laminate_pane.getUnlocalizedName())",
+          "arguments": [
+            "reinforced_laminate_pane",
+            "ItemBlockBlastInfo.class",
+            "reinforced_laminate_pane.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBlastInfo"
+        }
+      ],
+      "creativeTab": "block",
+      "hasBlockEntity": false,
+      "sourceMetadataRange": [
+        0,
+        15
+      ],
+      "sourceRotation": "none"
+    }
+  ]
+}

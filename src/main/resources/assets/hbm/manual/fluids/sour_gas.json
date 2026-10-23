@@ -1,0 +1,25 @@
+{
+  "name": "Sour Gas",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    93
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      93
+    ]
+  ],
+  "title": {
+    "en_US": "Sour Gas",
+    "ru_RU": "Кислый газ",
+    "zh_CN": "酸性气体"
+  },
+  "content": {
+    "en_US": "Sour gas is first obtained by [[vacuum refining|Vacuum Refinery]] [[pressurized|Compressor]] [[crude oil|Crude Oil]]. It is used in a variety of applications including the production of [[TATB]], and the [[conversion|Ore Acidizer]] of [[latex|Latex]] to [[rubber|Rubber]]. It may also be obtained by [[hydrotreating|Hydrotreater]] various [[oil|Crude Oil]] and [[diesel|Cracked Diesel]] variants.<br><br>{{Template:Oil3}}",
+    "ru_RU": "Кислый газ в первую очередь получают путем [[вакуумной переработки|Vacuum Refinery]] [[сжатой|Compressor]] [[сырой нефти|Crude Oil]]. Он используется в самых разных сферах, включая производство [[ТАТБ|TATB]] и [[конверсию|Ore Acidizer]] [[латекса|Latex]] в [[резину|Rubber]]. Его также можно получить путем [[гидроочистки|Hydrotreater]] различных фракций [[нефти|Crude Oil]] и [[крекированного дизеля|Cracked Diesel]].<br><br>{{Template:Oil3}}",
+    "zh_CN": "最初可将[[原油|Crude Oil]][[加压|Compressor]]后送入[[真空炼油厂|Vacuum Refinery]]获得。它用途很多，包括生产[[三氨基三硝基苯(TATB)|TATB]]，以及在[[矿物酸浸机|Ore Acidizer]]中把[[乳胶|Latex]]转化为[[橡胶|Rubber]]。在[[加氢处理机|Hydrotreater]]中处理多种[[油类|Crude Oil]]和[[柴油|Cracked Diesel]]也能获得。<br><br>{{Template:Oil3}}"
+  }
+}

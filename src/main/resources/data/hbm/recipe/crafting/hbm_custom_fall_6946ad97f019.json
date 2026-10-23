@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:custom_fall",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IIP",
+    "CHW",
+    "IIP"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesaturnite"
+    },
+    "C": {
+      "item": "hbm:circuit_advanced"
+    },
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "W": {
+      "item": "hbm:coil_copper"
+    }
+  }
+}

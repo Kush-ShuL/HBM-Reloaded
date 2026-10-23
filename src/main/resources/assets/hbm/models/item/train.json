@@ -1,0 +1,11 @@
+{
+  "parent": "hbm:item/train.cargo_tram",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/train.cargo_tram_trailer"
+    }
+  ]
+}

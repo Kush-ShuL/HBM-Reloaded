@@ -1,0 +1,185 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gun_b92",
+      "id": "hbm:gun_b92",
+      "legacyRegistryId": "item.gun_b92",
+      "originalClass": "GunB92",
+      "creativeTab": "weapon",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3590
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_b92_ammo",
+      "id": "hbm:gun_b92_ammo",
+      "legacyRegistryId": "item.gun_b92_ammo",
+      "originalClass": "GunB92Cell",
+      "creativeTab": "weapon",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3589
+      },
+      "metadataRange": [
+        0,
+        1
+      ],
+      "names": [
+        "uncharged",
+        "charged"
+      ],
+      "creativeMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "weaponized_starblaster_cell",
+      "id": "hbm:weaponized_starblaster_cell",
+      "legacyRegistryId": "item.weaponized_starblaster_cell",
+      "originalClass": "WeaponizedCell",
+      "creativeTab": "weapon",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3609
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "hbm:entity_beam_bomb",
+      "originalClass": "EntityB92Beam",
+      "legacyTrackingRange": 1000,
+      "updateInterval": 1,
+      "velocityUpdates": true
+    }
+  ],
+  "sourceRecipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/WeaponRecipes.java",
+        "line": 214
+      },
+      "expression": "CraftingManager.addRecipeAuto(new ItemStack(ModItems.gun_b92), new Object[] { \"DDD\", \"SSC\", \" R\", 'D', ModItems.plate_dineutronium, 'S', STAR.ingot(), 'C', DictFrame.fromOne(ModItems.circuit, EnumCircuitType.BISMOID), 'R', ModItems.gun_lasrifle })",
+      "status": "native_recipe",
+      "id": "hbm:crafting/hbm_gun_b92_e29b25f74685",
+      "recipe": {
+        "result": {
+          "id": "hbm:gun_b92",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "DDD",
+          "SSC",
+          "  R"
+        ],
+        "key": {
+          "D": {
+            "item": "hbm:plate_dineutronium"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+          },
+          "C": {
+            "item": "hbm:circuit_bismoid"
+          },
+          "R": {
+            "item": "hbm:gun_lasrifle"
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/WeaponRecipes.java",
+        "line": 215
+      },
+      "expression": "CraftingManager.addRecipeAuto(new ItemStack(ModItems.gun_b92_ammo, 1), new Object[] { \"PSP\", \"ESE\", \"PSP\", 'P', STEEL.plate(), 'S', STAR.ingot(), 'E', ModItems.powder_spark_mix })",
+      "status": "native_recipe",
+      "id": "hbm:crafting/hbm_gun_b92_ammo_63dfebb5b154",
+      "recipe": {
+        "result": {
+          "id": "hbm:gun_b92_ammo",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "PSP",
+          "ESE",
+          "PSP"
+        ],
+        "key": {
+          "P": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platesteel"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+          },
+          "E": {
+            "item": "hbm:powder_spark_mix"
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/WeaponRecipes.java",
+        "line": 216
+      },
+      "expression": "CraftingManager.addShapelessAuto(new ItemStack(ModItems.weaponized_starblaster_cell, 1), new Object[] { new ItemStack(ModItems.fluid_tank_full, 1, Fluids.PEROXIDE.getID()), GunB92Cell.getFullCell(), CU.wireFine() })",
+      "status": "native_recipe",
+      "id": "hbm:crafting/hbm_weaponized_starblaster_cell_74052aaeddc3",
+      "recipe": {
+        "result": {
+          "id": "hbm:weaponized_starblaster_cell",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "type": "neoforge:components",
+            "items": "hbm:fluid_tank_full",
+            "components": {
+              "hbm:legacy_metadata": 35,
+              "hbm:fluid_type": 35
+            },
+            "strict": false
+          },
+          {
+            "type": "hbm:alloy_legacy_stack",
+            "stack": {
+              "id": "hbm:gun_b92_ammo",
+              "count": 1,
+              "components": {
+                "hbm:legacy_metadata": 1,
+                "minecraft:custom_data": {
+                  "energy": 25
+                }
+              }
+            }
+          },
+          {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/wirefinecopper"
+          }
+        ]
+      }
+    }
+  ]
+}

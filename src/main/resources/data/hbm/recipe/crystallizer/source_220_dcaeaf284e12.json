@@ -1,0 +1,38 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.220.404",
+  "duration": 20,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "NITROGLYCERIN",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:ball_dynamite",
+            "count": 4
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "dict",
+  "source_key": "hbm:legacy_ore_dict/dustnetherquartz",
+  "order": 404
+}

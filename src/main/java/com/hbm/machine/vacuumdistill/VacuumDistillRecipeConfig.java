@@ -1,0 +1,44 @@
+package com.hbm.machine.vacuumdistill;
+
+import com.google.gson.*;
+import com.hbm.fluid.*;
+import com.hbm.recipe.generic.*;
+import com.mojang.logging.LogUtils;
+import java.nio.file.*;
+import java.util.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.*;
+import net.neoforged.bus.api.EventPriority;
+import net.neoforged.fml.loading.FMLPaths;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.OnDatapackSyncEvent;
+import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
+
+/** Source hbmVacRefinery.json replacement grammar; synchronized native processing recipes, never viewer-only. */
+public final class VacuumDistillRecipeConfig {
+    private static final Map<RecipeManager,Map<ResourceLocation,RecipeHolder<?>>> INSTALLED=new WeakHashMap<>();
+    private static final List<String> UNRESOLVED=new ArrayList<>();
+    private VacuumDistillRecipeConfig(){}
+    public static void register(){
+        NeoForge.EVENT_BUS.addListener((ServerAboutToStartEvent event)->install(event.getServer()));NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST,(OnDatapackSyncEvent event)->{var server=event.getPlayerList().getServer();if(event.getPlayer()==null||!INSTALLED.containsKey(server.getRecipeManager()))install(server);});
+    }
+    public static List<VacuumDistillRecipe> recipes(RecipeManager manager){return manager.getAllRecipesFor(VacuumDistillContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(r->r.data().order())).toList();}
+    public static VacuumDistillRecipe find(RecipeManager manager,HbmFluidType type){return recipes(manager).stream().filter(r->r.data().inputFluids().getFirst().type==type).findFirst().orElse(null);}
+    public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
+    private static void install(MinecraftServer server){
+        var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
+        var additions=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmVacRefinery.json");
+        try{
+            Files.createDirectories(directory);JsonObject root;if(Files.isRegularFile(active)){merged.values().removeIf(holder->holder.value().getType()==VacuumDistillContent.TYPE.get());try(var reader=Files.newBufferedReader(active)){root=JsonParser.parseReader(reader).getAsJsonObject();}}
+            else{try(var stream=VacuumDistillRecipeConfig.class.getResourceAsStream("/hbm/large-machine-vacuum-distill-recipes.json")){if(stream==null)throw new IllegalStateException("Missing source vacuumdistill recipes");root=JsonParser.parseReader(new java.io.InputStreamReader(stream,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject();}Files.writeString(directory.resolve("_hbmVacRefinery.json"),new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}
+            int order=0;for(var value:root.getAsJsonArray("recipes")){try{var row=value.getAsJsonObject();var input=fluid(row.get("input").getAsString());var outputs=new ArrayList<FluidStack>();for(int i=0;i<4;i++){var array=row.getAsJsonArray("output"+i);outputs.add(new FluidStack(fluid(array.get(0).getAsString()),Math.multiplyExact(array.get(1).getAsInt(),10),array.size()>2?array.get(2).getAsInt():0));}
+                var data=new GenericRecipeData("vacuumdistill."+input.getName(),10,10000,List.of(),List.of(new FluidStack(input,1000,2)),List.of(),outputs,List.of(),"",ItemStack.EMPTY,false,"",order);
+                var id=ResourceLocation.fromNamespaceAndPath("hbm","vacuumdistill/"+(Files.isRegularFile(active)?"config/":"default/")+order);additions.values().removeIf(holder->holder.value() instanceof VacuumDistillRecipe old&&old.data().inputFluids().getFirst().type==input);additions.put(id,new RecipeHolder<>(id,new VacuumDistillRecipe(data)));
+            }catch(Exception error){UNRESOLVED.add("row "+order+": "+error.getMessage());}order++;}
+        }catch(Exception error){LogUtils.getLogger().error("Cannot load original vacuumdistill recipes",error);}
+        additions.forEach(merged::put);manager.replaceRecipes(merged.values());INSTALLED.put(manager,additions);if(!UNRESOLVED.isEmpty())LogUtils.getLogger().warn("Original vacuumdistill source recipes awaiting items: {}",UNRESOLVED);
+    }
+    private static HbmFluidType fluid(String name){var type=HbmFluids.fromName(name);if(type==HbmFluids.NONE&&!name.equals("NONE"))throw new IllegalArgumentException("Unknown vacuumdistill fluid "+name);return type;}
+}

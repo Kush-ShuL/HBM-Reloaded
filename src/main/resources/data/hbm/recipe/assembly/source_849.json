@@ -1,0 +1,51 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mpt15hydro",
+  "duration": 200,
+  "power": 100,
+  "order": 287,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:mp_thruster_15_hydrogen",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:seg_15"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingottungsten"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      },
+      "count": 4
+    }
+  ]
+}

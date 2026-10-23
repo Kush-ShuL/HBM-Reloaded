@@ -1,0 +1,37 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "hbm:alloy_legacy_stack",
+    "stack": {
+      "id": "hbm:meteorite_sword_hardened",
+      "count": 1
+    }
+  },
+  "second": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotcobalt"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecobalt"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemcobalt"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustcobalt"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:meteorite_sword_alloyed",
+    "count": 1
+  },
+  "order": 12,
+  "hidden": true
+}

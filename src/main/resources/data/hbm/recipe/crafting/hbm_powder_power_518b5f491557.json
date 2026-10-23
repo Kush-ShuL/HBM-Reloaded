@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:powder_power",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustglowstone"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustdiamond"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustmagnetizedtungsten"
+    }
+  ]
+}

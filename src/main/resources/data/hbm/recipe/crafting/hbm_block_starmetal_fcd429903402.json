@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:block_starmetal",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:ingot_starmetal"
+    }
+  }
+}

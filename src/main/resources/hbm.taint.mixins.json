@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.world.taint.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TaintFallingFactory",
+    "TaintFallingTick",
+    "TaintedCreeperExplosion"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

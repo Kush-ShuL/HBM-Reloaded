@@ -1,0 +1,24 @@
+{
+  "en_us": {
+    "block.hbm.machine_arc_welder": "Arc Welder",
+    "container.machineArcWelder": "Arc Welder",
+    "jei.hbm.arcwelder": "Arc Welder",
+    "config.jade.plugin_hbm.arcwelder_state": "Arc Welder",
+    "gui.hbm.arcwelder.duration": "%s ticks",
+    "gui.hbm.arcwelder.power": "%sHE/t",
+    "gui.hbm.arcwelder.yes": "YES",
+    "jade.hbm.arcwelder.processing": "Arc welding",
+    "jade.hbm.arcwelder.consumption": "Consumption: %s HE/t"
+  },
+  "zh_cn": {
+    "block.hbm.machine_arc_welder": "电弧焊机",
+    "container.machineArcWelder": "电弧焊机",
+    "jei.hbm.arcwelder": "电弧焊机",
+    "config.jade.plugin_hbm.arcwelder_state": "电弧焊机",
+    "gui.hbm.arcwelder.duration": "%s刻",
+    "gui.hbm.arcwelder.power": "%s HE/刻",
+    "gui.hbm.arcwelder.yes": "是",
+    "jade.hbm.arcwelder.processing": "电弧焊接",
+    "jade.hbm.arcwelder.consumption": "耗能：%s HE/刻"
+  }
+}

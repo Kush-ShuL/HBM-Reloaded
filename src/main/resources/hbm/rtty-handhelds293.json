@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "rtty_pager",
+      "id": "hbm:rtty_pager",
+      "legacyRegistryId": "hbm:item.rtty_pager",
+      "originalClass": "ItemRTTYPager",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3846
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5517
+          },
+          "expression": "GameRegistry.registerItem(rtty_pager, rtty_pager.getUnlocalizedName())",
+          "arguments": [
+            "rtty_pager",
+            "rtty_pager.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.rttyhandheld.RttyHandheldContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "channelStorage": "existingCUSTOM_DATA.chan"
+    },
+    {
+      "kind": "item",
+      "symbol": "rtty_designator",
+      "id": "hbm:rtty_designator",
+      "legacyRegistryId": "hbm:item.rtty_designator",
+      "originalClass": "ItemRTTYDesignator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3847
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5518
+          },
+          "expression": "GameRegistry.registerItem(rtty_designator, rtty_designator.getUnlocalizedName())",
+          "arguments": [
+            "rtty_designator",
+            "rtty_designator.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.rttyhandheld.RttyHandheldContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "channelStorage": "existingCUSTOM_DATA.chan"
+    }
+  ]
+}

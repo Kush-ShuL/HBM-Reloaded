@@ -1,0 +1,61 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.copyparticlecalc",
+  "order": 13,
+  "duration": 18000,
+  "power": 10000,
+  "name_wrapper": "com.copy",
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 5
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 2,
+            "components": {
+              "hbm:legacy_metadata": 5
+            }
+          },
+          "weight": 95
+        },
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 2,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          },
+          "weight": 5
+        }
+      ],
+      "weighted": true
+    }
+  ]
+}

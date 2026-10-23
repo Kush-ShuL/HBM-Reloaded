@@ -1,0 +1,48 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:rbmk_cooler",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:rbmk_blank",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:steel_grate",
+        "count": 4
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:plate_polymer",
+        "count": 4
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 4,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 946000000,
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!GeneralConfig.enable528"
+    }
+  ]
+}

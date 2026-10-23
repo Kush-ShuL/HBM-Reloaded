@@ -1,0 +1,7 @@
+package com.hbm.satellite.control;
+import net.minecraft.network.RegistryFriendlyByteBuf;import net.minecraft.network.codec.StreamCodec;import net.minecraft.network.protocol.common.custom.CustomPacketPayload;import net.minecraft.resources.ResourceLocation;import net.minecraft.world.InteractionHand;import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+/** Original integer coordinate packet, authenticated against actual held terminal and actual hand. */
+public record SatelliteCoordinateControl(InteractionHand hand,int x,Integer y,int z)implements CustomPacketPayload{
+ public static final Type<SatelliteCoordinateControl> TYPE=new Type<>(ResourceLocation.parse("hbm:satellite_coordinate"));public static final StreamCodec<RegistryFriendlyByteBuf,SatelliteCoordinateControl> CODEC=StreamCodec.of((b,p)->{b.writeEnum(p.hand);b.writeInt(p.x);b.writeBoolean(p.y!=null);if(p.y!=null)b.writeInt(p.y);b.writeInt(p.z);},b->new SatelliteCoordinateControl(b.readEnum(InteractionHand.class),b.readInt(),b.readBoolean()?b.readInt():null,b.readInt()));@Override public Type<? extends CustomPacketPayload> type(){return TYPE;}
+ public static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToServer(TYPE,CODEC,(packet,context)->context.enqueueWork(()->{var player=context.player();var stack=player.getItemInHand(packet.hand);if(stack.getItem() instanceof SatelliteCoordinateItem item)item.receiveControl(player,stack,packet.x,packet.y,packet.z);}));}
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:can_empty"
+    },
+    {
+      "type": "hbm:source_water_potion"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "hbm:powder_meteorite_tiny"
+    }
+  ],
+  "result": {
+    "id": "hbm:can_luna",
+    "count": 1
+  }
+}

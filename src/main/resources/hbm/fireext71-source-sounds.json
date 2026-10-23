@@ -1,0 +1,17 @@
+{
+  "weapon.extinguisher": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "weapon/extinguisher",
+        "stream": false
+      }
+    ]
+  },
+  "weapon.reload.pressureValve": {
+    "category": "player",
+    "sounds": [
+      "weapon/reload/pressureValve"
+    ]
+  }
+}

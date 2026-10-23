@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:book_of_",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BGB",
+    "GAG",
+    "BGB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:egg_balefire_shard"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgold"
+    },
+    "A": {
+      "item": "minecraft:book"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+    }
+  ]
+}

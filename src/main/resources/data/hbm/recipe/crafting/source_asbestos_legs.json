@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:asbestos_legs",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "E E",
+    "E E"
+  ],
+  "key": {
+    "E": {
+      "item": "hbm:asbestos_cloth"
+    }
+  }
+}

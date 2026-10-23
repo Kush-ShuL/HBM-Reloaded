@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:deco_crt",
+  "metadata": 12,
+  "inventory": true,
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "hbm:block/crt_bsod"
+  }
+}

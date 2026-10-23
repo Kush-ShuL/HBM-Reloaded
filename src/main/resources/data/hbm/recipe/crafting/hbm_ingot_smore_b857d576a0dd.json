@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:marshmallow",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "id": "hbm:ingot_smore",
+    "count": 1
+  }
+}

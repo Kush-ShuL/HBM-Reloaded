@@ -1,0 +1,566 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "id": "hbm:fluid_duct_neo",
+      "symbol": "fluid_duct_neo",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1880
+      },
+      "variants": 3
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_valve",
+      "symbol": "fluid_valve",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1889
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_duct_box",
+      "symbol": "fluid_duct_box",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1881
+      },
+      "variants": 15
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_duct_exhaust",
+      "symbol": "fluid_duct_exhaust",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1882
+      },
+      "variants": 15,
+      "creativeMetadata": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_duct_paintable_block_exhaust",
+      "symbol": "fluid_duct_paintable_block_exhaust",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1883
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:pipe_anchor",
+      "symbol": "pipe_anchor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1884
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:pipe_anchor_exhaust",
+      "symbol": "pipe_anchor_exhaust",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1885
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_duct_paintable",
+      "symbol": "fluid_duct_paintable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1887
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_duct_gauge",
+      "symbol": "fluid_duct_gauge",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1888
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:fluid_counter_valve",
+      "symbol": "fluid_counter_valve",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1891
+      },
+      "variants": 1
+    },
+    {
+      "kind": "item",
+      "id": "hbm:fluid_duct",
+      "symbol": "fluid_duct",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3893
+      },
+      "variants": "native fluid niceOrder excluding NONE/noid"
+    },
+    {
+      "kind": "item",
+      "id": "hbm:wrench",
+      "symbol": "wrench",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2643
+      },
+      "variants": 1
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe",
+      "symbol": "deco_pipe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1608
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 0,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rusted",
+      "symbol": "deco_pipe_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1610
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 0,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_green",
+      "symbol": "deco_pipe_green",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1611
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 0,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_green_rusted",
+      "symbol": "deco_pipe_green_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1612
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 0,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_red",
+      "symbol": "deco_pipe_red",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1613
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 0,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_marked",
+      "symbol": "deco_pipe_marked",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1614
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 0,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rim",
+      "symbol": "deco_pipe_rim",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1615
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 1,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rim_rusted",
+      "symbol": "deco_pipe_rim_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1616
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 1,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rim_green",
+      "symbol": "deco_pipe_rim_green",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1617
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 1,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rim_green_rusted",
+      "symbol": "deco_pipe_rim_green_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1618
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 1,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rim_red",
+      "symbol": "deco_pipe_rim_red",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1619
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 1,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_rim_marked",
+      "symbol": "deco_pipe_rim_marked",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1620
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 1,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_framed",
+      "symbol": "deco_pipe_framed",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1621
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 3,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_framed_rusted",
+      "symbol": "deco_pipe_framed_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1622
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 3,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_framed_green",
+      "symbol": "deco_pipe_framed_green",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1623
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 3,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_framed_green_rusted",
+      "symbol": "deco_pipe_framed_green_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1624
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 3,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_framed_red",
+      "symbol": "deco_pipe_framed_red",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1625
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 3,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_framed_marked",
+      "symbol": "deco_pipe_framed_marked",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1626
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 3,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_quad",
+      "symbol": "deco_pipe_quad",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1627
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 2,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_quad_rusted",
+      "symbol": "deco_pipe_quad_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1628
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 2,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_quad_green",
+      "symbol": "deco_pipe_quad_green",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1629
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 2,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_quad_green_rusted",
+      "symbol": "deco_pipe_quad_green_rusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1630
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 2,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_quad_red",
+      "symbol": "deco_pipe_quad_red",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1631
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 2,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "kind": "block",
+      "id": "hbm:deco_pipe_quad_marked",
+      "symbol": "deco_pipe_quad_marked",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1632
+      },
+      "variants": 1,
+      "decorative": true,
+      "renderType": 2,
+      "sourceAxisMetadata": [
+        0,
+        4,
+        8
+      ]
+    }
+  ],
+  "pressureRange": [
+    0,
+    5
+  ],
+  "network": "Exact native type identity and pressure; FluidNetMK2 transfer algorithm, reciprocal physical/remote graph",
+  "creative": {
+    "machine": "Source order, standard3, box15, exhaust5 and other single block variants",
+    "block": "Original24 decorative BlockPipe variants",
+    "parts": [
+      "wrench"
+    ],
+    "template": "Original typed fluid duct niceOrder"
+  },
+  "computerMethods": {
+    "ntm_fluid_gauge": [
+      "getTransfer",
+      "getFluid",
+      "getInfo"
+    ],
+    "ntm_fluid_counter_valve": [
+      "getFluid",
+      "getCounter",
+      "resetCounter",
+      "getState",
+      "setState"
+    ]
+  }
+}

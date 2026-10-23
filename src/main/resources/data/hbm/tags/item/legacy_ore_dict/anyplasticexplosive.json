@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_semtex",
+    {
+      "id": "#c:ingots/any_plasticexplosive",
+      "required": false
+    },
+    "hbm:ingot_c4"
+  ]
+}

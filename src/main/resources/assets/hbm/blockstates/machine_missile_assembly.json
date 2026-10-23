@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hbm:block/machine_missile_assembly"
+    },
+    "facing=south": {
+      "model": "hbm:block/machine_missile_assembly"
+    },
+    "facing=west": {
+      "model": "hbm:block/machine_missile_assembly"
+    },
+    "facing=east": {
+      "model": "hbm:block/machine_missile_assembly"
+    }
+  }
+}

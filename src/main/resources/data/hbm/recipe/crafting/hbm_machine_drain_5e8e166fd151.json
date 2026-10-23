@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:machine_drain",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "T  ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplesteel"
+    },
+    "T": {
+      "item": "hbm:tank_steel"
+    }
+  }
+}

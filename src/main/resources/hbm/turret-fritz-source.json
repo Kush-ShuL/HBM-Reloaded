@@ -1,0 +1,64 @@
+{
+  "tank": {
+    "type": "DIESEL",
+    "capacity": 16000,
+    "sourceNbt": "diesel/diesel_max/diesel_type/diesel_p",
+    "privateFluidOnly": true
+  },
+  "perActiveTickHE": 100,
+  "maxHE": 10000,
+  "fuelPerShot": 2,
+  "damageFormula": "min((float)(flammableHeatEnergy/500000F),20F)*TURRET_FRITZ_DAMAGE",
+  "damageMultiplierDefault": 1,
+  "range": 48,
+  "grace": 2,
+  "elevation": 45,
+  "depression": 30,
+  "barrelLength": 2.25,
+  "acceptableInaccuracy": 15,
+  "sourceAmmoMetadataFLAME_DIESEL": 63,
+  "dieselAmmoFill": 1000,
+  "sourceAccessibleSlots": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sourceContainerLoads": {
+    "fluidIdentifier": 9,
+    "in": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "out": 9,
+    "dieselAmmo": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "sourceQuirks": [
+    "Displayed alternatives require FT_Combustible+FT_Liquid, firing instead requires FT_Flammable+FT_Liquid.",
+    "Full inherited turret update/sync precedes item-fluid loading exactly as source.",
+    "Each qualifying diesel ammunition slot consumes one item per tick when a whole1000mB fits; not one item total.",
+    "Only BALEFIRE uses the real balefire no-gravity config; every other flammable liquid uses flame_nograv with heat-derived damage.",
+    "Fritz source has no rotary warmup/cooldown/casing or extra fire delay.",
+    "Original sound is exactly volume2,pitch1+rand.nextFloat()*.5; source does not route this direct call through volume()."
+  ]
+}

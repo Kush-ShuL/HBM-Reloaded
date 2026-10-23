@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_actinium",
+    {
+      "id": "#c:dusts/ac227",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/actinium227",
+      "required": false
+    }
+  ]
+}

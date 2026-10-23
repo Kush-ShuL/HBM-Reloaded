@@ -1,0 +1,25 @@
+{
+  "name": "Dissolved Egg",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    107
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      107
+    ]
+  ],
+  "title": {
+    "en_US": "Dissolved Egg",
+    "ru_RU": "Растворенное яйцо",
+    "zh_CN": "蛋溶解液"
+  },
+  "content": {
+    "en_US": "Dissolved egg can be obtained by mixing [[high-performance solvent|High-Performance Solvent]] and an egg. It is used to produce [[cholesterol solution|Cholesterol Solution]] through [[fractioning|Fractioning Tower]]. It also returns some of the input [[high-performance solvent|High-Performance Solvent]].",
+    "ru_RU": "Растворенное яйцо можно получить путем смешивания [[высокоэффективного растворителя|High-Performance Solvent]] и яйца. Оно используется для получения [[раствора холестерина|Cholesterol Solution]] путем [[ректификации|Fractioning Tower]]. Этот процесс также возвращает часть исходного [[высокоэффективного растворителя|High-Performance Solvent]].",
+    "zh_CN": "将[[高性能溶剂|High-Performance Solvent]]与鸡蛋混合即可制得蛋溶解液。它可通过[[分馏|Fractioning Tower]]生产[[胆固醇溶液|Cholesterol Solution]]，并回收部分投入的[[高性能溶剂|High-Performance Solvent]]。"
+  }
+}

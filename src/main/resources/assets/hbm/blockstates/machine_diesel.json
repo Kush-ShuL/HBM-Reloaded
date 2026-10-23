@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hbm:block/machine_diesel"
+    },
+    "facing=south": {
+      "model": "hbm:block/machine_diesel"
+    },
+    "facing=west": {
+      "model": "hbm:block/machine_diesel"
+    },
+    "facing=east": {
+      "model": "hbm:block/machine_diesel"
+    }
+  }
+}

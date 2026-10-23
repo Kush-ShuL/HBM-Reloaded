@@ -1,0 +1,53 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mpw10bus",
+  "duration": 100,
+  "power": 100,
+  "order": 314,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:mp_warhead_10_buster",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:seg_10"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      },
+      "count": 6
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+      },
+      "count": 6
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_basic"
+        }
+      },
+      "count": 2
+    }
+  ]
+}

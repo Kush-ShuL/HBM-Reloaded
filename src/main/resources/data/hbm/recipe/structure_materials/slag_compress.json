@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:ingot_raw",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 41
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "hbm:block_slag",
+    "count": 1
+  }
+}

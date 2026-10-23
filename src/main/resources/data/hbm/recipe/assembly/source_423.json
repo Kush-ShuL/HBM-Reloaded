@@ -1,0 +1,59 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.pistonsetstar",
+  "duration": 200,
+  "power": 100,
+  "order": 141,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:piston_set",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotrubber"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesaturnite"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotniobium"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+      },
+      "count": 4
+    }
+  ]
+}

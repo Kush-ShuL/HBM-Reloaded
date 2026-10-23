@@ -1,0 +1,29 @@
+{
+  "parent": "hbm:digammakauaimoho",
+  "display": {
+    "icon": {
+      "id": "hbm:achievement_icon",
+      "components": {
+        "hbm:legacy_metadata": 7
+      }
+    },
+    "title": {
+      "translate": "achievement.digammaUpOnTop"
+    },
+    "description": {
+      "translate": "achievement.digammaUpOnTop.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:digammaupontop"
+      }
+    }
+  }
+}

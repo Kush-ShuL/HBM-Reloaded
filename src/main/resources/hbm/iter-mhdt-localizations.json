@@ -1,0 +1,26 @@
+{
+  "en_us": {
+    "tile.fusion_mhdt.name": "MHD Turbine",
+    "tile.fusion_mhdt.desc": "Turns plasma energy into usable$electricity directly. More efficient$than a conventional boiler.$Requires cooling!",
+    "block.hbm.fusion_mhdt": "MHD Turbine",
+    "jade.hbm.fusion_mhdt.heat": "Plasma: %s / %s TU/t",
+    "jade.hbm.fusion_mhdt.power": "Output: %s HE/t",
+    "jade.hbm.fusion_mhdt.low_power": "LOW POWER",
+    "jade.hbm.fusion_mhdt.no_cooling": "INSUFFICIENT COOLING",
+    "config.jade.plugin_hbm.fusion_mhdt_status": "MHD turbine plasma/output status",
+    "gui.hbm.fusion_mhdt.formula": "HE = floor(TU × 1.35)",
+    "gui.hbm.fusion_mhdt.minimum": "Below %s TU/t: 50%%"
+  },
+  "zh_cn": {
+    "tile.fusion_mhdt.name": "磁流体涡轮发电机",
+    "tile.fusion_mhdt.desc": "直接将等离子体能量转化成电力。$效率要比传统锅炉高。$需要冷却！",
+    "block.hbm.fusion_mhdt": "磁流体涡轮发电机",
+    "jade.hbm.fusion_mhdt.heat": "等离子体：%s / %s TU/t",
+    "jade.hbm.fusion_mhdt.power": "输出：%s HE/t",
+    "jade.hbm.fusion_mhdt.low_power": "功率过低",
+    "jade.hbm.fusion_mhdt.no_cooling": "冷却不足",
+    "config.jade.plugin_hbm.fusion_mhdt_status": "磁流体汽轮机等离子体与输出状态",
+    "gui.hbm.fusion_mhdt.formula": "HE = floor(TU × 1.35)",
+    "gui.hbm.fusion_mhdt.minimum": "低于%s TU/t：减半"
+  }
+}

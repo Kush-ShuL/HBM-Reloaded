@@ -1,0 +1,17 @@
+{
+  "parent": "hbm:item/upgrade_ejector_1",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/upgrade_ejector_2"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/upgrade_ejector_3"
+    }
+  ]
+}

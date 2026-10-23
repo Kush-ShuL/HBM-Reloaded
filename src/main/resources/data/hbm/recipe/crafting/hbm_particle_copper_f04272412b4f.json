@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:particle_copper",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:particle_empty"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcopper"
+    },
+    {
+      "item": "hbm:pellet_charged"
+    }
+  ]
+}

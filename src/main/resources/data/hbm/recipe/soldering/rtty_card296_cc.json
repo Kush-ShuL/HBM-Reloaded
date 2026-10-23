@@ -1,0 +1,68 @@
+{
+  "type": "hbm:soldering",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "computercraft"
+    }
+  ],
+  "data": {
+    "name": "soldering.rtty_card296_cc",
+    "duration": 100,
+    "power": 1000,
+    "input_items": [
+      {
+        "ingredient": {
+          "item": "hbm:radio_torch_receiver"
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "item": "hbm:radio_torch_sender"
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:circuit_advanced"
+          }
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:circuit_pcb"
+          }
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/wirefinelead"
+        },
+        "count": 4
+      }
+    ],
+    "output_items": [
+      {
+        "pool": [
+          {
+            "stack": {
+              "id": "hbm:rtty_card",
+              "count": 1
+            }
+          }
+        ],
+        "weighted": false
+      }
+    ]
+  },
+  "toppingCount": 3,
+  "pcbCount": 1
+}

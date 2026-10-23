@@ -1,0 +1,33 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldaluminium",
+  "duration": 150,
+  "power": 10000,
+  "ignition_temp": 500000,
+  "order": 18,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 1300
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplealuminum"
+      },
+      "count": 2
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:briquette_coal"
+  },
+  "result": {
+    "id": "hbm:coke_coal",
+    "count": 1
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

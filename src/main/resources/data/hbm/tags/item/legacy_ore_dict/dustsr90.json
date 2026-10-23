@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_sr90",
+    {
+      "id": "#c:dusts/sr90",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/strontium90",
+      "required": false
+    }
+  ]
+}

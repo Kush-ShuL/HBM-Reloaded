@@ -1,0 +1,27 @@
+{
+  "type": "hbm:particle_accelerator",
+  "input1": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_muon"
+      }
+    },
+    "count": 1
+  },
+  "input2": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_higgs"
+      }
+    },
+    "count": 1
+  },
+  "momentum": 5000,
+  "output1": {
+    "id": "hbm:particle_tachyon",
+    "count": 1
+  },
+  "order": 5
+}

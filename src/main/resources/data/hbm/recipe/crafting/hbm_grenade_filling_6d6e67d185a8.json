@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:grenade_filling",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F",
+    "I",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

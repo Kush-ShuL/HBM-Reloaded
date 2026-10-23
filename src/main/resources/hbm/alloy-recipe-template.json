@@ -1,0 +1,213 @@
+{
+  "comment": "合金高炉配方表。每种输入消耗一个物品；dictframe 使用区分大小写的材料名后缀匹配锭、板、宝石和粉。",
+  "recipes": [
+    {
+      "input1": [
+        "dictframe",
+        "Iron"
+      ],
+      "input2": [
+        "dictframe",
+        "Coal"
+      ],
+      "output": [
+        "hbm:ingot_steel",
+        1,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dictframe",
+        "Iron"
+      ],
+      "input2": [
+        "dictframe",
+        "AnyCoke"
+      ],
+      "output": [
+        "hbm:ingot_steel",
+        1,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dict",
+        "oreIron"
+      ],
+      "input2": [
+        "dictframe",
+        "Coal"
+      ],
+      "output": [
+        "hbm:ingot_steel",
+        2,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dict",
+        "oreIron"
+      ],
+      "input2": [
+        "dictframe",
+        "AnyCoke"
+      ],
+      "output": [
+        "hbm:ingot_steel",
+        3,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dict",
+        "oreIron"
+      ],
+      "input2": [
+        "item",
+        "hbm:powder_flux",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:ingot_steel",
+        3,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dictframe",
+        "Copper"
+      ],
+      "input2": [
+        "dictframe",
+        "Redstone"
+      ],
+      "output": [
+        "hbm:ingot_red_copper",
+        2,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "item",
+        "hbm:canister_full",
+        1,
+        46
+      ],
+      "input2": [
+        "dict",
+        "slimeball"
+      ],
+      "output": [
+        "hbm:canister_napalm",
+        1,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dictframe",
+        "Tungsten"
+      ],
+      "input2": [
+        "dict",
+        "nuggetSchrabidium"
+      ],
+      "output": [
+        "hbm:ingot_magnetized_tungsten",
+        1,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dictframe",
+        "Steel"
+      ],
+      "input2": [
+        "dict",
+        "nuggetTechnetium99"
+      ],
+      "output": [
+        "hbm:ingot_tcalloy",
+        1,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dict",
+        "plateGold"
+      ],
+      "input2": [
+        "item",
+        "hbm:plate_mixed",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:plate_paa",
+        2,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dictframe",
+        "Saturnite"
+      ],
+      "input2": [
+        "item",
+        "hbm:ingot_meteorite",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:ingot_starmetal",
+        2,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "dictframe",
+        "Cobalt"
+      ],
+      "input2": [
+        "item",
+        "hbm:powder_meteorite",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:ingot_meteorite",
+        1,
+        0
+      ]
+    },
+    {
+      "input1": [
+        "item",
+        "hbm:meteorite_sword_hardened",
+        1,
+        0
+      ],
+      "input2": [
+        "dictframe",
+        "Cobalt"
+      ],
+      "output": [
+        "hbm:meteorite_sword_alloyed",
+        1,
+        0
+      ],
+      "hidden": true
+    }
+  ]
+}

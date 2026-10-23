@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "minecraft:saddle",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LLL",
+    "LRL",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "type": "neoforge:components",
+      "items": "hbm:plant_item",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  }
+}

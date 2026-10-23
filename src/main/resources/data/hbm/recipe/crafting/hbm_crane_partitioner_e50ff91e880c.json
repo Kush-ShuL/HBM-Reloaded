@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:crane_partitioner",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    "BCB"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:circuit_chip"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:conveyor_wand",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "C": {
+      "item": "hbm:crate_steel"
+    }
+  }
+}

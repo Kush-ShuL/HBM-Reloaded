@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "neoforge:components",
+      "items": "hbm:lightstone",
+      "components": {
+        "hbm:legacy_metadata": 2
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:lightstone_bricks_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.drilltc",
+  "duration": 100,
+  "power": 100,
+  "order": 123,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drillbit",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 6
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+      },
+      "count": 20
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotrubber"
+      },
+      "count": 8
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 11,
+  "source_key": "ore:ingotGold",
+  "source_hash": 1828888155,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotgold"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_bismuth",
+    "count": 1
+  }
+}

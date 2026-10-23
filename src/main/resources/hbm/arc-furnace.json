@@ -1,0 +1,779 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_arc_furnace",
+      "id": "hbm:machine_arc_furnace",
+      "originalClass": "MachineArcFurnaceLarge",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1826",
+      "legacyBlockEntityId": "tileentity_arc_furnace_large"
+    },
+    {
+      "kind": "block",
+      "symbol": "sand_mix",
+      "id": "hbm:sand_mix",
+      "originalClass": "BlockNTMSand",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1641",
+      "metadataRange": [
+        0,
+        4
+      ],
+      "names": [
+        "boron",
+        "lead",
+        "uranium",
+        "polonium",
+        "quartz"
+      ],
+      "enumClass": "EnumSandType"
+    },
+    {
+      "kind": "item",
+      "symbol": "arc_electrode",
+      "id": "hbm:arc_electrode",
+      "originalClass": "ItemArcElectrode",
+      "creativeTab": "control",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:3719",
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "graphite",
+        "lanthanium",
+        "desh",
+        "saturnite"
+      ],
+      "enumClass": "EnumElectrodeType"
+    },
+    {
+      "kind": "item",
+      "symbol": "arc_electrode_burnt",
+      "id": "hbm:arc_electrode_burnt",
+      "originalClass": "ItemArcElectrodeBurnt",
+      "creativeTab": "control",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:3720",
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "graphite",
+        "lanthanium",
+        "desh",
+        "saturnite"
+      ],
+      "enumClass": "EnumElectrodeType"
+    }
+  ],
+  "recipeOrigins": [
+    {
+      "row": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 53
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 54
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 55
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 56
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 57
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 58
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 6,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 59
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 7,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 60
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 8,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 61
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 9,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 62
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 10,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 63
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 11,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 65
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 12,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java",
+        "line": 66
+      },
+      "kind": "explicit"
+    },
+    {
+      "row": 13,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "SULFURIC_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 14,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "SULFURIC_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 15,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "SOLVENT_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 16,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "SOLVENT_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 17,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "RAD_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 18,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "RAD_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 19,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "PRIMARY_FIRST",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 20,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "PRIMARY_SECOND",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 21,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "CRUMBS",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 22,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "SULFURIC_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 23,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "SOLVENT_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 24,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "LIGHT_METAL",
+      "grade": "RAD_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 25,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "SULFURIC_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 26,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "SULFURIC_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 27,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "SOLVENT_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 28,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "SOLVENT_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 29,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "RAD_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 30,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "RAD_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 31,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "PRIMARY_FIRST",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 32,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "PRIMARY_SECOND",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 33,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "CRUMBS",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 34,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "SULFURIC_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 35,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "SOLVENT_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 36,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "HEAVY_METAL",
+      "grade": "RAD_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 37,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "SULFURIC_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 38,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "SULFURIC_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 39,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "SOLVENT_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 40,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "SOLVENT_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 41,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "RAD_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 42,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "RAD_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 43,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "PRIMARY_FIRST",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 44,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "PRIMARY_SECOND",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 45,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "CRUMBS",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 46,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "SULFURIC_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 47,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "SOLVENT_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 48,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "RARE_EARTH",
+      "grade": "RAD_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 49,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "SULFURIC_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 50,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "SULFURIC_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 51,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "SOLVENT_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 52,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "SOLVENT_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 53,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "RAD_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 54,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "RAD_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 55,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "PRIMARY_FIRST",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 56,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "PRIMARY_SECOND",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 57,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "CRUMBS",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 58,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "SULFURIC_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 59,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "SOLVENT_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 60,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "ACTINIDE",
+      "grade": "RAD_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 61,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "SULFURIC_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 62,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "SULFURIC_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 63,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "SOLVENT_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 64,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "SOLVENT_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 65,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "RAD_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 66,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "RAD_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 67,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "PRIMARY_FIRST",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 68,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "PRIMARY_SECOND",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 69,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "CRUMBS",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 70,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "SULFURIC_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 71,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "SOLVENT_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 72,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "NON_METAL",
+      "grade": "RAD_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 73,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "SULFURIC_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 74,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "SULFURIC_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 75,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "SOLVENT_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 76,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "SOLVENT_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 77,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "RAD_BYPRODUCT",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 78,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "RAD_ROASTED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 79,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "PRIMARY_FIRST",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 80,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "PRIMARY_SECOND",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 81,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "CRUMBS",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 82,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "SULFURIC_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 83,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "SOLVENT_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    },
+    {
+      "row": 84,
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/ArcFurnaceRecipes.java:68",
+      "kind": "bedrock",
+      "type": "CRYSTALLINE",
+      "grade": "RAD_WASHED",
+      "binding": "requires real ItemBedrockOreNew"
+    }
+  ],
+  "electrodeDurability": {
+    "graphite": 10,
+    "lanthanium": 100,
+    "desh": 500,
+    "saturnite": 1500
+  },
+  "dimensions": [
+    4,
+    0,
+    2,
+    2,
+    2,
+    2
+  ],
+  "additionalDimensions": [
+    4,
+    0,
+    3,
+    -2,
+    1,
+    1
+  ],
+  "offset": 2,
+  "capacityHE": 2500000,
+  "capacityMoltenQuanta": 82944,
+  "computerComponent": null
+}

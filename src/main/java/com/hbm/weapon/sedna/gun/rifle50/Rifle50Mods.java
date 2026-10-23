@@ -1,0 +1,33 @@
+package com.hbm.weapon.sedna.gun.rifle50;
+import java.util.*;
+import java.util.function.*;
+import com.hbm.weapon.sedna.BulletConfig;
+import com.hbm.weapon.sedna.gun.*;
+import com.hbm.weapon.sedna.gun.ItemGunBaseNT.*;
+import com.hbm.weapon.sedna.gun.factory.*;
+import com.hbm.weapon.sedna.gun.mags.*;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing.CasingType;
+import com.hbm.client.animation.bus.*;
+import com.hbm.client.animation.bus.BusAnimationKeyframe.IType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import com.hbm.damage.LegacyEntityDamage;
+import com.hbm.damage.DamageResistanceHandler.DamageClass;
+import com.hbm.weapon.sedna.gun.mods.XWeaponModManager;
+import com.hbm.weapon.sedna.gun.legendary.CasingEffects;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunFactory;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunAnimations;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.*;
+import com.hbm.entity.projectile.EntityBulletBaseMK4;
+import com.hbm.weapon.sedna.gun.pistols.PistolAmmo;
+import com.hbm.weapon.sedna.gun.rifle.RifleBallistics;
+import com.hbm.weapon.sedna.gun.mods.*;
+import net.minecraft.world.item.Item;
+public final class Rifle50Mods {public static void initialize(){
+SourceWeaponModBindings.definition("weapon_mod_generic",10).addMod(new Item[]{Rifle50Guns.gun_amat,Rifle50Guns.gun_m2},SourceWeaponModBindings.handler(110,WeaponModGenericDamage.class,WeaponModGenericDamage::new));
+SourceWeaponModBindings.definition("weapon_mod_generic",11).addMod(new Item[]{Rifle50Guns.gun_amat,Rifle50Guns.gun_m2},SourceWeaponModBindings.handler(111,WeaponModGenericDurability.class,WeaponModGenericDurability::new));
+SourceWeaponModBindings.definition("weapon_mod_special",0).addMod(new Item[]{Rifle50Guns.gun_amat},SourceWeaponModBindings.handler(201,WeaponModSilencer.class,WeaponModSilencer::new));
+}}

@@ -1,0 +1,64 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.excomputer",
+  "duration": 1200,
+  "power": 16000,
+  "order": 22,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_computer",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_circuit"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_controller"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_capacitor_board"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:glass_quartz"
+        }
+      },
+      "count": 8
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PERFLUOROMETHYL",
+      "amount": 2000,
+      "pressure": 0
+    }
+  ]
+}

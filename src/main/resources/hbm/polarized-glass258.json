@@ -1,0 +1,37 @@
+{
+  "module": "polarized-glass258",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "glass_polarized",
+      "id": "hbm:glass_polarized",
+      "hasItem": true,
+      "originalClass": "BlockNTMGlassCT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1649
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2963
+          },
+          "expression": "GameRegistry.registerBlock(glass_polarized, glass_polarized.getUnlocalizedName())",
+          "arguments": [
+            "glass_polarized",
+            "glass_polarized.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "legacyRegistryId": "hbm:tile.glass_polarized",
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0
+      ],
+      "maxStackSize": 64,
+      "hasBlockEntity": false
+    }
+  ]
+}

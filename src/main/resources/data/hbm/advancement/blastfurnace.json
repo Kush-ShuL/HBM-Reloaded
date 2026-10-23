@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:burnerpress",
+  "display": {
+    "icon": {
+      "id": "hbm:machine_blast_furnace"
+    },
+    "title": {
+      "translate": "achievement.blastFurnace"
+    },
+    "description": {
+      "translate": "achievement.blastFurnace.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:blastfurnace"
+      }
+    }
+  }
+}

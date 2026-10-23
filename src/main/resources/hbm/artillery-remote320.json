@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "designator_arty_range",
+      "id": "hbm:designator_arty_range",
+      "legacyRegistryId": "hbm:item.designator_arty_range",
+      "originalClass": "ItemDesignatorArtyRange",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3392
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5501
+          },
+          "expression": "GameRegistry.registerItem(designator_arty_range, designator_arty_range.getUnlocalizedName())",
+          "arguments": [
+            "designator_arty_range",
+            "designator_arty_range.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.artilleryremote.ArtilleryRemoteContent",
+      "creativeTab": "missile",
+      "maxStackSize": 1
+    }
+  ]
+}

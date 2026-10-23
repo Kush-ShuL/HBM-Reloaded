@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P P",
+    "GCG"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockglass"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    }
+  },
+  "result": {
+    "id": "hbm:night_vision",
+    "count": 1
+  }
+}

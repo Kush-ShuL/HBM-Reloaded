@@ -1,0 +1,50 @@
+{
+  "name": "Chlorocalcite Solution",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    114
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      114
+    ],
+    [
+      "hbm:item.fluid_icon",
+      1,
+      115
+    ],
+    [
+      "hbm:item.fluid_icon",
+      1,
+      116
+    ],
+    [
+      "hbm:item.fluid_icon",
+      1,
+      117
+    ],
+    [
+      "hbm:item.fluid_icon",
+      1,
+      118
+    ],
+    [
+      "hbm:item.fluid_icon",
+      1,
+      119
+    ]
+  ],
+  "title": {
+    "en_US": "Chlorocalcite Solution",
+    "ru_RU": "Раствор хлоркальцита",
+    "zh_CN": "氯方解石溶液"
+  },
+  "content": {
+    "en_US": "Chlorocalcite solution can be obtained by [[processing|Chemical Plant]] chlorocalcite into a liquid. It is used in a long process to produce [[chlorine gas|Chlorine Gas]] and calcium powder.<br><br>This process requires converting mixing chlorocalcite solution with [[sulfuric acid|Sulfuric Acid]] and flux to obtain mixed chlorocalcite solution. It can then be [[fractioned|Fractioning Tower]] into [[colloid|Colloid]] and cleaned chlorocalcite solution. By [[processing|Chemical Plant]] the cleaned chlorocalcite solution with [[sulfuric acid|Sulfuric Acid]] it will produce potassium chloride solution and calcium chloride solution. The potassium chloride solution can be [[electrolyzed|Electrolysis Machine]] into [[chlorine gas|Chlorine Gas]]. The calcium chloride is also [[electrolyzed|Electrolysis Machine]] to produce [[chlorine gas|Chlorine Gas]] as well as calcium solution. Lastly, the calcium solution may be [[coked|Coker Unit]] to produce calcium powder and [[low-pressure steam|Steam]].",
+    "ru_RU": "Раствор хлоркальцита можно получить путем [[переработки|Chemical Plant]] хлоркальцита в жидкость. Он используется в длительном процессе для получения [[[хлорного газа|chlorine gas]] и порошка кальция.<br><br>Этот процесс требует смешивания раствора хлоркальцита с [[серной кислотой|sulfuric acid]] и флюсом для получения смешанного раствора хлоркальцита. Затем его можно [[ректифицировать|Fractioning Tower]] на [[коллоид|colloid]] и очищенный раствор хлоркальцита. Путем [[переработки|Chemical Plant]] очищенного раствора хлоркальцита с [[серной кислотой|sulfuric acid]] получатся раствор хлорида калия и раствор хлорида кальция. Раствор хлорида калия можно подвергнуть [[электролизу|Electrolysis Machine]] для получения [[хлорного газа|chlorine gas]]. Раствор хлорида кальция также подвергается [[электролизу|Electrolysis Machine]] для получения [[хлорного газа|chlorine gas]], а также раствора кальция. Наконец, раствор кальция можно [[закоксовать|Coker Unit]] для получения порошка кальция и [[пара низкого давления|low-pressure steam]].",
+    "zh_CN": "将氯方解石送入[[化工厂|Chemical Plant]]加工成液体即可获得氯方解石溶液。它用于一条较长的工艺链，最终生产[[氯气|Chlorine Gas]]和钙粉。<br><br>首先将氯方解石溶液与[[硫酸|Sulfuric Acid]]、助熔剂混合，制成混合氯方解石溶液；再经[[分馏塔|Fractioning Tower]]分离出[[胶体|Colloid]]和洁净氯方解石溶液。在[[化工厂|Chemical Plant]]中用[[硫酸|Sulfuric Acid]]处理洁净溶液，得到氯化钾溶液和氯化钙溶液。氯化钾溶液可在[[电解机|Electrolysis Machine]]中生产[[氯气|Chlorine Gas]]；氯化钙溶液也可经[[电解机|Electrolysis Machine]]处理，得到[[氯气|Chlorine Gas]]和钙溶液。最后将钙溶液送入[[焦化装置|Coker Unit]]，即可制得钙粉和[[低压蒸汽|Steam]]。"
+  }
+}

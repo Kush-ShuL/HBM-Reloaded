@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hbm:block/bomb_multi"
+    },
+    "facing=south": {
+      "model": "hbm:block/bomb_multi"
+    },
+    "facing=west": {
+      "model": "hbm:block/bomb_multi"
+    },
+    "facing=east": {
+      "model": "hbm:block/bomb_multi"
+    }
+  }
+}

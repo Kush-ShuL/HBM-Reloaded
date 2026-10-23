@@ -1,0 +1,381 @@
+{
+  "module": "source-railway256",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "rail_narrow_straight",
+      "id": "hbm:rail_narrow_straight",
+      "legacyRegistryId": "hbm:tile.rail_narrow_straight",
+      "originalClass": "RailNarrowStraight",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2157
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_narrow_curve",
+      "id": "hbm:rail_narrow_curve",
+      "legacyRegistryId": "hbm:tile.rail_narrow_curve",
+      "originalClass": "RailNarrowCurve",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2158
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_straight",
+      "id": "hbm:rail_large_straight",
+      "legacyRegistryId": "hbm:tile.rail_large_straight",
+      "originalClass": "RailStandardStraight",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2159
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_straight_short",
+      "id": "hbm:rail_large_straight_short",
+      "legacyRegistryId": "hbm:tile.rail_large_straight_short",
+      "originalClass": "RailStandardStraightShort",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2160
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_curve",
+      "id": "hbm:rail_large_curve",
+      "legacyRegistryId": "hbm:tile.rail_large_curve",
+      "originalClass": "RailStandardCurveBase",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2161
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_curve_7",
+      "id": "hbm:rail_large_curve_7",
+      "legacyRegistryId": "hbm:tile.rail_large_curve_7",
+      "originalClass": "RailStandardCurveWide7",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2162
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_curve_9",
+      "id": "hbm:rail_large_curve_9",
+      "legacyRegistryId": "hbm:tile.rail_large_curve_9",
+      "originalClass": "RailStandardCurveWide9",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2163
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_ramp",
+      "id": "hbm:rail_large_ramp",
+      "legacyRegistryId": "hbm:tile.rail_large_ramp",
+      "originalClass": "RailStandardRamp",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2164
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_buffer",
+      "id": "hbm:rail_large_buffer",
+      "legacyRegistryId": "hbm:tile.rail_large_buffer",
+      "originalClass": "RailStandardBuffer",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2165
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_switch",
+      "id": "hbm:rail_large_switch",
+      "legacyRegistryId": "hbm:tile.rail_large_switch",
+      "originalClass": "RailStandardSwitch",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2166
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_large_switch_flipped",
+      "id": "hbm:rail_large_switch_flipped",
+      "legacyRegistryId": "hbm:tile.rail_large_switch_flipped",
+      "originalClass": "RailStandardSwitchFlipped",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2167
+      },
+      "creativeTab": "none",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ],
+  "rails": [
+    {
+      "symbol": "rail_narrow_straight",
+      "originalClass": "RailNarrowStraight",
+      "dimensions": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "offset": 2,
+      "gauge": "NARROW",
+      "curveWidth": 0
+    },
+    {
+      "symbol": "rail_narrow_curve",
+      "originalClass": "RailNarrowCurve",
+      "dimensions": [
+        0,
+        0,
+        4,
+        0,
+        4,
+        0
+      ],
+      "offset": 0,
+      "gauge": "NARROW",
+      "curveWidth": 4
+    },
+    {
+      "symbol": "rail_large_straight",
+      "originalClass": "RailStandardStraight",
+      "dimensions": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "offset": 2,
+      "gauge": "STANDARD",
+      "curveWidth": 0
+    },
+    {
+      "symbol": "rail_large_straight_short",
+      "originalClass": "RailStandardStraightShort",
+      "dimensions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "offset": 0,
+      "gauge": "STANDARD",
+      "curveWidth": 0
+    },
+    {
+      "symbol": "rail_large_curve",
+      "originalClass": "RailStandardCurveBase",
+      "dimensions": [
+        0,
+        0,
+        4,
+        0,
+        4,
+        0
+      ],
+      "offset": 0,
+      "gauge": "STANDARD",
+      "curveWidth": 4
+    },
+    {
+      "symbol": "rail_large_curve_7",
+      "originalClass": "RailStandardCurveWide7",
+      "dimensions": [
+        0,
+        0,
+        6,
+        0,
+        6,
+        0
+      ],
+      "offset": 0,
+      "gauge": "STANDARD",
+      "curveWidth": 6
+    },
+    {
+      "symbol": "rail_large_curve_9",
+      "originalClass": "RailStandardCurveWide9",
+      "dimensions": [
+        0,
+        0,
+        8,
+        0,
+        8,
+        0
+      ],
+      "offset": 0,
+      "gauge": "STANDARD",
+      "curveWidth": 8
+    },
+    {
+      "symbol": "rail_large_ramp",
+      "originalClass": "RailStandardRamp",
+      "dimensions": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "offset": 2,
+      "gauge": "STANDARD",
+      "curveWidth": 0
+    },
+    {
+      "symbol": "rail_large_buffer",
+      "originalClass": "RailStandardBuffer",
+      "dimensions": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "offset": 2,
+      "gauge": "STANDARD",
+      "curveWidth": 0
+    },
+    {
+      "symbol": "rail_large_switch",
+      "originalClass": "RailStandardSwitch",
+      "dimensions": [
+        0,
+        0,
+        7,
+        7,
+        1,
+        0
+      ],
+      "offset": 7,
+      "gauge": "STANDARD",
+      "curveWidth": 0
+    },
+    {
+      "symbol": "rail_large_switch_flipped",
+      "originalClass": "RailStandardSwitchFlipped",
+      "dimensions": [
+        0,
+        0,
+        7,
+        7,
+        1,
+        0
+      ],
+      "offset": 7,
+      "gauge": "STANDARD",
+      "curveWidth": 0
+    }
+  ]
+}

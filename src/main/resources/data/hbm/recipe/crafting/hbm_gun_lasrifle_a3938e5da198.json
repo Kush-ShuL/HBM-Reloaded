@@ -1,0 +1,49 @@
+{
+  "result": {
+    "id": "hbm:gun_lasrifle",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DLC",
+    "BRS",
+    "MG "
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:crystal_redstone"
+    },
+    "L": {
+      "type": "neoforge:components",
+      "items": "hbm:weapon_mod_special",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    "C": {
+      "item": "hbm:circuit_bismoid"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/barrellightanybismoidbronze"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/receiverlightanybismoidbronze"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stockanyhardplastic"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gripanyhardplastic"
+    }
+  }
+}

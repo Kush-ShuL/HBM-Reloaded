@@ -1,0 +1,407 @@
+{
+  "recipes": [
+    {
+      "input": [
+        "item",
+        "hbm:waste_natural_uranium",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_natural_uranium",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_uranium",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_uranium",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_thorium",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_thorium",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_mox",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_mox",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plutonium",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plutonium",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_u233",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_u233",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_u235",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_u235",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_schrabidium",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_schrabidium",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_zfb_mox",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_zfb_mox",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_u233",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_u233",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_u235",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_u235",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_mox",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_mox",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_pu239",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_pu239",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_sa326",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_sa326",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_ra226be",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_ra226be",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:waste_plate_pu238be",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:waste_plate_pu238be",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        2
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        3
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        3
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        4
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        4
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        5
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        5
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        6
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        6
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        7
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        7
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        8
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        8
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        9
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        9
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        10
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        10
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        11
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        11
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        12
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        12
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        13
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        13
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:pwr_fuel_hot",
+        1,
+        14
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        14
+      ]
+    }
+  ]
+}

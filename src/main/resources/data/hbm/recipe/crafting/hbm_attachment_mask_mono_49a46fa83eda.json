@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "DID",
+    " F "
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:ducttape"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  },
+  "result": {
+    "id": "hbm:attachment_mask_mono",
+    "count": 1
+  }
+}

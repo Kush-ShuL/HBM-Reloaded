@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:gold_block",
+    {
+      "id": "#c:storage_blocks/gold",
+      "required": false
+    }
+  ]
+}

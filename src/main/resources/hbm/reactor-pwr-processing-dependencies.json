@@ -1,0 +1,202 @@
+{
+  "fuelPool": [
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        0
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        0
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        1
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        1
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        2
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        2
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        3
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        3
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        4
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        4
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        5
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        5
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        6
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        6
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        7
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        7
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        8
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        8
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        9
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        9
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        10
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        10
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        11
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        11
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        12
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        12
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        13
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        13
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    },
+    {
+      "input": [
+        "hbm:pwr_fuel_hot",
+        1,
+        14
+      ],
+      "output": [
+        "hbm:pwr_fuel_depleted",
+        1,
+        14
+      ],
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/FuelPoolRecipes.java:44"
+    }
+  ],
+  "purexSource": "legacy/src/main/java/com/hbm/inventory/recipes/PUREXRecipes.java:239-365,541-548",
+  "printerSource": "legacy/src/main/java/com/hbm/items/machine/ItemPWRPrinter.java; inventory/gui/GUIScreenSlicePrinter.java",
+  "status": "Separate actual machines/tools; no alternative fake recipe or empty tool is registered"
+}

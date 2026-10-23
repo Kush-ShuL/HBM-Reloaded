@@ -1,0 +1,153 @@
+{
+  "module": "cargo-elevator246",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "cargo_elevator",
+      "id": "hbm:cargo_elevator",
+      "legacyRegistryId": "hbm:tile.cargo_elevator",
+      "originalClass": "BlockCargoElevator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2044
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2971
+          },
+          "expression": "GameRegistry.registerBlock(cargo_elevator, cargo_elevator.getUnlocalizedName())",
+          "arguments": [
+            "cargo_elevator",
+            "cargo_elevator.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "hasBlockEntity": true
+    }
+  ],
+  "javaSources": [
+    "main/com/hbm/client/cargoelevator/CargoElevatorClient.java",
+    "main/com/hbm/client/cargoelevator/CargoElevatorItemRenderer.java",
+    "main/com/hbm/client/cargoelevator/CargoElevatorRenderer.java",
+    "main/com/hbm/machine/cargoelevator/CargoElevatorBlock.java",
+    "main/com/hbm/machine/cargoelevator/CargoElevatorContent.java",
+    "main/com/hbm/machine/cargoelevator/CargoElevatorEntity.java"
+  ],
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 636
+      },
+      "expression": "addRecipeAuto(new ItemStack(ModBlocks.cargo_elevator, 3), new Object[] { \"GGG\", \"SPS\", 'G', ModBlocks.steel_grate, 'S', STEEL.ingot(), 'P', new ItemStack(ModItems.part_generic, 1, EnumPartType.PISTON_HYDRAULIC.ordinal()) })",
+      "id": "hbm:crafting/hbm_cargo_elevator_1a8d234da902",
+      "resource": "data/hbm/recipe/crafting/hbm_cargo_elevator_1a8d234da902.json",
+      "data": {
+        "result": {
+          "id": "hbm:cargo_elevator",
+          "count": 3
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "GGG",
+          "SPS"
+        ],
+        "key": {
+          "G": {
+            "item": "hbm:steel_grate"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotsteel"
+          },
+          "P": {
+            "item": "hbm:part_generic_piston_hydraulic"
+          }
+        }
+      },
+      "status": "ready-source-native-crafting"
+    }
+  ],
+  "blockEntities": [
+    {
+      "id": "hbm:cargo_elevator",
+      "sourceId": "tileentity_cargo_elevator",
+      "source": "legacy/src/main/java/com/hbm/tileentity/TileMappings.java:227",
+      "hostMetadata": [
+        12,
+        15
+      ]
+    }
+  ],
+  "sourceAuthority": [
+    "legacy/src/main/java/com/hbm/blocks/machine/BlockCargoElevator.java",
+    "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityCargoElevator.java",
+    "legacy/src/main/java/com/hbm/render/tileentity/RenderCargoElevator.java",
+    "legacy/src/main/java/com/hbm/main/CraftingManager.java:636"
+  ],
+  "behavior": {
+    "speedBlocksPerSecond": 2,
+    "dimensions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "offset": 1,
+    "manualAndStackedExtension": true,
+    "movingPlatformAndFourGuides": true,
+    "serverSkipsPlayerLift": true,
+    "clientLiftsPlayers": true,
+    "clientInterpolationTicks": 3,
+    "syncRadius": 300,
+    "duplicateSyncPeriod": 20,
+    "drops": "height+1 actual blocks split in64",
+    "rorFunctions": [
+      "VAL:extension",
+      "FUN:setextension!amount"
+    ],
+    "power": null,
+    "fluid": null,
+    "gui": null,
+    "sourceComputerCallbacks": []
+  },
+  "modernAdaptations": [
+    "Reuse sole DummyableBlock placement/core/dummy/chunk-border/removal implementation",
+    "Original five world-space collision boxes represented as dynamic native VoxelShapes; native highlight/picking use this same geometry",
+    "On stacked merge explicitly remove replaced upper core BE; only actual metadata>=12 is a valid BE host",
+    "Reject manual extension into out-of-world or unloaded cells instead of requesting chunks",
+    "Use native initial BE update tags plus original changed-or-once-per-second300block sync"
+  ],
+  "render": {
+    "model": "hbm:models/machines/elevator.obj",
+    "originalHfrVbo": true,
+    "parts": [
+      "Base",
+      "Platform",
+      "Piston",
+      "Guides"
+    ],
+    "sourceTransforms": true,
+    "sourceInventoryTranslationY": -2.75,
+    "sourceInventoryScale": 3.25,
+    "viewDistance": 256
+  },
+  "compiled": false,
+  "nativeValidated": false,
+  "playerAccepted": false,
+  "stageOnly": true
+}

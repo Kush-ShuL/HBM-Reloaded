@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_soldering_station",
+      "id": "hbm:machine_soldering_station",
+      "legacyRegistryId": "hbm:tile.machine_soldering_station",
+      "originalClass": "MachineSolderingStation",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2215
+      }
+    }
+  ],
+  "sourceModeRecipes": {
+    "normal": 27,
+    "lbsm": 27,
+    "528": 14
+  }
+}

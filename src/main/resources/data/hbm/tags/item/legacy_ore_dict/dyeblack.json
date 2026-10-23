@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_coal",
+    "minecraft:black_dye",
+    "minecraft:ink_sac",
+    {
+      "id": "#c:dyes/black",
+      "required": false
+    }
+  ]
+}

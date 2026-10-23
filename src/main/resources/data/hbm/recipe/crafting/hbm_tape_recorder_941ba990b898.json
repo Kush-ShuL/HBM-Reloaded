@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:tape_recorder",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TST",
+    "SSS"
+  ],
+  "key": {
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingottungsten"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    }
+  }
+}

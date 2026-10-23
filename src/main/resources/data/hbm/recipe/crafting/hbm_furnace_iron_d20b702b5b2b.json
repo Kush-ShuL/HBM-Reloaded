@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:furnace_iron",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IFI",
+    "BBB"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "B": {
+      "tag": "minecraft:stone_bricks"
+    }
+  }
+}

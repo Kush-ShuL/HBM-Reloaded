@@ -1,0 +1,44 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mpf15solid",
+  "duration": 200,
+  "power": 100,
+  "order": 308,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:mp_fuselage_15_solid",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:seg_15"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetitanium"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 12
+    }
+  ]
+}

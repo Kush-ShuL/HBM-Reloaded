@@ -1,0 +1,25 @@
+{
+  "name": "Fish Oil",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    110
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      110
+    ]
+  ],
+  "title": {
+    "en_US": "Fish Oil",
+    "ru_RU": "Рыбий жир",
+    "zh_CN": "鱼油"
+  },
+  "content": {
+    "en_US": "Fish oil can be made by mixing or [[liquifying|Liquification Machine]] any type of fish. It is primarily used to produce a variety of fluids such as [[nitroglycerin|Nitroglycerin]], [[engine lubricant|Engine Lubricant]], or [[biofuel|Biofuel]] through mixing.",
+    "ru_RU": "Рыбий жир можно получить путем смешивания или [[сжижения|Liquification Machine]] любого вида рыбы. В основном он используется для производства различных жидкостей, таких как [[нитроглицерин|Nitroglycerin]], [[моторное масло|Engine Lubricant]] или [[биотопливо|Biofuel]], путем смешивания.",
+    "zh_CN": "通过混合加工或在[[液化机|Liquification Machine]]中处理任意鱼类可制得鱼油。它主要用来混合生产[[硝酸甘油|Nitroglycerin]]、[[润滑油|Engine Lubricant]]或[[生物燃料|Biofuel]]等流体。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:ams_core_thingy",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NSN",
+    "NGN",
+    "G G"
+  ],
+  "key": {
+    "N": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgold"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:battery_pack",
+      "components": {
+        "hbm:legacy_metadata": 5
+      },
+      "strict": false
+    }
+  }
+}

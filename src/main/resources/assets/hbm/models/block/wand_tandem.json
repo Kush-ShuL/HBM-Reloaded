@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hbm:block/wand_tandem",
+    "top": "hbm:block/wand_tandem_top",
+    "side": "hbm:block/wand_tandem_side",
+    "back": "hbm:block/wand_tandem_back"
+  }
+}

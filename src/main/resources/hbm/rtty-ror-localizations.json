@@ -1,0 +1,32 @@
+{
+  "en_us": {
+    "tile.radio_torch_reader.name": "Redstone-over-Radio Reader",
+    "tile.radio_torch_reader.desc": "Reads values from connected blocks,$then sends them over the specified frequency",
+    "block.hbm.radio_torch_reader": "Redstone-over-Radio Reader",
+    "container.rttyReader": "Redstone-over-Radio Reader",
+    "tile.radio_torch_controller.name": "Redstone-over-Radio Controller",
+    "tile.radio_torch_controller.desc": "Can receive command signals and relays$them to the connected machine",
+    "block.hbm.radio_torch_controller": "Redstone-over-Radio Controller",
+    "container.rttyController": "Redstone-over-Radio Controller",
+    "gui.hbm.rtty.value_name": "Value name",
+    "gui.hbm.rtty.readable_values": "Readable values:",
+    "gui.hbm.rtty.usable_functions": "Usable functions:",
+    "jade.hbm.rtty.reader_binding": "%s: %s",
+    "config.jade.plugin_hbm.radio_ror_status": "Redstone-over-Radio machine interface"
+  },
+  "zh_cn": {
+    "tile.radio_torch_reader.name": "无线红石信号读取器",
+    "tile.radio_torch_reader.desc": "从连接的方块读取数值并以指定的频率发送",
+    "block.hbm.radio_torch_reader": "无线红石信号读取器",
+    "container.rttyReader": "无线红石信号读取器",
+    "tile.radio_torch_controller.name": "无线红石信号控制器",
+    "tile.radio_torch_controller.desc": "可以接收信号并将信号传送到与其连接的机器",
+    "block.hbm.radio_torch_controller": "无线红石信号控制器",
+    "container.rttyController": "无线红石信号控制器",
+    "gui.hbm.rtty.value_name": "参数名称",
+    "gui.hbm.rtty.readable_values": "可读取的参数：",
+    "gui.hbm.rtty.usable_functions": "可执行的功能：",
+    "jade.hbm.rtty.reader_binding": "%s: %s",
+    "config.jade.plugin_hbm.radio_ror_status": "无线红石机器接口"
+  }
+}

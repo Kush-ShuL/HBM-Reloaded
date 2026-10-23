@@ -1,0 +1,42 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:nugget_bismuth",
+          "count": 1
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/billeturanium238"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustniobium"
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_bismuth",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 4,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 533000000
+}

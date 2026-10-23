@@ -1,0 +1,1720 @@
+{
+  "spawns": [
+    {
+      "name": "spire",
+      "condition": "biome.heightVariation <= 0.05F && !isWaterBiome(biome)",
+      "weight": 2,
+      "weightKey": "spireSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "spire",
+      "heightOffset": -1,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 51
+    },
+    {
+      "name": "features",
+      "condition": "!isWaterBiome(biome)",
+      "weight": 50,
+      "weightKey": "featuresSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": null,
+      "heightOffset": 0,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 57
+    },
+    {
+      "name": "bunker",
+      "condition": "!isWaterBiome(biome)",
+      "weight": 6,
+      "weightKey": "bunkerSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": null,
+      "heightOffset": 0,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 63
+    },
+    {
+      "name": "vertibird",
+      "condition": "!isWaterBiome(biome) && BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 6,
+      "weightKey": "vertibirdSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "vertibird",
+      "heightOffset": -3,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 69
+    },
+    {
+      "name": "crashed_vertibird",
+      "condition": "!isWaterBiome(biome) && BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 10,
+      "weightKey": "vertibirdCrashedSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "crashed-vertibird",
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 75
+    },
+    {
+      "name": "beached_patrol",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.BEACH)",
+      "weight": 15,
+      "weightKey": "beachedPatrolSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "beached_patrol",
+      "heightOffset": -5,
+      "conform": false,
+      "minHeight": 58,
+      "maxHeight": 67,
+      "available": false,
+      "sourceLine": 81
+    },
+    {
+      "name": "aircraft_carrier",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.OCEAN)",
+      "weight": 3,
+      "weightKey": "aircraftCarrierSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": true,
+      "template": "aircraft_carrier",
+      "heightOffset": -6,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 42,
+      "available": false,
+      "sourceLine": 89
+    },
+    {
+      "name": "oil_rig",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.OCEAN) && biome.rootHeight >= -1.5F",
+      "weight": 5,
+      "weightKey": "oilRigSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": true,
+      "template": "oil_rig",
+      "heightOffset": -20,
+      "conform": false,
+      "minHeight": 11,
+      "maxHeight": 12,
+      "available": false,
+      "sourceLine": 96
+    },
+    {
+      "name": "lighthouse",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.OCEAN) || BiomeDictionary.isBiomeOfType(biome, Type.BEACH)",
+      "weight": 1,
+      "weightKey": "lighthouseSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": true,
+      "template": "lighthouse",
+      "heightOffset": -40,
+      "conform": false,
+      "minHeight": 28,
+      "maxHeight": 29,
+      "available": false,
+      "sourceLine": 104
+    },
+    {
+      "name": "dish",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.PLAINS)",
+      "weight": 10,
+      "weightKey": "dishSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "dish",
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 53,
+      "maxHeight": 65,
+      "available": false,
+      "sourceLine": 112
+    },
+    {
+      "name": "water_pump",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.PLAINS) || BiomeDictionary.isBiomeOfType(biome, Type.SWAMP)",
+      "weight": 15,
+      "weightKey": "waterPumpSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "water_pump",
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 120
+    },
+    {
+      "name": "forestchem",
+      "condition": "biome.heightVariation <= 0.3F && !isWaterBiome(biome)",
+      "weight": 30,
+      "weightKey": "forestChemSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "forest_chem",
+      "heightOffset": -9,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 126
+    },
+    {
+      "name": "labolatory",
+      "condition": "isFlatBiome(biome)",
+      "weight": 20,
+      "weightKey": "laboratorySpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "laboratory",
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 53,
+      "maxHeight": 65,
+      "available": false,
+      "sourceLine": 132
+    },
+    {
+      "name": "forest_post",
+      "condition": "biome.heightVariation <= 0.3F && !isWaterBiome(biome)",
+      "weight": 30,
+      "weightKey": "forestPostSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "forest_post",
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 140
+    },
+    {
+      "name": "radio",
+      "condition": "isFlatBiome(biome)",
+      "weight": 25,
+      "weightKey": "radioSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "radio_house",
+      "heightOffset": -6,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 146
+    },
+    {
+      "name": "factory",
+      "condition": "biome.heightVariation <= 0.2F && !isWaterBiome(biome)",
+      "weight": 40,
+      "weightKey": "factorySpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "factory",
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 152
+    },
+    {
+      "name": "crane",
+      "condition": "biome.heightVariation <= 0.2F && !isWaterBiome(biome)",
+      "weight": 20,
+      "weightKey": "craneSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "crane_mod",
+      "heightOffset": -13,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 158
+    },
+    {
+      "name": "broadcaster_tower",
+      "condition": "isFlatBiome(biome)",
+      "weight": 25,
+      "weightKey": "broadcastingTowerSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "broadcasting_tower",
+      "heightOffset": -9,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 164
+    },
+    {
+      "name": "plane1",
+      "condition": "biome.heightVariation <= 0.3F && !isWaterBiome(biome)",
+      "weight": 25,
+      "weightKey": "plane1SpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "crashed_plane_1",
+      "heightOffset": -5,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": true,
+      "sourceLine": 170,
+      "size": [
+        24,
+        14,
+        20
+      ],
+      "blocks": 358,
+      "dependencies": [
+        {
+          "id": "hbm:tile.deco_tungsten",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_rusty_steel",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_pipe_quad_rusted",
+          "meta": 4
+        },
+        {
+          "id": "hbm:tile.deco_steel",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_pipe_quad_rusted",
+          "meta": 8
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 4
+        },
+        {
+          "id": "hbm:tile.reinforced_brick",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_slab",
+          "meta": 9
+        },
+        {
+          "id": "minecraft:stained_glass",
+          "meta": 7
+        },
+        {
+          "id": "hbm:tile.steel_scaffold",
+          "meta": 4
+        },
+        {
+          "id": "hbm:tile.steel_scaffold",
+          "meta": 12
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 1
+        },
+        {
+          "id": "hbm:tile.deco_red_copper",
+          "meta": 0
+        },
+        {
+          "id": "minecraft:air",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.block_red_copper",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_pipe_quad_rusted",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_slab",
+          "meta": 1
+        },
+        {
+          "id": "hbm:tile.deco_pipe_quad",
+          "meta": 8
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 5
+        }
+      ]
+    },
+    {
+      "name": "plane2",
+      "condition": "biome.heightVariation <= 0.3F && !isWaterBiome(biome)",
+      "weight": 25,
+      "weightKey": "plane2SpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "crashed_plane_2",
+      "heightOffset": -8,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": true,
+      "sourceLine": 176,
+      "size": [
+        28,
+        15,
+        17
+      ],
+      "blocks": 366,
+      "dependencies": [
+        {
+          "id": "hbm:tile.deco_tungsten",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_rusty_steel",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_pipe_quad_rusted",
+          "meta": 4
+        },
+        {
+          "id": "hbm:tile.deco_steel",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.reinforced_brick",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 4
+        },
+        {
+          "id": "minecraft:air",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_red_copper",
+          "meta": 0
+        },
+        {
+          "id": "minecraft:stained_glass",
+          "meta": 7
+        },
+        {
+          "id": "hbm:tile.block_red_copper",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 5
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 1
+        },
+        {
+          "id": "hbm:tile.deco_pipe_quad",
+          "meta": 0
+        }
+      ]
+    },
+    {
+      "name": "desert_shack_1",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 18,
+      "weightKey": "desertShack1SpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "desert_shack_1",
+      "heightOffset": -7,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 182
+    },
+    {
+      "name": "desert_shack_2",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 20,
+      "weightKey": "desertShack2SpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "desert_shack_2",
+      "heightOffset": -7,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 188
+    },
+    {
+      "name": "desert_shack_3",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 22,
+      "weightKey": "desertShack3SpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "desert_shack_3",
+      "heightOffset": -5,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 194
+    },
+    {
+      "name": "dead_dish_small",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 15,
+      "weightKey": "deadDishSmallSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "dead_dish_small",
+      "heightOffset": -5,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": true,
+      "sourceLine": 200,
+      "size": [
+        31,
+        25,
+        25
+      ],
+      "blocks": 1376,
+      "dependencies": [
+        {
+          "id": "minecraft:sand",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_rusty_steel",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_steel",
+          "meta": 0
+        },
+        {
+          "id": "minecraft:iron_bars",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_compound",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.deco_tungsten",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_compound_stairs",
+          "meta": 7
+        },
+        {
+          "id": "hbm:tile.brick_compound_stairs",
+          "meta": 2
+        },
+        {
+          "id": "hbm:tile.reinforced_brick",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 3
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 6
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 7
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 2
+        },
+        {
+          "id": "hbm:tile.reinforced_brick_stairs",
+          "meta": 1
+        }
+      ]
+    },
+    {
+      "name": "ruinA",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 10,
+      "weightKey": "ruinsASpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsa",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 206
+    },
+    {
+      "name": "ruinB",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsBSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsb",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 211
+    },
+    {
+      "name": "ruinC",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsCSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsc",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 216
+    },
+    {
+      "name": "ruinD",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsDSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsd",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 221
+    },
+    {
+      "name": "ruinE",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsESpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinse",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 226
+    },
+    {
+      "name": "ruinF",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsFSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsf",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 231
+    },
+    {
+      "name": "ruinG",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsGSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsg",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": true,
+      "sourceLine": 236,
+      "size": [
+        7,
+        6,
+        7
+      ],
+      "blocks": 55,
+      "dependencies": [
+        {
+          "id": "hbm:tile.concrete_smooth",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.concrete_pillar",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.concrete_brick_slab",
+          "meta": 3
+        },
+        {
+          "id": "hbm:tile.brick_concrete_cracked_stairs",
+          "meta": 1
+        },
+        {
+          "id": "hbm:tile.concrete_slab",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.concrete_brick_slab",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_concrete_cracked",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_concrete",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_concrete_broken_stairs",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_concrete_mossy",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.concrete_double_slab",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_concrete_broken",
+          "meta": 0
+        },
+        {
+          "id": "hbm:tile.brick_concrete_cracked_stairs",
+          "meta": 3
+        },
+        {
+          "id": "hbm:tile.concrete_brick_slab",
+          "meta": 2
+        },
+        {
+          "id": "minecraft:iron_bars",
+          "meta": 0
+        }
+      ]
+    },
+    {
+      "name": "ruinH",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsHSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsh",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 241
+    },
+    {
+      "name": "ruinI",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsISpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsi",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 246
+    },
+    {
+      "name": "ruinJ",
+      "condition": "!isWaterBiome(biome) && biome.canSpawnLightningBolt()",
+      "weight": 12,
+      "weightKey": "ruinsJSpawnWeight",
+      "ruinToggle": true,
+      "oceanToggle": false,
+      "template": "ntmruinsj",
+      "heightOffset": -1,
+      "conform": true,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 251
+    },
+    {
+      "name": "tower_base",
+      "condition": "biome.heightVariation <= 0.3F && !isWaterBiome(biome) && !BiomeDictionary.isBiomeOfType(biome, Type.SANDY)",
+      "weight": 30,
+      "weightKey": "towerBaseSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "tower_base",
+      "heightOffset": -6,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 256
+    },
+    {
+      "name": "falloutshelter_house",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.PLAINS)",
+      "weight": 15,
+      "weightKey": "falloutShelterHouseSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "falloutshelter_house",
+      "heightOffset": -8,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 261
+    },
+    {
+      "name": "abandoned_arcticstation",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.SNOWY)",
+      "weight": 5,
+      "weightKey": "abandonedArcticStationSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": "abandoned_arcticstation",
+      "heightOffset": 0,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 266
+    },
+    {
+      "name": "military_base",
+      "condition": "BiomeDictionary.isBiomeOfType(biome, Type.SNOWY)",
+      "weight": 1,
+      "weightKey": "militaryBaseSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": null,
+      "heightOffset": -5,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 271
+    },
+    {
+      "name": "submarine",
+      "condition": "biome == BiomeGenBase.ocean || biome == BiomeGenBase.deepOcean",
+      "weight": 2,
+      "weightKey": "submarineSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": null,
+      "heightOffset": -10,
+      "conform": false,
+      "minHeight": 1,
+      "maxHeight": 128,
+      "available": false,
+      "sourceLine": 276
+    },
+    {
+      "name": "null_plains",
+      "condition": "EXACT_PLAINS",
+      "weight": 20,
+      "weightKey": "plainsNullWeight",
+      "available": false
+    },
+    {
+      "name": "null_ocean",
+      "condition": "OCEAN",
+      "weight": 35,
+      "weightKey": "oceanNullWeight",
+      "available": false
+    },
+    {
+      "name": "meteor_dungeon",
+      "condition": "biome.rootHeight >= 0",
+      "weight": 1,
+      "weightKey": "meteor_dungeonSpawnWeight",
+      "ruinToggle": false,
+      "oceanToggle": false,
+      "template": null,
+      "heightOffset": 0,
+      "conform": false,
+      "minHeight": 32,
+      "maxHeight": 32,
+      "available": false,
+      "sourceLine": 298
+    }
+  ],
+  "biomeProfiles": [
+    {
+      "biome": "minecraft:plains",
+      "rootHeight": 0.125,
+      "variation": 0.05,
+      "types": [
+        "PLAINS"
+      ],
+      "lightning": true,
+      "exactPlains": true,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.4,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:sunflower_plains",
+      "rootHeight": 0.125,
+      "variation": 0.05,
+      "types": [
+        "PLAINS"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.4,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:desert",
+      "rootHeight": 0.125,
+      "variation": 0.05,
+      "types": [
+        "HOT",
+        "DRY",
+        "SANDY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 2,
+      "rainfall": 0,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:forest",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.7,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:birch_forest",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.6,
+      "rainfall": 0.6,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:dark_forest",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "SPOOKY",
+        "DENSE",
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.7,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:taiga",
+      "rootHeight": 0.2,
+      "variation": 0.2,
+      "types": [
+        "COLD",
+        "CONIFEROUS",
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.25,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:old_growth_pine_taiga",
+      "rootHeight": 0.2,
+      "variation": 0.2,
+      "types": [
+        "COLD",
+        "CONIFEROUS",
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.3,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:old_growth_spruce_taiga",
+      "rootHeight": 0.2,
+      "variation": 0.2,
+      "types": [
+        "COLD",
+        "CONIFEROUS",
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.25,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:snowy_taiga",
+      "rootHeight": 0.2,
+      "variation": 0.2,
+      "types": [
+        "COLD",
+        "CONIFEROUS",
+        "FOREST",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": -0.5,
+      "rainfall": 0.4,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:swamp",
+      "rootHeight": -0.2,
+      "variation": 0.1,
+      "types": [
+        "WET",
+        "SWAMP"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:jungle",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "HOT",
+        "WET",
+        "DENSE",
+        "JUNGLE"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.95,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:sparse_jungle",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "HOT",
+        "WET",
+        "JUNGLE",
+        "FOREST"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.95,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:savanna",
+      "rootHeight": 0.125,
+      "variation": 0.05,
+      "types": [
+        "HOT",
+        "SAVANNA",
+        "PLAINS",
+        "SPARSE"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 1.2,
+      "rainfall": 0,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:savanna_plateau",
+      "rootHeight": 1.5,
+      "variation": 0.025,
+      "types": [
+        "HOT",
+        "SAVANNA",
+        "PLAINS",
+        "SPARSE"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 1,
+      "rainfall": 0,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:badlands",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "MESA",
+        "SANDY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 2,
+      "rainfall": 0,
+      "mesa": true
+    },
+    {
+      "biome": "minecraft:wooded_badlands",
+      "rootHeight": 1.5,
+      "variation": 0.025,
+      "types": [
+        "MESA",
+        "SPARSE",
+        "SANDY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 2,
+      "rainfall": 0,
+      "mesa": true
+    },
+    {
+      "biome": "minecraft:snowy_plains",
+      "rootHeight": 0.125,
+      "variation": 0.05,
+      "types": [
+        "COLD",
+        "SNOWY",
+        "WASTELAND"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:beach",
+      "rootHeight": 0,
+      "variation": 0.025,
+      "types": [
+        "BEACH"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.4,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:snowy_beach",
+      "rootHeight": 0,
+      "variation": 0.025,
+      "types": [
+        "COLD",
+        "BEACH",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.05,
+      "rainfall": 0.3,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:stony_shore",
+      "rootHeight": 0.1,
+      "variation": 0.8,
+      "types": [
+        "BEACH"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.2,
+      "rainfall": 0.3,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:mushroom_fields",
+      "rootHeight": 0.2,
+      "variation": 0.3,
+      "types": [
+        "MUSHROOM"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.9,
+      "rainfall": 1,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:windswept_hills",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "MOUNTAIN",
+        "HILLS"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.2,
+      "rainfall": 0.3,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:windswept_forest",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "MOUNTAIN",
+        "FOREST",
+        "SPARSE"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.2,
+      "rainfall": 0.3,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:river",
+      "rootHeight": -0.5,
+      "variation": 0,
+      "types": [
+        "RIVER"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:frozen_river",
+      "rootHeight": -0.5,
+      "variation": 0,
+      "types": [
+        "COLD",
+        "RIVER",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:ocean",
+      "rootHeight": -1,
+      "variation": 0.1,
+      "types": [
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": true,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:deep_ocean",
+      "rootHeight": -1.8,
+      "variation": 0.1,
+      "types": [
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": true,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:frozen_ocean",
+      "rootHeight": -1,
+      "variation": 0.1,
+      "types": [
+        "COLD",
+        "OCEAN",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:flower_forest",
+      "rootHeight": 0.10000000149011612,
+      "variation": 0.4000000059604645,
+      "types": [
+        "FOREST",
+        "HILLS"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.7,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:old_growth_birch_forest",
+      "rootHeight": 0.20000000298023224,
+      "variation": 0.4000000059604645,
+      "types": [
+        "HILLS"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.6,
+      "rainfall": 0.6,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:ice_spikes",
+      "rootHeight": 0.42500001192092896,
+      "variation": 0.45000001788139343,
+      "types": [
+        "COLD",
+        "HILLS",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:windswept_gravelly_hills",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "HILLS"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.2,
+      "rainfall": 0.3,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:windswept_savanna",
+      "rootHeight": 0.36250001192092896,
+      "variation": 1.225000023841858,
+      "types": [
+        "DRY",
+        "HOT",
+        "SPARSE",
+        "HILLS",
+        "SAVANNA"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 1.100000023841858,
+      "rainfall": 0,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:eroded_badlands",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "PLAINS",
+        "DRY",
+        "HOT",
+        "SANDY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 2,
+      "rainfall": 0,
+      "mesa": true
+    },
+    {
+      "biome": "minecraft:bamboo_jungle",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "HOT",
+        "DENSE",
+        "WET",
+        "JUNGLE"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.95,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:cherry_grove",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "MOUNTAIN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:cold_ocean",
+      "rootHeight": -1,
+      "variation": 0.1,
+      "types": [
+        "COLD",
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:deep_cold_ocean",
+      "rootHeight": -1.8,
+      "variation": 0.1,
+      "types": [
+        "COLD",
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:deep_dark",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "SPOOKY"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.4,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:deep_frozen_ocean",
+      "rootHeight": -1.8,
+      "variation": 0.1,
+      "types": [
+        "COLD",
+        "OCEAN"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:deep_lukewarm_ocean",
+      "rootHeight": -1.8,
+      "variation": 0.1,
+      "types": [
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:dripstone_caves",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "WET"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.4,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:frozen_peaks",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "COLD",
+        "SPARSE",
+        "MOUNTAIN",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": -0.7,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:grove",
+      "rootHeight": 0.45,
+      "variation": 0.3,
+      "types": [
+        "COLD",
+        "CONIFEROUS",
+        "FOREST",
+        "MOUNTAIN",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": -0.2,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:jagged_peaks",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "COLD",
+        "SPARSE",
+        "MOUNTAIN",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": -0.7,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:lukewarm_ocean",
+      "rootHeight": -1,
+      "variation": 0.1,
+      "types": [
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:lush_caves",
+      "rootHeight": 0.1,
+      "variation": 0.2,
+      "types": [
+        "WET",
+        "LUSH"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:mangrove_swamp",
+      "rootHeight": -0.2,
+      "variation": 0.1,
+      "types": [
+        "DENSE",
+        "WET",
+        "SWAMP"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.8,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:meadow",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "MOUNTAIN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.8,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:snowy_slopes",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "COLD",
+        "SPARSE",
+        "MOUNTAIN",
+        "SNOWY"
+      ],
+      "lightning": false,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": -0.3,
+      "rainfall": 0.9,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:stony_peaks",
+      "rootHeight": 1,
+      "variation": 0.5,
+      "types": [
+        "HOT",
+        "MOUNTAIN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 1.0,
+      "rainfall": 0.3,
+      "mesa": false
+    },
+    {
+      "biome": "minecraft:warm_ocean",
+      "rootHeight": -1,
+      "variation": 0.1,
+      "types": [
+        "HOT",
+        "OCEAN"
+      ],
+      "lightning": true,
+      "exactPlains": false,
+      "exactOcean": false,
+      "temperature": 0.5,
+      "rainfall": 0.5,
+      "mesa": false
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "cladding_iron",
+      "id": "hbm:cladding_iron",
+      "legacyRegistryId": "hbm:item.cladding_iron",
+      "originalClass": "ItemModIron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2864
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6100
+          },
+          "expression": "GameRegistry.registerItem(cladding_iron, cladding_iron.getUnlocalizedName())",
+          "arguments": [
+            "cladding_iron",
+            "cladding_iron.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.cladding.ArmorCladdingContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 5,
+      "applicableTo": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "knockbackResistanceAdded": 0.5,
+      "attributeOperation": "ADD_VALUE"
+    },
+    {
+      "kind": "item",
+      "symbol": "cladding_obsidian",
+      "id": "hbm:cladding_obsidian",
+      "legacyRegistryId": "hbm:item.cladding_obsidian",
+      "originalClass": "ItemModObsidian",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2865
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6101
+          },
+          "expression": "GameRegistry.registerItem(cladding_obsidian, cladding_obsidian.getUnlocalizedName())",
+          "arguments": [
+            "cladding_obsidian",
+            "cladding_obsidian.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.cladding.ArmorCladdingContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 5,
+      "applicableTo": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "playerTossArmorInvulnerable": true
+    }
+  ]
+}

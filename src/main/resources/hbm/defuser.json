@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "defuser",
+      "id": "hbm:defuser",
+      "legacyRegistryId": "hbm:item.defuser",
+      "originalClass": "ItemDefuser",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3644
+      },
+      "creativeTab": "nuke",
+      "maxDamage": 100,
+      "toolType": "DEFUSER"
+    },
+    {
+      "kind": "item",
+      "symbol": "defuser_gold",
+      "id": "hbm:defuser_gold",
+      "legacyRegistryId": "hbm:item.defuser_gold",
+      "originalClass": "ItemModDefuser",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2906
+      },
+      "creativeTab": "consumable"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "hbm:crafting/hbm_defuser_231e37bfbd67",
+      "file": "data/hbm/recipe/crafting/hbm_defuser_231e37bfbd67.json",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/ToolRecipes.java",
+        "line": 119
+      },
+      "expression": "CraftingManager.addRecipeAuto(new ItemStack(ModItems.defuser, 1), new Object[] { \" PS\", \"P P\", \" P \", 'P', ANY_PLASTIC.ingot(), 'S', STEEL.plate() })"
+    },
+    {
+      "id": "hbm:crafting/hbm_defuser_gold_84e3b5f1c0cd",
+      "file": "data/hbm/recipe/crafting/hbm_defuser_gold_84e3b5f1c0cd.json",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/ConsumableRecipes.java",
+        "line": 209
+      },
+      "expression": "CraftingManager.addRecipeAuto(new ItemStack(ModItems.defuser_gold, 1), new Object[] { \"GPG\", \"PRP\", \"GPG\", 'G', Items.gunpowder, 'P', GOLD.plate(), 'R', \"record\" })"
+    },
+    {
+      "id": "hbm:crafting/hbm_detonator_deadman_bb916f6d1530",
+      "file": "data/hbm/recipe/crafting/hbm_detonator_deadman_bb916f6d1530.json",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 322
+      },
+      "expression": "addShapelessAuto(new ItemStack(ModItems.detonator_deadman, 1), new Object[] { ModItems.detonator, ModItems.defuser, ModItems.ducttape })"
+    }
+  ]
+}

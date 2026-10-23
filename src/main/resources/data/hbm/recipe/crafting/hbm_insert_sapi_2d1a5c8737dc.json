@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:insert_sapi",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PKP",
+    "DPD",
+    "PKP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "K": {
+      "type": "neoforge:components",
+      "items": "hbm:insert_kevlar",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "D": {
+      "item": "hbm:ducttape"
+    }
+  }
+}

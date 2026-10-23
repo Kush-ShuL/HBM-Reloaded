@@ -1,0 +1,3454 @@
+{
+  "normal": {
+    "rows": [
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.crystalcircuit",
+          "duration": 600,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_quantum",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_pcb",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              32
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 40
+        },
+        "output": [
+          "hbm:orbital_assembly",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 100
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.blueprints",
+          "duration": 6000,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "dyeBlue",
+              16
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              4,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  0
+                ],
+                1,
+                10
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  16,
+                  0
+                ],
+                1,
+                90
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 158
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.beigeprints",
+          "duration": 6000,
+          "power": 50000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "gemCinnabar",
+              24
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  1
+                ],
+                1,
+                5
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  24,
+                  0
+                ],
+                1,
+                95
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 166
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpahelmet",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:circuit_advanced",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_helmet",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 175
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaplate",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "dict",
+              "gunMechanismSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:parts_legendary",
+              1,
+              1
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_plate",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 181
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpalegs",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_legs",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 189
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaboots",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_boots",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 195
+        }
+      }
+    ]
+  },
+  "normal_expensive": {
+    "rows": [
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.crystalcircuit",
+          "duration": 600,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_quantum",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_pcb",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "wireDenseBSCCO",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 40
+        },
+        "output": [
+          "hbm:orbital_assembly",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 100
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.blueprints",
+          "duration": 6000,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "dyeBlue",
+              16
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              4,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  0
+                ],
+                1,
+                10
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  16,
+                  0
+                ],
+                1,
+                90
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 158
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.beigeprints",
+          "duration": 6000,
+          "power": 50000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "gemCinnabar",
+              24
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  1
+                ],
+                1,
+                5
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  24,
+                  0
+                ],
+                1,
+                95
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 166
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpahelmet",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:circuit_advanced",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_helmet",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 175
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaplate",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "dict",
+              "gunMechanismSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:parts_legendary",
+              1,
+              1
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_plate",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 181
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpalegs",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_legs",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 189
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaboots",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_boots",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 195
+        }
+      }
+    ]
+  },
+  "528": {
+    "rows": [
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.crystalcircuit",
+          "duration": 600,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_quantum",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_pcb",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              32
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 40
+        },
+        "output": [
+          "hbm:orbital_assembly",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 100
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.chip",
+          "duration": 100,
+          "power": 200,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_silicon",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_polymer",
+              3,
+              0
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              4
+            ]
+          ],
+          "blueprintpool": "528.chip"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 59
+        },
+        "output": [
+          "hbm:circuit_chip",
+          1,
+          0
+        ],
+        "chance": 90,
+        "reclaim": 90
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.chip_bismoid",
+          "duration": 200,
+          "power": 1000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_silicon",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_polymer",
+              8,
+              0
+            ],
+            [
+              "dict",
+              "nuggetAnyBismoid",
+              2
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL",
+              500,
+              0
+            ]
+          ],
+          "blueprintpool": "528.chip_bismoid"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 65
+        },
+        "output": [
+          "hbm:circuit_chip_bismoid",
+          1,
+          0
+        ],
+        "chance": 75,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.chip_quantum",
+          "duration": 300,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_silicon",
+              8,
+              0
+            ],
+            [
+              "dict",
+              "wireDenseBSCCO",
+              2
+            ],
+            [
+              "dict",
+              "ingotAnyHardPlastic",
+              4
+            ],
+            [
+              "item",
+              "hbm:pellet_charged",
+              4,
+              0
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              8
+            ]
+          ],
+          "inputFluid": [
+            [
+              "HELIUM4",
+              250,
+              0
+            ]
+          ],
+          "blueprintpool": "528.chip_quantum"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 73
+        },
+        "output": [
+          "hbm:circuit_chip_quantum",
+          1,
+          0
+        ],
+        "chance": 90,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.atomic_clock",
+          "duration": 200,
+          "power": 2000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ],
+            [
+              "dict",
+              "wireFineZirconium",
+              8
+            ],
+            [
+              "dict",
+              "dustStrontium",
+              1
+            ]
+          ],
+          "blueprintpool": "528.strontium"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 82
+        },
+        "output": [
+          "hbm:circuit_atomic_clock",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.controller",
+          "duration": 400,
+          "power": 15000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              32,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor",
+              32,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_controller_chassis",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "wireFineLead",
+              16
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL",
+              1000,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 89
+        },
+        "output": [
+          "hbm:circuit_controller",
+          1,
+          0
+        ],
+        "chance": 75,
+        "reclaim": 90
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.controller_advanced",
+          "duration": 600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_bismoid",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              48,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_atomic_clock",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_controller_chassis",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "wireFineLead",
+              24
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL",
+              4000,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 99
+        },
+        "output": [
+          "hbm:circuit_controller_advanced",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.controller_quantum",
+          "duration": 600,
+          "power": 250000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_quantum",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_chip_bismoid",
+              48,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_atomic_clock",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_controller_advanced",
+              2,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_overdrive_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "wireFineLead",
+              32
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL_COLD",
+              6000,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 109
+        },
+        "output": [
+          "hbm:circuit_controller_quantum",
+          1,
+          0
+        ],
+        "chance": 75,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_speed_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 119
+        },
+        "output": [
+          "hbm:upgrade_speed_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_speed_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 120
+        },
+        "output": [
+          "hbm:upgrade_speed_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_effect_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 121
+        },
+        "output": [
+          "hbm:upgrade_effect_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_effect_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 122
+        },
+        "output": [
+          "hbm:upgrade_effect_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_power_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_power_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 123
+        },
+        "output": [
+          "hbm:upgrade_power_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_power_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_power_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 124
+        },
+        "output": [
+          "hbm:upgrade_power_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_fortune_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_fortune_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 125
+        },
+        "output": [
+          "hbm:upgrade_fortune_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_fortune_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_fortune_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 126
+        },
+        "output": [
+          "hbm:upgrade_fortune_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_ab_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_afterburn_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 127
+        },
+        "output": [
+          "hbm:upgrade_afterburn_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_ab_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_afterburn_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 128
+        },
+        "output": [
+          "hbm:upgrade_afterburn_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_overdive_i",
+          "duration": 200,
+          "power": 1000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotSaturnite",
+              16
+            ],
+            [
+              "dict",
+              "ingotAnyHardPlastic",
+              16
+            ],
+            [
+              "item",
+              "hbm:circuit_advanced",
+              16,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 130
+        },
+        "output": [
+          "hbm:upgrade_overdrive_1",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_overdive_ii",
+          "duration": 600,
+          "power": 5000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:upgrade_overdrive_1",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotSaturnite",
+              16
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_board",
+              16,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 137
+        },
+        "output": [
+          "hbm:upgrade_overdrive_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_overdive_iii",
+          "duration": 1200,
+          "power": 100000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:upgrade_overdrive_2",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyBismoidBronze",
+              16
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_bismoid",
+              16,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 145
+        },
+        "output": [
+          "hbm:upgrade_overdrive_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.blueprints",
+          "duration": 6000,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "dyeBlue",
+              16
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              4,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  0
+                ],
+                1,
+                10
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  16,
+                  0
+                ],
+                1,
+                90
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 158
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.beigeprints",
+          "duration": 6000,
+          "power": 50000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "gemCinnabar",
+              24
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  1
+                ],
+                1,
+                5
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  24,
+                  0
+                ],
+                1,
+                95
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 166
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpahelmet",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:circuit_advanced",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_helmet",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 175
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaplate",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "dict",
+              "gunMechanismSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:parts_legendary",
+              1,
+              1
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_plate",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 181
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpalegs",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_legs",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 189
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaboots",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_boots",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 195
+        }
+      }
+    ]
+  },
+  "528_expensive": {
+    "rows": [
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.crystalcircuit",
+          "duration": 600,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_quantum",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_pcb",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "wireDenseBSCCO",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 40
+        },
+        "output": [
+          "hbm:orbital_assembly",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 100
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.chip",
+          "duration": 100,
+          "power": 200,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_silicon",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_polymer",
+              3,
+              0
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              4
+            ]
+          ],
+          "blueprintpool": "528.chip"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 59
+        },
+        "output": [
+          "hbm:circuit_chip",
+          1,
+          0
+        ],
+        "chance": 90,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.chip_bismoid",
+          "duration": 200,
+          "power": 1000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_silicon",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_polymer",
+              8,
+              0
+            ],
+            [
+              "dict",
+              "nuggetAnyBismoid",
+              2
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL",
+              500,
+              0
+            ]
+          ],
+          "blueprintpool": "528.chip_bismoid"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 65
+        },
+        "output": [
+          "hbm:circuit_chip_bismoid",
+          1,
+          0
+        ],
+        "chance": 75,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.chip_quantum",
+          "duration": 300,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_silicon",
+              8,
+              0
+            ],
+            [
+              "dict",
+              "wireDenseBSCCO",
+              2
+            ],
+            [
+              "dict",
+              "ingotAnyHardPlastic",
+              4
+            ],
+            [
+              "item",
+              "hbm:pellet_charged",
+              4,
+              0
+            ],
+            [
+              "dict",
+              "wireFineGold",
+              8
+            ]
+          ],
+          "inputFluid": [
+            [
+              "HELIUM4",
+              250,
+              0
+            ]
+          ],
+          "blueprintpool": "528.chip_quantum"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 73
+        },
+        "output": [
+          "hbm:circuit_chip_quantum",
+          1,
+          0
+        ],
+        "chance": 90,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.atomic_clock",
+          "duration": 200,
+          "power": 2000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ],
+            [
+              "dict",
+              "wireFineZirconium",
+              8
+            ],
+            [
+              "dict",
+              "dustStrontium",
+              1
+            ]
+          ],
+          "blueprintpool": "528.strontium"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 82
+        },
+        "output": [
+          "hbm:circuit_atomic_clock",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.controller",
+          "duration": 400,
+          "power": 15000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              32,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor",
+              32,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_controller_chassis",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "wireFineLead",
+              16
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL",
+              1000,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 89
+        },
+        "output": [
+          "hbm:circuit_controller",
+          1,
+          0
+        ],
+        "chance": 75,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.controller_advanced",
+          "duration": 600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_bismoid",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              48,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_atomic_clock",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_controller_chassis",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "wireFineLead",
+              24
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL",
+              4000,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 99
+        },
+        "output": [
+          "hbm:circuit_controller_advanced",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.controller_quantum",
+          "duration": 600,
+          "power": 250000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip_quantum",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_chip_bismoid",
+              48,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_atomic_clock",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_controller_advanced",
+              2,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_overdrive_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "wireFineLead",
+              32
+            ]
+          ],
+          "inputFluid": [
+            [
+              "PERFLUOROMETHYL_COLD",
+              6000,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 109
+        },
+        "output": [
+          "hbm:circuit_controller_quantum",
+          1,
+          0
+        ],
+        "chance": 75,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_speed_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 119
+        },
+        "output": [
+          "hbm:upgrade_speed_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_speed_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 120
+        },
+        "output": [
+          "hbm:upgrade_speed_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_effect_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 121
+        },
+        "output": [
+          "hbm:upgrade_effect_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_effect_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 122
+        },
+        "output": [
+          "hbm:upgrade_effect_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_power_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_power_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 123
+        },
+        "output": [
+          "hbm:upgrade_power_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_power_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_power_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 124
+        },
+        "output": [
+          "hbm:upgrade_power_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_fortune_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_fortune_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 125
+        },
+        "output": [
+          "hbm:upgrade_fortune_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_fortune_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_fortune_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 126
+        },
+        "output": [
+          "hbm:upgrade_fortune_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_ab_ii",
+          "duration": 300,
+          "power": 10000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_afterburn_1",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyPlastic",
+              4
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 127
+        },
+        "output": [
+          "hbm:upgrade_afterburn_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_ab_iii",
+          "duration": 400,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:circuit_chip",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_tantalium",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_afterburn_2",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotRubber",
+              4
+            ]
+          ],
+          "inputFluid": [
+            [
+              "SOLVENT",
+              500,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 128
+        },
+        "output": [
+          "hbm:upgrade_afterburn_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 75
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_overdive_i",
+          "duration": 200,
+          "power": 1000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotSaturnite",
+              16
+            ],
+            [
+              "dict",
+              "ingotAnyHardPlastic",
+              16
+            ],
+            [
+              "item",
+              "hbm:circuit_advanced",
+              16,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 130
+        },
+        "output": [
+          "hbm:upgrade_overdrive_1",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_overdive_ii",
+          "duration": 600,
+          "power": 5000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:upgrade_overdrive_1",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotSaturnite",
+              16
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_capacitor_board",
+              16,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 137
+        },
+        "output": [
+          "hbm:upgrade_overdrive_2",
+          1,
+          0
+        ],
+        "chance": 50,
+        "reclaim": 50
+      },
+      {
+        "kind": "pair",
+        "recipe": {
+          "name": "precass.upgrade_overdive_iii",
+          "duration": 1200,
+          "power": 100000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:upgrade_overdrive_2",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_speed_3",
+              1,
+              0
+            ],
+            [
+              "item",
+              "hbm:upgrade_effect_3",
+              1,
+              0
+            ],
+            [
+              "dict",
+              "ingotAnyBismoidBronze",
+              16
+            ],
+            [
+              "item",
+              "hbm:ingot_cft",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:circuit_bismoid",
+              16,
+              0
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 145
+        },
+        "output": [
+          "hbm:upgrade_overdrive_3",
+          1,
+          0
+        ],
+        "chance": 25,
+        "reclaim": 50
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.blueprints",
+          "duration": 6000,
+          "power": 20000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              16,
+              0
+            ],
+            [
+              "dict",
+              "dyeBlue",
+              16
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              4,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  0
+                ],
+                1,
+                10
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  16,
+                  0
+                ],
+                1,
+                90
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 158
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.beigeprints",
+          "duration": 6000,
+          "power": 50000,
+          "inputItem": [
+            [
+              "item",
+              "minecraft:paper",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "gemCinnabar",
+              24
+            ],
+            [
+              "item",
+              "minecraft:pufferfish",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "multi",
+              [
+                [
+                  "hbm:blueprint_folder",
+                  1,
+                  1
+                ],
+                1,
+                5
+              ],
+              [
+                [
+                  "minecraft:paper",
+                  24,
+                  0
+                ],
+                1,
+                95
+              ]
+            ]
+          ]
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 166
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpahelmet",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:circuit_advanced",
+              4,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_helmet",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 175
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaplate",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "dict",
+              "gunMechanismSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ],
+            [
+              "item",
+              "hbm:parts_legendary",
+              1,
+              1
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_plate",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 181
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpalegs",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              24,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              8
+            ],
+            [
+              "item",
+              "hbm:motor_desh",
+              8,
+              0
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              16,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_legs",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 189
+        }
+      },
+      {
+        "kind": "recipe",
+        "recipe": {
+          "name": "precass.rpaboots",
+          "duration": 3600,
+          "power": 25000,
+          "inputItem": [
+            [
+              "item",
+              "hbm:plate_armor_ajr",
+              12,
+              0
+            ],
+            [
+              "dict",
+              "plateTripleSaturnite",
+              4
+            ],
+            [
+              "item",
+              "hbm:plate_kevlar",
+              8,
+              0
+            ]
+          ],
+          "outputItem": [
+            [
+              "single",
+              [
+                "hbm:rpa_boots",
+                1,
+                0
+              ]
+            ]
+          ],
+          "blueprintpool": "discover..rpa"
+        },
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/inventory/recipes/PrecAssRecipes.java",
+          "line": 195
+        }
+      }
+    ]
+  }
+}

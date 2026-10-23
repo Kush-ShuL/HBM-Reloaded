@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:drone",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "category": "misc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "KDK",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesextupletitanium"
+    },
+    "K": {
+      "type": "hbm:native_drink_fluid",
+      "fluid": "KEROSENE",
+      "amount": 1000
+    },
+    "D": {
+      "type": "neoforge:components",
+      "items": "hbm:drone",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  }
+}

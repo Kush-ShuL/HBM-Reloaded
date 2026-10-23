@@ -1,0 +1,260 @@
+{
+  "items": [
+    {
+      "id": "stamp_stone_flat",
+      "symbol": "stamp_stone_flat",
+      "maxDamage": 32,
+      "stampType": "FLAT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_stone_plate",
+      "symbol": "stamp_stone_plate",
+      "maxDamage": 32,
+      "stampType": "PLATE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_stone_wire",
+      "symbol": "stamp_stone_wire",
+      "maxDamage": 32,
+      "stampType": "WIRE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_stone_circuit",
+      "symbol": "stamp_stone_circuit",
+      "maxDamage": 32,
+      "stampType": "CIRCUIT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_iron_flat",
+      "symbol": "stamp_iron_flat",
+      "maxDamage": 64,
+      "stampType": "FLAT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_iron_plate",
+      "symbol": "stamp_iron_plate",
+      "maxDamage": 64,
+      "stampType": "PLATE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_iron_wire",
+      "symbol": "stamp_iron_wire",
+      "maxDamage": 64,
+      "stampType": "WIRE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_iron_circuit",
+      "symbol": "stamp_iron_circuit",
+      "maxDamage": 64,
+      "stampType": "CIRCUIT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_steel_flat",
+      "symbol": "stamp_steel_flat",
+      "maxDamage": 192,
+      "stampType": "FLAT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_steel_plate",
+      "symbol": "stamp_steel_plate",
+      "maxDamage": 192,
+      "stampType": "PLATE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_steel_wire",
+      "symbol": "stamp_steel_wire",
+      "maxDamage": 192,
+      "stampType": "WIRE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_steel_circuit",
+      "symbol": "stamp_steel_circuit",
+      "maxDamage": 192,
+      "stampType": "CIRCUIT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_titanium_flat",
+      "symbol": "stamp_titanium_flat",
+      "maxDamage": 256,
+      "stampType": "FLAT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_titanium_plate",
+      "symbol": "stamp_titanium_plate",
+      "maxDamage": 256,
+      "stampType": "PLATE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_titanium_wire",
+      "symbol": "stamp_titanium_wire",
+      "maxDamage": 256,
+      "stampType": "WIRE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_titanium_circuit",
+      "symbol": "stamp_titanium_circuit",
+      "maxDamage": 256,
+      "stampType": "CIRCUIT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_obsidian_flat",
+      "symbol": "stamp_obsidian_flat",
+      "maxDamage": 512,
+      "stampType": "FLAT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_obsidian_plate",
+      "symbol": "stamp_obsidian_plate",
+      "maxDamage": 512,
+      "stampType": "PLATE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_obsidian_wire",
+      "symbol": "stamp_obsidian_wire",
+      "maxDamage": 512,
+      "stampType": "WIRE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_obsidian_circuit",
+      "symbol": "stamp_obsidian_circuit",
+      "maxDamage": 512,
+      "stampType": "CIRCUIT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_flat",
+      "symbol": "stamp_desh_flat",
+      "maxDamage": 0,
+      "stampType": "FLAT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_plate",
+      "symbol": "stamp_desh_plate",
+      "maxDamage": 0,
+      "stampType": "PLATE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_wire",
+      "symbol": "stamp_desh_wire",
+      "maxDamage": 0,
+      "stampType": "WIRE",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_circuit",
+      "symbol": "stamp_desh_circuit",
+      "maxDamage": 0,
+      "stampType": "CIRCUIT",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_357",
+      "symbol": "stamp_357",
+      "maxDamage": 1000,
+      "stampType": "C357",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_44",
+      "symbol": "stamp_44",
+      "maxDamage": 1000,
+      "stampType": "C44",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_9",
+      "symbol": "stamp_9",
+      "maxDamage": 1000,
+      "stampType": "C9",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_50",
+      "symbol": "stamp_50",
+      "maxDamage": 1000,
+      "stampType": "C50",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_357",
+      "symbol": "stamp_desh_357",
+      "maxDamage": 0,
+      "stampType": "C357",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_44",
+      "symbol": "stamp_desh_44",
+      "maxDamage": 0,
+      "stampType": "C44",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_9",
+      "symbol": "stamp_desh_9",
+      "maxDamage": 0,
+      "stampType": "C9",
+      "stackSize": 1,
+      "tab": "control"
+    },
+    {
+      "id": "stamp_desh_50",
+      "symbol": "stamp_desh_50",
+      "maxDamage": 0,
+      "stampType": "C50",
+      "stackSize": 1,
+      "tab": "control"
+    }
+  ]
+}

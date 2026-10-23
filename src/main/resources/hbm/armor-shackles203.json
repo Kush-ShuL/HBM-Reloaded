@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "shackles",
+      "id": "hbm:shackles",
+      "legacyRegistryId": "hbm:item.shackles",
+      "originalClass": "ItemModShackles",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2897
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6133
+          },
+          "expression": "GameRegistry.registerItem(shackles, shackles.getUnlocalizedName())",
+          "arguments": [
+            "shackles",
+            "shackles.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.shackles.ShacklesContent",
+      "creativeTab": "consumable",
+      "armorModSlot": 7,
+      "applicableTo": [
+        "leggings"
+      ],
+      "maxStackSize": 1,
+      "maxDamage": 0
+    }
+  ]
+}

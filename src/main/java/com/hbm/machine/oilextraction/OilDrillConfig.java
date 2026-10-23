@@ -1,0 +1,9 @@
+package com.hbm.machine.oilextraction;
+import com.google.gson.*;import java.nio.file.*;import java.util.*;import net.neoforged.fml.loading.FMLPaths;
+/** Actual derrick/pumpjack hbmMachines sections; preserve every unrelated section. */
+public final class OilDrillConfig {
+ public record Values(int power,int consumption,int delay,int oil,int gasMin,int gasMax,double drain){}
+ private static final Map<OilDrillKind,Values> VALUES=new EnumMap<>(OilDrillKind.class);
+ public static synchronized Values get(OilDrillKind kind){if(VALUES.isEmpty())load();return VALUES.get(kind);}
+ private static void load(){try{var path=FMLPaths.GAMEDIR.get().resolve("hbmConfig/hbmMachines.json");var root=Files.exists(path)?JsonParser.parseString(Files.readString(path)).getAsJsonObject():new JsonObject();boolean changed=false;for(var k:OilDrillKind.values()){JsonObject row=root.has(k.config)?root.getAsJsonObject(k.config):new JsonObject();changed|=!root.has(k.config);String[] names={"I:powerCap","I:consumption","I:delay","I:oilPerDeposit","I:gasPerDepositMin","I:gasPerDepositMax"};int[] fallback={k.power,k.consumption,k.delay,k.oil,k.gasMin,k.gasMax};for(int i=0;i<names.length;i++)if(!row.has(names[i])){row.addProperty(names[i],fallback[i]);changed=true;}if(!row.has("D:drainChance")){row.addProperty("D:drainChance",k.drain);changed=true;}VALUES.put(k,new Values(row.get(names[0]).getAsInt(),row.get(names[1]).getAsInt(),row.get(names[2]).getAsInt(),row.get(names[3]).getAsInt(),row.get(names[4]).getAsInt(),row.get(names[5]).getAsInt(),row.get("D:drainChance").getAsDouble()));root.add(k.config,row);}if(changed){Files.createDirectories(path.getParent());Files.writeString(path,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}}catch(Exception error){throw new IllegalStateException("Cannot read original oil drill configuration",error);}}
+}

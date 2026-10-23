@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 16,
+  "source_key": "ore:ingotUranium235",
+  "source_hash": 1915121118,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingoturanium235"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_plutonium",
+    "count": 1
+  }
+}

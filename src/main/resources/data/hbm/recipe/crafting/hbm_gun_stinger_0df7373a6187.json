@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:gun_stinger",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "PGM"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/barrelheavyweaponsteel"
+    },
+    "P": {
+      "item": "hbm:circuit_advanced"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gripweaponsteel"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+    }
+  }
+}

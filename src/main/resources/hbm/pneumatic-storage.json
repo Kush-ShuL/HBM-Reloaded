@@ -1,0 +1,101 @@
+{
+  "entries": [
+    {
+      "symbol": "pneumatic_storage_access",
+      "id": "hbm:pneumatic_storage_access",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "PneumoStorageAccess",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1930
+      },
+      "legacyBlockEntity": "tileentity_pneumatic_storage_access",
+      "modernBlockEntity": "hbm:pneumatic_storage_access",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pneumatic_storage_clutter",
+      "id": "hbm:pneumatic_storage_clutter",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "PneumoStorageClutter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1931
+      },
+      "legacyBlockEntity": "tileentity_pneumatic_storage_clutter",
+      "modernBlockEntity": "hbm:pneumatic_storage_clutter",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pneumatic_storage_mono",
+      "id": "hbm:pneumatic_storage_mono",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "PneumoStorageMono",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1932
+      },
+      "legacyBlockEntity": "tileentity_pneumatic_storage_mono",
+      "modernBlockEntity": "hbm:pneumatic_storage_mono",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pneumatic_storage_importer",
+      "id": "hbm:pneumatic_storage_importer",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "PneumoStorageImporter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1933
+      },
+      "legacyBlockEntity": "tileentity_pneumatic_storage_importer",
+      "modernBlockEntity": "hbm:pneumatic_storage_importer",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pneumatic_storage_exporter",
+      "id": "hbm:pneumatic_storage_exporter",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "PneumoStorageExporter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1934
+      },
+      "legacyBlockEntity": "tileentity_pneumatic_storage_exporter",
+      "modernBlockEntity": "hbm:pneumatic_storage_exporter",
+      "runtimeValidated": false
+    }
+  ],
+  "sourceWorkbenchOrMachineRecipes": 0,
+  "sourceGUI": {
+    "access": [
+      210,
+      251
+    ],
+    "clutter": [
+      200,
+      235
+    ],
+    "mono": [
+      200,
+      181
+    ],
+    "importer": [
+      176,
+      185
+    ],
+    "exporter": [
+      176,
+      185
+    ]
+  },
+  "commonHook": "PneumaticStorageContent.register(bus)",
+  "clientHook": "automatic RegisterMenuScreensEvent",
+  "nativeJadeUID": "hbm:machine",
+  "explicitUserAdaptation": "Capacity and compressed-air pressure now use linear progress bars; original button/slot/layout/PNG assets retained."
+}

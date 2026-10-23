@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:crate_tungsten",
+    "count": 1
+  },
+  "type": "hbm:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "BPB",
+    "PCP",
+    "BPB"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blocktungsten"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+    },
+    "C": {
+      "item": "hbm:crate_steel"
+    }
+  }
+}

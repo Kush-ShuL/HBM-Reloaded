@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:bj_legs",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MBM",
+    "NSN",
+    "N N"
+  ],
+  "key": {
+    "N": {
+      "item": "hbm:plate_armor_lunar"
+    },
+    "M": {
+      "item": "hbm:motor_desh"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_legs",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "B": {
+      "item": "hbm:block_starmetal"
+    }
+  }
+}

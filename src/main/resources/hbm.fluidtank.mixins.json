@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.machine.fluidtank.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FauxLadderConnectionAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

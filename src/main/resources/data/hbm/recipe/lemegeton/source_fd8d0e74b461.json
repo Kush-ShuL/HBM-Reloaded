@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 36,
+  "source_key": "ore:ingotFiberglass",
+  "source_hash": -742305813,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotfiberglass"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_asbestos",
+    "count": 1
+  }
+}

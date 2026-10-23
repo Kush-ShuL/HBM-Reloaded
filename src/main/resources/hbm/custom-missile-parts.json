@@ -1,0 +1,2542 @@
+[
+  {
+    "health": 10.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_10",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      1.5
+    ],
+    "symbol": "mp_thruster_10_kerosene",
+    "id": "hbm:mp_thruster_10_kerosene",
+    "sourceName": "mp_thruster_10_kerosene",
+    "legacyRegistryId": "hbm:item.mp_thruster_10_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3445
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_10",
+    "bottom": "NONE",
+    "attributes": [
+      "SOLID",
+      1.0,
+      1.5
+    ],
+    "symbol": "mp_thruster_10_solid",
+    "id": "hbm:mp_thruster_10_solid",
+    "sourceName": "mp_thruster_10_solid",
+    "legacyRegistryId": "hbm:item.mp_thruster_10_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3446
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_10",
+    "bottom": "NONE",
+    "attributes": [
+      "XENON",
+      1.0,
+      1.5
+    ],
+    "symbol": "mp_thruster_10_xenon",
+    "id": "hbm:mp_thruster_10_xenon",
+    "sourceName": "mp_thruster_10_xenon",
+    "legacyRegistryId": "hbm:item.mp_thruster_10_xenon",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3447
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      7.5
+    ],
+    "symbol": "mp_thruster_15_kerosene",
+    "id": "hbm:mp_thruster_15_kerosene",
+    "sourceName": "mp_thruster_15_kerosene",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3448
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      2.5
+    ],
+    "symbol": "mp_thruster_15_kerosene_dual",
+    "id": "hbm:mp_thruster_15_kerosene_dual",
+    "sourceName": "mp_thruster_15_kerosene_dual",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_kerosene_dual",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3449
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      5.0
+    ],
+    "symbol": "mp_thruster_15_kerosene_triple",
+    "id": "hbm:mp_thruster_15_kerosene_triple",
+    "sourceName": "mp_thruster_15_kerosene_triple",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_kerosene_triple",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3450
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "SOLID",
+      1.0,
+      5.0
+    ],
+    "symbol": "mp_thruster_15_solid",
+    "id": "hbm:mp_thruster_15_solid",
+    "sourceName": "mp_thruster_15_solid",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3451
+    }
+  },
+  {
+    "health": 25.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "SOLID",
+      1.0,
+      5.0
+    ],
+    "rarity": "UNCOMMON",
+    "symbol": "mp_thruster_15_solid_hexdecuple",
+    "id": "hbm:mp_thruster_15_solid_hexdecuple",
+    "sourceName": "mp_thruster_15_solid_hexdecuple",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_solid_hexdecuple",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3452
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "HYDROGEN",
+      1.0,
+      7.5
+    ],
+    "symbol": "mp_thruster_15_hydrogen",
+    "id": "hbm:mp_thruster_15_hydrogen",
+    "sourceName": "mp_thruster_15_hydrogen",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_hydrogen",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3453
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "HYDROGEN",
+      1.0,
+      2.5
+    ],
+    "symbol": "mp_thruster_15_hydrogen_dual",
+    "id": "hbm:mp_thruster_15_hydrogen_dual",
+    "sourceName": "mp_thruster_15_hydrogen_dual",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_hydrogen_dual",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3454
+    }
+  },
+  {
+    "health": 25.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "BALEFIRE",
+      1.0,
+      5.0
+    ],
+    "symbol": "mp_thruster_15_balefire_short",
+    "id": "hbm:mp_thruster_15_balefire_short",
+    "sourceName": "mp_thruster_15_balefire_short",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_balefire_short",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3455
+    }
+  },
+  {
+    "health": 25.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "BALEFIRE",
+      1.0,
+      5.0
+    ],
+    "symbol": "mp_thruster_15_balefire",
+    "id": "hbm:mp_thruster_15_balefire",
+    "sourceName": "mp_thruster_15_balefire",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_balefire",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3456
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "BALEFIRE",
+      1.0,
+      7.5
+    ],
+    "symbol": "mp_thruster_15_balefire_large",
+    "id": "hbm:mp_thruster_15_balefire_large",
+    "sourceName": "mp_thruster_15_balefire_large",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_balefire_large",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3457
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_15",
+    "bottom": "NONE",
+    "attributes": [
+      "BALEFIRE",
+      1.0,
+      7.5
+    ],
+    "author": "The Master",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_thruster_15_balefire_large_rad",
+    "id": "hbm:mp_thruster_15_balefire_large_rad",
+    "sourceName": "mp_thruster_15_balefire_large_rad",
+    "legacyRegistryId": "hbm:item.mp_thruster_15_balefire_large_rad",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3458
+    }
+  },
+  {
+    "health": 30.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_20",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      100.0
+    ],
+    "symbol": "mp_thruster_20_kerosene",
+    "id": "hbm:mp_thruster_20_kerosene",
+    "sourceName": "mp_thruster_20_kerosene",
+    "legacyRegistryId": "hbm:item.mp_thruster_20_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3459
+    }
+  },
+  {
+    "health": 30.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_20",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      100.0
+    ],
+    "symbol": "mp_thruster_20_kerosene_dual",
+    "id": "hbm:mp_thruster_20_kerosene_dual",
+    "sourceName": "mp_thruster_20_kerosene_dual",
+    "legacyRegistryId": "hbm:item.mp_thruster_20_kerosene_dual",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3460
+    }
+  },
+  {
+    "health": 30.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_20",
+    "bottom": "NONE",
+    "attributes": [
+      "KEROSENE",
+      1.0,
+      100.0
+    ],
+    "symbol": "mp_thruster_20_kerosene_triple",
+    "id": "hbm:mp_thruster_20_kerosene_triple",
+    "sourceName": "mp_thruster_20_kerosene_triple",
+    "legacyRegistryId": "hbm:item.mp_thruster_20_kerosene_triple",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3461
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_20",
+    "bottom": "NONE",
+    "attributes": [
+      "SOLID",
+      1.0,
+      100.0
+    ],
+    "witty": "It's basically just a big hole at the end of the fuel tank.",
+    "symbol": "mp_thruster_20_solid",
+    "id": "hbm:mp_thruster_20_solid",
+    "sourceName": "mp_thruster_20_solid",
+    "legacyRegistryId": "hbm:item.mp_thruster_20_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3462
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_20",
+    "bottom": "NONE",
+    "attributes": [
+      "SOLID",
+      1.0,
+      100.0
+    ],
+    "symbol": "mp_thruster_20_solid_multi",
+    "id": "hbm:mp_thruster_20_solid_multi",
+    "sourceName": "mp_thruster_20_solid_multi",
+    "legacyRegistryId": "hbm:item.mp_thruster_20_solid_multi",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3463
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_thruster",
+    "type": "THRUSTER",
+    "top": "SIZE_20",
+    "bottom": "NONE",
+    "attributes": [
+      "SOLID",
+      1.0,
+      100.0
+    ],
+    "witty": "Did I miscount? Hope not.",
+    "symbol": "mp_thruster_20_solid_multier",
+    "id": "hbm:mp_thruster_20_solid_multier",
+    "sourceName": "mp_thruster_20_solid_multier",
+    "legacyRegistryId": "hbm:item.mp_thruster_20_solid_multier",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3464
+    }
+  },
+  {
+    "health": 10.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      0.5
+    ],
+    "symbol": "mp_stability_10_flat",
+    "id": "hbm:mp_stability_10_flat",
+    "sourceName": "mp_stability_10_flat",
+    "legacyRegistryId": "hbm:item.mp_stability_10_flat",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3466
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      0.25
+    ],
+    "symbol": "mp_stability_10_cruise",
+    "id": "hbm:mp_stability_10_cruise",
+    "sourceName": "mp_stability_10_cruise",
+    "legacyRegistryId": "hbm:item.mp_stability_10_cruise",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3467
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      0.35
+    ],
+    "witty": "Standing there alone, the ship is waiting / All systems are go, are you sure?",
+    "rarity": "COMMON",
+    "symbol": "mp_stability_10_space",
+    "id": "hbm:mp_stability_10_space",
+    "sourceName": "mp_stability_10_space",
+    "legacyRegistryId": "hbm:item.mp_stability_10_space",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3468
+    }
+  },
+  {
+    "health": 10.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      0.5
+    ],
+    "symbol": "mp_stability_15_flat",
+    "id": "hbm:mp_stability_15_flat",
+    "sourceName": "mp_stability_15_flat",
+    "legacyRegistryId": "hbm:item.mp_stability_15_flat",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3469
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      0.35
+    ],
+    "symbol": "mp_stability_15_thin",
+    "id": "hbm:mp_stability_15_thin",
+    "sourceName": "mp_stability_15_thin",
+    "legacyRegistryId": "hbm:item.mp_stability_15_thin",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3470
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      0.25
+    ],
+    "witty": "Союз!",
+    "rarity": "COMMON",
+    "symbol": "mp_stability_15_soyuz",
+    "id": "hbm:mp_stability_15_soyuz",
+    "sourceName": "mp_stability_15_soyuz",
+    "legacyRegistryId": "hbm:item.mp_stability_15_soyuz",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3471
+    }
+  },
+  {
+    "health": 0.0,
+    "icon": "hbm:mp_stability",
+    "type": "FINS",
+    "top": "SIZE_20",
+    "bottom": "SIZE_20",
+    "attributes": [
+      0.5
+    ],
+    "symbol": "mp_stability_20_flat",
+    "id": "hbm:mp_s_20",
+    "sourceName": "mp_s_20",
+    "legacyRegistryId": "hbm:item.mp_s_20",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3472
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "author": "Hoboy",
+    "symbol": "mp_fuselage_10_kerosene",
+    "id": "hbm:mp_fuselage_10_kerosene",
+    "sourceName": "mp_fuselage_10_kerosene",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3474
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_kerosene_camo",
+    "id": "hbm:mp_fuselage_10_kerosene_camo",
+    "sourceName": "mp_fuselage_10_kerosene_camo",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_camo",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3475
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Desert Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_kerosene_desert",
+    "id": "hbm:mp_fuselage_10_kerosene_desert",
+    "sourceName": "mp_fuselage_10_kerosene_desert",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_desert",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3476
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sky Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_kerosene_sky",
+    "id": "hbm:mp_fuselage_10_kerosene_sky",
+    "sourceName": "mp_fuselage_10_kerosene_sky",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_sky",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3477
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sick Flames",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_kerosene_flames",
+    "id": "hbm:mp_fuselage_10_kerosene_flames",
+    "sourceName": "mp_fuselage_10_kerosene_flames",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_flames",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3478
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 25.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Orange Insulation",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_kerosene_insulation",
+    "id": "hbm:mp_fuselage_10_kerosene_insulation",
+    "sourceName": "mp_fuselage_10_kerosene_insulation",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_insulation",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3479
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "IF-R&D",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_kerosene_sleek",
+    "id": "hbm:mp_fuselage_10_kerosene_sleek",
+    "sourceName": "mp_fuselage_10_kerosene_sleek",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_sleek",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3480
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Bolted Metal",
+    "author": "Hoboy",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_kerosene_metal",
+    "id": "hbm:mp_fuselage_10_kerosene_metal",
+    "sourceName": "mp_fuselage_10_kerosene_metal",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_metal",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3481
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      2500.0
+    ],
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Tainted",
+    "author": "Sam",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_kerosene_taint",
+    "id": "hbm:mp_fuselage_10_kerosene_taint",
+    "sourceName": "mp_fuselage_10_kerosene_taint",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_kerosene_taint",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3482
+    }
+  },
+  {
+    "health": 25.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "symbol": "mp_fuselage_10_solid",
+    "id": "hbm:mp_fuselage_10_solid",
+    "sourceName": "mp_fuselage_10_solid",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3484
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 25.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sick Flames",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_solid_flames",
+    "id": "hbm:mp_fuselage_10_solid_flames",
+    "sourceName": "mp_fuselage_10_solid_flames",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_flames",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3485
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Orange Insulation",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_solid_insulation",
+    "id": "hbm:mp_fuselage_10_solid_insulation",
+    "sourceName": "mp_fuselage_10_solid_insulation",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_insulation",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3486
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "IF-R&D",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_solid_sleek",
+    "id": "hbm:mp_fuselage_10_solid_sleek",
+    "sourceName": "mp_fuselage_10_solid_sleek",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_sleek",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3487
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Soviet Glory",
+    "author": "Hoboy",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_10_solid_soviet_glory",
+    "id": "hbm:mp_fuselage_10_solid_soviet_glory",
+    "sourceName": "mp_fuselage_10_solid_soviet_glory",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_soviet_glory",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3488
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 25.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Unholy Cathedral",
+    "author": "Satan",
+    "witty": "Quakeesque!",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_solid_cathedral",
+    "id": "hbm:mp_fuselage_10_solid_cathedral",
+    "sourceName": "mp_fuselage_10_solid_cathedral",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_cathedral",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3489
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 25.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Moonlit",
+    "author": "The Master & Hoboy",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_solid_moonlit",
+    "id": "hbm:mp_fuselage_10_solid_moonlit",
+    "sourceName": "mp_fuselage_10_solid_moonlit",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_moonlit",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3490
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Ecstatic",
+    "author": "wolfmonster222",
+    "witty": "I got caught eating batteries again :(",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_solid_battery",
+    "id": "hbm:mp_fuselage_10_solid_battery",
+    "sourceName": "mp_fuselage_10_solid_battery",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_battery",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3491
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      2500.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Duracell",
+    "author": "Hoboy",
+    "witty": "The crunchiest battery on the market!",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_solid_duracell",
+    "id": "hbm:mp_fuselage_10_solid_duracell",
+    "sourceName": "mp_fuselage_10_solid_duracell",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_solid_duracell",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3492
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "XENON",
+      5000.0
+    ],
+    "symbol": "mp_fuselage_10_xenon",
+    "id": "hbm:mp_fuselage_10_xenon",
+    "sourceName": "mp_fuselage_10_xenon",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_xenon",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3494
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "XENON",
+      5000.0
+    ],
+    "health": 20.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Morceus-1457",
+    "author": "Sten89",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_xenon_bhole",
+    "id": "hbm:mp_fuselage_10_xenon_bhole",
+    "sourceName": "mp_fuselage_10_xenon_bhole",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_xenon_bhole",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3495
+    }
+  },
+  {
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "author": "Hoboy",
+    "symbol": "mp_fuselage_10_long_kerosene",
+    "id": "hbm:mp_fuselage_10_long_kerosene",
+    "sourceName": "mp_fuselage_10_long_kerosene",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3497
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_camo",
+    "id": "hbm:mp_fuselage_10_long_kerosene_camo",
+    "sourceName": "mp_fuselage_10_long_kerosene_camo",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_camo",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3498
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Desert Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_desert",
+    "id": "hbm:mp_fuselage_10_long_kerosene_desert",
+    "sourceName": "mp_fuselage_10_long_kerosene_desert",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_desert",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3499
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sky Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_sky",
+    "id": "hbm:mp_fuselage_10_long_kerosene_sky",
+    "sourceName": "mp_fuselage_10_long_kerosene_sky",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_sky",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3500
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sick Flames",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_flames",
+    "id": "hbm:mp_fuselage_10_long_kerosene_flames",
+    "sourceName": "mp_fuselage_10_long_kerosene_flames",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_flames",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3501
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Orange Insulation",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_insulation",
+    "id": "hbm:mp_fuselage_10_long_kerosene_insulation",
+    "sourceName": "mp_fuselage_10_long_kerosene_insulation",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_insulation",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3502
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 40.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "IF-R&D",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_long_kerosene_sleek",
+    "id": "hbm:mp_fuselage_10_long_kerosene_sleek",
+    "sourceName": "mp_fuselage_10_long_kerosene_sleek",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_sleek",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3503
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "author": "Hoboy",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_metal",
+    "id": "hbm:mp_fuselage_10_long_kerosene_metal",
+    "sourceName": "mp_fuselage_10_long_kerosene_metal",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_metal",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3504
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Dash",
+    "author": "Sam",
+    "witty": "I wash my hands of it.",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_10_long_kerosene_dash",
+    "id": "hbm:mp_fuselage_10_long_kerosene_dash",
+    "sourceName": "mp_fuselage_10_long_kerosene_dash",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_dash",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3505
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Tainted",
+    "author": "Sam",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_long_kerosene_taint",
+    "id": "hbm:mp_fuselage_10_long_kerosene_taint",
+    "sourceName": "mp_fuselage_10_long_kerosene_taint",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_taint",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3506
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "KEROSENE",
+      5000.0
+    ],
+    "health": 30.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Minty Contrail",
+    "author": "VT-6/24",
+    "witty": "Upper rivet!",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_10_long_kerosene_vap",
+    "id": "hbm:mp_fuselage_10_long_kerosene_vap",
+    "sourceName": "mp_fuselage_10_long_kerosene_vap",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_kerosene_vap",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3507
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "symbol": "mp_fuselage_10_long_solid",
+    "id": "hbm:mp_fuselage_10_long_solid",
+    "sourceName": "mp_fuselage_10_long_solid",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3509
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sick Flames",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_long_solid_flames",
+    "id": "hbm:mp_fuselage_10_long_solid_flames",
+    "sourceName": "mp_fuselage_10_long_solid_flames",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid_flames",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3510
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "health": 40.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Orange Insulation",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_long_solid_insulation",
+    "id": "hbm:mp_fuselage_10_long_solid_insulation",
+    "sourceName": "mp_fuselage_10_long_solid_insulation",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid_insulation",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3511
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "health": 45.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "IF-R&D",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_10_long_solid_sleek",
+    "id": "hbm:mp_fuselage_10_long_solid_sleek",
+    "sourceName": "mp_fuselage_10_long_solid_sleek",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid_sleek",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3512
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "health": 45.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Soviet Glory",
+    "author": "Hoboy",
+    "witty": "Fully Automated Luxury Gay Space Communism!",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_10_long_solid_soviet_glory",
+    "id": "hbm:mp_fuselage_10_long_solid_soviet_glory",
+    "sourceName": "mp_fuselage_10_long_solid_soviet_glory",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid_soviet_glory",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3513
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Bullet Bill",
+    "author": "Sam",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_10_long_solid_bullet",
+    "id": "hbm:mp_fuselage_10_long_solid_bullet",
+    "sourceName": "mp_fuselage_10_long_solid_bullet",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid_bullet",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3514
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "SOLID",
+      5000.0
+    ],
+    "health": 35.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Silver Moonlight",
+    "author": "The Master",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_10_long_solid_silvermoonlight",
+    "id": "hbm:mp_fuselage_10_long_solid_silvermoonlight",
+    "sourceName": "mp_fuselage_10_long_solid_silvermoonlight",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_long_solid_silvermoonlight",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3515
+    }
+  },
+  {
+    "health": 40.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      10000.0
+    ],
+    "symbol": "mp_fuselage_10_15_kerosene",
+    "id": "hbm:mp_fuselage_10_15_kerosene",
+    "sourceName": "mp_fuselage_10_15_kerosene",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_15_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3517
+    }
+  },
+  {
+    "health": 40.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      10000.0
+    ],
+    "symbol": "mp_fuselage_10_15_solid",
+    "id": "hbm:mp_fuselage_10_15_solid",
+    "sourceName": "mp_fuselage_10_15_solid",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_15_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3518
+    }
+  },
+  {
+    "health": 40.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "HYDROGEN",
+      10000.0
+    ],
+    "symbol": "mp_fuselage_10_15_hydrogen",
+    "id": "hbm:mp_fuselage_10_15_hydrogen",
+    "sourceName": "mp_fuselage_10_15_hydrogen",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_15_hydrogen",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3519
+    }
+  },
+  {
+    "health": 40.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_10",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "BALEFIRE",
+      10000.0
+    ],
+    "symbol": "mp_fuselage_10_15_balefire",
+    "id": "hbm:mp_fuselage_10_15_balefire",
+    "sourceName": "mp_fuselage_10_15_balefire",
+    "legacyRegistryId": "hbm:item.mp_fuselage_10_15_balefire",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3520
+    }
+  },
+  {
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "author": "Hoboy",
+    "symbol": "mp_fuselage_15_kerosene",
+    "id": "hbm:mp_fuselage_15_kerosene",
+    "sourceName": "mp_fuselage_15_kerosene",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3522
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_15_kerosene_camo",
+    "id": "hbm:mp_fuselage_15_kerosene_camo",
+    "sourceName": "mp_fuselage_15_kerosene_camo",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_camo",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3523
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Desert Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_15_kerosene_desert",
+    "id": "hbm:mp_fuselage_15_kerosene_desert",
+    "sourceName": "mp_fuselage_15_kerosene_desert",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_desert",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3524
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Sky Camo",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_15_kerosene_sky",
+    "id": "hbm:mp_fuselage_15_kerosene_sky",
+    "sourceName": "mp_fuselage_15_kerosene_sky",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_sky",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3525
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 55.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Orange Insulation",
+    "witty": "Rest in spaghetti Columbia :(",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_15_kerosene_insulation",
+    "id": "hbm:mp_fuselage_15_kerosene_insulation",
+    "sourceName": "mp_fuselage_15_kerosene_insulation",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_insulation",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3526
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Bolted Metal",
+    "author": "Hoboy",
+    "witty": "Metal frame with metal plating reinforced with bolted metal sheets and metal.",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_kerosene_metal",
+    "id": "hbm:mp_fuselage_15_kerosene_metal",
+    "sourceName": "mp_fuselage_15_kerosene_metal",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_metal",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3527
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Decorated",
+    "author": "Hoboy",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_kerosene_decorated",
+    "id": "hbm:mp_fuselage_15_kerosene_decorated",
+    "sourceName": "mp_fuselage_15_kerosene_decorated",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_decorated",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3528
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Steampunk",
+    "author": "Hoboy",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_kerosene_steampunk",
+    "id": "hbm:mp_fuselage_15_kerosene_steampunk",
+    "sourceName": "mp_fuselage_15_kerosene_steampunk",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_steampunk",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3529
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Polite",
+    "author": "Hoboy",
+    "rarity": "LEGENDARY",
+    "symbol": "mp_fuselage_15_kerosene_polite",
+    "id": "hbm:mp_fuselage_15_kerosene_polite",
+    "sourceName": "mp_fuselage_15_kerosene_polite",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_polite",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3530
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 100.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Queen Whiskey",
+    "rarity": "LEGENDARY",
+    "symbol": "mp_fuselage_15_kerosene_blackjack",
+    "id": "hbm:mp_fuselage_15_kerosene_blackjack",
+    "sourceName": "mp_fuselage_15_kerosene_blackjack",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_blackjack",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3531
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 75.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Lambda Complex",
+    "author": "VT-6/24",
+    "witty": "MAGNIFICENT MICROWAVE CASSEROLE",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_kerosene_lambda",
+    "id": "hbm:mp_fuselage_15_kerosene_lambda",
+    "sourceName": "mp_fuselage_15_kerosene_lambda",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_lambda",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3532
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "MX 1702",
+    "author": "Spexta",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_kerosene_minuteman",
+    "id": "hbm:mp_fuselage_15_kerosene_minuteman",
+    "sourceName": "mp_fuselage_15_kerosene_minuteman",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_minuteman",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3533
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "LittlePip",
+    "author": "The Doctor",
+    "witty": "31!",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_15_kerosene_pip",
+    "id": "hbm:mp_fuselage_15_kerosene_pip",
+    "sourceName": "mp_fuselage_15_kerosene_pip",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_pip",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3534
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Tainted",
+    "author": "Sam",
+    "witty": "DUN-DUN!",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_kerosene_taint",
+    "id": "hbm:mp_fuselage_15_kerosene_taint",
+    "sourceName": "mp_fuselage_15_kerosene_taint",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_taint",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3535
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "KEROSENE",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Flesh",
+    "author": "Hoboy",
+    "witty": "Note: Never clean DNA vials with your own spit.",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_15_kerosene_yuck",
+    "id": "hbm:mp_fuselage_15_kerosene_yuck",
+    "sourceName": "mp_fuselage_15_kerosene_yuck",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_kerosene_yuck",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3536
+    }
+  },
+  {
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "symbol": "mp_fuselage_15_solid",
+    "id": "hbm:mp_fuselage_15_solid",
+    "sourceName": "mp_fuselage_15_solid",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3538
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 65.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Orange Insulation",
+    "rarity": "COMMON",
+    "symbol": "mp_fuselage_15_solid_insulation",
+    "id": "hbm:mp_fuselage_15_solid_insulation",
+    "sourceName": "mp_fuselage_15_solid_insulation",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_insulation",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3539
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 80.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Desh Plating",
+    "author": "Hoboy",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_solid_desh",
+    "id": "hbm:mp_fuselage_15_solid_desh",
+    "sourceName": "mp_fuselage_15_solid_desh",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_desh",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3540
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 70.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Soviet Glory",
+    "author": "Hoboy",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_solid_soviet_glory",
+    "id": "hbm:mp_fuselage_15_solid_soviet_glory",
+    "sourceName": "mp_fuselage_15_solid_soviet_glory",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_soviet_glory",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3541
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 15.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Soviet Stank",
+    "author": "Hoboy",
+    "witty": "Aged like a fine wine! Well, almost.",
+    "rarity": "EPIC",
+    "symbol": "mp_fuselage_15_solid_soviet_stank",
+    "id": "hbm:mp_fuselage_15_solid_soviet_stank",
+    "sourceName": "mp_fuselage_15_solid_soviet_stank",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_soviet_stank",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3542
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 250.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Mighty Lauren",
+    "author": "Dr.Nostalgia",
+    "witty": "Welcome to Subway, may I take your order?",
+    "rarity": "LEGENDARY",
+    "symbol": "mp_fuselage_15_solid_faust",
+    "id": "hbm:mp_fuselage_15_solid_faust",
+    "sourceName": "mp_fuselage_15_solid_faust",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_faust",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3543
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Silver Moonlight",
+    "author": "The Master",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_solid_silvermoonlight",
+    "id": "hbm:mp_fuselage_15_solid_silvermoonlight",
+    "sourceName": "mp_fuselage_15_solid_silvermoonlight",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_silvermoonlight",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3544
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Chilly Day",
+    "author": "Dr.Nostalgia",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_solid_snowy",
+    "id": "hbm:mp_fuselage_15_solid_snowy",
+    "sourceName": "mp_fuselage_15_solid_snowy",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_snowy",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3545
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Panorama",
+    "author": "Hoboy",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_solid_panorama",
+    "id": "hbm:mp_fuselage_15_solid_panorama",
+    "sourceName": "mp_fuselage_15_solid_panorama",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_panorama",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3546
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Bed of roses",
+    "author": "Hoboy",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_solid_roses",
+    "id": "hbm:mp_fuselage_15_solid_roses",
+    "sourceName": "mp_fuselage_15_solid_roses",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_roses",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3547
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "SOLID",
+      15000.0
+    ],
+    "health": 60.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Mimi-chan",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_solid_mimi",
+    "id": "hbm:mp_fuselage_15_solid_mimi",
+    "sourceName": "mp_fuselage_15_solid_mimi",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_solid_mimi",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3548
+    }
+  },
+  {
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "HYDROGEN",
+      15000.0
+    ],
+    "symbol": "mp_fuselage_15_hydrogen",
+    "id": "hbm:mp_fuselage_15_hydrogen",
+    "sourceName": "mp_fuselage_15_hydrogen",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_hydrogen",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3550
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "HYDROGEN",
+      15000.0
+    ],
+    "health": 50.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "Unholy Cathedral",
+    "author": "Satan",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_fuselage_15_hydrogen_cathedral",
+    "id": "hbm:mp_fuselage_15_hydrogen_cathedral",
+    "sourceName": "mp_fuselage_15_hydrogen_cathedral",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_hydrogen_cathedral",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3551
+    }
+  },
+  {
+    "health": 75.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "BALEFIRE",
+      15000.0
+    ],
+    "symbol": "mp_fuselage_15_balefire",
+    "id": "hbm:mp_fuselage_15_balefire",
+    "sourceName": "mp_fuselage_15_balefire",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_balefire",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3553
+    }
+  },
+  {
+    "health": 70.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_20",
+    "attributes": [
+      "KEROSENE",
+      20000.0
+    ],
+    "author": "Hoboy",
+    "symbol": "mp_fuselage_15_20_kerosene",
+    "id": "hbm:mp_fuselage_15_20_kerosene",
+    "sourceName": "mp_fuselage_15_20_kerosene",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_20_kerosene",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3555
+    }
+  },
+  {
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_20",
+    "attributes": [
+      "KEROSENE",
+      20000.0
+    ],
+    "health": 70.0,
+    "icon": "hbm:mp_fuselage",
+    "title": "White Forest Rocket",
+    "author": "VT-6/24",
+    "witty": "And get your cranio-conjugal parasite away from my nose cone!",
+    "rarity": "RARE",
+    "symbol": "mp_fuselage_15_20_kerosene_magnusson",
+    "id": "hbm:mp_fuselage_15_20_kerosene_magnusson",
+    "sourceName": "mp_fuselage_15_20_kerosene_magnusson",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_20_kerosene_magnusson",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3556
+    }
+  },
+  {
+    "health": 70.0,
+    "icon": "hbm:mp_fuselage",
+    "type": "FUSELAGE",
+    "top": "SIZE_15",
+    "bottom": "SIZE_20",
+    "attributes": [
+      "SOLID",
+      20000.0
+    ],
+    "symbol": "mp_fuselage_15_20_solid",
+    "id": "hbm:mp_fuselage_15_20_solid",
+    "sourceName": "mp_fuselage_15_20_solid",
+    "legacyRegistryId": "hbm:item.mp_fuselage_15_20_solid",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3557
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "HE",
+      15.0,
+      1.5
+    ],
+    "symbol": "mp_warhead_10_he",
+    "id": "hbm:mp_warhead_10_he",
+    "sourceName": "mp_warhead_10_he",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_he",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3559
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "INC",
+      15.0,
+      1.5
+    ],
+    "symbol": "mp_warhead_10_incendiary",
+    "id": "hbm:mp_warhead_10_incendiary",
+    "sourceName": "mp_warhead_10_incendiary",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_incendiary",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3560
+    }
+  },
+  {
+    "health": 5.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "BUSTER",
+      5.0,
+      1.5
+    ],
+    "symbol": "mp_warhead_10_buster",
+    "id": "hbm:mp_warhead_10_buster",
+    "sourceName": "mp_warhead_10_buster",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_buster",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3561
+    }
+  },
+  {
+    "health": 10.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "NUCLEAR",
+      35.0,
+      1.5
+    ],
+    "title": "Tater Tot",
+    "symbol": "mp_warhead_10_nuclear",
+    "id": "hbm:mp_warhead_10_nuclear",
+    "sourceName": "mp_warhead_10_nuclear",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_nuclear",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3562
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "NUCLEAR",
+      75.0,
+      2.5
+    ],
+    "title": "Chernobyl Boris",
+    "symbol": "mp_warhead_10_nuclear_large",
+    "id": "hbm:mp_warhead_10_nuclear_large",
+    "sourceName": "mp_warhead_10_nuclear_large",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_nuclear_large",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3563
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "TAINT",
+      15.0,
+      1.5
+    ],
+    "witty": "Eat my taint! Bureaucracy is dead and we killed it!",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_warhead_10_taint",
+    "id": "hbm:mp_warhead_10_taint",
+    "sourceName": "mp_warhead_10_taint",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_taint",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3564
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_10",
+    "attributes": [
+      "CLOUD",
+      15.0,
+      1.5
+    ],
+    "rarity": "RARE",
+    "symbol": "mp_warhead_10_cloud",
+    "id": "hbm:mp_warhead_10_cloud",
+    "sourceName": "mp_warhead_10_cloud",
+    "legacyRegistryId": "hbm:item.mp_warhead_10_cloud",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3565
+    }
+  },
+  {
+    "health": 10.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "HE",
+      50.0,
+      2.5
+    ],
+    "symbol": "mp_warhead_15_he",
+    "id": "hbm:mp_warhead_15_he",
+    "sourceName": "mp_warhead_15_he",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_he",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3566
+    }
+  },
+  {
+    "health": 10.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "INC",
+      35.0,
+      2.5
+    ],
+    "symbol": "mp_warhead_15_incendiary",
+    "id": "hbm:mp_warhead_15_incendiary",
+    "sourceName": "mp_warhead_15_incendiary",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_incendiary",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3567
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "NUCLEAR",
+      125.0,
+      5.0
+    ],
+    "title": "Auntie Bertha",
+    "symbol": "mp_warhead_15_nuclear",
+    "id": "hbm:mp_warhead_15_nuclear",
+    "sourceName": "mp_warhead_15_nuclear",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_nuclear",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3568
+    }
+  },
+  {
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "NUCLEAR",
+      125.0,
+      5.0
+    ],
+    "health": 15.0,
+    "icon": "hbm:mp_warhead",
+    "title": "Discount Bullet Bill",
+    "witty": "Nose art on a cannon bullet? Who does that?",
+    "rarity": "UNCOMMON",
+    "symbol": "mp_warhead_15_nuclear_shark",
+    "id": "hbm:mp_warhead_15_nuclear_shark",
+    "sourceName": "mp_warhead_15_nuclear_shark",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_nuclear_shark",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3569
+    }
+  },
+  {
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "NUCLEAR",
+      125.0,
+      5.0
+    ],
+    "health": 15.0,
+    "icon": "hbm:mp_warhead",
+    "title": "FASHIONABLE MISSILE",
+    "rarity": "RARE",
+    "symbol": "mp_warhead_15_nuclear_mimi",
+    "id": "hbm:mp_warhead_15_nuclear_mimi",
+    "sourceName": "mp_warhead_15_nuclear_mimi",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_nuclear_mimi",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3570
+    }
+  },
+  {
+    "health": 35.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "TX",
+      250.0,
+      7.5
+    ],
+    "witty": "?!?!",
+    "rarity": "LEGENDARY",
+    "symbol": "mp_warhead_15_boxcar",
+    "id": "hbm:mp_warhead_15_boxcar",
+    "sourceName": "mp_warhead_15_boxcar",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_boxcar",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3571
+    }
+  },
+  {
+    "health": 20.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "N2",
+      100.0,
+      5.0
+    ],
+    "witty": "[screams geometrically]",
+    "rarity": "RARE",
+    "symbol": "mp_warhead_15_n2",
+    "id": "hbm:mp_warhead_15_n2",
+    "sourceName": "mp_warhead_15_n2",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_n2",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3572
+    }
+  },
+  {
+    "health": 15.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "BALEFIRE",
+      100.0,
+      7.5
+    ],
+    "author": "VT-6/24",
+    "witty": "Hightower, never forgetti.",
+    "rarity": "LEGENDARY",
+    "symbol": "mp_warhead_15_balefire",
+    "id": "hbm:mp_warhead_15_balefire",
+    "sourceName": "mp_warhead_15_balefire",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_balefire",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3573
+    }
+  },
+  {
+    "health": 250.0,
+    "icon": "hbm:mp_warhead",
+    "type": "WARHEAD",
+    "top": "NONE",
+    "bottom": "SIZE_15",
+    "attributes": [
+      "TURBINE",
+      200.0,
+      5.0
+    ],
+    "rarity": "SEWS_CLOTHES_AND_SUCKS_HORSE_COCK",
+    "symbol": "mp_warhead_15_turbine",
+    "id": "hbm:mp_warhead_15_turbine",
+    "sourceName": "mp_warhead_15_turbine",
+    "legacyRegistryId": "hbm:item.mp_warhead_15_turbine",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3574
+    }
+  },
+  {
+    "health": 0.0,
+    "icon": "hbm:mp_c_1",
+    "type": "CHIP",
+    "top": "ANY",
+    "bottom": "ANY",
+    "attributes": [
+      0.1
+    ],
+    "symbol": "mp_chip_1",
+    "id": "hbm:mp_c_1",
+    "sourceName": "mp_c_1",
+    "legacyRegistryId": "hbm:item.mp_c_1",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3576
+    }
+  },
+  {
+    "health": 0.0,
+    "icon": "hbm:mp_c_2",
+    "type": "CHIP",
+    "top": "ANY",
+    "bottom": "ANY",
+    "attributes": [
+      0.05
+    ],
+    "symbol": "mp_chip_2",
+    "id": "hbm:mp_c_2",
+    "sourceName": "mp_c_2",
+    "legacyRegistryId": "hbm:item.mp_c_2",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3577
+    }
+  },
+  {
+    "health": 0.0,
+    "icon": "hbm:mp_c_3",
+    "type": "CHIP",
+    "top": "ANY",
+    "bottom": "ANY",
+    "attributes": [
+      0.01
+    ],
+    "symbol": "mp_chip_3",
+    "id": "hbm:mp_c_3",
+    "sourceName": "mp_c_3",
+    "legacyRegistryId": "hbm:item.mp_c_3",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3578
+    }
+  },
+  {
+    "health": 0.0,
+    "icon": "hbm:mp_c_4",
+    "type": "CHIP",
+    "top": "ANY",
+    "bottom": "ANY",
+    "attributes": [
+      0.005
+    ],
+    "symbol": "mp_chip_4",
+    "id": "hbm:mp_c_4",
+    "sourceName": "mp_c_4",
+    "legacyRegistryId": "hbm:item.mp_c_4",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3579
+    }
+  },
+  {
+    "health": 0.0,
+    "icon": "hbm:mp_c_5",
+    "type": "CHIP",
+    "top": "ANY",
+    "bottom": "ANY",
+    "attributes": [
+      0.0
+    ],
+    "symbol": "mp_chip_5",
+    "id": "hbm:mp_c_5",
+    "sourceName": "mp_c_5",
+    "legacyRegistryId": "hbm:item.mp_c_5",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+      "line": 3580
+    }
+  }
+]

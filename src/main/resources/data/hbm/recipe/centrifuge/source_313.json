@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_plutonium"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_plutonium",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_plutonium",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_polonium",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:starmetal_legs",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "ECE",
+    "E E"
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "C": {
+      "type": "neoforge:components",
+      "items": "hbm:cobalt_legs",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleArmorRecipes)"
+    }
+  ]
+}

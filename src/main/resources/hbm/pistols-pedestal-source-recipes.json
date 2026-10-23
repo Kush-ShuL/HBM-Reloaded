@@ -1,0 +1,16 @@
+{
+  "recipes": [
+    {
+      "output": "hbm:gun_light_revolver_dani",
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/PedestalRecipes.java:39",
+      "sourceJava": "register(new PedestalRecipe(new ItemStack(ModItems.gun_light_revolver_dani),\n\t\t\t\tnull,\t\t\t\t\t\t\tnew OreDictStack(PB.plate()),\t\t\t\t\t\tnull,\n\t\t\t\tnew OreDictStack(GOLD.plate()),\tnew ComparableStack(ModItems.gun_light_revolver),\tnew OreDictStack(GOLD.plate()),\n\t\t\t\tnull,\t\t\t\t\t\t\tnew OreDictStack(PB.plate()),\t\t\t\t\t\tnull));",
+      "status": "pending_actual_pedestal"
+    },
+    {
+      "output": "hbm:gun_heavy_revolver_protege",
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/PedestalRecipes.java:54",
+      "sourceJava": "register(new PedestalRecipe(new ItemStack(ModItems.gun_heavy_revolver_protege),\n\t\t\t\tnew ComparableStack(ModBlocks.chain, 16),\t\tnew OreDictStack(CINNABAR.gem()),\t\t\t\t\tnew ComparableStack(ModBlocks.chain, 16),\n\t\t\t\tnew ComparableStack(ModItems.scrap_nuclear),\tnew ComparableStack(ModItems.gun_heavy_revolver),\tnew ComparableStack(ModItems.scrap_nuclear),\n\t\t\t\tnew ComparableStack(ModBlocks.chain, 16),\t\tnew OreDictStack(CINNABAR.gem()),\t\t\t\t\tnew ComparableStack(ModBlocks.chain, 16)));",
+      "status": "pending_actual_pedestal"
+    }
+  ]
+}

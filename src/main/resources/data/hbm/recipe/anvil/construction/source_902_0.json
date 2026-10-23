@@ -1,0 +1,45 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:rbmk_rod_reasim",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:rbmk_blank",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:ingot_zirconium",
+        "count": 4
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:shell",
+        "count": 2,
+        "components": {
+          "hbm:legacy_metadata": 30
+        }
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 4,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 902000000
+}

@@ -1,0 +1,165 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "brick_jungle_fragile",
+      "id": "hbm:brick_jungle_fragile",
+      "legacyRegistryId": "hbm:tile.brick_jungle_fragile",
+      "originalClass": "FragileBrick",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1581
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 216,
+      "light": 0
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_jungle_trap",
+      "id": "hbm:brick_jungle_trap",
+      "legacyRegistryId": "hbm:tile.brick_jungle_trap",
+      "originalClass": "TrappedBrick",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1585
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 216,
+      "light": 0,
+      "metadataRange": [
+        0,
+        14
+      ],
+      "names": [
+        "FALLING_ROCKS",
+        "FIRE",
+        "ARROW",
+        "SPIKES",
+        "MINE",
+        "WEB",
+        "FLAMING_ARROW",
+        "PILLAR",
+        "RAD_CONVERSION",
+        "MAGIC_CONVERSTION",
+        "SLOWNESS",
+        "WEAKNESS",
+        "POISON_DART",
+        "ZOMBIE",
+        "SPIDERS"
+      ],
+      "enumClass": "TrappedBrick.Trap"
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_jungle_ooze",
+      "id": "hbm:brick_jungle_ooze",
+      "legacyRegistryId": "hbm:tile.brick_jungle_ooze",
+      "originalClass": "BlockOre",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1583
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 216,
+      "light": 5
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_jungle_mystic",
+      "id": "hbm:brick_jungle_mystic",
+      "legacyRegistryId": "hbm:tile.brick_jungle_mystic",
+      "originalClass": "BlockOre",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1584
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 216,
+      "light": 5
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_jungle_glyph",
+      "id": "hbm:brick_jungle_glyph",
+      "legacyRegistryId": "hbm:tile.brick_jungle_glyph",
+      "originalClass": "BlockGlyph",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1586
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 216,
+      "light": 0,
+      "metadataRange": [
+        0,
+        15
+      ],
+      "names": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "enumClass": ""
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_jungle_circle",
+      "id": "hbm:brick_jungle_circle",
+      "legacyRegistryId": "hbm:tile.brick_jungle_circle",
+      "originalClass": "BlockBallsSpawner",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1587
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 216,
+      "light": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "cobalt_sword",
+      "id": "hbm:cobalt_sword",
+      "legacyRegistryId": "hbm:item.cobalt_sword",
+      "originalClass": "ItemSwordAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4064
+      },
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 750
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_hoe",
+      "id": "hbm:cmb_hoe",
+      "legacyRegistryId": "hbm:item.cmb_hoe",
+      "originalClass": "ModHoe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4009
+      },
+      "nativeCreativeTab": "minecraft:tools_and_utilities",
+      "maxDamage": 8500
+    }
+  ]
+}

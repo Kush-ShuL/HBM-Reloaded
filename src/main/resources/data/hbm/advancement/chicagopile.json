@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:centrifuge",
+  "display": {
+    "icon": {
+      "id": "hbm:pile_rod_plutonium"
+    },
+    "title": {
+      "translate": "achievement.chicagoPile"
+    },
+    "description": {
+      "translate": "achievement.chicagoPile.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:chicagopile"
+      }
+    }
+  }
+}

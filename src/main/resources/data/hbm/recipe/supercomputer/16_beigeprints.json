@@ -1,0 +1,49 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.beigeprints",
+  "order": 16,
+  "duration": 18000,
+  "power": 50000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "minecraft:paper"
+        }
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemcinnabar"
+      },
+      "count": 24
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:blueprint_folder",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 1
+            }
+          },
+          "weight": 10
+        },
+        {
+          "stack": {
+            "id": "minecraft:paper",
+            "count": 24
+          },
+          "weight": 90
+        }
+      ],
+      "weighted": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:cm_tank",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " B ",
+    "BGB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:cm_block",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockglass"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "hbm:legacy_natural_structures",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "hbm:configured_natural_spread",
+    "spacing": 16,
+    "separation": 4,
+    "salt": 996996996,
+    "spread_type": "linear"
+  }
+}

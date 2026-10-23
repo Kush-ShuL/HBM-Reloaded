@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:parts_legendary",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:ingot_chainsteel"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotasbestos"
+    },
+    {
+      "item": "hbm:gem_alexandrite"
+    }
+  ]
+}

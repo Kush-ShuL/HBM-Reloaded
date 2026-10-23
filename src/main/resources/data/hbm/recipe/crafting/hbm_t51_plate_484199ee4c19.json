@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:t51_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MPM",
+    "TBT",
+    "PPP"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:motor"
+    },
+    "P": {
+      "item": "hbm:plate_armor_titanium"
+    },
+    "T": {
+      "item": "hbm:gas_empty"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:titanium_plate",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:gun_chemthrower",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MHW",
+    "PSS"
+  ],
+  "key": {
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+    },
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpiperubber"
+    },
+    "W": {
+      "item": "hbm:wrench"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/barrelheavyweaponsteel"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellweaponsteel"
+    }
+  }
+}

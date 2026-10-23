@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:missile_bhole",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:missile_assembly"
+    },
+    {
+      "item": "hbm:ducttape"
+    },
+    {
+      "item": "hbm:black_hole"
+    },
+    {
+      "item": "hbm:circuit_controller_advanced"
+    }
+  ]
+}

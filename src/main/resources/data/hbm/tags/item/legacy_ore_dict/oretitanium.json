@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_titanium",
+    {
+      "id": "#c:ores/titanium",
+      "required": false
+    }
+  ]
+}

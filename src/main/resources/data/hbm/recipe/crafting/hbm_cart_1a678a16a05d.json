@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P P",
+    "WPW"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/slabwood"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plankwood"
+    }
+  },
+  "result": {
+    "id": "hbm:cart",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0,
+      "minecraft:custom_data": {
+        "cartBase": 1
+      }
+    }
+  }
+}

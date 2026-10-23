@@ -1,0 +1,49 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mpt10xenon",
+  "duration": 100,
+  "power": 100,
+  "order": 281,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:mp_thruster_10_xenon",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:seg_10"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platedurasteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:arc_electrode",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 1
+    }
+  ]
+}

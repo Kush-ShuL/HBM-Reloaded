@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_keyforge",
+      "id": "hbm:machine_keyforge",
+      "kind": "block",
+      "module": "keyforge",
+      "originalClass": "com.hbm.blocks.machine.MachineKeyForge",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1957
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "key",
+      "id": "hbm:key",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemKey",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3849
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "key_fake",
+      "id": "hbm:key_fake",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemKey",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3853
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "key_kit",
+      "id": "hbm:key_kit",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemCounterfeitKeys",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3852
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "padlock_rusty",
+      "id": "hbm:padlock_rusty",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemLock",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3855
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "padlock",
+      "id": "hbm:padlock",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemLock",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3856
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "padlock_reinforced",
+      "id": "hbm:padlock_reinforced",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemLock",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3857
+      },
+      "variants": 1,
+      "creativeTab": "consumable",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "padlock_unbreakable",
+      "id": "hbm:padlock_unbreakable",
+      "kind": "item",
+      "module": "keyforge",
+      "originalClass": "ItemLock",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3858
+      },
+      "variants": 1,
+      "creativeTab": null,
+      "runtimeValidated": false
+    }
+  ]
+}

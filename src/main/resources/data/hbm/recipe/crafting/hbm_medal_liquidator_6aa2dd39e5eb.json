@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GBG",
+    "BFB",
+    "GBG"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold198"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotboron"
+    },
+    "F": {
+      "item": "hbm:debris_fuel"
+    }
+  },
+  "result": {
+    "id": "hbm:medal_liquidator",
+    "count": 1
+  }
+}

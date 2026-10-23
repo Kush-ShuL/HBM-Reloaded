@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:cobalt_plate",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    "ECE",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetcobalt"
+    },
+    "C": {
+      "type": "neoforge:components",
+      "items": "hbm:steel_plate",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  }
+}

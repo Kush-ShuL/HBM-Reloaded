@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:machine_press",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "IPI",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "R": {
+      "item": "minecraft:furnace"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockiron"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    }
+  }
+}

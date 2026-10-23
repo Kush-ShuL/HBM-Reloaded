@@ -1,0 +1,30 @@
+{
+  "en_us": {
+    "container.soyuzLauncher": "Soyuz Launch Platform",
+    "desc.gui.soyuz.cargo": "§4Cargo Mode$Drops cargo via parachute$over the designator's coordinates.$The Soyuz can be reused.",
+    "desc.gui.soyuz.fueling": "Fueling",
+    "desc.gui.soyuz.idle": "Idle",
+    "desc.gui.soyuz.loading": "Loading",
+    "desc.gui.soyuz.ready": "Ready",
+    "desc.gui.soyuz.satellite": "§4Satellite Mode$Sends a satellite into orbit. Some$satellites require an orbital module.",
+    "tile.soyuz_launcher.name": "Soyuz Launch Platform",
+    "tile.struct_soyuz_core.name": "Soyuz Launcher Core Component",
+    "block.hbm.soyuz_launcher": "Soyuz Launch Platform",
+    "block.hbm.struct_soyuz_core": "Soyuz Launcher Core Component",
+    "gui.hbm.soyuz.countdown": "Launch countdown",
+    "recipe.hbm.category.soyuz_construction": "Construction: Soyuz Launch Platform",
+    "desc.gui.soyuz.desc": "Designator is only required for cargo mode.$Payload is used in satellite mode."
+  },
+  "zh_cn": {
+    "container.soyuzLauncher": "联盟号发射平台",
+    "tile.soyuz_launcher.name": "联盟号发射平台",
+    "tile.struct_soyuz_core.name": "联盟号发射器核心组件",
+    "desc.gui.soyuz.cargo": "货运模式",
+    "desc.gui.soyuz.desc": "仅用于货运模式的标识符$卫星模式的有效载荷",
+    "desc.gui.soyuz.satellite": "卫星模式",
+    "block.hbm.soyuz_launcher": "联盟号发射平台",
+    "block.hbm.struct_soyuz_core": "联盟号发射器核心组件",
+    "gui.hbm.soyuz.countdown": "发射倒计时",
+    "recipe.hbm.category.soyuz_construction": "建造：联盟号发射平台"
+  }
+}

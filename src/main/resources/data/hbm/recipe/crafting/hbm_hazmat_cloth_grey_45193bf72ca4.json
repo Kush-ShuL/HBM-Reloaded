@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:hazmat_cloth_grey",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "ICI",
+    " L "
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:hazmat_cloth_red"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platelead"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    }
+  }
+}

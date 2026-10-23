@@ -1,0 +1,38 @@
+{
+  "module": "taint-barrel252",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "taint_barrel",
+      "id": "hbm:taint_barrel",
+      "hasItem": true,
+      "originalClass": "RedBarrel",
+      "legacyRegistryId": "hbm:tile.taint_barrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1730
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2934
+          },
+          "expression": "GameRegistry.registerBlock(taint_barrel, ItemBlockLore.class, taint_barrel.getUnlocalizedName())",
+          "arguments": [
+            "taint_barrel",
+            "ItemBlockLore.class",
+            "taint_barrel.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockLore"
+        }
+      ],
+      "creativeTab": "nuke",
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0
+      ],
+      "hasBlockEntity": false
+    }
+  ]
+}

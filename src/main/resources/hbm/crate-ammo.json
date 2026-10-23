@@ -1,0 +1,88 @@
+{
+  "ammo": [
+    {
+      "name": "P9_SP",
+      "metadata": 20,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "P9_FMJ",
+      "metadata": 21,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "M357_SP",
+      "metadata": 5,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "M357_FMJ",
+      "metadata": 6,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "M44_SP",
+      "metadata": 11,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "M44_FMJ",
+      "metadata": 12,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "R556_SP",
+      "metadata": 24,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "R556_FMJ",
+      "metadata": 25,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "R762_SP",
+      "metadata": 28,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "R762_FMJ",
+      "metadata": 29,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "G12",
+      "metadata": 44,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "G12_SLUG",
+      "metadata": 45,
+      "minimum": 16,
+      "randomRange": 17
+    },
+    {
+      "name": "G40_HE",
+      "metadata": 53,
+      "minimum": 2,
+      "randomRange": 3
+    },
+    {
+      "name": "ROCKET_HE",
+      "metadata": 58,
+      "minimum": 2,
+      "randomRange": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "minecraft:slime_ball",
+    "count": 16
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "SULFURIC_ACID",
+      "amount": 1000
+    }
+  ]
+}

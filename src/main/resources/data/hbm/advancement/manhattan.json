@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:polymer",
+  "display": {
+    "icon": {
+      "id": "hbm:nuke_boy"
+    },
+    "title": {
+      "translate": "achievement.manhattan"
+    },
+    "description": {
+      "translate": "achievement.manhattan.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "detonated": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:manhattan"
+      }
+    }
+  }
+}

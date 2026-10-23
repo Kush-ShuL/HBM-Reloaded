@@ -1,0 +1,401 @@
+{
+  "comment": "As with most handlers, stacksizes for the inputs are ignored and default to 1. Dynamic ItemFood SALIENT fallback remains active even if this list is replaced.",
+  "recipes": [
+    {
+      "input": [
+        "dict",
+        "gemCoal",
+        1
+      ],
+      "output": [
+        "COALOIL",
+        250
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustCoal",
+        1
+      ],
+      "output": [
+        "COALOIL",
+        250
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "gemLignite",
+        1
+      ],
+      "output": [
+        "COALOIL",
+        150
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustLignite",
+        1
+      ],
+      "output": [
+        "COALOIL",
+        150
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "oiltar",
+        1
+      ],
+      "output": [
+        "BITUMEN",
+        75
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "cracktar",
+        1
+      ],
+      "output": [
+        "BITUMEN",
+        100
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "coaltar",
+        1
+      ],
+      "output": [
+        "BITUMEN",
+        50
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "logWood",
+        1
+      ],
+      "output": [
+        "MUG",
+        100
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustSodium",
+        1
+      ],
+      "output": [
+        "SODIUM",
+        100
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "ingotLead",
+        1
+      ],
+      "output": [
+        "LEAD",
+        100
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustLead",
+        1
+      ],
+      "output": [
+        "LEAD",
+        100
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "blockLead",
+        1
+      ],
+      "output": [
+        "LEAD",
+        900
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:netherrack",
+        1,
+        0
+      ],
+      "output": [
+        "LAVA",
+        250
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:cobblestone",
+        1,
+        0
+      ],
+      "output": [
+        "LAVA",
+        250
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:stone",
+        1,
+        0
+      ],
+      "output": [
+        "LAVA",
+        250
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:obsidian",
+        1,
+        0
+      ],
+      "output": [
+        "LAVA",
+        500
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:snowball",
+        1,
+        0
+      ],
+      "output": [
+        "WATER",
+        125
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:snow",
+        1,
+        0
+      ],
+      "output": [
+        "WATER",
+        500
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:ice",
+        1,
+        0
+      ],
+      "output": [
+        "WATER",
+        1000
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:packed_ice",
+        1,
+        0
+      ],
+      "output": [
+        "WATER",
+        1000
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:ender_pearl",
+        1,
+        0
+      ],
+      "output": [
+        "ENDERJUICE",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:ore_oil_sand",
+        1,
+        0
+      ],
+      "output": [
+        "BITUMEN",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:sugar",
+        1,
+        0
+      ],
+      "output": [
+        "ETHANOL",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:melon",
+        1,
+        0
+      ],
+      "output": [
+        "ETHANOL",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:plant_flower",
+        1,
+        3
+      ],
+      "output": [
+        "ETHANOL",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:plant_flower",
+        1,
+        4
+      ],
+      "output": [
+        "ETHANOL",
+        50
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:biomass",
+        1,
+        0
+      ],
+      "output": [
+        "BIOGAS",
+        125
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:glyphid_gland_empty",
+        1,
+        0
+      ],
+      "output": [
+        "BIOGAS",
+        2000
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:fish",
+        1,
+        32767
+      ],
+      "output": [
+        "FISHOIL",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:double_plant",
+        1,
+        0
+      ],
+      "output": [
+        "SUNFLOWEROIL",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:wheat_seeds",
+        1,
+        0
+      ],
+      "output": [
+        "SEEDSLURRY",
+        50
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:tallgrass",
+        1,
+        1
+      ],
+      "output": [
+        "SEEDSLURRY",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:tallgrass",
+        1,
+        2
+      ],
+      "output": [
+        "SEEDSLURRY",
+        100
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:vine",
+        1,
+        0
+      ],
+      "output": [
+        "SEEDSLURRY",
+        100
+      ]
+    }
+  ]
+}

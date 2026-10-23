@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:ingot_chainsteel"
+  },
+  "result": {
+    "id": "hbm:ingot_chainsteel",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "heat": 100
+      }
+    }
+  },
+  "experience": 0.0,
+  "cookingtime": 200
+}

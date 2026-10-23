@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 8
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PDS",
+    "  G"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyegreen"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stockanyplastic"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gripanyplastic"
+    }
+  }
+}

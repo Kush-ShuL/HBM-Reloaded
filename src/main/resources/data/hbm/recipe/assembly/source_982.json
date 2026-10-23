@@ -1,0 +1,72 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.lambdarocket",
+  "duration": 1200,
+  "power": 50000,
+  "order": 336,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:missile_lambda",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:part_generic_alclad"
+        }
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ingot_tungsten_carbide"
+        }
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:rocket_fuel"
+        }
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_basic"
+        }
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 7
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "pools_528": [
+    "528.soyuz"
+  ]
+}

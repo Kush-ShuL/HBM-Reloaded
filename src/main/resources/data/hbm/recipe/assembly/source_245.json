@@ -1,0 +1,42 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capnuka",
+  "duration": 10,
+  "power": 100,
+  "order": 78,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:block_cap",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:cap_nuka"
+        }
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:cap_nuka"
+        }
+      },
+      "count": 64
+    }
+  ]
+}

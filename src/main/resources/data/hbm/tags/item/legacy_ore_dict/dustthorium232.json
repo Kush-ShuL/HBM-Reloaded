@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_thorium",
+    {
+      "id": "#c:dusts/th232",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thorium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/thorium232",
+      "required": false
+    }
+  ]
+}

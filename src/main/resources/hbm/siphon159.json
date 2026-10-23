@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "siphon",
+      "id": "hbm:siphon",
+      "legacyRegistryId": "hbm:item.siphon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3878
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5138
+          },
+          "expression": "GameRegistry.registerItem(siphon, siphon.getUnlocalizedName())",
+          "arguments": [
+            "siphon",
+            "siphon.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "originalClass": "ItemFluidSiphon",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ]
+}

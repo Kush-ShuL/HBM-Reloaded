@@ -1,0 +1,34 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 3,
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:iron_shovel"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:bone"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ingot_starmetal"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ducttape"
+      },
+      "metadata": 0
+    }
+  ],
+  "result": {
+    "id": "hbm:mysteryshovel",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "vending_machine",
+      "id": "hbm:vending_machine",
+      "legacyRegistryId": "hbm:tile.vending_machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1455
+      },
+      "originalClass": "BlockVendingMachine",
+      "creativeTab": "block",
+      "metadataRange": [
+        0,
+        1
+      ],
+      "names": [
+        "soda",
+        "snacks"
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0,
+        1
+      ]
+    }
+  ]
+}

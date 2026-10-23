@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 0,
+  "source_key": "ore:ingotIron",
+  "source_hash": 1830827763,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotiron"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_steel",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:conveyor_wand",
+    "count": 16,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RSR",
+    "I I",
+    "RSR"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "R": {
+      "type": "neoforge:components",
+      "items": "hbm:plant_item",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  }
+}

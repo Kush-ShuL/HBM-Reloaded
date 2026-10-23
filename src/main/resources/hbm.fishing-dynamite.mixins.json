@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.bomb.fishing.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BuoyantItemWaterMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

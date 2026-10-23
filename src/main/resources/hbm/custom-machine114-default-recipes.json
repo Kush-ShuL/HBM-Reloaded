@@ -1,0 +1,41 @@
+{
+  "recipes": [
+    {
+      "recipeKey": "paperPress",
+      "recipes": [
+        {
+          "inputFluids": [
+            [
+              "WATER",
+              250
+            ]
+          ],
+          "inputItems": [
+            [
+              "item",
+              "hbm:item.powder_sawdust",
+              1,
+              0
+            ]
+          ],
+          "outputFluids": [],
+          "outputItems": [
+            [
+              "minecraft:paper",
+              3,
+              0,
+              1.0
+            ]
+          ],
+          "duration": 60,
+          "consumptionPerTick": 10,
+          "pollutionType": "SOOT",
+          "pollutionAmount": 0.03,
+          "radiationAmount": 0.0,
+          "flux": 0,
+          "heat": 0
+        }
+      ]
+    }
+  ]
+}

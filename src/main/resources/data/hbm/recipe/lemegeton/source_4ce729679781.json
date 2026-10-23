@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 2,
+  "source_key": "ore:ingotDuraSteel",
+  "source_hash": 891950750,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_tcalloy",
+    "count": 1
+  }
+}

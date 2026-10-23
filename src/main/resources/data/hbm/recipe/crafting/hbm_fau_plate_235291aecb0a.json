@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MCM",
+    "PBP",
+    "PSP"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:motor_desh"
+    },
+    "C": {
+      "item": "hbm:demon_core_closed"
+    },
+    "P": {
+      "item": "hbm:plate_armor_fau"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_plate",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "S": {
+      "item": "hbm:ancient_scrap"
+    }
+  },
+  "result": {
+    "id": "hbm:fau_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

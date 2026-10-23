@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_schraranium"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:nugget_schrabidium",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_schrabidium",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_uranium",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_neptunium",
+      "count": 2
+    }
+  ]
+}

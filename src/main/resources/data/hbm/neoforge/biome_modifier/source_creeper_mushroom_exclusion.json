@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:remove_spawns",
+  "biomes": "minecraft:mushroom_fields",
+  "entity_types": [
+    "hbm:entity_mob_phosgene_creeper",
+    "hbm:entity_mob_volatile_creeper",
+    "hbm:entity_mob_gold_creeper"
+  ]
+}

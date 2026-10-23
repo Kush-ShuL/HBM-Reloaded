@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:chemplant",
+  "display": {
+    "icon": {
+      "id": "hbm:ingot_polymer"
+    },
+    "title": {
+      "translate": "achievement.polymer"
+    },
+    "description": {
+      "translate": "achievement.polymer.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:polymer"
+      }
+    }
+  }
+}

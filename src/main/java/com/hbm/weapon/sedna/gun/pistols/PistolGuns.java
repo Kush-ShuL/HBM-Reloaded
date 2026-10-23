@@ -1,0 +1,42 @@
+package com.hbm.weapon.sedna.gun.pistols;
+import java.util.*;
+import java.util.function.*;
+import com.hbm.weapon.sedna.BulletConfig;
+import com.hbm.weapon.sedna.gun.*;
+import com.hbm.weapon.sedna.gun.ItemGunBaseNT.*;
+import com.hbm.weapon.sedna.gun.factory.*;
+import com.hbm.weapon.sedna.gun.mags.*;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing.CasingType;
+import com.hbm.client.animation.bus.*;
+import com.hbm.client.animation.bus.BusAnimationKeyframe.IType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import com.hbm.damage.LegacyEntityDamage;
+import com.hbm.damage.DamageResistanceHandler.DamageClass;
+import com.hbm.weapon.sedna.gun.mods.XWeaponModManager;
+import com.hbm.weapon.sedna.gun.legendary.CasingEffects;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunFactory;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunAnimations;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.*;
+/** Actual original factory-created guns; registry suppliers return these instances. */
+public final class PistolGuns {
+    public static ItemGunBaseNT gun_light_revolver;
+    public static ItemGunBaseNT gun_light_revolver_atlas;
+    public static ItemGunBaseNT gun_light_revolver_dani;
+    public static ItemGunBaseNT gun_am180;
+    public static ItemGunBaseNT gun_star_f;
+    public static ItemGunBaseNT gun_star_f_akimbo;
+    public static ItemGunBaseNT gun_greasegun;
+    public static ItemGunBaseNT gun_lag;
+    public static ItemGunBaseNT gun_uzi;
+    public static ItemGunBaseNT gun_uzi_akimbo;
+    public static ItemGunBaseNT gun_henry;
+    public static ItemGunBaseNT gun_henry_lincoln;
+    public static ItemGunBaseNT gun_heavy_revolver;
+    public static ItemGunBaseNT gun_heavy_revolver_protege;
+    public static ItemGunBaseNT gun_hangman;
+    public static ItemGunBaseNT gun_debug;
+}

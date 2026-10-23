@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_technetium",
+    {
+      "id": "#c:ingots/tc99",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/technetium99",
+      "required": false
+    }
+  ]
+}

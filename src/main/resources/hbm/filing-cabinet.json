@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "filing_cabinet",
+      "id": "hbm:filing_cabinet",
+      "legacyRegistryId": "hbm:tile.filing_cabinet",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1594
+      },
+      "originalClass": "BlockDecoContainer",
+      "creativeTab": "block",
+      "metadataRange": [
+        0,
+        1
+      ],
+      "names": [
+        "green",
+        "steel"
+      ],
+      "enumClass": "DecoCabinetEnum",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0,
+        1
+      ]
+    }
+  ]
+}

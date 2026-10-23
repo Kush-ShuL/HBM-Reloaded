@@ -1,0 +1,30 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "designator_range",
+      "id": "hbm:designator_range",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3390
+      },
+      "legacyRegistryId": "hbm:item.designator_range",
+      "originalClass": "ItemDesingatorRange",
+      "creativeTab": "missile",
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "designator_manual",
+      "id": "hbm:designator_manual",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3391
+      },
+      "legacyRegistryId": "hbm:item.designator_manual",
+      "originalClass": "ItemDesingatorManual",
+      "creativeTab": "missile",
+      "stackSize": 1
+    }
+  ]
+}

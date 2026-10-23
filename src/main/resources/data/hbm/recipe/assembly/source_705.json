@@ -1,0 +1,28 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.boytarget",
+  "duration": 200,
+  "power": 100,
+  "order": 225,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:boy_target",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/nuggeturanium235"
+      },
+      "count": 18
+    }
+  ]
+}

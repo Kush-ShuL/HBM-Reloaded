@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:ball_resin"
+  },
+  "result": {
+    "id": "hbm:ingot_biorubber",
+    "count": 1
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

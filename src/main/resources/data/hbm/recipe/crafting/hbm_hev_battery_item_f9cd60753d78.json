@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:hev_battery_item",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W ",
+    "ICI",
+    "IEI"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinegold"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredstone"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcobalt"
+    }
+  }
+}

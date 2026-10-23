@@ -1,0 +1,52 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.exferroplating",
+  "duration": 240,
+  "power": 100000,
+  "ignition_temp": 1000000,
+  "order": 7,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_ferro_plating",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_lead_plating"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripleferrouranium"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+      },
+      "count": 4
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "UNSATURATEDS",
+      "amount": 1000,
+      "pressure": 0
+    }
+  ]
+}

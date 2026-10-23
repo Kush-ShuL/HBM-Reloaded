@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:desh",
+  "display": {
+    "icon": {
+      "id": "hbm:ingot_uranium_fuel"
+    },
+    "title": {
+      "translate": "achievement.gasCent"
+    },
+    "description": {
+      "translate": "achievement.gasCent.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:gascent"
+      }
+    }
+  }
+}

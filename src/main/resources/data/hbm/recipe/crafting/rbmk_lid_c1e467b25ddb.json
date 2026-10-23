@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "CCC",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "C": {
+      "item": "hbm:concrete_asbestos"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_lid",
+    "count": 4
+  }
+}

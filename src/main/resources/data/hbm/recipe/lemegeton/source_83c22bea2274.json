@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 10,
+  "source_key": "ore:ingotLead",
+  "source_hash": 1833197279,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotlead"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "minecraft:gold_ingot",
+    "count": 1
+  }
+}

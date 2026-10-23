@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:lamp_tritium_blue_off",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockglass"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+    },
+    {
+      "type": "hbm:native_drink_fluid",
+      "fluid": "TRITIUM",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustaluminum"
+    }
+  ]
+}

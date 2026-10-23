@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:reinforced_light",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FFF",
+    "FBF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:iron_bars"
+    },
+    "B": {
+      "item": "minecraft:glowstone"
+    }
+  }
+}

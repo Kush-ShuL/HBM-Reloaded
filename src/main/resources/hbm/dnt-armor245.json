@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "dnt_helmet",
+      "id": "hbm:dnt_helmet",
+      "legacyRegistryId": "hbm:item.dnt_helmet",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 116
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6341
+          },
+          "expression": "GameRegistry.registerItem(dnt_helmet, dnt_helmet.getUnlocalizedName())",
+          "arguments": [
+            "dnt_helmet",
+            "dnt_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dnt.DntArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 33
+    },
+    {
+      "kind": "item",
+      "symbol": "dnt_plate",
+      "id": "hbm:dnt_plate",
+      "legacyRegistryId": "hbm:item.dnt_plate",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 118
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6342
+          },
+          "expression": "GameRegistry.registerItem(dnt_plate, dnt_plate.getUnlocalizedName())",
+          "arguments": [
+            "dnt_plate",
+            "dnt_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dnt.DntArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 48
+    },
+    {
+      "kind": "item",
+      "symbol": "dnt_legs",
+      "id": "hbm:dnt_legs",
+      "legacyRegistryId": "hbm:item.dnt_legs",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 119
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6343
+          },
+          "expression": "GameRegistry.registerItem(dnt_legs, dnt_legs.getUnlocalizedName())",
+          "arguments": [
+            "dnt_legs",
+            "dnt_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dnt.DntArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 45
+    },
+    {
+      "kind": "item",
+      "symbol": "dnt_boots",
+      "id": "hbm:dnt_boots",
+      "legacyRegistryId": "hbm:item.dnt_boots",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 120
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6344
+          },
+          "expression": "GameRegistry.registerItem(dnt_boots, dnt_boots.getUnlocalizedName())",
+          "arguments": [
+            "dnt_boots",
+            "dnt_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.dnt.DntArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 39
+    }
+  ]
+}

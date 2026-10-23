@@ -1,0 +1,24 @@
+{
+  "name": "Orbital Death Ray",
+  "icon": [
+    "hbm:satellite_death_ray",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_death_ray",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Orbital Death Ray",
+    "zh_CN": "轨道死亡射线"
+  },
+  "content": {
+    "en_US": "The orbital death ray is a powerful nuclear-powered orbital weapon firing a laser that deals as much damage as a high-yield mini nuke, but without the radiation. Despite the powerful energy source, the ray takes five minutes to fully charge. Unlike the [[precision laser|Orbital Precision Laser]], it lacks the entity targeting option that would let it shoot down missiles or hit fast-moving targets.<br><br>* '§efire§r' will fire the laser at the current target position, assuming the ray has finished charging.<br>* '§ecanfire§r' will write either 'TRUE' or 'FALSE' to RX depending on whether the cooldown has elapsed and the death ray is ready to fire.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Орбитальный луч Смерти — это мощное орбитальное оружие на ядерной энергии, стреляющее лазером, который наносит столько же урона, сколько ядерная мини-бомба высокой мощности, но без радиации. Несмотря на мощный источник энергии, лучу требуется пять минут для полной зарядки. В отличие от [[прецизионного лазера|Orbital Precision Laser]], у него нет функции наведения на сущности, которая позволяла бы сбивать ракеты или поражать быстродвижущиеся цели.<br><br>* «§efire§r» выстрелит лазером по текущей целевой позиции, если луч завершил зарядку.<br>* «§ecanfire§r» запишет «TRUE» или «FALSE» в RX в зависимости от того, истекла ли перезарядка и готов ли луч смерти к выстрелу.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "轨道死亡射线是一种强大的核动力轨道武器，激光的威力相当于高当量迷你核弹，但不会产生辐射。即使能源强大，它仍需要五分钟才能充满。与[[轨道精确激光|Orbital Precision Laser]]不同，它没有实体瞄准功能，无法借此拦截导弹或命中快速移动的目标。<br><br>* “§efire§r”：充能完成后，向当前目标位置发射激光。<br>* “§ecanfire§r”：根据冷却是否结束、死亡射线是否就绪，将 TRUE 或 FALSE 写入 RX。<br><br>{{Template:SatOverview}}"
+  }
+}

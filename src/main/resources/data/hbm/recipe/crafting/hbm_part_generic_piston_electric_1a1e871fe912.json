@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:part_generic_piston_electric",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "CPC",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "P": {
+      "item": "hbm:motor"
+    }
+  }
+}

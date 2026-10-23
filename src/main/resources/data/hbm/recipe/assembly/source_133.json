@@ -1,0 +1,45 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.atomicClock",
+  "duration": 300,
+  "power": 1000,
+  "order": 32,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:circuit_atomic_clock",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_chip"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/duststrontium"
+      },
+      "count": 1
+    }
+  ],
+  "requires_no_528": true
+}

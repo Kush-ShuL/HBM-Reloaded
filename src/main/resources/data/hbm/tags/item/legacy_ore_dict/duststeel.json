@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_steel",
+    {
+      "id": "#c:dusts/steel",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:rod_quad",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 8
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:rod_quad_empty"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billeturanium238"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billeturanium238"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billeturanium238"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billeturanium238"
+    }
+  ]
+}

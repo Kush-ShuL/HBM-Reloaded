@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:bj_boots",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "N N",
+    "BSB"
+  ],
+  "key": {
+    "N": {
+      "item": "hbm:plate_armor_lunar"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_boots",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "B": {
+      "item": "hbm:block_starmetal"
+    }
+  }
+}

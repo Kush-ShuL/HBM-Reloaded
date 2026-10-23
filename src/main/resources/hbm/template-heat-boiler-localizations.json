@@ -1,0 +1,16 @@
+{
+  "en_us": {
+    "tile.machine_boiler.name": "Boiler",
+    "tile.machine_boiler.desc": "Large boiler that can boil water or heat up oil.$Requires external heat source.$Heat transfer rate: ΔT*0.1 TU/t",
+    "block.hbm.machine_boiler": "Boiler",
+    "message.hbm.heat_boiler.type": "Changed type to %s!",
+    "tooltip.hbm.heat_boiler.more_info": "Hold <%s> to display more info"
+  },
+  "zh_cn": {
+    "tile.machine_boiler.name": "大型锅炉",
+    "tile.machine_boiler.desc": "可以烧水或加热油的大型锅炉$需要外部热源$传热速率：ΔT*0.1 TU/T",
+    "block.hbm.machine_boiler": "大型锅炉",
+    "message.hbm.heat_boiler.type": "已将流体类型更改为%s！",
+    "tooltip.hbm.heat_boiler.more_info": "按住 <%s> 显示更多信息"
+  }
+}

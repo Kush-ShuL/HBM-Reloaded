@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.machine.pedestal.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CreeperIgnitionAccess",
+    "MobGoalsAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

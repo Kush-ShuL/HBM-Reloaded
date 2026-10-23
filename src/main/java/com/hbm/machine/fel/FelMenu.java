@@ -1,0 +1,10 @@
+package com.hbm.machine.fel;
+import com.hbm.item.battery.*;import net.minecraft.core.BlockPos;import net.minecraft.network.RegistryFriendlyByteBuf;import net.minecraft.world.*;import net.minecraft.world.entity.player.*;import net.minecraft.world.inventory.*;import net.minecraft.world.item.ItemStack;
+/** Source unrestricted manual slots and literal shift routing, including noncrystals entering slot1. */
+public final class FelMenu extends AbstractContainerMenu {
+ public final Container machine;private final BlockPos pos;
+ public FelMenu(int id,Inventory player,RegistryFriendlyByteBuf data){this(id,player,data.readBlockPos());}private FelMenu(int id,Inventory player,BlockPos pos){this(id,player,player.player.level().getBlockEntity(pos) instanceof FelBlockEntity machine?machine:new SimpleContainer(2),pos);}
+ public FelMenu(int id,Inventory player,Container machine,BlockPos pos){super(FelContent.MENU.get(),id);checkContainerSize(machine,2);this.machine=machine;this.pos=pos;machine.startOpen(player.player);addSlot(new Slot(machine,0,182,144));addSlot(new Slot(machine,1,141,23));for(int row=0;row<3;row++)for(int column=0;column<9;column++)addSlot(new Slot(player,9+row*9+column,8+column*18,83+row*18));for(int i=0;i<9;i++)addSlot(new Slot(player,i,8+i*18,141));}
+ public BlockPos position(){return pos;}@Override public boolean stillValid(Player player){return machine.stillValid(player);}@Override public void removed(Player player){super.removed(player);machine.stopOpen(player);}
+ @Override public ItemStack quickMoveStack(Player player,int index){if(index<0||index>=slots.size()||!getSlot(index).hasItem())return ItemStack.EMPTY;var slot=getSlot(index);var stack=slot.getItem();var original=stack.copy();boolean moved=index<2?moveItemStackTo(stack,2,slots.size(),false):stack.getItem() instanceof HbmBattery||stack.getItem() instanceof CreativeBatteryItem?moveItemStackTo(stack,0,1,false):moveItemStackTo(stack,1,2,false);if(!moved)return ItemStack.EMPTY;if(stack.isEmpty())slot.setByPlayer(ItemStack.EMPTY);else slot.setChanged();return original;}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Xenon Gas",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    40
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      40
+    ]
+  ],
+  "title": {
+    "en_US": "Xenon Gas",
+    "ru_RU": "Ксеноновый газ",
+    "zh_CN": "氙气"
+  },
+  "content": {
+    "en_US": "Xenon gas can be obtained by [[processing|Chemical Plant]] [[compressed air|Compressed Air]]. It is primarily used as an ingredient in the entanglement kit used in teleporters. It is also used as an ingredient in the [[ICF|Inertial Confinement Fusion Reactor]]. Additionally, it may also be used in the winged variant of [[lunar cybernetic armor|Lunar Cybernetic Armor]].",
+    "ru_RU": "Ксеноновый газ можно получить путем [[переработки|Chemical Plant]] [[сжатого воздуха|Compressed Air]]. В основном он используется в качестве ингредиента для комплекта запутывания, применяемого в телепортах. Он также применяется в качестве ингредиента в [[ICF|ICF]]. Кроме того, он подходит для варианта крылатой [[лунной кибернетической брони|Lunar Cybernetic Armor]].",
+    "zh_CN": "在[[化工厂|Chemical Plant]]中处理[[压缩空气|Compressed Air]]即可获得。氙气主要用作传送器所需的纠缠套件原料，也用于[[惯性约束聚变反应堆|Inertial Confinement Fusion Reactor]]，以及[[月球义体装甲|Lunar Cybernetic Armor]]的带翼变体。"
+  }
+}

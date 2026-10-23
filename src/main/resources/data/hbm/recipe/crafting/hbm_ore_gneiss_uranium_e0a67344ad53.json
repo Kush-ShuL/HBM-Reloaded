@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:ore_gneiss_uranium",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:ore_gneiss_uranium_scorched"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "entries": [
+    {
+      "symbol": "barrel_plastic",
+      "id": "hbm:barrel_plastic",
+      "kind": "block",
+      "module": "fluid-barrels",
+      "originalClass": "com.hbm.blocks.machine.BlockFluidBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1946
+      },
+      "variants": 1,
+      "capacity": 12000,
+      "creativeTab": "machine",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "barrel_corroded",
+      "id": "hbm:barrel_corroded",
+      "kind": "block",
+      "module": "fluid-barrels",
+      "originalClass": "com.hbm.blocks.machine.BlockFluidBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1947
+      },
+      "variants": 1,
+      "capacity": 16000,
+      "creativeTab": null,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "barrel_steel",
+      "id": "hbm:barrel_steel",
+      "kind": "block",
+      "module": "fluid-barrels",
+      "originalClass": "com.hbm.blocks.machine.BlockFluidBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1948
+      },
+      "variants": 1,
+      "capacity": 16000,
+      "creativeTab": "machine",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "barrel_tcalloy",
+      "id": "hbm:barrel_tcalloy",
+      "kind": "block",
+      "module": "fluid-barrels",
+      "originalClass": "com.hbm.blocks.machine.BlockFluidBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1949
+      },
+      "variants": 1,
+      "capacity": 24000,
+      "creativeTab": "machine",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "barrel_antimatter",
+      "id": "hbm:barrel_antimatter",
+      "kind": "block",
+      "module": "fluid-barrels",
+      "originalClass": "com.hbm.blocks.machine.BlockFluidBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1950
+      },
+      "variants": 1,
+      "capacity": 16000,
+      "creativeTab": "machine",
+      "runtimeValidated": false
+    }
+  ]
+}

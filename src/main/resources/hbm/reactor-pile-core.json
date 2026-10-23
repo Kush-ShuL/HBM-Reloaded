@@ -1,0 +1,321 @@
+{
+  "entries": [
+    {
+      "symbol": "pile_brick",
+      "id": "hbm:pile_brick",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "BlockPileBrick",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1984
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pile_block",
+      "id": "hbm:pile_block",
+      "kind": "block",
+      "creativeTab": null,
+      "originalClass": "BlockPile",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1986
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pile_device",
+      "id": "hbm:pile_device",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "BlockPileDevice",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1985
+      },
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        2
+      ],
+      "names": [
+        "loader",
+        "vent",
+        "control"
+      ],
+      "enumClass": "BlockPileDevice"
+    },
+    {
+      "symbol": "hand_drill",
+      "id": "hbm:hand_drill",
+      "kind": "item",
+      "creativeTab": "control",
+      "originalClass": "ItemTooling",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3711
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "hand_drill_desh",
+      "id": "hbm:hand_drill_desh",
+      "kind": "item",
+      "creativeTab": "control",
+      "originalClass": "ItemTooling",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3712
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "sourceCrafting": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 315
+      },
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " A ",
+          "CBS"
+        ],
+        "key": {
+          "A": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platealuminum"
+          },
+          "C": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platetriplesteel"
+          },
+          "B": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotboron"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/shellsteel"
+          }
+        },
+        "result": {
+          "id": "hbm:pile_device",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 316
+      },
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " M ",
+          "ACA",
+          " S "
+        ],
+        "key": {
+          "M": {
+            "type": "hbm:alloy_legacy_stack",
+            "stack": {
+              "id": "hbm:motor",
+              "count": 1
+            }
+          },
+          "A": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platealuminum"
+          },
+          "C": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/shellcopper"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platetriplesteel"
+          }
+        },
+        "result": {
+          "id": "hbm:pile_device",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 317
+      },
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " B ",
+          "SBS",
+          "SBS"
+        ],
+        "key": {
+          "B": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotboron"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platesteel"
+          }
+        },
+        "result": {
+          "id": "hbm:pile_device",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/ToolRecipes.java",
+        "line": 141
+      },
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "pattern": [
+          " D",
+          "S ",
+          " S"
+        ],
+        "key": {
+          "D": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/stickwood"
+          }
+        },
+        "result": {
+          "id": "hbm:hand_drill",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/ToolRecipes.java",
+        "line": 142
+      },
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "pattern": [
+          " D",
+          "S ",
+          " S"
+        ],
+        "key": {
+          "D": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+          }
+        },
+        "result": {
+          "id": "hbm:hand_drill_desh",
+          "count": 1
+        }
+      }
+    }
+  ],
+  "sourceAssembly": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 520
+      },
+      "recipe": {
+        "type": "hbm:assembly",
+        "name": "ass.pileblock",
+        "order": 169,
+        "duration": 20,
+        "power": 250,
+        "output_items": [
+          {
+            "pool": [
+              {
+                "stack": {
+                  "id": "hbm:pile_brick",
+                  "count": 1
+                }
+              }
+            ]
+          }
+        ],
+        "input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plankwood"
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            },
+            "count": 2
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/boltsteel"
+            },
+            "count": 2
+          }
+        ],
+        "expensive_input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plankwood"
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platesteel"
+            },
+            "count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "sourceFuelGroup": "reactor-pile",
+  "nativeFluid": "AIR@pressure1 only; source tank4000/channel1000",
+  "sourceNoGui": true
+}

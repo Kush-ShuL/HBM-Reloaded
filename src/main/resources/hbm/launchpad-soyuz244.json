@@ -1,0 +1,41 @@
+{
+  "module": "launchpad-soyuz244",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "launchpad_soyuz",
+      "id": "hbm:launchpad_soyuz",
+      "legacyRegistryId": "hbm:tile.launchpad_soyuz",
+      "originalClass": "LaunchpadSoyuz",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2092
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3425
+          },
+          "expression": "GameRegistry.registerBlock(launchpad_soyuz, launchpad_soyuz.getUnlocalizedName())",
+          "arguments": [
+            "launchpad_soyuz",
+            "launchpad_soyuz.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "missile",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ],
+  "sourceBlockEntityAlias": "tileentity_launchpad_soyuz",
+  "blockEntity": "hbm:launchpad_soyuz",
+  "portBlockEntity": "hbm:launchpad_soyuz_port"
+}

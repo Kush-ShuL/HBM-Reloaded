@@ -1,0 +1,140 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/circuit_star_piece.board_blank"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/circuit_star_piece/board_transistor"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/circuit_star_piece/board_converter"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_north"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_south"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_io"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_bus"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_chipset"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_cmos"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 9
+      },
+      "model": "hbm:item/circuit_star_piece/bridge_bios"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 10
+      },
+      "model": "hbm:item/circuit_star_piece/cpu_register"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 11
+      },
+      "model": "hbm:item/circuit_star_piece/cpu_clock"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 12
+      },
+      "model": "hbm:item/circuit_star_piece/cpu_logic"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 13
+      },
+      "model": "hbm:item/circuit_star_piece/cpu_cache"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 14
+      },
+      "model": "hbm:item/circuit_star_piece/cpu_ext"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 15
+      },
+      "model": "hbm:item/circuit_star_piece/cpu_socket"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 16
+      },
+      "model": "hbm:item/circuit_star_piece/mem_socket"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 17
+      },
+      "model": "hbm:item/circuit_star_piece/mem_16k_a"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 18
+      },
+      "model": "hbm:item/circuit_star_piece/mem_16k_b"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 19
+      },
+      "model": "hbm:item/circuit_star_piece/mem_16k_c"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 20
+      },
+      "model": "hbm:item/circuit_star_piece/mem_16k_d"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 21
+      },
+      "model": "hbm:item/circuit_star_piece/card_board"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 22
+      },
+      "model": "hbm:item/circuit_star_piece/card_processor"
+    }
+  ]
+}

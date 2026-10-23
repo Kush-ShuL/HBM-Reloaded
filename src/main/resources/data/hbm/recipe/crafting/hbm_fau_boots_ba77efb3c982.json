@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PDP",
+    "PBP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:plate_armor_fau"
+    },
+    "D": {
+      "item": "hbm:billet_polonium"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_boots",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:fau_boots",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

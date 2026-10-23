@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_xe135",
+    {
+      "id": "#c:dusts/xe135",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/xenon135",
+      "required": false
+    }
+  ]
+}

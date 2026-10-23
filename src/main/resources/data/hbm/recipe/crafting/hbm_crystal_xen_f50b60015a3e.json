@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:crystal_xen",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "EIE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "hbm:powder_power"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+    }
+  }
+}

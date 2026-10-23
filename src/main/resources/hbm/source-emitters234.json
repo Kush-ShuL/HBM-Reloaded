@@ -1,0 +1,62 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "deco_emitter",
+      "id": "hbm:deco_emitter",
+      "hasItem": true,
+      "legacyRegistryId": "hbm:tile.deco_emitter",
+      "originalClass": "BlockEmitter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1446
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2605
+          },
+          "expression": "GameRegistry.registerBlock(deco_emitter, ItemBlockBase.class, deco_emitter.getUnlocalizedName())",
+          "arguments": [
+            "deco_emitter",
+            "ItemBlockBase.class",
+            "deco_emitter.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "maxStackSize": 64
+    },
+    {
+      "kind": "block",
+      "symbol": "part_emitter",
+      "id": "hbm:part_emitter",
+      "hasItem": true,
+      "legacyRegistryId": "hbm:tile.part_emitter",
+      "originalClass": "PartEmitter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1447
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2606
+          },
+          "expression": "GameRegistry.registerBlock(part_emitter, ItemBlockBase.class, part_emitter.getUnlocalizedName())",
+          "arguments": [
+            "part_emitter",
+            "ItemBlockBase.class",
+            "part_emitter.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "maxStackSize": 64
+    }
+  ]
+}

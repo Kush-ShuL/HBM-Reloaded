@@ -1,0 +1,252 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_panel_inventory",
+  "textures": {
+    "all": "hbm:block/rbmk/rbmk_display",
+    "particle": "hbm:block/rbmk/rbmk_display",
+    "gauge": "hbm:block/rbmk/panel_gauge",
+    "white": "hbm:block/rbmk/panel_white"
+  },
+  "overlays": [
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "gauge",
+      "uv_scale": [
+        0.875,
+        0.4375
+      ],
+      "part": "Gauge",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "white",
+      "part": "Needle",
+      "color": -8388608,
+      "fullbright": true,
+      "solid_uv": [
+        0.5,
+        0.5
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0.4375,
+            -0.125
+          ]
+        },
+        {
+          "rotate": [
+            85,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -0.4375,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "gauge",
+      "uv_scale": [
+        0.875,
+        0.4375
+      ],
+      "part": "Gauge",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "white",
+      "part": "Needle",
+      "color": -8388608,
+      "fullbright": true,
+      "solid_uv": [
+        0.5,
+        0.5
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            -0.25
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0.4375,
+            -0.125
+          ]
+        },
+        {
+          "rotate": [
+            85,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -0.4375,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "gauge",
+      "uv_scale": [
+        0.875,
+        0.4375
+      ],
+      "part": "Gauge",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "white",
+      "part": "Needle",
+      "color": -8388608,
+      "fullbright": true,
+      "solid_uv": [
+        0.5,
+        0.5
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            0.25
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0.4375,
+            -0.125
+          ]
+        },
+        {
+          "rotate": [
+            85,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -0.4375,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "gauge",
+      "uv_scale": [
+        0.875,
+        0.4375
+      ],
+      "part": "Gauge",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/gauge.obj",
+      "texture": "white",
+      "part": "Needle",
+      "color": -8388608,
+      "fullbright": true,
+      "solid_uv": [
+        0.5,
+        0.5
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            -0.25
+          ]
+        },
+        {
+          "translate": [
+            0,
+            0.4375,
+            -0.125
+          ]
+        },
+        {
+          "rotate": [
+            85,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "translate": [
+            0,
+            -0.4375,
+            0.125
+          ]
+        }
+      ]
+    }
+  ]
+}

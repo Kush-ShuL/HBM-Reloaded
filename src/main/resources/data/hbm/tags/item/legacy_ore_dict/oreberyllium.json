@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_beryllium",
+    {
+      "id": "#c:ores/beryllium",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_ra226",
+    {
+      "id": "#c:dusts/ra226",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/radium226",
+      "required": false
+    }
+  ]
+}

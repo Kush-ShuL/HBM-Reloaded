@@ -1,0 +1,80 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:deco_toaster",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:powder_sawdust",
+        "count": 4
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:scrap",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:coil_tungsten",
+        "count": 4
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "minecraft:bread",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:fusion_core_item",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:fusion_core_item",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:gem_alexandrite",
+        "count": 1
+      },
+      "chance": 0.25
+    },
+    {
+      "stack": {
+        "id": "hbm:flame_pony",
+        "count": 1
+      },
+      "chance": 0.01
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 792000000
+}

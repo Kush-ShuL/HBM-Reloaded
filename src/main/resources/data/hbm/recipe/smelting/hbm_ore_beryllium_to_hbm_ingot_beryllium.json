@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_beryllium"
+      },
+      {
+        "item": "hbm:deepslate_ore_beryllium"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_beryllium",
+    "count": 1
+  },
+  "experience": 2.0,
+  "cookingtime": 200
+}

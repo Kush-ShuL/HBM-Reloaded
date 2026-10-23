@@ -1,0 +1,71 @@
+{
+  "parent": "hbm:item/watz_pellet_depleted/schrabidium",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/watz_pellet_depleted/hes"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/watz_pellet_depleted/mes"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/watz_pellet_depleted/les"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/watz_pellet_depleted/hen"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/watz_pellet_depleted/meu"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/watz_pellet_depleted/mep"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/watz_pellet_depleted/lead"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/watz_pellet_depleted/boron"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 9
+      },
+      "model": "hbm:item/watz_pellet_depleted/du"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 10
+      },
+      "model": "hbm:item/watz_pellet_depleted/nqd"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 11
+      },
+      "model": "hbm:item/watz_pellet_depleted/nqr"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "hbm:block/meteor_pillar"
+    },
+    "axis=z": {
+      "model": "hbm:block/meteor_pillar",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "hbm:block/meteor_pillar",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

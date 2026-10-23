@@ -1,0 +1,28 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.buckshot",
+  "duration": 50,
+  "power": 100,
+  "order": 204,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:pellet_buckshot",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/nuggetlead"
+      },
+      "count": 6
+    }
+  ]
+}

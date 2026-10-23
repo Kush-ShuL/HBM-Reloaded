@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:laser_crystal_digamma",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QUQ",
+    "UEU",
+    "QUQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm:glass_quartz"
+    },
+    "U": {
+      "item": "hbm:undefined"
+    },
+    "E": {
+      "item": "hbm:ingot_electronium"
+    }
+  }
+}

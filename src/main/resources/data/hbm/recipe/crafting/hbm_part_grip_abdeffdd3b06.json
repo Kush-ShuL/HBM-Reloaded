@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:part_grip",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 4
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W ",
+    " W",
+    " W"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:bone"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.tcl",
+  "order": 3,
+  "r": 0.8,
+  "g": 0.6,
+  "b": 0.4,
+  "ignition_temp": 2500000,
+  "output_temp": 6250000,
+  "neutron_flux": 500.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:powder_chlorophyte",
+    "count": 1
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "TRITIUM",
+      "amount": 10,
+      "pressure": 0
+    },
+    {
+      "type": "CHLORINE",
+      "amount": 10,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_chlorophyte",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

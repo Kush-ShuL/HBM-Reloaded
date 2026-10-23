@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 9,
+  "source_key": "ore:ingotWorkersAlloy",
+  "source_hash": 536853733,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_bscco",
+    "count": 1
+  }
+}

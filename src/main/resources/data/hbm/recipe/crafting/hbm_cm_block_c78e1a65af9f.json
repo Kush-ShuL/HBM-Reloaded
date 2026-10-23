@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:cm_block",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "IPI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripleworkersalloy"
+    }
+  }
+}

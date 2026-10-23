@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:fluid_tank_lead_empty",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LUL",
+    "LTL",
+    "LUL"
+  ],
+  "key": {
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platelead"
+    },
+    "U": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billeturanium238"
+    },
+    "T": {
+      "item": "hbm:fluid_tank_empty"
+    }
+  }
+}

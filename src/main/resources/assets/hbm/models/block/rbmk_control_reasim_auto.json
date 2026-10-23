@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_piped",
+  "inventory": false,
+  "top": false,
+  "lid": true,
+  "textures": {
+    "side": "hbm:block/rbmk/rbmk_control_reasim_auto_side",
+    "top": "hbm:block/rbmk/rbmk_control_reasim_auto_top",
+    "pipe_top": "hbm:block/rbmk/rbmk_control_reasim_auto_pipe_top",
+    "pipe_side": "hbm:block/rbmk/rbmk_control_reasim_auto_pipe_side",
+    "bottom": "hbm:block/rbmk/rbmk_control_reasim_auto_bottom",
+    "particle": "hbm:block/rbmk/rbmk_control_reasim_auto_side"
+  }
+}

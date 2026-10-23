@@ -1,0 +1,117 @@
+{
+  "module": "tritium-lamps205",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "lamp_tritium_green_off",
+      "id": "hbm:lamp_tritium_green_off",
+      "legacyRegistryId": "hbm:tile.lamp_tritium_green_off",
+      "originalClass": "TritiumLamp",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1476
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2623
+          },
+          "expression": "GameRegistry.registerBlock(lamp_tritium_green_off, lamp_tritium_green_off.getUnlocalizedName())",
+          "arguments": [
+            "lamp_tritium_green_off",
+            "lamp_tritium_green_off.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "lamp_tritium_green_on",
+      "id": "hbm:lamp_tritium_green_on",
+      "legacyRegistryId": "hbm:tile.lamp_tritium_green_on",
+      "originalClass": "TritiumLamp",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1477
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2624
+          },
+          "expression": "GameRegistry.registerBlock(lamp_tritium_green_on, lamp_tritium_green_on.getUnlocalizedName())",
+          "arguments": [
+            "lamp_tritium_green_on",
+            "lamp_tritium_green_on.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": null,
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "lamp_tritium_blue_off",
+      "id": "hbm:lamp_tritium_blue_off",
+      "legacyRegistryId": "hbm:tile.lamp_tritium_blue_off",
+      "originalClass": "TritiumLamp",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1478
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2625
+          },
+          "expression": "GameRegistry.registerBlock(lamp_tritium_blue_off, lamp_tritium_blue_off.getUnlocalizedName())",
+          "arguments": [
+            "lamp_tritium_blue_off",
+            "lamp_tritium_blue_off.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "lamp_tritium_blue_on",
+      "id": "hbm:lamp_tritium_blue_on",
+      "legacyRegistryId": "hbm:tile.lamp_tritium_blue_on",
+      "originalClass": "TritiumLamp",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1479
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2626
+          },
+          "expression": "GameRegistry.registerBlock(lamp_tritium_blue_on, lamp_tritium_blue_on.getUnlocalizedName())",
+          "arguments": [
+            "lamp_tritium_blue_on",
+            "lamp_tritium_blue_on.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": null,
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    }
+  ]
+}

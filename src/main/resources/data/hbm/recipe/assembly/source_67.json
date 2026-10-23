@@ -1,0 +1,32 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.plateiron",
+  "duration": 60,
+  "power": 100,
+  "order": 0,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_iron",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotiron"
+      },
+      "count": 1
+    }
+  ],
+  "pools": [
+    "alt.plates"
+  ],
+  "group": "autoswitch.plates"
+}

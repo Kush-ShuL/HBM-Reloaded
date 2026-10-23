@@ -1,0 +1,42 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "neoforge:components",
+    "items": "hbm:ore_nitrated",
+    "components": {
+      "hbm:legacy_metadata": 7
+    },
+    "strict": false
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:ore_nitrocrystalline",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 7
+      }
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 7
+      }
+    },
+    {
+      "id": "hbm:ore_byproduct",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 4
+      }
+    },
+    {
+      "id": "hbm:ore_byproduct",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 4
+      }
+    }
+  ]
+}

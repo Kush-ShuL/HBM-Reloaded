@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:tile_lab",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CBC",
+    "CBC",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:brick"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotasbestos"
+    }
+  }
+}

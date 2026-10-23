@@ -1,0 +1,77 @@
+{
+  "profiles": [
+    {
+      "symbol": "cluster_depth_iron",
+      "minY": 0,
+      "variance": 3,
+      "size": 5,
+      "fill": 0.6,
+      "chance": 24,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:103"
+    },
+    {
+      "symbol": "cluster_depth_titanium",
+      "minY": 0,
+      "variance": 3,
+      "size": 5,
+      "fill": 0.6,
+      "chance": 32,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:104"
+    },
+    {
+      "symbol": "cluster_depth_tungsten",
+      "minY": 0,
+      "variance": 3,
+      "size": 5,
+      "fill": 0.6,
+      "chance": 32,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:105"
+    },
+    {
+      "symbol": "ore_depth_cinnebar",
+      "minY": 0,
+      "variance": 3,
+      "size": 5,
+      "fill": 0.8,
+      "chance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:106"
+    },
+    {
+      "symbol": "ore_depth_zirconium",
+      "minY": 0,
+      "variance": 3,
+      "size": 5,
+      "fill": 0.8,
+      "chance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:107"
+    },
+    {
+      "symbol": "ore_depth_borax",
+      "minY": 0,
+      "variance": 3,
+      "size": 5,
+      "fill": 0.8,
+      "chance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:108"
+    }
+  ],
+  "sourceAlgorithm": "DepthDeposit.generate: inclusive x/y/z cube, old float sqrt, conditional nextInt(2) core/filler draws",
+  "originalCenterY": [
+    0,
+    2
+  ],
+  "originalAllowedY": [
+    1,
+    126
+  ],
+  "negativeExtension": {
+    "translation": "level.minBuildHeight + negativeBaseOffset",
+    "defaultOffset": 0,
+    "originalY1ExclusionPreservesBottomLayer": true,
+    "masterSwitches": [
+      "OreWorldgen.overworldOre",
+      "OreWorldgen.deepslateOre"
+    ],
+    "positiveRandomPrefixUnaffected": true
+  }
+}

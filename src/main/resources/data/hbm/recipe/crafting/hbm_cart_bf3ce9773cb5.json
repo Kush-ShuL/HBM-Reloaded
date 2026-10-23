@@ -1,0 +1,46 @@
+{
+  "type": "hbm:source_cart_shaped",
+  "category": "misc",
+  "pattern": [
+    "S S",
+    "BLB",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "B": {
+      "item": "hbm:blades_steel"
+    },
+    "L": {
+      "type": "hbm:source_fluid_container",
+      "fluid": "LAVA",
+      "amount": 1000
+    },
+    "C": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:cart",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0,
+          "minecraft:custom_data": {
+            "cartBase": 2
+          }
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "hbm:cart",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2,
+      "minecraft:custom_data": {
+        "cartBase": 2
+      }
+    }
+  }
+}

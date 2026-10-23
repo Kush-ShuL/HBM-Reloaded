@@ -1,0 +1,18 @@
+{
+  "en_us": {
+    "tile.machine_satlink.name": "Satellite Ground Station",
+    "tile.machine_satlink.freq": "Freq",
+    "tile.machine_satlink.connected": "Connected",
+    "tile.machine_satlink.yes": "Yes",
+    "tile.machine_satlink.no": "No",
+    "block.hbm.machine_satlink": "Satellite Ground Station",
+    "chat.hbm.satellite_link.frequency": "Set frequency to %s",
+    "config.jade.plugin_hbm.satellite_link_state": "Satellite Ground Station"
+  },
+  "zh_cn": {
+    "tile.machine_satlink.name": "卫星地面站",
+    "block.hbm.machine_satlink": "卫星地面站",
+    "chat.hbm.satellite_link.frequency": "频率已设置为 %s",
+    "config.jade.plugin_hbm.satellite_link_state": "卫星地面站"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "radiobox",
+      "id": "hbm:radiobox",
+      "hasItem": true,
+      "legacyRegistryId": "hbm:tile.radiobox",
+      "originalClass": "Radiobox",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2281
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3325
+          },
+          "expression": "GameRegistry.registerBlock(radiobox, radiobox.getUnlocalizedName())",
+          "arguments": [
+            "radiobox",
+            "radiobox.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "maxStackSize": 64
+    }
+  ]
+}

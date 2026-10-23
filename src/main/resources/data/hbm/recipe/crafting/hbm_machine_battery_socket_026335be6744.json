@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:machine_battery_socket",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "I I",
+    "I I",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "R": {
+      "item": "hbm:coil_copper"
+    }
+  }
+}

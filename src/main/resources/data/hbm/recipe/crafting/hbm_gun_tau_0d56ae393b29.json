@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " RD",
+    "CTT",
+    "GMS"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:circuit_bismoid"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipecopper"
+    },
+    "T": {
+      "item": "hbm:coil_copper_torus"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gripanyhardplastic"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/receiverlightsaturnite"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stockanyhardplastic"
+    }
+  },
+  "result": {
+    "id": "hbm:gun_tau",
+    "count": 1
+  }
+}

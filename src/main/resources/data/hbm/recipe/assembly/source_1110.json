@@ -1,0 +1,35 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.emptypackage",
+  "duration": 40,
+  "power": 100,
+  "order": 353,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:fluid_pack_empty",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetitanium"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 2
+    }
+  ]
+}

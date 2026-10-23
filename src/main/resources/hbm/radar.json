@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_radar",
+      "id": "hbm:machine_radar",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2084
+      },
+      "legacyRegistryId": "hbm:tile.machine_radar",
+      "originalClass": "MachineRadar",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "block",
+      "symbol": "machine_radar_large",
+      "id": "hbm:machine_radar_large",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2085
+      },
+      "legacyRegistryId": "hbm:tile.machine_radar_large",
+      "originalClass": "MachineRadarLarge",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "block",
+      "symbol": "radar_screen",
+      "id": "hbm:radar_screen",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2086
+      },
+      "legacyRegistryId": "hbm:tile.radar_screen",
+      "originalClass": "MachineRadarScreen",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "radar_linker",
+      "id": "hbm:radar_linker",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3844
+      },
+      "legacyRegistryId": "hbm:item.radar_linker",
+      "originalClass": "ItemRadarLinker",
+      "creativeTab": "consumable"
+    }
+  ]
+}

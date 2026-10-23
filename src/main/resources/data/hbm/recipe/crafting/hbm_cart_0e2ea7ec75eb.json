@@ -1,0 +1,23 @@
+{
+  "type": "hbm:source_cart_shaped",
+  "category": "misc",
+  "pattern": [
+    "C",
+    "S"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:crate_steel"
+    },
+    "S": {
+      "item": "minecraft:minecart"
+    }
+  },
+  "result": {
+    "id": "hbm:cart",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  }
+}

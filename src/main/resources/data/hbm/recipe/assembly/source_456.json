@@ -1,0 +1,38 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capacitortantalum",
+  "duration": 100,
+  "power": 10000,
+  "order": 151,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:battery_pack",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 9
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingottantalum"
+      },
+      "count": 24
+    }
+  ]
+}

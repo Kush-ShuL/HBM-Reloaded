@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:bossworm",
+  "display": {
+    "icon": {
+      "id": "hbm:coin_ufo"
+    },
+    "title": {
+      "translate": "achievement.bossUFO"
+    },
+    "description": {
+      "translate": "achievement.bossUFO.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:bossufo"
+      }
+    }
+  }
+}

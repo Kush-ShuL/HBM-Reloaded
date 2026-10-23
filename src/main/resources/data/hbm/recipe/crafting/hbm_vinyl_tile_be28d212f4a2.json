@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:vinyl_tile",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:vinyl_tile",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  ]
+}

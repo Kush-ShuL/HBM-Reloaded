@@ -1,0 +1,25 @@
+{
+  "name": "Desulfurized Light Oil",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    138
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      138
+    ]
+  ],
+  "title": {
+    "en_US": "Desulfurized Light Oil",
+    "ru_RU": "Обессеренная лёгкая нефть",
+    "zh_CN": "脱硫轻油"
+  },
+  "content": {
+    "en_US": "Desulfurized light oil can be obtained by [[refining|Oil Refinery]] hot desulfurized [[cracked|Desulfurized Cracked Oil]] or [[crude|Desulfurized Hot Crude Oil]] oil. It may be [[fractioned|Fractioning Tower]] to produce [[high-cetane diesel|High-Cetane Diesel]] and [[kerosene|Kerosene]].<br><br>{{Template:Oil3.5}}",
+    "ru_RU": "Обессеренную лёгкую нефть можно получить путем [[переработки|Oil Refinery]] горячей обессеренной [[крекированной нефти|Desulfurized Cracked Oil]] или [[сырой нефти|Desulfurized Hot Crude Oil]]. Ее можно [[ректифицировать|Fractioning Tower]] для получения [[высокоцетанового дизеля|High-Cetane Diesel]] и [[керосина|Kerosene]].<br><br>{{Template:Oil3.5}}",
+    "zh_CN": "在[[炼油厂|Oil Refinery]]中处理热脱硫[[裂化原油|Desulfurized Cracked Oil]]或[[热脱硫原油|Desulfurized Hot Crude Oil]]可获得脱硫轻油。可经[[分馏|Fractioning Tower]]制得[[高十六烷值柴油|High-Cetane Diesel]]和[[煤油|Kerosene]]。<br><br>{{Template:Oil3.5}}"
+  }
+}

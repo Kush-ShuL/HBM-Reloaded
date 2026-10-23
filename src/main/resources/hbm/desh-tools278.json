@@ -1,0 +1,120 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "desh_pickaxe",
+      "id": "hbm:desh_pickaxe",
+      "legacyRegistryId": "hbm:item.desh_pickaxe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4040
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5896
+          },
+          "expression": "GameRegistry.registerItem(desh_pickaxe, desh_pickaxe.getUnlocalizedName())",
+          "arguments": [
+            "desh_pickaxe",
+            "desh_pickaxe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.desh.DeshToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 0,
+      "sourceMovementModifier": -0.05
+    },
+    {
+      "kind": "item",
+      "symbol": "desh_axe",
+      "id": "hbm:desh_axe",
+      "legacyRegistryId": "hbm:item.desh_axe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4047
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5897
+          },
+          "expression": "GameRegistry.registerItem(desh_axe, desh_axe.getUnlocalizedName())",
+          "arguments": [
+            "desh_axe",
+            "desh_axe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.desh.DeshToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 0,
+      "sourceMovementModifier": -0.05
+    },
+    {
+      "kind": "item",
+      "symbol": "desh_shovel",
+      "id": "hbm:desh_shovel",
+      "legacyRegistryId": "hbm:item.desh_shovel",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4055
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5898
+          },
+          "expression": "GameRegistry.registerItem(desh_shovel, desh_shovel.getUnlocalizedName())",
+          "arguments": [
+            "desh_shovel",
+            "desh_shovel.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.desh.DeshToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 0,
+      "sourceMovementModifier": -0.05
+    },
+    {
+      "kind": "item",
+      "symbol": "desh_hoe",
+      "id": "hbm:desh_hoe",
+      "legacyRegistryId": "hbm:item.desh_hoe",
+      "originalClass": "ModHoe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4062
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5899
+          },
+          "expression": "GameRegistry.registerItem(desh_hoe, desh_hoe.getUnlocalizedName())",
+          "arguments": [
+            "desh_hoe",
+            "desh_hoe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.desh.DeshToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 0,
+      "sourceMovementModifier": null
+    }
+  ]
+}

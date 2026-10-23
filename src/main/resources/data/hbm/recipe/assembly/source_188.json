@@ -1,0 +1,29 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.partberyl",
+  "duration": 40,
+  "power": 100,
+  "order": 53,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:part_beryllium",
+            "count": 8
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustberyllium"
+      },
+      "count": 1
+    }
+  ],
+  "group": "autoswitch.cyclotron"
+}

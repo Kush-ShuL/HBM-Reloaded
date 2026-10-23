@@ -1,0 +1,6 @@
+package com.hbm.client.generator.stirling;
+import com.hbm.machine.generator.stirling.StrayCogEntity;import com.mojang.blaze3d.vertex.PoseStack;import com.mojang.math.Axis;import net.minecraft.client.renderer.*;import net.minecraft.client.renderer.entity.*;import net.minecraft.resources.ResourceLocation;
+/** Source RenderCog,orientation0..5 spins around-Z;settled6..11 is fixed;allnonzero variants use steeltexture. */
+public final class StrayCogRenderer extends EntityRenderer<StrayCogEntity> {
+ public StrayCogRenderer(EntityRendererProvider.Context context){super(context);shadowRadius=0;}@Override public ResourceLocation getTextureLocation(StrayCogEntity cog){return StirlingRenderer.texture(cog.metadata()==0?0:1);}@Override public void render(StrayCogEntity cog,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){pose.pushPose();float rotation=switch(cog.orientation()%6){case 5->90;case 2->180;case 4->270;default->0;};pose.mulPose(Axis.YP.rotationDegrees(rotation));pose.translate(0,0,-1);if(cog.orientation()<6)pose.mulPose(Axis.ZN.rotationDegrees((float)(System.currentTimeMillis()%1080/3D)));pose.translate(0,-1.375,0);StirlingRenderer.part("Cog",cog.metadata()==0?0:1,pose,buffers,light,net.minecraft.client.renderer.texture.OverlayTexture.NO_OVERLAY);pose.popPose();super.render(cog,yaw,partial,pose,buffers,light);}
+}

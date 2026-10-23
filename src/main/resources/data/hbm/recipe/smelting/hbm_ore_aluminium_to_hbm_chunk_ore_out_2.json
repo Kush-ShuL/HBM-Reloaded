@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_aluminium"
+      },
+      {
+        "item": "hbm:deepslate_ore_aluminium"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:chunk_ore_cryolite",
+    "count": 1
+  },
+  "experience": 2.5,
+  "cookingtime": 200
+}

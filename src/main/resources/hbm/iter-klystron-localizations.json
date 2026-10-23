@@ -1,0 +1,22 @@
+{
+  "en_us": {
+    "tile.fusion_klystron.name": "Klystron",
+    "tile.fusion_klystron.desc": "Power source for fusion reactors.$Requires cooling via compressed air.",
+    "container.fusionKlystron": "Klystron",
+    "block.hbm.fusion_klystron": "Klystron",
+    "gui.hbm.klystron.target": "Klystron target output",
+    "gui.hbm.klystron.maximum": "(max)",
+    "jade.hbm.klystron.output": "%s / %s KyU/t",
+    "config.jade.plugin_hbm.klystron_output": "ITER klystron output"
+  },
+  "zh_cn": {
+    "tile.fusion_klystron.name": "速调管",
+    "tile.fusion_klystron.desc": "聚变反应堆的动力源。$使用压缩空气进行冷却。",
+    "container.fusionKlystron": "速调管",
+    "block.hbm.fusion_klystron": "速调管",
+    "gui.hbm.klystron.target": "速调管目标输出",
+    "gui.hbm.klystron.maximum": "（最大）",
+    "jade.hbm.klystron.output": "%s / %s KyU/t",
+    "config.jade.plugin_hbm.klystron_output": "ITER速调管输出"
+  }
+}

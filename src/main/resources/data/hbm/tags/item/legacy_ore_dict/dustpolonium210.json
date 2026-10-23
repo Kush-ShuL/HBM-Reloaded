@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_polonium",
+    {
+      "id": "#c:dusts/po210",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polonium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/polonium210",
+      "required": false
+    }
+  ]
+}

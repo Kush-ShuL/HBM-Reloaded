@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "all": "hbm:block/glass_trinitite",
+    "connected": "hbm:block/glass_trinitite_ct"
+  }
+}

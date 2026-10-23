@@ -1,0 +1,25 @@
+{
+  "name": "Chicago Pile Vent",
+  "icon": [
+    "hbm:tile.pile_device",
+    1,
+    1
+  ],
+  "trigger": [
+    [
+      "hbm:tile.pile_device",
+      1,
+      1
+    ]
+  ],
+  "title": {
+    "en_US": "Chicago Pile Vent",
+    "ru_RU": "Вентиль Чикагской поленницы",
+    "zh_CN": "芝加哥堆通风口"
+  },
+  "content": {
+    "en_US": "The vent is needed to insert compressed air at 1 PU into the [[Chicago Pile's|Chicago Pile]] ventilation channels. Due to the pressure requirement, each Pile therefore needs at least one [[compressor|Compressor]]. Hot air will harmlessly exit the Pile at the output side of the ventilation channel.<br><br>The vent's cooling effect only applies to fuel channels that touch the ventilation channel, or rather, fuel channels exactly one block above and below that ventilation channel. Without sufficient cooling, the channel will surpass 800°C, causing the highly-flammable graphite bricks to ignite, forcefully disassembling the Pile.<br><br>See also:<br>* [[Chicago Pile Fuel Loader]]<br>* [[Chicago Pile Control Rod]]",
+    "ru_RU": "Вентиль необходим для подачи сжатого воздуха под давлением 1 PU в вентиляционные каналы [[Чикагской поленницы|Chicago Pile]]. Поскольку давление обязательно, каждому реактору требуется как минимум один [[компрессор|Compressor]]. Горячий воздух безвредно выходит из реактора с выходной стороны вентиляционного канала.<br><br>Охлаждающий эффект вентиля распространяется только на топливные каналы, которые касаются вентиляционного канала, а точнее — на топливные каналы ровно на один блок выше и ниже этого вентиляционного канала. Без достаточного охлаждения канал нагреется свыше 800°C, что приведет к возгоранию легковоспламеняющихся графитовых кирпичей и силовому разрушению реактора.<br><br>См. также:<br>* [[Топливный загрузчик Чикагской поленницы|Chicago Pile Fuel Loader]]<br>* [[Регулирующие стержни Чикагской поленницы|Chicago Pile Control Rod]]",
+    "zh_CN": "通风口用于向[[芝加哥堆|Chicago Pile]]的通风通道输入1 PU 压缩空气。因此，每座堆至少需要一台[[压缩机|Compressor]]。热空气会从通风通道的输出端安全排出。<br><br>冷却效果仅作用于与通风通道相接触的燃料通道，更准确地说，是位于其正上方和正下方一格的燃料通道。冷却不足时，通道温度会超过800°C，点燃极易燃的石墨砖，并强制拆解整座堆。<br><br>另见：<br>* [[芝加哥堆燃料装载机|Chicago Pile Fuel Loader]]<br>* [[芝加哥堆控制棒|Chicago Pile Control Rod]]"
+  }
+}

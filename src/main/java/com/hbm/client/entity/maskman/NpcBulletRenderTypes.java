@@ -1,0 +1,10 @@
+package com.hbm.client.entity.maskman;
+import com.mojang.blaze3d.platform.GlStateManager;import com.mojang.blaze3d.systems.RenderSystem;import com.mojang.blaze3d.vertex.*;import java.util.OptionalDouble;import net.minecraft.client.renderer.RenderType;
+final class NpcBulletRenderTypes extends RenderType{
+ private static final TransparencyStateShard ADDITIVE=new TransparencyStateShard("hbm_nt_additive",()->{RenderSystem.enableBlend();RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA,GlStateManager.DestFactor.ONE);},()->{RenderSystem.defaultBlendFunc();RenderSystem.disableBlend();});
+ static final RenderType BOLT=com.hbm.client.render.WorldEffectMeshes.register(create("hbm_nt_bolt",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,8192,false,true,CompositeState.builder().setShaderState(POSITION_COLOR_SHADER).setTransparencyState(ADDITIVE).setCullState(NO_CULL).setWriteMaskState(COLOR_WRITE).createCompositeState(false)),"NPC+Worm/Bolt");
+ static final RenderType ORB=com.hbm.client.render.WorldEffectMeshes.register(create("hbm_nt_orb",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,8192,false,true,CompositeState.builder().setShaderState(POSITION_COLOR_SHADER).setTransparencyState(ADDITIVE).setCullState(CULL).setWriteMaskState(COLOR_WRITE).createCompositeState(false)),"NPC/Orb");
+ static final RenderType SPARK_OUTER=line("hbm_nt_spark_outer",5),SPARK_INNER=line("hbm_nt_spark_inner",2);
+ private static RenderType line(String name,double width){return com.hbm.client.render.WorldEffectMeshes.register(create(name,DefaultVertexFormat.POSITION_COLOR_NORMAL,VertexFormat.Mode.LINES,1024,false,true,CompositeState.builder().setShaderState(RENDERTYPE_LINES_SHADER).setTransparencyState(ADDITIVE).setLineState(new LineStateShard(OptionalDouble.of(width))).setCullState(NO_CULL).setWriteMaskState(COLOR_WRITE).createCompositeState(false)),"NPC/Spark5+2");}
+ private NpcBulletRenderTypes(){super("unused",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,256,false,false,()->{},()->{});}
+}

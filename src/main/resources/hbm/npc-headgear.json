@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "gas_mask_olde",
+      "id": "hbm:gas_mask_olde",
+      "legacyRegistryId": "hbm:item.gas_mask_olde",
+      "originalClass": "ArmorGasMask",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:30",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 165
+    },
+    {
+      "kind": "item",
+      "symbol": "no9",
+      "id": "hbm:no9",
+      "legacyRegistryId": "hbm:item.no9",
+      "originalClass": "ArmorNo9",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:34",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "mask_of_infamy",
+      "id": "hbm:mask_of_infamy",
+      "legacyRegistryId": "hbm:item.mask_of_infamy",
+      "originalClass": "MaskOfInfamy",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:4251",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 165
+    },
+    {
+      "kind": "item",
+      "symbol": "hat",
+      "id": "hbm:nossy_hat",
+      "legacyRegistryId": "hbm:item.nossy_hat",
+      "originalClass": "ArmorHat",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:33",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 440
+    }
+  ],
+  "recipes": [
+    "hbm:crafting/hbm_gas_mask_olde_06464b354825",
+    "hbm:crafting/hbm_mask_of_infamy_0084a1112782"
+  ]
+}

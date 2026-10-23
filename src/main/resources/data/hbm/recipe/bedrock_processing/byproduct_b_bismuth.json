@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "neoforge:components",
+      "items": "hbm:ore_byproduct",
+      "components": {
+        "hbm:legacy_metadata": 9
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:powder_bismuth",
+    "count": 1
+  }
+}

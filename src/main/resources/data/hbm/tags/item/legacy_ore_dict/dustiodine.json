@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_iodine",
+    {
+      "id": "#c:dusts/iodine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:deco_asbestos",
+          "count": 1
+        }
+      },
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:ingot_asbestos",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 1,
+  "tier_upper": -1,
+  "overlay": "SMITHING",
+  "order": 661000000
+}

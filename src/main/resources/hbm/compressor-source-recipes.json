@@ -1,0 +1,69 @@
+{
+  "recipes": [
+    {
+      "input": [
+        "PETROLEUM",
+        2000,
+        0
+      ],
+      "output": [
+        "PETROLEUM",
+        2000,
+        1
+      ],
+      "duration": 20
+    },
+    {
+      "input": [
+        "PETROLEUM",
+        2000,
+        1
+      ],
+      "output": [
+        "LPG",
+        1000,
+        0
+      ],
+      "duration": 20
+    },
+    {
+      "input": [
+        "BLOOD",
+        1000,
+        3
+      ],
+      "output": [
+        "HEAVYOIL",
+        250,
+        0
+      ],
+      "duration": 200
+    },
+    {
+      "input": [
+        "PERFLUOROMETHYL",
+        1000,
+        0
+      ],
+      "output": [
+        "PERFLUOROMETHYL",
+        1000,
+        1
+      ],
+      "duration": 50
+    },
+    {
+      "input": [
+        "PERFLUOROMETHYL",
+        1000,
+        1
+      ],
+      "output": [
+        "PERFLUOROMETHYL_COLD",
+        1000,
+        0
+      ],
+      "duration": 50
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "elec_pickaxe",
+      "id": "hbm:elec_pickaxe",
+      "legacyRegistryId": "hbm:item.elec_pickaxe",
+      "originalClass": "ItemToolAbilityPower",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4014
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5901
+          },
+          "expression": "GameRegistry.registerItem(elec_pickaxe, elec_pickaxe.getUnlocalizedName())",
+          "arguments": [
+            "elec_pickaxe",
+            "elec_pickaxe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.electric.ElectricAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "sourceDamage": 6,
+      "sourceMovement": 0,
+      "sourceAbilities": [
+        [
+          "HAMMER",
+          0
+        ],
+        [
+          "HAMMER_FLAT",
+          0
+        ],
+        [
+          "RECURSION",
+          2
+        ],
+        [
+          "SILK",
+          0
+        ],
+        [
+          "LUCK",
+          1
+        ]
+      ],
+      "sourceShears": false,
+      "power": {
+        "maxPower": 500000,
+        "chargeRate": 1000,
+        "consumption": 100
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "elec_axe",
+      "id": "hbm:elec_axe",
+      "legacyRegistryId": "hbm:item.elec_axe",
+      "originalClass": "ItemToolAbilityPower",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4021
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5902
+          },
+          "expression": "GameRegistry.registerItem(elec_axe, elec_axe.getUnlocalizedName())",
+          "arguments": [
+            "elec_axe",
+            "elec_axe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.electric.ElectricAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "sourceDamage": 10,
+      "sourceMovement": 0,
+      "sourceAbilities": [
+        [
+          "HAMMER",
+          0
+        ],
+        [
+          "HAMMER_FLAT",
+          0
+        ],
+        [
+          "RECURSION",
+          2
+        ],
+        [
+          "SILK",
+          0
+        ],
+        [
+          "LUCK",
+          1
+        ],
+        [
+          "CHAINSAW",
+          0
+        ],
+        [
+          "BEHEADER",
+          0
+        ]
+      ],
+      "sourceShears": true,
+      "power": {
+        "maxPower": 500000,
+        "chargeRate": 1000,
+        "consumption": 100
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "elec_shovel",
+      "id": "hbm:elec_shovel",
+      "legacyRegistryId": "hbm:item.elec_shovel",
+      "originalClass": "ItemToolAbilityPower",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4030
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5903
+          },
+          "expression": "GameRegistry.registerItem(elec_shovel, elec_shovel.getUnlocalizedName())",
+          "arguments": [
+            "elec_shovel",
+            "elec_shovel.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.electric.ElectricAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "sourceDamage": 5,
+      "sourceMovement": 0,
+      "sourceAbilities": [
+        [
+          "HAMMER",
+          0
+        ],
+        [
+          "HAMMER_FLAT",
+          0
+        ],
+        [
+          "RECURSION",
+          2
+        ],
+        [
+          "SILK",
+          0
+        ],
+        [
+          "LUCK",
+          1
+        ]
+      ],
+      "sourceShears": false,
+      "power": {
+        "maxPower": 500000,
+        "chargeRate": 1000,
+        "consumption": 100
+      }
+    }
+  ]
+}

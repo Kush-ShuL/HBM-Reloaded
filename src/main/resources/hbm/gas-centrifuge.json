@@ -1,0 +1,30 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_gascent",
+      "id": "hbm:machine_gascent",
+      "legacyRegistryId": "hbm:tile.machine_gascent",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1786
+      },
+      "originalClass": "MachineGasCent",
+      "creativeTab": "machine"
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_gc_speed",
+      "id": "hbm:upgrade_gc_speed",
+      "legacyRegistryId": "hbm:item.upgrade_gc_speed",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3762
+      },
+      "originalClass": "ItemMachineUpgrade",
+      "creativeTab": "control",
+      "stackSize": 1
+    }
+  ],
+  "sourceRecipes": 4
+}

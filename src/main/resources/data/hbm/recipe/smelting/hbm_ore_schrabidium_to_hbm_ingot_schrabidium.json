@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_schrabidium"
+      },
+      {
+        "item": "hbm:deepslate_ore_schrabidium"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_schrabidium",
+    "count": 1
+  },
+  "experience": 128.0,
+  "cookingtime": 200
+}

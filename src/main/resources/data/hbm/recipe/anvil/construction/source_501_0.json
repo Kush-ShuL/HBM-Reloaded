@@ -1,0 +1,52 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/anyconcrete"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:steel_grate",
+          "count": 1
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:filter_coal",
+          "count": 1
+        }
+      },
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:chimney_industrial",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 3,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 501000000
+}

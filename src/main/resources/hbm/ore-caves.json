@@ -1,0 +1,45 @@
+{
+  "profiles": [
+    {
+      "name": "sulfur",
+      "sourceOption": "enableSulfurCave",
+      "legacyOreName": "hbm:tile.stone_resource",
+      "metadata": 0,
+      "threshold": 1.5,
+      "rangeMult": 20,
+      "centerY": 30,
+      "maxRange": 20,
+      "fluid": "sulfuric_acid_block",
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:600"
+    },
+    {
+      "name": "asbestos",
+      "sourceOption": "enableAsbestosCave",
+      "legacyOreName": "hbm:tile.stone_resource",
+      "metadata": 1,
+      "threshold": 1.75,
+      "rangeMult": 20,
+      "centerY": 25,
+      "maxRange": 20,
+      "fluid": null,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:601"
+    }
+  ],
+  "sourceNoise": "official1.7.10 scalar2-octave Perlin, source MetaBlock.hashCode(old full registry name,metadata)*31 with int overflow before long addition",
+  "sourceBehavior": "coats existing cave surfaces; enclosed acid pools and supported formations; does not excavate an invented cavity",
+  "sourceDirectionOrder": [
+    "DOWN",
+    "UP",
+    "NORTH",
+    "SOUTH",
+    "WEST",
+    "EAST"
+  ],
+  "sourceScale": 0.01,
+  "sourceStageOrder": [
+    "SchistStratum",
+    "OreCave sulfur",
+    "OreCave asbestos",
+    "OreLayer3D"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.chip",
+  "duration": 50,
+  "power": 250,
+  "order": 29,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:circuit_chip",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:plate_polymer"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_silicon"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wirefinegold"
+      },
+      "count": 1
+    }
+  ],
+  "requires_no_528": true
+}

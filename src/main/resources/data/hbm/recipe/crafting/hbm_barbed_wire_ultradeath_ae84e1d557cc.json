@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:barbed_wire_ultradeath",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BCB",
+    "CIC",
+    "BCB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:barbed_wire"
+    },
+    "C": {
+      "item": "hbm:powder_yellowcake"
+    },
+    "I": {
+      "item": "hbm:nuclear_waste"
+    }
+  }
+}

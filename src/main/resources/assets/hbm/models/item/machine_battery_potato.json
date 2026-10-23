@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/battery_potato_top",
+    "up": "hbm:block/battery_potato_top",
+    "north": "hbm:block/battery_potato_side",
+    "south": "hbm:block/battery_potato_front",
+    "east": "hbm:block/battery_potato_side",
+    "west": "hbm:block/battery_potato_side",
+    "particle": "hbm:block/battery_potato_side"
+  }
+}

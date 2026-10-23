@@ -1,0 +1,45 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.drilldesh",
+  "duration": 100,
+  "power": 100,
+  "order": 121,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drillbit",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 4
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotrubber"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotniobium"
+      },
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "hbm:irradiation",
+  "input": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blocklithium"
+    },
+    "count": 1
+  },
+  "fusion_only": false,
+  "key_kind": "dict",
+  "source_key": "hbm:legacy_ore_dict/blocklithium",
+  "order": 0,
+  "fluid_output": {
+    "type": "TRITIUM",
+    "amount": 10000,
+    "pressure": 0
+  }
+}

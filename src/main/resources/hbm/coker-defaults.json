@@ -1,0 +1,370 @@
+{
+  "recipes": [
+    {
+      "fluid": "HEAVYOIL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "OIL_COKER"
+    },
+    {
+      "fluid": "HEAVYOIL_VACUUM",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "REFORMATE"
+    },
+    {
+      "fluid": "COALCREOSOTE",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "SMEAR",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "OIL_COKER"
+    },
+    {
+      "fluid": "HEATINGOIL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "OIL_COKER"
+    },
+    {
+      "fluid": "HEATINGOIL_VACUUM",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "OIL_COKER"
+    },
+    {
+      "fluid": "RECLAIMED",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "NAPHTHA",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "NAPHTHA_DS",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "NAPHTHA_CRACK",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "DIESEL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "DIESEL_REFORM",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "NAPHTHA_COKER"
+    },
+    {
+      "fluid": "DIESEL_CRACK",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "DIESEL_CRACK_REFORM",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "LIGHTOIL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "LIGHTOIL_DS",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "LIGHTOIL_CRACK",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "LIGHTOIL_VACUUM",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "BIOFUEL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "AROMATICS",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "REFORMATE",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "XYLENE",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "FISHOIL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "MERCURY"
+    },
+    {
+      "fluid": "SUNFLOWEROIL",
+      "autoTU": 820000,
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "fluid": "WOODOIL",
+      "autoTU": 340000,
+      "output": [
+        "minecraft:charcoal",
+        1,
+        0
+      ],
+      "byproductType": "GAS_COKER"
+    },
+    {
+      "input": [
+        "WATZ",
+        4000
+      ],
+      "output": [
+        "hbm:ingot_mud",
+        4,
+        0
+      ]
+    },
+    {
+      "input": [
+        "REDMUD",
+        450
+      ],
+      "output": [
+        "minecraft:iron_ingot",
+        1,
+        0
+      ],
+      "byproduct": [
+        "MERCURY",
+        50
+      ]
+    },
+    {
+      "input": [
+        "BITUMEN",
+        16000
+      ],
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproduct": [
+        "OIL_COKER",
+        1600
+      ]
+    },
+    {
+      "input": [
+        "LUBRICANT",
+        12000
+      ],
+      "output": [
+        "hbm:coke_petroleum",
+        1,
+        0
+      ],
+      "byproduct": [
+        "OIL_COKER",
+        1200
+      ]
+    },
+    {
+      "input": [
+        "CALCIUM_SOLUTION",
+        125
+      ],
+      "output": [
+        "hbm:powder_calcium",
+        1,
+        0
+      ],
+      "byproduct": [
+        "SPENTSTEAM",
+        100
+      ]
+    },
+    {
+      "input": [
+        "SOURGAS",
+        1000
+      ],
+      "output": [
+        "hbm:sulfur",
+        1,
+        0
+      ],
+      "byproduct": [
+        "GAS_COKER",
+        150
+      ]
+    },
+    {
+      "input": [
+        "SLOP",
+        1000
+      ],
+      "output": [
+        "hbm:powder_limestone",
+        1,
+        0
+      ],
+      "byproduct": [
+        "COLLOID",
+        250
+      ]
+    },
+    {
+      "input": [
+        "VITRIOL",
+        4000
+      ],
+      "output": [
+        "hbm:powder_iron",
+        1,
+        0
+      ],
+      "byproduct": [
+        "SULFURIC_ACID",
+        500
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "en_us": {
+    "block.hbm.machine_solar_boiler": "Solar Tower Boiler",
+    "block.hbm.solar_mirror": "Heliostat Mirror",
+    "block.hbm.steel_beam": "Steel Beam",
+    "item.mirror_tool.name": "Mirror Adjustment Tool",
+    "item.mirror_tool.linked": "Alignment position set!",
+    "item.mirror_tool.reach": "Mirror out of range! (max 100m)",
+    "item.mirror_tool.angle": "Mirror angle too shallow! (min 45°)",
+    "item.mirror_tool.desc": "Right-click boiler to memorize the position.$Click on mirrors to turn them towards the boiler.",
+    "gui.hbm.solar_boiler.cold": "Too cold!",
+    "gui.hbm.solar_boiler.heating": "Solar heating",
+    "gui.hbm.solar_boiler.conversion": "1 mB water → 100 mB steam",
+    "gui.hbm.solar_boiler.source": "50 heat from aligned mirrors"
+  },
+  "zh_cn": {
+    "block.hbm.machine_solar_boiler": "太阳能锅炉",
+    "block.hbm.solar_mirror": "定日镜",
+    "block.hbm.steel_beam": "钢梁",
+    "item.mirror_tool.name": "定日镜调整工具",
+    "item.mirror_tool.linked": "设置对齐位置!",
+    "item.mirror_tool.desc": "右键单击“太阳能锅炉”以记忆位置 $再单击“定日镜”可将其转向太阳能锅炉",
+    "item.mirror_tool.reach": "镜面距离超出范围！(最远100m)",
+    "item.mirror_tool.angle": "镜面角度过小！(最小为45°)",
+    "gui.hbm.solar_boiler.cold": "温度过低！",
+    "gui.hbm.solar_boiler.heating": "太阳能加热",
+    "gui.hbm.solar_boiler.conversion": "1 mB水 → 100 mB蒸汽",
+    "gui.hbm.solar_boiler.source": "消耗已对准定日镜提供的50热量"
+  }
+}

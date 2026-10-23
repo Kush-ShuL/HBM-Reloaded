@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:igniter",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W",
+    "SC",
+    "CE"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefineschrabidium"
+    },
+    "C": {
+      "item": "hbm:circuit_advanced"
+    },
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+    }
+  }
+}

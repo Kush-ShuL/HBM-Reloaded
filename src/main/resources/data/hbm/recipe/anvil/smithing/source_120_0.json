@@ -1,0 +1,32 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "hbm:mold",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 8
+    }
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:mold_base",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "mold",
+  "prefix": "shell",
+  "exact_left": [],
+  "order": 120000000
+}

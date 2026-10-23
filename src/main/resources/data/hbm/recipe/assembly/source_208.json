@@ -1,0 +1,46 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.yellowbarrel",
+  "duration": 400,
+  "power": 400,
+  "order": 61,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:yellow_barrel",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:tank_steel"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platelead"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:nuclear_waste"
+        }
+      },
+      "count": 10
+    }
+  ]
+}

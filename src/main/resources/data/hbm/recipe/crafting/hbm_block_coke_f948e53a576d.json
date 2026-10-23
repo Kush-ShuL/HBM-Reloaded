@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:coke_lignite"
+    }
+  },
+  "result": {
+    "id": "hbm:block_coke",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  }
+}

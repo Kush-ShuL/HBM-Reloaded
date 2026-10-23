@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:fluid_duct_paintable",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "A A",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platealuminum"
+    }
+  }
+}

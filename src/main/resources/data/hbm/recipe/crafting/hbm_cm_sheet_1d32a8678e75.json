@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:cm_sheet",
+    "count": 16,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:cm_block",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:components",
+    "items": "hbm:arc_electrode_burnt",
+    "components": {
+      "hbm:legacy_metadata": 3
+    },
+    "strict": false
+  },
+  "result": {
+    "id": "hbm:ingot_saturnite",
+    "count": 1
+  },
+  "experience": 3.0,
+  "cookingtime": 200
+}

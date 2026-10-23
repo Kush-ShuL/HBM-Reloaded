@@ -1,0 +1,88 @@
+{
+  "entries": [],
+  "sourceAliases": [
+    {
+      "kind": "source_block_alias",
+      "symbol": "dummy_plate_compact_launcher",
+      "legacyRegistryId": "hbm:tile.dummy_plate_compact_launcher",
+      "originalClass": "DummyBlockMachine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2355
+      },
+      "sourceInitializeLine": 2355,
+      "sourceRegisterLine": 3480,
+      "targetId": "hbm:compact_launcher",
+      "targetPart": "plate",
+      "targetClass": "CustomLauncherBlock",
+      "requiresTemplateContext": true,
+      "metadata": "0..15 ignored by original; actual modern noncore direction derives from verified source target/core layout",
+      "blockEntityId": null,
+      "hasItem": false,
+      "newRegistryIdentity": false
+    },
+    {
+      "kind": "source_block_alias",
+      "symbol": "dummy_port_compact_launcher",
+      "legacyRegistryId": "hbm:tile.dummy_port_compact_launcher",
+      "originalClass": "DummyBlockMachine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2356
+      },
+      "sourceInitializeLine": 2356,
+      "sourceRegisterLine": 3481,
+      "targetId": "hbm:compact_launcher",
+      "targetPart": "port",
+      "targetClass": "CustomLauncherBlock",
+      "requiresTemplateContext": true,
+      "metadata": "0..15 ignored by original; actual modern noncore direction derives from verified source target/core layout",
+      "blockEntityId": "hbm:compact_launcher_port",
+      "hasItem": false,
+      "newRegistryIdentity": false
+    },
+    {
+      "kind": "source_block_alias",
+      "symbol": "dummy_plate_launch_table",
+      "legacyRegistryId": "hbm:tile.dummy_plate_launch_table",
+      "originalClass": "DummyBlockMachine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2357
+      },
+      "sourceInitializeLine": 2357,
+      "sourceRegisterLine": 3482,
+      "targetId": "hbm:launch_table",
+      "targetPart": "plate",
+      "targetClass": "CustomLauncherBlock",
+      "requiresTemplateContext": true,
+      "metadata": "0..15 ignored by original; actual modern noncore direction derives from verified source target/core layout",
+      "blockEntityId": null,
+      "hasItem": false,
+      "newRegistryIdentity": false
+    },
+    {
+      "kind": "source_block_alias",
+      "symbol": "dummy_port_launch_table",
+      "legacyRegistryId": "hbm:tile.dummy_port_launch_table",
+      "originalClass": "DummyBlockMachine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2358
+      },
+      "sourceInitializeLine": 2358,
+      "sourceRegisterLine": 3483,
+      "targetId": "hbm:launch_table",
+      "targetPart": "port",
+      "targetClass": "CustomLauncherBlock",
+      "requiresTemplateContext": true,
+      "metadata": "0..15 ignored by original; actual modern noncore direction derives from verified source target/core layout",
+      "blockEntityId": "hbm:launch_table_port",
+      "hasItem": false,
+      "newRegistryIdentity": false
+    }
+  ],
+  "registryCreates": 0,
+  "itemCreates": 0,
+  "contextCodec": "tools/port_launcher_dummies101.py:plan_template"
+}

@@ -1,0 +1,35 @@
+{
+  "module": "machine-iron-furnace178",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "furnace_iron",
+      "id": "hbm:furnace_iron",
+      "legacyRegistryId": "hbm:tile.furnace_iron",
+      "originalClass": "FurnaceIron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1758
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3038
+          },
+          "expression": "register(furnace_iron)",
+          "arguments": [
+            "furnace_iron"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ]
+}

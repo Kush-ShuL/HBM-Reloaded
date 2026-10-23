@@ -1,0 +1,53 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "fireworks",
+      "id": "hbm:fireworks",
+      "legacyRegistryId": "hbm:tile.fireworks",
+      "originalClass": "BlockFireworks",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1732
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2885
+          },
+          "expression": "GameRegistry.registerBlock(fireworks, fireworks.getUnlocalizedName())",
+          "arguments": [
+            "fireworks",
+            "fireworks.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "nuke",
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_firework_ball",
+      "id": "hbm:entity_firework_ball",
+      "originalClass": "EntityFireworks",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 123
+      },
+      "width": 0.6,
+      "height": 1.8,
+      "trackingRangeBlocks": 1000,
+      "nativeTrackingChunks": 63,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "sourceEgg": false
+    }
+  ]
+}

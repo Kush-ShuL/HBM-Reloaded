@@ -1,0 +1,80 @@
+{
+  "result": {
+    "id": "hbm:book_of_",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 2
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 4
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 5
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 6
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:page_of_",
+      "components": {
+        "hbm:legacy_metadata": 7
+      },
+      "strict": false
+    },
+    {
+      "item": "hbm:egg_balefire"
+    }
+  ]
+}

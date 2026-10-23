@@ -1,0 +1,46 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.bf",
+  "order": 8,
+  "r": 0.2,
+  "g": 1.0,
+  "b": 0.2,
+  "ignition_temp": 1000000,
+  "output_temp": 12500000,
+  "neutron_flux": 2000.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:fluid_icon",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 41,
+      "hbm:fluid_type": 41
+    }
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "BALEFIRE",
+      "amount": 15,
+      "pressure": 0
+    },
+    {
+      "type": "AMAT",
+      "amount": 5,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_balefire",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

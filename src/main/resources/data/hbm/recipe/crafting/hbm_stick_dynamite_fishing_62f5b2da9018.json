@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:stick_dynamite_fishing",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:stick_dynamite"
+    },
+    {
+      "item": "hbm:stick_dynamite"
+    },
+    {
+      "item": "hbm:stick_dynamite"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/anytar"
+    }
+  ]
+}

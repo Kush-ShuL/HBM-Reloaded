@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:components",
+    "items": "hbm:ore_meteor",
+    "components": {
+      "hbm:legacy_metadata": 1
+    },
+    "strict": false
+  },
+  "result": {
+    "id": "minecraft:copper_ingot",
+    "count": 16
+  },
+  "experience": 10.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,14 @@
+{
+  "type": "hbm:fluid_breeding",
+  "order": 2,
+  "input": {
+    "type": "LIGHTOIL_CRACK",
+    "amount": 1000,
+    "pressure": 0
+  },
+  "output": {
+    "type": "REFORMGAS",
+    "amount": 1000,
+    "pressure": 0
+  }
+}

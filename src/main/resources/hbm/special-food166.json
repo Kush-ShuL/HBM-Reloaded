@@ -1,0 +1,65 @@
+{
+  "module": "special-food166",
+  "entries": [
+    {
+      "symbol": "balefire_scrambled",
+      "id": "hbm:balefire_scrambled",
+      "legacyRegistryId": "hbm:item.balefire_scrambled",
+      "kind": "item",
+      "originalClass": "ItemSoup",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3618
+      },
+      "creativeTab": "consumable",
+      "nutrition": 6,
+      "saturation": 0.6,
+      "maxStackSize": 1,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "wolfFood": false
+    },
+    {
+      "symbol": "balefire_and_ham",
+      "id": "hbm:balefire_and_ham",
+      "legacyRegistryId": "hbm:item.balefire_and_ham",
+      "kind": "item",
+      "originalClass": "ItemSoup",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3619
+      },
+      "creativeTab": "consumable",
+      "nutrition": 6,
+      "saturation": 0.6,
+      "maxStackSize": 1,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "wolfFood": false
+    },
+    {
+      "symbol": "bomb_waffle",
+      "id": "hbm:bomb_waffle",
+      "legacyRegistryId": "hbm:item.bomb_waffle",
+      "kind": "item",
+      "originalClass": "ItemWaffle",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3611
+      },
+      "creativeTab": "consumable",
+      "nutrition": 20,
+      "saturation": 0.6,
+      "maxStackSize": 64,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "wolfFood": false
+    }
+  ]
+}

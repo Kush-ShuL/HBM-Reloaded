@@ -1,0 +1,70 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "book_guide",
+      "id": "hbm:book_guide_item",
+      "legacyRegistryId": "item.book_guide",
+      "originalClass": "ItemGuideBook",
+      "creativeTab": "consumable",
+      "creativeMetadata": [
+        1,
+        3
+      ],
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "test",
+        "rbmk",
+        "hadron",
+        "starter"
+      ],
+      "enumClass": "BookType",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4335
+      }
+    }
+  ],
+  "books": [
+    {
+      "name": "TEST",
+      "metadata": 0,
+      "pages": 7,
+      "titleScale": 2,
+      "title": "book.test.cover",
+      "creative": false
+    },
+    {
+      "name": "RBMK",
+      "metadata": 1,
+      "pages": 16,
+      "titleScale": 1.5,
+      "title": "book.rbmk.cover",
+      "creative": true
+    },
+    {
+      "name": "HADRON",
+      "metadata": 2,
+      "pages": 9,
+      "titleScale": 1.5,
+      "title": "book.error.cover",
+      "creative": false
+    },
+    {
+      "name": "STARTER",
+      "metadata": 3,
+      "pages": 18,
+      "titleScale": 1.5,
+      "title": "book.starter.cover",
+      "creative": true
+    }
+  ],
+  "sourceRecipes": [
+    "hbm:crafting/hbm_book_guide_item_fabc3c54212b",
+    "hbm:crafting/hbm_book_guide_item_970180ef455f"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "oil_tar_crude",
+      "id": "hbm:oil_tar_crude",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.oil_tar",
+      "sourceLegacyRegistryId": "hbm:item.oil_tar",
+      "sourceOrdinal": 0,
+      "sourceEnum": "CRUDE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2324
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "oil_tar_crack",
+      "id": "hbm:oil_tar_crack",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.oil_tar",
+      "sourceLegacyRegistryId": "hbm:item.oil_tar",
+      "sourceOrdinal": 1,
+      "sourceEnum": "CRACK",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2324
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "oil_tar_coal",
+      "id": "hbm:oil_tar_coal",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.oil_tar",
+      "sourceLegacyRegistryId": "hbm:item.oil_tar",
+      "sourceOrdinal": 2,
+      "sourceEnum": "COAL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2324
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "oil_tar_wood",
+      "id": "hbm:oil_tar_wood",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.oil_tar",
+      "sourceLegacyRegistryId": "hbm:item.oil_tar",
+      "sourceOrdinal": 3,
+      "sourceEnum": "WOOD",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2324
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "oil_tar_wax",
+      "id": "hbm:oil_tar_wax",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.oil_tar",
+      "sourceLegacyRegistryId": "hbm:item.oil_tar",
+      "sourceOrdinal": 4,
+      "sourceEnum": "WAX",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2324
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "oil_tar_paraffin",
+      "id": "hbm:oil_tar_paraffin",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.oil_tar",
+      "sourceLegacyRegistryId": "hbm:item.oil_tar",
+      "sourceOrdinal": 5,
+      "sourceEnum": "PARAFFIN",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2324
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

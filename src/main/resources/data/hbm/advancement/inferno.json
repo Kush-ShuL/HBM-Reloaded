@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:canister_napalm"
+    },
+    "title": {
+      "translate": "achievement.inferno"
+    },
+    "description": {
+      "translate": "achievement.inferno.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:inferno"
+      }
+    }
+  }
+}

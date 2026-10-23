@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_cs137",
+    {
+      "id": "#c:dusts/caesium137",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cs137",
+      "required": false
+    }
+  ]
+}

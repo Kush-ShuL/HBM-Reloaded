@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:jetpack_break",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "TJT",
+    "I I"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "T": {
+      "item": "hbm:ingot_dura_steel"
+    },
+    "J": {
+      "type": "neoforge:components",
+      "items": "hbm:jetpack_fly",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

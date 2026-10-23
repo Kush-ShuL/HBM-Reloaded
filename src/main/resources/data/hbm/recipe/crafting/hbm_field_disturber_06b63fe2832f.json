@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:field_disturber",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "CAC",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "C": {
+      "item": "hbm:circuit_bismoid"
+    },
+    "A": {
+      "item": "hbm:gem_alexandrite"
+    }
+  }
+}

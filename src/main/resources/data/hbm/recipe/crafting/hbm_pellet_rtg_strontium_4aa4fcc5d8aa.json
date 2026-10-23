@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:pellet_rtg_strontium",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:billet_sr90"
+    },
+    {
+      "item": "hbm:billet_sr90"
+    },
+    {
+      "item": "hbm:billet_sr90"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  ]
+}

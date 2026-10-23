@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:reinforced_sand",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FBF",
+    "BFB",
+    "FBF"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:iron_bars"
+    },
+    "B": {
+      "item": "minecraft:sandstone"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:brick_compound"
+    }
+  },
+  "result": {
+    "id": "hbm:brick_compound_stairs",
+    "count": 4
+  }
+}

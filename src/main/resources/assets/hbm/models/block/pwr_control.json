@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "hbm:block/pwr_control_side",
+    "top": "hbm:block/pwr_control_top",
+    "bottom": "hbm:block/pwr_control_top"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "hbm:press",
+  "stamp": "circuit",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/billetsilicon"
+  },
+  "result": {
+    "id": "hbm:circuit_silicon",
+    "count": 1
+  }
+}

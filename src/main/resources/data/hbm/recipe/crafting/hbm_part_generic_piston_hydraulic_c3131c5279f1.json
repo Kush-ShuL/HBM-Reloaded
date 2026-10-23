@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:part_generic_piston_hydraulic",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "CPC",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingottitanium"
+    },
+    "P": {
+      "type": "hbm:native_drink_fluid",
+      "fluid": "LUBRICANT",
+      "amount": 1000
+    }
+  }
+}

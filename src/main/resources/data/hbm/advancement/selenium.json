@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:burnerpress",
+  "display": {
+    "icon": {
+      "id": "hbm:ingot_starmetal"
+    },
+    "title": {
+      "translate": "achievement.selenium"
+    },
+    "description": {
+      "translate": "achievement.selenium.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:selenium"
+      }
+    }
+  }
+}

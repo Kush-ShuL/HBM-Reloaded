@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_phosphorus",
+    {
+      "id": "#c:ingots/white_phosphorus",
+      "required": false
+    }
+  ]
+}

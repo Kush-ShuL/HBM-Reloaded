@@ -1,0 +1,59 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "reeds",
+      "id": "hbm:reeds",
+      "legacyRegistryId": "hbm:tile.plant_reeds",
+      "originalClass": "BlockReeds",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1660
+      },
+      "creativeTab": "block",
+      "hardness": 0,
+      "explosionResistance": 0
+    },
+    {
+      "kind": "block",
+      "symbol": "vinyl_tile",
+      "id": "hbm:vinyl_tile",
+      "legacyRegistryId": "hbm:tile.vinyl_tile",
+      "originalClass": "BlockEnumMulti",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1558
+      },
+      "creativeTab": "block",
+      "hardness": 10,
+      "explosionResistance": 36,
+      "metadataRange": [
+        0,
+        1
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "names": [
+        "LARGE",
+        "SMALL"
+      ],
+      "enumClass": "BlockEnums.TileType"
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_concrete_marked",
+      "id": "hbm:brick_concrete_marked",
+      "legacyRegistryId": "hbm:tile.brick_concrete_marked",
+      "originalClass": "BlockWriting",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1510
+      },
+      "creativeTab": "block",
+      "hardness": 15,
+      "explosionResistance": 96
+    }
+  ]
+}

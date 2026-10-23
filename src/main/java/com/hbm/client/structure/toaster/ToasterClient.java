@@ -1,0 +1,21 @@
+package com.hbm.client.structure.toaster;
+
+import com.hbm.block.toaster.ToasterContent;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ModelEvent;
+
+@EventBusSubscriber(modid = "hbm", value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+public final class ToasterClient {
+    @SubscribeEvent public static void models(ModelEvent.ModifyBakingResult event) {
+        event.getModels().replaceAll((id, model) -> {
+            if (!id.id().equals(ToasterContent.BLOCK.getId())) return model;
+            String variant = id.getVariant();
+            if (variant.equals("inventory")) return ToasterModel.inventory(model, event.getTextureGetter());
+            if (variant.startsWith("legacy_meta=")) return new ToasterModel(model, false, Integer.parseInt(variant.substring(12)), event.getTextureGetter());
+            return model;
+        });
+    }
+    private ToasterClient() {}
+}

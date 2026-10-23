@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:mold_base",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " B ",
+    "BIB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:ingot_firebrick"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    }
+  }
+}

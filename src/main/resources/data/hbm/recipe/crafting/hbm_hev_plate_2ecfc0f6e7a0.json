@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MPM",
+    "IBI",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:plate_armor_hev"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:titanium_plate",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "M": {
+      "item": "hbm:motor_desh"
+    }
+  },
+  "result": {
+    "id": "hbm:hev_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:drone",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "category": "misc",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:drone",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    }
+  ]
+}

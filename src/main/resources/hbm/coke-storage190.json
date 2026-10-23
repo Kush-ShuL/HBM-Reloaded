@@ -1,0 +1,45 @@
+{
+  "module": "coke-storage190",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "block_coke",
+      "id": "hbm:block_coke",
+      "legacyRegistryId": "hbm:tile.block_coke",
+      "originalClass": "BlockCoke",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1409
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2546
+          },
+          "expression": "register(block_coke)",
+          "arguments": [
+            "block_coke"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataRange": [
+        0,
+        2
+      ],
+      "names": [
+        "coal",
+        "lignite",
+        "petroleum"
+      ],
+      "enumClass": "EnumCokeType",
+      "stateMetadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": false
+    }
+  ]
+}

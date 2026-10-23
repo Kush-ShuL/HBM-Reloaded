@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:acidizer",
+  "display": {
+    "icon": {
+      "id": "hbm:machine_silex"
+    },
+    "title": {
+      "translate": "achievement.SILEX"
+    },
+    "description": {
+      "translate": "achievement.SILEX.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:silex"
+      }
+    }
+  }
+}

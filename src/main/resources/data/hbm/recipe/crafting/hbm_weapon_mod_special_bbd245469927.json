@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 14
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "PIP"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_capacitor_tantalium"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+    },
+    "I": {
+      "item": "hbm:circuit_chip_bismoid"
+    }
+  }
+}

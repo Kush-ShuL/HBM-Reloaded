@@ -1,0 +1,39 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 3,
+  "result": {
+    "id": "hbm:ingot_steel_dusted",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 4
+    }
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:ingot_steel_dusted",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 3
+        }
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:ingot_steel_dusted",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 3
+        }
+      }
+    },
+    "count": 1
+  },
+  "kind": "hot",
+  "order": 76000003
+}

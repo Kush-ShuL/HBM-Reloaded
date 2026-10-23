@@ -1,0 +1,359 @@
+{
+  "manufacture": [
+    {
+      "id": "hbm:anvil/construction/source_360_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 360
+      },
+      "file": "data/hbm/recipe/anvil/construction/source_360_0.json",
+      "sourceControl": [],
+      "recipe": {
+        "type": "hbm:anvil_construction",
+        "inputs": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plankwood"
+            },
+            "count": 16
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platesteel"
+            },
+            "count": 6
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcopper"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotiron"
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:sawblade",
+                "count": 1
+              }
+            },
+            "count": 1
+          }
+        ],
+        "outputs": [
+          {
+            "stack": {
+              "id": "hbm:machine_sawmill",
+              "count": 1
+            },
+            "chance": 1.0
+          }
+        ],
+        "tier_lower": 2,
+        "tier_upper": -1,
+        "overlay": "CONSTRUCTION",
+        "order": 360000000
+      }
+    },
+    {
+      "id": "hbm:anvil/construction/source_406_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 406
+      },
+      "file": "data/hbm/recipe/anvil/construction/source_406_0.json",
+      "sourceControl": [],
+      "recipe": {
+        "type": "hbm:anvil_construction",
+        "inputs": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platesteel"
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotiron"
+            },
+            "count": 12
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcopper"
+            },
+            "count": 2
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_vacuum_tube",
+                "count": 1
+              }
+            },
+            "count": 2
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:sawblade",
+                "count": 1
+              }
+            },
+            "count": 1
+          }
+        ],
+        "outputs": [
+          {
+            "stack": {
+              "id": "hbm:machine_autosaw",
+              "count": 1
+            },
+            "chance": 1.0
+          }
+        ],
+        "tier_lower": 2,
+        "tier_upper": -1,
+        "overlay": "CONSTRUCTION",
+        "order": 406000000
+      }
+    }
+  ],
+  "sawmillDisplays": [
+    {
+      "input": "logWood",
+      "result": [
+        "minecraft:oak_planks",
+        6
+      ],
+      "sawdustChance": 0.5
+    },
+    {
+      "input": "plankWood",
+      "result": [
+        "minecraft:stick",
+        6
+      ],
+      "sawdustChance": 0.1
+    },
+    {
+      "input": "stickWood",
+      "result": [
+        "hbm:powder_sawdust",
+        1
+      ],
+      "sawdustChance": 0
+    },
+    {
+      "input": "treeSapling",
+      "result": [
+        "minecraft:stick",
+        1
+      ],
+      "sawdustChance": 0.1
+    }
+  ],
+  "states": {
+    "machine_sawmill": {
+      "0": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "0"
+        }
+      },
+      "1": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "1"
+        }
+      },
+      "2": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "2"
+        }
+      },
+      "3": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "3"
+        }
+      },
+      "4": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "4"
+        }
+      },
+      "5": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "5"
+        }
+      },
+      "6": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "6"
+        }
+      },
+      "7": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "7"
+        }
+      },
+      "8": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "8"
+        }
+      },
+      "9": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "9"
+        }
+      },
+      "10": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "10"
+        }
+      },
+      "11": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "11"
+        }
+      },
+      "12": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "12"
+        }
+      },
+      "13": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "13"
+        }
+      },
+      "14": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "14"
+        }
+      },
+      "15": {
+        "Name": "hbm:machine_sawmill",
+        "Properties": {
+          "legacy_meta": "15"
+        }
+      }
+    },
+    "machine_autosaw": {
+      "0": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "1": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "2": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "3": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "4": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "5": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "6": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "7": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "8": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "9": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "10": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "11": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "12": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "13": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "14": {
+        "Name": "hbm:machine_autosaw"
+      },
+      "15": {
+        "Name": "hbm:machine_autosaw"
+      }
+    }
+  },
+  "blockEntityAliases": {
+    "tileentity_sawmill": {
+      "target": "hbm:machine_sawmill",
+      "host": "hbm:machine_sawmill",
+      "coreMetadata": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventory": "lowercase items/slot; all3 real stacks",
+      "fields": [
+        "hasBlade",
+        "progress",
+        "muffled",
+        "tilted",
+        "name"
+      ]
+    },
+    "tileentity_autosaw": {
+      "target": "hbm:machine_autosaw",
+      "host": "hbm:machine_autosaw",
+      "fields": [
+        "isOn",
+        "isSuspended",
+        "skip",
+        "yaw",
+        "pitch",
+        "state",
+        "muffled",
+        "tilted",
+        "t",
+        "t_max",
+        "t_type",
+        "t_p"
+      ]
+    }
+  }
+}

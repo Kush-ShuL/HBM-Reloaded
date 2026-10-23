@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.runtime.registry.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SparseRegistryIterationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

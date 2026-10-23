@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:motor",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " R ",
+    "ICI",
+    " T "
+  ],
+  "key": {
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+    },
+    "T": {
+      "item": "hbm:coil_copper_torus"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "C": {
+      "item": "hbm:coil_copper"
+    }
+  }
+}

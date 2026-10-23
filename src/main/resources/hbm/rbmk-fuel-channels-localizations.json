@@ -1,0 +1,34 @@
+{
+  "en_us": {
+    "container.rbmkReaSim": "RBMK Fuel Rod (ReaSim)",
+    "container.rbmkRod": "RBMK Fuel Rod",
+    "tile.rbmk_rod.name": "RBMK Fuel Channel",
+    "block.hbm.rbmk_rod": "RBMK Fuel Channel",
+    "tile.rbmk_rod_mod.name": "RBMK Moderated Fuel Channel",
+    "block.hbm.rbmk_rod_mod": "RBMK Moderated Fuel Channel",
+    "tile.rbmk_rod_reasim.name": "RBMK Fuel Channel (ReaSim)",
+    "block.hbm.rbmk_rod_reasim": "RBMK Fuel Channel (ReaSim)",
+    "tile.rbmk_rod_reasim_mod.name": "RBMK Moderated Fuel Channel (ReaSim)",
+    "block.hbm.rbmk_rod_reasim_mod": "RBMK Moderated Fuel Channel (ReaSim)",
+    "gui.hbm.rbmk.fuel.autoloader1": "Fuel skin temperature has exceeded 1,000°C,",
+    "gui.hbm.rbmk.fuel.autoloader2": "autoloaders can no longer cycle fuel!",
+    "gui.hbm.rbmk.fuel.manual1": "Fuel skin temperature has exceeded 200°C,",
+    "gui.hbm.rbmk.fuel.manual2": "fuel can no longer be removed by hand!"
+  },
+  "zh_cn": {
+    "container.rbmkReaSim": "RBMK石墨式反应堆燃料棒 (ReaSim)",
+    "container.rbmkRod": "RBMK石墨式反应堆燃料棒",
+    "tile.rbmk_rod.name": "RBMK反应堆燃料通道",
+    "block.hbm.rbmk_rod": "RBMK反应堆燃料通道",
+    "tile.rbmk_rod_mod.name": "RBMK反应堆慢化燃料通道",
+    "block.hbm.rbmk_rod_mod": "RBMK反应堆慢化燃料通道",
+    "tile.rbmk_rod_reasim.name": "RBMK反应堆燃料通道(ReaSim)",
+    "block.hbm.rbmk_rod_reasim": "RBMK反应堆燃料通道(ReaSim)",
+    "tile.rbmk_rod_reasim_mod.name": "RBMK反应堆慢化燃料通道(ReaSim)",
+    "block.hbm.rbmk_rod_reasim_mod": "RBMK反应堆慢化燃料通道(ReaSim)",
+    "gui.hbm.rbmk.fuel.autoloader1": "燃料包壳温度已超过1,000°C，",
+    "gui.hbm.rbmk.fuel.autoloader2": "自动装料机无法再更换燃料！",
+    "gui.hbm.rbmk.fuel.manual1": "燃料包壳温度已超过200°C，",
+    "gui.hbm.rbmk.fuel.manual2": "已无法徒手取出燃料！"
+  }
+}

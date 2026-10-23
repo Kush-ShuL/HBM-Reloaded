@@ -1,0 +1,10 @@
+package com.hbm.client.reactor.pile.core;
+import com.hbm.machine.reactor.pile.core.*;import net.minecraft.client.Minecraft;import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;import net.neoforged.api.distmarker.Dist;import net.neoforged.bus.api.SubscribeEvent;import net.neoforged.fml.common.EventBusSubscriber;import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;import net.neoforged.neoforge.client.event.*;import net.neoforged.neoforge.client.extensions.common.*;
+@EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+public final class PileCoreClient {
+ @SubscribeEvent public static void setup(FMLClientSetupEvent event){event.enqueueWork(()->{PileCoreContent.CLIENT_FIRE=bullet->{var player=Minecraft.getInstance().player;if(player!=null&&player.distanceTo(bullet)<100)com.hbm.bomb.conventional.grenade.FlameEffects.client(bullet.level(),bullet.getX(),bullet.getY()-.125,bullet.getZ(),0);};});}
+ @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers event){event.registerBlockEntityRenderer(PileCoreContent.LOADER.get(),context->new PileRenderer<>(context));event.registerBlockEntityRenderer(PileCoreContent.VENT.get(),context->new PileRenderer<>(context));event.registerBlockEntityRenderer(PileCoreContent.CONTROL.get(),context->new PileRenderer<>(context));}
+ @SubscribeEvent public static void models(ModelEvent.ModifyBakingResult event){event.getModels().replaceAll((key,model)->{if(!key.id().equals(PileCoreContent.BODY.getId())||key.getVariant().equals("inventory"))return model;int meta=Integer.parseInt(key.getVariant().substring("legacy_meta=".length()));return new PileCTModel(model,meta,event.getTextureGetter());});}
+ @SubscribeEvent public static void extensions(RegisterClientExtensionsEvent event){event.registerItem(new IClientItemExtensions(){private PileItemRenderer renderer;@Override public BlockEntityWithoutLevelRenderer getCustomRenderer(){if(renderer==null)renderer=new PileItemRenderer();return renderer;}},PileCoreContent.DEVICE_ITEM.get());}
+ private PileCoreClient(){}
+}

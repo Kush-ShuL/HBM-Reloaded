@@ -1,0 +1,50 @@
+{
+  "block": {
+    "symbol": "machine_centrifuge",
+    "id": "hbm:machine_centrifuge",
+    "class": "MachineCentrifuge",
+    "tab": "machine",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+      "line": 1785
+    }
+  },
+  "upgrades": [
+    {
+      "symbol": "upgrade_overdrive_1",
+      "id": "hbm:upgrade_overdrive_1",
+      "class": "ItemMachineUpgrade",
+      "tab": "control",
+      "type": "OVERDRIVE",
+      "tier": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3751
+      }
+    },
+    {
+      "symbol": "upgrade_overdrive_2",
+      "id": "hbm:upgrade_overdrive_2",
+      "class": "ItemMachineUpgrade",
+      "tab": "control",
+      "type": "OVERDRIVE",
+      "tier": 2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3752
+      }
+    },
+    {
+      "symbol": "upgrade_overdrive_3",
+      "id": "hbm:upgrade_overdrive_3",
+      "class": "ItemMachineUpgrade",
+      "tab": "control",
+      "type": "OVERDRIVE",
+      "tier": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3753
+      }
+    }
+  ]
+}

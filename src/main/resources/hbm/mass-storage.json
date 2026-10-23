@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "owner": "ModBlocks",
+      "symbol": "mass_storage",
+      "id": "mass_storage",
+      "enumClass": "BlockMassStorage",
+      "names": [
+        "iron",
+        "desh",
+        "advanced",
+        "wood"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "mass_storage",
+      "id": "hbm:mass_storage",
+      "originalClass": "BlockMassStorage",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2182",
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "iron",
+        "desh",
+        "advanced",
+        "wood"
+      ],
+      "enumClass": "BlockMassStorage",
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ],
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "iron",
+          "capacity": 10000
+        },
+        {
+          "metadata": 1,
+          "name": "desh",
+          "capacity": 100000
+        },
+        {
+          "metadata": 2,
+          "name": "advanced",
+          "capacity": 1000000
+        },
+        {
+          "metadata": 3,
+          "name": "wood",
+          "capacity": 100
+        }
+      ],
+      "legacyBlockEntityId": "tileentity_mass_storage"
+    }
+  ],
+  "creativeMetadataOrder": [
+    3,
+    0,
+    1,
+    2
+  ],
+  "legacyBlockEntityId": "tileentity_mass_storage",
+  "computerType": "ntm_mass_storage",
+  "computerMethods": [
+    "getFill",
+    "getCapacity",
+    "getType",
+    "getOutputMode",
+    "setOutputMode"
+  ]
+}

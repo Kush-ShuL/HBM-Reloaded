@@ -1,0 +1,61 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.50bmgbypass",
+  "duration": 100,
+  "power": 100,
+  "order": 325,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:ammo_secret_bmg50_black",
+            "count": 12
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:casing_large_steel"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustanysmokeless"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_secret",
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:black_diamond"
+        }
+      },
+      "count": 1
+    }
+  ],
+  "pools": [
+    "secret.psalm"
+  ]
+}

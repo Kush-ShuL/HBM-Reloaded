@@ -1,0 +1,17 @@
+{
+  "parent": "hbm:block/watz_end",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/watz_end_bolted"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/watz_end_plain"
+    }
+  ]
+}

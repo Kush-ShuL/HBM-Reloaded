@@ -1,0 +1,122 @@
+{
+  "module": "guide-display249",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "book_guide",
+      "id": "hbm:book_guide",
+      "legacyRegistryId": "hbm:tile.book_guide",
+      "originalClass": "Guide",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2151
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3435
+          },
+          "expression": "GameRegistry.registerBlock(book_guide, book_guide.getUnlocalizedName())",
+          "arguments": [
+            "book_guide",
+            "book_guide.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "nuke",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": false
+    }
+  ],
+  "javaSources": [
+    "main/com/hbm/block/guidedisplay/GuideDisplayBlock.java",
+    "main/com/hbm/block/guidedisplay/GuideDisplayContent.java",
+    "main/com/hbm/client/guidedisplay/GuideDisplayClient.java"
+  ],
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 485
+      },
+      "expression": "addRecipeAuto(new ItemStack(ModBlocks.book_guide, 1), new Object[] { \"IBI\", \"LBL\", \"IBI\", 'B', Items.book, 'I', KEY_BLACK, 'L', KEY_BLUE })",
+      "id": "hbm:crafting/hbm_book_guide_edba9bf5f656",
+      "resource": "data/hbm/recipe/crafting/hbm_book_guide_edba9bf5f656.json",
+      "data": {
+        "result": {
+          "id": "hbm:book_guide",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "IBI",
+          "LBL",
+          "IBI"
+        ],
+        "key": {
+          "B": {
+            "item": "minecraft:book"
+          },
+          "I": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dyeblack"
+          },
+          "L": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dyeblue"
+          }
+        }
+      },
+      "status": "ready-source-native-crafting"
+    }
+  ],
+  "sourceAuthority": [
+    "legacy/src/main/java/com/hbm/blocks/generic/Guide.java",
+    "legacy/src/main/java/com/hbm/main/ClientProxy.java:2006",
+    "legacy/src/main/java/com/hbm/main/CraftingManager.java:485"
+  ],
+  "behavior": {
+    "shape": "Original full cube",
+    "hardness": 5,
+    "resistance": 10,
+    "placementMetadata": [
+      2,
+      5,
+      3,
+      4
+    ],
+    "sourceRaw16FaceMap": true,
+    "sourceTopAndBottomNeverRotated": true,
+    "clientNonSneakRightClick": "https://nucleartech.wiki/wiki/Main_Page",
+    "serverInteraction": "Original default PASS",
+    "crosshairText": {
+      "offsetX": 8,
+      "offsetY": -20,
+      "frontColor": "00ff00",
+      "shadowColor": "006000",
+      "shadowOffset": [
+        1,
+        1
+      ]
+    },
+    "gui": null,
+    "energy": null,
+    "fluid": null,
+    "computer": null
+  },
+  "modernAdaptations": [
+    "Actual platform URI opener invoked only by client player interaction, no automatic browsing",
+    "Original hardcoded English HUD message localized; selected native font and normal CROSSHAIR layer retain user font/layer preferences",
+    "Sole existing native crafting/JEI/REI and ordinary Jade block identity; no invented processing category"
+  ],
+  "stageOnly": true,
+  "compiled": false,
+  "runtimeValidated": false,
+  "playerAccepted": false
+}

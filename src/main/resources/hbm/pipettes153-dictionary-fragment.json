@@ -1,0 +1,21 @@
+{
+  "source": "Forge1.7.10 OreDictionary.initVanillaEntries line87: blockGlassColorless -> Blocks.glass",
+  "sourceUrl": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java#L87",
+  "order": [
+    "hbm:legacy_ore_dict/blockglasscolorless"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/blockglasscolorless",
+      "raw": "blockGlassColorless"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "tag": "hbm:legacy_ore_dict/blockglasscolorless",
+      "item": "minecraft:glass",
+      "metadata": 0
+    }
+  ]
+}

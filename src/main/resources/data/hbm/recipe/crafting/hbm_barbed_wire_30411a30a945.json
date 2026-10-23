@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:barbed_wire",
+    "count": 16
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AIA",
+    "I I",
+    "AIA"
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinesteel"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    }
+  }
+}

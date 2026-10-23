@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_coltan",
+    {
+      "id": "#c:ores/coltan",
+      "required": false
+    }
+  ]
+}

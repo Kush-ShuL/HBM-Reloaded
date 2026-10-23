@@ -1,0 +1,7600 @@
+{
+  "normal": {
+    "recipes": [
+      {
+        "name": "chem.hydrogen",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          38
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemCoal",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.hydrogencoke",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          38
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemanycoke",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.oxygen",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          39
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "OXYGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.xenon",
+        "duration": 300,
+        "power": 1000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          40
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            16000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "XENON",
+            50,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.xenonoxy",
+        "duration": 20,
+        "power": 1000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          40
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ],
+          [
+            "OXYGEN",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "XENON",
+            50,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..xenonoxy"
+      },
+      {
+        "name": "chem.helium3",
+        "duration": 25,
+        "power": 2000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          57
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:moon_turf",
+            1,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HELIUM3",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.co2",
+        "duration": 60,
+        "power": 100,
+        "inputFluid": [
+          [
+            "GAS",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "CARBONDIOXIDE",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.perfluoromethyl",
+        "duration": 20,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ],
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PERFLUOROMETHYL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.cccentrifuge",
+        "duration": 200,
+        "power": 100,
+        "inputFluid": [
+          [
+            "CHLOROCALCITE_CLEANED",
+            500,
+            0
+          ],
+          [
+            "SULFURIC_ACID",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "POTASSIUM_CHLORIDE",
+            250,
+            0
+          ],
+          [
+            "CALCIUM_CHLORIDE",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.ticl4",
+        "duration": 60,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "ingotIlmenite",
+            4
+          ],
+          [
+            "dict",
+            "gemanycoke",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "CHLORINE",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "TITANIUM_TETRACHLORIDE",
+            4000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.ethanol",
+        "duration": 50,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          59
+        ],
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            10,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "ETHANOL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.biogas",
+        "duration": 60,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          26
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass",
+            16,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BIOGAS",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.biofuel",
+        "duration": 60,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          27
+        ],
+        "inputFluid": [
+          [
+            "BIOGAS",
+            1500,
+            0
+          ],
+          [
+            "ETHANOL",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BIOFUEL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.reoil",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          16
+        ],
+        "inputFluid": [
+          [
+            "SMEAR",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "RECLAIMED",
+            800,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.gasoline",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          46
+        ],
+        "inputFluid": [
+          [
+            "NAPHTHA",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "GASOLINE",
+            800,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coallube",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          18
+        ],
+        "inputFluid": [
+          [
+            "COALCREOSOTE",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "LUBRICANT",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..lube"
+      },
+      {
+        "name": "chem.heavylube",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          18
+        ],
+        "inputFluid": [
+          [
+            "HEAVYOIL",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "LUBRICANT",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..lube"
+      },
+      {
+        "name": "chem.tarsand",
+        "duration": 200,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:ore_oil_sand",
+          1,
+          0
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:ore_oil_sand",
+            16,
+            0
+          ],
+          [
+            "dict",
+            "anyTar",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:sand",
+              16,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BITUMEN",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.tel",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "anyTar",
+            1
+          ],
+          [
+            "dict",
+            "dustLead",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            100,
+            0
+          ],
+          [
+            "STEAM",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:fuel_additive",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.deicer",
+        "duration": 40,
+        "power": 100,
+        "inputFluid": [
+          [
+            "GAS",
+            100,
+            0
+          ],
+          [
+            "HYDROGEN",
+            50,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:fuel_additive",
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.cobble",
+        "duration": 20,
+        "power": 100,
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            25,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:cobblestone",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.stone",
+        "duration": 60,
+        "power": 500,
+        "blueprintpool": "discover..stone",
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            25,
+            0
+          ],
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:stone",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.obsidian",
+        "duration": 60,
+        "power": 500,
+        "blueprintpool": "discover..stone",
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            500,
+            0
+          ],
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:obsidian",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.aggregate",
+        "duration": 320,
+        "power": 500,
+        "named": true,
+        "blueprintpool": "discover..stone",
+        "inputItem": [
+          [
+            "item",
+            "minecraft:cobblestone",
+            16,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:gravel",
+              8,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "minecraft:sand",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.concrete",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:gravel",
+            8,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:concrete_smooth",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.concreteasbestos",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            4,
+            0
+          ],
+          [
+            "dict",
+            "ingotAsbestos",
+            4
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:concrete_asbestos",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.ducrete",
+        "duration": 150,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            4,
+            0
+          ],
+          [
+            "dict",
+            "ingotFerrouranium",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ducrete_smooth",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.liquidconk",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:gravel",
+            8,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "CONCRETE",
+            16000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.asphalt",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:gravel",
+            2,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            6
+          ]
+        ],
+        "inputFluid": [
+          [
+            "BITUMEN",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:asphalt",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterylead",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "plateSteel",
+            4
+          ],
+          [
+            "dict",
+            "ingotLead",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SULFURIC_ACID",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterylithium",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustLithium",
+            12
+          ],
+          [
+            "dict",
+            "dustCobalt",
+            8
+          ],
+          [
+            "dict",
+            "ingotAnyPlastic",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "OXYGEN",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              2
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterysodium",
+        "duration": 100,
+        "power": 10000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSodium",
+            24
+          ],
+          [
+            "dict",
+            "dustIron",
+            24
+          ],
+          [
+            "dict",
+            "ingotAnyHardPlastic",
+            12
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              3
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batteryschrabidium",
+        "duration": 100,
+        "power": 25000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSchrabidium",
+            24
+          ],
+          [
+            "dict",
+            "plateTripleAnyBismoidBronze",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HELIUM4",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              4
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batteryquantum",
+        "duration": 100,
+        "power": 100000,
+        "inputItem": [
+          [
+            "dict",
+            "wireDenseBSCCO",
+            24
+          ],
+          [
+            "item",
+            "hbm:pellet_charged",
+            32,
+            0
+          ],
+          [
+            "item",
+            "hbm:ingot_cft",
+            16,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PERFLUOROMETHYL_COLD",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              5
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PERFLUOROMETHYL",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.desh",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_desh_mix",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LIGHTOIL",
+            200,
+            0
+          ],
+          [
+            "MERCURY",
+            200,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_desh",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.deshcracked",
+        "duration": 100,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_desh_mix",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LIGHTOIL_CRACK",
+            500,
+            1
+          ],
+          [
+            "MERCURY",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_desh",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.polymer",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustCoal",
+            2
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_polymer",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.bakelite",
+        "duration": 100,
+        "power": 100,
+        "inputFluid": [
+          [
+            "AROMATICS",
+            500,
+            0
+          ],
+          [
+            "PETROLEUM",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_bakelite",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.rubber",
+        "duration": 100,
+        "power": 200,
+        "inputItem": [
+          [
+            "dict",
+            "dustSulfur",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_rubber",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.hardplastic",
+        "duration": 100,
+        "power": 1000,
+        "inputFluid": [
+          [
+            "XYLENE",
+            500,
+            0
+          ],
+          [
+            "PHOSGENE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_pc",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.pvc",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustCadmium",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            250,
+            0
+          ],
+          [
+            "CHLORINE",
+            250,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_pvc",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.kevlar",
+        "duration": 60,
+        "power": 300,
+        "inputFluid": [
+          [
+            "AROMATICS",
+            200,
+            0
+          ],
+          [
+            "NITRIC_ACID",
+            100,
+            0
+          ],
+          [
+            "CHLORINE",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:plate_kevlar",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.lightconstruction",
+        "duration": 400,
+        "power": 25000,
+        "named": true,
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_alclad",
+              1,
+              0
+            ]
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "plateDuraSteel",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "XYLENE",
+            1000,
+            0
+          ],
+          [
+            "PHOSGENE",
+            1000,
+            0
+          ],
+          [
+            "SOURGAS",
+            4000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.carboncarbon",
+        "duration": 400,
+        "power": 100000,
+        "named": true,
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_alclad",
+              1,
+              0
+            ]
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemanycoke",
+            8
+          ],
+          [
+            "dict",
+            "plateTitanium",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEAVYOIL_VACUUM",
+            1000,
+            0
+          ],
+          [
+            "SYNGAS",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.meth",
+        "duration": 60,
+        "power": 300,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:wheat",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:cocoa_beans",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LUBRICANT",
+            400,
+            0
+          ],
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:chocolate",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.epearl",
+        "duration": 100,
+        "power": 300,
+        "inputItem": [
+          [
+            "dict",
+            "dustDiamond",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "XPJUICE",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "ENDERJUICE",
+            100,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.meatprocessing",
+        "duration": 200,
+        "power": 200,
+        "named": true,
+        "icon": [
+          "hbm:glyphid_meat",
+          1,
+          0
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "glyphidMeat",
+            3
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:sulfur",
+              4,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:niter",
+              3,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SALIENT",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.rustysteel",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:deco_steel",
+            8,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:deco_rusty_steel",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.biosolidfuel",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass_compressed",
+            4,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:solid_fuel",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..biosolidfuel"
+      },
+      {
+        "name": "chem.biooilsolidfuel",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass_compressed",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:solid_fuel",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..biosolidfuel"
+      },
+      {
+        "name": "chem.oilelectrodes",
+        "duration": 600,
+        "power": 100,
+        "named": true,
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:arc_electrode",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..electrodes"
+      },
+      {
+        "name": "chem.lubeelectrodes",
+        "duration": 600,
+        "power": 100,
+        "named": true,
+        "inputFluid": [
+          [
+            "LUBRICANT",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:arc_electrode",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..electrodes"
+      },
+      {
+        "name": "chem.peroxide",
+        "duration": 50,
+        "power": 100,
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.sulfuricacid",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSulfur",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            0
+          ],
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SULFURIC_ACID",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.nitricacid",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SULFURIC_ACID",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "NITRIC_ACID",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.birkeland",
+        "duration": 200,
+        "power": 5000,
+        "named": true,
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ],
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "NITRIC_ACID",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..birkeland"
+      },
+      {
+        "name": "chem.schrabidic",
+        "duration": 60,
+        "power": 5000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:pellet_charged",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SAS3",
+            2000,
+            0
+          ],
+          [
+            "PEROXIDE",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SCHRABIDIC",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.schrabidate",
+        "duration": 150,
+        "power": 5000,
+        "inputItem": [
+          [
+            "dict",
+            "dustIron",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SCHRABIDIC",
+            250,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_schrabidate",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltancleaning",
+        "duration": 60,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustColtan",
+            2
+          ],
+          [
+            "dict",
+            "dustCoal",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            250,
+            0
+          ],
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_coltan",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:powder_niobium",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:dust",
+              1,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "WATER",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltanpain",
+        "duration": 120,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_coltan",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GAS",
+            1000,
+            0
+          ],
+          [
+            "OXYGEN",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PAIN",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltancrystal",
+        "duration": 80,
+        "power": 100,
+        "inputFluid": [
+          [
+            "PAIN",
+            1000,
+            0
+          ],
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:gem_tantalium",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:dust",
+              3,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "WATER",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.cordite",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            2
+          ],
+          [
+            "item",
+            "hbm:powder_sawdust",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GAS",
+            200,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:cordite",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.rocketfuel",
+        "duration": 200,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:solid_fuel",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            200,
+            0
+          ],
+          [
+            "NITRIC_ACID",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:rocket_fuel",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.dynamite",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_dynamite",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.tnt",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "AROMATICS",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_tnt",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.tatb",
+        "duration": 50,
+        "power": 5000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:ball_tnt",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SOURGAS",
+            200,
+            1
+          ],
+          [
+            "NITRIC_ACID",
+            10,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_tatb",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.c4",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_c4",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.napalm",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:canister_empty",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GASOLINE",
+            100,
+            0
+          ],
+          [
+            "AROMATICS",
+            50,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:canister_napalm",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.laminate",
+        "duration": 20,
+        "power": 100,
+        "inputFluid": [
+          [
+            "XYLENE",
+            50,
+            0
+          ],
+          [
+            "PHOSGENE",
+            50,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "blockGlass",
+            1
+          ],
+          [
+            "dict",
+            "boltSteel",
+            4
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:reinforced_laminate",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.polarized",
+        "duration": 100,
+        "power": 500,
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "paneGlass",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_glass_polarized",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.yellowcake",
+        "duration": 250,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "billetUranium",
+            2
+          ],
+          [
+            "dict",
+            "dustSulfur",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_yellowcake",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.uf6",
+        "duration": 100,
+        "power": 500,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          29
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_yellowcake",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:sulfur",
+              2,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "UF6",
+            1200,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.puf6",
+        "duration": 200,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "dustPlutonium",
+            1
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            3
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PUF6",
+            900,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.sas3",
+        "duration": 200,
+        "power": 5000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSchrabidium",
+            1
+          ],
+          [
+            "dict",
+            "dustSulfur",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SAS3",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.balefire",
+        "duration": 100,
+        "power": 10000,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          41
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:egg_balefire_shard",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "KEROSENE",
+            6000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_balefire",
+              1,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BALEFIRE",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.dhc",
+        "duration": 400,
+        "power": 500,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          153
+        ],
+        "inputFluid": [
+          [
+            "DEUTERIUM",
+            500,
+            0
+          ],
+          [
+            "REFORMGAS",
+            250,
+            0
+          ],
+          [
+            "SYNGAS",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "DHC",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.osmiridiumdeath",
+        "duration": 240,
+        "power": 1000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_paleogenite",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            8
+          ],
+          [
+            "item",
+            "hbm:nugget_bismuth",
+            4,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            5
+          ]
+        ],
+        "outputFluid": [
+          [
+            "DEATH",
+            1000,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "lbsm": {
+    "recipes": [
+      {
+        "name": "chem.hydrogen",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          38
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemCoal",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.hydrogencoke",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          38
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemanycoke",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.oxygen",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          39
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "OXYGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.xenon",
+        "duration": 300,
+        "power": 1000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          40
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            16000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "XENON",
+            50,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.xenonoxy",
+        "duration": 20,
+        "power": 1000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          40
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ],
+          [
+            "OXYGEN",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "XENON",
+            50,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..xenonoxy"
+      },
+      {
+        "name": "chem.helium3",
+        "duration": 25,
+        "power": 2000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          57
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:moon_turf",
+            1,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HELIUM3",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.co2",
+        "duration": 60,
+        "power": 100,
+        "inputFluid": [
+          [
+            "GAS",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "CARBONDIOXIDE",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.perfluoromethyl",
+        "duration": 20,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ],
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PERFLUOROMETHYL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.cccentrifuge",
+        "duration": 200,
+        "power": 100,
+        "inputFluid": [
+          [
+            "CHLOROCALCITE_CLEANED",
+            500,
+            0
+          ],
+          [
+            "SULFURIC_ACID",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "POTASSIUM_CHLORIDE",
+            250,
+            0
+          ],
+          [
+            "CALCIUM_CHLORIDE",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.ticl4",
+        "duration": 60,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "ingotIlmenite",
+            4
+          ],
+          [
+            "dict",
+            "gemanycoke",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "CHLORINE",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "TITANIUM_TETRACHLORIDE",
+            4000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.ethanol",
+        "duration": 50,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          59
+        ],
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            10,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "ETHANOL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.biogas",
+        "duration": 60,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          26
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass",
+            16,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BIOGAS",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.biofuel",
+        "duration": 60,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          27
+        ],
+        "inputFluid": [
+          [
+            "BIOGAS",
+            1500,
+            0
+          ],
+          [
+            "ETHANOL",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BIOFUEL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.reoil",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          16
+        ],
+        "inputFluid": [
+          [
+            "SMEAR",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "RECLAIMED",
+            800,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.gasoline",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          46
+        ],
+        "inputFluid": [
+          [
+            "NAPHTHA",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "GASOLINE",
+            800,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coallube",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          18
+        ],
+        "inputFluid": [
+          [
+            "COALCREOSOTE",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "LUBRICANT",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..lube"
+      },
+      {
+        "name": "chem.heavylube",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          18
+        ],
+        "inputFluid": [
+          [
+            "HEAVYOIL",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "LUBRICANT",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..lube"
+      },
+      {
+        "name": "chem.tarsand",
+        "duration": 200,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:ore_oil_sand",
+          1,
+          0
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:ore_oil_sand",
+            16,
+            0
+          ],
+          [
+            "dict",
+            "anyTar",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:sand",
+              16,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BITUMEN",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.tel",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "anyTar",
+            1
+          ],
+          [
+            "dict",
+            "dustLead",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            100,
+            0
+          ],
+          [
+            "STEAM",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:fuel_additive",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.deicer",
+        "duration": 40,
+        "power": 100,
+        "inputFluid": [
+          [
+            "GAS",
+            100,
+            0
+          ],
+          [
+            "HYDROGEN",
+            50,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:fuel_additive",
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.cobble",
+        "duration": 20,
+        "power": 100,
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            25,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:cobblestone",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.stone",
+        "duration": 60,
+        "power": 500,
+        "blueprintpool": "discover..stone",
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            25,
+            0
+          ],
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:stone",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.obsidian",
+        "duration": 60,
+        "power": 500,
+        "blueprintpool": "discover..stone",
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            500,
+            0
+          ],
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:obsidian",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.aggregate",
+        "duration": 320,
+        "power": 500,
+        "named": true,
+        "blueprintpool": "discover..stone",
+        "inputItem": [
+          [
+            "item",
+            "minecraft:cobblestone",
+            16,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:gravel",
+              8,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "minecraft:sand",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.concrete",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:gravel",
+            8,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:concrete_smooth",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.concreteasbestos",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            4,
+            0
+          ],
+          [
+            "dict",
+            "ingotAsbestos",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:concrete_asbestos",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.ducrete",
+        "duration": 150,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            4,
+            0
+          ],
+          [
+            "dict",
+            "ingotFerrouranium",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ducrete_smooth",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.liquidconk",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:gravel",
+            8,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "CONCRETE",
+            16000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.asphalt",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:gravel",
+            2,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            6
+          ]
+        ],
+        "inputFluid": [
+          [
+            "BITUMEN",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:asphalt",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterylead",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "plateSteel",
+            4
+          ],
+          [
+            "dict",
+            "ingotLead",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SULFURIC_ACID",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterylithium",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustLithium",
+            12
+          ],
+          [
+            "dict",
+            "dustCobalt",
+            8
+          ],
+          [
+            "dict",
+            "ingotAnyPlastic",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "OXYGEN",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              2
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterysodium",
+        "duration": 100,
+        "power": 10000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSodium",
+            24
+          ],
+          [
+            "dict",
+            "dustIron",
+            24
+          ],
+          [
+            "dict",
+            "ingotAnyHardPlastic",
+            12
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              3
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batteryschrabidium",
+        "duration": 100,
+        "power": 25000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSchrabidium",
+            24
+          ],
+          [
+            "dict",
+            "plateTripleAnyBismoidBronze",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HELIUM4",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              4
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batteryquantum",
+        "duration": 100,
+        "power": 100000,
+        "inputItem": [
+          [
+            "dict",
+            "wireDenseBSCCO",
+            24
+          ],
+          [
+            "item",
+            "hbm:pellet_charged",
+            32,
+            0
+          ],
+          [
+            "item",
+            "hbm:ingot_cft",
+            16,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PERFLUOROMETHYL_COLD",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              5
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PERFLUOROMETHYL",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.desh",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_desh_mix",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LIGHTOIL",
+            200,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_desh",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.deshcracked",
+        "duration": 100,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_desh_mix",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LIGHTOIL_CRACK",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_desh",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.polymer",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustCoal",
+            2
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_polymer",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.bakelite",
+        "duration": 100,
+        "power": 100,
+        "inputFluid": [
+          [
+            "AROMATICS",
+            500,
+            0
+          ],
+          [
+            "PETROLEUM",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_bakelite",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.rubber",
+        "duration": 100,
+        "power": 200,
+        "inputItem": [
+          [
+            "dict",
+            "dustSulfur",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_rubber",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.hardplastic",
+        "duration": 100,
+        "power": 1000,
+        "inputFluid": [
+          [
+            "XYLENE",
+            500,
+            0
+          ],
+          [
+            "PHOSGENE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_pc",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.pvc",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustCadmium",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            250,
+            0
+          ],
+          [
+            "CHLORINE",
+            250,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_pvc",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.kevlar",
+        "duration": 60,
+        "power": 300,
+        "inputFluid": [
+          [
+            "AROMATICS",
+            200,
+            0
+          ],
+          [
+            "NITRIC_ACID",
+            100,
+            0
+          ],
+          [
+            "CHLORINE",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:plate_kevlar",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.lightconstruction",
+        "duration": 400,
+        "power": 25000,
+        "named": true,
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_alclad",
+              1,
+              0
+            ]
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "plateDuraSteel",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "XYLENE",
+            1000,
+            0
+          ],
+          [
+            "PHOSGENE",
+            1000,
+            0
+          ],
+          [
+            "SOURGAS",
+            4000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.carboncarbon",
+        "duration": 400,
+        "power": 100000,
+        "named": true,
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_alclad",
+              1,
+              0
+            ]
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemanycoke",
+            8
+          ],
+          [
+            "dict",
+            "plateTitanium",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEAVYOIL_VACUUM",
+            1000,
+            0
+          ],
+          [
+            "SYNGAS",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.meth",
+        "duration": 60,
+        "power": 300,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:wheat",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:cocoa_beans",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LUBRICANT",
+            400,
+            0
+          ],
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:chocolate",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.epearl",
+        "duration": 100,
+        "power": 300,
+        "inputItem": [
+          [
+            "dict",
+            "dustDiamond",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "XPJUICE",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "ENDERJUICE",
+            100,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.meatprocessing",
+        "duration": 200,
+        "power": 200,
+        "named": true,
+        "icon": [
+          "hbm:glyphid_meat",
+          1,
+          0
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "glyphidMeat",
+            3
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:sulfur",
+              4,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:niter",
+              3,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SALIENT",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.rustysteel",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:deco_steel",
+            8,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:deco_rusty_steel",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.biosolidfuel",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass_compressed",
+            4,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:solid_fuel",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..biosolidfuel"
+      },
+      {
+        "name": "chem.biooilsolidfuel",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass_compressed",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:solid_fuel",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..biosolidfuel"
+      },
+      {
+        "name": "chem.oilelectrodes",
+        "duration": 600,
+        "power": 100,
+        "named": true,
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:arc_electrode",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..electrodes"
+      },
+      {
+        "name": "chem.lubeelectrodes",
+        "duration": 600,
+        "power": 100,
+        "named": true,
+        "inputFluid": [
+          [
+            "LUBRICANT",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:arc_electrode",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..electrodes"
+      },
+      {
+        "name": "chem.peroxide",
+        "duration": 50,
+        "power": 100,
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.sulfuricacid",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSulfur",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            0
+          ],
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SULFURIC_ACID",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.nitricacid",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SULFURIC_ACID",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "NITRIC_ACID",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.birkeland",
+        "duration": 200,
+        "power": 5000,
+        "named": true,
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ],
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "NITRIC_ACID",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..birkeland"
+      },
+      {
+        "name": "chem.schrabidic",
+        "duration": 60,
+        "power": 5000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:pellet_charged",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SAS3",
+            2000,
+            0
+          ],
+          [
+            "PEROXIDE",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SCHRABIDIC",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.schrabidate",
+        "duration": 150,
+        "power": 5000,
+        "inputItem": [
+          [
+            "dict",
+            "dustIron",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SCHRABIDIC",
+            250,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_schrabidate",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltancleaning",
+        "duration": 60,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustColtan",
+            2
+          ],
+          [
+            "dict",
+            "dustCoal",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            250,
+            0
+          ],
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_coltan",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:powder_niobium",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:dust",
+              1,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "WATER",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltanpain",
+        "duration": 120,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_coltan",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GAS",
+            1000,
+            0
+          ],
+          [
+            "OXYGEN",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PAIN",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltancrystal",
+        "duration": 80,
+        "power": 100,
+        "inputFluid": [
+          [
+            "PAIN",
+            1000,
+            0
+          ],
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:gem_tantalium",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:dust",
+              3,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "WATER",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.cordite",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            2
+          ],
+          [
+            "item",
+            "hbm:powder_sawdust",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            200,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:cordite",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.rocketfuel",
+        "duration": 200,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:solid_fuel",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            200,
+            0
+          ],
+          [
+            "NITRIC_ACID",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:rocket_fuel",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.dynamite",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_dynamite",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.tnt",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "AROMATICS",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_tnt",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.tatb",
+        "duration": 50,
+        "power": 5000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:ball_tnt",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SOURGAS",
+            200,
+            1
+          ],
+          [
+            "NITRIC_ACID",
+            10,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_tatb",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.c4",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_c4",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.napalm",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:canister_empty",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GASOLINE",
+            100,
+            0
+          ],
+          [
+            "AROMATICS",
+            50,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:canister_napalm",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.laminate",
+        "duration": 20,
+        "power": 100,
+        "inputFluid": [
+          [
+            "XYLENE",
+            50,
+            0
+          ],
+          [
+            "PHOSGENE",
+            50,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "blockGlass",
+            1
+          ],
+          [
+            "dict",
+            "boltSteel",
+            4
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:reinforced_laminate",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.polarized",
+        "duration": 100,
+        "power": 500,
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "paneGlass",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_glass_polarized",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.yellowcake",
+        "duration": 250,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "billetUranium",
+            2
+          ],
+          [
+            "dict",
+            "dustSulfur",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_yellowcake",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.uf6",
+        "duration": 100,
+        "power": 500,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          29
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_yellowcake",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:sulfur",
+              2,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "UF6",
+            1200,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.puf6",
+        "duration": 200,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "dustPlutonium",
+            1
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            3
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PUF6",
+            900,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.sas3",
+        "duration": 200,
+        "power": 5000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSchrabidium",
+            1
+          ],
+          [
+            "dict",
+            "dustSulfur",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SAS3",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.balefire",
+        "duration": 100,
+        "power": 10000,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          41
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:egg_balefire_shard",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "KEROSENE",
+            6000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_balefire",
+              1,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BALEFIRE",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.dhc",
+        "duration": 400,
+        "power": 500,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          153
+        ],
+        "inputFluid": [
+          [
+            "DEUTERIUM",
+            500,
+            0
+          ],
+          [
+            "REFORMGAS",
+            250,
+            0
+          ],
+          [
+            "SYNGAS",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "DHC",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.osmiridiumdeath",
+        "duration": 240,
+        "power": 1000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_paleogenite",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            8
+          ],
+          [
+            "item",
+            "hbm:nugget_bismuth",
+            4,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            5
+          ]
+        ],
+        "outputFluid": [
+          [
+            "DEATH",
+            1000,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "pressurized": {
+    "recipes": [
+      {
+        "name": "chem.hydrogen",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          38
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemCoal",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.hydrogencoke",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          38
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemanycoke",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.oxygen",
+        "duration": 20,
+        "power": 400,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          39
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "OXYGEN",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.xenon",
+        "duration": 300,
+        "power": 1000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          40
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            16000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "XENON",
+            50,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.xenonoxy",
+        "duration": 20,
+        "power": 1000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          40
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ],
+          [
+            "OXYGEN",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "XENON",
+            50,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..xenonoxy"
+      },
+      {
+        "name": "chem.helium3",
+        "duration": 25,
+        "power": 2000,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          57
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:moon_turf",
+            1,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "HELIUM3",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.co2",
+        "duration": 60,
+        "power": 100,
+        "inputFluid": [
+          [
+            "GAS",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "CARBONDIOXIDE",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.perfluoromethyl",
+        "duration": 20,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ],
+          [
+            "UNSATURATEDS",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PERFLUOROMETHYL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.cccentrifuge",
+        "duration": 200,
+        "power": 100,
+        "inputFluid": [
+          [
+            "CHLOROCALCITE_CLEANED",
+            500,
+            0
+          ],
+          [
+            "SULFURIC_ACID",
+            8000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "POTASSIUM_CHLORIDE",
+            250,
+            0
+          ],
+          [
+            "CALCIUM_CHLORIDE",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.ticl4",
+        "duration": 60,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "ingotIlmenite",
+            4
+          ],
+          [
+            "dict",
+            "gemanycoke",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "CHLORINE",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "TITANIUM_TETRACHLORIDE",
+            4000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.ethanol",
+        "duration": 50,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          59
+        ],
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            10,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "ETHANOL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.biogas",
+        "duration": 60,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:gas_full",
+          1,
+          26
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass",
+            16,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BIOGAS",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.biofuel",
+        "duration": 60,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          27
+        ],
+        "inputFluid": [
+          [
+            "BIOGAS",
+            1500,
+            0
+          ],
+          [
+            "ETHANOL",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BIOFUEL",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.reoil",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          16
+        ],
+        "inputFluid": [
+          [
+            "SMEAR",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "RECLAIMED",
+            800,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.gasoline",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          46
+        ],
+        "inputFluid": [
+          [
+            "NAPHTHA",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "GASOLINE",
+            800,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coallube",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          18
+        ],
+        "inputFluid": [
+          [
+            "COALCREOSOTE",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "LUBRICANT",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..lube"
+      },
+      {
+        "name": "chem.heavylube",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:canister_full",
+          1,
+          18
+        ],
+        "inputFluid": [
+          [
+            "HEAVYOIL",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "LUBRICANT",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..lube"
+      },
+      {
+        "name": "chem.tarsand",
+        "duration": 200,
+        "power": 100,
+        "named": true,
+        "icon": [
+          "hbm:ore_oil_sand",
+          1,
+          0
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:ore_oil_sand",
+            16,
+            0
+          ],
+          [
+            "dict",
+            "anyTar",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:sand",
+              16,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BITUMEN",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.tel",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "anyTar",
+            1
+          ],
+          [
+            "dict",
+            "dustLead",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            100,
+            0
+          ],
+          [
+            "STEAM",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:fuel_additive",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.deicer",
+        "duration": 40,
+        "power": 100,
+        "inputFluid": [
+          [
+            "GAS",
+            100,
+            0
+          ],
+          [
+            "HYDROGEN",
+            50,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:fuel_additive",
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.cobble",
+        "duration": 20,
+        "power": 100,
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            25,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:cobblestone",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.stone",
+        "duration": 60,
+        "power": 500,
+        "blueprintpool": "discover..stone",
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            25,
+            0
+          ],
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:stone",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.obsidian",
+        "duration": 60,
+        "power": 500,
+        "blueprintpool": "discover..stone",
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ],
+          [
+            "LAVA",
+            500,
+            0
+          ],
+          [
+            "AIR",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:obsidian",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.aggregate",
+        "duration": 320,
+        "power": 500,
+        "named": true,
+        "blueprintpool": "discover..stone",
+        "inputItem": [
+          [
+            "item",
+            "minecraft:cobblestone",
+            16,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "minecraft:gravel",
+              8,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "minecraft:sand",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.concrete",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:gravel",
+            8,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:concrete_smooth",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.concreteasbestos",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            4,
+            0
+          ],
+          [
+            "dict",
+            "ingotAsbestos",
+            4
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:concrete_asbestos",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.ducrete",
+        "duration": 150,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            4,
+            0
+          ],
+          [
+            "dict",
+            "ingotFerrouranium",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ducrete_smooth",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.liquidconk",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_cement",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:gravel",
+            8,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "CONCRETE",
+            16000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.asphalt",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:gravel",
+            2,
+            0
+          ],
+          [
+            "dict",
+            "sand",
+            6
+          ]
+        ],
+        "inputFluid": [
+          [
+            "BITUMEN",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:asphalt",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterylead",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "plateSteel",
+            4
+          ],
+          [
+            "dict",
+            "ingotLead",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SULFURIC_ACID",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterylithium",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustLithium",
+            12
+          ],
+          [
+            "dict",
+            "dustCobalt",
+            8
+          ],
+          [
+            "dict",
+            "ingotAnyPlastic",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "OXYGEN",
+            2000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              2
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batterysodium",
+        "duration": 100,
+        "power": 10000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSodium",
+            24
+          ],
+          [
+            "dict",
+            "dustIron",
+            24
+          ],
+          [
+            "dict",
+            "ingotAnyHardPlastic",
+            12
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              3
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batteryschrabidium",
+        "duration": 100,
+        "power": 25000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSchrabidium",
+            24
+          ],
+          [
+            "dict",
+            "plateTripleAnyBismoidBronze",
+            8
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HELIUM4",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              4
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.batteryquantum",
+        "duration": 100,
+        "power": 100000,
+        "inputItem": [
+          [
+            "dict",
+            "wireDenseBSCCO",
+            24
+          ],
+          [
+            "item",
+            "hbm:pellet_charged",
+            32,
+            0
+          ],
+          [
+            "item",
+            "hbm:ingot_cft",
+            16,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PERFLUOROMETHYL_COLD",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:battery_pack",
+              1,
+              5
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PERFLUOROMETHYL",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.desh",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_desh_mix",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LIGHTOIL",
+            200,
+            0
+          ],
+          [
+            "MERCURY",
+            200,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_desh",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.deshcracked",
+        "duration": 100,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_desh_mix",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LIGHTOIL_CRACK",
+            500,
+            1
+          ],
+          [
+            "MERCURY",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_desh",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.polymer",
+        "duration": 100,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustCoal",
+            2
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_polymer",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.bakelite",
+        "duration": 100,
+        "power": 100,
+        "inputFluid": [
+          [
+            "AROMATICS",
+            500,
+            1
+          ],
+          [
+            "PETROLEUM",
+            500,
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_bakelite",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.rubber",
+        "duration": 100,
+        "power": 200,
+        "inputItem": [
+          [
+            "dict",
+            "dustSulfur",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            500,
+            2
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_rubber",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.hardplastic",
+        "duration": 100,
+        "power": 1000,
+        "inputFluid": [
+          [
+            "XYLENE",
+            500,
+            2
+          ],
+          [
+            "PHOSGENE",
+            500,
+            2
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_pc",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.pvc",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustCadmium",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            250,
+            2
+          ],
+          [
+            "CHLORINE",
+            250,
+            2
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_pvc",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.kevlar",
+        "duration": 60,
+        "power": 300,
+        "inputFluid": [
+          [
+            "AROMATICS",
+            200,
+            0
+          ],
+          [
+            "NITRIC_ACID",
+            100,
+            0
+          ],
+          [
+            "PHOSGENE",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:plate_kevlar",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.lightconstruction",
+        "duration": 400,
+        "power": 25000,
+        "named": true,
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_alclad",
+              1,
+              0
+            ]
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "plateDuraSteel",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "XYLENE",
+            1000,
+            0
+          ],
+          [
+            "PHOSGENE",
+            1000,
+            0
+          ],
+          [
+            "SOURGAS",
+            4000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.carboncarbon",
+        "duration": 400,
+        "power": 100000,
+        "named": true,
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_alclad",
+              1,
+              0
+            ]
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "gemanycoke",
+            8
+          ],
+          [
+            "dict",
+            "plateTitanium",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEAVYOIL_VACUUM",
+            1000,
+            0
+          ],
+          [
+            "SYNGAS",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.meth",
+        "duration": 60,
+        "power": 300,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:wheat",
+            1,
+            0
+          ],
+          [
+            "item",
+            "minecraft:cocoa_beans",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "LUBRICANT",
+            400,
+            0
+          ],
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:chocolate",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.epearl",
+        "duration": 100,
+        "power": 300,
+        "inputItem": [
+          [
+            "dict",
+            "dustDiamond",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "XPJUICE",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "ENDERJUICE",
+            100,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.meatprocessing",
+        "duration": 200,
+        "power": 200,
+        "named": true,
+        "icon": [
+          "hbm:glyphid_meat",
+          1,
+          0
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "glyphidMeat",
+            3
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:sulfur",
+              4,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:niter",
+              3,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SALIENT",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.rustysteel",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:deco_steel",
+            8,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:deco_rusty_steel",
+              8,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.biosolidfuel",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass_compressed",
+            4,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:solid_fuel",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..biosolidfuel"
+      },
+      {
+        "name": "chem.biooilsolidfuel",
+        "duration": 40,
+        "power": 100,
+        "named": true,
+        "inputItem": [
+          [
+            "item",
+            "hbm:biomass_compressed",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:solid_fuel",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..biosolidfuel"
+      },
+      {
+        "name": "chem.oilelectrodes",
+        "duration": 600,
+        "power": 100,
+        "named": true,
+        "inputFluid": [
+          [
+            "HEATINGOIL",
+            4000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:arc_electrode",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..electrodes"
+      },
+      {
+        "name": "chem.lubeelectrodes",
+        "duration": 600,
+        "power": 100,
+        "named": true,
+        "inputFluid": [
+          [
+            "LUBRICANT",
+            8000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:arc_electrode",
+              1,
+              0
+            ]
+          ]
+        ],
+        "blueprintpool": "alt..electrodes"
+      },
+      {
+        "name": "chem.peroxide",
+        "duration": 50,
+        "power": 100,
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.sulfuricacid",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSulfur",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            0
+          ],
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SULFURIC_ACID",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.nitricacid",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SULFURIC_ACID",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "NITRIC_ACID",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.birkeland",
+        "duration": 200,
+        "power": 5000,
+        "named": true,
+        "inputFluid": [
+          [
+            "AIR",
+            8000,
+            0
+          ],
+          [
+            "WATER",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "NITRIC_ACID",
+            1000,
+            0
+          ]
+        ],
+        "blueprintpool": "alt..birkeland"
+      },
+      {
+        "name": "chem.schrabidic",
+        "duration": 60,
+        "power": 5000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:pellet_charged",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SAS3",
+            2000,
+            0
+          ],
+          [
+            "PEROXIDE",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SCHRABIDIC",
+            2000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.schrabidate",
+        "duration": 150,
+        "power": 5000,
+        "inputItem": [
+          [
+            "dict",
+            "dustIron",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SCHRABIDIC",
+            250,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_schrabidate",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltancleaning",
+        "duration": 60,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustColtan",
+            2
+          ],
+          [
+            "dict",
+            "dustCoal",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            250,
+            0
+          ],
+          [
+            "HYDROGEN",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_coltan",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:powder_niobium",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:dust",
+              1,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "WATER",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltanpain",
+        "duration": 120,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_coltan",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GAS",
+            1000,
+            0
+          ],
+          [
+            "OXYGEN",
+            500,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PAIN",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.coltancrystal",
+        "duration": 80,
+        "power": 100,
+        "inputFluid": [
+          [
+            "PAIN",
+            1000,
+            0
+          ],
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:gem_tantalium",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:dust",
+              3,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "WATER",
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.cordite",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            2
+          ],
+          [
+            "item",
+            "hbm:powder_sawdust",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GAS",
+            200,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:cordite",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.rocketfuel",
+        "duration": 200,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:solid_fuel",
+            2,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            200,
+            1
+          ],
+          [
+            "NITRIC_ACID",
+            100,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:rocket_fuel",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.dynamite",
+        "duration": 50,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ],
+          [
+            "dict",
+            "sand",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_dynamite",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.tnt",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "AROMATICS",
+            500,
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_tnt",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.tatb",
+        "duration": 50,
+        "power": 5000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:ball_tnt",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "SOURGAS",
+            200,
+            1
+          ],
+          [
+            "NITRIC_ACID",
+            10,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ball_tatb",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.c4",
+        "duration": 100,
+        "power": 1000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSaltpeter",
+            1
+          ]
+        ],
+        "inputFluid": [
+          [
+            "UNSATURATEDS",
+            500,
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:ingot_c4",
+              4,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.napalm",
+        "duration": 40,
+        "power": 100,
+        "inputItem": [
+          [
+            "item",
+            "hbm:canister_empty",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "GASOLINE",
+            100,
+            0
+          ],
+          [
+            "AROMATICS",
+            50,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:canister_napalm",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.laminate",
+        "duration": 20,
+        "power": 100,
+        "inputFluid": [
+          [
+            "XYLENE",
+            50,
+            0
+          ],
+          [
+            "PHOSGENE",
+            50,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "blockGlass",
+            1
+          ],
+          [
+            "dict",
+            "boltSteel",
+            4
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:reinforced_laminate",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.polarized",
+        "duration": 100,
+        "power": 500,
+        "inputFluid": [
+          [
+            "PETROLEUM",
+            1000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "dict",
+            "paneGlass",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:part_generic_glass_polarized",
+              16,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.yellowcake",
+        "duration": 250,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "billetUranium",
+            2
+          ],
+          [
+            "dict",
+            "dustSulfur",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            500,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_yellowcake",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.uf6",
+        "duration": 100,
+        "power": 500,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          29
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_yellowcake",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            4
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:sulfur",
+              2,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "UF6",
+            1200,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.puf6",
+        "duration": 200,
+        "power": 500,
+        "inputItem": [
+          [
+            "dict",
+            "dustPlutonium",
+            1
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            3
+          ]
+        ],
+        "inputFluid": [
+          [
+            "WATER",
+            1000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "PUF6",
+            900,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.sas3",
+        "duration": 200,
+        "power": 5000,
+        "inputItem": [
+          [
+            "dict",
+            "dustSchrabidium",
+            1
+          ],
+          [
+            "dict",
+            "dustSulfur",
+            2
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            2000,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "SAS3",
+            1000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.balefire",
+        "duration": 100,
+        "power": 10000,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          41
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:egg_balefire_shard",
+            1,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "KEROSENE",
+            6000,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:powder_balefire",
+              1,
+              0
+            ]
+          ]
+        ],
+        "outputFluid": [
+          [
+            "BALEFIRE",
+            8000,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.dhc",
+        "duration": 400,
+        "power": 500,
+        "icon": [
+          "hbm:fluid_icon",
+          1,
+          153
+        ],
+        "inputFluid": [
+          [
+            "DEUTERIUM",
+            500,
+            0
+          ],
+          [
+            "REFORMGAS",
+            250,
+            0
+          ],
+          [
+            "SYNGAS",
+            250,
+            0
+          ]
+        ],
+        "outputFluid": [
+          [
+            "DHC",
+            500,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "chem.osmiridiumdeath",
+        "duration": 240,
+        "power": 1000,
+        "inputItem": [
+          [
+            "item",
+            "hbm:powder_paleogenite",
+            1,
+            0
+          ],
+          [
+            "dict",
+            "dustFluorite",
+            8
+          ],
+          [
+            "item",
+            "hbm:nugget_bismuth",
+            4,
+            0
+          ]
+        ],
+        "inputFluid": [
+          [
+            "PEROXIDE",
+            1000,
+            5
+          ]
+        ],
+        "outputFluid": [
+          [
+            "DEATH",
+            1000,
+            0
+          ]
+        ]
+      }
+    ]
+  }
+}

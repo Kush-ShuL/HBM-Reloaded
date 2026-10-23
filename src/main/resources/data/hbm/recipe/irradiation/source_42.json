@@ -1,0 +1,18 @@
+{
+  "type": "hbm:irradiation",
+  "input": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold"
+    },
+    "count": 1
+  },
+  "fusion_only": false,
+  "key_kind": "dict",
+  "source_key": "hbm:legacy_ore_dict/nuggetgold",
+  "order": 5,
+  "solid_output": {
+    "id": "hbm:nugget_au198",
+    "count": 1
+  }
+}

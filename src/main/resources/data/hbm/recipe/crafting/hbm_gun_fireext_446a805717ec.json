@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:gun_fireext",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "HB",
+    " T"
+  ],
+  "key": {
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "T": {
+      "item": "hbm:tank_steel"
+    }
+  }
+}

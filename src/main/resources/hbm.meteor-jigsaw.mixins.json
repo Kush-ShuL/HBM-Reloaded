@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.world.structure.meteor.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "JigsawPlacementAccess",
+    "MeteorTemplatePoolAccess",
+    "MeteorPieceStateAccess",
+    "MeteorJigsawLimitsMixin",
+    "MeteorPoolElementMixin",
+    "MeteorNativeJigsawMixin",
+    "MeteorDimensionMixin",
+    "MeteorQueueMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

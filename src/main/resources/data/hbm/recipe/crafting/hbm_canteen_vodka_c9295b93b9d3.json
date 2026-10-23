@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:canteen_vodka",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "O",
+    "P"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:potato"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    }
+  }
+}

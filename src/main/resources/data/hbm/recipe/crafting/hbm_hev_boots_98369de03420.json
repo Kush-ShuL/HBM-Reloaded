@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P P",
+    "PBP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:plate_armor_hev"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:titanium_boots",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:hev_boots",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

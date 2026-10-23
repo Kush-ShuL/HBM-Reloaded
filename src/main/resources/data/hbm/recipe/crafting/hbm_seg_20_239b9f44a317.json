@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:seg_20",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PGP",
+    "SSS",
+    "BBB"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plategold"
+    },
+    "S": {
+      "item": "hbm:steel_scaffold"
+    },
+    "B": {
+      "item": "hbm:steel_beam"
+    }
+  }
+}

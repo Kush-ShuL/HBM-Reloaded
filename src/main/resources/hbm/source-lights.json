@@ -1,0 +1,137 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "spotlight_incandescent",
+      "id": "hbm:spotlight_incandescent",
+      "legacyRegistryId": "hbm:tile.spotlight_incandescent",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1485
+      },
+      "originalClass": "Spotlight",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "spotlight_incandescent_off",
+      "id": "hbm:spotlight_incandescent_off",
+      "legacyRegistryId": "hbm:tile.spotlight_incandescent_off",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1486
+      },
+      "originalClass": "Spotlight",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "spotlight_fluoro",
+      "id": "hbm:spotlight_fluoro",
+      "legacyRegistryId": "hbm:tile.spotlight_fluoro",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1487
+      },
+      "originalClass": "SpotlightModular",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "spotlight_fluoro_off",
+      "id": "hbm:spotlight_fluoro_off",
+      "legacyRegistryId": "hbm:tile.spotlight_fluoro_off",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1488
+      },
+      "originalClass": "SpotlightModular",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "spotlight_halogen",
+      "id": "hbm:spotlight_halogen",
+      "legacyRegistryId": "hbm:tile.spotlight_halogen",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1489
+      },
+      "originalClass": "Spotlight",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "spotlight_halogen_off",
+      "id": "hbm:spotlight_halogen_off",
+      "legacyRegistryId": "hbm:tile.spotlight_halogen_off",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1490
+      },
+      "originalClass": "Spotlight",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "spotlight_beam",
+      "id": "hbm:spotlight_beam",
+      "legacyRegistryId": "hbm:tile.spotlight_beam",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1491
+      },
+      "originalClass": "SpotlightBeam",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ]
+}

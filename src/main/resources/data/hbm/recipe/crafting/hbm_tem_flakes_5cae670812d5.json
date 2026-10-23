@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:tem_flakes",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ]
+}

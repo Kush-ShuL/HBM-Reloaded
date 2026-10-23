@@ -1,0 +1,55 @@
+{
+  "type": "hbm:cyclotron",
+  "data": {
+    "name": "cyclotron.25",
+    "duration": 690,
+    "power": 1000000,
+    "input_items": [
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:part_carbon",
+            "count": 1
+          }
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:nugget_mercury",
+            "count": 1
+          }
+        },
+        "count": 1
+      }
+    ],
+    "output_items": [
+      {
+        "pool": [
+          {
+            "stack": {
+              "id": "hbm:powder_polonium",
+              "count": 1
+            }
+          }
+        ]
+      }
+    ],
+    "output_fluids": [
+      {
+        "type": "AMAT",
+        "amount": 10
+      }
+    ],
+    "icon": {
+      "id": "hbm:part_carbon",
+      "count": 1
+    },
+    "order": 25
+  },
+  "source_key": "hbm:item.part_carbon@0x1|item:hbm:item.nugget_mercury@0x1",
+  "source_hash": 1786796288
+}

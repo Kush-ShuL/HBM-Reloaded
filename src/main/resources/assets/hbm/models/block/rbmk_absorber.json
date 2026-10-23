@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "hbm:block/rbmk/rbmk_absorber_top",
+    "side": "hbm:block/rbmk/rbmk_absorber_side",
+    "top": "hbm:block/rbmk/rbmk_absorber_top",
+    "cover_top": "hbm:block/rbmk/rbmk_absorber_cover_top",
+    "cover_side": "hbm:block/rbmk/rbmk_absorber_cover_side",
+    "glass_top": "hbm:block/rbmk/rbmk_absorber_glass_top",
+    "glass_side": "hbm:block/rbmk/rbmk_absorber_glass_side"
+  }
+}

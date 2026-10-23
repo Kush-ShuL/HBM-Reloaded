@@ -1,0 +1,26 @@
+{
+  "type": "hbm:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    "LAL",
+    "ACA",
+    "LAL"
+  ],
+  "key": {
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platelead"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetitanium"
+    },
+    "C": {
+      "item": "hbm:crate_steel"
+    }
+  },
+  "result": {
+    "id": "hbm:safe",
+    "count": 1
+  }
+}

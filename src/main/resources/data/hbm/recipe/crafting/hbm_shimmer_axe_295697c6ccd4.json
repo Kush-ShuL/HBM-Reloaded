@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:shimmer_axe",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "H",
+    "G",
+    "G"
+  ],
+  "key": {
+    "G": {
+      "item": "hbm:shimmer_handle"
+    },
+    "H": {
+      "item": "hbm:shimmer_axe_head"
+    }
+  }
+}

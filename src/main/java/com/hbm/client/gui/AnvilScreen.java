@@ -1,0 +1,42 @@
+package com.hbm.client.gui;
+import com.hbm.machine.anvil.*;
+import java.util.*;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.*;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.util.Mth;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
+/** Original176x222 anvil GUI,10-icon paging/search/filter, half-size details and whole-inventory craft controls. */
+@EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+public final class AnvilScreen extends LegacyContainerScreen<AnvilMenu>{
+    private static final String[] FILTERS={"NONE","CONSTRUCTION","RECYCLING","SMITHING"};private final Inventory player;private final List<RecipeHolder<AnvilConstructionRecipe>> origin=new ArrayList<>(),recipes=new ArrayList<>();private EditBox search;private int index,size,selection=-1,lastSize;private String state="NONE";
+    public AnvilScreen(AnvilMenu menu,Inventory player,Component title){super(menu,player,title,ResourceLocation.fromNamespaceAndPath("hbm","textures/gui/processing/gui_anvil.png"),176,222);this.player=player;origin.addAll(menu.construction());regenerate();}
+    @SubscribeEvent public static void screens(RegisterMenuScreensEvent event){event.register(AnvilContent.MENU.get(),AnvilScreen::new);}
+    @Override protected void init(){super.init();search=new EditBox(font,leftPos+10,topPos+111,84,12,Component.translatable("gui.hbm.anvil.search"));search.setTextColor(-1);search.setTextColorUneditable(-1);search.setBordered(false);search.setMaxLength(25);search.setResponder(this::search);addRenderableWidget(search);}
+    public void focusRecipe(ResourceLocation target){if(target==null||origin.stream().noneMatch(value->value.id().equals(target)))return;search.setValue("");regenerate();for(int i=0;i<recipes.size();i++)if(recipes.get(i).id().equals(target)){selection=i;index=Mth.clamp(i/2,0,size);return;}}
+    private void regenerate(){recipes.clear();origin.stream().filter(holder->state.equals("NONE")||holder.value().overlay().equals(state)).forEach(recipes::add);reset();}
+    private void search(String query){query=query.toLowerCase(Locale.US);recipes.clear();if(query.isEmpty())origin.stream().filter(holder->state.equals("NONE")||holder.value().overlay().equals(state)).forEach(recipes::add);else for(var holder:origin){boolean match=false;for(var input:holder.value().inputs())for(var stack:input.examples())if(stack.getHoverName().getString().toLowerCase(Locale.US).contains(query))match=true;for(var output:holder.value().outputs())if(output.stack().getHoverName().getString().toLowerCase(Locale.US).contains(query))match=true;if(match)recipes.add(holder);}reset();}
+    private void reset(){index=0;selection=-1;size=Math.max(0,(int)Math.ceil((recipes.size()-10)/2D));}
+    private static int ordinal(String overlay){for(int i=0;i<FILTERS.length;i++)if(FILTERS[i].equals(overlay))return i;return 0;}
+    private List<Component> detail(AnvilConstructionRecipe recipe){var lines=new ArrayList<Component>();lines.add(Component.translatable("gui.hbm.anvil.inputs").withStyle(ChatFormatting.YELLOW));for(var input:recipe.inputs()){var examples=input.examples();ItemStack example=examples.isEmpty()?ItemStack.EMPTY:examples.get((int)Math.floorMod(System.currentTimeMillis()/1000,examples.size()));int count=0;for(ItemStack stack:player.items)if(input.matches(stack,true))count+=stack.getCount();lines.add(Component.literal(example.isEmpty()?Component.translatable("gui.hbm.anvil.missing_ingredient").getString():">"+input.count()+"x "+example.getHoverName().getString()).withStyle(count>=input.count()?ChatFormatting.WHITE:ChatFormatting.RED));}lines.add(Component.empty());lines.add(Component.translatable("gui.hbm.anvil.outputs").withStyle(ChatFormatting.YELLOW));for(var output:recipe.outputs())lines.add(Component.literal(">"+output.stack().getCount()+"x "+output.stack().getHoverName().getString()+(output.chance()!=1F?" ("+(output.chance()*100)+"%)":"")));return lines;}
+    @Override protected void renderLabels(GuiGraphics graphics,int x,int y){Component name=Component.translatable("container.anvil",menu.tier());graphics.drawString(font,name,61-font.width(name)/2,8,4210752,false);graphics.drawString(font,playerInventoryTitle,8,128,4210752,false);if(selection>=0&&selection<recipes.size()){var lines=detail(recipes.get(selection).value());int width=0,offset=0;graphics.pose().pushPose();graphics.pose().scale(.5F,.5F,1);for(var line:lines){width=Math.max(width,font.width(line));graphics.drawString(font,line,260,50+offset,0xffffff,false);offset+=9;}graphics.pose().popPose();lastSize=width/2;}else lastSize=0;}
+    @Override protected void renderBg(GuiGraphics graphics,float partial,int x,int y){super.renderBg(graphics,partial,x,y);int slide=Mth.clamp(lastSize-42,0,1000),mul=1;while(slide>=51*mul){drawLegacyRegion(graphics,125+51*mul,17,125,17,54,108);mul++;}drawLegacyRegion(graphics,125+slide,17,125,17,54,108);if(search!=null&&search.isFocused())drawLegacyRegion(graphics,8,108,168,222,88,16);if(legacyInfoHovered(x,y,7,71,9,36))drawLegacyRegion(graphics,7,71,176,186,9,36);if(legacyInfoHovered(x,y,106,71,9,36))drawLegacyRegion(graphics,106,71,185,186,9,36);if(legacyInfoHovered(x,y,52,53,18,18))drawLegacyRegion(graphics,52,53,176,150,18,18);int button=state.equals("SMITHING")?200:state.equals("CONSTRUCTION")?218:state.equals("RECYCLING")?236:-1;if(button>=0)drawLegacyRegion(graphics,88,53,button,legacyInfoHovered(x,y,88,53,18,18)?18:0,18,18);
+        for(int i=index*2;i<Math.min(index*2+10,recipes.size());i++){int local=i-index*2,px=16+18*(local/2),py=71+18*(local%2);var recipe=recipes.get(i).value();ItemStack display=recipe.display();if(!display.isEmpty())graphics.renderItem(display,leftPos+px+1,topPos+py+1);drawLegacyRegion(graphics,px,py,18+18*ordinal(recipe.overlay()),222,18,18);if(selection==i)drawLegacyRegion(graphics,px,py,0,222,18,18);}}
+    @Override public void render(GuiGraphics graphics,int x,int y,float partial){var request=menu.takeFocusRequest();if(request!=null)focusRecipe(request);super.render(graphics,x,y,partial);if(legacyInfoHovered(x,y,88,53,18,18))graphics.renderTooltip(font,Component.translatable("gui.hbm.anvil.filter."+state.toLowerCase(Locale.ROOT)),x,y);}
+    private void click(){minecraft.getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK,1));}
+    @Override public boolean mouseClicked(double x,double y,int button){boolean handled=super.mouseClicked(x,y,button);if(legacyInfoHovered(x,y,7,71,9,36)){click();if(index>0)index--;return true;}if(legacyInfoHovered(x,y,106,71,9,36)){click();if(index<size)index++;return true;}if(legacyInfoHovered(x,y,52,53,18,18)){if(selection<0)return handled;click();PacketDistributor.sendToServer(new AnvilCraftRequest(menu.containerId,recipes.get(selection).id(),hasShiftDown()));return true;}if(legacyInfoHovered(x,y,88,53,18,18)){click();state=FILTERS[(ordinal(state)+1)%4];regenerate();return true;}for(int i=index*2;i<Math.min(index*2+10,recipes.size());i++){int n=i-index*2;if(legacyInfoHovered(x,y,16+18*(n/2),71+18*(n%2),18,18)){selection=selection==i?-1:i;click();return true;}}return handled;}
+    @Override public boolean mouseScrolled(double x,double y,double horizontal,double vertical){if(x>=leftPos&&x<leftPos+imageWidth&&y>topPos&&y<=topPos+imageHeight&&hoveredSlot==null){if(vertical>0&&index>0)index--;if(vertical<0&&index<size)index++;return true;}return super.mouseScrolled(x,y,horizontal,vertical);}
+    @Override public boolean keyPressed(int key,int scan,int modifiers){if(search!=null&&search.isFocused()&&search.keyPressed(key,scan,modifiers))return true;return super.keyPressed(key,scan,modifiers);}
+    @Override public boolean charTyped(char value,int modifiers){if(search!=null&&search.isFocused()&&search.charTyped(value,modifiers))return true;return super.charTyped(value,modifiers);}
+}

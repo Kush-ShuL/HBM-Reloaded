@@ -1,0 +1,35 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.magnetron",
+  "duration": 40,
+  "power": 100,
+  "order": 43,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:magnetron",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wirefinetungsten"
+      },
+      "count": 4
+    }
+  ]
+}

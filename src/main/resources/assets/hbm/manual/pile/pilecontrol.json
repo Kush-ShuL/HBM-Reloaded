@@ -1,0 +1,25 @@
+{
+  "name": "Chicago Pile Control Rod",
+  "icon": [
+    "hbm:tile.pile_device",
+    1,
+    2
+  ],
+  "trigger": [
+    [
+      "hbm:tile.pile_device",
+      1,
+      2
+    ]
+  ],
+  "title": {
+    "en_US": "Chicago Pile Control Rod",
+    "ru_RU": "Регулирующие стержни Чикагской поленницы",
+    "zh_CN": "芝加哥堆控制棒"
+  },
+  "content": {
+    "en_US": "Control rods can be placed on top of the vertically drilled channels of the [[Chicago Pile]]. Control rods, when inserted, will reduce the reactivity between fuel channels. The control rods can be controlled with a redstone signal, causing it to fully withdraw when a signal is supplied, or via [[RoR controller|Redstone-over-Radio Controller]], which allows more precise settings.<br><br>See also:<br>* [[Chicago Pile Fuel Loader]]<br>* [[Chicago Pile Vent]]",
+    "ru_RU": "Регулирующие стержни устанавливаются поверх вертикально просверленных каналов [[Чикагской поленницы|Chicago Pile]]. При погружении регулирующих стержней снижается реактивность между топливными каналами. Стержнями можно управлять с помощью редстоун-сигнала (при подаче сигнала стержень полностью извлекается) или через [[РпР контроллер|Redstone-over-Radio Controller]], что позволяет настраивать их более точно.<br><br>См. также:<br>* [[Загрузчик топлива Чикагской поленницы|Chicago Pile Fuel Loader]]<br>* [[Вентиль Чикагской поленницы|Chicago Pile Vent]]",
+    "zh_CN": "控制棒可安装在[[芝加哥堆|Chicago Pile]]顶部垂直钻出的通道上。插入控制棒可降低燃料通道之间的反应程度。控制棒可以用红石信号控制：有信号时会完全抽出；也可使用[[无线红石控制器|Redstone-over-Radio Controller]]进行更精确的调节。<br><br>另见：<br>* [[芝加哥堆燃料装载机|Chicago Pile Fuel Loader]]<br>* [[芝加哥堆通风口|Chicago Pile Vent]]"
+  }
+}

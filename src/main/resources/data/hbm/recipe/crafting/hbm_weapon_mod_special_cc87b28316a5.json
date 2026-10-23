@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 21
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " IP",
+    "IIM",
+    " IP"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+    }
+  }
+}

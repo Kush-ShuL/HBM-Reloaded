@@ -1,0 +1,41 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.stellar",
+  "order": 9,
+  "r": 1.0,
+  "g": 0.4,
+  "b": 0.1,
+  "ignition_temp": 10000000,
+  "output_temp": 50000000,
+  "neutron_flux": 10000.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:fluid_icon",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 139,
+      "hbm:fluid_type": 139
+    }
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "STELLAR_FLUX",
+      "amount": 5,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_gold",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:powder_tungsten"
+  },
+  "result": {
+    "id": "hbm:ingot_tungsten",
+    "count": 1
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

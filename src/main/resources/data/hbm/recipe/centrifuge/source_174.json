@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:ore_tikite"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_plutonium",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_cobalt",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_niobium",
+      "count": 2
+    },
+    {
+      "id": "minecraft:end_stone",
+      "count": 1
+    }
+  ]
+}

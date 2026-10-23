@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:rbmk_cooler",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IGI",
+    "GCG",
+    "IGI"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:rbmk_blank"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "G": {
+      "item": "hbm:steel_grate"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(!GeneralConfig.enable528)"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "module": "source-blast-door240",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "blast_door",
+      "id": "hbm:blast_door",
+      "hasItem": true,
+      "originalClass": "BlastDoor",
+      "legacyRegistryId": "hbm:tile.blast_door",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2047
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2975
+          },
+          "expression": "GameRegistry.registerBlock(blast_door, blast_door.getUnlocalizedName())",
+          "arguments": [
+            "blast_door",
+            "blast_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "blockEntity": "hbm:blast_door"
+    },
+    {
+      "kind": "block",
+      "symbol": "dummy_block_blast",
+      "id": "hbm:dummy_block_blast",
+      "hasItem": true,
+      "originalClass": "DummyBlockBlast",
+      "legacyRegistryId": "hbm:tile.dummy_block_blast",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2354
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3479
+          },
+          "expression": "GameRegistry.registerBlock(dummy_block_blast, dummy_block_blast.getUnlocalizedName())",
+          "arguments": [
+            "dummy_block_blast",
+            "dummy_block_blast.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0,
+        0
+      ],
+      "blockEntity": "hbm:dummy_block_blast"
+    }
+  ]
+}

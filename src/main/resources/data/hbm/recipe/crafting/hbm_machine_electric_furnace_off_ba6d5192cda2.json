@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:machine_electric_furnace_off",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "WFW",
+    "RRR"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotberyllium"
+    },
+    "R": {
+      "item": "hbm:coil_tungsten"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  }
+}

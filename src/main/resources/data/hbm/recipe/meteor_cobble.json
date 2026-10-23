@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:fragment_meteorite"
+    }
+  },
+  "result": {
+    "id": "hbm:block_meteor_cobble",
+    "count": 1
+  }
+}

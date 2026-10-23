@@ -1,0 +1,3 @@
+package com.hbm.item.designator.advanced;
+import java.util.function.Consumer;import net.minecraft.world.*;import net.minecraft.world.entity.player.Player;import net.minecraft.world.item.ItemStack;import net.minecraft.world.level.Level;
+public final class ManualDesignatorItem extends CoordinateDesignatorItem{public static Consumer<InteractionHand> OPEN=hand->{};@Override public InteractionResultHolder<ItemStack> use(Level level,Player player,InteractionHand hand){if(level.isClientSide)OPEN.accept(hand);return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand),level.isClientSide);}}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_am241",
+    {
+      "id": "#c:ingots/am241",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/americium241",
+      "required": false
+    }
+  ]
+}

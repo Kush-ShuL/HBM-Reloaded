@@ -1,0 +1,89 @@
+{
+  "families": [
+    "ArmorAJR",
+    "ArmorAJRO"
+  ],
+  "separateItemIdentities": 8,
+  "sourceMesh": "legacy/src/main/resources/assets/hbm/models/armor/AJR.obj",
+  "modernMesh": "hbm:models/armor/ajr.obj",
+  "sourceMeshBytesUnchanged": true,
+  "distinctTextureFamilies": [
+    "ajr_helmet/chest/arm/leg",
+    "ajro_helmet/chest/arm/leg"
+  ],
+  "sourceMaterial": {
+    "holder": "RpaContent.AJR",
+    "baseDurability": 150,
+    "defense": [
+      3,
+      8,
+      6,
+      3
+    ],
+    "enchantability": 0,
+    "repair": "hbm:plate_armor_ajr",
+    "sourceMixedMaterialSet": true
+  },
+  "privateHE": {
+    "maxPower": 2500000,
+    "chargeRate": 10000,
+    "damageConsumption": 2000,
+    "drainPerPiecePerTick": 25,
+    "sourceTag": "charge"
+  },
+  "effects": [
+    {
+      "id": "minecraft:jump_boost",
+      "ticks": 20,
+      "amplifier": 0,
+      "ambient": true
+    },
+    {
+      "id": "minecraft:strength",
+      "ticks": 20,
+      "amplifier": 0,
+      "ambient": true
+    }
+  ],
+  "sourceSounds": {
+    "step": "step.metal",
+    "jump": "step.iron_jump",
+    "fall": "step.iron_land"
+  },
+  "vats": true,
+  "geiger": true,
+  "hardLanding": true,
+  "hidesHat": true,
+  "helmetHazards": "sourceFULL_PACKAGE8classes on each actualfamilyhelmet only",
+  "radiationExponents": {
+    "fullset": 1.3,
+    "helmet": 0.26,
+    "plate": 0.52,
+    "legs": 0.39,
+    "boots": 0.13
+  },
+  "DTDR": {
+    "physical": [
+      4,
+      0.15
+    ],
+    "fire": [
+      0.5,
+      0.35
+    ],
+    "explosion": [
+      7.5,
+      0.25
+    ],
+    "fall": [
+      0,
+      1
+    ],
+    "other": [
+      0,
+      0.15
+    ]
+  },
+  "paWeaponProvider": false,
+  "noInventedSprintNightVisionThermal": true
+}

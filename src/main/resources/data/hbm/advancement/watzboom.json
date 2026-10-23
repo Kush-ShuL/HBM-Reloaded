@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:watz",
+  "display": {
+    "icon": {
+      "id": "hbm:bucket_mud"
+    },
+    "title": {
+      "translate": "achievement.watzBoom"
+    },
+    "description": {
+      "translate": "achievement.watzBoom.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:watzboom"
+      }
+    }
+  }
+}

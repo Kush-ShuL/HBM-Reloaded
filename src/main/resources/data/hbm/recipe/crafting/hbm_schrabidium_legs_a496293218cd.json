@@ -1,0 +1,36 @@
+{
+  "result": {
+    "id": "hbm:schrabidium_legs",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "ESE",
+    "EPE"
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_legs",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "P": {
+      "item": "hbm:pellet_charged"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleArmorRecipes)"
+    }
+  ]
+}

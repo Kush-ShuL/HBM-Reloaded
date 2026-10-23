@@ -1,0 +1,85 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/blockglass",
+    "hbm:legacy_ore_dict/blockglassyellow",
+    "hbm:legacy_ore_dict/blockglasslime",
+    "hbm:legacy_ore_dict/blockglassred"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/blockglass",
+      "raw": "blockGlass"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/blockglassyellow",
+      "raw": "blockGlassYellow"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/blockglasslime",
+      "raw": "blockGlassLime"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/blockglassred",
+      "raw": "blockGlassRed"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "raw": "blockGlass",
+      "tag": "hbm:legacy_ore_dict/blockglass",
+      "members": [
+        "hbm:glass_uranium",
+        "hbm:glass_trinitite",
+        "hbm:glass_polonium"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java",
+        "lines": [
+          641,
+          642,
+          643
+        ]
+      }
+    },
+    {
+      "raw": "blockGlassYellow",
+      "tag": "hbm:legacy_ore_dict/blockglassyellow",
+      "members": [
+        "hbm:glass_uranium"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java",
+        "lines": [
+          645
+        ]
+      }
+    },
+    {
+      "raw": "blockGlassLime",
+      "tag": "hbm:legacy_ore_dict/blockglasslime",
+      "members": [
+        "hbm:glass_trinitite"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java",
+        "lines": [
+          646
+        ]
+      }
+    },
+    {
+      "raw": "blockGlassRed",
+      "tag": "hbm:legacy_ore_dict/blockglassred",
+      "members": [
+        "hbm:glass_polonium"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java",
+        "lines": [
+          647
+        ]
+      }
+    }
+  ]
+}

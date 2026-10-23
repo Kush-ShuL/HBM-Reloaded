@@ -1,0 +1,215 @@
+{
+  "mode528": [
+    {
+      "key": {
+        "type": "dict",
+        "dict": "ingotSteel"
+      },
+      "milestones": [
+        {
+          "amount": "256",
+          "pool": "528.steel"
+        }
+      ],
+      "sourceLine": 65
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "billetSilicon"
+      },
+      "milestones": [
+        {
+          "amount": "256",
+          "pool": "528.chip"
+        }
+      ],
+      "sourceLine": 66
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "nuggetBismuth"
+      },
+      "milestones": [
+        {
+          "amount": "128",
+          "pool": "528.chip_bismoid"
+        }
+      ],
+      "sourceLine": 67
+    },
+    {
+      "key": {
+        "type": "item",
+        "item": "hbm:pellet_charged"
+      },
+      "milestones": [
+        {
+          "amount": "1024",
+          "pool": "528.chip_quantum"
+        }
+      ],
+      "sourceLine": 68
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "billetUranium"
+      },
+      "milestones": [
+        {
+          "amount": "256",
+          "pool": "528.gascent"
+        }
+      ],
+      "sourceLine": 70
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "ingotAnyPlastic"
+      },
+      "milestones": [
+        {
+          "amount": "512",
+          "pool": "528.plastic"
+        }
+      ],
+      "sourceLine": 71
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "ingotRubber"
+      },
+      "milestones": [
+        {
+          "amount": "512",
+          "pool": "528.rubber"
+        }
+      ],
+      "sourceLine": 72
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "ingotFerrouranium"
+      },
+      "milestones": [
+        {
+          "amount": "1024",
+          "pool": "528.ferrouranium"
+        }
+      ],
+      "sourceLine": 73
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "dustStrontium"
+      },
+      "milestones": [
+        {
+          "amount": "256",
+          "pool": "528.strontium"
+        }
+      ],
+      "sourceLine": 74
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "ingotAnyHardPlastic"
+      },
+      "milestones": [
+        {
+          "amount": "1024",
+          "pool": "528.hardplastic"
+        }
+      ],
+      "sourceLine": 75
+    },
+    {
+      "key": {
+        "type": "dict",
+        "dict": "ingotAnyResistantAlloy"
+      },
+      "milestones": [
+        {
+          "amount": "1024",
+          "pool": "528.tcalloy"
+        }
+      ],
+      "sourceLine": 76
+    },
+    {
+      "key": {
+        "type": "item",
+        "item": "hbm:powder_chlorophyte"
+      },
+      "milestones": [
+        {
+          "amount": "1024",
+          "pool": "528.chlorophyte"
+        }
+      ],
+      "sourceLine": 77
+    },
+    {
+      "key": {
+        "type": "comp",
+        "item": "hbm:drive",
+        "meta": 4
+      },
+      "milestones": [
+        {
+          "amount": "64",
+          "pool": "528.soyuz"
+        }
+      ],
+      "sourceLine": 79
+    },
+    {
+      "key": {
+        "type": "item",
+        "item": "hbm:ammo_standard_bmg50_fmj"
+      },
+      "milestones": [
+        {
+          "amount": "256",
+          "pool": "528.bmg"
+        }
+      ],
+      "sourceLine": 80
+    },
+    {
+      "key": {
+        "type": "comp",
+        "item": "hbm:ammo_arty",
+        "meta": 0
+      },
+      "milestones": [
+        {
+          "amount": "128",
+          "pool": "528.arty"
+        }
+      ],
+      "sourceLine": 81
+    },
+    {
+      "key": {
+        "type": "item",
+        "item": "hbm:circuit_controller"
+      },
+      "milestones": [
+        {
+          "amount": "128",
+          "pool": "528.controller"
+        }
+      ],
+      "sourceLine": 82
+    }
+  ],
+  "normal": []
+}

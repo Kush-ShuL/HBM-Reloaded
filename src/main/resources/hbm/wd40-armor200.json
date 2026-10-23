@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "wd40",
+      "id": "hbm:wd40",
+      "legacyRegistryId": "hbm:item.wd40",
+      "originalClass": "ItemModWD40",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2894
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6130
+          },
+          "expression": "GameRegistry.registerItem(wd40, wd40.getUnlocalizedName())",
+          "arguments": [
+            "wd40",
+            "wd40.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.wd40.Wd40Content",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 7,
+      "applicableTo": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "maxHealthAdded": 4
+    }
+  ]
+}

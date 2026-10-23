@@ -1,0 +1,72 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "neutrino_lens",
+      "id": "hbm:neutrino_lens",
+      "legacyRegistryId": "hbm:item.neutrino_lens",
+      "originalClass": "ItemModLens",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2904
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6067
+          },
+          "expression": "GameRegistry.registerItem(neutrino_lens, neutrino_lens.getUnlocalizedName())",
+          "arguments": [
+            "neutrino_lens",
+            "neutrino_lens.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.neutrinolens.NeutrinoLensContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 7,
+      "applicableTo": [
+        "helmet"
+      ],
+      "implements": "SatelliteFrequency"
+    },
+    {
+      "kind": "block",
+      "symbol": "pink_log",
+      "id": "hbm:pink_log",
+      "legacyRegistryId": "hbm:tile.pink_log",
+      "originalClass": "BlockPinkLog",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2362
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3513
+          },
+          "expression": "GameRegistry.registerBlock(pink_log, pink_log.getUnlocalizedName())",
+          "arguments": [
+            "pink_log",
+            "pink_log.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "registeredBy": "com.hbm.armor.neutrinolens.NeutrinoLensContent",
+      "creativeTab": null,
+      "hiddenFromRecipeViewer": true,
+      "hardness": 0.5,
+      "explosionResistance": 0.5,
+      "sourceMetadataRange": [
+        0,
+        15
+      ],
+      "stateHelper": "PinkLogBlock.fromLegacy(int)",
+      "sourceNaturalAcquisition": "Original HbmWorldGen361-376 late oak-tree replacement remains root-owned;not falsely inserted into terrain-only GeneratedPlan"
+    }
+  ]
+}

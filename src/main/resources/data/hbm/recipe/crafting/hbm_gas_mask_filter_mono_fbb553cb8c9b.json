@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:gas_mask_filter_mono",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ZZZ",
+    "ZCZ",
+    "ZZZ"
+  ],
+  "key": {
+    "Z": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetzirconium"
+    },
+    "C": {
+      "item": "hbm:catalyst_clay"
+    }
+  }
+}

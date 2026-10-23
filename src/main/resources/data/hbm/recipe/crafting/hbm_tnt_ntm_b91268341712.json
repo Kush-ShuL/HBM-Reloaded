@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:tnt_ntm",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DSD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:stick_tnt"
+    },
+    "S": {
+      "item": "hbm:safety_fuse"
+    }
+  }
+}

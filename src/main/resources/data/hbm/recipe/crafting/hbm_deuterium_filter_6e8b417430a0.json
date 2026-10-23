@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:deuterium_filter",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TST",
+    "SCS",
+    "TST"
+  ],
+  "key": {
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsulfur"
+    },
+    "C": {
+      "item": "hbm:catalyst_clay"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "jetpack_boost",
+      "id": "hbm:jetpack_boost",
+      "legacyRegistryId": "hbm:item.jetpack_boost",
+      "originalClass": "JetpackBooster",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4282
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6369
+          },
+          "expression": "GameRegistry.registerItem(jetpack_boost, jetpack_boost.getUnlocalizedName())",
+          "arguments": [
+            "jetpack_boost",
+            "jetpack_boost.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.equipment.boostmurk.BoostMurkContent",
+      "creativeTab": "minecraft:combat",
+      "armorModSlot": "CHEST",
+      "maxStackSize": 1,
+      "fuel": "BALEFIRE",
+      "capacity": 32000,
+      "loadSpeed": 10
+    },
+    {
+      "kind": "item",
+      "symbol": "wings_murk",
+      "id": "hbm:wings_murk",
+      "legacyRegistryId": "hbm:item.wings_murk",
+      "originalClass": "WingsMurk",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4286
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6371
+          },
+          "expression": "GameRegistry.registerItem(wings_murk, wings_murk.getUnlocalizedName())",
+          "arguments": [
+            "wings_murk",
+            "wings_murk.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.equipment.boostmurk.BoostMurkContent",
+      "creativeTab": "minecraft:combat",
+      "armorModSlot": "CHEST",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "wings_limp",
+      "id": "hbm:wings_limp",
+      "legacyRegistryId": "hbm:item.wings_limp",
+      "originalClass": "WingsMurk",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4287
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6370
+          },
+          "expression": "GameRegistry.registerItem(wings_limp, wings_limp.getUnlocalizedName())",
+          "arguments": [
+            "wings_limp",
+            "wings_limp.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.equipment.boostmurk.BoostMurkContent",
+      "creativeTab": "minecraft:combat",
+      "armorModSlot": "CHEST",
+      "maxStackSize": 1
+    }
+  ]
+}

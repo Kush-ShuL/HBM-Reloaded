@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:battery_potato",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "charge": 1000
+      }
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinealuminum"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+    }
+  ]
+}

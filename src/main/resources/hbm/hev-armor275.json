@@ -1,0 +1,140 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "hev_helmet",
+      "id": "hbm:hev_helmet",
+      "legacyRegistryId": "hbm:item.hev_helmet",
+      "originalClass": "ArmorHEV",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 256
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6260
+          },
+          "expression": "GameRegistry.registerItem(hev_helmet, hev_helmet.getUnlocalizedName())",
+          "arguments": [
+            "hev_helmet",
+            "hev_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.hev.HevArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "power": {
+        "maxPower": 1000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "hev_plate",
+      "id": "hbm:hev_plate",
+      "legacyRegistryId": "hbm:item.hev_plate",
+      "originalClass": "ArmorHEV",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 264
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6261
+          },
+          "expression": "GameRegistry.registerItem(hev_plate, hev_plate.getUnlocalizedName())",
+          "arguments": [
+            "hev_plate",
+            "hev_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.hev.HevArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2400,
+      "power": {
+        "maxPower": 1000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "hev_legs",
+      "id": "hbm:hev_legs",
+      "legacyRegistryId": "hbm:item.hev_legs",
+      "originalClass": "ArmorHEV",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 265
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6262
+          },
+          "expression": "GameRegistry.registerItem(hev_legs, hev_legs.getUnlocalizedName())",
+          "arguments": [
+            "hev_legs",
+            "hev_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.hev.HevArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2250,
+      "power": {
+        "maxPower": 1000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "hev_boots",
+      "id": "hbm:hev_boots",
+      "legacyRegistryId": "hbm:item.hev_boots",
+      "originalClass": "ArmorHEV",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 266
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6263
+          },
+          "expression": "GameRegistry.registerItem(hev_boots, hev_boots.getUnlocalizedName())",
+          "arguments": [
+            "hev_boots",
+            "hev_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.hev.HevArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1950,
+      "power": {
+        "maxPower": 1000000,
+        "chargeRate": 10000,
+        "damageConsumption": 2500,
+        "idleDrain": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:block_slag"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_fire",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_calcium",
+      "count": 1
+    },
+    {
+      "id": "hbm:dust",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "CPC",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "C": {
+      "item": "hbm:powder_desh_mix"
+    },
+    "P": {
+      "type": "neoforge:components",
+      "items": "hbm:rad_absorber",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:rad_absorber",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  }
+}

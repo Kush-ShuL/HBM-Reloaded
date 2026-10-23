@@ -1,0 +1,140 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "envsuit_helmet",
+      "id": "hbm:envsuit_helmet",
+      "legacyRegistryId": "hbm:item.envsuit_helmet",
+      "originalClass": "ArmorEnvsuit",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 244
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6256
+          },
+          "expression": "GameRegistry.registerItem(envsuit_helmet, envsuit_helmet.getUnlocalizedName())",
+          "arguments": [
+            "envsuit_helmet",
+            "envsuit_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.envsuit.EnvsuitContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "power": {
+        "maxPower": 100000,
+        "chargeRate": 1000,
+        "damageConsumption": 250,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "envsuit_plate",
+      "id": "hbm:envsuit_plate",
+      "legacyRegistryId": "hbm:item.envsuit_plate",
+      "originalClass": "ArmorEnvsuit",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 250
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6257
+          },
+          "expression": "GameRegistry.registerItem(envsuit_plate, envsuit_plate.getUnlocalizedName())",
+          "arguments": [
+            "envsuit_plate",
+            "envsuit_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.envsuit.EnvsuitContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2400,
+      "power": {
+        "maxPower": 100000,
+        "chargeRate": 1000,
+        "damageConsumption": 250,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "envsuit_legs",
+      "id": "hbm:envsuit_legs",
+      "legacyRegistryId": "hbm:item.envsuit_legs",
+      "originalClass": "ArmorEnvsuit",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 251
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6258
+          },
+          "expression": "GameRegistry.registerItem(envsuit_legs, envsuit_legs.getUnlocalizedName())",
+          "arguments": [
+            "envsuit_legs",
+            "envsuit_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.envsuit.EnvsuitContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2250,
+      "power": {
+        "maxPower": 100000,
+        "chargeRate": 1000,
+        "damageConsumption": 250,
+        "idleDrain": 0
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "envsuit_boots",
+      "id": "hbm:envsuit_boots",
+      "legacyRegistryId": "hbm:item.envsuit_boots",
+      "originalClass": "ArmorEnvsuit",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 252
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6259
+          },
+          "expression": "GameRegistry.registerItem(envsuit_boots, envsuit_boots.getUnlocalizedName())",
+          "arguments": [
+            "envsuit_boots",
+            "envsuit_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.envsuit.EnvsuitContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1950,
+      "power": {
+        "maxPower": 100000,
+        "chargeRate": 1000,
+        "damageConsumption": 250,
+        "idleDrain": 0
+      }
+    }
+  ]
+}

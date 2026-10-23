@@ -1,0 +1,34 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 6,
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "hbm:shimmer_handle"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:powder_dineutronium"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:blades_desh"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:diamond_gavel"
+      },
+      "metadata": 0
+    }
+  ],
+  "result": {
+    "id": "hbm:mese_gavel",
+    "count": 1
+  }
+}

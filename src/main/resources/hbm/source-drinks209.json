@@ -1,0 +1,69 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "mucho_mango",
+      "id": "hbm:mucho_mango",
+      "legacyRegistryId": "hbm:item.mucho_mango",
+      "originalClass": "ItemMuchoMango",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3639
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6011
+          },
+          "expression": "GameRegistry.registerItem(mucho_mango, mucho_mango.getUnlocalizedName())",
+          "arguments": [
+            "mucho_mango",
+            "mucho_mango.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.sourcedrinks.SourceDrinksContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "useAnimation": "DRINK",
+      "useDuration": 200,
+      "food": {
+        "nutrition": 10,
+        "saturationModifier": 0.6,
+        "alwaysEdible": true,
+        "wolfFood": true
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "bdcl",
+      "id": "hbm:bdcl",
+      "legacyRegistryId": "hbm:item.bdcl",
+      "originalClass": "ItemBDCL",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2849
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6084
+          },
+          "expression": "GameRegistry.registerItem(bdcl, bdcl.getUnlocalizedName())",
+          "arguments": [
+            "bdcl",
+            "bdcl.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.sourcedrinks.SourceDrinksContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "useAnimation": "DRINK",
+      "useDuration": 40,
+      "food": null
+    }
+  ]
+}

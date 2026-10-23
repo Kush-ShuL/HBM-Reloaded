@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.client.equipment.npcheadgear.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "HeadgearArmorMixin",
+    "No9LightMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

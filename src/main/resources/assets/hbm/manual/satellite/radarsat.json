@@ -1,0 +1,25 @@
+{
+  "name": "Radar Satellite",
+  "icon": [
+    "hbm:satellite_radar",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_radar",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Radar Satellite",
+    "ru_RU": "Радиолокационный спутник",
+    "zh_CN": "雷达卫星"
+  },
+  "content": {
+    "en_US": "The radar satellite can detect all radar-detectable entities like players and missiles in a 1,000 block radius around its target position. It can compile, filter, and provide a list of detected objects, along with their type and exact position.<br><br>* '§esurvey§r' scans the area and saves the results to a base list and a filtered list. These two lists are now the same, and stored within the satellite.<br>* '§efilter §e<name>§r' will overwrite the filtered list with a new list, containing only entries from the original list that match that name filter. Since the original list is retained, the filter operation can be run multiple times for multiple types without needing a survey operation.<br>* '§ecount§r' writes the amount of entries on the filterd list to RX.<br>* '§egettargetid §e<index>§r' retrieves the unique entity ID from that entry on the list. This ID can be used for precise entity targeting by other satellites.<br>* '§egetposition §e<index>§r' retrieves the exact x/y/z position of the specified entry. The coordinates are separated by semicolons.<br>* '§egetname §e<index>§r' retrieves the class name of that entry, this name is what's used for filtering.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Радиолокационный спутник может обнаруживать все видимые для радара сущности, такие как игроки и ракеты, в радиусе 1000 блоков вокруг своей цели. Он может составлять, фильтровать и предоставлять список обнаруженных объектов вместе с их типом и точными координатами.<br><br>* '§esurvey§r' сканирует область и сохраняет результаты в базовый и отфильтрованный списки. На данный момент оба списка одинаковы и хранятся внутри спутника.<br>* '§efilter §ename§r' перезаписывает отфильтрованный список новым, содержащим только те записи из оригинального списка, которые соответствуют указанному фильтру имён. Поскольку оригинальный список сохраняется, операцию фильтрации можно выполнять несколько раз для разных типов без необходимости повторного сканирования.<br>* '§ecount§r' записывает количество записей в отфильтрованном списке в RX.<br>* '§egettargetid §eindex§r' получает уникальный ID сущности из указанной записи списка. Этот ID может использоваться другими спутниками для точного наведения на цель.<br>* '§egetposition §eindex§r' получает точные X/Y/Z координаты указанной записи. Координаты разделяются точкой с запятой.<br>* '§egetname §eindex§r' получает имя класса этой записи — именно это имя используется для фильтрации.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "雷达卫星能够探测目标位置周围1,000格半径内所有可被雷达发现的实体，例如玩家和导弹。它可以汇总、筛选探测结果，并提供各目标的类型和精确位置。<br><br>* “§esurvey§r”：扫描区域，并把结果分别保存到原始列表和筛选列表。此时两份列表相同，均保存在卫星内部。<br>* “§efilter §e<name>§r”：用原始列表中匹配名称筛选条件的条目覆盖筛选列表。原始列表不会改变，因此可以连续按不同类型筛选，无需重新扫描。<br>* “§ecount§r”：将筛选列表的条目数量写入 RX。<br>* “§egettargetid §e<index>§r”：取得指定列表条目的唯一实体 ID，可供其他卫星精确瞄准实体。<br>* “§egetposition §e<index>§r”：取得指定条目的精确 X/Y/Z 坐标，各坐标以分号分隔。<br>* “§egetname §e<index>§r”：取得指定条目的类名，也就是名称筛选所使用的字符串。<br><br>{{Template:SatOverview}}"
+  }
+}

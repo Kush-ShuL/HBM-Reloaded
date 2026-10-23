@@ -1,0 +1,17 @@
+{
+  "parent": "hbm:block/stones_slab_0_bottom",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 0
+      },
+      "model": "hbm:block/stones_slab_0_bottom"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/stones_slab_1_bottom"
+    }
+  ]
+}

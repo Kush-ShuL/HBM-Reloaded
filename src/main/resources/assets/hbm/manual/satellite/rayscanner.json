@@ -1,0 +1,25 @@
+{
+  "name": "Narrowband Emission Scanning Satellite",
+  "icon": [
+    "hbm:satellite_ray_scan",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_ray_scan",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Narrowband Emission Scanning Satellite",
+    "ru_RU": "Спутник-сканер узкополосного излучения",
+    "zh_CN": "窄频辐射扫描卫星"
+  },
+  "content": {
+    "en_US": "The narrowband scanner can detect certain high-energy events with high precision in a small area. While the [[wideband detector|Wideband Radio Emission Detector Satellite]] can only give a rough estimation of where a small number of things are happening, the narrowband scanner can detect more types of emission and pinpint their location.<br><br>Types of emissions that can be detected include:<br>* '§6NEUTRON_EMISSION§r' from nuclear reactors<br>* '§6HIGH_ENERGY_PARTICLES§r' from fusion reacotrs and particle accelerators<br>* '§6RADAR_WAVES§r' from terrestrial radar<br>* '§6RADIO_WAVES§r' from satellite ground stations with active TX<br><br>Like with the wideband detector, these emissions are timed, certain events only happen once or in a time interval, so for best results, repeated scans over a timespan are recommended.<br><br>* '§esurvey§r' will perform a scan with a radius of 250m around the target location. The results are saved in an internal list.<br>* '§ecount§r' will write the amount of scan results to RX.<br>* '§egetinfo §e<index>§r' will write the specified entry's emission type to RX.<br>* '§egetposition §e<index>§r' will write the X/Z position of the specified event to RX. The coordinated are separated by semicolon.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Спутник-сканер узкополосного излучения может с высокой точностью обнаруживать определённые высокоэнергетические события на небольшой площади. В то время как [[широкополосный детектор|Wideband Radio Emission Detector Satellite]] даёт лишь приблизительную оценку происходящего, узкополосный сканер видит больше типов излучения и точно определяет их местоположение.<br><br>Типы излучений, которые могут быть обнаружены:<br>* '§6NEUTRON_EMISSION§r' от ядерных реакторов<br>* '§6HIGH_ENERGY_PARTICLES§r' от термоядерных реакторов и ускорителей частиц<br>* '§6RADAR_WAVES§r' от наземных радаров<br>* '§6RADIO_WAVES§r' от спутниковых наземных станций с активным TX<br><br>Как в случае с широкополосным детектором, эти излучения привязаны ко времени: некоторые события происходят лишь единожды или с определённым интервалом, поэтому для лучших результатов рекомендуется проводить повторные сканирования в течение некоторого времени.<br><br>'§esurvey§r' выполняет сканирование в радиусе 250м вокруг целевой точки. Результаты сохраняются во внутренний список.<br>* '§ecount§r' запишет количество результатов сканирования в RX.<br>'§egetinfo §eindex§r' запишет тип излучения указанной записи в RX.<br>* '§egetposition §eindex§r' запишет X/Z координаты указанного события в RX. Координаты разделяются точкой с запятой.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "窄频扫描器能够在较小范围内高精度探测某些高能事件。[[宽频探测器|Wideband Radio Emission Detector Satellite]]只能粗略估计少数类型事件的位置；窄频扫描器则能探测更多种辐射，并精确定位。<br><br>可探测的辐射包括：<br>* 核反应堆产生的“§6NEUTRON_EMISSION§r”。<br>* 聚变反应堆和粒子加速器产生的“§6HIGH_ENERGY_PARTICLES§r”。<br>* 地面雷达产生的“§6RADAR_WAVES§r”。<br>* TX 工作中的卫星地面站产生的“§6RADIO_WAVES§r”。<br><br>与宽频探测器一样，这些辐射存在时间限制：有些事件仅发生一次，或按一定间隔出现，因此建议在一段时间内反复扫描。<br><br>* “§esurvey§r”：扫描目标位置周围250米半径的区域，结果保存在内部列表中。<br>* “§ecount§r”：将扫描结果数量写入 RX。<br>* “§egetinfo §e<index>§r”：将指定条目的辐射类型写入 RX。<br>* “§egetposition §e<index>§r”：将指定事件的 X/Z 坐标写入 RX，以分号分隔。<br><br>{{Template:SatOverview}}"
+  }
+}

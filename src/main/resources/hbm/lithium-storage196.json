@@ -1,0 +1,33 @@
+{
+  "module": "lithium-storage196",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "block_lithium",
+      "id": "hbm:block_lithium",
+      "legacyRegistryId": "hbm:tile.block_lithium",
+      "originalClass": "BlockLithium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1403
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2536
+          },
+          "expression": "GameRegistry.registerBlock(block_lithium, block_lithium.getUnlocalizedName())",
+          "arguments": [
+            "block_lithium",
+            "block_lithium.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    }
+  ]
+}

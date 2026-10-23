@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:pwr_fuel",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 14
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NFN",
+    "NIN",
+    "NBN"
+  ],
+  "key": {
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetplutonium241"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetbismuth"
+    },
+    "N": {
+      "item": "hbm:nugget_uranium_fuel"
+    }
+  }
+}

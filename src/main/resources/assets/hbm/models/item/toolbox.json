@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/kit_toolbox",
+    "layer1": "hbm:item/kit_toolbox"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:toolbox_open": 1
+      },
+      "model": "hbm:item/toolbox_open"
+    }
+  ]
+}

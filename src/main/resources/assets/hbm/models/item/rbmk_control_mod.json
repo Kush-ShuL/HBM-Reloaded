@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_piped",
+  "inventory": true,
+  "top": false,
+  "lid": true,
+  "textures": {
+    "side": "hbm:block/rbmk/rbmk_control_mod_side",
+    "top": "hbm:block/rbmk/rbmk_control_mod_top",
+    "pipe_top": "hbm:block/rbmk/rbmk_control_mod_pipe_top",
+    "pipe_side": "hbm:block/rbmk/rbmk_control_mod_pipe_side",
+    "bottom": "hbm:block/rbmk/rbmk_control_mod_top",
+    "particle": "hbm:block/rbmk/rbmk_control_mod_side"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:mp_c_1",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "C",
+    "S"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "C": {
+      "item": "hbm:circuit_vacuum_tube"
+    },
+    "S": {
+      "item": "hbm:steel_scaffold"
+    }
+  }
+}

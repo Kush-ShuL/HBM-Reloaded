@@ -1,0 +1,26 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/treeleaves"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/treeleaves",
+      "raw": "treeLeaves"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "source": "Forge1.7.10 OreDictionary.initVanillaEntries: leaves/leaves2 wildcard",
+      "members": [
+        "minecraft:oak_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:birch_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:acacia_leaves",
+        "minecraft:dark_oak_leaves"
+      ],
+      "consumer": "legacy/src/main/java/com/hbm/main/CraftingManager.java:154"
+    }
+  ]
+}

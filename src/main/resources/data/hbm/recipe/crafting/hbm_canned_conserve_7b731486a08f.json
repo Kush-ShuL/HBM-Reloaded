@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:canned_conserve",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 25
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:canned_conserve",
+      "components": {
+        "hbm:legacy_metadata": 25
+      },
+      "strict": false
+    }
+  ]
+}

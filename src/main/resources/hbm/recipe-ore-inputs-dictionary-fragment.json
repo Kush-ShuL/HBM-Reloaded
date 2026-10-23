@@ -1,0 +1,106 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/orecoal",
+    "hbm:legacy_ore_dict/oreiron",
+    "hbm:legacy_ore_dict/oregold",
+    "hbm:legacy_ore_dict/orecopper",
+    "hbm:legacy_ore_dict/oreredstone",
+    "hbm:legacy_ore_dict/orelapis",
+    "hbm:legacy_ore_dict/orediamond",
+    "hbm:legacy_ore_dict/oreemerald",
+    "hbm:legacy_ore_dict/orequartz",
+    "hbm:legacy_ore_dict/orenetherquartz",
+    "hbm:legacy_ore_dict/blockcoal",
+    "hbm:legacy_ore_dict/ingotschraranium",
+    "hbm:legacy_ore_dict/schraranium"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/orecoal",
+      "raw": "oreCoal"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreiron",
+      "raw": "oreIron"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oregold",
+      "raw": "oreGold"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orecopper",
+      "raw": "oreCopper"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreredstone",
+      "raw": "oreRedstone"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orelapis",
+      "raw": "oreLapis"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orediamond",
+      "raw": "oreDiamond"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oreemerald",
+      "raw": "oreEmerald"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orequartz",
+      "raw": "oreQuartz"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orenetherquartz",
+      "raw": "oreNetherQuartz"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/blockcoal",
+      "raw": "blockCoal"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/ingotschraranium",
+      "raw": "ingotSchraranium"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/schraranium",
+      "raw": "Schraranium"
+    }
+  ],
+  "memberships": [
+    {
+      "tag": "hbm:legacy_ore_dict/oreiron",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/orecopper",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      ]
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/oregold",
+      "members": [
+        {
+          "id": "hbm:ore_enriched",
+          "components": {
+            "hbm:legacy_metadata": 7
+          }
+        }
+      ]
+    }
+  ]
+}

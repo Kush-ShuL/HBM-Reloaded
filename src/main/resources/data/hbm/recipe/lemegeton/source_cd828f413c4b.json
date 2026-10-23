@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 28,
+  "source_key": "ore:gemCoal",
+  "source_hash": 1750254332,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/gemcoal"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_graphite",
+    "count": 1
+  }
+}

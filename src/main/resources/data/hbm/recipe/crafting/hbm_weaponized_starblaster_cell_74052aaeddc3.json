@@ -1,0 +1,36 @@
+{
+  "result": {
+    "id": "hbm:weaponized_starblaster_cell",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:fluid_tank_full",
+      "components": {
+        "hbm:legacy_metadata": 35,
+        "hbm:fluid_type": 35
+      },
+      "strict": false
+    },
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:gun_b92_ammo",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 1,
+          "minecraft:custom_data": {
+            "energy": 25
+          }
+        }
+      }
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+    }
+  ]
+}

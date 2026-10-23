@@ -1,0 +1,60 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.chopper",
+  "duration": 1200,
+  "power": 100,
+  "order": 201,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:spawn_chopper",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplecmbsteel"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+      },
+      "count": 48
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor_desh"
+        }
+      },
+      "count": 5
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_controller_advanced"
+        }
+      },
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:fluid_identifier_multi",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 32767,
+      "hbm:fluid_type": 32767
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "D",
+    "C",
+    "P"
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dye"
+    },
+    "C": {
+      "item": "hbm:circuit_vacuum_tube"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  }
+}

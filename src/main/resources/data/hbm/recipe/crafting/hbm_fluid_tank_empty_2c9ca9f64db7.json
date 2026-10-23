@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:fluid_tank_empty",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "121",
+    "1G1",
+    "121"
+  ],
+  "key": {
+    "1": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platealuminum"
+    },
+    "2": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    }
+  }
+}

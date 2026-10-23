@@ -1,0 +1,86 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/grenade_filling.powder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 0
+      },
+      "model": "hbm:item/grenade_filling.powder"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/grenade_filling.he"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/grenade_filling.demo"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/grenade_filling.inc"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/grenade_filling.wp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/grenade_filling.cluster"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/grenade_filling.emp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/grenade_filling.plasma"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/grenade_filling.laser"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 9
+      },
+      "model": "hbm:item/grenade_filling.cluster_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 10
+      },
+      "model": "hbm:item/grenade_filling.nuclear"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 11
+      },
+      "model": "hbm:item/grenade_filling.nuclear_demo"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 12
+      },
+      "model": "hbm:item/grenade_filling.schrab"
+    }
+  ]
+}

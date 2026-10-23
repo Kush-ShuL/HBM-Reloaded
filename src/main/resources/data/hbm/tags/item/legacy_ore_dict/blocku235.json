@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_u235",
+    {
+      "id": "#c:storage_blocks/u235",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/uranium235",
+      "required": false
+    }
+  ]
+}

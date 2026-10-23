@@ -1,0 +1,51 @@
+{
+  "result": {
+    "id": "hbm:foundry_tank",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B B",
+    "I I",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:ingot_firebrick"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "S": {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:smooth_stone_slab"
+        },
+        {
+          "item": "minecraft:sandstone_slab"
+        },
+        {
+          "item": "minecraft:petrified_oak_slab"
+        },
+        {
+          "item": "minecraft:cobblestone_slab"
+        },
+        {
+          "item": "minecraft:brick_slab"
+        },
+        {
+          "item": "minecraft:stone_brick_slab"
+        },
+        {
+          "item": "minecraft:nether_brick_slab"
+        },
+        {
+          "item": "minecraft:quartz_slab"
+        }
+      ]
+    }
+  }
+}

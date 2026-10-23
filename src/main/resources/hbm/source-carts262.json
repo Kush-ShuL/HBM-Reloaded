@@ -1,0 +1,202 @@
+{
+  "module": "source-carts262",
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "cart",
+      "id": "hbm:cart",
+      "legacyRegistryId": "hbm:item.cart",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      },
+      "originalClass": "ItemModMinecart",
+      "metadataValues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "metadataNames": [
+        "empty",
+        "crate",
+        "destroyer",
+        "powder",
+        "semtex"
+      ],
+      "sourceCartBaseNBT": "cartBase",
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "sourceVariants": [
+        {
+          "kind": "empty",
+          "metadata": 0,
+          "base": "wood",
+          "nbt": {
+            "cartBase": 1
+          }
+        },
+        {
+          "kind": "empty",
+          "metadata": 0,
+          "base": "steel",
+          "nbt": {
+            "cartBase": 2
+          }
+        },
+        {
+          "kind": "empty",
+          "metadata": 0,
+          "base": "painted",
+          "nbt": {
+            "cartBase": 3
+          }
+        },
+        {
+          "kind": "crate",
+          "metadata": 1,
+          "base": "vanilla",
+          "nbt": {
+            "cartBase": 0
+          }
+        },
+        {
+          "kind": "destroyer",
+          "metadata": 2,
+          "base": "steel",
+          "nbt": {
+            "cartBase": 2
+          }
+        },
+        {
+          "kind": "destroyer",
+          "metadata": 2,
+          "base": "painted",
+          "nbt": {
+            "cartBase": 3
+          }
+        },
+        {
+          "kind": "powder",
+          "metadata": 3,
+          "base": "wood",
+          "nbt": {
+            "cartBase": 1
+          }
+        },
+        {
+          "kind": "powder",
+          "metadata": 3,
+          "base": "steel",
+          "nbt": {
+            "cartBase": 2
+          }
+        },
+        {
+          "kind": "powder",
+          "metadata": 3,
+          "base": "painted",
+          "nbt": {
+            "cartBase": 3
+          }
+        },
+        {
+          "kind": "semtex",
+          "metadata": 4,
+          "base": "wood",
+          "nbt": {
+            "cartBase": 1
+          }
+        },
+        {
+          "kind": "semtex",
+          "metadata": 4,
+          "base": "steel",
+          "nbt": {
+            "cartBase": 2
+          }
+        },
+        {
+          "kind": "semtex",
+          "metadata": 4,
+          "base": "painted",
+          "nbt": {
+            "cartBase": 3
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "hbm:entity_ntm_cart_crate",
+      "sourceClass": "EntityMinecartCrate",
+      "sourceId": "entity_ntm_cart_crate",
+      "source": "legacy/src/main/java/com/hbm/entity/cart/EntityMinecartCrate.java",
+      "slots": 54,
+      "trackingRangeBlocks": 250,
+      "updateInterval": 1,
+      "velocityUpdates": false
+    },
+    {
+      "id": "hbm:entity_ntm_cart_destroyer",
+      "sourceClass": "EntityMinecartDestroyer",
+      "sourceId": "entity_ntm_cart_destroyer",
+      "source": "legacy/src/main/java/com/hbm/entity/cart/EntityMinecartDestroyer.java",
+      "slots": 18,
+      "trackingRangeBlocks": 250,
+      "updateInterval": 1,
+      "velocityUpdates": false
+    },
+    {
+      "id": "hbm:entity_ntm_cart_ore",
+      "sourceClass": "EntityMinecartOre",
+      "sourceId": "entity_ntm_cart_ore",
+      "source": "legacy/src/main/java/com/hbm/entity/cart/EntityMinecartOre.java",
+      "slots": 0,
+      "trackingRangeBlocks": 250,
+      "updateInterval": 1,
+      "velocityUpdates": false
+    },
+    {
+      "id": "hbm:entity_ntm_cart_powder",
+      "sourceClass": "EntityMinecartPowder",
+      "sourceId": "entity_ntm_cart_powder",
+      "source": "legacy/src/main/java/com/hbm/entity/cart/EntityMinecartPowder.java",
+      "slots": 0,
+      "trackingRangeBlocks": 250,
+      "updateInterval": 1,
+      "velocityUpdates": false
+    },
+    {
+      "id": "hbm:entity_ntm_cart_semtex",
+      "sourceClass": "EntityMinecartSemtex",
+      "sourceId": "entity_ntm_cart_semtex",
+      "source": "legacy/src/main/java/com/hbm/entity/cart/EntityMinecartSemtex.java",
+      "slots": 0,
+      "trackingRangeBlocks": 250,
+      "updateInterval": 1,
+      "velocityUpdates": false
+    }
+  ],
+  "sourceBase": [
+    "vanilla",
+    "wood",
+    "steel",
+    "painted"
+  ],
+  "sourceTypes": [
+    "empty",
+    "crate",
+    "destroyer",
+    "powder",
+    "semtex"
+  ],
+  "nativeNBTSourceItems": [
+    "Items/Slot entity inventory",
+    "slotN crate item payload",
+    "base entity data",
+    "cartBase item data"
+  ]
+}

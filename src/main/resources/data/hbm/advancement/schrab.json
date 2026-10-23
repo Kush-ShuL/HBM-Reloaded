@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:desh",
+  "display": {
+    "icon": {
+      "id": "hbm:ingot_schrabidium"
+    },
+    "title": {
+      "translate": "achievement.schrab"
+    },
+    "description": {
+      "translate": "achievement.schrab.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:schrab"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ballistite",
+    "hbm:cordite",
+    {
+      "id": "#c:dusts/any_smokeless",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Shaped Charges",
+  "icon": [
+    "hbm:ammo_standard_rocket_heat",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:ammo_standard_g40_heat",
+      1,
+      0
+    ],
+    [
+      "hbm:ammo_standard_rocket_heat",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Shaped Charges",
+    "ru_RU": "Кумулятивные",
+    "zh_CN": "聚能装药"
+  },
+  "content": {
+    "en_US": "Special type of explosive munition with weaker splash damage compared to high-explosives, which deals massive extra damage on direct hit.<br><br>{{Template:Explosives}}",
+    "ru_RU": "Особый тип разрывных боеприпасов с меньшим уроном по площади по сравнению со стандартными, который наносит огромный дополнительный урон при прямом попадании.<br><br>{{Template:Explosives}}",
+    "zh_CN": "特殊的爆炸性弹药，爆炸伤害低于高爆弹药，但直接击中目标时会造成高额 额外伤害。<br><br>{{Template:Explosives}}"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "hbm:meteor/headloot",
+  "fallback": "hbm:meteor/headback",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_dragon_chest",
+        "processors": "hbm:meteor/crates",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_dragon_tesla",
+        "processors": "hbm:meteor/crates",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_dragon_trap",
+        "processors": "hbm:meteor/crates",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_dragon_crate_crab",
+        "processors": "hbm:meteor/crates",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    }
+  ]
+}

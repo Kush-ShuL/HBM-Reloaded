@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:ammo_shell",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 4
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "NSN",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+    },
+    "N": {
+      "item": "hbm:neutron_reflector"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:ammo_shell",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  }
+}

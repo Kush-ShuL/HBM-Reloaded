@@ -1,0 +1,43 @@
+{
+  "minecraft:enchantable/mining": {
+    "replace": false,
+    "values": [
+      "hbm:cobalt_decorated_axe",
+      "hbm:cobalt_decorated_shovel",
+      "hbm:starmetal_axe",
+      "hbm:starmetal_shovel",
+      "hbm:bismuth_axe",
+      "hbm:volcanic_axe",
+      "hbm:chlorophyte_axe",
+      "hbm:mese_axe",
+      "hbm:cobalt_axe",
+      "hbm:cobalt_shovel"
+    ]
+  },
+  "minecraft:enchantable/mining_loot": {
+    "replace": false,
+    "values": [
+      "hbm:cobalt_decorated_axe",
+      "hbm:cobalt_decorated_shovel",
+      "hbm:starmetal_axe",
+      "hbm:starmetal_shovel",
+      "hbm:bismuth_axe",
+      "hbm:volcanic_axe",
+      "hbm:chlorophyte_axe",
+      "hbm:mese_axe",
+      "hbm:cobalt_axe",
+      "hbm:cobalt_shovel"
+    ]
+  },
+  "minecraft:enchantable/durability": {
+    "replace": false,
+    "values": [
+      "hbm:cobalt_decorated_axe",
+      "hbm:cobalt_decorated_shovel",
+      "hbm:starmetal_axe",
+      "hbm:starmetal_shovel",
+      "hbm:cobalt_axe",
+      "hbm:cobalt_shovel"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:steamsuit_legs",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "DXD",
+    "C C"
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platecopper"
+    },
+    "X": {
+      "type": "neoforge:components",
+      "items": "hbm:steel_legs",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  }
+}

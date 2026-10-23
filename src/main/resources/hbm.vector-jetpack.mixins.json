@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.equipment.jetpack.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "JetpackFlightAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/oreiron"
+  },
+  "second": {
+    "type": "hbm:alloy_legacy_stack",
+    "stack": {
+      "id": "hbm:powder_flux",
+      "count": 1
+    }
+  },
+  "result": {
+    "id": "hbm:ingot_steel",
+    "count": 3
+  },
+  "order": 4
+}

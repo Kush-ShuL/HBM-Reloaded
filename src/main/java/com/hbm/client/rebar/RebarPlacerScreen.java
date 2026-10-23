@@ -1,0 +1,16 @@
+package com.hbm.client.rebar;
+import com.hbm.block.rebar.*;
+import com.hbm.client.gui.LegacyContainerScreen;
+import java.util.*;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+/** Original176x182 one-pattern GUI, invalid red panel and original cycling multirow concrete icon tooltip. */
+public final class RebarPlacerScreen extends LegacyContainerScreen<RebarPlacerMenu> {
+ public RebarPlacerScreen(RebarPlacerMenu menu,Inventory player,Component title){super(menu,player,title,ResourceLocation.parse("hbm:textures/gui/gui_rebar.png"),176,182);}
+ @Override protected void renderLabels(GuiGraphics g,int x,int y){var name=menu.title();g.drawString(font,name,88-font.width(name)/2,6,4210752,false);g.drawString(font,playerInventoryTitle,8,88,4210752,false);}
+ @Override protected void renderBg(GuiGraphics g,float partial,int x,int y){super.renderBg(g,partial,x,y);if(!RebarConcrete.valid(menu.getSlot(0).getItem()))drawLegacyRegion(g,87,17,176,0,56,56);}
+ @Override public void render(GuiGraphics g,int x,int y,float partial){super.render(g,x,y,partial);if(!legacyInfoHovered(x,y,53,36,16,16)||menu.getSlot(0).hasItem())return;var patterns=RebarConcrete.patterns();if(patterns.isEmpty())return;int selected=patterns.size()>1?(int)(System.currentTimeMillis()/1000%patterns.size()):0;var rows=new ArrayList<List<ItemStack>>();if(patterns.size()<10)rows.add(patterns);else if(patterns.size()<24){rows.add(patterns.subList(0,patterns.size()/2));rows.add(patterns.subList(patterns.size()/2,patterns.size()));}else{int first=(int)Math.ceil(patterns.size()/3D),second=(int)Math.ceil(patterns.size()/3D*2);rows.add(patterns.subList(0,first));rows.add(patterns.subList(first,second));rows.add(patterns.subList(second,patterns.size()));}var name=patterns.get(selected).getHoverName();int width=Math.max(font.width(name),rows.stream().mapToInt(row->row.size()*18).max().orElse(0)),height=rows.size()*18+10,minX=x+12,minY=y-12;if(minX+width>this.width)minX-=28+width;if(minY+height+6>this.height)minY=this.height-height-6;g.pose().pushPose();g.pose().translate(0,0,400);int background=0xf0100010,color0=0x505000ff,color1=(color0&0xfefefe)>>1|color0&0xff000000;g.fill(minX-3,minY-4,minX+width+3,minY-3,background);g.fill(minX-3,minY+height+3,minX+width+3,minY+height+4,background);g.fill(minX-3,minY-3,minX+width+3,minY+height+3,background);g.fill(minX-4,minY-3,minX-3,minY+height+3,background);g.fill(minX+width+3,minY-3,minX+width+4,minY+height+3,background);g.fillGradient(minX-3,minY-2,minX-2,minY+height+2,color0,color1);g.fillGradient(minX+width+2,minY-2,minX+width+3,minY+height+2,color0,color1);g.fill(minX-3,minY-3,minX+width+3,minY-2,color0);g.fill(minX-3,minY+height+2,minX+width+3,minY+height+3,color1);int index=0,drawY=minY;for(var row:rows){int drawX=minX;for(var stack:row){boolean active=patterns.size()>1&&index==selected;if(active){g.fill(drawX-1,drawY-1,drawX+17,drawY+17,0xffff0000);g.fill(drawX,drawY,drawX+16,drawY+16,0xffb0b0b0);}g.renderItem(stack,drawX,drawY);g.renderItemDecorations(font,stack,drawX,drawY,active?"0":null);index++;drawX+=18;}drawY+=18+(row==rows.getFirst()?2:0);}g.drawString(font,name,minX,drawY,0xffffffff,true);g.pose().popPose();}
+}

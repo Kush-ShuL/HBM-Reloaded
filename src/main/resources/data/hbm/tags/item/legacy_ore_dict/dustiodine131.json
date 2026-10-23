@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_i131",
+    {
+      "id": "#c:dusts/i131",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/iodine131",
+      "required": false
+    }
+  ]
+}

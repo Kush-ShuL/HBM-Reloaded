@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:turret_sentry",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPL",
+    " MD",
+    " SC"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "M": {
+      "item": "hbm:motor"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+    },
+    "S": {
+      "item": "hbm:steel_scaffold"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "D": {
+      "item": "hbm:crt_display"
+    }
+  }
+}

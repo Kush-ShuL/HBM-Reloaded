@@ -1,0 +1,48 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_deuterium_extractor",
+      "id": "hbm:machine_deuterium_extractor",
+      "itemId": "hbm:machine_deuterium_extractor",
+      "kind": "block",
+      "originalClass": "MachineDeuteriumExtractor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2249
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "sourceMetadataIgnored": true,
+      "status": "source-port-target-javac-0",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "machine_deuterium_tower",
+      "id": "hbm:machine_deuterium_tower",
+      "itemId": "hbm:machine_deuterium_tower",
+      "kind": "block",
+      "originalClass": "DeuteriumTower",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2250
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "sourceMetadataIgnored": false,
+      "status": "source-port-target-javac-0",
+      "runtimeValidated": false
+    }
+  ]
+}

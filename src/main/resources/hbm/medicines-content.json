@@ -1,0 +1,544 @@
+{
+  "registered": [
+    {
+      "symbol": "radx",
+      "id": "hbm:radx",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2828
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "siox",
+      "id": "hbm:siox",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2829
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pill_herbal",
+      "id": "hbm:pill_herbal",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2830
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "xanax",
+      "id": "hbm:xanax",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2831
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "fmn",
+      "id": "hbm:fmn",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2832
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "five_htp",
+      "id": "hbm:five_htp",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2833
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pill_iodine",
+      "id": "hbm:pill_iodine",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2834
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "plan_c",
+      "id": "hbm:plan_c",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2835
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pill_red",
+      "id": "hbm:pill_red",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2836
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "chocolate",
+      "id": "hbm:chocolate",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemPill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2947
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_antidote",
+      "id": "hbm:syringe_antidote",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 99
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_poison",
+      "id": "hbm:syringe_poison",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 104
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_awesome",
+      "id": "hbm:syringe_awesome",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 108
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "iv_empty",
+      "id": "hbm:iv_empty",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 112
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "iv_blood",
+      "id": "hbm:iv_blood",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 120
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "iv_xp_empty",
+      "id": "hbm:iv_xp_empty",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 125
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "iv_xp",
+      "id": "hbm:iv_xp",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 133
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "radaway",
+      "id": "hbm:radaway",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 138
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "radaway_strong",
+      "id": "hbm:radaway_strong",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 143
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "radaway_flush",
+      "id": "hbm:radaway_flush",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSimpleConsumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/special/ItemSimpleConsumable.java",
+        "line": 147
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_metal_stimpak",
+      "id": "hbm:syringe_metal_stimpak",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2820
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_metal_medx",
+      "id": "hbm:syringe_metal_medx",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2821
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_metal_psycho",
+      "id": "hbm:syringe_metal_psycho",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2822
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_metal_super",
+      "id": "hbm:syringe_metal_super",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2823
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "med_bag",
+      "id": "hbm:med_bag",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2827
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_taint",
+      "id": "hbm:syringe_taint",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2824
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "syringe_mkunicorn",
+      "id": "hbm:syringe_mkunicorn",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2825
+      },
+      "tab": null,
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "cbt_device",
+      "id": "hbm:cbt_device",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemSyringe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2846
+      },
+      "tab": null,
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "serum",
+      "id": "hbm:serum",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemModSerum",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2879
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "injector_5htp",
+      "id": "hbm:injector_5htp",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemModAuto",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2898
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "injector_knife",
+      "id": "hbm:injector_knife",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemModKnife",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2899
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "cigarette",
+      "id": "hbm:cigarette",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemCigarette",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2847
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "crackpipe",
+      "id": "hbm:crackpipe",
+      "kind": "item",
+      "module": "medicines",
+      "originalClass": "ItemCigarette",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2848
+      },
+      "tab": "consumable",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "hbm:taint",
+      "sourceColumn": 0,
+      "sourceRow": 0,
+      "size": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "hbm:bang",
+      "sourceColumn": 3,
+      "sourceRow": 0,
+      "size": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "hbm:lead",
+      "sourceColumn": 6,
+      "sourceRow": 0,
+      "size": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "hbm:phosphorus",
+      "sourceColumn": 1,
+      "sourceRow": 1,
+      "size": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "hbm:potionsickness",
+      "sourceColumn": 3,
+      "sourceRow": 1,
+      "size": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "hbm:death",
+      "sourceColumn": 4,
+      "sourceRow": 1,
+      "size": [
+        18,
+        18
+      ]
+    }
+  ],
+  "hooks": {
+    "register": "MedicineContent.register(IEventBus, ModContainer)",
+    "creative": "MedicineContent.creativeStacks(String tab)"
+  },
+  "sourceSemantics": {
+    "pills": "10 ticks; nutrition 0, saturation modifier0.6, always edible; original negative-effect lists and disease reductions; original 1/25 chocolate overdose; exact digamma helpers",
+    "radaway": "The actually bound ItemSimpleConsumable implementation:140/350/500 ticks, one RAD removed per tick, additive duration, iv_empty returned; no old unbound ItemSyringe branch",
+    "sickness": "PotionConfig default OFF; NORMAL seconds, TERRARIA times12; empty cure set; herbal unconditionally adds12000 ticks",
+    "metalSyringes": "Immediate self-use or attack injection, actual original effects and returns; the source final-stack self-use return precedes applying potion sickness, while attack always applies sickness",
+    "redPill": "3600 second death effect is a player model replacement, not periodic damage; original player_fem OBJ, original per-part pivots and rotations, original flat HFR UVs/normals",
+    "anvilPoisonedFood": "Original ntmCyanide / ntmRedPill custom-data flags execute on player food completion, using the pre-consumption stack; ten randomized1000HP euthanasia hits or ten applications of3600-second player-model effect, respectively.",
+    "mku": "216000 tick timer, armor/item contamination, aerial spread range2 or16 in water/rain, original symptom thresholds and damage doubling; original unreachable end-of-timer lethal branch remains unreachable",
+    "experienceBags": "Original EnchantmentUtil experience curve,100 points transferred, real player restriction for collection",
+    "armorMedicine": "Original serum replaces poison with5-second StrengthV; auto5HTP consumes the chest attachment at digamma>=5, removes5digamma, grants60-second stability and20HP; knife removes2maximumHP every50ticks down to2, permanent modifier and original client properJolt.",
+    "smoking": "Original30-tick BOW use; cigarette adds2000each lung disease and100RAD, crackpipe adds500blacklung/heals10HP/10-second nausea; source smoke tiles and exact puff count/velocity/lifetime.",
+    "effects": "Six remaining HbmPotion registry names, exact colors/readiness/tick actions, original18px sprites cropped without redraw; five existing ExposureEffects identities reused"
+  },
+  "limitations": [
+    "Taint terrain trails are default OFF as in source and can only target the actual taint block once its block module is present.",
+    "Full recipe availability follows real ingredient migration; the central recipe generators are managed by the parent agent."
+  ],
+  "runtimeValidated": false
+}

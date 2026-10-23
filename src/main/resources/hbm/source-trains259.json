@@ -1,0 +1,68 @@
+{
+  "module": "source-trains259",
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "train",
+      "id": "hbm:train",
+      "legacyRegistryId": "hbm:item.train",
+      "originalClass": "ItemTrain",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2953
+      },
+      "metadataValues": [
+        0,
+        1
+      ],
+      "creativeTab": "none"
+    },
+    {
+      "kind": "item",
+      "symbol": "coupling_tool",
+      "id": "hbm:coupling_tool",
+      "legacyRegistryId": "hbm:item.coupling_tool",
+      "originalClass": "ItemCouplingTool",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3842
+      },
+      "metadataValues": [
+        0
+      ],
+      "creativeTab": "consumable"
+    }
+  ],
+  "entities": [
+    {
+      "sourceClass": "EntityRailCarRidable.SeatDummyEntity",
+      "sourceId": "entity_ntm_seat_dummy",
+      "id": "hbm:entity_ntm_seat_dummy",
+      "transient": true
+    },
+    {
+      "sourceClass": "EntityRailCarBase.BoundingBoxDummyEntity",
+      "sourceId": "entity_ntm_bounding_dummy",
+      "id": "hbm:entity_ntm_bounding_dummy",
+      "transient": true
+    },
+    {
+      "sourceClass": "TrainCargoTram",
+      "sourceId": "entity_ntm_cargo_tram",
+      "id": "hbm:entity_ntm_cargo_tram",
+      "slots": 29
+    },
+    {
+      "sourceClass": "TrainCargoTramTrailer",
+      "sourceId": "entity_ntm_cargo_tram_trailer",
+      "id": "hbm:entity_ntm_cargo_tram_trailer",
+      "slots": 45
+    }
+  ],
+  "metadata": {
+    "train": {
+      "0": "CARGO_TRAM",
+      "1": "CARGO_TRAM_TRAILER"
+    }
+  }
+}

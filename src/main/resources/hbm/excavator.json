@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_excavator",
+      "id": "hbm:machine_excavator",
+      "kind": "block",
+      "originalClass": "MachineExcavator",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2205
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "barricade",
+      "id": "hbm:barricade",
+      "kind": "block",
+      "originalClass": "BlockNoDrop",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2210
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "entities": [
+    {
+      "id": "hbm:entity_c_item",
+      "originalClass": "EntityMovingItem",
+      "trackingRange": 1000,
+      "originalBase": "EntityMovingConveyorObject"
+    }
+  ],
+  "assembly": 11,
+  "sourceOcMethods": 0,
+  "sourceROR": [
+    "VAL:power",
+    "VAL:fluid",
+    "VAL:state",
+    "FUN:setstate!state"
+  ],
+  "nativeStorage": "HE1000000; privateacid16000;14slots",
+  "renderFloor": "actual minBuildHeight"
+}

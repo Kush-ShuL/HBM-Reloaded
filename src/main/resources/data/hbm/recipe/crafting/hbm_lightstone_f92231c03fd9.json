@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:lightstone",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "key": {
+    "C": {
+      "type": "neoforge:components",
+      "items": "hbm:lightstone",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  }
+}

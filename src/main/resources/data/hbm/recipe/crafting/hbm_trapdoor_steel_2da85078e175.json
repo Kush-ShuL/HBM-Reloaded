@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:trapdoor_steel",
+    "count": 1
+  },
+  "category": "building",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_trapdoor"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    }
+  ]
+}

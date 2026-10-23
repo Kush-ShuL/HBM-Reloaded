@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:block/brick_forgotten_lock_0",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/brick_forgotten_lock_1"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:block/brick_forgotten_lock_2"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:block/brick_forgotten_lock_0"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "t0": "hbm:block/pneumatic_tube",
+    "t1": "hbm:block/pneumatic_tube_in",
+    "t2": "hbm:block/pneumatic_tube_out",
+    "t3": "hbm:block/pneumatic_tube_connector",
+    "t4": "hbm:block/pneumatic_tube_straight",
+    "t5": "hbm:block/pneumatic_tube_paintable",
+    "t6": "hbm:block/pneumatic_tube_paintable_overlay",
+    "t7": "hbm:block/pneumatic_tube_paintable_overlay_in",
+    "t8": "hbm:block/pneumatic_tube_paintable_overlay_out",
+    "particle": "hbm:block/pneumatic_tube"
+  },
+  "elements": []
+}

@@ -1,0 +1,179 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_epress",
+      "id": "hbm:machine_epress",
+      "kind": "block",
+      "originalClass": "MachineEPress",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2230
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "legacyBlockEntityId": "tileentity_electric_press",
+      "modernBlockEntityId": "hbm:electric_press"
+    },
+    {
+      "symbol": "machine_conveyor_press",
+      "id": "hbm:machine_conveyor_press",
+      "kind": "block",
+      "originalClass": "MachineConveyorPress",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2231
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "legacyBlockEntityId": "tileentity_conveyor_press",
+      "modernBlockEntityId": "hbm:conveyor_press"
+    }
+  ],
+  "existingRecipeType": "hbm:press",
+  "manufacture": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 354
+      },
+      "sourceExpression": "new GenericRecipe(\"ass.epress\").setup(100, 100).outputItems(new ItemStack(ModBlocks.machine_epress, 1))\n\t\t\t\t.inputItems(new OreDictStack(STEEL.plate(), 8), new OreDictStack(ANY_RUBBER.ingot(), 4), new ComparableStack(ModItems.part_generic, 2, EnumPartType.PISTON_HYDRAULIC.ordinal()), new ComparableStack(ModItems.circuit, 1, EnumCircuitType.BASIC))\n\t\t\t\t.inputItemsEx(new ComparableStack(ModItems.item_expensive, 1, EnumExpensiveType.HEAVY_FRAME), new ComparableStack(ModItems.part_generic, 4, EnumPartType.PISTON_HYDRAULIC.ordinal()), new ComparableStack(ModItems.circuit, 4, EnumCircuitType.BASIC))",
+      "recipe": "hbm:assembly/source_354",
+      "resource": "data/hbm/recipe/assembly/source_354.json",
+      "value": {
+        "type": "hbm:assembly",
+        "name": "ass.epress",
+        "duration": 100,
+        "power": 100,
+        "order": 113,
+        "input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platesteel"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:part_generic_piston_hydraulic"
+              }
+            },
+            "count": 2
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_basic"
+              }
+            },
+            "count": 1
+          }
+        ],
+        "expensive_input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:item_expensive_heavy_frame"
+              }
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:part_generic_piston_hydraulic"
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_basic"
+              }
+            },
+            "count": 4
+          }
+        ],
+        "output_items": [
+          {
+            "pool": [
+              {
+                "stack": {
+                  "id": "hbm:machine_epress",
+                  "count": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "canonicalDuplicate": false
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 889
+      },
+      "sourceExpression": "addRecipeAuto(new ItemStack(ModBlocks.machine_conveyor_press), new Object[] { \"CPC\", \"CBC\", \"CCC\", 'C', CU.plate(), 'P', ModBlocks.machine_epress, 'B', DictFrame.fromOne(ModItems.conveyor_wand, ConveyorType.REGULAR) })",
+      "recipe": "hbm:crafting/hbm_machine_conveyor_press_4ad209b7cf2d",
+      "resource": "data/hbm/recipe/crafting/hbm_machine_conveyor_press_4ad209b7cf2d.json",
+      "value": {
+        "result": {
+          "id": "hbm:machine_conveyor_press",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "CPC",
+          "CBC",
+          "CCC"
+        ],
+        "key": {
+          "C": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platecopper"
+          },
+          "P": {
+            "item": "hbm:machine_epress"
+          },
+          "B": {
+            "type": "neoforge:components",
+            "items": "hbm:conveyor_wand",
+            "components": {
+              "hbm:legacy_metadata": 0
+            },
+            "strict": false
+          }
+        }
+      },
+      "canonicalDuplicate": false
+    }
+  ]
+}

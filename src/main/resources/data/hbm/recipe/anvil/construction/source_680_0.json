@@ -1,0 +1,55 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:machine_stirling",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_steel",
+        "count": 6
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "minecraft:copper_ingot",
+        "count": 8
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:coil_copper",
+        "count": 4
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:gear_large",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 680000000
+}

@@ -1,0 +1,113 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_panel_inventory",
+  "textures": {
+    "all": "hbm:block/rbmk/rbmk_display",
+    "particle": "hbm:block/rbmk/rbmk_display",
+    "indicator": "hbm:block/rbmk/panel_indicator"
+  },
+  "overlays": [
+    {
+      "model": "hbm:models/rbmk/indicator.obj",
+      "texture": "indicator",
+      "uv_scale": [
+        0.65625,
+        0.375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.3125,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/indicator.obj",
+      "texture": "indicator",
+      "uv_scale": [
+        0.65625,
+        0.375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.3125,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/indicator.obj",
+      "texture": "indicator",
+      "uv_scale": [
+        0.65625,
+        0.375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.0,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/indicator.obj",
+      "texture": "indicator",
+      "uv_scale": [
+        0.65625,
+        0.375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.0,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/indicator.obj",
+      "texture": "indicator",
+      "uv_scale": [
+        0.65625,
+        0.375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.3125,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/indicator.obj",
+      "texture": "indicator",
+      "uv_scale": [
+        0.65625,
+        0.375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.3125,
+            0.25
+          ]
+        }
+      ]
+    }
+  ]
+}

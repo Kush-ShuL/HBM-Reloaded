@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DPC"
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:conveyor_wand",
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      }
+    },
+    "C": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:conveyor_wand",
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      }
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    }
+  },
+  "result": {
+    "id": "hbm:conveyor_wand",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  }
+}

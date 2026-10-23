@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "symbol": "chemical_dye",
+      "id": "hbm:chemical_dye",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemChemicalDye",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      },
+      "metadataRange": [
+        0,
+        15
+      ],
+      "names": [
+        "black",
+        "red",
+        "green",
+        "brown",
+        "blue",
+        "purple",
+        "cyan",
+        "silver",
+        "gray",
+        "pink",
+        "lime",
+        "yellow",
+        "lightblue",
+        "magenta",
+        "orange",
+        "white"
+      ],
+      "enumClass": "EnumChemDye",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "crayon",
+      "id": "hbm:crayon",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemCrayon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      },
+      "metadataRange": [
+        0,
+        15
+      ],
+      "names": [
+        "black",
+        "red",
+        "green",
+        "brown",
+        "blue",
+        "purple",
+        "cyan",
+        "silver",
+        "gray",
+        "pink",
+        "lime",
+        "yellow",
+        "lightblue",
+        "magenta",
+        "orange",
+        "white"
+      ],
+      "enumClass": "EnumChemDye",
+      "runtimeValidated": false
+    }
+  ],
+  "recipes": 27,
+  "baseProductionPending": 18
+}

@@ -1,0 +1,1156 @@
+{
+  "source": "Actual original 1.7.10 aft array, all24 costs/rarity/directional compatibility exported by reflection; afv.b(Random,add,int) source algorithm",
+  "bookEnchantability": 1,
+  "enchantments": [
+    {
+      "id": 0,
+      "name": "minecraft:protection",
+      "sourceKey": "enchantment.protect.all",
+      "weight": 10,
+      "costs": [
+        [
+          1,
+          1,
+          21
+        ],
+        [
+          2,
+          12,
+          32
+        ],
+        [
+          3,
+          23,
+          43
+        ],
+        [
+          4,
+          34,
+          54
+        ]
+      ],
+      "compatible": [
+        2,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 1,
+      "name": "minecraft:fire_protection",
+      "sourceKey": "enchantment.protect.fire",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          10,
+          22
+        ],
+        [
+          2,
+          18,
+          30
+        ],
+        [
+          3,
+          26,
+          38
+        ],
+        [
+          4,
+          34,
+          46
+        ]
+      ],
+      "compatible": [
+        2,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 2,
+      "name": "minecraft:feather_falling",
+      "sourceKey": "enchantment.protect.fall",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          5,
+          15
+        ],
+        [
+          2,
+          11,
+          21
+        ],
+        [
+          3,
+          17,
+          27
+        ],
+        [
+          4,
+          23,
+          33
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 3,
+      "name": "minecraft:blast_protection",
+      "sourceKey": "enchantment.protect.explosion",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          5,
+          17
+        ],
+        [
+          2,
+          13,
+          25
+        ],
+        [
+          3,
+          21,
+          33
+        ],
+        [
+          4,
+          29,
+          41
+        ]
+      ],
+      "compatible": [
+        2,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 4,
+      "name": "minecraft:projectile_protection",
+      "sourceKey": "enchantment.protect.projectile",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          3,
+          18
+        ],
+        [
+          2,
+          9,
+          24
+        ],
+        [
+          3,
+          15,
+          30
+        ],
+        [
+          4,
+          21,
+          36
+        ]
+      ],
+      "compatible": [
+        2,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 5,
+      "name": "minecraft:respiration",
+      "sourceKey": "enchantment.oxygen",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          10,
+          40
+        ],
+        [
+          2,
+          20,
+          50
+        ],
+        [
+          3,
+          30,
+          60
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 6,
+      "name": "minecraft:aqua_affinity",
+      "sourceKey": "enchantment.waterWorker",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          1,
+          41
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 7,
+      "name": "minecraft:thorns",
+      "sourceKey": "enchantment.thorns",
+      "weight": 1,
+      "costs": [
+        [
+          1,
+          10,
+          61
+        ],
+        [
+          2,
+          30,
+          71
+        ],
+        [
+          3,
+          50,
+          81
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 16,
+      "name": "minecraft:sharpness",
+      "sourceKey": "enchantment.damage.all",
+      "weight": 10,
+      "costs": [
+        [
+          1,
+          1,
+          21
+        ],
+        [
+          2,
+          12,
+          32
+        ],
+        [
+          3,
+          23,
+          43
+        ],
+        [
+          4,
+          34,
+          54
+        ],
+        [
+          5,
+          45,
+          65
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 17,
+      "name": "minecraft:smite",
+      "sourceKey": "enchantment.damage.undead",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          5,
+          25
+        ],
+        [
+          2,
+          13,
+          33
+        ],
+        [
+          3,
+          21,
+          41
+        ],
+        [
+          4,
+          29,
+          49
+        ],
+        [
+          5,
+          37,
+          57
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 18,
+      "name": "minecraft:bane_of_arthropods",
+      "sourceKey": "enchantment.damage.arthropods",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          5,
+          25
+        ],
+        [
+          2,
+          13,
+          33
+        ],
+        [
+          3,
+          21,
+          41
+        ],
+        [
+          4,
+          29,
+          49
+        ],
+        [
+          5,
+          37,
+          57
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 19,
+      "name": "minecraft:knockback",
+      "sourceKey": "enchantment.knockback",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          5,
+          61
+        ],
+        [
+          2,
+          25,
+          71
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 20,
+      "name": "minecraft:fire_aspect",
+      "sourceKey": "enchantment.fire",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          10,
+          61
+        ],
+        [
+          2,
+          30,
+          71
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 21,
+      "name": "minecraft:looting",
+      "sourceKey": "enchantment.lootBonus",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          15,
+          61
+        ],
+        [
+          2,
+          24,
+          71
+        ],
+        [
+          3,
+          33,
+          81
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        32,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 32,
+      "name": "minecraft:efficiency",
+      "sourceKey": "enchantment.digging",
+      "weight": 10,
+      "costs": [
+        [
+          1,
+          1,
+          61
+        ],
+        [
+          2,
+          11,
+          71
+        ],
+        [
+          3,
+          21,
+          81
+        ],
+        [
+          4,
+          31,
+          91
+        ],
+        [
+          5,
+          41,
+          101
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 33,
+      "name": "minecraft:silk_touch",
+      "sourceKey": "enchantment.untouching",
+      "weight": 1,
+      "costs": [
+        [
+          1,
+          15,
+          61
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        34,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 34,
+      "name": "minecraft:unbreaking",
+      "sourceKey": "enchantment.durability",
+      "weight": 5,
+      "costs": [
+        [
+          1,
+          5,
+          61
+        ],
+        [
+          2,
+          13,
+          71
+        ],
+        [
+          3,
+          21,
+          81
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 35,
+      "name": "minecraft:fortune",
+      "sourceKey": "enchantment.lootBonusDigger",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          15,
+          61
+        ],
+        [
+          2,
+          24,
+          71
+        ],
+        [
+          3,
+          33,
+          81
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        34,
+        48,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 48,
+      "name": "minecraft:power",
+      "sourceKey": "enchantment.arrowDamage",
+      "weight": 10,
+      "costs": [
+        [
+          1,
+          1,
+          16
+        ],
+        [
+          2,
+          11,
+          26
+        ],
+        [
+          3,
+          21,
+          36
+        ],
+        [
+          4,
+          31,
+          46
+        ],
+        [
+          5,
+          41,
+          56
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        49,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 49,
+      "name": "minecraft:punch",
+      "sourceKey": "enchantment.arrowKnockback",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          12,
+          37
+        ],
+        [
+          2,
+          32,
+          57
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        50,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 50,
+      "name": "minecraft:flame",
+      "sourceKey": "enchantment.arrowFire",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          20,
+          50
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        51,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 51,
+      "name": "minecraft:infinity",
+      "sourceKey": "enchantment.arrowInfinite",
+      "weight": 1,
+      "costs": [
+        [
+          1,
+          20,
+          50
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 61,
+      "name": "minecraft:luck_of_the_sea",
+      "sourceKey": "enchantment.lootBonusFishing",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          15,
+          61
+        ],
+        [
+          2,
+          24,
+          71
+        ],
+        [
+          3,
+          33,
+          81
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        62
+      ]
+    },
+    {
+      "id": 62,
+      "name": "minecraft:lure",
+      "sourceKey": "enchantment.fishingSpeed",
+      "weight": 2,
+      "costs": [
+        [
+          1,
+          15,
+          61
+        ],
+        [
+          2,
+          24,
+          71
+        ],
+        [
+          3,
+          33,
+          81
+        ]
+      ],
+      "compatible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        33,
+        34,
+        35,
+        48,
+        49,
+        50,
+        51,
+        61
+      ]
+    }
+  ]
+}

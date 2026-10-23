@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:machine_transformer",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SCS",
+    "MDM",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotmingrade"
+    },
+    "M": {
+      "item": "hbm:coil_copper"
+    },
+    "C": {
+      "item": "hbm:circuit_capacitor"
+    }
+  }
+}

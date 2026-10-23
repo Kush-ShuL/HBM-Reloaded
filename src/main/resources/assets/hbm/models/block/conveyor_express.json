@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "t0": "hbm:block/conveyor_side",
+    "t1": "hbm:block/concrete",
+    "t2": "hbm:block/grate_top",
+    "t3": "hbm:block/conveyor",
+    "t4": "hbm:block/conveyor_curve_left",
+    "t5": "hbm:block/conveyor_curve_right",
+    "t6": "hbm:block/conveyor_express",
+    "t7": "hbm:block/conveyor_express_curve_left",
+    "t8": "hbm:block/conveyor_express_curve_right",
+    "t9": "hbm:block/conveyor_double",
+    "t10": "hbm:block/conveyor_double_curve_left",
+    "t11": "hbm:block/conveyor_double_curve_right",
+    "t12": "hbm:block/conveyor_triple",
+    "t13": "hbm:block/conveyor_triple_curve_left",
+    "t14": "hbm:block/conveyor_triple_curve_right",
+    "particle": "hbm:block/conveyor",
+    "iron": "minecraft:block/iron_block"
+  },
+  "elements": []
+}

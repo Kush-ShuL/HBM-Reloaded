@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:black_diamond",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NIN",
+    "IGI",
+    "NIN"
+  ],
+  "key": {
+    "N": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold198"
+    },
+    "I": {
+      "item": "hbm:ink"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gemvolcanic"
+    }
+  }
+}

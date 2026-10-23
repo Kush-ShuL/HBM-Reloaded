@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 31,
+  "source_key": "ore:dustFluorite",
+  "source_hash": -1842156184,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/dustfluorite"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:gem_sodalite",
+    "count": 1
+  }
+}

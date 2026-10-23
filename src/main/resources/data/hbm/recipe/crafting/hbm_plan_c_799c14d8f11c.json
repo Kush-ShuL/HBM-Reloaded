@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:plan_c",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PFP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:powder_poison"
+    },
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustfluorite"
+    }
+  }
+}

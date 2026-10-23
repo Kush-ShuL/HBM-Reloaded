@@ -1,0 +1,26 @@
+{
+  "weapon.fire.grenade": {
+    "category": "player",
+    "sounds": [
+      "weapon/fire/grenade"
+    ]
+  },
+  "weapon.reload.dryFireClick": {
+    "category": "player",
+    "sounds": [
+      "weapon/reload/dryFireClick"
+    ]
+  },
+  "weapon.reload.insertRocket": {
+    "category": "player",
+    "sounds": [
+      "weapon/reload/insertRocket"
+    ]
+  },
+  "weapon.reload.boltClose": {
+    "category": "player",
+    "sounds": [
+      "weapon/reload/boltClose"
+    ]
+  }
+}

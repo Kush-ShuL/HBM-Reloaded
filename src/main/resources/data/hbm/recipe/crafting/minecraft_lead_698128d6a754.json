@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "minecraft:lead",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RSR"
+  ],
+  "key": {
+    "R": {
+      "type": "neoforge:components",
+      "items": "hbm:plant_item",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/slimeball"
+    }
+  }
+}

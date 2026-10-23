@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:mp_c_2",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "C",
+    "S"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    },
+    "S": {
+      "item": "hbm:steel_scaffold"
+    }
+  }
+}

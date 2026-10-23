@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:concrete_smooth"
+    }
+  },
+  "result": {
+    "id": "hbm:concrete_slab",
+    "count": 6,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  }
+}

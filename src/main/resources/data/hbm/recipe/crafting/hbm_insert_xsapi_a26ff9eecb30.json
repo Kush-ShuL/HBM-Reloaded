@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PKP",
+    "DSD",
+    "PKP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotasbestos"
+    },
+    "K": {
+      "item": "hbm:insert_esapi"
+    },
+    "D": {
+      "item": "hbm:ducttape"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesaturnite"
+    }
+  },
+  "result": {
+    "id": "hbm:insert_xsapi",
+    "count": 1
+  }
+}

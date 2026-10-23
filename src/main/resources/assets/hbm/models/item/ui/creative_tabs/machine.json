@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/pwr_controller",
+    "up": "hbm:block/pwr_casing_blank",
+    "north": "hbm:block/pwr_casing_blank",
+    "south": "hbm:block/pwr_controller",
+    "west": "hbm:block/pwr_casing_blank",
+    "east": "hbm:block/pwr_casing_blank",
+    "particle": "hbm:block/pwr_casing_blank"
+  }
+}

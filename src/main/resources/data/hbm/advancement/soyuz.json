@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:desh",
+  "display": {
+    "icon": {
+      "id": "minecraft:baked_potato"
+    },
+    "title": {
+      "translate": "achievement.soyuz"
+    },
+    "description": {
+      "translate": "achievement.soyuz.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:soyuz"
+      }
+    }
+  }
+}

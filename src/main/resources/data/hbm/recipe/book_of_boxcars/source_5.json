@@ -1,0 +1,34 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 5,
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "hbm:gravel_diamond"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:gravel_diamond"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:gravel_diamond"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:lead_gavel"
+      },
+      "metadata": 0
+    }
+  ],
+  "result": {
+    "id": "hbm:diamond_gavel",
+    "count": 1
+  }
+}

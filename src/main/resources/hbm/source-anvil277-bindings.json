@@ -1,0 +1,317 @@
+{
+  "module": "source-anvil277",
+  "entries": [],
+  "sourceRecipeBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 93
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:anvil/smithing/source_93_0",
+          "resource": "data/hbm/recipe/anvil/smithing/source_93_0.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/anvil/smithing/source_93_0.json",
+          "type": "hbm:anvil_smithing",
+          "ownerReport": "migration/source-anvil277.json",
+          "status": "exact-native-source-binding"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 190
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:anvil/construction/source_190_0",
+          "resource": "data/hbm/recipe/anvil/construction/source_190_0.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/anvil/construction/source_190_0.json",
+          "type": "hbm:anvil_construction",
+          "ownerReport": "migration/source-anvil277.json",
+          "status": "exact-native-source-binding"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 448
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:anvil/construction/source_448_0",
+          "resource": "data/hbm/recipe/anvil/construction/source_448_0.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/anvil/construction/source_448_0.json",
+          "type": "hbm:anvil_construction",
+          "ownerReport": "migration/source-anvil277.json",
+          "status": "exact-native-source-binding"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 979
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:anvil/construction/source_979_0",
+          "resource": "data/hbm/recipe/anvil/construction/source_979_0.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/anvil/construction/source_979_0.json",
+          "type": "hbm:anvil_construction",
+          "ownerReport": "migration/source-anvil277.json",
+          "status": "exact-native-source-binding"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 1130
+      },
+      "nativeBindings": [],
+      "status": "already-implemented-runtime-json-reader"
+    }
+  ],
+  "nativeRecipes": [
+    {
+      "id": "hbm:anvil/smithing/source_93_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 93
+      },
+      "variant": 0,
+      "recipe": {
+        "type": "hbm:anvil_smithing",
+        "tier": 1916169,
+        "result": {
+          "id": "hbm:wings_murk",
+          "count": 1
+        },
+        "left": {
+          "ingredient": {
+            "type": "hbm:alloy_legacy_stack",
+            "stack": {
+              "id": "hbm:wings_limp",
+              "count": 1
+            }
+          },
+          "count": 1
+        },
+        "right": {
+          "ingredient": {
+            "type": "hbm:alloy_legacy_stack",
+            "stack": {
+              "id": "hbm:particle_tachyon",
+              "count": 1
+            }
+          },
+          "count": 1
+        },
+        "kind": "normal",
+        "order": 93000000
+      },
+      "resource": "data/hbm/recipe/anvil/smithing/source_93_0.json",
+      "status": "exact-native-source-binding"
+    },
+    {
+      "id": "hbm:anvil/construction/source_190_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 190
+      },
+      "variant": 0,
+      "recipe": {
+        "type": "hbm:anvil_construction",
+        "inputs": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotdineutronium"
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:depth_brick",
+                "count": 1
+              }
+            },
+            "count": 1
+          }
+        ],
+        "outputs": [
+          {
+            "stack": {
+              "id": "hbm:depth_dnt",
+              "count": 1
+            },
+            "chance": 1.0
+          }
+        ],
+        "tier_lower": 1916169,
+        "tier_upper": -1,
+        "overlay": "CONSTRUCTION",
+        "order": 190000000
+      },
+      "resource": "data/hbm/recipe/anvil/construction/source_190_0.json",
+      "status": "exact-native-source-binding"
+    },
+    {
+      "id": "hbm:anvil/construction/source_448_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 448
+      },
+      "variant": 0,
+      "recipe": {
+        "type": "hbm:anvil_construction",
+        "inputs": [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "minecraft:bone",
+                "count": 1
+              }
+            },
+            "count": 16
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "minecraft:leather",
+                "count": 1
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "minecraft:feather",
+                "count": 1
+              }
+            },
+            "count": 24
+          }
+        ],
+        "outputs": [
+          {
+            "stack": {
+              "id": "hbm:wings_limp",
+              "count": 1
+            },
+            "chance": 1.0
+          }
+        ],
+        "tier_lower": 2,
+        "tier_upper": -1,
+        "overlay": "CONSTRUCTION",
+        "order": 448000000
+      },
+      "resource": "data/hbm/recipe/anvil/construction/source_448_0.json",
+      "status": "exact-native-source-binding"
+    },
+    {
+      "id": "hbm:anvil/construction/source_979_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 979
+      },
+      "variant": 0,
+      "recipe": {
+        "type": "hbm:anvil_construction",
+        "inputs": [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:egg_glyphid",
+                "count": 1
+              }
+            },
+            "count": 1
+          }
+        ],
+        "outputs": [
+          {
+            "stack": {
+              "id": "hbm:glyphid_meat",
+              "count": 2
+            },
+            "chance": 1.0
+          },
+          {
+            "stack": {
+              "id": "hbm:glyphid_meat",
+              "count": 1
+            },
+            "chance": 0.5
+          },
+          {
+            "stack": {
+              "id": "minecraft:bone",
+              "count": 1
+            },
+            "chance": 0.75
+          },
+          {
+            "stack": {
+              "id": "minecraft:experience_bottle",
+              "count": 1
+            },
+            "chance": 0.5
+          }
+        ],
+        "tier_lower": 1,
+        "tier_upper": -1,
+        "overlay": "RECYCLING",
+        "order": 979000000
+      },
+      "resource": "data/hbm/recipe/anvil/construction/source_979_0.json",
+      "status": "exact-native-source-binding"
+    }
+  ],
+  "runtimeSourceBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/anvil/AnvilRecipes.java",
+        "line": 1130
+      },
+      "expression": "new AnvilConstructionRecipe(inputs, outputs).setTierRange(tierLower, tierUpper).setOverlay(overlay)",
+      "sourceControl": [],
+      "nativeBindings": [],
+      "status": "already-implemented-runtime-json-reader",
+      "classification": "configuration-callback-not-static-recipe",
+      "runtimeBinding": {
+        "file": "src/main/java/com/hbm/machine/anvil/AnvilRecipeConfig.java",
+        "entry": "install -> legacyInput -> native AnvilConstructionRecipe",
+        "sourceFunction": "AnvilRecipes.readRecipe(JsonElement)",
+        "activeConfiguration": "config/hbmRecipes/hbmAnvil.json",
+        "fields": [
+          "inputs",
+          "outputs",
+          "tierLower",
+          "tierUpper optional -1",
+          "overlay optional NONE"
+        ],
+        "events": [
+          "ServerAboutToStartEvent",
+          "OnDatapackSyncEvent reload"
+        ]
+      },
+      "reason": "Source1130 appends the JSON object passed into readRecipe; it is not one built-in recipe, nor a fixed loop that may be expanded into an invented input/output."
+    }
+  ]
+}

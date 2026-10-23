@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:liquidator_legs",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "CBC",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "C": {
+      "item": "hbm:cladding_lead"
+    },
+    "B": {
+      "item": "hbm:hazmat_legs_grey"
+    }
+  }
+}

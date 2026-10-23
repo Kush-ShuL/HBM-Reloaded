@@ -1,0 +1,11 @@
+{
+  "parent": "hbm:item/stone_biome_desert",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/stone_biome_woodland"
+    }
+  ]
+}

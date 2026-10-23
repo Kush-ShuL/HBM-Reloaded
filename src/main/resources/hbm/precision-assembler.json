@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_precass",
+      "id": "hbm:machine_precass",
+      "legacyRegistryId": "hbm:tile.machine_precass",
+      "originalClass": "MachinePrecAss",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2213
+      },
+      "maxStackSize": 64,
+      "status": "source_staged_target_pending"
+    },
+    {
+      "kind": "item",
+      "symbol": "broken_item",
+      "id": "hbm:broken_item",
+      "legacyRegistryId": "hbm:item.broken_item",
+      "originalClass": "BrokenItem",
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4384
+      },
+      "maxStackSize": 64,
+      "status": "source_staged_target_pending"
+    }
+  ],
+  "nativeRecipeType": "hbm:precision_assembly",
+  "sourceEvents": {
+    "normal": 7,
+    "normal_expensive": 7,
+    "528": 27,
+    "528_expensive": 27
+  }
+}

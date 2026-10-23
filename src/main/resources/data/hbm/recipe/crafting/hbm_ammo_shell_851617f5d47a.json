@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:ammo_shell",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "GIG",
+    "CCC"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingottungsten"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    }
+  }
+}

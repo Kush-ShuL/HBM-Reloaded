@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 5,
+  "source_key": "ore:ingotTitanium",
+  "source_hash": 1595353254,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingottitanium"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_saturnite",
+    "count": 1
+  }
+}

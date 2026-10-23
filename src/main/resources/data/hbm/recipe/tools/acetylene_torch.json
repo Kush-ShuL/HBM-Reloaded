@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SS ",
+    " PS",
+    " T "
+  ],
+  "key": {
+    "S": {
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "P": {
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "T": {
+      "item": "hbm:tank_steel"
+    }
+  },
+  "result": {
+    "id": "hbm:acetylene_torch",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "68": 0,
+        "39": 0
+      }
+    }
+  }
+}

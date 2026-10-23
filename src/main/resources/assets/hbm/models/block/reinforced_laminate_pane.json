@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "particle": "hbm:block/reinforced_laminate_pane",
+    "edge": "hbm:block/reinforced_laminate_pane_edge"
+  },
+  "elements": []
+}

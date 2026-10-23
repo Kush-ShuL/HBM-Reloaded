@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:pin",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W ",
+    " W",
+    " W"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+    }
+  }
+}

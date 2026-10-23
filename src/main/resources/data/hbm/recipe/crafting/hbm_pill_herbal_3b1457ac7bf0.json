@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:pill_herbal",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcoal"
+    },
+    {
+      "item": "minecraft:poisonous_potato"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  ]
+}

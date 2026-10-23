@@ -1,0 +1,183 @@
+{
+  "module": "conveyor-packaging211",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crane_boxer",
+      "id": "hbm:crane_boxer",
+      "legacyRegistryId": "hbm:tile.crane_boxer",
+      "originalClass": "CraneBoxer",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1914
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3195
+          },
+          "expression": "register(crane_boxer)",
+          "arguments": [
+            "crane_boxer"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventorySlots": 21,
+      "hasBlockEntity": true
+    },
+    {
+      "kind": "block",
+      "symbol": "crane_unboxer",
+      "id": "hbm:crane_unboxer",
+      "legacyRegistryId": "hbm:tile.crane_unboxer",
+      "originalClass": "CraneUnboxer",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1915
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3196
+          },
+          "expression": "register(crane_unboxer)",
+          "arguments": [
+            "crane_unboxer"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventorySlots": 23,
+      "hasBlockEntity": true
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_stack",
+      "id": "hbm:upgrade_stack",
+      "legacyRegistryId": "hbm:item.upgrade_stack",
+      "originalClass": "ItemMetaUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3764
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5232
+          },
+          "expression": "GameRegistry.registerItem(upgrade_stack, upgrade_stack.getUnlocalizedName())",
+          "arguments": [
+            "upgrade_stack",
+            "upgrade_stack.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "control",
+      "legacyMetadata": [
+        0,
+        1,
+        2
+      ],
+      "metadataRange": [
+        0,
+        2
+      ],
+      "readyMetadata": [
+        0,
+        1,
+        2
+      ],
+      "names": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_ejector",
+      "id": "hbm:upgrade_ejector",
+      "legacyRegistryId": "hbm:item.upgrade_ejector",
+      "originalClass": "ItemMetaUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3765
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5233
+          },
+          "expression": "GameRegistry.registerItem(upgrade_ejector, upgrade_ejector.getUnlocalizedName())",
+          "arguments": [
+            "upgrade_ejector",
+            "upgrade_ejector.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "control",
+      "legacyMetadata": [
+        0,
+        1,
+        2
+      ],
+      "metadataRange": [
+        0,
+        2
+      ],
+      "readyMetadata": [
+        0,
+        1,
+        2
+      ],
+      "names": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ]
+}

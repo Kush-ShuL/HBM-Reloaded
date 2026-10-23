@@ -1,0 +1,28 @@
+package com.hbm.client.rockmill;
+import com.hbm.client.gui.LegacyContainerScreen;
+import com.hbm.client.recipe.generic.GenericRecipeSelectorScreen;
+import com.hbm.fluid.FluidTank;
+import com.hbm.item.fluid.client.FluidInfo;
+import com.hbm.machine.rockmill.*;
+import com.hbm.recipe.generic.*;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.*;
+import java.util.*;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.network.PacketDistributor;
+/** Original176x220 GUI, horizontal mirrored-U gauges, selector, source LEDs and recipe ghosts. */
+public final class RockMillScreen extends LegacyContainerScreen<RockMillMenu> {
+ public RockMillScreen(RockMillMenu menu,Inventory player,Component title){super(menu,player,title,ResourceLocation.parse("hbm:textures/gui/processing/gui_rockmill.png"),176,220);}
+ private RockMillEntity machine(){return minecraft!=null&&minecraft.level!=null&&minecraft.level.getBlockEntity(menu.position) instanceof RockMillEntity mill?mill:null;}
+ @Override protected void renderLabels(GuiGraphics g,int x,int y){g.drawString(font,title,70-font.width(title)/2,6,4210752,false);g.drawString(font,playerInventoryTitle,8,126,4210752,false);}
+ @Override protected void renderBg(GuiGraphics g,float partial,int x,int y){super.renderBg(g,partial,x,y);var mill=machine();if(mill==null)return;int power=mill.maxPower.signum()==0?0:mill.power.multiply(java.math.BigInteger.valueOf(71)).divide(mill.maxPower).intValue();drawLegacyRegion(g,152,89-power,176,71-power,16,power);if(mill.module.progress>0)drawLegacyRegion(g,62,90,176,71,(int)Math.ceil(70*mill.module.progress),16);var recipe=mill.module.getRecipe();if(mill.didProcess){drawLegacyRegion(g,51,85,195,0,3,6);drawLegacyRegion(g,56,85,195,0,3,6);}else if(recipe!=null){drawLegacyRegion(g,51,85,192,0,3,6);if(mill.power.compareTo(java.math.BigInteger.valueOf(recipe.power()))>=0)drawLegacyRegion(g,56,85,192,0,3,6);}g.renderItem(recipe==null?new ItemStack(Blueprints.FOLDER.get()):recipe.icon(),leftPos+8,topPos+90);if(recipe!=null){for(int i=0;i<Math.min(recipe.inputItems().size(),3);i++){var slot=menu.getSlot(2+i);if(slot.hasItem())continue;var examples=recipe.inputItems().get(i).processingExamples();if(examples.isEmpty())continue;g.renderItem(examples.get((int)(System.currentTimeMillis()/1000%examples.size())),leftPos+slot.x,topPos+slot.y);}g.pose().pushPose();g.pose().translate(0,0,300);g.setColor(1,1,1,.5F);for(int i=0;i<Math.min(recipe.inputItems().size(),3);i++){var slot=menu.getSlot(2+i);if(!slot.hasItem())drawLegacyRegion(g,slot.x,slot.y,slot.x,slot.y,16,16);}g.setColor(1,1,1,1);g.pose().popPose();}tank(g,mill.inputTanks[0],8);tank(g,mill.outputTanks[0],80);}
+ private void tank(GuiGraphics g,FluidTank tank,int offset){int width=(int)((long)tank.getFill()*52/Math.max(tank.getMaxFill(),1));if(width<=0)return;g.flush();int tint=tank.getTankType().getTint();RenderSystem.setShader(GameRenderer::getPositionTexColorShader);RenderSystem.setShaderTexture(0,tank.getTankType().getTexture());RenderSystem.enableBlend();RenderSystem.defaultBlendFunc();var out=Tesselator.getInstance().begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.POSITION_TEX_COLOR);var matrix=g.pose().last().pose();int x=leftPos+offset,y=topPos+63;float u=1-width/16F;out.addVertex(matrix,x,y+16,0).setUv(1,1).setColor(tint>>16&255,tint>>8&255,tint&255,255);out.addVertex(matrix,x+width,y+16,0).setUv(u,1).setColor(tint>>16&255,tint>>8&255,tint&255,255);out.addVertex(matrix,x+width,y,0).setUv(u,0).setColor(tint>>16&255,tint>>8&255,tint&255,255);out.addVertex(matrix,x,y,0).setUv(1,0).setColor(tint>>16&255,tint>>8&255,tint&255,255);BufferUploader.drawWithShader(out.buildOrThrow());RenderSystem.disableBlend();}
+ @Override public void render(GuiGraphics g,int x,int y,float partial){super.render(g,x,y,partial);var mill=machine();if(mill==null)return;if(legacyInfoHovered(x,y,7,89,18,18)){var recipe=mill.module.getRecipe();g.renderComponentTooltip(font,recipe==null?List.of(Component.translatable("gui.recipe.setRecipe").withStyle(ChatFormatting.YELLOW)):recipe.tooltip(),x,y);}for(int i=0;i<2;i++)if(legacyInfoHovered(x,y,i==0?8:80,63,52,16)){var tank=i==0?mill.inputTanks[0]:mill.outputTanks[0];var lines=new ArrayList<Component>();lines.add(tank.getTankType().displayName());lines.add(Component.literal(tank.getFill()+"/"+tank.getMaxFill()+"mB"));if(tank.getPressure()!=0){lines.add(Component.translatable("gui.hbm.chemical.pressure",tank.getPressure()).withStyle(ChatFormatting.RED));lines.add(Component.translatable("gui.hbm.chemical.pressurized").withStyle(System.currentTimeMillis()%1000<500?ChatFormatting.RED:ChatFormatting.DARK_RED));}FluidInfo.append(tank.getTankType(),lines,hasShiftDown());g.renderComponentTooltip(font,lines,x,y);}if(legacyInfoHovered(x,y,152,18,16,71))g.renderTooltip(font,Component.literal(mill.power+"/"+mill.maxPower+" HE"),x,y);}
+ @Override public boolean mouseClicked(double x,double y,int button){boolean handled=super.mouseClicked(x,y,button);if(legacyInfoHovered(x,y,7,89,18,18)){var mill=machine();if(mill!=null){GenericRecipeSelectorScreen.open(mill.recipes(),mill.module.getRecipeName(),Blueprints.pool(menu.getSlot(1).getItem()),this,selection->PacketDistributor.sendToServer(new RockMillSelection(menu.containerId,0,selection)));return true;}}return handled;}
+}

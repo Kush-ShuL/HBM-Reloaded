@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_generic",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 12
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+    },
+    {
+      "item": "hbm:ducttape"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "parent": "hbm:item/cart.empty.vanilla",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:cart_variant": 1
+      },
+      "model": "hbm:item/cart.empty.wood"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 2
+      },
+      "model": "hbm:item/cart.empty.steel"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 3
+      },
+      "model": "hbm:item/cart.empty.painted"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 4
+      },
+      "model": "hbm:item/cart.crate.vanilla"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 5
+      },
+      "model": "hbm:item/cart.crate.wood"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 6
+      },
+      "model": "hbm:item/cart.crate.steel"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 7
+      },
+      "model": "hbm:item/cart.crate.painted"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 8
+      },
+      "model": "hbm:item/cart.destroyer.vanilla"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 9
+      },
+      "model": "hbm:item/cart.destroyer.wood"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 10
+      },
+      "model": "hbm:item/cart.destroyer.steel"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 11
+      },
+      "model": "hbm:item/cart.destroyer.painted"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 12
+      },
+      "model": "hbm:item/cart.powder.vanilla"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 13
+      },
+      "model": "hbm:item/cart.powder.wood"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 14
+      },
+      "model": "hbm:item/cart.powder.steel"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 15
+      },
+      "model": "hbm:item/cart.powder.painted"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 16
+      },
+      "model": "hbm:item/cart.semtex.vanilla"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 17
+      },
+      "model": "hbm:item/cart.semtex.wood"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 18
+      },
+      "model": "hbm:item/cart.semtex.steel"
+    },
+    {
+      "predicate": {
+        "hbm:cart_variant": 19
+      },
+      "model": "hbm:item/cart.semtex.painted"
+    }
+  ]
+}

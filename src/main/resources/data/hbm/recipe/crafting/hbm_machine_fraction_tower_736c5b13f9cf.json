@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:machine_fraction_tower",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "H",
+    "G",
+    "H"
+  ],
+  "key": {
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesextuplesteel"
+    },
+    "G": {
+      "item": "hbm:steel_grate"
+    }
+  }
+}

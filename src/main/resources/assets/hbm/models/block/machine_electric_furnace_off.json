@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "hbm:block/machine_electric_furnace_top",
+    "bottom": "hbm:block/machine_electric_furnace_bottom",
+    "side": "hbm:block/machine_electric_furnace_side",
+    "front": "hbm:block/machine_electric_furnace_front_off",
+    "particle": "hbm:block/machine_electric_furnace_side"
+  }
+}

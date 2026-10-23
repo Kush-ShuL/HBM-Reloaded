@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:euphemium_plate",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EWE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "hbm:plate_euphemium"
+    },
+    "W": {
+      "item": "hbm:watch"
+    }
+  }
+}

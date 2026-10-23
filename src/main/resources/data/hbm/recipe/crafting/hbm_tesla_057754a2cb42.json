@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:tesla",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "PIP",
+    "WTW"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:coil_copper"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "T": {
+      "item": "hbm:machine_transformer"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plankwood"
+    }
+  }
+}

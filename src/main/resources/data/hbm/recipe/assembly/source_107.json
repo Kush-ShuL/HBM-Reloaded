@@ -1,0 +1,67 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.bronzetubes",
+  "duration": 3000,
+  "power": 250000,
+  "order": 23,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_bronze_tubes",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_heavy_frame"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_ferro_plating"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextuplezirconium"
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PERFLUOROMETHYL_COLD",
+      "amount": 4000,
+      "pressure": 0
+    }
+  ],
+  "output_fluids": [
+    {
+      "type": "PERFLUOROMETHYL",
+      "amount": 4000,
+      "pressure": 0
+    }
+  ]
+}

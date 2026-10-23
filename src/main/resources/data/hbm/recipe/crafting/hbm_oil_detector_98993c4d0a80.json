@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:oil_detector",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W I",
+    "WCI",
+    "PPP"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinegold"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "hbm:block/block_graphite",
+    "down": "hbm:block/block_graphite_tritium",
+    "up": "hbm:block/block_graphite_tritium",
+    "north": "hbm:block/block_graphite",
+    "south": "hbm:block/block_graphite",
+    "west": "hbm:block/block_graphite",
+    "east": "hbm:block/block_graphite"
+  }
+}

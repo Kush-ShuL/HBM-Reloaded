@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_red_copper",
+    {
+      "id": "#c:ingots/mingrade",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_polonium",
+    {
+      "id": "#c:ingots/po210",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/polonium",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/polonium210",
+      "required": false
+    }
+  ]
+}

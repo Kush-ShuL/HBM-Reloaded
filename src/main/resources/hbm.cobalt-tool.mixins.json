@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.item.toolability.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CobaltBlockBreakMixin",
+    "CobaltAttackStrengthMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

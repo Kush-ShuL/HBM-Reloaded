@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.89.27",
+  "duration": 600,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ore_nether_fire",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PEROXIDE",
+      "amount": 500,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:crystal_phosphorus",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.05,
+  "key_kind": "item",
+  "source_key": "hbm:ore_nether_fire",
+  "order": 27
+}

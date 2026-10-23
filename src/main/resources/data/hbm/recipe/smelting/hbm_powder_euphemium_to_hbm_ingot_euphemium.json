@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:powder_euphemium"
+  },
+  "result": {
+    "id": "hbm:ingot_euphemium",
+    "count": 1
+  },
+  "experience": 10.0,
+  "cookingtime": 200
+}

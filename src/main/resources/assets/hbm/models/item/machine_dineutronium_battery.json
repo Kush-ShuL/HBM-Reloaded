@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/battery_dineutronium_top",
+    "up": "hbm:block/battery_dineutronium_top",
+    "north": "hbm:block/battery_dineutronium_side",
+    "south": "hbm:block/battery_dineutronium_front",
+    "east": "hbm:block/battery_dineutronium_side",
+    "west": "hbm:block/battery_dineutronium_side",
+    "particle": "hbm:block/battery_dineutronium_side"
+  }
+}

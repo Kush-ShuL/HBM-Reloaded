@@ -1,0 +1,381 @@
+[
+  {
+    "id": 0,
+    "size": 0,
+    "name": "nugget",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 46
+    },
+    "shape": "NUGGET",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 1,
+    "size": 0,
+    "name": "billet",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 47
+    },
+    "shape": "BILLET",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 2,
+    "size": 0,
+    "name": "ingot",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 48
+    },
+    "shape": "INGOT",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 3,
+    "size": 0,
+    "name": "plate",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 49
+    },
+    "shape": "PLATE",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 4,
+    "size": 0,
+    "name": "wire",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 50
+    },
+    "shape": "WIRE",
+    "amount": 8,
+    "blockOverride": false
+  },
+  {
+    "id": 19,
+    "size": 0,
+    "name": "plate_cast",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 52
+    },
+    "shape": "CASTPLATE",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 20,
+    "size": 0,
+    "name": "wire_dense",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 53
+    },
+    "shape": "DENSEWIRE",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 5,
+    "size": 0,
+    "name": "blade",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 55
+    },
+    "cost": 216,
+    "fixed": {
+      "MAT_TITANIUM": {
+        "id": "hbm:blade_titanium",
+        "count": 1
+      },
+      "MAT_TUNGSTEN": {
+        "id": "hbm:blade_tungsten",
+        "count": 1
+      }
+    }
+  },
+  {
+    "id": 6,
+    "size": 0,
+    "name": "blades",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 59
+    },
+    "cost": 288,
+    "fixed": {
+      "MAT_STEEL": {
+        "id": "hbm:blades_steel",
+        "count": 1
+      },
+      "MAT_TITANIUM": {
+        "id": "hbm:blades_titanium",
+        "count": 1
+      }
+    }
+  },
+  {
+    "id": 7,
+    "size": 0,
+    "name": "stamp",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 63
+    },
+    "cost": 288,
+    "fixed": {
+      "MAT_STONE": {
+        "id": "hbm:stamp_stone_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "MAT_IRON": {
+        "id": "hbm:stamp_iron_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "MAT_STEEL": {
+        "id": "hbm:stamp_steel_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "MAT_TITANIUM": {
+        "id": "hbm:stamp_titanium_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "MAT_OBSIDIAN": {
+        "id": "hbm:stamp_obsidian_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "size": 0,
+    "name": "shell",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 70
+    },
+    "shape": "SHELL",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 9,
+    "size": 0,
+    "name": "pipe",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 71
+    },
+    "shape": "PIPE",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 10,
+    "size": 1,
+    "name": "ingots",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 73
+    },
+    "shape": "INGOT",
+    "amount": 9,
+    "blockOverride": false
+  },
+  {
+    "id": 11,
+    "size": 1,
+    "name": "plates",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 74
+    },
+    "shape": "PLATE",
+    "amount": 9,
+    "blockOverride": false
+  },
+  {
+    "id": 13,
+    "size": 1,
+    "name": "plates_cast",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 75
+    },
+    "shape": "CASTPLATE",
+    "amount": 3,
+    "blockOverride": false
+  },
+  {
+    "id": 21,
+    "size": 1,
+    "name": "wires_dense",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 76
+    },
+    "shape": "DENSEWIRE",
+    "amount": 9,
+    "blockOverride": false
+  },
+  {
+    "id": 12,
+    "size": 1,
+    "name": "block",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 77
+    },
+    "shape": "BLOCK",
+    "amount": 1,
+    "blockOverride": true
+  },
+  {
+    "id": 16,
+    "size": 0,
+    "name": "c9",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 79
+    },
+    "cost": 18,
+    "fixed": {
+      "MAT_GUNMETAL": {
+        "id": "hbm:casing_small",
+        "count": 1
+      },
+      "MAT_WEAPONSTEEL": {
+        "id": "hbm:casing_small_steel",
+        "count": 1
+      }
+    }
+  },
+  {
+    "id": 17,
+    "size": 0,
+    "name": "c50",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 82
+    },
+    "cost": 36,
+    "fixed": {
+      "MAT_GUNMETAL": {
+        "id": "hbm:casing_large",
+        "count": 1
+      },
+      "MAT_WEAPONSTEEL": {
+        "id": "hbm:casing_large_steel",
+        "count": 1
+      }
+    }
+  },
+  {
+    "id": 22,
+    "size": 0,
+    "name": "barrel_light",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 86
+    },
+    "shape": "LIGHTBARREL",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 23,
+    "size": 0,
+    "name": "barrel_heavy",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 87
+    },
+    "shape": "HEAVYBARREL",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 24,
+    "size": 0,
+    "name": "receiver_light",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 88
+    },
+    "shape": "LIGHTRECEIVER",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 25,
+    "size": 0,
+    "name": "receiver_heavy",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 89
+    },
+    "shape": "HEAVYRECEIVER",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 26,
+    "size": 0,
+    "name": "mechanism",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 90
+    },
+    "shape": "MECHANISM",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 27,
+    "size": 0,
+    "name": "stock",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 91
+    },
+    "shape": "STOCK",
+    "amount": 1,
+    "blockOverride": false
+  },
+  {
+    "id": 28,
+    "size": 0,
+    "name": "grip",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+      "line": 92
+    },
+    "shape": "GRIP",
+    "amount": 1,
+    "blockOverride": false
+  }
+]

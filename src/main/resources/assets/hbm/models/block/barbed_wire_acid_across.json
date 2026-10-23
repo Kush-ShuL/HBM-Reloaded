@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:source_barbed_wire",
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "hbm:block/barbed_wire_acid_model",
+    "texture": "hbm:block/barbed_wire_acid_model"
+  },
+  "inventory": false,
+  "source_yaw": -90
+}

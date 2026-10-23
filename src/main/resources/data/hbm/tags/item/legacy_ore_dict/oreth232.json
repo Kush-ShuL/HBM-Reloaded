@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_thorium",
+    {
+      "id": "#c:ores/th232",
+      "required": false
+    },
+    {
+      "id": "#c:ores/thorium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/thorium232",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:grenade_filling",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 10
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "CPC",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "hbm:ball_tatb"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+    }
+  }
+}

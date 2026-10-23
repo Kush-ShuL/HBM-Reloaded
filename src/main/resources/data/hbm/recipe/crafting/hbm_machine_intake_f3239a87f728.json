@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:machine_intake",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "PMP",
+    "PTP"
+  ],
+  "key": {
+    "G": {
+      "item": "hbm:steel_grate"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "M": {
+      "item": "hbm:motor"
+    },
+    "T": {
+      "item": "hbm:tank_steel"
+    }
+  }
+}

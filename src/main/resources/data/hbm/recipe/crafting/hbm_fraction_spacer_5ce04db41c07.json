@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:fraction_spacer",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BHB"
+  ],
+  "key": {
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    }
+  }
+}

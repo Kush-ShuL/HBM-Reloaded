@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:desh",
+  "display": {
+    "icon": {
+      "id": "hbm:machine_crystallizer"
+    },
+    "title": {
+      "translate": "achievement.acidizer"
+    },
+    "description": {
+      "translate": "achievement.acidizer.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:acidizer"
+      }
+    }
+  }
+}

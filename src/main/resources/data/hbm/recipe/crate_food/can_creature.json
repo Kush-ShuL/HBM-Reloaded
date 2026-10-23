@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:can_empty"
+    },
+    {
+      "type": "hbm:source_water_potion"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "type": "hbm:native_drink_fluid",
+      "fluid": "DIESEL",
+      "amount": 1000
+    }
+  ],
+  "result": {
+    "id": "hbm:can_creature",
+    "count": 1
+  }
+}

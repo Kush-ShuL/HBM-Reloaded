@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:chlorophyte_pickaxe",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " SD",
+    "APS",
+    "FA "
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:blades_steel"
+    },
+    "D": {
+      "item": "hbm:powder_chlorophyte"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotfiberglass"
+    },
+    "P": {
+      "item": "hbm:bismuth_pickaxe"
+    },
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltdurasteel"
+    }
+  }
+}

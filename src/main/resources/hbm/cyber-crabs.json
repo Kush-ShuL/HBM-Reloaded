@@ -1,0 +1,121 @@
+{
+  "sourceArchive": "Hbm-s-Nuclear-Tech-GIT-1.0.27_X5846.tar.gz",
+  "registrations": [
+    {
+      "symbol": "meteor_spawner",
+      "id": "hbm:meteor_spawner",
+      "kind": "block",
+      "originalClass": "BlockCybercrab",
+      "tab": "block",
+      "status": "implemented",
+      "runtimeValidated": false,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1575
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "hbm:entity_cyber_crab",
+      "sourceClass": "EntityCyberCrab",
+      "source": "legacy/src/main/java/com/hbm/entity/mob/EntityCyberCrab.java"
+    },
+    {
+      "id": "hbm:entity_tesla_crab",
+      "sourceClass": "EntityTeslaCrab",
+      "source": "legacy/src/main/java/com/hbm/entity/mob/EntityTeslaCrab.java"
+    }
+  ],
+  "technicalBlocks": [
+    "hbm:meteor_spawner_hidden"
+  ],
+  "blockEntity": "hbm:meteor_spawner",
+  "hooks": {
+    "register": "com.hbm.entity.mob.crab.CyberCrabContent.register(IEventBus)",
+    "creative": "CyberCrabContent.creativeStacks(String tab)",
+    "pickaxeTag": "hbm:mineable/pickaxe_cyber_crabs",
+    "client": "Automatic CrabClient mod-bus subscriber",
+    "radiation": "Existing HbmExposure protection provider, CyberCrab family source IRadiationImmune",
+    "tesla": "True shared com.hbm.machine.tesla.TeslaDischarge.zap(Level,Vec3,radius,source) and TeslaArcRenderer.beam"
+  },
+  "semantics": [
+    "health4/10 and speed.75/.5; true original ranged60..80ticks/range15, panic/wander/nearest target priorities, no melee damage, Creeper/crab exclusion",
+    "source Tau damage immunity, water/rain/fire lethal10 damage and immediate tiny native death blast",
+    "source Tesla per-side zap3 and original Body/Front/Back/beam/model animation",
+    "source rarecoil copper chance(5+looting)/200 if player credit",
+    "spawner age>200, exact aboveAIR, player25, CyberCrab-family count<5 in source11x6x11 box,20percentTesla",
+    "legal hidden brick host preserves source orphanTE branch; original age is NOT saved and resets on reload",
+    "source original20 Cuboids, UV/mirror/setter order and leg rotation, legacy render transforms, original OBJ/textures",
+    "source tau damage3/penetration/random-consumption/hurt-retry/drag/water/bubbles/lifespan250/critical flags not saved/reload ordinary bullet",
+    "old 1.7.10 red dust trail uses original particle sheet and source animation/physics"
+  ],
+  "pending": [
+    "EntityTaintCrab, its real r762_fmj/radiation potion dependencies",
+    "generic source spawn-egg item system"
+  ],
+  "runtimeValidated": false,
+  "mainMerged": true,
+  "sourceFiles": [
+    "src/main/java/com/hbm/client/entity/crab/CrabClient.java",
+    "src/main/java/com/hbm/client/entity/crab/CrabModel.java",
+    "src/main/java/com/hbm/client/entity/crab/CrabParticles.java",
+    "src/main/java/com/hbm/client/entity/crab/CrabRenderer.java",
+    "src/main/java/com/hbm/client/entity/crab/CyberTauRenderer.java",
+    "src/main/java/com/hbm/client/entity/crab/ModelCrab.java",
+    "src/main/java/com/hbm/entity/mob/crab/CyberCrab.java",
+    "src/main/java/com/hbm/entity/mob/crab/CyberCrabContent.java",
+    "src/main/java/com/hbm/entity/mob/crab/CyberTauBullet.java",
+    "src/main/java/com/hbm/entity/mob/crab/MeteorSpawnerBlock.java",
+    "src/main/java/com/hbm/entity/mob/crab/MeteorSpawnerBlockEntity.java",
+    "src/main/java/com/hbm/entity/mob/crab/TeslaCrab.java"
+  ],
+  "resourceFiles": [
+    "src/main/resources/assets/hbm/blockstates/meteor_spawner.json",
+    "src/main/resources/assets/hbm/blockstates/meteor_spawner_hidden.json",
+    "src/main/resources/assets/hbm/models/block/meteor_spawner.json",
+    "src/main/resources/assets/hbm/models/block/meteor_spawner_hidden.json",
+    "src/main/resources/assets/hbm/models/item/meteor_spawner.json",
+    "src/main/resources/assets/hbm/models/mobs/teslacrab.obj",
+    "src/main/resources/assets/hbm/textures/entity/crab.png",
+    "src/main/resources/assets/hbm/textures/entity/teslacrab.png",
+    "src/main/resources/assets/hbm/textures/models/bullet.png",
+    "src/main/resources/assets/hbm/textures/models/tau.png",
+    "src/main/resources/data/hbm/loot_table/blocks/meteor_spawner.json",
+    "src/main/resources/data/hbm/loot_table/blocks/meteor_spawner_hidden.json",
+    "src/main/resources/data/hbm/loot_table/entities/entity_cyber_crab.json",
+    "src/main/resources/data/hbm/loot_table/entities/entity_tesla_crab.json",
+    "src/main/resources/data/hbm/tags/block/mineable/pickaxe_cyber_crabs.json",
+    "src/main/resources/hbm/cyber-crabs-localizations.json",
+    "src/main/resources/hbm/cyber-crabs.json"
+  ],
+  "generator": "tools/port_cyber_crabs.py",
+  "dependencies": [
+    "Shared TeslaDischarge.zap and public TeslaArcRenderer.beam in main; do NOT copy dependencies/TeslaArcRenderer.java (compile-only mirror)",
+    "Existing HbmDamageSources tau/bullet and LivingDamageAccess lastHurt accessor",
+    "Existing LegacyModelRenderContext/ModelBase/ModelRenderer and ModelBullet",
+    "Existing original vanilla_1_7_10.png particle sheet, meteor brick/spawner block textures and cybercrab/sawShoot sounds"
+  ],
+  "rootIntegration": [
+    "Call CyberCrabContent.register(bus) once from the shared entry point",
+    "Append CyberCrabContent.creativeStacks(tab) to the shared creative-tab builder",
+    "Add optional #hbm:mineable/pickaxe_cyber_crabs to shared minecraft pickaxe tag generator",
+    "Merge hbm/cyber-crabs-localizations.json via the shared runtime translation generator",
+    "Include this report in shared registry/creative indexes; no source crafting recipe exists for meteor_spawner",
+    "Dungeon processor selects visible meteor_spawner or hidden meteor_spawner_hidden host, BE id meteor_spawner, with no age field"
+  ],
+  "validation": {
+    "kind": "target javac",
+    "arguments": ".cache/cyber-crabs-final.args",
+    "log": ".cache/cyber-crabs-final.log",
+    "errors": 0,
+    "warnings": 2,
+    "warningDetails": "Two deprecated EventBusSubscriber bus/Bus annotation warnings; a block override also emits a deprecation note.",
+    "runtimeValidated": false
+  },
+  "modernAdaptations": [
+    "Unitemized hidden host is required because 1.21.1 cannot persist an orphan ticking block entity under ordinary meteor_brick; preserves original brick appearance, hardness, collision, drop and clone result",
+    "Block/tile registry IDs replace obsolete numeric saved block ID in the crab Tau projectile; original critical/tau/shooter flags remain unsaved",
+    "Original IRadiationImmune family behavior uses existing HbmExposure protection provider; no second radiation subsystem"
+  ]
+}

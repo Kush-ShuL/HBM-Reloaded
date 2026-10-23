@@ -1,0 +1,74 @@
+{
+  "block.soyuzready": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "hbm:block/soyuzready",
+        "stream": true
+      }
+    ]
+  },
+  "door.garage_move": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "hbm:block/door/garage_move",
+        "stream": false
+      }
+    ]
+  },
+  "door.wgh_big_start": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "hbm:block/door/door_wgh_big_start",
+        "stream": false
+      }
+    ]
+  },
+  "door.garage_stop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "hbm:block/door/garage_stop",
+        "stream": false
+      }
+    ]
+  },
+  "door.wgh_big_stop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "hbm:block/door/door_wgh_big_stop",
+        "stream": false
+      }
+    ]
+  },
+  "door.sliding_seal_stop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "hbm:block/door/metal_stop1",
+        "stream": false
+      }
+    ]
+  },
+  "alarm.hatch": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "hbm:alarm/lpfhaiwg",
+        "stream": false
+      }
+    ]
+  },
+  "entity.soyuztakeoff": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "hbm:entity/soyuztakeoff",
+        "stream": false
+      }
+    ]
+  }
+}

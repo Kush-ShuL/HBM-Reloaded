@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_phosphorus"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_fire",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_fire",
+      "count": 3
+    },
+    {
+      "id": "hbm:ingot_phosphorus",
+      "count": 2
+    },
+    {
+      "id": "minecraft:blaze_powder",
+      "count": 2
+    }
+  ]
+}

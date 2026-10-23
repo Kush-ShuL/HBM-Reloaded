@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "hbm:block/reinforced_glass_pane",
+    "edge": "hbm:block/reinforced_glass_pane_edge"
+  },
+  "elements": [],
+  "render_type": "minecraft:cutout"
+}

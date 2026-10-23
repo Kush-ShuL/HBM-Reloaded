@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "legacy_meta=0": {
+      "model": "hbm:block/sand_boron"
+    },
+    "legacy_meta=1": {
+      "model": "hbm:block/sand_lead"
+    },
+    "legacy_meta=2": {
+      "model": "hbm:block/sand_uranium"
+    },
+    "legacy_meta=3": {
+      "model": "hbm:block/sand_polonium"
+    },
+    "legacy_meta=4": {
+      "model": "hbm:block/sand_quartz"
+    }
+  }
+}

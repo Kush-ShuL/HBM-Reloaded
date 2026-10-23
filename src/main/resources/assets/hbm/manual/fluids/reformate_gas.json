@@ -1,0 +1,25 @@
+{
+  "name": "Reformate Gas",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    99
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      99
+    ]
+  ],
+  "title": {
+    "en_US": "Reformate Gas",
+    "ru_RU": "Реформированный газ",
+    "zh_CN": "重整气"
+  },
+  "content": {
+    "en_US": "Reformate gas can be obtained by a variety of methods after setting up [[vacuum oil processing|Vacuum Oil Processing]]. Its primary uses include the production of [[high-performance solvent|High-Performance Solvent]] and [[welding|Arc Welder]] [[cast combine steel plates|Combine Steel]].<br><br>{{Template:Oil3}}",
+    "ru_RU": "Реформированный газ может быть получен различными методами после постройки [[вакуумной нефтепереработки|Vacuum Oil Processing]]. Его основные применения включают производство [[высокоэффективного растворителя|High-Performance Solvent]] и [[сваренных литых пластин|Combine Steel]] с помощью [[сварщика|Arc Welder]].",
+    "zh_CN": "建立[[真空石油处理|Vacuum Oil Processing]]后，可通过多种方法获得重整气。它主要用于生产[[高性能溶剂|High-Performance Solvent]]，以及在[[电弧焊接机|Arc Welder]]中焊接[[联合钢铸造板|Combine Steel]]。<br><br>{{Template:Oil3}}"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "bark": "true"
+      },
+      "apply": {
+        "model": "hbm:block/pink_log_bark"
+      }
+    },
+    {
+      "when": {
+        "bark": "false",
+        "axis": "y"
+      },
+      "apply": {
+        "model": "hbm:block/pink_log"
+      }
+    },
+    {
+      "when": {
+        "bark": "false",
+        "axis": "x"
+      },
+      "apply": {
+        "model": "hbm:block/pink_log",
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "bark": "false",
+        "axis": "z"
+      },
+      "apply": {
+        "model": "hbm:block/pink_log",
+        "x": 90
+      }
+    }
+  ]
+}

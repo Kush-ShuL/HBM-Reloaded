@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C",
+    "R",
+    "C"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:crate_steel"
+    },
+    "R": {
+      "item": "hbm:rbmk_blank"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_storage",
+    "count": 1
+  }
+}

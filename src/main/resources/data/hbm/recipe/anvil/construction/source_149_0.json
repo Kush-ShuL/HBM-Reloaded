@@ -1,0 +1,25 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_weaponsteel",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 3,
+  "tier_upper": -1,
+  "overlay": "SMITHING",
+  "order": 149000000
+}

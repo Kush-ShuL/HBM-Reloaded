@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:horizonsend",
+  "display": {
+    "icon": {
+      "id": "hbm:sat_gerald"
+    },
+    "title": {
+      "translate": "achievement.horizonsBonus"
+    },
+    "description": {
+      "translate": "achievement.horizonsBonus.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:horizonsbonus"
+      }
+    }
+  }
+}

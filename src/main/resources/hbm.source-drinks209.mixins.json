@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.item.sourcedrinks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SourceDrinkUseAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

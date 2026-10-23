@@ -1,0 +1,35 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_chlorine_fx",
+      "id": "hbm:entity_chlorine_fx",
+      "originalClass": "EntityChlorineFX",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 87
+      },
+      "sourceTrackingRange": 1000,
+      "nativeTrackingChunks": 63,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "spawnEgg": false
+    },
+    {
+      "kind": "entity",
+      "symbol": "entity_cloud_fx",
+      "id": "hbm:entity_cloud_fx",
+      "originalClass": "EntityCloudFX",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 89
+      },
+      "sourceTrackingRange": 1000,
+      "nativeTrackingChunks": 63,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "spawnEgg": false
+    }
+  ]
+}

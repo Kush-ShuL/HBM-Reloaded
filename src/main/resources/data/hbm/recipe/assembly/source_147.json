@@ -1,0 +1,47 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.diskdrive",
+  "duration": 200,
+  "power": 250,
+  "order": 37,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_basic"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredenseneodymium"
+      },
+      "count": 1
+    }
+  ]
+}

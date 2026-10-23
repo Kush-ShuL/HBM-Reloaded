@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:med_bag",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LLL",
+    "SIS",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "S": {
+      "item": "hbm:syringe_metal_stimpak"
+    },
+    "I": {
+      "item": "hbm:syringe_antidote"
+    }
+  }
+}

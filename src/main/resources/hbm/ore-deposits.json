@@ -1,0 +1,57 @@
+{
+  "profiles": [
+    {
+      "name": "hematite",
+      "enableOption": "enableHematite",
+      "sourceEnabledOrdinal": 0,
+      "block": "hbm:stone_resource",
+      "legacyMetadata": 2,
+      "scaleH": 0.04,
+      "scaleV": 0.25,
+      "threshold": 230.0,
+      "minY": 6,
+      "maxY": 64,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:602"
+    },
+    {
+      "name": "bauxite",
+      "enableOption": "enableBauxite",
+      "sourceEnabledOrdinal": 1,
+      "block": "hbm:stone_resource",
+      "legacyMetadata": 5,
+      "scaleH": 0.03,
+      "scaleV": 0.15,
+      "threshold": 300.0,
+      "minY": 6,
+      "maxY": 64,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:603"
+    },
+    {
+      "name": "malachite",
+      "enableOption": "enableMalachite",
+      "sourceEnabledOrdinal": 2,
+      "block": "hbm:stone_resource",
+      "legacyMetadata": 3,
+      "scaleH": 0.1,
+      "scaleV": 0.15,
+      "threshold": 275.0,
+      "minY": 6,
+      "maxY": 64,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:604"
+    }
+  ],
+  "sourceNoise": "Minecraft1.7.10 NoiseGeneratorPerlin.func_151601_a + NoiseGeneratorSimplex.func_151605_a",
+  "originalBiomeEvent": "DecorateBiomeEvent.Pre",
+  "dimension": "minecraft:overworld",
+  "features": {
+    "configured": "hbm:legacy_3d_ore_deposits",
+    "placed": "hbm:legacy_3d_ore_deposits"
+  },
+  "negativeHeightExtension": {
+    "enabledBy": "deepDeposits && OreWorldgen.deepslateOre",
+    "minY": "level.minBuildHeight + OreWorldgen.deepBottomOffset",
+    "maxY": "min(-1, level.maxBuildHeight-1, OreWorldgen.deepTopY)",
+    "thresholdMultiplierOption": "deepThresholdMultiplier",
+    "sourcePositiveBandUnaffected": true
+  }
+}

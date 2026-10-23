@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_uranium_scorched"
+      },
+      {
+        "item": "hbm:deepslate_ore_uranium_scorched"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_uranium",
+    "count": 1
+  },
+  "experience": 6.0,
+  "cookingtime": 200
+}

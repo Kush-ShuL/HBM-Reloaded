@@ -1,0 +1,41 @@
+{
+  "module": "fire-door232",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "fire_door",
+      "id": "hbm:fire_door",
+      "legacyRegistryId": "hbm:tile.fire_door",
+      "originalClass": "BlockDoorGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2050
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2976
+          },
+          "expression": "GameRegistry.registerBlock(fire_door, fire_door.getUnlocalizedName())",
+          "arguments": [
+            "fire_door",
+            "fire_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "coreMetadataRange": [
+        12,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_australium",
+    {
+      "id": "#c:ores/australium",
+      "required": false
+    }
+  ]
+}

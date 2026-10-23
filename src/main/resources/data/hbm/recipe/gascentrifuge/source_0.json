@@ -1,0 +1,21 @@
+{
+  "type": "hbm:gascentrifuge",
+  "fluid": "UF6",
+  "amount": 1200,
+  "results": [
+    {
+      "id": "hbm:nugget_u238",
+      "count": 11
+    },
+    {
+      "id": "hbm:nugget_u235",
+      "count": 1
+    },
+    {
+      "id": "hbm:fluorite",
+      "count": 4
+    }
+  ],
+  "high_speed": true,
+  "machines": 4
+}

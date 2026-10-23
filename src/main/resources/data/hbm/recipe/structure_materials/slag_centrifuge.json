@@ -1,0 +1,29 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:alloy_legacy_stack",
+    "stack": {
+      "id": "hbm:block_slag",
+      "count": 1
+    }
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_fire",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_calcium",
+      "count": 1
+    },
+    {
+      "id": "hbm:dust",
+      "count": 1
+    }
+  ]
+}

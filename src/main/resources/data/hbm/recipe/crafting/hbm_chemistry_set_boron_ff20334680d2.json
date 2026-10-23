@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:chemistry_set_boron",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GIG",
+    "GCG"
+  ],
+  "key": {
+    "G": {
+      "item": "hbm:glass_boron"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcobalt"
+    }
+  }
+}

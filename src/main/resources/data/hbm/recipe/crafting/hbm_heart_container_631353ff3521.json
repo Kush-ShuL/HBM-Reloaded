@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:heart_container",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "HAH",
+    "ACA",
+    "HAH"
+  ],
+  "key": {
+    "H": {
+      "item": "hbm:heart_piece"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotaluminum"
+    },
+    "C": {
+      "item": "hbm:coin_creeper"
+    }
+  }
+}

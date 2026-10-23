@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:grenade_fuze",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "F"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "F": {
+      "item": "hbm:safety_fuse"
+    }
+  }
+}

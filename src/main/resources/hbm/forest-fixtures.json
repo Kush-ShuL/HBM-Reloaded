@@ -1,0 +1,61 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "tape_recorder",
+      "id": "hbm:tape_recorder",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1596
+      },
+      "legacyRegistryId": "hbm:tile.tape_recorder",
+      "originalClass": "DecoTapeRecorder",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "steel_poles",
+      "id": "hbm:steel_poles",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1597
+      },
+      "legacyRegistryId": "hbm:tile.steel_poles",
+      "originalClass": "DecoSteelPoles",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "pole_satellite_receiver",
+      "id": "hbm:pole_satellite_receiver",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1599
+      },
+      "legacyRegistryId": "hbm:tile.pole_satellite_receiver",
+      "originalClass": "DecoPoleSatelliteReceiver",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ]
+}

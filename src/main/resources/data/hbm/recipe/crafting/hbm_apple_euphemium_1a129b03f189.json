@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:apple_euphemium",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "EAE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggeteuphemium"
+    },
+    "A": {
+      "item": "minecraft:apple"
+    }
+  }
+}

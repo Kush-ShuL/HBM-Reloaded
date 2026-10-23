@@ -1,0 +1,284 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword",
+      "id": "hbm:meteorite_sword",
+      "legacyRegistryId": "hbm:item.meteorite_sword",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4238
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": false,
+      "damage": 9.0,
+      "movement": 0,
+      "sourceGlintColor": null
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_seared",
+      "id": "hbm:meteorite_sword_seared",
+      "legacyRegistryId": "hbm:item.meteorite_sword_seared",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4239
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 10.0,
+      "movement": 0,
+      "sourceGlintColor": [
+        1.0,
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_reforged",
+      "id": "hbm:meteorite_sword_reforged",
+      "legacyRegistryId": "hbm:item.meteorite_sword_reforged",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4240
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 12.5,
+      "movement": 0,
+      "sourceGlintColor": [
+        0.5,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_hardened",
+      "id": "hbm:meteorite_sword_hardened",
+      "legacyRegistryId": "hbm:item.meteorite_sword_hardened",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4241
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 15.0,
+      "movement": 0,
+      "sourceGlintColor": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_alloyed",
+      "id": "hbm:meteorite_sword_alloyed",
+      "legacyRegistryId": "hbm:item.meteorite_sword_alloyed",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4242
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 17.5,
+      "movement": 0,
+      "sourceGlintColor": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_machined",
+      "id": "hbm:meteorite_sword_machined",
+      "legacyRegistryId": "hbm:item.meteorite_sword_machined",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4243
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 20.0,
+      "movement": 0,
+      "sourceGlintColor": [
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_treated",
+      "id": "hbm:meteorite_sword_treated",
+      "legacyRegistryId": "hbm:item.meteorite_sword_treated",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4244
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 22.5,
+      "movement": 0,
+      "sourceGlintColor": [
+        0.5,
+        1.0,
+        0.5
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_etched",
+      "id": "hbm:meteorite_sword_etched",
+      "legacyRegistryId": "hbm:item.meteorite_sword_etched",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4245
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 25.0,
+      "movement": 0,
+      "sourceGlintColor": [
+        1.0,
+        1.0,
+        0.5
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_bred",
+      "id": "hbm:meteorite_sword_bred",
+      "legacyRegistryId": "hbm:item.meteorite_sword_bred",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4246
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 30.0,
+      "movement": 0,
+      "sourceGlintColor": [
+        0.5,
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "meteorite_sword_baleful",
+      "id": "hbm:meteorite_sword_baleful",
+      "legacyRegistryId": "hbm:item.meteorite_sword_baleful",
+      "originalClass": "ItemSwordMeteorite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4249
+      },
+      "creativeTab": "combat",
+      "sourceExcludeNEI": true,
+      "damage": 75.0,
+      "movement": 0,
+      "sourceGlintColor": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_fortune_1",
+      "id": "hbm:upgrade_fortune_1",
+      "legacyRegistryId": "hbm:item.upgrade_fortune_1",
+      "originalClass": "ItemMachineUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3745
+      },
+      "creativeTab": "control",
+      "upgradeType": "FORTUNE",
+      "tier": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_fortune_2",
+      "id": "hbm:upgrade_fortune_2",
+      "legacyRegistryId": "hbm:item.upgrade_fortune_2",
+      "originalClass": "ItemMachineUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3746
+      },
+      "creativeTab": "control",
+      "upgradeType": "FORTUNE",
+      "tier": 2
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_fortune_3",
+      "id": "hbm:upgrade_fortune_3",
+      "legacyRegistryId": "hbm:item.upgrade_fortune_3",
+      "originalClass": "ItemMachineUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3747
+      },
+      "creativeTab": "control",
+      "upgradeType": "FORTUNE",
+      "tier": 3
+    },
+    {
+      "kind": "item",
+      "symbol": "glyphid_meat",
+      "id": "hbm:glyphid_meat",
+      "legacyRegistryId": "hbm:item.glyphid_meat",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3640
+      },
+      "creativeTab": "consumable"
+    },
+    {
+      "kind": "item",
+      "symbol": "glyphid_meat_grilled",
+      "id": "hbm:glyphid_meat_grilled",
+      "legacyRegistryId": "hbm:item.glyphid_meat_grilled",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3641
+      },
+      "creativeTab": "consumable"
+    },
+    {
+      "kind": "block",
+      "symbol": "reinforced_laminate",
+      "id": "hbm:reinforced_laminate",
+      "legacyRegistryId": "hbm:tile.reinforced_laminate",
+      "originalClass": "BlockNTMGlassCT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1473
+      },
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "hardness": 15,
+      "effectiveResistance": 180
+    }
+  ]
+}

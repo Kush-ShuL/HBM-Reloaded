@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:lightstone_tile_stairs",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "neoforge:components",
+      "items": "hbm:lightstone",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  }
+}

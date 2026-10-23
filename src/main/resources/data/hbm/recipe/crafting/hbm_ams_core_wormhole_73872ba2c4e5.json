@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:ams_core_wormhole",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DPD",
+    "PSP",
+    "DPD"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:plate_dineutronium"
+    },
+    "P": {
+      "item": "hbm:powder_spark_mix"
+    },
+    "S": {
+      "item": "hbm:singularity"
+    }
+  }
+}

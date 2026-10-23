@@ -1,0 +1,73 @@
+{
+  "module": "forgotten-bricks246",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "brick_forgotten",
+      "id": "hbm:brick_forgotten",
+      "hasItem": true,
+      "originalClass": "BlockForgottenBrick",
+      "legacyRegistryId": "hbm:tile.brick_forgotten",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1525
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2690
+          },
+          "expression": "register(brick_forgotten)",
+          "arguments": [
+            "brick_forgotten"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": null,
+      "hiddenFromViewer": true,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "sourceVariantCount": 7,
+      "maxStackSize": 64,
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "brick_forgotten_lock",
+      "id": "hbm:brick_forgotten_lock",
+      "hasItem": true,
+      "originalClass": "BlockForgottenLock",
+      "legacyRegistryId": "hbm:tile.brick_forgotten_lock",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1526
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2691
+          },
+          "expression": "register(brick_forgotten_lock)",
+          "arguments": [
+            "brick_forgotten_lock"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": null,
+      "hiddenFromViewer": true,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "sourceVariantCount": 3,
+      "maxStackSize": 64,
+      "hasBlockEntity": false
+    }
+  ]
+}

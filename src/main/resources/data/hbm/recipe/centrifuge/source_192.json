@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:ore_nether_fire"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "minecraft:blaze_powder",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_fire",
+      "count": 2
+    },
+    {
+      "id": "hbm:ingot_phosphorus",
+      "count": 1
+    },
+    {
+      "id": "minecraft:netherrack",
+      "count": 1
+    }
+  ]
+}

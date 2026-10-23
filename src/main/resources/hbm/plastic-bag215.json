@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "plastic_bag",
+      "id": "hbm:plastic_bag",
+      "legacyRegistryId": "hbm:item.plastic_bag",
+      "originalClass": "ItemPlasticBag",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3358
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5524
+          },
+          "expression": "GameRegistry.registerItem(plastic_bag, plastic_bag.getUnlocalizedName())",
+          "arguments": [
+            "plastic_bag",
+            "plastic_bag.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.plasticbag.PlasticBagContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "inventorySlots": 1,
+      "inventoryStackLimit": 1,
+      "guiSize": [
+        176,
+        216
+      ]
+    }
+  ]
+}

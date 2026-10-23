@@ -1,0 +1,146 @@
+{
+  "source": {
+    "block": "legacy/src/main/java/com/hbm/blocks/machine/MachineReactorControl.java",
+    "entity": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityReactorControl.java",
+    "menu": "legacy/src/main/java/com/hbm/inventory/container/ContainerReactorControl.java",
+    "screen": "legacy/src/main/java/com/hbm/inventory/gui/GUIReactorControl.java",
+    "numberDisplay": "legacy/src/main/java/com/hbm/module/NumberDisplay.java",
+    "registration": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2236 and3078",
+    "beAlias": "legacy/src/main/java/com/hbm/tileentity/TileMappings.java:152",
+    "manufacture": "No machine_controller references in actual CraftingManager/recipes; no invented recipe.",
+    "itemRenderer": "No MachineReactorControl custom renderer or ItemRenderLibrary registration: source ordinary block-cube item.",
+    "actualTemplateUse": {
+      "template": "crane",
+      "state": "hbm:tile.machine_controller:0",
+      "fromMarker": true,
+      "cells": 0,
+      "meaning": "Logic disguise appearance only, not an actual controller BE. No new BE whitelist admission required."
+    }
+  },
+  "metadata": {
+    "range": [
+      0,
+      15
+    ],
+    "default": 0,
+    "placedYaw": [
+      2,
+      5,
+      3,
+      4
+    ],
+    "sourceRotationPolicy": "none (not INBTBlockTransformable)",
+    "frontRule": "meta0 coerces3; front side check before top/bottom; meta1 is upper-face front; meta6..15 have top/bottom plus four plain sides."
+  },
+  "inventory": {
+    "slots": 1,
+    "manualSlot": [
+      92,
+      38
+    ],
+    "manualFilter": "none",
+    "sidedAccessibleSlots": [],
+    "automation": "source denies insertion/extraction",
+    "useRange": 12,
+    "controlPermissionRange": 20
+  },
+  "nativeMenuPayload": {
+    "owner": "ReactorControllerEntity.writeClientSideData",
+    "schema": [
+      "BlockPos"
+    ],
+    "normalOpen": "ServerPlayer.openMenu(provider), no duplicate extra writer",
+    "spectator": "Native provider writer also covers vanilla spectator opening"
+  },
+  "oldTileAlias": "tileentity_reactor_remote_control",
+  "nativeTileId": "hbm:machine_controller",
+  "persistentKeys": [
+    "items[].slot",
+    "name",
+    "isLinked",
+    "levelLower",
+    "levelUpper",
+    "heatLower",
+    "heatUpper",
+    "function",
+    "muffled",
+    "tilted"
+  ],
+  "transientFields": [
+    "reactor",
+    "heat",
+    "flux",
+    "level"
+  ],
+  "sourceComputer": {
+    "type": "reactor_control",
+    "methods": [
+      "isLinked",
+      "getReactor",
+      "setParams",
+      "getParams"
+    ],
+    "retainedQuirk": "setParams divides rod percentages by100 then clamps0..1, while source controller tick still multiplies stored endpoint by.01; GUI endpoints remain0..100."
+  },
+  "sourceGUI": {
+    "size": [
+      176,
+      166
+    ],
+    "atlas": [
+      256,
+      256
+    ],
+    "digitCoordinates": [
+      [
+        6,
+        20,
+        3
+      ],
+      [
+        66,
+        20,
+        4
+      ],
+      [
+        126,
+        20,
+        3
+      ]
+    ],
+    "editBoxes": [
+      [
+        35,
+        38,
+        26,
+        7
+      ],
+      [
+        65,
+        38,
+        26,
+        7
+      ],
+      [
+        35,
+        49,
+        26,
+        7
+      ],
+      [
+        65,
+        49,
+        26,
+        7
+      ]
+    ],
+    "graph": "40 points i*1250, x128+i/y39+clamp(target/100*28,0,28), GL3-pixel line strip"
+  },
+  "energyFluid": "None in actual source; no native or standard energy/fluid capability fabricated.",
+  "adaptations": [
+    "Exact source GUI uses existing single LegacyContainerScreen/LegacyFonts and existing ReactorDigits; no private font or GUI blur.",
+    "Modern dirty marking persists inventory, custom name, computer parameter changes. Original heat/flux/rod level remain transient on disk.",
+    "Payload validation requires actual matching open menu and source distance; nonfinite network arguments and invalid enum ordinals are rejected.",
+    "Loaded network snapshots retain source stale observations when a link breaks, while displayData returns three zeros; comparator still sees source stale heat."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "wand_s",
+      "id": "hbm:wand_s",
+      "originalClass": "ItemWandS",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3769
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6380
+          },
+          "expression": "GameRegistry.registerItem(wand_s, wand_s.getUnlocalizedName())",
+          "arguments": [
+            "wand_s",
+            "wand_s.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.structurewand.StructureWandContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "sourceField": "ModItems.wand_s"
+    },
+    {
+      "kind": "block",
+      "symbol": "wand_structure_save",
+      "id": "hbm:wand_structure_save",
+      "originalClass": "BlockWandStructure",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2373
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3524
+          },
+          "expression": "register(wand_structure)",
+          "arguments": [
+            "wand_structure"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "registeredBy": "com.hbm.item.structurewand.StructureWandContent",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "sourceField": "ModBlocks.wand_structure",
+      "hasItem": true,
+      "sourceMetadata": 0,
+      "hardness": 0,
+      "explosionResistance": 0,
+      "blockEntity": "hbm:wand_structure"
+    },
+    {
+      "kind": "block",
+      "symbol": "wand_structure_load",
+      "id": "hbm:wand_structure_load",
+      "originalClass": "BlockWandStructure",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2373
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3524
+          },
+          "expression": "register(wand_structure)",
+          "arguments": [
+            "wand_structure"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "registeredBy": "com.hbm.item.structurewand.StructureWandContent",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "sourceField": "ModBlocks.wand_structure",
+      "hasItem": true,
+      "sourceMetadata": 1,
+      "hardness": 0,
+      "explosionResistance": 0,
+      "blockEntity": "hbm:wand_structure"
+    }
+  ]
+}

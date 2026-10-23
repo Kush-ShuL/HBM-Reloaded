@@ -1,0 +1,33 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldtitanium",
+  "duration": 300,
+  "power": 50000,
+  "ignition_temp": 500000,
+  "order": 16,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2200
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripletitanium"
+      },
+      "count": 2
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ZCZ",
+    "ZRZ",
+    "ZCZ"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "R": {
+      "item": "hbm:rbmk_blank"
+    },
+    "Z": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotzirconium"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_rod_reasim",
+    "count": 1
+  }
+}

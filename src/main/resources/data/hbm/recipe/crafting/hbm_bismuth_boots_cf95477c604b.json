@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:bismuth_boots",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W W",
+    "P P"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinegold"
+    },
+    "P": {
+      "item": "hbm:plate_bismuth"
+    }
+  }
+}

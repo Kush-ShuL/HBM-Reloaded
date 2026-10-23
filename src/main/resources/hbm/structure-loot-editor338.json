@@ -1,0 +1,44 @@
+{
+  "module": "structure-loot-editor338",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "wand_loot",
+      "id": "hbm:wand_loot",
+      "originalClass": "BlockWandLoot",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2369
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3520
+          },
+          "expression": "register(wand_loot)",
+          "arguments": [
+            "wand_loot"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "hasItem": true,
+      "maxStackSize": 64,
+      "creativeTab": null,
+      "blockEntity": "hbm:wand_loot",
+      "hasBlockEntity": true,
+      "nativeProperties": {
+        "rotation": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "registeredBy": "com.hbm.item.structurelooteditor.LootEditorContent",
+      "sourceField": "ModBlocks.wand_loot",
+      "legacyBlockEntityAlias": "tileentity_wand_loot"
+    }
+  ]
+}

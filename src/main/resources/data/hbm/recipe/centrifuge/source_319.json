@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_aluminium"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:chunk_ore_cryolite",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_titanium",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    }
+  ]
+}

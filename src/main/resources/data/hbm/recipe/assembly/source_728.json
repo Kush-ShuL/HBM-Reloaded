@@ -1,0 +1,35 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.fleijacharge",
+  "duration": 300,
+  "power": 100,
+  "order": 236,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:fleija_propellant",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateschrabidium"
+      },
+      "count": 8
+    }
+  ]
+}

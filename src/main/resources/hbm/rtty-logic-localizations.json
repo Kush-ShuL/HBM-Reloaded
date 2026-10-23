@@ -1,0 +1,40 @@
+{
+  "en_us": {
+    "tile.radio_torch_logic.name": "Redstone-over-Radio Logic Receiver",
+    "tile.radio_torch_logic.desc": "Placable on flat surfaces or comparator-compatible blocks$Maps redstone signals to conditions evaluated in a set order$Numerical or string inputs are compared against a constant",
+    "container.rttyLogic": "Redstone-over-Radio Logic Receiver",
+    "desc.gui.rttyLogic.cond0": "Signal §6LESS THAN§r Constant",
+    "desc.gui.rttyLogic.cond1": "Signal §6LESS THAN OR EQUAL TO§r Constant",
+    "desc.gui.rttyLogic.cond2": "Signal §6GREATER THAN OR EQUAL TO§r Constant",
+    "desc.gui.rttyLogic.cond3": "Signal §6GREATER THAN§r Constant",
+    "desc.gui.rttyLogic.cond4": "Signal §6EQUAL TO§r Constant",
+    "desc.gui.rttyLogic.cond5": "Signal §6NOT EQUAL TO§r Constant",
+    "desc.gui.rttyLogic.cond6": "Signal §6MATCHES§r String",
+    "desc.gui.rttyLogic.cond7": "Signal §6DOES NOT MATCH§r String",
+    "desc.gui.rttyLogic.cond8": "Signal §6CONTAINS§r String",
+    "desc.gui.rttyLogic.cond9": "Signal §6DOES NOT CONTAIN§r String",
+    "block.hbm.radio_torch_logic": "Redstone-over-Radio Logic Receiver",
+    "gui.hbm.rtty.descending": "Descending Order",
+    "gui.hbm.rtty.ascending": "Ascending Order",
+    "config.jade.plugin_hbm.radio_logic_status": "Redstone-over-Radio logic signal"
+  },
+  "zh_cn": {
+    "tile.radio_torch_logic.name": "无线红石逻辑接收器",
+    "tile.radio_torch_logic.desc": "可在平坦表面或与比较器兼容的方块上放置$将红石信号与条件一一对应，并按照设定的顺序检测$输入的数值或字符串会与常量进行比较",
+    "container.rttyLogic": "无线红石逻辑接收器",
+    "desc.gui.rttyLogic.cond0": "信号§6小于§r常量",
+    "desc.gui.rttyLogic.cond1": "信号§6小于等于§r常量",
+    "desc.gui.rttyLogic.cond2": "信号§6大于等于§r常量",
+    "desc.gui.rttyLogic.cond3": "信号§6大于§r常量",
+    "desc.gui.rttyLogic.cond4": "信号§6等于§r常量",
+    "desc.gui.rttyLogic.cond5": "信号§6不等于§r常量",
+    "desc.gui.rttyLogic.cond6": "信号与字符串§6匹配§r",
+    "desc.gui.rttyLogic.cond7": "信号与字符串§6不匹配§r",
+    "desc.gui.rttyLogic.cond8": "信号§6包含§r字符串",
+    "desc.gui.rttyLogic.cond9": "信号§6不包含§r字符串",
+    "block.hbm.radio_torch_logic": "无线红石逻辑接收器",
+    "gui.hbm.rtty.descending": "降序",
+    "gui.hbm.rtty.ascending": "升序",
+    "config.jade.plugin_hbm.radio_logic_status": "无线红石逻辑信号"
+  }
+}

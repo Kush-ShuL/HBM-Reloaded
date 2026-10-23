@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:red_pylon_medium_steel",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCW",
+    "IIW",
+    "  S"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:coil_copper"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/cobblestone"
+    }
+  }
+}

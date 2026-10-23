@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:item/pa_coil/gold",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/pa_coil/niobium"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/pa_coil/bscco"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/pa_coil/chlorophyte"
+    }
+  ]
+}

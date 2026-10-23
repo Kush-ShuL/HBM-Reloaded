@@ -1,0 +1,87 @@
+{
+  "blocks": [
+    {
+      "symbol": "platemetal",
+      "id": "hbm:platemetal",
+      "kind": "block",
+      "originalClass": "BlockEnumMultiCT",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1441",
+      "creativeTab": "block",
+      "metadataRange": [
+        0,
+        14
+      ],
+      "names": [
+        "base",
+        "black",
+        "white",
+        "red",
+        "green",
+        "light_gray",
+        "blue",
+        "purple",
+        "cyan",
+        "pink",
+        "lime",
+        "yellow",
+        "light_blue",
+        "magenta",
+        "orange"
+      ],
+      "enumClass": "PlatemetalType"
+    },
+    {
+      "symbol": "concrete_super",
+      "id": "hbm:concrete_super",
+      "kind": "block",
+      "originalClass": "BlockUberConcrete",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1503",
+      "creativeTab": "block"
+    },
+    {
+      "symbol": "glass_ash",
+      "id": "hbm:glass_ash",
+      "kind": "block",
+      "originalClass": "BlockNTMGlassCT",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1647",
+      "creativeTab": "machine"
+    }
+  ],
+  "platemetalVariants": [
+    "base",
+    "black",
+    "white",
+    "red",
+    "green",
+    "light_gray",
+    "blue",
+    "purple",
+    "cyan",
+    "pink",
+    "lime",
+    "yellow",
+    "light_blue",
+    "magenta",
+    "orange"
+  ],
+  "recipes": [
+    "hbm:crafting/hbm_platemetal_3307b9cdb8e4",
+    "hbm:crafting/hbm_platemetal_0bd1ede7646e",
+    "hbm:crafting/hbm_platemetal_242b82a7ceb6",
+    "hbm:crafting/hbm_platemetal_7c1bd44763e1",
+    "hbm:crafting/hbm_platemetal_ec2ccd1e9063",
+    "hbm:crafting/hbm_platemetal_2816b231ad7e",
+    "hbm:crafting/hbm_platemetal_6bfa9ebc2380",
+    "hbm:crafting/hbm_platemetal_a87a626b4910",
+    "hbm:crafting/hbm_platemetal_b9c7e324e10e",
+    "hbm:crafting/hbm_platemetal_d3fe8f8d3456",
+    "hbm:crafting/hbm_platemetal_208d15c866ea",
+    "hbm:crafting/hbm_platemetal_e7086da9fc94",
+    "hbm:crafting/hbm_platemetal_7cfad7555a27",
+    "hbm:crafting/hbm_platemetal_af58af30ddb8",
+    "hbm:crafting/hbm_platemetal_1bff8a014dba",
+    "hbm:anvil/construction/source_181_0",
+    "hbm:anvil/construction/source_662_0",
+    "hbm:smelting/hbm_ash_digamma_to_hbm_glass_ash"
+  ]
+}

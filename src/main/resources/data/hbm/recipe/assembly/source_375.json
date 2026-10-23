@@ -1,0 +1,43 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.drilldeshdiamond",
+  "duration": 100,
+  "power": 100,
+  "order": 122,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drillbit",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drillbit",
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustdiamond"
+      },
+      "count": 32
+    }
+  ]
+}

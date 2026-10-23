@@ -1,0 +1,233 @@
+{
+  "profiles": [
+    {
+      "symbol": "ore_uranium",
+      "config": "uraniumSpawn",
+      "count": 7,
+      "size": 5,
+      "minY": 5,
+      "variance": 20,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:119",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_thorium",
+      "config": "thoriumSpawn",
+      "count": 7,
+      "size": 5,
+      "minY": 5,
+      "variance": 25,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:120",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_titanium",
+      "config": "titaniumSpawn",
+      "count": 8,
+      "size": 6,
+      "minY": 5,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:121",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_sulfur",
+      "config": "sulfurSpawn",
+      "count": 5,
+      "size": 8,
+      "minY": 5,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:122",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_aluminium",
+      "config": "aluminiumSpawn",
+      "count": 7,
+      "size": 6,
+      "minY": 5,
+      "variance": 40,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:123",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_copper",
+      "config": "copperSpawn",
+      "count": 12,
+      "size": 6,
+      "minY": 5,
+      "variance": 45,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:124",
+      "enabled": false,
+      "policy": "Vanilla copper and vanilla deepslate copper generation already exist; never add a second copper ore population"
+    },
+    {
+      "symbol": "ore_fluorite",
+      "config": "fluoriteSpawn",
+      "count": 6,
+      "size": 4,
+      "minY": 5,
+      "variance": 45,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:125",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_niter",
+      "config": "niterSpawn",
+      "count": 6,
+      "size": 6,
+      "minY": 5,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:126",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_tungsten",
+      "config": "tungstenSpawn",
+      "count": 10,
+      "size": 8,
+      "minY": 5,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:127",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_lead",
+      "config": "leadSpawn",
+      "count": 6,
+      "size": 9,
+      "minY": 5,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:128",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_beryllium",
+      "config": "berylliumSpawn",
+      "count": 6,
+      "size": 4,
+      "minY": 5,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:129",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_rare",
+      "config": "rareSpawn",
+      "count": 6,
+      "size": 5,
+      "minY": 5,
+      "variance": 20,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:130",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_lignite",
+      "config": "ligniteSpawn",
+      "count": 2,
+      "size": 24,
+      "minY": 35,
+      "variance": 25,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:131",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_asbestos",
+      "config": "asbestosSpawn",
+      "count": 2,
+      "size": 4,
+      "minY": 16,
+      "variance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:132",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_cinnebar",
+      "config": "cinnebarSpawn",
+      "count": 1,
+      "size": 4,
+      "minY": 8,
+      "variance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:133",
+      "enabled": true
+    },
+    {
+      "symbol": "ore_cobalt",
+      "config": "cobaltSpawn",
+      "count": 2,
+      "size": 4,
+      "minY": 4,
+      "variance": 8,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:134",
+      "enabled": true
+    },
+    {
+      "symbol": "cluster_iron",
+      "config": "ironClusterSpawn",
+      "count": 4,
+      "size": 6,
+      "minY": 15,
+      "variance": 45,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:136",
+      "enabled": true
+    },
+    {
+      "symbol": "cluster_titanium",
+      "config": "titaniumClusterSpawn",
+      "count": 2,
+      "size": 6,
+      "minY": 15,
+      "variance": 30,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:137",
+      "enabled": true
+    },
+    {
+      "symbol": "cluster_aluminium",
+      "config": "aluminiumClusterSpawn",
+      "count": 3,
+      "size": 6,
+      "minY": 15,
+      "variance": 35,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:138",
+      "enabled": true
+    },
+    {
+      "symbol": "cluster_copper",
+      "config": "copperClusterSpawn",
+      "count": 4,
+      "size": 6,
+      "minY": 15,
+      "variance": 20,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:139",
+      "enabled": true
+    }
+  ],
+  "sourceAlgorithm": "Mojang 1.7.10 WorldGenMinable + Forge metadata/replaceable hook",
+  "defaults": {
+    "overworldOre": true,
+    "deepslateOre": true,
+    "deepBottomOffset": 5,
+    "deepTopY": -1,
+    "deepCountMultiplier": 1.0,
+    "enable528ColtanSpawn": false,
+    "enable528ColtanDeposit": true,
+    "coltanRate": 2
+  },
+  "extraProfiles": {
+    "coltan": {
+      "size": 4,
+      "minY": 15,
+      "variance": 40,
+      "depositMinY": 15,
+      "depositVariance": 25
+    },
+    "australium": {
+      "size": 50,
+      "minY": 15,
+      "variance": 15,
+      "centerX": -400,
+      "centerZ": -400,
+      "radius": 50
+    }
+  }
+}

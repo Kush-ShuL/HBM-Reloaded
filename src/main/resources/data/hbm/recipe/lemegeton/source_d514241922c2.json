@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 4,
+  "source_key": "ore:ingotCMBSteel",
+  "source_hash": -1117653720,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_dineutronium",
+    "count": 1
+  }
+}

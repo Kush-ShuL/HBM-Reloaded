@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:pink_planks"
+    }
+  },
+  "result": {
+    "id": "hbm:pink_stairs",
+    "count": 4
+  }
+}

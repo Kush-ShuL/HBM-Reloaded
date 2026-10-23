@@ -1,0 +1,78 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "servo_set",
+      "id": "hbm:servo_set",
+      "legacyRegistryId": "hbm:item.servo_set",
+      "originalClass": "ItemModServos",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2854
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6090
+          },
+          "expression": "GameRegistry.registerItem(servo_set, servo_set.getUnlocalizedName())",
+          "arguments": [
+            "servo_set",
+            "servo_set.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "registeredBy": "com.hbm.armor.servos.ArmorServosContent",
+      "maxStackSize": 1,
+      "armorModSlot": 4,
+      "applicableTo": [
+        "chestplate",
+        "leggings"
+      ],
+      "chestHasteAmplifier": 0,
+      "chestDamageMultiplierAdded": 0.5,
+      "legsJumpAmplifier": 1,
+      "legsSpeedMultiplierAdded": 0.25,
+      "effectDuration": 60
+    },
+    {
+      "kind": "item",
+      "symbol": "servo_set_desh",
+      "id": "hbm:servo_set_desh",
+      "legacyRegistryId": "hbm:item.servo_set_desh",
+      "originalClass": "ItemModServos",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2855
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6091
+          },
+          "expression": "GameRegistry.registerItem(servo_set_desh, servo_set_desh.getUnlocalizedName())",
+          "arguments": [
+            "servo_set_desh",
+            "servo_set_desh.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "registeredBy": "com.hbm.armor.servos.ArmorServosContent",
+      "maxStackSize": 1,
+      "armorModSlot": 4,
+      "applicableTo": [
+        "chestplate",
+        "leggings"
+      ],
+      "chestHasteAmplifier": 2,
+      "chestDamageMultiplierAdded": 1.5,
+      "legsJumpAmplifier": 2,
+      "legsSpeedMultiplierAdded": 0.5,
+      "effectDuration": 60
+    }
+  ]
+}

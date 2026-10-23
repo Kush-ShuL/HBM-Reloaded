@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W W",
+    "CDC",
+    "SWS"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:red_wool"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    },
+    "D": {
+      "item": "hbm:machine_diesel"
+    }
+  },
+  "result": {
+    "id": "hbm:dieselsuit_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

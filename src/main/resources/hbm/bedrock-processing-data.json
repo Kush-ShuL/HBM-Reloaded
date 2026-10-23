@@ -1,0 +1,749 @@
+{
+  "oldOres": [
+    {
+      "name": "IRON",
+      "oreName": "Iron",
+      "color": 14860458,
+      "byproducts": [
+        "B_SULFUR",
+        "B_TITANIUM",
+        "B_TITANIUM"
+      ]
+    },
+    {
+      "name": "COPPER",
+      "oreName": "Copper",
+      "color": 15506019,
+      "byproducts": [
+        "B_SULFUR",
+        "B_SULFUR",
+        "B_SULFUR"
+      ]
+    },
+    {
+      "name": "BORAX",
+      "oreName": "Borax",
+      "color": 14990964,
+      "byproducts": [
+        "B_LITHIUM",
+        "B_CALCIUM",
+        "B_CALCIUM"
+      ]
+    },
+    {
+      "name": "ASBESTOS",
+      "oreName": "Asbestos",
+      "color": 12566457,
+      "byproducts": [
+        "B_SILICON",
+        "B_SILICON",
+        "B_SILICON"
+      ]
+    },
+    {
+      "name": "NIOBIUM",
+      "oreName": "Niobium",
+      "color": 11491544,
+      "byproducts": [
+        "B_IRON",
+        "B_IRON",
+        "B_IRON"
+      ]
+    },
+    {
+      "name": "TITANIUM",
+      "oreName": "Titanium",
+      "color": 15921122,
+      "byproducts": [
+        "B_SILICON",
+        "B_CALCIUM",
+        "B_ALUMINIUM"
+      ]
+    },
+    {
+      "name": "TUNGSTEN",
+      "oreName": "Tungsten",
+      "color": 2894140,
+      "byproducts": [
+        "B_LEAD",
+        "B_IRON",
+        "B_BISMUTH"
+      ]
+    },
+    {
+      "name": "GOLD",
+      "oreName": "Gold",
+      "color": 16373560,
+      "byproducts": [
+        "B_LEAD",
+        "B_COPPER",
+        "B_BISMUTH"
+      ]
+    },
+    {
+      "name": "URANIUM",
+      "oreName": "Uranium",
+      "color": 8818050,
+      "byproducts": [
+        "B_LEAD",
+        "B_RADIUM",
+        "B_POLONIUM"
+      ]
+    },
+    {
+      "name": "THORIUM",
+      "oreName": "Thorium232",
+      "color": 8208413,
+      "byproducts": [
+        "B_SILICON",
+        "B_URANIUM",
+        "B_TECHNETIUM"
+      ]
+    },
+    {
+      "name": "CHLOROCALCITE",
+      "oreName": "Chlorocalcite",
+      "color": 13492278,
+      "byproducts": [
+        "B_LITHIUM",
+        "B_SILICON",
+        "B_SILICON"
+      ]
+    },
+    {
+      "name": "FLUORITE",
+      "oreName": "Fluorite",
+      "color": 16184295,
+      "byproducts": [
+        "B_SILICON",
+        "B_LITHIUM",
+        "B_ALUMINIUM"
+      ]
+    },
+    {
+      "name": "HEMATITE",
+      "oreName": "Hematite",
+      "color": 10713970,
+      "byproducts": [
+        "B_SULFUR",
+        "B_TITANIUM",
+        "B_TITANIUM"
+      ]
+    },
+    {
+      "name": "MALACHITE",
+      "oreName": "Malachite",
+      "color": 6730892,
+      "byproducts": [
+        "B_SULFUR",
+        "B_SULFUR",
+        "B_SULFUR"
+      ]
+    },
+    {
+      "name": "NEODYMIUM",
+      "oreName": "Neodymium",
+      "color": 9408351,
+      "byproducts": [
+        "B_LITHIUM",
+        "B_SILICON",
+        "B_BISMUTH"
+      ]
+    }
+  ],
+  "byproducts": [
+    {
+      "name": "B_IRON",
+      "color": 14860458
+    },
+    {
+      "name": "B_COPPER",
+      "color": 15506019
+    },
+    {
+      "name": "B_LITHIUM",
+      "color": 15592941
+    },
+    {
+      "name": "B_SILICON",
+      "color": 16776145
+    },
+    {
+      "name": "B_LEAD",
+      "color": 6579312
+    },
+    {
+      "name": "B_TITANIUM",
+      "color": 15921122
+    },
+    {
+      "name": "B_ALUMINIUM",
+      "color": 15266553
+    },
+    {
+      "name": "B_SULFUR",
+      "color": 15389559
+    },
+    {
+      "name": "B_CALCIUM",
+      "color": 13619110
+    },
+    {
+      "name": "B_BISMUTH",
+      "color": 9274743
+    },
+    {
+      "name": "B_RADIUM",
+      "color": 15334134
+    },
+    {
+      "name": "B_TECHNETIUM",
+      "color": 13295583
+    },
+    {
+      "name": "B_POLONIUM",
+      "color": 13295583
+    },
+    {
+      "name": "B_URANIUM",
+      "color": 8818050
+    }
+  ],
+  "types": [
+    {
+      "name": "LIGHT_METAL",
+      "light": 16777215,
+      "dark": 3487029,
+      "suffix": "light",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "amount": 9
+        },
+        {
+          "material": "MAT_COPPER",
+          "amount": 9
+        },
+        {
+          "material": "MAT_ILMENITE",
+          "amount": 6
+        },
+        {
+          "material": "MAT_BAUXITE",
+          "amount": 9
+        },
+        {
+          "material": "MAT_CRYOLITE",
+          "amount": 3
+        },
+        {
+          "material": "MAT_CHLOROCALCITE",
+          "amount": 5
+        },
+        {
+          "material": "MAT_LITHIUM",
+          "amount": 5
+        },
+        {
+          "material": "MAT_SODIUM",
+          "amount": 3
+        },
+        {
+          "material": "MAT_CHLOROCALCITE",
+          "amount": 6
+        },
+        {
+          "material": "MAT_LITHIUM",
+          "amount": 6
+        },
+        {
+          "material": "MAT_SODIUM",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "HEAVY_METAL",
+      "light": 8816262,
+      "dark": 0,
+      "suffix": "heavy",
+      "outputs": [
+        {
+          "material": "MAT_TUNGSTEN",
+          "amount": 9
+        },
+        {
+          "material": "MAT_LEAD",
+          "amount": 9
+        },
+        {
+          "material": "MAT_GOLD",
+          "amount": 2
+        },
+        {
+          "material": "MAT_GOLD",
+          "amount": 2
+        },
+        {
+          "material": "MAT_BERYLLIUM",
+          "amount": 3
+        },
+        {
+          "material": "MAT_TUNGSTEN",
+          "amount": 9
+        },
+        {
+          "material": "MAT_LEAD",
+          "amount": 9
+        },
+        {
+          "material": "MAT_GOLD",
+          "amount": 5
+        },
+        {
+          "material": "MAT_BISMUTH",
+          "amount": 2
+        },
+        {
+          "material": "MAT_TANTALIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_GOLD",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "RARE_EARTH",
+      "light": 15132342,
+      "dark": 1842176,
+      "suffix": "rare",
+      "outputs": [
+        {
+          "material": "MAT_COBALT",
+          "amount": 5
+        },
+        {
+          "material": "MAT_RAREEARTH",
+          "amount": 5
+        },
+        {
+          "material": "MAT_BORON",
+          "amount": 5
+        },
+        {
+          "material": "MAT_LANTHANIUM",
+          "amount": 3
+        },
+        {
+          "material": "MAT_NIOBIUM",
+          "amount": 4
+        },
+        {
+          "material": "MAT_NEODYMIUM",
+          "amount": 3
+        },
+        {
+          "material": "MAT_STRONTIUM",
+          "amount": 3
+        },
+        {
+          "material": "MAT_ZIRCONIUM",
+          "amount": 3
+        },
+        {
+          "material": "MAT_NIOBIUM",
+          "amount": 5
+        },
+        {
+          "material": "MAT_NEODYMIUM",
+          "amount": 5
+        },
+        {
+          "material": "MAT_STRONTIUM",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "ACTINIDE",
+      "light": 12699581,
+      "dark": 2830887,
+      "suffix": "actinide",
+      "outputs": [
+        {
+          "material": "MAT_URANIUM",
+          "amount": 4
+        },
+        {
+          "material": "MAT_THORIUM",
+          "amount": 4
+        },
+        {
+          "material": "MAT_RADIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_RADIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_POLONIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_RADIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_RADIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_POLONIUM",
+          "amount": 2
+        },
+        {
+          "material": "MAT_TECHNETIUM",
+          "amount": 1
+        },
+        {
+          "material": "MAT_TECHNETIUM",
+          "amount": 1
+        },
+        {
+          "material": "MAT_U238",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "NON_METAL",
+      "light": 11513775,
+      "dark": 986895,
+      "suffix": "nonmetal",
+      "outputs": [
+        {
+          "material": "MAT_COAL",
+          "amount": 9
+        },
+        {
+          "material": "MAT_SULFUR",
+          "amount": 9
+        },
+        {
+          "material": "MAT_LIGNITE",
+          "amount": 9
+        },
+        {
+          "material": "MAT_KNO",
+          "amount": 6
+        },
+        {
+          "material": "MAT_FLUORITE",
+          "amount": 6
+        },
+        {
+          "material": "MAT_PHOSPHORUS",
+          "amount": 5
+        },
+        {
+          "material": "MAT_FLUORITE",
+          "amount": 6
+        },
+        {
+          "material": "MAT_SULFUR",
+          "amount": 6
+        },
+        {
+          "material": "MAT_CHLOROCALCITE",
+          "amount": 6
+        },
+        {
+          "material": "MAT_SILICON",
+          "amount": 2
+        },
+        {
+          "material": "MAT_SILICON",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "CRYSTALLINE",
+      "light": 14876666,
+      "dark": 2001527,
+      "suffix": "crystal",
+      "outputs": [
+        {
+          "material": "MAT_REDSTONE",
+          "amount": 9
+        },
+        {
+          "material": "MAT_CINNABAR",
+          "amount": 4
+        },
+        {
+          "material": "MAT_SODALITE",
+          "amount": 9
+        },
+        {
+          "material": "MAT_ASBESTOS",
+          "amount": 6
+        },
+        {
+          "material": "MAT_DIAMOND",
+          "amount": 3
+        },
+        {
+          "material": "MAT_CINNABAR",
+          "amount": 3
+        },
+        {
+          "material": "MAT_ASBESTOS",
+          "amount": 5
+        },
+        {
+          "material": "MAT_EMERALD",
+          "amount": 3
+        },
+        {
+          "material": "MAT_BORAX",
+          "amount": 3
+        },
+        {
+          "material": "MAT_MOLYSITE",
+          "amount": 3
+        },
+        {
+          "material": "MAT_SODALITE",
+          "amount": 9
+        }
+      ]
+    }
+  ],
+  "grades": [
+    {
+      "name": "BASE",
+      "tint": 16777215,
+      "prefix": "base",
+      "traits": []
+    },
+    {
+      "name": "BASE_ROASTED",
+      "tint": 13619151,
+      "prefix": "base",
+      "traits": [
+        "ROASTED"
+      ]
+    },
+    {
+      "name": "BASE_WASHED",
+      "tint": 14410443,
+      "prefix": "base",
+      "traits": [
+        "WASHED"
+      ]
+    },
+    {
+      "name": "PRIMARY",
+      "tint": 16777215,
+      "prefix": "primary",
+      "traits": [
+        "CENTRIFUGED"
+      ]
+    },
+    {
+      "name": "PRIMARY_ROASTED",
+      "tint": 13619151,
+      "prefix": "primary",
+      "traits": [
+        "ROASTED"
+      ]
+    },
+    {
+      "name": "PRIMARY_SULFURIC",
+      "tint": 16777171,
+      "prefix": "primary",
+      "traits": [
+        "SULFURIC"
+      ]
+    },
+    {
+      "name": "PRIMARY_NOSULFURIC",
+      "tint": 13882623,
+      "prefix": "primary",
+      "traits": [
+        "CENTRIFUGED",
+        "SULFURIC"
+      ]
+    },
+    {
+      "name": "PRIMARY_SOLVENT",
+      "tint": 13889791,
+      "prefix": "primary",
+      "traits": [
+        "SOLVENT"
+      ]
+    },
+    {
+      "name": "PRIMARY_NOSOLVENT",
+      "tint": 16768723,
+      "prefix": "primary",
+      "traits": [
+        "CENTRIFUGED",
+        "SOLVENT"
+      ]
+    },
+    {
+      "name": "PRIMARY_RAD",
+      "tint": 15531987,
+      "prefix": "primary",
+      "traits": [
+        "RAD"
+      ]
+    },
+    {
+      "name": "PRIMARY_NORAD",
+      "tint": 15455231,
+      "prefix": "primary",
+      "traits": [
+        "CENTRIFUGED",
+        "RAD"
+      ]
+    },
+    {
+      "name": "PRIMARY_FIRST",
+      "tint": 16765908,
+      "prefix": "primary",
+      "traits": [
+        "CENTRIFUGED"
+      ]
+    },
+    {
+      "name": "PRIMARY_SECOND",
+      "tint": 13893611,
+      "prefix": "primary",
+      "traits": [
+        "CENTRIFUGED"
+      ]
+    },
+    {
+      "name": "CRUMBS",
+      "tint": 16777215,
+      "prefix": "crumbs",
+      "traits": [
+        "CENTRIFUGED"
+      ]
+    },
+    {
+      "name": "SULFURIC_BYPRODUCT",
+      "tint": 16777215,
+      "prefix": "sulfuric",
+      "traits": [
+        "CENTRIFUGED",
+        "SULFURIC"
+      ]
+    },
+    {
+      "name": "SULFURIC_ROASTED",
+      "tint": 13619151,
+      "prefix": "sulfuric",
+      "traits": [
+        "ROASTED",
+        "SULFURIC"
+      ]
+    },
+    {
+      "name": "SULFURIC_ARC",
+      "tint": 12821154,
+      "prefix": "sulfuric",
+      "traits": [
+        "ARC",
+        "SULFURIC"
+      ]
+    },
+    {
+      "name": "SULFURIC_WASHED",
+      "tint": 14410443,
+      "prefix": "sulfuric",
+      "traits": [
+        "WASHED",
+        "SULFURIC"
+      ]
+    },
+    {
+      "name": "SOLVENT_BYPRODUCT",
+      "tint": 16777215,
+      "prefix": "solvent",
+      "traits": [
+        "CENTRIFUGED",
+        "SOLVENT"
+      ]
+    },
+    {
+      "name": "SOLVENT_ROASTED",
+      "tint": 13619151,
+      "prefix": "solvent",
+      "traits": [
+        "ROASTED",
+        "SOLVENT"
+      ]
+    },
+    {
+      "name": "SOLVENT_ARC",
+      "tint": 12821154,
+      "prefix": "solvent",
+      "traits": [
+        "ARC",
+        "SOLVENT"
+      ]
+    },
+    {
+      "name": "SOLVENT_WASHED",
+      "tint": 14410443,
+      "prefix": "solvent",
+      "traits": [
+        "WASHED",
+        "SOLVENT"
+      ]
+    },
+    {
+      "name": "RAD_BYPRODUCT",
+      "tint": 16777215,
+      "prefix": "rad",
+      "traits": [
+        "CENTRIFUGED",
+        "RAD"
+      ]
+    },
+    {
+      "name": "RAD_ROASTED",
+      "tint": 13619151,
+      "prefix": "rad",
+      "traits": [
+        "ROASTED",
+        "RAD"
+      ]
+    },
+    {
+      "name": "RAD_ARC",
+      "tint": 12821154,
+      "prefix": "rad",
+      "traits": [
+        "ARC",
+        "RAD"
+      ]
+    },
+    {
+      "name": "RAD_WASHED",
+      "tint": 14410443,
+      "prefix": "rad",
+      "traits": [
+        "WASHED",
+        "RAD"
+      ]
+    }
+  ]
+}

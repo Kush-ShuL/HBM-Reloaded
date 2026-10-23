@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:rune_blank",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PSP",
+    "SDS",
+    "PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:powder_magic"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "D": {
+      "item": "hbm:circuit_bismoid"
+    }
+  }
+}

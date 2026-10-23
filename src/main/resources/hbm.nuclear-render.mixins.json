@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.client.bomb.nuclear.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "NativeCloudLayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_chemical_plant",
+      "id": "hbm:machine_chemical_plant",
+      "kind": "block",
+      "module": "chemical-plant",
+      "originalClass": "com.hbm.blocks.machine.MachineChemicalPlant",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2216
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    }
+  ],
+  "recipes": {
+    "normal": 77,
+    "lbsm": 77,
+    "pressurized": 77
+  },
+  "sourceRecipeParserPending": []
+}

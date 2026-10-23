@@ -1,0 +1,34 @@
+package com.hbm.client.reactor.dfc.components;
+import com.hbm.client.gui.LegacyContainerScreen;
+import com.hbm.item.battery.BatteryItem;
+import com.hbm.item.fluid.client.FluidInfo;
+import com.hbm.fluid.FluidTank;
+import com.hbm.machine.reactor.dfc.components.*;
+import java.math.BigInteger;
+import java.util.*;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.util.Mth;
+import net.minecraft.world.entity.player.Inventory;
+import net.neoforged.neoforge.network.PacketDistributor;
+/** Four original176x166GUI atlases, original slot labels/gauges/field/button coordinates, no new layout. */
+public final class DfcComponentScreen extends LegacyContainerScreen<DfcComponentMenu> {
+ private EditBox field;
+ public DfcComponentScreen(DfcComponentMenu menu,Inventory inventory,Component title){super(menu,inventory,title,ResourceLocation.parse("hbm:textures/gui/dfc/gui_"+menu.kind.id.substring(4)+".png"),176,166);}
+ private DfcComponentEntity machine(){return minecraft!=null&&minecraft.level!=null&&minecraft.level.getBlockEntity(menu.position) instanceof DfcComponentEntity component?component:null;}
+ @Override protected void init(){super.init();if(menu.kind==DfcComponentKind.EMITTER||menu.kind==DfcComponentKind.STABILIZER){var tile=machine();field=new EditBox(font,leftPos+(menu.kind==DfcComponentKind.EMITTER?57:75),topPos+57,29,12,Component.translatable("gui.hbm.dfc.input"));field.setBordered(false);field.setTextColor(-1);field.setTextColorUneditable(-1);field.setMaxLength(3);field.setValue(Integer.toString(tile==null?0:tile.watts));addWidget(field);}}
+ @Override protected void renderLabels(GuiGraphics g,int x,int y){g.drawString(font,title,88-font.width(title)/2,6,4210752,false);g.drawString(font,playerInventoryTitle,8,72,4210752,false);var tile=machine();if(tile instanceof DfcEmitterEntity emitter)g.drawString(font,Component.translatable("gui.hbm.dfc.output_spk",number(BigInteger.valueOf(emitter.prev))),50,30,0xff7f7f,false);if(tile instanceof DfcReceiverEntity receiver){g.drawString(font,Component.translatable("gui.hbm.dfc.input_label"),40,25,0xff7f7f,false);g.drawString(font,number(receiver.joules)+"Spk",50,35,0xff7f7f,false);g.drawString(font,Component.translatable("gui.hbm.dfc.output_label"),40,45,0xff7f7f,false);g.drawString(font,number(receiver.joules.multiply(BigInteger.valueOf(5000)))+"HE",50,55,0xff7f7f,false);}}
+ @Override protected void renderBg(GuiGraphics g,float partial,int mouseX,int mouseY){super.renderBg(g,partial,mouseX,mouseY);var tile=machine();if(tile==null)return;if(tile instanceof DfcEmitterEntity emitter){if(field!=null&&field.isFocused())drawLegacyRegion(g,53,53,210,4,34,16);if(emitter.isOn)drawLegacyRegion(g,133,52,192,0,18,18);drawLegacyRegion(g,53,45,210,0,emitter.watts*34/100,4);energy(g,emitter,26);tank(g,emitter.tank,8);}if(tile instanceof DfcReceiverEntity receiver)tank(g,receiver.tank,8);if(tile instanceof DfcInjectorEntity injector){tank(g,injector.tanks[0],44);tank(g,injector.tanks[1],116);}if(tile instanceof DfcStabilizerEntity stabilizer){if(field!=null&&field.isFocused())drawLegacyRegion(g,71,53,192,4,34,16);drawLegacyRegion(g,71,45,192,0,stabilizer.watts*34/100,4);energy(g,stabilizer,35);}if(field!=null)field.render(g,mouseX,mouseY,partial);}
+ private void energy(GuiGraphics g,DfcComponentEntity tile,int x){int height=tile.getMaxPowerExact().signum()==0?0:tile.getPowerExact().multiply(BigInteger.valueOf(52)).divide(tile.getMaxPowerExact()).intValue();drawLegacyRegion(g,x,69-height,176,52-height,16,height);}
+ private void tank(GuiGraphics g,FluidTank tank,int x){if(tank.getMaxFill()<=0)return;int height=tank.getFill()*52/tank.getMaxFill();if(height<=0)return;int tint=tank.getTankType().getTint();g.setColor((tint>>16&255)/255F,(tint>>8&255)/255F,(tint&255)/255F,1);g.blit(tank.getTankType().getTexture(),leftPos+x,topPos+69-height,0,16-height,16,height,16,16);g.setColor(1,1,1,1);}
+ private void tankInfo(GuiGraphics g,FluidTank tank,int x,int mouseX,int mouseY){if(!legacyInfoHovered(mouseX,mouseY,x,17,16,52))return;var lines=new ArrayList<Component>();lines.add(tank.getTankType().displayName());lines.add(Component.literal(tank.getFill()+"/"+tank.getMaxFill()+"mB"));if(tank.getPressure()!=0){lines.add(Component.translatable("gui.hbm.dfc.pressure",tank.getPressure()).withStyle(net.minecraft.ChatFormatting.RED));lines.add(Component.translatable("gui.hbm.dfc.compressor").withStyle(System.currentTimeMillis()%1000<500?net.minecraft.ChatFormatting.RED:net.minecraft.ChatFormatting.DARK_RED));}FluidInfo.append(tank.getTankType(),lines,hasShiftDown());g.renderComponentTooltip(font,lines,mouseX,mouseY);}
+ @Override public void render(GuiGraphics g,int x,int y,float partial){super.render(g,x,y,partial);var tile=machine();if(tile==null)return;if(tile instanceof DfcEmitterEntity emitter)tankInfo(g,emitter.tank,8,x,y);if(tile instanceof DfcReceiverEntity receiver)tankInfo(g,receiver.tank,8,x,y);if(tile instanceof DfcInjectorEntity injector){tankInfo(g,injector.tanks[0],44,x,y);tankInfo(g,injector.tanks[1],116,x,y);}int energyX=menu.kind==DfcComponentKind.EMITTER?26:menu.kind==DfcComponentKind.STABILIZER?35:-1;if(energyX>=0&&legacyInfoHovered(x,y,energyX,17,16,52))g.renderTooltip(font,Component.literal(number(tile.getPowerExact())+"/"+number(tile.getMaxPowerExact())+"HE"),x,y);}
+ @Override public boolean mouseClicked(double x,double y,int button){boolean result=super.mouseClicked(x,y,button);if(field!=null){field.mouseClicked(x,y,button);int confirm=menu.kind==DfcComponentKind.EMITTER?97:124;if(legacyInfoHovered(x,y,confirm,52,18,18)){try{double raw=Double.parseDouble(field.getValue());if(!Double.isFinite(raw))return result;int value=Mth.clamp((int)raw,1,100);field.setValue(Integer.toString(value));send(value,0);return true;}catch(NumberFormatException ignored){}}}if(menu.kind==DfcComponentKind.EMITTER&&legacyInfoHovered(x,y,133,52,18,18)){send(0,1);return true;}return result;}
+ private void send(int value,int button){minecraft.getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK,1F));PacketDistributor.sendToServer(new DfcComponentControl(menu.position,value,button));}
+ @Override public boolean keyPressed(int key,int scan,int modifiers){return field!=null&&field.keyPressed(key,scan,modifiers)||super.keyPressed(key,scan,modifiers);}@Override public boolean charTyped(char c,int modifiers){return field!=null&&field.charTyped(c,modifiers)||super.charTyped(c,modifiers);}
+ static String number(BigInteger value){return value.bitLength()<64?BatteryItem.shortNumber(value.longValueExact()):value.toString();}
+}

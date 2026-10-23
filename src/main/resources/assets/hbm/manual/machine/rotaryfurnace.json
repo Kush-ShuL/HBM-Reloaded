@@ -1,0 +1,23 @@
+{
+  "name": "Rotary Furnace",
+  "icon": [
+    "hbm:tile.machine_rotary_furnace",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.machine_rotary_furnace"
+    ]
+  ],
+  "title": {
+    "en_US": "Rotary Furnace",
+    "ru_RU": "Роторная печь",
+    "zh_CN": "回转炉"
+  },
+  "content": {
+    "en_US": "A type of alloying furnace that can accept multiple item inputs and a fluid and output the result as liquid metal which needs to be cast. Used to make [[weapon steel|Weapon Steel]] and [[saturnite|Saturnite]], and features alternate recipes for [[gunmetal|Gunmetal]] and [[steel|Steel]]. Requires both a solid fuel and [[steam|Steam]] to function, creating [[low-pressure steam|Low-Pressure Steam]] in the process.<br><br>Items can be inserted from the color-coded access points in the back. The input fluid can only be connected to one of the two grey ports on the output side. Steam and low-pressure steam ducts need to be connected to the steam engine on the left. Solid fuel can be inserted through the iron bars at the front. Exhaust smoke can be extracted from the opening at the top, the furnace will emit a smoke plume if not connected to a smoke stack.",
+    "ru_RU": "Тип печей для сплавов, который может принимать несколько видов твёрдого сырья и жидкость, при этом выдавая продукт в виде жидкого металла, который потребует отливки. Используется для изготовления [[оружейной стали|Weapon Steel]] и [[сатурнита|Saturnite]], а также содержит альтернативные рецепты для [[пушечной бронзы|Gunmetal]] и [[стали|Steel]]. Для работы требуется как твёрдое топливо, так и [[пар|Steam]], из которого образуется [[пар низкого давления|Low-Pressure Steam]].<br><br>Предметы можно вставлять с помощью обозначенных цветом портов доступа на задней стороне. Жидкости можно вводить только через один из двух серых разъёмов сбоку. К портам парового двигателя слева необходимо подсоединить трубы для обычного пара и пара низкого давления. Твёрдое топливо можно подавать через зарешечённое отверстие спереди. Выхлоп может выводиться через отверстие сверху, печь будет оставлять шлейф дыма, если нет подключения к дымовой трубе.",
+    "zh_CN": "一种合金熔炉，可接受多种物品和一种流体，并将产物以液态金属输出，之后需要浇铸。用于制造[[武器钢|Weapon Steel]]和[[土星合金|Saturnite]]，也提供[[炮铜|Gunmetal]]和[[钢|Steel]]的替代配方。工作时同时需要固体燃料和[[蒸汽|Steam]]，并产生[[低压蒸汽|Low-Pressure Steam]]。<br><br>物品可从背面以颜色区分的接口输入。输入流体只能连接输出侧的两个灰色接口之一。蒸汽和低压蒸汽管道必须连接左侧蒸汽机；固体燃料可从正面的铁栏处放入。顶部开口可用于抽出废烟；若未连接烟囱，熔炉会排放烟柱。"
+  }
+}

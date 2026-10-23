@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "steel_helmet",
+      "id": "hbm:steel_helmet",
+      "legacyRegistryId": "hbm:item.steel_helmet",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:66",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 330
+    },
+    {
+      "kind": "item",
+      "symbol": "steel_plate",
+      "id": "hbm:steel_plate",
+      "legacyRegistryId": "hbm:item.steel_plate",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:67",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 480
+    },
+    {
+      "kind": "item",
+      "symbol": "steel_legs",
+      "id": "hbm:steel_legs",
+      "legacyRegistryId": "hbm:item.steel_legs",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:68",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 450
+    },
+    {
+      "kind": "item",
+      "symbol": "steel_boots",
+      "id": "hbm:steel_boots",
+      "legacyRegistryId": "hbm:item.steel_boots",
+      "originalClass": "ArmorFSB",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:69",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 390
+    }
+  ],
+  "material": {
+    "name": "HBM_STEEL",
+    "baseDurability": 30,
+    "durability": [
+      330,
+      480,
+      450,
+      390
+    ],
+    "defense": [
+      3,
+      8,
+      6,
+      3
+    ],
+    "enchantmentValue": 5,
+    "repair": "hbm:ingot_steel",
+    "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:135,297",
+    "toughness": 0,
+    "knockbackResistance": 0
+  },
+  "recipes": [
+    {
+      "id": "hbm:crafting/hbm_steel_helmet_3eaf08e09674",
+      "file": "data/hbm/recipe/crafting/hbm_steel_helmet_3eaf08e09674.json",
+      "source": "legacy/src/main/java/com/hbm/crafting/ArmorRecipes.java:30",
+      "sourceHelper": "addHelmet -> addArmor(...,patternHelmet)"
+    },
+    {
+      "id": "hbm:crafting/hbm_steel_plate_81e76c2750b7",
+      "file": "data/hbm/recipe/crafting/hbm_steel_plate_81e76c2750b7.json",
+      "source": "legacy/src/main/java/com/hbm/crafting/ArmorRecipes.java:31",
+      "sourceHelper": "addChest -> addArmor(...,patternChetplate)"
+    },
+    {
+      "id": "hbm:crafting/hbm_steel_legs_0f1bc5dca992",
+      "file": "data/hbm/recipe/crafting/hbm_steel_legs_0f1bc5dca992.json",
+      "source": "legacy/src/main/java/com/hbm/crafting/ArmorRecipes.java:32",
+      "sourceHelper": "addLegs -> addArmor(...,patternLeggings)"
+    },
+    {
+      "id": "hbm:crafting/hbm_steel_boots_a13933f17308",
+      "file": "data/hbm/recipe/crafting/hbm_steel_boots_a13933f17308.json",
+      "source": "legacy/src/main/java/com/hbm/crafting/ArmorRecipes.java:33",
+      "sourceHelper": "addBoots -> addArmor(...,patternBoots)"
+    }
+  ]
+}

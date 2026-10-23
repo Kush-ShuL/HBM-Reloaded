@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 6
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "B",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/barrellightdurasteel"
+    }
+  }
+}

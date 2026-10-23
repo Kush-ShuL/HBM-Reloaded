@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:key_red"
+    },
+    "title": {
+      "translate": "achievement.redRoom"
+    },
+    "description": {
+      "translate": "achievement.redRoom.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:redroom"
+      }
+    }
+  }
+}

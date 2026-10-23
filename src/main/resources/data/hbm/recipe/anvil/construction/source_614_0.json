@@ -1,0 +1,35 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:stamp_desh_flat",
+          "count": 1
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+      },
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:stamp_desh_9",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 4,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 614000000
+}

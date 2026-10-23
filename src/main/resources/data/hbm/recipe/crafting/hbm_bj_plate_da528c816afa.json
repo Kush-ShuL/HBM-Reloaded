@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:bj_plate",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "N N",
+    "MSM",
+    "NCN"
+  ],
+  "key": {
+    "N": {
+      "item": "hbm:plate_armor_lunar"
+    },
+    "M": {
+      "item": "hbm:motor_desh"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_plate",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "C": {
+      "item": "hbm:circuit_advanced"
+    }
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "crateList": {
+    "entries": [
+      {
+        "expression": "ModItems.syringe_metal_stimpak",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 61
+        },
+        "stack": {
+          "id": "hbm:syringe_metal_stimpak",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.syringe_antidote",
+        "weight": 5,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 62
+        },
+        "stack": {
+          "id": "hbm:syringe_antidote",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ItemGrenadeUniversal.make(EnumGrenadeShell.FRAG, EnumGrenadeFilling.HE, EnumGrenadeFuze.S3, EnumGrenadeExtra.FRAG_SLEEVE)",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 63
+        },
+        "stack": {
+          "id": "hbm:grenade_universal",
+          "count": 1,
+          "components": {
+            "minecraft:custom_data": {
+              "shell": 0,
+              "filling": 1,
+              "fuze": 0,
+              "extra": 2
+            }
+          }
+        }
+      },
+      {
+        "expression": "ItemGrenadeUniversal.make(EnumGrenadeShell.STICK, EnumGrenadeFilling.HE, EnumGrenadeFuze.IMPACT)",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 64
+        },
+        "stack": {
+          "id": "hbm:grenade_universal",
+          "count": 1,
+          "components": {
+            "minecraft:custom_data": {
+              "shell": 1,
+              "filling": 1,
+              "fuze": 3
+            }
+          }
+        }
+      },
+      {
+        "expression": "ItemGrenadeUniversal.make(EnumGrenadeShell.FRAG, EnumGrenadeFilling.INC, EnumGrenadeFuze.S7)",
+        "weight": 4,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 65
+        },
+        "stack": {
+          "id": "hbm:grenade_universal",
+          "count": 1,
+          "components": {
+            "minecraft:custom_data": {
+              "shell": 0,
+              "filling": 3,
+              "fuze": 1
+            }
+          }
+        }
+      },
+      {
+        "expression": "ModItems.ammo_container",
+        "weight": 2,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 66
+        },
+        "stack": {
+          "id": "hbm:ammo_container",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      }
+    ],
+    "ready": true
+  },
+  "weaponList": {
+    "entries": [
+      {
+        "expression": "ModItems.gun_light_revolver",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 69
+        },
+        "stack": {
+          "id": "hbm:gun_light_revolver",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_maresleg",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 70
+        },
+        "stack": {
+          "id": "hbm:gun_maresleg",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_heavy_revolver",
+        "weight": 5,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 71
+        },
+        "stack": {
+          "id": "hbm:gun_heavy_revolver",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_greasegun",
+        "weight": 5,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 72
+        },
+        "stack": {
+          "id": "hbm:gun_greasegun",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_liberator",
+        "weight": 2,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 73
+        },
+        "stack": {
+          "id": "hbm:gun_liberator",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_flaregun",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 74
+        },
+        "stack": {
+          "id": "hbm:gun_flaregun",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_panzerschreck",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 75
+        },
+        "stack": {
+          "id": "hbm:gun_panzerschreck",
+          "count": 1
+        }
+      }
+    ],
+    "ready": true
+  },
+  "leadList": {
+    "entries": [
+      {
+        "expression": "ModItems.ingot_uranium",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 78
+        },
+        "stack": {
+          "id": "hbm:ingot_uranium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_u238",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 79
+        },
+        "stack": {
+          "id": "hbm:ingot_u238",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_plutonium",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 80
+        },
+        "stack": {
+          "id": "hbm:ingot_plutonium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_pu240",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 81
+        },
+        "stack": {
+          "id": "hbm:ingot_pu240",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_neptunium",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 82
+        },
+        "stack": {
+          "id": "hbm:ingot_neptunium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_uranium_fuel",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 83
+        },
+        "stack": {
+          "id": "hbm:ingot_uranium_fuel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_plutonium_fuel",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 84
+        },
+        "stack": {
+          "id": "hbm:ingot_plutonium_fuel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ingot_mox_fuel",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 85
+        },
+        "stack": {
+          "id": "hbm:ingot_mox_fuel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_uranium",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 86
+        },
+        "stack": {
+          "id": "hbm:nugget_uranium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_u238",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 87
+        },
+        "stack": {
+          "id": "hbm:nugget_u238",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_plutonium",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 88
+        },
+        "stack": {
+          "id": "hbm:nugget_plutonium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_pu240",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 89
+        },
+        "stack": {
+          "id": "hbm:nugget_pu240",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_neptunium",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 90
+        },
+        "stack": {
+          "id": "hbm:nugget_neptunium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_uranium_fuel",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 91
+        },
+        "stack": {
+          "id": "hbm:nugget_uranium_fuel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_plutonium_fuel",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 92
+        },
+        "stack": {
+          "id": "hbm:nugget_plutonium_fuel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.nugget_mox_fuel",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 93
+        },
+        "stack": {
+          "id": "hbm:nugget_mox_fuel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.cell_deuterium",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 94
+        },
+        "stack": {
+          "id": "hbm:cell_deuterium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.cell_tritium",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 95
+        },
+        "stack": {
+          "id": "hbm:cell_tritium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.cell_uf6",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 96
+        },
+        "stack": {
+          "id": "hbm:cell_uf6",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.cell_puf6",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 97
+        },
+        "stack": {
+          "id": "hbm:cell_puf6",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.pellet_rtg",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 98
+        },
+        "stack": {
+          "id": "hbm:pellet_rtg",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.pellet_rtg_weak",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 99
+        },
+        "stack": {
+          "id": "hbm:pellet_rtg_weak",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.powder_yellowcake",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 100
+        },
+        "stack": {
+          "id": "hbm:powder_yellowcake",
+          "count": 1
+        }
+      }
+    ],
+    "ready": true
+  },
+  "metalList": {
+    "entries": [
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_press)",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 103
+        },
+        "stack": {
+          "id": "hbm:machine_press",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_reactor_breeding)",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 104
+        },
+        "stack": {
+          "id": "hbm:machine_reactor",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_wood_burner)",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 105
+        },
+        "stack": {
+          "id": "hbm:machine_wood_burner",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_diesel)",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 106
+        },
+        "stack": {
+          "id": "hbm:machine_diesel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_rtg)",
+        "weight": 4,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 107
+        },
+        "stack": {
+          "id": "hbm:machine_rtg_grey",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.red_pylon)",
+        "weight": 9,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 108
+        },
+        "stack": {
+          "id": "hbm:red_pylon",
+          "count": 1
+        }
+      },
+      {
+        "expression": "new ItemStack(ModItems.battery_pack, 1, EnumBatteryPack.BATTERY_LEAD.ordinal())",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 109
+        },
+        "stack": {
+          "id": "hbm:battery_pack",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_electric_furnace_off)",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 110
+        },
+        "stack": {
+          "id": "hbm:machine_electric_furnace_off",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_assembly_machine)",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 111
+        },
+        "stack": {
+          "id": "hbm:machine_assembly_machine",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.machine_fluidtank)",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 112
+        },
+        "stack": {
+          "id": "hbm:machine_fluidtank",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.centrifuge_element",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 113
+        },
+        "stack": {
+          "id": "hbm:centrifuge_element",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.motor",
+        "weight": 8,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 114
+        },
+        "stack": {
+          "id": "hbm:motor",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.coil_tungsten",
+        "weight": 7,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 115
+        },
+        "stack": {
+          "id": "hbm:coil_tungsten",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.photo_panel",
+        "weight": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 116
+        },
+        "stack": {
+          "id": "hbm:photo_panel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.coil_copper",
+        "weight": 10,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 117
+        },
+        "stack": {
+          "id": "hbm:coil_copper",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.blade_titanium",
+        "weight": 3,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 118
+        },
+        "stack": {
+          "id": "hbm:blade_titanium",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.piston_selenium",
+        "weight": 6,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 119
+        },
+        "stack": {
+          "id": "hbm:piston_selenium",
+          "count": 1
+        }
+      }
+    ],
+    "ready": true
+  },
+  "redList": {
+    "entries": [
+      {
+        "expression": "ModItems.mysteryshovel",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 122
+        },
+        "stack": {
+          "id": "hbm:mysteryshovel",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_heavy_revolver_lilmac",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 123
+        },
+        "stack": {
+          "id": "hbm:gun_heavy_revolver_lilmac",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_autoshotgun_sexy",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 124
+        },
+        "stack": {
+          "id": "hbm:gun_autoshotgun_sexy",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.gun_maresleg_broken",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 125
+        },
+        "stack": {
+          "id": "hbm:gun_maresleg_broken",
+          "count": 1
+        }
+      },
+      {
+        "expression": "new ItemStack(ModItems.ammo_secret, 1, EnumAmmoSecret.M44_EQUESTRIAN.ordinal())",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 126
+        },
+        "stack": {
+          "id": "hbm:ammo_secret_m44_equestrian",
+          "count": 1
+        }
+      },
+      {
+        "expression": "new ItemStack(ModItems.ammo_secret, 1, EnumAmmoSecret.G12_EQUESTRIAN.ordinal())",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 127
+        },
+        "stack": {
+          "id": "hbm:ammo_secret_g12_equestrian",
+          "count": 1
+        }
+      },
+      {
+        "expression": "new ItemStack(ModItems.ammo_secret, 1, EnumAmmoSecret.BMG50_EQUESTRIAN.ordinal())",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 128
+        },
+        "stack": {
+          "id": "hbm:ammo_secret_bmg50_equestrian",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.battery_spark",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 129
+        },
+        "stack": {
+          "id": "hbm:battery_spark",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.bottle_sparkle",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 130
+        },
+        "stack": {
+          "id": "hbm:bottle_sparkle",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.bottle_rad",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 131
+        },
+        "stack": {
+          "id": "hbm:bottle_rad",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.ring_starmetal",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 132
+        },
+        "stack": {
+          "id": "hbm:ring_starmetal",
+          "count": 1
+        }
+      },
+      {
+        "expression": "ModItems.flame_pony",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 133
+        },
+        "stack": {
+          "id": "hbm:flame_pony",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.ntm_dirt)",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 134
+        },
+        "stack": {
+          "id": "hbm:ntm_dirt",
+          "count": 1
+        }
+      },
+      {
+        "expression": "Item.getItemFromBlock(ModBlocks.broadcaster_pc)",
+        "weight": 1,
+        "source": {
+          "file": "legacy/src/main/java/com/hbm/blocks/generic/BlockCrate.java",
+          "line": 135
+        },
+        "stack": {
+          "id": "hbm:broadcaster_pc",
+          "count": 1
+        }
+      }
+    ],
+    "ready": true
+  }
+}

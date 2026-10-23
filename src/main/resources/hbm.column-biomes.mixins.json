@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.bomb.nuclear.biome.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BiomeManagerColumnMixin"
+  ],
+  "client": [
+    "ClientLevelTintMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:crucible",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 3
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MEM",
+    "YDY",
+    "YCY"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:ingot_meteorite_forged"
+    },
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+    },
+    "Y": {
+      "item": "hbm:billet_yharonite"
+    },
+    "D": {
+      "item": "hbm:demon_core_closed"
+    },
+    "C": {
+      "item": "hbm:ingot_chainsteel"
+    }
+  }
+}

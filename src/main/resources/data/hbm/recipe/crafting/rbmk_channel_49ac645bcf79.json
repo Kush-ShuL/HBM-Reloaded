@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BGB",
+    "GRG",
+    "BGB"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockgraphite"
+    },
+    "R": {
+      "item": "hbm:rbmk_rod_reasim"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_rod_reasim_mod",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:upgrade_stack",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "PUP",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_chip"
+    },
+    "P": {
+      "item": "hbm:part_generic_piston_electric"
+    },
+    "U": {
+      "type": "neoforge:components",
+      "items": "hbm:upgrade_stack",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  }
+}

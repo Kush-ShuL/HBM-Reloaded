@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:sulfur",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "neoforge:components",
+      "items": "hbm:ore_byproduct",
+      "components": {
+        "hbm:legacy_metadata": 7
+      },
+      "strict": false
+    }
+  }
+}

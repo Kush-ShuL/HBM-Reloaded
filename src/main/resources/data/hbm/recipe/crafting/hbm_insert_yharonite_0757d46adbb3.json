@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "YIY",
+    "IYI",
+    "YIY"
+  ],
+  "key": {
+    "Y": {
+      "item": "hbm:billet_yharonite"
+    },
+    "I": {
+      "item": "hbm:insert_du"
+    }
+  },
+  "result": {
+    "id": "hbm:insert_yharonite",
+    "count": 1
+  }
+}

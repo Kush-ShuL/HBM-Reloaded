@@ -1,0 +1,55 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingottungsten"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:machine_transformer",
+          "count": 1
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:arc_electrode",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:machine_arc_welder",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 391000000
+}

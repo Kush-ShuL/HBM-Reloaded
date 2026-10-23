@@ -1,0 +1,69 @@
+{
+  "result": {
+    "id": "hbm:circuit_star_component",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 9
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 6
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 7
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 8
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 5
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 4
+      },
+      "strict": false
+    }
+  ]
+}

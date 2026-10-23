@@ -1,0 +1,44 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "circuit_star_component",
+      "id": "hbm:circuit_star_component",
+      "legacyRegistryId": "hbm:item.circuit_star_component",
+      "originalClass": "ItemCircuitStarComponent",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2637
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5021
+          },
+          "expression": "GameRegistry.registerItem(circuit_star_component, circuit_star_component.getUnlocalizedName())",
+          "arguments": [
+            "circuit_star_component",
+            "circuit_star_component.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.starcomponents.StarComponentsContent",
+      "creativeTab": null,
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "chipset",
+        "cpu",
+        "ram",
+        "card"
+      ],
+      "enumClass": "CircuitComponentType",
+      "stackSize": 64,
+      "multiName": true,
+      "multiTexture": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "en_us": {
+    "block.hbm.machine_condenser_powered": "High-Power Steam Condenser",
+    "gui.hbm.powered_condenser.conversion": "Spent Steam → Water, 1:1",
+    "gui.hbm.powered_condenser.energy": "Nominal cost: %s HE/mB",
+    "gui.hbm.powered_condenser.throughput": "Requested condensation: %s mB/t",
+    "config.jade.plugin_hbm.powered_condenser_status": "Powered condenser requested throughput"
+  },
+  "zh_cn": {
+    "block.hbm.machine_condenser_powered": "大功率蒸汽冷凝器",
+    "gui.hbm.powered_condenser.conversion": "乏汽 → 水，1:1",
+    "gui.hbm.powered_condenser.energy": "标准耗能：%s HE/mB",
+    "gui.hbm.powered_condenser.throughput": "本刻待冷凝：%s mB",
+    "config.jade.plugin_hbm.powered_condenser_status": "大功率冷凝器待处理量"
+  }
+}

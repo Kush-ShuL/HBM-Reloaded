@@ -1,0 +1,24 @@
+{
+  "en_us": {
+    "block.hbm.machine_large_turbine": "Industrial Steam Turbine (LEGACY)",
+    "container.machineLargeTurbine": "Industrial Steam Turbine",
+    "tile.machine_large_turbine.desc": "Efficiency: 100%",
+    "gui.hbm.large_turbine.invalid_fluid": "Error: Invalid fluid!",
+    "gui.hbm.large_turbine.energy": "Gross output: %s HE / cycle",
+    "gui.hbm.large_turbine.input": "Fluid input: %s mB/t",
+    "gui.hbm.large_turbine.output": "Fluid output: %s mB/t",
+    "gui.hbm.large_turbine.power": "Gross generation: %s HE/t",
+    "config.jade.plugin_hbm.large_turbine_legacy_status": "Legacy turbine operation"
+  },
+  "zh_cn": {
+    "block.hbm.machine_large_turbine": "工业汽轮机（遗留）",
+    "container.machineLargeTurbine": "工业汽轮机",
+    "tile.machine_large_turbine.desc": "效率: 100%",
+    "gui.hbm.large_turbine.invalid_fluid": "错误：无效流体！",
+    "gui.hbm.large_turbine.energy": "单次产能：%s HE",
+    "gui.hbm.large_turbine.input": "流体消耗：%s mB/t",
+    "gui.hbm.large_turbine.output": "流体产出：%s mB/t",
+    "gui.hbm.large_turbine.power": "总发电量：%s HE/t",
+    "config.jade.plugin_hbm.large_turbine_legacy_status": "遗留汽轮机运行状态"
+  }
+}

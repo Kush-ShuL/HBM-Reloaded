@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ball_tatb",
+    "hbm:ball_tnt",
+    {
+      "id": "#c:ingots/any_highexplosive",
+      "required": false
+    }
+  ]
+}

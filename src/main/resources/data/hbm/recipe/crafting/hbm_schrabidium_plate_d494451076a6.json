@@ -1,0 +1,36 @@
+{
+  "result": {
+    "id": "hbm:schrabidium_plate",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ESE",
+    "EPE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_plate",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "P": {
+      "item": "hbm:pellet_charged"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleArmorRecipes)"
+    }
+  ]
+}

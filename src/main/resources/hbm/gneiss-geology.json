@@ -1,0 +1,118 @@
+{
+  "profiles": [
+    {
+      "symbol": "ore_gneiss_iron",
+      "sourceConfig": "constant",
+      "constantCount": 25,
+      "multiplier": 1,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 25,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:110",
+      "sourceExpression": "25"
+    },
+    {
+      "symbol": "ore_gneiss_gold",
+      "sourceConfig": "constant",
+      "constantCount": 10,
+      "multiplier": 1,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 10,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:111",
+      "sourceExpression": "10"
+    },
+    {
+      "symbol": "ore_gneiss_uranium",
+      "sourceConfig": "uraniumSpawn",
+      "constantCount": 0,
+      "multiplier": 3,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 21,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:112",
+      "sourceExpression": "WorldConfig.uraniumSpawn * 3"
+    },
+    {
+      "symbol": "ore_gneiss_copper",
+      "sourceConfig": "copperSpawn",
+      "constantCount": 0,
+      "multiplier": 3,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 36,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:113",
+      "sourceExpression": "WorldConfig.copperSpawn * 3"
+    },
+    {
+      "symbol": "ore_gneiss_asbestos",
+      "sourceConfig": "asbestosSpawn",
+      "constantCount": 0,
+      "multiplier": 3,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 6,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:114",
+      "sourceExpression": "WorldConfig.asbestosSpawn * 3"
+    },
+    {
+      "symbol": "ore_gneiss_lithium",
+      "sourceConfig": "lithiumSpawn",
+      "constantCount": 0,
+      "multiplier": 1,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 6,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:115",
+      "sourceExpression": "WorldConfig.lithiumSpawn"
+    },
+    {
+      "symbol": "ore_gneiss_rare",
+      "sourceConfig": "rareSpawn",
+      "constantCount": 0,
+      "multiplier": 1,
+      "size": 6,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 6,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:116",
+      "sourceExpression": "WorldConfig.rareSpawn"
+    },
+    {
+      "symbol": "ore_gneiss_gas",
+      "sourceConfig": "gassshaleSpawn",
+      "constantCount": 0,
+      "multiplier": 3,
+      "size": 10,
+      "minY": 30,
+      "variance": 10,
+      "defaultCount": 15,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:117",
+      "sourceExpression": "WorldConfig.gassshaleSpawn * 3"
+    }
+  ],
+  "host": {
+    "block": "hbm:stone_gneiss",
+    "source": "legacy/src/main/java/com/hbm/world/feature/SchistStratum.java",
+    "seed": "worldSeed",
+    "octaves": 4,
+    "scale": 0.01,
+    "threshold": 5,
+    "centerY": 30,
+    "range": "int((n-5)*3); if(range>4) range=8-range; if(range<0) skip",
+    "tile": "chunk block origin+8..23"
+  },
+  "negativeExtension": {
+    "center": "minBuildHeight + deepStratumOffset(default30)",
+    "oreHeightTranslation": "same host center translation",
+    "band": "existing deepBottomOffset/deepTopY",
+    "countMultiplier": "existing deepCountMultiplier",
+    "positiveBandsUnaffected": true
+  }
+}

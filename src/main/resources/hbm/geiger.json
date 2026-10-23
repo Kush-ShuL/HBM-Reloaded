@@ -1,0 +1,131 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "id": "hbm:geiger",
+      "symbol": "geiger",
+      "module": "geiger",
+      "originalClass": "com.hbm.blocks.machine.GeigerCounter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1635
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "kind": "item",
+      "id": "hbm:geiger_counter",
+      "symbol": "geiger_counter",
+      "module": "geiger",
+      "originalClass": "com.hbm.items.tool.ItemGeigerCounter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3832
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    }
+  ],
+  "creative": {
+    "machine": [
+      "hbm:geiger"
+    ],
+    "consumable": [
+      "hbm:geiger_counter"
+    ]
+  },
+  "hooks": {
+    "register": "GeigerContent.register(IEventBus)",
+    "creative": "GeigerContent.creativeStacks(String tab)",
+    "pickaxeTag": "hbm:mineable/pickaxe_geiger",
+    "client": "Automatic client mod-bus subscriber",
+    "jade": "Automatic optional @WailaPlugin"
+  },
+  "block": {
+    "hardness": 15,
+    "explosionResistance": 0.15,
+    "sampleInterval": 10,
+    "soundInterval": 5,
+    "maxViewDistance": 256,
+    "comparator": "min(ceil(liveChunkRadiation / 5f),15)",
+    "computer": {
+      "type": "ntm_geiger",
+      "methods": [
+        "getRads"
+      ]
+    },
+    "radiationUses": "HbmRadiation.getRadiation(server,x,y,z)"
+  },
+  "handheld": {
+    "maxStackSize": 1,
+    "creativeTab": "consumable",
+    "soundInterval": 5,
+    "soundThreshold": 1e-05,
+    "radiationUses": "HbmExposure.data(holder).radBuffer()",
+    "activeInEntireInventory": true
+  },
+  "hud": {
+    "source": "ModEventHandlerClient.onOverlayRender HOTBAR Pre -> RenderScreenOverlay.renderRadCounter",
+    "presence": "Original main inventory contains handheld counter; standard overlay suppressed by actual custom FSB Geiger provider",
+    "value": "Accumulated body dose; one-second sampled body-dose difference provides the rate",
+    "position": [
+      16,
+      "scaledHeight-20"
+    ],
+    "size": [
+      94,
+      18
+    ],
+    "barWidth": 74,
+    "maximumBodyDose": 1000,
+    "texture": "hbm:textures/misc/overlay_misc.png",
+    "config": "config/hbmConfig/hbmClient.json GEIGER_OFFSET_HORIZONTAL / GEIGER_OFFSET_VERTICAL"
+  },
+  "audio": {
+    "samples": [
+      {
+        "if": "x < 1",
+        "index": 0
+      },
+      {
+        "if": "x < 5",
+        "index": 0
+      },
+      {
+        "if": "x < 10",
+        "index": 1
+      },
+      {
+        "if": "x > 5 && x < 15",
+        "index": 2
+      },
+      {
+        "if": "x > 10 && x < 20",
+        "index": 3
+      },
+      {
+        "if": "x > 15 && x < 25",
+        "index": 4
+      },
+      {
+        "if": "x > 20 && x < 30",
+        "index": 5
+      },
+      {
+        "if": "x > 25",
+        "index": 6
+      }
+    ],
+    "selection": "Uniform across all matching entries, preserving duplicate silence weights",
+    "baseline": "1/50 chance of geiger1 at every sound interval",
+    "volume": 1,
+    "pitch": 1
+  },
+  "report": [
+    "Current chunk RAD/s, truncation to tenths",
+    "Actual environment radBuffer RAD/s, truncation to tenths",
+    "Accumulated player radiation RAD, truncation to tenths",
+    "Original radiation modifier percentage and raw resistance coefficient, truncation to hundredths"
+  ]
+}

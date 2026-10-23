@@ -1,0 +1,23 @@
+{
+  "name": "RBMK Cooler",
+  "icon": [
+    "hbm:tile.rbmk_cooler",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.rbmk_cooler"
+    ]
+  ],
+  "title": {
+    "en_US": "RBMK Cooler",
+    "ru_RU": "Охладитель РБМК",
+    "zh_CN": "RBMK 冷却器"
+  },
+  "content": {
+    "en_US": "The cooler is an optional component that can be used to cool an [[RBMK]], however unlike the [[steam channel|RBMK Steam Channel]], the cooler does not allow the heat to be extracted and used. The RBMK cooler uses up cold perfluoromethyl and outputs regular PFM at a constant rate of 50mB/t, and rapidly cools down all RBMK components in a 5x5 area by 200°C/t.",
+    "ru_RU": "Охладитель — необязательный компонент, который можно использовать для охлаждения [[РБМК|RBMK]], однако, в отличие от [[парового канала|RBMK Steam Channel]], он не позволяет извлекать и использовать тепло. Охладитель РБМК с постоянной скоростью 50mB/t расходует холодный перфторометан и выводит обычный ПФМ, быстро охлаждая все компоненты РБМК в области 5x5 на 200°C/t.",
+    "zh_CN": "冷却器是[[RBMK反应堆|RBMK]]的可选降温部件。与[[蒸汽通道|RBMK Steam Channel]]不同，它不能将吸收的热量导出利用。RBMK 冷却器以固定50 mB/t 消耗冷四氟甲烷，并输出普通 PFM，同时以200°C/t 的速度迅速冷却5×5范围内的所有 RBMK 部件。"
+  }
+}

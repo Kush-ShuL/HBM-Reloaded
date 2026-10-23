@@ -1,0 +1,26 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_large_turbine",
+      "id": "hbm:machine_large_turbine",
+      "itemId": "hbm:machine_large_turbine",
+      "kind": "block",
+      "originalClass": "MachineLargeTurbine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2241
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "deprecatedSource": true,
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    }
+  ]
+}

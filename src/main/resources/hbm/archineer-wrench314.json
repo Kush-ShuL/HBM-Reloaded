@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "wrench_archineer",
+      "id": "hbm:wrench_archineer",
+      "legacyRegistryId": "hbm:item.wrench_archineer",
+      "originalClass": "ItemToolingWeapon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3713
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5919
+          },
+          "expression": "GameRegistry.registerItem(wrench_archineer, wrench_archineer.getUnlocalizedName())",
+          "arguments": [
+            "wrench_archineer",
+            "wrench_archineer.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.archineer.ArchineerWrenchContent",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "maxDamage": 1000,
+      "toolType": "WRENCH",
+      "attackDamageModifier": 12
+    }
+  ]
+}

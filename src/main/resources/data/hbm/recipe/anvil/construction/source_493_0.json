@@ -1,0 +1,45 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "minecraft:bricks",
+          "count": 1
+        }
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:steel_grate",
+          "count": 1
+        }
+      },
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:chimney_brick",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 493000000
+}

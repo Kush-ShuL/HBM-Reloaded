@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:concrete_colored",
+    "count": 8,
+    "components": {
+      "hbm:legacy_metadata": 6
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CDC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:concrete_smooth"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyepink"
+    }
+  }
+}

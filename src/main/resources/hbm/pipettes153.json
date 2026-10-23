@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "pipette",
+      "id": "hbm:pipette",
+      "legacyRegistryId": "hbm:item.pipette",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3875
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5133
+          },
+          "expression": "GameRegistry.registerItem(pipette, pipette.getUnlocalizedName())",
+          "arguments": [
+            "pipette",
+            "pipette.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "originalClass": "ItemPipette",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "repairable": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "pipette_boron",
+      "id": "hbm:pipette_boron",
+      "legacyRegistryId": "hbm:item.pipette_boron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3876
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5134
+          },
+          "expression": "GameRegistry.registerItem(pipette_boron, pipette_boron.getUnlocalizedName())",
+          "arguments": [
+            "pipette_boron",
+            "pipette_boron.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "originalClass": "ItemPipette",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "repairable": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "pipette_laboratory",
+      "id": "hbm:pipette_laboratory",
+      "legacyRegistryId": "hbm:item.pipette_laboratory",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3877
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5135
+          },
+          "expression": "GameRegistry.registerItem(pipette_laboratory, pipette_laboratory.getUnlocalizedName())",
+          "arguments": [
+            "pipette_laboratory",
+            "pipette_laboratory.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "originalClass": "ItemPipette",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "repairable": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ]
+}

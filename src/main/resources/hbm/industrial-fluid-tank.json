@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_fluidtank",
+      "id": "hbm:machine_fluidtank",
+      "kind": "block",
+      "module": "industrial-fluid-tank",
+      "originalClass": "com.hbm.blocks.machine.MachineFluidTank",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2221
+      },
+      "variants": 1,
+      "creativeTab": "machine",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "blowtorch",
+      "id": "hbm:blowtorch",
+      "kind": "item",
+      "module": "industrial-fluid-tank",
+      "originalClass": "com.hbm.items.tool.ItemBlowtorch",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3716
+      },
+      "variants": 1,
+      "creativeTab": "control",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "acetylene_torch",
+      "id": "hbm:acetylene_torch",
+      "kind": "item",
+      "module": "industrial-fluid-tank",
+      "originalClass": "com.hbm.items.tool.ItemBlowtorch",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3717
+      },
+      "variants": 1,
+      "creativeTab": "control",
+      "runtimeValidated": false
+    }
+  ]
+}

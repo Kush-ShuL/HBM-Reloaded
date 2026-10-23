@@ -1,0 +1,42 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "neoforge:components",
+    "items": "hbm:legacy/ore_bedrock",
+    "components": {
+      "hbm:legacy_metadata": 2
+    },
+    "strict": false
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:ore_centrifuged",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 2
+      }
+    },
+    {
+      "id": "hbm:ore_centrifuged",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 2
+      }
+    },
+    {
+      "id": "hbm:ore_centrifuged",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 2
+      }
+    },
+    {
+      "id": "hbm:ore_centrifuged",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 2
+      }
+    }
+  ]
+}

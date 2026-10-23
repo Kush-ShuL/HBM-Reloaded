@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_panel_inventory",
+  "textures": {
+    "all": "hbm:block/rbmk/rbmk_display",
+    "particle": "hbm:block/rbmk/rbmk_display",
+    "terminal": "hbm:block/rbmk/panel_terminal"
+  },
+  "overlays": [
+    {
+      "model": "hbm:models/rbmk/terminal.obj",
+      "texture": "terminal",
+      "uv_scale": [
+        0.625,
+        0.625
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

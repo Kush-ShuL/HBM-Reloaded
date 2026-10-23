@@ -1,0 +1,9 @@
+package com.hbm.machine.generator.industrialmemorial;
+import java.util.List;import net.minecraft.core.registries.Registries;import net.minecraft.world.item.*;import net.minecraft.world.level.block.entity.BlockEntityType;import net.neoforged.bus.api.IEventBus;import net.neoforged.neoforge.registries.*;
+/** X5846's deliberately retired MachineIGenerator, not an active generator. */
+public final class IndustrialMemorialContent {
+ private static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks("hbm");private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");private static final DeferredRegister<BlockEntityType<?>> BE=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,"hbm");
+ public static final DeferredBlock<IndustrialMemorialBlock> BLOCK=BLOCKS.register("machine_industrial_generator",IndustrialMemorialBlock::new);public static final DeferredItem<BlockItem> ITEM=ITEMS.register("machine_industrial_generator",()->new BlockItem(BLOCK.get(),new Item.Properties()));
+ public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<IndustrialMemorialBlockEntity>> ENTITY=BE.register("machine_industrial_generator",()->BlockEntityType.Builder.of(IndustrialMemorialBlockEntity::new,BLOCK.get()).build(null));public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<IndustrialMemorialProxy>> PROXY=BE.register("industrial_memorial_proxy",()->BlockEntityType.Builder.of(IndustrialMemorialProxy::new,BLOCK.get()).build(null));
+ public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);BE.register(bus);}public static List<ItemStack> allStacks(){return List.of(new ItemStack(ITEM.get()));}public static List<ItemStack> creativeStacks(String tab){return tab.equals("machine")?allStacks():List.of();}private IndustrialMemorialContent(){}
+}

@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:ammo_fireext",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "NFN",
+    " N "
+  ],
+  "key": {
+    "N": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+    },
+    "F": {
+      "type": "neoforge:components",
+      "items": "hbm:ammo_fireext",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

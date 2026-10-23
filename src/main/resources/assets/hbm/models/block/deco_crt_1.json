@@ -1,0 +1,10 @@
+{
+  "loader": "hbm:deco_crt",
+  "metadata": 1,
+  "inventory": false,
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "hbm:block/crt_clean"
+  }
+}

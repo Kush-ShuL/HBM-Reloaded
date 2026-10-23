@@ -1,0 +1,12 @@
+{
+  "type": "hbm:press",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+  },
+  "stamp": "plate",
+  "result": {
+    "id": "hbm:plate_gunmetal",
+    "count": 1
+  }
+}

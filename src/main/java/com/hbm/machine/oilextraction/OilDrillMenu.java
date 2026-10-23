@@ -1,0 +1,11 @@
+package com.hbm.machine.oilextraction;
+import net.minecraft.core.BlockPos;import net.minecraft.network.RegistryFriendlyByteBuf;import net.minecraft.world.*;import net.minecraft.world.entity.player.*;import net.minecraft.world.inventory.*;import net.minecraft.world.item.ItemStack;
+/** Source7visible/8stored slots and its literal quickmove boundary; no silent source inventory redesign. */
+public final class OilDrillMenu extends AbstractContainerMenu {
+ public final BlockPos position;public final OilDrillKind kind;private final Container machine;
+ public OilDrillMenu(int id,Inventory inv,RegistryFriendlyByteBuf data){this(id,inv,new SimpleContainer(8),data.readBlockPos(),OilDrillKind.valueOf(data.readUtf()));}
+ public OilDrillMenu(int id,Inventory inv,Container machine,BlockPos pos,OilDrillKind kind){super(OilExtractionContent.MENU.get(),id);this.machine=machine;position=pos;this.kind=kind;addSlot(new Slot(machine,0,8,58));addSlot(new Slot(machine,1,94,22));addSlot(takeOnly(machine,2,94,58));addSlot(new Slot(machine,3,130,22));addSlot(takeOnly(machine,4,130,58));addSlot(new Slot(machine,5,156,36));addSlot(new Slot(machine,6,156,54));for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,9+y*9+x,12+x*18,108+y*18));for(int x=0;x<9;x++)addSlot(new Slot(inv,x,12+x*18,166));}
+ private static Slot takeOnly(Container machine,int slot,int x,int y){return new Slot(machine,slot,x,y){@Override public boolean mayPlace(ItemStack stack){return false;}};}
+ @Override public ItemStack quickMoveStack(Player player,int index){var slot=slots.get(index);if(!slot.hasItem())return ItemStack.EMPTY;var stack=slot.getItem();var copy=stack.copy();if(index<=7){if(!moveItemStackTo(stack,8,slots.size(),true))return ItemStack.EMPTY;}else if(OilDrillEntity.upgrade(stack)){if(!moveItemStackTo(stack,5,8,true))return ItemStack.EMPTY;}else if(!moveItemStackTo(stack,0,2,false)&&!moveItemStackTo(stack,3,4,false))return ItemStack.EMPTY;if(stack.isEmpty())slot.setByPlayer(ItemStack.EMPTY);else slot.setChanged();return copy;}
+ @Override public boolean stillValid(Player player){return machine instanceof OilDrillEntity drill?drill.stillValid(player):position.distToCenterSqr(player.position())<=144;}
+}

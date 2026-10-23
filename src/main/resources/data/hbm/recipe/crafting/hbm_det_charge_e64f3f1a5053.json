@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:det_charge",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PDP",
+    "DTD",
+    "PDP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "D": {
+      "item": "hbm:det_cord"
+    },
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplasticexplosive"
+    }
+  }
+}

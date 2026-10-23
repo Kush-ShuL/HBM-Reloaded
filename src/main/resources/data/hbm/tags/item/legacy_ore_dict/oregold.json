@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_gneiss_gold",
+    {
+      "id": "#c:ores/gold",
+      "required": false
+    },
+    "minecraft:deepslate_gold_ore",
+    "minecraft:gold_ore",
+    "minecraft:nether_gold_ore"
+  ]
+}

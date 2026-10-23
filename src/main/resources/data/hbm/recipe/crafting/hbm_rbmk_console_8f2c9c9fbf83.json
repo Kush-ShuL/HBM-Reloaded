@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "DGD",
+    "DCD"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotboron"
+    },
+    "D": {
+      "item": "hbm:deco_rbmk"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_console",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!GeneralConfig.enable528"
+    }
+  ]
+}

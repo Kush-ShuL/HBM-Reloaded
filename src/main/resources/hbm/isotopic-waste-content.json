@@ -1,0 +1,216 @@
+{
+  "registered": [
+    {
+      "symbol": "nuclear_waste_long",
+      "id": "hbm:nuclear_waste_long",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3341
+      },
+      "metadataRange": [
+        0,
+        4
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "thorium",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteLong.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_long_tiny",
+      "id": "hbm:nuclear_waste_long_tiny",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3342
+      },
+      "metadataRange": [
+        0,
+        4
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "thorium",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteLong.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_short",
+      "id": "hbm:nuclear_waste_short",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      },
+      "metadataRange": [
+        0,
+        7
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "plutonium239",
+        "plutonium240",
+        "plutonium241",
+        "americium242",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteShort.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_short_tiny",
+      "id": "hbm:nuclear_waste_short_tiny",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      },
+      "metadataRange": [
+        0,
+        7
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "plutonium239",
+        "plutonium240",
+        "plutonium241",
+        "americium242",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteShort.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_long_depleted",
+      "id": "hbm:nuclear_waste_long_depleted",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3345
+      },
+      "metadataRange": [
+        0,
+        4
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "thorium",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteLong.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_long_depleted_tiny",
+      "id": "hbm:nuclear_waste_long_depleted_tiny",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3346
+      },
+      "metadataRange": [
+        0,
+        4
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "thorium",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteLong.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_short_depleted",
+      "id": "hbm:nuclear_waste_short_depleted",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      },
+      "metadataRange": [
+        0,
+        7
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "plutonium239",
+        "plutonium240",
+        "plutonium241",
+        "americium242",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteShort.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_short_depleted_tiny",
+      "id": "hbm:nuclear_waste_short_depleted_tiny",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      },
+      "metadataRange": [
+        0,
+        7
+      ],
+      "names": [
+        "uranium235",
+        "uranium233",
+        "neptunium",
+        "plutonium239",
+        "plutonium240",
+        "plutonium241",
+        "americium242",
+        "schrabidium"
+      ],
+      "enumClass": "ItemWasteShort.WasteClass",
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    }
+  ]
+}

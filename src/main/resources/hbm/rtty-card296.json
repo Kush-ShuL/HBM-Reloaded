@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "rtty_card",
+      "id": "hbm:rtty_card",
+      "legacyRegistryId": "hbm:item.rtty_card",
+      "originalClass": "ItemRTTYCard",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4394
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6495
+          },
+          "expression": "GameRegistry.registerItem(rtty_card, rtty_card.getUnlocalizedName())",
+          "arguments": [
+            "rtty_card",
+            "rtty_card.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.rttycard.RttyCardContent",
+      "creativeTab": "machine",
+      "maxStackSize": 1,
+      "optionalMod": "computercraft",
+      "sourceModGate": "OpenComputers",
+      "nativeHosts": [
+        "Pocket upgrade",
+        "Turtle peripheral upgrade"
+      ],
+      "notAPlainItem": true
+    }
+  ]
+}

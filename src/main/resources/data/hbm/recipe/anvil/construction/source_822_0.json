@@ -1,0 +1,49 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:pole_top",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:ingot_tungsten",
+        "count": 3
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:ingot_red_copper",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:ingot_beryllium",
+        "count": 2
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:ingot_beryllium",
+        "count": 1
+      },
+      "chance": 0.5
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 822000000
+}

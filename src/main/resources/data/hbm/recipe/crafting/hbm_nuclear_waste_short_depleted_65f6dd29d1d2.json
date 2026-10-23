@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:nuclear_waste_short_depleted",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 6
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "neoforge:components",
+      "items": "hbm:nuclear_waste_short_depleted_tiny",
+      "components": {
+        "hbm:legacy_metadata": 6
+      },
+      "strict": false
+    }
+  }
+}

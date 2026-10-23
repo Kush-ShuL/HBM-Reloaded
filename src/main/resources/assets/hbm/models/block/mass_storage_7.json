@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "hbm:block/mass_storage_top_wood",
+    "down": "hbm:block/mass_storage_top_wood",
+    "north": "hbm:block/mass_storage_side_wood",
+    "south": "hbm:block/mass_storage_front_wood",
+    "west": "hbm:block/mass_storage_side_wood",
+    "east": "hbm:block/mass_storage_side_wood",
+    "particle": "hbm:block/mass_storage_side_wood"
+  }
+}

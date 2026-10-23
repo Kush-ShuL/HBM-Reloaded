@@ -1,0 +1,89 @@
+{
+  "parent": "hbm:block/platemetal.base",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:metadata": 1
+      },
+      "model": "hbm:block/platemetal.black"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 2
+      },
+      "model": "hbm:block/platemetal.white"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 3
+      },
+      "model": "hbm:block/platemetal.red"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 4
+      },
+      "model": "hbm:block/platemetal.green"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 5
+      },
+      "model": "hbm:block/platemetal.light_gray"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 6
+      },
+      "model": "hbm:block/platemetal.blue"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 7
+      },
+      "model": "hbm:block/platemetal.purple"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 8
+      },
+      "model": "hbm:block/platemetal.cyan"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 9
+      },
+      "model": "hbm:block/platemetal.pink"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 10
+      },
+      "model": "hbm:block/platemetal.lime"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 11
+      },
+      "model": "hbm:block/platemetal.yellow"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 12
+      },
+      "model": "hbm:block/platemetal.light_blue"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 13
+      },
+      "model": "hbm:block/platemetal.magenta"
+    },
+    {
+      "predicate": {
+        "hbm:metadata": 14
+      },
+      "model": "hbm:block/platemetal.orange"
+    }
+  ]
+}

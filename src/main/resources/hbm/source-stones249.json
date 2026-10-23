@@ -1,0 +1,76 @@
+{
+  "module": "source-stones249",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "stone_biome",
+      "id": "hbm:stone_biome",
+      "hasItem": true,
+      "originalClass": "BlockBiomeStone",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1315
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2478
+          },
+          "expression": "register(stone_biome)",
+          "arguments": [
+            "stone_biome"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "legacyRegistryId": "hbm:tile.stone_biome",
+      "creativeTab": "block",
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0,
+        1
+      ],
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "stone_porous",
+      "id": "hbm:stone_porous",
+      "hasItem": true,
+      "originalClass": "BlockPorous",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1311
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2481
+          },
+          "expression": "GameRegistry.registerBlock(stone_porous, stone_porous.getUnlocalizedName())",
+          "arguments": [
+            "stone_porous",
+            "stone_porous.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "legacyRegistryId": "hbm:tile.stone_porous",
+      "creativeTab": "block",
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "hasBlockEntity": false
+    }
+  ]
+}

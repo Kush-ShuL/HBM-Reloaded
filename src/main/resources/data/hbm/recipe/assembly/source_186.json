@@ -1,0 +1,29 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.partlith",
+  "duration": 40,
+  "power": 100,
+  "order": 52,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:part_lithium",
+            "count": 8
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustlithium"
+      },
+      "count": 1
+    }
+  ],
+  "group": "autoswitch.cyclotron"
+}

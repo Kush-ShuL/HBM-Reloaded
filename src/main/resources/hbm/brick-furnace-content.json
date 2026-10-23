@@ -1,0 +1,46 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_furnace_brick_off",
+      "id": "hbm:machine_furnace_brick_off",
+      "itemId": "hbm:machine_furnace_brick_off",
+      "kind": "block",
+      "originalClass": "MachineBrickFurnace",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1797
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "machine_furnace_brick_on",
+      "id": "hbm:machine_furnace_brick_on",
+      "itemId": "hbm:machine_furnace_brick_on",
+      "kind": "block",
+      "originalClass": "MachineBrickFurnace",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1798
+      },
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    }
+  ]
+}

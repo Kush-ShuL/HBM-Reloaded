@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gas_tester",
+      "id": "hbm:gas_tester",
+      "legacyRegistryId": "hbm:item.gas_tester",
+      "originalClass": "ItemModSensor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2905
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6068
+          },
+          "expression": "GameRegistry.registerItem(gas_tester, gas_tester.getUnlocalizedName())",
+          "arguments": [
+            "gas_tester",
+            "gas_tester.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.gassensor.GasSensorContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 7,
+      "applicableTo": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:bomb_multi",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAD",
+    "CHF",
+    "AAD"
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinealuminum"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellaluminum"
+    },
+    "F": {
+      "item": "hbm:fins_quad_titanium"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyewhite"
+    }
+  }
+}

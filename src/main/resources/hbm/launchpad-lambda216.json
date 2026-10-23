@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "launchpad_lambda",
+      "id": "hbm:launchpad_lambda",
+      "originalClass": "LaunchpadLambda",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2093
+      },
+      "legacyRegistryId": "hbm:tile.launchpad_lambda",
+      "creativeTab": "missile",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_lambda_rocket",
+      "id": "hbm:entity_lambda_rocket",
+      "originalClass": "EntityRocketLambda",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 115
+      },
+      "trackingRange": 1000,
+      "modernSize": [
+        0.6,
+        1.8
+      ],
+      "sourceDefaultEntitySize": true
+    }
+  ]
+}

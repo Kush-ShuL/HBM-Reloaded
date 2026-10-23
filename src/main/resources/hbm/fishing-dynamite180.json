@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "stick_dynamite_fishing",
+      "id": "hbm:stick_dynamite_fishing",
+      "legacyRegistryId": "hbm:item.stick_dynamite_fishing",
+      "originalClass": "ItemGrenadeFishing",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3596
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5826
+          },
+          "expression": "GameRegistry.registerItem(stick_dynamite_fishing, stick_dynamite_fishing.getUnlocalizedName())",
+          "arguments": [
+            "stick_dynamite_fishing",
+            "stick_dynamite_fishing.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "weapon",
+      "maxStackSize": 16,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_item_buoyant",
+      "id": "hbm:entity_item_buoyant",
+      "originalClass": "EntityItemBuoyant",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:159,206..222",
+      "trackingRangeBlocks": 100,
+      "nativeTrackingChunks": 7,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "hasSpawnEgg": false
+    }
+  ]
+}

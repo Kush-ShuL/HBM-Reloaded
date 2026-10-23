@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 5
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PIP",
+    "WWW",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wiredensegold"
+    }
+  }
+}

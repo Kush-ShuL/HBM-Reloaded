@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:jetpack_fly",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ACA",
+    "TLT",
+    "D D"
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platealuminum"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "T": {
+      "item": "hbm:tank_steel"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "D": {
+      "item": "hbm:thruster_small"
+    }
+  }
+}

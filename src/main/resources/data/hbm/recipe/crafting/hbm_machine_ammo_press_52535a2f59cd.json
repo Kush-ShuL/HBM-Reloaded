@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:machine_ammo_press",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "C C",
+    "SSS"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  }
+}

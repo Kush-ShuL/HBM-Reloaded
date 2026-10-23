@@ -1,0 +1,27 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_ore_slopper",
+      "id": "hbm:machine_ore_slopper",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "MachineOreSlopper",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2206
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "assembly": 1,
+  "nativeStorage": "HE100000; water16000/slop16000; six source doubles",
+  "types": [
+    "LIGHT_METAL",
+    "HEAVY_METAL",
+    "RARE_EARTH",
+    "ACTINIDE",
+    "NON_METAL",
+    "CRYSTALLINE"
+  ],
+  "sourceOcMethods": 0
+}

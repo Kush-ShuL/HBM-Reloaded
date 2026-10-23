@@ -1,0 +1,28 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 1,
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:ender_pearl"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:blaze_rod"
+      },
+      "metadata": 0
+    },
+    {
+      "ingredient": {
+        "item": "hbm:nugget_euphemium"
+      },
+      "metadata": 0
+    }
+  ],
+  "result": {
+    "id": "hbm:rod_of_discord",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 32,
+  "source_key": "ore:gemSodalite",
+  "source_hash": 1281641996,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/gemsodalite"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:gem_volcanic",
+    "count": 1
+  }
+}

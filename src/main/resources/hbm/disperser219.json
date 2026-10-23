@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "symbol": "disperser_canister",
+      "id": "hbm:disperser_canister",
+      "kind": "item",
+      "originalClass": "ItemDisperser",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3887
+      },
+      "legacyRegistryId": "hbm:item.disperser_canister",
+      "creativeTab": "weapon",
+      "metadata": "actual HbmFluids source IDs, same hbm:fluid_type + hbm:legacy_metadata component contract",
+      "sourceContainerItem": "hbm:disperser_canister_empty",
+      "stackSize": 64
+    },
+    {
+      "symbol": "glyphid_gland",
+      "id": "hbm:glyphid_gland",
+      "kind": "item",
+      "originalClass": "ItemDisperser",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3890
+      },
+      "legacyRegistryId": "hbm:item.glyphid_gland",
+      "creativeTab": "weapon",
+      "metadata": "actual HbmFluids source IDs, same hbm:fluid_type + hbm:legacy_metadata component contract",
+      "sourceContainerItem": "hbm:glyphid_gland_empty",
+      "stackSize": 64
+    }
+  ],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_disperser",
+      "id": "hbm:entity_disperser",
+      "originalClass": "EntityDisperserCanister",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 166
+      },
+      "dimensions": [
+        0.25,
+        0.25
+      ],
+      "trackingRange": 250,
+      "egg": false
+    }
+  ]
+}

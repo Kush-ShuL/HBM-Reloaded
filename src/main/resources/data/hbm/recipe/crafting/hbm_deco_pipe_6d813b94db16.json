@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:deco_pipe",
+    "count": 6
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+    }
+  }
+}

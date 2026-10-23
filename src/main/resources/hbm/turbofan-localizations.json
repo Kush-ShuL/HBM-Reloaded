@@ -1,0 +1,26 @@
+{
+  "en_us": {
+    "block.hbm.machine_turbofan": "Turbofan",
+    "container.machineTurbofan": "Turbofan",
+    "upgrade.efficiency": "Efficiency %s",
+    "upgrade.consumption": "Consumption %s",
+    "tooltip.hbm.turbofan.efficiency": "Fuel efficiency:",
+    "tooltip.hbm.turbofan.aero": "-Aviation: ",
+    "gui.hbm.turbofan.base_energy": "Base output: %s HE/mB",
+    "gui.hbm.turbofan.output": "Generation: %s HE/t",
+    "gui.hbm.turbofan.consumption": "Fuel consumption: %s mB/t",
+    "config.jade.plugin_hbm.turbofan_status": "Turbofan operation"
+  },
+  "zh_cn": {
+    "block.hbm.machine_turbofan": "涡扇发动机",
+    "container.machineTurbofan": "涡扇发动机",
+    "upgrade.efficiency": "效率 %s",
+    "upgrade.consumption": "消耗 %s",
+    "tooltip.hbm.turbofan.efficiency": "燃料效率：",
+    "tooltip.hbm.turbofan.aero": "-航空级: ",
+    "gui.hbm.turbofan.base_energy": "基础发电量：%s HE/mB",
+    "gui.hbm.turbofan.output": "发电量：%s HE/t",
+    "gui.hbm.turbofan.consumption": "燃料消耗：%s mB/t",
+    "config.jade.plugin_hbm.turbofan_status": "涡扇发动机运行状态"
+  }
+}

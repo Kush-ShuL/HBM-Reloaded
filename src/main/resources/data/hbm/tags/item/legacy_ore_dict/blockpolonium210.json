@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_polonium",
+    {
+      "id": "#c:storage_blocks/po210",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/polonium",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/polonium210",
+      "required": false
+    }
+  ]
+}

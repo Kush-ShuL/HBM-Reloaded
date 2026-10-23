@@ -1,0 +1,128 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "fusion_shield_tungsten",
+      "id": "hbm:fusion_shield_tungsten",
+      "legacyRegistryId": "hbm:item.fusion_shield_tungsten",
+      "originalClass": "ItemFusionShield",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3728
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5312
+          },
+          "expression": "GameRegistry.registerItem(fusion_shield_tungsten, fusion_shield_tungsten.getUnlocalizedName())",
+          "arguments": [
+            "fusion_shield_tungsten",
+            "fusion_shield_tungsten.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.fusionblanket.FusionBlanketContent",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "sourceDeprecated": true,
+      "longMaximumDamage": 1080000,
+      "meltingPointCelsius": 3500,
+      "durabilityStorage": "minecraft:custom_data.damage:long;not native damage component"
+    },
+    {
+      "kind": "item",
+      "symbol": "fusion_shield_desh",
+      "id": "hbm:fusion_shield_desh",
+      "legacyRegistryId": "hbm:item.fusion_shield_desh",
+      "originalClass": "ItemFusionShield",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3729
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5313
+          },
+          "expression": "GameRegistry.registerItem(fusion_shield_desh, fusion_shield_desh.getUnlocalizedName())",
+          "arguments": [
+            "fusion_shield_desh",
+            "fusion_shield_desh.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.fusionblanket.FusionBlanketContent",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "sourceDeprecated": true,
+      "longMaximumDamage": 2160000,
+      "meltingPointCelsius": 4500,
+      "durabilityStorage": "minecraft:custom_data.damage:long;not native damage component"
+    },
+    {
+      "kind": "item",
+      "symbol": "fusion_shield_chlorophyte",
+      "id": "hbm:fusion_shield_chlorophyte",
+      "legacyRegistryId": "hbm:item.fusion_shield_chlorophyte",
+      "originalClass": "ItemFusionShield",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3730
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5314
+          },
+          "expression": "GameRegistry.registerItem(fusion_shield_chlorophyte, fusion_shield_chlorophyte.getUnlocalizedName())",
+          "arguments": [
+            "fusion_shield_chlorophyte",
+            "fusion_shield_chlorophyte.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.fusionblanket.FusionBlanketContent",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "sourceDeprecated": true,
+      "longMaximumDamage": 3240000,
+      "meltingPointCelsius": 9000,
+      "durabilityStorage": "minecraft:custom_data.damage:long;not native damage component"
+    },
+    {
+      "kind": "item",
+      "symbol": "fusion_shield_vaporwave",
+      "id": "hbm:fusion_shield_vaporwave",
+      "legacyRegistryId": "hbm:item.fusion_shield_vaporwave",
+      "originalClass": "ItemFusionShield",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3731
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5315
+          },
+          "expression": "GameRegistry.registerItem(fusion_shield_vaporwave, fusion_shield_vaporwave.getUnlocalizedName())",
+          "arguments": [
+            "fusion_shield_vaporwave",
+            "fusion_shield_vaporwave.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.fusionblanket.FusionBlanketContent",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "sourceDeprecated": true,
+      "longMaximumDamage": 2160000,
+      "meltingPointCelsius": 1916169,
+      "durabilityStorage": "minecraft:custom_data.damage:long;not native damage component"
+    }
+  ]
+}

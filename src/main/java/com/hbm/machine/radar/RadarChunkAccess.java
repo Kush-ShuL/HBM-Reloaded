@@ -1,0 +1,4 @@
+package com.hbm.machine.radar;
+import java.util.*;import java.util.concurrent.CompletableFuture;import net.minecraft.nbt.CompoundTag;import net.minecraft.server.level.ServerLevel;import net.minecraft.world.level.ChunkPos;
+/** WorldUtil.provideChunk: load an actually saved chunk, without inventing terrain when generateChunks is false. */
+public final class RadarChunkAccess{private final Map<Long,CompletableFuture<Optional<CompoundTag>>> reads=new HashMap<>();public boolean provide(ServerLevel level,int x,int z){var pos=new ChunkPos(x,z);var read=reads.get(pos.toLong());if(read==null){if(reads.values().stream().filter(f->!f.isDone()).count()>=RadarConfig.chunkLoadCap)return false;read=level.getChunkSource().chunkMap.read(pos);reads.put(pos.toLong(),read);}if(!read.isDone())return false;var data=read.join();if(data.isPresent()){level.getChunk(x,z);reads.remove(pos.toLong());return true;}return false;}public void clear(){reads.clear();}}

@@ -1,0 +1,39 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.warheadcl1",
+  "duration": 100,
+  "power": 100,
+  "order": 265,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:warhead_cluster_small",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:warhead_generic_small"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:pellet_cluster"
+        }
+      },
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "entries": [
+    {
+      "symbol": "pwr_control",
+      "id": "hbm:pwr_control",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "BlockPillarPWR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1989
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pwr_channel",
+      "id": "hbm:pwr_channel",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "BlockPillarPWR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1990
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pwr_controller",
+      "id": "hbm:pwr_controller",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "MachinePWRController",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1997
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pwr_block",
+      "id": "hbm:pwr_block",
+      "kind": "block",
+      "creativeTab": null,
+      "originalClass": "BlockPWR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1998
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pwr_fuel",
+      "id": "hbm:pwr_fuel",
+      "kind": "item",
+      "creativeTab": "control",
+      "originalClass": "ItemPWRFuel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      },
+      "metadataRange": [
+        0,
+        14
+      ],
+      "names": [
+        "meu",
+        "heu233",
+        "heu235",
+        "men",
+        "hen237",
+        "mox",
+        "mep",
+        "hep239",
+        "hep241",
+        "mea",
+        "hea242",
+        "hes326",
+        "hes327",
+        "bfb_am_mix",
+        "bfb_pu241"
+      ],
+      "enumClass": "EnumPWRFuel",
+      "runtimeValidated": false
+    }
+  ],
+  "reusedBlocks": [
+    "hbm:pwr_fuel",
+    "hbm:pwr_heatex",
+    "hbm:pwr_heatsink",
+    "hbm:pwr_neutron_source",
+    "hbm:pwr_reflector",
+    "hbm:pwr_casing",
+    "hbm:pwr_port"
+  ],
+  "reusedItems": [
+    "hbm:pwr_fuel_hot",
+    "hbm:pwr_fuel_depleted"
+  ],
+  "fuelVariants": 15,
+  "sourceFuelRecipeCount": 15,
+  "sourceAssemblyRecipeCount": 11
+}

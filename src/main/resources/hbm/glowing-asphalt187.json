@@ -1,0 +1,34 @@
+{
+  "module": "glowing-asphalt187",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "asphalt_light",
+      "id": "hbm:asphalt_light",
+      "legacyRegistryId": "hbm:tile.asphalt_light",
+      "originalClass": "BlockSpeedy",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1460
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2645
+          },
+          "expression": "GameRegistry.registerBlock(asphalt_light, ItemBlockBlastInfo.class, asphalt_light.getUnlocalizedName())",
+          "arguments": [
+            "asphalt_light",
+            "ItemBlockBlastInfo.class",
+            "asphalt_light.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBlastInfo"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    }
+  ]
+}

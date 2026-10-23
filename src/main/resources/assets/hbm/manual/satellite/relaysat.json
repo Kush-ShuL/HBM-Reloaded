@@ -1,0 +1,25 @@
+{
+  "name": "RoR Relay Satellite",
+  "icon": [
+    "hbm:satellite_relay",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_relay",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "RoR Relay Satellite",
+    "ru_RU": "Спутник-ретранслятор РпР",
+    "zh_CN": "无线红石中继卫星"
+  },
+  "content": {
+    "en_US": "The relay satellite allows [[redstone-over-radio|Redstone over Radio]] signals to be sent to different dimensions. It only acts as a transmitter, it cannot receive signals from other dimensions.<br><br>* '§erelay §e<dimension> §e<channel> §e<signal>§r' will create a signal in the selected dimension using the supplied channel and signal contents. The dimension ID is numeric, the overworld uses ID 0, the nether -1 and the end 1.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Ретрансляционный спутник позволяет передавать сигналы [[РпР|Redstone over Radio]] в другие измерения. Он действует только как передатчик и не может принимать сигналы из других измерений.<br><br>* '§erelay §e<dimension> §e<channel> §e<signal>§r' создаст сигнал в выбранном измерении, используя предоставленный канал и содержимое сигнала. Идентификатор измерения — числовой, в обычном мире (0), в Нижнем мире (-1), а в Краю (1).<br><br>{{Template:SatOverview}}",
+    "zh_CN": "中继卫星可将[[无线红石|Redstone over Radio]]信号发送到其他维度。它只充当发射器，不能接收来自其他维度的信号。<br><br>* “§erelay §e<dimension> §e<channel> §e<signal>§r”：在指定维度中，使用给定的频道和信号内容创建一条信号。维度 ID 使用数字：主世界为0，下界为-1，末地为1。<br><br>{{Template:SatOverview}}"
+  }
+}

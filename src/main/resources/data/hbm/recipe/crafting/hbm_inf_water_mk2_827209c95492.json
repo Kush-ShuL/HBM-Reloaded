@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:inf_water_mk2",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BPB",
+    "PTP",
+    "BPB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:inf_water"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+    },
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(!GeneralConfig.enable528)"
+    }
+  ]
+}

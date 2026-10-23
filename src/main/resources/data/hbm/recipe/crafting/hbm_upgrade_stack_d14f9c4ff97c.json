@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:upgrade_stack",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "PUP",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_vacuum_tube"
+    },
+    "P": {
+      "item": "hbm:part_generic_piston_pneumatic"
+    },
+    "U": {
+      "item": "hbm:upgrade_template"
+    }
+  }
+}

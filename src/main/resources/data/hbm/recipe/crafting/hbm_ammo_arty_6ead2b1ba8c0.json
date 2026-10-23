@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:ammo_arty",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 6
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DSD",
+    "SCS",
+    "DSD"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:neutron_reflector"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:ammo_arty",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    "C": {
+      "item": "hbm:det_cord"
+    }
+  }
+}

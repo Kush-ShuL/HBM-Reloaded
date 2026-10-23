@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:canister_full",
+    "count": 2,
+    "components": {
+      "hbm:legacy_metadata": 18,
+      "hbm:fluid_type": 18
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "HEATINGOIL",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "UNSATURATEDS",
+      "amount": 1000
+    },
+    {
+      "item": "hbm:canister_empty"
+    },
+    {
+      "item": "hbm:canister_empty"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmchemistryset"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:billet_ra226be",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetradium226"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetradium226"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetradium226"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    }
+  ]
+}

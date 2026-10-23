@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRD",
+    "PIC",
+    "  P"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plategold"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "hbm:circuit_advanced"
+    },
+    "D": {
+      "item": "hbm:sat_chip"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotgold"
+    }
+  },
+  "result": {
+    "id": "hbm:sat_designator",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "hbm:meteor/headback",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_dragon_fallback",
+        "processors": "hbm:meteor/crates",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    }
+  ]
+}

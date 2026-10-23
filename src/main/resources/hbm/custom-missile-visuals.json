@@ -1,0 +1,1523 @@
+[
+  {
+    "symbol": "mp_thruster_10_kerosene",
+    "id": "hbm:mp_thruster_10_kerosene",
+    "type": "THRUSTER",
+    "height": 1.0,
+    "guiheight": 1.0,
+    "model": "hbm:models/missile_parts/mp_t_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_10_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 36
+    }
+  },
+  {
+    "symbol": "mp_thruster_10_solid",
+    "id": "hbm:mp_thruster_10_solid",
+    "type": "THRUSTER",
+    "height": 0.5,
+    "guiheight": 1.0,
+    "model": "hbm:models/missile_parts/mp_t_10_solid.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_10_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 37
+    }
+  },
+  {
+    "symbol": "mp_thruster_10_xenon",
+    "id": "hbm:mp_thruster_10_xenon",
+    "type": "THRUSTER",
+    "height": 0.5,
+    "guiheight": 1.0,
+    "model": "hbm:models/missile_parts/mp_t_10_xenon.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_10_xenon.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 38
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_kerosene",
+    "id": "hbm:mp_thruster_15_kerosene",
+    "type": "THRUSTER",
+    "height": 1.5,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 40
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_kerosene_dual",
+    "id": "hbm:mp_thruster_15_kerosene_dual",
+    "type": "THRUSTER",
+    "height": 1.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_15_kerosene_dual.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_kerosene_dual.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 41
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_kerosene_triple",
+    "id": "hbm:mp_thruster_15_kerosene_triple",
+    "type": "THRUSTER",
+    "height": 1.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_15_kerosene_triple.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_kerosene_dual.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 42
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_solid",
+    "id": "hbm:mp_thruster_15_solid",
+    "type": "THRUSTER",
+    "height": 0.5,
+    "guiheight": 1.0,
+    "model": "hbm:models/missile_parts/mp_t_15_solid.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 43
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_solid_hexdecuple",
+    "id": "hbm:mp_thruster_15_solid_hexdecuple",
+    "type": "THRUSTER",
+    "height": 0.5,
+    "guiheight": 1.0,
+    "model": "hbm:models/missile_parts/mp_t_15_solid_hexdecuple.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_solid_hexdecuple.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 44
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_hydrogen",
+    "id": "hbm:mp_thruster_15_hydrogen",
+    "type": "THRUSTER",
+    "height": 1.5,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_hydrogen.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 45
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_hydrogen_dual",
+    "id": "hbm:mp_thruster_15_hydrogen_dual",
+    "type": "THRUSTER",
+    "height": 1.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_15_kerosene_dual.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_hydrogen_dual.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 46
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_balefire_short",
+    "id": "hbm:mp_thruster_15_balefire_short",
+    "type": "THRUSTER",
+    "height": 2.0,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_t_15_balefire_short.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_balefire_short.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 47
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_balefire",
+    "id": "hbm:mp_thruster_15_balefire",
+    "type": "THRUSTER",
+    "height": 3.0,
+    "guiheight": 2.5,
+    "model": "hbm:models/missile_parts/mp_t_15_balefire.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_balefire.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 48
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_balefire_large",
+    "id": "hbm:mp_thruster_15_balefire_large",
+    "type": "THRUSTER",
+    "height": 3.0,
+    "guiheight": 2.5,
+    "model": "hbm:models/missile_parts/mp_t_15_balefire_large.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_balefire_large.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 49
+    }
+  },
+  {
+    "symbol": "mp_thruster_15_balefire_large_rad",
+    "id": "hbm:mp_thruster_15_balefire_large_rad",
+    "type": "THRUSTER",
+    "height": 3.0,
+    "guiheight": 2.5,
+    "model": "hbm:models/missile_parts/mp_t_15_balefire_large.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_15_balefire_large_rad.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 50
+    }
+  },
+  {
+    "symbol": "mp_thruster_20_kerosene",
+    "id": "hbm:mp_thruster_20_kerosene",
+    "type": "THRUSTER",
+    "height": 3.0,
+    "guiheight": 2.5,
+    "model": "hbm:models/missile_parts/mp_t_20_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_20_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 52
+    }
+  },
+  {
+    "symbol": "mp_thruster_20_kerosene_dual",
+    "id": "hbm:mp_thruster_20_kerosene_dual",
+    "type": "THRUSTER",
+    "height": 2.0,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_t_20_kerosene_dual.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_20_kerosene_dual.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 53
+    }
+  },
+  {
+    "symbol": "mp_thruster_20_kerosene_triple",
+    "id": "hbm:mp_thruster_20_kerosene_triple",
+    "type": "THRUSTER",
+    "height": 2.0,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_t_20_kerosene_triple.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_20_kerosene_dual.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 54
+    }
+  },
+  {
+    "symbol": "mp_thruster_20_solid",
+    "id": "hbm:mp_thruster_20_solid",
+    "type": "THRUSTER",
+    "height": 1.0,
+    "guiheight": 1.75,
+    "model": "hbm:models/missile_parts/mp_t_20_solid.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_20_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 55
+    }
+  },
+  {
+    "symbol": "mp_thruster_20_solid_multi",
+    "id": "hbm:mp_thruster_20_solid_multi",
+    "type": "THRUSTER",
+    "height": 0.5,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_20_solid_multi.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_20_solid_multi.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 56
+    }
+  },
+  {
+    "symbol": "mp_thruster_20_solid_multier",
+    "id": "hbm:mp_thruster_20_solid_multier",
+    "type": "THRUSTER",
+    "height": 0.5,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_t_20_solid_multi.obj",
+    "texture": "hbm:textures/models/missile_parts/thrusters/mp_t_20_solid_multier.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 57
+    }
+  },
+  {
+    "symbol": "mp_stability_10_flat",
+    "id": "hbm:mp_stability_10_flat",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_s_10_flat.obj",
+    "texture": "hbm:textures/models/missile_parts/stability/mp_s_10_flat.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 61
+    }
+  },
+  {
+    "symbol": "mp_stability_10_cruise",
+    "id": "hbm:mp_stability_10_cruise",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_s_10_cruise.obj",
+    "texture": "hbm:textures/models/missile_parts/stability/mp_s_10_cruise.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 62
+    }
+  },
+  {
+    "symbol": "mp_stability_10_space",
+    "id": "hbm:mp_stability_10_space",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_s_10_space.obj",
+    "texture": "hbm:textures/models/missile_parts/stability/mp_s_10_space.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 63
+    }
+  },
+  {
+    "symbol": "mp_stability_15_flat",
+    "id": "hbm:mp_stability_15_flat",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_s_15_flat.obj",
+    "texture": "hbm:textures/models/missile_parts/stability/mp_s_15_flat.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 65
+    }
+  },
+  {
+    "symbol": "mp_stability_15_thin",
+    "id": "hbm:mp_stability_15_thin",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_s_15_thin.obj",
+    "texture": "hbm:textures/models/missile_parts/stability/mp_s_15_thin.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 66
+    }
+  },
+  {
+    "symbol": "mp_stability_15_soyuz",
+    "id": "hbm:mp_stability_15_soyuz",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_s_15_soyuz.obj",
+    "texture": "hbm:textures/models/missile_parts/stability/mp_s_15_soyuz.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 67
+    }
+  },
+  {
+    "symbol": "mp_stability_20_flat",
+    "id": "hbm:mp_s_20",
+    "type": "FINS",
+    "height": 0.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_s_20.obj",
+    "texture": "hbm:textures/models/thegadget3_.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 69
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene",
+    "id": "hbm:mp_fuselage_10_kerosene",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 73
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_camo",
+    "id": "hbm:mp_fuselage_10_kerosene_camo",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_camo.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 74
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_desert",
+    "id": "hbm:mp_fuselage_10_kerosene_desert",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_desert.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 75
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_sky",
+    "id": "hbm:mp_fuselage_10_kerosene_sky",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_sky.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 76
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_insulation",
+    "id": "hbm:mp_fuselage_10_kerosene_insulation",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_insulation.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 77
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_flames",
+    "id": "hbm:mp_fuselage_10_kerosene_flames",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_flames.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 78
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_sleek",
+    "id": "hbm:mp_fuselage_10_kerosene_sleek",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_sleek.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 79
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_metal",
+    "id": "hbm:mp_fuselage_10_kerosene_metal",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_kerosene_metal.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 80
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_kerosene_taint",
+    "id": "hbm:mp_fuselage_10_kerosene_taint",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_kerosene_taint.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 81
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid",
+    "id": "hbm:mp_fuselage_10_solid",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 82
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_flames",
+    "id": "hbm:mp_fuselage_10_solid_flames",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_solid_flames.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 83
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_insulation",
+    "id": "hbm:mp_fuselage_10_solid_insulation",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_solid_insulation.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 84
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_sleek",
+    "id": "hbm:mp_fuselage_10_solid_sleek",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_solid_sleek.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 85
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_soviet_glory",
+    "id": "hbm:mp_fuselage_10_solid_soviet_glory",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_solid_soviet_glory.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 86
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_cathedral",
+    "id": "hbm:mp_fuselage_10_solid_cathedral",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_solid_cathedral.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 87
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_moonlit",
+    "id": "hbm:mp_fuselage_10_solid_moonlit",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_solid_moonlit.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 88
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_battery",
+    "id": "hbm:mp_fuselage_10_solid_battery",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_solid_battery.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 89
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_solid_duracell",
+    "id": "hbm:mp_fuselage_10_solid_duracell",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_solid_duracell.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 90
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_xenon",
+    "id": "hbm:mp_fuselage_10_xenon",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_xenon.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 91
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_xenon_bhole",
+    "id": "hbm:mp_fuselage_10_xenon_bhole",
+    "type": "FUSELAGE",
+    "height": 4.0,
+    "guiheight": 3.0,
+    "model": "hbm:models/missile_parts/mp_f_10_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_xenon_bhole.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 92
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene",
+    "id": "hbm:mp_fuselage_10_long_kerosene",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 93
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_camo",
+    "id": "hbm:mp_fuselage_10_long_kerosene_camo",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_camo.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 94
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_desert",
+    "id": "hbm:mp_fuselage_10_long_kerosene_desert",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_desert.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 95
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_sky",
+    "id": "hbm:mp_fuselage_10_long_kerosene_sky",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_sky.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 96
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_flames",
+    "id": "hbm:mp_fuselage_10_long_kerosene_flames",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_flames.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 97
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_insulation",
+    "id": "hbm:mp_fuselage_10_long_kerosene_insulation",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_insulation.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 98
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_sleek",
+    "id": "hbm:mp_fuselage_10_long_kerosene_sleek",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_sleek.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 99
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_metal",
+    "id": "hbm:mp_fuselage_10_long_kerosene_metal",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_kerosene_metal.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 100
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_dash",
+    "id": "hbm:mp_fuselage_10_long_kerosene_dash",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_long_kerosene_dash.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 101
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_taint",
+    "id": "hbm:mp_fuselage_10_long_kerosene_taint",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_long_kerosene_taint.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 102
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_kerosene_vap",
+    "id": "hbm:mp_fuselage_10_long_kerosene_vap",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_long_kerosene_vap.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 103
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid",
+    "id": "hbm:mp_fuselage_10_long_solid",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 104
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid_flames",
+    "id": "hbm:mp_fuselage_10_long_solid_flames",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_solid_flames.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 105
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid_insulation",
+    "id": "hbm:mp_fuselage_10_long_solid_insulation",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_solid_insulation.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 106
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid_sleek",
+    "id": "hbm:mp_fuselage_10_long_solid_sleek",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_solid_sleek.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 107
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid_soviet_glory",
+    "id": "hbm:mp_fuselage_10_long_solid_soviet_glory",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_long_solid_soviet_glory.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 108
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid_bullet",
+    "id": "hbm:mp_fuselage_10_long_solid_bullet",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_long_solid_bullet.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 109
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_long_solid_silvermoonlight",
+    "id": "hbm:mp_fuselage_10_long_solid_silvermoonlight",
+    "type": "FUSELAGE",
+    "height": 7.0,
+    "guiheight": 5.0,
+    "model": "hbm:models/missile_parts/mp_f_10_long_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_10_long_solid_silvermoonlight.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 110
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_15_kerosene",
+    "id": "hbm:mp_fuselage_10_15_kerosene",
+    "type": "FUSELAGE",
+    "height": 9.0,
+    "guiheight": 5.5,
+    "model": "hbm:models/missile_parts/mp_f_10_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_15_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 112
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_15_solid",
+    "id": "hbm:mp_fuselage_10_15_solid",
+    "type": "FUSELAGE",
+    "height": 9.0,
+    "guiheight": 5.5,
+    "model": "hbm:models/missile_parts/mp_f_10_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_15_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 113
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_15_hydrogen",
+    "id": "hbm:mp_fuselage_10_15_hydrogen",
+    "type": "FUSELAGE",
+    "height": 9.0,
+    "guiheight": 5.5,
+    "model": "hbm:models/missile_parts/mp_f_10_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_15_hydrogen.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 114
+    }
+  },
+  {
+    "symbol": "mp_fuselage_10_15_balefire",
+    "id": "hbm:mp_fuselage_10_15_balefire",
+    "type": "FUSELAGE",
+    "height": 9.0,
+    "guiheight": 5.5,
+    "model": "hbm:models/missile_parts/mp_f_10_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_10_15_balefire.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 115
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene",
+    "id": "hbm:mp_fuselage_15_kerosene",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 117
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_camo",
+    "id": "hbm:mp_fuselage_15_kerosene_camo",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_camo.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 118
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_desert",
+    "id": "hbm:mp_fuselage_15_kerosene_desert",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_desert.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 119
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_sky",
+    "id": "hbm:mp_fuselage_15_kerosene_sky",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_sky.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 120
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_insulation",
+    "id": "hbm:mp_fuselage_15_kerosene_insulation",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_insulation.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 121
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_metal",
+    "id": "hbm:mp_fuselage_15_kerosene_metal",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_metal.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 122
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_decorated",
+    "id": "hbm:mp_fuselage_15_kerosene_decorated",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_decorated.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 123
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_steampunk",
+    "id": "hbm:mp_fuselage_15_kerosene_steampunk",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_steampunk.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 124
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_polite",
+    "id": "hbm:mp_fuselage_15_kerosene_polite",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_polite.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 125
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_blackjack",
+    "id": "hbm:mp_fuselage_15_kerosene_blackjack",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/base/mp_f_15_kerosene_blackjack.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 126
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_lambda",
+    "id": "hbm:mp_fuselage_15_kerosene_lambda",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_kerosene_lambda.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 127
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_minuteman",
+    "id": "hbm:mp_fuselage_15_kerosene_minuteman",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_kerosene_minuteman.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 128
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_pip",
+    "id": "hbm:mp_fuselage_15_kerosene_pip",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_kerosene_pip.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 129
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_taint",
+    "id": "hbm:mp_fuselage_15_kerosene_taint",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_kerosene_taint.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 130
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_kerosene_yuck",
+    "id": "hbm:mp_fuselage_15_kerosene_yuck",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_kerosene_yuck.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 131
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid",
+    "id": "hbm:mp_fuselage_15_solid",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 132
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_insulation",
+    "id": "hbm:mp_fuselage_15_solid_insulation",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_insulation.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 133
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_desh",
+    "id": "hbm:mp_fuselage_15_solid_desh",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_desh.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 134
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_soviet_glory",
+    "id": "hbm:mp_fuselage_15_solid_soviet_glory",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_soviet_glory.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 135
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_soviet_stank",
+    "id": "hbm:mp_fuselage_15_solid_soviet_stank",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_soviet_stank.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 136
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_faust",
+    "id": "hbm:mp_fuselage_15_solid_faust",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_solid_faust.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 137
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_silvermoonlight",
+    "id": "hbm:mp_fuselage_15_solid_silvermoonlight",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_solid_silvermoonlight.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 138
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_snowy",
+    "id": "hbm:mp_fuselage_15_solid_snowy",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_solid_snowy.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 139
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_panorama",
+    "id": "hbm:mp_fuselage_15_solid_panorama",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_panorama.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 140
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_roses",
+    "id": "hbm:mp_fuselage_15_solid_roses",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_roses.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 141
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_solid_mimi",
+    "id": "hbm:mp_fuselage_15_solid_mimi",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_solid_mimi.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 142
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_hydrogen",
+    "id": "hbm:mp_fuselage_15_hydrogen",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_hydrogen.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_hydrogen.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 143
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_hydrogen_cathedral",
+    "id": "hbm:mp_fuselage_15_hydrogen_cathedral",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_hydrogen.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/contest/mp_f_15_hydrogen_cathedral.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 144
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_balefire",
+    "id": "hbm:mp_fuselage_15_balefire",
+    "type": "FUSELAGE",
+    "height": 10.0,
+    "guiheight": 6.0,
+    "model": "hbm:models/missile_parts/mp_f_15_hydrogen.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_balefire.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 145
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_20_kerosene",
+    "id": "hbm:mp_fuselage_15_20_kerosene",
+    "type": "FUSELAGE",
+    "height": 16.0,
+    "guiheight": 10.0,
+    "model": "hbm:models/missile_parts/mp_f_15_20_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_20_kerosene.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 147
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_20_kerosene_magnusson",
+    "id": "hbm:mp_fuselage_15_20_kerosene_magnusson",
+    "type": "FUSELAGE",
+    "height": 16.0,
+    "guiheight": 10.0,
+    "model": "hbm:models/missile_parts/mp_f_15_20_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_20_kerosene_magnusson.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 148
+    }
+  },
+  {
+    "symbol": "mp_fuselage_15_20_solid",
+    "id": "hbm:mp_fuselage_15_20_solid",
+    "type": "FUSELAGE",
+    "height": 16.0,
+    "guiheight": 10.0,
+    "model": "hbm:models/missile_parts/mp_f_15_20_kerosene.obj",
+    "texture": "hbm:textures/models/missile_parts/fuselages/mp_f_15_20_solid.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 149
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_he",
+    "id": "hbm:mp_warhead_10_he",
+    "type": "WARHEAD",
+    "height": 2.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_10_he.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_he.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 153
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_incendiary",
+    "id": "hbm:mp_warhead_10_incendiary",
+    "type": "WARHEAD",
+    "height": 2.5,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_10_incendiary.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_incendiary.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 154
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_buster",
+    "id": "hbm:mp_warhead_10_buster",
+    "type": "WARHEAD",
+    "height": 0.5,
+    "guiheight": 1.0,
+    "model": "hbm:models/missile_parts/mp_w_10_buster.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_buster.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 155
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_nuclear",
+    "id": "hbm:mp_warhead_10_nuclear",
+    "type": "WARHEAD",
+    "height": 2.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_10_nuclear.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_nuclear.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 156
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_nuclear_large",
+    "id": "hbm:mp_warhead_10_nuclear_large",
+    "type": "WARHEAD",
+    "height": 2.5,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_10_nuclear_large.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_nuclear_large.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 157
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_taint",
+    "id": "hbm:mp_warhead_10_taint",
+    "type": "WARHEAD",
+    "height": 2.25,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_10_taint.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_taint.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 158
+    }
+  },
+  {
+    "symbol": "mp_warhead_10_cloud",
+    "id": "hbm:mp_warhead_10_cloud",
+    "type": "WARHEAD",
+    "height": 2.25,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_10_taint.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_10_cloud.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 159
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_he",
+    "id": "hbm:mp_warhead_15_he",
+    "type": "WARHEAD",
+    "height": 2.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_15_he.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_he.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 161
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_incendiary",
+    "id": "hbm:mp_warhead_15_incendiary",
+    "type": "WARHEAD",
+    "height": 2.0,
+    "guiheight": 1.5,
+    "model": "hbm:models/missile_parts/mp_w_15_incendiary.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_incendiary.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 162
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_nuclear",
+    "id": "hbm:mp_warhead_15_nuclear",
+    "type": "WARHEAD",
+    "height": 3.5,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_15_nuclear.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_nuclear.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 163
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_nuclear_shark",
+    "id": "hbm:mp_warhead_15_nuclear_shark",
+    "type": "WARHEAD",
+    "height": 3.5,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_15_nuclear.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_nuclear_shark.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 164
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_nuclear_mimi",
+    "id": "hbm:mp_warhead_15_nuclear_mimi",
+    "type": "WARHEAD",
+    "height": 3.5,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_15_nuclear.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_nuclear_mimi.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 165
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_boxcar",
+    "id": "hbm:mp_warhead_15_boxcar",
+    "type": "WARHEAD",
+    "height": 2.25,
+    "guiheight": 7.5,
+    "model": "hbm:models/missile_parts/mp_w_15_boxcar.obj",
+    "texture": "hbm:textures/models/boxcar.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 166
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_n2",
+    "id": "hbm:mp_warhead_15_n2",
+    "type": "WARHEAD",
+    "height": 3.0,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_15_n2.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_n2.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 167
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_balefire",
+    "id": "hbm:mp_warhead_15_balefire",
+    "type": "WARHEAD",
+    "height": 2.75,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_15_balefire.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_balefire.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 168
+    }
+  },
+  {
+    "symbol": "mp_warhead_15_turbine",
+    "id": "hbm:mp_warhead_15_turbine",
+    "type": "WARHEAD",
+    "height": 2.25,
+    "guiheight": 2.0,
+    "model": "hbm:models/missile_parts/mp_w_15_turbine.obj",
+    "texture": "hbm:textures/models/missile_parts/warheads/mp_w_15_turbine.png",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/render/util/MissilePart.java",
+      "line": 169
+    }
+  }
+]

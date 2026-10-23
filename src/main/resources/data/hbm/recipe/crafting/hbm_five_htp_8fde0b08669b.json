@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:five_htp",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcoal"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dusteuphemium"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:canteen_vodka",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  ]
+}

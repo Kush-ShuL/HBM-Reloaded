@@ -1,0 +1,44 @@
+{
+  "result": {
+    "id": "hbm:ajr_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPC",
+    "PBP",
+    "IXI"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:plate_armor_ajr"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "X": {
+      "type": "neoforge:components",
+      "items": "hbm:gas_mask_m65",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:titanium_helmet",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  }
+}

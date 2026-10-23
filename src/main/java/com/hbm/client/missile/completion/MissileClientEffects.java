@@ -1,0 +1,3 @@
+package com.hbm.client.missile.completion;
+import com.hbm.client.bomb.nuclear.*;import com.hbm.missile.completion.EmpMachineSparks;import com.hbm.missile.completion.volcano.VolcanoSmokeEffects;import net.minecraft.client.Minecraft;import net.minecraft.world.level.block.Blocks;
+public final class MissileClientEffects{public static void emp(EmpMachineSparks effect){var mc=Minecraft.getInstance();if(mc.level!=null)mc.particleEngine.destroy(effect.position(),Blocks.LIGHT_BLUE_STAINED_GLASS.defaultBlockState());}public static void volcano(VolcanoSmokeEffects effect){var mc=Minecraft.getInstance();if(mc.level!=null)mc.particleEngine.add(new LegacyVolcanoSmokeParticle(mc.level,effect.x(),effect.y(),effect.z()));}private MissileClientEffects(){}}

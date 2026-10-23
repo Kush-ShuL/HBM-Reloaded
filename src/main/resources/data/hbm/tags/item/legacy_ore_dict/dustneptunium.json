@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_neptunium",
+    {
+      "id": "#c:dusts/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/neptunium237",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/np237",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.50bmgsm",
+  "duration": 100,
+  "power": 100,
+  "order": 324,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:ammo_standard_bmg50_sm",
+            "count": 6
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:casing_large_steel"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustanysmokeless"
+      },
+      "count": 6
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+      },
+      "count": 3
+    }
+  ],
+  "pools": [
+    "discover.silverstorm"
+  ]
+}

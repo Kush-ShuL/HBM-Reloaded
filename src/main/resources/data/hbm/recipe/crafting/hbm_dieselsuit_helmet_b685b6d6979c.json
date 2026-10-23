@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W W",
+    "W W",
+    "SCS"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:red_wool"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    }
+  },
+  "result": {
+    "id": "hbm:dieselsuit_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

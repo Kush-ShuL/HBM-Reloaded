@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "silo_hatch",
+      "id": "hbm:silo_hatch",
+      "legacyRegistryId": "hbm:tile.silo_hatch",
+      "originalClass": "BlockDoorGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2052
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "cargo_door",
+      "id": "hbm:cargo_door",
+      "legacyRegistryId": "hbm:tile.cargo_door",
+      "originalClass": "BlockDoorGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2061
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ],
+  "sourceBlockEntityAlias": "tileentity_ntm_door",
+  "blockEntity": "hbm:generic_door",
+  "recipes": [
+    "hbm:assembly/source_238",
+    "hbm:assembly/source_242"
+  ]
+}

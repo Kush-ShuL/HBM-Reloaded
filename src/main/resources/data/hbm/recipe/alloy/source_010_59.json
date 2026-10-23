@@ -1,0 +1,36 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesaturnite"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemsaturnite"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustsaturnite"
+      }
+    ]
+  },
+  "second": {
+    "type": "hbm:alloy_legacy_stack",
+    "stack": {
+      "id": "hbm:ingot_meteorite",
+      "count": 1
+    }
+  },
+  "result": {
+    "id": "hbm:ingot_starmetal",
+    "count": 2
+  },
+  "order": 10
+}

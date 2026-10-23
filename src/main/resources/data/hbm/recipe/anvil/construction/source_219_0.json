@@ -1,0 +1,36 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:stone_bricks"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ingot_firebrick"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platecopper"
+      },
+      "count": 8
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:machine_blast_furnace",
+        "count": 1
+      }
+    }
+  ],
+  "tier_lower": 1,
+  "tier_upper": -1,
+  "overlay": "NONE",
+  "order": 225000000
+}

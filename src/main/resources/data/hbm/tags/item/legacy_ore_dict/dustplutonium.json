@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_plutonium",
+    {
+      "id": "#c:dusts/plutonium",
+      "required": false
+    }
+  ]
+}

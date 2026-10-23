@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:pipe_anchor_exhaust",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "P",
+    "S"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipeiron"
+    },
+    "S": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

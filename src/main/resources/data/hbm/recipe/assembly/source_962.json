@@ -1,0 +1,36 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.titaniumconstruction",
+  "duration": 600,
+  "power": 1000,
+  "order": 333,
+  "named": true,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:part_generic_alclad",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetitanium"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 8
+    }
+  ]
+}

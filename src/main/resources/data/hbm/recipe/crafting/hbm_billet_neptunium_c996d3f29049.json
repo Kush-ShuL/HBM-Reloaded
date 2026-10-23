@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:billet_neptunium",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:rod_quad",
+      "components": {
+        "hbm:legacy_metadata": 7
+      },
+      "strict": false
+    }
+  ]
+}

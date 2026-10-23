@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:disperser_canister_empty",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "PGP",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+    },
+    "G": {
+      "item": "hbm:glass_boron"
+    }
+  }
+}

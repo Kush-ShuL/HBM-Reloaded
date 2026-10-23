@@ -1,0 +1,36 @@
+{
+  "source": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java:403-404",
+  "registrations": [
+    {
+      "expression": "GRAPHITE.block()",
+      "raw": "blockGraphite",
+      "tag": "hbm:legacy_ore_dict/blockgraphite",
+      "members": [
+        "hbm:block_graphite"
+      ]
+    },
+    {
+      "expression": "CARBON.block()",
+      "raw": "blockCarbon",
+      "tag": "hbm:legacy_ore_dict/blockcarbon",
+      "members": [
+        "hbm:block_graphite"
+      ]
+    }
+  ],
+  "order": [
+    "hbm:legacy_ore_dict/blockgraphite",
+    "hbm:legacy_ore_dict/blockcarbon"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/blockgraphite",
+      "raw": "blockGraphite"
+    },
+    {
+      "tag": "hbm:legacy_ore_dict/blockcarbon",
+      "raw": "blockCarbon"
+    }
+  ],
+  "memberships": []
+}

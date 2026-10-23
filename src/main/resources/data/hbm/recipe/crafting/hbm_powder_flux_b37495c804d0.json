@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:powder_flux",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/sand"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_sr90",
+    {
+      "id": "#c:ingots/sr90",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/strontium90",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:ammo_fireext",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "BDB",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "D": {
+      "type": "neoforge:components",
+      "items": "hbm:fluid_tank_full",
+      "components": {
+        "hbm:legacy_metadata": 1,
+        "hbm:fluid_type": 1
+      },
+      "strict": false
+    }
+  }
+}

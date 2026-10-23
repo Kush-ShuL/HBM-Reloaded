@@ -1,0 +1,45 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gas_mask_m65",
+      "id": "hbm:gas_mask_m65",
+      "originalClass": "ArmorGasMask",
+      "creativeTab": "minecraft:combat",
+      "maxStackSize": 1,
+      "maxDamage": 165
+    },
+    {
+      "kind": "item",
+      "symbol": "hazmat_kit",
+      "id": "hbm:hazmat_kit",
+      "originalClass": "ItemStarterKit",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "hazmat_red_kit",
+      "id": "hbm:hazmat_red_kit",
+      "originalClass": "ItemStarterKit",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "hazmat_grey_kit",
+      "id": "hbm:hazmat_grey_kit",
+      "originalClass": "ItemStarterKit",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "stealth_boy",
+      "id": "hbm:stealth_boy",
+      "originalClass": "ItemStarterKit",
+      "creativeTab": "consumable",
+      "maxStackSize": 64
+    }
+  ]
+}

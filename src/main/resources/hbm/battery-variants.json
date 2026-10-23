@@ -1,0 +1,420 @@
+{
+  "source": "X5846 ItemBatteryPack and ItemBatterySC",
+  "component": "hbm:legacy_metadata",
+  "ordinary_enum_registration": false,
+  "items": [
+    {
+      "id": "battery_pack",
+      "symbol": "battery_pack",
+      "enumClass": "ItemBatteryPack.EnumBatteryPack",
+      "enumAliases": [
+        "EnumBatteryPack"
+      ],
+      "stackSize": 1,
+      "multiName": true,
+      "multiTexture": false,
+      "tab": "control",
+      "names": [
+        "battery_redstone",
+        "battery_lead",
+        "battery_lithium",
+        "battery_sodium",
+        "battery_schrabidium",
+        "battery_quantum",
+        "capacitor_copper",
+        "capacitor_gold",
+        "capacitor_niobium",
+        "capacitor_tantalum",
+        "capacitor_bismuth",
+        "capacitor_spark"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "battery_redstone",
+          "capacity": 1800000,
+          "chargeRate": 1000,
+          "dischargeRate": 100,
+          "texture": "hbm:textures/models/machines/battery_redstone.png",
+          "modelPart": "Battery"
+        },
+        {
+          "metadata": 1,
+          "name": "battery_lead",
+          "capacity": 18000000,
+          "chargeRate": 10000,
+          "dischargeRate": 1000,
+          "texture": "hbm:textures/models/machines/battery_lead.png",
+          "modelPart": "Battery"
+        },
+        {
+          "metadata": 2,
+          "name": "battery_lithium",
+          "capacity": 180000000,
+          "chargeRate": 100000,
+          "dischargeRate": 10000,
+          "texture": "hbm:textures/models/machines/battery_lithium.png",
+          "modelPart": "Battery"
+        },
+        {
+          "metadata": 3,
+          "name": "battery_sodium",
+          "capacity": 900000000,
+          "chargeRate": 500000,
+          "dischargeRate": 50000,
+          "texture": "hbm:textures/models/machines/battery_sodium.png",
+          "modelPart": "Battery"
+        },
+        {
+          "metadata": 4,
+          "name": "battery_schrabidium",
+          "capacity": 4500000000,
+          "chargeRate": 2500000,
+          "dischargeRate": 250000,
+          "texture": "hbm:textures/models/machines/battery_schrabidium.png",
+          "modelPart": "Battery"
+        },
+        {
+          "metadata": 5,
+          "name": "battery_quantum",
+          "capacity": 72000000000,
+          "chargeRate": 10000000,
+          "dischargeRate": 1000000,
+          "texture": "hbm:textures/models/machines/battery_quantum.png",
+          "modelPart": "Battery"
+        },
+        {
+          "metadata": 6,
+          "name": "capacitor_copper",
+          "capacity": 600000,
+          "chargeRate": 1000,
+          "dischargeRate": 1000,
+          "texture": "hbm:textures/models/machines/capacitor_copper.png",
+          "modelPart": "Capacitor"
+        },
+        {
+          "metadata": 7,
+          "name": "capacitor_gold",
+          "capacity": 6000000,
+          "chargeRate": 10000,
+          "dischargeRate": 10000,
+          "texture": "hbm:textures/models/machines/capacitor_gold.png",
+          "modelPart": "Capacitor"
+        },
+        {
+          "metadata": 8,
+          "name": "capacitor_niobium",
+          "capacity": 60000000,
+          "chargeRate": 100000,
+          "dischargeRate": 100000,
+          "texture": "hbm:textures/models/machines/capacitor_niobium.png",
+          "modelPart": "Capacitor"
+        },
+        {
+          "metadata": 9,
+          "name": "capacitor_tantalum",
+          "capacity": 300000000,
+          "chargeRate": 500000,
+          "dischargeRate": 500000,
+          "texture": "hbm:textures/models/machines/capacitor_tantalum.png",
+          "modelPart": "Capacitor"
+        },
+        {
+          "metadata": 10,
+          "name": "capacitor_bismuth",
+          "capacity": 1500000000,
+          "chargeRate": 2500000,
+          "dischargeRate": 2500000,
+          "texture": "hbm:textures/models/machines/capacitor_bismuth.png",
+          "modelPart": "Capacitor"
+        },
+        {
+          "metadata": 11,
+          "name": "capacitor_spark",
+          "capacity": 6000000000,
+          "chargeRate": 10000000,
+          "dischargeRate": 10000000,
+          "texture": "hbm:textures/models/machines/capacitor_spark.png",
+          "modelPart": "Capacitor"
+        }
+      ],
+      "creative": [
+        {
+          "metadata": 0,
+          "charge": 0
+        },
+        {
+          "metadata": 0,
+          "charge": 1800000
+        },
+        {
+          "metadata": 1,
+          "charge": 0
+        },
+        {
+          "metadata": 1,
+          "charge": 18000000
+        },
+        {
+          "metadata": 2,
+          "charge": 0
+        },
+        {
+          "metadata": 2,
+          "charge": 180000000
+        },
+        {
+          "metadata": 3,
+          "charge": 0
+        },
+        {
+          "metadata": 3,
+          "charge": 900000000
+        },
+        {
+          "metadata": 4,
+          "charge": 0
+        },
+        {
+          "metadata": 4,
+          "charge": 4500000000
+        },
+        {
+          "metadata": 5,
+          "charge": 0
+        },
+        {
+          "metadata": 5,
+          "charge": 72000000000
+        },
+        {
+          "metadata": 6,
+          "charge": 0
+        },
+        {
+          "metadata": 6,
+          "charge": 600000
+        },
+        {
+          "metadata": 7,
+          "charge": 0
+        },
+        {
+          "metadata": 7,
+          "charge": 6000000
+        },
+        {
+          "metadata": 8,
+          "charge": 0
+        },
+        {
+          "metadata": 8,
+          "charge": 60000000
+        },
+        {
+          "metadata": 9,
+          "charge": 0
+        },
+        {
+          "metadata": 9,
+          "charge": 300000000
+        },
+        {
+          "metadata": 10,
+          "charge": 0
+        },
+        {
+          "metadata": 10,
+          "charge": 1500000000
+        },
+        {
+          "metadata": 11,
+          "charge": 0
+        },
+        {
+          "metadata": 11,
+          "charge": 6000000000
+        }
+      ],
+      "initialCharge": 0,
+      "model": "hbm:models/machines/battery.obj",
+      "inventorySprite": "hbm:item/battery_creative_new",
+      "modelLoader": "builtin/entity",
+      "guiLight": "side"
+    },
+    {
+      "id": "battery_sc",
+      "symbol": "battery_sc",
+      "enumClass": "ItemBatterySC.EnumBatterySC",
+      "enumAliases": [
+        "EnumBatterySC"
+      ],
+      "stackSize": 1,
+      "multiName": true,
+      "multiTexture": true,
+      "tab": "control",
+      "names": [
+        "empty",
+        "waste",
+        "ra226",
+        "tc99",
+        "co60",
+        "pu238",
+        "po210",
+        "au198",
+        "pb209",
+        "am241"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "variants": [
+        {
+          "metadata": 0,
+          "name": "empty",
+          "capacity": 0,
+          "chargeRate": 0,
+          "dischargeRate": 0,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.empty"
+        },
+        {
+          "metadata": 1,
+          "name": "waste",
+          "capacity": 150,
+          "chargeRate": 0,
+          "dischargeRate": 150,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.waste"
+        },
+        {
+          "metadata": 2,
+          "name": "ra226",
+          "capacity": 200,
+          "chargeRate": 0,
+          "dischargeRate": 200,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.ra226"
+        },
+        {
+          "metadata": 3,
+          "name": "tc99",
+          "capacity": 500,
+          "chargeRate": 0,
+          "dischargeRate": 500,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.tc99"
+        },
+        {
+          "metadata": 4,
+          "name": "co60",
+          "capacity": 750,
+          "chargeRate": 0,
+          "dischargeRate": 750,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.co60"
+        },
+        {
+          "metadata": 5,
+          "name": "pu238",
+          "capacity": 1000,
+          "chargeRate": 0,
+          "dischargeRate": 1000,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.pu238"
+        },
+        {
+          "metadata": 6,
+          "name": "po210",
+          "capacity": 1250,
+          "chargeRate": 0,
+          "dischargeRate": 1250,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.po210"
+        },
+        {
+          "metadata": 7,
+          "name": "au198",
+          "capacity": 1500,
+          "chargeRate": 0,
+          "dischargeRate": 1500,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.au198"
+        },
+        {
+          "metadata": 8,
+          "name": "pb209",
+          "capacity": 2000,
+          "chargeRate": 0,
+          "dischargeRate": 2000,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.pb209"
+        },
+        {
+          "metadata": 9,
+          "name": "am241",
+          "capacity": 2500,
+          "chargeRate": 0,
+          "dischargeRate": 2500,
+          "constantOutput": true,
+          "texture": "hbm:item/battery_sc.am241"
+        }
+      ],
+      "creative": [
+        {
+          "metadata": 0
+        },
+        {
+          "metadata": 1
+        },
+        {
+          "metadata": 2
+        },
+        {
+          "metadata": 3
+        },
+        {
+          "metadata": 4
+        },
+        {
+          "metadata": 5
+        },
+        {
+          "metadata": 6
+        },
+        {
+          "metadata": 7
+        },
+        {
+          "metadata": 8
+        },
+        {
+          "metadata": 9
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:barbed_wire_fire",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "BIB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:barbed_wire"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+    }
+  }
+}

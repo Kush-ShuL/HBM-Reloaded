@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:cell_tritium",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:rod_quad",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    {
+      "item": "hbm:cell_empty"
+    },
+    {
+      "item": "hbm:cell_empty"
+    },
+    {
+      "item": "hbm:cell_empty"
+    },
+    {
+      "item": "hbm:cell_empty"
+    }
+  ]
+}

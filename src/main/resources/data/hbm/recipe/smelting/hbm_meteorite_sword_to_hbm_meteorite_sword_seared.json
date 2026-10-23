@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:meteorite_sword"
+  },
+  "result": {
+    "id": "hbm:meteorite_sword_seared",
+    "count": 1
+  },
+  "experience": 0.0,
+  "cookingtime": 200
+}

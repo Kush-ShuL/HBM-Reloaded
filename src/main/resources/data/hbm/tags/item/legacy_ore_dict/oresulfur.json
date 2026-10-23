@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_nether_sulfur",
+    "hbm:ore_sulfur",
+    {
+      "id": "#c:ores/sulfur",
+      "required": false
+    }
+  ]
+}

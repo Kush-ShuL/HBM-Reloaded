@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:c4",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DSD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:stick_c4"
+    },
+    "S": {
+      "item": "hbm:safety_fuse"
+    }
+  }
+}

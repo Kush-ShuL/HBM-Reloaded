@@ -1,0 +1,25 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_cyclotron",
+      "id": "hbm:machine_cyclotron",
+      "itemId": "hbm:machine_cyclotron",
+      "kind": "block",
+      "originalClass": "MachineCyclotron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1803
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    }
+  ]
+}

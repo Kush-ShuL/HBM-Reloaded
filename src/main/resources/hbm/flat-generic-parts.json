@@ -1,0 +1,90 @@
+{
+  "entries": [
+    {
+      "id": "hbm:part_generic_piston_pneumatic",
+      "symbol": "part_generic_piston_pneumatic",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 0,
+      "sourceEnumValue": "PISTON_PNEUMATIC",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    },
+    {
+      "id": "hbm:part_generic_piston_hydraulic",
+      "symbol": "part_generic_piston_hydraulic",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 1,
+      "sourceEnumValue": "PISTON_HYDRAULIC",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    },
+    {
+      "id": "hbm:part_generic_piston_electric",
+      "symbol": "part_generic_piston_electric",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 2,
+      "sourceEnumValue": "PISTON_ELECTRIC",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    },
+    {
+      "id": "hbm:part_generic_lde",
+      "symbol": "part_generic_lde",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 3,
+      "sourceEnumValue": "LDE",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    },
+    {
+      "id": "hbm:part_generic_hde",
+      "symbol": "part_generic_hde",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 4,
+      "sourceEnumValue": "HDE",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    },
+    {
+      "id": "hbm:part_generic_glass_polarized",
+      "symbol": "part_generic_glass_polarized",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 5,
+      "sourceEnumValue": "GLASS_POLARIZED",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    },
+    {
+      "id": "hbm:part_generic_alclad",
+      "symbol": "part_generic_alclad",
+      "kind": "item",
+      "originalClass": "ItemGenericPart",
+      "legacySourceField": "ModItems.part_generic",
+      "sourceOrdinal": 6,
+      "sourceEnumValue": "ALCLAD",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    5
+  ]
+}

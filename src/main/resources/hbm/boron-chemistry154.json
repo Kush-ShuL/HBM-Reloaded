@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "chemistry_set_boron",
+      "id": "hbm:chemistry_set_boron",
+      "legacyRegistryId": "hbm:item.chemistry_set_boron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3715
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5248
+          },
+          "expression": "GameRegistry.registerItem(chemistry_set_boron, chemistry_set_boron.getUnlocalizedName())",
+          "arguments": [
+            "chemistry_set_boron",
+            "chemistry_set_boron.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "originalClass": "ItemCraftingDegradation",
+      "sourceConstructor": "ItemCraftingDegradation(0)",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "maxDamage": 0,
+      "repairable": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ]
+}

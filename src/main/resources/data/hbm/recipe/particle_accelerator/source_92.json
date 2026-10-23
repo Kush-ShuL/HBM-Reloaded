@@ -1,0 +1,25 @@
+{
+  "type": "hbm:particle_accelerator",
+  "input1": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:item_expensive_gold_dust"
+      }
+    },
+    "count": 1
+  },
+  "input2": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotschrabidate"
+    },
+    "count": 1
+  },
+  "momentum": 10000,
+  "output1": {
+    "id": "hbm:item_expensive_degenerate_matter",
+    "count": 1
+  },
+  "order": 9
+}

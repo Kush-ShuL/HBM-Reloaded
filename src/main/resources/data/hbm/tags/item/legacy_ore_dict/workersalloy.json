@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_desh",
+    {
+      "id": "#c:ingots/workers_alloy",
+      "required": false
+    }
+  ]
+}

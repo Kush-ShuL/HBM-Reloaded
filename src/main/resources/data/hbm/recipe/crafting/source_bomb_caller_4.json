@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:bomb_caller",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 4
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TRC"
+  ],
+  "key": {
+    "T": {
+      "item": "hbm:ammo_standard_nuke_high"
+    },
+    "R": {
+      "type": "neoforge:components",
+      "items": "hbm:rangefinder",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "C": {
+      "item": "hbm:circuit_controller"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+package com.hbm.machine.generator.stirling;
+import java.util.*;import net.minecraft.core.registries.Registries;import net.minecraft.world.entity.*;import net.minecraft.world.item.ItemStack;import net.minecraft.world.level.block.entity.BlockEntityType;import net.neoforged.bus.api.IEventBus;import net.neoforged.neoforge.registries.*;
+public final class StirlingContent {
+ private static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks("hbm");private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");private static final DeferredRegister<BlockEntityType<?>> BE=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,"hbm");private static final DeferredRegister<EntityType<?>> ENTITIES=DeferredRegister.create(Registries.ENTITY_TYPE,"hbm");
+ public static final Map<StirlingKind,DeferredBlock<StirlingBlock>> BLOCK=new LinkedHashMap<>();public static final Map<StirlingKind,DeferredItem<StirlingItem>> ITEM=new LinkedHashMap<>();
+ static {for(var kind:StirlingKind.values()){var block=BLOCKS.register(kind.id,()->new StirlingBlock(kind));BLOCK.put(kind,block);ITEM.put(kind,ITEMS.register(kind.id,()->new StirlingItem(block.get(),kind)));}}
+ public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<StirlingBlockEntity>> ENTITY=BE.register("machine_stirling",()->BlockEntityType.Builder.of(StirlingBlockEntity::new,BLOCK.values().stream().map(DeferredBlock::get).toArray(StirlingBlock[]::new)).build(null));public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<StirlingProxy>> PROXY=BE.register("stirling_proxy",()->BlockEntityType.Builder.of(StirlingProxy::new,BLOCK.values().stream().map(DeferredBlock::get).toArray(StirlingBlock[]::new)).build(null));
+ public static final DeferredHolder<EntityType<?>,EntityType<StrayCogEntity>> COG=ENTITIES.register("entity_stray_cog",()->EntityType.Builder.<StrayCogEntity>of(StrayCogEntity::new,MobCategory.MISC).sized(1,1).clientTrackingRange(63).updateInterval(1).setShouldReceiveVelocityUpdates(true).build("hbm:entity_stray_cog"));
+ public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);BE.register(bus);ENTITIES.register(bus);}
+ public static List<ItemStack> creativeStacks(String tab){return tab.equals("machine")?ITEM.values().stream().map(item->new ItemStack(item.get())).toList():List.of();}
+ public static List<ItemStack> allStacks(){var result=new ArrayList<ItemStack>();for(var item:ITEM.values()){result.add(new ItemStack(item.get()));var broken=new ItemStack(item.get());broken.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),1);result.add(broken);}return List.copyOf(result);}
+ private StirlingContent(){}
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:powder_dura_steel"
+  },
+  "result": {
+    "id": "hbm:ingot_dura_steel",
+    "count": 1
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

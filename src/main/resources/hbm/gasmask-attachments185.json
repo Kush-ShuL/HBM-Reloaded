@@ -1,0 +1,74 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "attachment_mask",
+      "id": "hbm:attachment_mask",
+      "legacyRegistryId": "hbm:item.attachment_mask",
+      "originalClass": "ItemModGasmask",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2851
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6087
+          },
+          "expression": "GameRegistry.registerItem(attachment_mask, attachment_mask.getUnlocalizedName())",
+          "arguments": [
+            "attachment_mask",
+            "attachment_mask.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.gasmaskmods.GasmaskAttachmentsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 0,
+      "applicableTo": [
+        "helmet"
+      ],
+      "blacklist": [
+        "GAS_BLISTERING"
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "attachment_mask_mono",
+      "id": "hbm:attachment_mask_mono",
+      "legacyRegistryId": "hbm:item.attachment_mask_mono",
+      "originalClass": "ItemModGasmask",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2852
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6088
+          },
+          "expression": "GameRegistry.registerItem(attachment_mask_mono, attachment_mask_mono.getUnlocalizedName())",
+          "arguments": [
+            "attachment_mask_mono",
+            "attachment_mask_mono.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.gasmaskmods.GasmaskAttachmentsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 0,
+      "applicableTo": [
+        "helmet"
+      ],
+      "blacklist": [
+        "GAS_LUNG",
+        "GAS_BLISTERING",
+        "BACTERIA"
+      ]
+    }
+  ]
+}

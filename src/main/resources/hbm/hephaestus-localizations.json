@@ -1,0 +1,20 @@
+{
+  "en_us": {
+    "block.hbm.machine_hephaestus": "Geothermal Heat Exchanger",
+    "message.hbm.hephaestus.changed_type": "Changed type to %s!",
+    "gui.hbm.hephaestus.heat": "%s TU",
+    "gui.hbm.hephaestus.conversion": "Geothermal heat exchange",
+    "gui.hbm.hephaestus.operation": "Heat per operation: %s TU",
+    "gui.hbm.hephaestus.environment": "Uses heat beneath the exchanger",
+    "config.jade.plugin_hbm.hephaestus_heat": "Geothermal heat exchanger heat"
+  },
+  "zh_cn": {
+    "block.hbm.machine_hephaestus": "地热换热器",
+    "message.hbm.hephaestus.changed_type": "已将流体类型改为%s！",
+    "gui.hbm.hephaestus.heat": "%s TU",
+    "gui.hbm.hephaestus.conversion": "地热流体换热",
+    "gui.hbm.hephaestus.operation": "每次转换需热量：%s TU",
+    "gui.hbm.hephaestus.environment": "使用换热器下方热源",
+    "config.jade.plugin_hbm.hephaestus_heat": "地热换热器热量"
+  }
+}

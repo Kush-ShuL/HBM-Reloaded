@@ -1,0 +1,35 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.exgold",
+  "duration": 600,
+  "power": 10000,
+  "order": 25,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_gold_dust",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustgold"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustgold"
+      },
+      "count": 64
+    }
+  ]
+}

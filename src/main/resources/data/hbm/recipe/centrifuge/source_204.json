@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:powder_tektite"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_meteorite_tiny",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_paleogenite_tiny",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_meteorite_tiny",
+      "count": 1
+    },
+    {
+      "id": "hbm:dust",
+      "count": 6
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "processors": [
+    {
+      "processor_type": "hbm:meteor_spike"
+    },
+    {
+      "processor_type": "hbm:meteor_source_states"
+    },
+    {
+      "processor_type": "hbm:legacy_structure_loot"
+    },
+    {
+      "processor_type": "hbm:wand_logic_transform"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:schrabidium_hoe",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "key": {
+    "X": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+    },
+    "#": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stickwood"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleToolRecipes"
+    }
+  ]
+}

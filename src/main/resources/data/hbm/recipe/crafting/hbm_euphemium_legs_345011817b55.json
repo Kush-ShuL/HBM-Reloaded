@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:euphemium_legs",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "E E",
+    "E E"
+  ],
+  "key": {
+    "E": {
+      "item": "hbm:plate_euphemium"
+    }
+  }
+}

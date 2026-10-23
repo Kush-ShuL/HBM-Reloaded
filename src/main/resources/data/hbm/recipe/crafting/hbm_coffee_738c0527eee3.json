@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:coffee",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcoal"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "type": "hbm:source_water_potion"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ]
+}

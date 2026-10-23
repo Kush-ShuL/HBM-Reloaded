@@ -1,0 +1,145 @@
+{
+  "module": "source-slabs255",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "stones_slab",
+      "id": "hbm:stones_slab",
+      "legacyRegistryId": "hbm:tile.stones_slab",
+      "originalClass": "BlockMultiSlabMeta",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1534
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2687
+          },
+          "expression": "register(stones_slab, ItemModSlab.class)",
+          "arguments": [
+            "stones_slab",
+            "ItemModSlab.class"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "hasItem": true,
+      "creativeTab": "block",
+      "metadataRange": [
+        0,
+        1
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "stones_double_slab",
+      "id": "hbm:stones_double_slab",
+      "legacyRegistryId": "hbm:tile.stones_double_slab",
+      "originalClass": "BlockMultiSlabMeta",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1535
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2688
+          },
+          "expression": "register(stones_double_slab, ItemModSlab.class)",
+          "arguments": [
+            "stones_double_slab",
+            "ItemModSlab.class"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "hasItem": true,
+      "creativeTab": null,
+      "metadataRange": [
+        0,
+        1
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "pink_slab",
+      "id": "hbm:pink_slab",
+      "legacyRegistryId": "hbm:tile.pink_slab",
+      "originalClass": "BlockPinkSlab",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2364
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3515
+          },
+          "expression": "GameRegistry.registerBlock(pink_slab, pink_slab.getUnlocalizedName())",
+          "arguments": [
+            "pink_slab",
+            "pink_slab.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "hasItem": true,
+      "creativeTab": null,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "pink_double_slab",
+      "id": "hbm:pink_double_slab",
+      "legacyRegistryId": "hbm:tile.pink_double_slab",
+      "originalClass": "BlockPinkSlab",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2365
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3516
+          },
+          "expression": "GameRegistry.registerBlock(pink_double_slab, pink_double_slab.getUnlocalizedName())",
+          "arguments": [
+            "pink_double_slab",
+            "pink_double_slab.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "hasItem": true,
+      "creativeTab": null,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ]
+}

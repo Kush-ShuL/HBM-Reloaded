@@ -1,0 +1,11 @@
+{
+  "type": "hbm:press",
+  "input": {
+    "item": "hbm:powder_sawdust"
+  },
+  "stamp": "flat",
+  "result": {
+    "id": "hbm:briquette_wood",
+    "count": 1
+  }
+}

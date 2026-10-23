@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:gun_kit_1",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "WOODOIL",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    }
+  ]
+}

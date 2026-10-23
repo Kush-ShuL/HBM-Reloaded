@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "wand_d",
+      "id": "hbm:wand_d",
+      "legacyRegistryId": "hbm:item.wand_d",
+      "originalClass": "ItemWandD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3770
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6381
+          },
+          "expression": "GameRegistry.registerItem(wand_d, wand_d.getUnlocalizedName())",
+          "arguments": [
+            "wand_d",
+            "wand_d.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.debugwand.DebugWandContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    }
+  ]
+}

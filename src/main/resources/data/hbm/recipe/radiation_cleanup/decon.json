@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BGB",
+    "SAS",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotberyllium"
+    },
+    "G": {
+      "item": "minecraft:iron_bars"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "A": {
+      "type": "neoforge:components",
+      "items": "hbm:rad_absorber",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:decon",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:assembly_nuke",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " WP",
+    "SEP",
+    " WP"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinegold"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellweaponsteel"
+    },
+    "E": {
+      "item": "hbm:ball_tatb"
+    }
+  }
+}

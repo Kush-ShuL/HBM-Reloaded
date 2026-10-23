@@ -1,0 +1,25 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_orbus",
+      "id": "hbm:machine_orbus",
+      "itemId": "hbm:machine_orbus",
+      "kind": "block",
+      "originalClass": "MachineOrbus",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2224
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    }
+  ]
+}

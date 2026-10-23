@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:ams_core_eyeofharmony",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ALA",
+    "LSL",
+    "ALA"
+  ],
+  "key": {
+    "A": {
+      "item": "hbm:plate_dalekanium"
+    },
+    "L": {
+      "type": "neoforge:components",
+      "items": "hbm:fluid_barrel_full",
+      "components": {
+        "hbm:legacy_metadata": 7,
+        "hbm:fluid_type": 7
+      },
+      "strict": false
+    },
+    "S": {
+      "item": "hbm:black_hole"
+    }
+  }
+}

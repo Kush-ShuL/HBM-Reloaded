@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:brick_light",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FBF",
+    "BFB",
+    "FBF"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:oak_fence"
+    },
+    "B": {
+      "item": "minecraft:bricks"
+    }
+  }
+}

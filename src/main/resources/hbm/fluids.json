@@ -1,0 +1,5415 @@
+{
+  "fluids": [
+    {
+      "id": 0,
+      "symbol": "NONE",
+      "name": "NONE",
+      "color": 8947848,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/none.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 248
+      }
+    },
+    {
+      "id": 1,
+      "symbol": "WATER",
+      "name": "WATER",
+      "color": 3355647,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/water.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "unsiphonable": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 200,
+              "amountReq": 1,
+              "typeProduced": "STEAM",
+              "amountProd": 100
+            },
+            {
+              "heatReq": 220,
+              "amountReq": 1,
+              "typeProduced": "HOTSTEAM",
+              "amountProd": 10
+            },
+            {
+              "heatReq": 238,
+              "amountReq": 1,
+              "typeProduced": "SUPERHOTSTEAM",
+              "amountProd": 1
+            },
+            {
+              "heatReq": 2500,
+              "amountReq": 10,
+              "typeProduced": "ULTRAHOTSTEAM",
+              "amountProd": 1
+            }
+          ],
+          "BOILER": 1.0,
+          "HEATEXCHANGER": 0.25
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 262
+      }
+    },
+    {
+      "id": 2,
+      "symbol": "STEAM",
+      "name": "STEAM",
+      "color": 15066597,
+      "p": 3,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 100,
+      "texture": "hbm:textures/gui/fluids/steam.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "unsiphonable": {},
+        "coolable": {
+          "coolsTo": "SPENTSTEAM",
+          "amountReq": 100,
+          "amountProd": 1,
+          "heatEnergy": 200,
+          "TURBINE": 1.0,
+          "HEATEXCHANGER": 0.5
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 263
+      }
+    },
+    {
+      "id": 3,
+      "symbol": "HOTSTEAM",
+      "name": "HOTSTEAM",
+      "color": 15193814,
+      "p": 4,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 300,
+      "texture": "hbm:textures/gui/fluids/hotsteam.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "unsiphonable": {},
+        "coolable": {
+          "coolsTo": "STEAM",
+          "amountReq": 1,
+          "amountProd": 10,
+          "heatEnergy": 2,
+          "TURBINE": 1.0,
+          "HEATEXCHANGER": 0.5
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 264
+      }
+    },
+    {
+      "id": 4,
+      "symbol": "SUPERHOTSTEAM",
+      "name": "SUPERHOTSTEAM",
+      "color": 15185847,
+      "p": 4,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 450,
+      "texture": "hbm:textures/gui/fluids/superhotsteam.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "unsiphonable": {},
+        "coolable": {
+          "coolsTo": "HOTSTEAM",
+          "amountReq": 1,
+          "amountProd": 10,
+          "heatEnergy": 18,
+          "TURBINE": 1.0,
+          "HEATEXCHANGER": 0.5
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 265
+      }
+    },
+    {
+      "id": 5,
+      "symbol": "ULTRAHOTSTEAM",
+      "name": "ULTRAHOTSTEAM",
+      "color": 14914451,
+      "p": 4,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 600,
+      "texture": "hbm:textures/gui/fluids/ultrahotsteam.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "unsiphonable": {},
+        "coolable": {
+          "coolsTo": "SUPERHOTSTEAM",
+          "amountReq": 1,
+          "amountProd": 10,
+          "heatEnergy": 120,
+          "TURBINE": 1.0,
+          "HEATEXCHANGER": 0.5
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 266
+      }
+    },
+    {
+      "id": 6,
+      "symbol": "COOLANT",
+      "name": "COOLANT",
+      "color": 14220543,
+      "p": 1,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/coolant.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 300,
+              "amountReq": 1,
+              "typeProduced": "COOLANT_HOT",
+              "amountProd": 1
+            }
+          ],
+          "HEATEXCHANGER": 1.0,
+          "PWR": 1.0,
+          "ICF": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 267
+      }
+    },
+    {
+      "id": 7,
+      "symbol": "LAVA",
+      "name": "LAVA",
+      "color": 16724736,
+      "p": 4,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NOWATER",
+      "temperature": 1200,
+      "texture": "hbm:textures/gui/fluids/lava.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 268
+      }
+    },
+    {
+      "id": 8,
+      "symbol": "DEUTERIUM",
+      "name": "DEUTERIUM",
+      "color": 255,
+      "p": 3,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/deuterium.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 255,
+          "labelColor": 16777215
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 5000
+        },
+        "combustible": {
+          "grade": "HIGH",
+          "energy": 10000
+        },
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 269
+      }
+    },
+    {
+      "id": 9,
+      "symbol": "TRITIUM",
+      "name": "TRITIUM",
+      "color": 153,
+      "p": 3,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "RADIATION",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/tritium.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 153,
+          "labelColor": 15335338
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 5000
+        },
+        "combustible": {
+          "grade": "HIGH",
+          "energy": 10000
+        },
+        "gaseous": {},
+        "ventradiation": {
+          "radiation": 0.0010000000474974513
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 270
+      }
+    },
+    {
+      "id": 10,
+      "symbol": "OIL",
+      "name": "OIL",
+      "color": 131586,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/oil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 4342338
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 25000
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 10,
+              "amountReq": 1,
+              "typeProduced": "HOTOIL",
+              "amountProd": 1
+            }
+          ],
+          "BOILER": 1.0,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 271
+      }
+    },
+    {
+      "id": 11,
+      "symbol": "HOTOIL",
+      "name": "HOTOIL",
+      "color": 3148032,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 350,
+      "texture": "hbm:textures/gui/fluids/hotoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "coolable": {
+          "coolsTo": "OIL",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 10,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 272
+      }
+    },
+    {
+      "id": 12,
+      "symbol": "HEAVYOIL",
+      "name": "HEAVYOIL",
+      "color": 1315602,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/heavyoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 5324601
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 55000
+        },
+        "combustible": {
+          "energy": 68700,
+          "grade": "LOW"
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 273
+      }
+    },
+    {
+      "id": 13,
+      "symbol": "BITUMEN",
+      "name": "BITUMEN",
+      "color": 2040870,
+      "p": 2,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/bitumen.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 5920887
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 274
+      }
+    },
+    {
+      "id": 14,
+      "symbol": "SMEAR",
+      "name": "SMEAR",
+      "color": 1642241,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/smear.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 6442811
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 82500
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "combustible": {
+          "energy": 103000,
+          "grade": "LOW"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 275
+      }
+    },
+    {
+      "id": 15,
+      "symbol": "HEATINGOIL",
+      "name": "HEATINGOIL",
+      "color": 2168838,
+      "p": 2,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/heatingoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 6898229
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 391000
+        },
+        "combustible": {
+          "energy": 489000,
+          "grade": "LOW"
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 276
+      }
+    },
+    {
+      "id": 16,
+      "symbol": "RECLAIMED",
+      "name": "RECLAIMED",
+      "color": 3353378,
+      "p": 2,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/reclaimed.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16144163
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 113000
+        },
+        "combustible": {
+          "energy": 141000,
+          "grade": "LOW"
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 277
+      }
+    },
+    {
+      "id": 17,
+      "symbol": "PETROIL",
+      "name": "PETROIL",
+      "color": 4473149,
+      "p": 1,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/petroil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 2320886
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 130000
+        },
+        "combustible": {
+          "energy": 195000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 278
+      }
+    },
+    {
+      "id": 18,
+      "symbol": "LUBRICANT",
+      "name": "LUBRICANT",
+      "color": 6316128,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lubricant.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 15846405
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 279
+      }
+    },
+    {
+      "id": 19,
+      "symbol": "NAPHTHA",
+      "name": "NAPHTHA",
+      "color": 5855044,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/naphtha.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 6253892
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 110000
+        },
+        "combustible": {
+          "energy": 165000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 280
+      }
+    },
+    {
+      "id": 20,
+      "symbol": "DIESEL",
+      "name": "DIESEL",
+      "color": 15920853,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/diesel.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16722988
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 550000
+        },
+        "combustible": {
+          "energy": 1370000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 281
+      }
+    },
+    {
+      "id": 21,
+      "symbol": "LIGHTOIL",
+      "name": "LIGHTOIL",
+      "color": 9204817,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lightoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 11823954
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 1460000
+        },
+        "combustible": {
+          "energy": 2200000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 282
+      }
+    },
+    {
+      "id": 22,
+      "symbol": "KEROSENE",
+      "name": "KEROSENE",
+      "color": 16754130,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/kerosene.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16725885
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 2560000
+        },
+        "combustible": {
+          "energy": 3850000,
+          "grade": "AERO"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 283
+      }
+    },
+    {
+      "id": 23,
+      "symbol": "GAS",
+      "name": "GAS",
+      "color": 16776941,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/gas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 16729413,
+          "labelColor": 16771455
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 50000
+        },
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "combustible": {
+          "energy": 75000,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 284
+      }
+    },
+    {
+      "id": 24,
+      "symbol": "PETROLEUM",
+      "name": "PETROLEUM",
+      "color": 8173513,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/petroleum.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 6192383,
+          "labelColor": 16771455
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 1650000
+        },
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "combustible": {
+          "energy": 2470000,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 285
+      }
+    },
+    {
+      "id": 25,
+      "symbol": "LPG",
+      "name": "LPG",
+      "color": 4671466,
+      "p": 1,
+      "f": 3,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lpg.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "flammable": {
+          "energy": 1810000
+        },
+        "combustible": {
+          "energy": 4530000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00039999998989515007
+          },
+          "release": {}
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 286
+      }
+    },
+    {
+      "id": 26,
+      "symbol": "BIOGAS",
+      "name": "BIOGAS",
+      "color": 12571516,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/biogas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 13172511,
+          "labelColor": 3158064
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 62500
+        },
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "combustible": {
+          "energy": 78100,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 287
+      }
+    },
+    {
+      "id": 27,
+      "symbol": "BIOFUEL",
+      "name": "BIOFUEL",
+      "color": 15659636,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/biofuel.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 10401315
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 500000
+        },
+        "combustible": {
+          "energy": 1250000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 288
+      }
+    },
+    {
+      "id": 28,
+      "symbol": "NITAN",
+      "name": "NITAN",
+      "color": 8394925,
+      "p": 2,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/nitan.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 7021452
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 64000000
+        },
+        "combustible": {
+          "energy": 160000000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 289
+      }
+    },
+    {
+      "id": 29,
+      "symbol": "UF6",
+      "name": "UF6",
+      "color": 13749950,
+      "p": 4,
+      "f": 0,
+      "r": 2,
+      "symbolMark": "RADIATION",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/uf6.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "ventradiation": {
+          "radiation": 0.20000000298023224
+        },
+        "corrosive": {
+          "rating": 15
+        },
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 290
+      }
+    },
+    {
+      "id": 30,
+      "symbol": "PUF6",
+      "name": "PUF6",
+      "color": 5000268,
+      "p": 4,
+      "f": 0,
+      "r": 4,
+      "symbolMark": "RADIATION",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/puf6.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "ventradiation": {
+          "radiation": 0.10000000149011612
+        },
+        "corrosive": {
+          "rating": 15
+        },
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 291
+      }
+    },
+    {
+      "id": 31,
+      "symbol": "SAS3",
+      "name": "SAS3",
+      "color": 5242876,
+      "p": 5,
+      "f": 0,
+      "r": 4,
+      "symbolMark": "RADIATION",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/sas3.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "ventradiation": {
+          "radiation": 1.0
+        },
+        "corrosive": {
+          "rating": 30
+        },
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 292
+      }
+    },
+    {
+      "id": 32,
+      "symbol": "SCHRABIDIC",
+      "name": "SCHRABIDIC",
+      "color": 27499,
+      "p": 5,
+      "f": 0,
+      "r": 5,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/schrabidic.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "ventradiation": {
+          "radiation": 1.0
+        },
+        "corrosive": {
+          "rating": 75
+        },
+        "poison": {
+          "withering": true,
+          "level": 2
+        },
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 293
+      }
+    },
+    {
+      "id": 33,
+      "symbol": "AMAT",
+      "name": "AMAT",
+      "color": 65793,
+      "p": 5,
+      "f": 0,
+      "r": 5,
+      "symbolMark": "ANTIMATTER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/amat.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "amat": {},
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 294
+      }
+    },
+    {
+      "id": 34,
+      "symbol": "ASCHRAB",
+      "name": "ASCHRAB",
+      "color": 11862016,
+      "p": 5,
+      "f": 0,
+      "r": 5,
+      "symbolMark": "ANTIMATTER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/aschrab.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "amat": {},
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 295
+      }
+    },
+    {
+      "id": 35,
+      "symbol": "PEROXIDE",
+      "name": "PEROXIDE",
+      "color": 16775082,
+      "p": 3,
+      "f": 0,
+      "r": 3,
+      "symbolMark": "OXIDIZER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/peroxide.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 40
+        },
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 296
+      }
+    },
+    {
+      "id": 36,
+      "symbol": "WATZ",
+      "name": "WATZ",
+      "color": 8807742,
+      "p": 4,
+      "f": 0,
+      "r": 3,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/watz.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 60
+        },
+        "ventradiation": {
+          "radiation": 0.10000000149011612
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 0.0005000000237487257
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 297
+      }
+    },
+    {
+      "id": 37,
+      "symbol": "CRYOGEL",
+      "name": "CRYOGEL",
+      "color": 3342335,
+      "p": 2,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "CROYGENIC",
+      "temperature": -170,
+      "texture": "hbm:textures/gui/fluids/cryogel.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 298
+      }
+    },
+    {
+      "id": 38,
+      "symbol": "HYDROGEN",
+      "name": "HYDROGEN",
+      "color": 4359924,
+      "p": 3,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "CROYGENIC",
+      "temperature": -260,
+      "texture": "hbm:textures/gui/fluids/hydrogen.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 4359924,
+          "labelColor": 16777215
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 5000
+        },
+        "combustible": {
+          "grade": "HIGH",
+          "energy": 10000
+        },
+        "liquid": {},
+        "gaseous_art": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 299
+      }
+    },
+    {
+      "id": 39,
+      "symbol": "OXYGEN",
+      "name": "OXYGEN",
+      "color": 10010105,
+      "p": 3,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "CROYGENIC",
+      "temperature": -100,
+      "texture": "hbm:textures/gui/fluids/oxygen.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 10010105,
+          "labelColor": 16777215
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "gaseous_art": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 300
+      }
+    },
+    {
+      "id": 40,
+      "symbol": "XENON",
+      "name": "XENON",
+      "color": 12207592,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "ASPHYXIANT",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/xenon.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 9183743,
+          "labelColor": 3158064
+        }
+      },
+      "traits": {
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 301
+      }
+    },
+    {
+      "id": 41,
+      "symbol": "BALEFIRE",
+      "name": "BALEFIRE",
+      "color": 2678830,
+      "p": 4,
+      "f": 4,
+      "r": 3,
+      "symbolMark": "RADIATION",
+      "temperature": 1500,
+      "texture": "hbm:textures/gui/fluids/balefire.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 50
+        },
+        "flammable": {
+          "energy": 256000000
+        },
+        "combustible": {
+          "energy": 640000000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 302
+      }
+    },
+    {
+      "id": 42,
+      "symbol": "MERCURY",
+      "name": "MERCURY",
+      "color": 8421504,
+      "p": 2,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/mercury.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "poison": {
+          "withering": false,
+          "level": 2
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 303
+      }
+    },
+    {
+      "id": 43,
+      "symbol": "PAIN",
+      "name": "PAIN",
+      "color": 9667905,
+      "p": 2,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "ACID",
+      "temperature": 300,
+      "texture": "hbm:textures/gui/fluids/pain.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 30
+        },
+        "poison": {
+          "withering": true,
+          "level": 2
+        },
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 304
+      }
+    },
+    {
+      "id": 44,
+      "symbol": "WASTEFLUID",
+      "name": "WASTEFLUID",
+      "color": 5522432,
+      "p": 2,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "RADIATION",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/wastefluid.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "ventradiation": {
+          "radiation": 0.5
+        },
+        "nocontainer": {},
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 305
+      }
+    },
+    {
+      "id": 45,
+      "symbol": "WASTEGAS",
+      "name": "WASTEGAS",
+      "color": 12105912,
+      "p": 2,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "RADIATION",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/wastegas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "ventradiation": {
+          "radiation": 0.5
+        },
+        "nocontainer": {},
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 306
+      }
+    },
+    {
+      "id": 46,
+      "symbol": "GASOLINE",
+      "name": "GASOLINE",
+      "color": 4478834,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/gasoline.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 3110727
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 605000
+        },
+        "combustible": {
+          "energy": 1510000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 307
+      }
+    },
+    {
+      "id": 47,
+      "symbol": "COALGAS",
+      "name": "COALGAS",
+      "color": 4478834,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/coalgas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 3020127
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 6350000
+        },
+        "combustible": {
+          "energy": 9520000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 308
+      }
+    },
+    {
+      "id": 48,
+      "symbol": "SPENTSTEAM",
+      "name": "SPENTSTEAM",
+      "color": 4478834,
+      "p": 2,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/spentsteam.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 309
+      }
+    },
+    {
+      "id": 49,
+      "symbol": "FRACKSOL",
+      "name": "FRACKSOL",
+      "color": 7965291,
+      "p": 1,
+      "f": 3,
+      "r": 3,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/fracksol.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 5212287
+        }
+      },
+      "traits": {
+        "corrosive": {
+          "rating": 15
+        },
+        "poison": {
+          "withering": false,
+          "level": 0
+        },
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 310
+      }
+    },
+    {
+      "id": 50,
+      "symbol": "PLASMA_DT",
+      "name": "PLASMA_DT",
+      "color": 16232414,
+      "p": 0,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "RADIATION",
+      "temperature": 3250,
+      "texture": "hbm:textures/gui/fluids/plasma_dt.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "noid": {},
+        "plasma": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 311
+      }
+    },
+    {
+      "id": 51,
+      "symbol": "PLASMA_HD",
+      "name": "PLASMA_HD",
+      "color": 15773172,
+      "p": 0,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "RADIATION",
+      "temperature": 2500,
+      "texture": "hbm:textures/gui/fluids/plasma_hd.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "noid": {},
+        "plasma": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 312
+      }
+    },
+    {
+      "id": 52,
+      "symbol": "PLASMA_HT",
+      "name": "PLASMA_HT",
+      "color": 13741042,
+      "p": 0,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "RADIATION",
+      "temperature": 3000,
+      "texture": "hbm:textures/gui/fluids/plasma_ht.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "noid": {},
+        "plasma": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 313
+      }
+    },
+    {
+      "id": 53,
+      "symbol": "PLASMA_XM",
+      "name": "PLASMA_XM",
+      "color": 13018623,
+      "p": 0,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "RADIATION",
+      "temperature": 4250,
+      "texture": "hbm:textures/gui/fluids/plasma_xm.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "noid": {},
+        "plasma": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 314
+      }
+    },
+    {
+      "id": 54,
+      "symbol": "PLASMA_BF",
+      "name": "PLASMA_BF",
+      "color": 11006371,
+      "p": 4,
+      "f": 5,
+      "r": 4,
+      "symbolMark": "ANTIMATTER",
+      "temperature": 8500,
+      "texture": "hbm:textures/gui/fluids/plasma_bf.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "noid": {},
+        "plasma": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 315
+      }
+    },
+    {
+      "id": 55,
+      "symbol": "CARBONDIOXIDE",
+      "name": "CARBONDIOXIDE",
+      "color": 4210752,
+      "p": 3,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "ASPHYXIANT",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/carbondioxide.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 2.0000001313746907e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 316
+      }
+    },
+    {
+      "id": 56,
+      "symbol": "PLASMA_DH3",
+      "name": "PLASMA_DH3",
+      "color": 16745386,
+      "p": 0,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "RADIATION",
+      "temperature": 3480,
+      "texture": "hbm:textures/gui/fluids/plasma_dh3.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "nocontainer": {},
+        "noid": {},
+        "plasma": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 317
+      }
+    },
+    {
+      "id": 57,
+      "symbol": "HELIUM3",
+      "name": "HELIUM3",
+      "color": 16576708,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "ASPHYXIANT",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/helium3.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 16605983,
+          "labelColor": 16777215
+        }
+      },
+      "traits": {
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 318
+      }
+    },
+    {
+      "id": 58,
+      "symbol": "DEATH",
+      "name": "DEATH",
+      "color": 7436936,
+      "p": 2,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "ACID",
+      "temperature": 300,
+      "texture": "hbm:textures/gui/fluids/death.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 80
+        },
+        "poison": {
+          "withering": true,
+          "level": 4
+        },
+        "leadcontainer": {},
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 319
+      }
+    },
+    {
+      "id": 59,
+      "symbol": "ETHANOL",
+      "name": "ETHANOL",
+      "color": 14745599,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/ethanol.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 15400947
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 275000
+        },
+        "combustible": {
+          "energy": 687000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 320
+      }
+    },
+    {
+      "id": 60,
+      "symbol": "HEAVYWATER",
+      "name": "HEAVYWATER",
+      "color": 41136,
+      "p": 1,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/heavywater.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 300,
+              "amountReq": 1,
+              "typeProduced": "HEAVYWATER_HOT",
+              "amountProd": 1
+            }
+          ],
+          "PWR": 1.0
+        },
+        "pwrmoderator": {
+          "multiplier": 1.25
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 321
+      }
+    },
+    {
+      "id": 61,
+      "symbol": "CRACKOIL",
+      "name": "CRACKOIL",
+      "color": 131586,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/crackoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 4342338
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 31200
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 10,
+              "amountReq": 1,
+              "typeProduced": "HOTCRACKOIL",
+              "amountProd": 1
+            }
+          ],
+          "BOILER": 1.0,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 322
+      }
+    },
+    {
+      "id": 62,
+      "symbol": "COALOIL",
+      "name": "COALOIL",
+      "color": 131586,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/coaloil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 4342338
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 1100000
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 323
+      }
+    },
+    {
+      "id": 63,
+      "symbol": "HOTCRACKOIL",
+      "name": "HOTCRACKOIL",
+      "color": 3148032,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 350,
+      "texture": "hbm:textures/gui/fluids/hotcrackoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "coolable": {
+          "coolsTo": "CRACKOIL",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 10,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 324
+      }
+    },
+    {
+      "id": 64,
+      "symbol": "NAPHTHA_CRACK",
+      "name": "NAPHTHA_CRACK",
+      "color": 5855044,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/naphtha_crack.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 6253892
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 85900
+        },
+        "combustible": {
+          "energy": 128000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 325
+      }
+    },
+    {
+      "id": 65,
+      "symbol": "LIGHTOIL_CRACK",
+      "name": "LIGHTOIL_CRACK",
+      "color": 9204817,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lightoil_crack.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 11823954
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 916000
+        },
+        "combustible": {
+          "energy": 1370000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 326
+      }
+    },
+    {
+      "id": 66,
+      "symbol": "DIESEL_CRACK",
+      "name": "DIESEL_CRACK",
+      "color": 15920853,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/diesel_crack.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16722988
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 515000
+        },
+        "combustible": {
+          "energy": 1280000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 327
+      }
+    },
+    {
+      "id": 67,
+      "symbol": "AROMATICS",
+      "name": "AROMATICS",
+      "color": 6856858,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/aromatics.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 6856858,
+          "labelColor": 15585063
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 458000
+        },
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 328
+      }
+    },
+    {
+      "id": 68,
+      "symbol": "UNSATURATEDS",
+      "name": "UNSATURATEDS",
+      "color": 6459310,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/unsaturateds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 6459310,
+          "labelColor": 15585063
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 3660000
+        },
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 329
+      }
+    },
+    {
+      "id": 69,
+      "symbol": "SALIENT",
+      "name": "SALIENT",
+      "color": 4554541,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/salient.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "delicious": {},
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 330
+      }
+    },
+    {
+      "id": 70,
+      "symbol": "XPJUICE",
+      "name": "XPJUICE",
+      "color": 12320521,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/xpjuice.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 331
+      }
+    },
+    {
+      "id": 71,
+      "symbol": "ENDERJUICE",
+      "name": "ENDERJUICE",
+      "color": 1210214,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/enderjuice.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 332
+      }
+    },
+    {
+      "id": 72,
+      "symbol": "PETROIL_LEADED",
+      "name": "PETROIL_LEADED",
+      "color": 4473149,
+      "p": 1,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/petroil_leaded.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 2306550
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 195000
+        },
+        "combustible": {
+          "energy": 293000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513,
+            "HEAVYMETAL": 0.0005000000237487257
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05,
+            "HEAVYMETAL": 5.0000002374872565e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 333
+      }
+    },
+    {
+      "id": 73,
+      "symbol": "GASOLINE_LEADED",
+      "name": "GASOLINE_LEADED",
+      "color": 4478834,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/gasoline_leaded.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 3110746
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 907000
+        },
+        "combustible": {
+          "energy": 2260000,
+          "grade": "HIGH"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513,
+            "HEAVYMETAL": 0.0005000000237487257
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05,
+            "HEAVYMETAL": 5.0000002374872565e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 334
+      }
+    },
+    {
+      "id": 74,
+      "symbol": "COALGAS_LEADED",
+      "name": "COALGAS_LEADED",
+      "color": 4478834,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/coalgas_leaded.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 1971551
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 9520000
+        },
+        "combustible": {
+          "energy": 14200000,
+          "grade": "MEDIUM"
+        },
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513,
+            "HEAVYMETAL": 0.0005000000237487257
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05,
+            "HEAVYMETAL": 5.0000002374872565e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 335
+      }
+    },
+    {
+      "id": 75,
+      "symbol": "SULFURIC_ACID",
+      "name": "SULFURIC_ACID",
+      "color": 11577956,
+      "p": 3,
+      "f": 0,
+      "r": 2,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/sulfuric_acid.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 50
+        },
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 336
+      }
+    },
+    {
+      "id": 76,
+      "symbol": "COOLANT_HOT",
+      "name": "COOLANT_HOT",
+      "color": 10048094,
+      "p": 1,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 600,
+      "texture": "hbm:textures/gui/fluids/coolant_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "coolable": {
+          "coolsTo": "COOLANT",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 300,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 337
+      }
+    },
+    {
+      "id": 77,
+      "symbol": "MUG",
+      "name": "MUG",
+      "color": 4926760,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/mug.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "delicious": {},
+        "liquid": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 400,
+              "amountReq": 1,
+              "typeProduced": "MUG_HOT",
+              "amountProd": 1
+            }
+          ],
+          "HEATEXCHANGER": 1.0,
+          "PWR": 1.0,
+          "ICF": 1.25
+        },
+        "pwrmoderator": {
+          "multiplier": 1.15
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 338
+      }
+    },
+    {
+      "id": 78,
+      "symbol": "MUG_HOT",
+      "name": "MUG_HOT",
+      "color": 7023136,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 500,
+      "texture": "hbm:textures/gui/fluids/mug_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "delicious": {},
+        "liquid": {},
+        "coolable": {
+          "coolsTo": "MUG",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 400,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 339
+      }
+    },
+    {
+      "id": 79,
+      "symbol": "WOODOIL",
+      "name": "WOODOIL",
+      "color": 8682836,
+      "p": 2,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/woodoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 12549711
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 110000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 340
+      }
+    },
+    {
+      "id": 80,
+      "symbol": "COALCREOSOTE",
+      "name": "COALCREOSOTE",
+      "color": 5335375,
+      "p": 3,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/coalcreosote.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 2644543
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 250000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 341
+      }
+    },
+    {
+      "id": 81,
+      "symbol": "SEEDSLURRY",
+      "name": "SEEDSLURRY",
+      "color": 8176478,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/seedslurry.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 8176478
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 342
+      }
+    },
+    {
+      "id": 82,
+      "symbol": "NITRIC_ACID",
+      "name": "NITRIC_ACID",
+      "color": 12286494,
+      "p": 3,
+      "f": 0,
+      "r": 2,
+      "symbolMark": "OXIDIZER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/nitric_acid.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "corrosive": {
+          "rating": 60
+        },
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 0.0005000000237487257
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 343
+      }
+    },
+    {
+      "id": 83,
+      "symbol": "SOLVENT",
+      "name": "SOLVENT",
+      "color": 15000559,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/solvent.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 15000559
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "corrosive": {
+          "rating": 30
+        },
+        "flammable": {
+          "energy": 100000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 344
+      }
+    },
+    {
+      "id": 84,
+      "symbol": "BLOOD",
+      "name": "BLOOD",
+      "color": 11674660,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/blood.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "delicious": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 500,
+              "amountReq": 1,
+              "typeProduced": "BLOOD_HOT",
+              "amountProd": 1
+            }
+          ],
+          "HEATEXCHANGER": 1.0,
+          "ICF": 1.25
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 345
+      }
+    },
+    {
+      "id": 85,
+      "symbol": "BLOOD_HOT",
+      "name": "BLOOD_HOT",
+      "color": 15868953,
+      "p": 3,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 666,
+      "texture": "hbm:textures/gui/fluids/blood_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "coolable": {
+          "coolsTo": "BLOOD",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 500,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 346
+      }
+    },
+    {
+      "id": 86,
+      "symbol": "SYNGAS",
+      "name": "SYNGAS",
+      "color": 1250067,
+      "p": 1,
+      "f": 4,
+      "r": 2,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/syngas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 16777215,
+          "labelColor": 1250067
+        }
+      },
+      "traits": {
+        "gaseous": {},
+        "flammable": {
+          "energy": 1650000
+        },
+        "combustible": {
+          "energy": 2060000,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 347
+      }
+    },
+    {
+      "id": 87,
+      "symbol": "OXYHYDROGEN",
+      "name": "OXYHYDROGEN",
+      "color": 4734913,
+      "p": 0,
+      "f": 4,
+      "r": 2,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/oxyhydrogen.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "flammable": {
+          "energy": 5000
+        },
+        "combustible": {
+          "energy": 15000,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 348
+      }
+    },
+    {
+      "id": 88,
+      "symbol": "RADIOSOLVENT",
+      "name": "RADIOSOLVENT",
+      "color": 10803165,
+      "p": 3,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/radiosolvent.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "corrosive": {
+          "rating": 50
+        },
+        "flammable": {
+          "energy": 150000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 349
+      }
+    },
+    {
+      "id": 89,
+      "symbol": "CHLORINE",
+      "name": "CHLORINE",
+      "color": 12236146,
+      "p": 3,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "OXIDIZER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/chlorine.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 12236146,
+          "labelColor": 8944436
+        }
+      },
+      "traits": {
+        "gaseous": {},
+        "corrosive": {
+          "rating": 25
+        },
+        "toxin": {
+          "entries": [
+            {
+              "type": "directdamage",
+              "source": "hbm:cloud",
+              "amount": 2.0,
+              "delay": 20,
+              "masktype": "GAS_LUNG",
+              "hazmat": false
+            }
+          ]
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 350
+      }
+    },
+    {
+      "id": 90,
+      "symbol": "HEAVYOIL_VACUUM",
+      "name": "HEAVYOIL_VACUUM",
+      "color": 1249812,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/heavyoil_vacuum.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 5324601
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 187000
+        },
+        "combustible": {
+          "energy": 234000,
+          "grade": "LOW"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 351
+      }
+    },
+    {
+      "id": 91,
+      "symbol": "REFORMATE",
+      "name": "REFORMATE",
+      "color": 8606834,
+      "p": 2,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/reformate.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 13730006
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 2400000
+        },
+        "combustible": {
+          "energy": 6000000,
+          "grade": "HIGH"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 352
+      }
+    },
+    {
+      "id": 92,
+      "symbol": "LIGHTOIL_VACUUM",
+      "name": "LIGHTOIL_VACUUM",
+      "color": 9209937,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lightoil_vacuum.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 11823954
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 3000000
+        },
+        "combustible": {
+          "energy": 4500000,
+          "grade": "MEDIUM"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 353
+      }
+    },
+    {
+      "id": 93,
+      "symbol": "SOURGAS",
+      "name": "SOURGAS",
+      "color": 13221389,
+      "p": 4,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/sourgas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 13221389,
+          "labelColor": 3158064
+        }
+      },
+      "traits": {
+        "gaseous": {},
+        "corrosive": {
+          "rating": 10
+        },
+        "poison": {
+          "withering": false,
+          "level": 1
+        },
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 0.0005000000237487257
+          }
+        },
+        "flammable": {
+          "energy": 250000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 354
+      }
+    },
+    {
+      "id": 94,
+      "symbol": "XYLENE",
+      "name": "XYLENE",
+      "color": 6049398,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/xylene.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 10715350
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 3150000
+        },
+        "combustible": {
+          "energy": 7870000,
+          "grade": "HIGH"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 355
+      }
+    },
+    {
+      "id": 95,
+      "symbol": "HEATINGOIL_VACUUM",
+      "name": "HEATINGOIL_VACUUM",
+      "color": 2170118,
+      "p": 2,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/heatingoil_vacuum.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 6898229
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 1310000
+        },
+        "combustible": {
+          "energy": 1640000,
+          "grade": "LOW"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 356
+      }
+    },
+    {
+      "id": 96,
+      "symbol": "DIESEL_REFORM",
+      "name": "DIESEL_REFORM",
+      "color": 13484998,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/diesel_reform.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16762112
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 1370000
+        },
+        "combustible": {
+          "energy": 3430000,
+          "grade": "HIGH"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 357
+      }
+    },
+    {
+      "id": 97,
+      "symbol": "DIESEL_CRACK_REFORM",
+      "name": "DIESEL_CRACK_REFORM",
+      "color": 13485004,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/diesel_crack_reform.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16762112
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 1280000
+        },
+        "combustible": {
+          "energy": 3210000,
+          "grade": "HIGH"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 358
+      }
+    },
+    {
+      "id": 98,
+      "symbol": "KEROSENE_REFORM",
+      "name": "KEROSENE_REFORM",
+      "color": 16754163,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/kerosene_reform.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 16725885
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 6400000
+        },
+        "combustible": {
+          "energy": 9600000,
+          "grade": "AERO"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 359
+      }
+    },
+    {
+      "id": 99,
+      "symbol": "REFORMGAS",
+      "name": "REFORMGAS",
+      "color": 6513326,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/reformgas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 9671423,
+          "labelColor": 16759186
+        }
+      },
+      "traits": {
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 10500000
+        },
+        "combustible": {
+          "energy": 15700000,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 360
+      }
+    },
+    {
+      "id": 100,
+      "symbol": "COLLOID",
+      "name": "COLLOID",
+      "color": 7895160,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/colloid.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 361
+      }
+    },
+    {
+      "id": 101,
+      "symbol": "PHOSGENE",
+      "name": "PHOSGENE",
+      "color": 13616292,
+      "p": 4,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/phosgene.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 13616292,
+          "labelColor": 3544084
+        }
+      },
+      "traits": {
+        "gaseous": {},
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 0.0005000000237487257
+          }
+        },
+        "toxin": {
+          "entries": [
+            {
+              "type": "directdamage",
+              "source": "hbm:cloud",
+              "amount": 4.0,
+              "delay": 20,
+              "masktype": "GAS_LUNG",
+              "hazmat": false
+            }
+          ]
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 362
+      }
+    },
+    {
+      "id": 102,
+      "symbol": "MUSTARDGAS",
+      "name": "MUSTARDGAS",
+      "color": 12236146,
+      "p": 4,
+      "f": 1,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/mustardgas.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 12236146,
+          "labelColor": 3544084
+        }
+      },
+      "traits": {
+        "gaseous": {},
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 0.0005000000237487257
+          }
+        },
+        "toxin": {
+          "entries": [
+            {
+              "type": "directdamage",
+              "source": "hbm:cloud",
+              "amount": 4.0,
+              "delay": 10,
+              "masktype": "GAS_BLISTERING",
+              "hazmat": false
+            },
+            {
+              "type": "effects",
+              "masktype": "GAS_BLISTERING",
+              "hazmat": true,
+              "effects": [
+                [
+                  "minecraft:wither",
+                  100,
+                  1,
+                  false
+                ],
+                [
+                  "minecraft:nausea",
+                  100,
+                  0,
+                  false
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 363
+      }
+    },
+    {
+      "id": 103,
+      "symbol": "IONGEL",
+      "name": "IONGEL",
+      "color": 12124159,
+      "p": 1,
+      "f": 0,
+      "r": 4,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/iongel.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 364
+      }
+    },
+    {
+      "id": 104,
+      "symbol": "OIL_COKER",
+      "name": "OIL_COKER",
+      "color": 6146,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/oil_coker.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 31200
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 365
+      }
+    },
+    {
+      "id": 105,
+      "symbol": "NAPHTHA_COKER",
+      "name": "NAPHTHA_COKER",
+      "color": 4806980,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/naphtha_coker.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 125000
+        },
+        "combustible": {
+          "energy": 187000,
+          "grade": "MEDIUM"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 366
+      }
+    },
+    {
+      "id": 106,
+      "symbol": "GAS_COKER",
+      "name": "GAS_COKER",
+      "color": 14611658,
+      "p": 1,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/gas_coker.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 62500
+        },
+        "combustible": {
+          "energy": 93700,
+          "grade": "GAS"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 367
+      }
+    },
+    {
+      "id": 107,
+      "symbol": "EGG",
+      "name": "EGG",
+      "color": 13812339,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/egg.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 368
+      }
+    },
+    {
+      "id": 108,
+      "symbol": "CHOLESTEROL",
+      "name": "CHOLESTEROL",
+      "color": 14078653,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/cholesterol.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 369
+      }
+    },
+    {
+      "id": 109,
+      "symbol": "ESTRADIOL",
+      "name": "ESTRADIOL",
+      "color": 13489624,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/estradiol.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "toxin": {
+          "entries": [
+            {
+              "type": "effects",
+              "masktype": "PARTICLE_FINE",
+              "hazmat": false,
+              "effects": [
+                [
+                  "hbm:death",
+                  72000,
+                  0,
+                  false
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 370
+      }
+    },
+    {
+      "id": 110,
+      "symbol": "FISHOIL",
+      "name": "FISHOIL",
+      "color": 4934213,
+      "p": 0,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/fishoil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 75000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 371
+      }
+    },
+    {
+      "id": 111,
+      "symbol": "SUNFLOWEROIL",
+      "name": "SUNFLOWEROIL",
+      "color": 13348165,
+      "p": 0,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/sunfloweroil.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 50000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 372
+      }
+    },
+    {
+      "id": 112,
+      "symbol": "NITROGLYCERIN",
+      "name": "NITROGLYCERIN",
+      "color": 9612454,
+      "p": 0,
+      "f": 4,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/nitroglycerin.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 373
+      }
+    },
+    {
+      "id": 113,
+      "symbol": "REDMUD",
+      "name": "REDMUD",
+      "color": 14177848,
+      "p": 3,
+      "f": 0,
+      "r": 4,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/redmud.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "leadcontainer": {},
+        "corrosive": {
+          "rating": 60
+        },
+        "flammable": {
+          "energy": 1000
+        },
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 0.0005000000237487257
+          }
+        },
+        "toxin": {
+          "entries": [
+            {
+              "type": "effects",
+              "masktype": "GAS_BLISTERING",
+              "hazmat": false,
+              "effects": [
+                [
+                  "minecraft:wither",
+                  600,
+                  2,
+                  false
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 374
+      }
+    },
+    {
+      "id": 114,
+      "symbol": "CHLOROCALCITE_SOLUTION",
+      "name": "CHLOROCALCITE_SOLUTION",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/chlorocalcite_solution.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "nocontainer": {},
+        "corrosive": {
+          "rating": 60
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 375
+      }
+    },
+    {
+      "id": 115,
+      "symbol": "CHLOROCALCITE_MIX",
+      "name": "CHLOROCALCITE_MIX",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/chlorocalcite_mix.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "nocontainer": {},
+        "corrosive": {
+          "rating": 60
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 376
+      }
+    },
+    {
+      "id": 116,
+      "symbol": "CHLOROCALCITE_CLEANED",
+      "name": "CHLOROCALCITE_CLEANED",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/chlorocalcite_cleaned.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "nocontainer": {},
+        "corrosive": {
+          "rating": 60
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 377
+      }
+    },
+    {
+      "id": 117,
+      "symbol": "POTASSIUM_CHLORIDE",
+      "name": "POTASSIUM_CHLORIDE",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/potassium_chloride.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "nocontainer": {},
+        "corrosive": {
+          "rating": 60
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 378
+      }
+    },
+    {
+      "id": 118,
+      "symbol": "CALCIUM_CHLORIDE",
+      "name": "CALCIUM_CHLORIDE",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/calcium_chloride.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "nocontainer": {},
+        "corrosive": {
+          "rating": 60
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 379
+      }
+    },
+    {
+      "id": 119,
+      "symbol": "CALCIUM_SOLUTION",
+      "name": "CALCIUM_SOLUTION",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/calcium_solution.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "nocontainer": {},
+        "corrosive": {
+          "rating": 60
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 380
+      }
+    },
+    {
+      "id": 120,
+      "symbol": "SMOKE",
+      "name": "SMOKE",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/smoke.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "noid": {},
+        "nocontainer": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 381
+      }
+    },
+    {
+      "id": 121,
+      "symbol": "SMOKE_LEADED",
+      "name": "SMOKE_LEADED",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/smoke_leaded.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "noid": {},
+        "nocontainer": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 382
+      }
+    },
+    {
+      "id": 122,
+      "symbol": "SMOKE_POISON",
+      "name": "SMOKE_POISON",
+      "color": 8421504,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/smoke_poison.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "noid": {},
+        "nocontainer": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 383
+      }
+    },
+    {
+      "id": 123,
+      "symbol": "HELIUM4",
+      "name": "HELIUM4",
+      "color": 15026954,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "ASPHYXIANT",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/helium4.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 16605983,
+          "labelColor": 16776960
+        }
+      },
+      "traits": {
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 384
+      }
+    },
+    {
+      "id": 124,
+      "symbol": "HEAVYWATER_HOT",
+      "name": "HEAVYWATER_HOT",
+      "color": 5046395,
+      "p": 1,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 600,
+      "texture": "hbm:textures/gui/fluids/heavywater_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "coolable": {
+          "coolsTo": "HEAVYWATER",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 300,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 385
+      }
+    },
+    {
+      "id": 125,
+      "symbol": "SODIUM",
+      "name": "SODIUM",
+      "color": 13423829,
+      "p": 1,
+      "f": 2,
+      "r": 3,
+      "symbolMark": "NONE",
+      "temperature": 400,
+      "texture": "hbm:textures/gui/fluids/sodium.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 400,
+              "amountReq": 1,
+              "typeProduced": "SODIUM_HOT",
+              "amountProd": 1
+            }
+          ],
+          "PWR": 2.5,
+          "ICF": 3.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 386
+      }
+    },
+    {
+      "id": 126,
+      "symbol": "SODIUM_HOT",
+      "name": "SODIUM_HOT",
+      "color": 14855617,
+      "p": 1,
+      "f": 2,
+      "r": 3,
+      "symbolMark": "NONE",
+      "temperature": 1200,
+      "texture": "hbm:textures/gui/fluids/sodium_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "coolable": {
+          "coolsTo": "SODIUM",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 400,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 387
+      }
+    },
+    {
+      "id": 127,
+      "symbol": "THORIUM_SALT",
+      "name": "THORIUM_SALT",
+      "color": 8017218,
+      "p": 2,
+      "f": 0,
+      "r": 3,
+      "symbolMark": "NONE",
+      "temperature": 800,
+      "texture": "hbm:textures/gui/fluids/thorium_salt.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "corrosive": {
+          "rating": 65
+        },
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 400,
+              "amountReq": 1,
+              "typeProduced": "THORIUM_SALT_HOT",
+              "amountProd": 1
+            }
+          ],
+          "PWR": 1.0
+        },
+        "pwrmoderator": {
+          "multiplier": 2.5
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 388
+      }
+    },
+    {
+      "id": 128,
+      "symbol": "THORIUM_SALT_HOT",
+      "name": "THORIUM_SALT_HOT",
+      "color": 4077095,
+      "p": 2,
+      "f": 0,
+      "r": 3,
+      "symbolMark": "NONE",
+      "temperature": 1600,
+      "texture": "hbm:textures/gui/fluids/thorium_salt_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "corrosive": {
+          "rating": 65
+        },
+        "coolable": {
+          "coolsTo": "THORIUM_SALT_DEPLETED",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 400,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 389
+      }
+    },
+    {
+      "id": 129,
+      "symbol": "THORIUM_SALT_DEPLETED",
+      "name": "THORIUM_SALT_DEPLETED",
+      "color": 3157276,
+      "p": 2,
+      "f": 0,
+      "r": 3,
+      "symbolMark": "NONE",
+      "temperature": 800,
+      "texture": "hbm:textures/gui/fluids/thorium_salt_depleted.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "corrosive": {
+          "rating": 65
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 390
+      }
+    },
+    {
+      "id": 130,
+      "symbol": "FULLERENE",
+      "name": "FULLERENE",
+      "color": 16744429,
+      "p": 3,
+      "f": 3,
+      "r": 3,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/fullerene.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "corrosive": {
+          "rating": 65
+        },
+        "polluting": {
+          "burn": {},
+          "release": {
+            "POISON": 2.0000001313746907e-05
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 391
+      }
+    },
+    {
+      "id": 131,
+      "symbol": "PHEROMONE",
+      "name": "PHEROMONE",
+      "color": 6268648,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/pheromone.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "pheromone": {
+          "type": 1
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 392
+      }
+    },
+    {
+      "id": 132,
+      "symbol": "PHEROMONE_M",
+      "name": "PHEROMONE_M",
+      "color": 4770224,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/pheromone_m.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "pheromone": {
+          "type": 2
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 393
+      }
+    },
+    {
+      "id": 133,
+      "symbol": "OIL_DS",
+      "name": "OIL_DS",
+      "color": 1184274,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/oil_ds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 4342338
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 10,
+              "amountReq": 1,
+              "typeProduced": "HOTOIL_DS",
+              "amountProd": 1
+            }
+          ],
+          "BOILER": 1.0,
+          "HEATEXCHANGER": 1.0
+        },
+        "flammable": {
+          "energy": 50000
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 394
+      }
+    },
+    {
+      "id": 134,
+      "symbol": "HOTOIL_DS",
+      "name": "HOTOIL_DS",
+      "color": 4134927,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 350,
+      "texture": "hbm:textures/gui/fluids/hotoil_ds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "coolable": {
+          "coolsTo": "OIL_DS",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 10,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 395
+      }
+    },
+    {
+      "id": 135,
+      "symbol": "CRACKOIL_DS",
+      "name": "CRACKOIL_DS",
+      "color": 2759697,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/crackoil_ds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 4342338
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 10,
+              "amountReq": 1,
+              "typeProduced": "HOTCRACKOIL_DS",
+              "amountProd": 1
+            }
+          ],
+          "BOILER": 1.0,
+          "HEATEXCHANGER": 1.0
+        },
+        "flammable": {
+          "energy": 62500
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 396
+      }
+    },
+    {
+      "id": 136,
+      "symbol": "HOTCRACKOIL_DS",
+      "name": "HOTCRACKOIL_DS",
+      "color": 3807784,
+      "p": 2,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 350,
+      "texture": "hbm:textures/gui/fluids/hotcrackoil_ds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.004000000189989805
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "coolable": {
+          "coolsTo": "CRACKOIL_DS",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 10,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 397
+      }
+    },
+    {
+      "id": 137,
+      "symbol": "NAPHTHA_DS",
+      "name": "NAPHTHA_DS",
+      "color": 6512974,
+      "p": 2,
+      "f": 1,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/naphtha_ds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 6253892
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 220000
+        },
+        "combustible": {
+          "energy": 330000,
+          "grade": "MEDIUM"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 398
+      }
+    },
+    {
+      "id": 138,
+      "symbol": "LIGHTOIL_DS",
+      "name": "LIGHTOIL_DS",
+      "color": 6509630,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lightoil_ds.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 11823954
+        }
+      },
+      "traits": {
+        "liquid": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.0010000000474974513
+          },
+          "release": {
+            "POISON": 4.999999873689376e-05
+          }
+        },
+        "flammable": {
+          "energy": 2930000
+        },
+        "combustible": {
+          "energy": 4400000,
+          "grade": "MEDIUM"
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 399
+      }
+    },
+    {
+      "id": 139,
+      "symbol": "STELLAR_FLUX",
+      "name": "STELLAR_FLUX",
+      "color": 14876927,
+      "p": 0,
+      "f": 4,
+      "r": 4,
+      "symbolMark": "ANTIMATTER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/stellar_flux.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "amat": {},
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 400
+      }
+    },
+    {
+      "id": 140,
+      "symbol": "VITRIOL",
+      "name": "VITRIOL",
+      "color": 7229986,
+      "p": 2,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/vitriol.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 401
+      }
+    },
+    {
+      "id": 141,
+      "symbol": "SLOP",
+      "name": "SLOP",
+      "color": 9608517,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/slop.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 402
+      }
+    },
+    {
+      "id": 142,
+      "symbol": "LEAD",
+      "name": "LEAD",
+      "color": 6710898,
+      "p": 4,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 350,
+      "texture": "hbm:textures/gui/fluids/lead.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 800,
+              "amountReq": 1,
+              "typeProduced": "LEAD_HOT",
+              "amountProd": 1
+            }
+          ],
+          "PWR": 0.75,
+          "ICF": 4.0
+        },
+        "pwrmoderator": {
+          "multiplier": 0.75
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 403
+      }
+    },
+    {
+      "id": 143,
+      "symbol": "LEAD_HOT",
+      "name": "LEAD_HOT",
+      "color": 7824739,
+      "p": 4,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 1500,
+      "texture": "hbm:textures/gui/fluids/lead_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "viscous": {},
+        "coolable": {
+          "coolsTo": "LEAD",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 680,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 404
+      }
+    },
+    {
+      "id": 144,
+      "symbol": "PERFLUOROMETHYL",
+      "name": "PERFLUOROMETHYL",
+      "color": 12437724,
+      "p": 1,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 15,
+      "texture": "hbm:textures/gui/fluids/perfluoromethyl.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 300,
+              "amountReq": 1,
+              "typeProduced": "PERFLUOROMETHYL_HOT",
+              "amountProd": 1
+            }
+          ],
+          "HEATEXCHANGER": 1.0,
+          "PWR": 1.0,
+          "ICF": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 405
+      }
+    },
+    {
+      "id": 145,
+      "symbol": "PERFLUOROMETHYL_COLD",
+      "name": "PERFLUOROMETHYL_COLD",
+      "color": 10083038,
+      "p": 1,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": -150,
+      "texture": "hbm:textures/gui/fluids/perfluoromethyl_cold.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 300,
+              "amountReq": 1,
+              "typeProduced": "PERFLUOROMETHYL",
+              "amountProd": 1
+            }
+          ],
+          "PA": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 406
+      }
+    },
+    {
+      "id": 146,
+      "symbol": "PERFLUOROMETHYL_HOT",
+      "name": "PERFLUOROMETHYL_HOT",
+      "color": 12098014,
+      "p": 1,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 250,
+      "texture": "hbm:textures/gui/fluids/perfluoromethyl_hot.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {},
+        "coolable": {
+          "coolsTo": "PERFLUOROMETHYL",
+          "amountReq": 1,
+          "amountProd": 1,
+          "heatEnergy": 300,
+          "HEATEXCHANGER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 407
+      }
+    },
+    {
+      "id": 147,
+      "symbol": "LYE",
+      "name": "LYE",
+      "color": 16772300,
+      "p": 3,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/lye.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 40
+        },
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 408
+      }
+    },
+    {
+      "id": 148,
+      "symbol": "SODIUM_ALUMINATE",
+      "name": "SODIUM_ALUMINATE",
+      "color": 16765329,
+      "p": 3,
+      "f": 0,
+      "r": 1,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/sodium_aluminate.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 30
+        },
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 409
+      }
+    },
+    {
+      "id": 149,
+      "symbol": "BAUXITE_SOLUTION",
+      "name": "BAUXITE_SOLUTION",
+      "color": 14833167,
+      "p": 3,
+      "f": 0,
+      "r": 3,
+      "symbolMark": "ACID",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/bauxite_solution.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "corrosive": {
+          "rating": 40
+        },
+        "liquid": {},
+        "viscous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 410
+      }
+    },
+    {
+      "id": 150,
+      "symbol": "ALUMINA",
+      "name": "ALUMINA",
+      "color": 14548991,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/alumina.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 411
+      }
+    },
+    {
+      "id": 151,
+      "symbol": "AIR",
+      "name": "AIR",
+      "color": 15198955,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/air.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {},
+        "heatable": {
+          "steps": [
+            {
+              "heatReq": 5,
+              "amountReq": 1,
+              "typeProduced": "AIRBLAST",
+              "amountProd": 1
+            }
+          ],
+          "BOILER": 1.0
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 412
+      }
+    },
+    {
+      "id": 152,
+      "symbol": "CONCRETE",
+      "name": "CONCRETE",
+      "color": 10658466,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/concrete.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 413
+      }
+    },
+    {
+      "id": 153,
+      "symbol": "DHC",
+      "name": "DHC",
+      "color": 13807615,
+      "p": 0,
+      "f": 0,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/dhc.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 414
+      }
+    },
+    {
+      "id": 154,
+      "symbol": "AIRBLAST",
+      "name": "AIRBLAST",
+      "color": 16767706,
+      "p": 0,
+      "f": 3,
+      "r": 0,
+      "symbolMark": "NONE",
+      "temperature": 1200,
+      "texture": "hbm:textures/gui/fluids/airblast.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {},
+      "traits": {
+        "gaseous": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 415
+      }
+    },
+    {
+      "id": 155,
+      "symbol": "FLUE",
+      "name": "FLUE",
+      "color": 1250067,
+      "p": 1,
+      "f": 4,
+      "r": 1,
+      "symbolMark": "NONE",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/flue.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "gastank": {
+          "bottleColor": 16729413,
+          "labelColor": 16771455
+        }
+      },
+      "traits": {
+        "flammable": {
+          "energy": 25000
+        },
+        "gaseous": {},
+        "polluting": {
+          "burn": {
+            "SOOT": 0.00019999999494757503
+          },
+          "release": {
+            "SOOT": 0.0009999999310821295
+          }
+        }
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 416
+      }
+    },
+    {
+      "id": 156,
+      "symbol": "TITANIUM_TETRACHLORIDE",
+      "name": "TITANIUM_TETRACHLORIDE",
+      "color": 14415766,
+      "p": 3,
+      "f": 0,
+      "r": 2,
+      "symbolMark": "NOWATER",
+      "temperature": 20,
+      "texture": "hbm:textures/gui/fluids/titanium_tetrachloride.png",
+      "tint": 16777215,
+      "renderWithTint": false,
+      "containers": {
+        "canister": {
+          "color": 14804297
+        }
+      },
+      "traits": {
+        "liquid": {}
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/fluid/Fluids.java",
+        "line": 417
+      }
+    }
+  ],
+  "niceOrder": [
+    "NONE",
+    "AIR",
+    "AIRBLAST",
+    "WATER",
+    "HEAVYWATER",
+    "HEAVYWATER_HOT",
+    "LAVA",
+    "STEAM",
+    "HOTSTEAM",
+    "SUPERHOTSTEAM",
+    "ULTRAHOTSTEAM",
+    "SPENTSTEAM",
+    "CARBONDIOXIDE",
+    "COOLANT",
+    "COOLANT_HOT",
+    "PERFLUOROMETHYL",
+    "PERFLUOROMETHYL_COLD",
+    "PERFLUOROMETHYL_HOT",
+    "CRYOGEL",
+    "MUG",
+    "MUG_HOT",
+    "BLOOD",
+    "BLOOD_HOT",
+    "SODIUM",
+    "SODIUM_HOT",
+    "LEAD",
+    "LEAD_HOT",
+    "THORIUM_SALT",
+    "THORIUM_SALT_HOT",
+    "THORIUM_SALT_DEPLETED",
+    "HYDROGEN",
+    "DEUTERIUM",
+    "TRITIUM",
+    "HELIUM3",
+    "HELIUM4",
+    "OXYGEN",
+    "XENON",
+    "CHLORINE",
+    "MERCURY",
+    "OIL",
+    "OIL_DS",
+    "CRACKOIL",
+    "CRACKOIL_DS",
+    "COALOIL",
+    "OIL_COKER",
+    "HOTOIL",
+    "HOTOIL_DS",
+    "HOTCRACKOIL",
+    "HOTCRACKOIL_DS",
+    "HEAVYOIL",
+    "HEAVYOIL_VACUUM",
+    "NAPHTHA",
+    "NAPHTHA_DS",
+    "NAPHTHA_CRACK",
+    "NAPHTHA_COKER",
+    "REFORMATE",
+    "LIGHTOIL",
+    "LIGHTOIL_DS",
+    "LIGHTOIL_CRACK",
+    "LIGHTOIL_VACUUM",
+    "BITUMEN",
+    "SMEAR",
+    "HEATINGOIL",
+    "HEATINGOIL_VACUUM",
+    "RECLAIMED",
+    "LUBRICANT",
+    "FLUE",
+    "GAS",
+    "GAS_COKER",
+    "PETROLEUM",
+    "SOURGAS",
+    "LPG",
+    "SYNGAS",
+    "OXYHYDROGEN",
+    "AROMATICS",
+    "UNSATURATEDS",
+    "XYLENE",
+    "REFORMGAS",
+    "DIESEL",
+    "DIESEL_REFORM",
+    "DIESEL_CRACK",
+    "DIESEL_CRACK_REFORM",
+    "KEROSENE",
+    "KEROSENE_REFORM",
+    "PETROIL",
+    "PETROIL_LEADED",
+    "GASOLINE",
+    "GASOLINE_LEADED",
+    "COALGAS",
+    "COALGAS_LEADED",
+    "COALCREOSOTE",
+    "WOODOIL",
+    "BIOGAS",
+    "BIOFUEL",
+    "ETHANOL",
+    "FISHOIL",
+    "SUNFLOWEROIL",
+    "NITAN",
+    "DHC",
+    "BALEFIRE",
+    "SALIENT",
+    "SEEDSLURRY",
+    "COLLOID",
+    "VITRIOL",
+    "SLOP",
+    "IONGEL",
+    "PEROXIDE",
+    "SULFURIC_ACID",
+    "NITRIC_ACID",
+    "SOLVENT",
+    "RADIOSOLVENT",
+    "SCHRABIDIC",
+    "UF6",
+    "PUF6",
+    "SAS3",
+    "PAIN",
+    "DEATH",
+    "WATZ",
+    "REDMUD",
+    "FULLERENE",
+    "EGG",
+    "CHOLESTEROL",
+    "CHLOROCALCITE_SOLUTION",
+    "CHLOROCALCITE_MIX",
+    "CHLOROCALCITE_CLEANED",
+    "POTASSIUM_CHLORIDE",
+    "CALCIUM_CHLORIDE",
+    "CALCIUM_SOLUTION",
+    "SODIUM_ALUMINATE",
+    "BAUXITE_SOLUTION",
+    "ALUMINA",
+    "TITANIUM_TETRACHLORIDE",
+    "CONCRETE",
+    "FRACKSOL",
+    "LYE",
+    "PHOSGENE",
+    "MUSTARDGAS",
+    "ESTRADIOL",
+    "NITROGLYCERIN",
+    "AMAT",
+    "ASCHRAB",
+    "WASTEFLUID",
+    "WASTEGAS",
+    "XPJUICE",
+    "ENDERJUICE",
+    "STELLAR_FLUX",
+    "PLASMA_DT",
+    "PLASMA_HD",
+    "PLASMA_HT",
+    "PLASMA_DH3",
+    "PLASMA_XM",
+    "PLASMA_BF",
+    "SMOKE",
+    "SMOKE_LEADED",
+    "SMOKE_POISON",
+    "PHEROMONE",
+    "PHEROMONE_M"
+  ],
+  "renames": {
+    "ACID": "PEROXIDE"
+  },
+  "defaultCustom": {
+    "CUSTOM_DEMO": {
+      "name": "Custom Fluid Demo",
+      "id": 1000,
+      "color": 16711680,
+      "tint": 16711680,
+      "p": 1,
+      "f": 2,
+      "r": 0,
+      "symbol": "OXIDIZER",
+      "texture": "custom_water",
+      "temperature": 20
+    }
+  }
+}

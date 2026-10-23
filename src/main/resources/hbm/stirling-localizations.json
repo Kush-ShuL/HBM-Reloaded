@@ -1,0 +1,40 @@
+{
+  "en_us": {
+    "tile.machine_stirling.name": "Stirling Engine",
+    "tile.machine_stirling.desc": "Turns heat into energy. Requires external heat source.$Heat transfer rate: T*0.1 TU/t$Max intake: 300 TU/t$Efficiency: 50%%",
+    "tile.machine_stirling_creative.name": "Creative Stirling Engine",
+    "tile.machine_stirling_creative.desc": "Turns heat into energy. Requires external heat source.$Heat transfer rate: T*0.1 TU/t$Infinite intake/t$Efficiency: 100%%",
+    "tile.machine_stirling_steel.name": "Heavy Stirling Engine",
+    "tile.machine_stirling_steel.desc": "Turns heat into energy. Requires external heat source.$Uses a much heavier gear to support higher temperatures.$Heat transfer rate: T*0.1 TU/t$Max intake: 1500 TU/t$Efficiency: 50%%",
+    "block.hbm.machine_stirling": "Stirling Engine",
+    "block.hbm.machine_stirling_steel": "Heavy Stirling Engine",
+    "block.hbm.machine_stirling_creative": "Creative Stirling Engine",
+    "entity.hbm.entity_stray_cog": "Stray Cog",
+    "gui.hbm.stirling.heat": "Heat input",
+    "gui.hbm.stirling.overspeed": "Overspeed",
+    "gui.hbm.stirling.warning": "! ! ! OVERSPEED ! ! !",
+    "gui.hbm.stirling.missing": "Gear missing!",
+    "gui.hbm.stirling.source": "Pulls source heat from below",
+    "gui.hbm.stirling.conversion": "HE = heat × efficiency",
+    "gui.hbm.stirling.creative_conversion": "1 TU → 1 HE"
+  },
+  "zh_cn": {
+    "tile.machine_stirling.name": "斯特林发电机",
+    "tile.machine_stirling.desc": "它将热量转化为能量。需要外部热源$传热率：T*0.1 TU/T$最大进气量：300 TU/T$效率：50%",
+    "tile.machine_stirling_creative.name": "创造斯特林发动机",
+    "tile.machine_stirling_creative.desc": "将热量转化为能量。需要外部热源$传热率：T*0.1 TU/T$无限吸热/T$效率：100%",
+    "tile.machine_stirling_steel.name": "重型斯特林发电机",
+    "tile.machine_stirling_steel.desc": "它将热量转化为能量。需要外部热源$使用更重的齿轮来支持更高的温度$传热率：T*0.1 TU/T$最大进气量：1500 TU/T$效率：50%",
+    "block.hbm.machine_stirling": "斯特林发电机",
+    "block.hbm.machine_stirling_steel": "重型斯特林发电机",
+    "block.hbm.machine_stirling_creative": "创造斯特林发动机",
+    "entity.hbm.entity_stray_cog": "失控的齿轮",
+    "gui.hbm.stirling.heat": "输入热量",
+    "gui.hbm.stirling.overspeed": "超速",
+    "gui.hbm.stirling.warning": "！ ！ ！ 超速 ！ ！ ！",
+    "gui.hbm.stirling.missing": "缺少齿轮！",
+    "gui.hbm.stirling.source": "从下方热源获取热量",
+    "gui.hbm.stirling.conversion": "HE产出 = 热量 × 效率",
+    "gui.hbm.stirling.creative_conversion": "1 TU → 1 HE"
+  }
+}

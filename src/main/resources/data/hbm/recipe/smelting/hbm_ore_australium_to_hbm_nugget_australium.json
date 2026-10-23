@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_australium"
+      },
+      {
+        "item": "hbm:deepslate_ore_australium"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:nugget_australium",
+    "count": 1
+  },
+  "experience": 2.5,
+  "cookingtime": 200
+}

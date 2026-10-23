@@ -1,0 +1,155 @@
+{
+  "module": "depth-construction241",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "depth_brick",
+      "id": "hbm:depth_brick",
+      "legacyRegistryId": "hbm:tile.depth_brick",
+      "originalClass": "BlockDepth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1302
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2487
+          },
+          "expression": "GameRegistry.registerBlock(depth_brick, ItemBlockBase.class, depth_brick.getUnlocalizedName())",
+          "arguments": [
+            "depth_brick",
+            "ItemBlockBase.class",
+            "depth_brick.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false,
+      "requiresDepthRockTool": true
+    },
+    {
+      "kind": "block",
+      "symbol": "depth_tiles",
+      "id": "hbm:depth_tiles",
+      "legacyRegistryId": "hbm:tile.depth_tiles",
+      "originalClass": "BlockDepth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1303
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2488
+          },
+          "expression": "GameRegistry.registerBlock(depth_tiles, ItemBlockBase.class, depth_tiles.getUnlocalizedName())",
+          "arguments": [
+            "depth_tiles",
+            "ItemBlockBase.class",
+            "depth_tiles.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false,
+      "requiresDepthRockTool": true
+    },
+    {
+      "kind": "block",
+      "symbol": "depth_nether_brick",
+      "id": "hbm:depth_nether_brick",
+      "legacyRegistryId": "hbm:tile.depth_nether_brick",
+      "originalClass": "BlockDepth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1304
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2490
+          },
+          "expression": "GameRegistry.registerBlock(depth_nether_brick, ItemBlockBase.class, depth_nether_brick.getUnlocalizedName())",
+          "arguments": [
+            "depth_nether_brick",
+            "ItemBlockBase.class",
+            "depth_nether_brick.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false,
+      "requiresDepthRockTool": true
+    },
+    {
+      "kind": "block",
+      "symbol": "depth_nether_tiles",
+      "id": "hbm:depth_nether_tiles",
+      "legacyRegistryId": "hbm:tile.depth_nether_tiles",
+      "originalClass": "BlockDepth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1305
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2491
+          },
+          "expression": "GameRegistry.registerBlock(depth_nether_tiles, ItemBlockBase.class, depth_nether_tiles.getUnlocalizedName())",
+          "arguments": [
+            "depth_nether_tiles",
+            "ItemBlockBase.class",
+            "depth_nether_tiles.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false,
+      "requiresDepthRockTool": true
+    },
+    {
+      "kind": "block",
+      "symbol": "depth_dnt",
+      "id": "hbm:depth_dnt",
+      "legacyRegistryId": "hbm:tile.depth_dnt",
+      "originalClass": "BlockDepth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1306
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2492
+          },
+          "expression": "GameRegistry.registerBlock(depth_dnt, ItemBlockBase.class, depth_dnt.getUnlocalizedName())",
+          "arguments": [
+            "depth_dnt",
+            "ItemBlockBase.class",
+            "depth_dnt.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataIgnored": true,
+      "hasBlockEntity": false,
+      "requiresDepthRockTool": true
+    }
+  ]
+}

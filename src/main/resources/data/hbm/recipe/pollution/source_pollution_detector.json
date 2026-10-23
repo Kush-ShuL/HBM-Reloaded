@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SFS",
+    "SCS",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "F": {
+      "item": "hbm:filter_coal"
+    },
+    "C": {
+      "item": "hbm:circuit_vacuum_tube"
+    }
+  },
+  "result": {
+    "id": "hbm:pollution_detector",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+package com.hbm.client.oilextraction;
+import com.hbm.machine.oilextraction.*;import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;import net.neoforged.api.distmarker.Dist;import net.neoforged.bus.api.SubscribeEvent;import net.neoforged.fml.common.EventBusSubscriber;import net.neoforged.neoforge.client.event.*;import net.neoforged.neoforge.client.extensions.common.*;
+@EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+public final class OilExtractionClient {
+ @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers event){for(var entity:OilExtractionContent.ENTITY.values())event.registerBlockEntityRenderer(entity.get(),OilDrillRenderer::new);}@SubscribeEvent public static void screens(RegisterMenuScreensEvent event){event.register(OilExtractionContent.MENU.get(),OilDrillScreen::new);}@SubscribeEvent public static void extensions(RegisterClientExtensionsEvent event){event.registerItem(new IClientItemExtensions(){private OilDrillItemRenderer renderer;@Override public BlockEntityWithoutLevelRenderer getCustomRenderer(){return renderer==null?(renderer=new OilDrillItemRenderer()):renderer;}},OilExtractionContent.ITEM.values().stream().map(item->item.get()).toArray(net.minecraft.world.item.Item[]::new));}
+}

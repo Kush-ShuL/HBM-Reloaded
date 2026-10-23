@@ -1,0 +1,35 @@
+{
+  "module": "machine-combination-furnace184",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "furnace_combination",
+      "id": "hbm:furnace_combination",
+      "legacyRegistryId": "hbm:tile.furnace_combination",
+      "originalClass": "FurnaceCombination",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1760
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3040
+          },
+          "expression": "register(furnace_combination)",
+          "arguments": [
+            "furnace_combination"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ]
+}

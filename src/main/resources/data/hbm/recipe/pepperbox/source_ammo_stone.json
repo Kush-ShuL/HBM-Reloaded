@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C",
+    "P",
+    "G"
+  ],
+  "key": {
+    "C": {
+      "tag": "c:cobblestones"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "id": "hbm:ammo_standard_stone",
+    "count": 6
+  }
+}

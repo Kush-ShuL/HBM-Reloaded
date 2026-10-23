@@ -1,0 +1,140 @@
+{
+  "profiles": [
+    {
+      "symbol": "ore_nether_uranium",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherUraniumuSpawn",
+      "count": 8,
+      "size": 6,
+      "minY": 0,
+      "variance": 127,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:504"
+    },
+    {
+      "symbol": "ore_nether_tungsten",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherTungstenSpawn",
+      "count": 10,
+      "size": 10,
+      "minY": 0,
+      "variance": 127,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:505"
+    },
+    {
+      "symbol": "ore_nether_sulfur",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherSulfurSpawn",
+      "count": 26,
+      "size": 12,
+      "minY": 0,
+      "variance": 127,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:506"
+    },
+    {
+      "symbol": "ore_nether_fire",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherPhosphorusSpawn",
+      "count": 24,
+      "size": 6,
+      "minY": 0,
+      "variance": 127,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:507"
+    },
+    {
+      "symbol": "ore_nether_coal",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherCoalSpawn",
+      "count": 8,
+      "size": 32,
+      "minY": 16,
+      "variance": 96,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:508"
+    },
+    {
+      "symbol": "ore_nether_cobalt",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherCobaltSpawn",
+      "count": 2,
+      "size": 6,
+      "minY": 100,
+      "variance": 26,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:509"
+    },
+    {
+      "symbol": "ore_nether_plutonium",
+      "dimension": "nether",
+      "host": "minecraft:netherrack",
+      "config": "netherPlutoniumSpawn",
+      "count": 8,
+      "size": 4,
+      "minY": 0,
+      "variance": 127,
+      "plutonium": true,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:512"
+    },
+    {
+      "symbol": "ore_tikite",
+      "dimension": "end",
+      "host": "minecraft:end_stone",
+      "config": "endTikiteSpawn",
+      "count": 8,
+      "size": 6,
+      "minY": 0,
+      "variance": 127,
+      "plutonium": false,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:551"
+    }
+  ],
+  "netherDepthCalls": [
+    {
+      "symbol": "ore_depth_nether_neodymium",
+      "minY": 0,
+      "variance": 3,
+      "size": 7,
+      "fill": 0.6,
+      "chance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:523"
+    },
+    {
+      "symbol": "ore_depth_nether_neodymium",
+      "minY": 125,
+      "variance": 3,
+      "size": 7,
+      "fill": 0.6,
+      "chance": 16,
+      "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:524"
+    }
+  ],
+  "sourceStage": "HbmWorldGen IWorldGenerator after vanilla population",
+  "sourceNetherPlutoniumDefault": false,
+  "sourceSmolder": {
+    "trials": 30,
+    "depthMin": 16,
+    "depthVariance": 96,
+    "samples": "d-5..d inclusive",
+    "requires": "air directly above literal netherrack",
+    "independentOfNetherOre": true,
+    "source": "legacy/src/main/java/com/hbm/lib/HbmWorldGen.java:527"
+  },
+  "sourceAllowedDepthY": [
+    1,
+    126
+  ],
+  "modernHeight": {
+    "defaultNether": "min0/logical128 => identical source anchors and protected0/127 layers",
+    "defaultEnd": "original0..126 anchors; optional build-height mapping defaultsfalse",
+    "radiiAndCountsNeverScaled": true
+  }
+}

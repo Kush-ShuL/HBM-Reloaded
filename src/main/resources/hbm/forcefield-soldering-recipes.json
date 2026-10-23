@@ -1,0 +1,118 @@
+[
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/SolderingRecipes.java",
+      "line": 193
+    },
+    "expression": "new SolderingRecipe(new ItemStack(ModItems.upgrade_radius), 200, 1_000, new AStack[] {new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CHIP), new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CAPACITOR)}, new AStack[] {new ComparableStack(ModItems.upgrade_template), new OreDictStack(\"dustGlowstone\", 4)}, new AStack[] {}",
+    "status": "pending_actual_soldering_machine",
+    "reason": "Original SolderingRecipe three-lane machine is not migrated. No replacement crafting/furnace recipe is invented.",
+    "data": {
+      "result": {
+        "id": "hbm:upgrade_radius",
+        "count": 1
+      },
+      "duration": 200,
+      "power": 1000,
+      "input_lanes": [
+        [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_chip"
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_capacitor"
+              }
+            },
+            "count": 4
+          }
+        ],
+        [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:upgrade_template"
+              }
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustglowstone"
+            },
+            "count": 4
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/inventory/recipes/SolderingRecipes.java",
+      "line": 198
+    },
+    "expression": "new SolderingRecipe(new ItemStack(ModItems.upgrade_health), 200, 1_000, new AStack[] {new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CHIP), new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CAPACITOR)}, new AStack[] {new ComparableStack(ModItems.upgrade_template), new OreDictStack(LI.dust(), 4)}, new AStack[] {}",
+    "status": "pending_actual_soldering_machine",
+    "reason": "Original SolderingRecipe three-lane machine is not migrated. No replacement crafting/furnace recipe is invented.",
+    "data": {
+      "result": {
+        "id": "hbm:upgrade_health",
+        "count": 1
+      },
+      "duration": 200,
+      "power": 1000,
+      "input_lanes": [
+        [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_chip"
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_capacitor"
+              }
+            },
+            "count": 4
+          }
+        ],
+        [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:upgrade_template"
+              }
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustlithium"
+            },
+            "count": 4
+          }
+        ],
+        []
+      ]
+    }
+  }
+]

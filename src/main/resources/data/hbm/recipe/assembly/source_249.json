@@ -1,0 +1,42 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capsparkle",
+  "duration": 10,
+  "power": 100,
+  "order": 80,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:block_cap",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:cap_sparkle"
+        }
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:cap_sparkle"
+        }
+      },
+      "count": 64
+    }
+  ]
+}

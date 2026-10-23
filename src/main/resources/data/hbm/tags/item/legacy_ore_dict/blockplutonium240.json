@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_pu240",
+    {
+      "id": "#c:storage_blocks/plutonium240",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/pu240",
+      "required": false
+    }
+  ]
+}

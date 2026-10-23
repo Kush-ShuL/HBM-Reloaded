@@ -1,0 +1,161 @@
+{
+  "parent": "hbm:item/canned_beef",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/canned_tuna"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/canned_mystery"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/canned_pashtet"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/canned_cheese"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/canned_slime"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/canned_milk"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/canned_ass"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/canned_pizza"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 9
+      },
+      "model": "hbm:item/canned_tube"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 10
+      },
+      "model": "hbm:item/canned_tomato"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 11
+      },
+      "model": "hbm:item/canned_asbestos"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 12
+      },
+      "model": "hbm:item/canned_bhole"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 13
+      },
+      "model": "hbm:item/canned_hotdogs"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 14
+      },
+      "model": "hbm:item/canned_leftovers"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 15
+      },
+      "model": "hbm:item/canned_yogurt"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 16
+      },
+      "model": "hbm:item/canned_stew"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 17
+      },
+      "model": "hbm:item/canned_chinese"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 18
+      },
+      "model": "hbm:item/canned_oil"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 19
+      },
+      "model": "hbm:item/canned_fist"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 20
+      },
+      "model": "hbm:item/canned_spam"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 21
+      },
+      "model": "hbm:item/canned_fried"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 22
+      },
+      "model": "hbm:item/canned_napalm"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 23
+      },
+      "model": "hbm:item/canned_diesel"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 24
+      },
+      "model": "hbm:item/canned_kerosene"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 25
+      },
+      "model": "hbm:item/canned_recursion"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 26
+      },
+      "model": "hbm:item/canned_bark"
+    }
+  ]
+}

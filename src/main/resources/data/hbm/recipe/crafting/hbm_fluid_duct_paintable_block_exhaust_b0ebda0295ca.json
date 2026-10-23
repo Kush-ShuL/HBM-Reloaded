@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:fluid_duct_paintable_block_exhaust",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "A A",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    },
+    "A": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

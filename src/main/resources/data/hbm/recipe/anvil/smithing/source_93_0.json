@@ -1,0 +1,30 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1916169,
+  "result": {
+    "id": "hbm:wings_murk",
+    "count": 1
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:wings_limp",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_tachyon",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "normal",
+  "order": 93000000
+}

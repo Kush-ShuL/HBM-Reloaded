@@ -1,0 +1,52 @@
+{
+  "type": "hbm:cyclotron",
+  "data": {
+    "name": "cyclotron.2",
+    "duration": 690,
+    "power": 1000000,
+    "input_items": [
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:part_lithium",
+            "count": 1
+          }
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustboron"
+        },
+        "count": 1
+      }
+    ],
+    "output_items": [
+      {
+        "pool": [
+          {
+            "stack": {
+              "id": "hbm:powder_coal",
+              "count": 1
+            }
+          }
+        ]
+      }
+    ],
+    "output_fluids": [
+      {
+        "type": "AMAT",
+        "amount": 50
+      }
+    ],
+    "icon": {
+      "id": "hbm:part_lithium",
+      "count": 1
+    },
+    "order": 2
+  },
+  "source_key": "hbm:item.part_lithium@0x1|dict:dustBoron@0x1",
+  "source_hash": -1958718271
+}

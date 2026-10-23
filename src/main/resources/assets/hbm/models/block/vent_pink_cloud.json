@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/vent_blank",
+    "up": "hbm:block/vent_blank",
+    "north": "hbm:block/vent_pink_cloud",
+    "south": "hbm:block/vent_pink_cloud",
+    "west": "hbm:block/vent_pink_cloud",
+    "east": "hbm:block/vent_pink_cloud",
+    "particle": "hbm:block/vent_pink_cloud"
+  }
+}

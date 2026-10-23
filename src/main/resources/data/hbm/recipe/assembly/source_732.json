@@ -1,0 +1,35 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.soliniumcore",
+  "duration": 600,
+  "power": 100,
+  "order": 238,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:solinium_core",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/nuggetsolinium"
+      },
+      "count": 9
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/nuggeteuphemium"
+      },
+      "count": 1
+    }
+  ]
+}

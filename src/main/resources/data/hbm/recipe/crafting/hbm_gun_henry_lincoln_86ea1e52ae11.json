@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:gun_henry_lincoln",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    "PGP",
+    " M "
+  ],
+  "key": {
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplegold"
+    },
+    "G": {
+      "item": "hbm:gun_henry"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:rod",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 16
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:rod_empty"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetactinium227"
+    }
+  ]
+}

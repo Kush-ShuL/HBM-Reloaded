@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 3,
+  "source_key": "ore:ingotTcAlloy",
+  "source_hash": 619468685,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingottcalloy"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_combine_steel",
+    "count": 1
+  }
+}

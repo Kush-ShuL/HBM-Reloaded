@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:reinforced_ducrete",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DSD",
+    "SUS",
+    "DSD"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:brick_ducrete"
+    },
+    "S": {
+      "item": "hbm:plate_steel"
+    },
+    "U": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billeturanium238"
+    }
+  }
+}

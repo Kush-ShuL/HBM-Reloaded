@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 33,
+  "source_key": "ore:gemVolcanic",
+  "source_hash": -1288421348,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/gemvolcanic"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:gem_rad",
+    "count": 1
+  }
+}

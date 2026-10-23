@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:mp_fuselage_10_kerosene_metal",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "CTC",
+    "ICI"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "T": {
+      "item": "hbm:mp_fuselage_10_kerosene"
+    }
+  }
+}

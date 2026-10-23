@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:conveyor_wand",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CPC"
+  ],
+  "key": {
+    "C": {
+      "type": "neoforge:components",
+      "items": "hbm:conveyor_wand",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  }
+}

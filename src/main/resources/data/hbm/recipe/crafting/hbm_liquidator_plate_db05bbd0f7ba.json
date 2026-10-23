@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:liquidator_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "TBT",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "C": {
+      "item": "hbm:cladding_lead"
+    },
+    "B": {
+      "item": "hbm:hazmat_plate_grey"
+    },
+    "T": {
+      "item": "hbm:gas_empty"
+    }
+  }
+}

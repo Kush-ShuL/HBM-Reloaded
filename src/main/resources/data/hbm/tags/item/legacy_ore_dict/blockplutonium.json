@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_plutonium",
+    {
+      "id": "#c:storage_blocks/plutonium",
+      "required": false
+    }
+  ]
+}

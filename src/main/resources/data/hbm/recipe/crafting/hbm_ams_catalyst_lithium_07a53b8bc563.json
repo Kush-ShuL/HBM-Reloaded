@@ -1,0 +1,41 @@
+{
+  "result": {
+    "id": "hbm:ams_catalyst_lithium",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:ams_catalyst_blank"
+    },
+    {
+      "item": "hbm:rune_isa"
+    },
+    {
+      "item": "hbm:rune_isa"
+    },
+    {
+      "item": "hbm:rune_jera"
+    },
+    {
+      "item": "hbm:rune_jera"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustlithium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustlithium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustlithium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustlithium"
+    }
+  ]
+}

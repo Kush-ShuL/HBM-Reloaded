@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:obj_tester",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "I",
+    "S"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:polaroid"
+    },
+    "I": {
+      "item": "hbm:flame_pony"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    }
+  }
+}

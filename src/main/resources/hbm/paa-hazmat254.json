@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "hazmat_paa_helmet",
+      "id": "hbm:hazmat_paa_helmet",
+      "legacyRegistryId": "hbm:item.hazmat_paa_helmet",
+      "originalClass": "ArmorHazmatMask",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4266
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6309
+          },
+          "expression": "GameRegistry.registerItem(hazmat_paa_helmet, hazmat_paa_helmet.getUnlocalizedName())",
+          "arguments": [
+            "hazmat_paa_helmet",
+            "hazmat_paa_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.paahazmat.PaaHazmatContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 825
+    },
+    {
+      "kind": "item",
+      "symbol": "hazmat_paa_plate",
+      "id": "hbm:hazmat_paa_plate",
+      "legacyRegistryId": "hbm:item.hazmat_paa_plate",
+      "originalClass": "ArmorHazmat",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4268
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6310
+          },
+          "expression": "GameRegistry.registerItem(hazmat_paa_plate, hazmat_paa_plate.getUnlocalizedName())",
+          "arguments": [
+            "hazmat_paa_plate",
+            "hazmat_paa_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.paahazmat.PaaHazmatContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1200
+    },
+    {
+      "kind": "item",
+      "symbol": "hazmat_paa_legs",
+      "id": "hbm:hazmat_paa_legs",
+      "legacyRegistryId": "hbm:item.hazmat_paa_legs",
+      "originalClass": "ArmorHazmat",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4269
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6311
+          },
+          "expression": "GameRegistry.registerItem(hazmat_paa_legs, hazmat_paa_legs.getUnlocalizedName())",
+          "arguments": [
+            "hazmat_paa_legs",
+            "hazmat_paa_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.paahazmat.PaaHazmatContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1125
+    },
+    {
+      "kind": "item",
+      "symbol": "hazmat_paa_boots",
+      "id": "hbm:hazmat_paa_boots",
+      "legacyRegistryId": "hbm:item.hazmat_paa_boots",
+      "originalClass": "ArmorHazmat",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4270
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6312
+          },
+          "expression": "GameRegistry.registerItem(hazmat_paa_boots, hazmat_paa_boots.getUnlocalizedName())",
+          "arguments": [
+            "hazmat_paa_boots",
+            "hazmat_paa_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.paahazmat.PaaHazmatContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 975
+    }
+  ]
+}

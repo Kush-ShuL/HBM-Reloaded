@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:parts_legendary",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:ingot_chainsteel"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:ingot_smore",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    {
+      "item": "hbm:gem_alexandrite"
+    },
+    {
+      "item": "hbm:gem_alexandrite"
+    },
+    {
+      "item": "hbm:gem_alexandrite"
+    }
+  ]
+}

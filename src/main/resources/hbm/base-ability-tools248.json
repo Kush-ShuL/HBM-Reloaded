@@ -1,0 +1,295 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "alloy_pickaxe",
+      "id": "hbm:alloy_pickaxe",
+      "legacyRegistryId": "hbm:item.alloy_pickaxe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3974
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5886
+          },
+          "expression": "GameRegistry.registerItem(alloy_pickaxe, alloy_pickaxe.getUnlocalizedName())",
+          "arguments": [
+            "alloy_pickaxe",
+            "alloy_pickaxe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 2000,
+      "sourceAbilities": [
+        [
+          "RECURSION",
+          0
+        ]
+      ],
+      "sourceDamage": 5,
+      "sourceMovement": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "alloy_axe",
+      "id": "hbm:alloy_axe",
+      "legacyRegistryId": "hbm:item.alloy_axe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3977
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5887
+          },
+          "expression": "GameRegistry.registerItem(alloy_axe, alloy_axe.getUnlocalizedName())",
+          "arguments": [
+            "alloy_axe",
+            "alloy_axe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 2000,
+      "sourceAbilities": [
+        [
+          "RECURSION",
+          0
+        ],
+        [
+          "BEHEADER",
+          0
+        ]
+      ],
+      "sourceDamage": 7,
+      "sourceMovement": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "alloy_shovel",
+      "id": "hbm:alloy_shovel",
+      "legacyRegistryId": "hbm:item.alloy_shovel",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3981
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5888
+          },
+          "expression": "GameRegistry.registerItem(alloy_shovel, alloy_shovel.getUnlocalizedName())",
+          "arguments": [
+            "alloy_shovel",
+            "alloy_shovel.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 2000,
+      "sourceAbilities": [
+        [
+          "RECURSION",
+          0
+        ]
+      ],
+      "sourceDamage": 4,
+      "sourceMovement": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "alloy_hoe",
+      "id": "hbm:alloy_hoe",
+      "legacyRegistryId": "hbm:item.alloy_hoe",
+      "originalClass": "ModHoe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3984
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5889
+          },
+          "expression": "GameRegistry.registerItem(alloy_hoe, alloy_hoe.getUnlocalizedName())",
+          "arguments": [
+            "alloy_hoe",
+            "alloy_hoe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 2000,
+      "sourceAbilities": [],
+      "sourceDamage": null,
+      "sourceMovement": null
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_pickaxe",
+      "id": "hbm:cmb_pickaxe",
+      "legacyRegistryId": "hbm:item.cmb_pickaxe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3990
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5891
+          },
+          "expression": "GameRegistry.registerItem(cmb_pickaxe, cmb_pickaxe.getUnlocalizedName())",
+          "arguments": [
+            "cmb_pickaxe",
+            "cmb_pickaxe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 8500,
+      "sourceAbilities": [
+        [
+          "RECURSION",
+          2
+        ],
+        [
+          "SMELTER",
+          0
+        ],
+        [
+          "SILK",
+          0
+        ],
+        [
+          "LUCK",
+          2
+        ]
+      ],
+      "sourceDamage": 10,
+      "sourceMovement": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_axe",
+      "id": "hbm:cmb_axe",
+      "legacyRegistryId": "hbm:item.cmb_axe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3996
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5892
+          },
+          "expression": "GameRegistry.registerItem(cmb_axe, cmb_axe.getUnlocalizedName())",
+          "arguments": [
+            "cmb_axe",
+            "cmb_axe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 8500,
+      "sourceAbilities": [
+        [
+          "RECURSION",
+          2
+        ],
+        [
+          "SMELTER",
+          0
+        ],
+        [
+          "SILK",
+          0
+        ],
+        [
+          "LUCK",
+          2
+        ],
+        [
+          "BEHEADER",
+          0
+        ]
+      ],
+      "sourceDamage": 30,
+      "sourceMovement": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_shovel",
+      "id": "hbm:cmb_shovel",
+      "legacyRegistryId": "hbm:item.cmb_shovel",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4003
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5893
+          },
+          "expression": "GameRegistry.registerItem(cmb_shovel, cmb_shovel.getUnlocalizedName())",
+          "arguments": [
+            "cmb_shovel",
+            "cmb_shovel.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.baseextras.BaseAbilityToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 8500,
+      "sourceAbilities": [
+        [
+          "RECURSION",
+          2
+        ],
+        [
+          "SMELTER",
+          0
+        ],
+        [
+          "SILK",
+          0
+        ],
+        [
+          "LUCK",
+          2
+        ]
+      ],
+      "sourceDamage": 8,
+      "sourceMovement": 0
+    }
+  ]
+}

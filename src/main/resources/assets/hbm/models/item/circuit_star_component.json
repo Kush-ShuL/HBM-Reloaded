@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:item/circuit_star_component_chipset",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/circuit_star_component_cpu"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/circuit_star_component_ram"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/circuit_star_component_card"
+    }
+  ]
+}

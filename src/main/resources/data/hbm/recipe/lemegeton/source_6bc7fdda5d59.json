@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 35,
+  "source_key": "ore:sand",
+  "source_hash": 109204414,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/sand"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_fiberglass",
+    "count": 1
+  }
+}

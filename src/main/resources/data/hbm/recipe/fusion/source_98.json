@@ -1,0 +1,41 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.dhc",
+  "order": 7,
+  "r": 0.2,
+  "g": 0.8,
+  "b": 0.8,
+  "ignition_temp": 10000000,
+  "output_temp": 25000000,
+  "neutron_flux": 2000.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:fluid_icon",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 153,
+      "hbm:fluid_type": 153
+    }
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "DHC",
+      "amount": 20,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_chlorophyte",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

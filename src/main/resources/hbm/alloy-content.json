@@ -1,0 +1,46 @@
+{
+  "blocks": [
+    {
+      "symbol": "machine_difurnace_off",
+      "id": "hbm:machine_difurnace_off",
+      "kind": "block",
+      "module": "alloy_furnace",
+      "originalClass": "MachineDiFurnace",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1778
+      },
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "creativeTab": "machine"
+    },
+    {
+      "symbol": "machine_difurnace_on",
+      "id": "hbm:machine_difurnace_on",
+      "kind": "block",
+      "module": "alloy_furnace",
+      "originalClass": "MachineDiFurnace",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1779
+      },
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "creativeTab": null
+    },
+    {
+      "symbol": "machine_difurnace_extension",
+      "id": "hbm:machine_difurnace_extension",
+      "kind": "block",
+      "module": "alloy_furnace",
+      "originalClass": "MachineDiFurnaceExtension",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1780
+      },
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "creativeTab": "machine"
+    }
+  ]
+}

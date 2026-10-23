@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:gun_pa_melee",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "MWM"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "M": {
+      "item": "hbm:motor"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wiredensegold"
+    }
+  }
+}

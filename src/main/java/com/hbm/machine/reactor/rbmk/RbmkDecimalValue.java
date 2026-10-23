@@ -1,0 +1,8 @@
+package com.hbm.machine.reactor.rbmk;
+import com.mojang.brigadier.arguments.DoubleArgumentType;import com.mojang.brigadier.context.CommandContext;import net.minecraft.commands.CommandSourceStack;import net.minecraft.server.MinecraftServer;import net.minecraft.world.level.GameRules;
+/** Native decimal gamerule; Type/VisitorCaller access is widened by the two-line owned AT fragment. */
+public final class RbmkDecimalValue extends GameRules.Value<RbmkDecimalValue> {
+ private double value;private final double fallback;private RbmkDecimalValue(GameRules.Type<RbmkDecimalValue> type,double value,double fallback){super(type);this.value=value;this.fallback=fallback;}
+ public static GameRules.Type<RbmkDecimalValue> create(double initial){return new GameRules.Type<>(DoubleArgumentType::doubleArg,type->new RbmkDecimalValue(type,initial,initial),(server,value)->{},(visitor,key,type)->{});}
+ public double get(){return value;}public void set(double value,MinecraftServer server){this.value=value;onChanged(server);}@Override protected void updateFromArgument(CommandContext<CommandSourceStack> context,String name){value=DoubleArgumentType.getDouble(context,name);}@Override protected void deserialize(String input){try{value=Double.parseDouble(input);}catch(NumberFormatException error){value=fallback;}}@Override public String serialize(){return Double.toString(value);}@Override public int getCommandResult(){return(int)value;}@Override protected RbmkDecimalValue getSelf(){return this;}@Override protected RbmkDecimalValue copy(){return new RbmkDecimalValue(type,value,fallback);}@Override public void setFrom(RbmkDecimalValue other,MinecraftServer server){value=other.value;onChanged(server);}
+}

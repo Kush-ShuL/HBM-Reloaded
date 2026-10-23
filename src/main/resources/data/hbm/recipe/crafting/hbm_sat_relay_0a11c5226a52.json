@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:sat_relay",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:sat_chip"
+    },
+    {
+      "item": "hbm:ducttape"
+    },
+    {
+      "item": "hbm:radar_linker"
+    }
+  ]
+}

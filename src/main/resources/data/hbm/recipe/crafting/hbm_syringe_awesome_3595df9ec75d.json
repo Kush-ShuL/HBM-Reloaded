@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:syringe_awesome",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SPS",
+    "NCN",
+    "SPS"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:syringe_empty"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsulfur"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+    },
+    "N": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium238"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+package com.hbm.client.turret.rotary;
+import com.hbm.machine.turret.rotary.*;
+import com.hbm.multiblock.DummyableBlock;
+import com.mojang.blaze3d.vertex.*;
+import java.util.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.core.*;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.phys.*;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.RenderHighlightEvent;
+/** Source Dummyable outer boundary preview and all eight true source power ports, using actual shared placement validation. */
+@EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
+public final class RotaryTurretPlacementPreview {
+    @SubscribeEvent public static void render(RenderHighlightEvent.Block event){var client=Minecraft.getInstance();var player=client.player;if(player==null||client.level==null||client.options.hideGui||!(player.getMainHandItem().getItem() instanceof BlockItem item)||!(item.getBlock() instanceof RotaryTurretBlock block))return;renderFor(event,block);}
+    public static void renderFor(RenderHighlightEvent.Block event,DummyableBlock block){var client=Minecraft.getInstance();var player=client.player;if(player==null||client.level==null||client.options.hideGui)return;event.setCanceled(true);var hit=player.pick(5,event.getDeltaTracker().getGameTimeDeltaPartialTick(false),false);if(!(hit instanceof BlockHitResult blockHit)||hit.getType()!=HitResult.Type.BLOCK)return;var context=new BlockPlaceContext(player,InteractionHand.MAIN_HAND,player.getMainHandItem(),blockHit);var facing=context.getHorizontalDirection().getOpposite();var core=context.getClickedPos();boolean valid=block.getStateForPlacement(context)!=null;int shade=(int)(255*(Math.sin((System.currentTimeMillis()%(1000D*Math.PI))/250D)*.25+.75)),red=valid?0:shade,green=valid?shade:0;var pose=event.getPoseStack();var camera=event.getCamera().getPosition();pose.pushPose();pose.translate(-camera.x,-camera.y,-camera.z);var buffers=client.renderBuffers().bufferSource();var lines=buffers.getBuffer(RotaryTurretPreviewTypes.LINES);var d=DummyableBlock.rotate(block.dimensions(),facing);var cells=new LinkedHashSet<BlockPos>();for(int x=-d[4];x<=d[5];x++)for(int y=-d[1];y<=d[0];y++)for(int z=-d[2];z<=d[3];z++)cells.add(core.offset(x,y,z));for(var cell:cells)for(var face:Direction.values())if(!cells.contains(cell.relative(face)))for(var side:Direction.values())if(side.getAxis()!=face.getAxis()&&!cells.contains(cell.relative(side))){double[] a={cell.getX(),cell.getY(),cell.getZ()},b=a.clone();int axis=axis(face),other=axis(side),free=3-axis-other;a[axis]+=face.getAxisDirection()==Direction.AxisDirection.POSITIVE?1:0;b[axis]=a[axis];a[other]+=side.getAxisDirection()==Direction.AxisDirection.POSITIVE?1:0;b[other]=a[other];b[free]++;line(lines,pose,a,b,red,green,0);}for(var port:RotaryTurretEntity.ports(core,facing))for(var face:new Direction[]{port.first(),port.second()}){var pos=port.position();double[] a={pos.getX()+.2,pos.getY()+.2,pos.getZ()+.2},b={pos.getX()+.8,pos.getY()+.8,pos.getZ()+.8};int normal=axis(face);a[normal]=b[normal]=(normal==0?pos.getX():normal==1?pos.getY():pos.getZ())+(face.getAxisDirection()==Direction.AxisDirection.POSITIVE?1:0);int u=(normal+1)%3;double[] p0=a.clone(),p1=a.clone(),p2=b.clone(),p3=b.clone();p1[u]=b[u];p3[u]=a[u];line(lines,pose,p0,p1,shade,shade,0);line(lines,pose,p1,p2,shade,shade,0);line(lines,pose,p2,p3,shade,shade,0);line(lines,pose,p3,p0,shade,shade,0);}buffers.endBatch(RotaryTurretPreviewTypes.LINES);pose.popPose();}
+    private static int axis(Direction direction){return direction.getAxis()==Direction.Axis.X?0:direction.getAxis()==Direction.Axis.Y?1:2;}
+    private static void line(VertexConsumer out,PoseStack pose,double[] a,double[] b,int r,int g,int blue){float x=(float)(b[0]-a[0]),y=(float)(b[1]-a[1]),z=(float)(b[2]-a[2]),length=(float)Math.sqrt(x*x+y*y+z*z);if(length==0)return;x/=length;y/=length;z/=length;out.addVertex(pose.last(),(float)a[0],(float)a[1],(float)a[2]).setColor(r,g,blue,255).setNormal(pose.last(),x,y,z);out.addVertex(pose.last(),(float)b[0],(float)b[1],(float)b[2]).setColor(r,g,blue,255).setNormal(pose.last(),x,y,z);}
+    private RotaryTurretPlacementPreview(){}
+}

@@ -1,0 +1,2021 @@
+{
+  "nodes": [
+    {
+      "symbol": "achSacrifice",
+      "id": "sacrifice",
+      "legacyName": "sacrifice",
+      "translation": "achievement.sacrifice",
+      "x": -3,
+      "y": 1,
+      "iconExpression": "ModItems.burnt_bark",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:372",
+      "sourceAutomaticTrigger": false,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:burnt_bark",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achImpossible",
+      "id": "impossible",
+      "legacyName": "impossible",
+      "translation": "achievement.impossible",
+      "x": 18,
+      "y": 10,
+      "iconExpression": "ModItems.nothing",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:373",
+      "sourceAutomaticTrigger": false,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:nothing",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achTOB",
+      "id": "tasteofblood",
+      "legacyName": "tasteofblood",
+      "translation": "achievement.tasteofblood",
+      "x": 3,
+      "y": 10,
+      "iconExpression": "new ItemStack(ModItems.fluid_icon, 1, Fluids.ASCHRAB.getID())",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:374",
+      "sourceAutomaticTrigger": false,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:fluid_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 34,
+          "hbm:fluid_type": 34
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achGoFish",
+      "id": "gofish",
+      "legacyName": "goFish",
+      "translation": "achievement.goFish",
+      "x": 5,
+      "y": 10,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.GOFISH)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:375",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/items/tool/ItemBoltgun.java:66",
+          "expression": "((EntityPlayer) entity).triggerAchievement(MainRegistry.achGoFish);"
+        }
+      ]
+    },
+    {
+      "symbol": "achPotato",
+      "id": "potato",
+      "legacyName": "potato",
+      "translation": "achievement.potato",
+      "x": -2,
+      "y": -2,
+      "iconExpression": "ModItems.battery_potatos",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:376",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:battery_potatos",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achC20_5",
+      "id": "c20_5",
+      "legacyName": "c20_5",
+      "translation": "achievement.c20_5",
+      "x": 3,
+      "y": 6,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.QUESTIONMARK)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:377",
+      "sourceAutomaticTrigger": false,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 9
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achFiend",
+      "id": "fiend",
+      "legacyName": "fiend",
+      "translation": "achievement.fiend",
+      "x": -6,
+      "y": 8,
+      "iconExpression": "ModItems.shimmer_sledge",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:378",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:shimmer_sledge",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/items/tool/WeaponSpecial.java:236",
+          "expression": "((EntityPlayer) entity).triggerAchievement(MainRegistry.achFiend);"
+        }
+      ]
+    },
+    {
+      "symbol": "achFiend2",
+      "id": "fiend2",
+      "legacyName": "fiend2",
+      "translation": "achievement.fiend2",
+      "x": -4,
+      "y": 9,
+      "iconExpression": "ModItems.shimmer_axe",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:379",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:shimmer_axe",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/items/tool/WeaponSpecial.java:238",
+          "expression": "((EntityPlayer) entity).triggerAchievement(MainRegistry.achFiend2);"
+        }
+      ]
+    },
+    {
+      "symbol": "achStratum",
+      "id": "stratum",
+      "legacyName": "stratum",
+      "translation": "achievement.stratum",
+      "x": -4,
+      "y": -2,
+      "iconExpression": "new ItemStack(ModBlocks.stone_gneiss)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:380",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:stone_gneiss",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/main/ModEventHandler.java:1168",
+          "expression": "event.getPlayer().triggerAchievement(MainRegistry.achStratum);"
+        }
+      ]
+    },
+    {
+      "symbol": "achOmega12",
+      "id": "omega12",
+      "legacyName": "omega12",
+      "translation": "achievement.omega12",
+      "x": 17,
+      "y": -1,
+      "iconExpression": "ModItems.particle_digamma",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:381",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:particle_digamma",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/tileentity/machine/albion/TileEntityPADetector.java:173",
+          "expression": "for(EntityPlayer player : players) player.triggerAchievement(MainRegistry.achOmega12);"
+        }
+      ]
+    },
+    {
+      "symbol": "achNo9",
+      "id": "no9",
+      "legacyName": "no9",
+      "translation": "achievement.no9",
+      "x": -8,
+      "y": 12,
+      "iconExpression": "ModItems.no9",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:383",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:no9",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/items/special/ItemCigarette.java:55",
+          "expression": "player.triggerAchievement(MainRegistry.achNo9);"
+        }
+      ]
+    },
+    {
+      "symbol": "achSlimeball",
+      "id": "slimeball",
+      "legacyName": "slimeball",
+      "translation": "achievement.slimeball",
+      "x": -10,
+      "y": 6,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.ACID)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:384",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 1
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/main/ModEventHandler.java:1156",
+          "expression": "event.player.triggerAchievement(MainRegistry.achSlimeball);"
+        }
+      ]
+    },
+    {
+      "symbol": "achSulfuric",
+      "id": "sulfuric",
+      "legacyName": "sulfuric",
+      "translation": "achievement.sulfuric",
+      "x": -10,
+      "y": 8,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.BALLS)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:385",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "slimeball",
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/blocks/fluid/GenericFluidBlock.java:83",
+          "expression": "player.triggerAchievement(MainRegistry.achSulfuric);"
+        }
+      ]
+    },
+    {
+      "symbol": "achInferno",
+      "id": "inferno",
+      "legacyName": "inferno",
+      "translation": "achievement.inferno",
+      "x": -8,
+      "y": 10,
+      "iconExpression": "ModItems.canister_napalm",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:386",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:canister_napalm",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/blocks/machine/MachineFluidTank.java:164",
+          "expression": "for(EntityPlayer p : players) p.triggerAchievement(MainRegistry.achInferno);"
+        },
+        {
+          "source": "legacy/src/main/java/com/hbm/blocks/machine/MachineRefinery.java:140",
+          "expression": "for(EntityPlayer p : players) p.triggerAchievement(MainRegistry.achInferno);"
+        }
+      ]
+    },
+    {
+      "symbol": "achRedRoom",
+      "id": "redroom",
+      "legacyName": "redRoom",
+      "translation": "achievement.redRoom",
+      "x": -10,
+      "y": 10,
+      "iconExpression": "ModItems.key_red",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:387",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:key_red",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/blocks/generic/BlockKeyhole.java:72",
+          "expression": "player.triggerAchievement(MainRegistry.achRedRoom);"
+        },
+        {
+          "source": "legacy/src/main/java/com/hbm/blocks/generic/BlockRedBrickKeyhole.java:94",
+          "expression": "player.triggerAchievement(MainRegistry.achRedRoom);"
+        }
+      ]
+    },
+    {
+      "symbol": "bobHidden",
+      "id": "hidden",
+      "legacyName": "hidden",
+      "translation": "achievement.hidden",
+      "x": 15,
+      "y": -4,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.QUESTIONMARK)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:389",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 9
+        }
+      },
+      "criterion": "squash",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/main/ModEventHandler.java:314",
+          "expression": "player.triggerAchievement(MainRegistry.bobHidden);"
+        }
+      ]
+    },
+    {
+      "symbol": "horizonsStart",
+      "id": "horizonsstart",
+      "legacyName": "horizonsStart",
+      "translation": "achievement.horizonsStart",
+      "x": -5,
+      "y": 4,
+      "iconExpression": "ModItems.sat_gerald",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:391",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:sat_gerald",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/saveddata/satellites/SatelliteHorizons.java:45",
+          "expression": "((EntityPlayer)p).triggerAchievement(MainRegistry.horizonsStart);"
+        }
+      ]
+    },
+    {
+      "symbol": "horizonsEnd",
+      "id": "horizonsend",
+      "legacyName": "horizonsEnd",
+      "translation": "achievement.horizonsEnd",
+      "x": -3,
+      "y": 4,
+      "iconExpression": "ModItems.sat_gerald",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:392",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "horizonsstart",
+      "icon": {
+        "id": "hbm:sat_gerald",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/saveddata/satellites/SatelliteHorizons.java:95",
+          "expression": "((EntityPlayer)p).triggerAchievement(MainRegistry.horizonsEnd);"
+        }
+      ]
+    },
+    {
+      "symbol": "horizonsBonus",
+      "id": "horizonsbonus",
+      "legacyName": "horizonsBonus",
+      "translation": "achievement.horizonsBonus",
+      "x": -1,
+      "y": 4,
+      "iconExpression": "ModItems.sat_gerald",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:393",
+      "sourceAutomaticTrigger": false,
+      "pending": [],
+      "parent": "horizonsend",
+      "icon": {
+        "id": "hbm:sat_gerald",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "bossCreeper",
+      "id": "bosscreeper",
+      "legacyName": "bossCreeper",
+      "translation": "achievement.bossCreeper",
+      "x": -7,
+      "y": 1,
+      "iconExpression": "ModItems.coin_creeper",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:395",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:coin_creeper",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/mob/EntityCreeperNuclear.java:81",
+          "expression": "player.triggerAchievement(MainRegistry.bossCreeper);"
+        }
+      ]
+    },
+    {
+      "symbol": "bossMeltdown",
+      "id": "bossmeltdown",
+      "legacyName": "bossMeltdown",
+      "translation": "achievement.bossMeltdown",
+      "x": -8,
+      "y": 3,
+      "iconExpression": "ModItems.coin_radiation",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:396",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "bosscreeper",
+      "icon": {
+        "id": "hbm:coin_radiation",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/mob/EntityRADBeast.java:177",
+          "expression": "player.triggerAchievement(MainRegistry.bossMeltdown);"
+        }
+      ]
+    },
+    {
+      "symbol": "bossMaskman",
+      "id": "bossmaskman",
+      "legacyName": "bossMaskman",
+      "translation": "achievement.bossMaskman",
+      "x": -8,
+      "y": -1,
+      "iconExpression": "ModItems.coin_maskman",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:397",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "bosscreeper",
+      "icon": {
+        "id": "hbm:coin_maskman",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/mob/EntityMaskMan.java:101",
+          "expression": "player.triggerAchievement(MainRegistry.bossMaskman);"
+        }
+      ]
+    },
+    {
+      "symbol": "bossWorm",
+      "id": "bossworm",
+      "legacyName": "bossWorm",
+      "translation": "achievement.bossWorm",
+      "x": -8,
+      "y": -3,
+      "iconExpression": "ModItems.coin_worm",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:398",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "bossmaskman",
+      "icon": {
+        "id": "hbm:coin_worm",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/mob/botprime/EntityBOTPrimeHead.java:143",
+          "expression": "player.triggerAchievement(MainRegistry.bossWorm);"
+        }
+      ]
+    },
+    {
+      "symbol": "bossUFO",
+      "id": "bossufo",
+      "legacyName": "bossUFO",
+      "translation": "achievement.bossUFO",
+      "x": -6,
+      "y": -3,
+      "iconExpression": "ModItems.coin_ufo",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:399",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "bossworm",
+      "icon": {
+        "id": "hbm:coin_ufo",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/mob/EntityUFO.java:308",
+          "expression": "player.triggerAchievement(MainRegistry.bossUFO);"
+        }
+      ]
+    },
+    {
+      "symbol": "achRadPoison",
+      "id": "radpoison",
+      "legacyName": "radPoison",
+      "translation": "achievement.radPoison",
+      "x": -2,
+      "y": 6,
+      "iconExpression": "ModItems.geiger_counter",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:401",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:geiger_counter",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/handler/EntityEffectHandler.java:257",
+          "expression": "if(entity instanceof EntityPlayer) ((EntityPlayer) entity).triggerAchievement(MainRegistry.achRadPoison);"
+        }
+      ]
+    },
+    {
+      "symbol": "achRadDeath",
+      "id": "raddeath",
+      "legacyName": "radDeath",
+      "translation": "achievement.radDeath",
+      "x": 0,
+      "y": 6,
+      "iconExpression": "Items.skull",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:402",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "radpoison",
+      "icon": {
+        "id": "minecraft:skeleton_skull",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/handler/EntityEffectHandler.java:233",
+          "expression": "if(entity instanceof EntityPlayer && entity.getHealth() <= 0) ((EntityPlayer) entity).triggerAchievement(MainRegistry.achRadDeath);"
+        }
+      ]
+    },
+    {
+      "symbol": "achSomeWounds",
+      "id": "some_wounds",
+      "legacyName": "someWounds",
+      "translation": "achievement.someWounds",
+      "x": -2,
+      "y": 10,
+      "iconExpression": "ModItems.injector_knife",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:404",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:injector_knife",
+        "count": 1
+      },
+      "criterion": "pain",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/items/armor/ItemModKnife.java:81",
+          "expression": "((EntityPlayer)entity).triggerAchievement(MainRegistry.achSomeWounds);"
+        }
+      ]
+    },
+    {
+      "symbol": "digammaSee",
+      "id": "digammasee",
+      "legacyName": "digammaSee",
+      "translation": "achievement.digammaSee",
+      "x": -1,
+      "y": 8,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.DIGAMMASEE)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:406",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 3
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/extprop/HbmLivingProps.java:177",
+          "expression": "((EntityPlayer) entity).triggerAchievement(MainRegistry.digammaSee);"
+        }
+      ]
+    },
+    {
+      "symbol": "digammaFeel",
+      "id": "digammafeel",
+      "legacyName": "digammaFeel",
+      "translation": "achievement.digammaFeel",
+      "x": 1,
+      "y": 8,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.DIGAMMAFEEL)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:407",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "digammasee",
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/extprop/HbmLivingProps.java:179",
+          "expression": "((EntityPlayer) entity).triggerAchievement(MainRegistry.digammaFeel);"
+        }
+      ]
+    },
+    {
+      "symbol": "digammaKnow",
+      "id": "digammaknow",
+      "legacyName": "digammaKnow",
+      "translation": "achievement.digammaKnow",
+      "x": 3,
+      "y": 8,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.DIGAMMAKNOW)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:408",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "digammafeel",
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 5
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/extprop/HbmLivingProps.java:181",
+          "expression": "((EntityPlayer) entity).triggerAchievement(MainRegistry.digammaKnow);"
+        }
+      ]
+    },
+    {
+      "symbol": "digammaKauaiMoho",
+      "id": "digammakauaimoho",
+      "legacyName": "digammaKauaiMoho",
+      "translation": "achievement.digammaKauaiMoho",
+      "x": 5,
+      "y": 8,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.DIGAMMAKAUAIMOHO)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:409",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "digammaknow",
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 6
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/effect/EntitySpear.java:72",
+          "expression": "player.triggerAchievement(MainRegistry.digammaKauaiMoho);"
+        }
+      ]
+    },
+    {
+      "symbol": "digammaUpOnTop",
+      "id": "digammaupontop",
+      "legacyName": "digammaUpOnTop",
+      "translation": "achievement.digammaUpOnTop",
+      "x": 7,
+      "y": 8,
+      "iconExpression": "DictFrame.fromOne(ModItems.achievement_icon, EnumAchievementType.DIGAMMAUPONTOP)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:410",
+      "sourceAutomaticTrigger": false,
+      "pending": [],
+      "parent": "digammakauaimoho",
+      "icon": {
+        "id": "hbm:achievement_icon",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 7
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achBurnerPress",
+      "id": "burnerpress",
+      "legacyName": "burnerPress",
+      "translation": "achievement.burnerPress",
+      "x": 0,
+      "y": 0,
+      "iconExpression": "new ItemStack(ModBlocks.machine_press)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:413",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": null,
+      "icon": {
+        "id": "hbm:machine_press",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achBlastFurnace",
+      "id": "blastfurnace",
+      "legacyName": "blastFurnace",
+      "translation": "achievement.blastFurnace",
+      "x": 1,
+      "y": 3,
+      "iconExpression": "new ItemStack(ModBlocks.machine_blast_furnace)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:414",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "burnerpress",
+      "icon": {
+        "id": "hbm:machine_blast_furnace",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achAssembly",
+      "id": "assembly",
+      "legacyName": "assembly",
+      "translation": "achievement.assembly",
+      "x": 3,
+      "y": -1,
+      "iconExpression": "new ItemStack(ModBlocks.machine_assembly_machine)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:415",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "burnerpress",
+      "icon": {
+        "id": "hbm:machine_assembly_machine",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achSelenium",
+      "id": "selenium",
+      "legacyName": "selenium",
+      "translation": "achievement.selenium",
+      "x": 3,
+      "y": 2,
+      "iconExpression": "ModItems.ingot_starmetal",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:416",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "burnerpress",
+      "icon": {
+        "id": "hbm:ingot_starmetal",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achChemplant",
+      "id": "chemplant",
+      "legacyName": "chemplant",
+      "translation": "achievement.chemplant",
+      "x": 6,
+      "y": -1,
+      "iconExpression": "new ItemStack(ModBlocks.machine_chemical_plant)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:417",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "assembly",
+      "icon": {
+        "id": "hbm:machine_chemical_plant",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achConcrete",
+      "id": "concrete",
+      "legacyName": "concrete",
+      "translation": "achievement.concrete",
+      "x": 6,
+      "y": -4,
+      "iconExpression": "new ItemStack(ModBlocks.concrete)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:418",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "chemplant",
+      "icon": {
+        "id": "hbm:concrete",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achPolymer",
+      "id": "polymer",
+      "legacyName": "polymer",
+      "translation": "achievement.polymer",
+      "x": 9,
+      "y": -1,
+      "iconExpression": "ModItems.ingot_polymer",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:419",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "chemplant",
+      "icon": {
+        "id": "hbm:ingot_polymer",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achDesh",
+      "id": "desh",
+      "legacyName": "desh",
+      "translation": "achievement.desh",
+      "x": 9,
+      "y": 2,
+      "iconExpression": "ModItems.ingot_desh",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:420",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "chemplant",
+      "icon": {
+        "id": "hbm:ingot_desh",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achTantalum",
+      "id": "tantalum",
+      "legacyName": "tantalum",
+      "translation": "achievement.tantalum",
+      "x": 7,
+      "y": 3,
+      "iconExpression": "ModItems.gem_tantalium",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:421",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "chemplant",
+      "icon": {
+        "id": "hbm:gem_tantalium",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achGasCent",
+      "id": "gascent",
+      "legacyName": "gasCent",
+      "translation": "achievement.gasCent",
+      "x": 13,
+      "y": 2,
+      "iconExpression": "ModItems.ingot_uranium_fuel",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:422",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "desh",
+      "icon": {
+        "id": "hbm:ingot_uranium_fuel",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achCentrifuge",
+      "id": "centrifuge",
+      "legacyName": "centrifuge",
+      "translation": "achievement.centrifuge",
+      "x": 12,
+      "y": -2,
+      "iconExpression": "new ItemStack(ModBlocks.machine_centrifuge)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:423",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "polymer",
+      "icon": {
+        "id": "hbm:machine_centrifuge",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achSoyuz",
+      "id": "soyuz",
+      "legacyName": "soyuz",
+      "translation": "achievement.soyuz",
+      "x": 7,
+      "y": 6,
+      "iconExpression": "Items.baked_potato",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:424",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "desh",
+      "icon": {
+        "id": "minecraft:baked_potato",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/missile/EntityRocketSoyuz.java:50",
+          "expression": "((EntityPlayer)e).triggerAchievement(MainRegistry.achSoyuz);"
+        }
+      ]
+    },
+    {
+      "symbol": "achSpace",
+      "id": "space",
+      "legacyName": "space",
+      "translation": "achievement.space",
+      "x": 9,
+      "y": 7,
+      "iconExpression": "ModItems.missile_soyuz",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:425",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "desh",
+      "icon": {
+        "id": "hbm:missile_soyuz",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/missile/EntityRocketSoyuz.java:90",
+          "expression": "((EntityPlayer)p).triggerAchievement(MainRegistry.achSpace);"
+        }
+      ]
+    },
+    {
+      "symbol": "achSchrab",
+      "id": "schrab",
+      "legacyName": "schrab",
+      "translation": "achievement.schrab",
+      "x": 11,
+      "y": 3,
+      "iconExpression": "ModItems.ingot_schrabidium",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:426",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "desh",
+      "icon": {
+        "id": "hbm:ingot_schrabidium",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achAcidizer",
+      "id": "acidizer",
+      "legacyName": "acidizer",
+      "translation": "achievement.acidizer",
+      "x": 11,
+      "y": 5,
+      "iconExpression": "new ItemStack(ModBlocks.machine_crystallizer)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:427",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "desh",
+      "icon": {
+        "id": "hbm:machine_crystallizer",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achRadium",
+      "id": "radium",
+      "legacyName": "radium",
+      "translation": "achievement.radium",
+      "x": 13,
+      "y": -4,
+      "iconExpression": "ModItems.coffee_radium",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:428",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "centrifuge",
+      "icon": {
+        "id": "hbm:coffee_radium",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/items/food/ItemEnergy.java:182",
+          "expression": "player.triggerAchievement(MainRegistry.achRadium);"
+        }
+      ]
+    },
+    {
+      "symbol": "achTechnetium",
+      "id": "technetium",
+      "legacyName": "technetium",
+      "translation": "achievement.technetium",
+      "x": 15,
+      "y": -2,
+      "iconExpression": "ModItems.ingot_tcalloy",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:429",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "centrifuge",
+      "icon": {
+        "id": "hbm:ingot_tcalloy",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achZIRNOXBoom",
+      "id": "zirnoxboom",
+      "legacyName": "ZIRNOXBoom",
+      "translation": "achievement.ZIRNOXBoom",
+      "x": 14,
+      "y": -1,
+      "iconExpression": "ModItems.debris_element",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:430",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "centrifuge",
+      "icon": {
+        "id": "hbm:debris_element",
+        "count": 1
+      },
+      "criterion": "meltdown",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityReactorZirnox.java:423",
+          "expression": "player.triggerAchievement(MainRegistry.achZIRNOXBoom);"
+        }
+      ]
+    },
+    {
+      "symbol": "achChicagoPile",
+      "id": "chicagopile",
+      "legacyName": "chicagoPile",
+      "translation": "achievement.chicagoPile",
+      "x": 13,
+      "y": 0,
+      "iconExpression": "ModItems.pile_rod_plutonium",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:431",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "centrifuge",
+      "icon": {
+        "id": "hbm:pile_rod_plutonium",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achSILEX",
+      "id": "silex",
+      "legacyName": "SILEX",
+      "translation": "achievement.SILEX",
+      "x": 12,
+      "y": 7,
+      "iconExpression": "new ItemStack(ModBlocks.machine_silex)",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:432",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "acidizer",
+      "icon": {
+        "id": "hbm:machine_silex",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achWatz",
+      "id": "watz",
+      "legacyName": "watz",
+      "translation": "achievement.watz",
+      "x": 14,
+      "y": 3,
+      "iconExpression": "ModItems.watz_pellet",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:433",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "schrab",
+      "icon": {
+        "id": "hbm:watz_pellet",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achWatzBoom",
+      "id": "watzboom",
+      "legacyName": "watzBoom",
+      "translation": "achievement.watzBoom",
+      "x": 14,
+      "y": 5,
+      "iconExpression": "ModItems.bucket_mud",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:434",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "watz",
+      "icon": {
+        "id": "hbm:bucket_mud",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityWatz.java:527",
+          "expression": "player.triggerAchievement(MainRegistry.achWatzBoom);"
+        }
+      ]
+    },
+    {
+      "symbol": "achRBMK",
+      "id": "rbmk",
+      "legacyName": "RBMK",
+      "translation": "achievement.RBMK",
+      "x": 9,
+      "y": -5,
+      "iconExpression": "ModItems.rbmk_fuel_ueu",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:435",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "concrete",
+      "icon": {
+        "id": "hbm:rbmk_fuel_ueu",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achRBMKBoom",
+      "id": "rbmkboom",
+      "legacyName": "RBMKBoom",
+      "translation": "achievement.RBMKBoom",
+      "x": 9,
+      "y": -7,
+      "iconExpression": "ModItems.debris_fuel",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:436",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "rbmk",
+      "icon": {
+        "id": "hbm:debris_fuel",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/tileentity/machine/rbmk/TileEntityRBMKBase.java:557",
+          "expression": "player.triggerAchievement(MainRegistry.achRBMKBoom);"
+        }
+      ]
+    },
+    {
+      "symbol": "achBismuth",
+      "id": "bismuth",
+      "legacyName": "bismuth",
+      "translation": "achievement.bismuth",
+      "x": 11,
+      "y": -6,
+      "iconExpression": "ModItems.ingot_bismuth",
+      "special": false,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:437",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "rbmk",
+      "icon": {
+        "id": "hbm:ingot_bismuth",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achBreeding",
+      "id": "breeding",
+      "legacyName": "breeding",
+      "translation": "achievement.breeding",
+      "x": 7,
+      "y": -6,
+      "iconExpression": "ModItems.ingot_am_mix",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:438",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "rbmk",
+      "icon": {
+        "id": "hbm:ingot_am_mix",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achFusion",
+      "id": "fusion",
+      "legacyName": "fusion",
+      "translation": "achievement.fusion",
+      "x": 13,
+      "y": -7,
+      "iconExpression": "new ItemStack(ModBlocks.fusion_torus)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:439",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "bismuth",
+      "icon": {
+        "id": "hbm:fusion_torus",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achRedBalloons",
+      "id": "redballoons",
+      "legacyName": "redBalloons",
+      "translation": "achievement.redBalloons",
+      "x": 11,
+      "y": 0,
+      "iconExpression": "ModItems.missile_nuclear",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:440",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "polymer",
+      "icon": {
+        "id": "hbm:missile_nuclear",
+        "count": 1
+      },
+      "criterion": "source",
+      "available": true,
+      "directSourceTriggers": []
+    },
+    {
+      "symbol": "achManhattan",
+      "id": "manhattan",
+      "legacyName": "manhattan",
+      "translation": "achievement.manhattan",
+      "x": 11,
+      "y": -4,
+      "iconExpression": "new ItemStack(ModBlocks.nuke_boy)",
+      "special": true,
+      "hidden": false,
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:441",
+      "sourceAutomaticTrigger": true,
+      "pending": [],
+      "parent": "polymer",
+      "icon": {
+        "id": "hbm:nuke_boy",
+        "count": 1
+      },
+      "criterion": "detonated",
+      "available": true,
+      "directSourceTriggers": [
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/logic/EntityNukeExplosionMK5.java:63",
+          "expression": "((EntityPlayer)player).triggerAchievement(MainRegistry.achManhattan);"
+        },
+        {
+          "source": "legacy/src/main/java/com/hbm/entity/logic/EntityNukeExplosionMK3.java:130",
+          "expression": "((EntityPlayer) player).triggerAchievement(MainRegistry.achManhattan);"
+        }
+      ]
+    }
+  ],
+  "crafting": [
+    {
+      "achievement": "selenium",
+      "expression": "ModItems.piston_selenium",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:18",
+      "item": "hbm:piston_selenium",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:piston_selenium",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "selenium",
+      "expression": "ModItems.gun_b92",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:19",
+      "item": "hbm:gun_b92",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:gun_b92",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "potato",
+      "expression": "ModItems.battery_potatos",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:20",
+      "item": "hbm:battery_potatos",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:battery_potatos",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      }
+    },
+    {
+      "achievement": "burnerpress",
+      "expression": "ModBlocks.machine_press",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:21",
+      "item": "hbm:machine_press",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_press",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "rbmk",
+      "expression": "ModItems.rbmk_fuel_empty",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:22",
+      "item": "hbm:rbmk_fuel_empty",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:rbmk_fuel_empty",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "chemplant",
+      "expression": "ModBlocks.machine_chemical_plant",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:23",
+      "item": "hbm:machine_chemical_plant",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_chemical_plant",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "concrete",
+      "expression": "ModBlocks.concrete_smooth",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:24",
+      "item": "hbm:concrete_smooth",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:concrete_smooth",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "concrete",
+      "expression": "ModBlocks.concrete_asbestos",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:25",
+      "item": "hbm:concrete_asbestos",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:concrete_asbestos",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "polymer",
+      "expression": "ModItems.ingot_polymer",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:26",
+      "item": "hbm:ingot_polymer",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:ingot_polymer",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "desh",
+      "expression": "ModItems.ingot_desh",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:27",
+      "item": "hbm:ingot_desh",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:ingot_desh",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "tantalum",
+      "expression": "ModItems.gem_tantalium",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:28",
+      "item": "hbm:gem_tantalium",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:gem_tantalium",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "gascent",
+      "expression": "ModBlocks.machine_gascent",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:29",
+      "item": "hbm:machine_gascent",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_gascent",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "centrifuge",
+      "expression": "ModBlocks.machine_centrifuge",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:30",
+      "item": "hbm:machine_centrifuge",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_centrifuge",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "schrab",
+      "expression": "ModItems.ingot_schrabidium",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:31",
+      "item": "hbm:ingot_schrabidium",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:ingot_schrabidium",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "schrab",
+      "expression": "ModItems.nugget_schrabidium",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:32",
+      "item": "hbm:nugget_schrabidium",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:nugget_schrabidium",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "acidizer",
+      "expression": "ModBlocks.machine_crystallizer",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:33",
+      "item": "hbm:machine_crystallizer",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_crystallizer",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "silex",
+      "expression": "ModBlocks.machine_silex",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:34",
+      "item": "hbm:machine_silex",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_silex",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "technetium",
+      "expression": "ModItems.nugget_technetium",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:35",
+      "item": "hbm:nugget_technetium",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:nugget_technetium",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "watz",
+      "expression": "ModBlocks.struct_watz_core",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:36",
+      "item": "hbm:struct_watz_core",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:struct_watz_core",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "bismuth",
+      "expression": "ModItems.nugget_bismuth",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:37",
+      "item": "hbm:nugget_bismuth",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:nugget_bismuth",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "breeding",
+      "expression": "ModItems.nugget_am241",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:38",
+      "item": "hbm:nugget_am241",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:nugget_am241",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "breeding",
+      "expression": "ModItems.nugget_am242",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:39",
+      "item": "hbm:nugget_am242",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:nugget_am242",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.missile_nuclear",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:40",
+      "item": "hbm:missile_nuclear",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:missile_nuclear",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.missile_nuclear_cluster",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:41",
+      "item": "hbm:missile_nuclear_cluster",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:missile_nuclear_cluster",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.missile_doomsday",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:42",
+      "item": "hbm:missile_doomsday",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:missile_doomsday",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.mp_warhead_10_nuclear",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:43",
+      "item": "hbm:mp_warhead_10_nuclear",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:mp_warhead_10_nuclear",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.mp_warhead_10_nuclear_large",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:44",
+      "item": "hbm:mp_warhead_10_nuclear_large",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:mp_warhead_10_nuclear_large",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.mp_warhead_15_nuclear",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:45",
+      "item": "hbm:mp_warhead_15_nuclear",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:mp_warhead_15_nuclear",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.mp_warhead_15_nuclear_shark",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:46",
+      "item": "hbm:mp_warhead_15_nuclear_shark",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:mp_warhead_15_nuclear_shark",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "redballoons",
+      "expression": "ModItems.mp_warhead_15_boxcar",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:47",
+      "item": "hbm:mp_warhead_15_boxcar",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:mp_warhead_15_boxcar",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "fusion",
+      "expression": "ModBlocks.struct_torus_core",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:48",
+      "item": "hbm:struct_torus_core",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:struct_torus_core",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "blastfurnace",
+      "expression": "ModBlocks.machine_blast_furnace",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:49",
+      "item": "hbm:machine_blast_furnace",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_blast_furnace",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "assembly",
+      "expression": "ModBlocks.machine_assembly_machine",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:50",
+      "item": "hbm:machine_assembly_machine",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:machine_assembly_machine",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "chicagopile",
+      "expression": "ModItems.billet_pu_mix",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:51",
+      "item": "hbm:billet_pu_mix",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:billet_pu_mix",
+        "count": 1
+      }
+    },
+    {
+      "achievement": "omega12",
+      "expression": "ModItems.particle_digamma",
+      "source": "legacy/src/main/java/com/hbm/util/AchievementHandler.java:52",
+      "item": "hbm:particle_digamma",
+      "metadata": 0,
+      "damage": false,
+      "pending": [],
+      "stack": {
+        "id": "hbm:particle_digamma",
+        "count": 1
+      }
+    }
+  ]
+}

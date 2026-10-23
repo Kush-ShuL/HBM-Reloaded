@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:pneumatic_tube_paintable",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "A A",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "A": {
+      "item": "hbm:pneumatic_tube"
+    }
+  }
+}

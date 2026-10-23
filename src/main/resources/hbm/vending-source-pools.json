@@ -1,0 +1,266 @@
+{
+  "pools": {
+    "POOL_SODA": {
+      "name": "POOL_SODA",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 20
+          },
+          "arguments": [
+            "ModItems.bottle_nuka",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:bottle_nuka",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 21
+          },
+          "arguments": [
+            "ModItems.bottle_cherry",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:bottle_cherry",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 22
+          },
+          "arguments": [
+            "ModItems.bottle_quantum",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:bottle_quantum",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 23
+          },
+          "arguments": [
+            "ModItems.can_bepis",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:can_bepis",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 24
+          },
+          "arguments": [
+            "ModItems.can_luna",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:can_luna",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 25
+          },
+          "arguments": [
+            "ModItems.can_mug",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:can_mug",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 26
+          },
+          "arguments": [
+            "ModItems.can_breen",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:can_breen",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_soda"
+    },
+    "POOL_SNACKS": {
+      "name": "POOL_SNACKS",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 32
+          },
+          "arguments": [
+            "ModItems.definitelyfood",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:definitelyfood",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 33
+          },
+          "arguments": [
+            "ModItems.canned_conserve",
+            "EnumFoodType.BEEF.ordinal()",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:canned_conserve",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 34
+          },
+          "arguments": [
+            "ModItems.canned_conserve",
+            "EnumFoodType.TUBE.ordinal()",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:canned_conserve",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 9
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 35
+          },
+          "arguments": [
+            "ModItems.twinkie",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:twinkie",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsVendingMachine.java",
+            "line": 36
+          },
+          "arguments": [
+            "ModItems.chocolate",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:chocolate",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_snacks"
+    }
+  }
+}

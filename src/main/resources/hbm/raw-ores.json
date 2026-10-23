@@ -1,0 +1,993 @@
+{
+  "items": [
+    {
+      "id": "raw_uranium",
+      "material": "uranium",
+      "sourceSymbol": "ore_uranium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_uranium.png",
+      "zhCN": "粗铀",
+      "enUS": "Raw Uranium"
+    },
+    {
+      "id": "raw_titanium",
+      "material": "titanium",
+      "sourceSymbol": "ore_titanium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_titanium.png",
+      "zhCN": "粗钛",
+      "enUS": "Raw Titanium"
+    },
+    {
+      "id": "raw_thorium",
+      "material": "thorium",
+      "sourceSymbol": "ore_thorium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_thorium.png",
+      "zhCN": "粗钍",
+      "enUS": "Raw Thorium"
+    },
+    {
+      "id": "raw_tungsten",
+      "material": "tungsten",
+      "sourceSymbol": "ore_tungsten",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_tungsten.png",
+      "zhCN": "粗钨",
+      "enUS": "Raw Tungsten"
+    },
+    {
+      "id": "raw_aluminium",
+      "material": "aluminium",
+      "sourceSymbol": "ore_aluminium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_aluminium.png",
+      "zhCN": "粗铝",
+      "enUS": "Raw Aluminium"
+    },
+    {
+      "id": "raw_lead",
+      "material": "lead",
+      "sourceSymbol": "ore_lead",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_lead.png",
+      "zhCN": "粗铅",
+      "enUS": "Raw Lead"
+    },
+    {
+      "id": "raw_schrabidium",
+      "material": "schrabidium",
+      "sourceSymbol": "ore_schrabidium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_schrabidium.png",
+      "zhCN": "粗Sa326",
+      "enUS": "Raw Schrabidium"
+    },
+    {
+      "id": "raw_beryllium",
+      "material": "beryllium",
+      "sourceSymbol": "ore_beryllium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_beryllium.png",
+      "zhCN": "粗铍",
+      "enUS": "Raw Beryllium"
+    },
+    {
+      "id": "raw_australium",
+      "material": "australium",
+      "sourceSymbol": "ore_australium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_australium.png",
+      "zhCN": "粗奥斯",
+      "enUS": "Raw Australium"
+    },
+    {
+      "id": "raw_plutonium",
+      "material": "plutonium",
+      "sourceSymbol": "ore_nether_plutonium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_nether_plutonium.png",
+      "zhCN": "粗钚",
+      "enUS": "Raw Plutonium"
+    },
+    {
+      "id": "raw_lithium",
+      "material": "lithium",
+      "sourceSymbol": "ore_gneiss_lithium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_gneiss_lithium.png",
+      "zhCN": "粗锂",
+      "enUS": "Raw Lithium"
+    },
+    {
+      "id": "raw_tikite",
+      "material": "trixite",
+      "sourceSymbol": "ore_tikite",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_tikite_alt.png",
+      "zhCN": "粗赛瑞克矿",
+      "enUS": "Raw Trixite"
+    },
+    {
+      "id": "raw_tektite_osmiridium",
+      "material": "osmiridium",
+      "sourceSymbol": "ore_tektite_osmiridium",
+      "legacyMetadata": 0,
+      "sourceTexture": "legacy/src/main/resources/assets/hbm/textures/blocks/ore_tektite_osmiridium.png",
+      "zhCN": "粗渗锇熔融石",
+      "enUS": "Raw Osmiridium-Infused Tektite"
+    }
+  ],
+  "mappings": [
+    {
+      "sourceSymbol": "ore_uranium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_uranium",
+      "blockItems": [
+        "hbm:ore_uranium",
+        "hbm:deepslate_ore_uranium"
+      ],
+      "variant": null,
+      "originalClass": "BlockOutgas",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1236",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_titanium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_titanium",
+      "originalItem": "hbm:ore_titanium",
+      "blockItems": [
+        "hbm:ore_titanium",
+        "hbm:deepslate_ore_titanium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1238",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_thorium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_thorium",
+      "originalItem": "hbm:ore_thorium",
+      "blockItems": [
+        "hbm:ore_thorium",
+        "hbm:deepslate_ore_thorium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1240",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_tungsten",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_tungsten",
+      "originalItem": "hbm:ore_tungsten",
+      "blockItems": [
+        "hbm:ore_tungsten",
+        "hbm:deepslate_ore_tungsten"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1244",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_aluminium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_aluminium",
+      "originalItem": "hbm:ore_aluminium",
+      "blockItems": [
+        "hbm:ore_aluminium",
+        "hbm:deepslate_ore_aluminium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1245",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_lead",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_lead",
+      "originalItem": "hbm:ore_lead",
+      "blockItems": [
+        "hbm:ore_lead",
+        "hbm:deepslate_ore_lead"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1247",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_schrabidium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_schrabidium",
+      "originalItem": "hbm:ore_schrabidium",
+      "blockItems": [
+        "hbm:ore_schrabidium",
+        "hbm:deepslate_ore_schrabidium"
+      ],
+      "variant": null,
+      "originalClass": "BlockOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1248",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_beryllium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_beryllium",
+      "originalItem": "hbm:ore_beryllium",
+      "blockItems": [
+        "hbm:ore_beryllium",
+        "hbm:deepslate_ore_beryllium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1249",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_australium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_australium",
+      "originalItem": "hbm:ore_australium",
+      "blockItems": [
+        "hbm:ore_australium",
+        "hbm:deepslate_ore_australium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1324",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_nether_plutonium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_plutonium",
+      "originalItem": "hbm:ore_nether_plutonium",
+      "blockItems": [
+        "hbm:ore_nether_plutonium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1262",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_lithium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_lithium",
+      "originalItem": "hbm:ore_gneiss_lithium",
+      "blockItems": [
+        "hbm:ore_gneiss_lithium"
+      ],
+      "variant": null,
+      "originalClass": "BlockOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1278",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_tikite",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_tikite",
+      "originalItem": "hbm:ore_tikite",
+      "blockItems": [
+        "hbm:ore_tikite"
+      ],
+      "variant": null,
+      "originalClass": "BlockDragonProof",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1335",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_tektite_osmiridium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_tektite_osmiridium",
+      "originalItem": "hbm:ore_tektite_osmiridium",
+      "blockItems": [
+        "hbm:ore_tektite_osmiridium"
+      ],
+      "variant": null,
+      "originalClass": "BlockGeneric",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1682",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_nether_uranium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_nether_uranium",
+      "blockItems": [
+        "hbm:ore_nether_uranium"
+      ],
+      "originalClass": "BlockOutgas",
+      "variant": null,
+      "rawCanonicalSource": "ore_uranium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1260",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_uranium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_gneiss_uranium",
+      "blockItems": [
+        "hbm:ore_gneiss_uranium"
+      ],
+      "originalClass": "BlockOutgas",
+      "variant": null,
+      "rawCanonicalSource": "ore_uranium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1274",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_nether_tungsten",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_tungsten",
+      "originalItem": "hbm:ore_nether_tungsten",
+      "blockItems": [
+        "hbm:ore_nether_tungsten"
+      ],
+      "originalClass": "BlockGeneric",
+      "variant": null,
+      "rawCanonicalSource": "ore_tungsten",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1263",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_nether_schrabidium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_schrabidium",
+      "originalItem": "hbm:ore_nether_schrabidium",
+      "blockItems": [
+        "hbm:ore_nether_schrabidium"
+      ],
+      "originalClass": "BlockGeneric",
+      "variant": null,
+      "rawCanonicalSource": "ore_schrabidium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1267",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_schrabidium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_schrabidium",
+      "originalItem": "hbm:ore_gneiss_schrabidium",
+      "blockItems": [
+        "hbm:ore_gneiss_schrabidium"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "rawCanonicalSource": "ore_schrabidium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1279",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_sellafield_schrabidium",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_schrabidium",
+      "originalItem": "hbm:ore_sellafield_schrabidium",
+      "blockItems": [
+        "hbm:ore_sellafield_schrabidium"
+      ],
+      "originalClass": "BlockSellafieldOre",
+      "variant": null,
+      "rawCanonicalSource": "ore_schrabidium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1696",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_uranium_scorched",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_uranium_scorched",
+      "blockItems": [
+        "hbm:ore_uranium_scorched",
+        "hbm:deepslate_ore_uranium_scorched"
+      ],
+      "originalClass": "BlockOutgas",
+      "variant": null,
+      "rawCanonicalSource": "ore_uranium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1237",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_nether_uranium_scorched",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_nether_uranium_scorched",
+      "blockItems": [
+        "hbm:ore_nether_uranium_scorched"
+      ],
+      "originalClass": "BlockOutgas",
+      "variant": null,
+      "rawCanonicalSource": "ore_uranium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1261",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_uranium_scorched",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_gneiss_uranium_scorched",
+      "blockItems": [
+        "hbm:ore_gneiss_uranium_scorched"
+      ],
+      "originalClass": "BlockOutgas",
+      "variant": null,
+      "rawCanonicalSource": "ore_uranium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1275",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_sellafield_uranium_scorched",
+      "legacyMetadata": 0,
+      "rawItem": "hbm:raw_uranium",
+      "originalItem": "hbm:ore_sellafield_uranium_scorched",
+      "blockItems": [
+        "hbm:ore_sellafield_uranium_scorched"
+      ],
+      "originalClass": "BlockSellafieldOre",
+      "variant": null,
+      "rawCanonicalSource": "ore_uranium",
+      "miningRawCount": 1,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1695",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_iron",
+      "legacyMetadata": 0,
+      "rawItem": "minecraft:raw_iron",
+      "originalItem": "hbm:ore_gneiss_iron",
+      "blockItems": [
+        "hbm:ore_gneiss_iron"
+      ],
+      "variant": null,
+      "originalClass": "BlockOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1272",
+      "rawCanonicalSource": "minecraft:iron_ore",
+      "miningRawCount": 1,
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_gold",
+      "legacyMetadata": 0,
+      "rawItem": "minecraft:raw_gold",
+      "originalItem": "hbm:ore_gneiss_gold",
+      "blockItems": [
+        "hbm:ore_gneiss_gold"
+      ],
+      "variant": null,
+      "originalClass": "BlockOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1273",
+      "rawCanonicalSource": "minecraft:gold_ore",
+      "miningRawCount": 1,
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_copper",
+      "legacyMetadata": 0,
+      "rawItem": "minecraft:raw_copper",
+      "originalItem": "hbm:ore_gneiss_copper",
+      "blockItems": [
+        "hbm:ore_gneiss_copper"
+      ],
+      "variant": null,
+      "originalClass": "BlockOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1276",
+      "rawCanonicalSource": "minecraft:copper_ore",
+      "miningRawCount": 1,
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_meteor",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_meteor",
+      "blockItems": [
+        "hbm:ore_meteor"
+      ],
+      "variant": "iron",
+      "originalClass": "BlockMeteorOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1269",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_meteor",
+      "legacyMetadata": 1,
+      "rawItem": null,
+      "originalItem": "hbm:ore_meteor",
+      "blockItems": [
+        "hbm:ore_meteor"
+      ],
+      "variant": "copper",
+      "originalClass": "BlockMeteorOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1269",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_meteor",
+      "legacyMetadata": 2,
+      "rawItem": null,
+      "originalItem": "hbm:ore_meteor",
+      "blockItems": [
+        "hbm:ore_meteor"
+      ],
+      "variant": "aluminium",
+      "originalClass": "BlockMeteorOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1269",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_meteor",
+      "legacyMetadata": 3,
+      "rawItem": null,
+      "originalItem": "hbm:ore_meteor",
+      "blockItems": [
+        "hbm:ore_meteor"
+      ],
+      "variant": "rareearth",
+      "originalClass": "BlockMeteorOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1269",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_meteor",
+      "legacyMetadata": 4,
+      "rawItem": null,
+      "originalItem": "hbm:ore_meteor",
+      "blockItems": [
+        "hbm:ore_meteor"
+      ],
+      "variant": "cobalt",
+      "originalClass": "BlockMeteorOre",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1269",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_rare",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_rare",
+      "blockItems": [
+        "hbm:ore_rare",
+        "hbm:deepslate_ore_rare"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1325",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "rareearth",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_gneiss_rare",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_gneiss_rare",
+      "blockItems": [
+        "hbm:ore_gneiss_rare"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1280",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "rareearth",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_cobalt",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_cobalt",
+      "blockItems": [
+        "hbm:ore_cobalt",
+        "hbm:deepslate_ore_cobalt"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1326",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "cobalt",
+      "originalQuantityMin": 4,
+      "originalQuantityRandom": 6
+    },
+    {
+      "sourceSymbol": "ore_nether_cobalt",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_nether_cobalt",
+      "blockItems": [
+        "hbm:ore_nether_cobalt"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1266",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "cobalt",
+      "originalQuantityMin": 5,
+      "originalQuantityRandom": 8
+    },
+    {
+      "sourceSymbol": "ore_coltan",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_coltan",
+      "blockItems": [
+        "hbm:ore_coltan",
+        "hbm:deepslate_ore_coltan"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1328",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "tantalium/niobium",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_cinnebar",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_cinnebar",
+      "blockItems": [
+        "hbm:ore_cinnebar",
+        "hbm:deepslate_ore_cinnebar"
+      ],
+      "originalClass": "BlockOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1327",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "mercury",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_depth_cinnebar",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_depth_cinnebar",
+      "blockItems": [
+        "hbm:ore_depth_cinnebar"
+      ],
+      "originalClass": "BlockDepthOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1288",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "mercury",
+      "originalQuantityMin": 2,
+      "originalQuantityRandom": 3
+    },
+    {
+      "sourceSymbol": "ore_depth_zirconium",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_depth_zirconium",
+      "blockItems": [
+        "hbm:ore_depth_zirconium"
+      ],
+      "originalClass": "BlockDepthOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1289",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "zirconium",
+      "originalQuantityMin": 2,
+      "originalQuantityRandom": 2
+    },
+    {
+      "sourceSymbol": "ore_depth_nether_neodymium",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:ore_depth_nether_neodymium",
+      "blockItems": [
+        "hbm:ore_depth_nether_neodymium"
+      ],
+      "originalClass": "BlockDepthOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1309",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "neodymium",
+      "originalQuantityMin": 2,
+      "originalQuantityRandom": 2
+    },
+    {
+      "sourceSymbol": "cluster_iron",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_iron",
+      "blockItems": [
+        "hbm:cluster_iron",
+        "hbm:deepslate_cluster_iron"
+      ],
+      "originalClass": "BlockCluster",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1253",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "iron",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "cluster_titanium",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_titanium",
+      "blockItems": [
+        "hbm:cluster_titanium",
+        "hbm:deepslate_cluster_titanium"
+      ],
+      "originalClass": "BlockCluster",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1254",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "titanium",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "cluster_aluminium",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_aluminium",
+      "blockItems": [
+        "hbm:cluster_aluminium",
+        "hbm:deepslate_cluster_aluminium"
+      ],
+      "originalClass": "BlockCluster",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1255",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "aluminium",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "cluster_copper",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_copper",
+      "blockItems": [
+        "hbm:cluster_copper",
+        "hbm:deepslate_cluster_copper"
+      ],
+      "originalClass": "BlockCluster",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1256",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "copper",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "cluster_depth_iron",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_depth_iron",
+      "blockItems": [
+        "hbm:cluster_depth_iron"
+      ],
+      "originalClass": "BlockDepthOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1291",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "iron",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "cluster_depth_titanium",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_depth_titanium",
+      "blockItems": [
+        "hbm:cluster_depth_titanium"
+      ],
+      "originalClass": "BlockDepthOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1292",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "titanium",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "cluster_depth_tungsten",
+      "legacyMetadata": 0,
+      "rawItem": null,
+      "originalItem": "hbm:cluster_depth_tungsten",
+      "blockItems": [
+        "hbm:cluster_depth_tungsten"
+      ],
+      "originalClass": "BlockDepthOre",
+      "variant": null,
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1293",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "tungsten",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "stone_resource",
+      "legacyMetadata": 3,
+      "rawItem": null,
+      "originalItem": "hbm:stone_resource",
+      "blockItems": [
+        "hbm:stone_resource"
+      ],
+      "originalClass": "BlockResourceStone",
+      "variant": "malachite",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1312",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "copper",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "ore_basalt",
+      "legacyMetadata": 4,
+      "rawItem": null,
+      "originalItem": "hbm:ore_basalt",
+      "blockItems": [
+        "hbm:ore_basalt"
+      ],
+      "originalClass": "BlockOreBasalt",
+      "variant": "molysite",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1318",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "iron",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "stone_resource",
+      "legacyMetadata": 2,
+      "rawItem": null,
+      "originalItem": "hbm:stone_resource",
+      "blockItems": [
+        "hbm:stone_resource"
+      ],
+      "originalClass": "BlockResourceStone",
+      "variant": "hematite",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1312",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "iron",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    },
+    {
+      "sourceSymbol": "stone_resource",
+      "legacyMetadata": 5,
+      "rawItem": null,
+      "originalItem": "hbm:stone_resource",
+      "blockItems": [
+        "hbm:stone_resource"
+      ],
+      "originalClass": "BlockResourceStone",
+      "variant": "bauxite",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:1312",
+      "miningPolicy": "preserve_original_drop",
+      "extractedMetal": "aluminium",
+      "originalQuantityMin": 1,
+      "originalQuantityRandom": 0
+    }
+  ],
+  "vanillaCanonical": [
+    {
+      "sourceSymbol": "minecraft:iron_ore",
+      "legacyMetadata": 0,
+      "rawItem": "minecraft:raw_iron",
+      "originalItem": "minecraft:iron_ore",
+      "blockItems": [
+        "minecraft:iron_ore",
+        "minecraft:deepslate_iron_ore"
+      ],
+      "rawCanonicalSource": "minecraft:iron_ore"
+    },
+    {
+      "sourceSymbol": "minecraft:gold_ore",
+      "legacyMetadata": 0,
+      "rawItem": "minecraft:raw_gold",
+      "originalItem": "minecraft:gold_ore",
+      "blockItems": [
+        "minecraft:gold_ore",
+        "minecraft:deepslate_gold_ore"
+      ],
+      "rawCanonicalSource": "minecraft:gold_ore"
+    },
+    {
+      "sourceSymbol": "minecraft:copper_ore",
+      "legacyMetadata": 0,
+      "rawItem": "minecraft:raw_copper",
+      "originalItem": "minecraft:copper_ore",
+      "blockItems": [
+        "minecraft:copper_ore",
+        "minecraft:deepslate_copper_ore"
+      ],
+      "rawCanonicalSource": "minecraft:copper_ore"
+    }
+  ],
+  "meteorDrops": [
+    {
+      "legacyMetadata": 0,
+      "item": "minecraft:iron_ore",
+      "count": 16,
+      "originalOutput": "minecraft:iron_ingot",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java:48"
+    },
+    {
+      "legacyMetadata": 1,
+      "item": "minecraft:copper_ore",
+      "count": 16,
+      "originalOutput": "ingot_copper",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java:49"
+    },
+    {
+      "legacyMetadata": 2,
+      "item": "hbm:raw_aluminium",
+      "count": 16,
+      "originalOutput": "chunk_ore#CRYOLITE",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java:50"
+    },
+    {
+      "legacyMetadata": 3,
+      "item": "hbm:ore_rare",
+      "count": 16,
+      "originalOutput": "chunk_ore#RARE",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java:51"
+    },
+    {
+      "legacyMetadata": 4,
+      "item": "hbm:ore_cobalt",
+      "count": 4,
+      "originalOutput": "ingot_cobalt",
+      "sourceEvidence": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java:52"
+    }
+  ]
+}

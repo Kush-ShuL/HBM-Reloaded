@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 7,
+  "source_key": "ore:ingotCopper",
+  "source_hash": 1668074114,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotcopper"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_red_copper",
+    "count": 1
+  }
+}

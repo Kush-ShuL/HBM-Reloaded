@@ -1,0 +1,34 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_pigeon",
+      "id": "hbm:entity_pigeon",
+      "originalClass": "EntityPigeon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 181
+      },
+      "width": 0.5,
+      "height": 1,
+      "trackingRangeBlocks": 80,
+      "nativeTrackingChunks": 5,
+      "trackingInterval": 3,
+      "velocityUpdates": true,
+      "sourceEggColors": [
+        13158861,
+        8751252
+      ]
+    }
+  ],
+  "modernSpawnEggs": [
+    {
+      "id": "hbm:pigeon_spawn_egg",
+      "modernHelperItem": true,
+      "sourceSharedItem": "minecraft:spawn_egg",
+      "hasSourceModItemsField": false,
+      "creativeTab": "minecraft:spawn_eggs"
+    }
+  ]
+}

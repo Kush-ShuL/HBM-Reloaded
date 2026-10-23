@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "barbed_wire_fire",
+      "id": "hbm:barbed_wire_fire",
+      "legacyRegistryId": "hbm:tile.barbed_wire_fire",
+      "originalClass": "BarbedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2069
+      },
+      "creativeTab": "block",
+      "sourceMetadata": [
+        0,
+        5
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "barbed_wire_poison",
+      "id": "hbm:barbed_wire_poison",
+      "legacyRegistryId": "hbm:tile.barbed_wire_poison",
+      "originalClass": "BarbedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2070
+      },
+      "creativeTab": "block",
+      "sourceMetadata": [
+        0,
+        5
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "barbed_wire_acid",
+      "id": "hbm:barbed_wire_acid",
+      "legacyRegistryId": "hbm:tile.barbed_wire_acid",
+      "originalClass": "BarbedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2071
+      },
+      "creativeTab": "block",
+      "sourceMetadata": [
+        0,
+        5
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "barbed_wire_wither",
+      "id": "hbm:barbed_wire_wither",
+      "legacyRegistryId": "hbm:tile.barbed_wire_wither",
+      "originalClass": "BarbedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2072
+      },
+      "creativeTab": "block",
+      "sourceMetadata": [
+        0,
+        5
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "barbed_wire_ultradeath",
+      "id": "hbm:barbed_wire_ultradeath",
+      "legacyRegistryId": "hbm:tile.barbed_wire_ultradeath",
+      "originalClass": "BarbedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2073
+      },
+      "creativeTab": "block",
+      "sourceMetadata": [
+        0,
+        5
+      ]
+    }
+  ]
+}

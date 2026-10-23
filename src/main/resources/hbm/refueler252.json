@@ -1,0 +1,26 @@
+{
+  "module": "refueler252",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "refueler",
+      "id": "hbm:refueler",
+      "legacyRegistryId": "hbm:tile.refueler",
+      "originalClass": "BlockRefueler",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2077
+      },
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ],
+  "sourceBlockEntity": "tileentity_ntm_refueler",
+  "nativeBlockEntity": "hbm:refueler"
+}

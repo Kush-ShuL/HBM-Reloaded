@@ -1,0 +1,41 @@
+{
+  "result": {
+    "id": "hbm:ams_catalyst_schrabidium",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:ams_catalyst_blank"
+    },
+    {
+      "item": "hbm:rune_dagaz"
+    },
+    {
+      "item": "hbm:rune_hagalaz"
+    },
+    {
+      "item": "hbm:rune_thurisaz"
+    },
+    {
+      "item": "hbm:rune_thurisaz"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustschrabidium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustschrabidium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustschrabidium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustschrabidium"
+    }
+  ]
+}

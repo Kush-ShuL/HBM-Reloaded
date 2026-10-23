@@ -1,0 +1,44 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/oreuranium"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "hbm:powder_uranium",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_uranium",
+      "count": 1
+    },
+    {
+      "id": "hbm:nugget_ra226",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ],
+  "lbsm_results": [
+    {
+      "id": "hbm:powder_uranium",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_technetium",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_ra226",
+      "count": 2
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ]
+}

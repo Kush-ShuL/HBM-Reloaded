@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:battery_pack",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 6
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "PRP",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockcopper"
+    },
+    "P": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

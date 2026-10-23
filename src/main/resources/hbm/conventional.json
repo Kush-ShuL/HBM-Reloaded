@@ -1,0 +1,604 @@
+{
+  "registrations": [
+    {
+      "symbol": "dynamite",
+      "id": "hbm:dynamite",
+      "kind": "block",
+      "originalClass": "BlockDynamite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1742
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "tnt",
+      "id": "hbm:tnt_ntm",
+      "kind": "block",
+      "originalClass": "BlockTNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1743
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "semtex",
+      "id": "hbm:semtex",
+      "kind": "block",
+      "originalClass": "BlockSemtex",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1744
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "c4",
+      "id": "hbm:c4",
+      "kind": "block",
+      "originalClass": "BlockC4",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1745
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "charge_dynamite",
+      "id": "hbm:charge_dynamite",
+      "kind": "block",
+      "originalClass": "BlockChargeDynamite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1733
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "charge_miner",
+      "id": "hbm:charge_miner",
+      "kind": "block",
+      "originalClass": "BlockChargeMiner",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1734
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "charge_c4",
+      "id": "hbm:charge_c4",
+      "kind": "block",
+      "originalClass": "BlockChargeC4",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1735
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "charge_semtex",
+      "id": "hbm:charge_semtex",
+      "kind": "block",
+      "originalClass": "BlockChargeSemtex",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1736
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "det_charge",
+      "id": "hbm:det_charge",
+      "kind": "block",
+      "originalClass": "ExplosiveCharge",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1722
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "det_miner",
+      "id": "hbm:det_miner",
+      "kind": "block",
+      "originalClass": "DetMiner",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1724
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "det_nuke",
+      "id": "hbm:det_nuke",
+      "kind": "block",
+      "originalClass": "ExplosiveCharge",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1723
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mine_ap",
+      "id": "hbm:mine_ap",
+      "kind": "block",
+      "originalClass": "Landmine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1737
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mine_he",
+      "id": "hbm:mine_he",
+      "kind": "block",
+      "originalClass": "Landmine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1738
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mine_shrap",
+      "id": "hbm:mine_shrap",
+      "kind": "block",
+      "originalClass": "Landmine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1739
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mine_naval",
+      "id": "hbm:mine_naval",
+      "kind": "block",
+      "originalClass": "Landmine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1741
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mine_fat",
+      "id": "hbm:mine_fat",
+      "kind": "block",
+      "originalClass": "Landmine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1740
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "flame_war",
+      "id": "hbm:flame_war",
+      "kind": "block",
+      "originalClass": "BombFlameWar",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1716
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "therm_endo",
+      "id": "hbm:therm_endo",
+      "kind": "block",
+      "originalClass": "BombThermo",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1718
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "therm_exo",
+      "id": "hbm:therm_exo",
+      "kind": "block",
+      "originalClass": "BombThermo",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1719
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "float_bomb",
+      "id": "hbm:float_bomb",
+      "kind": "block",
+      "originalClass": "BombFloat",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1717
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "emp_bomb",
+      "id": "hbm:emp_bomb",
+      "kind": "block",
+      "originalClass": "BombFloat",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1720
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_barrel",
+      "id": "hbm:red_barrel",
+      "kind": "block",
+      "originalClass": "RedBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1725
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pink_barrel",
+      "id": "hbm:pink_barrel",
+      "kind": "block",
+      "originalClass": "RedBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1726
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "lox_barrel",
+      "id": "hbm:lox_barrel",
+      "kind": "block",
+      "originalClass": "RedBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1729
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "yellow_barrel",
+      "id": "hbm:yellow_barrel",
+      "kind": "block",
+      "originalClass": "YellowBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1727
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "vitrified_barrel",
+      "id": "hbm:vitrified_barrel",
+      "kind": "block",
+      "originalClass": "YellowBarrel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1728
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "bomb_multi",
+      "id": "hbm:bomb_multi",
+      "kind": "block",
+      "originalClass": "BombMulti",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1714
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "stick_dynamite",
+      "id": "hbm:stick_dynamite",
+      "kind": "item",
+      "originalClass": "ItemGrenadeDynamite",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3595
+      },
+      "tab": "weapon",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "grenade_shell",
+      "id": "hbm:grenade_shell",
+      "kind": "item",
+      "originalClass": "ItemGrenadeShell",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3601
+      },
+      "tab": "weapon",
+      "status": "implemented",
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "frag",
+        "stick",
+        "tech",
+        "nuke"
+      ],
+      "enumClass": "EnumGrenadeShell"
+    },
+    {
+      "symbol": "grenade_filling",
+      "id": "hbm:grenade_filling",
+      "kind": "item",
+      "originalClass": "ItemGrenadeFilling",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3602
+      },
+      "tab": "weapon",
+      "status": "implemented",
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        12
+      ],
+      "names": [
+        "powder",
+        "he",
+        "demo",
+        "inc",
+        "wp",
+        "cluster",
+        "emp",
+        "plasma",
+        "laser",
+        "cluster_heavy",
+        "nuclear",
+        "nuclear_demo",
+        "schrab"
+      ],
+      "enumClass": "EnumGrenadeFilling"
+    },
+    {
+      "symbol": "grenade_fuze",
+      "id": "hbm:grenade_fuze",
+      "kind": "item",
+      "originalClass": "ItemGrenadeFuze",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3603
+      },
+      "tab": "weapon",
+      "status": "implemented",
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        4
+      ],
+      "names": [
+        "s3",
+        "s7",
+        "s15",
+        "impact",
+        "airburst"
+      ],
+      "enumClass": "EnumGrenadeFuze"
+    },
+    {
+      "symbol": "grenade_extra",
+      "id": "hbm:grenade_extra",
+      "kind": "item",
+      "originalClass": "ItemGrenadeExtra",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3604
+      },
+      "tab": "weapon",
+      "status": "implemented",
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        3
+      ],
+      "names": [
+        "glue",
+        "proxy_fuze",
+        "frag_sleeve",
+        "triplex"
+      ],
+      "enumClass": "EnumGrenadeExtra"
+    },
+    {
+      "symbol": "grenade_universal",
+      "id": "hbm:grenade_universal",
+      "kind": "item",
+      "originalClass": "ItemGrenadeUniversal",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3605
+      },
+      "tab": "weapon",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "multi_kit",
+      "id": "hbm:multi_kit",
+      "kind": "item",
+      "originalClass": "ItemStarterKit",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3790
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "det_cord",
+      "id": "hbm:det_cord",
+      "kind": "block",
+      "originalClass": "DetCord",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1721
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "block_semtex",
+      "id": "hbm:block_semtex",
+      "kind": "block",
+      "originalClass": "BlockPlasticExplosive",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1424
+      },
+      "tab": "block",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "block_c4",
+      "id": "hbm:block_c4",
+      "kind": "block",
+      "originalClass": "BlockPlasticExplosive",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1425
+      },
+      "tab": "block",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "detonator",
+      "id": "hbm:detonator",
+      "kind": "item",
+      "originalClass": "ItemDetonator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3815
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "detonator_multi",
+      "id": "hbm:detonator_multi",
+      "kind": "item",
+      "originalClass": "ItemMultiDetonator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3816
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "detonator_laser",
+      "id": "hbm:detonator_laser",
+      "kind": "item",
+      "originalClass": "ItemLaserDetonator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3817
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "detonator_deadman",
+      "id": "hbm:detonator_deadman",
+      "kind": "item",
+      "originalClass": "ItemDrop",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3818
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "detonator_de",
+      "id": "hbm:detonator_de",
+      "kind": "item",
+      "originalClass": "ItemDrop",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3819
+      },
+      "tab": "nuke",
+      "status": "implemented",
+      "runtimeValidated": false
+    }
+  ]
+}

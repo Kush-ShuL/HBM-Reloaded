@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:fence_metal",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:fence_metal",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      }
+    }
+  ]
+}

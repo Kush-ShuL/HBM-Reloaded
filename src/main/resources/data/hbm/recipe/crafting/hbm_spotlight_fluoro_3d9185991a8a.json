@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:spotlight_fluoro",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "G",
+    "M",
+    "A"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    "M": {
+      "item": "hbm:nugget_mercury"
+    },
+    "A": {
+      "item": "hbm:plate_aluminium"
+    }
+  }
+}

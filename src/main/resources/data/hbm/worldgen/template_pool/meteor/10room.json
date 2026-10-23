@@ -1,0 +1,86 @@
+{
+  "name": "hbm:meteor/10room",
+  "fallback": "hbm:meteor/roomback",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_basic",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_balcony",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_dragon",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_ladder",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_ooze",
+        "processors": "hbm:meteor/ooze",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_split",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_stairs",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hbm:legacy_natural/meteor_room_triple",
+        "processors": "hbm:meteor/bricks",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    }
+  ]
+}

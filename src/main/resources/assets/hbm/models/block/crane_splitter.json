@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "hbm:block/crane_side",
+    "crane_splitter_top_left": "hbm:block/crane_splitter_top_left",
+    "crane_splitter_top_right": "hbm:block/crane_splitter_top_right",
+    "crane_splitter_front_left": "hbm:block/crane_splitter_front_left",
+    "crane_splitter_front_right": "hbm:block/crane_splitter_front_right",
+    "crane_splitter_back_left": "hbm:block/crane_splitter_back_left",
+    "crane_splitter_back_right": "hbm:block/crane_splitter_back_right",
+    "crane_splitter_left": "hbm:block/crane_splitter_left",
+    "crane_splitter_right": "hbm:block/crane_splitter_right",
+    "crane_splitter_belt": "hbm:block/crane_splitter_belt",
+    "crane_splitter_inner": "hbm:block/crane_splitter_inner",
+    "crane_splitter_inner_side": "hbm:block/crane_splitter_inner_side",
+    "crane_side": "hbm:block/crane_side"
+  }
+}

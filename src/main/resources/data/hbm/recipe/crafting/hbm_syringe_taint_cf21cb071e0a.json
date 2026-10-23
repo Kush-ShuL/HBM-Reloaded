@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:syringe_taint",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:bottle2_empty"
+    },
+    {
+      "item": "hbm:syringe_metal_empty"
+    },
+    {
+      "item": "hbm:ducttape"
+    },
+    {
+      "item": "hbm:powder_magic"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+    },
+    {
+      "type": "hbm:source_water_potion"
+    }
+  ]
+}

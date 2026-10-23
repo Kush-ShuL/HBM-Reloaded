@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_coltan",
+    {
+      "id": "#c:storage_blocks/coltan",
+      "required": false
+    }
+  ]
+}

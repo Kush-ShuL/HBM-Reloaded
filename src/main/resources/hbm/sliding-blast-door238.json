@@ -1,0 +1,38 @@
+{
+  "module": "sliding-blast-door238",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "sliding_blast_door",
+      "id": "hbm:sliding_blast_door",
+      "legacyRegistryId": "hbm:tile.sliding_blast_door",
+      "originalClass": "BlockDoorGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2049
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2980
+          },
+          "expression": "GameRegistry.registerBlock(sliding_blast_door, sliding_blast_door.getUnlocalizedName())",
+          "arguments": [
+            "sliding_blast_door",
+            "sliding_blast_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "sourceDeclaration": "SLIDE_DOOR"
+    }
+  ]
+}

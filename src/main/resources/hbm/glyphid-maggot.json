@@ -1,0 +1,36 @@
+{
+  "sourceClass": "legacy/src/main/java/com/hbm/entity/mob/EntityParasiteMaggot.java",
+  "originalRender": "legacy/src/main/java/com/hbm/render/entity/mob/RenderMaggot.java",
+  "attributes": {
+    "health": 8,
+    "speed": 1,
+    "damage": 2,
+    "followRange": 16
+  },
+  "dimensions": [
+    0.3,
+    0.7
+  ],
+  "tracking": {
+    "blocks": 80,
+    "interval": 3,
+    "velocity": true
+  },
+  "eggColors": [
+    13684944,
+    8421504
+  ],
+  "realOriginalModel": "official1.7.10 ModelSilverfish/bia:7 body +3 fins, all original boxes/UV/float sin/cos and pivots via existing1.7 model adapter",
+  "deathRollDegrees": 180,
+  "shadowSize": 0.3,
+  "noInventedParasiteDisease": true,
+  "sourceNaturalSpawnEntries": [],
+  "oldAi": "source non-goal EntityCreature/EntityMob controller + official1.7 A* node ordering/squared heuristic/heap/downfall/door-water policies; no zombie/modern melee-goal substitute",
+  "modernAdaptations": [
+    "Full XYZ node keys avoid the old8-bit-height/int hash collisions at negative/expanded modern heights.",
+    "Only ready loaded chunks enter path collision; an unloaded neighbor is unavailable, never fake air and never a synchronous chunk load.",
+    "The oldY>0 falling boundary follows actual minBuildHeight.",
+    "Native1.21 entity core collision/travel is retained with the original non-goal .1 grounded speed factor and source movement attribute in moveForward; no global combat/physics replacement.",
+    "Native separate SpawnEggItem/vanilla SPAWN_EGGS tab replaces source vanilla spawn_egg metadata entry with its exact original colors."
+  ]
+}

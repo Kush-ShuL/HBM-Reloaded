@@ -1,0 +1,664 @@
+{
+  "pools": {
+    "POOL_RED_PEDESTAL": {
+      "name": "POOL_RED_PEDESTAL",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 23
+          },
+          "arguments": [
+            "ModItems.ballistic_gauntlet",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:ballistic_gauntlet",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 24
+          },
+          "arguments": [
+            "ModItems.armor_polish",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:armor_polish",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 25
+          },
+          "arguments": [
+            "ModItems.bandaid",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:bandaid",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 26
+          },
+          "arguments": [
+            "ModItems.serum",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:serum",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 27
+          },
+          "arguments": [
+            "ModItems.quartz_plutonium",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:quartz_plutonium",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 28
+          },
+          "arguments": [
+            "ModItems.morning_glory",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:morning_glory",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 29
+          },
+          "arguments": [
+            "ModItems.spider_milk",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:spider_milk",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 30
+          },
+          "arguments": [
+            "ModItems.ink",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:ink",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 31
+          },
+          "arguments": [
+            "ModItems.heart_container",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:heart_container",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 32
+          },
+          "arguments": [
+            "ModItems.black_diamond",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:black_diamond",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 33
+          },
+          "arguments": [
+            "ModItems.scrumpy",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:scrumpy",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 35
+          },
+          "arguments": [
+            "ModItems.wild_p",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:wild_p",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 36
+          },
+          "arguments": [
+            "ModItems.card_aos",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:card_aos",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 37
+          },
+          "arguments": [
+            "ModItems.card_qos",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:card_qos",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 38
+          },
+          "arguments": [
+            "ModItems.starmetal_sword",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:starmetal_sword",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 39
+          },
+          "arguments": [
+            "ModItems.gem_alexandrite",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:gem_alexandrite",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 40
+          },
+          "arguments": [
+            "ModItems.crackpipe",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:crackpipe",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 41
+          },
+          "arguments": [
+            "ModItems.flask_infusion",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:flask_infusion",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 42
+          },
+          "arguments": [
+            "ModBlocks.boxcar",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:boxcar",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 43
+          },
+          "arguments": [
+            "ModItems.book_of_",
+            "0",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:book_of_",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 45
+          },
+          "arguments": [
+            "ModItems.gun_hangman",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_hangman",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 46
+          },
+          "arguments": [
+            "ModItems.gun_mas36",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_mas36",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 47
+          },
+          "arguments": [
+            "ModItems.item_secret",
+            "EnumSecretType.FOLLY.ordinal()",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:item_secret",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 4
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 48
+          },
+          "arguments": [
+            "ModItems.weapon_mod_special",
+            "EnumModSpecial.NICKEL.ordinal()",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:weapon_mod_special",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 16
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 49
+          },
+          "arguments": [
+            "ModItems.weapon_mod_special",
+            "EnumModSpecial.DOUBLOONS.ordinal()",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:weapon_mod_special",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 17
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_red_pedestal"
+    },
+    "POOL_BLACK_SLAB": {
+      "name": "POOL_BLACK_SLAB",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 56
+          },
+          "arguments": [
+            "ModItems.clay_tablet",
+            "0",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:clay_tablet",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_black_slab"
+    },
+    "POOL_BLACK_PART": {
+      "name": "POOL_BLACK_PART",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 63
+          },
+          "arguments": [
+            "ModItems.item_secret",
+            "EnumSecretType.SELENIUM_STEEL.ordinal()",
+            "4",
+            "4",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:item_secret",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          },
+          "minimum": 4,
+          "maximum": 4,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 64
+          },
+          "arguments": [
+            "ModItems.item_secret",
+            "EnumSecretType.CONTROLLER.ordinal()",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:item_secret",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 1
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 65
+          },
+          "arguments": [
+            "ModItems.item_secret",
+            "EnumSecretType.CANISTER.ordinal()",
+            "1",
+            "1",
+            "10"
+          ],
+          "stack": {
+            "id": "hbm:item_secret",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 10
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsRedRoom.java",
+            "line": 66
+          },
+          "arguments": [
+            "ModItems.blueprint_folder",
+            "2",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:blueprint_folder",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_black_part"
+    }
+  }
+}

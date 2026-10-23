@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:cobalt_decorated_sword",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "X": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockcobalt"
+    },
+    "#": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stickwood"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleToolRecipes"
+    }
+  ]
+}

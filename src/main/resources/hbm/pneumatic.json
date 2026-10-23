@@ -1,0 +1,44 @@
+{
+  "entries": [
+    {
+      "symbol": "pneumatic_tube",
+      "id": "hbm:pneumatic_tube",
+      "kind": "block",
+      "originalClass": "PneumoTube",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1928
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pneumatic_tube_paintable",
+      "id": "hbm:pneumatic_tube_paintable",
+      "kind": "block",
+      "originalClass": "PneumoTubePaintableBlock",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1929
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "pipe_anchor_pneumatic",
+      "id": "hbm:pipe_anchor_pneumatic",
+      "kind": "block",
+      "originalClass": "PneumoPipeAnchor",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1886
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "crafting": 4,
+  "sourceOcMethods": 0,
+  "nativeFluid": "AIR4000pressure1..5",
+  "sharedAPI": "api.hbm.ntl + com.hbm.pneumatic"
+}

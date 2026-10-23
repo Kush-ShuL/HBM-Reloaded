@@ -1,0 +1,66 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_purex",
+      "id": "hbm:machine_purex",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "MachinePUREX",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2218
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_tiny",
+      "id": "hbm:nuclear_waste_tiny",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemNuclearWaste",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3350
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_vitrified",
+      "id": "hbm:nuclear_waste_vitrified",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemNuclearWaste",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3351
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "nuclear_waste_vitrified_tiny",
+      "id": "hbm:nuclear_waste_vitrified_tiny",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemNuclearWaste",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3352
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "ingot_schraranium",
+      "id": "hbm:ingot_schraranium",
+      "kind": "item",
+      "creativeTab": "parts",
+      "originalClass": "ItemSchraranium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2161
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "sourceRecipes": 59,
+  "parserPending": 0
+}

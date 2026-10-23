@@ -1,0 +1,21 @@
+{
+  "type": "hbm:storage_upgrade",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "DSD",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:plate_desh"
+    },
+    "S": {
+      "item": "hbm:crate_steel"
+    }
+  },
+  "result": {
+    "id": "hbm:crate_desh",
+    "count": 1
+  }
+}

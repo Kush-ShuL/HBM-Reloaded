@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "nuclear_creeper_spawn_egg",
+      "id": "hbm:nuclear_creeper_spawn_egg",
+      "originalClass": "ModEntityList.registerEntityEgg",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:169",
+      "sourceEntity": "hbm:entity_mob_nuclear_creeper",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:spawn_eggs",
+      "sourceEggColors": [
+        2113841,
+        7720448
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "phosgene_creeper_spawn_egg",
+      "id": "hbm:phosgene_creeper_spawn_egg",
+      "originalClass": "ModEntityList.registerEntityEgg",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:171",
+      "sourceEntity": "hbm:entity_mob_phosgene_creeper",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:spawn_eggs",
+      "sourceEggColors": [
+        14930840,
+        12099691
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "volatile_creeper_spawn_egg",
+      "id": "hbm:volatile_creeper_spawn_egg",
+      "originalClass": "ModEntityList.registerEntityEgg",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:172",
+      "sourceEntity": "hbm:entity_mob_volatile_creeper",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:spawn_eggs",
+      "sourceEggColors": [
+        12747091,
+        5060652
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "gold_creeper_spawn_egg",
+      "id": "hbm:gold_creeper_spawn_egg",
+      "originalClass": "ModEntityList.registerEntityEgg",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:173",
+      "sourceEntity": "hbm:entity_mob_gold_creeper",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:spawn_eggs",
+      "sourceEggColors": [
+        15515958,
+        10390334
+      ]
+    }
+  ]
+}

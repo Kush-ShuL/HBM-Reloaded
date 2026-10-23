@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:polymer",
+  "display": {
+    "icon": {
+      "id": "hbm:missile_nuclear"
+    },
+    "title": {
+      "translate": "achievement.redBalloons"
+    },
+    "description": {
+      "translate": "achievement.redBalloons.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:redballoons"
+      }
+    }
+  }
+}

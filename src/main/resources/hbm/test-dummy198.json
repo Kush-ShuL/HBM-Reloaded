@@ -1,0 +1,34 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_ntm_test_dummy",
+      "id": "hbm:entity_ntm_test_dummy",
+      "originalClass": "EntityDummy",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 196
+      },
+      "sourceEggColors": [
+        16777215,
+        0
+      ],
+      "width": 0.6,
+      "height": 1.8,
+      "trackingRangeBlocks": 80,
+      "nativeTrackingChunks": 5,
+      "trackingInterval": 3,
+      "velocityUpdates": true
+    }
+  ],
+  "modernSpawnEggs": [
+    {
+      "id": "hbm:test_dummy_spawn_egg",
+      "modernHelperItem": true,
+      "sourceSharedItem": "minecraft:spawn_egg",
+      "hasSourceModItemsField": false,
+      "creativeTab": "minecraft:spawn_eggs"
+    }
+  ]
+}

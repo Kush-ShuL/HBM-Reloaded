@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "casing_bag",
+      "id": "hbm:casing_bag",
+      "legacyRegistryId": "item.casing_bag",
+      "originalClass": "ItemCasingBag",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:3362",
+      "registrationSource": "legacy/src/main/java/com/hbm/items/ModItems.java:5528",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.item.casingbag.CasingBagContent"
+    }
+  ]
+}

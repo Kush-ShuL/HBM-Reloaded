@@ -1,0 +1,42 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mikedeut",
+  "duration": 600,
+  "power": 100,
+  "order": 232,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:mike_deut",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetitanium"
+      },
+      "count": 16
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "DEUTERIUM",
+      "amount": 10000,
+      "pressure": 0
+    }
+  ]
+}

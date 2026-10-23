@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:can_empty"
+    },
+    {
+      "type": "hbm:source_water_potion"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustfluorite"
+    }
+  ],
+  "result": {
+    "id": "hbm:can_mrsugar",
+    "count": 1
+  }
+}

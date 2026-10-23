@@ -1,0 +1,30 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "hbm:anvil_ferrouranium",
+    "count": 1
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:anvil_lead",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:ingot_ferrouranium",
+        "count": 1
+      }
+    },
+    "count": 10
+  },
+  "kind": "normal",
+  "order": 67000001
+}

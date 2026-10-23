@@ -1,0 +1,25 @@
+{
+  "name": "Deuterium",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    8
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      8
+    ]
+  ],
+  "title": {
+    "en_US": "Deuterium",
+    "ru_RU": "Дейтерий",
+    "zh_CN": "氘"
+  },
+  "content": {
+    "en_US": "Deuterium can be made by [[electrolyzing|Electrolysis Machine]] [[heavy water|Heavy Water]]. It is primarily used to produce various plasmas inside the [[fusion reactor|Fusion Reactor]].",
+    "ru_RU": "Дейтерий можно получить путём [[электролиза|Electrolysis Machine]] [[тяжёлой воды|Heavy Water]]. В основном он используется для производства различной плазмы внутри [[термоядерного реактора|Fusion Reactor]].",
+    "zh_CN": "在[[电解机|Electrolysis Machine]]中电解[[重水|Heavy Water]]即可制取氘。它主要用于在[[聚变反应堆|Fusion Reactor]]内生产多种等离子体。"
+  }
+}

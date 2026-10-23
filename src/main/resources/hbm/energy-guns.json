@@ -1,0 +1,59 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gun_tesla_cannon",
+      "id": "hbm:gun_tesla_cannon",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "weaponQuality": "A_SIDE",
+      "pistol": false,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_laser_pistol",
+      "id": "hbm:gun_laser_pistol",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "weaponQuality": "A_SIDE",
+      "pistol": true,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_laser_pistol_pew_pew",
+      "id": "hbm:gun_laser_pistol_pew_pew",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "weaponQuality": "B_SIDE",
+      "pistol": true,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_laser_pistol_morning_glory",
+      "id": "hbm:gun_laser_pistol_morning_glory",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "weaponQuality": "LEGENDARY",
+      "pistol": true,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_lasrifle",
+      "id": "hbm:gun_lasrifle",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "weaponQuality": "A_SIDE",
+      "pistol": false,
+      "builtInDual": false
+    }
+  ]
+}

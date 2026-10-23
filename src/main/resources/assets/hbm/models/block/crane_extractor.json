@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "hbm:block/crane_top",
+    "source0": "hbm:block/crane_top",
+    "source1": "hbm:block/crane_side",
+    "source2": "hbm:block/crane_in",
+    "source3": "hbm:block/crane_side_in",
+    "source4": "hbm:block/crane_out",
+    "source5": "hbm:block/crane_side_out",
+    "source6": "hbm:block/crane_out_top",
+    "source7": "hbm:block/crane_out_side_down",
+    "source8": "hbm:block/crane_out_side_up",
+    "source9": "hbm:block/crane_out_top_right",
+    "source10": "hbm:block/crane_out_top_left",
+    "source11": "hbm:block/crane_out_side_up_turn_left",
+    "source12": "hbm:block/crane_out_side_up_turn_right",
+    "source13": "hbm:block/crane_out_side_down_turn_left",
+    "source14": "hbm:block/crane_out_side_down_turn_right",
+    "source15": "hbm:block/crane_out_side_left_turn_up",
+    "source16": "hbm:block/crane_out_side_right_turn_up",
+    "source17": "hbm:block/crane_out_side_left_turn_down",
+    "source18": "hbm:block/crane_out_side_right_turn_down"
+  }
+}

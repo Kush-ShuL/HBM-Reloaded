@@ -1,0 +1,268 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "missile_generic",
+      "id": "hbm:missile_generic",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3397
+      },
+      "legacyRegistryId": "hbm:item.missile_generic",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_anti_ballistic",
+      "id": "hbm:missile_anti_ballistic",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3398
+      },
+      "legacyRegistryId": "hbm:item.missile_anti_ballistic",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_incendiary",
+      "id": "hbm:missile_incendiary",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3399
+      },
+      "legacyRegistryId": "hbm:item.missile_incendiary",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_cluster",
+      "id": "hbm:missile_cluster",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3400
+      },
+      "legacyRegistryId": "hbm:item.missile_cluster",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_buster",
+      "id": "hbm:missile_buster",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3401
+      },
+      "legacyRegistryId": "hbm:item.missile_buster",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_decoy",
+      "id": "hbm:missile_decoy",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3402
+      },
+      "legacyRegistryId": "hbm:item.missile_decoy",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_strong",
+      "id": "hbm:missile_strong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3403
+      },
+      "legacyRegistryId": "hbm:item.missile_strong",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_incendiary_strong",
+      "id": "hbm:missile_incendiary_strong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3404
+      },
+      "legacyRegistryId": "hbm:item.missile_incendiary_strong",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_cluster_strong",
+      "id": "hbm:missile_cluster_strong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3405
+      },
+      "legacyRegistryId": "hbm:item.missile_cluster_strong",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_buster_strong",
+      "id": "hbm:missile_buster_strong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3406
+      },
+      "legacyRegistryId": "hbm:item.missile_buster_strong",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_emp_strong",
+      "id": "hbm:missile_emp_strong",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3407
+      },
+      "legacyRegistryId": "hbm:item.missile_emp_strong",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_burst",
+      "id": "hbm:missile_burst",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3408
+      },
+      "legacyRegistryId": "hbm:item.missile_burst",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_inferno",
+      "id": "hbm:missile_inferno",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3409
+      },
+      "legacyRegistryId": "hbm:item.missile_inferno",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_rain",
+      "id": "hbm:missile_rain",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3410
+      },
+      "legacyRegistryId": "hbm:item.missile_rain",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_drill",
+      "id": "hbm:missile_drill",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3411
+      },
+      "legacyRegistryId": "hbm:item.missile_drill",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_nuclear",
+      "id": "hbm:missile_nuclear",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3412
+      },
+      "legacyRegistryId": "hbm:item.missile_nuclear",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_nuclear_cluster",
+      "id": "hbm:missile_nuclear_cluster",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3413
+      },
+      "legacyRegistryId": "hbm:item.missile_nuclear_cluster",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_volcano",
+      "id": "hbm:missile_volcano",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3414
+      },
+      "legacyRegistryId": "hbm:item.missile_volcano",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "metadataRange": [
+        0,
+        4
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "launch_pad",
+      "id": "hbm:launch_pad",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2081
+      },
+      "legacyRegistryId": "hbm:tile.launch_pad",
+      "originalClass": "LaunchPad",
+      "creativeTab": "missile"
+    },
+    {
+      "kind": "block",
+      "symbol": "volcano_core",
+      "id": "hbm:volcano_core",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2314
+      },
+      "legacyRegistryId": "hbm:tile.volcano_core",
+      "originalClass": "BlockVolcano",
+      "creativeTab": "nuke",
+      "metadataRange": [
+        0,
+        4
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "volcano_rad_core",
+      "id": "hbm:volcano_rad_core",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2315
+      },
+      "legacyRegistryId": "hbm:tile.volcano_rad_core",
+      "originalClass": "BlockVolcano",
+      "creativeTab": "nuke",
+      "metadataRange": [
+        0,
+        4
+      ]
+    }
+  ]
+}

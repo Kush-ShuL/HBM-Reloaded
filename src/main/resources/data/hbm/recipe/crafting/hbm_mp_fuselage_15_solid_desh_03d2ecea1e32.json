@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:mp_fuselage_15_solid_desh",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CTC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+    },
+    "T": {
+      "item": "hbm:mp_fuselage_15_solid"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_steel",
+    {
+      "id": "#c:ingots/steel",
+      "required": false
+    }
+  ]
+}

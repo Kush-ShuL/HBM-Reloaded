@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:designator_manual",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  A",
+    "#C#",
+    "#B#"
+  ],
+  "key": {
+    "#": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platelead"
+    },
+    "B": {
+      "item": "hbm:circuit_advanced"
+    },
+    "C": {
+      "item": "hbm:designator"
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "1.0.27_X5846",
+  "entrypoint": "com.hbm.block.gas.GasContent.register(IEventBus)",
+  "status": "source_rewrite_declared_runtime_acceptance_pending",
+  "gases": [
+    {
+      "symbol": "chlorine_gas",
+      "id": "hbm:chlorine_gas",
+      "legacyRegistryId": "hbm:tile.chlorine_gas",
+      "sourceClass": "BlockGasClorine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasClorine.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2295
+      },
+      "color": [
+        0.7,
+        0.8,
+        0.6
+      ],
+      "decayChanceDenominator": 10,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "translucent_cube",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ArmorUtil;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.potion.Potion;\nimport net.minecraft.potion.PotionEffect;\nimport net.minecraft.world.IBlockAccess;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasClorine extends BlockGasBase {\n\t\n\tpublic BlockGasClorine() {\n\t\tsuper(0.7F, 0.8F, 0.6F);\n\t}\n\n\t@Override\n\tpublic int getRenderType() {\n\t\treturn 0;\n\t}\n\t\n\t@SideOnly(Side.CLIENT)\n\tpublic int getRenderBlockPass() {\n\t\treturn 1;\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.GAS_LUNG)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\n\t\t} else {\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 5 * 20, 0));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.poison.getId(), 20 * 20, 2));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.wither.getId(), 1 * 20, 1));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), 30 * 20, 1));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.digSlowdown.getId(), 30 * 20, 2));\n\t\t}\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(10) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic boolean shouldSideBeRendered(IBlockAccess p_149646_1_, int p_149646_2_, int p_149646_3_, int p_149646_4_, int p_149646_5_) {\n\t\treturn p_149646_5_ == 0 && this.minY > 0.0D ? true : (p_149646_5_ == 1 && this.maxY < 1.0D ? true : (p_149646_5_ == 2 && this.minZ > 0.0D ? true : (p_149646_5_ == 3 && this.maxZ < 1.0D ? true : (p_149646_5_ == 4 && this.minX > 0.0D ? true : (p_149646_5_ == 5 && this.maxX < 1.0D ? true : !p_149646_1_.getBlock(p_149646_2_, p_149646_3_, p_149646_4_).isOpaqueCube())))));\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_radon",
+      "id": "hbm:gas_radon",
+      "legacyRegistryId": "hbm:tile.gas_radon",
+      "sourceClass": "BlockGasRadon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasRadon.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2297
+      },
+      "color": [
+        0.1,
+        0.8,
+        0.1
+      ],
+      "decayChanceDenominator": 50,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorUtil;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasRadon extends BlockGasBase {\n\n\tpublic BlockGasRadon() {\n\t\tsuper(0.1F, 0.8F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.PARTICLE_FINE)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\t} else {\n\t\t\tContaminationUtil.contaminate((EntityLivingBase)entity, HazardType.RADIATION, ContaminationType.RAD_BYPASS, 0.05F);\n\t\t\tHbmLivingProps.incrementAsbestos((EntityLivingBase)entity, 1); \n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(50) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_radon_dense",
+      "id": "hbm:gas_radon_dense",
+      "legacyRegistryId": "hbm:tile.gas_radon_dense",
+      "sourceClass": "BlockGasRadonDense",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasRadonDense.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2298
+      },
+      "color": [
+        0.1,
+        0.5,
+        0.1
+      ],
+      "decayChanceDenominator": 30,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.potion.HbmPotion;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorUtil;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.potion.PotionEffect;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasRadonDense extends BlockGasBase {\n\n\tpublic BlockGasRadonDense() {\n\t\tsuper(0.1F, 0.5F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.PARTICLE_FINE)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\t} else {\n\t\t\tContaminationUtil.contaminate((EntityLivingBase)entity, HazardType.RADIATION, ContaminationType.CREATIVE, 0.5F);\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(HbmPotion.radiation.id, 15 * 20, 0));\n\t\t\tHbmLivingProps.incrementAsbestos(entityLiving, 5);\n\t\t}\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\tworld.spawnParticle(\"townaura\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\t\t\n\t\tif(!world.isRemote) {\n\t\n\t\t\tif(rand.nextInt(20) == 0) {\n\t\t\t\tif(world.getBlock(x, y - 1, z) == Blocks.grass)\n\t\t\t\t\tworld.setBlock(x, y - 1, z, ModBlocks.waste_earth);\n\t\t\t}\n\t\n\t\t\tif(rand.nextInt(30) == 0) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\t\n\t\t\t\tif(ModBlocks.fallout.canPlaceBlockAt(world, x, y, z)) {\n\t\t\t\t\tworld.setBlock(x, y, z, ModBlocks.fallout);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_radon_tomb",
+      "id": "hbm:gas_radon_tomb",
+      "legacyRegistryId": "hbm:tile.gas_radon_tomb",
+      "sourceClass": "BlockGasRadonTomb",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasRadonTomb.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2299
+      },
+      "color": [
+        0.1,
+        0.3,
+        0.1
+      ],
+      "decayChanceDenominator": 600,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.potion.HbmPotion;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport net.minecraft.block.Block;\nimport net.minecraft.block.material.Material;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasRadonTomb extends BlockGasBase {\n\t\n\t/*\n\t * You should not have come here.\n\t * \n\t * This is not a place of honor. No great deed is commemorated here.\n\t * \n\t * Nothing of value is here.\n\t * \n\t * What is here is dangerous and repulsive.\n\t * \n\t * We considered ourselves a powerful culture. We harnessed the hidden fire,\n\t * and used it for our own purposes.\n\t * \n\t * Then we saw the fire could burn within living things, unnoticed until it\n\t * destroyed them.\n\t * \n\t * And we were afraid.\n\t * \n\t * We built great tombs to hold the fire for one hundred thousand years,\n\t * after which it would no longer kill.\n\t * \n\t * If this place is opened, the fire will not be isolated from the world,\n\t * and we will have failed to protect you.\n\t * \n\t * Leave this place and never come back.\n\t */\n\n\tpublic BlockGasRadonTomb() {\n\t\tsuper(0.1F, 0.3F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(entity instanceof EntityLivingBase) {\n\t\t\tEntityLivingBase living = (EntityLivingBase) entity;\n\n\t\t\tliving.removePotionEffect(HbmPotion.radaway.id); //get fucked\n\t\t\tliving.removePotionEffect(HbmPotion.radx.id);\n\t\t\t\n\t\t\tContaminationUtil.contaminate(living, HazardType.RADIATION, ContaminationType.RAD_BYPASS, 0.5F);\n\t\t\tHbmLivingProps.incrementAsbestos(living, 10);\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(3) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\t\t\n\t\tif(!world.isRemote) {\n\t\n\t\t\tif(rand.nextInt(10) == 0) {\n\t\t\t\tBlock b = world.getBlock(x, y - 1, z);\n\t\t\t\t\n\t\t\t\tif(b == Blocks.grass) {\n\t\t\t\t\tif(rand.nextInt(5) == 0)\n\t\t\t\t\t\tworld.setBlock(x, y - 1, z, Blocks.dirt, 1, 3);\n\t\t\t\t\telse\n\t\t\t\t\t\tworld.setBlock(x, y - 1, z, ModBlocks.waste_earth);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\tif((b.getMaterial() == Material.grass || b.getMaterial() == Material.leaves || b.getMaterial() == Material.plants || b.getMaterial() == Material.vine) && !b.isNormalCube())\n\t\t\t\t\tworld.setBlock(x, y - 1, z, Blocks.air);\n\t\t\t}\n\t\n\t\t\tif(rand.nextInt(600) == 0) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_meltdown",
+      "id": "hbm:gas_meltdown",
+      "legacyRegistryId": "hbm:tile.gas_meltdown",
+      "sourceClass": "BlockGasMeltdown",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasMeltdown.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2300
+      },
+      "color": [
+        0.1,
+        0.4,
+        0.1
+      ],
+      "decayChanceDenominator": 350,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.handler.radiation.ChunkRadiationManager;\nimport com.hbm.potion.HbmPotion;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorUtil;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.potion.PotionEffect;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasMeltdown extends BlockGasBase {\n\n\tpublic BlockGasMeltdown() {\n\t\tsuper(0.1F, 0.4F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\n\t\tContaminationUtil.contaminate((EntityLivingBase)entity, HazardType.RADIATION, ContaminationType.CREATIVE, 0.5F);\n\t\tentityLiving.addPotionEffect(new PotionEffect(HbmPotion.radiation.id, 60 * 20, 2));\n\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.PARTICLE_FINE)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\t} else {\n\t\t\tHbmLivingProps.incrementAsbestos(entityLiving, 5); // Mesothelioma can be developed as a result of exposure to radiation in the lungs\n\t\t}\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\tworld.spawnParticle(\"townaura\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\n\t\tif(world.rand.nextInt(2) == 0)\n\t\t\treturn ForgeDirection.UP;\n\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote) {\n\n\t\t\tForgeDirection dir = ForgeDirection.getOrientation(rand.nextInt(6));\n\n\t\t\tif(rand.nextInt(7) == 0 && world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ) == Blocks.air) {\n\t\t\t\tworld.setBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ, ModBlocks.gas_radon_dense);\n\t\t\t}\n\t\t\t\n\t\t\tif (world.canBlockSeeTheSky(x, y, z)) {\n\t\t\t\tChunkRadiationManager.proxy.incrementRad(world, x, y, z, 5);\n\t\t\t}\n\t\t\t\n\t\t\tif(rand.nextInt(350) == 0) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}"
+    },
+    {
+      "symbol": "gas_monoxide",
+      "id": "hbm:gas_monoxide",
+      "legacyRegistryId": "hbm:tile.gas_monoxide",
+      "sourceClass": "BlockGasMonoxide",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasMonoxide.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2301
+      },
+      "color": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "decayChanceDenominator": 100,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.lib.ModDamageSource;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ArmorUtil;\n\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasMonoxide extends BlockGasBase {\n\n\tpublic BlockGasMonoxide() {\n\t\tsuper(0.1F, 0.1F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.GAS_MONOXIDE))\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\telse\n\t\t\tentityLiving.attackEntityFrom(ModDamageSource.monoxide, 1);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(100) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_asbestos",
+      "id": "hbm:gas_asbestos",
+      "legacyRegistryId": "hbm:tile.gas_asbestos",
+      "sourceClass": "BlockGasAsbestos",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasAsbestos.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2302
+      },
+      "color": [
+        0.6,
+        0.6,
+        0.5
+      ],
+      "decayChanceDenominator": 50,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasAsbestos extends BlockGasBase {\n\n\tpublic BlockGasAsbestos() {\n\t\tsuper(0.6F, 0.6F, 0.5F);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\tworld.spawnParticle(\"townaura\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {\n\t\t\n\t\tif(entity instanceof EntityLivingBase) {\n\t\t\t\n\t\t\tEntityLivingBase living = (EntityLivingBase) entity;\n\t\t\t\n\t\t\tif(!ArmorRegistry.hasProtection(living, 3, HazardClass.PARTICLE_FINE))\n\t\t\t\tHbmLivingProps.incrementAsbestos(living, 1);\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.DOWN;\n\t\t\n\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(6));\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(50) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_coal",
+      "id": "hbm:gas_coal",
+      "legacyRegistryId": "hbm:tile.gas_coal",
+      "sourceClass": "BlockGasCoal",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasCoal.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2303
+      },
+      "color": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "decayChanceDenominator": 20,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasCoal extends BlockGasBase {\n\n\tpublic BlockGasCoal() {\n\t\tsuper(0.2F, 0.2F, 0.2F);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\tworld.spawnParticle(\"smoke\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {\n\t\t\n\t\tif(entity instanceof EntityLivingBase) {\n\t\t\t\n\t\t\tEntityLivingBase living = (EntityLivingBase) entity;\n\t\t\t\n\t\t\tif(!ArmorRegistry.hasProtection(living, 3, HazardClass.PARTICLE_COARSE)) {\n\t\t\t\tHbmLivingProps.incrementBlackLung(living, 10);\n\t\t\t}\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.DOWN;\n\t\t\n\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(6));\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(20) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_flammable",
+      "id": "hbm:gas_flammable",
+      "legacyRegistryId": "hbm:tile.gas_flammable",
+      "sourceClass": "BlockGasFlammable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasFlammable.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2304
+      },
+      "color": [
+        0.8,
+        0.8,
+        0.2
+      ],
+      "decayChanceDenominator": 20,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport java.util.HashSet;\nimport java.util.Random;\n\nimport com.hbm.interfaces.Untested;\nimport com.hbm.util.Compat;\n\nimport net.minecraft.block.Block;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.world.IBlockAccess;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasFlammable extends BlockGasBase {\n\t\n\tpublic static HashSet<Block> fireSources = new HashSet();\n\t\n\tpublic BlockGasFlammable() {\n\t\tsuper(0.8F, 0.8F, 0.2F);\n\t\t\n\t\tif(fireSources.isEmpty()) {\n\t\t\tfireSources.add(Blocks.fire);\n\t\t\tfireSources.add(Blocks.lava);\n\t\t\tfireSources.add(Blocks.torch);\n\t\t\tfireSources.add(Blocks.lit_pumpkin);\n\t\t\t\n\t\t\tif(Compat.isModLoaded(Compat.MOD_TIC)) {\n\t\t\t\tBlock stoneTorch = Compat.tryLoadBlock(Compat.MOD_TIC, \"decoration.stonetorch\");\n\t\t\t\tif(stoneTorch != null) {\n\t\t\t\t\tfireSources.add(stoneTorch);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(3) == 0)\n\t\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(2));\n\t\t\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote) {\n\t\t\t\n\t\t\tfor(ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS) {\n\t\t\t\tBlock b = world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ);\n\t\t\t\t\n\t\t\t\tif(isFireSource(b)) {\n\t\t\t\t\tcombust(world, x, y, z);\n\t\t\t\t\treturn;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif(rand.nextInt(20) == 0 && world.getBlock(x, y - 1, z) == Blocks.air) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {\n\t\t\n\t\t/* causes burning entities to set off the gas */\n\t\tif(!world.isRemote && entity.isBurning()) {\n\t\t\tthis.combust(world, x, y, z);\n\t\t}\n\t}\n\n\t@Untested\n\t@Override\n\tpublic void onNeighborBlockChange(World world, int x, int y, int z, Block block) {\n\t\t\n\t\tfor(ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS) {\n\t\t\tBlock b = world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ);\n\t\t\t\n\t\t\tif(isFireSource(b)) {\n\t\t\t\tworld.scheduleBlockUpdate(x, y, z, this, 2);\n\t\t\t}\n\t\t}\n\t}\n\t\n\tprotected void combust(World world, int x, int y, int z) {\n\t\tworld.setBlock(x, y, z, Blocks.fire);\n\t}\n\t\n\tpublic boolean isFireSource(Block b) {\n\t\treturn this.fireSources.contains(b);\n\t}\n\n\t@Override\n\tpublic boolean isFlammable(IBlockAccess world, int x, int y, int z, ForgeDirection face) {\n\t\treturn true;\n\t}\n\n\t@Override\n\tpublic int getDelay(World world) {\n\t\treturn world.rand.nextInt(5) + 16;\n\t}\n}\n"
+    },
+    {
+      "symbol": "gas_explosive",
+      "id": "hbm:gas_explosive",
+      "legacyRegistryId": "hbm:tile.gas_explosive",
+      "sourceClass": "BlockGasExplosive",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/gas/BlockGasExplosive.java",
+        "registrationFile": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "registrationLine": 2305
+      },
+      "color": [
+        0.8,
+        0.8,
+        0.2
+      ],
+      "decayChanceDenominator": 20,
+      "registration": "declared_implemented",
+      "wakeMarkerValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasConcentration": false,
+      "worldRendering": "invisible_with_source_particles",
+      "algorithm": "package com.hbm.blocks.gas;\n\nimport net.minecraft.world.World;\n\npublic class BlockGasExplosive extends BlockGasFlammable {\n\t\n\tprotected void combust(World world, int x, int y, int z) {\n\t\tsuper.combust(world, x, y, z);\n\t\tworld.newExplosion(null, x + 0.5, y + 0.5, z + 0.5, 3F, true, false);\n\t}\n}\n"
+    }
+  ],
+  "baseAlgorithms": {
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasAsbestos.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasAsbestos extends BlockGasBase {\n\n\tpublic BlockGasAsbestos() {\n\t\tsuper(0.6F, 0.6F, 0.5F);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\tworld.spawnParticle(\"townaura\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {\n\t\t\n\t\tif(entity instanceof EntityLivingBase) {\n\t\t\t\n\t\t\tEntityLivingBase living = (EntityLivingBase) entity;\n\t\t\t\n\t\t\tif(!ArmorRegistry.hasProtection(living, 3, HazardClass.PARTICLE_FINE))\n\t\t\t\tHbmLivingProps.incrementAsbestos(living, 1);\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.DOWN;\n\t\t\n\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(6));\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(50) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasBase.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.items.ModItems;\nimport com.hbm.main.MainRegistry;\nimport com.hbm.util.ArmorUtil;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.block.Block;\nimport net.minecraft.entity.player.EntityPlayer;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.item.Item;\nimport net.minecraft.nbt.NBTTagCompound;\nimport net.minecraft.util.AxisAlignedBB;\nimport net.minecraft.world.IBlockAccess;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic abstract class BlockGasBase extends Block {\n\t\n\tfloat red;\n\tfloat green;\n\tfloat blue;\n\n\tpublic BlockGasBase(float r, float g, float b) {\n\t\tsuper(ModBlocks.materialGas);\n\t\tthis.setHardness(0.0F);\n\t\tthis.setResistance(0.0F);\n\t\tthis.lightOpacity = 0;\n\t\tthis.red = r;\n\t\tthis.green = g;\n\t\tthis.blue = b;\n\t}\n\n\t@Override\n\tpublic boolean isOpaqueCube() {\n\t\treturn false;\n\t}\n\t\n\t@Override\n\tpublic int getRenderType() {\n\t\treturn -1;\n\t}\n\n\t@Override\n\tpublic AxisAlignedBB getCollisionBoundingBoxFromPool(World p_149668_1_, int p_149668_2_, int p_149668_3_, int p_149668_4_) {\n\t\treturn null;\n\t}\n\n\t@Override\n\tpublic Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_) {\n\t\treturn null;\n\t}\n\n\t@Override\n\tpublic boolean renderAsNormalBlock() {\n\t\treturn false;\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic boolean shouldSideBeRendered(IBlockAccess world, int x, int y, int z, int side) {\n\t\treturn false;\n\t}\n\n\t@Override\n\tpublic boolean canCollideCheck(int p_149678_1_, boolean p_149678_2_) {\n\t\treturn false;\n\t}\n\n\t@Override\n\tpublic boolean isReplaceable(IBlockAccess world, int x, int y, int z) {\n\t\treturn true;\n\t}\n\n\t@Override\n\tpublic void onBlockAdded(World world, int x, int y, int z) {\n\n\t\tif(!world.isRemote) {\n\t\t\t\n\t\t\tif(world.getBlockMetadata(x, y, z) == 0)\n\t\t\t\tworld.scheduleBlockUpdate(x, y, z, this, 10);\n\t\t}\n\t}\n\t\n\t@Override\n\tpublic void onNeighborBlockChange(World world, int x, int y, int z, Block block) {\n\t\t\n\t\tif(world.getBlockMetadata(x, y, z) != 0) {\n\t\t\tworld.setBlockMetadataWithNotify(x, y, z, 0, 4);\n\t\t\tworld.scheduleBlockUpdate(x, y, z, this, 10);\n\t\t}\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote) {\n\t\t\t\n\t\t\tworld.scheduledUpdatesAreImmediate = false; //prevent recursive loop when some dumbass forgets to clean up immediate updating\n\n\t\t\tif(!tryMove(world, x, y, z, getFirstDirection(world, x, y, z)))\n\t\t\t\tif(!tryMove(world, x, y, z, getSecondDirection(world, x, y, z)))\n\t\t\t\t\tworld.scheduleBlockUpdate(x, y, z, this, getDelay(world));\n\t\t}\n\t}\n\n\tpublic abstract ForgeDirection getFirstDirection(World world, int x, int y, int z);\n\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn getFirstDirection(world, x, y, z);\n\t}\n\n\tpublic boolean tryMove(World world, int x, int y, int z, ForgeDirection dir) {\n\n\t\tif(world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ) == Blocks.air) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\tworld.setBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ, this);\n\t\t\tworld.scheduleBlockUpdate(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ, this, getDelay(world));\n\t\t\treturn true;\n\t\t}\n\n\t\treturn false;\n\t}\n\n\tpublic int getDelay(World world) {\n\t\treturn 2;\n\t}\n\n\tpublic ForgeDirection randomHorizontal(World world) {\n\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(4) + 2);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\t\n\t\tEntityPlayer p = MainRegistry.proxy.me();\n\t\tif(ArmorUtil.checkArmorPiece(p, ModItems.ashglasses, 3)) {\n\t\t\tNBTTagCompound data = new NBTTagCompound();\n\t\t\tdata.setString(\"type\", \"vanillaExt\");\n\t\t\tdata.setString(\"mode\", \"cloud\");\n\t\t\tdata.setDouble(\"posX\", x + 0.5);\n\t\t\tdata.setDouble(\"posY\", y + 0.5);\n\t\t\tdata.setDouble(\"posZ\", z + 0.5);\n\t\t\tdata.setFloat(\"r\", red);\n\t\t\tdata.setFloat(\"g\", green);\n\t\t\tdata.setFloat(\"b\", blue);\n\t\t\tMainRegistry.proxy.effectNT(data);\n\t\t}\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasClorine.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ArmorUtil;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.potion.Potion;\nimport net.minecraft.potion.PotionEffect;\nimport net.minecraft.world.IBlockAccess;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasClorine extends BlockGasBase {\n\t\n\tpublic BlockGasClorine() {\n\t\tsuper(0.7F, 0.8F, 0.6F);\n\t}\n\n\t@Override\n\tpublic int getRenderType() {\n\t\treturn 0;\n\t}\n\t\n\t@SideOnly(Side.CLIENT)\n\tpublic int getRenderBlockPass() {\n\t\treturn 1;\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.GAS_LUNG)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\n\t\t} else {\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.blindness.getId(), 5 * 20, 0));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.poison.getId(), 20 * 20, 2));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.wither.getId(), 1 * 20, 1));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.moveSlowdown.getId(), 30 * 20, 1));\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(Potion.digSlowdown.getId(), 30 * 20, 2));\n\t\t}\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(10) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic boolean shouldSideBeRendered(IBlockAccess p_149646_1_, int p_149646_2_, int p_149646_3_, int p_149646_4_, int p_149646_5_) {\n\t\treturn p_149646_5_ == 0 && this.minY > 0.0D ? true : (p_149646_5_ == 1 && this.maxY < 1.0D ? true : (p_149646_5_ == 2 && this.minZ > 0.0D ? true : (p_149646_5_ == 3 && this.maxZ < 1.0D ? true : (p_149646_5_ == 4 && this.minX > 0.0D ? true : (p_149646_5_ == 5 && this.maxX < 1.0D ? true : !p_149646_1_.getBlock(p_149646_2_, p_149646_3_, p_149646_4_).isOpaqueCube())))));\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasCoal.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasCoal extends BlockGasBase {\n\n\tpublic BlockGasCoal() {\n\t\tsuper(0.2F, 0.2F, 0.2F);\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\tworld.spawnParticle(\"smoke\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {\n\t\t\n\t\tif(entity instanceof EntityLivingBase) {\n\t\t\t\n\t\t\tEntityLivingBase living = (EntityLivingBase) entity;\n\t\t\t\n\t\t\tif(!ArmorRegistry.hasProtection(living, 3, HazardClass.PARTICLE_COARSE)) {\n\t\t\t\tHbmLivingProps.incrementBlackLung(living, 10);\n\t\t\t}\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.DOWN;\n\t\t\n\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(6));\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(20) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasExplosive.java": "package com.hbm.blocks.gas;\n\nimport net.minecraft.world.World;\n\npublic class BlockGasExplosive extends BlockGasFlammable {\n\t\n\tprotected void combust(World world, int x, int y, int z) {\n\t\tsuper.combust(world, x, y, z);\n\t\tworld.newExplosion(null, x + 0.5, y + 0.5, z + 0.5, 3F, true, false);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasFlammable.java": "package com.hbm.blocks.gas;\n\nimport java.util.HashSet;\nimport java.util.Random;\n\nimport com.hbm.interfaces.Untested;\nimport com.hbm.util.Compat;\n\nimport net.minecraft.block.Block;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.world.IBlockAccess;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasFlammable extends BlockGasBase {\n\t\n\tpublic static HashSet<Block> fireSources = new HashSet();\n\t\n\tpublic BlockGasFlammable() {\n\t\tsuper(0.8F, 0.8F, 0.2F);\n\t\t\n\t\tif(fireSources.isEmpty()) {\n\t\t\tfireSources.add(Blocks.fire);\n\t\t\tfireSources.add(Blocks.lava);\n\t\t\tfireSources.add(Blocks.torch);\n\t\t\tfireSources.add(Blocks.lit_pumpkin);\n\t\t\t\n\t\t\tif(Compat.isModLoaded(Compat.MOD_TIC)) {\n\t\t\t\tBlock stoneTorch = Compat.tryLoadBlock(Compat.MOD_TIC, \"decoration.stonetorch\");\n\t\t\t\tif(stoneTorch != null) {\n\t\t\t\t\tfireSources.add(stoneTorch);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(3) == 0)\n\t\t\treturn ForgeDirection.getOrientation(world.rand.nextInt(2));\n\t\t\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote) {\n\t\t\t\n\t\t\tfor(ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS) {\n\t\t\t\tBlock b = world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ);\n\t\t\t\t\n\t\t\t\tif(isFireSource(b)) {\n\t\t\t\t\tcombust(world, x, y, z);\n\t\t\t\t\treturn;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif(rand.nextInt(20) == 0 && world.getBlock(x, y - 1, z) == Blocks.air) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {\n\t\t\n\t\t/* causes burning entities to set off the gas */\n\t\tif(!world.isRemote && entity.isBurning()) {\n\t\t\tthis.combust(world, x, y, z);\n\t\t}\n\t}\n\n\t@Untested\n\t@Override\n\tpublic void onNeighborBlockChange(World world, int x, int y, int z, Block block) {\n\t\t\n\t\tfor(ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS) {\n\t\t\tBlock b = world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ);\n\t\t\t\n\t\t\tif(isFireSource(b)) {\n\t\t\t\tworld.scheduleBlockUpdate(x, y, z, this, 2);\n\t\t\t}\n\t\t}\n\t}\n\t\n\tprotected void combust(World world, int x, int y, int z) {\n\t\tworld.setBlock(x, y, z, Blocks.fire);\n\t}\n\t\n\tpublic boolean isFireSource(Block b) {\n\t\treturn this.fireSources.contains(b);\n\t}\n\n\t@Override\n\tpublic boolean isFlammable(IBlockAccess world, int x, int y, int z, ForgeDirection face) {\n\t\treturn true;\n\t}\n\n\t@Override\n\tpublic int getDelay(World world) {\n\t\treturn world.rand.nextInt(5) + 16;\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasMeltdown.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.handler.radiation.ChunkRadiationManager;\nimport com.hbm.potion.HbmPotion;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorUtil;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.potion.PotionEffect;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasMeltdown extends BlockGasBase {\n\n\tpublic BlockGasMeltdown() {\n\t\tsuper(0.1F, 0.4F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\n\t\tContaminationUtil.contaminate((EntityLivingBase)entity, HazardType.RADIATION, ContaminationType.CREATIVE, 0.5F);\n\t\tentityLiving.addPotionEffect(new PotionEffect(HbmPotion.radiation.id, 60 * 20, 2));\n\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.PARTICLE_FINE)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\t} else {\n\t\t\tHbmLivingProps.incrementAsbestos(entityLiving, 5); // Mesothelioma can be developed as a result of exposure to radiation in the lungs\n\t\t}\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\tworld.spawnParticle(\"townaura\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\n\t\tif(world.rand.nextInt(2) == 0)\n\t\t\treturn ForgeDirection.UP;\n\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote) {\n\n\t\t\tForgeDirection dir = ForgeDirection.getOrientation(rand.nextInt(6));\n\n\t\t\tif(rand.nextInt(7) == 0 && world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ) == Blocks.air) {\n\t\t\t\tworld.setBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ, ModBlocks.gas_radon_dense);\n\t\t\t}\n\t\t\t\n\t\t\tif (world.canBlockSeeTheSky(x, y, z)) {\n\t\t\t\tChunkRadiationManager.proxy.incrementRad(world, x, y, z, 5);\n\t\t\t}\n\t\t\t\n\t\t\tif(rand.nextInt(350) == 0) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasMonoxide.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.lib.ModDamageSource;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ArmorUtil;\n\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasMonoxide extends BlockGasBase {\n\n\tpublic BlockGasMonoxide() {\n\t\tsuper(0.1F, 0.1F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.GAS_MONOXIDE))\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\telse\n\t\t\tentityLiving.attackEntityFrom(ModDamageSource.monoxide, 1);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(100) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasRadon.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorUtil;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasRadon extends BlockGasBase {\n\n\tpublic BlockGasRadon() {\n\t\tsuper(0.1F, 0.8F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.PARTICLE_FINE)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\t} else {\n\t\t\tContaminationUtil.contaminate((EntityLivingBase)entity, HazardType.RADIATION, ContaminationType.RAD_BYPASS, 0.05F);\n\t\t\tHbmLivingProps.incrementAsbestos((EntityLivingBase)entity, 1); \n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\n\t\tif(!world.isRemote && rand.nextInt(50) == 0) {\n\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\treturn;\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasRadonDense.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.potion.HbmPotion;\nimport com.hbm.util.ArmorRegistry;\nimport com.hbm.util.ArmorUtil;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ArmorRegistry.HazardClass;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport cpw.mods.fml.relauncher.Side;\nimport cpw.mods.fml.relauncher.SideOnly;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.potion.PotionEffect;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasRadonDense extends BlockGasBase {\n\n\tpublic BlockGasRadonDense() {\n\t\tsuper(0.1F, 0.5F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(!(entity instanceof EntityLivingBase))\n\t\t\treturn;\n\t\t\n\t\tEntityLivingBase entityLiving = (EntityLivingBase) entity;\n\t\t\n\t\tif(ArmorRegistry.hasAllProtection(entityLiving, 3, HazardClass.PARTICLE_FINE)) {\n\t\t\tArmorUtil.damageGasMaskFilter(entityLiving, 1);\n\t\t} else {\n\t\t\tContaminationUtil.contaminate((EntityLivingBase)entity, HazardType.RADIATION, ContaminationType.CREATIVE, 0.5F);\n\t\t\tentityLiving.addPotionEffect(new PotionEffect(HbmPotion.radiation.id, 15 * 20, 0));\n\t\t\tHbmLivingProps.incrementAsbestos(entityLiving, 5);\n\t\t}\n\t}\n\n\t@Override\n\t@SideOnly(Side.CLIENT)\n\tpublic void randomDisplayTick(World world, int x, int y, int z, Random rand) {\n\t\tsuper.randomDisplayTick(world, x, y, z, rand);\n\t\tworld.spawnParticle(\"townaura\", x + rand.nextFloat(), y + rand.nextFloat(), z + rand.nextFloat(), 0.0D, 0.0D, 0.0D);\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(5) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\t\t\n\t\tif(!world.isRemote) {\n\t\n\t\t\tif(rand.nextInt(20) == 0) {\n\t\t\t\tif(world.getBlock(x, y - 1, z) == Blocks.grass)\n\t\t\t\t\tworld.setBlock(x, y - 1, z, ModBlocks.waste_earth);\n\t\t\t}\n\t\n\t\t\tif(rand.nextInt(30) == 0) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\t\n\t\t\t\tif(ModBlocks.fallout.canPlaceBlockAt(world, x, y, z)) {\n\t\t\t\t\tworld.setBlock(x, y, z, ModBlocks.fallout);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n",
+    "legacy/src/main/java/com/hbm/blocks/gas/BlockGasRadonTomb.java": "package com.hbm.blocks.gas;\n\nimport java.util.Random;\n\nimport com.hbm.blocks.ModBlocks;\nimport com.hbm.extprop.HbmLivingProps;\nimport com.hbm.potion.HbmPotion;\nimport com.hbm.util.ContaminationUtil;\nimport com.hbm.util.ContaminationUtil.ContaminationType;\nimport com.hbm.util.ContaminationUtil.HazardType;\n\nimport net.minecraft.block.Block;\nimport net.minecraft.block.material.Material;\nimport net.minecraft.entity.Entity;\nimport net.minecraft.entity.EntityLivingBase;\nimport net.minecraft.init.Blocks;\nimport net.minecraft.world.World;\nimport net.minecraftforge.common.util.ForgeDirection;\n\npublic class BlockGasRadonTomb extends BlockGasBase {\n\t\n\t/*\n\t * You should not have come here.\n\t * \n\t * This is not a place of honor. No great deed is commemorated here.\n\t * \n\t * Nothing of value is here.\n\t * \n\t * What is here is dangerous and repulsive.\n\t * \n\t * We considered ourselves a powerful culture. We harnessed the hidden fire,\n\t * and used it for our own purposes.\n\t * \n\t * Then we saw the fire could burn within living things, unnoticed until it\n\t * destroyed them.\n\t * \n\t * And we were afraid.\n\t * \n\t * We built great tombs to hold the fire for one hundred thousand years,\n\t * after which it would no longer kill.\n\t * \n\t * If this place is opened, the fire will not be isolated from the world,\n\t * and we will have failed to protect you.\n\t * \n\t * Leave this place and never come back.\n\t */\n\n\tpublic BlockGasRadonTomb() {\n\t\tsuper(0.1F, 0.3F, 0.1F);\n\t}\n\n\t@Override\n\tpublic void onEntityCollidedWithBlock(World world, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {\n\t\t\n\t\tif(entity instanceof EntityLivingBase) {\n\t\t\tEntityLivingBase living = (EntityLivingBase) entity;\n\n\t\t\tliving.removePotionEffect(HbmPotion.radaway.id); //get fucked\n\t\t\tliving.removePotionEffect(HbmPotion.radx.id);\n\t\t\t\n\t\t\tContaminationUtil.contaminate(living, HazardType.RADIATION, ContaminationType.RAD_BYPASS, 0.5F);\n\t\t\tHbmLivingProps.incrementAsbestos(living, 10);\n\t\t}\n\t}\n\n\t@Override\n\tpublic ForgeDirection getFirstDirection(World world, int x, int y, int z) {\n\t\t\n\t\tif(world.rand.nextInt(3) == 0)\n\t\t\treturn ForgeDirection.UP;\n\t\t\n\t\treturn ForgeDirection.DOWN;\n\t}\n\n\t@Override\n\tpublic ForgeDirection getSecondDirection(World world, int x, int y, int z) {\n\t\treturn this.randomHorizontal(world);\n\t}\n\n\t@Override\n\tpublic void updateTick(World world, int x, int y, int z, Random rand) {\n\t\t\n\t\tif(!world.isRemote) {\n\t\n\t\t\tif(rand.nextInt(10) == 0) {\n\t\t\t\tBlock b = world.getBlock(x, y - 1, z);\n\t\t\t\t\n\t\t\t\tif(b == Blocks.grass) {\n\t\t\t\t\tif(rand.nextInt(5) == 0)\n\t\t\t\t\t\tworld.setBlock(x, y - 1, z, Blocks.dirt, 1, 3);\n\t\t\t\t\telse\n\t\t\t\t\t\tworld.setBlock(x, y - 1, z, ModBlocks.waste_earth);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\tif((b.getMaterial() == Material.grass || b.getMaterial() == Material.leaves || b.getMaterial() == Material.plants || b.getMaterial() == Material.vine) && !b.isNormalCube())\n\t\t\t\t\tworld.setBlock(x, y - 1, z, Blocks.air);\n\t\t\t}\n\t\n\t\t\tif(rand.nextInt(600) == 0) {\n\t\t\t\tworld.setBlockToAir(x, y, z);\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t\t\n\t\tsuper.updateTick(world, x, y, z, rand);\n\t}\n}\n"
+  }
+}

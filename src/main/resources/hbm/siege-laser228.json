@@ -1,0 +1,23 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_ntm_siege_laser",
+      "id": "hbm:entity_ntm_siege_laser",
+      "originalClass": "EntitySiegeLaser",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 136
+      },
+      "dimensions": [
+        0.25,
+        0.25
+      ],
+      "trackingRange": 1000,
+      "trackingUpdates": 1,
+      "velocityUpdates": true,
+      "egg": false
+    }
+  ]
+}

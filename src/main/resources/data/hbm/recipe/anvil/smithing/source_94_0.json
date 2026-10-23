@@ -1,0 +1,33 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 4,
+  "result": {
+    "id": "hbm:flask_infusion",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:gem_alexandrite",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:bottle_nuka",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "normal",
+  "order": 94000000
+}

@@ -1,0 +1,28 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.wiring",
+  "duration": 200,
+  "power": 100,
+  "order": 222,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:gadget_wireing",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wirefinegold"
+      },
+      "count": 24
+    }
+  ]
+}

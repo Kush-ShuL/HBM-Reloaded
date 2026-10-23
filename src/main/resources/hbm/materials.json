@@ -1,0 +1,4114 @@
+{
+  "materials": [
+    {
+      "symbol": "MAT_WOOD",
+      "id": 3,
+      "names": [
+        "Wood"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 9004839,
+      "solidColorDark": 2629131,
+      "moltenColor": 9004839,
+      "shapes": [
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_WOOD",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 64
+      }
+    },
+    {
+      "symbol": "MAT_IVORY",
+      "id": 4,
+      "names": [
+        "Bone"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16776942,
+      "solidColorDark": 7960688,
+      "moltenColor": 15592394,
+      "shapes": [
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_IVORY",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 65
+      }
+    },
+    {
+      "symbol": "MAT_STONE",
+      "id": 0,
+      "names": [
+        "Stone"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 8355711,
+      "solidColorDark": 3487029,
+      "moltenColor": 5058339,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_STONE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 66
+      }
+    },
+    {
+      "symbol": "MAT_CARBON",
+      "id": 699,
+      "names": [
+        "Carbon"
+      ],
+      "smeltingBehavior": "ADDITIVE",
+      "solidColorLight": 3552822,
+      "solidColorDark": 197379,
+      "moltenColor": 4210752,
+      "shapes": [
+        "WIRE",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 67
+      }
+    },
+    {
+      "symbol": "MAT_COAL",
+      "id": 600,
+      "names": [
+        "Coal"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 3552822,
+      "solidColorDark": 197379,
+      "moltenColor": 4210752,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 2,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 68
+      }
+    },
+    {
+      "symbol": "MAT_LIGNITE",
+      "id": 601,
+      "names": [
+        "Lignite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 5516559,
+      "solidColorDark": 2495752,
+      "moltenColor": 4663571,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 3,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 69
+      }
+    },
+    {
+      "symbol": "MAT_COALCOKE",
+      "id": 610,
+      "names": [
+        "CoalCoke"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16730624,
+      "solidColorDark": 8396800,
+      "moltenColor": 16730624,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 4,
+      "convOut": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 70
+      }
+    },
+    {
+      "symbol": "MAT_PETCOKE",
+      "id": 611,
+      "names": [
+        "PetCoke"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16730624,
+      "solidColorDark": 8396800,
+      "moltenColor": 16730624,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 4,
+      "convOut": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 71
+      }
+    },
+    {
+      "symbol": "MAT_LIGCOKE",
+      "id": 612,
+      "names": [
+        "LigniteCoke"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16730624,
+      "solidColorDark": 8396800,
+      "moltenColor": 16730624,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 4,
+      "convOut": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 72
+      }
+    },
+    {
+      "symbol": "MAT_GRAPHITE",
+      "id": 620,
+      "names": [
+        "Graphite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16730624,
+      "solidColorDark": 8396800,
+      "moltenColor": 16730624,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 73
+      }
+    },
+    {
+      "symbol": "MAT_DIAMOND",
+      "id": 1430,
+      "names": [
+        "Diamond"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 1801067,
+      "moltenColor": 9237730,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CARBON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 74
+      }
+    },
+    {
+      "symbol": "MAT_IRON",
+      "id": 2600,
+      "names": [
+        "Iron"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 3487029,
+      "moltenColor": 16753241,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "PIPE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_IRON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 75
+      }
+    },
+    {
+      "symbol": "MAT_GOLD",
+      "id": 7900,
+      "names": [
+        "Gold"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777099,
+      "solidColorDark": 12742144,
+      "moltenColor": 15259476,
+      "shapes": [
+        "FRAGMENT",
+        "WIRE",
+        "DUST",
+        "DENSEWIRE",
+        "CASTPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_GOLD",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 76
+      }
+    },
+    {
+      "symbol": "MAT_REDSTONE",
+      "id": 1,
+      "names": [
+        "Redstone"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 14886412,
+      "solidColorDark": 7343622,
+      "moltenColor": 16715776,
+      "shapes": [
+        "FRAGMENT",
+        "INGOT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_REDSTONE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 77
+      }
+    },
+    {
+      "symbol": "MAT_OBSIDIAN",
+      "id": 2,
+      "names": [
+        "Obsidian"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 4006733,
+      "solidColorDark": 4006733,
+      "moltenColor": 4006733,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_OBSIDIAN",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 78
+      }
+    },
+    {
+      "symbol": "MAT_HEMATITE",
+      "id": 2601,
+      "names": [
+        "Hematite"
+      ],
+      "smeltingBehavior": "ADDITIVE",
+      "solidColorLight": 14661550,
+      "solidColorDark": 6240046,
+      "moltenColor": 7226941,
+      "shapes": [],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_HEMATITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 79
+      }
+    },
+    {
+      "symbol": "MAT_WROUGHTIRON",
+      "id": 2602,
+      "names": [
+        "WroughtIron"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16427913,
+      "solidColorDark": 16427913,
+      "moltenColor": 16427913,
+      "shapes": [],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_WROUGHTIRON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 80
+      }
+    },
+    {
+      "symbol": "MAT_PIGIRON",
+      "id": 2603,
+      "names": [
+        "PigIron"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16747353,
+      "solidColorDark": 16747353,
+      "moltenColor": 16747353,
+      "shapes": [],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PIGIRON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 81
+      }
+    },
+    {
+      "symbol": "MAT_METEORICIRON",
+      "id": 2604,
+      "names": [
+        "MeteoricIron"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 7426887,
+      "solidColorDark": 7426887,
+      "moltenColor": 7426887,
+      "shapes": [],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_METEORICIRON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 82
+      }
+    },
+    {
+      "symbol": "MAT_MALACHITE",
+      "id": 2901,
+      "names": [
+        "Malachite"
+      ],
+      "smeltingBehavior": "ADDITIVE",
+      "solidColorLight": 10678472,
+      "solidColorDark": 2256968,
+      "moltenColor": 6401927,
+      "shapes": [],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_MALACHITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 83
+      }
+    },
+    {
+      "symbol": "MAT_BAUXITE",
+      "id": 2902,
+      "names": [
+        "Bauxite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16038448,
+      "solidColorDark": 11153930,
+      "moltenColor": 14833167,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_BAUXITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 84
+      }
+    },
+    {
+      "symbol": "MAT_CRYOLITE",
+      "id": 2903,
+      "names": [
+        "Cryolite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 13353636,
+      "solidColorDark": 9138463,
+      "moltenColor": 9138202,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CRYOLITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 85
+      }
+    },
+    {
+      "symbol": "MAT_ILMENITE",
+      "id": 2201,
+      "names": [
+        "Ilmenite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 8816262,
+      "solidColorDark": 2039583,
+      "moltenColor": 6710886,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_ILMENITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 86
+      }
+    },
+    {
+      "symbol": "MAT_URANIUM",
+      "id": 9200,
+      "names": [
+        "Uranium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12699581,
+      "solidColorDark": 2830887,
+      "moltenColor": 10133910,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_URANIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 89
+      }
+    },
+    {
+      "symbol": "MAT_U233",
+      "id": 9233,
+      "names": [
+        "Uranium233",
+        "U233"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12699581,
+      "solidColorDark": 2830887,
+      "moltenColor": 10133910,
+      "shapes": [
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_U233",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 90
+      }
+    },
+    {
+      "symbol": "MAT_U235",
+      "id": 9235,
+      "names": [
+        "Uranium235",
+        "U235"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12699581,
+      "solidColorDark": 2830887,
+      "moltenColor": 10133910,
+      "shapes": [
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_U235",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 91
+      }
+    },
+    {
+      "symbol": "MAT_U238",
+      "id": 9238,
+      "names": [
+        "Uranium238",
+        "U238"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12699581,
+      "solidColorDark": 2830887,
+      "moltenColor": 10133910,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_U238",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 92
+      }
+    },
+    {
+      "symbol": "MAT_THORIUM",
+      "id": 9032,
+      "names": [
+        "Thorium232",
+        "Th232",
+        "Thorium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12550751,
+      "solidColorDark": 1835008,
+      "moltenColor": 12550751,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_THORIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 93
+      }
+    },
+    {
+      "symbol": "MAT_PLUTONIUM",
+      "id": 9400,
+      "names": [
+        "Plutonium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10134432,
+      "solidColorDark": 1120791,
+      "moltenColor": 7897470,
+      "shapes": [
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PLUTONIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 94
+      }
+    },
+    {
+      "symbol": "MAT_RGP",
+      "id": 9401,
+      "names": [
+        "PlutoniumRG"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10134432,
+      "solidColorDark": 1120791,
+      "moltenColor": 7897470,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_RGP",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 95
+      }
+    },
+    {
+      "symbol": "MAT_PU238",
+      "id": 9438,
+      "names": [
+        "Plutonium238",
+        "Pu238"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16759897,
+      "solidColorDark": 16748075,
+      "moltenColor": 7897470,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PU238",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 96
+      }
+    },
+    {
+      "symbol": "MAT_PU239",
+      "id": 9439,
+      "names": [
+        "Plutonium239",
+        "Pu239"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10134432,
+      "solidColorDark": 1120791,
+      "moltenColor": 7897470,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PU239",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 97
+      }
+    },
+    {
+      "symbol": "MAT_PU240",
+      "id": 9440,
+      "names": [
+        "Plutonium240",
+        "Pu240"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10134432,
+      "solidColorDark": 1120791,
+      "moltenColor": 7897470,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PU240",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 98
+      }
+    },
+    {
+      "symbol": "MAT_PU241",
+      "id": 9441,
+      "names": [
+        "Plutonium241",
+        "Pu241"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10134432,
+      "solidColorDark": 1120791,
+      "moltenColor": 7897470,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PU241",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 99
+      }
+    },
+    {
+      "symbol": "MAT_RGA",
+      "id": 9501,
+      "names": [
+        "AmericiumRG"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13546425,
+      "solidColorDark": 3808289,
+      "moltenColor": 9664123,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_RGA",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 100
+      }
+    },
+    {
+      "symbol": "MAT_AM241",
+      "id": 9541,
+      "names": [
+        "Americium241",
+        "Am241"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13546425,
+      "solidColorDark": 3808289,
+      "moltenColor": 9664123,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_AM241",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 101
+      }
+    },
+    {
+      "symbol": "MAT_AM242",
+      "id": 9542,
+      "names": [
+        "Americium242",
+        "Am242"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13546425,
+      "solidColorDark": 3808289,
+      "moltenColor": 9664123,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_AM242",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 102
+      }
+    },
+    {
+      "symbol": "MAT_NEPTUNIUM",
+      "id": 9337,
+      "names": [
+        "Neptunium237",
+        "Np237",
+        "Neptunium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10924710,
+      "solidColorDark": 200451,
+      "moltenColor": 6582372,
+      "shapes": [
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_NEPTUNIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 103
+      }
+    },
+    {
+      "symbol": "MAT_POLONIUM",
+      "id": 8410,
+      "names": [
+        "Polonium210",
+        "Po210",
+        "Polonium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 9865081,
+      "solidColorDark": 4003081,
+      "moltenColor": 7429706,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_POLONIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 104
+      }
+    },
+    {
+      "symbol": "MAT_TECHNETIUM",
+      "id": 4399,
+      "names": [
+        "Technetium99",
+        "Tc99"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16449535,
+      "solidColorDark": 5729388,
+      "moltenColor": 13295583,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_TECHNETIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 105
+      }
+    },
+    {
+      "symbol": "MAT_RADIUM",
+      "id": 8826,
+      "names": [
+        "Radium226",
+        "Ra226"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16579836,
+      "solidColorDark": 11386810,
+      "moltenColor": 15334134,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_RADIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 106
+      }
+    },
+    {
+      "symbol": "MAT_ACTINIUM",
+      "id": 8927,
+      "names": [
+        "Actinium227",
+        "Ac227"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 15524064,
+      "solidColorDark": 2233878,
+      "moltenColor": 9800073,
+      "shapes": [
+        "BILLET"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_ACTINIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 107
+      }
+    },
+    {
+      "symbol": "MAT_CO60",
+      "id": 2760,
+      "names": [
+        "Cobalt60",
+        "Co60"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12767726,
+      "solidColorDark": 3487060,
+      "moltenColor": 9401006,
+      "shapes": [
+        "BILLET",
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_CO60",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 108
+      }
+    },
+    {
+      "symbol": "MAT_AU198",
+      "id": 7998,
+      "names": [
+        "Gold198",
+        "Au198"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777099,
+      "solidColorDark": 12742144,
+      "moltenColor": 15259476,
+      "shapes": [
+        "BILLET",
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_AU198",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 109
+      }
+    },
+    {
+      "symbol": "MAT_PB209",
+      "id": 8209,
+      "names": [
+        "Lead209",
+        "Pb209"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 11766420,
+      "solidColorDark": 1180174,
+      "moltenColor": 8082269,
+      "shapes": [
+        "BILLET",
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_PB209",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 110
+      }
+    },
+    {
+      "symbol": "MAT_SCHRABIDIUM",
+      "id": 12626,
+      "names": [
+        "Schrabidium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 3342335,
+      "solidColorDark": 23644,
+      "moltenColor": 3342335,
+      "shapes": [
+        "WIRE",
+        "BILLET",
+        "DUST",
+        "DENSEWIRE",
+        "PLATE",
+        "CASTPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SCHRABIDIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 111
+      }
+    },
+    {
+      "symbol": "MAT_SOLINIUM",
+      "id": 12627,
+      "names": [
+        "Solinium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10675936,
+      "solidColorDark": 17213,
+      "moltenColor": 7517872,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SOLINIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 112
+      }
+    },
+    {
+      "symbol": "MAT_SCHRABIDATE",
+      "id": 12600,
+      "names": [
+        "Schrabidate"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 7848151,
+      "solidColorDark": 3735646,
+      "moltenColor": 6654388,
+      "shapes": [
+        "DUST",
+        "DENSEWIRE",
+        "CASTPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SCHRABIDATE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 113
+      }
+    },
+    {
+      "symbol": "MAT_SCHRARANIUM",
+      "id": 12601,
+      "names": [
+        "Schraranium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 2830887,
+      "solidColorDark": 2830887,
+      "moltenColor": 2404268,
+      "shapes": [
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SCHRARANIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 114
+      }
+    },
+    {
+      "symbol": "MAT_GHIORSIUM",
+      "id": 12836,
+      "names": [
+        "Ghiorsium336",
+        "Gh336"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16052193,
+      "solidColorDark": 2765574,
+      "moltenColor": 13026977,
+      "shapes": [
+        "BILLET",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_GHIORSIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 115
+      }
+    },
+    {
+      "symbol": "MAT_TITANIUM",
+      "id": 2200,
+      "names": [
+        "Titanium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16249842,
+      "solidColorDark": 5196875,
+      "moltenColor": 11116153,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "DUST",
+        "PLATE",
+        "DENSEWIRE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "SHELL",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_TITANIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 118
+      }
+    },
+    {
+      "symbol": "MAT_COPPER",
+      "id": 2900,
+      "names": [
+        "Copper"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16632456,
+      "solidColorDark": 6299149,
+      "moltenColor": 12682038,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "WIRE",
+        "DUST",
+        "PLATE",
+        "DENSEWIRE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "SHELL",
+        "PIPE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_COPPER",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 119
+      }
+    },
+    {
+      "symbol": "MAT_TUNGSTEN",
+      "id": 7400,
+      "names": [
+        "Tungsten"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 8816262,
+      "solidColorDark": 0,
+      "moltenColor": 9925748,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "WIRE",
+        "BOLT",
+        "DUST",
+        "DENSEWIRE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_TUNGSTEN",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 120
+      }
+    },
+    {
+      "symbol": "MAT_ALUMINIUM",
+      "id": 1300,
+      "names": [
+        "Aluminum"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 3425616,
+      "moltenColor": 13678827,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "WIRE",
+        "DUST",
+        "PLATE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "SHELL",
+        "PIPE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_ALUMINIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 121
+      }
+    },
+    {
+      "symbol": "MAT_LEAD",
+      "id": 8200,
+      "names": [
+        "Lead"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10921650,
+      "solidColorDark": 197391,
+      "moltenColor": 6579312,
+      "shapes": [
+        "FRAGMENT",
+        "WIRE",
+        "BOLT",
+        "DUST",
+        "PLATE",
+        "CASTPLATE",
+        "PIPE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_LEAD",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 122
+      }
+    },
+    {
+      "symbol": "MAT_BISMUTH",
+      "id": 8300,
+      "names": [
+        "Bismuth"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 11665663,
+      "solidColorDark": 11665663,
+      "moltenColor": 11665663,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_BISMUTH",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 123
+      }
+    },
+    {
+      "symbol": "MAT_ARSENIC",
+      "id": 3300,
+      "names": [
+        "Arsenic"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 7125690,
+      "solidColorDark": 2368805,
+      "moltenColor": 5603456,
+      "shapes": [],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_ARSENIC",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 124
+      }
+    },
+    {
+      "symbol": "MAT_TANTALIUM",
+      "id": 7300,
+      "names": [
+        "Tantalum"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 1908022,
+      "moltenColor": 11049844,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_TANTALIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 125
+      }
+    },
+    {
+      "symbol": "MAT_NEODYMIUM",
+      "id": 6000,
+      "names": [
+        "Neodymium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 15132342,
+      "solidColorDark": 1842176,
+      "moltenColor": 9408351,
+      "shapes": [
+        "FRAGMENT",
+        "DUSTTINY",
+        "INGOT",
+        "DUST",
+        "DENSEWIRE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_NEODYMIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 126
+      }
+    },
+    {
+      "symbol": "MAT_NIOBIUM",
+      "id": 4100,
+      "names": [
+        "Niobium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12021449,
+      "solidColorDark": 3091778,
+      "moltenColor": 13989553,
+      "shapes": [
+        "FRAGMENT",
+        "DUSTTINY",
+        "DUST",
+        "DENSEWIRE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_NIOBIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 127
+      }
+    },
+    {
+      "symbol": "MAT_BERYLLIUM",
+      "id": 400,
+      "names": [
+        "Beryllium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 11711142,
+      "solidColorDark": 986883,
+      "moltenColor": 11441522,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_BERYLLIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 128
+      }
+    },
+    {
+      "symbol": "MAT_EMERALD",
+      "id": 401,
+      "names": [
+        "Emerald"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 12255188,
+      "solidColorDark": 14592,
+      "moltenColor": 1564002,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "GEM",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_BERYLLIUM",
+      "convIn": 4,
+      "convOut": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 129
+      }
+    },
+    {
+      "symbol": "MAT_COBALT",
+      "id": 2700,
+      "names": [
+        "Cobalt"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12767726,
+      "solidColorDark": 3487060,
+      "moltenColor": 9401006,
+      "shapes": [
+        "FRAGMENT",
+        "DUSTTINY",
+        "BILLET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_COBALT",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 130
+      }
+    },
+    {
+      "symbol": "MAT_BORON",
+      "id": 500,
+      "names": [
+        "Boron"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12437714,
+      "solidColorDark": 2700350,
+      "moltenColor": 11367086,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "DUSTTINY",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_BORON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 131
+      }
+    },
+    {
+      "symbol": "MAT_BORAX",
+      "id": 501,
+      "names": [
+        "Borax"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 9727523,
+      "moltenColor": 16772294,
+      "shapes": [
+        "FRAGMENT",
+        "INGOT",
+        "DUST"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_BORAX",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 132
+      }
+    },
+    {
+      "symbol": "MAT_LANTHANIUM",
+      "id": 5700,
+      "names": [
+        "Lanthanum"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13164768,
+      "solidColorDark": 3887955,
+      "moltenColor": 10598841,
+      "shapes": [
+        "FRAGMENT",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_LANTHANIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 133
+      }
+    },
+    {
+      "symbol": "MAT_ZIRCONIUM",
+      "id": 4000,
+      "names": [
+        "Zirconium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 14933182,
+      "solidColorDark": 4077337,
+      "moltenColor": 11380360,
+      "shapes": [
+        "FRAGMENT",
+        "WIRE",
+        "DUSTTINY",
+        "BILLET",
+        "DUST",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_ZIRCONIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 134
+      }
+    },
+    {
+      "symbol": "MAT_SODIUM",
+      "id": 1100,
+      "names": [
+        "Sodium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13877150,
+      "solidColorDark": 3824235,
+      "moltenColor": 8295571,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "INGOT",
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SODIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 135
+      }
+    },
+    {
+      "symbol": "MAT_SODALITE",
+      "id": 1101,
+      "names": [
+        "Sodalite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 14476790,
+      "solidColorDark": 4794292,
+      "moltenColor": 9873382,
+      "shapes": [
+        "FRAGMENT",
+        "GEM"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_SODALITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 136
+      }
+    },
+    {
+      "symbol": "MAT_STRONTIUM",
+      "id": 3800,
+      "names": [
+        "Strontium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 15853754,
+      "solidColorDark": 2563584,
+      "moltenColor": 13287827,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "INGOT",
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_STRONTIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 137
+      }
+    },
+    {
+      "symbol": "MAT_CALCIUM",
+      "id": 2000,
+      "names": [
+        "Calcium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13619110,
+      "solidColorDark": 7634798,
+      "moltenColor": 12040068,
+      "shapes": [
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_CALCIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 138
+      }
+    },
+    {
+      "symbol": "MAT_LITHIUM",
+      "id": 300,
+      "names": [
+        "Lithium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 8487297,
+      "moltenColor": 14079702,
+      "shapes": [
+        "FRAGMENT",
+        "NUGGET",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_LITHIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 139
+      }
+    },
+    {
+      "symbol": "MAT_SULFUR",
+      "id": 1600,
+      "names": [
+        "Sulfur"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16576128,
+      "solidColorDark": 12427298,
+      "moltenColor": 15851368,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_SULFUR",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 140
+      }
+    },
+    {
+      "symbol": "MAT_KNO",
+      "id": 700,
+      "names": [
+        "Saltpeter"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 13948116,
+      "solidColorDark": 9868950,
+      "moltenColor": 13224393,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_KNO",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 141
+      }
+    },
+    {
+      "symbol": "MAT_FLUORITE",
+      "id": 900,
+      "names": [
+        "Fluorite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16777215,
+      "solidColorDark": 11575698,
+      "moltenColor": 14801876,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_FLUORITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 142
+      }
+    },
+    {
+      "symbol": "MAT_PHOSPHORUS",
+      "id": 1500,
+      "names": [
+        "RedPhosphorus"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 13304339,
+      "solidColorDark": 6291462,
+      "moltenColor": 12191253,
+      "shapes": [
+        "FRAGMENT",
+        "DUST",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_PHOSPHORUS",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 143
+      }
+    },
+    {
+      "symbol": "MAT_CHLOROCALCITE",
+      "id": 1701,
+      "names": [
+        "Chlorocalcite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16246625,
+      "solidColorDark": 4676422,
+      "moltenColor": 12106083,
+      "shapes": [
+        "FRAGMENT",
+        "DUST"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CHLOROCALCITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 144
+      }
+    },
+    {
+      "symbol": "MAT_MOLYSITE",
+      "id": 1702,
+      "names": [
+        "Molysite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16378235,
+      "solidColorDark": 2190848,
+      "moltenColor": 13685348,
+      "shapes": [
+        "FRAGMENT",
+        "DUST"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_MOLYSITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 145
+      }
+    },
+    {
+      "symbol": "MAT_CINNABAR",
+      "id": 8001,
+      "names": [
+        "Cinnabar"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 14184560,
+      "solidColorDark": 10039344,
+      "moltenColor": 12537422,
+      "shapes": [
+        "FRAGMENT",
+        "GEM"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_CINNABAR",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 146
+      }
+    },
+    {
+      "symbol": "MAT_CADMIUM",
+      "id": 4800,
+      "names": [
+        "Cadmium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16775902,
+      "solidColorDark": 3473408,
+      "moltenColor": 11032064,
+      "shapes": [
+        "DUST"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_CADMIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 147
+      }
+    },
+    {
+      "symbol": "MAT_SILICON",
+      "id": 1400,
+      "names": [
+        "Silicon"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13752287,
+      "solidColorDark": 1710653,
+      "moltenColor": 8883102,
+      "shapes": [
+        "FRAGMENT",
+        "BILLET"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SILICON",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 148
+      }
+    },
+    {
+      "symbol": "MAT_ASBESTOS",
+      "id": 1401,
+      "names": [
+        "Asbestos"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 14211535,
+      "solidColorDark": 6382168,
+      "moltenColor": 11580328,
+      "shapes": [
+        "FRAGMENT",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_ASBESTOS",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 149
+      }
+    },
+    {
+      "symbol": "MAT_OSMIRIDIUM",
+      "id": 7699,
+      "names": [
+        "Osmiridium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 14410735,
+      "solidColorDark": 7901630,
+      "moltenColor": 11320793,
+      "shapes": [
+        "CASTPLATE",
+        "WELDEDPLATE"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_OSMIRIDIUM",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 150
+      }
+    },
+    {
+      "symbol": "MAT_STEEL",
+      "id": 30,
+      "names": [
+        "Steel"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 11513775,
+      "solidColorDark": 986895,
+      "moltenColor": 4868682,
+      "shapes": [
+        "DUSTTINY",
+        "BOLT",
+        "WIRE",
+        "DUST",
+        "PLATE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "SHELL",
+        "PIPE",
+        "BLOCK",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "GRIP"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_STEEL",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 153
+      }
+    },
+    {
+      "symbol": "MAT_MINGRADE",
+      "id": 31,
+      "names": [
+        "Mingrade"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16759421,
+      "solidColorDark": 11474688,
+      "moltenColor": 14961679,
+      "shapes": [
+        "WIRE",
+        "DUST",
+        "DENSEWIRE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_MINGRADE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 154
+      }
+    },
+    {
+      "symbol": "MAT_DURA",
+      "id": 33,
+      "names": [
+        "DuraSteel"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 8562076,
+      "solidColorDark": 403486,
+      "moltenColor": 4351580,
+      "shapes": [
+        "BOLT",
+        "DUST",
+        "PLATE",
+        "CASTPLATE",
+        "PIPE",
+        "BLOCK",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER",
+        "GRIP"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_DURA",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 156
+      }
+    },
+    {
+      "symbol": "MAT_DESH",
+      "id": 42,
+      "names": [
+        "WorkersAlloy"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16739693,
+      "solidColorDark": 7471104,
+      "moltenColor": 15870249,
+      "shapes": [
+        "DUST",
+        "CASTPLATE",
+        "BLOCK",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_DESH",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 157
+      }
+    },
+    {
+      "symbol": "MAT_STAR",
+      "id": 35,
+      "names": [
+        "Starmetal"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13421802,
+      "solidColorDark": 1118490,
+      "moltenColor": 10855891,
+      "shapes": [
+        "DUST",
+        "DENSEWIRE",
+        "CASTPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_STAR",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 158
+      }
+    },
+    {
+      "symbol": "MAT_FERRO",
+      "id": 37,
+      "names": [
+        "Ferrouranium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12040137,
+      "solidColorDark": 1052706,
+      "moltenColor": 7039883,
+      "shapes": [
+        "CASTPLATE",
+        "HEAVYBARREL",
+        "HEAVYRECEIVER"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_FERRO",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 159
+      }
+    },
+    {
+      "symbol": "MAT_TCALLOY",
+      "id": 36,
+      "names": [
+        "TcAlloy"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 13948630,
+      "solidColorDark": 3292477,
+      "moltenColor": 10266278,
+      "shapes": [
+        "DUST",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_TCALLOY",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 160
+      }
+    },
+    {
+      "symbol": "MAT_CDALLOY",
+      "id": 43,
+      "names": [
+        "CdAlloy"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16244623,
+      "solidColorDark": 6308616,
+      "moltenColor": 16503656,
+      "shapes": [
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_CDALLOY",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 161
+      }
+    },
+    {
+      "symbol": "MAT_BBRONZE",
+      "id": 46,
+      "names": [
+        "BismuthBronze"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 14785129,
+      "solidColorDark": 4739923,
+      "moltenColor": 9993573,
+      "shapes": [
+        "CASTPLATE",
+        "LIGHTBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_BBRONZE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 162
+      }
+    },
+    {
+      "symbol": "MAT_ABRONZE",
+      "id": 47,
+      "names": [
+        "ArsenicBronze"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 14390370,
+      "solidColorDark": 2110257,
+      "moltenColor": 7824461,
+      "shapes": [
+        "CASTPLATE",
+        "LIGHTBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_ABRONZE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 163
+      }
+    },
+    {
+      "symbol": "MAT_BSCCO",
+      "id": 48,
+      "names": [
+        "BSCCO"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 7764977,
+      "solidColorDark": 0,
+      "moltenColor": 6185664,
+      "shapes": [
+        "DENSEWIRE"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_BSCCO",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 164
+      }
+    },
+    {
+      "symbol": "MAT_MAGTUNG",
+      "id": 38,
+      "names": [
+        "MagnetizedTungsten"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 2269858,
+      "solidColorDark": 986895,
+      "moltenColor": 2269858,
+      "shapes": [
+        "WIRE",
+        "DUST",
+        "DENSEWIRE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_MAGTUNG",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 165
+      }
+    },
+    {
+      "symbol": "MAT_CMB",
+      "id": 39,
+      "names": [
+        "CMBSteel"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 7303092,
+      "solidColorDark": 17,
+      "moltenColor": 7303092,
+      "shapes": [
+        "DUST",
+        "PLATE",
+        "CASTPLATE",
+        "WELDEDPLATE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_CMB",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 166
+      }
+    },
+    {
+      "symbol": "MAT_DNT",
+      "id": 45,
+      "names": [
+        "Dineutronium"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 7701177,
+      "solidColorDark": 1441806,
+      "moltenColor": 4543113,
+      "shapes": [
+        "DUST",
+        "DENSEWIRE",
+        "BLOCK"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_DNT",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 167
+      }
+    },
+    {
+      "symbol": "MAT_FLUX",
+      "id": 40,
+      "names": [
+        "Flux"
+      ],
+      "smeltingBehavior": "ADDITIVE",
+      "solidColorLight": 15851707,
+      "solidColorDark": 7299670,
+      "moltenColor": 14601389,
+      "shapes": [
+        "DUST"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_FLUX",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 168
+      }
+    },
+    {
+      "symbol": "MAT_SLAG",
+      "id": 41,
+      "names": [
+        "Slag"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 5589312,
+      "solidColorDark": 3418143,
+      "moltenColor": 7103842,
+      "shapes": [
+        "INGOT",
+        "BLOCK"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_SLAG",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 169
+      }
+    },
+    {
+      "symbol": "MAT_MUD",
+      "id": 44,
+      "names": [
+        "WatzMud"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 12367273,
+      "solidColorDark": 4723219,
+      "moltenColor": 9861179,
+      "shapes": [],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_MUD",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 170
+      }
+    },
+    {
+      "symbol": "MAT_GUNMETAL",
+      "id": 49,
+      "names": [
+        "GunMetal"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 16772927,
+      "solidColorDark": 11351552,
+      "moltenColor": 16369196,
+      "shapes": [
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER",
+        "MECHANISM",
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_GUNMETAL",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 171
+      }
+    },
+    {
+      "symbol": "MAT_WEAPONSTEEL",
+      "id": 50,
+      "names": [
+        "WeaponSteel"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 10526880,
+      "solidColorDark": 0,
+      "moltenColor": 8421504,
+      "shapes": [
+        "CASTPLATE",
+        "SHELL",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER",
+        "MECHANISM",
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_WEAPONSTEEL",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 172
+      }
+    },
+    {
+      "symbol": "MAT_SATURN",
+      "id": 34,
+      "names": [
+        "Saturnite"
+      ],
+      "smeltingBehavior": "SMELTABLE",
+      "solidColorLight": 3851482,
+      "solidColorDark": 600108,
+      "moltenColor": 3187895,
+      "shapes": [
+        "PLATE",
+        "CASTPLATE",
+        "SHELL",
+        "BLOCK",
+        "LIGHTBARREL",
+        "HEAVYBARREL",
+        "LIGHTRECEIVER",
+        "HEAVYRECEIVER",
+        "MECHANISM",
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "METAL"
+      ],
+      "smeltsInto": "MAT_SATURN",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 173
+      }
+    },
+    {
+      "symbol": "MAT_RAREEARTH",
+      "id": 20000,
+      "names": [
+        "RareEarth"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 12697021,
+      "solidColorDark": 3688006,
+      "moltenColor": 8093567,
+      "shapes": [
+        "FRAGMENT"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_RAREEARTH",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 176
+      }
+    },
+    {
+      "symbol": "MAT_POLYMER",
+      "id": 20001,
+      "names": [
+        "Polymer"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 3552822,
+      "solidColorDark": 263172,
+      "moltenColor": 2565927,
+      "shapes": [
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_POLYMER",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 177
+      }
+    },
+    {
+      "symbol": "MAT_BAKELITE",
+      "id": 20002,
+      "names": [
+        "Bakelite"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 15892614,
+      "solidColorDark": 2819592,
+      "moltenColor": 13187392,
+      "shapes": [
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_BAKELITE",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 178
+      }
+    },
+    {
+      "symbol": "MAT_RUBBER",
+      "id": 20003,
+      "names": [
+        "Rubber"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 8486773,
+      "solidColorDark": 986371,
+      "moltenColor": 4934207,
+      "shapes": [
+        "PIPE",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_RUBBER",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 179
+      }
+    },
+    {
+      "symbol": "MAT_HARDPLASTIC",
+      "id": 20004,
+      "names": [
+        "Polycarbonate"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 15591364,
+      "solidColorDark": 9472615,
+      "moltenColor": 14801848,
+      "shapes": [
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_HARDPLASTIC",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 180
+      }
+    },
+    {
+      "symbol": "MAT_PVC",
+      "id": 20005,
+      "names": [
+        "PVC"
+      ],
+      "smeltingBehavior": "NOT_SMELTABLE",
+      "solidColorLight": 16579836,
+      "solidColorDark": 10461087,
+      "moltenColor": 15790320,
+      "shapes": [
+        "STOCK",
+        "GRIP"
+      ],
+      "traits": [
+        "NONMETAL"
+      ],
+      "smeltsInto": "MAT_PVC",
+      "convIn": 1,
+      "convOut": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/Mats.java",
+        "line": 181
+      }
+    }
+  ],
+  "shapes": [
+    {
+      "symbol": "ANY",
+      "quantity": 0,
+      "prefixes": [
+        "any"
+      ],
+      "noAutogen": true
+    },
+    {
+      "symbol": "ONLY_ORE",
+      "quantity": 0,
+      "prefixes": [
+        "ore"
+      ],
+      "noAutogen": true
+    },
+    {
+      "symbol": "ORE",
+      "quantity": 0,
+      "prefixes": [
+        "ore",
+        "oreNether"
+      ],
+      "noAutogen": true
+    },
+    {
+      "symbol": "ORENETHER",
+      "quantity": 0,
+      "prefixes": [
+        "oreNether"
+      ],
+      "noAutogen": true
+    },
+    {
+      "symbol": "QUANTUM",
+      "quantity": 1,
+      "prefixes": [],
+      "noAutogen": false
+    },
+    {
+      "symbol": "NUGGET",
+      "quantity": 8,
+      "prefixes": [
+        "nugget",
+        "tiny"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "TINY",
+      "quantity": 8,
+      "prefixes": [
+        "tiny"
+      ],
+      "noAutogen": true
+    },
+    {
+      "symbol": "FRAGMENT",
+      "quantity": 8,
+      "prefixes": [
+        "bedrockorefragment"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "DUSTTINY",
+      "quantity": 8,
+      "prefixes": [
+        "dustTiny"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "WIRE",
+      "quantity": 9,
+      "prefixes": [
+        "wireFine"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "BOLT",
+      "quantity": 9,
+      "prefixes": [
+        "bolt"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "BILLET",
+      "quantity": 48,
+      "prefixes": [
+        "billet"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "INGOT",
+      "quantity": 72,
+      "prefixes": [
+        "ingot"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "GEM",
+      "quantity": 72,
+      "prefixes": [
+        "gem"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "CRYSTAL",
+      "quantity": 72,
+      "prefixes": [
+        "crystal"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "DUST",
+      "quantity": 72,
+      "prefixes": [
+        "dust"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "DENSEWIRE",
+      "quantity": 72,
+      "prefixes": [
+        "wireDense"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "PLATE",
+      "quantity": 72,
+      "prefixes": [
+        "plate"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "CASTPLATE",
+      "quantity": 216,
+      "prefixes": [
+        "plateTriple"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "WELDEDPLATE",
+      "quantity": 432,
+      "prefixes": [
+        "plateSextuple"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "SHELL",
+      "quantity": 288,
+      "prefixes": [
+        "shell"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "PIPE",
+      "quantity": 216,
+      "prefixes": [
+        "ntmpipe"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "QUART",
+      "quantity": 162,
+      "prefixes": [],
+      "noAutogen": false
+    },
+    {
+      "symbol": "BLOCK",
+      "quantity": 648,
+      "prefixes": [
+        "block"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "LIGHTBARREL",
+      "quantity": 216,
+      "prefixes": [
+        "barrelLight"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "HEAVYBARREL",
+      "quantity": 432,
+      "prefixes": [
+        "barrelHeavy"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "LIGHTRECEIVER",
+      "quantity": 288,
+      "prefixes": [
+        "receiverLight"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "HEAVYRECEIVER",
+      "quantity": 648,
+      "prefixes": [
+        "receiverHeavy"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "MECHANISM",
+      "quantity": 288,
+      "prefixes": [
+        "gunMechanism"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "STOCK",
+      "quantity": 288,
+      "prefixes": [
+        "stock"
+      ],
+      "noAutogen": false
+    },
+    {
+      "symbol": "GRIP",
+      "quantity": 144,
+      "prefixes": [
+        "grip"
+      ],
+      "noAutogen": false
+    }
+  ],
+  "defaultCustomMaterials": {
+    "DemoMat": {
+      "id": 20006,
+      "solidColorLight": 16632456,
+      "solidColorDark": 6299149,
+      "moltenColor": 12682038,
+      "smeltingBehavior": "SMELTABLE",
+      "matTraits": "METAL",
+      "shapes": [
+        "wireDense",
+        "plateTriple",
+        "plateSextuple",
+        "shell",
+        "ntmpipe"
+      ]
+    }
+  },
+  "defaultCustomShapes": {
+    "demoshape": {
+      "quantity": 288,
+      "materials": [
+        "Iron",
+        "Steel",
+        "DemoMat"
+      ],
+      "molds": [
+        {
+          "size": "S",
+          "castAmount": 3
+        }
+      ]
+    }
+  },
+  "distributions": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 41
+      },
+      "expression": "registerOre(\"stone\", MAT_STONE, BLOCK.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 648
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "stone"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 42
+      },
+      "expression": "registerOre(\"cobblestone\", MAT_STONE, BLOCK.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 648
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "cobblestone"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 43
+      },
+      "expression": "registerEntry(Blocks.obsidian, MAT_OBSIDIAN, BLOCK.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_OBSIDIAN",
+          "materialId": 2,
+          "amount": 648
+        }
+      ],
+      "input": {
+        "id": "minecraft:obsidian",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 44
+      },
+      "expression": "registerEntry(Blocks.rail, MAT_IRON, INGOT.q(6, 16))",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 27
+        }
+      ],
+      "input": {
+        "id": "minecraft:rail",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 45
+      },
+      "expression": "registerEntry(Blocks.golden_rail, MAT_GOLD, INGOT.q(6, 6), MAT_REDSTONE, DUST.q(1, 6))",
+      "outputs": [
+        {
+          "material": "MAT_GOLD",
+          "materialId": 7900,
+          "amount": 72
+        },
+        {
+          "material": "MAT_REDSTONE",
+          "materialId": 1,
+          "amount": 12
+        }
+      ],
+      "input": {
+        "id": "minecraft:powered_rail",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 46
+      },
+      "expression": "registerEntry(Blocks.detector_rail, MAT_IRON, INGOT.q(6, 6), MAT_REDSTONE, DUST.q(1, 6))",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 72
+        },
+        {
+          "material": "MAT_REDSTONE",
+          "materialId": 1,
+          "amount": 12
+        }
+      ],
+      "input": {
+        "id": "minecraft:detector_rail",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 47
+      },
+      "expression": "registerEntry(Items.minecart, MAT_IRON, INGOT.q(5))",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 360
+        }
+      ],
+      "input": {
+        "id": "minecraft:minecart",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 50
+      },
+      "expression": "registerEntry(ModItems.blade_titanium, MAT_TITANIUM, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_TITANIUM",
+          "materialId": 2200,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:blade_titanium",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 51
+      },
+      "expression": "registerEntry(ModItems.blade_tungsten, MAT_TUNGSTEN, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_TUNGSTEN",
+          "materialId": 7400,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:blade_tungsten",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 54
+      },
+      "expression": "registerEntry(ModItems.stamp_stone_flat, MAT_STONE, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:stamp_stone_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 55
+      },
+      "expression": "registerEntry(ModItems.stamp_iron_flat, MAT_IRON, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:stamp_iron_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 56
+      },
+      "expression": "registerEntry(ModItems.stamp_steel_flat, MAT_STEEL, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_STEEL",
+          "materialId": 30,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:stamp_steel_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 57
+      },
+      "expression": "registerEntry(ModItems.stamp_titanium_flat, MAT_TITANIUM, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_TITANIUM",
+          "materialId": 2200,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:stamp_titanium_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 58
+      },
+      "expression": "registerEntry(ModItems.stamp_obsidian_flat, MAT_OBSIDIAN, INGOT.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_OBSIDIAN",
+          "materialId": 2,
+          "amount": 216
+        }
+      ],
+      "input": {
+        "id": "hbm:stamp_obsidian_flat",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 59
+      },
+      "expression": "registerEntry(ModItems.pipes_steel, MAT_STEEL, BLOCK.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_STEEL",
+          "materialId": 30,
+          "amount": 1944
+        }
+      ],
+      "input": {
+        "id": "hbm:pipes_steel",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 61
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.casing, EnumCasingType.SMALL), MAT_GUNMETAL, PLATE.q(1, 4))",
+      "outputs": [
+        {
+          "material": "MAT_GUNMETAL",
+          "materialId": 49,
+          "amount": 18
+        }
+      ],
+      "input": {
+        "id": "hbm:casing_small",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 62
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.casing, EnumCasingType.SMALL_STEEL), MAT_WEAPONSTEEL, PLATE.q(1, 4))",
+      "outputs": [
+        {
+          "material": "MAT_WEAPONSTEEL",
+          "materialId": 50,
+          "amount": 18
+        }
+      ],
+      "input": {
+        "id": "hbm:casing_small_steel",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 63
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.casing, EnumCasingType.LARGE), MAT_GUNMETAL, PLATE.q(1, 2))",
+      "outputs": [
+        {
+          "material": "MAT_GUNMETAL",
+          "materialId": 49,
+          "amount": 36
+        }
+      ],
+      "input": {
+        "id": "hbm:casing_large",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 64
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.casing, EnumCasingType.LARGE_STEEL), MAT_WEAPONSTEEL, PLATE.q(1, 2))",
+      "outputs": [
+        {
+          "material": "MAT_WEAPONSTEEL",
+          "materialId": 50,
+          "amount": 36
+        }
+      ],
+      "input": {
+        "id": "hbm:casing_large_steel",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 65
+      },
+      "expression": "registerEntry(Items.minecart, MAT_IRON, INGOT.q(5))",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 360
+        }
+      ],
+      "input": {
+        "id": "minecraft:minecart",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 66
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.chunk_ore, ItemEnums.EnumChunkType.CRYOLITE), MAT_ALUMINIUM, INGOT.q(1), MAT_SODIUM, INGOT.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_ALUMINIUM",
+          "materialId": 1300,
+          "amount": 72
+        },
+        {
+          "material": "MAT_SODIUM",
+          "materialId": 1100,
+          "amount": 72
+        }
+      ],
+      "input": {
+        "id": "hbm:chunk_ore_cryolite",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 69
+      },
+      "expression": "registerOre(OreDictManager.IRON.ore(), MAT_IRON, INGOT.q(2), MAT_TITANIUM, NUGGET.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 144
+        },
+        {
+          "material": "MAT_TITANIUM",
+          "materialId": 2200,
+          "amount": 24
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreIron"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 70
+      },
+      "expression": "registerOre(OreDictManager.TI.ore(), MAT_TITANIUM, INGOT.q(2), MAT_IRON, NUGGET.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_TITANIUM",
+          "materialId": 2200,
+          "amount": 144
+        },
+        {
+          "material": "MAT_IRON",
+          "materialId": 2600,
+          "amount": 24
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreTitanium"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 71
+      },
+      "expression": "registerOre(OreDictManager.W.ore(), MAT_TUNGSTEN, INGOT.q(2), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_TUNGSTEN",
+          "materialId": 7400,
+          "amount": 144
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreTungsten"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 72
+      },
+      "expression": "registerOre(OreDictManager.AL.ore(), MAT_ALUMINIUM, INGOT.q(2), MAT_SODIUM, NUGGET.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_ALUMINIUM",
+          "materialId": 1300,
+          "amount": 144
+        },
+        {
+          "material": "MAT_SODIUM",
+          "materialId": 1100,
+          "amount": 24
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreAluminum"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 75
+      },
+      "expression": "registerOre(OreDictManager.COAL.ore(), MAT_CARBON, GEM.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_CARBON",
+          "materialId": 699,
+          "amount": 216
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreCoal"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 76
+      },
+      "expression": "registerOre(OreDictManager.GOLD.ore(), MAT_GOLD, INGOT.q(2), MAT_LEAD, NUGGET.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_GOLD",
+          "materialId": 7900,
+          "amount": 144
+        },
+        {
+          "material": "MAT_LEAD",
+          "materialId": 8200,
+          "amount": 24
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreGold"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 77
+      },
+      "expression": "registerOre(OreDictManager.U.ore(), MAT_URANIUM, INGOT.q(2), MAT_LEAD, NUGGET.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_URANIUM",
+          "materialId": 9200,
+          "amount": 144
+        },
+        {
+          "material": "MAT_LEAD",
+          "materialId": 8200,
+          "amount": 24
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreUranium"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 78
+      },
+      "expression": "registerOre(ore, MAT_THORIUM, INGOT.q(2), MAT_URANIUM, NUGGET.q(3), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_THORIUM",
+          "materialId": 9032,
+          "amount": 144
+        },
+        {
+          "material": "MAT_URANIUM",
+          "materialId": 9200,
+          "amount": 24
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreThorium232",
+        "oreTh232",
+        "oreThorium"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 79
+      },
+      "expression": "registerOre(OreDictManager.CU.ore(), MAT_COPPER, INGOT.q(2), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_COPPER",
+          "materialId": 2900,
+          "amount": 144
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreCopper"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 80
+      },
+      "expression": "registerOre(OreDictManager.PB.ore(), MAT_LEAD, INGOT.q(2), MAT_GOLD, NUGGET.q(1), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_LEAD",
+          "materialId": 8200,
+          "amount": 144
+        },
+        {
+          "material": "MAT_GOLD",
+          "materialId": 7900,
+          "amount": 8
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreLead"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 81
+      },
+      "expression": "registerOre(OreDictManager.BE.ore(), MAT_BERYLLIUM, INGOT.q(2), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_BERYLLIUM",
+          "materialId": 400,
+          "amount": 144
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreBeryllium"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 82
+      },
+      "expression": "registerOre(OreDictManager.CO.ore(), MAT_COBALT, INGOT.q(1), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_COBALT",
+          "materialId": 2700,
+          "amount": 72
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreCobalt"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 83
+      },
+      "expression": "registerOre(OreDictManager.REDSTONE.ore(), MAT_REDSTONE, INGOT.q(4), MAT_STONE, QUART.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_REDSTONE",
+          "materialId": 1,
+          "amount": 288
+        },
+        {
+          "material": "MAT_STONE",
+          "materialId": 0,
+          "amount": 162
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreRedstone"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 85
+      },
+      "expression": "registerOre(OreDictManager.HEMATITE.ore(), MAT_HEMATITE, INGOT.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_HEMATITE",
+          "materialId": 2601,
+          "amount": 72
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreHematite"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 86
+      },
+      "expression": "registerOre(OreDictManager.MALACHITE.ore(), MAT_MALACHITE, INGOT.q(6))",
+      "outputs": [
+        {
+          "material": "MAT_MALACHITE",
+          "materialId": 2901,
+          "amount": 432
+        }
+      ],
+      "kind": "ore",
+      "keys": [
+        "oreMalachite"
+      ],
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 88
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModBlocks.stone_resource, EnumStoneType.LIMESTONE), MAT_FLUX, DUST.q(10))",
+      "outputs": [
+        {
+          "material": "MAT_FLUX",
+          "materialId": 40,
+          "amount": 720
+        }
+      ],
+      "input": {
+        "id": "hbm:stone_resource",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 89
+      },
+      "expression": "registerEntry(ModItems.powder_flux, MAT_FLUX, DUST.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_FLUX",
+          "materialId": 40,
+          "amount": 72
+        }
+      ],
+      "input": {
+        "id": "hbm:powder_flux",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 90
+      },
+      "expression": "registerEntry(new ItemStack(Items.coal, 1, 1), MAT_CARBON, NUGGET.q(3))",
+      "outputs": [
+        {
+          "material": "MAT_CARBON",
+          "materialId": 699,
+          "amount": 24
+        }
+      ],
+      "input": {
+        "id": "minecraft:charcoal",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 92
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.powder_ash, EnumAshType.WOOD), MAT_CARBON, NUGGET.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_CARBON",
+          "materialId": 699,
+          "amount": 8
+        }
+      ],
+      "input": {
+        "id": "hbm:powder_ash_wood",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 93
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.powder_ash, EnumAshType.COAL), MAT_CARBON, NUGGET.q(2))",
+      "outputs": [
+        {
+          "material": "MAT_CARBON",
+          "materialId": 699,
+          "amount": 16
+        }
+      ],
+      "input": {
+        "id": "hbm:powder_ash_coal",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/material/MatDistribution.java",
+        "line": 94
+      },
+      "expression": "registerEntry(DictFrame.fromOne(ModItems.powder_ash, EnumAshType.MISC), MAT_CARBON, NUGGET.q(1))",
+      "outputs": [
+        {
+          "material": "MAT_CARBON",
+          "materialId": 699,
+          "amount": 8
+        }
+      ],
+      "input": {
+        "id": "hbm:powder_ash_misc",
+        "count": 1
+      },
+      "kind": "item",
+      "status": "implemented_definition"
+    }
+  ]
+}

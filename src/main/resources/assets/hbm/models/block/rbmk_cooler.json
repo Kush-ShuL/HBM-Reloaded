@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "hbm:block/rbmk/rbmk_cooler_side",
+    "top": "hbm:block/rbmk/rbmk_cooler_top",
+    "cover_top": "hbm:block/rbmk/rbmk_cooler_cover_top",
+    "cover_side": "hbm:block/rbmk/rbmk_cooler_cover_side",
+    "glass_top": "hbm:block/rbmk/rbmk_cooler_glass_top",
+    "glass_side": "hbm:block/rbmk/rbmk_cooler_glass_side",
+    "particle": "hbm:block/rbmk/rbmk_cooler_side",
+    "bottom": "hbm:block/rbmk/rbmk_cooler_top"
+  }
+}

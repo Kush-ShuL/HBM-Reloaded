@@ -1,0 +1,49 @@
+{
+  "module": "conveyor-splitter214",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crane_splitter",
+      "id": "hbm:crane_splitter",
+      "legacyRegistryId": "hbm:tile.crane_splitter",
+      "originalClass": "CraneSplitter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1916
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3203
+          },
+          "expression": "register(crane_splitter)",
+          "arguments": [
+            "crane_splitter"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hasBlockEntity": true
+    }
+  ]
+}

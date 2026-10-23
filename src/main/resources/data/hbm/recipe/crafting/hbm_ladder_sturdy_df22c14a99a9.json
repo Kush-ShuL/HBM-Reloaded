@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:ladder_sturdy",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LLL",
+    "L#L",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:ladder"
+    },
+    "#": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plankwood"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.cmbtubes",
+  "duration": 6000,
+  "power": 10000000,
+  "ignition_temp": 12500000,
+  "order": 12,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_cmb_tubes",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:item_expensive_bronze_tubes"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplecmbsteel"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:powder_chlorophyte"
+        }
+      },
+      "count": 12
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "REFORMGAS",
+      "amount": 4000,
+      "pressure": 0
+    }
+  ]
+}

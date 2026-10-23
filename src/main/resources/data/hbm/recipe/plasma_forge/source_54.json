@@ -1,0 +1,45 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.platednt",
+  "duration": 600,
+  "power": 10000000,
+  "ignition_temp": 1000000,
+  "order": 1,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_dineutronium",
+            "count": 4
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotdineutronium"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:powder_spark_mix"
+        }
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      },
+      "count": 1
+    }
+  ]
+}

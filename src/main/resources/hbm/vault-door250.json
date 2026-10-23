@@ -1,0 +1,40 @@
+{
+  "module": "vault-door250",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "vault_door",
+      "id": "hbm:vault_door",
+      "legacyRegistryId": "hbm:tile.vault_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "VAULT_DOOR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2046
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2974
+          },
+          "expression": "GameRegistry.registerBlock(vault_door, vault_door.getUnlocalizedName())",
+          "arguments": [
+            "vault_door",
+            "vault_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "skins": 7,
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door"
+    }
+  ],
+  "sourceBlockEntityAlias": "tileentity_ntm_door"
+}

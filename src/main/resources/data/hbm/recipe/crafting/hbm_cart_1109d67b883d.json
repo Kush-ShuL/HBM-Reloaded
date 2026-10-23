@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:cart",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0,
+          "minecraft:custom_data": {
+            "cartBase": 2
+          }
+        }
+      }
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyered"
+    }
+  ],
+  "result": {
+    "id": "hbm:cart",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0,
+      "minecraft:custom_data": {
+        "cartBase": 3
+      }
+    }
+  }
+}

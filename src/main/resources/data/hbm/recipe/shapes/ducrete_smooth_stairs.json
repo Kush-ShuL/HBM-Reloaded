@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:ducrete_smooth"
+    }
+  },
+  "result": {
+    "id": "hbm:ducrete_smooth_stairs",
+    "count": 4
+  }
+}

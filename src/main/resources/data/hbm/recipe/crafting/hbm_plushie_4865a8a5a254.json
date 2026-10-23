@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:plushie",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LCR"
+  ],
+  "key": {
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/cropcarrot"
+    },
+    "C": {
+      "item": "hbm:rag"
+    },
+    "R": {
+      "item": "hbm:circuit_vacuum_tube"
+    }
+  }
+}

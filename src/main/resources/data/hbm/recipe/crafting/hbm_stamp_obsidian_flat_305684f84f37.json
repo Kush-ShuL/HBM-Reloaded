@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:stamp_obsidian_flat",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "SSS"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:nether_brick"
+    },
+    "S": {
+      "item": "minecraft:obsidian"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "hbm:block/wand_tandem"
+    },
+    "facing=up": {
+      "model": "hbm:block/wand_tandem"
+    },
+    "facing=north": {
+      "model": "hbm:block/wand_tandem"
+    },
+    "facing=south": {
+      "model": "hbm:block/wand_tandem"
+    },
+    "facing=west": {
+      "model": "hbm:block/wand_tandem"
+    },
+    "facing=east": {
+      "model": "hbm:block/wand_tandem"
+    }
+  }
+}

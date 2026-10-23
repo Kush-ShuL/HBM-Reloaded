@@ -1,0 +1,66 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "chainsaw",
+      "id": "hbm:chainsaw",
+      "legacyRegistryId": "hbm:item.chainsaw",
+      "originalClass": "ItemChainsaw",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3905
+      },
+      "creativeTab": "minecraft:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 1,
+      "material": {
+        "source": "MainRegistry.tMatChainsaw",
+        "harvestLevel": 3,
+        "uses": 1500,
+        "efficiency": 50,
+        "damageBonus": 22,
+        "enchantability": 0,
+        "repair": "hbm:ingot_steel"
+      },
+      "damageModifier": 25,
+      "movementMultiplier": -0.05,
+      "fuel": {
+        "capacity": 5000,
+        "consumptionPerWear": 1,
+        "fillRate": 250,
+        "acceptedSourceTypes": [
+          "DIESEL",
+          "DIESEL_CRACK",
+          "KEROSENE",
+          "BIOFUEL",
+          "GASOLINE",
+          "GASOLINE_LEADED",
+          "PETROIL",
+          "PETROIL_LEADED",
+          "COALGAS",
+          "COALGAS_LEADED"
+        ],
+        "nbt": "fuel"
+      },
+      "abilities": [
+        {
+          "ability": "SILK",
+          "level": 0
+        },
+        {
+          "ability": "RECURSION",
+          "level": 2
+        },
+        {
+          "ability": "CHAINSAW",
+          "level": 1
+        },
+        {
+          "ability": "BEHEADER",
+          "level": 0
+        }
+      ],
+      "shears": true
+    }
+  ]
+}

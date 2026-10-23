@@ -1,0 +1,97 @@
+{
+  "long": [
+    {
+      "ordinal": 0,
+      "name": "uranium235",
+      "sourceName": "Uranium-235",
+      "liquid": 0,
+      "gas": 0
+    },
+    {
+      "ordinal": 1,
+      "name": "uranium233",
+      "sourceName": "Uranium-233",
+      "liquid": 0,
+      "gas": 50
+    },
+    {
+      "ordinal": 2,
+      "name": "neptunium",
+      "sourceName": "Neptunium-237",
+      "liquid": 0,
+      "gas": 100
+    },
+    {
+      "ordinal": 3,
+      "name": "thorium",
+      "sourceName": "Thorium-232",
+      "liquid": 0,
+      "gas": 0
+    },
+    {
+      "ordinal": 4,
+      "name": "schrabidium",
+      "sourceName": "Schrabidium-326",
+      "liquid": 0,
+      "gas": 250
+    }
+  ],
+  "short": [
+    {
+      "ordinal": 0,
+      "name": "uranium235",
+      "sourceName": "Uranium-235",
+      "liquid": 0,
+      "gas": 100
+    },
+    {
+      "ordinal": 1,
+      "name": "uranium233",
+      "sourceName": "Uranium-233",
+      "liquid": 50,
+      "gas": 100
+    },
+    {
+      "ordinal": 2,
+      "name": "neptunium",
+      "sourceName": "Neptunium-237",
+      "liquid": 150,
+      "gas": 500
+    },
+    {
+      "ordinal": 3,
+      "name": "plutonium239",
+      "sourceName": "Plutonium-239",
+      "liquid": 250,
+      "gas": 1000
+    },
+    {
+      "ordinal": 4,
+      "name": "plutonium240",
+      "sourceName": "Plutonium-240",
+      "liquid": 350,
+      "gas": 1000
+    },
+    {
+      "ordinal": 5,
+      "name": "plutonium241",
+      "sourceName": "Plutonium-241",
+      "liquid": 500,
+      "gas": 1000
+    },
+    {
+      "ordinal": 6,
+      "name": "americium242",
+      "sourceName": "Americium-242",
+      "liquid": 750,
+      "gas": 1000
+    },
+    {
+      "ordinal": 7,
+      "name": "schrabidium",
+      "sourceName": "Schrabidium-326",
+      "liquid": 1000,
+      "gas": 1000
+    }
+  ]
+}

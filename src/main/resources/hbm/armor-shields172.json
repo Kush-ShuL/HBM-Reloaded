@@ -1,0 +1,432 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "insert_kevlar",
+      "id": "hbm:insert_kevlar",
+      "legacyRegistryId": "hbm:item.insert_kevlar",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2866
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6102
+          },
+          "expression": "GameRegistry.registerItem(insert_kevlar, insert_kevlar.getUnlocalizedName())",
+          "arguments": [
+            "insert_kevlar",
+            "insert_kevlar.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 1500,
+      "damageMultiplier": 1.0,
+      "projectileMultiplier": 0.9,
+      "explosionMultiplier": 1.0,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_sapi",
+      "id": "hbm:insert_sapi",
+      "legacyRegistryId": "hbm:item.insert_sapi",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2867
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6103
+          },
+          "expression": "GameRegistry.registerItem(insert_sapi, insert_sapi.getUnlocalizedName())",
+          "arguments": [
+            "insert_sapi",
+            "insert_sapi.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 1750,
+      "damageMultiplier": 1.0,
+      "projectileMultiplier": 0.85,
+      "explosionMultiplier": 1.0,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_esapi",
+      "id": "hbm:insert_esapi",
+      "legacyRegistryId": "hbm:item.insert_esapi",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2868
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6104
+          },
+          "expression": "GameRegistry.registerItem(insert_esapi, insert_esapi.getUnlocalizedName())",
+          "arguments": [
+            "insert_esapi",
+            "insert_esapi.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 2000,
+      "damageMultiplier": 0.95,
+      "projectileMultiplier": 0.8,
+      "explosionMultiplier": 1.0,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_xsapi",
+      "id": "hbm:insert_xsapi",
+      "legacyRegistryId": "hbm:item.insert_xsapi",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2869
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6105
+          },
+          "expression": "GameRegistry.registerItem(insert_xsapi, insert_xsapi.getUnlocalizedName())",
+          "arguments": [
+            "insert_xsapi",
+            "insert_xsapi.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 2500,
+      "damageMultiplier": 0.9,
+      "projectileMultiplier": 0.75,
+      "explosionMultiplier": 1.0,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_steel",
+      "id": "hbm:insert_steel",
+      "legacyRegistryId": "hbm:item.insert_steel",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2870
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6106
+          },
+          "expression": "GameRegistry.registerItem(insert_steel, insert_steel.getUnlocalizedName())",
+          "arguments": [
+            "insert_steel",
+            "insert_steel.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 1000,
+      "damageMultiplier": 1.0,
+      "projectileMultiplier": 0.95,
+      "explosionMultiplier": 0.75,
+      "movementMultiplier": 0.95
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_du",
+      "id": "hbm:insert_du",
+      "legacyRegistryId": "hbm:item.insert_du",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2871
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6107
+          },
+          "expression": "GameRegistry.registerItem(insert_du, insert_du.getUnlocalizedName())",
+          "arguments": [
+            "insert_du",
+            "insert_du.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 1500,
+      "damageMultiplier": 0.9,
+      "projectileMultiplier": 0.85,
+      "explosionMultiplier": 0.5,
+      "movementMultiplier": 0.9
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_polonium",
+      "id": "hbm:insert_polonium",
+      "legacyRegistryId": "hbm:item.insert_polonium",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2872
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6108
+          },
+          "expression": "GameRegistry.registerItem(insert_polonium, insert_polonium.getUnlocalizedName())",
+          "arguments": [
+            "insert_polonium",
+            "insert_polonium.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 500,
+      "damageMultiplier": 0.9,
+      "projectileMultiplier": 1.0,
+      "explosionMultiplier": 0.95,
+      "movementMultiplier": 0.9
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_ghiorsium",
+      "id": "hbm:insert_ghiorsium",
+      "legacyRegistryId": "hbm:item.insert_ghiorsium",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2873
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6109
+          },
+          "expression": "GameRegistry.registerItem(insert_ghiorsium, insert_ghiorsium.getUnlocalizedName())",
+          "arguments": [
+            "insert_ghiorsium",
+            "insert_ghiorsium.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 2000,
+      "damageMultiplier": 0.8,
+      "projectileMultiplier": 0.75,
+      "explosionMultiplier": 0.35,
+      "movementMultiplier": 0.9
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_era",
+      "id": "hbm:insert_era",
+      "legacyRegistryId": "hbm:item.insert_era",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2874
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6110
+          },
+          "expression": "GameRegistry.registerItem(insert_era, insert_era.getUnlocalizedName())",
+          "arguments": [
+            "insert_era",
+            "insert_era.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 25,
+      "damageMultiplier": 0.5,
+      "projectileMultiplier": 1.0,
+      "explosionMultiplier": 0.25,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_yharonite",
+      "id": "hbm:insert_yharonite",
+      "legacyRegistryId": "hbm:item.insert_yharonite",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2875
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6111
+          },
+          "expression": "GameRegistry.registerItem(insert_yharonite, insert_yharonite.getUnlocalizedName())",
+          "arguments": [
+            "insert_yharonite",
+            "insert_yharonite.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 9999,
+      "damageMultiplier": 0.01,
+      "projectileMultiplier": 1.0,
+      "explosionMultiplier": 1.0,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "insert_doxium",
+      "id": "hbm:insert_doxium",
+      "legacyRegistryId": "hbm:item.insert_doxium",
+      "originalClass": "ItemModInsert",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2876
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6112
+          },
+          "expression": "GameRegistry.registerItem(insert_doxium, insert_doxium.getUnlocalizedName())",
+          "arguments": [
+            "insert_doxium",
+            "insert_doxium.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "maxDamage": 9999,
+      "damageMultiplier": 5.0,
+      "projectileMultiplier": 1.0,
+      "explosionMultiplier": 1.0,
+      "movementMultiplier": 1.0
+    },
+    {
+      "kind": "item",
+      "symbol": "australium_iii",
+      "id": "hbm:australium_iii",
+      "legacyRegistryId": "hbm:item.australium_iii",
+      "originalClass": "ItemModShield",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2911
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6074
+          },
+          "expression": "GameRegistry.registerItem(australium_iii, australium_iii.getUnlocalizedName())",
+          "arguments": [
+            "australium_iii",
+            "australium_iii.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.shields.ArmorShieldsContent",
+      "armorModSlot": 6,
+      "applicableTo": [
+        "chestplate"
+      ],
+      "shieldCapacity": 25
+    }
+  ]
+}

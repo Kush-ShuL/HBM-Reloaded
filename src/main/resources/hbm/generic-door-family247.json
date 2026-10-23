@@ -1,0 +1,250 @@
+{
+  "module": "generic-door-family247",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "large_vehicle_door",
+      "id": "hbm:large_vehicle_door",
+      "legacyRegistryId": "hbm:tile.large_vehicle_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "LARGE_VEHICLE_DOOR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2055
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2988
+          },
+          "expression": "GameRegistry.registerBlock(large_vehicle_door, large_vehicle_door.getUnlocalizedName())",
+          "arguments": [
+            "large_vehicle_door",
+            "large_vehicle_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 4
+    },
+    {
+      "kind": "block",
+      "symbol": "secure_access_door",
+      "id": "hbm:secure_access_door",
+      "legacyRegistryId": "hbm:tile.secure_access_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "SECURE_ACCESS_DOOR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2054
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2987
+          },
+          "expression": "GameRegistry.registerBlock(secure_access_door, secure_access_door.getUnlocalizedName())",
+          "arguments": [
+            "secure_access_door",
+            "secure_access_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 4
+    },
+    {
+      "kind": "block",
+      "symbol": "round_airlock_door",
+      "id": "hbm:round_airlock_door",
+      "legacyRegistryId": "hbm:tile.round_airlock_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "ROUND_AIRLOCK_DOOR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2058
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2991
+          },
+          "expression": "GameRegistry.registerBlock(round_airlock_door, round_airlock_door.getUnlocalizedName())",
+          "arguments": [
+            "round_airlock_door",
+            "round_airlock_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 3
+    },
+    {
+      "kind": "block",
+      "symbol": "qe_containment",
+      "id": "hbm:qe_containment",
+      "legacyRegistryId": "hbm:tile.qe_containment",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "QE_CONTAINMENT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2056
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2989
+          },
+          "expression": "GameRegistry.registerBlock(qe_containment, qe_containment.getUnlocalizedName())",
+          "arguments": [
+            "qe_containment",
+            "qe_containment.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 3
+    },
+    {
+      "kind": "block",
+      "symbol": "qe_sliding_door",
+      "id": "hbm:qe_sliding_door",
+      "legacyRegistryId": "hbm:tile.qe_sliding_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "QE_SLIDING",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2057
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2990
+          },
+          "expression": "GameRegistry.registerBlock(qe_sliding_door, qe_sliding_door.getUnlocalizedName())",
+          "arguments": [
+            "qe_sliding_door",
+            "qe_sliding_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 5
+    },
+    {
+      "kind": "block",
+      "symbol": "sliding_seal_door",
+      "id": "hbm:sliding_seal_door",
+      "legacyRegistryId": "hbm:tile.sliding_seal_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "SLIDING_SEAL_DOOR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2059
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2992
+          },
+          "expression": "GameRegistry.registerBlock(sliding_seal_door, sliding_seal_door.getUnlocalizedName())",
+          "arguments": [
+            "sliding_seal_door",
+            "sliding_seal_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 3
+    },
+    {
+      "kind": "block",
+      "symbol": "water_door",
+      "id": "hbm:water_door",
+      "legacyRegistryId": "hbm:tile.water_door",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "WATER_DOOR",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2060
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2993
+          },
+          "expression": "GameRegistry.registerBlock(water_door, water_door.getUnlocalizedName())",
+          "arguments": [
+            "water_door",
+            "water_door.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door",
+      "skins": 2
+    }
+  ],
+  "sourceBlockEntityAlias": "tileentity_ntm_door",
+  "actualBlockEntity": "hbm:generic_door",
+  "phase": "seven-complete-SEDNA-declarations",
+  "remainingUnregisteredDeclarations": [
+    "VAULT_DOOR",
+    "TRANSITION_SEAL"
+  ]
+}

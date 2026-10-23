@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:rail_booster",
+    "count": 6
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S S",
+    "CIC",
+    "SRS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotmingrade"
+    },
+    "C": {
+      "item": "hbm:coil_copper"
+    }
+  }
+}

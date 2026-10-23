@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:stone_gneiss"
+    },
+    "title": {
+      "translate": "achievement.stratum"
+    },
+    "description": {
+      "translate": "achievement.stratum.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:stratum"
+      }
+    }
+  }
+}

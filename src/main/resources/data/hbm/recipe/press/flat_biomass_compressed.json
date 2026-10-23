@@ -1,0 +1,11 @@
+{
+  "type": "hbm:press",
+  "input": {
+    "item": "hbm:biomass"
+  },
+  "stamp": "flat",
+  "result": {
+    "id": "hbm:biomass_compressed",
+    "count": 1
+  }
+}

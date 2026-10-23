@@ -1,0 +1,39 @@
+{
+  "source": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java:91-94",
+  "order": [
+    "hbm:legacy_ore_dict/paneglass"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/paneglass",
+      "raw": "paneGlass"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "expression": "KEY_ANYPANE",
+      "raw": "paneGlass",
+      "tag": "hbm:legacy_ore_dict/paneglass",
+      "members": [
+        "minecraft:glass_pane",
+        "minecraft:white_stained_glass_pane",
+        "minecraft:orange_stained_glass_pane",
+        "minecraft:magenta_stained_glass_pane",
+        "minecraft:light_blue_stained_glass_pane",
+        "minecraft:yellow_stained_glass_pane",
+        "minecraft:lime_stained_glass_pane",
+        "minecraft:pink_stained_glass_pane",
+        "minecraft:gray_stained_glass_pane",
+        "minecraft:light_gray_stained_glass_pane",
+        "minecraft:cyan_stained_glass_pane",
+        "minecraft:purple_stained_glass_pane",
+        "minecraft:blue_stained_glass_pane",
+        "minecraft:brown_stained_glass_pane",
+        "minecraft:green_stained_glass_pane",
+        "minecraft:red_stained_glass_pane",
+        "minecraft:black_stained_glass_pane"
+      ]
+    }
+  ]
+}

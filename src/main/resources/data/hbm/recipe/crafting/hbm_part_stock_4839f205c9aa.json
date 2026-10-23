@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:part_stock",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "  W"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plankwood"
+    }
+  }
+}

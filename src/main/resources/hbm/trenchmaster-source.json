@@ -1,0 +1,137 @@
+{
+  "material": {
+    "sourceName": "HBM_TRENCH",
+    "originalBaseDurability": 150,
+    "effectiveItemMaxDamage": 0,
+    "defense": [
+      3,
+      8,
+      6,
+      3
+    ],
+    "enchantability": 0,
+    "repair": "hbm:plate_iron",
+    "toughness": 0,
+    "knockbackResistance": 0
+  },
+  "powered": false,
+  "chargeStorage": false,
+  "fullSetEffects": [
+    {
+      "id": "minecraft:strength",
+      "ticks": 20,
+      "amplifier": 2
+    },
+    {
+      "id": "minecraft:haste",
+      "ticks": 20,
+      "amplifier": 1
+    },
+    {
+      "id": "minecraft:jump_boost",
+      "ticks": 20,
+      "amplifier": 1
+    },
+    {
+      "id": "minecraft:speed",
+      "ticks": 20,
+      "amplifier": 0
+    }
+  ],
+  "vats": true,
+  "stepSize": 1,
+  "sourceClientStepDiscriminator": 0.003,
+  "hidesHat": true,
+  "geiger": false,
+  "hardLanding": false,
+  "attack": {
+    "sourceChestCallbackOnly": true,
+    "cancelOnNextInt3Equals0": true,
+    "randomPitch": "1.0F + nextFloat()*0.5F, consumed on every successful cancel even during cooldown",
+    "sound": "minecraft:entity.item.break",
+    "volume": 0.5,
+    "transientCooldownTicks": 10
+  },
+  "hurt": {
+    "ownDirectExplosionDamage": 0,
+    "responsibleProjectileOwnerIsNotDirectEntity": true
+  },
+  "radiation": {
+    "helmet": 0.2,
+    "plate": 0.4,
+    "legs": 0.3,
+    "boots": 0.1,
+    "totalExponent": 1
+  },
+  "hazards": "Source FULL_PACKAGE eight classes on the helmet only; cloneStats does not clone hazards",
+  "DTDR": {
+    "physical": [
+      5,
+      0.5
+    ],
+    "fire": [
+      5,
+      0.5
+    ],
+    "explosion": [
+      5,
+      0.25
+    ],
+    "exactLASER": [
+      15,
+      0.9
+    ],
+    "exactFall": [
+      10,
+      0.5
+    ],
+    "other": [
+      5,
+      0.25
+    ]
+  },
+  "gunPerks": {
+    "existingIdentity": "GunArmorPerks.isTrenchMaster",
+    "consumeRoundNextInt3LessThan2": true,
+    "extraReloadConfigTick": "Existing ItemGunBaseNT; keep source-commented fasterReload lore hidden"
+  },
+  "acquisition": {
+    "source": "blocks/generic/BlockKeyhole.java:209..226",
+    "existingNative": "worldgen/redroom/RedRoomGenerator.java:83..86",
+    "armorRoll": "nextInt(20)==0",
+    "ncrRoll": "nextInt(5)==0",
+    "trenchmasterRoll": "other four outcomes of the inner roll",
+    "craftingStatements": 0
+  },
+  "model": {
+    "obj": "hbm:models/armor/trenchmaster.obj",
+    "sourceGroups": [
+      "Helmet",
+      "Light",
+      "Chest",
+      "LeftArm",
+      "RightArm",
+      "LeftLeg",
+      "RightLeg",
+      "LeftBoot",
+      "RightBoot"
+    ],
+    "sourceTextures": [
+      "helmet",
+      "chest",
+      "arm",
+      "leg"
+    ],
+    "wornHelmetAlphaBlend": true,
+    "wornLightFullbright": true,
+    "itemLightOrdinaryLighting": true,
+    "wornLegAndBootWorldX": {
+      "left": -0.01,
+      "right": 0.01
+    },
+    "inventoryOffsetsBeforeSetupRenderInv": {
+      "helmetY": 1,
+      "chestY": 1.5
+    }
+  }
+}

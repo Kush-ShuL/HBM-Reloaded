@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:rod",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 5
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:rod_empty"
+    },
+    {
+      "item": "hbm:billet_thorium_fuel"
+    }
+  ]
+}

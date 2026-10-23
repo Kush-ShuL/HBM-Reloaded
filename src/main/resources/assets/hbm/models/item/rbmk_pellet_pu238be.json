@@ -1,0 +1,63 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/rbmk_pellet_pu238be",
+    "layer1": "hbm:item/rbmk_pellet_overlay_e0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.1"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.2"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.3"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.4"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.5"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.6"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.7"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.8"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 9
+      },
+      "model": "hbm:item/rbmk_pellet_pu238be.9"
+    }
+  ]
+}

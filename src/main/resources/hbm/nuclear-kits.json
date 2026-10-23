@@ -1,0 +1,616 @@
+{
+  "kits": [
+    {
+      "symbol": "gadget_kit",
+      "id": "gadget_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_gadget",
+          "id": "hbm:nuke_gadget",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "gadget_wireing",
+          "id": "hbm:gadget_wireing",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "gadget_core",
+          "id": "hbm:gadget_core",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 0,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "boy_kit",
+      "id": "boy_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_boy",
+          "id": "hbm:nuke_boy",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "boy_shielding",
+          "id": "hbm:boy_shielding",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "boy_target",
+          "id": "hbm:boy_target",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "boy_bullet",
+          "id": "hbm:boy_bullet",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "boy_propellant",
+          "id": "hbm:boy_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "boy_igniter",
+          "id": "hbm:boy_igniter",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 0,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "man_kit",
+      "id": "man_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_man",
+          "id": "hbm:nuke_man",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "early_explosive_lenses",
+          "id": "hbm:early_explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "man_igniter",
+          "id": "hbm:man_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "man_core",
+          "id": "hbm:man_core",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 0,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mike_kit",
+      "id": "mike_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_mike",
+          "id": "hbm:nuke_mike",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "man_core",
+          "id": "hbm:man_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "mike_core",
+          "id": "hbm:mike_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "mike_deut",
+          "id": "hbm:mike_deut",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "mike_cooling_unit",
+          "id": "hbm:mike_cooling_unit",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 0,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "tsar_kit",
+      "id": "tsar_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_tsar",
+          "id": "hbm:nuke_tsar",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "explosive_lenses",
+          "id": "hbm:explosive_lenses",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "man_core",
+          "id": "hbm:man_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "tsar_core",
+          "id": "hbm:tsar_core",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 0,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "custom_kit",
+      "id": "custom_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_custom",
+          "id": "hbm:nuke_custom",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_tnt",
+          "id": "hbm:custom_tnt",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_tnt",
+          "id": "hbm:custom_tnt",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_tnt",
+          "id": "hbm:custom_tnt",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_tnt",
+          "id": "hbm:custom_tnt",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_tnt",
+          "id": "hbm:custom_tnt",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_tnt",
+          "id": "hbm:custom_tnt",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_nuke",
+          "id": "hbm:custom_nuke",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_nuke",
+          "id": "hbm:custom_nuke",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_nuke",
+          "id": "hbm:custom_nuke",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_nuke",
+          "id": "hbm:custom_nuke",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_hydro",
+          "id": "hbm:custom_hydro",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_hydro",
+          "id": "hbm:custom_hydro",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_amat",
+          "id": "hbm:custom_amat",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_amat",
+          "id": "hbm:custom_amat",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_dirty",
+          "id": "hbm:custom_dirty",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_dirty",
+          "id": "hbm:custom_dirty",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_dirty",
+          "id": "hbm:custom_dirty",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_schrab",
+          "id": "hbm:custom_schrab",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "custom_fall",
+          "id": "hbm:custom_fall",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": null,
+      "warnInventory": false,
+      "warnArmor": false,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "fleija_kit",
+      "id": "fleija_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_fleija",
+          "id": "hbm:nuke_fleija",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_igniter",
+          "id": "hbm:fleija_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_igniter",
+          "id": "hbm:fleija_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_propellant",
+          "id": "hbm:fleija_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_propellant",
+          "id": "hbm:fleija_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_propellant",
+          "id": "hbm:fleija_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_core",
+          "id": "hbm:fleija_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_core",
+          "id": "hbm:fleija_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_core",
+          "id": "hbm:fleija_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_core",
+          "id": "hbm:fleija_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_core",
+          "id": "hbm:fleija_core",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "fleija_core",
+          "id": "hbm:fleija_core",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 2,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "prototype_kit",
+      "id": "prototype_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_prototype",
+          "id": "hbm:nuke_prototype",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "igniter",
+          "id": "hbm:igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "cell_sas3",
+          "id": "hbm:cell_sas3",
+          "count": 4,
+          "metadata": null
+        },
+        {
+          "symbol": "rod_quad",
+          "id": "hbm:rod_quad",
+          "count": 4,
+          "metadata": 14
+        },
+        {
+          "symbol": "rod_quad",
+          "id": "hbm:rod_quad",
+          "count": 4,
+          "metadata": 13
+        },
+        {
+          "symbol": "rod_quad",
+          "id": "hbm:rod_quad",
+          "count": 2,
+          "metadata": 7
+        }
+      ],
+      "hazmatTier": 2,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "solinium_kit",
+      "id": "solinium_kit",
+      "stacks": [
+        {
+          "symbol": "nuke_solinium",
+          "id": "hbm:nuke_solinium",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_igniter",
+          "id": "hbm:solinium_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_igniter",
+          "id": "hbm:solinium_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_igniter",
+          "id": "hbm:solinium_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_igniter",
+          "id": "hbm:solinium_igniter",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_propellant",
+          "id": "hbm:solinium_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_propellant",
+          "id": "hbm:solinium_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_propellant",
+          "id": "hbm:solinium_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_propellant",
+          "id": "hbm:solinium_propellant",
+          "count": 1,
+          "metadata": null
+        },
+        {
+          "symbol": "solinium_core",
+          "id": "hbm:solinium_core",
+          "count": 1,
+          "metadata": null
+        }
+      ],
+      "hazmatTier": 1,
+      "warnInventory": true,
+      "warnArmor": true,
+      "source": "legacy/src/main/java/com/hbm/items/special/ItemStarterKit.java",
+      "status": "staged-requires-real-nuclear-blocks",
+      "runtimeValidated": false
+    }
+  ]
+}

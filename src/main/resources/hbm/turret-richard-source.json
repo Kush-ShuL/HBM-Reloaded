@@ -1,0 +1,48 @@
+{
+  "maxHE": 10000,
+  "activeHEPerTick": 100,
+  "baseDamageConfig": "TURRET_RICHARD_DAMAGE",
+  "baseDamageDefault": 30,
+  "range": 64,
+  "grace": 8,
+  "depression": 25,
+  "elevation": 25,
+  "barrelLength": 1.25,
+  "yawDegreesPerTick": 4.5,
+  "pitchDegreesPerTick": 3,
+  "acceptableInaccuracyDegrees": 5,
+  "detectorIntervalTicks": 10,
+  "alignedShotInterval": 10,
+  "reloadTicks": 100,
+  "loadedAfterReload": 17,
+  "ammunitionSlots": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "chipSlot": 0,
+  "batterySlot": 10,
+  "configs": [
+    "hbm:rocket_ml/he",
+    "hbm:rocket_ml/heat",
+    "hbm:rocket_ml/demo",
+    "hbm:rocket_ml/inc",
+    "hbm:rocket_ml/phosphorus"
+  ],
+  "projectile": "Existing sole EntityBulletBaseMK4; original lockonTarget receives the actual current turret target",
+  "sharedEngine": "Existing sole TurretBaseEntity / MissileLauncherBullets / PanzerschreckImpacts; no copy of trajectory, target acquisition, damage or explosions",
+  "sourceQuirks": [
+    "The complete inherited firing/update/network tick occurs before reload decrement and the second loaded-count packet.",
+    "Reload starts only when loaded<=0, reload<=0 and actual ammunition exists. Reload does not pre-consume seventeen rounds.",
+    "An empty inventory sets loaded0 but does not cancel or reset the active reload timer.",
+    "Only loaded persists. firingTimer and reload do not persist; do not invent new saved fields.",
+    "updateFiringTick checks reload but never separately guards loaded>0, so its original order/zero-boundary behavior remains.",
+    "Direct source firing sound volume2/pitch1 does not route through a muffled-volume helper; inherited real muffled flag still persists."
+  ]
+}

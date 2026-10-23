@@ -1,0 +1,22 @@
+package com.hbm.client.assembler;
+import com.hbm.client.model.*;
+import com.hbm.machine.assembler.AssemblerBlockEntity;
+import com.hbm.multiblock.DummyableBlock;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.*;
+import net.minecraft.client.renderer.blockentity.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.*;
+import net.minecraft.world.phys.AABB;
+/** Original HFR part hierarchy and nested pivots; original triangle positions and authored normals. */
+public final class AssemblerRenderer implements BlockEntityRenderer<AssemblerBlockEntity> {
+    static final ResourceLocation MODEL=ResourceLocation.fromNamespaceAndPath("hbm","models/machines/assembly_machine.obj"),TEXTURE=ResourceLocation.fromNamespaceAndPath("hbm","textures/models/machines/assembly_machine.png");
+    public AssemblerRenderer(BlockEntityRendererProvider.Context context){}
+    private static void part(PoseStack pose,MultiBufferSource buffers,int light,int overlay,String part){LegacyObjRenderer.renderOnly(LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL),pose,buffers.getBuffer(RenderType.entityCutout(TEXTURE)),light,overlay,0xffffffff,LegacyObjRenderer.Convention.HFR,part);}
+    static void all(PoseStack pose,MultiBufferSource buffers,int light,int overlay){LegacyObjRenderer.renderAll(LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL),pose,buffers.getBuffer(RenderType.entityCutout(TEXTURE)),light,overlay,0xffffffff,LegacyObjRenderer.Convention.HFR);}
+    private static void pivot(PoseStack pose,double y,double z,double angle){pose.translate(0,y,z);pose.mulPose(Axis.XP.rotationDegrees((float)angle));pose.translate(0,-y,-z);}
+    @Override public void render(AssemblerBlockEntity machine,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){int contactAngle=switch(DummyableBlock.facing(machine.getBlockState())){case NORTH->90;case WEST->180;case SOUTH->270;default->0;};com.hbm.client.model.LegacyContactShadows.render(machine,LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL),new org.joml.Matrix4f().translation(.5F,0,.5F).rotateY((float)Math.toRadians(contactAngle)),pose,buffers);var state=AssemblerAnimation.get(machine);pose.pushPose();pose.translate(.5,0,.5);int angle=switch(DummyableBlock.facing(machine.getBlockState())){case NORTH->90;case WEST->180;case SOUTH->270;default->0;};pose.mulPose(Axis.YP.rotationDegrees(angle));part(pose,buffers,light,overlay,"Base");if(state.frame)part(pose,buffers,light,overlay,"Frame");pose.pushPose();pose.mulPose(Axis.YP.rotationDegrees((float)(state.prevRing+(state.ring-state.prevRing)*partial)));part(pose,buffers,light,overlay,"Ring");for(int i=0;i<2;i++){var arm=state.arms[i];int sign=i==0?1:-1;pose.pushPose();pivot(pose,1.625,.9375*sign,arm.angle(0,partial)*sign);part(pose,buffers,light,overlay,"ArmLower"+(i+1));pivot(pose,2.375,.9375*sign,arm.angle(1,partial)*sign);part(pose,buffers,light,overlay,"ArmUpper"+(i+1));pivot(pose,2.375,.4375*sign,arm.angle(2,partial)*sign);part(pose,buffers,light,overlay,"Head"+(i+1));pose.translate(0,arm.angle(3,partial),0);part(pose,buffers,light,overlay,"Spike"+(i+1));pose.popPose();}pose.popPose();var recipe=machine.module.getRecipe();var player=Minecraft.getInstance().player;var p=machine.getBlockPos();if(recipe!=null&&player!=null&&player.distanceToSqr(p.getX()+.5,p.getY()+1,p.getZ()+.5)<1225){pose.mulPose(Axis.YP.rotationDegrees(90));pose.translate(0,1.0625,0);var stack=recipe.icon().copyWithCount(1);if(stack.getItem() instanceof BlockItem block){boolean model3d=Minecraft.getInstance().getItemRenderer().getModel(stack,machine.getLevel(),null,0).isGui3d();pose.translate(0,model3d?-.0625:-.125,0);if(!model3d)pose.scale(.5F,.5F,.5F);}else{pose.mulPose(Axis.XP.rotationDegrees(-90));pose.translate(0,-.25,0);}pose.scale(1.25F,1.25F,1.25F);Minecraft.getInstance().getItemRenderer().renderStatic(stack,ItemDisplayContext.FIXED,light,overlay,pose,buffers,machine.getLevel(),0);}pose.popPose();}
+    @Override public boolean shouldRenderOffScreen(AssemblerBlockEntity machine){return true;}@Override public int getViewDistance(){return 256;}@Override public AABB getRenderBoundingBox(AssemblerBlockEntity machine){var p=machine.getBlockPos();return new AABB(p.getX()-1,p.getY(),p.getZ()-1,p.getX()+2,p.getY()+3,p.getZ()+2);}
+}

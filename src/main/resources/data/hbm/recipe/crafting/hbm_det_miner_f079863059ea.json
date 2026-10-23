@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:det_miner",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FFF",
+    "ITI",
+    "ITI"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "T": {
+      "item": "hbm:ball_dynamite"
+    }
+  }
+}

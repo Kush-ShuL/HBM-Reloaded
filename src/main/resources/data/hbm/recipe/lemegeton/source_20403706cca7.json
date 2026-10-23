@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 25,
+  "source_key": "ore:ingotPolymer",
+  "source_hash": 1246383451,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotpolymer"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "hbm:ingot_pc",
+    "count": 1
+  }
+}

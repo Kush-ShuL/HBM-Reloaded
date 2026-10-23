@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:red_wire_coated",
+    "count": 16
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WRW",
+    "RIR",
+    "WRW"
+  ],
+  "key": {
+    "W": {
+      "item": "hbm:plate_polymer"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotmingrade"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+    }
+  }
+}

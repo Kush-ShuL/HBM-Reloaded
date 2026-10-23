@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:plate_polymer",
+    "count": 16
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DD"
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotfiberglass"
+    }
+  }
+}

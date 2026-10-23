@@ -1,0 +1,28 @@
+{
+  "en_us": {
+    "item.nugget.name": "Chicken Nugget",
+    "item.pa_coil.bscco.name": "Large BSCCO Coil",
+    "item.pa_coil.chlorophyte.name": "Large Chlorophyte Coil",
+    "item.pa_coil.gold.name": "Large Gold Coil",
+    "item.pa_coil.niobium.name": "Large NbTi Coil",
+    "info.hbm.pa_coil.quad": "Quadrupole operational range: ",
+    "info.hbm.pa_coil.dipole": "Dipole operational range: ",
+    "info.hbm.pa_coil.length": "Dipole minimum side length: ",
+    "info.hbm.pa_coil.minimum": "Minimums not met result in a power draw penalty!",
+    "info.hbm.pa_coil.maximum": "Maximums exceeded result in the particle crashing!",
+    "info.hbm.pa_coil.both": "Particles will crash in dipoles if both penalties take effect!"
+  },
+  "zh_cn": {
+    "item.nugget.name": "鸡块",
+    "item.pa_coil.bscco.name": "大型BSCCO超导线圈",
+    "item.pa_coil.gold.name": "大型金线圈",
+    "item.pa_coil.niobium.name": "大型铌钛合金线圈",
+    "item.pa_coil.chlorophyte.name": "大型叶绿线圈",
+    "info.hbm.pa_coil.quad": "四极磁铁工作动量范围：",
+    "info.hbm.pa_coil.dipole": "二极磁铁工作动量范围：",
+    "info.hbm.pa_coil.length": "二极磁铁最小边长：",
+    "info.hbm.pa_coil.minimum": "未达到下限时，耗电量会增加！",
+    "info.hbm.pa_coil.maximum": "超过上限时，粒子将会崩溃！",
+    "info.hbm.pa_coil.both": "两种惩罚同时生效时，粒子会在二极磁铁中崩溃！"
+  }
+}

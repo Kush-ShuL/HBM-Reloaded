@@ -1,0 +1,38 @@
+{
+  "en_us": {
+    "tile.machine_teleporter.name": "Teleporter",
+    "tile.teleanchor.name": "Teleportation Anchor",
+    "item.linker.name": "Telelinker",
+    "item.anchor_remote.name": "Recall Device",
+    "block.hbm.machine_teleporter": "Teleporter",
+    "block.hbm.teleanchor": "Teleportation Anchor",
+    "item.hbm.linker": "Telelinker",
+    "item.hbm.anchor_remote": "Recall Device",
+    "message.hbm.telelink.exit": "[TeleLink] Set teleporter exit to %s, %s, %s.",
+    "message.hbm.telelink.no_destination": "[TeleLink] No destination set!",
+    "message.hbm.telelink.programmed": "[TeleLink] Teleporters destination has been set!",
+    "tooltip.hbm.telelink.select_exit": "Select exit location first!",
+    "overlay.hbm.teleporter.no_destination": "No destination set!",
+    "overlay.hbm.teleporter.destination": "Destination: %s / %s / %s (D: %s)",
+    "config.jade.plugin_hbm.teleporter_destination": "Teleporter destination",
+    "ass.teleporter": "Teleporter"
+  },
+  "zh_cn": {
+    "tile.machine_teleporter.name": "传送机",
+    "tile.teleanchor.name": "传送锚",
+    "item.linker.name": "链接器",
+    "item.anchor_remote.name": "召回设备",
+    "block.hbm.machine_teleporter": "传送机",
+    "block.hbm.teleanchor": "传送锚",
+    "item.hbm.linker": "链接器",
+    "item.hbm.anchor_remote": "召回设备",
+    "message.hbm.telelink.exit": "[链接器] 已将传送出口设置为 %s，%s，%s。",
+    "message.hbm.telelink.no_destination": "[链接器] 尚未设置目的地！",
+    "message.hbm.telelink.programmed": "[链接器] 已设置传送机的目的地！",
+    "tooltip.hbm.telelink.select_exit": "请先选择出口位置！",
+    "overlay.hbm.teleporter.no_destination": "尚未设置目的地！",
+    "overlay.hbm.teleporter.destination": "目的地：%s / %s / %s（维度：%s）",
+    "config.jade.plugin_hbm.teleporter_destination": "传送机目的地",
+    "ass.teleporter": "传送机"
+  }
+}

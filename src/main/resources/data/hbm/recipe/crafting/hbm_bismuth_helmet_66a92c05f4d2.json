@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:bismuth_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GPP",
+    "P  ",
+    "FPP"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "hbm:plate_bismuth"
+    },
+    "F": {
+      "item": "hbm:rag"
+    }
+  }
+}

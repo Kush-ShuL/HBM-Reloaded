@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_tungsten"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_tungsten",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_tungsten",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    }
+  ]
+}

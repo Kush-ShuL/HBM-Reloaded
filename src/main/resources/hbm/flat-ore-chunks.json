@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "chunk_ore_rare",
+      "id": "hbm:chunk_ore_rare",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.chunk_ore",
+      "sourceLegacyRegistryId": "hbm:item.chunk_ore",
+      "sourceOrdinal": 0,
+      "sourceEnum": "RARE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2549
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chunk_ore_malachite",
+      "id": "hbm:chunk_ore_malachite",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.chunk_ore",
+      "sourceLegacyRegistryId": "hbm:item.chunk_ore",
+      "sourceOrdinal": 1,
+      "sourceEnum": "MALACHITE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2549
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chunk_ore_cryolite",
+      "id": "hbm:chunk_ore_cryolite",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.chunk_ore",
+      "sourceLegacyRegistryId": "hbm:item.chunk_ore",
+      "sourceOrdinal": 2,
+      "sourceEnum": "CRYOLITE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2549
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chunk_ore_moonstone",
+      "id": "hbm:chunk_ore_moonstone",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.chunk_ore",
+      "sourceLegacyRegistryId": "hbm:item.chunk_ore",
+      "sourceOrdinal": 3,
+      "sourceEnum": "MOONSTONE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2549
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chunk_ore_ilmenite",
+      "id": "hbm:chunk_ore_ilmenite",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.chunk_ore",
+      "sourceLegacyRegistryId": "hbm:item.chunk_ore",
+      "sourceOrdinal": 4,
+      "sourceEnum": "ILMENITE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2549
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    1,
+    2,
+    4,
+    0,
+    3
+  ]
+}

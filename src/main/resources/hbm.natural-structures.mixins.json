@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.world.structure.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StructureManagerAccess",
+    "StructurePlacementAccess",
+    "NaturalStructureDimensionMixin",
+    "NativeSourceOrderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

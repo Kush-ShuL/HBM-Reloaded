@@ -1,0 +1,25 @@
+{
+  "name": "Chlorine Gas",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    89
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      89
+    ]
+  ],
+  "title": {
+    "en_US": "Chlorine Gas",
+    "ru_RU": "Хлор",
+    "zh_CN": "氯气"
+  },
+  "content": {
+    "en_US": "Early methods of getting chlorine gas include using glowstone or [[sodalite|Sodalite]] obtained from lapis ore in the [[combination oven|Combination Oven]]. Alternatively, it can be made with an [[electrolysis machine|Electrolysis Machine]] or gradually over time with the chlorine pinwheel. It has many uses including [[bedrock ore processing|Bedrock Ore Processing]] and producing [[high-performance solvent|High-Performance Solvent]]. One of its primary uses is the production of [[PVC]], or [[hard plastic|Hard Plastic]] through [[phosgene|Phosgene]].<br><br>See also:<br>[[Vacuum Oil Processing]]",
+    "ru_RU": "Ранние способы получения газообразного хлора включают использование светопыли или [[содалита|Sodalite]], получаемого из лазуритовой руды в [[коксовой печи|Combination Oven]]. Кроме того, его можно получить в [[электролизёре|Electrolysis Machine]] или постепенно с течением времени с помощью хлорной вертушки. Он имеет множество применений, включая [[обработку бедрок руды|Bedrock Ore Processing]] и производство [[высокоэффективного растворителя|High-Performance Solvent]]. Одно из его основных применений — производство [[ПВХ|PVC]], или [[твёрдого пластика|Hard Plastic]], с помощью [[фосгена|Phosgene]].<br><br>{{Template:Oil3}}",
+    "zh_CN": "早期可在[[组合炉|Combination Oven]]中使用荧石或从青金石矿获得的[[方钠石|Sodalite]]制取氯气。也可用[[电解机|Electrolysis Machine]]生产，或靠氯气风车随时间缓慢收集。氯气用途广泛，包括[[基岩矿石处理|Bedrock Ore Processing]]和[[高性能溶剂|High-Performance Solvent]]生产。它的重要用途之一是制造[[聚氯乙烯（PVC）|PVC]]，或通过[[光气|Phosgene]]生产[[硬塑料|Hard Plastic]]。<br><br>另见：<br>[[真空炼油|Vacuum Oil Processing]]"
+  }
+}

@@ -1,0 +1,50 @@
+package com.hbm.client.reactor.rbmk.console;
+import com.hbm.client.gui.font.LegacyFonts;
+import com.hbm.fluid.HbmFluids;
+import com.hbm.machine.reactor.rbmk.console.*;
+import com.hbm.registry.HbmSounds;
+import java.util.*;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.EditBox;
+import com.hbm.client.gui.LegacyScreen;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.neoforged.neoforge.network.PacketDistributor;
+import static com.hbm.machine.reactor.rbmk.console.RbmkConsoleData.*;
+/** Original244x172 free-standing console screen, all225 source cells/six panels/group/AZ5/compressor controls. */
+public final class RbmkConsoleScreen extends LegacyScreen {
+    private static final ResourceLocation TEXTURE=ResourceLocation.parse("hbm:textures/gui/reactors/gui_rbmk_console.png");private final RbmkConsoleEntity console;private int left,top;private boolean[] selected=new boolean[225];private boolean az5Lid=true;private long lastPress;private EditBox field;
+    public RbmkConsoleScreen(RbmkConsoleEntity console){super(Component.translatable("block.hbm.rbmk_console"));this.console=console;}
+    @Override protected void init(){font=LegacyFonts.get();left=(width-244)/2;top=(height-172)/2;field=new EditBox(font,left+9,top+84,35,9,Component.empty());field.setTextColor(0x00ff00);field.setTextColorUneditable(0x008000);field.setBordered(false);field.setMaxLength(3);addRenderableWidget(field);}
+    private boolean hover(double x,double y,int rx,int ry,int w,int h){return left+rx<=x&&left+rx+w>x&&top+ry<y&&top+ry+h>=y;}
+    private void region(GuiGraphics g,int x,int y,int u,int v,int w,int h){if(w!=0&&h!=0)g.blit(TEXTURE,left+x,top+y,u,v,w,h,256,256);}
+    private void info(GuiGraphics g,int x,int y,int rx,int ry,int w,int h,Component...lines){if(hover(x,y,rx,ry,w,h))g.renderComponentTooltip(font,Arrays.asList(lines),x,y);}
+    private Component tr(String key,Object...args){return Component.translatable("gui.hbm.rbmk.console."+key,args);}
+    @Override public void render(GuiGraphics g,int x,int y,float partial){renderBackground(g,x,y,partial);g.setColor(1,1,1,1);region(g,0,0,0,0,244,172);if(az5Lid)region(g,30,138,228,172,28,28);for(int row=0;row<3;row++)for(int col=0;col<2;col++)region(g,6+40*col,8+21*row,console.screens[row*2+col].type.offset(),238,18,18);
+        for(int i=0;i<225;i++){var column=console.columns[i];if(column==null)continue;var tag=column.data();int px=86+10*(i%15),py=11+10*(i/15);region(g,px,py,column.type().offset,172,10,10);int h=Math.min((int)Math.ceil((tag.getDouble("heat")-20)*10/tag.getDouble("maxHeat")),10);region(g,px,py+10-h,0,192-h,10,h);switch(column.type()){
+            case CONTROL,CONTROL_AUTO->{if(column.type()==ColumnType.CONTROL&&tag.getShort("color")>-1)region(g,px,py,tag.getShort("color")*10,202,10,10);int fr=8-(int)Math.ceil(tag.getDouble("level")*8);region(g,px+4,py+1,24,183,2,fr);}
+            case FUEL,FUEL_SIM->{if(tag.contains("c_heat")){int fh=Math.min((int)Math.ceil((tag.getDouble("c_heat")-20)*8/tag.getDouble("c_maxHeat")),8),fe=Math.min((int)Math.ceil(tag.getDouble("enrichment")*8),8),fx=Math.min((int)Math.ceil(tag.getDouble("xenon")*8/100),8);region(g,px+1,py+9-fh,11,191-fh,2,fh);region(g,px+4,py+9-fe,14,191-fe,2,fe);region(g,px+7,py+9-fx,17,191-fx,2,fx);}}
+            case BOILER,HEATEX->{boolean boiler=column.type()==ColumnType.BOILER;int fw=(int)Math.ceil(tag.getInt("water")*8/tag.getDouble("maxWater")),fs=(int)Math.ceil(tag.getInt("steam")*8/tag.getDouble("maxSteam"));region(g,px+1,py+9-fw,boiler?41:131,191-fw,3,fw);region(g,px+6,py+9-fs,boiler?46:136,191-fs,3,fs);if(boiler){int type=tag.getShort("type"),steam=type==HbmFluids.STEAM.getID()?0:type==HbmFluids.HOTSTEAM.getID()?1:type==HbmFluids.SUPERHOTSTEAM.getID()?2:type==HbmFluids.ULTRAHOTSTEAM.getID()?3:-1;if(steam>=0)region(g,px+4,py+1+steam*2,44,183+steam*2,2,2);}}default->{}}
+            if(selected[i])region(g,px,py,0,192,10,10);
+        }
+        graph(g);super.render(g,x,y,partial);if(hover(x,y,86,11,150,10150)){int index=(x-left-86)/10+(y-top-11)/10*15;if(index>0&&index<225&&console.columns[index]!=null){var column=console.columns[index];var lines=new ArrayList<Component>();lines.add(Component.translatable("gui.hbm.rbmk.column."+column.type().name().toLowerCase(Locale.ROOT)));lines.addAll(column.fancy());g.renderComponentTooltip(font,lines,x,y);}}
+        info(g,x,y,61,70,10,10,tr("select_all"));info(g,x,y,72,70,10,10,tr("deselect"));for(int i=0;i<3;i++)for(int j=0;j<2;j++){int id=i*2+j;info(g,x,y,6+40*j,8+21*i,18,18,Component.translatable("rbmk.console."+console.screens[id].type.name().toLowerCase(Locale.ROOT),id+1).withStyle(ChatFormatting.YELLOW));info(g,x,y,24+40*j,8+21*i,18,18,Component.translatable("rbmk.console.assign",id+1));}ChatFormatting[] colors={ChatFormatting.RED,ChatFormatting.YELLOW,ChatFormatting.GREEN,ChatFormatting.BLUE,ChatFormatting.LIGHT_PURPLE};for(int i=0;i<5;i++)info(g,x,y,6+i*11,70,10,10,tr("group_select",Component.translatable("rbmk.control."+new String[]{"red","yellow","green","blue","purple"}[i])).copy().withStyle(colors[i]),tr("group_assign",Component.translatable("rbmk.control."+new String[]{"red","yellow","green","blue","purple"}[i])).copy().withStyle(colors[i]));info(g,x,y,70,82,12,12,tr("compressor"));
+    }
+    private void graph(GuiGraphics g){int highest=Integer.MIN_VALUE,lowest=Integer.MAX_VALUE;for(int flux:console.fluxBuffer){highest=Math.max(highest,flux);lowest=Math.min(lowest,flux);}g.flush();var out=g.bufferSource().getBuffer(RbmkConsoleRenderTypes.GRAPH);int range=highest-lowest;for(int i=0;i<console.fluxBuffer.length-1;i++)for(int j=0;j<2;j++){int k=i+j;float x=(float)(left+7+k*74D/console.fluxBuffer.length),y=(float)(top+127-(console.fluxBuffer[k]-lowest)*24D/Math.max(range,1));out.addVertex(g.pose().last().pose(),x,y,10).setColor(0,255,0,255);}g.flush();g.pose().pushPose();g.pose().scale(.5F,.5F,1);String high=""+highest,low=""+lowest;g.drawString(font,high,(left+8)*2,(top+98)*2,0x00ff00,false);g.drawString(font,high,(int)((left+80-font.width(high)*.5)*2),(top+98)*2,0x00ff00,false);g.drawString(font,low,(left+8)*2,(int)((top+133-font.lineHeight*.5)*2),0x00ff00,false);g.drawString(font,low,(int)((left+80-font.width(low)*.5)*2),(int)((top+133-font.lineHeight*.5)*2),0x00ff00,false);g.pose().popPose();}
+    private void sound(float pitch){minecraft.getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK,pitch));}private void send(CompoundTag tag){PacketDistributor.sendToServer(new RbmkConsoleNetwork.Control(console.getBlockPos(),tag));}
+    private int[] selected(ColumnType type){return java.util.stream.IntStream.range(0,225).filter(i->selected[i]&&console.columns[i]!=null&&console.columns[i].type()==type).toArray();}
+    private void level(CompoundTag tag,boolean all){for(int i=0;i<225;i++)if(all?console.columns[i]!=null&&console.columns[i].type()==ColumnType.CONTROL:selected[i])tag.putInt("sel_"+i,i);send(tag);}
+    @Override public boolean mouseClicked(double x,double y,int button){boolean handled=super.mouseClicked(x,y,button);if(hover(x,y,86,11,150,150)){int index=((int)x-left-86)/10+((int)y-top-11)/10*15;if(index>=0&&index<225&&console.columns[index]!=null){selected[index]=!selected[index];sound(.75F+(selected[index]?.25F:0));return true;}}
+        if(hover(x,y,72,70,10,10)){selected=new boolean[225];sound(.5F);return true;}if(hover(x,y,61,70,10,10)){selected=new boolean[225];for(int i=0;i<225;i++)selected[i]=console.columns[i]!=null&&console.columns[i].type()==ColumnType.CONTROL;sound(1.5F);return true;}
+        if(hover(x,y,70,82,12,12)){var tag=new CompoundTag();tag.putBoolean("compressor",true);tag.putIntArray("cols",selected(ColumnType.BOILER));send(tag);sound(1);}
+        for(int color=0;color<5;color++)if(hover(x,y,6+color*11,70,10,10)){if(button==0){selected=new boolean[225];for(int i=0;i<225;i++)selected[i]=console.columns[i]!=null&&console.columns[i].type()==ColumnType.CONTROL&&console.columns[i].data().getShort("color")==color;}if(button==1){var tag=new CompoundTag();tag.putByte("assignColor",(byte)color);tag.putIntArray("cols",selected(ColumnType.CONTROL));send(tag);}sound(.8F+color*.1F);return true;}
+        if(hover(x,y,30,138,28,28)){if(az5Lid){az5Lid=false;minecraft.getSoundManager().play(SimpleSoundInstance.forUI(HbmSounds.get("block.rbmk_az5_cover"),.5F));}else if(lastPress+3000<System.currentTimeMillis()){minecraft.getSoundManager().play(SimpleSoundInstance.forUI(HbmSounds.get("block.shutdown"),1));lastPress=System.currentTimeMillis();var tag=new CompoundTag();tag.putDouble("level",0);level(tag,true);sound(1);}return true;}
+        if(hover(x,y,48,82,12,12)){try{double value=Double.parseDouble(field.getValue());if(!Double.isFinite(value))return handled;int percent=(int)net.minecraft.util.Mth.clamp(value,0,100);field.setValue(""+percent);var tag=new CompoundTag();tag.putDouble("level",percent*.01);level(tag,false);sound(1);}catch(NumberFormatException ignored){return handled;}}
+        for(int row=0;row<3;row++)for(int col=0;col<2;col++){int id=row*2+col;if(hover(x,y,6+40*col,8+21*row,18,18)){var tag=new CompoundTag();tag.putByte("toggle",(byte)id);send(tag);sound(.5F);return true;}if(hover(x,y,24+40*col,8+21*row,18,18)){var tag=new CompoundTag();tag.putByte("id",(byte)id);for(int i=0;i<225;i++)if(selected[i])tag.putBoolean("s"+i,true);send(tag);sound(.75F);return true;}}return handled;
+    }
+    @Override public boolean keyPressed(int key,int scan,int mods){if(field.keyPressed(key,scan,mods))return true;if(key==256||minecraft.options.keyInventory.matches(key,scan)){onClose();return true;}return super.keyPressed(key,scan,mods);}@Override public boolean charTyped(char value,int mods){return field.charTyped(value,mods)||super.charTyped(value,mods);}@Override public boolean isPauseScreen(){return false;}
+}

@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:meteorite_sword",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  B",
+    "GB ",
+    "SG "
+  ],
+  "key": {
+    "B": {
+      "item": "hbm:blade_meteorite"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plategold"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/stickwood"
+    }
+  }
+}

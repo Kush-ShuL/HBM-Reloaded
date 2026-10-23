@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:333",
+      "category": "MINESHAFT_CORRIDOR",
+      "item": "hbm:no9",
+      "min": 1,
+      "max": 1,
+      "weight": 5
+    },
+    {
+      "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:341",
+      "category": "BONUS_CHEST",
+      "item": "hbm:no9",
+      "min": 1,
+      "max": 1,
+      "weight": 7
+    }
+  ],
+  "readyItems": true,
+  "runtimeInjected": false,
+  "pending": "Unique original Forge ChestGenHooks category base-pool port; appending an independent modern pool would change original weights and random draw counts."
+}

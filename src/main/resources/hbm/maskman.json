@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "coin_maskman",
+      "id": "hbm:coin_maskman",
+      "legacyRegistryId": "hbm:item.coin_maskman",
+      "originalClass": "ItemCustomLore",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2958
+      },
+      "creativeTab": "consumable"
+    },
+    {
+      "kind": "item",
+      "symbol": "bottled_cloud",
+      "id": "hbm:bottled_cloud",
+      "legacyRegistryId": "hbm:item.bottled_cloud",
+      "originalClass": "ItemModCloud",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2901
+      },
+      "creativeTab": "consumable"
+    }
+  ]
+}

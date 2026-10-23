@@ -1,0 +1,18 @@
+{
+  "en_us": {
+    "block.hbm.crystal_virus": "Dark Crystal",
+    "block.hbm.crystal_pulsar": "Pulsating Crystal",
+    "tile.crystal_virus.name": "Dark Crystal",
+    "tile.crystal_pulsar.name": "Pulsating Crystal",
+    "config.hbm.crystal.virus_spreading": "Virus crystal spreading",
+    "config.hbm.crystal.virus_spreading.tooltip": "Allow dark crystals to spread to adjacent nonimmune blocks. Disabled by default; hardening still works."
+  },
+  "zh_cn": {
+    "block.hbm.crystal_virus": "黑水晶",
+    "block.hbm.crystal_pulsar": "脉动水晶",
+    "tile.crystal_virus.name": "黑水晶",
+    "tile.crystal_pulsar.name": "脉动水晶",
+    "config.hbm.crystal.virus_spreading": "病毒晶体扩散",
+    "config.hbm.crystal.virus_spreading.tooltip": "允许黑水晶扩散到相邻的非免疫方块。默认关闭；硬化行为仍然有效。"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/plategold"
+  },
+  "second": {
+    "type": "hbm:alloy_legacy_stack",
+    "stack": {
+      "id": "hbm:plate_mixed",
+      "count": 1
+    }
+  },
+  "result": {
+    "id": "hbm:plate_paa",
+    "count": 2
+  },
+  "order": 9
+}

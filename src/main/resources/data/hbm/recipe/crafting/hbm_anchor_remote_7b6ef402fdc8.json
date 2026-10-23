@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:anchor_remote",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "charge": 0
+      }
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gemdiamond"
+    },
+    {
+      "item": "hbm:ducttape"
+    },
+    {
+      "item": "hbm:circuit_basic"
+    }
+  ]
+}

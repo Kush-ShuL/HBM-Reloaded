@@ -1,0 +1,82 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_silex",
+      "id": "hbm:machine_silex",
+      "legacyRegistryId": "hbm:tile.machine_silex",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1788
+      },
+      "originalClass": "MachineSILEX",
+      "creativeTab": "machine"
+    },
+    {
+      "kind": "item",
+      "symbol": "laser_crystal_co2",
+      "id": "hbm:laser_crystal_co2",
+      "legacyRegistryId": "hbm:item.laser_crystal_co2",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2798
+      },
+      "originalClass": "ItemFELCrystal",
+      "creativeTab": "control",
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "laser_crystal_bismuth",
+      "id": "hbm:laser_crystal_bismuth",
+      "legacyRegistryId": "hbm:item.laser_crystal_bismuth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2799
+      },
+      "originalClass": "ItemFELCrystal",
+      "creativeTab": "control",
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "laser_crystal_cmb",
+      "id": "hbm:laser_crystal_cmb",
+      "legacyRegistryId": "hbm:item.laser_crystal_cmb",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2800
+      },
+      "originalClass": "ItemFELCrystal",
+      "creativeTab": "control",
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "laser_crystal_dnt",
+      "id": "hbm:laser_crystal_dnt",
+      "legacyRegistryId": "hbm:item.laser_crystal_dnt",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2801
+      },
+      "originalClass": "ItemFELCrystal",
+      "creativeTab": "control",
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "laser_crystal_digamma",
+      "id": "hbm:laser_crystal_digamma",
+      "legacyRegistryId": "hbm:item.laser_crystal_digamma",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2802
+      },
+      "originalClass": "ItemFELCrystal",
+      "creativeTab": "control",
+      "stackSize": 1
+    }
+  ],
+  "sourceRecipes": 295
+}

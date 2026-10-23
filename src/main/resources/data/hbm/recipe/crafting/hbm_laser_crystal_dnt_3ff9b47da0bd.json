@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:laser_crystal_dnt",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QDQ",
+    "SBS",
+    "QDQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm:glass_quartz"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotdineutronium"
+    },
+    "B": {
+      "item": "hbm:egg_balefire"
+    },
+    "S": {
+      "item": "hbm:powder_spark_mix"
+    }
+  }
+}

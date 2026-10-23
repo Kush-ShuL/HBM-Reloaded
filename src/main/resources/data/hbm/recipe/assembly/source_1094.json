@@ -1,0 +1,115 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.nitra",
+  "duration": 200,
+  "power": 500,
+  "order": 352,
+  "named": true,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:nitra"
+        }
+      },
+      "count": 1
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:casing_shotshell",
+            "count": 1
+          },
+          "chance": 1,
+          "weight": 20
+        },
+        {
+          "stack": {
+            "id": "hbm:casing_buckshot",
+            "count": 1
+          },
+          "chance": 1,
+          "weight": 10
+        },
+        {
+          "stack": {
+            "id": "hbm:casing_small",
+            "count": 2
+          },
+          "chance": 1,
+          "weight": 20
+        },
+        {
+          "stack": {
+            "id": "hbm:casing_large",
+            "count": 1
+          },
+          "chance": 1,
+          "weight": 10
+        },
+        {
+          "stack": {
+            "id": "minecraft:gunpowder",
+            "count": 1
+          },
+          "chance": 1,
+          "weight": 30
+        },
+        {
+          "stack": {
+            "id": "hbm:cordite",
+            "count": 1
+          },
+          "chance": 1,
+          "weight": 20
+        },
+        {
+          "stack": {
+            "id": "hbm:ballistite",
+            "count": 1
+          },
+          "chance": 1,
+          "weight": 20
+        },
+        {
+          "stack": {
+            "id": "hbm:grenade_shell",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "chance": 1,
+          "weight": 5
+        },
+        {
+          "stack": {
+            "id": "hbm:grenade_shell",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 1
+            }
+          },
+          "chance": 1,
+          "weight": 5
+        },
+        {
+          "stack": {
+            "id": "hbm:grenade_fuze",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "chance": 1,
+          "weight": 10
+        }
+      ],
+      "weighted": true
+    }
+  ]
+}

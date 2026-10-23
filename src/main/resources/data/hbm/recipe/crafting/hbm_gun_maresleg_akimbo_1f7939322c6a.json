@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:gun_maresleg_akimbo",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SMS"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:gun_maresleg"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+    }
+  }
+}

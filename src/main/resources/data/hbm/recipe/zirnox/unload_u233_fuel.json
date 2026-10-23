@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:rod_zirnox_u233_fuel_depleted"
+    }
+  ],
+  "result": {
+    "id": "hbm:waste_u233",
+    "count": 2,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  }
+}

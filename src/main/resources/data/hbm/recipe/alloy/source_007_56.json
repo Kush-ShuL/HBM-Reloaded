@@ -1,0 +1,33 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingottungsten"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetungsten"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemtungsten"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dusttungsten"
+      }
+    ]
+  },
+  "second": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+  },
+  "result": {
+    "id": "hbm:ingot_magnetized_tungsten",
+    "count": 1
+  },
+  "order": 7
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/vent_chlorine_seal_side",
+    "up": "hbm:block/vent_chlorine_seal_top",
+    "north": "hbm:block/vent_chlorine_seal_side",
+    "south": "hbm:block/vent_chlorine_seal_side",
+    "west": "hbm:block/vent_chlorine_seal_side",
+    "east": "hbm:block/vent_chlorine_seal_side",
+    "particle": "hbm:block/vent_chlorine_seal_side"
+  }
+}

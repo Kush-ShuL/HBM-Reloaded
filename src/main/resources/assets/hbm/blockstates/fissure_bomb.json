@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "ignite_on_break=false": {
+      "model": "hbm:block/fissure_bomb"
+    },
+    "ignite_on_break=true": {
+      "model": "hbm:block/fissure_bomb"
+    }
+  }
+}

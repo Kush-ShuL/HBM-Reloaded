@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:radio_autocal",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TAR",
+    "PAP",
+    "PAP"
+  ],
+  "key": {
+    "T": {
+      "item": "hbm:radio_torch_sender"
+    },
+    "R": {
+      "item": "hbm:radio_torch_receiver"
+    },
+    "A": {
+      "item": "hbm:circuit_analog"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+    }
+  }
+}

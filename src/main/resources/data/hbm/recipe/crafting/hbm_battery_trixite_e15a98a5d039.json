@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:battery_trixite",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " W ",
+    "DTD",
+    "DSD"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wiredensemagnetizedtungsten"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+    },
+    "S": {
+      "item": "hbm:powder_power"
+    },
+    "T": {
+      "item": "hbm:crystal_trixite"
+    }
+  }
+}

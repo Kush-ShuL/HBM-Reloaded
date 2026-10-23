@@ -1,0 +1,683 @@
+{
+  "recipes": [
+    {
+      "name": "rock.cobble",
+      "duration": 100,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "dict",
+          "cobblestone",
+          1
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:gravel",
+              1,
+              0
+            ],
+            1.0,
+            95
+          ],
+          [
+            [
+              "hbm:powder_quartz",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 0
+    },
+    {
+      "name": "rock.gravel",
+      "duration": 100,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "minecraft:gravel",
+          1,
+          0
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:sand",
+              1,
+              0
+            ],
+            1.0,
+            75
+          ],
+          [
+            [
+              "minecraft:flint",
+              1,
+              0
+            ],
+            1.0,
+            20
+          ],
+          [
+            [
+              "hbm:powder_boron",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 1
+    },
+    {
+      "name": "rock.sand",
+      "duration": 100,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "dict",
+          "sand",
+          1
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "hbm:dust",
+              1,
+              0
+            ],
+            1.0,
+            90
+          ],
+          [
+            [
+              "hbm:powder_calcium",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ],
+          [
+            [
+              "hbm:fluorite",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 2
+    },
+    {
+      "name": "rock.netherrack",
+      "duration": 100,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "minecraft:netherrack",
+          1,
+          0
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "LAVA",
+          100,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:gravel",
+              1,
+              0
+            ],
+            1.0,
+            50
+          ],
+          [
+            [
+              "minecraft:soul_sand",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "minecraft:glowstone_dust",
+              1,
+              0
+            ],
+            1.0,
+            15
+          ],
+          [
+            [
+              "hbm:powder_quartz",
+              1,
+              0
+            ],
+            1.0,
+            10
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 3
+    },
+    {
+      "name": "rock.soulsand",
+      "duration": 100,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "minecraft:soul_sand",
+          1,
+          0
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "LAVA",
+          100,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:sand",
+              1,
+              0
+            ],
+            1.0,
+            50
+          ],
+          [
+            [
+              "hbm:powder_fire",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:powder_uranium",
+              1,
+              0
+            ],
+            1.0,
+            15
+          ],
+          [
+            [
+              "minecraft:blaze_powder",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ],
+          [
+            [
+              "minecraft:nether_wart",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 4
+    },
+    {
+      "name": "rock.schist",
+      "duration": 200,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "hbm:stone_gneiss",
+          1,
+          0
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:gravel",
+              1,
+              0
+            ],
+            1.0,
+            50
+          ],
+          [
+            [
+              "minecraft:sand",
+              1,
+              0
+            ],
+            1.0,
+            10
+          ],
+          [
+            [
+              "hbm:powder_lithium",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:powder_niobium",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ],
+          [
+            [
+              "hbm:powder_uranium",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ],
+          [
+            [
+              "hbm:powder_gold",
+              1,
+              0
+            ],
+            1.0,
+            5
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 5
+    },
+    {
+      "name": "rock.basalt",
+      "duration": 200,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "hbm:basalt",
+          1,
+          0
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:gravel",
+              1,
+              0
+            ],
+            1.0,
+            50
+          ],
+          [
+            [
+              "hbm:powder_ash_misc",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:powder_quartz",
+              1,
+              0
+            ],
+            1.0,
+            15
+          ],
+          [
+            [
+              "hbm:gravel_obsidian",
+              1,
+              0
+            ],
+            1.0,
+            10
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 6
+    },
+    {
+      "name": "rock.hematite",
+      "duration": 200,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "dict",
+          "oreHematite",
+          1
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:gravel",
+              1,
+              0
+            ],
+            1.0,
+            65
+          ],
+          [
+            [
+              "hbm:powder_iron",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:powder_titanium",
+              1,
+              0
+            ],
+            1.0,
+            10
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 7
+    },
+    {
+      "name": "rock.bauxite",
+      "duration": 200,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "dict",
+          "oreBauxite",
+          1
+        ]
+      ],
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "COLLOID",
+          250,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:gravel",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "minecraft:clay_ball",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:stone_resource",
+              1,
+              2
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:ore_titanium",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 8
+    },
+    {
+      "name": "rock.clay",
+      "duration": 200,
+      "power": 25,
+      "inputItem": [
+        [
+          "dict",
+          "sand",
+          2
+        ]
+      ],
+      "inputFluid": [
+        [
+          "COLLOID",
+          2500,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "single",
+          [
+            "minecraft:clay_ball",
+            4,
+            0
+          ]
+        ]
+      ],
+      "order": 9
+    },
+    {
+      "name": "rock.colloid",
+      "duration": 100,
+      "power": 25,
+      "inputFluid": [
+        [
+          "COLLOID",
+          1000,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "single",
+          [
+            "minecraft:sand",
+            1,
+            0
+          ]
+        ]
+      ],
+      "order": 10
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:settings_tool",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "PCP",
+    "III"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

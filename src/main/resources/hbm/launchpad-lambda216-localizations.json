@@ -1,0 +1,24 @@
+{
+  "en_us": {
+    "tile.launchpad_lambda.name": "Lambda Launch Pad",
+    "block.hbm.launchpad_lambda": "Lambda Launch Pad",
+    "item.hbm.launchpad_lambda": "Lambda Launch Pad",
+    "container.launchpadLambda": "Lambda Launch Pad",
+    "item.hbm.missile_lambda": "Lambda-98",
+    "entity.hbm.entity_lambda_rocket": "Lambda-98 Rocket",
+    "gui.hbm.lambda.countdown": "Launch countdown",
+    "desc.gui.lambda.manual": "§4Manual Mode$Rocket launch has to be$started via button.",
+    "desc.gui.lambda.auto": "§4Auto Mode$Starts the countdown$automatically if possible."
+  },
+  "zh_cn": {
+    "tile.launchpad_lambda.name": "Lambda火箭发射台",
+    "block.hbm.launchpad_lambda": "Lambda火箭发射台",
+    "item.hbm.launchpad_lambda": "Lambda火箭发射台",
+    "container.launchpadLambda": "Lambda火箭发射台",
+    "item.hbm.missile_lambda": "Lambda-98运载火箭",
+    "entity.hbm.entity_lambda_rocket": "Lambda-98运载火箭",
+    "gui.hbm.lambda.countdown": "发射倒计时",
+    "desc.gui.lambda.manual": "§4手动模式$火箭发射必须$通过按钮启动。",
+    "desc.gui.lambda.auto": "§4自动模式$在条件准许时$自动准备发射。"
+  }
+}

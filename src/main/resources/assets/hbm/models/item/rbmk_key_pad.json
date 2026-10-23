@@ -1,0 +1,159 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_panel_inventory",
+  "textures": {
+    "all": "hbm:block/rbmk/rbmk_display",
+    "particle": "hbm:block/rbmk/rbmk_display",
+    "keypad": "hbm:block/rbmk/panel_keypad"
+  },
+  "overlays": [
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Socket",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Button",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        }
+      ],
+      "color": -5963776
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Socket",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Button",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            -0.25
+          ]
+        }
+      ],
+      "color": -5963776
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Socket",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Button",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            0.25
+          ]
+        }
+      ],
+      "color": -5963776
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Socket",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/button.obj",
+      "texture": "keypad",
+      "uv_scale": [
+        0.8125,
+        0.4375
+      ],
+      "part": "Button",
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            -0.25
+          ]
+        }
+      ],
+      "color": -5963776
+    }
+  ]
+}

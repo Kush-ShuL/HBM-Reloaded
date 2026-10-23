@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "redstone_sword",
+      "id": "hbm:redstone_sword",
+      "legacyRegistryId": "hbm:item.redstone_sword",
+      "originalClass": "RedstoneSword",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2091
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 4430
+          },
+          "expression": "GameRegistry.registerItem(redstone_sword, redstone_sword.getUnlocalizedName())",
+          "arguments": [
+            "redstone_sword",
+            "redstone_sword.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.weapon.redstonesword.RedstoneSwordContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 131,
+      "material": "STONE"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "source": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java#L61",
+  "order": [
+    "hbm:legacy_ore_dict/slabwood"
+  ],
+  "names": [
+    {
+      "raw": "slabWood",
+      "tag": "hbm:legacy_ore_dict/slabwood"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "expression": "KEY_SLAB",
+      "raw": "slabWood",
+      "tag": "hbm:legacy_ore_dict/slabwood",
+      "members": [
+        "minecraft:oak_slab",
+        "minecraft:spruce_slab",
+        "minecraft:birch_slab",
+        "minecraft:jungle_slab",
+        "minecraft:acacia_slab",
+        "minecraft:dark_oak_slab"
+      ],
+      "sourceRegistration": "new ItemStack(Blocks.wooden_slab, 1, WILDCARD_VALUE)",
+      "modernMapping": "The six actual original wooden_slab subtypes0..5. Other mod entries remain additive."
+    }
+  ]
+}

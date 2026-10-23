@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:paa_boots",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "E E",
+    "N N"
+  ],
+  "key": {
+    "E": {
+      "item": "hbm:plate_paa"
+    },
+    "N": {
+      "item": "hbm:neutron_reflector"
+    }
+  }
+}

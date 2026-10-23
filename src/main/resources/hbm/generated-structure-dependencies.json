@@ -1,0 +1,940 @@
+{
+  "NTMHouse1": {
+    "blocks": [
+      "hbm:crate",
+      "hbm:crate_metal",
+      "hbm:crate_weapon",
+      "hbm:reinforced_sand",
+      "minecraft:air",
+      "minecraft:chest",
+      "minecraft:fence",
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:stone_slab"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_GENERIC"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "NTMHouse2": {
+    "blocks": [
+      "hbm:bobblehead",
+      "hbm:crate",
+      "hbm:crate_can",
+      "hbm:crate_weapon",
+      "hbm:deco_pipe_quad_rusted",
+      "hbm:deco_pipe_rim_rusted",
+      "hbm:machine_boiler_off",
+      "hbm:reinforced_sand",
+      "hbm:steel_grate",
+      "hbm:steel_scaffold",
+      "minecraft:air",
+      "minecraft:chest",
+      "minecraft:fence",
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:stone_slab"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_ANTENNA",
+      "POOL_MACHINE_PARTS"
+    ],
+    "attachments": [
+      "bobblehead"
+    ],
+    "extras": []
+  },
+  "NTMLab1": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:brick_light",
+      "hbm:concrete_pillar",
+      "hbm:crate_can",
+      "hbm:crate_iron",
+      "hbm:deco_loot",
+      "hbm:deco_titanium",
+      "hbm:door_office",
+      "hbm:machine_electric_furnace_off",
+      "hbm:machine_microwave",
+      "hbm:machine_shredder",
+      "hbm:plant_flower",
+      "hbm:reinforced_glass",
+      "hbm:steel_scaffold",
+      "hbm:steel_wall",
+      "hbm:tile_lab",
+      "hbm:tile_lab_broken",
+      "hbm:tile_lab_cracked",
+      "minecraft:air",
+      "minecraft:dirt",
+      "minecraft:glass_pane",
+      "minecraft:stone_brick_stairs",
+      "minecraft:stonebrick",
+      "minecraft:wooden_door"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_GENERIC"
+    ],
+    "attachments": [],
+    "extras": [
+      "preset:medicine"
+    ]
+  },
+  "NTMLab2": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:brick_light",
+      "hbm:concrete_super",
+      "hbm:concrete_super_broken",
+      "hbm:crashed_balefire",
+      "hbm:crate",
+      "hbm:crate_iron",
+      "hbm:crate_lead",
+      "hbm:deco_pipe_framed_rusted",
+      "hbm:deco_steel",
+      "hbm:door_office",
+      "hbm:reinforced_glass",
+      "hbm:reinforced_stone",
+      "hbm:steel_beam",
+      "hbm:steel_grate",
+      "hbm:steel_roof",
+      "hbm:steel_wall",
+      "hbm:tape_recorder",
+      "hbm:tile_lab",
+      "hbm:tile_lab_broken",
+      "hbm:tile_lab_cracked",
+      "hbm:vitrified_barrel",
+      "hbm:waste_planks",
+      "minecraft:air",
+      "minecraft:stone_brick_stairs",
+      "minecraft:stonebrick",
+      "minecraft:wooden_door"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_NUKE_FUEL",
+      "POOL_NUKE_TRASH"
+    ],
+    "attachments": [],
+    "extras": [
+      "book:office"
+    ]
+  },
+  "RuralHouse1": {
+    "blocks": [
+      "hbm:bobblehead",
+      "hbm:concrete_colored_ext",
+      "hbm:crate",
+      "hbm:crate_can",
+      "hbm:crate_weapon",
+      "hbm:deco_computer",
+      "hbm:deco_loot",
+      "hbm:filing_cabinet",
+      "hbm:machine_diesel",
+      "hbm:machine_electric_furnace_off",
+      "hbm:radiorec",
+      "hbm:steel_wall",
+      "minecraft:air",
+      "minecraft:bookshelf",
+      "minecraft:brick_block",
+      "minecraft:cauldron",
+      "minecraft:chest",
+      "minecraft:dark_oak_stairs",
+      "minecraft:double_stone_slab",
+      "minecraft:fence",
+      "minecraft:flower_pot",
+      "minecraft:furnace",
+      "minecraft:glass_pane",
+      "minecraft:ladder",
+      "minecraft:log",
+      "minecraft:oak_stairs",
+      "minecraft:planks",
+      "minecraft:redstone_lamp",
+      "minecraft:spruce_stairs",
+      "minecraft:trapdoor",
+      "minecraft:web",
+      "minecraft:wooden_door",
+      "minecraft:wooden_slab"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_GENERIC",
+      "POOL_OFFICE_TRASH"
+    ],
+    "attachments": [
+      "bobblehead"
+    ],
+    "extras": [
+      "book:lab",
+      "lore",
+      "preset:makeshiftGun"
+    ]
+  },
+  "LargeOffice": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:brick_light",
+      "hbm:concrete_pillar",
+      "hbm:deco_computer",
+      "hbm:door_office",
+      "hbm:filing_cabinet",
+      "hbm:radiorec",
+      "hbm:safe",
+      "minecraft:carpet",
+      "minecraft:flower_pot",
+      "minecraft:glass_pane",
+      "minecraft:oak_stairs",
+      "minecraft:planks",
+      "minecraft:spruce_stairs",
+      "minecraft:stone_slab",
+      "minecraft:stonebrick",
+      "minecraft:web",
+      "minecraft:wool"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_MACHINE_PARTS",
+      "POOL_OFFICE_TRASH"
+    ],
+    "attachments": [],
+    "extras": [
+      "book:office"
+    ]
+  },
+  "LargeOfficeCorner": {
+    "blocks": [
+      "hbm:asphalt",
+      "hbm:bobblehead",
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:brick_light",
+      "hbm:concrete_pillar",
+      "hbm:deco_computer",
+      "hbm:deco_loot",
+      "hbm:door_metal",
+      "hbm:door_office",
+      "hbm:filing_cabinet",
+      "hbm:machine_microwave",
+      "hbm:safe",
+      "hbm:tape_recorder",
+      "minecraft:dark_oak_stairs",
+      "minecraft:flower_pot",
+      "minecraft:glass_pane",
+      "minecraft:oak_stairs",
+      "minecraft:planks",
+      "minecraft:stone_slab",
+      "minecraft:stonebrick",
+      "minecraft:wooden_door",
+      "minecraft:wooden_slab",
+      "minecraft:wool"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_EXPENSIVE",
+      "POOL_FILING_CABINET",
+      "POOL_OFFICE_TRASH"
+    ],
+    "attachments": [
+      "bobblehead"
+    ],
+    "extras": [
+      "book:office",
+      "preset:capStash",
+      "preset:medicine"
+    ]
+  },
+  "SiloComponent": {
+    "blocks": [
+      "hbm:anvil_iron",
+      "hbm:asphalt",
+      "hbm:barbed_wire",
+      "hbm:barrel_corroded",
+      "hbm:bobblehead",
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_broken_stairs",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_cracked_stairs",
+      "hbm:brick_concrete_mossy",
+      "hbm:brick_concrete_mossy_stairs",
+      "hbm:brick_concrete_stairs",
+      "hbm:brick_slab",
+      "hbm:capacitor_copper",
+      "hbm:concrete",
+      "hbm:concrete_brick_slab",
+      "hbm:concrete_colored",
+      "hbm:concrete_colored_ext",
+      "hbm:concrete_pillar",
+      "hbm:concrete_slab",
+      "hbm:concrete_smooth",
+      "hbm:concrete_smooth_stairs",
+      "hbm:concrete_stairs",
+      "hbm:crate_ammo",
+      "hbm:crate_can",
+      "hbm:crate_iron",
+      "hbm:crate_steel",
+      "hbm:deco_beryllium",
+      "hbm:deco_computer",
+      "hbm:deco_crt",
+      "hbm:deco_lead",
+      "hbm:deco_pipe_framed_green_rusted",
+      "hbm:deco_pipe_framed_rusted",
+      "hbm:deco_pipe_quad_red",
+      "hbm:deco_pipe_quad_rusted",
+      "hbm:deco_pipe_rim_green_rusted",
+      "hbm:deco_pipe_rim_rusted",
+      "hbm:deco_red_copper",
+      "hbm:deco_steel",
+      "hbm:deco_toaster",
+      "hbm:door_bunker",
+      "hbm:door_metal",
+      "hbm:fence_metal",
+      "hbm:filing_cabinet",
+      "hbm:fluid_duct_gauge",
+      "hbm:hadron_coil_alloy",
+      "hbm:hev_battery",
+      "hbm:ladder_steel",
+      "hbm:launch_pad_rusted",
+      "hbm:lox_barrel",
+      "hbm:machine_electric_furnace_off",
+      "hbm:machine_microwave",
+      "hbm:machine_transformer",
+      "hbm:mine_ap",
+      "hbm:pink_barrel",
+      "hbm:radio_telex",
+      "hbm:radio_torch_receiver",
+      "hbm:radio_torch_sender",
+      "hbm:radiorec",
+      "hbm:red_barrel",
+      "hbm:red_cable_gauge",
+      "hbm:reeds",
+      "hbm:reinforced_glass",
+      "hbm:reinforced_stone",
+      "hbm:reinforced_stone_stairs",
+      "hbm:safe",
+      "hbm:silo_hatch_large",
+      "hbm:steel_beam",
+      "hbm:steel_grate",
+      "hbm:tape_recorder",
+      "hbm:turret_howard_damaged",
+      "hbm:turret_sentry_damaged",
+      "minecraft:air",
+      "minecraft:cauldron",
+      "minecraft:chest",
+      "minecraft:crafting_table",
+      "minecraft:dirt",
+      "minecraft:flower_pot",
+      "minecraft:heavy_weighted_pressure_plate",
+      "minecraft:hopper",
+      "minecraft:iron_bars",
+      "minecraft:lever",
+      "minecraft:oak_stairs",
+      "minecraft:planks",
+      "minecraft:trapdoor",
+      "minecraft:water",
+      "minecraft:web"
+    ],
+    "items": [
+      "hbm:launch_key"
+    ],
+    "pools": [
+      "POOL_EXPENSIVE",
+      "POOL_FILING_CABINET",
+      "POOL_MACHINE_PARTS",
+      "POOL_NUKE_FUEL",
+      "POOL_NUKE_TRASH",
+      "POOL_OFFICE_TRASH",
+      "POOL_SILO",
+      "POOL_VAULT_LAB",
+      "POOL_VAULT_LOCKERS",
+      "POOL_VAULT_RUSTY",
+      "POOL_VERTIBIRD"
+    ],
+    "attachments": [
+      "bobblehead",
+      "landmine",
+      "launch_pad_rusted",
+      "radio_torch"
+    ],
+    "extras": []
+  },
+  "StartingHub": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:concrete_slab",
+      "hbm:concrete_smooth_stairs",
+      "hbm:deco_computer",
+      "hbm:deco_tungsten",
+      "hbm:fan",
+      "hbm:ladder_sturdy",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:tape_recorder",
+      "hbm:trapdoor_steel",
+      "hbm:vinyl_tile",
+      "minecraft:chest"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_ANTENNA"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "Corridor": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:concrete_smooth_stairs",
+      "hbm:deco_computer",
+      "hbm:deco_tungsten",
+      "hbm:door_bunker",
+      "hbm:fan",
+      "hbm:radiorec",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:tape_recorder",
+      "hbm:vinyl_tile",
+      "minecraft:fence",
+      "minecraft:flower_pot",
+      "minecraft:oak_stairs",
+      "minecraft:wooden_pressure_plate"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "BedroomL": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:concrete_smooth_stairs",
+      "hbm:deco_computer",
+      "hbm:deco_tungsten",
+      "hbm:door_bunker",
+      "hbm:fan",
+      "hbm:filing_cabinet",
+      "hbm:machine_microwave",
+      "hbm:radiorec",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:vinyl_tile",
+      "minecraft:chest",
+      "minecraft:noteblock",
+      "minecraft:oak_stairs",
+      "minecraft:trapdoor"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_FILING_CABINET",
+      "POOL_VAULT_LOCKERS"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "FunJunction": {
+    "blocks": [
+      "hbm:bobblehead",
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:concrete_slab",
+      "hbm:concrete_smooth_stairs",
+      "hbm:deco_computer",
+      "hbm:deco_tungsten",
+      "hbm:door_bunker",
+      "hbm:fan",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:tape_recorder",
+      "hbm:vinyl_tile",
+      "minecraft:chest",
+      "minecraft:fence",
+      "minecraft:noteblock",
+      "minecraft:oak_stairs",
+      "minecraft:wooden_pressure_plate"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_VAULT_LOCKERS"
+    ],
+    "attachments": [
+      "bobblehead"
+    ],
+    "extras": []
+  },
+  "BathroomL": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:concrete_slab",
+      "hbm:deco_pipe_rim",
+      "hbm:door_bunker",
+      "hbm:door_metal",
+      "hbm:fan",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:steel_beam",
+      "hbm:steel_corner",
+      "hbm:steel_wall",
+      "hbm:vinyl_tile",
+      "minecraft:cauldron",
+      "minecraft:stone_button",
+      "minecraft:trapdoor",
+      "minecraft:tripwire_hook"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "Laboratory": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:concrete_smooth_stairs",
+      "hbm:deco_computer",
+      "hbm:deco_red_copper",
+      "hbm:deco_steel",
+      "hbm:deco_tungsten",
+      "hbm:door_bunker",
+      "hbm:fan",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:steel_poles",
+      "hbm:tape_recorder",
+      "hbm:vinyl_tile",
+      "minecraft:chest",
+      "minecraft:fence",
+      "minecraft:flower_pot",
+      "minecraft:oak_stairs",
+      "minecraft:wooden_pressure_plate"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_MACHINE_PARTS",
+      "POOL_VAULT_LAB"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "PowerRoom": {
+    "blocks": [
+      "hbm:barrel_corroded",
+      "hbm:barrel_plastic",
+      "hbm:block_copper",
+      "hbm:block_lead",
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:cable_detector",
+      "hbm:cable_diode",
+      "hbm:cable_switch",
+      "hbm:capacitor_copper",
+      "hbm:concrete_colored_ext",
+      "hbm:concrete_pillar",
+      "hbm:concrete_smooth_stairs",
+      "hbm:deco_beryllium",
+      "hbm:deco_computer",
+      "hbm:deco_lead",
+      "hbm:deco_pipe_framed_rusted",
+      "hbm:deco_pipe_quad_rusted",
+      "hbm:deco_pipe_rim_rusted",
+      "hbm:deco_red_copper",
+      "hbm:deco_steel",
+      "hbm:deco_tungsten",
+      "hbm:door_bunker",
+      "hbm:fan",
+      "hbm:filing_cabinet",
+      "hbm:fluid_duct_gauge",
+      "hbm:machine_condenser",
+      "hbm:machine_diesel",
+      "hbm:machine_electric_furnace_off",
+      "hbm:machine_transformer",
+      "hbm:pwr_channel",
+      "hbm:pwr_control",
+      "hbm:pwr_fuel",
+      "hbm:reinforced_glass",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_stone",
+      "hbm:steel_beam",
+      "hbm:steel_grate",
+      "hbm:steel_scaffold",
+      "hbm:tape_recorder",
+      "hbm:vinyl_tile",
+      "minecraft:chest",
+      "minecraft:flower_pot",
+      "minecraft:oak_stairs",
+      "minecraft:redstone_lamp"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_FILING_CABINET",
+      "POOL_MACHINE_PARTS",
+      "POOL_NUKE_FUEL",
+      "POOL_SOLID_FUEL"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:Antenna": {
+    "blocks": [
+      "hbm:deco_steel",
+      "hbm:pole_satellite_receiver",
+      "hbm:pole_top",
+      "hbm:steel_poles",
+      "hbm:tape_recorder",
+      "minecraft:air",
+      "minecraft:chest",
+      "minecraft:dirt",
+      "minecraft:grass",
+      "minecraft:sand",
+      "minecraft:snow_layer",
+      "minecraft:stone"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_ANTENNA"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:DesertAtom001": {
+    "blocks": [
+      "hbm:barbed_wire",
+      "hbm:block_lead",
+      "hbm:block_uranium",
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:brick_light",
+      "hbm:capacitor_copper",
+      "hbm:crashed_balefire",
+      "hbm:crate_steel",
+      "hbm:deco_lead",
+      "hbm:deco_steel",
+      "hbm:deco_titanium",
+      "hbm:deco_tungsten",
+      "hbm:fence_metal",
+      "hbm:geiger",
+      "hbm:machine_centrifuge",
+      "hbm:machine_electric_furnace_off",
+      "hbm:machine_puf6_tank",
+      "hbm:machine_uf6_tank",
+      "hbm:nuke_man",
+      "hbm:ore_nether_plutonium",
+      "hbm:ore_schrabidium",
+      "hbm:pole_satellite_receiver",
+      "hbm:pole_top",
+      "hbm:pwr_fuel",
+      "hbm:red_wire_coated",
+      "hbm:reinforced_brick",
+      "hbm:reinforced_glass",
+      "hbm:reinforced_lamp_off",
+      "hbm:reinforced_sand",
+      "hbm:steel_poles",
+      "hbm:tape_recorder",
+      "hbm:waste_earth",
+      "hbm:waste_planks",
+      "hbm:yellow_barrel",
+      "minecraft:air",
+      "minecraft:chest",
+      "minecraft:dirt",
+      "minecraft:fence",
+      "minecraft:flower_pot",
+      "minecraft:grass",
+      "minecraft:gravel",
+      "minecraft:hardened_clay",
+      "minecraft:iron_door",
+      "minecraft:ladder",
+      "minecraft:lever",
+      "minecraft:oak_stairs",
+      "minecraft:redstone_wire",
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:snow_layer",
+      "minecraft:stained_hardened_clay",
+      "minecraft:stone",
+      "minecraft:stone_brick_stairs",
+      "minecraft:stone_stairs",
+      "minecraft:stonebrick",
+      "minecraft:unpowered_repeater",
+      "minecraft:vine",
+      "minecraft:wall_sign",
+      "minecraft:water",
+      "minecraft:web",
+      "minecraft:wooden_door",
+      "minecraft:wooden_slab"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_EXPENSIVE",
+      "POOL_GENERIC",
+      "POOL_NUKE_MISC",
+      "POOL_NUKE_TRASH"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:LibraryDungeon": {
+    "blocks": [
+      "minecraft:air",
+      "minecraft:bedrock",
+      "minecraft:bookshelf",
+      "minecraft:chest",
+      "minecraft:double_wooden_slab",
+      "minecraft:fence",
+      "minecraft:mob_spawner",
+      "minecraft:planks",
+      "minecraft:stonebrick",
+      "minecraft:wooden_slab"
+    ],
+    "items": [],
+    "pools": [
+      "DUNGEON_CHEST"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:Dud": {
+    "blocks": [
+      "hbm:crashed_balefire",
+      "minecraft:air",
+      "minecraft:dirt",
+      "minecraft:grass",
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:snow_layer",
+      "minecraft:stone"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:Spaceship": {
+    "blocks": [
+      "hbm:block_meteor",
+      "hbm:cable_switch",
+      "hbm:capacitor_copper",
+      "hbm:deco_red_copper",
+      "hbm:deco_steel",
+      "hbm:deco_tungsten",
+      "hbm:fusion_hatch",
+      "hbm:fusion_heater",
+      "hbm:hadron_coil_alloy",
+      "hbm:pwr_control",
+      "hbm:pwr_fuel",
+      "hbm:red_cable",
+      "hbm:red_wire_coated",
+      "hbm:reinforced_glass",
+      "hbm:reinforced_light",
+      "minecraft:air",
+      "minecraft:chest",
+      "minecraft:dirt",
+      "minecraft:grass",
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:snow_layer",
+      "minecraft:stone",
+      "minecraft:stone_stairs"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_EXPENSIVE",
+      "POOL_SPACESHIP"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:Barrel": {
+    "blocks": [
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_mossy",
+      "hbm:crate_steel",
+      "hbm:deco_lead",
+      "hbm:reinforced_brick",
+      "hbm:reinforced_glass",
+      "hbm:sellafield",
+      "hbm:sellafield_slaked",
+      "hbm:toxic_block",
+      "minecraft:air",
+      "minecraft:dirt",
+      "minecraft:grass",
+      "minecraft:iron_door",
+      "minecraft:ladder",
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:snow_layer",
+      "minecraft:stone"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_EXPENSIVE"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:ArcticVault": {
+    "blocks": [
+      "hbm:bobblehead",
+      "hbm:crate",
+      "hbm:crate_ammo",
+      "hbm:crate_can",
+      "hbm:crate_jungle",
+      "hbm:crate_metal",
+      "hbm:tape_recorder",
+      "minecraft:air",
+      "minecraft:snow_layer",
+      "minecraft:stonebrick",
+      "minecraft:web"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [
+      "bobblehead"
+    ],
+    "extras": []
+  },
+  "old:AncientTomb": {
+    "blocks": [
+      "hbm:ancient_scrap",
+      "hbm:brick_concrete",
+      "hbm:brick_concrete_broken",
+      "hbm:brick_concrete_cracked",
+      "hbm:brick_concrete_marked",
+      "hbm:brick_obsidian",
+      "hbm:concrete",
+      "hbm:concrete_pillar",
+      "hbm:concrete_smooth",
+      "hbm:deco_steel",
+      "hbm:gas_radon_tomb",
+      "hbm:reinforced_stone",
+      "minecraft:air"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:JungleDungeon": {
+    "blocks": [
+      "hbm:brick_jungle",
+      "hbm:brick_jungle_circle",
+      "hbm:brick_jungle_cracked",
+      "hbm:brick_jungle_fragile",
+      "hbm:brick_jungle_glyph",
+      "hbm:brick_jungle_lava",
+      "hbm:brick_jungle_trap",
+      "hbm:crate_jungle",
+      "minecraft:air"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:Broadcaster": {
+    "blocks": [
+      "hbm:broadcaster_pc"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:LandmineAP": {
+    "blocks": [
+      "hbm:mine_ap"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:BosniaMineHE": {
+    "blocks": [
+      "hbm:mine_he"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:SurfaceSafe": {
+    "blocks": [
+      "hbm:safe"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_VAULT_RUSTY",
+      "POOL_VAULT_STANDARD",
+      "POOL_VAULT_REINFORCED",
+      "POOL_VAULT_UNBREAKABLE"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:ChlorineGeyser": {
+    "blocks": [
+      "hbm:geysir_chlorine",
+      "hbm:block_yellowcake"
+    ],
+    "items": [],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:BlueprintChest": {
+    "blocks": [
+      "minecraft:chest",
+      "minecraft:obsidian"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_BLUEPRINTS"
+    ],
+    "attachments": [],
+    "extras": []
+  },
+  "old:SoyuzCapsule": {
+    "blocks": [
+      "hbm:soyuz_capsule"
+    ],
+    "items": [
+      "hbm:record_glass"
+    ],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  }
+}

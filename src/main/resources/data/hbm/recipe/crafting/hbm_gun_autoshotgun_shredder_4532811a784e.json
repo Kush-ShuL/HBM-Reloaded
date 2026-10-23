@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:gun_autoshotgun_shredder",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    "MAM",
+    " M "
+  ],
+  "key": {
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+    },
+    "A": {
+      "item": "hbm:gun_autoshotgun"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gun_tau",
+      "id": "hbm:gun_tau",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "weaponQuality": "A_SIDE",
+      "pistol": false,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_coilgun",
+      "id": "hbm:gun_coilgun",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "weaponQuality": "SPECIAL",
+      "pistol": false,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_n_i_4_n_i",
+      "id": "hbm:gun_n_i_4_n_i",
+      "originalClass": "ItemGunNI4NI",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "weaponQuality": "SPECIAL",
+      "pistol": true,
+      "builtInDual": false
+    }
+  ]
+}

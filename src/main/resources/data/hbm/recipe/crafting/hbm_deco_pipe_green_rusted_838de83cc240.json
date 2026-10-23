@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:deco_pipe_green_rusted",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:deco_pipe_green"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustiron"
+    }
+  }
+}

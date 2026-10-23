@@ -1,0 +1,120 @@
+{
+  "name": "ass.fensusan",
+  "source": "legacy/src/main/java/com/hbm/inventory/recipes/PlasmaForgeRecipes.java:226",
+  "sourceExpression": "\t\tthis.register((PlasmaForgeRecipe) new PlasmaForgeRecipe(\"ass.fensusan\").setInputEnergy(50_000_000).setup(6_000, 50_000_000).outputItems(new ItemStack(ModBlocks.machine_battery_redd, 1))\n\t\t\t\t.inputItems(new ComparableStack(ModItems.ingot_electronium, 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.battery_pack, 1, EnumBatteryPack.BATTERY_QUANTUM),\n\t\t\t\t\t\tnew OreDictStack(OSMIRIDIUM.plateWelded(), 64),\n\t\t\t\t\t\tnew OreDictStack(OSMIRIDIUM.plateWelded(), 64),\n\t\t\t\t\t\tnew OreDictStack(ANY_BISMOIDBRONZE.plateCast(), 64),\n\t\t\t\t\t\tnew OreDictStack(CMB.plateCast(), 32),\n\t\t\t\t\t\tnew OreDictStack(MAGTUNG.wireDense(), 32),\n\t\t\t\t\t\tnew ComparableStack(ModItems.plate_dineutronium, 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.powder_magic, 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_u238m2),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_cft, 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_cft, 64))\n\t\t\t\t.inputItemsEx(new ComparableStack(ModItems.ingot_electronium, 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.battery_pack, 1, EnumBatteryPack.BATTERY_QUANTUM),\n\t\t\t\t\t\tnew ComparableStack(ModItems.item_expensive, 64, EnumExpensiveType.CMB_TUBES),\n\t\t\t\t\t\tnew ComparableStack(ModItems.item_expensive, 64, EnumExpensiveType.FERRO_PLATING),\n\t\t\t\t\t\tnew OreDictStack(OSMIRIDIUM.plateWelded(), 64),\n\t\t\t\t\t\tnew OreDictStack(OSMIRIDIUM.plateWelded(), 64),\n\t\t\t\t\t\tnew OreDictStack(OSMIRIDIUM.plateWelded(), 64),\n\t\t\t\t\t\tnew OreDictStack(ANY_BISMOIDBRONZE.plateCast(), 64),\n\t\t\t\t\t\tnew OreDictStack(CMB.plateCast(), 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_u238m2),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_cft, 64),\n\t\t\t\t\t\tnew ComparableStack(ModItems.ingot_cft, 64)));",
+  "inputEnergy": 50000000,
+  "duration": 6000,
+  "powerPerTick": 50000000,
+  "output": {
+    "id": "hbm:machine_battery_redd",
+    "count": 1
+  },
+  "inputItems": [
+    {
+      "source": "ModItems.ingot_electronium",
+      "count": 64
+    },
+    {
+      "source": "ModItems.battery_pack",
+      "count": 1,
+      "metadata": "EnumBatteryPack.BATTERY_QUANTUM"
+    },
+    {
+      "ore": "OSMIRIDIUM.plateWelded()",
+      "count": 64
+    },
+    {
+      "ore": "OSMIRIDIUM.plateWelded()",
+      "count": 64
+    },
+    {
+      "ore": "ANY_BISMOIDBRONZE.plateCast()",
+      "count": 64
+    },
+    {
+      "ore": "CMB.plateCast()",
+      "count": 32
+    },
+    {
+      "ore": "MAGTUNG.wireDense()",
+      "count": 32
+    },
+    {
+      "source": "ModItems.plate_dineutronium",
+      "count": 64
+    },
+    {
+      "source": "ModItems.powder_magic",
+      "count": 64
+    },
+    {
+      "source": "ModItems.ingot_u238m2",
+      "count": 1
+    },
+    {
+      "source": "ModItems.ingot_cft",
+      "count": 64
+    },
+    {
+      "source": "ModItems.ingot_cft",
+      "count": 64
+    }
+  ],
+  "inputItemsEx": [
+    {
+      "source": "ModItems.ingot_electronium",
+      "count": 64
+    },
+    {
+      "source": "ModItems.battery_pack",
+      "count": 1,
+      "metadata": "EnumBatteryPack.BATTERY_QUANTUM"
+    },
+    {
+      "source": "ModItems.item_expensive",
+      "count": 64,
+      "metadata": "EnumExpensiveType.CMB_TUBES"
+    },
+    {
+      "source": "ModItems.item_expensive",
+      "count": 64,
+      "metadata": "EnumExpensiveType.FERRO_PLATING"
+    },
+    {
+      "ore": "OSMIRIDIUM.plateWelded()",
+      "count": 64
+    },
+    {
+      "ore": "OSMIRIDIUM.plateWelded()",
+      "count": 64
+    },
+    {
+      "ore": "OSMIRIDIUM.plateWelded()",
+      "count": 64
+    },
+    {
+      "ore": "ANY_BISMOIDBRONZE.plateCast()",
+      "count": 64
+    },
+    {
+      "ore": "CMB.plateCast()",
+      "count": 64
+    },
+    {
+      "source": "ModItems.ingot_u238m2",
+      "count": 1
+    },
+    {
+      "source": "ModItems.ingot_cft",
+      "count": 64
+    },
+    {
+      "source": "ModItems.ingot_cft",
+      "count": 64
+    }
+  ],
+  "runtimeRegistered": false,
+  "pending": [
+    "Real PlasmaForge recipe executor/JEI/REI category; no substitute recipe is registered"
+  ]
+}

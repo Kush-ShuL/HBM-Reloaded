@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 24
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DSD",
+    "PPP",
+    "DSD"
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wiredensegold"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:battery_pack",
+      "components": {
+        "hbm:legacy_metadata": 7
+      },
+      "strict": false
+    }
+  }
+}

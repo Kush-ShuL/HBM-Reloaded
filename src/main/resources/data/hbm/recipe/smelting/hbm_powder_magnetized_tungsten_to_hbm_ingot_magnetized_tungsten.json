@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:powder_magnetized_tungsten"
+  },
+  "result": {
+    "id": "hbm:ingot_magnetized_tungsten",
+    "count": 1
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

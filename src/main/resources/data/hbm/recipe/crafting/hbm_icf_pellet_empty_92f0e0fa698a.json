@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:icf_pellet_empty",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ZLZ",
+    "L L",
+    "ZLZ"
+  ],
+  "key": {
+    "Z": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinezirconium"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinelead"
+    }
+  }
+}

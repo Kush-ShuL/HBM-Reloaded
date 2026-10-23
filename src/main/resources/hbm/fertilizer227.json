@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "powder_fertilizer",
+      "id": "hbm:powder_fertilizer",
+      "legacyRegistryId": "hbm:item.powder_fertilizer",
+      "originalClass": "ItemFertilizer",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2529
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 4706
+          },
+          "expression": "GameRegistry.registerItem(powder_fertilizer, powder_fertilizer.getUnlocalizedName())",
+          "arguments": [
+            "powder_fertilizer",
+            "powder_fertilizer.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.fertilizer.FertilizerContent",
+      "creativeTab": "parts",
+      "maxStackSize": 64
+    }
+  ]
+}

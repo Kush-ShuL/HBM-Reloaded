@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:block/mass_storage_0",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/mass_storage_1"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/mass_storage_2"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/mass_storage_3"
+    }
+  ]
+}

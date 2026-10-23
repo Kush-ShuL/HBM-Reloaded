@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DPD",
+    "PSP",
+    "DPD"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:ducttape"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    },
+    "S": {
+      "item": "hbm:ingot_semtex"
+    }
+  },
+  "result": {
+    "id": "hbm:insert_era",
+    "count": 1
+  }
+}

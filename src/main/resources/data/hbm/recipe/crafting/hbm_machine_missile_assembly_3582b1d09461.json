@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:machine_missile_assembly",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PWP",
+    "SSS",
+    "CCC"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:pedestal_steel"
+    },
+    "W": {
+      "item": "hbm:wrench"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "C": {
+      "item": "hbm:steel_scaffold"
+    }
+  }
+}

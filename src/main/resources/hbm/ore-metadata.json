@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "symbol": "ore_meteor",
+      "id": "hbm:ore_meteor",
+      "enumClass": "com.hbm.blocks.BlockEnums$EnumMeteorType",
+      "names": [
+        "iron",
+        "copper",
+        "aluminium",
+        "rareearth",
+        "cobalt"
+      ],
+      "owner": "ModBlocks"
+    },
+    {
+      "symbol": "stone_resource",
+      "id": "hbm:stone_resource",
+      "enumClass": "com.hbm.blocks.BlockEnums$EnumStoneType",
+      "names": [
+        "sulfur",
+        "asbestos",
+        "hematite",
+        "malachite",
+        "limestone",
+        "bauxite"
+      ],
+      "owner": "ModBlocks"
+    },
+    {
+      "symbol": "ore_basalt",
+      "id": "hbm:ore_basalt",
+      "enumClass": "com.hbm.blocks.generic.BlockOreBasalt$EnumBasaltOreType",
+      "names": [
+        "sulfur",
+        "fluorite",
+        "asbestos",
+        "gem",
+        "molysite"
+      ],
+      "owner": "ModBlocks"
+    },
+    {
+      "symbol": "drillbit",
+      "id": "hbm:drillbit",
+      "enumClass": "com.hbm.items.machine.ItemDrillbit$EnumDrillType",
+      "names": [
+        "steel",
+        "steel_diamond",
+        "hss",
+        "hss_diamond",
+        "desh",
+        "desh_diamond",
+        "tcalloy",
+        "tcalloy_diamond",
+        "ferro",
+        "ferro_diamond"
+      ],
+      "owner": "ModItems"
+    }
+  ]
+}

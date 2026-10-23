@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_starmetal"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_dura_steel",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_cobalt",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_astatine",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_mercury",
+      "count": 5
+    }
+  ]
+}

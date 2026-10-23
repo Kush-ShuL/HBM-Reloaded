@@ -1,0 +1,103 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "pads_rubber",
+      "id": "hbm:pads_rubber",
+      "legacyRegistryId": "hbm:item.pads_rubber",
+      "originalClass": "ItemModPads",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2856
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6092
+          },
+          "expression": "GameRegistry.registerItem(pads_rubber, pads_rubber.getUnlocalizedName())",
+          "arguments": [
+            "pads_rubber",
+            "pads_rubber.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.pads.ArmorPadsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 3,
+      "applicableTo": [
+        "boots"
+      ],
+      "fallDamageMultiplier": 0.5,
+      "walkingPoweredArmorCharge": false
+    },
+    {
+      "kind": "item",
+      "symbol": "pads_slime",
+      "id": "hbm:pads_slime",
+      "legacyRegistryId": "hbm:item.pads_slime",
+      "originalClass": "ItemModPads",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2857
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6093
+          },
+          "expression": "GameRegistry.registerItem(pads_slime, pads_slime.getUnlocalizedName())",
+          "arguments": [
+            "pads_slime",
+            "pads_slime.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.pads.ArmorPadsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 3,
+      "applicableTo": [
+        "boots"
+      ],
+      "fallDamageMultiplier": 0.25,
+      "walkingPoweredArmorCharge": false
+    },
+    {
+      "kind": "item",
+      "symbol": "pads_static",
+      "id": "hbm:pads_static",
+      "legacyRegistryId": "hbm:item.pads_static",
+      "originalClass": "ItemModPads",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2858
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6094
+          },
+          "expression": "GameRegistry.registerItem(pads_static, pads_static.getUnlocalizedName())",
+          "arguments": [
+            "pads_static",
+            "pads_static.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.pads.ArmorPadsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 3,
+      "applicableTo": [
+        "boots"
+      ],
+      "fallDamageMultiplier": 0.75,
+      "walkingPoweredArmorCharge": true
+    }
+  ]
+}

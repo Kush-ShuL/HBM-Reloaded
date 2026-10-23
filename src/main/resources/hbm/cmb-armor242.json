@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "cmb_helmet",
+      "id": "hbm:cmb_helmet",
+      "legacyRegistryId": "hbm:item.cmb_helmet",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 74
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6317
+          },
+          "expression": "GameRegistry.registerItem(cmb_helmet, cmb_helmet.getUnlocalizedName())",
+          "arguments": [
+            "cmb_helmet",
+            "cmb_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.cmb.CmbArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 660
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_plate",
+      "id": "hbm:cmb_plate",
+      "legacyRegistryId": "hbm:item.cmb_plate",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 79
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6318
+          },
+          "expression": "GameRegistry.registerItem(cmb_plate, cmb_plate.getUnlocalizedName())",
+          "arguments": [
+            "cmb_plate",
+            "cmb_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.cmb.CmbArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 960
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_legs",
+      "id": "hbm:cmb_legs",
+      "legacyRegistryId": "hbm:item.cmb_legs",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 80
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6319
+          },
+          "expression": "GameRegistry.registerItem(cmb_legs, cmb_legs.getUnlocalizedName())",
+          "arguments": [
+            "cmb_legs",
+            "cmb_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.cmb.CmbArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 900
+    },
+    {
+      "kind": "item",
+      "symbol": "cmb_boots",
+      "id": "hbm:cmb_boots",
+      "legacyRegistryId": "hbm:item.cmb_boots",
+      "originalClass": "ArmorFSB",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 81
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6320
+          },
+          "expression": "GameRegistry.registerItem(cmb_boots, cmb_boots.getUnlocalizedName())",
+          "arguments": [
+            "cmb_boots",
+            "cmb_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.cmb.CmbArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 780
+    }
+  ]
+}

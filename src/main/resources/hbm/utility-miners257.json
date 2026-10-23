@@ -1,0 +1,119 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "dwarven_pickaxe",
+      "id": "hbm:dwarven_pickaxe",
+      "legacyRegistryId": "hbm:item.dwarven_pickaxe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4233
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5847
+          },
+          "expression": "GameRegistry.registerItem(dwarven_pickaxe, dwarven_pickaxe.getUnlocalizedName())",
+          "arguments": [
+            "dwarven_pickaxe",
+            "dwarven_pickaxe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.utility.UtilityMinersContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 250,
+      "sourceToolType": "MINER",
+      "sourceDamage": 5,
+      "sourceMovement": -0.1,
+      "sourceAbilities": [
+        [
+          "HAMMER",
+          0
+        ],
+        [
+          "HAMMER_FLAT",
+          0
+        ]
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "smashing_hammer",
+      "id": "hbm:smashing_hammer",
+      "legacyRegistryId": "hbm:item.smashing_hammer",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4135
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5905
+          },
+          "expression": "GameRegistry.registerItem(smashing_hammer, smashing_hammer.getUnlocalizedName())",
+          "arguments": [
+            "smashing_hammer",
+            "smashing_hammer.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.utility.UtilityMinersContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 2500,
+      "sourceToolType": "MINER",
+      "sourceDamage": 12,
+      "sourceMovement": -0.1,
+      "sourceAbilities": [
+        [
+          "SHREDDER",
+          0
+        ]
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "centri_stick",
+      "id": "hbm:centri_stick",
+      "legacyRegistryId": "hbm:item.centri_stick",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4133
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5906
+          },
+          "expression": "GameRegistry.registerItem(centri_stick, centri_stick.getUnlocalizedName())",
+          "arguments": [
+            "centri_stick",
+            "centri_stick.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.utility.UtilityMinersContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 50,
+      "sourceToolType": "MINER",
+      "sourceDamage": 3,
+      "sourceMovement": 0,
+      "sourceAbilities": [
+        [
+          "CENTRIFUGE",
+          0
+        ]
+      ]
+    }
+  ]
+}

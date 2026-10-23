@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.83.23",
+  "duration": 100,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:powder_calcium",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "REDMUD",
+      "amount": 75,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_cement",
+            "count": 8
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.1,
+  "key_kind": "item",
+  "source_key": "hbm:powder_calcium",
+  "order": 23
+}

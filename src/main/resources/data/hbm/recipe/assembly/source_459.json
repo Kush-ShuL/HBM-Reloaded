@@ -1,0 +1,47 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capacitorbismuth",
+  "duration": 100,
+  "power": 25000,
+  "order": 152,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:battery_pack",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotbismuth"
+      },
+      "count": 24
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_chip_quantum"
+        }
+      },
+      "count": 1
+    }
+  ]
+}

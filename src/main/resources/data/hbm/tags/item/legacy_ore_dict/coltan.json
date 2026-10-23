@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:fragment_coltan",
+    {
+      "id": "#c:ingots/coltan",
+      "required": false
+    }
+  ]
+}

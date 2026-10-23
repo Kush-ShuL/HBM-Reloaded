@@ -1,0 +1,29 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.partcop",
+  "duration": 40,
+  "power": 100,
+  "order": 55,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:part_copper",
+            "count": 8
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustcopper"
+      },
+      "count": 1
+    }
+  ],
+  "group": "autoswitch.cyclotron"
+}

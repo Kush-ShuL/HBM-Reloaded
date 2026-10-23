@@ -1,0 +1,572 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/ammo_standard.stone"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/ammo_standard/stone_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/ammo_standard/stone_iron"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/ammo_standard/stone_shot"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/ammo_standard/m357_bp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/ammo_standard/m357_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 6
+      },
+      "model": "hbm:item/ammo_standard/m357_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 7
+      },
+      "model": "hbm:item/ammo_standard/m357_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 8
+      },
+      "model": "hbm:item/ammo_standard/m357_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 9
+      },
+      "model": "hbm:item/ammo_standard/m357_express"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 10
+      },
+      "model": "hbm:item/ammo_standard/m44_bp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 11
+      },
+      "model": "hbm:item/ammo_standard/m44_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 12
+      },
+      "model": "hbm:item/ammo_standard/m44_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 13
+      },
+      "model": "hbm:item/ammo_standard/m44_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 14
+      },
+      "model": "hbm:item/ammo_standard/m44_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 15
+      },
+      "model": "hbm:item/ammo_standard/m44_express"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 16
+      },
+      "model": "hbm:item/ammo_standard/p22_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 17
+      },
+      "model": "hbm:item/ammo_standard/p22_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 18
+      },
+      "model": "hbm:item/ammo_standard/p22_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 19
+      },
+      "model": "hbm:item/ammo_standard/p22_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 20
+      },
+      "model": "hbm:item/ammo_standard/p9_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 21
+      },
+      "model": "hbm:item/ammo_standard/p9_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 22
+      },
+      "model": "hbm:item/ammo_standard/p9_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 23
+      },
+      "model": "hbm:item/ammo_standard/p9_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 24
+      },
+      "model": "hbm:item/ammo_standard/r556_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 25
+      },
+      "model": "hbm:item/ammo_standard/r556_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 26
+      },
+      "model": "hbm:item/ammo_standard/r556_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 27
+      },
+      "model": "hbm:item/ammo_standard/r556_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 28
+      },
+      "model": "hbm:item/ammo_standard/r762_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 29
+      },
+      "model": "hbm:item/ammo_standard/r762_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 30
+      },
+      "model": "hbm:item/ammo_standard/r762_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 31
+      },
+      "model": "hbm:item/ammo_standard/r762_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 32
+      },
+      "model": "hbm:item/ammo_standard/r762_du"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 33
+      },
+      "model": "hbm:item/ammo_standard/bmg50_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 34
+      },
+      "model": "hbm:item/ammo_standard/bmg50_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 35
+      },
+      "model": "hbm:item/ammo_standard/bmg50_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 36
+      },
+      "model": "hbm:item/ammo_standard/bmg50_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 37
+      },
+      "model": "hbm:item/ammo_standard/bmg50_du"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 38
+      },
+      "model": "hbm:item/ammo_standard/b75"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 39
+      },
+      "model": "hbm:item/ammo_standard/b75_inc"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 40
+      },
+      "model": "hbm:item/ammo_standard/b75_exp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 41
+      },
+      "model": "hbm:item/ammo_standard/g12_bp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 42
+      },
+      "model": "hbm:item/ammo_standard/g12_bp_magnum"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 43
+      },
+      "model": "hbm:item/ammo_standard/g12_bp_slug"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 44
+      },
+      "model": "hbm:item/ammo_standard/g12"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 45
+      },
+      "model": "hbm:item/ammo_standard/g12_slug"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 46
+      },
+      "model": "hbm:item/ammo_standard/g12_flechette"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 47
+      },
+      "model": "hbm:item/ammo_standard/g12_magnum"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 48
+      },
+      "model": "hbm:item/ammo_standard/g12_explosive"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 49
+      },
+      "model": "hbm:item/ammo_standard/g12_phosphorus"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 50
+      },
+      "model": "hbm:item/ammo_standard/g26_flare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 51
+      },
+      "model": "hbm:item/ammo_standard/g26_flare_supply"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 52
+      },
+      "model": "hbm:item/ammo_standard/g26_flare_weapon"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 53
+      },
+      "model": "hbm:item/ammo_standard/g40_he"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 54
+      },
+      "model": "hbm:item/ammo_standard/g40_heat"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 55
+      },
+      "model": "hbm:item/ammo_standard/g40_demo"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 56
+      },
+      "model": "hbm:item/ammo_standard/g40_inc"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 57
+      },
+      "model": "hbm:item/ammo_standard/g40_phosphorus"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 58
+      },
+      "model": "hbm:item/ammo_standard/rocket_he"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 59
+      },
+      "model": "hbm:item/ammo_standard/rocket_heat"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 60
+      },
+      "model": "hbm:item/ammo_standard/rocket_demo"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 61
+      },
+      "model": "hbm:item/ammo_standard/rocket_inc"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 62
+      },
+      "model": "hbm:item/ammo_standard/rocket_phosphorus"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 63
+      },
+      "model": "hbm:item/ammo_standard/flame_diesel"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 64
+      },
+      "model": "hbm:item/ammo_standard/flame_gas"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 65
+      },
+      "model": "hbm:item/ammo_standard/flame_napalm"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 66
+      },
+      "model": "hbm:item/ammo_standard/flame_balefire"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 67
+      },
+      "model": "hbm:item/ammo_standard/capacitor"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 68
+      },
+      "model": "hbm:item/ammo_standard/capacitor_overcharge"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 69
+      },
+      "model": "hbm:item/ammo_standard/capacitor_ir"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 70
+      },
+      "model": "hbm:item/ammo_standard/tau_uranium"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 71
+      },
+      "model": "hbm:item/ammo_standard/coil_tungsten"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 72
+      },
+      "model": "hbm:item/ammo_standard/coil_ferrouranium"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 73
+      },
+      "model": "hbm:item/ammo_standard/nuke_standard"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 74
+      },
+      "model": "hbm:item/ammo_standard/nuke_demo"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 75
+      },
+      "model": "hbm:item/ammo_standard/nuke_high"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 76
+      },
+      "model": "hbm:item/ammo_standard/nuke_tots"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 77
+      },
+      "model": "hbm:item/ammo_standard/nuke_hive"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 78
+      },
+      "model": "hbm:item/ammo_standard/g10"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 79
+      },
+      "model": "hbm:item/ammo_standard/g10_shrapnel"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 80
+      },
+      "model": "hbm:item/ammo_standard/g10_du"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 81
+      },
+      "model": "hbm:item/ammo_standard/g10_slug"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 82
+      },
+      "model": "hbm:item/ammo_standard/r762_he"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 83
+      },
+      "model": "hbm:item/ammo_standard/bmg50_he"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 84
+      },
+      "model": "hbm:item/ammo_standard/g10_explosive"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 85
+      },
+      "model": "hbm:item/ammo_standard/p45_sp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 86
+      },
+      "model": "hbm:item/ammo_standard/p45_fmj"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 87
+      },
+      "model": "hbm:item/ammo_standard/p45_jhp"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 88
+      },
+      "model": "hbm:item/ammo_standard/p45_ap"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 89
+      },
+      "model": "hbm:item/ammo_standard/p45_du"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 90
+      },
+      "model": "hbm:item/ammo_standard/ct_hook"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 91
+      },
+      "model": "hbm:item/ammo_standard/ct_mortar"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 92
+      },
+      "model": "hbm:item/ammo_standard/ct_mortar_charge"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 93
+      },
+      "model": "hbm:item/ammo_standard/nuke_balefire"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 94
+      },
+      "model": "hbm:item/ammo_standard/bmg50_sm"
+    }
+  ]
+}

@@ -1,0 +1,1451 @@
+{
+  "kits": [
+    {
+      "symbol": "nuke_starter_kit",
+      "id": "nuke_starter_kit",
+      "stacks": [
+        {
+          "symbol": "",
+          "id": "hbm:ingot_uranium",
+          "count": 32,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_uranium",
+            "count": 32
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:powder_yellowcake",
+          "count": 32,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:powder_yellowcake",
+            "count": 32
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_press",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_press",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_blast_furnace",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_blast_furnace",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_gascent",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_gascent",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_assembly_machine",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_assembly_machine",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_chemical_plant",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_chemical_plant",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_industrial_turbine",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_industrial_turbine",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:radaway",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:radaway",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:radx",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:radx",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:stamp_titanium_flat",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:stamp_titanium_flat",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:stamp_titanium_flat",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:stamp_titanium_flat",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:stamp_titanium_flat",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:stamp_titanium_flat",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_steel",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_steel",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_lead",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_lead",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "minecraft:copper_ingot",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "minecraft:copper_ingot",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:gas_mask_m65",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:gas_mask_m65",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:geiger_counter",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:geiger_counter",
+            "count": 1
+          }
+        }
+      ],
+      "hazmatTier": 1,
+      "warnInventory": true,
+      "warnArmor": true
+    },
+    {
+      "symbol": "nuke_advanced_kit",
+      "id": "nuke_advanced_kit",
+      "stacks": [
+        {
+          "symbol": "",
+          "id": "hbm:powder_yellowcake",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:powder_yellowcake",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:powder_plutonium",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:powder_plutonium",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_steel",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_steel",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "minecraft:copper_ingot",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "minecraft:copper_ingot",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_tungsten",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_tungsten",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_lead",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_lead",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_polymer",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_polymer",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_blast_furnace",
+          "count": 3,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_blast_furnace",
+            "count": 3
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_gascent",
+          "count": 3,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_gascent",
+            "count": 3
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_centrifuge",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_centrifuge",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_uf6_tank",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_uf6_tank",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_puf6_tank",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_puf6_tank",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pile_brick",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pile_brick",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pile_brick",
+          "count": 61,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pile_brick",
+            "count": 61
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_industrial_turbine",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_industrial_turbine",
+            "count": 4
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_radgen",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_radgen",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_rtg_grey",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_rtg_grey",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_assembly_machine",
+          "count": 3,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_assembly_machine",
+            "count": 3
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_chemical_plant",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_chemical_plant",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_fluidtank",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_fluidtank",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pellet_rtg",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pellet_rtg",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pellet_rtg",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pellet_rtg",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pellet_rtg",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pellet_rtg",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pellet_rtg_weak",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pellet_rtg_weak",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pellet_rtg_weak",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pellet_rtg_weak",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pellet_rtg_weak",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pellet_rtg_weak",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:cell_empty",
+          "count": 32,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:cell_empty",
+            "count": 32
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:rod_empty",
+          "count": 32,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:rod_empty",
+            "count": 32
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:fluid_barrel_full",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:fluid_barrel_full",
+            "count": 4,
+            "components": {
+              "hbm:legacy_metadata": 6,
+              "hbm:fluid_type": 6
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:radaway_strong",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:radaway_strong",
+            "count": 4
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:radx",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:radx",
+            "count": 4
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pill_iodine",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pill_iodine",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:geiger_counter",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:geiger_counter",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:survey_scanner",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:survey_scanner",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:gas_mask_m65",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:gas_mask_m65",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          }
+        }
+      ],
+      "hazmatTier": 2,
+      "warnInventory": true,
+      "warnArmor": true
+    },
+    {
+      "symbol": "nuke_commercially_kit",
+      "id": "nuke_commercially_kit",
+      "stacks": [
+        {
+          "symbol": "",
+          "id": "hbm:pile_brick",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pile_brick",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pile_brick",
+          "count": 61,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pile_brick",
+            "count": 61
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_fluidtank",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_fluidtank",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:billet_pu238be",
+          "count": 40,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:billet_pu238be",
+            "count": 40
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_u233",
+          "count": 40,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_u233",
+            "count": 40
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_uranium_fuel",
+          "count": 32,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_uranium_fuel",
+            "count": 32
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_plutonium_fuel",
+          "count": 16,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_plutonium_fuel",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:ingot_mox_fuel",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:ingot_mox_fuel",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:inf_water_mk2",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:inf_water_mk2",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:inf_water_mk2",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:inf_water_mk2",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:inf_water_mk2",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:inf_water_mk2",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:rod_empty",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:rod_empty",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:rod_dual_empty",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:rod_dual_empty",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:rod_quad_empty",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:rod_quad_empty",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:fluid_tank_lead_empty",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:fluid_tank_lead_empty",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:fluid_barrel_empty",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:fluid_barrel_empty",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:barrel_steel",
+          "count": 16,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:barrel_steel",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:plate_iron",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:plate_iron",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "minecraft:ink_sac",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "minecraft:ink_sac",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:radaway_flush",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:radaway_flush",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:iv_blood",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:iv_blood",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:pill_iodine",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:pill_iodine",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:gas_mask_filter_combo",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:gas_mask_filter_combo",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:gas_mask_filter_combo",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:gas_mask_filter_combo",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:gas_mask_filter_combo",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:gas_mask_filter_combo",
+            "count": 1
+          }
+        }
+      ],
+      "hazmatTier": 2,
+      "warnInventory": true,
+      "warnArmor": true
+    },
+    {
+      "symbol": "nuke_electric_kit",
+      "id": "nuke_electric_kit",
+      "stacks": [
+        {
+          "symbol": "",
+          "id": "hbm:coil_copper",
+          "count": 16,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:coil_copper",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:coil_gold",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:coil_gold",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:coil_tungsten",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:coil_tungsten",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:motor",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:motor",
+            "count": 4
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:circuit_vacuum_tube",
+          "count": 16,
+          "nativeStack": {
+            "id": "hbm:circuit_vacuum_tube",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:circuit_vacuum_tube",
+          "count": 16,
+          "nativeStack": {
+            "id": "hbm:circuit_capacitor",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:circuit_vacuum_tube",
+          "count": 16,
+          "nativeStack": {
+            "id": "hbm:circuit_basic",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:wiring_red_copper",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:wiring_red_copper",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:magnetron",
+          "count": 5,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:magnetron",
+            "count": 5
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:piston_selenium",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:piston_selenium",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:piston_selenium",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:piston_selenium",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:piston_selenium",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:piston_selenium",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:canister_full",
+          "count": 16,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:canister_full",
+            "count": 16,
+            "components": {
+              "hbm:legacy_metadata": 20,
+              "hbm:fluid_type": 20
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:canister_full",
+          "count": 16,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:canister_full",
+            "count": 16,
+            "components": {
+              "hbm:legacy_metadata": 27,
+              "hbm:fluid_type": 27
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:battery_potato",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:battery_potato",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:screwdriver",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:screwdriver",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_excavator",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_excavator",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_diesel",
+          "count": 2,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_diesel",
+            "count": 2
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:red_cable",
+          "count": 64,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:red_cable",
+            "count": 64
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:red_wire_coated",
+          "count": 16,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:red_wire_coated",
+            "count": 16
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:red_pylon",
+          "count": 8,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:red_pylon",
+            "count": 8
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_battery_socket",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_battery_socket",
+            "count": 4
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:battery_pack",
+          "count": 4,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:battery_pack",
+            "count": 4,
+            "components": {
+              "hbm:legacy_metadata": 1
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_converter_he_rf",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_converter_he_rf",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:machine_converter_rf_he",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:machine_converter_rf_he",
+            "count": 1
+          }
+        }
+      ],
+      "hazmatTier": null,
+      "warnInventory": true,
+      "warnArmor": false
+    },
+    {
+      "symbol": "missile_kit",
+      "id": "missile_kit",
+      "stacks": [
+        {
+          "symbol": "",
+          "id": "hbm:launch_pad",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:launch_pad",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:designator",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:designator",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:designator_range",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:designator_range",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:designator_manual",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:designator_manual",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_generic",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_generic",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_strong",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_strong",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_burst",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_burst",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_incendiary",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_incendiary",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_incendiary_strong",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_incendiary_strong",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_inferno",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_inferno",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_cluster",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_cluster",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_cluster_strong",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_cluster_strong",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_rain",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_rain",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_buster",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_buster",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_buster_strong",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_buster_strong",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_drill",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_drill",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_nuclear",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_nuclear",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_nuclear_cluster",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_nuclear_cluster",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_volcano",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_volcano",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_doomsday",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_doomsday",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_taint",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_taint",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_micro",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_micro",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_bhole",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_bhole",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_schrabidium",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_schrabidium",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:missile_emp",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:missile_emp",
+            "count": 1
+          }
+        }
+      ],
+      "hazmatTier": null,
+      "warnInventory": true,
+      "warnArmor": false
+    },
+    {
+      "symbol": "euphemium_kit",
+      "id": "euphemium_kit",
+      "stacks": [
+        {
+          "symbol": "",
+          "id": "hbm:euphemium_helmet",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:euphemium_helmet",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:euphemium_plate",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:euphemium_plate",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:euphemium_legs",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:euphemium_legs",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:euphemium_boots",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:euphemium_boots",
+            "count": 1
+          }
+        },
+        {
+          "symbol": "",
+          "id": "hbm:statue_elb_f",
+          "count": 1,
+          "metadata": null,
+          "nativeStack": {
+            "id": "hbm:statue_elb_f",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        }
+      ],
+      "hazmatTier": null,
+      "warnInventory": false,
+      "warnArmor": false
+    },
+    {
+      "symbol": "hazmat_kit",
+      "id": "hazmat_kit",
+      "stacks": [],
+      "hazmatTier": 0,
+      "warnInventory": false,
+      "warnArmor": true
+    },
+    {
+      "symbol": "hazmat_red_kit",
+      "id": "hazmat_red_kit",
+      "stacks": [],
+      "hazmatTier": 1,
+      "warnInventory": false,
+      "warnArmor": false
+    },
+    {
+      "symbol": "hazmat_grey_kit",
+      "id": "hazmat_grey_kit",
+      "stacks": [],
+      "hazmatTier": 2,
+      "warnInventory": false,
+      "warnArmor": false
+    }
+  ]
+}

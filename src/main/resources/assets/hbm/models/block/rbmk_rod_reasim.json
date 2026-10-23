@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_channel",
+  "inventory": false,
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "hbm:block/rbmk/rbmk_element_reasim_side",
+    "side": "hbm:block/rbmk/rbmk_element_reasim_side",
+    "top": "hbm:block/rbmk/rbmk_element_reasim_top",
+    "cover_top": "hbm:block/rbmk/rbmk_element_reasim_cover_top",
+    "cover_side": "hbm:block/rbmk/rbmk_element_reasim_cover_side",
+    "glass_top": "hbm:block/rbmk/rbmk_element_reasim_glass_top",
+    "glass_side": "hbm:block/rbmk/rbmk_element_reasim_glass_side",
+    "inner": "hbm:block/rbmk/rbmk_element_reasim_inner",
+    "fuel": "hbm:block/rbmk/rbmk_element_reasim_fuel"
+  }
+}

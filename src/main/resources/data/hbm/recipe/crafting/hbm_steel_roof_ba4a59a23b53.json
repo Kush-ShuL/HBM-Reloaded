@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:steel_roof",
+    "count": 2
+  },
+  "category": "building",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    }
+  }
+}

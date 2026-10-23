@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_niter",
+    {
+      "id": "#c:storage_blocks/saltpeter",
+      "required": false
+    }
+  ]
+}

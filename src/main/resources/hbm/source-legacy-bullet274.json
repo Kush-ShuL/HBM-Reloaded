@@ -1,0 +1,16 @@
+{
+  "module": "source-legacy-bullet274",
+  "entries": [],
+  "entities": [
+    {
+      "id": "hbm:entity_bullet",
+      "sourceId": "entity_bullet",
+      "sourceClass": "EntityBullet",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:44",
+      "implementation": "com.hbm.entity.projectile.EntityBullet",
+      "trackingRangeBlocks": 250,
+      "updateInterval": 1,
+      "velocityUpdates": true
+    }
+  ]
+}

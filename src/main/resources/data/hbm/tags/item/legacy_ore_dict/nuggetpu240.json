@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:nugget_pu240",
+    {
+      "id": "#c:nuggets/plutonium240",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/pu240",
+      "required": false
+    }
+  ]
+}

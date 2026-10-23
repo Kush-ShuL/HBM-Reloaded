@@ -1,0 +1,38 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:fluid_duct_exhaust",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 9
+          }
+        }
+      },
+      "count": 8
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_iron",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:plate_polymer",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 573000003
+}

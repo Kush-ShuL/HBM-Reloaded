@@ -1,0 +1,25 @@
+{
+  "name": "Orbital Precision Laser",
+  "icon": [
+    "hbm:satellite_precision_laser",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_precision_laser",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Orbital Precision Laser",
+    "ru_RU": "Орбитальный прецизионный лазер",
+    "zh_CN": "轨道精确激光"
+  },
+  "content": {
+    "en_US": "The orbital precision laser is a low-power weapon that harvests sunlight to charge up a small laser beam. The beam only takes five seconds to charge up, and deals marginally more block damage than TNT. The direct hit damage for struck entities is however much higher. When combined with the targeting data of a [[radar satellite|Radar Satellite]], it can potentially also shoot down missiles.<br><br>* '§efire§r' will fire the laser at the current target position, assuming the laser has finished charging. If the satellite has been supplied with entity target data, it will use the position of that entitiy instead, assuming it its within 1,000 blocks of the target position. After one shot, the entity targeting data is used up and the satellite's target position will be used again.<br>* '§ecanfire§r' will write either 'TRUE' or 'FALSE' to RX depending on whether the cooldown has elapsed and the laser is ready to fire.<br>* '§esetentitytarget §e<id>§r' supplies an entity ID for precise targeting, which is used up after one shot. The ID can be obtained from a radar satellite.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Орбитальный прецизионный лазер это оружие малой мощности, которое собирает солнечный свет для зарядки небольшого лазерного луча. Лучу требуется всего пять секунд для зарядки, и он наносит лишь немного больше урона блокам, чем ТНТ. Однако урон при прямом попадании по сущностям значительно выше. В сочетании с данными целеуказания от [[радиолокационного спутника|Radar Satellite]] он также потенциально может сбивать ракеты.<br><br>* «§efire§r» выстрелит лазером по текущей целевой позиции, если лазер завершил зарядку. Если на спутник были переданы данные цели сущности, он будет использовать позицию этой сущности, если она находится в пределах 1000 блоков от целевой позиции. После одного выстрела данные целеуказания сущности расходуются, и снова используется целевая позиция спутника.<br>* «§ecanfire§r» запишет «TRUE» или «FALSE» в RX в зависимости от того, истекла ли перезарядка и готов ли лазер к выстрелу.<br>* «§esetentitytarget §eid§r» передает ID сущности для точного наведения, который расходуется после одного выстрела. ID можно получить с радиолокационного спутника.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "轨道精确激光是一种低功率武器，通过收集阳光为小型激光束充能。充能只需五秒，对方块的破坏略高于 TNT，但直接命中实体时伤害高得多。结合[[雷达卫星|Radar Satellite]]提供的目标数据，它也可能用来拦截导弹。<br><br>* “§efire§r”：激光充能完成后向当前目标位置开火。如果已提供实体目标数据，且实体距离目标位置不超过1,000格，就会改为瞄准该实体。开火一次后实体目标数据即被消耗，之后重新使用卫星原有的地面目标位置。<br>* “§ecanfire§r”：根据冷却是否结束、激光是否就绪，将 TRUE 或 FALSE 写入 RX。<br>* “§esetentitytarget §e<id>§r”：提供一个用于精确瞄准的实体 ID，一次射击后失效。这个 ID 可从雷达卫星获得。<br><br>{{Template:SatOverview}}"
+  }
+}

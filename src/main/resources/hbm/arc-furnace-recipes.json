@@ -1,0 +1,1294 @@
+{
+  "recipes": [
+    {
+      "input": [
+        "dict",
+        "sand",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        1,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          8
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "minecraft:flint",
+        1,
+        0
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        4,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          36
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "gemQuartz",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        3,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          24
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustQuartz",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        3,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          24
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "blockQuartz",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        12,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          96
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "ingotFiberglass",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        4,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          36
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "blockFiberglass",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        40,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          324
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "ingotAsbestos",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        4,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          36
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustAsbestos",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        4,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          36
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "blockAsbestos",
+        1
+      ],
+      "solid": [
+        "hbm:nugget_silicon",
+        40,
+        0
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          324
+        ]
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "ingotIlmenite",
+        1
+      ],
+      "solid": [
+        "hbm:ingot_titanium",
+        3,
+        0
+      ],
+      "fluid": [
+        [
+          "Titanium",
+          216
+        ],
+        [
+          "Iron",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:sand_mix",
+        1,
+        4
+      ],
+      "solid": [
+        "hbm:glass_quartz",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "dict",
+        "dustBorax",
+        1
+      ],
+      "solid": [
+        "hbm:powder_boron_tiny",
+        3,
+        0
+      ],
+      "fluid": [
+        [
+          "Boron",
+          24
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        224
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        256
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        240
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        256
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        288
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        320
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        304
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        320
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        352
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        384
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        368
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        384
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        176
+      ],
+      "fluid": [
+        [
+          "Iron",
+          360
+        ],
+        [
+          "Copper",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        192
+      ],
+      "fluid": [
+        [
+          "Iron",
+          144
+        ],
+        [
+          "Copper",
+          360
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        208
+      ],
+      "fluid": [
+        [
+          "Iron",
+          72
+        ],
+        [
+          "Copper",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        272
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        336
+      ],
+      "fluid": [
+        [
+          "Lithium",
+          120
+        ],
+        [
+          "Sodium",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        400
+      ],
+      "fluid": [
+        [
+          "Lithium",
+          144
+        ],
+        [
+          "Sodium",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        225
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        257
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        241
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        257
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        289
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        321
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        305
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        321
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        353
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        385
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        369
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        385
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        177
+      ],
+      "fluid": [
+        [
+          "Tungsten",
+          360
+        ],
+        [
+          "Lead",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        193
+      ],
+      "fluid": [
+        [
+          "Tungsten",
+          144
+        ],
+        [
+          "Lead",
+          360
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        209
+      ],
+      "fluid": [
+        [
+          "Tungsten",
+          72
+        ],
+        [
+          "Lead",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        273
+      ],
+      "fluid": [
+        [
+          "Gold",
+          48
+        ],
+        [
+          "Gold",
+          48
+        ],
+        [
+          "Beryllium",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        337
+      ],
+      "fluid": [
+        [
+          "Tungsten",
+          216
+        ],
+        [
+          "Lead",
+          216
+        ],
+        [
+          "Gold",
+          120
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        401
+      ],
+      "fluid": [
+        [
+          "Bismuth",
+          48
+        ],
+        [
+          "Tantalum",
+          48
+        ],
+        [
+          "Gold",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        226
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        258
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        242
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        258
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        290
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        322
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        306
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        322
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        354
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        386
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        370
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        386
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        178
+      ],
+      "fluid": [
+        [
+          "Cobalt",
+          200
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        194
+      ],
+      "fluid": [
+        [
+          "Cobalt",
+          80
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        210
+      ],
+      "fluid": [
+        [
+          "Cobalt",
+          40
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        274
+      ],
+      "fluid": [
+        [
+          "Boron",
+          120
+        ],
+        [
+          "Lanthanum",
+          72
+        ],
+        [
+          "Niobium",
+          96
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        338
+      ],
+      "fluid": [
+        [
+          "Neodymium",
+          72
+        ],
+        [
+          "Strontium",
+          72
+        ],
+        [
+          "Zirconium",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        402
+      ],
+      "fluid": [
+        [
+          "Niobium",
+          120
+        ],
+        [
+          "Neodymium",
+          120
+        ],
+        [
+          "Strontium",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        227
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        259
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        243
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        259
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        291
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        323
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        307
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        323
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        355
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        387
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        371
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        387
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        179
+      ],
+      "fluid": [
+        [
+          "Uranium",
+          160
+        ],
+        [
+          "Thorium232",
+          64
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        195
+      ],
+      "fluid": [
+        [
+          "Uranium",
+          64
+        ],
+        [
+          "Thorium232",
+          160
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        211
+      ],
+      "fluid": [
+        [
+          "Uranium",
+          32
+        ],
+        [
+          "Thorium232",
+          32
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        275
+      ],
+      "fluid": [
+        [
+          "Radium226",
+          48
+        ],
+        [
+          "Radium226",
+          48
+        ],
+        [
+          "Polonium210",
+          48
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        339
+      ],
+      "fluid": [
+        [
+          "Radium226",
+          48
+        ],
+        [
+          "Radium226",
+          48
+        ],
+        [
+          "Polonium210",
+          48
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        403
+      ],
+      "fluid": [
+        [
+          "Technetium99",
+          24
+        ],
+        [
+          "Technetium99",
+          24
+        ],
+        [
+          "Uranium238",
+          24
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        228
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        260
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        244
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        260
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        292
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        324
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        308
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        324
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        356
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        388
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        372
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        388
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        180
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        196
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        212
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        276
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        340
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        404
+      ],
+      "fluid": [
+        [
+          "Silicon",
+          48
+        ],
+        [
+          "Silicon",
+          48
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        229
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        261
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        245
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        261
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        293
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        325
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        309
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        325
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        357
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        2,
+        389
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        373
+      ],
+      "solid": [
+        "hbm:bedrock_ore",
+        4,
+        389
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        181
+      ],
+      "fluid": [
+        [
+          "Redstone",
+          360
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        197
+      ],
+      "fluid": [
+        [
+          "Redstone",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        213
+      ],
+      "fluid": [
+        [
+          "Redstone",
+          72
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        277
+      ],
+      "fluid": [
+        [
+          "Asbestos",
+          144
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        341
+      ],
+      "fluid": [
+        [
+          "Asbestos",
+          120
+        ]
+      ]
+    },
+    {
+      "input": [
+        "item",
+        "hbm:bedrock_ore",
+        1,
+        405
+      ],
+      "fluid": [
+        [
+          "Borax",
+          72
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_co60",
+    {
+      "id": "#c:dusts/co60",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cobalt60",
+      "required": false
+    }
+  ]
+}

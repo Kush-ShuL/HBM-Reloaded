@@ -1,0 +1,48 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:brick_concrete",
+          "count": 1
+        }
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "minecraft:iron_bars",
+          "count": 1
+        }
+      },
+      "count": 128
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:machine_condenser",
+          "count": 1
+        }
+      },
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:machine_tower_small",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 3,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 434000000
+}

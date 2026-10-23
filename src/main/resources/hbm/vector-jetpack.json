@@ -1,0 +1,64 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "id": "hbm:jetpack_fly",
+      "symbol": "jetpack_fly",
+      "originalClass": "JetpackRegular",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:4284",
+      "legacyRegistryId": "hbm:item.jetpack_fly",
+      "creativeTab": null,
+      "vanillaCreativeTab": "combat",
+      "metadataRange": [
+        0,
+        0
+      ],
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "id": "hbm:jetpack_break",
+      "symbol": "jetpack_break",
+      "originalClass": "JetpackBreak",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:4283",
+      "legacyRegistryId": "hbm:item.jetpack_break",
+      "creativeTab": null,
+      "vanillaCreativeTab": "combat",
+      "metadataRange": [
+        0,
+        0
+      ],
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "id": "hbm:jetpack_vector",
+      "symbol": "jetpack_vector",
+      "originalClass": "JetpackVectorized",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:4285",
+      "legacyRegistryId": "hbm:item.jetpack_vector",
+      "creativeTab": null,
+      "vanillaCreativeTab": "combat",
+      "metadataRange": [
+        0,
+        0
+      ],
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "id": "hbm:jetpack_tank",
+      "symbol": "jetpack_tank",
+      "originalClass": "ItemSyringe",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:2843",
+      "legacyRegistryId": "hbm:item.jetpack_tank",
+      "creativeTab": "consumable",
+      "vanillaCreativeTab": null,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "stackSize": 16
+    }
+  ]
+}

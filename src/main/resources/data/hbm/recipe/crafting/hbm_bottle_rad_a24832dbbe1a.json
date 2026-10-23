@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:bottle_rad",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:bottle_quantum"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold"
+    }
+  ]
+}

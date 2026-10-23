@@ -1,0 +1,925 @@
+{
+  "pools": {
+    "POOL_VAULT_RUSTY": {
+      "name": "POOL_VAULT_RUSTY",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 32
+          },
+          "arguments": [
+            "Items.gold_ingot",
+            "0",
+            "3",
+            "14",
+            "1"
+          ],
+          "stack": {
+            "id": "minecraft:gold_ingot",
+            "count": 1
+          },
+          "minimum": 3,
+          "maximum": 14,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 33
+          },
+          "arguments": [
+            "ModItems.gun_heavy_revolver",
+            "0",
+            "1",
+            "1",
+            "2"
+          ],
+          "stack": {
+            "id": "hbm:gun_heavy_revolver",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 2
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 34
+          },
+          "arguments": [
+            "ModItems.pin",
+            "0",
+            "8",
+            "8",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:pin",
+            "count": 1
+          },
+          "minimum": 8,
+          "maximum": 8,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 35
+          },
+          "arguments": [
+            "ModItems.gun_am180",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_am180",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 36
+          },
+          "arguments": [
+            "ModItems.bottle_quantum",
+            "0",
+            "1",
+            "3",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:bottle_quantum",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 3,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 37
+          },
+          "arguments": [
+            "ModItems.ingot_cobalt",
+            "0",
+            "4",
+            "12",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ingot_cobalt",
+            "count": 1
+          },
+          "minimum": 4,
+          "maximum": 12,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 38
+          },
+          "arguments": [
+            "hbm:ammo_standard_r556_sp",
+            "EnumAmmo.BMG50_FMJ.ordinal()",
+            0,
+            "48",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_standard_bmg50_fmj",
+            "count": 1
+          },
+          "minimum": 24,
+          "maximum": 48,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 39
+          },
+          "arguments": [
+            "hbm:ammo_standard_g12_explosive",
+            "EnumAmmo.P9_JHP.ordinal()",
+            0,
+            "64",
+            "2"
+          ],
+          "stack": {
+            "id": "hbm:ammo_standard_p9_jhp",
+            "count": 1
+          },
+          "minimum": 48,
+          "maximum": 64,
+          "weight": 2
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 40
+          },
+          "arguments": [
+            "ModItems.circuit",
+            "EnumCircuitType.CHIP.ordinal()",
+            "3",
+            "6",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:circuit_chip",
+            "count": 1
+          },
+          "minimum": 3,
+          "maximum": 6,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 41
+          },
+          "arguments": [
+            "ModItems.gas_mask_m65",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gas_mask_m65",
+            "count": 1,
+            "components": {
+              "minecraft:damage": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 42
+          },
+          "arguments": [
+            "ItemGrenadeUniversal.make(EnumGrenadeShell.FRAG, EnumGrenadeFilling.HE, EnumGrenadeFuze.S3)",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:grenade_universal",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "shell": 0,
+                "filling": 1,
+                "fuze": 0
+              }
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 43
+          },
+          "arguments": [
+            "ItemGrenadeUniversal.make(EnumGrenadeShell.FRAG, EnumGrenadeFilling.INC, EnumGrenadeFuze.S3)",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:grenade_universal",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "shell": 0,
+                "filling": 3,
+                "fuze": 0
+              }
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 44
+          },
+          "arguments": [
+            "Items.diamond",
+            "0",
+            "1",
+            "2",
+            "1"
+          ],
+          "stack": {
+            "id": "minecraft:diamond",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 2,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_vault_rusty"
+    },
+    "POOL_VAULT_STANDARD": {
+      "name": "POOL_VAULT_STANDARD",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 50
+          },
+          "arguments": [
+            "ModItems.ingot_desh",
+            "0",
+            "2",
+            "6",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ingot_desh",
+            "count": 1
+          },
+          "minimum": 2,
+          "maximum": 6,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 51
+          },
+          "arguments": [
+            "ModItems.powder_desh_mix",
+            "0",
+            "1",
+            "5",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:powder_desh_mix",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 5,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 52
+          },
+          "arguments": [
+            "Items.diamond",
+            "0",
+            "3",
+            "6",
+            "1"
+          ],
+          "stack": {
+            "id": "minecraft:diamond",
+            "count": 1
+          },
+          "minimum": 3,
+          "maximum": 6,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 53
+          },
+          "arguments": [
+            "hbm:ammo_standard_stone_ap",
+            "EnumAmmo.NUKE_STANDARD.ordinal()",
+            0,
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_standard_nuke_standard",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 54
+          },
+          "arguments": [
+            "ModItems.ammo_container",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_container",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 55
+          },
+          "arguments": [
+            "ItemGrenadeUniversal.make(EnumGrenadeShell.NUKE, EnumGrenadeFilling.NUCLEAR, EnumGrenadeFuze.S7)",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:grenade_universal",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "shell": 3,
+                "filling": 10,
+                "fuze": 1
+              }
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 56
+          },
+          "arguments": [
+            "ItemGrenadeUniversal.make(EnumGrenadeShell.TECH, EnumGrenadeFilling.EMP, EnumGrenadeFuze.S3)",
+            "1",
+            "6",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:grenade_universal",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "shell": 2,
+                "filling": 6,
+                "fuze": 0
+              }
+            }
+          },
+          "minimum": 1,
+          "maximum": 6,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 57
+          },
+          "arguments": [
+            "ModItems.powder_yellowcake",
+            "0",
+            "16",
+            "24",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:powder_yellowcake",
+            "count": 1
+          },
+          "minimum": 16,
+          "maximum": 24,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 58
+          },
+          "arguments": [
+            "ModItems.gun_uzi",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_uzi",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 59
+          },
+          "arguments": [
+            "ModItems.circuit",
+            "EnumCircuitType.VACUUM_TUBE.ordinal()",
+            "12",
+            "16",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:circuit_vacuum_tube",
+            "count": 1
+          },
+          "minimum": 12,
+          "maximum": 16,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 60
+          },
+          "arguments": [
+            "ModItems.circuit",
+            "EnumCircuitType.CHIP.ordinal()",
+            "2",
+            "6",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:circuit_chip",
+            "count": 1
+          },
+          "minimum": 2,
+          "maximum": 6,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_vault_standard"
+    },
+    "POOL_VAULT_REINFORCED": {
+      "name": "POOL_VAULT_REINFORCED",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 66
+          },
+          "arguments": [
+            "ModItems.ingot_desh",
+            "0",
+            "6",
+            "16",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ingot_desh",
+            "count": 1
+          },
+          "minimum": 6,
+          "maximum": 16,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 67
+          },
+          "arguments": [
+            "ModItems.powder_power",
+            "0",
+            "1",
+            "5",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:powder_power",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 5,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 68
+          },
+          "arguments": [
+            "ModItems.sat_chip",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:sat_chip",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 69
+          },
+          "arguments": [
+            "Items.diamond",
+            "0",
+            "5",
+            "9",
+            "1"
+          ],
+          "stack": {
+            "id": "minecraft:diamond",
+            "count": 1
+          },
+          "minimum": 5,
+          "maximum": 9,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 70
+          },
+          "arguments": [
+            "hbm:ammo_standard_stone_ap",
+            "EnumAmmo.NUKE_STANDARD.ordinal()",
+            0,
+            "3",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_standard_nuke_standard",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 3,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 71
+          },
+          "arguments": [
+            "ModItems.ammo_container",
+            "0",
+            "1",
+            "4",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_container",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 1,
+          "maximum": 4,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 72
+          },
+          "arguments": [
+            "ItemGrenadeUniversal.make(EnumGrenadeShell.NUKE, EnumGrenadeFilling.NUCLEAR, EnumGrenadeFuze.S7)",
+            "1",
+            "2",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:grenade_universal",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "shell": 3,
+                "filling": 10,
+                "fuze": 1
+              }
+            }
+          },
+          "minimum": 1,
+          "maximum": 2,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 73
+          },
+          "arguments": [
+            "ItemGrenadeUniversal.make(EnumGrenadeShell.STICK, EnumGrenadeFilling.HE, EnumGrenadeFuze.IMPACT, EnumGrenadeExtra.TRIPLEX)",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:grenade_universal",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "shell": 1,
+                "filling": 1,
+                "fuze": 3,
+                "extra": 3
+              }
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 74
+          },
+          "arguments": [
+            "ModItems.powder_yellowcake",
+            "0",
+            "26",
+            "42",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:powder_yellowcake",
+            "count": 1
+          },
+          "minimum": 26,
+          "maximum": 42,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 75
+          },
+          "arguments": [
+            "ModItems.gun_heavy_revolver",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_heavy_revolver",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 76
+          },
+          "arguments": [
+            "ModItems.circuit",
+            "EnumCircuitType.CHIP.ordinal()",
+            "18",
+            "32",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:circuit_chip",
+            "count": 1
+          },
+          "minimum": 18,
+          "maximum": 32,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 77
+          },
+          "arguments": [
+            "ModItems.circuit",
+            "EnumCircuitType.BASIC.ordinal()",
+            "6",
+            "12",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:circuit_basic",
+            "count": 1
+          },
+          "minimum": 6,
+          "maximum": 12,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_vault_reinforced"
+    },
+    "POOL_VAULT_UNBREAKABLE": {
+      "name": "POOL_VAULT_UNBREAKABLE",
+      "source": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+      "entries": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 83
+          },
+          "arguments": [
+            "ModItems.ammo_container",
+            "0",
+            "3",
+            "6",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_container",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          },
+          "minimum": 3,
+          "maximum": 6,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 84
+          },
+          "arguments": [
+            "hbm:ammo_standard_stone_iron",
+            "EnumAmmo.NUKE_DEMO.ordinal()",
+            0,
+            "3",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_standard_nuke_demo",
+            "count": 1
+          },
+          "minimum": 2,
+          "maximum": 3,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 85
+          },
+          "arguments": [
+            "ModItems.gun_carbine",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_carbine",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 86
+          },
+          "arguments": [
+            "hbm:ammo_standard_p22_sp",
+            "EnumAmmo.R762_DU.ordinal()",
+            0,
+            "32",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:ammo_standard_r762_du",
+            "count": 1
+          },
+          "minimum": 16,
+          "maximum": 32,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 87
+          },
+          "arguments": [
+            "ModItems.gun_congolake",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:gun_congolake",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 1
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsSingle.java",
+            "line": 88
+          },
+          "arguments": [
+            "ModItems.circuit",
+            "EnumCircuitType.ADVANCED.ordinal()",
+            "6",
+            "12",
+            "1"
+          ],
+          "stack": {
+            "id": "hbm:circuit_advanced",
+            "count": 1
+          },
+          "minimum": 6,
+          "maximum": 12,
+          "weight": 1
+        }
+      ],
+      "ready": true,
+      "table": "hbm:structure/pool_vault_unbreakable"
+    }
+  }
+}

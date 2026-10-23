@@ -1,0 +1,159 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_assembly_factory",
+      "id": "hbm:machine_assembly_factory",
+      "kind": "block",
+      "originalClass": "MachineAssemblyFactory",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2212",
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "legacyBlockEntityId": "tileentity_assemblyfactory",
+      "modernBlockEntityId": "hbm:assembly_factory",
+      "modernPortEntityId": "hbm:assembly_factory_port"
+    }
+  ],
+  "manufacture": [
+    {
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java:403",
+      "sourceExpression": "new GenericRecipe(\"ass.assemfac\").setup(400, 100).outputItems(new ItemStack(ModBlocks.machine_assembly_factory, 1))\n\t\t\t\t.inputItems(new OreDictStack(DURA.ingot(), 16), new OreDictStack(ANY_RESISTANTALLOY.ingot(), 8), new OreDictStack(RUBBER.ingot(), 16), new OreDictStack(B.ingot(), 8), new OreDictStack(STEEL.shell(), 4), new ComparableStack(ModItems.motor, 12), new ComparableStack(ModItems.circuit, 16, EnumCircuitType.BASIC))\n\t\t\t\t.inputItemsEx(new ComparableStack(ModItems.item_expensive, 4, EnumExpensiveType.HEAVY_FRAME), new OreDictStack(ANY_RESISTANTALLOY.ingot(), 16), new OreDictStack(RUBBER.ingot(), 16), new OreDictStack(B.ingot(), 8), new OreDictStack(STEEL.shell(), 4), new ComparableStack(ModItems.motor, 24), new ComparableStack(ModItems.item_expensive, 4, EnumExpensiveType.CIRCUIT))",
+      "id": "hbm:assembly/source_403",
+      "resource": "data/hbm/recipe/assembly/source_403.json",
+      "recipe": {
+        "type": "hbm:assembly",
+        "name": "ass.assemfac",
+        "duration": 400,
+        "power": 100,
+        "input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+            },
+            "count": 16
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotrubber"
+            },
+            "count": 16
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotboron"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/shellsteel"
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:motor"
+              }
+            },
+            "count": 12
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_basic"
+              }
+            },
+            "count": 16
+          }
+        ],
+        "expensive_input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:item_expensive_heavy_frame"
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+            },
+            "count": 16
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotrubber"
+            },
+            "count": 16
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotboron"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/shellsteel"
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:motor"
+              }
+            },
+            "count": 24
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:item_expensive_circuit"
+              }
+            },
+            "count": 4
+          }
+        ],
+        "output_items": [
+          {
+            "pool": [
+              {
+                "stack": {
+                  "id": "hbm:machine_assembly_factory",
+                  "count": 1
+                }
+              }
+            ]
+          }
+        ],
+        "order": 134
+      },
+      "centralRebind": "Same canonical ID/output, never a duplicate machine-specific crafting recipe"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+package com.hbm.api.computer;
+
+/** Detached Lua values, safe to read after a call is scheduled on the server thread. */
+public final class ComputerArguments {
+    private final Object[] values;
+
+    public ComputerArguments(Object[] values) {
+        this.values = values.clone();
+    }
+
+    public int count() {
+        return values.length;
+    }
+
+    public Object get(int index) {
+        return index < 0 || index >= values.length ? null : values[index];
+    }
+
+    public boolean checkBoolean(int index) {
+        if (get(index) instanceof Boolean value) return value;
+        throw argumentError(index, "boolean");
+    }
+
+    public String checkString(int index) {
+        if (get(index) instanceof String value) return value;
+        throw argumentError(index, "string");
+    }
+
+    public double checkDouble(int index) {
+        if (get(index) instanceof Number value && Double.isFinite(value.doubleValue())) return value.doubleValue();
+        throw argumentError(index, "finite number");
+    }
+
+    public int checkInteger(int index) {
+        double value = checkDouble(index);
+        if (value != Math.rint(value) || value < Integer.MIN_VALUE || value > Integer.MAX_VALUE) {
+            throw argumentError(index, "integer");
+        }
+        return (int) value;
+    }
+
+    public long checkLong(int index) {
+        if (get(index) instanceof Byte || get(index) instanceof Short || get(index) instanceof Integer || get(index) instanceof Long) {
+            return ((Number) get(index)).longValue();
+        }
+        double value = checkDouble(index);
+        if (value != Math.rint(value) || value < -0x1.0p63 || value >= 0x1.0p63) throw argumentError(index, "long integer");
+        return (long) value;
+    }
+
+    private ComputerException argumentError(int index, String expected) {
+        return new ComputerException("bad argument #" + (index + 1) + " (" + expected + " expected)");
+    }
+}

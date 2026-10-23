@@ -1,0 +1,21 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_nuclear_fog",
+      "id": "hbm:entity_nuclear_fog",
+      "originalClass": "EntityFogFX",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 104
+      },
+      "sourceTrackingRange": 1000,
+      "nativeTrackingChunks": 63,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "spawnEgg": false,
+      "sourceProducer": "No active constructor consumer in X5846; actual registration and renderer only"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_graphite",
+    {
+      "id": "#c:ingots/carbon",
+      "required": false
+    }
+  ]
+}

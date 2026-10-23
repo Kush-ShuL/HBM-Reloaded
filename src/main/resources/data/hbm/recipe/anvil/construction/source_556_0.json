@@ -1,0 +1,48 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:missile_doomsday_rusted"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextuplealuminum"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/billetplutonium239"
+      },
+      "count": 3
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:missile_doomsday",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 5,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 556000000
+}

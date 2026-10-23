@@ -1,0 +1,150 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "hbm:sand_mix",
+          "properties": {
+            "legacy_meta": "0"
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:sand_mix",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "hbm:sand_mix",
+          "properties": {
+            "legacy_meta": "1"
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:sand_mix",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "hbm:sand_mix",
+          "properties": {
+            "legacy_meta": "2"
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:sand_mix",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "hbm:sand_mix",
+          "properties": {
+            "legacy_meta": "3"
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:sand_mix",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "hbm:sand_mix",
+          "properties": {
+            "legacy_meta": "4"
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:sand_mix",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

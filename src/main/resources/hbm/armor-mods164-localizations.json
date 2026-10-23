@@ -1,0 +1,38 @@
+{
+  "en_us": {
+    "item.back_tesla.name": "Back-Mounted Tesla Coil",
+    "item.lodestone.name": "Lodestone",
+    "item.horseshoe_magnet.name": "Horseshoe Magnet",
+    "item.industrial_magnet.name": "Industrial Magnet",
+    "item.hbm.back_tesla": "Back-Mounted Tesla Coil",
+    "item.hbm.lodestone": "Lodestone",
+    "item.hbm.horseshoe_magnet": "Horseshoe Magnet",
+    "item.hbm.industrial_magnet": "Industrial Magnet",
+    "hbm.key.toggleMagnet": "Toggle Magnet",
+    "tooltip.hbm.tesla_mod.zaps": "Zaps nearby entities (requires full electric set)",
+    "tooltip.hbm.tesla_mod.installed": "%s (zaps nearby entities)",
+    "tooltip.hbm.magnet.attracts": "Attracts nearby items",
+    "tooltip.hbm.magnet.range": "Item attraction range: %s",
+    "tooltip.hbm.magnet.installed": "  %s (Magnetic range: %s)",
+    "message.hbm.magnet.on": "Magnet ON",
+    "message.hbm.magnet.off": "Magnet OFF"
+  },
+  "zh_cn": {
+    "item.back_tesla.name": "背负式特斯拉线圈",
+    "item.lodestone.name": "磁石",
+    "item.horseshoe_magnet.name": "马蹄形磁铁",
+    "item.industrial_magnet.name": "工业磁铁",
+    "item.hbm.back_tesla": "背负式特斯拉线圈",
+    "item.hbm.lodestone": "磁石",
+    "item.hbm.horseshoe_magnet": "马蹄形磁铁",
+    "item.hbm.industrial_magnet": "工业磁铁",
+    "hbm.key.toggleMagnet": "开关磁铁",
+    "tooltip.hbm.tesla_mod.zaps": "电击附近生物（需要完整的电力护甲套装）",
+    "tooltip.hbm.tesla_mod.installed": "%s（电击附近生物）",
+    "tooltip.hbm.magnet.attracts": "吸引附近的物品",
+    "tooltip.hbm.magnet.range": "物品吸引范围：%s",
+    "tooltip.hbm.magnet.installed": "  %s（吸引范围：%s）",
+    "message.hbm.magnet.on": "磁铁已开启",
+    "message.hbm.magnet.off": "磁铁已关闭"
+  }
+}

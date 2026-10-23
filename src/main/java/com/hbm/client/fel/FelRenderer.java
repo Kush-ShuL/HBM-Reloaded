@@ -1,0 +1,13 @@
+package com.hbm.client.fel;
+import com.hbm.client.model.*;import com.hbm.client.wiaj.actors.JarBeams;import com.hbm.machine.fel.*;import com.hbm.multiblock.DummyableBlock;import com.mojang.blaze3d.vertex.PoseStack;import com.mojang.math.Axis;import net.minecraft.client.Minecraft;import net.minecraft.client.renderer.*;import net.minecraft.client.renderer.blockentity.*;import net.minecraft.resources.ResourceLocation;import net.minecraft.world.phys.AABB;
+/** Full original HFR smooth mesh and both depth-writing BeamPronter strands; bounds cover beam and body. */
+public final class FelRenderer implements BlockEntityRenderer<FelBlockEntity> {
+ static final ResourceLocation MODEL=FelContent.id("models/machines/fel.obj"),TEXTURE=FelContent.id("textures/models/machines/fel.png");
+ public FelRenderer(BlockEntityRendererProvider.Context context){}
+ static void model(PoseStack pose,MultiBufferSource buffers,int light,int overlay){LegacyObjRenderer.renderAll(LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL),pose,buffers.getBuffer(RenderType.entityCutout(TEXTURE)),light,overlay,-1,LegacyObjRenderer.Convention.HFR);}
+ @Override public void render(FelBlockEntity machine,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){int yaw=switch(DummyableBlock.facing(machine.getBlockState())){case WEST->90;case SOUTH->180;case EAST->270;default->0;};LegacyContactShadows.render(machine,LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL),new org.joml.Matrix4f().translation(.5F,0,.5F).rotateY((float)Math.toRadians(yaw)),pose,buffers);
+  pose.pushPose();pose.translate(.5,0,.5);pose.mulPose(Axis.YP.rotationDegrees(yaw));model(pose,buffers,light,overlay);int length=machine.distance-3;pose.translate(0,1.5,-1.5);
+  if(machine.visuallyPowered()&&length>0){long time=machine.getLevel().getGameTime();int color=machine.mode.renderedBeamColor==0?java.awt.Color.HSBtoRGB(time/50F,.5F,.1F)&0xffffff:machine.mode.renderedBeamColor;JarBeams.beam(pose,buffers,length+1,color,0,1,0,2,.0625F,true);JarBeams.beam(pose,buffers,length+1,color,(int)(time%1000/2),length/2+1,.0625F,2,.0625F,false);}pose.popPose();
+ }
+ @Override public boolean shouldRenderOffScreen(FelBlockEntity machine){return true;}@Override public int getViewDistance(){return 256;}@Override public AABB getRenderBoundingBox(FelBlockEntity machine){var p=machine.getBlockPos();var end=p.relative(DummyableBlock.facing(machine.getBlockState()),24);return new AABB(p.getX()-5,p.getY(),p.getZ()-5,p.getX()+6,p.getY()+3,p.getZ()+6).minmax(new AABB(end).inflate(1));}
+}

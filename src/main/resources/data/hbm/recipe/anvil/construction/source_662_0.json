@@ -1,0 +1,31 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:platemetal",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_iron",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 1,
+  "tier_upper": -1,
+  "overlay": "SMITHING",
+  "order": 662000000
+}

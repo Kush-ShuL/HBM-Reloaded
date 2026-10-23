@@ -1,0 +1,36 @@
+{
+  "result": {
+    "id": "hbm:ammo_arty",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 4
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:ammo_arty",
+      "components": {
+        "hbm:legacy_metadata": 2
+      },
+      "strict": false
+    },
+    {
+      "item": "hbm:boy_bullet"
+    },
+    {
+      "item": "hbm:boy_target"
+    },
+    {
+      "item": "hbm:boy_shielding"
+    },
+    {
+      "item": "hbm:circuit_controller"
+    },
+    {
+      "item": "hbm:ducttape"
+    }
+  ]
+}

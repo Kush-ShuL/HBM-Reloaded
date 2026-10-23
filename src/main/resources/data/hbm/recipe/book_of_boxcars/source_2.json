@@ -1,0 +1,22 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 2,
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "hbm:legacy_ore_dict/ingotsteel"
+      },
+      "metadata": 32767
+    },
+    {
+      "ingredient": {
+        "item": "hbm:egg_balefire_shard"
+      },
+      "metadata": 0
+    }
+  ],
+  "result": {
+    "id": "hbm:balefire_and_steel",
+    "count": 1
+  }
+}

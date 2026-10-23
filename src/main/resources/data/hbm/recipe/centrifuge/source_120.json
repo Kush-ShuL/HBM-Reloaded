@@ -1,0 +1,44 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/orelead"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "hbm:powder_lead",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lead",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_gold",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ],
+  "lbsm_results": [
+    {
+      "id": "hbm:powder_lead",
+      "count": 2
+    },
+    {
+      "id": "hbm:nugget_bismuth",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_gold",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ]
+}

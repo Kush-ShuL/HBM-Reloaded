@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:ammo_arty",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CIC",
+    "CSC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:cordite"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockiron"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellcopper"
+    }
+  }
+}

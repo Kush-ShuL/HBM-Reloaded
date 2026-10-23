@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:pink_log",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:pink_log",
+              "properties": {
+                "legacy_variant": "0"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "hbm:pink_log",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:pink_log",
+              "properties": {
+                "legacy_variant": "1"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "hbm:pink_log",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:pink_log",
+              "properties": {
+                "legacy_variant": "2"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "hbm:pink_log",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:pink_log",
+              "properties": {
+                "legacy_variant": "3"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "hbm:legacy_metadata": 3
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:drone_crate_provider",
+    "count": 1
+  },
+  "category": "misc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "T",
+    "C",
+    "B"
+  ],
+  "key": {
+    "T": {
+      "item": "hbm:drone_waypoint_request"
+    },
+    "C": {
+      "item": "hbm:crate_steel"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyeorange"
+    }
+  }
+}

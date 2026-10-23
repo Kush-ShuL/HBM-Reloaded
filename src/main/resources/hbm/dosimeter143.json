@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "dosimeter",
+      "id": "hbm:dosimeter",
+      "legacyRegistryId": "hbm:item.dosimeter",
+      "originalClass": "ItemDosimeter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3831
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5519
+          },
+          "expression": "GameRegistry.registerItem(dosimeter, dosimeter.getUnlocalizedName())",
+          "arguments": [
+            "dosimeter",
+            "dosimeter.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.explastic",
+  "duration": 600,
+  "power": 20000,
+  "order": 24,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_plastic",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotrubber"
+      },
+      "count": 8
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "SOLVENT",
+      "amount": 1000,
+      "pressure": 0
+    }
+  ]
+}

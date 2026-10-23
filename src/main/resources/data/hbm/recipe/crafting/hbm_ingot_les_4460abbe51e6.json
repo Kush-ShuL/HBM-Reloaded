@@ -1,0 +1,42 @@
+{
+  "result": {
+    "id": "hbm:ingot_les",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetneptunium237"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetneptunium237"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetneptunium237"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetneptunium237"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    }
+  ]
+}

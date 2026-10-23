@@ -1,0 +1,1264 @@
+{
+  "schemaVersion": 1,
+  "source": "X5846 util/MobUtil.java",
+  "pools": {
+    "slotPoolCommonS": [
+      {
+        "slot": 4,
+        "nullEntryWeight": 8000,
+        "entries": [
+          {
+            "symbol": "gas_mask_m65",
+            "weight": 16
+          },
+          {
+            "symbol": "gas_mask_olde",
+            "weight": 12
+          },
+          {
+            "symbol": "mask_of_infamy",
+            "weight": 8
+          },
+          {
+            "symbol": "gas_mask_mono",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_helmet",
+            "weight": 32
+          },
+          {
+            "symbol": "no9",
+            "weight": 16
+          },
+          {
+            "symbol": "cobalt_helmet",
+            "weight": 2
+          },
+          {
+            "symbol": "rag_piss",
+            "weight": 1
+          },
+          {
+            "symbol": "hat",
+            "weight": 1
+          },
+          {
+            "symbol": "alloy_helmet",
+            "weight": 2
+          },
+          {
+            "symbol": "titanium_helmet",
+            "weight": 4
+          },
+          {
+            "symbol": "steel_helmet",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "nullEntryWeight": 7000,
+        "entries": [
+          {
+            "symbol": "starmetal_plate",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "robes_plate",
+            "weight": 32
+          },
+          {
+            "symbol": "jackt",
+            "weight": 32
+          },
+          {
+            "symbol": "jackt2",
+            "weight": 32
+          },
+          {
+            "symbol": "alloy_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_plate",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "nullEntryWeight": 7000,
+        "entries": [
+          {
+            "symbol": "zirconium_legs",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_legs",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_legs",
+            "weight": 16
+          },
+          {
+            "symbol": "titanium_legs",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_legs",
+            "weight": 32
+          },
+          {
+            "symbol": "alloy_legs",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "nullEntryWeight": 7000,
+        "entries": [
+          {
+            "symbol": "robes_boots",
+            "weight": 32
+          },
+          {
+            "symbol": "steel_boots",
+            "weight": 16
+          },
+          {
+            "symbol": "cobalt_boots",
+            "weight": 2
+          },
+          {
+            "symbol": "alloy_boots",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 0,
+        "nullEntryWeight": 10000,
+        "entries": [
+          {
+            "symbol": "pipe_lead",
+            "weight": 30
+          },
+          {
+            "symbol": "crowbar",
+            "weight": 25
+          },
+          {
+            "symbol": "geiger_counter",
+            "weight": 20
+          },
+          {
+            "symbol": "reer_graar",
+            "weight": 16
+          },
+          {
+            "symbol": "steel_pickaxe",
+            "weight": 12
+          },
+          {
+            "symbol": "stopsign",
+            "weight": 10
+          },
+          {
+            "symbol": "sopsign",
+            "weight": 8
+          },
+          {
+            "symbol": "chernobylsign",
+            "weight": 6
+          },
+          {
+            "symbol": "steel_sword",
+            "weight": 15
+          },
+          {
+            "symbol": "titanium_sword",
+            "weight": 8
+          },
+          {
+            "symbol": "lead_gavel",
+            "weight": 4
+          },
+          {
+            "symbol": "wrench_flipped",
+            "weight": 2
+          },
+          {
+            "symbol": "wrench",
+            "weight": 20
+          }
+        ]
+      }
+    ],
+    "slotPoolRangedS": [
+      {
+        "slot": 4,
+        "nullEntryWeight": 8000,
+        "entries": [
+          {
+            "symbol": "gas_mask_m65",
+            "weight": 16
+          },
+          {
+            "symbol": "gas_mask_olde",
+            "weight": 12
+          },
+          {
+            "symbol": "mask_of_infamy",
+            "weight": 8
+          },
+          {
+            "symbol": "gas_mask_mono",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_helmet",
+            "weight": 32
+          },
+          {
+            "symbol": "no9",
+            "weight": 16
+          },
+          {
+            "symbol": "rag_piss",
+            "weight": 1
+          },
+          {
+            "symbol": "goggles",
+            "weight": 1
+          },
+          {
+            "symbol": "alloy_helmet",
+            "weight": 2
+          },
+          {
+            "symbol": "titanium_helmet",
+            "weight": 4
+          },
+          {
+            "symbol": "steel_helmet",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "nullEntryWeight": 7000,
+        "entries": [
+          {
+            "symbol": "starmetal_plate",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "alloy_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_plate",
+            "weight": 8
+          },
+          {
+            "symbol": "titanium_plate",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "nullEntryWeight": 7000,
+        "entries": [
+          {
+            "symbol": "zirconium_legs",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_legs",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_legs",
+            "weight": 16
+          },
+          {
+            "symbol": "titanium_legs",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_legs",
+            "weight": 32
+          },
+          {
+            "symbol": "alloy_legs",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "nullEntryWeight": 10000,
+        "entries": [
+          {
+            "symbol": "robes_boots",
+            "weight": 32
+          },
+          {
+            "symbol": "steel_boots",
+            "weight": 16
+          },
+          {
+            "symbol": "cobalt_boots",
+            "weight": 2
+          },
+          {
+            "symbol": "alloy_boots",
+            "weight": 2
+          },
+          {
+            "symbol": "titanium_boots",
+            "weight": 6
+          }
+        ]
+      }
+    ],
+    "slotPoolCommon": [
+      {
+        "slot": 4,
+        "nullEntryWeight": 0,
+        "entries": [
+          {
+            "symbol": "gas_mask_m65",
+            "weight": 16
+          },
+          {
+            "symbol": "gas_mask_olde",
+            "weight": 12
+          },
+          {
+            "symbol": "mask_of_infamy",
+            "weight": 8
+          },
+          {
+            "symbol": "gas_mask_mono",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_helmet",
+            "weight": 32
+          },
+          {
+            "symbol": "no9",
+            "weight": 16
+          },
+          {
+            "symbol": "cobalt_helmet",
+            "weight": 2
+          },
+          {
+            "symbol": "rag_piss",
+            "weight": 1
+          },
+          {
+            "symbol": "hat",
+            "weight": 1
+          },
+          {
+            "symbol": "alloy_helmet",
+            "weight": 2
+          },
+          {
+            "symbol": "titanium_helmet",
+            "weight": 4
+          },
+          {
+            "symbol": "steel_helmet",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "nullEntryWeight": 10,
+        "entries": [
+          {
+            "symbol": "starmetal_plate",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "robes_plate",
+            "weight": 32
+          },
+          {
+            "symbol": "jackt",
+            "weight": 32
+          },
+          {
+            "symbol": "jackt2",
+            "weight": 32
+          },
+          {
+            "symbol": "alloy_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_plate",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "nullEntryWeight": 20,
+        "entries": [
+          {
+            "symbol": "zirconium_legs",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_legs",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_legs",
+            "weight": 16
+          },
+          {
+            "symbol": "titanium_legs",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_legs",
+            "weight": 32
+          },
+          {
+            "symbol": "alloy_legs",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "nullEntryWeight": 10,
+        "entries": [
+          {
+            "symbol": "robes_boots",
+            "weight": 32
+          },
+          {
+            "symbol": "steel_boots",
+            "weight": 16
+          },
+          {
+            "symbol": "cobalt_boots",
+            "weight": 2
+          },
+          {
+            "symbol": "alloy_boots",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 0,
+        "nullEntryWeight": 1000,
+        "entries": [
+          {
+            "symbol": "pipe_lead",
+            "weight": 30
+          },
+          {
+            "symbol": "crowbar",
+            "weight": 25
+          },
+          {
+            "symbol": "geiger_counter",
+            "weight": 20
+          },
+          {
+            "symbol": "reer_graar",
+            "weight": 16
+          },
+          {
+            "symbol": "steel_pickaxe",
+            "weight": 12
+          },
+          {
+            "symbol": "stopsign",
+            "weight": 10
+          },
+          {
+            "symbol": "sopsign",
+            "weight": 8
+          },
+          {
+            "symbol": "chernobylsign",
+            "weight": 6
+          },
+          {
+            "symbol": "steel_sword",
+            "weight": 15
+          },
+          {
+            "symbol": "titanium_sword",
+            "weight": 8
+          },
+          {
+            "symbol": "lead_gavel",
+            "weight": 4
+          },
+          {
+            "symbol": "wrench_flipped",
+            "weight": 2
+          },
+          {
+            "symbol": "wrench",
+            "weight": 20
+          }
+        ]
+      }
+    ],
+    "slotPoolRanged": [
+      {
+        "slot": 4,
+        "nullEntryWeight": 0,
+        "entries": [
+          {
+            "symbol": "gas_mask_m65",
+            "weight": 16
+          },
+          {
+            "symbol": "gas_mask_olde",
+            "weight": 12
+          },
+          {
+            "symbol": "mask_of_infamy",
+            "weight": 8
+          },
+          {
+            "symbol": "gas_mask_mono",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_helmet",
+            "weight": 32
+          },
+          {
+            "symbol": "no9",
+            "weight": 16
+          },
+          {
+            "symbol": "rag_piss",
+            "weight": 1
+          },
+          {
+            "symbol": "goggles",
+            "weight": 1
+          },
+          {
+            "symbol": "alloy_helmet",
+            "weight": 2
+          },
+          {
+            "symbol": "titanium_helmet",
+            "weight": 4
+          },
+          {
+            "symbol": "steel_helmet",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "nullEntryWeight": 10,
+        "entries": [
+          {
+            "symbol": "starmetal_plate",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "alloy_plate",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_plate",
+            "weight": 8
+          },
+          {
+            "symbol": "titanium_plate",
+            "weight": 4
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "nullEntryWeight": 10,
+        "entries": [
+          {
+            "symbol": "zirconium_legs",
+            "weight": 1
+          },
+          {
+            "symbol": "cobalt_legs",
+            "weight": 2
+          },
+          {
+            "symbol": "steel_legs",
+            "weight": 16
+          },
+          {
+            "symbol": "titanium_legs",
+            "weight": 8
+          },
+          {
+            "symbol": "robes_legs",
+            "weight": 32
+          },
+          {
+            "symbol": "alloy_legs",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "nullEntryWeight": 10,
+        "entries": [
+          {
+            "symbol": "robes_boots",
+            "weight": 32
+          },
+          {
+            "symbol": "steel_boots",
+            "weight": 16
+          },
+          {
+            "symbol": "cobalt_boots",
+            "weight": 2
+          },
+          {
+            "symbol": "alloy_boots",
+            "weight": 2
+          },
+          {
+            "symbol": "titanium_boots",
+            "weight": 6
+          }
+        ]
+      }
+    ],
+    "slotPoolAdv": [
+      {
+        "slot": 4,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "security_helmet",
+            "weight": 10
+          },
+          {
+            "symbol": "t51_helmet",
+            "weight": 4
+          },
+          {
+            "symbol": "asbestos_helmet",
+            "weight": 12
+          },
+          {
+            "symbol": "liquidator_helmet",
+            "weight": 4
+          },
+          {
+            "symbol": "no9",
+            "weight": 12
+          },
+          {
+            "symbol": "hazmat_helmet",
+            "weight": 6
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "liquidator_plate",
+            "weight": 4
+          },
+          {
+            "symbol": "security_plate",
+            "weight": 8
+          },
+          {
+            "symbol": "asbestos_plate",
+            "weight": 12
+          },
+          {
+            "symbol": "t51_plate",
+            "weight": 4
+          },
+          {
+            "symbol": "hazmat_plate",
+            "weight": 6
+          },
+          {
+            "symbol": "steel_plate",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "liquidator_legs",
+            "weight": 4
+          },
+          {
+            "symbol": "security_legs",
+            "weight": 8
+          },
+          {
+            "symbol": "asbestos_legs",
+            "weight": 12
+          },
+          {
+            "symbol": "t51_legs",
+            "weight": 4
+          },
+          {
+            "symbol": "hazmat_legs",
+            "weight": 6
+          },
+          {
+            "symbol": "steel_legs",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "liquidator_boots",
+            "weight": 4
+          },
+          {
+            "symbol": "security_boots",
+            "weight": 8
+          },
+          {
+            "symbol": "asbestos_boots",
+            "weight": 12
+          },
+          {
+            "symbol": "t51_boots",
+            "weight": 4
+          },
+          {
+            "symbol": "hazmat_boots",
+            "weight": 6
+          },
+          {
+            "symbol": "robes_boots",
+            "weight": 8
+          }
+        ]
+      },
+      {
+        "slot": 0,
+        "nullEntryWeight": 500,
+        "entries": [
+          {
+            "symbol": "pipe_lead",
+            "weight": 20
+          },
+          {
+            "symbol": "crowbar",
+            "weight": 10
+          },
+          {
+            "symbol": "geiger_counter",
+            "weight": 10
+          },
+          {
+            "symbol": "reer_graar",
+            "weight": 20
+          },
+          {
+            "symbol": "wrench_flipped",
+            "weight": 20
+          },
+          {
+            "symbol": "stopsign",
+            "weight": 16
+          },
+          {
+            "symbol": "sopsign",
+            "weight": 4
+          },
+          {
+            "symbol": "chernobylsign",
+            "weight": 16
+          },
+          {
+            "symbol": "titanium_sword",
+            "weight": 18
+          },
+          {
+            "symbol": "lead_gavel",
+            "weight": 8
+          },
+          {
+            "symbol": "wrench",
+            "weight": 20
+          }
+        ]
+      }
+    ],
+    "slotPoolGuns": [
+      {
+        "slot": 0.3,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "gun_light_revolver",
+            "weight": 16
+          },
+          {
+            "symbol": "gun_greasegun",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_maresleg",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 1.0,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "gun_light_revolver",
+            "weight": 6
+          },
+          {
+            "symbol": "gun_greasegun",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_maresleg",
+            "weight": 4
+          },
+          {
+            "symbol": "gun_henry",
+            "weight": 6
+          }
+        ]
+      },
+      {
+        "slot": 3.0,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "gun_uzi",
+            "weight": 10
+          },
+          {
+            "symbol": "gun_maresleg",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_henry",
+            "weight": 12
+          },
+          {
+            "symbol": "gun_heavy_revolver",
+            "weight": 4
+          },
+          {
+            "symbol": "gun_flaregun",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "slot": 5.0,
+        "nullEntryWeight": null,
+        "entries": [
+          {
+            "symbol": "gun_am180",
+            "weight": 6
+          },
+          {
+            "symbol": "gun_uzi",
+            "weight": 10
+          },
+          {
+            "symbol": "gun_spas12",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_henry_lincoln",
+            "weight": 2
+          },
+          {
+            "symbol": "gun_heavy_revolver",
+            "weight": 12
+          },
+          {
+            "symbol": "gun_flaregun",
+            "weight": 4
+          },
+          {
+            "symbol": "gun_flamer",
+            "weight": 2
+          }
+        ]
+      }
+    ],
+    "slotPoolGunsTier1": [
+      {
+        "slot": 0,
+        "nullEntryWeight": 0,
+        "entries": [
+          {
+            "symbol": "gun_light_revolver",
+            "weight": 16
+          },
+          {
+            "symbol": "gun_greasegun",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_maresleg",
+            "weight": 2
+          },
+          {
+            "symbol": "gun_flaregun",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "slotPoolGunsTier2": [
+      {
+        "slot": 0,
+        "nullEntryWeight": 0,
+        "entries": [
+          {
+            "symbol": "gun_uzi",
+            "weight": 12
+          },
+          {
+            "symbol": "gun_maresleg",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_henry",
+            "weight": 12
+          },
+          {
+            "symbol": "gun_heavy_revolver",
+            "weight": 8
+          },
+          {
+            "symbol": "gun_flaregun",
+            "weight": 4
+          },
+          {
+            "symbol": "gun_star_f",
+            "weight": 8
+          }
+        ]
+      }
+    ],
+    "slotPoolGunsTier3": [
+      {
+        "slot": 0,
+        "nullEntryWeight": 0,
+        "entries": [
+          {
+            "symbol": "gun_g3",
+            "weight": 25
+          },
+          {
+            "symbol": "gun_spas12",
+            "weight": 20
+          },
+          {
+            "symbol": "gun_carbine",
+            "weight": 15
+          },
+          {
+            "symbol": "gun_star_f",
+            "weight": 20
+          },
+          {
+            "symbol": "gun_am180",
+            "weight": 6
+          },
+          {
+            "symbol": "gun_amat",
+            "weight": 5
+          }
+        ]
+      }
+    ],
+    "slotPoolMasks": [],
+    "slotPoolHelms": [],
+    "slotPoolTierArmor": [],
+    "slotPoolMelee": []
+  },
+  "copyPools": {
+    "slotPoolAdvRanged": {
+      "copyOf": "slotPoolAdv",
+      "removeSlots": [
+        0
+      ]
+    }
+  },
+  "itemIds": {
+    "alloy_boots": "hbm:alloy_boots",
+    "alloy_helmet": "hbm:alloy_helmet",
+    "alloy_legs": "hbm:alloy_legs",
+    "alloy_plate": "hbm:alloy_plate",
+    "asbestos_boots": "hbm:asbestos_boots",
+    "asbestos_helmet": "hbm:asbestos_helmet",
+    "asbestos_legs": "hbm:asbestos_legs",
+    "asbestos_plate": "hbm:asbestos_plate",
+    "big_sword": "hbm:big_sword",
+    "chernobylsign": "hbm:chernobylsign",
+    "clay_tablet": "hbm:clay_tablet",
+    "cobalt_boots": "hbm:cobalt_boots",
+    "cobalt_helmet": "hbm:cobalt_helmet",
+    "cobalt_legs": "hbm:cobalt_legs",
+    "cobalt_plate": "hbm:cobalt_plate",
+    "crowbar": "hbm:crowbar",
+    "gas_mask_filter": "hbm:gas_mask_filter",
+    "gas_mask_m65": "hbm:gas_mask_m65",
+    "gas_mask_mono": "hbm:gas_mask_mono",
+    "gas_mask_olde": "hbm:gas_mask_olde",
+    "geiger_counter": "hbm:geiger_counter",
+    "goggles": "hbm:goggles",
+    "gun_am180": "hbm:gun_am180",
+    "gun_amat": "hbm:gun_amat",
+    "gun_bolter": "hbm:gun_bolter",
+    "gun_carbine": "hbm:gun_carbine",
+    "gun_flamer": "hbm:gun_flamer",
+    "gun_flaregun": "hbm:gun_flaregun",
+    "gun_g3": "hbm:gun_g3",
+    "gun_greasegun": "hbm:gun_greasegun",
+    "gun_hangman": "hbm:gun_hangman",
+    "gun_heavy_revolver": "hbm:gun_heavy_revolver",
+    "gun_henry": "hbm:gun_henry",
+    "gun_henry_lincoln": "hbm:gun_henry_lincoln",
+    "gun_light_revolver": "hbm:gun_light_revolver",
+    "gun_maresleg": "hbm:gun_maresleg",
+    "gun_spas12": "hbm:gun_spas12",
+    "gun_star_f": "hbm:gun_star_f",
+    "gun_uzi": "hbm:gun_uzi",
+    "hat": "hbm:nossy_hat",
+    "hazmat_boots": "hbm:hazmat_boots",
+    "hazmat_helmet": "hbm:hazmat_helmet",
+    "hazmat_legs": "hbm:hazmat_legs",
+    "hazmat_plate": "hbm:hazmat_plate",
+    "item_secret": "hbm:item_secret",
+    "jackt": "hbm:jackt",
+    "jackt2": "hbm:jackt2",
+    "key": "hbm:key",
+    "lead_gavel": "hbm:lead_gavel",
+    "liquidator_boots": "hbm:liquidator_boots",
+    "liquidator_helmet": "hbm:liquidator_helmet",
+    "liquidator_legs": "hbm:liquidator_legs",
+    "liquidator_plate": "hbm:liquidator_plate",
+    "mask_of_infamy": "hbm:mask_of_infamy",
+    "no9": "hbm:no9",
+    "pipe_lead": "hbm:weapon_pipe_lead",
+    "rag_piss": "hbm:rag_piss",
+    "reer_graar": "hbm:reer_graar",
+    "robes_boots": "hbm:robes_boots",
+    "robes_helmet": "hbm:robes_helmet",
+    "robes_legs": "hbm:robes_legs",
+    "robes_plate": "hbm:robes_plate",
+    "security_boots": "hbm:security_boots",
+    "security_helmet": "hbm:security_helmet",
+    "security_legs": "hbm:security_legs",
+    "security_plate": "hbm:security_plate",
+    "sopsign": "hbm:sopsign",
+    "starmetal_plate": "hbm:starmetal_plate",
+    "steel_boots": "hbm:steel_boots",
+    "steel_helmet": "hbm:steel_helmet",
+    "steel_legs": "hbm:steel_legs",
+    "steel_pickaxe": "hbm:steel_pickaxe",
+    "steel_plate": "hbm:steel_plate",
+    "steel_sword": "hbm:steel_sword",
+    "stopsign": "hbm:stopsign",
+    "t51_boots": "hbm:t51_boots",
+    "t51_helmet": "hbm:t51_helmet",
+    "t51_legs": "hbm:t51_legs",
+    "t51_plate": "hbm:t51_plate",
+    "titanium_boots": "hbm:titanium_boots",
+    "titanium_helmet": "hbm:titanium_helmet",
+    "titanium_legs": "hbm:titanium_legs",
+    "titanium_plate": "hbm:titanium_plate",
+    "titanium_sword": "hbm:titanium_sword",
+    "wrench": "hbm:wrench",
+    "wrench_flipped": "hbm:wrench_flipped",
+    "zirconium_legs": "hbm:zirconium_legs"
+  },
+  "blockIds": {
+    "block_steel": "hbm:block_steel",
+    "block_electrical_scrap": "hbm:block_electrical_scrap",
+    "charge_c4": "hbm:charge_c4",
+    "skeleton_holder": "hbm:skeleton_holder",
+    "crate_steel": "hbm:crate_steel",
+    "pedestal": "hbm:pedestal",
+    "wand_logic": "hbm:wand_logic",
+    "logic_block": "hbm:logic_block",
+    "logic_block_invis": "hbm:logic_block_invis"
+  },
+  "enabledTables": {
+    "actions": [
+      {
+        "id": "FODDER_WAVE",
+        "function": "FODDER_WAVE"
+      },
+      {
+        "id": "POWER_LOCK",
+        "function": "POWER_LOCK"
+      },
+      {
+        "id": "COLLAPSE_ROOF_RAD_5",
+        "function": "COLLAPSE_ROOF_RAD_5"
+      },
+      {
+        "id": "COLLAPSE_ROOF_RAD_10",
+        "function": "COLLAPSE_ROOF_RAD_10"
+      },
+      {
+        "id": "BOMB_TRAP",
+        "function": "BOMB_TRAP"
+      },
+      {
+        "id": "BOMB_CRANE",
+        "function": "BOMB_CRANE"
+      },
+      {
+        "id": "DEAD_GUY_CRANE",
+        "function": "DEAD_GUY_CRANE"
+      },
+      {
+        "id": "SKELETON_GUN_TIER_1",
+        "function": "SKELETONS_GUN_TIER_1"
+      },
+      {
+        "id": "SKELETON_GUN_TIER_2",
+        "function": "SKELETONS_GUN_TIER_2"
+      },
+      {
+        "id": "SKELETON_GUN_TIER_3",
+        "function": "SKELETONS_GUN_TIER_3"
+      },
+      {
+        "id": "ZOMBIE_TIER_1",
+        "function": "ZOMBIES_TIER_1"
+      },
+      {
+        "id": "ZOMBIE_TIER_2",
+        "function": "ZOMBIES_TIER_2"
+      },
+      {
+        "id": "ABERRATOR",
+        "function": "PHASE_ABERRATOR"
+      },
+      {
+        "id": "PUZZLE_TEST",
+        "function": "PUZZLE_TEST"
+      },
+      {
+        "id": "MISSILE_STRIKE",
+        "function": "MISSILE_STRIKE"
+      },
+      {
+        "id": "IRRADIATE_ENTITIES_AOE",
+        "function": "RAD_CONTAINMENT_SYSTEM"
+      }
+    ],
+    "conditions": [
+      {
+        "id": "EMPTY",
+        "function": "EMPTY"
+      },
+      {
+        "id": "PLAYER_CUBE_3",
+        "function": "PLAYER_CUBE_3"
+      },
+      {
+        "id": "PLAYER_CUBE_5",
+        "function": "PLAYER_CUBE_5"
+      },
+      {
+        "id": "PLAYER_CUBE_25",
+        "function": "PLAYER_CUBE_25"
+      },
+      {
+        "id": "BOMB_CRANE",
+        "function": "BOMB_CRANE"
+      },
+      {
+        "id": "ABERRATOR",
+        "function": "ABERRATOR"
+      },
+      {
+        "id": "REDSTONE",
+        "function": "REDSTONE"
+      },
+      {
+        "id": "PUZZLE_TEST",
+        "function": "PUZZLE_TEST"
+      }
+    ],
+    "interactions": [
+      {
+        "id": "POWER_LOCK",
+        "function": "POWER_LOCK"
+      },
+      {
+        "id": "TEST",
+        "function": "TEST"
+      },
+      {
+        "id": "RADAWAY_INJECTOR",
+        "function": "RAD_CONTAINMENT_SYSTEM"
+      }
+    ]
+  }
+}

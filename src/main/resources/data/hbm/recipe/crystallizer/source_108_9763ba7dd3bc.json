@@ -1,0 +1,44 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.108.44",
+  "duration": 100,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:plant_item",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      },
+      "count": 10
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "RADIOSOLVENT",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_cadmium",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:plant_item",
+  "order": 44
+}

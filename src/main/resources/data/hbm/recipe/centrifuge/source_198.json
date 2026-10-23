@@ -1,0 +1,26 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/orecobalt"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "hbm:powder_cobalt",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_copper",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ]
+}

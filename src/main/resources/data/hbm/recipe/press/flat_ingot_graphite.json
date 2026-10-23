@@ -1,0 +1,12 @@
+{
+  "type": "hbm:press",
+  "stamp": "flat",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/gemanycoke"
+  },
+  "result": {
+    "id": "hbm:ingot_graphite",
+    "count": 1
+  }
+}

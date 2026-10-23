@@ -1,0 +1,39 @@
+{
+  "result": {
+    "id": "hbm:bj_plate_jetpack",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NFN",
+    "TPT",
+    "ICI"
+  ],
+  "key": {
+    "N": {
+      "item": "hbm:plate_armor_lunar"
+    },
+    "F": {
+      "item": "hbm:fins_quad_titanium"
+    },
+    "T": {
+      "type": "neoforge:components",
+      "items": "hbm:fluid_tank_full",
+      "components": {
+        "hbm:legacy_metadata": 40,
+        "hbm:fluid_type": 40
+      },
+      "strict": false
+    },
+    "P": {
+      "item": "hbm:bj_plate"
+    },
+    "I": {
+      "item": "hbm:mp_thruster_10_xenon"
+    },
+    "C": {
+      "item": "hbm:crystal_phosphorus"
+    }
+  }
+}

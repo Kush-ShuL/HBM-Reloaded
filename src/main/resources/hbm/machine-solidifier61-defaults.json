@@ -1,0 +1,478 @@
+{
+  "recipes": [
+    {
+      "input": [
+        "WATER",
+        1000
+      ],
+      "output": [
+        "minecraft:ice",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "LAVA",
+        1000
+      ],
+      "output": [
+        "minecraft:obsidian",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "MERCURY",
+        125
+      ],
+      "output": [
+        "hbm:nugget_mercury",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "BIOGAS",
+        250
+      ],
+      "output": [
+        "hbm:biomass_compressed",
+        4,
+        0
+      ]
+    },
+    {
+      "input": [
+        "SALIENT",
+        1280
+      ],
+      "output": [
+        "hbm:bio_wafer",
+        8,
+        0
+      ]
+    },
+    {
+      "input": [
+        "ENDERJUICE",
+        100
+      ],
+      "output": [
+        "minecraft:ender_pearl",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "WATZ",
+        1000
+      ],
+      "output": [
+        "hbm:ingot_mud",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "REDMUD",
+        450
+      ],
+      "output": [
+        "minecraft:iron_ingot",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "SODIUM",
+        100
+      ],
+      "output": [
+        "hbm:powder_sodium",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "LEAD",
+        100
+      ],
+      "output": [
+        "hbm:ingot_lead",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "SLOP",
+        250
+      ],
+      "output": [
+        "hbm:ore_oil_sand",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "OIL",
+        200
+      ],
+      "output": [
+        "hbm:oil_tar_crude",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "CRACKOIL",
+        200
+      ],
+      "output": [
+        "hbm:oil_tar_crack",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "COALOIL",
+        200
+      ],
+      "output": [
+        "hbm:oil_tar_coal",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "HEAVYOIL",
+        150
+      ],
+      "output": [
+        "hbm:oil_tar_crude",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "HEAVYOIL_VACUUM",
+        150
+      ],
+      "output": [
+        "hbm:oil_tar_crude",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "BITUMEN",
+        100
+      ],
+      "output": [
+        "hbm:oil_tar_crude",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "COALCREOSOTE",
+        200
+      ],
+      "output": [
+        "hbm:oil_tar_coal",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "WOODOIL",
+        1000
+      ],
+      "output": [
+        "hbm:oil_tar_wood",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "LUBRICANT",
+        100
+      ],
+      "output": [
+        "hbm:oil_tar_paraffin",
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "BALEFIRE",
+        250
+      ],
+      "output": [
+        "hbm:solid_fuel_bf",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "SMEAR",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "HEATINGOIL",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "HEATINGOIL_VACUUM",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "RECLAIMED",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "PETROIL",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "NAPHTHA",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "NAPHTHA_CRACK",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "DIESEL",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "DIESEL_REFORM",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "DIESEL_CRACK",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "DIESEL_CRACK_REFORM",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "LIGHTOIL",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "LIGHTOIL_CRACK",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "LIGHTOIL_VACUUM",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "KEROSENE",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "KEROSENE_REFORM",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "SOURGAS",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "REFORMGAS",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "SYNGAS",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "PETROLEUM",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "LPG",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "BIOFUEL",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "AROMATICS",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "UNSATURATEDS",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "REFORMATE",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "XYLENE",
+      "tuPerSolidFuel": 1440000,
+      "output": [
+        "hbm:solid_fuel",
+        1,
+        0
+      ]
+    },
+    {
+      "automatic": "BALEFIRE",
+      "tuPerSolidFuel": 24000000,
+      "output": [
+        "hbm:solid_fuel_bf",
+        1,
+        0
+      ]
+    }
+  ]
+}

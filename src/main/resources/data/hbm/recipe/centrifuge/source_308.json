@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_redstone"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "hbm:nugget_mercury",
+      "count": 3
+    }
+  ]
+}

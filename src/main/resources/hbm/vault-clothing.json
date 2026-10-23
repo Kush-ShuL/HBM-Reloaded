@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "gas_mask_mono",
+      "id": "hbm:gas_mask_mono",
+      "legacyRegistryId": "hbm:item.gas_mask_mono",
+      "originalClass": "ArmorGasMask",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:29",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 165
+    },
+    {
+      "kind": "item",
+      "symbol": "goggles",
+      "id": "hbm:goggles",
+      "legacyRegistryId": "hbm:item.goggles",
+      "originalClass": "ArmorModel",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:25",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 165
+    },
+    {
+      "kind": "item",
+      "symbol": "jackt",
+      "id": "hbm:jackt",
+      "legacyRegistryId": "hbm:item.jackt",
+      "originalClass": "ModArmor",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:335",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 480
+    },
+    {
+      "kind": "item",
+      "symbol": "jackt2",
+      "id": "hbm:jackt2",
+      "legacyRegistryId": "hbm:item.jackt2",
+      "originalClass": "ModArmor",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:336",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 480
+    }
+  ],
+  "recipes": [
+    "hbm:crafting/hbm_goggles_9297d7946bf0",
+    "hbm:crafting/hbm_gas_mask_mono_9cd1035c4c3f",
+    "hbm:crafting/hbm_jackt_afb2622b3da3",
+    "hbm:crafting/hbm_jackt2_26a09540052e"
+  ]
+}

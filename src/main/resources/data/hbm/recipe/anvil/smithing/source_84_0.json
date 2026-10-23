@@ -1,0 +1,33 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 3,
+  "result": {
+    "id": "hbm:meteorite_sword_reforged",
+    "count": 1
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:meteorite_sword_seared",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:ingot_meteorite_forged",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      }
+    },
+    "count": 1
+  },
+  "kind": "hot",
+  "order": 84000000
+}

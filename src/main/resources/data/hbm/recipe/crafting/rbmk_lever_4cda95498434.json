@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "R",
+    "C",
+    "B"
+  ],
+  "key": {
+    "R": {
+      "item": "hbm:radio_torch_sender"
+    },
+    "B": {
+      "item": "hbm:rbmk_display_blank"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_lever",
+    "count": 1
+  }
+}

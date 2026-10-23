@@ -1,0 +1,42 @@
+{
+  "compact_launcher": {
+    "model": "hbm:models/compact_launcher.obj",
+    "texture": "hbm:textures/models/compact_launcher.png"
+  },
+  "launch_table_base": {
+    "model": "hbm:models/launch_table/launch_table_base.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table.png"
+  },
+  "launch_table_small_pad": {
+    "model": "hbm:models/launch_table/launch_table_small_pad.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_small_pad.png"
+  },
+  "launch_table_large_pad": {
+    "model": "hbm:models/launch_table/launch_table_large_pad.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_large_pad.png"
+  },
+  "launch_table_small_scaffold_base": {
+    "model": "hbm:models/launch_table/launch_table_small_scaffold_base.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_small_scaffold_base.png"
+  },
+  "launch_table_small_scaffold_connector": {
+    "model": "hbm:models/launch_table/launch_table_small_scaffold_connector.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_small_scaffold_connector.png"
+  },
+  "launch_table_small_scaffold_empty": {
+    "model": "hbm:models/launch_table/launch_table_small_scaffold_empty.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_small_scaffold_base.png"
+  },
+  "launch_table_large_scaffold_base": {
+    "model": "hbm:models/launch_table/launch_table_large_scaffold_base.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_large_scaffold_base.png"
+  },
+  "launch_table_large_scaffold_connector": {
+    "model": "hbm:models/launch_table/launch_table_large_scaffold_connector.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_large_scaffold_connector.png"
+  },
+  "launch_table_large_scaffold_empty": {
+    "model": "hbm:models/launch_table/launch_table_large_scaffold_empty.obj",
+    "texture": "hbm:textures/models/missile_parts/launch_table_large_scaffold_base.png"
+  }
+}

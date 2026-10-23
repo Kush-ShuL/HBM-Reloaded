@@ -1,0 +1,40 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldosmiridium",
+  "duration": 3000,
+  "power": 50000000,
+  "ignition_temp": 500000,
+  "order": 23,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 7699
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripleosmiridium"
+      },
+      "count": 2
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "REFORMGAS",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

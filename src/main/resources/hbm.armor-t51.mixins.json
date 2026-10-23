@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.client.armor.t51.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "T51ArmorLayerMixin",
+    "T51HatMixin",
+    "T51MovementAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

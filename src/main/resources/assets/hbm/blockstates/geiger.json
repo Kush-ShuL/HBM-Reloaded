@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hbm:block/geiger"
+    },
+    "facing=south": {
+      "model": "hbm:block/geiger"
+    },
+    "facing=west": {
+      "model": "hbm:block/geiger"
+    },
+    "facing=east": {
+      "model": "hbm:block/geiger"
+    }
+  }
+}

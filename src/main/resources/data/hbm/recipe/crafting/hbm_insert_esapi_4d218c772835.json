@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PKP",
+    "DSD",
+    "PKP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "K": {
+      "item": "hbm:insert_sapi"
+    },
+    "D": {
+      "item": "hbm:ducttape"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+    }
+  },
+  "result": {
+    "id": "hbm:insert_esapi",
+    "count": 1
+  }
+}

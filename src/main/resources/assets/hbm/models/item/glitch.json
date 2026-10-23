@@ -1,0 +1,116 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/glitch_1"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.05555555555555555
+      },
+      "model": "hbm:item/glitch_1"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.1111111111111111
+      },
+      "model": "hbm:item/glitch_2"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.16666666666666666
+      },
+      "model": "hbm:item/glitch_3"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.2222222222222222
+      },
+      "model": "hbm:item/glitch_4"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.2777777777777778
+      },
+      "model": "hbm:item/glitch_5"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.3333333333333333
+      },
+      "model": "hbm:item/glitch_6"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.3888888888888889
+      },
+      "model": "hbm:item/glitch_7"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.4444444444444444
+      },
+      "model": "hbm:item/glitch_8"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.5
+      },
+      "model": "hbm:item/glitch_9"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.5555555555555556
+      },
+      "model": "hbm:item/glitch_10"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.6111111111111112
+      },
+      "model": "hbm:item/glitch_11"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.6666666666666666
+      },
+      "model": "hbm:item/glitch_12"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.7222222222222222
+      },
+      "model": "hbm:item/glitch_13"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.7777777777777778
+      },
+      "model": "hbm:item/glitch_14"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.8333333333333334
+      },
+      "model": "hbm:item/glitch_15"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.8888888888888888
+      },
+      "model": "hbm:item/glitch_16"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 0.9444444444444444
+      },
+      "model": "hbm:item/glitch_17"
+    },
+    {
+      "predicate": {
+        "hbm:glitch_fate": 1.0
+      },
+      "model": "hbm:item/glitch_18"
+    }
+  ]
+}

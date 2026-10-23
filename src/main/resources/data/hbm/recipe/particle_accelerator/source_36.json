@@ -1,0 +1,27 @@
+{
+  "type": "hbm:particle_accelerator",
+  "input1": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_amat"
+      }
+    },
+    "count": 1
+  },
+  "input2": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_amat"
+      }
+    },
+    "count": 1
+  },
+  "momentum": 400,
+  "output1": {
+    "id": "hbm:particle_aschrab",
+    "count": 1
+  },
+  "order": 1
+}

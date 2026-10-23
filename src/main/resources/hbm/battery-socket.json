@@ -1,0 +1,85 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_battery_socket",
+      "id": "hbm:machine_battery_socket",
+      "kind": "block",
+      "module": "battery-socket",
+      "originalClass": "com.hbm.blocks.network.MachineBatterySocket",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1829
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    }
+  ],
+  "hooks": {
+    "register": "BatterySocketContent.register(IEventBus)",
+    "creative": "BatterySocketContent.creativeStacks(String tab)",
+    "pickaxeTag": "hbm:mineable/pickaxe_battery_socket",
+    "client": "Automatic client mod-bus subscriber; original GUI, world/item render and overlay",
+    "jade": "MachineView core exposed through existing generic Jade integration",
+    "cc": "ComputerControl ntm_energy_storage, original7 callbacks"
+  },
+  "dimensions": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+  ],
+  "offset": 0,
+  "inventory": {
+    "slots": 1,
+    "batterySlot": [
+      35,
+      35
+    ],
+    "playerInventoryY": 99,
+    "hotbarY": 157
+  },
+  "gui": [
+    176,
+    181
+  ],
+  "energy": {
+    "system": "Native long HE only; no FE/RF/EU adapter",
+    "capacity": "Inserted HbmBattery.getMaxCharge",
+    "storage": "Inserted HbmBattery.getCharge/setCharge; no socket buffer",
+    "lowRedstone": 0,
+    "highRedstone": 2,
+    "priorityOrdinal": 1,
+    "providerRate": "Inserted battery discharge rate when OUTPUT/BUFFER",
+    "receiverRate": "Inserted battery charge rate when INPUT/BUFFER",
+    "ports": "Four bottom positions, eight exterior horizontal NodeConnections; same native HE PowerNode",
+    "comparator": "round(getPower / max(getMaxPower,1) * 15), clamped0..15"
+  },
+  "selfCharging": {
+    "intervalMin": 1200,
+    "intervalRandomBound": 2400,
+    "range": [
+      0.1,
+      1
+    ],
+    "step": 0.01,
+    "effectivePower": "(long)(rawCharge*scPowerMult)",
+    "dischargeTargetRange": 15,
+    "beamLife": 3,
+    "beamBaseDamage": 50,
+    "beamThresholdNegation": 20,
+    "beamArmorPierce": 0.5,
+    "directBeamDamageApplied": false,
+    "impact": "Penetrating entity impacts and first solid block impact invoke original custom electric cross explosion; only hit block is removed",
+    "explosionConfiguredSize": 5,
+    "entityRange": 10,
+    "densityNodes": 7,
+    "densityFloor": 0.125,
+    "damage": "20*(1-nearestBoundingBoxDistance/10)"
+  },
+  "creative": [
+    "Original sunburst horse with horn and source rotation",
+    "Source independent four-corner RANDOM/SOLID three-layer additive beams"
+  ]
+}

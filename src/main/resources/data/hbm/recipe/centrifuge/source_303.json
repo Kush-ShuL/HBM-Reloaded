@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "minecraft:blaze_rod"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "minecraft:blaze_powder",
+      "count": 1
+    },
+    {
+      "id": "minecraft:blaze_powder",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_fire",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_fire",
+      "count": 1
+    }
+  ]
+}

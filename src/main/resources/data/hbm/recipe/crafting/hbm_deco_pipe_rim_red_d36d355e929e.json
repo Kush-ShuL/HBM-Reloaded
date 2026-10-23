@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:deco_pipe_rim_red",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:deco_pipe_rim"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyered"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "boat_rubber",
+      "id": "hbm:boat_rubber",
+      "legacyRegistryId": "hbm:item.boat_rubber",
+      "originalClass": "ItemBoatRubber",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2951
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6138
+          },
+          "expression": "GameRegistry.registerItem(boat_rubber, boat_rubber.getUnlocalizedName())",
+          "arguments": [
+            "boat_rubber",
+            "boat_rubber.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "minecraft:tools_and_utilities",
+      "maxStackSize": 1,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_rubber_boat",
+      "id": "hbm:entity_rubber_boat",
+      "originalClass": "EntityBoatRubber",
+      "source": "legacy/src/main/java/com/hbm/entity/EntityMappings.java:154,206..208",
+      "trackingRangeBlocks": 250,
+      "trackingInterval": 1,
+      "velocityUpdates": false,
+      "hasSpawnEgg": false
+    }
+  ]
+}

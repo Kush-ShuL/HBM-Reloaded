@@ -1,0 +1,34 @@
+package com.hbm.weapon.sedna.gun.kinetic;
+import java.util.*;
+import java.util.function.*;
+import com.hbm.weapon.sedna.BulletConfig;
+import com.hbm.weapon.sedna.gun.*;
+import com.hbm.weapon.sedna.gun.ItemGunBaseNT.*;
+import com.hbm.weapon.sedna.gun.factory.*;
+import com.hbm.weapon.sedna.gun.mags.*;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing.CasingType;
+import com.hbm.client.animation.bus.*;
+import com.hbm.client.animation.bus.BusAnimationKeyframe.IType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import com.hbm.damage.LegacyEntityDamage;
+import com.hbm.damage.DamageResistanceHandler.DamageClass;
+import com.hbm.weapon.sedna.gun.mods.XWeaponModManager;
+import com.hbm.weapon.sedna.gun.legendary.CasingEffects;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunFactory;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunAnimations;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.*;
+public final class KineticAmmo {
+ public static final GunAmmo G12_BP=GunAmmo.standard(41);
+ public static final GunAmmo G12_BP_MAGNUM=GunAmmo.standard(42);
+ public static final GunAmmo G12_BP_SLUG=GunAmmo.standard(43);
+ public static final GunAmmo G12=GunAmmo.standard(44);
+ public static final GunAmmo G12_SLUG=GunAmmo.standard(45);
+ public static final GunAmmo G12_FLECHETTE=GunAmmo.standard(46);
+ public static final GunAmmo G12_MAGNUM=GunAmmo.standard(47);
+ public static final GunAmmo G12_EXPLOSIVE=GunAmmo.standard(48);
+ public static final GunAmmo G12_PHOSPHORUS=GunAmmo.standard(49);
+}

@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:circuit_star_component",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 21
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_piece",
+      "components": {
+        "hbm:legacy_metadata": 22
+      },
+      "strict": false
+    }
+  ]
+}

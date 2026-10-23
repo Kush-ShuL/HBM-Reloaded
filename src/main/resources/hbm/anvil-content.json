@@ -1,0 +1,276 @@
+{
+  "registered": [
+    {
+      "symbol": "anvil_iron",
+      "id": "hbm:anvil_iron",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2263
+      },
+      "tier": 1,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_lead",
+      "id": "hbm:anvil_lead",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2264
+      },
+      "tier": 1,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_steel",
+      "id": "hbm:anvil_steel",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2265
+      },
+      "tier": 2,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_desh",
+      "id": "hbm:anvil_desh",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2266
+      },
+      "tier": 3,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_ferrouranium",
+      "id": "hbm:anvil_ferrouranium",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2267
+      },
+      "tier": 4,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_saturnite",
+      "id": "hbm:anvil_saturnite",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2268
+      },
+      "tier": 5,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_bismuth_bronze",
+      "id": "hbm:anvil_bismuth_bronze",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2269
+      },
+      "tier": 5,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_arsenic_bronze",
+      "id": "hbm:anvil_arsenic_bronze",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2270
+      },
+      "tier": 5,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_schrabidate",
+      "id": "hbm:anvil_schrabidate",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2271
+      },
+      "tier": 6,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_dnt",
+      "id": "hbm:anvil_dnt",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2272
+      },
+      "tier": 7,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_osmiridium",
+      "id": "hbm:anvil_osmiridium",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2273
+      },
+      "tier": 8,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "anvil_murky",
+      "id": "hbm:anvil_murky",
+      "kind": "block",
+      "module": "anvil",
+      "originalClass": "NTMAnvil",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2274
+      },
+      "tier": 1916169,
+      "tab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "ingot_meteorite",
+      "id": "hbm:ingot_meteorite",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemHot",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2311
+      },
+      "tab": "parts",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "ingot_meteorite_forged",
+      "id": "hbm:ingot_meteorite_forged",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemHot",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2312
+      },
+      "tab": "parts",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "blade_meteorite",
+      "id": "hbm:blade_meteorite",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemHot",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2313
+      },
+      "tab": "parts",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "ingot_steel_dusted",
+      "id": "hbm:ingot_steel_dusted",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemHotDusted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2314
+      },
+      "tab": "parts",
+      "metadataRange": [
+        0,
+        9
+      ],
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "ingot_chainsteel",
+      "id": "hbm:ingot_chainsteel",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemHot",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2315
+      },
+      "tab": "parts",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "mold",
+      "id": "hbm:mold",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "metadataRange": [
+        0,
+        28
+      ],
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    }
+  ]
+}

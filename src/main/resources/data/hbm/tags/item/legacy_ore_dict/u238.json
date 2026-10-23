@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_u238",
+    {
+      "id": "#c:ingots/u238",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/uranium238",
+      "required": false
+    }
+  ]
+}

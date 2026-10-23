@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_cinnebar",
+    "hbm:ore_depth_cinnebar",
+    {
+      "id": "#c:ores/cinnabar",
+      "required": false
+    }
+  ]
+}

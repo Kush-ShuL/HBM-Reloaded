@@ -1,0 +1,108 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "powder_ash_wood",
+      "id": "hbm:powder_ash_wood",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.powder_ash",
+      "sourceLegacyRegistryId": "hbm:item.powder_ash",
+      "sourceOrdinal": 0,
+      "sourceEnum": "WOOD",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2339
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "powder_ash_coal",
+      "id": "hbm:powder_ash_coal",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.powder_ash",
+      "sourceLegacyRegistryId": "hbm:item.powder_ash",
+      "sourceOrdinal": 1,
+      "sourceEnum": "COAL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2339
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "powder_ash_misc",
+      "id": "hbm:powder_ash_misc",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.powder_ash",
+      "sourceLegacyRegistryId": "hbm:item.powder_ash",
+      "sourceOrdinal": 2,
+      "sourceEnum": "MISC",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2339
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "powder_ash_fly",
+      "id": "hbm:powder_ash_fly",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.powder_ash",
+      "sourceLegacyRegistryId": "hbm:item.powder_ash",
+      "sourceOrdinal": 3,
+      "sourceEnum": "FLY",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2339
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "powder_ash_soot",
+      "id": "hbm:powder_ash_soot",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.powder_ash",
+      "sourceLegacyRegistryId": "hbm:item.powder_ash",
+      "sourceOrdinal": 4,
+      "sourceEnum": "SOOT",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2339
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "powder_ash_fullerene",
+      "id": "hbm:powder_ash_fullerene",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.powder_ash",
+      "sourceLegacyRegistryId": "hbm:item.powder_ash",
+      "sourceOrdinal": 5,
+      "sourceEnum": "FULLERENE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2339
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

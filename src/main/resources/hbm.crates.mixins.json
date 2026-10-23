@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.block.crate.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CrowbarShieldMixin",
+    "CrowbarBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

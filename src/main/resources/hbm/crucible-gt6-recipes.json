@@ -1,0 +1,92 @@
+{
+  "requiredLegacyMod": "gregtech",
+  "recipes": [
+    {
+      "name": "crucible.steelWrought",
+      "frequency": 20,
+      "icon": [
+        "hbm:ingot_steel",
+        1,
+        0
+      ],
+      "input": [
+        [
+          "WroughtIron",
+          16
+        ],
+        [
+          "Carbon",
+          24
+        ],
+        [
+          "Flux",
+          8
+        ]
+      ],
+      "output": [
+        [
+          "Steel",
+          16
+        ]
+      ]
+    },
+    {
+      "name": "crucible.steelPig",
+      "frequency": 20,
+      "icon": [
+        "hbm:ingot_steel",
+        1,
+        0
+      ],
+      "input": [
+        [
+          "PigIron",
+          16
+        ],
+        [
+          "Carbon",
+          24
+        ],
+        [
+          "Flux",
+          8
+        ]
+      ],
+      "output": [
+        [
+          "Steel",
+          16
+        ]
+      ]
+    },
+    {
+      "name": "crucible.steelMeteoric",
+      "frequency": 20,
+      "icon": [
+        "hbm:ingot_steel",
+        1,
+        0
+      ],
+      "input": [
+        [
+          "MeteoricIron",
+          16
+        ],
+        [
+          "Carbon",
+          24
+        ],
+        [
+          "Flux",
+          8
+        ]
+      ],
+      "output": [
+        [
+          "Steel",
+          16
+        ]
+      ]
+    }
+  ]
+}

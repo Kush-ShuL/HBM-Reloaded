@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:gun_star_f_akimbo",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "UMU"
+  ],
+  "key": {
+    "U": {
+      "item": "hbm:gun_star_f"
+    },
+    "M": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+    }
+  }
+}

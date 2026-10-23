@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gas_mask",
+      "id": "hbm:gas_mask",
+      "legacyRegistryId": "hbm:item.gas_mask",
+      "originalClass": "ArmorGasMask",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 27
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6190
+          },
+          "expression": "GameRegistry.registerItem(gas_mask, gas_mask.getUnlocalizedName())",
+          "arguments": [
+            "gas_mask",
+            "gas_mask.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.originalgasmask.OriginalGasMaskContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "armor": {
+        "material": "IRON",
+        "slot": "HEAD",
+        "durability": 165,
+        "defense": 2,
+        "enchantability": 9,
+        "repair": "minecraft:iron_ingot",
+        "legacyArmorDurability": true
+      }
+    }
+  ]
+}

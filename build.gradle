@@ -1,0 +1,83 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.144'
+    id 'idea'
+}
+
+version = mod_version
+group = mod_group_id
+base { archivesName = 'HBM-Reloaded' }
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    withSourcesJar()
+}
+
+repositories {
+    mavenCentral()
+    maven { name = 'JEI'; url = 'https://maven.blamejared.com'; content { includeGroup 'mezz.jei' } }
+    maven { name = 'Shedaniel'; url = 'https://maven.shedaniel.me'; content { includeGroupByRegex 'me\\.shedaniel.*'; includeGroup 'dev.architectury' } }
+    maven { name = 'Modrinth'; url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+    maven { name = 'CC-Tweaked'; url = 'https://maven.squiddev.cc'; content { includeGroup 'cc.tweaked' } }
+}
+
+neoForge {
+    version = project.neo_version
+    accessTransformers.from(file("src/main/compat/META-INF/accesstransformer.cfg"))
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+        data {
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath
+        }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.INFO
+        }
+    }
+    mods { hbm { sourceSet sourceSets.main } }
+}
+
+configurations { runtimeClasspath.extendsFrom localRuntime }
+
+dependencies {
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    compileOnly "me.shedaniel:RoughlyEnoughItems-api-neoforge:${rei_version}"
+    compileOnly "maven.modrinth:jade:${jade_version}"
+    compileOnly "cc.tweaked:cc-tweaked-${minecraft_version}-core-api:${cc_tweaked_version}"
+    compileOnly "cc.tweaked:cc-tweaked-${minecraft_version}-forge-api:${cc_tweaked_version}"
+    if (recipe_viewer == 'jei') {
+        localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    } else if (recipe_viewer == 'rei') {
+        localRuntime "me.shedaniel:RoughlyEnoughItems-neoforge:${rei_version}"
+    } else if (recipe_viewer != 'none') {
+        throw new GradleException('recipe_viewer must be none, jei or rei')
+    }
+    if (providers.gradleProperty('with_jade').orElse('false').get().toBoolean()) {
+        localRuntime "maven.modrinth:jade:${jade_version}"
+    }
+    if (providers.gradleProperty('with_computercraft').orElse('false').get().toBoolean()) {
+        localRuntime "cc.tweaked:cc-tweaked-${minecraft_version}-forge:${cc_tweaked_version}"
+    }
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+sourceSets.main.resources.srcDir 'src/main/compat'
+var generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {
+    var properties = [minecraft_version_range: minecraft_version_range, neo_version: neo_version, loader_version_range: loader_version_range, mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version]
+    inputs.properties properties
+    expand properties
+    from 'src/main/templates'
+    into 'build/generated/sources/modMetadata'
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 21 }
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = false; reproducibleFileOrder = true }
+idea { module { downloadSources = true; downloadJavadoc = true } }
+
+// Carry the original LGPL grant and its GPL terms with every distributed binary/source artifact.
+tasks.named('jar') { from('LICENSE', 'LICENSE.LESSER') }
+tasks.named('sourcesJar') { from('LICENSE', 'LICENSE.LESSER') }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:rod_zirnox_zfb_mox_depleted"
+    }
+  ],
+  "result": {
+    "id": "hbm:waste_zfb_mox",
+    "count": 2,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  }
+}

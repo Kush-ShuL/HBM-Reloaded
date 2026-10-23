@@ -1,0 +1,29 @@
+{
+  "parent": "hbm:desh",
+  "display": {
+    "icon": {
+      "id": "hbm:missile_soyuz",
+      "components": {
+        "hbm:legacy_metadata": 0
+      }
+    },
+    "title": {
+      "translate": "achievement.space"
+    },
+    "description": {
+      "translate": "achievement.space.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:space"
+      }
+    }
+  }
+}

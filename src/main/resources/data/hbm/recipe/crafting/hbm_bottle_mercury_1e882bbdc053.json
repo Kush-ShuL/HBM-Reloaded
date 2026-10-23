@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:bottle_mercury",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:nugget_mercury"
+    },
+    "B": {
+      "item": "minecraft:glass_bottle"
+    }
+  }
+}

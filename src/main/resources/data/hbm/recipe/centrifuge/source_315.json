@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_sulfur"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:sulfur",
+      "count": 4
+    },
+    {
+      "id": "hbm:sulfur",
+      "count": 4
+    },
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "hbm:nugget_mercury",
+      "count": 1
+    }
+  ]
+}

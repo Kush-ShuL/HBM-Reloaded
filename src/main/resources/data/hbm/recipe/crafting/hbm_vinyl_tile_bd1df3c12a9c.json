@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:vinyl_tile",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "IBI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "B": {
+      "item": "hbm:brick_light"
+    }
+  }
+}

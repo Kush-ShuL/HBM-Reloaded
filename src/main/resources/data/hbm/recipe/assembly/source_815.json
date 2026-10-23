@@ -1,0 +1,70 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.warheadthermonuke",
+  "duration": 600,
+  "power": 100,
+  "order": 272,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:warhead_mirv",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetripletitanium"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplelead"
+      },
+      "count": 6
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/billetplutonium239"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ball_tatb"
+        }
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_controller_advanced"
+        }
+      },
+      "count": 2
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "DEUTERIUM",
+      "amount": 4000,
+      "pressure": 0
+    }
+  ],
+  "pools_528": [
+    "528.controller"
+  ]
+}

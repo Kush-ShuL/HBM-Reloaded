@@ -1,0 +1,84 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_assembly_machine",
+      "id": "hbm:machine_assembly_machine",
+      "kind": "block",
+      "module": "assembler",
+      "originalClass": "MachineAssemblyMachine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2211
+      },
+      "status": "implemented_pending_target_compile",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "blueprints",
+      "id": "hbm:blueprints",
+      "kind": "item",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprints",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3862
+      },
+      "status": "implemented_pending_target_compile",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "blueprint_folder",
+      "id": "hbm:blueprint_folder",
+      "kind": "item",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprintFolder",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3863
+      },
+      "status": "implemented_pending_target_compile",
+      "runtimeValidated": false
+    }
+  ],
+  "block": {
+    "symbol": "machine_assembly_machine",
+    "id": "hbm:machine_assembly_machine",
+    "kind": "block",
+    "module": "assembler",
+    "originalClass": "MachineAssemblyMachine",
+    "source": {
+      "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+      "line": 2211
+    },
+    "status": "implemented_pending_target_compile",
+    "runtimeValidated": false
+  },
+  "items": [
+    {
+      "symbol": "blueprints",
+      "id": "hbm:blueprints",
+      "kind": "item",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprints",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3862
+      },
+      "status": "implemented_pending_target_compile",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "blueprint_folder",
+      "id": "hbm:blueprint_folder",
+      "kind": "item",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprintFolder",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3863
+      },
+      "status": "implemented_pending_target_compile",
+      "runtimeValidated": false
+    }
+  ]
+}

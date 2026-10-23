@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:ball_tnt",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "AROMATICS",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmchemistryset"
+    }
+  ]
+}

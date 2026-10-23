@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "bathwater",
+      "id": "hbm:bathwater",
+      "legacyRegistryId": "hbm:item.bathwater",
+      "originalClass": "ItemModBathwater",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2885
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6121
+          },
+          "expression": "GameRegistry.registerItem(bathwater, bathwater.getUnlocalizedName())",
+          "arguments": [
+            "bathwater",
+            "bathwater.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.charms.ArmorCharmsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 7,
+      "applicableTo": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "bathwater_mk2",
+      "id": "hbm:bathwater_mk2",
+      "legacyRegistryId": "hbm:item.bathwater_mk2",
+      "originalClass": "ItemModBathwater",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2886
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6122
+          },
+          "expression": "GameRegistry.registerItem(bathwater_mk2, bathwater_mk2.getUnlocalizedName())",
+          "arguments": [
+            "bathwater_mk2",
+            "bathwater_mk2.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.charms.ArmorCharmsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 7,
+      "applicableTo": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "medal_liquidator",
+      "id": "hbm:medal_liquidator",
+      "legacyRegistryId": "hbm:item.medal_liquidator",
+      "originalClass": "ItemModMedal",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2900
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6063
+          },
+          "expression": "GameRegistry.registerItem(medal_liquidator, medal_liquidator.getUnlocalizedName())",
+          "arguments": [
+            "medal_liquidator",
+            "medal_liquidator.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.charms.ArmorCharmsContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 1,
+      "applicableTo": [
+        "helmet",
+        "chestplate"
+      ]
+    }
+  ]
+}

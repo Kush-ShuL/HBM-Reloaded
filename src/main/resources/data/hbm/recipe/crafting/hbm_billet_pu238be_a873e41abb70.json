@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:billet_pu238be",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium238"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium238"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetplutonium238"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    },
+    {
+      "item": "hbm:nugget_beryllium"
+    }
+  ]
+}

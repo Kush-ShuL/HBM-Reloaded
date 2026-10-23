@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "book_lemegeton",
+      "id": "hbm:book_lemegeton",
+      "legacyRegistryId": "hbm:item.book_lemegeton",
+      "originalClass": "ItemBookLemegeton",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4346
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6394
+          },
+          "expression": "GameRegistry.registerItem(book_lemegeton, book_lemegeton.getUnlocalizedName())",
+          "arguments": [
+            "book_lemegeton",
+            "book_lemegeton.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.lemegeton.LemegetonContent",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "guiSize": [
+        176,
+        166
+      ],
+      "inventorySlots": 1,
+      "resultSlots": 1
+    }
+  ]
+}

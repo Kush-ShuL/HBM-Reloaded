@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:tektite",
+    {
+      "id": "#hbm:mineable/shovel/falling",
+      "required": false
+    },
+    "hbm:ntm_dirt",
+    "hbm:sand_mix"
+  ]
+}

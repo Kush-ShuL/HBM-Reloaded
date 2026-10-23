@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_tungsten"
+      },
+      {
+        "item": "hbm:deepslate_ore_tungsten"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_tungsten",
+    "count": 1
+  },
+  "experience": 6.0,
+  "cookingtime": 200
+}

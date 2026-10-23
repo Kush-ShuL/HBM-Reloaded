@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_coltan_ore",
+    {
+      "id": "#c:dusts/coltan",
+      "required": false
+    }
+  ]
+}

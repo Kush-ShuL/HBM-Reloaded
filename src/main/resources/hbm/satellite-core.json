@@ -1,0 +1,351 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "sat_chip",
+      "id": "hbm:sat_chip",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3440
+      },
+      "legacyRegistryId": "hbm:item.sat_chip",
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "originalClass": "ItemSatChip"
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_relay",
+      "id": "hbm:sat_relay",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3443
+      },
+      "legacyRegistryId": "hbm:item.sat_relay",
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "originalClass": "ItemSatChip"
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_spy",
+      "id": "hbm:satellite_spy",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 0,
+      "sourceEnum": "SPY",
+      "sourceClassId": 0,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_scanner",
+      "id": "hbm:satellite_scanner",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 1,
+      "sourceEnum": "SCANNER",
+      "sourceClassId": 1,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_radar",
+      "id": "hbm:satellite_radar",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 2,
+      "sourceEnum": "RADAR",
+      "sourceClassId": 2,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_miner_astro",
+      "id": "hbm:satellite_miner_astro",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 3,
+      "sourceEnum": "MINER_ASTRO",
+      "sourceClassId": 6,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_miner_lunar",
+      "id": "hbm:satellite_miner_lunar",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 4,
+      "sourceEnum": "MINER_LUNAR",
+      "sourceClassId": 7,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_precision_laser",
+      "id": "hbm:satellite_precision_laser",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 5,
+      "sourceEnum": "PRECISION_LASER",
+      "sourceClassId": 9,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_death_ray",
+      "id": "hbm:satellite_death_ray",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 6,
+      "sourceEnum": "DEATH_RAY",
+      "sourceClassId": 3,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_xenium_resonator",
+      "id": "hbm:satellite_xenium_resonator",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 7,
+      "sourceEnum": "XENIUM_RESONATOR",
+      "sourceClassId": 4,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_relay",
+      "id": "hbm:satellite_relay",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 8,
+      "sourceEnum": "RELAY",
+      "sourceClassId": 5,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_detector",
+      "id": "hbm:satellite_detector",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 9,
+      "sourceEnum": "DETECTOR",
+      "sourceClassId": 10,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_ray_scan",
+      "id": "hbm:satellite_ray_scan",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 10,
+      "sourceEnum": "RAY_SCAN",
+      "sourceClassId": 11,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_science",
+      "id": "hbm:satellite_science",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 11,
+      "sourceEnum": "SCIENCE",
+      "sourceClassId": 12,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_science_assembler",
+      "id": "hbm:satellite_science_assembler",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 12,
+      "sourceEnum": "SCIENCE_ASSEMBLER",
+      "sourceClassId": -1,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "satellite_science_sensor",
+      "id": "hbm:satellite_science_sensor",
+      "originalClass": "ItemSatellite",
+      "sourceLegacyRegistryId": "hbm:item.satellite",
+      "sourceField": "ModItems.satellite",
+      "sourceOrdinal": 13,
+      "sourceEnum": "SCIENCE_SENSOR",
+      "sourceClassId": -1,
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3429
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_mapper",
+      "id": "hbm:sat_mapper",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3431
+      },
+      "legacyRegistryId": "hbm:item.sat_mapper",
+      "creativeTab": null,
+      "stackSize": 1,
+      "originalClass": "ItemSatChip"
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_scanner",
+      "id": "hbm:sat_scanner",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3432
+      },
+      "legacyRegistryId": "hbm:item.sat_scanner",
+      "creativeTab": null,
+      "stackSize": 1,
+      "originalClass": "ItemSatChip"
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_radar",
+      "id": "hbm:sat_radar",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3433
+      },
+      "legacyRegistryId": "hbm:item.sat_radar",
+      "creativeTab": null,
+      "stackSize": 1,
+      "originalClass": "ItemSatChip"
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_resonator",
+      "id": "hbm:sat_resonator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3436
+      },
+      "legacyRegistryId": "hbm:item.sat_resonator",
+      "creativeTab": null,
+      "stackSize": 1,
+      "originalClass": "ItemSatChip"
+    }
+  ],
+  "readyMetadata": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "readySourceClassIds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "L L",
+    "I I",
+    "ILI"
+  ],
+  "key": {
+    "L": {
+      "item": "hbm:lodestone"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    }
+  },
+  "result": {
+    "id": "hbm:horseshoe_magnet",
+    "count": 1
+  }
+}

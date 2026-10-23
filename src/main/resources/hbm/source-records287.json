@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "record_lc",
+      "id": "hbm:record_lc",
+      "legacyRegistryId": "hbm:item.record_lc",
+      "originalClass": "ItemModRecord",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4330
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6439
+          },
+          "expression": "GameRegistry.registerItem(record_lc, record_lc.getUnlocalizedName())",
+          "arguments": [
+            "record_lc",
+            "record_lc.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.records.SourceRecordsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "sourceDisplayName": "vanilla record11 -> item.minecraft.music_disc_11",
+      "rarity": "fixed-rare-even-enchanted"
+    },
+    {
+      "kind": "item",
+      "symbol": "record_ss",
+      "id": "hbm:record_ss",
+      "legacyRegistryId": "hbm:item.record_ss",
+      "originalClass": "ItemModRecord",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4331
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6440
+          },
+          "expression": "GameRegistry.registerItem(record_ss, record_ss.getUnlocalizedName())",
+          "arguments": [
+            "record_ss",
+            "record_ss.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.records.SourceRecordsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "sourceDisplayName": "vanilla record11 -> item.minecraft.music_disc_11",
+      "rarity": "fixed-rare-even-enchanted"
+    },
+    {
+      "kind": "item",
+      "symbol": "record_vc",
+      "id": "hbm:record_vc",
+      "legacyRegistryId": "hbm:item.record_vc",
+      "originalClass": "ItemModRecord",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4332
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6441
+          },
+          "expression": "GameRegistry.registerItem(record_vc, record_vc.getUnlocalizedName())",
+          "arguments": [
+            "record_vc",
+            "record_vc.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.records.SourceRecordsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "sourceDisplayName": "vanilla record11 -> item.minecraft.music_disc_11",
+      "rarity": "fixed-rare-even-enchanted"
+    }
+  ]
+}

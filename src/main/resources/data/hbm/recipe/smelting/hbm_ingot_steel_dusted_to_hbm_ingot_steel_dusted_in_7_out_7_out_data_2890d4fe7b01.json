@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:components",
+    "items": "hbm:ingot_steel_dusted",
+    "components": {
+      "hbm:legacy_metadata": 7
+    },
+    "strict": false
+  },
+  "result": {
+    "id": "hbm:ingot_steel_dusted",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 7,
+      "minecraft:custom_data": {
+        "heat": 100
+      }
+    }
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

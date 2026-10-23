@@ -1,0 +1,35 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "night_vision",
+      "id": "hbm:night_vision",
+      "legacyRegistryId": "hbm:item.night_vision",
+      "originalClass": "ItemModNightVision",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2908
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6071
+          },
+          "expression": "GameRegistry.registerItem(night_vision, night_vision.getUnlocalizedName())",
+          "arguments": [
+            "night_vision",
+            "night_vision.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.nightvision.NightVisionContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "armorModSlot": 0,
+      "applicableTo": [
+        "helmet"
+      ]
+    }
+  ]
+}

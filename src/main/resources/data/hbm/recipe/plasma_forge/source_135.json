@@ -1,0 +1,40 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldcmb",
+  "duration": 600,
+  "power": 10000000,
+  "ignition_temp": 500000,
+  "order": 22,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 39
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplecmbsteel"
+      },
+      "count": 2
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "REFORMGAS",
+      "amount": 1000,
+      "pressure": 0
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:custom_dirty",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "WLW",
+    "WLW"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platecopper"
+    },
+    "L": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platelead"
+    },
+    "W": {
+      "item": "hbm:nuclear_waste"
+    }
+  }
+}

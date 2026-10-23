@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "chain_end=false,legacy_meta=0": {
+      "model": "hbm:block/dungeon_chain"
+    },
+    "chain_end=false,legacy_meta=1": {
+      "model": "hbm:block/dungeon_chain"
+    },
+    "chain_end=false,legacy_meta=2": {
+      "model": "hbm:block/dungeon_chain"
+    },
+    "chain_end=false,legacy_meta=3": {
+      "model": "hbm:block/dungeon_chain"
+    },
+    "chain_end=false,legacy_meta=4": {
+      "model": "hbm:block/dungeon_chain"
+    },
+    "chain_end=false,legacy_meta=5": {
+      "model": "hbm:block/dungeon_chain"
+    },
+    "chain_end=true,legacy_meta=0": {
+      "model": "hbm:block/dungeon_chain_end"
+    },
+    "chain_end=true,legacy_meta=1": {
+      "model": "hbm:block/dungeon_chain_end"
+    },
+    "chain_end=true,legacy_meta=2": {
+      "model": "hbm:block/dungeon_chain_end"
+    },
+    "chain_end=true,legacy_meta=3": {
+      "model": "hbm:block/dungeon_chain_end"
+    },
+    "chain_end=true,legacy_meta=4": {
+      "model": "hbm:block/dungeon_chain_end"
+    },
+    "chain_end=true,legacy_meta=5": {
+      "model": "hbm:block/dungeon_chain_end"
+    }
+  }
+}

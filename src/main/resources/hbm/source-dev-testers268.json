@@ -1,0 +1,76 @@
+{
+  "module": "source-dev-testers268",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "event_tester",
+      "id": "hbm:event_tester",
+      "legacyRegistryId": "hbm:tile.event_tester",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1232
+      },
+      "originalClass": "TestEventTester",
+      "creativeTab": "none",
+      "sourceHardness": 2.5,
+      "sourceResistance": 0,
+      "modernResistance": 0,
+      "sourceMaterial": "iron",
+      "sourceSound": "stone",
+      "sourceBEAlias": "tilentity_test_storage",
+      "metadataValues": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "obj_tester",
+      "id": "hbm:obj_tester",
+      "legacyRegistryId": "hbm:tile.obj_tester",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1233
+      },
+      "originalClass": "TestObjTester",
+      "creativeTab": "none",
+      "sourceHardness": 2.5,
+      "sourceResistance": 10,
+      "modernResistance": 6,
+      "sourceMaterial": "iron",
+      "sourceSound": "stone",
+      "sourceBEAlias": "tilentity_objtester",
+      "metadataValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "sourceBEAliases": [
+    {
+      "sourceId": "tilentity_test_storage",
+      "actualModernType": "hbm:event_tester",
+      "strictHost": "event_tester",
+      "source": "legacy/src/main/java/com/hbm/tileentity/TileMappings.java:76-77"
+    },
+    {
+      "sourceId": "tilentity_objtester",
+      "actualModernType": "hbm:obj_tester",
+      "strictHost": "obj_tester",
+      "source": "legacy/src/main/java/com/hbm/tileentity/TileMappings.java:76-77"
+    }
+  ]
+}

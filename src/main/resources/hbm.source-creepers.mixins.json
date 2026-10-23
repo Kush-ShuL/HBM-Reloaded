@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.entity.mob.sourcecreepers.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SourceCreeperAccess",
+    "SourceCreeperExplosion"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

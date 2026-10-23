@@ -1,0 +1,25 @@
+{
+  "name": "Xenium Resonator Satellite",
+  "icon": [
+    "hbm:satellite_xenium_resonator",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_xenium_resonator",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Xenium Resonator Satellite",
+    "ru_RU": "Спутник с Зен-резонатором",
+    "zh_CN": "X晶体共振卫星"
+  },
+  "content": {
+    "en_US": "The xenium resonator allows teleportation within the same dimension. It can be controlled either with a satellite designator or the satellite laser designator. When using the satellite designator, the Y value can be omitted, which will default it to surface level.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Спутник с Зен-резонатором позволяет телепортироваться в пределах одного и того же измерения. Им можно управлять как с помощью спутникового целеуказателя, так и с помощью спутникового лазерного целеуказателя. При использовании спутникового целеуказателя значение Y можно опустить, по умолчанию оно будет установлено на уровень поверхности.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "X晶体共振器可在同一维度内进行传送，能使用卫星指示器或卫星激光指示器控制。使用卫星指示器时，可省略 Y 值，默认选择地表高度。<br><br>{{Template:SatOverview}}"
+  }
+}

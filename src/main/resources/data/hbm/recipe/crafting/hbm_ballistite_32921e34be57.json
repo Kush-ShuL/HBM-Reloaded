@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:ballistite",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ]
+}

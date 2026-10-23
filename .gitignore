@@ -1,0 +1,33 @@
+# Local working directory contents, relative to the project root.
+.gradle/**
+.cache/**
+build/**
+run/**
+runs/**
+.idea/**
+.codex/**
+.claude/**
+.agent/**
+logs/**
+tools/**
+migration/**
+legacy/**
+
+# Local acceptance-client launcher and task notes.
+Start-HBM-Client.cmd
+todo.md
+
+# Generated files at any depth.
+__pycache__/
+*.iml
+*.pyc
+*.class
+*.log
+*.jfr
+*.hprof
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Operating-system metadata.
+Thumbs.db
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_diamond"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_diamond",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_diamond",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_diamond",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_diamond",
+      "count": 1
+    }
+  ]
+}

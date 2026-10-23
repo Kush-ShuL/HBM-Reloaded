@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/anytar"
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "WATER",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyewhite"
+    }
+  ],
+  "result": {
+    "id": "hbm:bdcl",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:grenade_filling",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F",
+    "I",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:gunpowder"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

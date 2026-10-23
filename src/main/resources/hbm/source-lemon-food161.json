@@ -1,0 +1,224 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "lemon",
+      "id": "hbm:lemon",
+      "legacyRegistryId": "hbm:item.lemon",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3620
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 3,
+      "saturation": 0.5,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "med_ipecac",
+      "id": "hbm:med_ipecac",
+      "legacyRegistryId": "hbm:item.med_ipecac",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3622
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 0,
+      "saturation": 0.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "med_ptsd",
+      "id": "hbm:med_ptsd",
+      "legacyRegistryId": "hbm:item.med_ptsd",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3623
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 0,
+      "saturation": 0.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "med_schizophrenia",
+      "id": "hbm:med_schizophrenia",
+      "legacyRegistryId": "hbm:item.med_schizophrenia",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3624
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 0,
+      "saturation": 0.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "loops",
+      "id": "hbm:loops",
+      "legacyRegistryId": "hbm:item.loops",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3625
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 4,
+      "saturation": 0.25,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "loop_stew",
+      "id": "hbm:loop_stew",
+      "legacyRegistryId": "hbm:item.loop_stew",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3626
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "nutrition": 10,
+      "saturation": 0.5,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "spongebob_macaroni",
+      "id": "hbm:spongebob_macaroni",
+      "legacyRegistryId": "hbm:item.spongebob_macaroni",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3627
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 5,
+      "saturation": 1.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "fooditem",
+      "id": "hbm:fooditem",
+      "legacyRegistryId": "hbm:item.fooditem",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3628
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 2,
+      "saturation": 5.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "static_sandwich",
+      "id": "hbm:static_sandwich",
+      "legacyRegistryId": "hbm:item.static_sandwich",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3630
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 6,
+      "saturation": 1.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "cheese",
+      "id": "hbm:cheese",
+      "legacyRegistryId": "hbm:item.cheese",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3637
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 5,
+      "saturation": 0.75,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "quesadilla",
+      "id": "hbm:cheese_quesadilla",
+      "legacyRegistryId": "hbm:item.cheese_quesadilla",
+      "originalClass": "ItemLemon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3638
+      },
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 8,
+      "saturation": 1.0,
+      "wolfFood": false,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ]
+}

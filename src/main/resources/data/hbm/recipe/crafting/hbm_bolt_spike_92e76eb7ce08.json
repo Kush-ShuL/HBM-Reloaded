@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:bolt_spike",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BB",
+    "B ",
+    "B "
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    }
+  }
+}

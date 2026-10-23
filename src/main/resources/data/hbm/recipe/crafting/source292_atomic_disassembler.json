@@ -1,0 +1,45 @@
+{
+  "result": {
+    "id": "mekanism:atomic_disassembler",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GAG",
+    "EIE",
+    " I "
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplegold"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/alloyultimate"
+    },
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/battery"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotrefinedobsidian"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "mekanism:atomic_disassembler"
+    },
+    {
+      "type": "hbm:general_mode",
+      "expression": "GeneralConfig.enableMekanismChanges"
+    }
+  ]
+}

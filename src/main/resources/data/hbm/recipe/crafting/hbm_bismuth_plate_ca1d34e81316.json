@@ -1,0 +1,37 @@
+{
+  "result": {
+    "id": "hbm:bismuth_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RWR",
+    "PCP",
+    "SFS"
+  ],
+  "key": {
+    "R": {
+      "item": "hbm:crystal_rare"
+    },
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinegold"
+    },
+    "P": {
+      "item": "hbm:plate_bismuth"
+    },
+    "C": {
+      "item": "hbm:laser_crystal_bismuth"
+    },
+    "S": {
+      "item": "hbm:ring_starmetal"
+    },
+    "F": {
+      "item": "hbm:rag"
+    }
+  }
+}

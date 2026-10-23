@@ -1,0 +1,158 @@
+{
+  "blocks": [
+    {
+      "id": "block_electrical_scrap",
+      "originalClass": "BlockFalling",
+      "material": "iron",
+      "sound": "metal",
+      "texture": "hbm:block/electrical_scrap",
+      "hardness": 2.5,
+      "explosionResistance": 3.0,
+      "requiresTool": true,
+      "beaconBase": false
+    },
+    {
+      "id": "block_fallout",
+      "originalClass": "BlockHazardFalling",
+      "material": "sand",
+      "sound": "gravel",
+      "texture": "hbm:block/ash",
+      "hardness": 0.2,
+      "explosionResistance": 0.2,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "block_red_phosphorus",
+      "originalClass": "BlockHazardFalling",
+      "material": "sand",
+      "sound": "sand",
+      "texture": "hbm:block/block_red_phosphorus",
+      "hardness": 5.0,
+      "explosionResistance": 6.0,
+      "requiresTool": false,
+      "beaconBase": true
+    },
+    {
+      "id": "block_scrap",
+      "originalClass": "BlockFalling",
+      "material": "sand",
+      "sound": "gravel",
+      "texture": "hbm:block/block_scrap",
+      "hardness": 2.5,
+      "explosionResistance": 3.0,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "block_yellowcake",
+      "originalClass": "BlockHazardFalling",
+      "material": "sand",
+      "sound": "sand",
+      "texture": "hbm:block/block_yellowcake",
+      "hardness": 5.0,
+      "explosionResistance": 6.0,
+      "requiresTool": false,
+      "beaconBase": true
+    },
+    {
+      "id": "concrete_super_broken",
+      "originalClass": "BlockFalling",
+      "material": "rock",
+      "sound": "stone",
+      "texture": "hbm:block/concrete_super_broken",
+      "hardness": 10.0,
+      "explosionResistance": 12.0,
+      "requiresTool": true,
+      "beaconBase": false
+    },
+    {
+      "id": "dirt_dead",
+      "originalClass": "BlockFalling",
+      "material": "ground",
+      "sound": "gravel",
+      "texture": "hbm:block/dirt_dead",
+      "hardness": 0.5,
+      "explosionResistance": 0.5,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "dirt_oily",
+      "originalClass": "BlockFalling",
+      "material": "ground",
+      "sound": "gravel",
+      "texture": "hbm:block/dirt_oily",
+      "hardness": 0.5,
+      "explosionResistance": 0.5,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "gravel_diamond",
+      "originalClass": "BlockFalling",
+      "material": "sand",
+      "sound": "gravel",
+      "texture": "hbm:block/gravel_diamond",
+      "hardness": 0.6,
+      "explosionResistance": 0.6,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "gravel_obsidian",
+      "originalClass": "BlockFalling",
+      "material": "iron",
+      "sound": "gravel",
+      "texture": "hbm:block/gravel_obsidian",
+      "hardness": 5.0,
+      "explosionResistance": 12.0,
+      "requiresTool": true,
+      "beaconBase": false
+    },
+    {
+      "id": "moon_turf",
+      "originalClass": "BlockFalling",
+      "material": "sand",
+      "sound": "sand",
+      "texture": "hbm:block/moon_turf",
+      "hardness": 0.5,
+      "explosionResistance": 0.5,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "sand_dirty",
+      "originalClass": "BlockFalling",
+      "material": "sand",
+      "sound": "sand",
+      "texture": "hbm:block/sand_dirty",
+      "hardness": 0.5,
+      "explosionResistance": 0.5,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "sand_dirty_red",
+      "originalClass": "BlockFalling",
+      "material": "sand",
+      "sound": "sand",
+      "texture": "hbm:block/sand_dirty_red",
+      "hardness": 0.5,
+      "explosionResistance": 0.5,
+      "requiresTool": false,
+      "beaconBase": false
+    },
+    {
+      "id": "stone_cracked",
+      "originalClass": "BlockFalling",
+      "material": "rock",
+      "sound": "stone",
+      "texture": "hbm:block/stone_cracked",
+      "hardness": 5.0,
+      "explosionResistance": 5.0,
+      "requiresTool": true,
+      "beaconBase": false
+    }
+  ]
+}

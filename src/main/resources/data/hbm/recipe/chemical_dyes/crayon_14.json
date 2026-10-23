@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:chemical_dye",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 14
+        }
+      }
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/anytar"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "id": "hbm:crayon",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 14
+    }
+  }
+}

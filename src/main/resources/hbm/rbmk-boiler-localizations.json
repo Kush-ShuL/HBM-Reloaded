@@ -1,0 +1,30 @@
+{
+  "en_us": {
+    "container.rbmkBoiler": "RBMK Steam Channel",
+    "tile.rbmk_boiler.name": "RBMK Steam Channel",
+    "block.hbm.rbmk_boiler": "RBMK Steam Channel",
+    "tile.rbmk_loader.name": "RBMK Steam Connector",
+    "block.hbm.rbmk_loader": "RBMK Steam Connector",
+    "tile.rbmk_loader.desc": "Allows RBMKs to have both water and steam connections at the bottom$Place one water pipe below the RBMK column, then the connector,$then connect the steam duct to the connector.",
+    "tile.rbmk_steam_inlet.name": "RBMK ReaSim Water Inlet",
+    "block.hbm.rbmk_steam_inlet": "RBMK ReaSim Water Inlet",
+    "tile.rbmk_steam_inlet.desc": "Inserts water into RBMK columns if ReaSim boilers are enabled$Connects to RBMK columns sideways",
+    "tile.rbmk_steam_outlet.name": "RBMK ReaSim Steam Outlet",
+    "block.hbm.rbmk_steam_outlet": "RBMK ReaSim Steam Outlet",
+    "tile.rbmk_steam_outlet.desc": "Extracts super dense steam from RBMK columns if ReaSim boilers are enabled$Connects to RBMK columns sideways"
+  },
+  "zh_cn": {
+    "container.rbmkBoiler": "RBMK石墨式反应堆蒸汽管道",
+    "tile.rbmk_boiler.name": "RBMK反应堆蒸汽管道",
+    "block.hbm.rbmk_boiler": "RBMK反应堆蒸汽管道",
+    "tile.rbmk_loader.name": "RBMK反应堆蒸汽导出器",
+    "block.hbm.rbmk_loader": "RBMK反应堆蒸汽导出器",
+    "tile.rbmk_loader.desc": "让RBMK反应堆在底部同时拥有水接口和蒸汽接口$在RBMK蒸汽管道下方放置水管道，再在下面放置蒸汽导出器$最后将管道连接至蒸汽导出器即可",
+    "tile.rbmk_steam_inlet.name": "RBMK ReaSim进水口",
+    "block.hbm.rbmk_steam_inlet": "RBMK ReaSim进水口",
+    "tile.rbmk_steam_inlet.desc": "当启用ReaSim锅炉时向反应堆内输入水$从侧面连接至反应堆结构",
+    "tile.rbmk_steam_outlet.name": "RBMK ReaSim蒸汽出口",
+    "block.hbm.rbmk_steam_outlet": "RBMK ReaSim蒸汽出口",
+    "tile.rbmk_steam_outlet.desc": "当启用ReaSim锅炉时从反应堆内输出超热蒸汽$从侧面连接至反应堆结构"
+  }
+}

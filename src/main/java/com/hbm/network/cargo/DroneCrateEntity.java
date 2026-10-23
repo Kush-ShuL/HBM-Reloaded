@@ -1,0 +1,43 @@
+package com.hbm.network.cargo;
+import com.hbm.api.machine.IFluidCopiable;
+import com.hbm.fluid.*;
+import com.hbm.fluid.network.*;
+import com.hbm.multiblock.MuffledMachine;
+import java.util.*;
+import net.minecraft.core.*;
+import net.minecraft.nbt.*;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.*;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
+/** Source fixed-index18-slot handoff, identifier slot19 and native private64000mB tank. No Forge/Neo fluid capability. */
+public final class DroneCrateEntity extends BaseContainerBlockEntity implements WorldlyContainer,DroneLinkable,StandardFluidTransceiver,IFluidCopiable,MuffledMachine {
+ private NonNullList<ItemStack> slots=NonNullList.withSize(19,ItemStack.EMPTY);private final FluidPorts ports;public final FluidTank tank=new FluidTank(HbmFluids.NONE,64000);public int nextX=-1,nextY=-1,nextZ=-1;public boolean sendingMode,itemType=true,muffled,tilted;private String sourceName="";private static final int[] ACCESS=java.util.stream.IntStream.range(0,18).toArray();
+ public DroneCrateEntity(BlockPos pos,BlockState state){super(CargoDroneContent.CRATE_ENTITY.get(),pos,state);ports=new FluidPorts(pos);}
+ public void serverTick(){if(!(level instanceof ServerLevel server))return;ports.update(server,this);tank.setType(18,slots.toArray(ItemStack[]::new));if(nextY!=-1){for(var drone:server.getEntitiesOfClass(PatrolDrone.class,new AABB(worldPosition.above()))){if(CargoDroneBase.sourceSpeed(drone.getDeltaMovement())<.05){drone.setTarget(nextX+.5,nextY,nextZ+.5);if(sendingMode&&itemType)loadItems(drone);if(!sendingMode&&itemType)unloadItems(drone);if(sendingMode&&!itemType)loadFluid(drone);if(!sendingMode&&!itemType)unloadFluid(drone);}}var p=getPoint();CargoEffectPacket.send(server,p.getX()+.5,p.getY()+.5,p.getZ()+.5,nextX-p.getX(),nextY-p.getY(),nextZ-p.getZ(),0x00ffff);}var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625)player.connection.send(packet);}
+ private void sound(){level.playSound(null,worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,SoundEvent.createVariableRangeEvent(ResourceLocation.parse("hbm:item.unpack")),SoundSource.BLOCKS,.5F,.75F);}
+ private void loadItems(PatrolDrone drone){if(drone.getAppearance()!=0)return;boolean loaded=false;for(int i=0;i<18;i++)if(!slots.get(i).isEmpty()){loaded=true;drone.setItem(i,slots.get(i).copy());slots.set(i,ItemStack.EMPTY);}if(loaded){setChanged();drone.setAppearance(1);sound();}}
+ private void unloadItems(PatrolDrone drone){if(drone.getAppearance()!=1)return;boolean emptied=true;for(int i=0;i<18;i++){var item=drone.getItem(i);if(slots.get(i).isEmpty()&&!item.isEmpty()){slots.set(i,item.copy());drone.setItem(i,ItemStack.EMPTY);}else if(!slots.get(i).isEmpty()&&!item.isEmpty())emptied=false;}setChanged();if(emptied){drone.setAppearance(0);sound();}}
+ private void loadFluid(PatrolDrone drone){if(drone.getAppearance()!=0)return;if(tank.getFill()>0){drone.fluid=new FluidStack(tank.getTankType(),tank.getFill());tank.setFill(0);drone.setAppearance(2);sound();setChanged();}}
+ private void unloadFluid(PatrolDrone drone){if(drone.getAppearance()!=2)return;if(drone.fluid!=null&&drone.fluid.type==tank.getTankType()){if(drone.fluid.fill+tank.getFill()<=tank.getMaxFill()){tank.setFill(tank.getFill()+drone.fluid.fill);drone.fluid=null;drone.setAppearance(0);}else{int overshoot=drone.fluid.fill+tank.getFill()-tank.getMaxFill();tank.setFill(tank.getMaxFill());drone.fluid.fill=overshoot;}sound();setChanged();}}
+ public void control(CompoundTag tag){if(tag.contains("mode")){sendingMode=!sendingMode;setChanged();}if(tag.contains("type")){itemType=!itemType;setChanged();}}
+ @Override public BlockPos getPoint(){return worldPosition.above();}@Override public void setNextTarget(int x,int y,int z){nextX=x;nextY=y;nextZ=z;setChanged();}
+ @Override public FluidTank[] getAllTanks(){return new FluidTank[]{tank};}@Override public FluidTank[] getSendingTanks(){return !sendingMode&&!itemType?new FluidTank[]{tank}:FluidTank.EMPTY_ARRAY;}@Override public FluidTank[] getReceivingTanks(){return sendingMode&&!itemType?new FluidTank[]{tank}:FluidTank.EMPTY_ARRAY;}
+ @Override public int getContainerSize(){return 19;}@Override public boolean isEmpty(){return slots.stream().allMatch(ItemStack::isEmpty);}@Override public ItemStack getItem(int slot){return slots.get(slot);}@Override public ItemStack removeItem(int slot,int count){var stack=ContainerHelper.removeItem(slots,slot,count);if(!stack.isEmpty())setChanged();return stack;}@Override public ItemStack removeItemNoUpdate(int slot){return ContainerHelper.takeItem(slots,slot);}@Override public void setItem(int slot,ItemStack item){slots.set(slot,item);item.limitSize(64);setChanged();}@Override public void clearContent(){slots.clear();setChanged();}@Override protected NonNullList<ItemStack> getItems(){return slots;}@Override protected void setItems(NonNullList<ItemStack> items){slots=items;}
+ @Override public int[] getSlotsForFace(Direction face){return ACCESS;}@Override public boolean canPlaceItem(int slot,ItemStack item){return true;}@Override public boolean canPlaceItemThroughFace(int slot,ItemStack item,Direction face){return true;}@Override public boolean canTakeItemThroughFace(int slot,ItemStack item,Direction face){return true;}
+ @Override public boolean stillValid(Player player){return level!=null&&level.getBlockEntity(worldPosition)==this&&player.distanceToSqr(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5)<=144;}
+ @Override protected Component getDefaultName(){return Component.translatable("container.droneCrate");}@Override public Component getCustomName(){return sourceName.isEmpty()?super.getCustomName():Component.literal(sourceName);}@Override public Component getName(){var name=getCustomName();return name==null?getDefaultName():name;}@Override protected AbstractContainerMenu createMenu(int id,Inventory inventory){return new DroneCrateMenu(id,inventory,this);}
+ private CompoundTag write(CompoundTag tag){tag.putIntArray("pos",new int[]{nextX,nextY,nextZ});tag.putBoolean("mode",sendingMode);tag.putBoolean("type",itemType);tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);tank.writeToNBT(tag,"t");if(hasCustomName())tag.putString("name",getCustomName().getString());return tag;}
+ private void read(CompoundTag tag){var p=tag.getIntArray("pos");if(p.length>=3){nextX=p[0];nextY=p[1];nextZ=p[2];}sendingMode=tag.getBoolean("mode");itemType=tag.getBoolean("type");muffled=tag.getBoolean("muffled");tilted=tag.getBoolean("tilted");tank.readFromNBT(tag,"t");sourceName=tag.getString("name");}
+ @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);var items=new ListTag();for(int i=0;i<19;i++)if(!slots.get(i).isEmpty()){var item=(CompoundTag)slots.get(i).save(lookup);item.putByte("slot",(byte)i);items.add(item);}tag.put("items",items);write(tag);}@Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);slots=NonNullList.withSize(19,ItemStack.EMPTY);for(var raw:tag.getList("items",Tag.TAG_COMPOUND)){var item=(CompoundTag)raw;int i=item.getByte("slot")&255;if(i<19)slots.set(i,ItemStack.parseOptional(lookup,item));}read(tag);}
+ @Override public CompoundTag getUpdateTag(HolderLookup.Provider lookup){return write(new CompoundTag());}@Override public void handleUpdateTag(CompoundTag tag,HolderLookup.Provider lookup){read(tag);}@Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}@Override public void onDataPacket(net.minecraft.network.Connection c,ClientboundBlockEntityDataPacket p,HolderLookup.Provider lookup){read(p.getTag());}
+ @Override public void setRemoved(){if(level instanceof ServerLevel server)ports.remove(server);super.setRemoved();}@Override public boolean isMuffled(){return muffled;}@Override public void setMuffled(boolean value){muffled=value;}
+}

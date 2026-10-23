@@ -1,0 +1,57 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "briquette_coal",
+      "id": "hbm:briquette_coal",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.briquette",
+      "sourceLegacyRegistryId": "hbm:item.briquette",
+      "sourceOrdinal": 0,
+      "sourceEnum": "COAL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2334
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "briquette_lignite",
+      "id": "hbm:briquette_lignite",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.briquette",
+      "sourceLegacyRegistryId": "hbm:item.briquette",
+      "sourceOrdinal": 1,
+      "sourceEnum": "LIGNITE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2334
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "briquette_wood",
+      "id": "hbm:briquette_wood",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.briquette",
+      "sourceLegacyRegistryId": "hbm:item.briquette",
+      "sourceOrdinal": 2,
+      "sourceEnum": "WOOD",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2334
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2
+  ]
+}

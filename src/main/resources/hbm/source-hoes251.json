@@ -1,0 +1,88 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "cobalt_hoe",
+      "id": "hbm:cobalt_hoe",
+      "legacyRegistryId": "hbm:item.cobalt_hoe",
+      "originalClass": "ModHoe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4078
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5874
+          },
+          "expression": "GameRegistry.registerItem(cobalt_hoe, cobalt_hoe.getUnlocalizedName())",
+          "arguments": [
+            "cobalt_hoe",
+            "cobalt_hoe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.hoes.SourceHoesContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 750
+    },
+    {
+      "kind": "item",
+      "symbol": "cobalt_decorated_hoe",
+      "id": "hbm:cobalt_decorated_hoe",
+      "legacyRegistryId": "hbm:item.cobalt_decorated_hoe",
+      "originalClass": "ModHoe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4102
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5879
+          },
+          "expression": "GameRegistry.registerItem(cobalt_decorated_hoe, cobalt_decorated_hoe.getUnlocalizedName())",
+          "arguments": [
+            "cobalt_decorated_hoe",
+            "cobalt_decorated_hoe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.hoes.SourceHoesContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 2500
+    },
+    {
+      "kind": "item",
+      "symbol": "starmetal_hoe",
+      "id": "hbm:starmetal_hoe",
+      "legacyRegistryId": "hbm:item.starmetal_hoe",
+      "originalClass": "ModHoe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4131
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5884
+          },
+          "expression": "GameRegistry.registerItem(starmetal_hoe, starmetal_hoe.getUnlocalizedName())",
+          "arguments": [
+            "starmetal_hoe",
+            "starmetal_hoe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.hoes.SourceHoesContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 3000
+    }
+  ]
+}

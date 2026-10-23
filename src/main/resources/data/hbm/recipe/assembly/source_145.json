@@ -1,0 +1,47 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.flashdrive",
+  "duration": 100,
+  "power": 250,
+  "order": 36,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 2
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_chip"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/plategold"
+      },
+      "count": 1
+    }
+  ]
+}

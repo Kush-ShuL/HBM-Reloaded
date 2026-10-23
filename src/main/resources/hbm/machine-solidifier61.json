@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_solidifier",
+      "id": "hbm:machine_solidifier",
+      "kind": "block",
+      "originalClass": "MachineSolidifier",
+      "creativeTab": "machine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2253
+      },
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "legacyBlockEntityId": "tileentity_solidifier",
+      "modernBlockEntityId": "hbm:solidification",
+      "modernPortEntityId": "hbm:solidification_port"
+    },
+    {
+      "symbol": "bio_wafer",
+      "id": "hbm:bio_wafer",
+      "kind": "item",
+      "originalClass": "ItemLemon",
+      "creativeTab": "parts",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2553
+      },
+      "food": {
+        "nutrition": 4,
+        "saturationModifier": 2,
+        "meat": false,
+        "eatTicks": 32,
+        "alwaysEdible": false,
+        "extraEffects": false
+      }
+    }
+  ],
+  "sourceEvents": 48,
+  "finalDefaults": 47
+}

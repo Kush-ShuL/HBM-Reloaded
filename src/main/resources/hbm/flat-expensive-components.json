@@ -1,0 +1,193 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "item_expensive_steel_plating",
+      "id": "hbm:item_expensive_steel_plating",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 0,
+      "sourceEnum": "STEEL_PLATING",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_heavy_frame",
+      "id": "hbm:item_expensive_heavy_frame",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 1,
+      "sourceEnum": "HEAVY_FRAME",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_circuit",
+      "id": "hbm:item_expensive_circuit",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 2,
+      "sourceEnum": "CIRCUIT",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_lead_plating",
+      "id": "hbm:item_expensive_lead_plating",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 3,
+      "sourceEnum": "LEAD_PLATING",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_ferro_plating",
+      "id": "hbm:item_expensive_ferro_plating",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 4,
+      "sourceEnum": "FERRO_PLATING",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_computer",
+      "id": "hbm:item_expensive_computer",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 5,
+      "sourceEnum": "COMPUTER",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_bronze_tubes",
+      "id": "hbm:item_expensive_bronze_tubes",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 6,
+      "sourceEnum": "BRONZE_TUBES",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_plastic",
+      "id": "hbm:item_expensive_plastic",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 7,
+      "sourceEnum": "PLASTIC",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_gold_dust",
+      "id": "hbm:item_expensive_gold_dust",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 8,
+      "sourceEnum": "GOLD_DUST",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_degenerate_matter",
+      "id": "hbm:item_expensive_degenerate_matter",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 9,
+      "sourceEnum": "DEGENERATE_MATTER",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "item_expensive_cmb_tubes",
+      "id": "hbm:item_expensive_cmb_tubes",
+      "originalClass": "ItemExpensive",
+      "sourceField": "ModItems.item_expensive",
+      "sourceLegacyRegistryId": "hbm:item.item_expensive",
+      "sourceOrdinal": 10,
+      "sourceEnum": "CMB_TUBES",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2193
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capacitorgold",
+  "duration": 100,
+  "power": 100,
+  "order": 149,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:battery_pack",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 7
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredensegold"
+      },
+      "count": 16
+    }
+  ]
+}

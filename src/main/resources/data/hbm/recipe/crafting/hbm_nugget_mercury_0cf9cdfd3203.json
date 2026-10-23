@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:nugget_mercury",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:pellet_rtg_depleted",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  ]
+}

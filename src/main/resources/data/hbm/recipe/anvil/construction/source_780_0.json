@@ -1,0 +1,69 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:deco_toaster",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:plate_steel",
+        "count": 3
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:scrap",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:coil_tungsten",
+        "count": 2
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "minecraft:bread",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:battery_sc",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      },
+      "chance": 0.1
+    },
+    {
+      "stack": {
+        "id": "hbm:fusion_core_item",
+        "count": 1
+      },
+      "chance": 0.05
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 780000000
+}

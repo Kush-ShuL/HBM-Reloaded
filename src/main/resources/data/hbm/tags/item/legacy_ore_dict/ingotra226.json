@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_ra226",
+    {
+      "id": "#c:ingots/ra226",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/radium226",
+      "required": false
+    }
+  ]
+}

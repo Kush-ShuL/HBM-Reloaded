@@ -1,0 +1,420 @@
+{
+  "items": [
+    {
+      "id": "hbm:canister_full",
+      "symbol": "canister_full",
+      "class": "ItemCanister",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2810
+      },
+      "initializer": "new ItemCanister().setUnlocalizedName(\"canister_full\").setCreativeTab(MainRegistry.controlTab).setContainerItem(ModItems.canister_empty).setTextureName(RefStrings.MODID + \":canister_empty\")"
+    },
+    {
+      "id": "hbm:chlorine_pinwheel",
+      "symbol": "chlorine_pinwheel",
+      "class": "ItemInfiniteFluid",
+      "tab": "parts",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2569
+      },
+      "initializer": "new ItemInfiniteFluid(Fluids.CHLORINE, 1, 2).setUnlocalizedName(\"chlorine_pinwheel\").setCreativeTab(MainRegistry.partsTab).setTextureName(RefStrings.MODID + \":chlorine_pinwheel\")"
+    },
+    {
+      "id": "hbm:fluid_barrel_full",
+      "symbol": "fluid_barrel_full",
+      "class": "ItemFluidTank",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3871
+      },
+      "initializer": "new ItemFluidTank().setUnlocalizedName(\"fluid_barrel_full\").setContainerItem(ModItems.fluid_barrel_empty).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":fluid_barrel\")"
+    },
+    {
+      "id": "hbm:fluid_barrel_infinite",
+      "symbol": "fluid_barrel_infinite",
+      "class": "ItemInfiniteFluid",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3872
+      },
+      "initializer": "new ItemInfiniteFluid(null, 1_000_000_000).setUnlocalizedName(\"fluid_barrel_infinite\").setMaxStackSize(1).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":fluid_barrel_infinite\")"
+    },
+    {
+      "id": "hbm:fluid_icon",
+      "symbol": "fluid_icon",
+      "class": "ItemFluidIcon",
+      "tab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3865
+      },
+      "initializer": "new ItemFluidIcon().setUnlocalizedName(\"fluid_icon\").setCreativeTab(null).setTextureName(RefStrings.MODID + \":fluid_icon\")"
+    },
+    {
+      "id": "hbm:fluid_identifier_multi",
+      "symbol": "fluid_identifier_multi",
+      "class": "ItemFluidIDMulti",
+      "tab": "template",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3864
+      },
+      "initializer": "new ItemFluidIDMulti().setUnlocalizedName(\"fluid_identifier_multi\").setMaxStackSize(1).setCreativeTab(MainRegistry.templateTab).setTextureName(RefStrings.MODID + \":fluid_identifier_multi\")"
+    },
+    {
+      "id": "hbm:fluid_pack_full",
+      "symbol": "fluid_pack_full",
+      "class": "ItemFluidTank",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3874
+      },
+      "initializer": "new ItemFluidTank().setUnlocalizedName(\"fluid_pack_full\").setContainerItem(ModItems.fluid_pack_empty).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":fluid_pack\")"
+    },
+    {
+      "id": "hbm:fluid_tank_full",
+      "symbol": "fluid_tank_full",
+      "class": "ItemFluidTank",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3867
+      },
+      "initializer": "new ItemFluidTank().setUnlocalizedName(\"fluid_tank_full\").setContainerItem(ModItems.fluid_tank_empty).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":fluid_tank\")"
+    },
+    {
+      "id": "hbm:fluid_tank_lead_full",
+      "symbol": "fluid_tank_lead_full",
+      "class": "ItemFluidTank",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3869
+      },
+      "initializer": "new ItemFluidTank().setUnlocalizedName(\"fluid_tank_lead_full\").setContainerItem(ModItems.fluid_tank_lead_empty).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":fluid_tank_lead\")"
+    },
+    {
+      "id": "hbm:gas_full",
+      "symbol": "gas_full",
+      "class": "ItemGasTank",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2813
+      },
+      "initializer": "new ItemGasTank().setUnlocalizedName(\"gas_full\").setCreativeTab(MainRegistry.controlTab).setContainerItem(ModItems.gas_empty).setTextureName(RefStrings.MODID + \":gas_empty\")"
+    },
+    {
+      "id": "hbm:inf_water",
+      "symbol": "inf_water",
+      "class": "ItemInfiniteFluid",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3879
+      },
+      "initializer": "new ItemInfiniteFluid(Fluids.WATER, 50).setUnlocalizedName(\"inf_water\").setMaxStackSize(1).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":inf_water\")"
+    },
+    {
+      "id": "hbm:inf_water_mk2",
+      "symbol": "inf_water_mk2",
+      "class": "ItemInfiniteFluid",
+      "tab": "control",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3880
+      },
+      "initializer": "new ItemInfiniteFluid(Fluids.WATER, 500).setUnlocalizedName(\"inf_water_mk2\").setMaxStackSize(1).setCreativeTab(MainRegistry.controlTab).setTextureName(RefStrings.MODID + \":inf_water_mk2\")"
+    }
+  ],
+  "containers": [
+    {
+      "full": {
+        "id": "minecraft:water_bucket",
+        "count": 1,
+        "legacySymbol": "Items.water_bucket"
+      },
+      "empty": {
+        "id": "minecraft:bucket",
+        "count": 1,
+        "legacySymbol": "Items.bucket"
+      },
+      "type": "WATER",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "minecraft:potion",
+        "count": 1,
+        "legacySymbol": "Items.potionitem"
+      },
+      "empty": {
+        "id": "minecraft:glass_bottle",
+        "count": 1,
+        "legacySymbol": "Items.glass_bottle"
+      },
+      "type": "WATER",
+      "amount": 250,
+      "potion": "minecraft:water"
+    },
+    {
+      "full": {
+        "id": "minecraft:lava_bucket",
+        "count": 1,
+        "legacySymbol": "Items.lava_bucket"
+      },
+      "empty": {
+        "id": "minecraft:bucket",
+        "count": 1,
+        "legacySymbol": "Items.bucket"
+      },
+      "type": "LAVA",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:bucket_mud",
+        "count": 1,
+        "legacySymbol": "ModItems.bucket_mud"
+      },
+      "empty": {
+        "id": "minecraft:bucket",
+        "count": 1,
+        "legacySymbol": "Items.bucket"
+      },
+      "type": "WATZ",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:bucket_schrabidic_acid",
+        "count": 1,
+        "legacySymbol": "ModItems.bucket_schrabidic_acid"
+      },
+      "empty": {
+        "id": "minecraft:bucket",
+        "count": 1,
+        "legacySymbol": "Items.bucket"
+      },
+      "type": "SCHRABIDIC",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:bucket_sulfuric_acid",
+        "count": 1,
+        "legacySymbol": "ModItems.bucket_sulfuric_acid"
+      },
+      "empty": {
+        "id": "minecraft:bucket",
+        "count": 1,
+        "legacySymbol": "Items.bucket"
+      },
+      "type": "SULFURIC_ACID",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:ore_oil",
+        "count": 1,
+        "legacySymbol": "ModBlocks.ore_oil"
+      },
+      "empty": null,
+      "type": "OIL",
+      "amount": 250
+    },
+    {
+      "full": {
+        "id": "hbm:ore_gneiss_gas",
+        "count": 1,
+        "legacySymbol": "ModBlocks.ore_gneiss_gas"
+      },
+      "empty": null,
+      "type": "PETROLEUM",
+      "amount": 250,
+      "amount528": 50
+    },
+    {
+      "full": {
+        "id": "hbm:cell_deuterium",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_deuterium"
+      },
+      "empty": {
+        "id": "hbm:cell_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_empty"
+      },
+      "type": "DEUTERIUM",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:cell_tritium",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_tritium"
+      },
+      "empty": {
+        "id": "hbm:cell_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_empty"
+      },
+      "type": "TRITIUM",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:cell_uf6",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_uf6"
+      },
+      "empty": {
+        "id": "hbm:cell_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_empty"
+      },
+      "type": "UF6",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:cell_puf6",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_puf6"
+      },
+      "empty": {
+        "id": "hbm:cell_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_empty"
+      },
+      "type": "PUF6",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:cell_sas3",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_sas3"
+      },
+      "empty": {
+        "id": "hbm:cell_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.cell_empty"
+      },
+      "type": "SAS3",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:bottle_mercury",
+        "count": 1,
+        "legacySymbol": "ModItems.bottle_mercury"
+      },
+      "empty": {
+        "id": "minecraft:glass_bottle",
+        "count": 1,
+        "legacySymbol": "Items.glass_bottle"
+      },
+      "type": "MERCURY",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:nugget_mercury",
+        "count": 1,
+        "legacySymbol": "ModItems.ingot_mercury"
+      },
+      "empty": null,
+      "type": "MERCURY",
+      "amount": 125
+    },
+    {
+      "full": {
+        "id": "hbm:rod_zirnox_tritium",
+        "count": 1,
+        "legacySymbol": "ModItems.rod_zirnox_tritium"
+      },
+      "empty": {
+        "id": "hbm:rod_zirnox_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.rod_zirnox_empty"
+      },
+      "type": "TRITIUM",
+      "amount": 2000
+    },
+    {
+      "full": {
+        "id": "hbm:particle_hydrogen",
+        "count": 1,
+        "legacySymbol": "ModItems.particle_hydrogen"
+      },
+      "empty": {
+        "id": "hbm:particle_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.particle_empty"
+      },
+      "type": "HYDROGEN",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:particle_amat",
+        "count": 1,
+        "legacySymbol": "ModItems.particle_amat"
+      },
+      "empty": {
+        "id": "hbm:particle_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.particle_empty"
+      },
+      "type": "AMAT",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "hbm:particle_aschrab",
+        "count": 1,
+        "legacySymbol": "ModItems.particle_aschrab"
+      },
+      "empty": {
+        "id": "hbm:particle_empty",
+        "count": 1,
+        "legacySymbol": "ModItems.particle_empty"
+      },
+      "type": "ASCHRAB",
+      "amount": 1000
+    },
+    {
+      "full": {
+        "id": "minecraft:experience_bottle",
+        "count": 1,
+        "legacySymbol": "Items.experience_bottle"
+      },
+      "empty": {
+        "id": "minecraft:glass_bottle",
+        "count": 1,
+        "legacySymbol": "Items.glass_bottle"
+      },
+      "type": "XPJUICE",
+      "amount": 100
+    }
+  ],
+  "components": {
+    "type": "hbm:fluid_type",
+    "sourceMetadata": "hbm:legacy_metadata"
+  },
+  "dynamic": {
+    "canister": 1000,
+    "gastank": 1000,
+    "leadTank": 1000,
+    "tank": 1000,
+    "barrel": 16000,
+    "pack": "Source registers no container mapping; no capacity invented."
+  }
+}

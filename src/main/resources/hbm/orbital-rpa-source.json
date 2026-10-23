@@ -1,0 +1,167 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "orbital_assembly",
+      "id": "hbm:orbital_assembly",
+      "legacyRegistryId": "hbm:item.orbital_assembly",
+      "originalClass": "ItemOrbitalAssembly",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3430
+      },
+      "creativeTab": "parts",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1,
+      "metadataRange": [
+        0,
+        0
+      ],
+      "names": [
+        "crystal_circuit"
+      ],
+      "enumClass": "EnumOrbitalAssembly",
+      "satelliteFrequencyInterface": "com.hbm.satellite.SatelliteFrequency"
+    },
+    {
+      "kind": "item",
+      "symbol": "rpa_helmet",
+      "id": "hbm:rpa_helmet",
+      "legacyRegistryId": "hbm:item.rpa_helmet",
+      "originalClass": "ArmorRPA",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 191
+      },
+      "creativeTab": "combat",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1,
+      "damageItem": true,
+      "sourceMaterial": "HBM_T45AJR",
+      "baseDurability": 150
+    },
+    {
+      "kind": "item",
+      "symbol": "rpa_plate",
+      "id": "hbm:rpa_plate",
+      "legacyRegistryId": "hbm:item.rpa_plate",
+      "originalClass": "ArmorRPA",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 202
+      },
+      "creativeTab": "combat",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1,
+      "damageItem": true,
+      "sourceMaterial": "HBM_T45AJR",
+      "baseDurability": 150
+    },
+    {
+      "kind": "item",
+      "symbol": "rpa_legs",
+      "id": "hbm:rpa_legs",
+      "legacyRegistryId": "hbm:item.rpa_legs",
+      "originalClass": "ArmorRPA",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 203
+      },
+      "creativeTab": "combat",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1,
+      "damageItem": true,
+      "sourceMaterial": "HBM_T45AJR",
+      "baseDurability": 150
+    },
+    {
+      "kind": "item",
+      "symbol": "rpa_boots",
+      "id": "hbm:rpa_boots",
+      "legacyRegistryId": "hbm:item.rpa_boots",
+      "originalClass": "ArmorRPA",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 204
+      },
+      "creativeTab": "combat",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1,
+      "damageItem": true,
+      "sourceMaterial": "HBM_T45AJR",
+      "baseDurability": 150
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_pa_melee",
+      "id": "hbm:gun_pa_melee",
+      "legacyRegistryId": "hbm:item.gun_pa_melee",
+      "originalClass": "XFactoryPA.ItemGunPA",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryPA.java",
+        "line": 52
+      },
+      "creativeTab": "weapon",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_pa_ranged",
+      "id": "hbm:gun_pa_ranged",
+      "legacyRegistryId": "hbm:item.gun_pa_ranged",
+      "originalClass": "XFactoryPA.ItemGunPA",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryPA.java",
+        "line": 59
+      },
+      "creativeTab": "weapon",
+      "status": "source_staged_not_compiled",
+      "maxStackSize": 1
+    }
+  ],
+  "sourceArmorMaterial": {
+    "name": "HBM_T45AJR",
+    "baseDurability": 150,
+    "defense": [
+      3,
+      8,
+      6,
+      3
+    ],
+    "enchantability": 0,
+    "repair": "hbm:plate_armor_ajr"
+  },
+  "privateHE": {
+    "maxPower": 2500000,
+    "chargeRate": 10000,
+    "damageConsumption": 2000,
+    "drainPerTick": 25,
+    "tag": "charge",
+    "zeroChargeKeepsOrdinaryArmor": true
+  },
+  "rpaMelee": {
+    "punchDamage": 15,
+    "slapDamage": 35,
+    "largeTargetMaxHpThreshold": 100,
+    "largeTargetMultiplier": 2.5,
+    "punchFrames": [
+      3,
+      9
+    ],
+    "punchCycle": 14,
+    "slapFrame": 8,
+    "slapCycle": 20,
+    "range": 3,
+    "entityInflation": 0.5,
+    "dt": [
+      5,
+      15
+    ],
+    "drPierce": [
+      0.1,
+      0.25
+    ]
+  },
+  "sourceRemoteBoundary": "RPA supplies melee only and returns null ranged. The same genuine controller delegates to future real PA ranged providers; no NCRPA laser or armor is registered here."
+}

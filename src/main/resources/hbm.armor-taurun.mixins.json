@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.client.armor.taurun.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "TaurunArmorLayerMixin",
+    "TaurunHatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

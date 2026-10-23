@@ -1,0 +1,141 @@
+{
+  "sourceMaterial": {
+    "holder": "RpaContent.AJR",
+    "baseDurability": 150,
+    "defense": [
+      3,
+      8,
+      6,
+      3
+    ],
+    "enchantability": 0,
+    "repair": "hbm:plate_armor_ajr",
+    "mixedMatchingMaterialSet": true
+  },
+  "privateHE": {
+    "maxPower": 2500000,
+    "chargeRate": 10000,
+    "damageConsumption": 2000,
+    "drainPerPiecePerTick": 25,
+    "NBT": "charge"
+  },
+  "radiationExponents": {
+    "helmet": 0.34,
+    "plate": 0.68,
+    "legs": 0.51,
+    "boots": 0.17
+  },
+  "DTDR": {
+    "physical": [
+      25,
+      0.65
+    ],
+    "fire": [
+      10,
+      0.9
+    ],
+    "explosion": [
+      15,
+      0.25
+    ],
+    "energy": [
+      10,
+      0.5
+    ],
+    "fall": [
+      0,
+      1
+    ],
+    "other": [
+      15,
+      0.25
+    ]
+  },
+  "helmetHazards": [
+    "PARTICLE_COARSE",
+    "PARTICLE_FINE",
+    "GAS_LUNG",
+    "BACTERIA",
+    "GAS_BLISTERING",
+    "GAS_MONOXIDE",
+    "LIGHT",
+    "SAND"
+  ],
+  "sprint": {
+    "amount": 0.1,
+    "operation": "ADD_VALUE",
+    "sourceUUID": "6ab858ba-d712-485c-bae9-e5e765fc555a",
+    "requiresChargedSet": false,
+    "sourceOnlyActualChestTick": true
+  },
+  "nightVision": {
+    "periodTicks": 20,
+    "durationTicks": 300,
+    "amplifier": 0,
+    "ambient": true,
+    "requiresChargedMatchingSet": true,
+    "switch": "existing originalenableHUD viaT51Network"
+  },
+  "melee": {
+    "cycle": 25,
+    "cycleHitFrames": [
+      5,
+      15
+    ],
+    "alternateCycle": 30,
+    "alternateHitFrames": [
+      5
+    ],
+    "damage": [
+      15,
+      35
+    ],
+    "largeMaxHealthThreshold": 100,
+    "largeMultiplier": 2.5,
+    "range": 3,
+    "inflate": 0.5,
+    "knockback": [
+      0,
+      1.5
+    ],
+    "DT": [
+      5,
+      15
+    ],
+    "pierceDR": [
+      0.1,
+      0.25
+    ],
+    "ignoreIFrame": true,
+    "allowSpecialCancel": false,
+    "sourceAlwaysGibOnDeath": true
+  },
+  "ranged": {
+    "controller": "existing hbm:gun_pa_ranged",
+    "sourceMagazines": 2,
+    "ammoTypes": [
+      58,
+      59,
+      60,
+      61,
+      62
+    ],
+    "actualBeltBagAndCreativeRules": true,
+    "damageBase": 25,
+    "lifetime": [
+      300,
+      400
+    ],
+    "sourceSideOffset": "0.25F*(random.nextBoolean()?-1:1)",
+    "cooldownTicks": 10,
+    "extraHECost": 0,
+    "primaryAlwaysGuidesWithoutADS": true,
+    "secondaryUnguided": true,
+    "steeringOwnerRange": 100,
+    "steeringTraceDistance": 200,
+    "steeringStopDistance": 3,
+    "steeringAccelBelow": 4,
+    "steeringAccelPerTick": 0.4
+  },
+  "viewers": "Four true native COMBAT items; existing registered PA controllers and actual ammo58..62 remain sole identities, no second gun/recipe category."
+}

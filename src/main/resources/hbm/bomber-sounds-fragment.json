@@ -1,0 +1,50 @@
+{
+  "entity.bombersmallloop": {
+    "sounds": [
+      {
+        "name": "entity/bomber2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.bomberloop": {
+    "sounds": [
+      {
+        "name": "entity/bomber1",
+        "stream": false
+      }
+    ]
+  },
+  "entity.bombwhistle": {
+    "sounds": [
+      {
+        "name": "entity/bombwhistle",
+        "stream": false
+      }
+    ]
+  },
+  "weapon.missiletakeoff": {
+    "sounds": [
+      {
+        "name": "weapon/missiletakeoff",
+        "stream": false
+      }
+    ]
+  },
+  "weapon.mukeexplosion": {
+    "sounds": [
+      {
+        "name": "weapon/mukeexplosion",
+        "stream": false
+      }
+    ]
+  },
+  "item.techbleep": {
+    "sounds": [
+      {
+        "name": "tool/techbleep",
+        "stream": false
+      }
+    ]
+  }
+}

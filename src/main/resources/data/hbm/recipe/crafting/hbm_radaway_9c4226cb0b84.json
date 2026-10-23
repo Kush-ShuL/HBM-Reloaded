@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:radaway",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:iv_blood"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcoal"
+    },
+    {
+      "item": "minecraft:pumpkin_seeds"
+    }
+  ]
+}

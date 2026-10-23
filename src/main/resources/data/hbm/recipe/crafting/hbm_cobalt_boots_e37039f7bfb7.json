@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:cobalt_boots",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ECE"
+  ],
+  "key": {
+    "E": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetcobalt"
+    },
+    "C": {
+      "type": "neoforge:components",
+      "items": "hbm:steel_boots",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    }
+  }
+}

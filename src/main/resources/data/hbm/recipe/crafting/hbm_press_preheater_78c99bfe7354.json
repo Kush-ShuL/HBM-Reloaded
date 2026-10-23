@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:press_preheater",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "SLS",
+    "TST"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platecopper"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "L": {
+      "type": "hbm:source_fluid_container",
+      "fluid": "LAVA",
+      "amount": 1000
+    },
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingottungsten"
+    }
+  }
+}

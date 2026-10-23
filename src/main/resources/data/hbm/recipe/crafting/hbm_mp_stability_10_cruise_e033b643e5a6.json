@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:mp_stability_10_cruise",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASA",
+    " S ",
+    "PSP"
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetitanium"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "S": {
+      "item": "hbm:steel_scaffold"
+    }
+  }
+}

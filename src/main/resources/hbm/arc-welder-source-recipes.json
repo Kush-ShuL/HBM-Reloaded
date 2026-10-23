@@ -1,0 +1,1238 @@
+{
+  "recipes": [
+    {
+      "output": [
+        "hbm:motor",
+        2,
+        0
+      ],
+      "duration": 100,
+      "consumption": 400,
+      "order": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 36
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateSteel",
+          2
+        ],
+        [
+          "dict",
+          "wireDenseMingrade",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:part_generic_lde",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 5000,
+      "order": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 38
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateAluminum",
+          4
+        ],
+        [
+          "dict",
+          "ingotFiberglass",
+          4
+        ],
+        [
+          "dict",
+          "ingotAnyHardPlastic",
+          1
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:part_generic_lde",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 10000,
+      "order": 2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 40
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTitanium",
+          2
+        ],
+        [
+          "dict",
+          "ingotFiberglass",
+          4
+        ],
+        [
+          "dict",
+          "ingotAnyHardPlastic",
+          1
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:neutron_reflector",
+        2,
+        0
+      ],
+      "duration": 400,
+      "consumption": 50000,
+      "order": 3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 42
+      },
+      "inputs": [
+        [
+          "dict",
+          "ingotTungstenCarbide",
+          2
+        ],
+        [
+          "dict",
+          "plateDuraSteel",
+          1
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:wire_dense",
+        1,
+        2900
+      ],
+      "duration": 100,
+      "consumption": 10000,
+      "order": 4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 46
+      },
+      "inputs": [
+        [
+          "dict",
+          "wireFineCopper",
+          8
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:wire_dense",
+        1,
+        31
+      ],
+      "duration": 100,
+      "consumption": 10000,
+      "order": 5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 48
+      },
+      "inputs": [
+        [
+          "dict",
+          "wireFineMingrade",
+          8
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:wire_dense",
+        1,
+        7900
+      ],
+      "duration": 100,
+      "consumption": 10000,
+      "order": 6,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 50
+      },
+      "inputs": [
+        [
+          "dict",
+          "wireFineGold",
+          8
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        2600
+      ],
+      "duration": 100,
+      "consumption": 100,
+      "order": 7,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 54
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleIron",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        30
+      ],
+      "duration": 100,
+      "consumption": 500,
+      "order": 8,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 57
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleSteel",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        2900
+      ],
+      "duration": 200,
+      "consumption": 1000,
+      "order": 9,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 60
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleCopper",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        2200
+      ],
+      "duration": 600,
+      "consumption": 50000,
+      "order": 10,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 63
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleTitanium",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        4000
+      ],
+      "duration": 600,
+      "consumption": 10000,
+      "order": 11,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 66
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleZirconium",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        1300
+      ],
+      "duration": 300,
+      "consumption": 10000,
+      "order": 12,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 68
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleAluminum",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        36
+      ],
+      "duration": 1200,
+      "consumption": 1000000,
+      "order": 13,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 71
+      },
+      "fluid": [
+        "OXYGEN",
+        1000,
+        0
+      ],
+      "inputs": [
+        [
+          "dict",
+          "plateTripleTcAlloy",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        43
+      ],
+      "duration": 1200,
+      "consumption": 1000000,
+      "order": 14,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 73
+      },
+      "fluid": [
+        "OXYGEN",
+        1000,
+        0
+      ],
+      "inputs": [
+        [
+          "dict",
+          "plateTripleCdAlloy",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        7400
+      ],
+      "duration": 1200,
+      "consumption": 250000,
+      "order": 15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 75
+      },
+      "fluid": [
+        "OXYGEN",
+        1000,
+        0
+      ],
+      "inputs": [
+        [
+          "dict",
+          "plateTripleTungsten",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        39
+      ],
+      "duration": 1200,
+      "consumption": 10000000,
+      "order": 16,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 77
+      },
+      "fluid": [
+        "REFORMGAS",
+        1000,
+        0
+      ],
+      "inputs": [
+        [
+          "dict",
+          "plateTripleCMBSteel",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:plate_welded",
+        1,
+        7699
+      ],
+      "duration": 6000,
+      "consumption": 50000000,
+      "order": 17,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 80
+      },
+      "fluid": [
+        "REFORMGAS",
+        16000,
+        0
+      ],
+      "inputs": [
+        [
+          "dict",
+          "plateTripleOsmiridium",
+          2
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:thruster_small",
+        1,
+        0
+      ],
+      "duration": 60,
+      "consumption": 1000,
+      "order": 18,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 84
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateSteel",
+          4
+        ],
+        [
+          "dict",
+          "wireFineAluminum",
+          4
+        ],
+        [
+          "dict",
+          "plateCopper",
+          4
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:thruster_medium",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 2000,
+      "order": 19,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 85
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateSteel",
+          8
+        ],
+        [
+          "item",
+          "hbm:motor",
+          1,
+          0
+        ],
+        [
+          "dict",
+          "ingotGraphite",
+          8
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:thruster_large",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 5000,
+      "order": 20,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 86
+      },
+      "inputs": [
+        [
+          "dict",
+          "ingotDuraSteel",
+          10
+        ],
+        [
+          "item",
+          "hbm:motor",
+          1,
+          0
+        ],
+        [
+          "dict",
+          "ingotTungstenCarbide",
+          12
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:fuel_tank_small",
+        1,
+        0
+      ],
+      "duration": 60,
+      "consumption": 1000,
+      "order": 21,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 88
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateAluminum",
+          6
+        ],
+        [
+          "dict",
+          "plateCopper",
+          4
+        ],
+        [
+          "item",
+          "hbm:steel_scaffold",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:fuel_tank_medium",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 2000,
+      "order": 22,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 89
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateTripleAluminum",
+          4
+        ],
+        [
+          "dict",
+          "plateTitanium",
+          8
+        ],
+        [
+          "item",
+          "hbm:steel_scaffold",
+          12,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:fuel_tank_large",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 5000,
+      "order": 23,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 90
+      },
+      "inputs": [
+        [
+          "dict",
+          "plateSextupleAluminum",
+          8
+        ],
+        [
+          "dict",
+          "plateSaturnite",
+          12
+        ],
+        [
+          "item",
+          "hbm:steel_scaffold",
+          16,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_anti_ballistic",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 5000,
+      "order": 24,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 93
+      },
+      "inputs": [
+        [
+          "dict",
+          "ingotAnyHighexplosive",
+          3
+        ],
+        [
+          "item",
+          "hbm:missile_assembly",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_small",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_generic",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 5000,
+      "order": 25,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 94
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_generic_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_small",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_incendiary",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 5000,
+      "order": 26,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 95
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_incendiary_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_small",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_cluster",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 5000,
+      "order": 27,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 96
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_cluster_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_small",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_buster",
+        1,
+        0
+      ],
+      "duration": 100,
+      "consumption": 5000,
+      "order": 28,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 97
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_buster_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_small",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_decoy",
+        1,
+        0
+      ],
+      "duration": 60,
+      "consumption": 2500,
+      "order": 29,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 98
+      },
+      "inputs": [
+        [
+          "dict",
+          "ingotSteel",
+          1
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_small",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_small",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_strong",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 10000,
+      "order": 30,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 100
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_generic_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_incendiary_strong",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 10000,
+      "order": 31,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 101
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_incendiary_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_cluster_strong",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 10000,
+      "order": 32,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 102
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_cluster_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_buster_strong",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 10000,
+      "order": 33,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 103
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_buster_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_emp_strong",
+        1,
+        0
+      ],
+      "duration": 200,
+      "consumption": 10000,
+      "order": 34,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 104
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:emp_bomb",
+          3,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_burst",
+        1,
+        0
+      ],
+      "duration": 300,
+      "consumption": 25000,
+      "order": 35,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 106
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_generic_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          2,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_inferno",
+        1,
+        0
+      ],
+      "duration": 300,
+      "consumption": 25000,
+      "order": 36,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 107
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_incendiary_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          2,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_rain",
+        1,
+        0
+      ],
+      "duration": 300,
+      "consumption": 25000,
+      "order": 37,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 108
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_cluster_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          2,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_drill",
+        1,
+        0
+      ],
+      "duration": 300,
+      "consumption": 25000,
+      "order": 38,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 109
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_buster_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_medium",
+          2,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_medium",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_nuclear",
+        1,
+        0
+      ],
+      "duration": 600,
+      "consumption": 50000,
+      "order": 39,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 111
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_nuclear",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_large",
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_nuclear_cluster",
+        1,
+        0
+      ],
+      "duration": 600,
+      "consumption": 50000,
+      "order": 40,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 112
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_mirv",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_large",
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "output": [
+        "hbm:missile_volcano",
+        1,
+        0
+      ],
+      "duration": 600,
+      "consumption": 50000,
+      "order": 41,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ArcWelderRecipes.java",
+        "line": 113
+      },
+      "inputs": [
+        [
+          "item",
+          "hbm:warhead_volcano",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:fuel_tank_large",
+          1,
+          0
+        ],
+        [
+          "item",
+          "hbm:thruster_large",
+          3,
+          0
+        ]
+      ]
+    }
+  ]
+}

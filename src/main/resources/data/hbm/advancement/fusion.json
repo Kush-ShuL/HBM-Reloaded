@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:bismuth",
+  "display": {
+    "icon": {
+      "id": "hbm:fusion_torus"
+    },
+    "title": {
+      "translate": "achievement.fusion"
+    },
+    "description": {
+      "translate": "achievement.fusion.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:fusion"
+      }
+    }
+  }
+}

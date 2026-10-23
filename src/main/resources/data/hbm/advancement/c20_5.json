@@ -1,0 +1,29 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:achievement_icon",
+      "components": {
+        "hbm:legacy_metadata": 9
+      }
+    },
+    "title": {
+      "translate": "achievement.c20_5"
+    },
+    "description": {
+      "translate": "achievement.c20_5.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:c20_5"
+      }
+    }
+  }
+}

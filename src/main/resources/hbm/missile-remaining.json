@@ -1,0 +1,175 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "missile_taint",
+      "id": "hbm:missile_taint",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3417
+      },
+      "legacyRegistryId": "hbm:item.missile_taint",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_taint",
+      "form": "MICRO",
+      "tier": "TIER0"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_micro",
+      "id": "hbm:missile_micro",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3418
+      },
+      "legacyRegistryId": "hbm:item.missile_micro",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_micronuclear",
+      "form": "MICRO",
+      "tier": "TIER0"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_bhole",
+      "id": "hbm:missile_bhole",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3419
+      },
+      "legacyRegistryId": "hbm:item.missile_bhole",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_blackhole",
+      "form": "MICRO",
+      "tier": "TIER0"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_schrabidium",
+      "id": "hbm:missile_schrabidium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3420
+      },
+      "legacyRegistryId": "hbm:item.missile_schrabidium",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_schrabidium",
+      "form": "MICRO",
+      "tier": "TIER0"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_emp",
+      "id": "hbm:missile_emp",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3421
+      },
+      "legacyRegistryId": "hbm:item.missile_emp",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_emp",
+      "form": "MICRO",
+      "tier": "TIER0"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_test",
+      "id": "hbm:missile_test",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3424
+      },
+      "legacyRegistryId": "hbm:item.missile_test",
+      "originalClass": "ItemMissile",
+      "creativeTab": null,
+      "entityId": "hbm:entity_missile_test_mk2",
+      "form": "MICRO",
+      "tier": "TIER0"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_stealth",
+      "id": "hbm:missile_stealth",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3423
+      },
+      "legacyRegistryId": "hbm:item.missile_stealth",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_stealth",
+      "form": "STRONG",
+      "tier": "TIER1"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_shuttle",
+      "id": "hbm:missile_shuttle",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3422
+      },
+      "legacyRegistryId": "hbm:item.missile_shuttle",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_shuttle",
+      "form": "OTHER",
+      "tier": "TIER3"
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_doomsday",
+      "id": "hbm:missile_doomsday",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3415
+      },
+      "legacyRegistryId": "hbm:item.missile_doomsday",
+      "originalClass": "ItemMissile",
+      "creativeTab": "missile",
+      "entityId": "hbm:entity_missile_doomsday",
+      "form": "ATLAS",
+      "tier": "TIER4"
+    },
+    {
+      "kind": "item",
+      "symbol": "singularity",
+      "id": "hbm:singularity",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2716
+      },
+      "legacyRegistryId": "hbm:item.singularity",
+      "originalClass": "ItemDrop",
+      "creativeTab": "control"
+    },
+    {
+      "kind": "item",
+      "symbol": "black_hole",
+      "id": "hbm:black_hole",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2719
+      },
+      "legacyRegistryId": "hbm:item.black_hole",
+      "originalClass": "ItemDrop",
+      "creativeTab": "control"
+    },
+    {
+      "kind": "item",
+      "symbol": "crystal_xen",
+      "id": "hbm:crystal_xen",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2722
+      },
+      "legacyRegistryId": "hbm:item.crystal_xen",
+      "originalClass": "ItemDrop",
+      "creativeTab": "control"
+    }
+  ]
+}

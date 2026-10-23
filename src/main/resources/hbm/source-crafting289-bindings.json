@@ -1,0 +1,2948 @@
+{
+  "module": "source-crafting289",
+  "entries": [],
+  "sourceRecipeBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 428
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_reinforced_brick_ffe34d2445fb",
+          "resource": "data/hbm/recipe/crafting/hbm_reinforced_brick_ffe34d2445fb.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_brick_ffe34d2445fb.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 430
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_reinforced_glass_577d08ec1c92",
+          "resource": "data/hbm/recipe/crafting/hbm_reinforced_glass_577d08ec1c92.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_glass_577d08ec1c92.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 433
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_reinforced_light_95a1216f61be",
+          "resource": "data/hbm/recipe/crafting/hbm_reinforced_light_95a1216f61be.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_light_95a1216f61be.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 435
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_reinforced_sand_6701382614d3",
+          "resource": "data/hbm/recipe/crafting/hbm_reinforced_sand_6701382614d3.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_sand_6701382614d3.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 485
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_book_guide_edba9bf5f656",
+          "resource": "data/hbm/recipe/crafting/hbm_book_guide_edba9bf5f656.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_book_guide_edba9bf5f656.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 506
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_powder_poison_2541260d9a20",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_poison_2541260d9a20.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_powder_poison_2541260d9a20.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 557
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_record_lc_65173f870599",
+          "resource": "data/hbm/recipe/crafting/hbm_record_lc_65173f870599.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_record_lc_65173f870599.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 558
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_record_ss_39f9fabf978f",
+          "resource": "data/hbm/recipe/crafting/hbm_record_ss_39f9fabf978f.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_record_ss_39f9fabf978f.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 559
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_record_vc_2fa5b74b1e56",
+          "resource": "data/hbm/recipe/crafting/hbm_record_vc_2fa5b74b1e56.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_record_vc_2fa5b74b1e56.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 565
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_crystal_virus_21e358386a94",
+          "resource": "data/hbm/recipe/crafting/hbm_crystal_virus_21e358386a94.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_crystal_virus_21e358386a94.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 566
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_crystal_pulsar_ec87dfeac144",
+          "resource": "data/hbm/recipe/crafting/hbm_crystal_pulsar_ec87dfeac144.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_crystal_pulsar_ec87dfeac144.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 582
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_pipe_anchor_exhaust_5e65fb43d643",
+          "resource": "data/hbm/recipe/crafting/hbm_pipe_anchor_exhaust_5e65fb43d643.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_pipe_anchor_exhaust_5e65fb43d643.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 592
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_inf_water_8bea6685cf64",
+          "resource": "data/hbm/recipe/crafting/hbm_inf_water_8bea6685cf64.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_inf_water_8bea6685cf64.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 593
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_inf_water_mk2_827209c95492",
+          "resource": "data/hbm/recipe/crafting/hbm_inf_water_mk2_827209c95492.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_inf_water_mk2_827209c95492.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 612
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_radiobox_318cb768ef0f",
+          "resource": "data/hbm/recipe/crafting/hbm_radiobox_318cb768ef0f.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_radiobox_318cb768ef0f.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 633
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_pink_slab_3573314be6f4",
+          "resource": "data/hbm/recipe/crafting/hbm_pink_slab_3573314be6f4.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_pink_slab_3573314be6f4.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 642
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/minecraft_slime_ball_17006f00fd9d",
+          "resource": "data/hbm/recipe/crafting/minecraft_slime_ball_17006f00fd9d.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_slime_ball_17006f00fd9d.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 648
+      },
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 650
+      },
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 655
+      },
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 658
+      },
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 677
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_obj_tester_07e172b3bbfc",
+          "resource": "data/hbm/recipe/crafting/hbm_obj_tester_07e172b3bbfc.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_obj_tester_07e172b3bbfc.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 679
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_fence_metal_91db24e39a42",
+          "resource": "data/hbm/recipe/crafting/hbm_fence_metal_91db24e39a42.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_fence_metal_91db24e39a42.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 684
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_waste_trinitite_red_24550b589088",
+          "resource": "data/hbm/recipe/crafting/hbm_waste_trinitite_red_24550b589088.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_waste_trinitite_red_24550b589088.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 785
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_rtty_pager_0ff344037110",
+          "resource": "data/hbm/recipe/crafting/hbm_rtty_pager_0ff344037110.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_rtty_pager_0ff344037110.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 786
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_rtty_designator_4e70db59d0d1",
+          "resource": "data/hbm/recipe/crafting/hbm_rtty_designator_4e70db59d0d1.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_rtty_designator_4e70db59d0d1.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 810
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_deco_pipe_framed_cef12fc96612",
+          "resource": "data/hbm/recipe/crafting/hbm_deco_pipe_framed_cef12fc96612.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_deco_pipe_framed_cef12fc96612.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 811
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_deco_pipe_framed_c487a55b9f9c",
+          "resource": "data/hbm/recipe/crafting/hbm_deco_pipe_framed_c487a55b9f9c.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_deco_pipe_framed_c487a55b9f9c.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 834
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_deco_emitter_60e8265e63fd",
+          "resource": "data/hbm/recipe/crafting/hbm_deco_emitter_60e8265e63fd.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_deco_emitter_60e8265e63fd.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-real-native-resource"
+        }
+      ],
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 836
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/minecraft_name_tag_949b6a2e1794",
+          "resource": "data/hbm/recipe/crafting/minecraft_name_tag_949b6a2e1794.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_name_tag_949b6a2e1794.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 837
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/minecraft_name_tag_557ea51b8023",
+          "resource": "data/hbm/recipe/crafting/minecraft_name_tag_557ea51b8023.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_name_tag_557ea51b8023.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 838
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/minecraft_lead_698128d6a754",
+          "resource": "data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 851
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_refueler_81471f8e4dc1",
+          "resource": "data/hbm/recipe/crafting/hbm_refueler_81471f8e4dc1.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_refueler_81471f8e4dc1.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 910
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ball_resin_626496d60ff7",
+          "resource": "data/hbm/recipe/crafting/hbm_ball_resin_626496d60ff7.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ball_resin_626496d60ff7.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 922
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_foundry_basin_edefa505a3ab",
+          "resource": "data/hbm/recipe/crafting/hbm_foundry_basin_edefa505a3ab.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_basin_edefa505a3ab.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 923
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_foundry_mold_fecddf05b209",
+          "resource": "data/hbm/recipe/crafting/hbm_foundry_mold_fecddf05b209.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_mold_fecddf05b209.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 924
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_foundry_channel_42c2240cbd30",
+          "resource": "data/hbm/recipe/crafting/hbm_foundry_channel_42c2240cbd30.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_channel_42c2240cbd30.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 925
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_foundry_tank_d2f077846526",
+          "resource": "data/hbm/recipe/crafting/hbm_foundry_tank_d2f077846526.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_tank_d2f077846526.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 948
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_cordite_c388be203844",
+          "resource": "data/hbm/recipe/crafting/hbm_cordite_c388be203844.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_cordite_c388be203844.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 949
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ingot_semtex_1815af653a50",
+          "resource": "data/hbm/recipe/crafting/hbm_ingot_semtex_1815af653a50.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ingot_semtex_1815af653a50.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 950
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_canister_full_9aa577cbc41c",
+          "resource": "data/hbm/recipe/crafting/hbm_canister_full_9aa577cbc41c.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_canister_full_9aa577cbc41c.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 952
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_uranium_5c047dfbef1c",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_5c047dfbef1c.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_5c047dfbef1c.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 953
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_uranium_0daf50eeb2d6",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_0daf50eeb2d6.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_0daf50eeb2d6.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 954
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_nether_uranium_ab0b21fecf4b",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_nether_uranium_ab0b21fecf4b.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_nether_uranium_ab0b21fecf4b.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 955
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_nether_uranium_ee0c98054ec9",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_nether_uranium_ee0c98054ec9.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_nether_uranium_ee0c98054ec9.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 956
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_gneiss_uranium_e0a67344ad53",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_e0a67344ad53.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_e0a67344ad53.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 957
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_gneiss_uranium_4b954d9a0d17",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_4b954d9a0d17.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_4b954d9a0d17.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 958
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_uranium_e36068b0900b",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_e36068b0900b.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_e36068b0900b.json",
+          "type": "minecraft:crafting_shapeless",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 959
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_ore_uranium_7cc72c9dfe3c",
+          "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_7cc72c9dfe3c.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_7cc72c9dfe3c.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 961
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:crafting/hbm_plate_iron_1eaff87aae00",
+          "resource": "data/hbm/recipe/crafting/hbm_plate_iron_1eaff87aae00.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_plate_iron_1eaff87aae00.json",
+          "type": "minecraft:crafting_shaped",
+          "ownerReport": "migration/source-crafting289.json",
+          "status": "existing-exact-native-source-condition"
+        }
+      ],
+      "status": "existing-exact-native-source-condition"
+    }
+  ],
+  "nativeRecipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 428
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Item.getItemFromBlock(ModBlocks.reinforced_brick), 4)",
+        "new Object[] { \"FBF\", \"BFB\", \"FBF\", 'F', Blocks.iron_bars, 'B', ModBlocks.brick_concrete }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:reinforced_brick",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "FBF",
+          "BFB",
+          "FBF"
+        ],
+        "key": {
+          "F": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "hbm:brick_concrete"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_reinforced_brick_ffe34d2445fb",
+      "resource": "data/hbm/recipe/crafting/hbm_reinforced_brick_ffe34d2445fb.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_brick_ffe34d2445fb.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 430
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Item.getItemFromBlock(ModBlocks.reinforced_glass), 4)",
+        "new Object[] { \"FBF\", \"BFB\", \"FBF\", 'F', Blocks.iron_bars, 'B', Blocks.glass }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:reinforced_glass",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "FBF",
+          "BFB",
+          "FBF"
+        ],
+        "key": {
+          "F": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_reinforced_glass_577d08ec1c92",
+      "resource": "data/hbm/recipe/crafting/hbm_reinforced_glass_577d08ec1c92.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_glass_577d08ec1c92.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 433
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Item.getItemFromBlock(ModBlocks.reinforced_light), 1)",
+        "new Object[] { \"FFF\", \"FBF\", \"FFF\", 'F', Blocks.iron_bars, 'B', Blocks.glowstone }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:reinforced_light",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "FFF",
+          "FBF",
+          "FFF"
+        ],
+        "key": {
+          "F": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "minecraft:glowstone"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_reinforced_light_95a1216f61be",
+      "resource": "data/hbm/recipe/crafting/hbm_reinforced_light_95a1216f61be.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_light_95a1216f61be.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 435
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Item.getItemFromBlock(ModBlocks.reinforced_sand), 4)",
+        "new Object[] { \"FBF\", \"BFB\", \"FBF\", 'F', Blocks.iron_bars, 'B', Blocks.sandstone }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:reinforced_sand",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "FBF",
+          "BFB",
+          "FBF"
+        ],
+        "key": {
+          "F": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "minecraft:sandstone"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_reinforced_sand_6701382614d3",
+      "resource": "data/hbm/recipe/crafting/hbm_reinforced_sand_6701382614d3.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_reinforced_sand_6701382614d3.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 485
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.book_guide, 1)",
+        "new Object[] { \"IBI\", \"LBL\", \"IBI\", 'B', Items.book, 'I', KEY_BLACK, 'L', KEY_BLUE }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:book_guide",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "IBI",
+          "LBL",
+          "IBI"
+        ],
+        "key": {
+          "B": {
+            "item": "minecraft:book"
+          },
+          "I": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dyeblack"
+          },
+          "L": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dyeblue"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_book_guide_edba9bf5f656",
+      "resource": "data/hbm/recipe/crafting/hbm_book_guide_edba9bf5f656.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_book_guide_edba9bf5f656.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 506
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.powder_poison, 4)",
+        "new Object[] { Items.spider_eye, REDSTONE.dust(), NETHERQUARTZ.gem() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:powder_poison",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "minecraft:spider_eye"
+          },
+          {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustredstone"
+          },
+          {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/gemnetherquartz"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_powder_poison_2541260d9a20",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_poison_2541260d9a20.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_powder_poison_2541260d9a20.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 557
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.record_lc, 1)",
+        "new Object[] { \" S \", \"SDS\", \" S \", 'S', ANY_PLASTIC.ingot(), 'D', LAPIS.dust() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:record_lc",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " S ",
+          "SDS",
+          " S "
+        ],
+        "key": {
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+          },
+          "D": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustlapis"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_record_lc_65173f870599",
+      "resource": "data/hbm/recipe/crafting/hbm_record_lc_65173f870599.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_record_lc_65173f870599.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 558
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.record_ss, 1)",
+        "new Object[] { \" S \", \"SDS\", \" S \", 'S', ANY_PLASTIC.ingot(), 'D', MINGRADE.dust() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:record_ss",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " S ",
+          "SDS",
+          " S "
+        ],
+        "key": {
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+          },
+          "D": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustmingrade"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_record_ss_39f9fabf978f",
+      "resource": "data/hbm/recipe/crafting/hbm_record_ss_39f9fabf978f.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_record_ss_39f9fabf978f.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 559
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.record_vc, 1)",
+        "new Object[] { \" S \", \"SDS\", \" S \", 'S', ANY_PLASTIC.ingot(), 'D', CMB.dust() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:record_vc",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          " S ",
+          "SDS",
+          " S "
+        ],
+        "key": {
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+          },
+          "D": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustcmbsteel"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_record_vc_2fa5b74b1e56",
+      "resource": "data/hbm/recipe/crafting/hbm_record_vc_2fa5b74b1e56.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_record_vc_2fa5b74b1e56.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 565
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.crystal_virus, 1)",
+        "new Object[] { \"STS\", \"THT\", \"STS\", 'S', ModItems.particle_strange, 'T', W.dust(), 'H', ModItems.crystal_horn }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:crystal_virus",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "STS",
+          "THT",
+          "STS"
+        ],
+        "key": {
+          "S": {
+            "item": "hbm:particle_strange"
+          },
+          "T": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dusttungsten"
+          },
+          "H": {
+            "item": "hbm:crystal_horn"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_crystal_virus_21e358386a94",
+      "resource": "data/hbm/recipe/crafting/hbm_crystal_virus_21e358386a94.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_crystal_virus_21e358386a94.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 566
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.crystal_pulsar, 32)",
+        "new Object[] { \"STS\", \"THT\", \"STS\", 'S', ModItems.cell_uf6, 'T', AL.dust(), 'H', ModItems.crystal_charred }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:crystal_pulsar",
+          "count": 32
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "STS",
+          "THT",
+          "STS"
+        ],
+        "key": {
+          "S": {
+            "item": "hbm:cell_uf6"
+          },
+          "T": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustaluminum"
+          },
+          "H": {
+            "item": "hbm:crystal_charred"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_crystal_pulsar_ec87dfeac144",
+      "resource": "data/hbm/recipe/crafting/hbm_crystal_pulsar_ec87dfeac144.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_crystal_pulsar_ec87dfeac144.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 582
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.pipe_anchor_exhaust, 2)",
+        "new Object[] { \"P\", \"P\", \"S\", 'P', IRON.pipe(), 'S', ModItems.plate_polymer }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:pipe_anchor_exhaust",
+          "count": 2
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "P",
+          "P",
+          "S"
+        ],
+        "key": {
+          "P": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ntmpipeiron"
+          },
+          "S": {
+            "item": "hbm:plate_polymer"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_pipe_anchor_exhaust_5e65fb43d643",
+      "resource": "data/hbm/recipe/crafting/hbm_pipe_anchor_exhaust_5e65fb43d643.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_pipe_anchor_exhaust_5e65fb43d643.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 592
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.inf_water, 1)",
+        "new Object[] { \"222\", \"131\", \"222\", '1', Fluids.WATER.getDict(1_000), '2', AL.plate(), '3', DIAMOND.gem() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:inf_water",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "222",
+          "131",
+          "222"
+        ],
+        "key": {
+          "1": {
+            "type": "hbm:native_drink_fluid",
+            "fluid": "WATER",
+            "amount": 1000
+          },
+          "2": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platealuminum"
+          },
+          "3": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/gemdiamond"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(!GeneralConfig.enable528)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_inf_water_8bea6685cf64",
+      "resource": "data/hbm/recipe/crafting/hbm_inf_water_8bea6685cf64.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_inf_water_8bea6685cf64.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 593
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.inf_water_mk2, 1)",
+        "new Object[] { \"BPB\", \"PTP\", \"BPB\", 'B', ModItems.inf_water, 'P', STEEL.pipe(), 'T', STEEL.shell() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:inf_water_mk2",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "BPB",
+          "PTP",
+          "BPB"
+        ],
+        "key": {
+          "B": {
+            "item": "hbm:inf_water"
+          },
+          "P": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+          },
+          "T": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/shellsteel"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(!GeneralConfig.enable528)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_inf_water_mk2_827209c95492",
+      "resource": "data/hbm/recipe/crafting/hbm_inf_water_mk2_827209c95492.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_inf_water_mk2_827209c95492.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 612
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.radiobox)",
+        "new Object[] { \"PLP\", \"PSP\", \"PLP\", 'P', STEEL.plate(), 'S', ModItems.ring_starmetal, 'C', ModItems.fusion_core, 'L', DURA.plate() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:radiobox",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "PLP",
+          "PSP",
+          "PLP"
+        ],
+        "key": {
+          "P": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platesteel"
+          },
+          "S": {
+            "item": "hbm:ring_starmetal"
+          },
+          "L": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platedurasteel"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_radiobox_318cb768ef0f",
+      "resource": "data/hbm/recipe/crafting/hbm_radiobox_318cb768ef0f.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_radiobox_318cb768ef0f.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 633
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.pink_slab, 6)",
+        "new Object[] { \"WWW\", 'W', ModBlocks.pink_planks }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:pink_slab",
+          "count": 6,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "WWW"
+        ],
+        "key": {
+          "W": {
+            "item": "hbm:pink_planks"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_pink_slab_3573314be6f4",
+      "resource": "data/hbm/recipe/crafting/hbm_pink_slab_3573314be6f4.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_pink_slab_3573314be6f4.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 642
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Items.slime_ball, 16)",
+        "new Object[] { new ItemStack(Items.dye, 1, 15), new ItemStack(Items.dye, 1, 15), new ItemStack(Items.dye, 1, 15), new ItemStack(Items.dye, 1, 15), Fluids.SULFURIC_ACID.getDict(1000) }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "minecraft:slime_ball",
+          "count": 16
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "type": "hbm:source_fluid_container",
+            "fluid": "SULFURIC_ACID",
+            "amount": 1000
+          }
+        ]
+      },
+      "id": "hbm:crafting/minecraft_slime_ball_17006f00fd9d",
+      "resource": "data/hbm/recipe/crafting/minecraft_slime_ball_17006f00fd9d.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_slime_ball_17006f00fd9d.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 677
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.obj_tester, 1)",
+        "new Object[] { \"P\", \"I\", \"S\", 'P', ModItems.polaroid, 'I', ModItems.flame_pony, 'S', STEEL.plate() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:obj_tester",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "P",
+          "I",
+          "S"
+        ],
+        "key": {
+          "P": {
+            "item": "hbm:polaroid"
+          },
+          "I": {
+            "item": "hbm:flame_pony"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platesteel"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_obj_tester_07e172b3bbfc",
+      "resource": "data/hbm/recipe/crafting/hbm_obj_tester_07e172b3bbfc.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_obj_tester_07e172b3bbfc.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 679
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.fence_metal, 6)",
+        "new Object[] { \"BIB\", \"BIB\", 'B', Blocks.iron_bars, 'I', Items.iron_ingot }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:fence_metal",
+          "count": 6,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "BIB",
+          "BIB"
+        ],
+        "key": {
+          "B": {
+            "item": "minecraft:iron_bars"
+          },
+          "I": {
+            "item": "minecraft:iron_ingot"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_fence_metal_91db24e39a42",
+      "resource": "data/hbm/recipe/crafting/hbm_fence_metal_91db24e39a42.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_fence_metal_91db24e39a42.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 684
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.waste_trinitite_red)",
+        "new Object[] { new ItemStack(Blocks.sand, 1, 1), ModItems.trinitite }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:waste_trinitite_red",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "minecraft:red_sand"
+          },
+          {
+            "item": "hbm:trinitite"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_waste_trinitite_red_24550b589088",
+      "resource": "data/hbm/recipe/crafting/hbm_waste_trinitite_red_24550b589088.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_waste_trinitite_red_24550b589088.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 785
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.rtty_pager, 1)",
+        "new Object[] { \"R\", \"C\", \"S\", 'R', ModBlocks.radio_torch_receiver, 'C', DictFrame.fromOne(ModItems.circuit, EnumCircuitType.BASIC), 'S', STEEL.plate() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:rtty_pager",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "R",
+          "C",
+          "S"
+        ],
+        "key": {
+          "R": {
+            "item": "hbm:radio_torch_receiver"
+          },
+          "C": {
+            "item": "hbm:circuit_basic"
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platesteel"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_rtty_pager_0ff344037110",
+      "resource": "data/hbm/recipe/crafting/hbm_rtty_pager_0ff344037110.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_rtty_pager_0ff344037110.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 786
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.rtty_designator, 1)",
+        "new Object[] {\"R\", \"C\", \"T\", 'R', ModBlocks.radio_torch_reader, 'C', DictFrame.fromOne(ModItems.circuit, EnumCircuitType.ANALOG), 'T', ModItems.rangefinder}"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:rtty_designator",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "R",
+          "C",
+          "T"
+        ],
+        "key": {
+          "R": {
+            "item": "hbm:radio_torch_reader"
+          },
+          "C": {
+            "item": "hbm:circuit_analog"
+          },
+          "T": {
+            "type": "neoforge:components",
+            "items": "hbm:rangefinder",
+            "components": {
+              "hbm:legacy_metadata": 0
+            },
+            "strict": false
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_rtty_designator_4e70db59d0d1",
+      "resource": "data/hbm/recipe/crafting/hbm_rtty_designator_4e70db59d0d1.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_rtty_designator_4e70db59d0d1.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 810
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.deco_pipe_framed, 8)",
+        "new Object[] { \"PPP\", \"PCP\", \"PPP\", 'P', ModBlocks.deco_pipe, 'C', Blocks.iron_bars }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:deco_pipe_framed",
+          "count": 8
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "PPP",
+          "PCP",
+          "PPP"
+        ],
+        "key": {
+          "P": {
+            "item": "hbm:deco_pipe"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_deco_pipe_framed_cef12fc96612",
+      "resource": "data/hbm/recipe/crafting/hbm_deco_pipe_framed_cef12fc96612.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_deco_pipe_framed_cef12fc96612.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 811
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.deco_pipe_framed, 8)",
+        "new Object[] { \"PPP\", \"PCP\", \"PPP\", 'P', ModBlocks.deco_pipe_rim, 'C', Blocks.iron_bars }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:deco_pipe_framed",
+          "count": 8
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "PPP",
+          "PCP",
+          "PPP"
+        ],
+        "key": {
+          "P": {
+            "item": "hbm:deco_pipe_rim"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_deco_pipe_framed_c487a55b9f9c",
+      "resource": "data/hbm/recipe/crafting/hbm_deco_pipe_framed_c487a55b9f9c.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_deco_pipe_framed_c487a55b9f9c.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 834
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.deco_emitter)",
+        "new Object[] { \"IDI\", \"DRD\", \"IDI\", 'I', IRON.ingot(), 'D', DIAMOND.gem(), 'R', REDSTONE.block() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:deco_emitter",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "IDI",
+          "DRD",
+          "IDI"
+        ],
+        "key": {
+          "I": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotiron"
+          },
+          "D": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/gemdiamond"
+          },
+          "R": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/blockredstone"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_deco_emitter_60e8265e63fd",
+      "resource": "data/hbm/recipe/crafting/hbm_deco_emitter_60e8265e63fd.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_deco_emitter_60e8265e63fd.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-real-native-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 836
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Items.name_tag)",
+        "new Object[] { \"SB \", \"BPB\", \" BP\", 'S', Items.string, 'B', KEY_SLIME, 'P', Items.paper }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "minecraft:name_tag",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "SB ",
+          "BPB",
+          " BP"
+        ],
+        "key": {
+          "S": {
+            "item": "minecraft:string"
+          },
+          "B": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/slimeball"
+          },
+          "P": {
+            "item": "minecraft:paper"
+          }
+        }
+      },
+      "id": "hbm:crafting/minecraft_name_tag_949b6a2e1794",
+      "resource": "data/hbm/recipe/crafting/minecraft_name_tag_949b6a2e1794.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_name_tag_949b6a2e1794.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 837
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Items.name_tag)",
+        "new Object[] { \"SB \", \"BPB\", \" BP\", 'S', Items.string, 'B', ANY_TAR.any(), 'P', Items.paper }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "minecraft:name_tag",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "SB ",
+          "BPB",
+          " BP"
+        ],
+        "key": {
+          "S": {
+            "item": "minecraft:string"
+          },
+          "B": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/anytar"
+          },
+          "P": {
+            "item": "minecraft:paper"
+          }
+        }
+      },
+      "id": "hbm:crafting/minecraft_name_tag_557ea51b8023",
+      "resource": "data/hbm/recipe/crafting/minecraft_name_tag_557ea51b8023.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_name_tag_557ea51b8023.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 838
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(Items.lead, 4)",
+        "new Object[] { \"RSR\", 'R', DictFrame.fromOne(ModItems.plant_item, EnumPlantType.ROPE), 'S', KEY_SLIME }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "minecraft:lead",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "RSR"
+        ],
+        "key": {
+          "R": {
+            "type": "neoforge:components",
+            "items": "hbm:plant_item",
+            "components": {
+              "hbm:legacy_metadata": 1
+            },
+            "strict": false
+          },
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/slimeball"
+          }
+        }
+      },
+      "id": "hbm:crafting/minecraft_lead_698128d6a754",
+      "resource": "data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 851
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.refueler)",
+        "new Object[] { \"SS\", \"HC\", \"SS\", 'S', TI.plate(), 'H', DictFrame.fromOne(ModItems.part_generic, EnumPartType.PISTON_HYDRAULIC), 'C', DictFrame.fromOne(ModItems.circuit, EnumCircuitType.BASIC) }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:refueler",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "SS",
+          "HC",
+          "SS"
+        ],
+        "key": {
+          "S": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/platetitanium"
+          },
+          "H": {
+            "item": "hbm:part_generic_piston_hydraulic"
+          },
+          "C": {
+            "item": "hbm:circuit_basic"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_refueler_81471f8e4dc1",
+      "resource": "data/hbm/recipe/crafting/hbm_refueler_81471f8e4dc1.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_refueler_81471f8e4dc1.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 910
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.ball_resin)",
+        "new Object[] { \"DD\", \"DD\", 'D', Blocks.yellow_flower }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ball_resin",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "DD",
+          "DD"
+        ],
+        "key": {
+          "D": {
+            "item": "minecraft:dandelion"
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_ball_resin_626496d60ff7",
+      "resource": "data/hbm/recipe/crafting/hbm_ball_resin_626496d60ff7.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ball_resin_626496d60ff7.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 922
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.foundry_basin)",
+        "new Object[] { \"B B\", \"B B\", \"BSB\", 'B', ModItems.ingot_firebrick, 'S', Blocks.stone_slab }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:foundry_basin",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "B B",
+          "B B",
+          "BSB"
+        ],
+        "key": {
+          "B": {
+            "item": "hbm:ingot_firebrick"
+          },
+          "S": {
+            "type": "neoforge:compound",
+            "children": [
+              {
+                "item": "minecraft:smooth_stone_slab"
+              },
+              {
+                "item": "minecraft:sandstone_slab"
+              },
+              {
+                "item": "minecraft:petrified_oak_slab"
+              },
+              {
+                "item": "minecraft:cobblestone_slab"
+              },
+              {
+                "item": "minecraft:brick_slab"
+              },
+              {
+                "item": "minecraft:stone_brick_slab"
+              },
+              {
+                "item": "minecraft:nether_brick_slab"
+              },
+              {
+                "item": "minecraft:quartz_slab"
+              }
+            ]
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_foundry_basin_edefa505a3ab",
+      "resource": "data/hbm/recipe/crafting/hbm_foundry_basin_edefa505a3ab.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_basin_edefa505a3ab.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 923
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.foundry_mold)",
+        "new Object[] { \"B B\", \"BSB\", 'B', ModItems.ingot_firebrick, 'S', Blocks.stone_slab }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:foundry_mold",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "B B",
+          "BSB"
+        ],
+        "key": {
+          "B": {
+            "item": "hbm:ingot_firebrick"
+          },
+          "S": {
+            "type": "neoforge:compound",
+            "children": [
+              {
+                "item": "minecraft:smooth_stone_slab"
+              },
+              {
+                "item": "minecraft:sandstone_slab"
+              },
+              {
+                "item": "minecraft:petrified_oak_slab"
+              },
+              {
+                "item": "minecraft:cobblestone_slab"
+              },
+              {
+                "item": "minecraft:brick_slab"
+              },
+              {
+                "item": "minecraft:stone_brick_slab"
+              },
+              {
+                "item": "minecraft:nether_brick_slab"
+              },
+              {
+                "item": "minecraft:quartz_slab"
+              }
+            ]
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_foundry_mold_fecddf05b209",
+      "resource": "data/hbm/recipe/crafting/hbm_foundry_mold_fecddf05b209.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_mold_fecddf05b209.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 924
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.foundry_channel, 4)",
+        "new Object[] { \"B B\", \" S \", 'B', ModItems.ingot_firebrick, 'S', Blocks.stone_slab }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:foundry_channel",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "B B",
+          " S "
+        ],
+        "key": {
+          "B": {
+            "item": "hbm:ingot_firebrick"
+          },
+          "S": {
+            "type": "neoforge:compound",
+            "children": [
+              {
+                "item": "minecraft:smooth_stone_slab"
+              },
+              {
+                "item": "minecraft:sandstone_slab"
+              },
+              {
+                "item": "minecraft:petrified_oak_slab"
+              },
+              {
+                "item": "minecraft:cobblestone_slab"
+              },
+              {
+                "item": "minecraft:brick_slab"
+              },
+              {
+                "item": "minecraft:stone_brick_slab"
+              },
+              {
+                "item": "minecraft:nether_brick_slab"
+              },
+              {
+                "item": "minecraft:quartz_slab"
+              }
+            ]
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_foundry_channel_42c2240cbd30",
+      "resource": "data/hbm/recipe/crafting/hbm_foundry_channel_42c2240cbd30.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_channel_42c2240cbd30.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 925
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.foundry_tank)",
+        "new Object[] { \"B B\", \"I I\", \"BSB\", 'B', ModItems.ingot_firebrick, 'I', STEEL.ingot(), 'S', Blocks.stone_slab }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:foundry_tank",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "B B",
+          "I I",
+          "BSB"
+        ],
+        "key": {
+          "B": {
+            "item": "hbm:ingot_firebrick"
+          },
+          "I": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotsteel"
+          },
+          "S": {
+            "type": "neoforge:compound",
+            "children": [
+              {
+                "item": "minecraft:smooth_stone_slab"
+              },
+              {
+                "item": "minecraft:sandstone_slab"
+              },
+              {
+                "item": "minecraft:petrified_oak_slab"
+              },
+              {
+                "item": "minecraft:cobblestone_slab"
+              },
+              {
+                "item": "minecraft:brick_slab"
+              },
+              {
+                "item": "minecraft:stone_brick_slab"
+              },
+              {
+                "item": "minecraft:nether_brick_slab"
+              },
+              {
+                "item": "minecraft:quartz_slab"
+              }
+            ]
+          }
+        }
+      },
+      "id": "hbm:crafting/hbm_foundry_tank_d2f077846526",
+      "resource": "data/hbm/recipe/crafting/hbm_foundry_tank_d2f077846526.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_foundry_tank_d2f077846526.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 948
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.cordite, 3)",
+        "new Object[] { ModItems.ballistite, Items.gunpowder, new ItemStack(Blocks.wool, 1, OreDictionary.WILDCARD_VALUE) }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:cordite",
+          "count": 3
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "hbm:ballistite"
+          },
+          {
+            "item": "minecraft:gunpowder"
+          },
+          {
+            "item": "minecraft:white_wool"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_cordite_c388be203844",
+      "resource": "data/hbm/recipe/crafting/hbm_cordite_c388be203844.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_cordite_c388be203844.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 949
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.ingot_semtex, 3)",
+        "new Object[] { Items.slime_ball, Blocks.tnt, KNO.dust() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ingot_semtex",
+          "count": 3
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "minecraft:slime_ball"
+          },
+          {
+            "item": "minecraft:tnt"
+          },
+          {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ingot_semtex_1815af653a50",
+      "resource": "data/hbm/recipe/crafting/hbm_ingot_semtex_1815af653a50.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ingot_semtex_1815af653a50.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 950
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.canister_full, 1, Fluids.DIESEL.getID())",
+        "new Object[] { new ItemStack(ModItems.canister_full, 1, Fluids.OIL.getID()), REDSTONE.dust(), ModItems.canister_empty }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:canister_full",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 20,
+            "hbm:fluid_type": 20
+          }
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "type": "neoforge:components",
+            "items": "hbm:canister_full",
+            "components": {
+              "hbm:legacy_metadata": 10,
+              "hbm:fluid_type": 10
+            },
+            "strict": false
+          },
+          {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/dustredstone"
+          },
+          {
+            "item": "hbm:canister_empty"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_canister_full_9aa577cbc41c",
+      "resource": "data/hbm/recipe/crafting/hbm_canister_full_9aa577cbc41c.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_canister_full_9aa577cbc41c.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 952
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_uranium, 1)",
+        "new Object[] { ModBlocks.ore_uranium_scorched, Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_uranium",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "type": "neoforge:compound",
+            "children": [
+              {
+                "item": "hbm:ore_uranium_scorched"
+              },
+              {
+                "item": "hbm:deepslate_ore_uranium_scorched"
+              }
+            ]
+          },
+          {
+            "item": "minecraft:water_bucket"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_uranium_5c047dfbef1c",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_5c047dfbef1c.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_5c047dfbef1c.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 953
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_uranium, 8)",
+        "new Object[] { \"OOO\", \"OBO\", \"OOO\", 'O', ModBlocks.ore_uranium_scorched, 'B', Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_uranium",
+          "count": 8
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "OOO",
+          "OBO",
+          "OOO"
+        ],
+        "key": {
+          "O": {
+            "type": "neoforge:compound",
+            "children": [
+              {
+                "item": "hbm:ore_uranium_scorched"
+              },
+              {
+                "item": "hbm:deepslate_ore_uranium_scorched"
+              }
+            ]
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_uranium_0daf50eeb2d6",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_0daf50eeb2d6.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_0daf50eeb2d6.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 954
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_nether_uranium, 1)",
+        "new Object[] { ModBlocks.ore_nether_uranium_scorched, Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_nether_uranium",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "hbm:ore_nether_uranium_scorched"
+          },
+          {
+            "item": "minecraft:water_bucket"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_nether_uranium_ab0b21fecf4b",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_nether_uranium_ab0b21fecf4b.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_nether_uranium_ab0b21fecf4b.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 955
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_nether_uranium, 8)",
+        "new Object[] { \"OOO\", \"OBO\", \"OOO\", 'O', ModBlocks.ore_nether_uranium_scorched, 'B', Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_nether_uranium",
+          "count": 8
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "OOO",
+          "OBO",
+          "OOO"
+        ],
+        "key": {
+          "O": {
+            "item": "hbm:ore_nether_uranium_scorched"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_nether_uranium_ee0c98054ec9",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_nether_uranium_ee0c98054ec9.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_nether_uranium_ee0c98054ec9.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 956
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_gneiss_uranium, 1)",
+        "new Object[] { ModBlocks.ore_gneiss_uranium_scorched, Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_gneiss_uranium",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "hbm:ore_gneiss_uranium_scorched"
+          },
+          {
+            "item": "minecraft:water_bucket"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_gneiss_uranium_e0a67344ad53",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_e0a67344ad53.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_e0a67344ad53.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 957
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_gneiss_uranium, 8)",
+        "new Object[] { \"OOO\", \"OBO\", \"OOO\", 'O', ModBlocks.ore_gneiss_uranium_scorched, 'B', Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_gneiss_uranium",
+          "count": 8
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "OOO",
+          "OBO",
+          "OOO"
+        ],
+        "key": {
+          "O": {
+            "item": "hbm:ore_gneiss_uranium_scorched"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_gneiss_uranium_4b954d9a0d17",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_4b954d9a0d17.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_gneiss_uranium_4b954d9a0d17.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 958
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_uranium, 1)",
+        "new Object[] { ModBlocks.ore_sellafield_uranium_scorched, Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_uranium",
+          "count": 1
+        },
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "hbm:ore_sellafield_uranium_scorched"
+          },
+          {
+            "item": "minecraft:water_bucket"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_uranium_e36068b0900b",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_e36068b0900b.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_e36068b0900b.json",
+      "type": "minecraft:crafting_shapeless",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 959
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModBlocks.ore_uranium, 8)",
+        "new Object[] { \"OOO\", \"OBO\", \"OOO\", 'O', ModBlocks.ore_sellafield_uranium_scorched, 'B', Items.water_bucket }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:ore_uranium",
+          "count": 8
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "OOO",
+          "OBO",
+          "OOO"
+        ],
+        "key": {
+          "O": {
+            "item": "hbm:ore_sellafield_uranium_scorched"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_ore_uranium_7cc72c9dfe3c",
+      "resource": "data/hbm/recipe/crafting/hbm_ore_uranium_7cc72c9dfe3c.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_ore_uranium_7cc72c9dfe3c.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 961
+      },
+      "variant": 0,
+      "arguments": [
+        "new ItemStack(ModItems.plate_iron, 4)",
+        "new Object[] { \"##\", \"##\", '#', IRON.ingot() }"
+      ],
+      "recipe": {
+        "result": {
+          "id": "hbm:plate_iron",
+          "count": 4
+        },
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": [
+          "##",
+          "##"
+        ],
+        "key": {
+          "#": {
+            "type": "hbm:legacy_ore_dict",
+            "tag": "hbm:legacy_ore_dict/ingotiron"
+          }
+        },
+        "neoforge:conditions": [
+          {
+            "type": "hbm:general_mode",
+            "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+          }
+        ]
+      },
+      "id": "hbm:crafting/hbm_plate_iron_1eaff87aae00",
+      "resource": "data/hbm/recipe/crafting/hbm_plate_iron_1eaff87aae00.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_plate_iron_1eaff87aae00.json",
+      "type": "minecraft:crafting_shaped",
+      "ownerReport": "migration/source-crafting289.json",
+      "status": "existing-exact-native-source-condition"
+    }
+  ],
+  "runtimeSourceBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 648
+      },
+      "expression": "addShapelessAuto(new ItemStack(ModItems.fluid_duct, 1, i), new Object[] { new ItemStack(ModBlocks.fluid_duct_neo, 1), id })",
+      "arguments": [
+        "new ItemStack(ModItems.fluid_duct, 1, i)",
+        "new Object[] { new ItemStack(ModBlocks.fluid_duct_neo, 1), id }"
+      ],
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop",
+      "runtimeBinding": {
+        "java": "src/main/java/com/hbm/block/pipe/SourcePipeMarkingRecipes.java",
+        "entry": "register -> startup/LOWEST datapack-sync -> install(native RecipeManager)",
+        "idPattern": "hbm:source_pipe_marking/untyped_1/<source raw i>",
+        "serializer": "minecraft:crafting_shapeless",
+        "sourceInputKind": "untyped",
+        "sourcePipeSlots": 1,
+        "sourceResultCount": 1,
+        "sourceRange": "int i=1; i<Fluids.getAll().length; ++i",
+        "runtimeRange": "int fluid=1; fluid<HbmFluids.getAll().length; fluid++",
+        "allVariants": "One real native holder per i, including configured fluid registry length; do not hardcode builtin156 or filter hasNoID.",
+        "sourceMatching": "Existing AlloyStackIngredient retains item+metadata comparison, ignoring id fluid1/2 NBT; exact untyped meta0 or typed wildcard32767, no mixed pipe-kind inputs.",
+        "remainder": "Original FluidIdentifierItem native crafting remainder copies the actual input identifier with primary/secondary/bookmarks untouched.",
+        "viewer": "Every generated native ShapelessRecipe exposes its actual identifier example/output and ingredient list through ordinary native sync/JEI/REI."
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 650
+      },
+      "expression": "addShapelessAuto(new ItemStack(ModItems.fluid_duct, 8, i), new Object[] { new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), id })",
+      "arguments": [
+        "new ItemStack(ModItems.fluid_duct, 8, i)",
+        "new Object[] { new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1),\n\t\t\t\t\t\t\tnew ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1),\n\t\t\t\t\t\t\tnew ItemStack(ModBlocks.fluid_duct_neo, 1), new ItemStack(ModBlocks.fluid_duct_neo, 1), id }"
+      ],
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop",
+      "runtimeBinding": {
+        "java": "src/main/java/com/hbm/block/pipe/SourcePipeMarkingRecipes.java",
+        "entry": "register -> startup/LOWEST datapack-sync -> install(native RecipeManager)",
+        "idPattern": "hbm:source_pipe_marking/untyped_8/<source raw i>",
+        "serializer": "minecraft:crafting_shapeless",
+        "sourceInputKind": "untyped",
+        "sourcePipeSlots": 8,
+        "sourceResultCount": 8,
+        "sourceRange": "int i=1; i<Fluids.getAll().length; ++i",
+        "runtimeRange": "int fluid=1; fluid<HbmFluids.getAll().length; fluid++",
+        "allVariants": "One real native holder per i, including configured fluid registry length; do not hardcode builtin156 or filter hasNoID.",
+        "sourceMatching": "Existing AlloyStackIngredient retains item+metadata comparison, ignoring id fluid1/2 NBT; exact untyped meta0 or typed wildcard32767, no mixed pipe-kind inputs.",
+        "remainder": "Original FluidIdentifierItem native crafting remainder copies the actual input identifier with primary/secondary/bookmarks untouched.",
+        "viewer": "Every generated native ShapelessRecipe exposes its actual identifier example/output and ingredient list through ordinary native sync/JEI/REI."
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 655
+      },
+      "expression": "addShapelessAuto(new ItemStack(ModItems.fluid_duct, 1, i), new Object[] { new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), id })",
+      "arguments": [
+        "new ItemStack(ModItems.fluid_duct, 1, i)",
+        "new Object[] { new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), id }"
+      ],
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop",
+      "runtimeBinding": {
+        "java": "src/main/java/com/hbm/block/pipe/SourcePipeMarkingRecipes.java",
+        "entry": "register -> startup/LOWEST datapack-sync -> install(native RecipeManager)",
+        "idPattern": "hbm:source_pipe_marking/typed_1/<source raw i>",
+        "serializer": "minecraft:crafting_shapeless",
+        "sourceInputKind": "typed",
+        "sourcePipeSlots": 1,
+        "sourceResultCount": 1,
+        "sourceRange": "int i=1; i<Fluids.getAll().length; ++i",
+        "runtimeRange": "int fluid=1; fluid<HbmFluids.getAll().length; fluid++",
+        "allVariants": "One real native holder per i, including configured fluid registry length; do not hardcode builtin156 or filter hasNoID.",
+        "sourceMatching": "Existing AlloyStackIngredient retains item+metadata comparison, ignoring id fluid1/2 NBT; exact untyped meta0 or typed wildcard32767, no mixed pipe-kind inputs.",
+        "remainder": "Original FluidIdentifierItem native crafting remainder copies the actual input identifier with primary/secondary/bookmarks untouched.",
+        "viewer": "Every generated native ShapelessRecipe exposes its actual identifier example/output and ingredient list through ordinary native sync/JEI/REI."
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 658
+      },
+      "expression": "addShapelessAuto(new ItemStack(ModItems.fluid_duct, 8, i), new Object[] { new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), id })",
+      "arguments": [
+        "new ItemStack(ModItems.fluid_duct, 8, i)",
+        "new Object[] { new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE),\n\t\t\t\t\t\t\tnew ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE),\n\t\t\t\t\t\t\tnew ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(ModItems.fluid_duct, 1, OreDictionary.WILDCARD_VALUE), id }"
+      ],
+      "nativeBindings": [],
+      "status": "implemented-complete-runtime-fluid-loop",
+      "runtimeBinding": {
+        "java": "src/main/java/com/hbm/block/pipe/SourcePipeMarkingRecipes.java",
+        "entry": "register -> startup/LOWEST datapack-sync -> install(native RecipeManager)",
+        "idPattern": "hbm:source_pipe_marking/typed_8/<source raw i>",
+        "serializer": "minecraft:crafting_shapeless",
+        "sourceInputKind": "typed",
+        "sourcePipeSlots": 8,
+        "sourceResultCount": 8,
+        "sourceRange": "int i=1; i<Fluids.getAll().length; ++i",
+        "runtimeRange": "int fluid=1; fluid<HbmFluids.getAll().length; fluid++",
+        "allVariants": "One real native holder per i, including configured fluid registry length; do not hardcode builtin156 or filter hasNoID.",
+        "sourceMatching": "Existing AlloyStackIngredient retains item+metadata comparison, ignoring id fluid1/2 NBT; exact untyped meta0 or typed wildcard32767, no mixed pipe-kind inputs.",
+        "remainder": "Original FluidIdentifierItem native crafting remainder copies the actual input identifier with primary/secondary/bookmarks untouched.",
+        "viewer": "Every generated native ShapelessRecipe exposes its actual identifier example/output and ingredient list through ordinary native sync/JEI/REI."
+      }
+    }
+  ]
+}

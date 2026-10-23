@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "hbm:block/battery_top",
+    "side": "hbm:block/battery_side_alt",
+    "front": "hbm:block/battery_front_alt",
+    "particle": "hbm:block/battery_side_alt"
+  }
+}

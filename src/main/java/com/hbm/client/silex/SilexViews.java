@@ -1,0 +1,9 @@
+package com.hbm.client.silex;
+import com.hbm.machine.silex.*;import java.util.*;import net.minecraft.client.Minecraft;import net.minecraft.client.gui.GuiGraphics;import net.minecraft.network.chat.Component;import net.minecraft.world.item.ItemStack;
+/** Source SILEXRecipeHandler exact positions, truncated chances/yield and wavelength text. */
+final class SilexViews {
+ static int[][] outputs(SilexRecipe recipe){int count=recipe.choices().size(),sep=count>4?3:2;var positions=new int[count][2];for(int i=0;i<count;i++)positions[i]=i<sep?new int[]{68,24+i*18-9*((Math.min(count,sep)+1)/2)}:new int[]{116,24+(i-sep)*18-9*((Math.min(count-sep,sep)+1)/2)};return positions;}
+ static List<ItemStack> inputs(SilexRecipe recipe){var level=Minecraft.getInstance().level;return level==null?recipe.inputItems().getFirst().examples():SilexRecipes.examples(level.getRecipeManager(),recipe);}
+ static void draw(SilexRecipe recipe,GuiGraphics graphics,int x,int y){graphics.blit(SilexContent.id("textures/gui/nei/gui_nei_silex.png"),x,y,5,11,166,65,256,256);var font=com.hbm.client.gui.font.LegacyFonts.get();int[][] positions=outputs(recipe);double total=recipe.choices().stream().mapToInt(c->c.weight()).sum();for(int i=0;i<positions.length;i++){double chance=100*recipe.choices().get(i).weight()/total;graphics.drawString(font,((int)(chance*10D)/10D)+"%",x+positions[i][0]+18,y+positions[i][1]+4,0x404040,false);}String amount=((int)((recipe.produced()/recipe.consumed())*10D)/10D)+"x";graphics.drawString(font,amount,x+52-font.width(amount)/2,y+43,0x404040,false);var wave=recipe.wavelength()==LaserWavelength.NULL?Component.translatable("gui.hbm.silex.unavailable"):Component.translatable(recipe.wavelength().nameKey).withStyle(recipe.wavelength().textColor);graphics.drawString(font,wave,x+33-font.width(wave)/2,y+8,0x404040,false);}
+ private SilexViews(){}
+}

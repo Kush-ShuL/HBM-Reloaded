@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "ashglasses",
+      "id": "hbm:ashglasses",
+      "legacyRegistryId": "hbm:item.ashglasses",
+      "originalClass": "ArmorAshGlasses",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 26
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6189
+          },
+          "expression": "GameRegistry.registerItem(ashglasses, ashglasses.getUnlocalizedName())",
+          "arguments": [
+            "ashglasses",
+            "ashglasses.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.equipment.ashgoggles.AshGogglesContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "armor": {
+        "material": "IRON",
+        "slot": "HEAD",
+        "defense": 2,
+        "durability": 165,
+        "enchantability": 9,
+        "repair": "minecraft:iron_ingot",
+        "legacyArmorDurability": true
+      }
+    }
+  ]
+}

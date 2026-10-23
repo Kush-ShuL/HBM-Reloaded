@@ -1,0 +1,13 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/cropcarrot"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/cropcarrot",
+      "raw": "cropCarrot"
+    }
+  ],
+  "memberships": [],
+  "source": "Forge1.7.10 OreDictionary.initVanillaEntries110 registerOre(\"cropCarrot\",Items.carrot)"
+}

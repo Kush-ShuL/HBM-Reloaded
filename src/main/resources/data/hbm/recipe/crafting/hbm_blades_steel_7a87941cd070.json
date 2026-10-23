@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:blades_steel",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "I": {
+      "item": "hbm:blades_steel"
+    }
+  }
+}

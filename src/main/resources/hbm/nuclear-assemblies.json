@@ -1,0 +1,1096 @@
+{
+  "assemblies": [
+    {
+      "kind": "GADGET",
+      "symbol": "nuke_gadget",
+      "id": "nuke_gadget",
+      "originalClass": "NukeGadget",
+      "slots": [
+        {
+          "index": 0,
+          "x": 26,
+          "y": 35
+        },
+        {
+          "index": 1,
+          "x": 8,
+          "y": 17
+        },
+        {
+          "index": 2,
+          "x": 44,
+          "y": 17
+        },
+        {
+          "index": 3,
+          "x": 8,
+          "y": 53
+        },
+        {
+          "index": 4,
+          "x": 44,
+          "y": 53
+        },
+        {
+          "index": 5,
+          "x": 98,
+          "y": 35
+        }
+      ],
+      "maxStackSize": 1,
+      "nameKey": "container.nukeGadget",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "gadget_wireing",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "gadget_core",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/gadgetschematic.png",
+        "width": 176,
+        "height": 166,
+        "playerX": 8,
+        "playerY": 84,
+        "titleY": 6,
+        "infoKey": "desc.gui.nukeGadget.desc"
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeGadget.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeGadget.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeGadget.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeGadget.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "BOY",
+      "symbol": "nuke_boy",
+      "id": "nuke_boy",
+      "originalClass": "NukeBoy",
+      "slots": [
+        {
+          "index": 0,
+          "x": 26,
+          "y": 36
+        },
+        {
+          "index": 1,
+          "x": 44,
+          "y": 36
+        },
+        {
+          "index": 2,
+          "x": 62,
+          "y": 36
+        },
+        {
+          "index": 3,
+          "x": 80,
+          "y": 36
+        },
+        {
+          "index": 4,
+          "x": 98,
+          "y": 36
+        }
+      ],
+      "maxStackSize": 64,
+      "nameKey": "container.nukeBoy",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "boy_shielding",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "boy_target",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "boy_bullet",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "boy_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "boy_igniter",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/lilboyschematic.png",
+        "width": 176,
+        "height": 222,
+        "playerX": 8,
+        "playerY": 140,
+        "titleY": 6,
+        "infoKey": "desc.gui.nukeBoy.desc"
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeBoy.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeBoy.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeBoy.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeBoy.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "MAN",
+      "symbol": "nuke_man",
+      "id": "nuke_man",
+      "originalClass": "NukeMan",
+      "slots": [
+        {
+          "index": 0,
+          "x": 26,
+          "y": 35
+        },
+        {
+          "index": 1,
+          "x": 8,
+          "y": 17
+        },
+        {
+          "index": 2,
+          "x": 44,
+          "y": 17
+        },
+        {
+          "index": 3,
+          "x": 8,
+          "y": 53
+        },
+        {
+          "index": 4,
+          "x": 44,
+          "y": 53
+        },
+        {
+          "index": 5,
+          "x": 98,
+          "y": 35
+        }
+      ],
+      "maxStackSize": 1,
+      "nameKey": "container.nukeMan",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "man_igniter",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "early_explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "man_core",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/fatmanschematic.png",
+        "width": 176,
+        "height": 166,
+        "playerX": 8,
+        "playerY": 84,
+        "titleY": 6,
+        "infoKey": "desc.gui.nukeMan.desc"
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeMan.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeMan.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeMan.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeMan.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "MIKE",
+      "symbol": "nuke_mike",
+      "id": "nuke_mike",
+      "originalClass": "NukeMike",
+      "slots": [
+        {
+          "index": 0,
+          "x": 26,
+          "y": 83
+        },
+        {
+          "index": 1,
+          "x": 26,
+          "y": 101
+        },
+        {
+          "index": 2,
+          "x": 44,
+          "y": 83
+        },
+        {
+          "index": 3,
+          "x": 44,
+          "y": 101
+        },
+        {
+          "index": 4,
+          "x": 39,
+          "y": 35
+        },
+        {
+          "index": 5,
+          "x": 98,
+          "y": 91
+        },
+        {
+          "index": 6,
+          "x": 116,
+          "y": 91
+        },
+        {
+          "index": 7,
+          "x": 134,
+          "y": 91
+        }
+      ],
+      "maxStackSize": 1,
+      "nameKey": "container.nukeMike",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "man_core",
+          "metadata": null
+        }
+      ],
+      "filled": [
+        {
+          "slot": 0,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "man_core",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "mike_core",
+          "metadata": null
+        },
+        {
+          "slot": 6,
+          "item": "mike_deut",
+          "metadata": null
+        },
+        {
+          "slot": 7,
+          "item": "mike_cooling_unit",
+          "metadata": null
+        }
+      ],
+      "gui": {
+        "texture": "textures/gui/weapon/ivymikeschematic.png",
+        "width": 176,
+        "height": 217,
+        "playerX": 8,
+        "playerY": 135,
+        "titleY": 4,
+        "infoKey": "desc.gui.nukeMike.desc"
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeMike.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeMike.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeMike.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeMike.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "TSAR",
+      "symbol": "nuke_tsar",
+      "id": "nuke_tsar",
+      "originalClass": "NukeTsar",
+      "slots": [
+        {
+          "index": 0,
+          "x": 48,
+          "y": 101
+        },
+        {
+          "index": 1,
+          "x": 66,
+          "y": 101
+        },
+        {
+          "index": 2,
+          "x": 84,
+          "y": 101
+        },
+        {
+          "index": 3,
+          "x": 102,
+          "y": 101
+        },
+        {
+          "index": 4,
+          "x": 55,
+          "y": 51
+        },
+        {
+          "index": 5,
+          "x": 138,
+          "y": 101
+        }
+      ],
+      "maxStackSize": 1,
+      "nameKey": "container.nukeTsar",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "man_core",
+          "metadata": null
+        }
+      ],
+      "filled": [
+        {
+          "slot": 0,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "explosive_lenses",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "man_core",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "tsar_core",
+          "metadata": null
+        }
+      ],
+      "gui": {
+        "texture": "textures/gui/weapon/tsarbombaschematic.png",
+        "width": 256,
+        "height": 233,
+        "playerX": 48,
+        "playerY": 151,
+        "titleY": 6,
+        "infoKey": "desc.gui.nukeTsar.desc"
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeTsar.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeTsar.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeTsar.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeTsar.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "FLEIJA",
+      "symbol": "nuke_fleija",
+      "id": "nuke_fleija",
+      "originalClass": "NukeFleija",
+      "slots": [
+        {
+          "index": 0,
+          "x": 8,
+          "y": 36
+        },
+        {
+          "index": 1,
+          "x": 152,
+          "y": 36
+        },
+        {
+          "index": 2,
+          "x": 44,
+          "y": 18
+        },
+        {
+          "index": 3,
+          "x": 44,
+          "y": 36
+        },
+        {
+          "index": 4,
+          "x": 44,
+          "y": 54
+        },
+        {
+          "index": 5,
+          "x": 80,
+          "y": 18
+        },
+        {
+          "index": 6,
+          "x": 98,
+          "y": 18
+        },
+        {
+          "index": 7,
+          "x": 80,
+          "y": 36
+        },
+        {
+          "index": 8,
+          "x": 98,
+          "y": 36
+        },
+        {
+          "index": 9,
+          "x": 80,
+          "y": 54
+        },
+        {
+          "index": 10,
+          "x": 98,
+          "y": 54
+        }
+      ],
+      "maxStackSize": 64,
+      "nameKey": "container.nukeFleija",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "fleija_igniter",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "fleija_igniter",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "fleija_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "fleija_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "fleija_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "fleija_core",
+          "metadata": null
+        },
+        {
+          "slot": 6,
+          "item": "fleija_core",
+          "metadata": null
+        },
+        {
+          "slot": 7,
+          "item": "fleija_core",
+          "metadata": null
+        },
+        {
+          "slot": 8,
+          "item": "fleija_core",
+          "metadata": null
+        },
+        {
+          "slot": 9,
+          "item": "fleija_core",
+          "metadata": null
+        },
+        {
+          "slot": 10,
+          "item": "fleija_core",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/fleijaschematic.png",
+        "width": 176,
+        "height": 222,
+        "playerX": 8,
+        "playerY": 140,
+        "titleY": 6,
+        "infoKey": null
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeFleija.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeFleija.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeFleija.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeFleija.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "SOLINIUM",
+      "symbol": "nuke_solinium",
+      "id": "nuke_solinium",
+      "originalClass": "NukeSolinium",
+      "slots": [
+        {
+          "index": 0,
+          "x": 26,
+          "y": 18
+        },
+        {
+          "index": 1,
+          "x": 53,
+          "y": 18
+        },
+        {
+          "index": 2,
+          "x": 107,
+          "y": 18
+        },
+        {
+          "index": 3,
+          "x": 134,
+          "y": 18
+        },
+        {
+          "index": 4,
+          "x": 80,
+          "y": 36
+        },
+        {
+          "index": 5,
+          "x": 26,
+          "y": 54
+        },
+        {
+          "index": 6,
+          "x": 53,
+          "y": 54
+        },
+        {
+          "index": 7,
+          "x": 107,
+          "y": 54
+        },
+        {
+          "index": 8,
+          "x": 134,
+          "y": 54
+        }
+      ],
+      "maxStackSize": 64,
+      "nameKey": "container.nukeSolinium",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "solinium_igniter",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "solinium_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "solinium_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "solinium_igniter",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "solinium_core",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "solinium_igniter",
+          "metadata": null
+        },
+        {
+          "slot": 6,
+          "item": "solinium_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 7,
+          "item": "solinium_propellant",
+          "metadata": null
+        },
+        {
+          "slot": 8,
+          "item": "solinium_igniter",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/soliniumschematic.png",
+        "width": 176,
+        "height": 222,
+        "playerX": 8,
+        "playerY": 140,
+        "titleY": 6,
+        "infoKey": null
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeSolinium.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeSolinium.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeSolinium.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeSolinium.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "N2",
+      "symbol": "nuke_n2",
+      "id": "nuke_n2",
+      "originalClass": "NukeN2",
+      "slots": [
+        {
+          "index": 0,
+          "x": 98,
+          "y": 36
+        },
+        {
+          "index": 1,
+          "x": 116,
+          "y": 36
+        },
+        {
+          "index": 2,
+          "x": 134,
+          "y": 36
+        },
+        {
+          "index": 3,
+          "x": 98,
+          "y": 54
+        },
+        {
+          "index": 4,
+          "x": 116,
+          "y": 54
+        },
+        {
+          "index": 5,
+          "x": 134,
+          "y": 54
+        },
+        {
+          "index": 6,
+          "x": 98,
+          "y": 72
+        },
+        {
+          "index": 7,
+          "x": 116,
+          "y": 72
+        },
+        {
+          "index": 8,
+          "x": 134,
+          "y": 72
+        },
+        {
+          "index": 9,
+          "x": 98,
+          "y": 90
+        },
+        {
+          "index": 10,
+          "x": 116,
+          "y": 90
+        },
+        {
+          "index": 11,
+          "x": 134,
+          "y": 90
+        }
+      ],
+      "maxStackSize": 64,
+      "nameKey": "container.nukeN2",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 3,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 4,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 5,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 6,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 7,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 8,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 9,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 10,
+          "item": "n2_charge",
+          "metadata": null
+        },
+        {
+          "slot": 11,
+          "item": "n2_charge",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/n2schematic.png",
+        "width": 176,
+        "height": 222,
+        "playerX": 8,
+        "playerY": 140,
+        "titleY": 6,
+        "infoKey": null
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukeN2.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeN2.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukeN2.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukeN2.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    },
+    {
+      "kind": "PROTOTYPE",
+      "symbol": "nuke_prototype",
+      "id": "nuke_prototype",
+      "originalClass": "NukePrototype",
+      "slots": [
+        {
+          "index": 0,
+          "x": 8,
+          "y": 35
+        },
+        {
+          "index": 1,
+          "x": 26,
+          "y": 35
+        },
+        {
+          "index": 2,
+          "x": 44,
+          "y": 26
+        },
+        {
+          "index": 3,
+          "x": 44,
+          "y": 44
+        },
+        {
+          "index": 4,
+          "x": 62,
+          "y": 26
+        },
+        {
+          "index": 5,
+          "x": 62,
+          "y": 44
+        },
+        {
+          "index": 6,
+          "x": 80,
+          "y": 26
+        },
+        {
+          "index": 7,
+          "x": 80,
+          "y": 44
+        },
+        {
+          "index": 8,
+          "x": 98,
+          "y": 26
+        },
+        {
+          "index": 9,
+          "x": 98,
+          "y": 44
+        },
+        {
+          "index": 10,
+          "x": 116,
+          "y": 26
+        },
+        {
+          "index": 11,
+          "x": 116,
+          "y": 44
+        },
+        {
+          "index": 12,
+          "x": 134,
+          "y": 35
+        },
+        {
+          "index": 13,
+          "x": 152,
+          "y": 35
+        }
+      ],
+      "maxStackSize": 64,
+      "nameKey": "container.nukePrototype",
+      "ready": [
+        {
+          "slot": 0,
+          "item": "cell_sas3",
+          "metadata": null
+        },
+        {
+          "slot": 1,
+          "item": "cell_sas3",
+          "metadata": null
+        },
+        {
+          "slot": 2,
+          "item": "rod_quad",
+          "metadata": 14
+        },
+        {
+          "slot": 3,
+          "item": "rod_quad",
+          "metadata": 14
+        },
+        {
+          "slot": 4,
+          "item": "rod_quad",
+          "metadata": 13
+        },
+        {
+          "slot": 5,
+          "item": "rod_quad",
+          "metadata": 13
+        },
+        {
+          "slot": 6,
+          "item": "rod_quad",
+          "metadata": 7
+        },
+        {
+          "slot": 7,
+          "item": "rod_quad",
+          "metadata": 7
+        },
+        {
+          "slot": 8,
+          "item": "rod_quad",
+          "metadata": 13
+        },
+        {
+          "slot": 9,
+          "item": "rod_quad",
+          "metadata": 13
+        },
+        {
+          "slot": 10,
+          "item": "rod_quad",
+          "metadata": 14
+        },
+        {
+          "slot": 11,
+          "item": "rod_quad",
+          "metadata": 14
+        },
+        {
+          "slot": 12,
+          "item": "cell_sas3",
+          "metadata": null
+        },
+        {
+          "slot": 13,
+          "item": "cell_sas3",
+          "metadata": null
+        }
+      ],
+      "filled": null,
+      "gui": {
+        "texture": "textures/gui/weapon/gui_prototype.png",
+        "width": 176,
+        "height": 166,
+        "playerX": 8,
+        "playerY": 84,
+        "titleY": 6,
+        "infoKey": null
+      },
+      "source": {
+        "block": "legacy/src/main/java/com/hbm/blocks/bomb/NukePrototype.java",
+        "tile": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukePrototype.java",
+        "container": "legacy/src/main/java/com/hbm/inventory/container/ContainerNukePrototype.java",
+        "gui": "legacy/src/main/java/com/hbm/inventory/gui/GUINukePrototype.java"
+      },
+      "status": "assembly-only-staged",
+      "runtimeValidated": false
+    }
+  ]
+}

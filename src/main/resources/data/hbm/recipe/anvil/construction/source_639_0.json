@@ -1,0 +1,77 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:chunk_ore_rare",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:fragment_boron",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_boron",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_lanthanium",
+        "count": 1
+      },
+      "chance": 0.1
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_cobalt",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_cobalt",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_cerium",
+        "count": 1
+      },
+      "chance": 0.1
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_neodymium",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "hbm:fragment_niobium",
+        "count": 1
+      },
+      "chance": 0.5
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 639000000
+}

@@ -1,0 +1,21 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:powder_ash_coal"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_coal_tiny",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_boron_tiny",
+      "count": 1
+    },
+    {
+      "id": "hbm:dust_tiny",
+      "count": 6
+    }
+  ]
+}

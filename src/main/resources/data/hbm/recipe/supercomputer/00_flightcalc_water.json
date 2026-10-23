@@ -1,0 +1,62 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.flightcalc_water",
+  "order": 0,
+  "duration": 18000,
+  "power": 10000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 4
+            }
+          },
+          "weight": 95
+        },
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          },
+          "weight": 5
+        }
+      ],
+      "weighted": true
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "WATER",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ],
+  "output_fluids": [
+    {
+      "type": "SPENTSTEAM",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ]
+}

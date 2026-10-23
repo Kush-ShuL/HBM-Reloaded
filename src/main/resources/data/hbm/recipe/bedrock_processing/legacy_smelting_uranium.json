@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:components",
+    "items": "hbm:legacy/ore_bedrock",
+    "components": {
+      "hbm:legacy_metadata": 8
+    },
+    "strict": false
+  },
+  "result": {
+    "id": "minecraft:cobblestone",
+    "count": 16
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

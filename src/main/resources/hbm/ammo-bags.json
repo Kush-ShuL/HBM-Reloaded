@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "ammo_bag",
+      "id": "hbm:ammo_bag",
+      "originalClass": "ItemAmmoBag",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "ammo_bag_infinite",
+      "id": "hbm:ammo_bag_infinite",
+      "originalClass": "ItemAmmoBag",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "schrabidium_pickaxe",
+      "id": "hbm:schrabidium_pickaxe",
+      "legacyRegistryId": "hbm:item.schrabidium_pickaxe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3917
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5856
+          },
+          "expression": "GameRegistry.registerItem(schrabidium_pickaxe, schrabidium_pickaxe.getUnlocalizedName())",
+          "arguments": [
+            "schrabidium_pickaxe",
+            "schrabidium_pickaxe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.schrabidium.SchrabidiumToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 10000,
+      "sourceMovementModifier": 0,
+      "rarity": "fixed-rare-even-enchanted"
+    },
+    {
+      "kind": "item",
+      "symbol": "schrabidium_axe",
+      "id": "hbm:schrabidium_axe",
+      "legacyRegistryId": "hbm:item.schrabidium_axe",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3928
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5857
+          },
+          "expression": "GameRegistry.registerItem(schrabidium_axe, schrabidium_axe.getUnlocalizedName())",
+          "arguments": [
+            "schrabidium_axe",
+            "schrabidium_axe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.schrabidium.SchrabidiumToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 10000,
+      "sourceMovementModifier": 0,
+      "rarity": "fixed-rare-even-enchanted"
+    },
+    {
+      "kind": "item",
+      "symbol": "schrabidium_shovel",
+      "id": "hbm:schrabidium_shovel",
+      "legacyRegistryId": "hbm:item.schrabidium_shovel",
+      "originalClass": "ItemToolAbility",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3940
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5858
+          },
+          "expression": "GameRegistry.registerItem(schrabidium_shovel, schrabidium_shovel.getUnlocalizedName())",
+          "arguments": [
+            "schrabidium_shovel",
+            "schrabidium_shovel.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.schrabidium.SchrabidiumToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 10000,
+      "sourceMovementModifier": 0,
+      "rarity": "fixed-rare-even-enchanted"
+    },
+    {
+      "kind": "item",
+      "symbol": "schrabidium_hoe",
+      "id": "hbm:schrabidium_hoe",
+      "legacyRegistryId": "hbm:item.schrabidium_hoe",
+      "originalClass": "HoeSchrabidium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3951
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5859
+          },
+          "expression": "GameRegistry.registerItem(schrabidium_hoe, schrabidium_hoe.getUnlocalizedName())",
+          "arguments": [
+            "schrabidium_hoe",
+            "schrabidium_hoe.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.toolability.schrabidium.SchrabidiumToolsContent",
+      "creativeTab": "vanilla:tools_and_utilities",
+      "maxStackSize": 1,
+      "maxDamage": 10000,
+      "sourceMovementModifier": null,
+      "rarity": "fixed-rare-even-enchanted"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:bottle_quantum",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:bottle_empty"
+    },
+    {
+      "type": "hbm:source_water_potion"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "hbm:trinitite"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_waste_drum",
+      "id": "hbm:machine_waste_drum",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "WasteDrum",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2276
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "recipes": 31,
+  "sourceCrafting": [
+    {
+      "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+      "line": 287
+    }
+  ],
+  "rbmkDependency": "Genuine ItemRBMKRod; no fabricated entry"
+}

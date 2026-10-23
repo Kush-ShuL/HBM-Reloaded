@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "battery_potatos",
+      "id": "hbm:battery_potatos",
+      "legacyRegistryId": "hbm:item.battery_potatos",
+      "originalClass": "ItemPotatos",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3705
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5150
+          },
+          "expression": "GameRegistry.registerItem(battery_potatos, battery_potatos.getUnlocalizedName())",
+          "arguments": [
+            "battery_potatos",
+            "battery_potatos.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "maxCharge": 500000,
+      "chargeRate": 0,
+      "dischargeRate": 100,
+      "creativeCharge": 500000,
+      "metadataRange": [
+        0,
+        0
+      ]
+    }
+  ]
+}

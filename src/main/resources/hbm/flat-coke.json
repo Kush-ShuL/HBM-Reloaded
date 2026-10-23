@@ -1,0 +1,57 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "coke_coal",
+      "id": "hbm:coke_coal",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.coke",
+      "sourceLegacyRegistryId": "hbm:item.coke",
+      "sourceOrdinal": 0,
+      "sourceEnum": "COAL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2332
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "coke_lignite",
+      "id": "hbm:coke_lignite",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.coke",
+      "sourceLegacyRegistryId": "hbm:item.coke",
+      "sourceOrdinal": 1,
+      "sourceEnum": "LIGNITE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2332
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "coke_petroleum",
+      "id": "hbm:coke_petroleum",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.coke",
+      "sourceLegacyRegistryId": "hbm:item.coke",
+      "sourceOrdinal": 2,
+      "sourceEnum": "PETROLEUM",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2332
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2
+  ]
+}

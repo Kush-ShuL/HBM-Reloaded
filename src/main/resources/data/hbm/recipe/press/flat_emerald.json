@@ -1,0 +1,12 @@
+{
+  "type": "hbm:press",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/dustemerald"
+  },
+  "stamp": "flat",
+  "result": {
+    "id": "minecraft:emerald",
+    "count": 1
+  }
+}

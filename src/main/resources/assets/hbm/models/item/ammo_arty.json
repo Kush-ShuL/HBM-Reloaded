@@ -1,0 +1,80 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/ammo_arty"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_meta": 1
+      },
+      "model": "hbm:item/artillery/ammo_arty_classic"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 2
+      },
+      "model": "hbm:item/artillery/ammo_arty_he"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 3
+      },
+      "model": "hbm:item/artillery/ammo_arty_mini_nuke"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 4
+      },
+      "model": "hbm:item/artillery/ammo_arty_nuke"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 5
+      },
+      "model": "hbm:item/artillery/ammo_arty_phosphorus"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 6
+      },
+      "model": "hbm:item/artillery/ammo_arty_mini_nuke_multi"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 7
+      },
+      "model": "hbm:item/artillery/ammo_arty_phosphorus_multi"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 8
+      },
+      "model": "hbm:item/artillery/ammo_arty_cargo"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 9
+      },
+      "model": "hbm:item/artillery/ammo_arty_chlorine"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 10
+      },
+      "model": "hbm:item/artillery/ammo_arty_phosgene"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_meta": 11
+      },
+      "model": "hbm:item/artillery/ammo_arty_mustard_gas"
+    },
+    {
+      "predicate": {
+        "hbm:arty_cargo": 1
+      },
+      "model": "hbm:item/artillery/ammo_arty_cargo_full"
+    }
+  ]
+}

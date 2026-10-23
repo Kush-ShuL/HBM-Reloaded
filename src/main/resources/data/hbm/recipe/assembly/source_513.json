@@ -1,0 +1,47 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.pachlorophyte",
+  "duration": 400,
+  "power": 100,
+  "order": 167,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:pa_coil",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredensecopper"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredensecopper"
+      },
+      "count": 64
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:powder_chlorophyte"
+        }
+      },
+      "count": 16
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.dfcemitter",
+  "duration": 1200,
+  "power": 10000000,
+  "ignition_temp": 50000000,
+  "order": 41,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:dfc_emitter",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "STELLAR_FLUX",
+      "amount": 4000,
+      "pressure": 0
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesextupleosmiridium"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredensestarmetal"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_controller_quantum"
+        }
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_crystal"
+        }
+      },
+      "count": 4
+    }
+  ]
+}

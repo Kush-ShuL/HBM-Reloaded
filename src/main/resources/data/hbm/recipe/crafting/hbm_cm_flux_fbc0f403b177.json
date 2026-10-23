@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:cm_flux",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NNN",
+    "ZCZ",
+    "NNN"
+  ],
+  "key": {
+    "Z": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetriplezirconium"
+    },
+    "N": {
+      "item": "hbm:neutron_reflector"
+    },
+    "C": {
+      "item": "hbm:reactor_core"
+    }
+  }
+}

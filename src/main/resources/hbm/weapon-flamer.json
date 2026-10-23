@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gun_flamer",
+      "id": "hbm:gun_flamer",
+      "legacyRegistryId": "hbm:item.gun_flamer",
+      "originalClass": "ItemGunBaseNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryFlamer.java",
+        "line": 153
+      },
+      "weaponQuality": "A_SIDE",
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "pistol": false,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_flamer_topaz",
+      "id": "hbm:gun_flamer_topaz",
+      "legacyRegistryId": "hbm:item.gun_flamer_topaz",
+      "originalClass": "ItemGunBaseNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryFlamer.java",
+        "line": 163
+      },
+      "weaponQuality": "B_SIDE",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "pistol": false,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_flamer_daybreaker",
+      "id": "hbm:gun_flamer_daybreaker",
+      "legacyRegistryId": "hbm:item.gun_flamer_daybreaker",
+      "originalClass": "ItemGunBaseNT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryFlamer.java",
+        "line": 173
+      },
+      "weaponQuality": "LEGENDARY",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "pistol": false,
+      "builtInDual": false
+    }
+  ]
+}

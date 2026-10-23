@@ -1,0 +1,49 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.atomicClockAlt",
+  "duration": 300,
+  "power": 20000,
+  "order": 35,
+  "named": true,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:circuit_atomic_clock",
+            "count": 4
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_chip"
+        }
+      },
+      "count": 3
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustcaesium137"
+      },
+      "count": 1
+    }
+  ],
+  "pools": [
+    "alt..circuit"
+  ],
+  "requires_no_528": true
+}

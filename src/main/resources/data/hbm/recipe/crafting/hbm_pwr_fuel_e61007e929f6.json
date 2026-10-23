@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:pwr_fuel",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F",
+    "I",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "item": "hbm:billet_neptunium_fuel"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

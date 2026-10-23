@@ -1,0 +1,35 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "minecraft:bread",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "ntmCyanide": true
+      }
+    }
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "minecraft:bread",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:plan_c",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "cyanide",
+  "order": 128000000
+}

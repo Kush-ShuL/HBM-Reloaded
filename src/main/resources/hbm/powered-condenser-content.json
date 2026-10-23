@@ -1,0 +1,25 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_condenser_powered",
+      "id": "hbm:machine_condenser_powered",
+      "itemId": "hbm:machine_condenser_powered",
+      "kind": "block",
+      "originalClass": "MachineCondenserPowered",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2247
+      },
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    }
+  ]
+}

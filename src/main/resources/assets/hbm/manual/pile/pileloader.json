@@ -1,0 +1,25 @@
+{
+  "name": "Chicago Pile Fuel Loader",
+  "icon": [
+    "hbm:tile.pile_device",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.pile_device",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Chicago Pile Fuel Loader",
+    "ru_RU": "Загрузчик топлива Чикагской поленницы",
+    "zh_CN": "芝加哥堆燃料装载机"
+  },
+  "content": {
+    "en_US": "The fuel loader is required to load [[Chicago Pile]] fuel rods into the Pile's fuel channels. Right-clicking with a fuel rod will insert that rod into the loader, and right-clicking again will load it into the Pile manually. Fuel can also be supplied using hoppers or conveyors, and the loading action can be triggered by supplying a redstone signal to the loader's back side (where the light grey circle is).<br><br>Additionally, the loader can relay information about the connected channel to the [[RoR reader|Redstone-over-Radio Reader]], like the type (metadata) and depletion of the backmost loaded fuel rod or the channel's current temperature.<br><br>See also:<br>* [[Chicago Pile Vent]]<br>* [[Chicago Pile Control Rod]]",
+    "ru_RU": "Загрузчик топлива необходим для загрузки топливных стержней [[Чикагской поленницы|Chicago Pile]] в топливные каналы реактора. Клик правой кнопкой мыши с топливным стержнем в руке вставит его в загрузчик, а повторный клик ПКМ загрузит его в реактор вручную. Топливо также можно подавать с помощью воронок или конвейеров, а сам процесс загрузки можно активировать подачей редстоун-сигнала на заднюю сторону загрузчика (туда, где находится светло-серый круг).<br><br>Кроме того, загрузчик может передавать информацию о подключенном канале на [[РпР считыватель|Redstone-over-Radio Reader]] — например, тип (метаданные) и степень истощения самого крайнего загруженного стержня, а также текущую температуру канала.<br><br>См. также:<br>* [[Вентиль Чикагской поленницы|Chicago Pile Vent]]<br>* [[Регулирующие стержни Чикагской поленницы|Chicago Pile Control Rod]]",
+    "zh_CN": "燃料装载机用于将[[芝加哥堆|Chicago Pile]]燃料棒装入堆的燃料通道。手持燃料棒右键可先将其放入装载机，再右键一次便会手动推入堆内。燃料也可通过漏斗或传送带供给；给装载机背面浅灰色圆圈所在的一侧施加红石信号，可触发装填动作。<br><br>此外，装载机还能向[[无线红石读取器|Redstone-over-Radio Reader]]提供所连接通道的信息，例如最后端燃料棒的类型（元数据）、燃耗程度，以及通道当前温度。<br><br>另见：<br>* [[芝加哥堆通风口|Chicago Pile Vent]]<br>* [[芝加哥堆控制棒|Chicago Pile Control Rod]]"
+  }
+}

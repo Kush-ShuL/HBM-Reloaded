@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.item.redroom.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SourceLootTableAccess",
+    "SourceLootPoolAccess",
+    "SourceLootItemAccess"
+  ]
+}

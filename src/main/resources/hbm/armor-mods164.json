@@ -1,0 +1,115 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "back_tesla",
+      "id": "hbm:back_tesla",
+      "legacyRegistryId": "hbm:item.back_tesla",
+      "originalClass": "ItemModTesla",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2853
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6089
+          },
+          "expression": "GameRegistry.registerItem(back_tesla, back_tesla.getUnlocalizedName())",
+          "arguments": [
+            "back_tesla",
+            "back_tesla.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.mods.ArmorModsContent"
+    },
+    {
+      "kind": "item",
+      "symbol": "lodestone",
+      "id": "hbm:lodestone",
+      "legacyRegistryId": "hbm:item.lodestone",
+      "originalClass": "ItemModLodestone",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2882
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6118
+          },
+          "expression": "GameRegistry.registerItem(lodestone, lodestone.getUnlocalizedName())",
+          "arguments": [
+            "lodestone",
+            "lodestone.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.mods.ArmorModsContent",
+      "range": 5
+    },
+    {
+      "kind": "item",
+      "symbol": "horseshoe_magnet",
+      "id": "hbm:horseshoe_magnet",
+      "legacyRegistryId": "hbm:item.horseshoe_magnet",
+      "originalClass": "ItemModLodestone",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2883
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6119
+          },
+          "expression": "GameRegistry.registerItem(horseshoe_magnet, horseshoe_magnet.getUnlocalizedName())",
+          "arguments": [
+            "horseshoe_magnet",
+            "horseshoe_magnet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.mods.ArmorModsContent",
+      "range": 8
+    },
+    {
+      "kind": "item",
+      "symbol": "industrial_magnet",
+      "id": "hbm:industrial_magnet",
+      "legacyRegistryId": "hbm:item.industrial_magnet",
+      "originalClass": "ItemModLodestone",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2884
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6120
+          },
+          "expression": "GameRegistry.registerItem(industrial_magnet, industrial_magnet.getUnlocalizedName())",
+          "arguments": [
+            "industrial_magnet",
+            "industrial_magnet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "registeredBy": "com.hbm.armor.mods.ArmorModsContent",
+      "range": 12
+    }
+  ]
+}

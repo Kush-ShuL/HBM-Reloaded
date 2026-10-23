@@ -1,0 +1,58 @@
+{
+  "result": {
+    "id": "hbm:biomass",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:plant_flower",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    }
+  ]
+}

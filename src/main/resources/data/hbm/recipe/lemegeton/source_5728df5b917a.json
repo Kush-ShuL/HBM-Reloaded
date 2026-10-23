@@ -1,0 +1,15 @@
+{
+  "type": "hbm:lemegeton",
+  "source_order": 29,
+  "source_key": "ore:ingotGraphite",
+  "source_hash": -1430924497,
+  "ingredient": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/ingotgraphite"
+  },
+  "metadata": 32767,
+  "result": {
+    "id": "minecraft:diamond",
+    "count": 1
+  }
+}

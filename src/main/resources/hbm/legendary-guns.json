@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gun_heavy_revolver_lilmac",
+      "id": "hbm:gun_heavy_revolver_lilmac",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "weaponQuality": "LEGENDARY"
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_maresleg_broken",
+      "id": "hbm:gun_maresleg_broken",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "weaponQuality": "LEGENDARY"
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_autoshotgun_sexy",
+      "id": "hbm:gun_autoshotgun_sexy",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "weaponQuality": "LEGENDARY"
+    },
+    {
+      "kind": "block",
+      "symbol": "crate_red",
+      "id": "hbm:crate_red",
+      "originalClass": "BlockCrate",
+      "creativeTab": null,
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2173"
+    }
+  ],
+  "items": []
+}

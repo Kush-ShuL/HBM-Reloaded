@@ -1,0 +1,45 @@
+{
+  "result": {
+    "id": "mekanismgenerators:wind_generator",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "TAT",
+    "BCB"
+  ],
+  "key": {
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripletitanium"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/alloyadvanced"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/battery"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanismgenerators"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "mekanismgenerators:wind_generator"
+    },
+    {
+      "type": "hbm:general_mode",
+      "expression": "GeneralConfig.enableMekanismChanges"
+    }
+  ]
+}

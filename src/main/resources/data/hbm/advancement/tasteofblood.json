@@ -1,0 +1,30 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:fluid_icon",
+      "components": {
+        "hbm:legacy_metadata": 34,
+        "hbm:fluid_type": 34
+      }
+    },
+    "title": {
+      "translate": "achievement.tasteofblood"
+    },
+    "description": {
+      "translate": "achievement.tasteofblood.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:tasteofblood"
+      }
+    }
+  }
+}

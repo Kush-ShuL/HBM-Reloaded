@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:ducttape",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F",
+    "P",
+    "S"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:string"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/slimeball"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  }
+}

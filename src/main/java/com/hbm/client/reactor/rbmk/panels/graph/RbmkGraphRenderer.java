@@ -1,0 +1,17 @@
+package com.hbm.client.reactor.rbmk.panels.graph;
+import com.hbm.client.reactor.rbmk.panels.RbmkPanelRender;
+import com.hbm.machine.reactor.rbmk.panels.graph.RbmkGraphEntity;
+import com.hbm.multiblock.DummyableBlock;
+import com.mojang.blaze3d.vertex.*;
+import com.mojang.math.Axis;
+import java.util.OptionalDouble;
+import net.minecraft.client.renderer.*;
+import net.minecraft.client.renderer.blockentity.*;
+import net.minecraft.resources.ResourceLocation;
+/** Source30point GL_LINES trace, exact case/label transforms and original long arithmetic. */
+public final class RbmkGraphRenderer implements BlockEntityRenderer<RbmkGraphEntity>{
+    private static final ResourceLocation MODEL=ResourceLocation.parse("hbm:models/rbmk/numitron.obj"),TEXTURE=ResourceLocation.parse("hbm:textures/models/network/numitron.png");
+    private static final class Lines extends RenderType{private Lines(){super("unused",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.DEBUG_LINES,256,false,false,()->{},()->{});}static final RenderType GRAPH=create("hbm_rbmk_panel_graph",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.DEBUG_LINES,4096,false,false,CompositeState.builder().setShaderState(POSITION_COLOR_SHADER).setLineState(new LineStateShard(OptionalDouble.of(2D))).setCullState(NO_CULL).setWriteMaskState(COLOR_DEPTH_WRITE).createCompositeState(false));}
+    public RbmkGraphRenderer(BlockEntityRendererProvider.Context context){}
+    @Override public void render(RbmkGraphEntity panel,float partial,PoseStack poses,MultiBufferSource buffers,int light,int overlay){poses.pushPose();poses.translate(.5,0,.5);poses.mulPose(Axis.YP.rotationDegrees(switch(panel.getBlockState().getValue(DummyableBlock.LEGACY_META)){case 2->90;case 4->180;case 3->270;default->0;}));var font=RbmkPanelRender.font();for(int i=0;i<2;i++){var graph=panel.graphs[i];if(!graph.active)continue;poses.pushPose();poses.translate(.25,i*-.5+.25,0);RbmkPanelRender.mesh(poses,buffers,light,overlay,MODEL,TEXTURE,null,-1,false);long lowest=graph.min,highest=graph.max;if(!graph.minBound){lowest=Long.MAX_VALUE;for(long v:graph.values)if(v<lowest)lowest=v;}if(!graph.maxBound){highest=Long.MIN_VALUE;for(long v:graph.values)if(v>highest)highest=v;}long range=highest-lowest;var out=buffers.getBuffer(Lines.GRAPH);for(int v=0;v<graph.values.length-1;v++)for(int j=0;j<2;j++){int k=v+j;long flux=graph.values[k];if(flux<lowest)flux=lowest;if(flux>highest)flux=highest;double dx=.03225,dy=.5-.03125+(flux-lowest)*.1875D/Math.max(range,1),dz=.375-k*.75/(graph.values.length-1);out.addVertex(poses.last().pose(),(float)dx,(float)dy,(float)dz).setColor(0xff00ff00);}poses.pushPose();String lower=Long.toString(lowest),upper=Long.toString(highest);double scale=.0025;poses.translate(.032,.5-.03125*1.5,-.375+.03125);poses.scale((float)scale,(float)-scale,(float)scale);poses.mulPose(Axis.YP.rotationDegrees(90));RbmkPanelRender.text(lower,-font.width(lower),-font.lineHeight/2,0x00ff00,poses,buffers,LightTexture.FULL_BRIGHT);poses.translate(0,-.03125*7/scale,0);RbmkPanelRender.text(upper,-font.width(upper),-font.lineHeight/2,0x00ff00,poses,buffers,LightTexture.FULL_BRIGHT);poses.popPose();if(graph.label!=null&&!graph.label.isEmpty()){poses.translate(.01,.3125,0);int width=font.width(graph.label);float labelScale=Math.min(.0125F,.75F/Math.max(width,1));poses.scale(labelScale,-labelScale,labelScale);poses.mulPose(Axis.YP.rotationDegrees(90));RbmkPanelRender.text(graph.label,-width/2,-font.lineHeight/2,0x00ff00,poses,buffers,LightTexture.FULL_BRIGHT);}poses.popPose();}poses.popPose();}
+}

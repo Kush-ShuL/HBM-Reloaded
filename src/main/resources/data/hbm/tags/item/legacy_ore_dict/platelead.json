@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:plate_lead",
+    {
+      "id": "#c:plates/lead",
+      "required": false
+    }
+  ]
+}

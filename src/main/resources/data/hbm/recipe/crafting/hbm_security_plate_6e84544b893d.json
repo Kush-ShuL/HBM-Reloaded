@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:security_plate",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "KWK",
+    "IKI",
+    "WKW"
+  ],
+  "key": {
+    "K": {
+      "item": "hbm:plate_kevlar"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  }
+}

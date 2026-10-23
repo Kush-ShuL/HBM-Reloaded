@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPC",
+    "PBP",
+    "IFI"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:plate_armor_hev"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:titanium_helmet",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "F": {
+      "item": "hbm:gas_mask_filter"
+    }
+  },
+  "result": {
+    "id": "hbm:hev_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

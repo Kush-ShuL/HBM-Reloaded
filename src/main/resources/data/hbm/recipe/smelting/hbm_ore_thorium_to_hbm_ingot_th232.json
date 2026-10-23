@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "item": "hbm:ore_thorium"
+      },
+      {
+        "item": "hbm:deepslate_ore_thorium"
+      }
+    ]
+  },
+  "result": {
+    "id": "hbm:ingot_th232",
+    "count": 1
+  },
+  "experience": 3.0,
+  "cookingtime": 200
+}

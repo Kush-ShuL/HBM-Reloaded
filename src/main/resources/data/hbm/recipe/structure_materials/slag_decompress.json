@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:block_slag"
+    }
+  },
+  "result": {
+    "id": "hbm:ingot_raw",
+    "count": 9,
+    "components": {
+      "hbm:legacy_metadata": 41
+    }
+  }
+}

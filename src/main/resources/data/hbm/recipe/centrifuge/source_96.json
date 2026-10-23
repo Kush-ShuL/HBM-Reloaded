@@ -1,0 +1,26 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/orenetherquartz"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "hbm:powder_quartz",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_quartz",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    },
+    {
+      "id": "minecraft:netherrack",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.warheadinc3",
+  "duration": 400,
+  "power": 100,
+  "order": 264,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:warhead_incendiary_large",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:warhead_generic_large"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+      },
+      "count": 8
+    }
+  ]
+}

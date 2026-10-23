@@ -1,0 +1,29 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:achievement_icon",
+      "components": {
+        "hbm:legacy_metadata": 9
+      }
+    },
+    "title": {
+      "translate": "achievement.hidden"
+    },
+    "description": {
+      "translate": "achievement.hidden.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "squash": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:hidden"
+      }
+    }
+  }
+}

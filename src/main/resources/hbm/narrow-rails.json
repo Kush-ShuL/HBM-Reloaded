@@ -1,0 +1,164 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "rail_wood",
+      "id": "hbm:rail_wood",
+      "legacyRegistryId": "hbm:tile.rail_wood",
+      "originalClass": "RailGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2153
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:tools_and_utilities",
+      "worldMetadataRange": [
+        0,
+        9
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_narrow",
+      "id": "hbm:rail_narrow",
+      "legacyRegistryId": "hbm:tile.rail_narrow",
+      "originalClass": "RailGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2154
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:tools_and_utilities",
+      "worldMetadataRange": [
+        0,
+        9
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_highspeed",
+      "id": "hbm:rail_highspeed",
+      "legacyRegistryId": "hbm:tile.rail_highspeed",
+      "originalClass": "RailGeneric",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2155
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:tools_and_utilities",
+      "worldMetadataRange": [
+        0,
+        9
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "rail_booster",
+      "id": "hbm:rail_booster",
+      "legacyRegistryId": "hbm:tile.rail_booster",
+      "originalClass": "RailBooster",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2156
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:tools_and_utilities",
+      "worldMetadataRange": [
+        0,
+        9
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ],
+  "rails": [
+    {
+      "id": "hbm:rail_wood",
+      "maxRailSpeed": 0.2,
+      "turnedTexture": true,
+      "flexibleMethod": true,
+      "canMakeSlopes": true,
+      "poweredBase": false,
+      "boosterMultiplier": null
+    },
+    {
+      "id": "hbm:rail_narrow",
+      "maxRailSpeed": 0.4,
+      "turnedTexture": true,
+      "flexibleMethod": true,
+      "canMakeSlopes": true,
+      "poweredBase": false,
+      "boosterMultiplier": null
+    },
+    {
+      "id": "hbm:rail_highspeed",
+      "maxRailSpeed": 1.0,
+      "turnedTexture": false,
+      "flexibleMethod": true,
+      "canMakeSlopes": true,
+      "poweredBase": false,
+      "boosterMultiplier": null
+    },
+    {
+      "id": "hbm:rail_booster",
+      "maxRailSpeed": 1.0,
+      "turnedTexture": false,
+      "flexibleMethod": true,
+      "canMakeSlopes": true,
+      "poweredBase": false,
+      "boosterMultiplier": 1.149999976158142
+    }
+  ],
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 487
+      },
+      "expression": "addRecipeAuto(new ItemStack(ModBlocks.rail_wood, 16), new Object[] { \"S S\", \"SRS\", \"S S\", 'S', Items.stick, 'R', DictFrame.fromOne(ModItems.plant_item, EnumPlantType.ROPE) })",
+      "status": "bound",
+      "recipe": "hbm:crafting/hbm_rail_wood_c6ac296044ce",
+      "file": "data/hbm/recipe/crafting/hbm_rail_wood_c6ac296044ce.json"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 488
+      },
+      "expression": "addRecipeAuto(new ItemStack(ModBlocks.rail_narrow, 64), new Object[] { \"S S\", \"S S\", \"S S\", 'S', ModBlocks.steel_beam })",
+      "status": "bound",
+      "recipe": "hbm:crafting/hbm_rail_narrow_3f8832e56974",
+      "file": "data/hbm/recipe/crafting/hbm_rail_narrow_3f8832e56974.json"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 489
+      },
+      "expression": "addRecipeAuto(new ItemStack(ModBlocks.rail_highspeed, 16), new Object[] { \"S S\", \"SIS\", \"S S\", 'S', STEEL.ingot(), 'I', IRON.plate() })",
+      "status": "bound",
+      "recipe": "hbm:crafting/hbm_rail_highspeed_1ede18e88208",
+      "file": "data/hbm/recipe/crafting/hbm_rail_highspeed_1ede18e88208.json"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/main/CraftingManager.java",
+        "line": 490
+      },
+      "expression": "addRecipeAuto(new ItemStack(ModBlocks.rail_booster, 6), new Object[] { \"S S\", \"CIC\", \"SRS\", 'S', STEEL.ingot(), 'I', IRON.plate(), 'R', MINGRADE.ingot(), 'C', ModItems.coil_copper })",
+      "status": "bound",
+      "recipe": "hbm:crafting/hbm_rail_booster_6c1d29ef4b78",
+      "file": "data/hbm/recipe/crafting/hbm_rail_booster_6c1d29ef4b78.json"
+    }
+  ]
+}

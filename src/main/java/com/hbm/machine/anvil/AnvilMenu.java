@@ -1,0 +1,29 @@
+package com.hbm.machine.anvil;
+import java.util.*;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.inventory.*;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
+/** Original eight temporary input slots(only two exposed), one result,36-player inventory; tier is server-owned. */
+public final class AnvilMenu extends AbstractContainerMenu{
+    private final Inventory player;private boolean updating;private RecipeHolder<AnvilSmithingRecipe> matched;private final int tier;private ResourceLocation focusRequest;
+    public void focusConstruction(ResourceLocation recipe){focusRequest=recipe;}public ResourceLocation takeFocusRequest(){var request=focusRequest;focusRequest=null;return request;}
+    public final SimpleContainer input=new SimpleContainer(8){@Override public void setChanged(){super.setChanged();AnvilMenu.this.updateSmithing();}};
+    private final ResultContainer output=new ResultContainer();
+    public AnvilMenu(int id,Inventory inventory,RegistryFriendlyByteBuf buffer){this(id,inventory,buffer.readInt());}
+    public AnvilMenu(int id,Inventory inventory,int tier){super(AnvilContent.MENU.get(),id);this.player=inventory;this.tier=tier;
+        addSlot(new Slot(input,0,17,27));addSlot(new Slot(input,1,53,27));addSlot(new Slot(output,0,89,27){private int crafted;@Override public boolean mayPlace(ItemStack stack){return false;}@Override public ItemStack remove(int count){crafted+=Math.min(count,getItem().getCount());return super.remove(count);}@Override protected void onQuickCraft(ItemStack stack,int amount){crafted+=amount;}@Override public void onTake(Player viewer,ItemStack stack){stack.onCraftedBy(viewer.level(),viewer,crafted);AnvilCraftingHooks.crafted(viewer,stack);crafted=0;consumeSmithing();super.onTake(viewer,stack);}});
+        for(int row=0;row<3;row++)for(int col=0;col<9;col++)addSlot(new Slot(inventory,9+row*9+col,8+col*18,140+row*18));for(int col=0;col<9;col++)addSlot(new Slot(inventory,col,8+col*18,198));updateSmithing();}
+    public int tier(){return tier;}
+    private void updateSmithing(){if(updating||player==null)return;updating=true;try{var in=new AnvilInput(input.getItem(0),input.getItem(1));matched=player.player.level().getRecipeManager().getAllRecipesFor(AnvilContent.SMITHING_TYPE.get()).stream().sorted(Comparator.comparingInt(holder->holder.value().order())).filter(holder->holder.value().tier()<=tier&&holder.value().matches(in,player.player.level())).findFirst().orElse(null);output.setItem(0,matched==null?ItemStack.EMPTY:matched.value().assemble(in,player.player.level().registryAccess()));}finally{updating=false;}broadcastChanges();}
+    private void consumeSmithing(){if(matched==null)return;var recipe=matched.value();int orientation=recipe.orientation(new AnvilInput(input.getItem(0),input.getItem(1)));if(orientation<0)return;updating=true;try{input.removeItem(0,recipe.consumed(0,orientation==1));input.removeItem(1,recipe.consumed(1,orientation==1));}finally{updating=false;}updateSmithing();}
+    public List<RecipeHolder<AnvilConstructionRecipe>> construction(){return player.player.level().getRecipeManager().getAllRecipesFor(AnvilContent.CONSTRUCTION_TYPE.get()).stream().filter(holder->holder.value().tierValid(tier)).sorted(Comparator.comparingInt(holder->holder.value().order())).toList();}
+    public boolean craft(ResourceLocation id,boolean maximum){if(player.player.level().isClientSide)return false;var holder=construction().stream().filter(recipe->recipe.id().equals(id)).findFirst().orElse(null);if(holder==null)return false;var recipe=holder.value();if(recipe.outputs().isEmpty())return false;var first=recipe.outputs().getFirst().stack();int count=maximum?(recipe.outputs().size()>1?64:first.getMaxStackSize()/Math.max(1,first.getCount())):1;boolean crafted=false;for(int i=0;i<count;i++){if(!consumeInventory(player,recipe.inputs(),true))break;for(var out:recipe.outputs())if(out.chance()==1F||player.player.getRandom().nextFloat()<out.chance()){ItemStack stack=out.stack().copy();if(!player.add(stack)&&!stack.isEmpty())player.player.drop(stack,false);}AnvilCraftingHooks.crafted(player.player,first);crafted=true;}player.setChanged();player.player.inventoryMenu.broadcastChanges();broadcastChanges();return crafted;}
+    public static boolean consumeInventory(Inventory inventory,List<AnvilIngredient> ingredients,boolean consume){var copy=new ArrayList<ItemStack>();for(ItemStack stack:inventory.items)copy.add(stack.copy());for(var ingredient:ingredients){int remaining=ingredient.count();for(ItemStack stack:copy)if(ingredient.matches(stack,true)){int amount=Math.min(remaining,stack.getCount());remaining-=amount;stack.shrink(amount);if(remaining<=0)break;}if(remaining>0)return false;}if(consume)for(int i=0;i<copy.size();i++)inventory.items.set(i,copy.get(i));return true;}
+    @Override public boolean stillValid(Player player){return true;}
+    @Override public void removed(Player viewer){super.removed(viewer);if(!viewer.level().isClientSide)for(int i=0;i<input.getContainerSize();i++){ItemStack stack=input.removeItemNoUpdate(i);if(!stack.isEmpty())viewer.drop(stack,false);}}
+    @Override public ItemStack quickMoveStack(Player viewer,int index){if(index<0||index>=slots.size()||!getSlot(index).hasItem())return ItemStack.EMPTY;Slot slot=getSlot(index);ItemStack stack=slot.getItem(),copy=stack.copy();if(index<=2){if(!moveItemStackTo(stack,3,slots.size(),true))return ItemStack.EMPTY;if(index==2)slot.onQuickCraft(stack,copy);}else if(!moveItemStackTo(stack,0,2,false))return ItemStack.EMPTY;if(stack.isEmpty())slot.setByPlayer(ItemStack.EMPTY);else slot.setChanged();slot.onTake(viewer,copy);return copy;}
+}

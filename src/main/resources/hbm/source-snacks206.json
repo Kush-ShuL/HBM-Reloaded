@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "cotton_candy",
+      "id": "hbm:cotton_candy",
+      "legacyRegistryId": "hbm:item.cotton_candy",
+      "originalClass": "ItemCottonCandy",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3613
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5983
+          },
+          "expression": "GameRegistry.registerItem(cotton_candy, cotton_candy.getUnlocalizedName())",
+          "arguments": [
+            "cotton_candy",
+            "cotton_candy.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.sourcesnacks.SourceSnacksContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "sourceMetadata": [
+        0
+      ],
+      "metadataRange": [
+        0,
+        0
+      ],
+      "nutrition": 5,
+      "saturationModifier": 0.6,
+      "alwaysEdible": true,
+      "wolfFood": false,
+      "full3D": true
+    },
+    {
+      "kind": "item",
+      "symbol": "tem_flakes",
+      "id": "hbm:tem_flakes",
+      "legacyRegistryId": "hbm:item.tem_flakes",
+      "originalClass": "ItemTemFlakes",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3616
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5986
+          },
+          "expression": "GameRegistry.registerItem(tem_flakes, tem_flakes.getUnlocalizedName())",
+          "arguments": [
+            "tem_flakes",
+            "tem_flakes.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.sourcesnacks.SourceSnacksContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "sourceMetadata": [
+        0,
+        1,
+        2
+      ],
+      "metadataRange": [
+        0,
+        2
+      ],
+      "nutrition": 0,
+      "saturationModifier": 0,
+      "alwaysEdible": true,
+      "wolfFood": false,
+      "full3D": false
+    }
+  ]
+}

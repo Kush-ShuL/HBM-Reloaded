@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_niter",
+    {
+      "id": "#c:ores/saltpeter",
+      "required": false
+    }
+  ]
+}

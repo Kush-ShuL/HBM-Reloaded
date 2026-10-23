@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "hbm:block/pipe_anchor_pneumatic"
+    },
+    "facing=up": {
+      "model": "hbm:block/pipe_anchor_pneumatic"
+    },
+    "facing=north": {
+      "model": "hbm:block/pipe_anchor_pneumatic"
+    },
+    "facing=south": {
+      "model": "hbm:block/pipe_anchor_pneumatic"
+    },
+    "facing=west": {
+      "model": "hbm:block/pipe_anchor_pneumatic"
+    },
+    "facing=east": {
+      "model": "hbm:block/pipe_anchor_pneumatic"
+    }
+  }
+}

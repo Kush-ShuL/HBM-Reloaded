@@ -1,0 +1,71 @@
+{
+  "module": "source-seal243",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "seal_controller",
+      "id": "hbm:seal_controller",
+      "hasItem": true,
+      "originalClass": "BlockSeal",
+      "legacyRegistryId": "hbm:tile.seal_controller",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2041
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2967
+          },
+          "expression": "GameRegistry.registerBlock(seal_controller, seal_controller.getUnlocalizedName())",
+          "arguments": [
+            "seal_controller",
+            "seal_controller.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "seal_hatch",
+      "id": "hbm:seal_hatch",
+      "hasItem": true,
+      "originalClass": "BlockHatch",
+      "legacyRegistryId": "hbm:tile.seal_hatch",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2042
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2968
+          },
+          "expression": "GameRegistry.registerBlock(seal_hatch, seal_hatch.getUnlocalizedName())",
+          "arguments": [
+            "seal_hatch",
+            "seal_hatch.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "worldMetadataRange": [
+        0,
+        0
+      ],
+      "hasBlockEntity": true
+    }
+  ]
+}

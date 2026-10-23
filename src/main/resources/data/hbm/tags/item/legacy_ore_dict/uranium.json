@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_uranium",
+    {
+      "id": "#c:ingots/uranium",
+      "required": false
+    }
+  ]
+}

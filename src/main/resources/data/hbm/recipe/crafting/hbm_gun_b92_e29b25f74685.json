@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:gun_b92",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "SSC",
+    "  R"
+  ],
+  "key": {
+    "D": {
+      "item": "hbm:plate_dineutronium"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "C": {
+      "item": "hbm:circuit_bismoid"
+    },
+    "R": {
+      "item": "hbm:gun_lasrifle"
+    }
+  }
+}

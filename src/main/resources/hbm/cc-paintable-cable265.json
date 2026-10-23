@@ -1,0 +1,65 @@
+{
+  "module": "cc-paintable-cable265",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "oc_cable_paintable",
+      "id": "hbm:oc_cable_paintable",
+      "legacyRegistryId": "hbm:tile.oc_cable_paintable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2311
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3504
+          },
+          "expression": "register(oc_cable_paintable)",
+          "arguments": [
+            "oc_cable_paintable"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "originalClass": "BlockOpenComputersCablePaintable",
+      "optionalMod": "computercraft",
+      "originalOptionalMod": "OpenComputers",
+      "metadataValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "creativeTab": "machine",
+      "sourceHardness": 5,
+      "sourceResistance": 10,
+      "modernResistance": 6,
+      "sourceDefaultSound": "stone",
+      "sourceMaterial": "iron",
+      "blockEntity": "hbm:oc_cable_paintable"
+    }
+  ],
+  "condition": {
+    "modLoaded": "computercraft"
+  },
+  "sourceBEAliasEvidence": {
+    "source": "legacy/src/main/java/com/hbm/tileentity/TileMappings.java:517",
+    "legacy": "tileentity_oc_cable_paintable",
+    "actualModernType": "hbm:oc_cable_paintable",
+    "automaticOldNBTImport": false
+  }
+}

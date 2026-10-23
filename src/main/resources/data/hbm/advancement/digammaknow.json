@@ -1,0 +1,29 @@
+{
+  "parent": "hbm:digammafeel",
+  "display": {
+    "icon": {
+      "id": "hbm:achievement_icon",
+      "components": {
+        "hbm:legacy_metadata": 5
+      }
+    },
+    "title": {
+      "translate": "achievement.digammaKnow"
+    },
+    "description": {
+      "translate": "achievement.digammaKnow.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:digammaknow"
+      }
+    }
+  }
+}

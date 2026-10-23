@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:brick_obsidian"
+    }
+  },
+  "result": {
+    "id": "hbm:brick_slab",
+    "count": 6,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  }
+}

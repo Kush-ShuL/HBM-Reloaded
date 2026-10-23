@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:robes_boots",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "R R",
+    "P P"
+  ],
+  "key": {
+    "R": {
+      "item": "hbm:rag"
+    },
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    }
+  }
+}

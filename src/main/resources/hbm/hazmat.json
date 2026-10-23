@@ -1,0 +1,2589 @@
+{
+  "entrypoint": "com.hbm.armor.HazmatContent.register",
+  "items": [
+    {
+      "symbol": "hazmat_helmet",
+      "id": "hbm:hazmat_helmet",
+      "class": "ArmorHazmatMask",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_plate",
+      "id": "hbm:hazmat_plate",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_legs",
+      "id": "hbm:hazmat_legs",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_boots",
+      "id": "hbm:hazmat_boots",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "gas_mask_filter",
+      "id": "hbm:gas_mask_filter",
+      "class": "ItemFilter",
+      "kind": "item"
+    },
+    {
+      "symbol": "gas_mask_filter_mono",
+      "id": "hbm:gas_mask_filter_mono",
+      "class": "ItemFilter",
+      "kind": "item"
+    },
+    {
+      "symbol": "gas_mask_filter_combo",
+      "id": "hbm:gas_mask_filter_combo",
+      "class": "ItemFilter",
+      "kind": "item"
+    },
+    {
+      "symbol": "gas_mask_filter_rag",
+      "id": "hbm:gas_mask_filter_rag",
+      "class": "ItemFilter",
+      "kind": "item"
+    },
+    {
+      "symbol": "gas_mask_filter_piss",
+      "id": "hbm:gas_mask_filter_piss",
+      "class": "ItemFilter",
+      "kind": "item"
+    },
+    {
+      "symbol": "cladding_paint",
+      "id": "hbm:cladding_paint",
+      "class": "ItemModCladding",
+      "kind": "item"
+    },
+    {
+      "symbol": "cladding_rubber",
+      "id": "hbm:cladding_rubber",
+      "class": "ItemModCladding",
+      "kind": "item"
+    },
+    {
+      "symbol": "cladding_lead",
+      "id": "hbm:cladding_lead",
+      "class": "ItemModCladding",
+      "kind": "item"
+    },
+    {
+      "symbol": "cladding_desh",
+      "id": "hbm:cladding_desh",
+      "class": "ItemModCladding",
+      "kind": "item"
+    },
+    {
+      "symbol": "cladding_ghiorsium",
+      "id": "hbm:cladding_ghiorsium",
+      "class": "ItemModCladding",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_helmet_red",
+      "id": "hbm:hazmat_helmet_red",
+      "class": "ArmorHazmatMask",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_plate_red",
+      "id": "hbm:hazmat_plate_red",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_legs_red",
+      "id": "hbm:hazmat_legs_red",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_boots_red",
+      "id": "hbm:hazmat_boots_red",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_helmet_grey",
+      "id": "hbm:hazmat_helmet_grey",
+      "class": "ArmorHazmatMask",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_plate_grey",
+      "id": "hbm:hazmat_plate_grey",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_legs_grey",
+      "id": "hbm:hazmat_legs_grey",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "hazmat_boots_grey",
+      "id": "hbm:hazmat_boots_grey",
+      "class": "ArmorHazmat",
+      "kind": "item"
+    },
+    {
+      "symbol": "machine_armor_table",
+      "id": "hbm:machine_armor_table",
+      "class": "BlockArmorTable",
+      "kind": "block"
+    }
+  ],
+  "defaults": [
+    {
+      "item": "hbm:hazmat_helmet",
+      "symbol": "ModItems.hazmat_helmet",
+      "resistance": 0.12,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 68
+      }
+    },
+    {
+      "item": "hbm:hazmat_plate",
+      "symbol": "ModItems.hazmat_plate",
+      "resistance": 0.24,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 69
+      }
+    },
+    {
+      "item": "hbm:hazmat_legs",
+      "symbol": "ModItems.hazmat_legs",
+      "resistance": 0.18,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 70
+      }
+    },
+    {
+      "item": "hbm:hazmat_boots",
+      "symbol": "ModItems.hazmat_boots",
+      "resistance": 0.06,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 71
+      }
+    },
+    {
+      "item": "hbm:hazmat_helmet_red",
+      "symbol": "ModItems.hazmat_helmet_red",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 73
+      }
+    },
+    {
+      "item": "hbm:hazmat_plate_red",
+      "symbol": "ModItems.hazmat_plate_red",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 74
+      }
+    },
+    {
+      "item": "hbm:hazmat_legs_red",
+      "symbol": "ModItems.hazmat_legs_red",
+      "resistance": 0.3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 75
+      }
+    },
+    {
+      "item": "hbm:hazmat_boots_red",
+      "symbol": "ModItems.hazmat_boots_red",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 76
+      }
+    },
+    {
+      "item": "hbm:hazmat_helmet_grey",
+      "symbol": "ModItems.hazmat_helmet_grey",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 78
+      }
+    },
+    {
+      "item": "hbm:hazmat_plate_grey",
+      "symbol": "ModItems.hazmat_plate_grey",
+      "resistance": 0.8,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 79
+      }
+    },
+    {
+      "item": "hbm:hazmat_legs_grey",
+      "symbol": "ModItems.hazmat_legs_grey",
+      "resistance": 0.6,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 80
+      }
+    },
+    {
+      "item": "hbm:hazmat_boots_grey",
+      "symbol": "ModItems.hazmat_boots_grey",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 81
+      }
+    },
+    {
+      "item": "hbm:liquidator_helmet",
+      "symbol": "ModItems.liquidator_helmet",
+      "resistance": 0.48,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 83
+      }
+    },
+    {
+      "item": "hbm:liquidator_plate",
+      "symbol": "ModItems.liquidator_plate",
+      "resistance": 0.96,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 84
+      }
+    },
+    {
+      "item": "hbm:liquidator_legs",
+      "symbol": "ModItems.liquidator_legs",
+      "resistance": 0.72,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 85
+      }
+    },
+    {
+      "item": "hbm:liquidator_boots",
+      "symbol": "ModItems.liquidator_boots",
+      "resistance": 0.24,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 86
+      }
+    },
+    {
+      "item": "hbm:paa_plate",
+      "symbol": "ModItems.paa_plate",
+      "resistance": 0.68,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 88
+      }
+    },
+    {
+      "item": "hbm:paa_legs",
+      "symbol": "ModItems.paa_legs",
+      "resistance": 0.51,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 89
+      }
+    },
+    {
+      "item": "hbm:paa_boots",
+      "symbol": "ModItems.paa_boots",
+      "resistance": 0.17,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 90
+      }
+    },
+    {
+      "item": "hbm:hazmat_paa_helmet",
+      "symbol": "ModItems.hazmat_paa_helmet",
+      "resistance": 0.34,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 92
+      }
+    },
+    {
+      "item": "hbm:hazmat_paa_plate",
+      "symbol": "ModItems.hazmat_paa_plate",
+      "resistance": 0.68,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 93
+      }
+    },
+    {
+      "item": "hbm:hazmat_paa_legs",
+      "symbol": "ModItems.hazmat_paa_legs",
+      "resistance": 0.51,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 94
+      }
+    },
+    {
+      "item": "hbm:hazmat_paa_boots",
+      "symbol": "ModItems.hazmat_paa_boots",
+      "resistance": 0.17,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 95
+      }
+    },
+    {
+      "item": "hbm:security_helmet",
+      "symbol": "ModItems.security_helmet",
+      "resistance": 0.165,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 97
+      }
+    },
+    {
+      "item": "hbm:security_plate",
+      "symbol": "ModItems.security_plate",
+      "resistance": 0.33,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 98
+      }
+    },
+    {
+      "item": "hbm:security_legs",
+      "symbol": "ModItems.security_legs",
+      "resistance": 0.24749999999999997,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 99
+      }
+    },
+    {
+      "item": "hbm:security_boots",
+      "symbol": "ModItems.security_boots",
+      "resistance": 0.0825,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 100
+      }
+    },
+    {
+      "item": "hbm:starmetal_helmet",
+      "symbol": "ModItems.starmetal_helmet",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 102
+      }
+    },
+    {
+      "item": "hbm:starmetal_plate",
+      "symbol": "ModItems.starmetal_plate",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 103
+      }
+    },
+    {
+      "item": "hbm:starmetal_legs",
+      "symbol": "ModItems.starmetal_legs",
+      "resistance": 0.3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 104
+      }
+    },
+    {
+      "item": "hbm:starmetal_boots",
+      "symbol": "ModItems.starmetal_boots",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 105
+      }
+    },
+    {
+      "item": "hbm:jackt",
+      "symbol": "ModItems.jackt",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 107
+      }
+    },
+    {
+      "item": "hbm:jackt2",
+      "symbol": "ModItems.jackt2",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 108
+      }
+    },
+    {
+      "item": "hbm:gas_mask",
+      "symbol": "ModItems.gas_mask",
+      "resistance": 0.07,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 110
+      }
+    },
+    {
+      "item": "hbm:gas_mask_m65",
+      "symbol": "ModItems.gas_mask_m65",
+      "resistance": 0.095,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 111
+      }
+    },
+    {
+      "item": "hbm:steel_helmet",
+      "symbol": "ModItems.steel_helmet",
+      "resistance": 0.009,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 113
+      }
+    },
+    {
+      "item": "hbm:steel_plate",
+      "symbol": "ModItems.steel_plate",
+      "resistance": 0.018,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 114
+      }
+    },
+    {
+      "item": "hbm:steel_legs",
+      "symbol": "ModItems.steel_legs",
+      "resistance": 0.0135,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 115
+      }
+    },
+    {
+      "item": "hbm:steel_boots",
+      "symbol": "ModItems.steel_boots",
+      "resistance": 0.0045,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 116
+      }
+    },
+    {
+      "item": "hbm:titanium_helmet",
+      "symbol": "ModItems.titanium_helmet",
+      "resistance": 0.009,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 118
+      }
+    },
+    {
+      "item": "hbm:titanium_plate",
+      "symbol": "ModItems.titanium_plate",
+      "resistance": 0.018,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 119
+      }
+    },
+    {
+      "item": "hbm:titanium_legs",
+      "symbol": "ModItems.titanium_legs",
+      "resistance": 0.0135,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 120
+      }
+    },
+    {
+      "item": "hbm:titanium_boots",
+      "symbol": "ModItems.titanium_boots",
+      "resistance": 0.0045,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 121
+      }
+    },
+    {
+      "item": "hbm:cobalt_helmet",
+      "symbol": "ModItems.cobalt_helmet",
+      "resistance": 0.025,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 123
+      }
+    },
+    {
+      "item": "hbm:cobalt_plate",
+      "symbol": "ModItems.cobalt_plate",
+      "resistance": 0.05,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 124
+      }
+    },
+    {
+      "item": "hbm:cobalt_legs",
+      "symbol": "ModItems.cobalt_legs",
+      "resistance": 0.0375,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 125
+      }
+    },
+    {
+      "item": "hbm:cobalt_boots",
+      "symbol": "ModItems.cobalt_boots",
+      "resistance": 0.0125,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 126
+      }
+    },
+    {
+      "item": "minecraft:iron_helmet",
+      "symbol": "Items.iron_helmet",
+      "resistance": 0.0045,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 128
+      }
+    },
+    {
+      "item": "minecraft:iron_chestplate",
+      "symbol": "Items.iron_chestplate",
+      "resistance": 0.009,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 129
+      }
+    },
+    {
+      "item": "minecraft:iron_leggings",
+      "symbol": "Items.iron_leggings",
+      "resistance": 0.00675,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 130
+      }
+    },
+    {
+      "item": "minecraft:iron_boots",
+      "symbol": "Items.iron_boots",
+      "resistance": 0.00225,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 131
+      }
+    },
+    {
+      "item": "minecraft:golden_helmet",
+      "symbol": "Items.golden_helmet",
+      "resistance": 0.0045,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 133
+      }
+    },
+    {
+      "item": "minecraft:golden_chestplate",
+      "symbol": "Items.golden_chestplate",
+      "resistance": 0.009,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 134
+      }
+    },
+    {
+      "item": "minecraft:golden_leggings",
+      "symbol": "Items.golden_leggings",
+      "resistance": 0.00675,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 135
+      }
+    },
+    {
+      "item": "minecraft:golden_boots",
+      "symbol": "Items.golden_boots",
+      "resistance": 0.00225,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 136
+      }
+    },
+    {
+      "item": "hbm:alloy_helmet",
+      "symbol": "ModItems.alloy_helmet",
+      "resistance": 0.014000000000000002,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 138
+      }
+    },
+    {
+      "item": "hbm:alloy_plate",
+      "symbol": "ModItems.alloy_plate",
+      "resistance": 0.028000000000000004,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 139
+      }
+    },
+    {
+      "item": "hbm:alloy_legs",
+      "symbol": "ModItems.alloy_legs",
+      "resistance": 0.021,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 140
+      }
+    },
+    {
+      "item": "hbm:alloy_boots",
+      "symbol": "ModItems.alloy_boots",
+      "resistance": 0.007000000000000001,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 141
+      }
+    },
+    {
+      "item": "hbm:cmb_helmet",
+      "symbol": "ModItems.cmb_helmet",
+      "resistance": 0.26,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 143
+      }
+    },
+    {
+      "item": "hbm:cmb_plate",
+      "symbol": "ModItems.cmb_plate",
+      "resistance": 0.52,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 144
+      }
+    },
+    {
+      "item": "hbm:cmb_legs",
+      "symbol": "ModItems.cmb_legs",
+      "resistance": 0.39,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 145
+      }
+    },
+    {
+      "item": "hbm:cmb_boots",
+      "symbol": "ModItems.cmb_boots",
+      "resistance": 0.13,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 146
+      }
+    },
+    {
+      "item": "hbm:schrabidium_helmet",
+      "symbol": "ModItems.schrabidium_helmet",
+      "resistance": 0.6000000000000001,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 148
+      }
+    },
+    {
+      "item": "hbm:schrabidium_plate",
+      "symbol": "ModItems.schrabidium_plate",
+      "resistance": 1.2000000000000002,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 149
+      }
+    },
+    {
+      "item": "hbm:schrabidium_legs",
+      "symbol": "ModItems.schrabidium_legs",
+      "resistance": 0.8999999999999999,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 150
+      }
+    },
+    {
+      "item": "hbm:schrabidium_boots",
+      "symbol": "ModItems.schrabidium_boots",
+      "resistance": 0.30000000000000004,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 151
+      }
+    },
+    {
+      "item": "hbm:euphemium_helmet",
+      "symbol": "ModItems.euphemium_helmet",
+      "resistance": 2.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 153
+      }
+    },
+    {
+      "item": "hbm:euphemium_plate",
+      "symbol": "ModItems.euphemium_plate",
+      "resistance": 4.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 154
+      }
+    },
+    {
+      "item": "hbm:euphemium_legs",
+      "symbol": "ModItems.euphemium_legs",
+      "resistance": 3.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 155
+      }
+    },
+    {
+      "item": "hbm:euphemium_boots",
+      "symbol": "ModItems.euphemium_boots",
+      "resistance": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/handler/HazmatRegistry.java",
+        "line": 156
+      }
+    }
+  ],
+  "external": [
+    {
+      "item": "hbm:ajr_boots",
+      "resistance": 0.13,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 175
+      }
+    },
+    {
+      "item": "hbm:ajr_helmet",
+      "resistance": 0.26,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 163
+      }
+    },
+    {
+      "item": "hbm:ajr_legs",
+      "resistance": 0.39,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 174
+      }
+    },
+    {
+      "item": "hbm:ajr_plate",
+      "resistance": 0.52,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 173
+      }
+    },
+    {
+      "item": "hbm:ajro_boots",
+      "resistance": 0.13,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 189
+      }
+    },
+    {
+      "item": "hbm:ajro_helmet",
+      "resistance": 0.26,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 177
+      }
+    },
+    {
+      "item": "hbm:ajro_legs",
+      "resistance": 0.39,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 188
+      }
+    },
+    {
+      "item": "hbm:ajro_plate",
+      "resistance": 0.52,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 187
+      }
+    },
+    {
+      "item": "hbm:bj_boots",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 240
+      }
+    },
+    {
+      "item": "hbm:bj_helmet",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 223
+      }
+    },
+    {
+      "item": "hbm:bj_legs",
+      "resistance": 0.3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 239
+      }
+    },
+    {
+      "item": "hbm:bj_plate",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 237
+      }
+    },
+    {
+      "item": "hbm:bj_plate_jetpack",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 238
+      }
+    },
+    {
+      "item": "hbm:dns_boots",
+      "resistance": 0.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 306
+      }
+    },
+    {
+      "item": "hbm:dns_helmet",
+      "resistance": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 290
+      }
+    },
+    {
+      "item": "hbm:dns_legs",
+      "resistance": 1.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 305
+      }
+    },
+    {
+      "item": "hbm:dns_plate",
+      "resistance": 2.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 304
+      }
+    },
+    {
+      "item": "hbm:envsuit_boots",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 252
+      }
+    },
+    {
+      "item": "hbm:envsuit_helmet",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 244
+      }
+    },
+    {
+      "item": "hbm:envsuit_legs",
+      "resistance": 0.3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 251
+      }
+    },
+    {
+      "item": "hbm:envsuit_plate",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 250
+      }
+    },
+    {
+      "item": "hbm:fau_boots",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 286
+      }
+    },
+    {
+      "item": "hbm:fau_helmet",
+      "resistance": 0.8,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 273
+      }
+    },
+    {
+      "item": "hbm:fau_legs",
+      "resistance": 1.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 285
+      }
+    },
+    {
+      "item": "hbm:fau_plate",
+      "resistance": 1.6,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 284
+      }
+    },
+    {
+      "item": "hbm:hev_boots",
+      "resistance": 0.22999999999999998,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 266
+      }
+    },
+    {
+      "item": "hbm:hev_helmet",
+      "resistance": 0.45999999999999996,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 256
+      }
+    },
+    {
+      "item": "hbm:hev_legs",
+      "resistance": 0.69,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 265
+      }
+    },
+    {
+      "item": "hbm:hev_plate",
+      "resistance": 0.9199999999999999,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 264
+      }
+    },
+    {
+      "item": "hbm:ncrpa_boots",
+      "resistance": 0.17,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 219
+      }
+    },
+    {
+      "item": "hbm:ncrpa_helmet",
+      "resistance": 0.34,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 206
+      }
+    },
+    {
+      "item": "hbm:ncrpa_legs",
+      "resistance": 0.51,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 218
+      }
+    },
+    {
+      "item": "hbm:ncrpa_plate",
+      "resistance": 0.68,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 217
+      }
+    },
+    {
+      "item": "hbm:rpa_boots",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 204
+      }
+    },
+    {
+      "item": "hbm:rpa_helmet",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 191
+      }
+    },
+    {
+      "item": "hbm:rpa_legs",
+      "resistance": 0.6,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 203
+      }
+    },
+    {
+      "item": "hbm:rpa_plate",
+      "resistance": 0.8,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 202
+      }
+    },
+    {
+      "item": "hbm:steamsuit_boots",
+      "resistance": 0.13,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 147
+      }
+    },
+    {
+      "item": "hbm:steamsuit_helmet",
+      "resistance": 0.26,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 139
+      }
+    },
+    {
+      "item": "hbm:steamsuit_legs",
+      "resistance": 0.39,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 146
+      }
+    },
+    {
+      "item": "hbm:steamsuit_plate",
+      "resistance": 0.52,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 145
+      }
+    },
+    {
+      "item": "hbm:t51_boots",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 135
+      }
+    },
+    {
+      "item": "hbm:t51_helmet",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 124
+      }
+    },
+    {
+      "item": "hbm:t51_legs",
+      "resistance": 0.3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 134
+      }
+    },
+    {
+      "item": "hbm:t51_plate",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 133
+      }
+    },
+    {
+      "item": "hbm:taurun_boots",
+      "resistance": 0.0125,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 318
+      }
+    },
+    {
+      "item": "hbm:taurun_helmet",
+      "resistance": 0.025,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 310
+      }
+    },
+    {
+      "item": "hbm:taurun_legs",
+      "resistance": 0.0375,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 317
+      }
+    },
+    {
+      "item": "hbm:taurun_plate",
+      "resistance": 0.05,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 316
+      }
+    },
+    {
+      "item": "hbm:trenchmaster_boots",
+      "resistance": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 333
+      }
+    },
+    {
+      "item": "hbm:trenchmaster_helmet",
+      "resistance": 0.2,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 321
+      }
+    },
+    {
+      "item": "hbm:trenchmaster_legs",
+      "resistance": 0.3,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 332
+      }
+    },
+    {
+      "item": "hbm:trenchmaster_plate",
+      "resistance": 0.4,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 331
+      }
+    }
+  ],
+  "hazards": [
+    {
+      "item": "hbm:gas_mask_filter",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "PARTICLE_FINE",
+        "GAS_LUNG",
+        "GAS_BLISTERING",
+        "BACTERIA"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 39
+      }
+    },
+    {
+      "item": "hbm:gas_mask_filter_mono",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "GAS_MONOXIDE"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 40
+      }
+    },
+    {
+      "item": "hbm:gas_mask_filter_combo",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "PARTICLE_FINE",
+        "GAS_LUNG",
+        "GAS_BLISTERING",
+        "BACTERIA",
+        "GAS_MONOXIDE"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 41
+      }
+    },
+    {
+      "item": "hbm:gas_mask_filter_rag",
+      "hazards": [
+        "PARTICLE_COARSE"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 42
+      }
+    },
+    {
+      "item": "hbm:gas_mask_filter_piss",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "GAS_LUNG"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 43
+      }
+    },
+    {
+      "item": "hbm:gas_mask",
+      "hazards": [
+        "SAND",
+        "LIGHT"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 45
+      }
+    },
+    {
+      "item": "hbm:gas_mask_m65",
+      "hazards": [
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 46
+      }
+    },
+    {
+      "item": "hbm:mask_rag",
+      "hazards": [
+        "PARTICLE_COARSE"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 47
+      }
+    },
+    {
+      "item": "hbm:mask_piss",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "GAS_LUNG"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 48
+      }
+    },
+    {
+      "item": "hbm:goggles",
+      "hazards": [
+        "LIGHT",
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 50
+      }
+    },
+    {
+      "item": "hbm:ashglasses",
+      "hazards": [
+        "LIGHT",
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 51
+      }
+    },
+    {
+      "item": "hbm:attachment_mask",
+      "hazards": [
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 53
+      }
+    },
+    {
+      "item": "hbm:asbestos_helmet",
+      "hazards": [
+        "SAND",
+        "LIGHT"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 55
+      }
+    },
+    {
+      "item": "hbm:hazmat_helmet",
+      "hazards": [
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 57
+      }
+    },
+    {
+      "item": "hbm:hazmat_helmet_red",
+      "hazards": [
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 58
+      }
+    },
+    {
+      "item": "hbm:hazmat_helmet_grey",
+      "hazards": [
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 59
+      }
+    },
+    {
+      "item": "hbm:hazmat_paa_helmet",
+      "hazards": [
+        "LIGHT",
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 60
+      }
+    },
+    {
+      "item": "hbm:liquidator_helmet",
+      "hazards": [
+        "LIGHT",
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 61
+      }
+    },
+    {
+      "item": "hbm:schrabidium_helmet",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "PARTICLE_FINE",
+        "GAS_LUNG",
+        "BACTERIA",
+        "GAS_BLISTERING",
+        "GAS_MONOXIDE",
+        "LIGHT",
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 63
+      }
+    },
+    {
+      "item": "hbm:euphemium_helmet",
+      "hazards": [
+        "PARTICLE_COARSE",
+        "PARTICLE_FINE",
+        "GAS_LUNG",
+        "BACTERIA",
+        "GAS_BLISTERING",
+        "GAS_MONOXIDE",
+        "LIGHT",
+        "SAND"
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/util/ArmorUtil.java",
+        "line": 64
+      }
+    }
+  ],
+  "aliases": {
+    "hbm:item.achievement_icon": "hbm:achievement_icon",
+    "hbm:item.ammo_debug": "hbm:ammo_debug",
+    "hbm:item.ammo_dgk": "hbm:ammo_dgk",
+    "hbm:item.ams_catalyst_blank": "hbm:ams_catalyst_blank",
+    "hbm:item.asbestos_cloth": "hbm:asbestos_cloth",
+    "hbm:item.assembly_nuke": "hbm:assembly_nuke",
+    "hbm:item.ball_dynamite": "hbm:ball_dynamite",
+    "hbm:item.ball_fireclay": "hbm:ball_fireclay",
+    "hbm:item.ball_resin": "hbm:ball_resin",
+    "hbm:item.ball_tatb": "hbm:ball_tatb",
+    "hbm:item.ball_tnt": "hbm:ball_tnt",
+    "hbm:item.ballistite": "hbm:ballistite",
+    "hbm:item.battery_creative": "hbm:battery_creative",
+    "hbm:item.battery_pack": "hbm:battery_pack",
+    "hbm:item.battery_potato": "hbm:battery_potato",
+    "hbm:item.battery_sc": "hbm:battery_sc",
+    "hbm:item.battery_spark": "hbm:battery_spark",
+    "hbm:item.battery_trixite": "hbm:battery_trixite",
+    "hbm:item.bedrock_ore_fragment": "hbm:bedrock_ore_fragment",
+    "hbm:item.billet_actinium": "hbm:billet_actinium",
+    "hbm:item.billet_am241": "hbm:billet_am241",
+    "hbm:item.billet_am242": "hbm:billet_am242",
+    "hbm:item.billet_am_mix": "hbm:billet_am_mix",
+    "hbm:item.billet_americium_fuel": "hbm:billet_americium_fuel",
+    "hbm:item.billet_au198": "hbm:billet_au198",
+    "hbm:item.billet_australium": "hbm:billet_australium",
+    "hbm:item.billet_australium_greater": "hbm:billet_australium_greater",
+    "hbm:item.billet_australium_lesser": "hbm:billet_australium_lesser",
+    "hbm:item.billet_balefire_gold": "hbm:billet_balefire_gold",
+    "hbm:item.billet_beryllium": "hbm:billet_beryllium",
+    "hbm:item.billet_bismuth": "hbm:billet_bismuth",
+    "hbm:item.billet_co60": "hbm:billet_co60",
+    "hbm:item.billet_cobalt": "hbm:billet_cobalt",
+    "hbm:item.billet_flashlead": "hbm:billet_flashlead",
+    "hbm:item.billet_gh336": "hbm:billet_gh336",
+    "hbm:item.billet_hes": "hbm:billet_hes",
+    "hbm:item.billet_les": "hbm:billet_les",
+    "hbm:item.billet_mox_fuel": "hbm:billet_mox_fuel",
+    "hbm:item.billet_neptunium": "hbm:billet_neptunium",
+    "hbm:item.billet_neptunium_fuel": "hbm:billet_neptunium_fuel",
+    "hbm:item.billet_nuclear_waste": "hbm:billet_nuclear_waste",
+    "hbm:item.billet_pb209": "hbm:billet_pb209",
+    "hbm:item.billet_plutonium": "hbm:billet_plutonium",
+    "hbm:item.billet_plutonium_fuel": "hbm:billet_plutonium_fuel",
+    "hbm:item.billet_po210be": "hbm:billet_po210be",
+    "hbm:item.billet_polonium": "hbm:billet_polonium",
+    "hbm:item.billet_pu238": "hbm:billet_pu238",
+    "hbm:item.billet_pu238be": "hbm:billet_pu238be",
+    "hbm:item.billet_pu239": "hbm:billet_pu239",
+    "hbm:item.billet_pu240": "hbm:billet_pu240",
+    "hbm:item.billet_pu241": "hbm:billet_pu241",
+    "hbm:item.billet_pu_mix": "hbm:billet_pu_mix",
+    "hbm:item.billet_ra226": "hbm:billet_ra226",
+    "hbm:item.billet_ra226be": "hbm:billet_ra226be",
+    "hbm:item.billet_schrabidium": "hbm:billet_schrabidium",
+    "hbm:item.billet_schrabidium_fuel": "hbm:billet_schrabidium_fuel",
+    "hbm:item.billet_silicon": "hbm:billet_silicon",
+    "hbm:item.billet_solinium": "hbm:billet_solinium",
+    "hbm:item.billet_sr90": "hbm:billet_sr90",
+    "hbm:item.billet_technetium": "hbm:billet_technetium",
+    "hbm:item.billet_th232": "hbm:billet_th232",
+    "hbm:item.billet_thorium_fuel": "hbm:billet_thorium_fuel",
+    "hbm:item.billet_u233": "hbm:billet_u233",
+    "hbm:item.billet_u235": "hbm:billet_u235",
+    "hbm:item.billet_u238": "hbm:billet_u238",
+    "hbm:item.billet_uranium": "hbm:billet_uranium",
+    "hbm:item.billet_uranium_fuel": "hbm:billet_uranium_fuel",
+    "hbm:item.billet_uzh": "hbm:billet_uzh",
+    "hbm:item.billet_yharonite": "hbm:billet_yharonite",
+    "hbm:item.billet_zfb_am_mix": "hbm:billet_zfb_am_mix",
+    "hbm:item.billet_zfb_bismuth": "hbm:billet_zfb_bismuth",
+    "hbm:item.billet_zfb_pu241": "hbm:billet_zfb_pu241",
+    "hbm:item.billet_zirconium": "hbm:billet_zirconium",
+    "hbm:item.biomass": "hbm:biomass",
+    "hbm:item.biomass_compressed": "hbm:biomass_compressed",
+    "hbm:item.blade_meteorite": "hbm:blade_meteorite",
+    "hbm:item.blade_titanium": "hbm:blade_titanium",
+    "hbm:item.blade_tungsten": "hbm:blade_tungsten",
+    "hbm:item.blades_desh": "hbm:blades_desh",
+    "hbm:item.blades_steel": "hbm:blades_steel",
+    "hbm:item.blades_titanium": "hbm:blades_titanium",
+    "hbm:item.bolt": "hbm:bolt",
+    "hbm:item.bolt_spike": "hbm:bolt_spike",
+    "hbm:item.book_secret": "hbm:book_secret",
+    "hbm:item.bottle2_empty": "hbm:bottle2_empty",
+    "hbm:item.bottle_empty": "hbm:bottle_empty",
+    "hbm:item.bottle_mercury": "hbm:bottle_mercury",
+    "hbm:item.boy_bullet": "hbm:boy_bullet",
+    "hbm:item.boy_igniter": "hbm:boy_igniter",
+    "hbm:item.boy_propellant": "hbm:boy_propellant",
+    "hbm:item.boy_shielding": "hbm:boy_shielding",
+    "hbm:item.boy_target": "hbm:boy_target",
+    "hbm:item.bucket_acid": "hbm:bucket_acid",
+    "hbm:item.bucket_mud": "hbm:bucket_mud",
+    "hbm:item.bucket_schrabidic_acid": "hbm:bucket_schrabidic_acid",
+    "hbm:item.bucket_sulfuric_acid": "hbm:bucket_sulfuric_acid",
+    "hbm:item.bucket_toxic": "hbm:bucket_toxic",
+    "hbm:item.burnt_bark": "hbm:burnt_bark",
+    "hbm:item.can_empty": "hbm:can_empty",
+    "hbm:item.can_key": "hbm:can_key",
+    "hbm:item.canister_empty": "hbm:canister_empty",
+    "hbm:item.canister_full": "hbm:canister_full",
+    "hbm:item.canister_napalm": "hbm:canister_napalm",
+    "hbm:item.cap_fritz": "hbm:cap_fritz",
+    "hbm:item.cap_korl": "hbm:cap_korl",
+    "hbm:item.cap_nuka": "hbm:cap_nuka",
+    "hbm:item.cap_quantum": "hbm:cap_quantum",
+    "hbm:item.cap_rad": "hbm:cap_rad",
+    "hbm:item.cap_sparkle": "hbm:cap_sparkle",
+    "hbm:item.catalyst_clay": "hbm:catalyst_clay",
+    "hbm:item.catalytic_converter": "hbm:catalytic_converter",
+    "hbm:item.cell_balefire": "hbm:cell_balefire",
+    "hbm:item.cell_deuterium": "hbm:cell_deuterium",
+    "hbm:item.cell_empty": "hbm:cell_empty",
+    "hbm:item.cell_puf6": "hbm:cell_puf6",
+    "hbm:item.cell_sas3": "hbm:cell_sas3",
+    "hbm:item.cell_tritium": "hbm:cell_tritium",
+    "hbm:item.cell_uf6": "hbm:cell_uf6",
+    "hbm:item.centrifuge_element": "hbm:centrifuge_element",
+    "hbm:item.chlorine1": "hbm:chlorine1",
+    "hbm:item.chlorine2": "hbm:chlorine2",
+    "hbm:item.chlorine3": "hbm:chlorine3",
+    "hbm:item.chlorine4": "hbm:chlorine4",
+    "hbm:item.chlorine5": "hbm:chlorine5",
+    "hbm:item.chlorine6": "hbm:chlorine6",
+    "hbm:item.chlorine7": "hbm:chlorine7",
+    "hbm:item.chlorine8": "hbm:chlorine8",
+    "hbm:item.chlorine_pinwheel": "hbm:chlorine_pinwheel",
+    "hbm:item.cinnebar": "hbm:cinnebar",
+    "hbm:item.circuit_star": "hbm:circuit_star",
+    "hbm:item.circuit_star_piece": "hbm:circuit_star_piece",
+    "hbm:item.cladding_desh": "hbm:cladding_desh",
+    "hbm:item.cladding_ghiorsium": "hbm:cladding_ghiorsium",
+    "hbm:item.cladding_lead": "hbm:cladding_lead",
+    "hbm:item.cladding_paint": "hbm:cladding_paint",
+    "hbm:item.cladding_rubber": "hbm:cladding_rubber",
+    "hbm:item.cloud1": "hbm:cloud1",
+    "hbm:item.cloud2": "hbm:cloud2",
+    "hbm:item.cloud3": "hbm:cloud3",
+    "hbm:item.cloud4": "hbm:cloud4",
+    "hbm:item.cloud5": "hbm:cloud5",
+    "hbm:item.cloud6": "hbm:cloud6",
+    "hbm:item.cloud7": "hbm:cloud7",
+    "hbm:item.cloud8": "hbm:cloud8",
+    "hbm:item.coal_eternal": "hbm:coal_eternal",
+    "hbm:item.coal_infernal": "hbm:coal_infernal",
+    "hbm:item.coil_copper": "hbm:coil_copper",
+    "hbm:item.coil_copper_torus": "hbm:coil_copper_torus",
+    "hbm:item.coil_gold": "hbm:coil_gold",
+    "hbm:item.coil_gold_torus": "hbm:coil_gold_torus",
+    "hbm:item.coil_magnetized_tungsten": "hbm:coil_magnetized_tungsten",
+    "hbm:item.coil_tungsten": "hbm:coil_tungsten",
+    "hbm:item.coin_creeper": "hbm:coin_creeper",
+    "hbm:item.coin_maskman": "hbm:coin_maskman",
+    "hbm:item.coin_radiation": "hbm:coin_radiation",
+    "hbm:item.coin_token": "hbm:coin_token",
+    "hbm:item.coin_ufo": "hbm:coin_ufo",
+    "hbm:item.coin_worm": "hbm:coin_worm",
+    "hbm:item.combine_scrap": "hbm:combine_scrap",
+    "hbm:item.cordite": "hbm:cordite",
+    "hbm:item.crt_display": "hbm:crt_display",
+    "hbm:item.crystal_aluminium": "hbm:crystal_aluminium",
+    "hbm:item.crystal_beryllium": "hbm:crystal_beryllium",
+    "hbm:item.crystal_charred": "hbm:crystal_charred",
+    "hbm:item.crystal_cinnebar": "hbm:crystal_cinnebar",
+    "hbm:item.crystal_coal": "hbm:crystal_coal",
+    "hbm:item.crystal_cobalt": "hbm:crystal_cobalt",
+    "hbm:item.crystal_copper": "hbm:crystal_copper",
+    "hbm:item.crystal_diamond": "hbm:crystal_diamond",
+    "hbm:item.crystal_fluorite": "hbm:crystal_fluorite",
+    "hbm:item.crystal_gold": "hbm:crystal_gold",
+    "hbm:item.crystal_horn": "hbm:crystal_horn",
+    "hbm:item.crystal_iron": "hbm:crystal_iron",
+    "hbm:item.crystal_lapis": "hbm:crystal_lapis",
+    "hbm:item.crystal_lead": "hbm:crystal_lead",
+    "hbm:item.crystal_lithium": "hbm:crystal_lithium",
+    "hbm:item.crystal_niter": "hbm:crystal_niter",
+    "hbm:item.crystal_osmiridium": "hbm:crystal_osmiridium",
+    "hbm:item.crystal_phosphorus": "hbm:crystal_phosphorus",
+    "hbm:item.crystal_plutonium": "hbm:crystal_plutonium",
+    "hbm:item.crystal_rare": "hbm:crystal_rare",
+    "hbm:item.crystal_redstone": "hbm:crystal_redstone",
+    "hbm:item.crystal_schrabidium": "hbm:crystal_schrabidium",
+    "hbm:item.crystal_schraranium": "hbm:crystal_schraranium",
+    "hbm:item.crystal_starmetal": "hbm:crystal_starmetal",
+    "hbm:item.crystal_sulfur": "hbm:crystal_sulfur",
+    "hbm:item.crystal_thorium": "hbm:crystal_thorium",
+    "hbm:item.crystal_titanium": "hbm:crystal_titanium",
+    "hbm:item.crystal_trixite": "hbm:crystal_trixite",
+    "hbm:item.crystal_tungsten": "hbm:crystal_tungsten",
+    "hbm:item.crystal_uranium": "hbm:crystal_uranium",
+    "hbm:item.cube_power": "hbm:cube_power",
+    "hbm:item.custom_amat": "hbm:custom_amat",
+    "hbm:item.custom_dirty": "hbm:custom_dirty",
+    "hbm:item.custom_fall": "hbm:custom_fall",
+    "hbm:item.custom_hydro": "hbm:custom_hydro",
+    "hbm:item.custom_nuke": "hbm:custom_nuke",
+    "hbm:item.custom_schrab": "hbm:custom_schrab",
+    "hbm:item.custom_tnt": "hbm:custom_tnt",
+    "hbm:item.debris_concrete": "hbm:debris_concrete",
+    "hbm:item.debris_element": "hbm:debris_element",
+    "hbm:item.debris_exchanger": "hbm:debris_exchanger",
+    "hbm:item.debris_fuel": "hbm:debris_fuel",
+    "hbm:item.debris_graphite": "hbm:debris_graphite",
+    "hbm:item.debris_metal": "hbm:debris_metal",
+    "hbm:item.debris_shrapnel": "hbm:debris_shrapnel",
+    "hbm:item.demon_core_closed": "hbm:demon_core_closed",
+    "hbm:item.deuterium_filter": "hbm:deuterium_filter",
+    "hbm:item.disperser_canister_empty": "hbm:disperser_canister_empty",
+    "hbm:item.drill_titanium": "hbm:drill_titanium",
+    "hbm:item.drillbit": "hbm:drillbit",
+    "hbm:item.ducttape": "hbm:ducttape",
+    "hbm:item.dust": "hbm:dust",
+    "hbm:item.dust_tiny": "hbm:dust_tiny",
+    "hbm:item.dysfunctional_reactor": "hbm:dysfunctional_reactor",
+    "hbm:item.early_explosive_lenses": "hbm:early_explosive_lenses",
+    "hbm:item.egg_balefire": "hbm:egg_balefire",
+    "hbm:item.egg_balefire_shard": "hbm:egg_balefire_shard",
+    "hbm:item.egg_glyphid": "hbm:egg_glyphid",
+    "hbm:item.entanglement_kit": "hbm:entanglement_kit",
+    "hbm:item.explosive_lenses": "hbm:explosive_lenses",
+    "hbm:item.fallout": "hbm:fallout",
+    "hbm:item.filter_coal": "hbm:filter_coal",
+    "hbm:item.fins_big_steel": "hbm:fins_big_steel",
+    "hbm:item.fins_flat": "hbm:fins_flat",
+    "hbm:item.fins_quad_titanium": "hbm:fins_quad_titanium",
+    "hbm:item.fins_small_steel": "hbm:fins_small_steel",
+    "hbm:item.fins_tri_steel": "hbm:fins_tri_steel",
+    "hbm:item.flame_conspiracy": "hbm:flame_conspiracy",
+    "hbm:item.flame_opinion": "hbm:flame_opinion",
+    "hbm:item.flame_politics": "hbm:flame_politics",
+    "hbm:item.flame_pony": "hbm:flame_pony",
+    "hbm:item.fluid_barrel_empty": "hbm:fluid_barrel_empty",
+    "hbm:item.fluid_barrel_full": "hbm:fluid_barrel_full",
+    "hbm:item.fluid_barrel_infinite": "hbm:fluid_barrel_infinite",
+    "hbm:item.fluid_duct": "hbm:fluid_duct",
+    "hbm:item.fluid_icon": "hbm:fluid_icon",
+    "hbm:item.fluid_identifier_multi": "hbm:fluid_identifier_multi",
+    "hbm:item.fluid_pack_empty": "hbm:fluid_pack_empty",
+    "hbm:item.fluid_pack_full": "hbm:fluid_pack_full",
+    "hbm:item.fluid_tank_empty": "hbm:fluid_tank_empty",
+    "hbm:item.fluid_tank_full": "hbm:fluid_tank_full",
+    "hbm:item.fluid_tank_lead_empty": "hbm:fluid_tank_lead_empty",
+    "hbm:item.fluid_tank_lead_full": "hbm:fluid_tank_lead_full",
+    "hbm:item.fluorite": "hbm:fluorite",
+    "hbm:item.flywheel_beryllium": "hbm:flywheel_beryllium",
+    "hbm:item.fragment_actinium": "hbm:fragment_actinium",
+    "hbm:item.fragment_boron": "hbm:fragment_boron",
+    "hbm:item.fragment_cerium": "hbm:fragment_cerium",
+    "hbm:item.fragment_cobalt": "hbm:fragment_cobalt",
+    "hbm:item.fragment_coltan": "hbm:fragment_coltan",
+    "hbm:item.fragment_lanthanium": "hbm:fragment_lanthanium",
+    "hbm:item.fragment_meteorite": "hbm:fragment_meteorite",
+    "hbm:item.fragment_neodymium": "hbm:fragment_neodymium",
+    "hbm:item.fragment_niobium": "hbm:fragment_niobium",
+    "hbm:item.fuel_additive": "hbm:fuel_additive",
+    "hbm:item.fuel_tank_large": "hbm:fuel_tank_large",
+    "hbm:item.fuel_tank_medium": "hbm:fuel_tank_medium",
+    "hbm:item.fuel_tank_small": "hbm:fuel_tank_small",
+    "hbm:item.fuse": "hbm:fuse",
+    "hbm:item.gadget_core": "hbm:gadget_core",
+    "hbm:item.gadget_wireing": "hbm:gadget_wireing",
+    "hbm:item.gas_empty": "hbm:gas_empty",
+    "hbm:item.gas_full": "hbm:gas_full",
+    "hbm:item.gas_mask_filter": "hbm:gas_mask_filter",
+    "hbm:item.gas_mask_filter_combo": "hbm:gas_mask_filter_combo",
+    "hbm:item.gas_mask_filter_mono": "hbm:gas_mask_filter_mono",
+    "hbm:item.gas_mask_filter_piss": "hbm:gas_mask_filter_piss",
+    "hbm:item.gas_mask_filter_rag": "hbm:gas_mask_filter_rag",
+    "hbm:item.geiger_counter": "hbm:geiger_counter",
+    "hbm:item.gem_alexandrite": "hbm:gem_alexandrite",
+    "hbm:item.gem_rad": "hbm:gem_rad",
+    "hbm:item.gem_sodalite": "hbm:gem_sodalite",
+    "hbm:item.gem_tantalium": "hbm:gem_tantalium",
+    "hbm:item.gem_volcanic": "hbm:gem_volcanic",
+    "hbm:item.glyphid_gland_empty": "hbm:glyphid_gland_empty",
+    "hbm:item.hazmat_boots": "hbm:hazmat_boots",
+    "hbm:item.hazmat_boots_grey": "hbm:hazmat_boots_grey",
+    "hbm:item.hazmat_boots_red": "hbm:hazmat_boots_red",
+    "hbm:item.hazmat_cloth": "hbm:hazmat_cloth",
+    "hbm:item.hazmat_cloth_grey": "hbm:hazmat_cloth_grey",
+    "hbm:item.hazmat_cloth_red": "hbm:hazmat_cloth_red",
+    "hbm:item.hazmat_helmet": "hbm:hazmat_helmet",
+    "hbm:item.hazmat_helmet_grey": "hbm:hazmat_helmet_grey",
+    "hbm:item.hazmat_helmet_red": "hbm:hazmat_helmet_red",
+    "hbm:item.hazmat_legs": "hbm:hazmat_legs",
+    "hbm:item.hazmat_legs_grey": "hbm:hazmat_legs_grey",
+    "hbm:item.hazmat_legs_red": "hbm:hazmat_legs_red",
+    "hbm:item.hazmat_plate": "hbm:hazmat_plate",
+    "hbm:item.hazmat_plate_grey": "hbm:hazmat_plate_grey",
+    "hbm:item.hazmat_plate_red": "hbm:hazmat_plate_red",
+    "hbm:item.holotape_damaged": "hbm:holotape_damaged",
+    "hbm:item.icf_pellet_depleted": "hbm:icf_pellet_depleted",
+    "hbm:item.icf_pellet_empty": "hbm:icf_pellet_empty",
+    "hbm:item.igniter": "hbm:igniter",
+    "hbm:item.inf_water": "hbm:inf_water",
+    "hbm:item.inf_water_mk2": "hbm:inf_water_mk2",
+    "hbm:item.ingot_actinium": "hbm:ingot_actinium",
+    "hbm:item.ingot_aluminium": "hbm:ingot_aluminium",
+    "hbm:item.ingot_am241": "hbm:ingot_am241",
+    "hbm:item.ingot_am242": "hbm:ingot_am242",
+    "hbm:item.ingot_am_mix": "hbm:ingot_am_mix",
+    "hbm:item.ingot_americium_fuel": "hbm:ingot_americium_fuel",
+    "hbm:item.ingot_arsenic": "hbm:ingot_arsenic",
+    "hbm:item.ingot_arsenic_bronze": "hbm:ingot_arsenic_bronze",
+    "hbm:item.ingot_asbestos": "hbm:ingot_asbestos",
+    "hbm:item.ingot_au198": "hbm:ingot_au198",
+    "hbm:item.ingot_australium": "hbm:ingot_australium",
+    "hbm:item.ingot_bakelite": "hbm:ingot_bakelite",
+    "hbm:item.ingot_beryllium": "hbm:ingot_beryllium",
+    "hbm:item.ingot_biorubber": "hbm:ingot_biorubber",
+    "hbm:item.ingot_bismuth": "hbm:ingot_bismuth",
+    "hbm:item.ingot_bismuth_bronze": "hbm:ingot_bismuth_bronze",
+    "hbm:item.ingot_boron": "hbm:ingot_boron",
+    "hbm:item.ingot_bscco": "hbm:ingot_bscco",
+    "hbm:item.ingot_cadmium": "hbm:ingot_cadmium",
+    "hbm:item.ingot_calcium": "hbm:ingot_calcium",
+    "hbm:item.ingot_cdalloy": "hbm:ingot_cdalloy",
+    "hbm:item.ingot_cft": "hbm:ingot_cft",
+    "hbm:item.ingot_chainsteel": "hbm:ingot_chainsteel",
+    "hbm:item.ingot_co60": "hbm:ingot_co60",
+    "hbm:item.ingot_cobalt": "hbm:ingot_cobalt",
+    "hbm:item.ingot_combine_steel": "hbm:ingot_combine_steel",
+    "hbm:item.ingot_copper": "minecraft:copper_ingot",
+    "hbm:item.ingot_desh": "hbm:ingot_desh",
+    "hbm:item.ingot_dineutronium": "hbm:ingot_dineutronium",
+    "hbm:item.ingot_dura_steel": "hbm:ingot_dura_steel",
+    "hbm:item.ingot_electronium": "hbm:ingot_electronium",
+    "hbm:item.ingot_euphemium": "hbm:ingot_euphemium",
+    "hbm:item.ingot_ferrouranium": "hbm:ingot_ferrouranium",
+    "hbm:item.ingot_fiberglass": "hbm:ingot_fiberglass",
+    "hbm:item.ingot_firebrick": "hbm:ingot_firebrick",
+    "hbm:item.ingot_gh336": "hbm:ingot_gh336",
+    "hbm:item.ingot_graphite": "hbm:ingot_graphite",
+    "hbm:item.ingot_gunmetal": "hbm:ingot_gunmetal",
+    "hbm:item.ingot_hes": "hbm:ingot_hes",
+    "hbm:item.ingot_lanthanium": "hbm:ingot_lanthanium",
+    "hbm:item.ingot_lead": "hbm:ingot_lead",
+    "hbm:item.ingot_les": "hbm:ingot_les",
+    "hbm:item.ingot_magnetized_tungsten": "hbm:ingot_magnetized_tungsten",
+    "hbm:item.nugget_mercury": "hbm:nugget_mercury",
+    "hbm:item.ingot_meteorite": "hbm:ingot_meteorite",
+    "hbm:item.ingot_meteorite_forged": "hbm:ingot_meteorite_forged",
+    "hbm:item.ingot_mox_fuel": "hbm:ingot_mox_fuel",
+    "hbm:item.ingot_mud": "hbm:ingot_mud",
+    "hbm:item.ingot_neptunium": "hbm:ingot_neptunium",
+    "hbm:item.ingot_neptunium_fuel": "hbm:ingot_neptunium_fuel",
+    "hbm:item.ingot_niobium": "hbm:ingot_niobium",
+    "hbm:item.ingot_osmiridium": "hbm:ingot_osmiridium",
+    "hbm:item.ingot_pb209": "hbm:ingot_pb209",
+    "hbm:item.ingot_pc": "hbm:ingot_pc",
+    "hbm:item.ingot_phosphorus": "hbm:ingot_phosphorus",
+    "hbm:item.ingot_plutonium": "hbm:ingot_plutonium",
+    "hbm:item.ingot_plutonium_fuel": "hbm:ingot_plutonium_fuel",
+    "hbm:item.ingot_polonium": "hbm:ingot_polonium",
+    "hbm:item.ingot_polymer": "hbm:ingot_polymer",
+    "hbm:item.ingot_pu238": "hbm:ingot_pu238",
+    "hbm:item.ingot_pu239": "hbm:ingot_pu239",
+    "hbm:item.ingot_pu240": "hbm:ingot_pu240",
+    "hbm:item.ingot_pu241": "hbm:ingot_pu241",
+    "hbm:item.ingot_pu_mix": "hbm:ingot_pu_mix",
+    "hbm:item.ingot_pvc": "hbm:ingot_pvc",
+    "hbm:item.ingot_ra226": "hbm:ingot_ra226",
+    "hbm:item.ingot_raw": "hbm:ingot_raw",
+    "hbm:item.ingot_red_copper": "hbm:ingot_red_copper",
+    "hbm:item.ingot_rubber": "hbm:ingot_rubber",
+    "hbm:item.ingot_saturnite": "hbm:ingot_saturnite",
+    "hbm:item.ingot_schrabidate": "hbm:ingot_schrabidate",
+    "hbm:item.ingot_schrabidium": "hbm:ingot_schrabidium",
+    "hbm:item.ingot_schrabidium_fuel": "hbm:ingot_schrabidium_fuel",
+    "hbm:item.ingot_silicon": "hbm:ingot_silicon",
+    "hbm:item.ingot_solinium": "hbm:ingot_solinium",
+    "hbm:item.ingot_sr90": "hbm:ingot_sr90",
+    "hbm:item.ingot_steel": "hbm:ingot_steel",
+    "hbm:item.ingot_steel_dusted": "hbm:ingot_steel_dusted",
+    "hbm:item.ingot_tantalium": "hbm:ingot_tantalium",
+    "hbm:item.ingot_tcalloy": "hbm:ingot_tcalloy",
+    "hbm:item.ingot_technetium": "hbm:ingot_technetium",
+    "hbm:item.ingot_th232": "hbm:ingot_th232",
+    "hbm:item.ingot_thorium_fuel": "hbm:ingot_thorium_fuel",
+    "hbm:item.ingot_titanium": "hbm:ingot_titanium",
+    "hbm:item.ingot_tungsten": "hbm:ingot_tungsten",
+    "hbm:item.ingot_tungsten_carbide": "hbm:ingot_tungsten_carbide",
+    "hbm:item.ingot_u233": "hbm:ingot_u233",
+    "hbm:item.ingot_u235": "hbm:ingot_u235",
+    "hbm:item.ingot_u238": "hbm:ingot_u238",
+    "hbm:item.ingot_uranium": "hbm:ingot_uranium",
+    "hbm:item.ingot_uranium_fuel": "hbm:ingot_uranium_fuel",
+    "hbm:item.ingot_weaponsteel": "hbm:ingot_weaponsteel",
+    "hbm:item.ingot_zirconium": "hbm:ingot_zirconium",
+    "hbm:item.item_secret": "hbm:item_secret",
+    "hbm:item.key_red": "hbm:key_red",
+    "hbm:item.key_red_cracked": "hbm:key_red_cracked",
+    "hbm:item.launch_code": "hbm:launch_code",
+    "hbm:item.launch_code_piece": "hbm:launch_code_piece",
+    "hbm:item.launch_key": "hbm:launch_key",
+    "hbm:item.lignite": "hbm:lignite",
+    "hbm:item.lithium": "hbm:lithium",
+    "hbm:item.magnetron": "hbm:magnetron",
+    "hbm:item.man_core": "hbm:man_core",
+    "hbm:item.man_igniter": "hbm:man_igniter",
+    "hbm:item.mech_key": "hbm:mech_key",
+    "hbm:item.memory": "hbm:memory",
+    "hbm:item.mike_cooling_unit": "hbm:mike_cooling_unit",
+    "hbm:item.mike_core": "hbm:mike_core",
+    "hbm:item.mike_deut": "hbm:mike_deut",
+    "hbm:item.missile_assembly": "hbm:missile_assembly",
+    "hbm:item.missile_lambda": "hbm:missile_lambda",
+    "hbm:item.missile_soyuz_lander": "hbm:missile_soyuz_lander",
+    "hbm:item.mold": "hbm:mold",
+    "hbm:item.mold_base": "hbm:mold_base",
+    "hbm:item.motor": "hbm:motor",
+    "hbm:item.motor_bismuth": "hbm:motor_bismuth",
+    "hbm:item.motor_desh": "hbm:motor_desh",
+    "hbm:item.neutron_reflector": "hbm:neutron_reflector",
+    "hbm:item.niter": "hbm:niter",
+    "hbm:item.nitra": "hbm:nitra",
+    "hbm:item.nitra_small": "hbm:nitra_small",
+    "hbm:item.nothing": "hbm:nothing",
+    "hbm:item.nugget_actinium": "hbm:nugget_actinium",
+    "hbm:item.nugget_am241": "hbm:nugget_am241",
+    "hbm:item.nugget_am242": "hbm:nugget_am242",
+    "hbm:item.nugget_am_mix": "hbm:nugget_am_mix",
+    "hbm:item.nugget_americium_fuel": "hbm:nugget_americium_fuel",
+    "hbm:item.nugget_arsenic": "hbm:nugget_arsenic",
+    "hbm:item.nugget_au198": "hbm:nugget_au198",
+    "hbm:item.nugget_australium": "hbm:nugget_australium",
+    "hbm:item.nugget_australium_greater": "hbm:nugget_australium_greater",
+    "hbm:item.nugget_australium_lesser": "hbm:nugget_australium_lesser",
+    "hbm:item.nugget_beryllium": "hbm:nugget_beryllium",
+    "hbm:item.nugget_bismuth": "hbm:nugget_bismuth",
+    "hbm:item.nugget_co60": "hbm:nugget_co60",
+    "hbm:item.nugget_cobalt": "hbm:nugget_cobalt",
+    "hbm:item.nugget_desh": "hbm:nugget_desh",
+    "hbm:item.nugget_dineutronium": "hbm:nugget_dineutronium",
+    "hbm:item.nugget_euphemium": "hbm:nugget_euphemium",
+    "hbm:item.nugget_gh336": "hbm:nugget_gh336",
+    "hbm:item.nugget_hes": "hbm:nugget_hes",
+    "hbm:item.nugget_lead": "hbm:nugget_lead",
+    "hbm:item.nugget_les": "hbm:nugget_les",
+    "hbm:item.nugget_mercury_tiny": "hbm:nugget_mercury_tiny",
+    "hbm:item.nugget_mox_fuel": "hbm:nugget_mox_fuel",
+    "hbm:item.nugget_neptunium": "hbm:nugget_neptunium",
+    "hbm:item.nugget_neptunium_fuel": "hbm:nugget_neptunium_fuel",
+    "hbm:item.nugget_niobium": "hbm:nugget_niobium",
+    "hbm:item.nugget_osmiridium": "hbm:nugget_osmiridium",
+    "hbm:item.nugget_pb209": "hbm:nugget_pb209",
+    "hbm:item.nugget_plutonium": "hbm:nugget_plutonium",
+    "hbm:item.nugget_plutonium_fuel": "hbm:nugget_plutonium_fuel",
+    "hbm:item.nugget_polonium": "hbm:nugget_polonium",
+    "hbm:item.nugget_pu238": "hbm:nugget_pu238",
+    "hbm:item.nugget_pu239": "hbm:nugget_pu239",
+    "hbm:item.nugget_pu240": "hbm:nugget_pu240",
+    "hbm:item.nugget_pu241": "hbm:nugget_pu241",
+    "hbm:item.nugget_pu_mix": "hbm:nugget_pu_mix",
+    "hbm:item.nugget_ra226": "hbm:nugget_ra226",
+    "hbm:item.nugget_raw": "hbm:nugget_raw",
+    "hbm:item.nugget_schrabidium": "hbm:nugget_schrabidium",
+    "hbm:item.nugget_schrabidium_fuel": "hbm:nugget_schrabidium_fuel",
+    "hbm:item.nugget_silicon": "hbm:nugget_silicon",
+    "hbm:item.nugget_solinium": "hbm:nugget_solinium",
+    "hbm:item.nugget_sr90": "hbm:nugget_sr90",
+    "hbm:item.nugget_tantalium": "hbm:nugget_tantalium",
+    "hbm:item.nugget_technetium": "hbm:nugget_technetium",
+    "hbm:item.nugget_th232": "hbm:nugget_th232",
+    "hbm:item.nugget_thorium_fuel": "hbm:nugget_thorium_fuel",
+    "hbm:item.nugget_u233": "hbm:nugget_u233",
+    "hbm:item.nugget_u235": "hbm:nugget_u235",
+    "hbm:item.nugget_u238": "hbm:nugget_u238",
+    "hbm:item.nugget_uranium": "hbm:nugget_uranium",
+    "hbm:item.nugget_uranium_fuel": "hbm:nugget_uranium_fuel",
+    "hbm:item.nugget_zirconium": "hbm:nugget_zirconium",
+    "hbm:item.orange1": "hbm:orange1",
+    "hbm:item.orange2": "hbm:orange2",
+    "hbm:item.orange3": "hbm:orange3",
+    "hbm:item.orange4": "hbm:orange4",
+    "hbm:item.orange5": "hbm:orange5",
+    "hbm:item.orange6": "hbm:orange6",
+    "hbm:item.orange7": "hbm:orange7",
+    "hbm:item.orange8": "hbm:orange8",
+    "hbm:item.page_of_": "hbm:page_of_",
+    "hbm:item.part_barrel_heavy": "hbm:part_barrel_heavy",
+    "hbm:item.part_barrel_light": "hbm:part_barrel_light",
+    "hbm:item.part_beryllium": "hbm:part_beryllium",
+    "hbm:item.part_carbon": "hbm:part_carbon",
+    "hbm:item.part_copper": "hbm:part_copper",
+    "hbm:item.part_grip": "hbm:part_grip",
+    "hbm:item.part_lithium": "hbm:part_lithium",
+    "hbm:item.part_mechanism": "hbm:part_mechanism",
+    "hbm:item.part_plutonium": "hbm:part_plutonium",
+    "hbm:item.part_receiver_heavy": "hbm:part_receiver_heavy",
+    "hbm:item.part_receiver_light": "hbm:part_receiver_light",
+    "hbm:item.part_stock": "hbm:part_stock",
+    "hbm:item.particle_amat": "hbm:particle_amat",
+    "hbm:item.particle_aschrab": "hbm:particle_aschrab",
+    "hbm:item.particle_copper": "hbm:particle_copper",
+    "hbm:item.particle_dark": "hbm:particle_dark",
+    "hbm:item.particle_empty": "hbm:particle_empty",
+    "hbm:item.particle_higgs": "hbm:particle_higgs",
+    "hbm:item.particle_hydrogen": "hbm:particle_hydrogen",
+    "hbm:item.particle_lead": "hbm:particle_lead",
+    "hbm:item.particle_lutece": "hbm:particle_lutece",
+    "hbm:item.particle_muon": "hbm:particle_muon",
+    "hbm:item.particle_sparkticle": "hbm:particle_sparkticle",
+    "hbm:item.particle_strange": "hbm:particle_strange",
+    "hbm:item.particle_tachyon": "hbm:particle_tachyon",
+    "hbm:item.parts_legendary": "hbm:parts_legendary",
+    "hbm:item.pc1": "hbm:pc1",
+    "hbm:item.pc2": "hbm:pc2",
+    "hbm:item.pc3": "hbm:pc3",
+    "hbm:item.pc4": "hbm:pc4",
+    "hbm:item.pc5": "hbm:pc5",
+    "hbm:item.pc6": "hbm:pc6",
+    "hbm:item.pc7": "hbm:pc7",
+    "hbm:item.pc8": "hbm:pc8",
+    "hbm:item.pedestal_steel": "hbm:pedestal_steel",
+    "hbm:item.pellet_buckshot": "hbm:pellet_buckshot",
+    "hbm:item.pellet_charged": "hbm:pellet_charged",
+    "hbm:item.pellet_cluster": "hbm:pellet_cluster",
+    "hbm:item.pellet_gas": "hbm:pellet_gas",
+    "hbm:item.photo_panel": "hbm:photo_panel",
+    "hbm:item.pin": "hbm:pin",
+    "hbm:item.pipe": "hbm:pipe",
+    "hbm:item.pipes_steel": "hbm:pipes_steel",
+    "hbm:item.piston_selenium": "hbm:piston_selenium",
+    "hbm:item.plant_item": "hbm:plant_item",
+    "hbm:item.plate_aluminium": "hbm:plate_aluminium",
+    "hbm:item.plate_armor_ajr": "hbm:plate_armor_ajr",
+    "hbm:item.plate_armor_dnt": "hbm:plate_armor_dnt",
+    "hbm:item.plate_armor_fau": "hbm:plate_armor_fau",
+    "hbm:item.plate_armor_hev": "hbm:plate_armor_hev",
+    "hbm:item.plate_armor_lunar": "hbm:plate_armor_lunar",
+    "hbm:item.plate_armor_titanium": "hbm:plate_armor_titanium",
+    "hbm:item.plate_bismuth": "hbm:plate_bismuth",
+    "hbm:item.plate_cast": "hbm:plate_cast",
+    "hbm:item.plate_combine_steel": "hbm:plate_combine_steel",
+    "hbm:item.plate_copper": "hbm:plate_copper",
+    "hbm:item.plate_dalekanium": "hbm:plate_dalekanium",
+    "hbm:item.plate_desh": "hbm:plate_desh",
+    "hbm:item.plate_dineutronium": "hbm:plate_dineutronium",
+    "hbm:item.plate_dura_steel": "hbm:plate_dura_steel",
+    "hbm:item.plate_euphemium": "hbm:plate_euphemium",
+    "hbm:item.plate_gold": "hbm:plate_gold",
+    "hbm:item.plate_gunmetal": "hbm:plate_gunmetal",
+    "hbm:item.plate_iron": "hbm:plate_iron",
+    "hbm:item.plate_kevlar": "hbm:plate_kevlar",
+    "hbm:item.plate_lead": "hbm:plate_lead",
+    "hbm:item.plate_mixed": "hbm:plate_mixed",
+    "hbm:item.plate_paa": "hbm:plate_paa",
+    "hbm:item.plate_polymer": "hbm:plate_polymer",
+    "hbm:item.plate_saturnite": "hbm:plate_saturnite",
+    "hbm:item.plate_schrabidium": "hbm:plate_schrabidium",
+    "hbm:item.plate_steel": "hbm:plate_steel",
+    "hbm:item.plate_titanium": "hbm:plate_titanium",
+    "hbm:item.plate_weaponsteel": "hbm:plate_weaponsteel",
+    "hbm:item.plate_welded": "hbm:plate_welded",
+    "hbm:item.powder_actinium": "hbm:powder_actinium",
+    "hbm:item.powder_actinium_tiny": "hbm:powder_actinium_tiny",
+    "hbm:item.powder_aluminium": "hbm:powder_aluminium",
+    "hbm:item.powder_asbestos": "hbm:powder_asbestos",
+    "hbm:item.powder_astatine": "hbm:powder_astatine",
+    "hbm:item.powder_at209": "hbm:powder_at209",
+    "hbm:item.powder_au198": "hbm:powder_au198",
+    "hbm:item.powder_australium": "hbm:powder_australium",
+    "hbm:item.powder_bakelite": "hbm:powder_bakelite",
+    "hbm:item.powder_balefire": "hbm:powder_balefire",
+    "hbm:item.powder_beryllium": "hbm:powder_beryllium",
+    "hbm:item.powder_bismuth": "hbm:powder_bismuth",
+    "hbm:item.powder_borax": "hbm:powder_borax",
+    "hbm:item.powder_boron": "hbm:powder_boron",
+    "hbm:item.powder_boron_tiny": "hbm:powder_boron_tiny",
+    "hbm:item.powder_bromine": "hbm:powder_bromine",
+    "hbm:item.powder_cadmium": "hbm:powder_cadmium",
+    "hbm:item.powder_caesium": "hbm:powder_caesium",
+    "hbm:item.powder_calcium": "hbm:powder_calcium",
+    "hbm:item.powder_cerium": "hbm:powder_cerium",
+    "hbm:item.powder_cerium_tiny": "hbm:powder_cerium_tiny",
+    "hbm:item.powder_chlorocalcite": "hbm:powder_chlorocalcite",
+    "hbm:item.powder_chlorophyte": "hbm:powder_chlorophyte",
+    "hbm:item.powder_co60": "hbm:powder_co60",
+    "hbm:item.powder_coal": "hbm:powder_coal",
+    "hbm:item.powder_coal_tiny": "hbm:powder_coal_tiny",
+    "hbm:item.powder_cobalt": "hbm:powder_cobalt",
+    "hbm:item.powder_cobalt_tiny": "hbm:powder_cobalt_tiny",
+    "hbm:item.powder_coltan": "hbm:powder_coltan",
+    "hbm:item.powder_coltan_ore": "hbm:powder_coltan_ore",
+    "hbm:item.powder_combine_steel": "hbm:powder_combine_steel",
+    "hbm:item.powder_copper": "hbm:powder_copper",
+    "hbm:item.powder_cs137": "hbm:powder_cs137",
+    "hbm:item.powder_cs137_tiny": "hbm:powder_cs137_tiny",
+    "hbm:item.powder_desh": "hbm:powder_desh",
+    "hbm:item.powder_desh_mix": "hbm:powder_desh_mix",
+    "hbm:item.powder_desh_ready": "hbm:powder_desh_ready",
+    "hbm:item.powder_diamond": "hbm:powder_diamond",
+    "hbm:item.powder_dineutronium": "hbm:powder_dineutronium",
+    "hbm:item.powder_dura_steel": "hbm:powder_dura_steel",
+    "hbm:item.powder_emerald": "hbm:powder_emerald",
+    "hbm:item.powder_euphemium": "hbm:powder_euphemium",
+    "hbm:item.powder_fire": "hbm:powder_fire",
+    "hbm:item.powder_flux": "hbm:powder_flux",
+    "hbm:item.powder_gold": "hbm:powder_gold",
+    "hbm:item.powder_i131": "hbm:powder_i131",
+    "hbm:item.powder_i131_tiny": "hbm:powder_i131_tiny",
+    "hbm:item.powder_ice": "hbm:powder_ice",
+    "hbm:item.powder_impure_osmiridium": "hbm:powder_impure_osmiridium",
+    "hbm:item.powder_iodine": "hbm:powder_iodine",
+    "hbm:item.powder_iron": "hbm:powder_iron",
+    "hbm:item.powder_lanthanium": "hbm:powder_lanthanium",
+    "hbm:item.powder_lanthanium_tiny": "hbm:powder_lanthanium_tiny",
+    "hbm:item.powder_lapis": "hbm:powder_lapis",
+    "hbm:item.powder_lead": "hbm:powder_lead",
+    "hbm:item.powder_lignite": "hbm:powder_lignite",
+    "hbm:item.powder_limestone": "hbm:powder_limestone",
+    "hbm:item.powder_lithium": "hbm:powder_lithium",
+    "hbm:item.powder_lithium_tiny": "hbm:powder_lithium_tiny",
+    "hbm:item.powder_magic": "hbm:powder_magic",
+    "hbm:item.powder_magnetized_tungsten": "hbm:powder_magnetized_tungsten",
+    "hbm:item.powder_meteorite": "hbm:powder_meteorite",
+    "hbm:item.powder_meteorite_tiny": "hbm:powder_meteorite_tiny",
+    "hbm:item.powder_molysite": "hbm:powder_molysite",
+    "hbm:item.powder_neodymium": "hbm:powder_neodymium",
+    "hbm:item.powder_neodymium_tiny": "hbm:powder_neodymium_tiny",
+    "hbm:item.powder_neptunium": "hbm:powder_neptunium",
+    "hbm:item.powder_niobium": "hbm:powder_niobium",
+    "hbm:item.powder_niobium_tiny": "hbm:powder_niobium_tiny",
+    "hbm:item.powder_nitan_mix": "hbm:powder_nitan_mix",
+    "hbm:item.powder_paleogenite": "hbm:powder_paleogenite",
+    "hbm:item.powder_paleogenite_tiny": "hbm:powder_paleogenite_tiny",
+    "hbm:item.powder_plutonium": "hbm:powder_plutonium",
+    "hbm:item.powder_poison": "hbm:powder_poison",
+    "hbm:item.powder_polonium": "hbm:powder_polonium",
+    "hbm:item.powder_polymer": "hbm:powder_polymer",
+    "hbm:item.powder_power": "hbm:powder_power",
+    "hbm:item.powder_quartz": "hbm:powder_quartz",
+    "hbm:item.powder_ra226": "hbm:powder_ra226",
+    "hbm:item.powder_red_copper": "hbm:powder_red_copper",
+    "hbm:item.powder_sawdust": "hbm:powder_sawdust",
+    "hbm:item.powder_schrabidate": "hbm:powder_schrabidate",
+    "hbm:item.powder_schrabidium": "hbm:powder_schrabidium",
+    "hbm:item.powder_semtex_mix": "hbm:powder_semtex_mix",
+    "hbm:item.powder_sodium": "hbm:powder_sodium",
+    "hbm:item.powder_spark_mix": "hbm:powder_spark_mix",
+    "hbm:item.powder_sr90": "hbm:powder_sr90",
+    "hbm:item.powder_sr90_tiny": "hbm:powder_sr90_tiny",
+    "hbm:item.powder_steel": "hbm:powder_steel",
+    "hbm:item.powder_steel_tiny": "hbm:powder_steel_tiny",
+    "hbm:item.powder_strontium": "hbm:powder_strontium",
+    "hbm:item.powder_tantalium": "hbm:powder_tantalium",
+    "hbm:item.powder_tcalloy": "hbm:powder_tcalloy",
+    "hbm:item.powder_tektite": "hbm:powder_tektite",
+    "hbm:item.powder_tennessine": "hbm:powder_tennessine",
+    "hbm:item.powder_thermite": "hbm:powder_thermite",
+    "hbm:item.powder_thorium": "hbm:powder_thorium",
+    "hbm:item.powder_titanium": "hbm:powder_titanium",
+    "hbm:item.powder_tungsten": "hbm:powder_tungsten",
+    "hbm:item.powder_uranium": "hbm:powder_uranium",
+    "hbm:item.powder_xe135": "hbm:powder_xe135",
+    "hbm:item.powder_xe135_tiny": "hbm:powder_xe135_tiny",
+    "hbm:item.powder_yellowcake": "hbm:powder_yellowcake",
+    "hbm:item.powder_zirconium": "hbm:powder_zirconium",
+    "hbm:item.pwr_fuel_depleted": "hbm:pwr_fuel_depleted",
+    "hbm:item.pwr_fuel_hot": "hbm:pwr_fuel_hot",
+    "hbm:item.rag_damp": "hbm:rag_damp",
+    "hbm:item.rag_piss": "hbm:rag_piss",
+    "hbm:item.rbmk_fuel_empty": "hbm:rbmk_fuel_empty",
+    "hbm:item.reacher": "hbm:reacher",
+    "hbm:item.reactor_core": "hbm:reactor_core",
+    "hbm:item.ring_pull": "hbm:ring_pull",
+    "hbm:item.ring_starmetal": "hbm:ring_starmetal",
+    "hbm:item.rocket_fuel": "hbm:rocket_fuel",
+    "hbm:item.rod_dual_empty": "hbm:rod_dual_empty",
+    "hbm:item.rod_empty": "hbm:rod_empty",
+    "hbm:item.rod_quad_empty": "hbm:rod_quad_empty",
+    "hbm:item.rod_zirnox_empty": "hbm:rod_zirnox_empty",
+    "hbm:item.rod_zirnox_les_fuel_depleted": "hbm:rod_zirnox_les_fuel_depleted",
+    "hbm:item.rod_zirnox_mox_fuel_depleted": "hbm:rod_zirnox_mox_fuel_depleted",
+    "hbm:item.rod_zirnox_natural_uranium_fuel_depleted": "hbm:rod_zirnox_natural_uranium_fuel_depleted",
+    "hbm:item.rod_zirnox_plutonium_fuel_depleted": "hbm:rod_zirnox_plutonium_fuel_depleted",
+    "hbm:item.rod_zirnox_thorium_fuel_depleted": "hbm:rod_zirnox_thorium_fuel_depleted",
+    "hbm:item.rod_zirnox_tritium": "hbm:rod_zirnox_tritium",
+    "hbm:item.rod_zirnox_u233_fuel_depleted": "hbm:rod_zirnox_u233_fuel_depleted",
+    "hbm:item.rod_zirnox_u235_fuel_depleted": "hbm:rod_zirnox_u235_fuel_depleted",
+    "hbm:item.rod_zirnox_uranium_fuel_depleted": "hbm:rod_zirnox_uranium_fuel_depleted",
+    "hbm:item.rod_zirnox_zfb_mox_depleted": "hbm:rod_zirnox_zfb_mox_depleted",
+    "hbm:item.rtg_unit": "hbm:rtg_unit",
+    "hbm:item.rune_blank": "hbm:rune_blank",
+    "hbm:item.rune_dagaz": "hbm:rune_dagaz",
+    "hbm:item.rune_hagalaz": "hbm:rune_hagalaz",
+    "hbm:item.rune_isa": "hbm:rune_isa",
+    "hbm:item.rune_jera": "hbm:rune_jera",
+    "hbm:item.rune_thurisaz": "hbm:rune_thurisaz",
+    "hbm:item.safety_fuse": "hbm:safety_fuse",
+    "hbm:item.sawblade": "hbm:sawblade",
+    "hbm:item.scrap": "hbm:scrap",
+    "hbm:item.scrap_nuclear": "hbm:scrap_nuclear",
+    "hbm:item.scrap_oil": "hbm:scrap_oil",
+    "hbm:item.scraps": "hbm:scraps",
+    "hbm:item.seg_10": "hbm:seg_10",
+    "hbm:item.seg_15": "hbm:seg_15",
+    "hbm:item.seg_20": "hbm:seg_20",
+    "hbm:item.settings_tool": "hbm:settings_tool",
+    "hbm:item.shell": "hbm:shell",
+    "hbm:item.shimmer_axe_head": "hbm:shimmer_axe_head",
+    "hbm:item.shimmer_handle": "hbm:shimmer_handle",
+    "hbm:item.shimmer_head": "hbm:shimmer_head",
+    "hbm:item.solid_fuel": "hbm:solid_fuel",
+    "hbm:item.solid_fuel_bf": "hbm:solid_fuel_bf",
+    "hbm:item.solid_fuel_presto": "hbm:solid_fuel_presto",
+    "hbm:item.solid_fuel_presto_bf": "hbm:solid_fuel_presto_bf",
+    "hbm:item.solid_fuel_presto_triplet": "hbm:solid_fuel_presto_triplet",
+    "hbm:item.solid_fuel_presto_triplet_bf": "hbm:solid_fuel_presto_triplet_bf",
+    "hbm:item.sphere_steel": "hbm:sphere_steel",
+    "hbm:item.stamp_357": "hbm:stamp_357",
+    "hbm:item.stamp_44": "hbm:stamp_44",
+    "hbm:item.stamp_50": "hbm:stamp_50",
+    "hbm:item.stamp_9": "hbm:stamp_9",
+    "hbm:item.stamp_desh_357": "hbm:stamp_desh_357",
+    "hbm:item.stamp_desh_44": "hbm:stamp_desh_44",
+    "hbm:item.stamp_desh_50": "hbm:stamp_desh_50",
+    "hbm:item.stamp_desh_9": "hbm:stamp_desh_9",
+    "hbm:item.stamp_desh_circuit": "hbm:stamp_desh_circuit",
+    "hbm:item.stamp_desh_flat": "hbm:stamp_desh_flat",
+    "hbm:item.stamp_desh_plate": "hbm:stamp_desh_plate",
+    "hbm:item.stamp_desh_wire": "hbm:stamp_desh_wire",
+    "hbm:item.stamp_iron_circuit": "hbm:stamp_iron_circuit",
+    "hbm:item.stamp_iron_flat": "hbm:stamp_iron_flat",
+    "hbm:item.stamp_iron_plate": "hbm:stamp_iron_plate",
+    "hbm:item.stamp_iron_wire": "hbm:stamp_iron_wire",
+    "hbm:item.stamp_obsidian_circuit": "hbm:stamp_obsidian_circuit",
+    "hbm:item.stamp_obsidian_flat": "hbm:stamp_obsidian_flat",
+    "hbm:item.stamp_obsidian_plate": "hbm:stamp_obsidian_plate",
+    "hbm:item.stamp_obsidian_wire": "hbm:stamp_obsidian_wire",
+    "hbm:item.stamp_steel_circuit": "hbm:stamp_steel_circuit",
+    "hbm:item.stamp_steel_flat": "hbm:stamp_steel_flat",
+    "hbm:item.stamp_steel_plate": "hbm:stamp_steel_plate",
+    "hbm:item.stamp_steel_wire": "hbm:stamp_steel_wire",
+    "hbm:item.stamp_stone_circuit": "hbm:stamp_stone_circuit",
+    "hbm:item.stamp_stone_flat": "hbm:stamp_stone_flat",
+    "hbm:item.stamp_stone_plate": "hbm:stamp_stone_plate",
+    "hbm:item.stamp_stone_wire": "hbm:stamp_stone_wire",
+    "hbm:item.stamp_titanium_circuit": "hbm:stamp_titanium_circuit",
+    "hbm:item.stamp_titanium_flat": "hbm:stamp_titanium_flat",
+    "hbm:item.stamp_titanium_plate": "hbm:stamp_titanium_plate",
+    "hbm:item.stamp_titanium_wire": "hbm:stamp_titanium_wire",
+    "hbm:item.stick_c4": "hbm:stick_c4",
+    "hbm:item.stick_semtex": "hbm:stick_semtex",
+    "hbm:item.stick_tnt": "hbm:stick_tnt",
+    "hbm:item.sulfur": "hbm:sulfur",
+    "hbm:item.syringe_empty": "hbm:syringe_empty",
+    "hbm:item.syringe_metal_empty": "hbm:syringe_metal_empty",
+    "hbm:item.tank_steel": "hbm:tank_steel",
+    "hbm:item.template_folder": "hbm:template_folder",
+    "hbm:item.thermo_element": "hbm:thermo_element",
+    "hbm:item.thruster_large": "hbm:thruster_large",
+    "hbm:item.thruster_medium": "hbm:thruster_medium",
+    "hbm:item.thruster_nuclear": "hbm:thruster_nuclear",
+    "hbm:item.thruster_small": "hbm:thruster_small",
+    "hbm:item.tsar_core": "hbm:tsar_core",
+    "hbm:item.turbine_titanium": "hbm:turbine_titanium",
+    "hbm:item.turbine_tungsten": "hbm:turbine_tungsten",
+    "hbm:item.undefined": "hbm:undefined",
+    "hbm:item.upgrade_overdrive_1": "hbm:upgrade_overdrive_1",
+    "hbm:item.upgrade_overdrive_2": "hbm:upgrade_overdrive_2",
+    "hbm:item.upgrade_overdrive_3": "hbm:upgrade_overdrive_3",
+    "hbm:item.upgrade_power_1": "hbm:upgrade_power_1",
+    "hbm:item.upgrade_power_2": "hbm:upgrade_power_2",
+    "hbm:item.upgrade_power_3": "hbm:upgrade_power_3",
+    "hbm:item.upgrade_speed_1": "hbm:upgrade_speed_1",
+    "hbm:item.upgrade_speed_2": "hbm:upgrade_speed_2",
+    "hbm:item.upgrade_speed_3": "hbm:upgrade_speed_3",
+    "hbm:item.upgrade_template": "hbm:upgrade_template",
+    "hbm:item.warhead_buster_large": "hbm:warhead_buster_large",
+    "hbm:item.warhead_buster_medium": "hbm:warhead_buster_medium",
+    "hbm:item.warhead_buster_small": "hbm:warhead_buster_small",
+    "hbm:item.warhead_cluster_large": "hbm:warhead_cluster_large",
+    "hbm:item.warhead_cluster_medium": "hbm:warhead_cluster_medium",
+    "hbm:item.warhead_cluster_small": "hbm:warhead_cluster_small",
+    "hbm:item.warhead_generic_large": "hbm:warhead_generic_large",
+    "hbm:item.warhead_generic_medium": "hbm:warhead_generic_medium",
+    "hbm:item.warhead_generic_small": "hbm:warhead_generic_small",
+    "hbm:item.warhead_incendiary_large": "hbm:warhead_incendiary_large",
+    "hbm:item.warhead_incendiary_medium": "hbm:warhead_incendiary_medium",
+    "hbm:item.warhead_incendiary_small": "hbm:warhead_incendiary_small",
+    "hbm:item.warhead_mirv": "hbm:warhead_mirv",
+    "hbm:item.warhead_nuclear": "hbm:warhead_nuclear",
+    "hbm:item.warhead_volcano": "hbm:warhead_volcano",
+    "hbm:item.watch": "hbm:watch",
+    "hbm:item.weapon_mod_generic": "hbm:weapon_mod_generic",
+    "hbm:item.weapon_mod_special": "hbm:weapon_mod_special",
+    "hbm:item.weapon_mod_test": "hbm:weapon_mod_test",
+    "hbm:item.wire_dense": "hbm:wire_dense",
+    "hbm:item.wire_fine": "hbm:wire_fine",
+    "hbm:item.wiring_red_copper": "hbm:wiring_red_copper",
+    "hbm:item.wrench": "hbm:wrench",
+    "hbm:tile.ancient_scrap": "hbm:ancient_scrap",
+    "hbm:tile.anvil_arsenic_bronze": "hbm:anvil_arsenic_bronze",
+    "hbm:tile.anvil_bismuth_bronze": "hbm:anvil_bismuth_bronze",
+    "hbm:tile.anvil_desh": "hbm:anvil_desh",
+    "hbm:tile.anvil_dnt": "hbm:anvil_dnt",
+    "hbm:tile.anvil_ferrouranium": "hbm:anvil_ferrouranium",
+    "hbm:tile.anvil_iron": "hbm:anvil_iron",
+    "hbm:tile.anvil_lead": "hbm:anvil_lead",
+    "hbm:tile.anvil_murky": "hbm:anvil_murky",
+    "hbm:tile.anvil_osmiridium": "hbm:anvil_osmiridium",
+    "hbm:tile.anvil_saturnite": "hbm:anvil_saturnite",
+    "hbm:tile.anvil_schrabidate": "hbm:anvil_schrabidate",
+    "hbm:tile.anvil_steel": "hbm:anvil_steel",
+    "hbm:tile.basalt": "hbm:basalt",
+    "hbm:tile.basalt_brick": "hbm:basalt_brick",
+    "hbm:tile.basalt_polished": "hbm:basalt_polished",
+    "hbm:tile.basalt_smooth": "hbm:basalt_smooth",
+    "hbm:tile.basalt_tiles": "hbm:basalt_tiles",
+    "hbm:tile.block_actinium": "hbm:block_actinium",
+    "hbm:tile.block_aluminium": "hbm:block_aluminium",
+    "hbm:tile.block_asbestos": "hbm:block_asbestos",
+    "hbm:tile.block_australium": "hbm:block_australium",
+    "hbm:tile.block_bakelite": "hbm:block_bakelite",
+    "hbm:tile.block_beryllium": "hbm:block_beryllium",
+    "hbm:tile.block_bismuth": "hbm:block_bismuth",
+    "hbm:tile.block_boron": "hbm:block_boron",
+    "hbm:tile.block_cadmium": "hbm:block_cadmium",
+    "hbm:tile.block_cdalloy": "hbm:block_cdalloy",
+    "hbm:tile.block_cobalt": "hbm:block_cobalt",
+    "hbm:tile.block_coltan": "hbm:block_coltan",
+    "hbm:tile.block_combine_steel": "hbm:block_combine_steel",
+    "hbm:tile.block_copper": "minecraft:copper_block",
+    "hbm:tile.block_corium": "hbm:block_corium",
+    "hbm:tile.block_corium_cobble": "hbm:block_corium_cobble",
+    "hbm:tile.block_desh": "hbm:block_desh",
+    "hbm:tile.block_dineutronium": "hbm:block_dineutronium",
+    "hbm:tile.block_dura_steel": "hbm:block_dura_steel",
+    "hbm:tile.block_electrical_scrap": "hbm:block_electrical_scrap",
+    "hbm:tile.block_euphemium": "hbm:block_euphemium",
+    "hbm:tile.block_euphemium_cluster": "hbm:block_euphemium_cluster",
+    "hbm:tile.block_fallout": "hbm:block_fallout",
+    "hbm:tile.block_fiberglass": "hbm:block_fiberglass",
+    "hbm:tile.block_fluorite": "hbm:block_fluorite",
+    "hbm:tile.block_foam": "hbm:block_foam",
+    "hbm:tile.block_insulator": "hbm:block_insulator",
+    "hbm:tile.block_lanthanium": "hbm:block_lanthanium",
+    "hbm:tile.block_lead": "hbm:block_lead",
+    "hbm:tile.block_magnetized_tungsten": "hbm:block_magnetized_tungsten",
+    "hbm:tile.block_mox_fuel": "hbm:block_mox_fuel",
+    "hbm:tile.block_neptunium": "hbm:block_neptunium",
+    "hbm:tile.block_niobium": "hbm:block_niobium",
+    "hbm:tile.block_niter": "hbm:block_niter",
+    "hbm:tile.block_plutonium": "hbm:block_plutonium",
+    "hbm:tile.block_plutonium_fuel": "hbm:block_plutonium_fuel",
+    "hbm:tile.block_polonium": "hbm:block_polonium",
+    "hbm:tile.block_polymer": "hbm:block_polymer",
+    "hbm:tile.block_pu238": "hbm:block_pu238",
+    "hbm:tile.block_pu239": "hbm:block_pu239",
+    "hbm:tile.block_pu240": "hbm:block_pu240",
+    "hbm:tile.block_pu_mix": "hbm:block_pu_mix",
+    "hbm:tile.block_ra226": "hbm:block_ra226",
+    "hbm:tile.block_red_copper": "hbm:block_red_copper",
+    "hbm:tile.block_red_phosphorus": "hbm:block_red_phosphorus",
+    "hbm:tile.block_rubber": "hbm:block_rubber",
+    "hbm:tile.block_schrabidate": "hbm:block_schrabidate",
+    "hbm:tile.block_schrabidium": "hbm:block_schrabidium",
+    "hbm:tile.block_schrabidium_cluster": "hbm:block_schrabidium_cluster",
+    "hbm:tile.block_schrabidium_fuel": "hbm:block_schrabidium_fuel",
+    "hbm:tile.block_schraranium": "hbm:block_schraranium",
+    "hbm:tile.block_scrap": "hbm:block_scrap",
+    "hbm:tile.block_smore": "hbm:block_smore",
+    "hbm:tile.block_solinium": "hbm:block_solinium",
+    "hbm:tile.block_starmetal": "hbm:block_starmetal",
+    "hbm:tile.block_steel": "hbm:block_steel",
+    "hbm:tile.block_sulfur": "hbm:block_sulfur",
+    "hbm:tile.block_tantalium": "hbm:block_tantalium",
+    "hbm:tile.block_tcalloy": "hbm:block_tcalloy",
+    "hbm:tile.block_thorium": "hbm:block_thorium",
+    "hbm:tile.block_thorium_fuel": "hbm:block_thorium_fuel",
+    "hbm:tile.block_titanium": "hbm:block_titanium",
+    "hbm:tile.block_trinitite": "hbm:block_trinitite",
+    "hbm:tile.block_tritium": "hbm:block_tritium",
+    "hbm:tile.block_tungsten": "hbm:block_tungsten",
+    "hbm:tile.block_u233": "hbm:block_u233",
+    "hbm:tile.block_u235": "hbm:block_u235",
+    "hbm:tile.block_u238": "hbm:block_u238",
+    "hbm:tile.block_uranium": "hbm:block_uranium",
+    "hbm:tile.block_uranium_fuel": "hbm:block_uranium_fuel",
+    "hbm:tile.block_waste": "hbm:block_waste",
+    "hbm:tile.block_waste_painted": "hbm:block_waste_painted",
+    "hbm:tile.block_waste_vitrified": "hbm:block_waste_vitrified",
+    "hbm:tile.block_white_phosphorus": "hbm:block_white_phosphorus",
+    "hbm:tile.block_yellowcake": "hbm:block_yellowcake",
+    "hbm:tile.block_zirconium": "hbm:block_zirconium",
+    "hbm:tile.brick_asbestos": "hbm:brick_asbestos",
+    "hbm:tile.brick_asbestos_stairs": "hbm:brick_asbestos_stairs",
+    "hbm:tile.brick_compound": "hbm:brick_compound",
+    "hbm:tile.brick_compound_stairs": "hbm:brick_compound_stairs",
+    "hbm:tile.brick_concrete": "hbm:brick_concrete",
+    "hbm:tile.brick_concrete_broken": "hbm:brick_concrete_broken",
+    "hbm:tile.brick_concrete_broken_stairs": "hbm:brick_concrete_broken_stairs",
+    "hbm:tile.brick_concrete_cracked": "hbm:brick_concrete_cracked",
+    "hbm:tile.brick_concrete_cracked_stairs": "hbm:brick_concrete_cracked_stairs",
+    "hbm:tile.brick_concrete_mossy": "hbm:brick_concrete_mossy",
+    "hbm:tile.brick_concrete_mossy_stairs": "hbm:brick_concrete_mossy_stairs",
+    "hbm:tile.brick_concrete_stairs": "hbm:brick_concrete_stairs",
+    "hbm:tile.brick_ducrete": "hbm:brick_ducrete",
+    "hbm:tile.brick_ducrete_stairs": "hbm:brick_ducrete_stairs",
+    "hbm:tile.brick_fire": "hbm:brick_fire",
+    "hbm:tile.brick_fire_stairs": "hbm:brick_fire_stairs",
+    "hbm:tile.brick_jungle": "hbm:brick_jungle",
+    "hbm:tile.brick_jungle_cracked": "hbm:brick_jungle_cracked",
+    "hbm:tile.brick_jungle_lava": "hbm:brick_jungle_lava",
+    "hbm:tile.brick_light": "hbm:brick_light",
+    "hbm:tile.brick_light_stairs": "hbm:brick_light_stairs",
+    "hbm:tile.brick_obsidian": "hbm:brick_obsidian",
+    "hbm:tile.brick_obsidian_stairs": "hbm:brick_obsidian_stairs",
+    "hbm:tile.cable_detector": "hbm:cable_detector",
+    "hbm:tile.cable_diode": "hbm:cable_diode",
+    "hbm:tile.cable_switch": "hbm:cable_switch",
+    "hbm:tile.chlorine_gas": "hbm:chlorine_gas",
+    "hbm:tile.cluster_aluminium": "hbm:cluster_aluminium",
+    "hbm:tile.cluster_copper": "hbm:cluster_copper",
+    "hbm:tile.cluster_depth_iron": "hbm:cluster_depth_iron",
+    "hbm:tile.cluster_depth_titanium": "hbm:cluster_depth_titanium",
+    "hbm:tile.cluster_depth_tungsten": "hbm:cluster_depth_tungsten",
+    "hbm:tile.cluster_iron": "hbm:cluster_iron",
+    "hbm:tile.cluster_titanium": "hbm:cluster_titanium",
+    "hbm:tile.cmb_brick": "hbm:cmb_brick",
+    "hbm:tile.cmb_brick_reinforced": "hbm:cmb_brick_reinforced",
+    "hbm:tile.concrete": "hbm:concrete",
+    "hbm:tile.concrete_asbestos": "hbm:concrete_asbestos",
+    "hbm:tile.concrete_asbestos_stairs": "hbm:concrete_asbestos_stairs",
+    "hbm:tile.concrete_pillar": "hbm:concrete_pillar",
+    "hbm:tile.concrete_rebar": "hbm:concrete_rebar",
+    "hbm:tile.concrete_smooth": "hbm:concrete_smooth",
+    "hbm:tile.concrete_smooth_stairs": "hbm:concrete_smooth_stairs",
+    "hbm:tile.concrete_stairs": "hbm:concrete_stairs",
+    "hbm:tile.concrete_super_broken": "hbm:concrete_super_broken",
+    "hbm:tile.crystal_hardened": "hbm:crystal_hardened",
+    "hbm:tile.deco_asbestos": "hbm:deco_asbestos",
+    "hbm:tile.deco_pipe": "hbm:deco_pipe",
+    "hbm:tile.deco_pipe_framed": "hbm:deco_pipe_framed",
+    "hbm:tile.deco_pipe_framed_green": "hbm:deco_pipe_framed_green",
+    "hbm:tile.deco_pipe_framed_green_rusted": "hbm:deco_pipe_framed_green_rusted",
+    "hbm:tile.deco_pipe_framed_marked": "hbm:deco_pipe_framed_marked",
+    "hbm:tile.deco_pipe_framed_red": "hbm:deco_pipe_framed_red",
+    "hbm:tile.deco_pipe_framed_rusted": "hbm:deco_pipe_framed_rusted",
+    "hbm:tile.deco_pipe_green": "hbm:deco_pipe_green",
+    "hbm:tile.deco_pipe_green_rusted": "hbm:deco_pipe_green_rusted",
+    "hbm:tile.deco_pipe_marked": "hbm:deco_pipe_marked",
+    "hbm:tile.deco_pipe_quad": "hbm:deco_pipe_quad",
+    "hbm:tile.deco_pipe_quad_green": "hbm:deco_pipe_quad_green",
+    "hbm:tile.deco_pipe_quad_green_rusted": "hbm:deco_pipe_quad_green_rusted",
+    "hbm:tile.deco_pipe_quad_marked": "hbm:deco_pipe_quad_marked",
+    "hbm:tile.deco_pipe_quad_red": "hbm:deco_pipe_quad_red",
+    "hbm:tile.deco_pipe_quad_rusted": "hbm:deco_pipe_quad_rusted",
+    "hbm:tile.deco_pipe_red": "hbm:deco_pipe_red",
+    "hbm:tile.deco_pipe_rim": "hbm:deco_pipe_rim",
+    "hbm:tile.deco_pipe_rim_green": "hbm:deco_pipe_rim_green",
+    "hbm:tile.deco_pipe_rim_green_rusted": "hbm:deco_pipe_rim_green_rusted",
+    "hbm:tile.deco_pipe_rim_marked": "hbm:deco_pipe_rim_marked",
+    "hbm:tile.deco_pipe_rim_red": "hbm:deco_pipe_rim_red",
+    "hbm:tile.deco_pipe_rim_rusted": "hbm:deco_pipe_rim_rusted",
+    "hbm:tile.deco_pipe_rusted": "hbm:deco_pipe_rusted",
+    "hbm:tile.deco_rbmk": "hbm:deco_rbmk",
+    "hbm:tile.deco_rbmk_smooth": "hbm:deco_rbmk_smooth",
+    "hbm:tile.dirt_dead": "hbm:dirt_dead",
+    "hbm:tile.dirt_oily": "hbm:dirt_oily",
+    "hbm:tile.ducrete": "hbm:ducrete",
+    "hbm:tile.ducrete_smooth": "hbm:ducrete_smooth",
+    "hbm:tile.ducrete_smooth_stairs": "hbm:ducrete_smooth_stairs",
+    "hbm:tile.ducrete_stairs": "hbm:ducrete_stairs",
+    "hbm:tile.fluid_counter_valve": "hbm:fluid_counter_valve",
+    "hbm:tile.fluid_duct_box": "hbm:fluid_duct_box",
+    "hbm:tile.fluid_duct_exhaust": "hbm:fluid_duct_exhaust",
+    "hbm:tile.fluid_duct_gauge": "hbm:fluid_duct_gauge",
+    "hbm:tile.fluid_duct_neo": "hbm:fluid_duct_neo",
+    "hbm:tile.fluid_duct_paintable": "hbm:fluid_duct_paintable",
+    "hbm:tile.fluid_duct_paintable_block_exhaust": "hbm:fluid_duct_paintable_block_exhaust",
+    "hbm:tile.fluid_valve": "hbm:fluid_valve",
+    "hbm:tile.fusion_heater": "hbm:fusion_heater",
+    "hbm:tile.gas_asbestos": "hbm:gas_asbestos",
+    "hbm:tile.gas_coal": "hbm:gas_coal",
+    "hbm:tile.gas_explosive": "hbm:gas_explosive",
+    "hbm:tile.gas_flammable": "hbm:gas_flammable",
+    "hbm:tile.gas_meltdown": "hbm:gas_meltdown",
+    "hbm:tile.gas_monoxide": "hbm:gas_monoxide",
+    "hbm:tile.gas_radon": "hbm:gas_radon",
+    "hbm:tile.gas_radon_dense": "hbm:gas_radon_dense",
+    "hbm:tile.gas_radon_tomb": "hbm:gas_radon_tomb",
+    "hbm:tile.geiger": "hbm:geiger",
+    "hbm:tile.gneiss_brick": "hbm:gneiss_brick",
+    "hbm:tile.gneiss_chiseled": "hbm:gneiss_chiseled",
+    "hbm:tile.gneiss_tile": "hbm:gneiss_tile",
+    "hbm:tile.gravel_diamond": "hbm:gravel_diamond",
+    "hbm:tile.gravel_obsidian": "hbm:gravel_obsidian",
+    "hbm:tile.machine_armor_table": "hbm:machine_armor_table",
+    "hbm:tile.machine_battery": "hbm:machine_battery",
+    "hbm:tile.machine_battery_potato": "hbm:machine_battery_potato",
+    "hbm:tile.machine_battery_socket": "hbm:machine_battery_socket",
+    "hbm:tile.machine_centrifuge": "hbm:machine_centrifuge",
+    "hbm:tile.machine_converter_he_rf": "hbm:machine_converter_he_rf",
+    "hbm:tile.machine_converter_rf_he": "hbm:machine_converter_rf_he",
+    "hbm:tile.machine_difurnace_extension": "hbm:machine_difurnace_extension",
+    "hbm:tile.machine_difurnace_off": "hbm:machine_difurnace_off",
+    "hbm:tile.machine_difurnace_on": "hbm:machine_difurnace_on",
+    "hbm:tile.machine_dineutronium_battery": "hbm:machine_dineutronium_battery",
+    "hbm:tile.machine_electric_furnace_off": "hbm:machine_electric_furnace_off",
+    "hbm:tile.machine_electric_furnace_on": "hbm:machine_electric_furnace_on",
+    "hbm:tile.machine_lithium_battery": "hbm:machine_lithium_battery",
+    "hbm:tile.machine_press": "hbm:machine_press",
+    "hbm:tile.machine_schrabidium_battery": "hbm:machine_schrabidium_battery",
+    "hbm:tile.machine_shredder": "hbm:machine_shredder",
+    "hbm:tile.machine_wood_burner": "hbm:machine_wood_burner",
+    "hbm:tile.meteor_battery": "hbm:meteor_battery",
+    "hbm:tile.meteor_brick": "hbm:meteor_brick",
+    "hbm:tile.meteor_brick_chiseled": "hbm:meteor_brick_chiseled",
+    "hbm:tile.meteor_brick_cracked": "hbm:meteor_brick_cracked",
+    "hbm:tile.meteor_brick_mossy": "hbm:meteor_brick_mossy",
+    "hbm:tile.meteor_pillar": "hbm:meteor_pillar",
+    "hbm:tile.meteor_polished": "hbm:meteor_polished",
+    "hbm:tile.moon_turf": "hbm:moon_turf",
+    "hbm:tile.ore_alexandrite": "hbm:ore_alexandrite",
+    "hbm:tile.ore_aluminium": "hbm:ore_aluminium",
+    "hbm:tile.ore_asbestos": "hbm:ore_asbestos",
+    "hbm:tile.ore_australium": "hbm:ore_australium",
+    "hbm:tile.ore_basalt": "hbm:ore_basalt",
+    "hbm:tile.ore_bedrock": "hbm:ore_bedrock",
+    "hbm:tile.ore_bedrock_oil": "hbm:ore_bedrock_oil",
+    "hbm:tile.ore_beryllium": "hbm:ore_beryllium",
+    "hbm:tile.ore_cinnebar": "hbm:ore_cinnebar",
+    "hbm:tile.ore_cobalt": "hbm:ore_cobalt",
+    "hbm:tile.ore_coltan": "hbm:ore_coltan",
+    "hbm:tile.ore_copper": "minecraft:copper_ore",
+    "hbm:tile.ore_depth_borax": "hbm:ore_depth_borax",
+    "hbm:tile.ore_depth_cinnebar": "hbm:ore_depth_cinnebar",
+    "hbm:tile.ore_depth_nether_neodymium": "hbm:ore_depth_nether_neodymium",
+    "hbm:tile.ore_depth_zirconium": "hbm:ore_depth_zirconium",
+    "hbm:tile.ore_fluorite": "hbm:ore_fluorite",
+    "hbm:tile.ore_gneiss_asbestos": "hbm:ore_gneiss_asbestos",
+    "hbm:tile.ore_gneiss_copper": "hbm:ore_gneiss_copper",
+    "hbm:tile.ore_gneiss_gas": "hbm:ore_gneiss_gas",
+    "hbm:tile.ore_gneiss_gold": "hbm:ore_gneiss_gold",
+    "hbm:tile.ore_gneiss_iron": "hbm:ore_gneiss_iron",
+    "hbm:tile.ore_gneiss_lithium": "hbm:ore_gneiss_lithium",
+    "hbm:tile.ore_gneiss_rare": "hbm:ore_gneiss_rare",
+    "hbm:tile.ore_gneiss_schrabidium": "hbm:ore_gneiss_schrabidium",
+    "hbm:tile.ore_gneiss_uranium": "hbm:ore_gneiss_uranium",
+    "hbm:tile.ore_gneiss_uranium_scorched": "hbm:ore_gneiss_uranium_scorched",
+    "hbm:tile.ore_lead": "hbm:ore_lead",
+    "hbm:tile.ore_lignite": "hbm:ore_lignite",
+    "hbm:tile.ore_meteor": "hbm:ore_meteor",
+    "hbm:tile.ore_nether_coal": "hbm:ore_nether_coal",
+    "hbm:tile.ore_nether_cobalt": "hbm:ore_nether_cobalt",
+    "hbm:tile.ore_nether_fire": "hbm:ore_nether_fire",
+    "hbm:tile.ore_nether_plutonium": "hbm:ore_nether_plutonium",
+    "hbm:tile.ore_nether_schrabidium": "hbm:ore_nether_schrabidium",
+    "hbm:tile.ore_nether_smoldering": "hbm:ore_nether_smoldering",
+    "hbm:tile.ore_nether_sulfur": "hbm:ore_nether_sulfur",
+    "hbm:tile.ore_nether_tungsten": "hbm:ore_nether_tungsten",
+    "hbm:tile.ore_nether_uranium": "hbm:ore_nether_uranium",
+    "hbm:tile.ore_nether_uranium_scorched": "hbm:ore_nether_uranium_scorched",
+    "hbm:tile.ore_niter": "hbm:ore_niter",
+    "hbm:tile.ore_oil": "hbm:ore_oil",
+    "hbm:tile.ore_oil_empty": "hbm:ore_oil_empty",
+    "hbm:tile.ore_oil_sand": "hbm:ore_oil_sand",
+    "hbm:tile.ore_rare": "hbm:ore_rare",
+    "hbm:tile.ore_schrabidium": "hbm:ore_schrabidium",
+    "hbm:tile.ore_sellafield_diamond": "hbm:ore_sellafield_diamond",
+    "hbm:tile.ore_sellafield_emerald": "hbm:ore_sellafield_emerald",
+    "hbm:tile.ore_sellafield_radgem": "hbm:ore_sellafield_radgem",
+    "hbm:tile.ore_sellafield_schrabidium": "hbm:ore_sellafield_schrabidium",
+    "hbm:tile.ore_sellafield_uranium_scorched": "hbm:ore_sellafield_uranium_scorched",
+    "hbm:tile.ore_sulfur": "hbm:ore_sulfur",
+    "hbm:tile.ore_tektite_osmiridium": "hbm:ore_tektite_osmiridium",
+    "hbm:tile.ore_thorium": "hbm:ore_thorium",
+    "hbm:tile.ore_tikite": "hbm:ore_tikite",
+    "hbm:tile.ore_titanium": "hbm:ore_titanium",
+    "hbm:tile.ore_tungsten": "hbm:ore_tungsten",
+    "hbm:tile.ore_uranium": "hbm:ore_uranium",
+    "hbm:tile.ore_uranium_scorched": "hbm:ore_uranium_scorched",
+    "hbm:tile.ore_volcano": "hbm:ore_volcano",
+    "hbm:tile.pink_planks": "hbm:pink_planks",
+    "hbm:tile.pink_stairs": "hbm:pink_stairs",
+    "hbm:tile.pipe_anchor": "hbm:pipe_anchor",
+    "hbm:tile.pipe_anchor_exhaust": "hbm:pipe_anchor_exhaust",
+    "hbm:tile.press_preheater": "hbm:press_preheater",
+    "hbm:tile.pwr_casing": "hbm:pwr_casing",
+    "hbm:tile.pwr_heatex": "hbm:pwr_heatex",
+    "hbm:tile.pwr_heatsink": "hbm:pwr_heatsink",
+    "hbm:tile.pwr_neutron_source": "hbm:pwr_neutron_source",
+    "hbm:tile.pwr_port": "hbm:pwr_port",
+    "hbm:tile.pwr_reflector": "hbm:pwr_reflector",
+    "hbm:tile.red_cable": "hbm:red_cable",
+    "hbm:tile.red_cable_box": "hbm:red_cable_box",
+    "hbm:tile.red_cable_classic": "hbm:red_cable_classic",
+    "hbm:tile.red_cable_gauge": "hbm:red_cable_gauge",
+    "hbm:tile.red_cable_paintable": "hbm:red_cable_paintable",
+    "hbm:tile.red_connector": "hbm:red_connector",
+    "hbm:tile.red_connector_super": "hbm:red_connector_super",
+    "hbm:tile.red_pylon": "hbm:red_pylon",
+    "hbm:tile.red_pylon_large": "hbm:red_pylon_large",
+    "hbm:tile.red_pylon_medium_steel": "hbm:red_pylon_medium_steel",
+    "hbm:tile.red_pylon_medium_steel_transformer": "hbm:red_pylon_medium_steel_transformer",
+    "hbm:tile.red_pylon_medium_wood": "hbm:red_pylon_medium_wood",
+    "hbm:tile.red_pylon_medium_wood_transformer": "hbm:red_pylon_medium_wood_transformer",
+    "hbm:tile.red_pylon_steel": "hbm:red_pylon_steel",
+    "hbm:tile.red_wire_coated": "hbm:red_wire_coated",
+    "hbm:tile.reinforced_brick": "hbm:reinforced_brick",
+    "hbm:tile.reinforced_brick_stairs": "hbm:reinforced_brick_stairs",
+    "hbm:tile.reinforced_ducrete": "hbm:reinforced_ducrete",
+    "hbm:tile.reinforced_light": "hbm:reinforced_light",
+    "hbm:tile.reinforced_sand": "hbm:reinforced_sand",
+    "hbm:tile.reinforced_stone": "hbm:reinforced_stone",
+    "hbm:tile.reinforced_stone_stairs": "hbm:reinforced_stone_stairs",
+    "hbm:tile.sand_dirty": "hbm:sand_dirty",
+    "hbm:tile.sand_dirty_red": "hbm:sand_dirty_red",
+    "hbm:tile.seal_frame": "hbm:seal_frame",
+    "hbm:tile.sellafield_slaked": "hbm:sellafield_slaked",
+    "hbm:tile.stone_cracked": "hbm:stone_cracked",
+    "hbm:tile.stone_gneiss": "hbm:stone_gneiss",
+    "hbm:tile.stone_resource": "hbm:stone_resource",
+    "hbm:tile.struct_launcher": "hbm:struct_launcher",
+    "hbm:tile.struct_scaffold": "hbm:struct_scaffold",
+    "hbm:tile.structure_anchor": "hbm:structure_anchor",
+    "hbm:tile.substation": "hbm:substation",
+    "hbm:tile.tektite": "hbm:tektite",
+    "hbm:tile.tile_lab": "hbm:tile_lab",
+    "hbm:tile.tile_lab_broken": "hbm:tile_lab_broken",
+    "hbm:tile.tile_lab_cracked": "hbm:tile_lab_cracked",
+    "hbm:tile.waste_log": "hbm:waste_log",
+    "hbm:tile.waste_planks": "hbm:waste_planks",
+    "hbm:tile.watz_cooler": "hbm:watz_cooler",
+    "hbm:tile.watz_element": "hbm:watz_element"
+  },
+  "specialUUID": "c95fdfd3-bea7-4255-a44b-d21bc3df95e3",
+  "slotOrder": [
+    "feet",
+    "legs",
+    "chest",
+    "head"
+  ],
+  "cladding": {
+    "cladding_paint": 0.025,
+    "cladding_rubber": 0.005,
+    "cladding_lead": 0.1,
+    "cladding_desh": 0.2,
+    "cladding_ghiorsium": 0.5
+  }
+}

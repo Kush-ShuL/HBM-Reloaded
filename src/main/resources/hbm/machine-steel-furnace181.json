@@ -1,0 +1,35 @@
+{
+  "module": "machine-steel-furnace181",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "furnace_steel",
+      "id": "hbm:furnace_steel",
+      "legacyRegistryId": "hbm:tile.furnace_steel",
+      "originalClass": "FurnaceSteel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1759
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3039
+          },
+          "expression": "register(furnace_steel)",
+          "arguments": [
+            "furnace_steel"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ]
+}

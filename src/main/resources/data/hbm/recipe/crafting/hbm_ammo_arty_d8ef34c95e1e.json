@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:ammo_arty",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 5
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "D",
+    "S",
+    "D"
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotwhitephosphorus"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "hbm:ammo_arty",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

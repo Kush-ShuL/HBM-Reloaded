@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:missile_emp",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:missile_assembly"
+    },
+    {
+      "item": "hbm:ducttape"
+    },
+    {
+      "item": "hbm:emp_bomb"
+    }
+  ]
+}

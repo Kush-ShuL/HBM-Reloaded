@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "minecraft:gravel"
+  },
+  "result": {
+    "id": "minecraft:cobblestone",
+    "count": 1
+  },
+  "experience": 0.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,7660 @@
+{
+  "authority": "Existing actual LegacyStructureStates/TemplateStateMappings/SourceVanillaStates; inverse valid raw0..15 only",
+  "blocks": {
+    "%%FILTER_ME%%": [
+      {
+        "id": "minecraft:skull"
+      }
+    ],
+    "hbm:acid_block": [
+      {
+        "id": "hbm:tile.acid_block",
+        "name": "tile.acid_block"
+      }
+    ],
+    "hbm:ancient_scrap": [
+      {
+        "id": "hbm:tile.ancient_scrap",
+        "name": "tile.ancient_scrap"
+      }
+    ],
+    "hbm:anvil_arsenic_bronze": [
+      {
+        "id": "hbm:tile.anvil_arsenic_bronze",
+        "name": "tile.anvil_arsenic_bronze"
+      }
+    ],
+    "hbm:anvil_bismuth_bronze": [
+      {
+        "id": "hbm:tile.anvil_bismuth_bronze",
+        "name": "tile.anvil_bismuth_bronze"
+      }
+    ],
+    "hbm:anvil_desh": [
+      {
+        "id": "hbm:tile.anvil_desh",
+        "name": "tile.anvil_desh"
+      }
+    ],
+    "hbm:anvil_dnt": [
+      {
+        "id": "hbm:tile.anvil_dnt",
+        "name": "tile.anvil_dnt"
+      }
+    ],
+    "hbm:anvil_ferrouranium": [
+      {
+        "id": "hbm:tile.anvil_ferrouranium",
+        "name": "tile.anvil_ferrouranium"
+      }
+    ],
+    "hbm:anvil_iron": [
+      {
+        "id": "hbm:tile.anvil_iron",
+        "name": "tile.anvil_iron"
+      }
+    ],
+    "hbm:anvil_lead": [
+      {
+        "id": "hbm:tile.anvil_lead",
+        "name": "tile.anvil_lead"
+      }
+    ],
+    "hbm:anvil_murky": [
+      {
+        "id": "hbm:tile.anvil_murky",
+        "name": "tile.anvil_murky"
+      }
+    ],
+    "hbm:anvil_osmiridium": [
+      {
+        "id": "hbm:tile.anvil_osmiridium",
+        "name": "tile.anvil_osmiridium"
+      }
+    ],
+    "hbm:anvil_saturnite": [
+      {
+        "id": "hbm:tile.anvil_saturnite",
+        "name": "tile.anvil_saturnite"
+      }
+    ],
+    "hbm:anvil_schrabidate": [
+      {
+        "id": "hbm:tile.anvil_schrabidate",
+        "name": "tile.anvil_schrabidate"
+      }
+    ],
+    "hbm:anvil_steel": [
+      {
+        "id": "hbm:tile.anvil_steel",
+        "name": "tile.anvil_steel"
+      }
+    ],
+    "hbm:ash_digamma": [
+      {
+        "id": "hbm:tile.ash_digamma",
+        "name": "tile.ash_digamma"
+      }
+    ],
+    "hbm:asphalt": [
+      {
+        "id": "hbm:tile.asphalt",
+        "name": "tile.asphalt"
+      }
+    ],
+    "hbm:asphalt_light": [
+      {
+        "id": "hbm:tile.asphalt_light",
+        "name": "tile.asphalt_light"
+      }
+    ],
+    "hbm:asphalt_stairs": [
+      {
+        "id": "hbm:tile.asphalt_stairs",
+        "name": "tile.asphalt_stairs"
+      }
+    ],
+    "hbm:balefire": [
+      {
+        "id": "hbm:tile.balefire",
+        "name": "tile.balefire"
+      }
+    ],
+    "hbm:barbed_wire": [
+      {
+        "id": "hbm:tile.barbed_wire",
+        "name": "tile.barbed_wire"
+      }
+    ],
+    "hbm:barbed_wire_acid": [
+      {
+        "id": "hbm:tile.barbed_wire_acid",
+        "name": "tile.barbed_wire_acid"
+      }
+    ],
+    "hbm:barbed_wire_fire": [
+      {
+        "id": "hbm:tile.barbed_wire_fire",
+        "name": "tile.barbed_wire_fire"
+      }
+    ],
+    "hbm:barbed_wire_poison": [
+      {
+        "id": "hbm:tile.barbed_wire_poison",
+        "name": "tile.barbed_wire_poison"
+      }
+    ],
+    "hbm:barbed_wire_ultradeath": [
+      {
+        "id": "hbm:tile.barbed_wire_ultradeath",
+        "name": "tile.barbed_wire_ultradeath"
+      }
+    ],
+    "hbm:barbed_wire_wither": [
+      {
+        "id": "hbm:tile.barbed_wire_wither",
+        "name": "tile.barbed_wire_wither"
+      }
+    ],
+    "hbm:barrel_antimatter": [
+      {
+        "id": "hbm:tile.barrel_antimatter",
+        "name": "tile.barrel_antimatter"
+      }
+    ],
+    "hbm:barrel_corroded": [
+      {
+        "id": "hbm:tile.barrel_corroded",
+        "name": "tile.barrel_corroded"
+      }
+    ],
+    "hbm:barrel_plastic": [
+      {
+        "id": "hbm:tile.barrel_plastic",
+        "name": "tile.barrel_plastic"
+      }
+    ],
+    "hbm:barrel_steel": [
+      {
+        "id": "hbm:tile.barrel_steel",
+        "name": "tile.barrel_steel"
+      }
+    ],
+    "hbm:barrel_tcalloy": [
+      {
+        "id": "hbm:tile.barrel_tcalloy",
+        "name": "tile.barrel_tcalloy"
+      }
+    ],
+    "hbm:barricade": [
+      {
+        "id": "hbm:tile.barricade",
+        "name": "tile.barricade"
+      }
+    ],
+    "hbm:basalt": [
+      {
+        "id": "hbm:tile.basalt",
+        "name": "tile.basalt"
+      }
+    ],
+    "hbm:basalt_brick": [
+      {
+        "id": "hbm:tile.basalt_brick",
+        "name": "tile.basalt_brick"
+      }
+    ],
+    "hbm:basalt_polished": [
+      {
+        "id": "hbm:tile.basalt_polished",
+        "name": "tile.basalt_polished"
+      }
+    ],
+    "hbm:basalt_smooth": [
+      {
+        "id": "hbm:tile.basalt_smooth",
+        "name": "tile.basalt_smooth"
+      }
+    ],
+    "hbm:basalt_tiles": [
+      {
+        "id": "hbm:tile.basalt_tiles",
+        "name": "tile.basalt_tiles"
+      }
+    ],
+    "hbm:block_actinium": [
+      {
+        "id": "hbm:tile.block_actinium",
+        "name": "tile.block_actinium"
+      }
+    ],
+    "hbm:block_aluminium": [
+      {
+        "id": "hbm:tile.block_aluminium",
+        "name": "tile.block_aluminium"
+      }
+    ],
+    "hbm:block_asbestos": [
+      {
+        "id": "hbm:tile.block_asbestos",
+        "name": "tile.block_asbestos"
+      }
+    ],
+    "hbm:block_australium": [
+      {
+        "id": "hbm:tile.block_australium",
+        "name": "tile.block_australium"
+      }
+    ],
+    "hbm:block_bakelite": [
+      {
+        "id": "hbm:tile.block_bakelite",
+        "name": "tile.block_bakelite"
+      }
+    ],
+    "hbm:block_beryllium": [
+      {
+        "id": "hbm:tile.block_beryllium",
+        "name": "tile.block_beryllium"
+      }
+    ],
+    "hbm:block_bismuth": [
+      {
+        "id": "hbm:tile.block_bismuth",
+        "name": "tile.block_bismuth"
+      }
+    ],
+    "hbm:block_boron": [
+      {
+        "id": "hbm:tile.block_boron",
+        "name": "tile.block_boron"
+      }
+    ],
+    "hbm:block_c4": [
+      {
+        "id": "hbm:tile.block_c4",
+        "name": "tile.block_c4"
+      }
+    ],
+    "hbm:block_cadmium": [
+      {
+        "id": "hbm:tile.block_cadmium",
+        "name": "tile.block_cadmium"
+      }
+    ],
+    "hbm:block_cap": [
+      {
+        "id": "hbm:tile.block_cap",
+        "name": "tile.block_cap"
+      }
+    ],
+    "hbm:block_cdalloy": [
+      {
+        "id": "hbm:tile.block_cdalloy",
+        "name": "tile.block_cdalloy"
+      }
+    ],
+    "hbm:block_cobalt": [
+      {
+        "id": "hbm:tile.block_cobalt",
+        "name": "tile.block_cobalt"
+      }
+    ],
+    "hbm:block_coke": [
+      {
+        "id": "hbm:tile.block_coke",
+        "name": "tile.block_coke"
+      }
+    ],
+    "hbm:block_coltan": [
+      {
+        "id": "hbm:tile.block_coltan",
+        "name": "tile.block_coltan"
+      }
+    ],
+    "hbm:block_combine_steel": [
+      {
+        "id": "hbm:tile.block_combine_steel",
+        "name": "tile.block_combine_steel"
+      }
+    ],
+    "hbm:block_corium": [
+      {
+        "id": "hbm:tile.block_corium",
+        "name": "tile.block_corium"
+      }
+    ],
+    "hbm:block_corium_cobble": [
+      {
+        "id": "hbm:tile.block_corium_cobble",
+        "name": "tile.block_corium_cobble"
+      }
+    ],
+    "hbm:block_desh": [
+      {
+        "id": "hbm:tile.block_desh",
+        "name": "tile.block_desh"
+      }
+    ],
+    "hbm:block_dineutronium": [
+      {
+        "id": "hbm:tile.block_dineutronium",
+        "name": "tile.block_dineutronium"
+      }
+    ],
+    "hbm:block_dura_steel": [
+      {
+        "id": "hbm:tile.block_dura_steel",
+        "name": "tile.block_dura_steel"
+      }
+    ],
+    "hbm:block_electrical_scrap": [
+      {
+        "id": "hbm:tile.block_electrical_scrap",
+        "name": "tile.block_electrical_scrap"
+      }
+    ],
+    "hbm:block_euphemium": [
+      {
+        "id": "hbm:tile.block_euphemium",
+        "name": "tile.block_euphemium"
+      }
+    ],
+    "hbm:block_euphemium_cluster": [
+      {
+        "id": "hbm:tile.block_euphemium_cluster",
+        "name": "tile.block_euphemium_cluster"
+      }
+    ],
+    "hbm:block_fallout": [
+      {
+        "id": "hbm:tile.block_fallout",
+        "name": "tile.block_fallout"
+      }
+    ],
+    "hbm:block_fiberglass": [
+      {
+        "id": "hbm:tile.block_fiberglass",
+        "name": "tile.block_fiberglass"
+      }
+    ],
+    "hbm:block_fluorite": [
+      {
+        "id": "hbm:tile.block_fluorite",
+        "name": "tile.block_fluorite"
+      }
+    ],
+    "hbm:block_foam": [
+      {
+        "id": "hbm:tile.block_foam",
+        "name": "tile.block_foam"
+      }
+    ],
+    "hbm:block_graphite": [
+      {
+        "id": "hbm:tile.block_graphite",
+        "name": "tile.block_graphite"
+      }
+    ],
+    "hbm:block_graphite_detector": [
+      {
+        "id": "hbm:tile.block_graphite_detector",
+        "name": "tile.block_graphite_detector"
+      }
+    ],
+    "hbm:block_graphite_drilled": [
+      {
+        "id": "hbm:tile.block_graphite_drilled",
+        "name": "tile.block_graphite_drilled"
+      }
+    ],
+    "hbm:block_graphite_fuel": [
+      {
+        "id": "hbm:tile.block_graphite_fuel",
+        "name": "tile.block_graphite_fuel"
+      }
+    ],
+    "hbm:block_graphite_lithium": [
+      {
+        "id": "hbm:tile.block_graphite_lithium",
+        "name": "tile.block_graphite_lithium"
+      }
+    ],
+    "hbm:block_graphite_plutonium": [
+      {
+        "id": "hbm:tile.block_graphite_plutonium",
+        "name": "tile.block_graphite_plutonium"
+      }
+    ],
+    "hbm:block_graphite_rod": [
+      {
+        "id": "hbm:tile.block_graphite_rod",
+        "name": "tile.block_graphite_rod"
+      }
+    ],
+    "hbm:block_graphite_source": [
+      {
+        "id": "hbm:tile.block_graphite_source",
+        "name": "tile.block_graphite_source"
+      }
+    ],
+    "hbm:block_graphite_tritium": [
+      {
+        "id": "hbm:tile.block_graphite_tritium",
+        "name": "tile.block_graphite_tritium"
+      }
+    ],
+    "hbm:block_insulator": [
+      {
+        "id": "hbm:tile.block_insulator",
+        "name": "tile.block_insulator"
+      }
+    ],
+    "hbm:block_lanthanium": [
+      {
+        "id": "hbm:tile.block_lanthanium",
+        "name": "tile.block_lanthanium"
+      }
+    ],
+    "hbm:block_lead": [
+      {
+        "id": "hbm:tile.block_lead",
+        "name": "tile.block_lead"
+      }
+    ],
+    "hbm:block_lithium": [
+      {
+        "id": "hbm:tile.block_lithium",
+        "name": "tile.block_lithium"
+      }
+    ],
+    "hbm:block_magnetized_tungsten": [
+      {
+        "id": "hbm:tile.block_magnetized_tungsten",
+        "name": "tile.block_magnetized_tungsten"
+      }
+    ],
+    "hbm:block_meteor": [
+      {
+        "id": "hbm:tile.block_meteor",
+        "name": "tile.block_meteor"
+      }
+    ],
+    "hbm:block_meteor_broken": [
+      {
+        "id": "hbm:tile.block_meteor_broken",
+        "name": "tile.block_meteor_broken"
+      }
+    ],
+    "hbm:block_meteor_cobble": [
+      {
+        "id": "hbm:tile.block_meteor_cobble",
+        "name": "tile.block_meteor_cobble"
+      }
+    ],
+    "hbm:block_meteor_molten": [
+      {
+        "id": "hbm:tile.block_meteor_molten",
+        "name": "tile.block_meteor_molten"
+      }
+    ],
+    "hbm:block_meteor_treasure": [
+      {
+        "id": "hbm:tile.block_meteor_treasure",
+        "name": "tile.block_meteor_treasure"
+      }
+    ],
+    "hbm:block_mox_fuel": [
+      {
+        "id": "hbm:tile.block_mox_fuel",
+        "name": "tile.block_mox_fuel"
+      }
+    ],
+    "hbm:block_neptunium": [
+      {
+        "id": "hbm:tile.block_neptunium",
+        "name": "tile.block_neptunium"
+      }
+    ],
+    "hbm:block_niobium": [
+      {
+        "id": "hbm:tile.block_niobium",
+        "name": "tile.block_niobium"
+      }
+    ],
+    "hbm:block_niter": [
+      {
+        "id": "hbm:tile.block_niter",
+        "name": "tile.block_niter"
+      }
+    ],
+    "hbm:block_plutonium": [
+      {
+        "id": "hbm:tile.block_plutonium",
+        "name": "tile.block_plutonium"
+      }
+    ],
+    "hbm:block_plutonium_fuel": [
+      {
+        "id": "hbm:tile.block_plutonium_fuel",
+        "name": "tile.block_plutonium_fuel"
+      }
+    ],
+    "hbm:block_polonium": [
+      {
+        "id": "hbm:tile.block_polonium",
+        "name": "tile.block_polonium"
+      }
+    ],
+    "hbm:block_polymer": [
+      {
+        "id": "hbm:tile.block_polymer",
+        "name": "tile.block_polymer"
+      }
+    ],
+    "hbm:block_pu238": [
+      {
+        "id": "hbm:tile.block_pu238",
+        "name": "tile.block_pu238"
+      }
+    ],
+    "hbm:block_pu239": [
+      {
+        "id": "hbm:tile.block_pu239",
+        "name": "tile.block_pu239"
+      }
+    ],
+    "hbm:block_pu240": [
+      {
+        "id": "hbm:tile.block_pu240",
+        "name": "tile.block_pu240"
+      }
+    ],
+    "hbm:block_pu_mix": [
+      {
+        "id": "hbm:tile.block_pu_mix",
+        "name": "tile.block_pu_mix"
+      }
+    ],
+    "hbm:block_ra226": [
+      {
+        "id": "hbm:tile.block_ra226",
+        "name": "tile.block_ra226"
+      }
+    ],
+    "hbm:block_red_copper": [
+      {
+        "id": "hbm:tile.block_red_copper",
+        "name": "tile.block_red_copper"
+      }
+    ],
+    "hbm:block_red_phosphorus": [
+      {
+        "id": "hbm:tile.block_red_phosphorus",
+        "name": "tile.block_red_phosphorus"
+      }
+    ],
+    "hbm:block_rubber": [
+      {
+        "id": "hbm:tile.block_rubber",
+        "name": "tile.block_rubber"
+      }
+    ],
+    "hbm:block_schrabidate": [
+      {
+        "id": "hbm:tile.block_schrabidate",
+        "name": "tile.block_schrabidate"
+      }
+    ],
+    "hbm:block_schrabidium": [
+      {
+        "id": "hbm:tile.block_schrabidium",
+        "name": "tile.block_schrabidium"
+      }
+    ],
+    "hbm:block_schrabidium_cluster": [
+      {
+        "id": "hbm:tile.block_schrabidium_cluster",
+        "name": "tile.block_schrabidium_cluster"
+      }
+    ],
+    "hbm:block_schrabidium_fuel": [
+      {
+        "id": "hbm:tile.block_schrabidium_fuel",
+        "name": "tile.block_schrabidium_fuel"
+      }
+    ],
+    "hbm:block_schraranium": [
+      {
+        "id": "hbm:tile.block_schraranium",
+        "name": "tile.block_schraranium"
+      }
+    ],
+    "hbm:block_scrap": [
+      {
+        "id": "hbm:tile.block_scrap",
+        "name": "tile.block_scrap"
+      }
+    ],
+    "hbm:block_semtex": [
+      {
+        "id": "hbm:tile.block_semtex",
+        "name": "tile.block_semtex"
+      }
+    ],
+    "hbm:block_slag": [
+      {
+        "id": "hbm:tile.block_slag",
+        "name": "tile.block_slag"
+      },
+      {
+        "id": "hbm:block_slag",
+        "name": "block_slag"
+      }
+    ],
+    "hbm:block_smore": [
+      {
+        "id": "hbm:tile.block_smore",
+        "name": "tile.block_smore"
+      }
+    ],
+    "hbm:block_solinium": [
+      {
+        "id": "hbm:tile.block_solinium",
+        "name": "tile.block_solinium"
+      }
+    ],
+    "hbm:block_starmetal": [
+      {
+        "id": "hbm:tile.block_starmetal",
+        "name": "tile.block_starmetal"
+      }
+    ],
+    "hbm:block_steel": [
+      {
+        "id": "hbm:tile.block_steel",
+        "name": "tile.block_steel"
+      }
+    ],
+    "hbm:block_sulfur": [
+      {
+        "id": "hbm:tile.block_sulfur",
+        "name": "tile.block_sulfur"
+      }
+    ],
+    "hbm:block_tantalium": [
+      {
+        "id": "hbm:tile.block_tantalium",
+        "name": "tile.block_tantalium"
+      }
+    ],
+    "hbm:block_tcalloy": [
+      {
+        "id": "hbm:tile.block_tcalloy",
+        "name": "tile.block_tcalloy"
+      }
+    ],
+    "hbm:block_thorium": [
+      {
+        "id": "hbm:tile.block_thorium",
+        "name": "tile.block_thorium"
+      }
+    ],
+    "hbm:block_thorium_fuel": [
+      {
+        "id": "hbm:tile.block_thorium_fuel",
+        "name": "tile.block_thorium_fuel"
+      }
+    ],
+    "hbm:block_titanium": [
+      {
+        "id": "hbm:tile.block_titanium",
+        "name": "tile.block_titanium"
+      }
+    ],
+    "hbm:block_trinitite": [
+      {
+        "id": "hbm:tile.block_trinitite",
+        "name": "tile.block_trinitite"
+      }
+    ],
+    "hbm:block_tritium": [
+      {
+        "id": "hbm:tile.block_tritium",
+        "name": "tile.block_tritium"
+      }
+    ],
+    "hbm:block_tungsten": [
+      {
+        "id": "hbm:tile.block_tungsten",
+        "name": "tile.block_tungsten"
+      }
+    ],
+    "hbm:block_u233": [
+      {
+        "id": "hbm:tile.block_u233",
+        "name": "tile.block_u233"
+      }
+    ],
+    "hbm:block_u235": [
+      {
+        "id": "hbm:tile.block_u235",
+        "name": "tile.block_u235"
+      }
+    ],
+    "hbm:block_u238": [
+      {
+        "id": "hbm:tile.block_u238",
+        "name": "tile.block_u238"
+      }
+    ],
+    "hbm:block_uranium": [
+      {
+        "id": "hbm:tile.block_uranium",
+        "name": "tile.block_uranium"
+      }
+    ],
+    "hbm:block_uranium_fuel": [
+      {
+        "id": "hbm:tile.block_uranium_fuel",
+        "name": "tile.block_uranium_fuel"
+      }
+    ],
+    "hbm:block_waste": [
+      {
+        "id": "hbm:tile.block_waste",
+        "name": "tile.block_waste"
+      }
+    ],
+    "hbm:block_waste_painted": [
+      {
+        "id": "hbm:tile.block_waste_painted",
+        "name": "tile.block_waste_painted"
+      }
+    ],
+    "hbm:block_waste_vitrified": [
+      {
+        "id": "hbm:tile.block_waste_vitrified",
+        "name": "tile.block_waste_vitrified"
+      }
+    ],
+    "hbm:block_white_phosphorus": [
+      {
+        "id": "hbm:tile.block_white_phosphorus",
+        "name": "tile.block_white_phosphorus"
+      }
+    ],
+    "hbm:block_yellowcake": [
+      {
+        "id": "hbm:tile.block_yellowcake",
+        "name": "tile.block_yellowcake"
+      }
+    ],
+    "hbm:block_zirconium": [
+      {
+        "id": "hbm:tile.block_zirconium",
+        "name": "tile.block_zirconium"
+      }
+    ],
+    "hbm:boat": [
+      {
+        "id": "hbm:tile.boat",
+        "name": "tile.boat"
+      }
+    ],
+    "hbm:bobblehead": [
+      {
+        "id": "hbm:tile.bobblehead",
+        "name": "tile.bobblehead"
+      }
+    ],
+    "hbm:bomb_multi": [
+      {
+        "id": "hbm:tile.bomb_multi",
+        "name": "tile.bomb_multi"
+      }
+    ],
+    "hbm:book_guide": [
+      {
+        "id": "hbm:tile.book_guide",
+        "name": "tile.book_guide"
+      }
+    ],
+    "hbm:boxcar": [
+      {
+        "id": "hbm:tile.boxcar",
+        "name": "tile.boxcar"
+      }
+    ],
+    "hbm:brick_asbestos": [
+      {
+        "id": "hbm:tile.brick_asbestos",
+        "name": "tile.brick_asbestos"
+      }
+    ],
+    "hbm:brick_asbestos_stairs": [
+      {
+        "id": "hbm:tile.brick_asbestos_stairs",
+        "name": "tile.brick_asbestos_stairs"
+      }
+    ],
+    "hbm:brick_compound": [
+      {
+        "id": "hbm:tile.brick_compound",
+        "name": "tile.brick_compound"
+      }
+    ],
+    "hbm:brick_compound_stairs": [
+      {
+        "id": "hbm:tile.brick_compound_stairs",
+        "name": "tile.brick_compound_stairs"
+      }
+    ],
+    "hbm:brick_concrete": [
+      {
+        "id": "hbm:tile.brick_concrete",
+        "name": "tile.brick_concrete"
+      }
+    ],
+    "hbm:brick_concrete_broken": [
+      {
+        "id": "hbm:tile.brick_concrete_broken",
+        "name": "tile.brick_concrete_broken"
+      }
+    ],
+    "hbm:brick_concrete_broken_stairs": [
+      {
+        "id": "hbm:tile.brick_concrete_broken_stairs",
+        "name": "tile.brick_concrete_broken_stairs"
+      }
+    ],
+    "hbm:brick_concrete_cracked": [
+      {
+        "id": "hbm:tile.brick_concrete_cracked",
+        "name": "tile.brick_concrete_cracked"
+      }
+    ],
+    "hbm:brick_concrete_cracked_stairs": [
+      {
+        "id": "hbm:tile.brick_concrete_cracked_stairs",
+        "name": "tile.brick_concrete_cracked_stairs"
+      }
+    ],
+    "hbm:brick_concrete_marked": [
+      {
+        "id": "hbm:tile.brick_concrete_marked",
+        "name": "tile.brick_concrete_marked"
+      },
+      {
+        "id": "hbm:brick_concrete_marked",
+        "name": "brick_concrete_marked"
+      }
+    ],
+    "hbm:brick_concrete_mossy": [
+      {
+        "id": "hbm:tile.brick_concrete_mossy",
+        "name": "tile.brick_concrete_mossy"
+      }
+    ],
+    "hbm:brick_concrete_mossy_stairs": [
+      {
+        "id": "hbm:tile.brick_concrete_mossy_stairs",
+        "name": "tile.brick_concrete_mossy_stairs"
+      }
+    ],
+    "hbm:brick_concrete_stairs": [
+      {
+        "id": "hbm:tile.brick_concrete_stairs",
+        "name": "tile.brick_concrete_stairs"
+      }
+    ],
+    "hbm:brick_double_slab": [
+      {
+        "id": "hbm:tile.brick_double_slab",
+        "name": "tile.brick_double_slab"
+      }
+    ],
+    "hbm:brick_ducrete": [
+      {
+        "id": "hbm:tile.brick_ducrete",
+        "name": "tile.brick_ducrete"
+      }
+    ],
+    "hbm:brick_ducrete_stairs": [
+      {
+        "id": "hbm:tile.brick_ducrete_stairs",
+        "name": "tile.brick_ducrete_stairs"
+      }
+    ],
+    "hbm:brick_fire": [
+      {
+        "id": "hbm:tile.brick_fire",
+        "name": "tile.brick_fire"
+      }
+    ],
+    "hbm:brick_fire_stairs": [
+      {
+        "id": "hbm:tile.brick_fire_stairs",
+        "name": "tile.brick_fire_stairs"
+      }
+    ],
+    "hbm:brick_jungle": [
+      {
+        "id": "hbm:tile.brick_jungle",
+        "name": "tile.brick_jungle"
+      }
+    ],
+    "hbm:brick_jungle_circle": [
+      {
+        "id": "hbm:tile.brick_jungle_circle",
+        "name": "tile.brick_jungle_circle"
+      }
+    ],
+    "hbm:brick_jungle_cracked": [
+      {
+        "id": "hbm:tile.brick_jungle_cracked",
+        "name": "tile.brick_jungle_cracked"
+      }
+    ],
+    "hbm:brick_jungle_fragile": [
+      {
+        "id": "hbm:tile.brick_jungle_fragile",
+        "name": "tile.brick_jungle_fragile"
+      }
+    ],
+    "hbm:brick_jungle_glyph": [
+      {
+        "id": "hbm:tile.brick_jungle_glyph",
+        "name": "tile.brick_jungle_glyph"
+      }
+    ],
+    "hbm:brick_jungle_lava": [
+      {
+        "id": "hbm:tile.brick_jungle_lava",
+        "name": "tile.brick_jungle_lava"
+      }
+    ],
+    "hbm:brick_jungle_mystic": [
+      {
+        "id": "hbm:tile.brick_jungle_mystic",
+        "name": "tile.brick_jungle_mystic"
+      }
+    ],
+    "hbm:brick_jungle_ooze": [
+      {
+        "id": "hbm:tile.brick_jungle_ooze",
+        "name": "tile.brick_jungle_ooze"
+      }
+    ],
+    "hbm:brick_jungle_trap": [
+      {
+        "id": "hbm:tile.brick_jungle_trap",
+        "name": "tile.brick_jungle_trap"
+      }
+    ],
+    "hbm:brick_light": [
+      {
+        "id": "hbm:tile.brick_light",
+        "name": "tile.brick_light"
+      }
+    ],
+    "hbm:brick_light_stairs": [
+      {
+        "id": "hbm:tile.brick_light_stairs",
+        "name": "tile.brick_light_stairs"
+      }
+    ],
+    "hbm:brick_obsidian": [
+      {
+        "id": "hbm:tile.brick_obsidian",
+        "name": "tile.brick_obsidian"
+      }
+    ],
+    "hbm:brick_obsidian_stairs": [
+      {
+        "id": "hbm:tile.brick_obsidian_stairs",
+        "name": "tile.brick_obsidian_stairs"
+      }
+    ],
+    "hbm:brick_red": [
+      {
+        "id": "hbm:tile.brick_red",
+        "name": "tile.brick_red"
+      }
+    ],
+    "hbm:brick_slab": [
+      {
+        "id": "hbm:tile.brick_slab",
+        "name": "tile.brick_slab"
+      }
+    ],
+    "hbm:broadcaster_pc": [
+      {
+        "id": "hbm:tile.broadcaster_pc",
+        "name": "tile.broadcaster_pc"
+      }
+    ],
+    "hbm:burning_earth": [
+      {
+        "id": "hbm:tile.burning_earth",
+        "name": "tile.burning_earth"
+      }
+    ],
+    "hbm:c4": [
+      {
+        "id": "hbm:tile.c4",
+        "name": "tile.c4"
+      }
+    ],
+    "hbm:cable_detector": [
+      {
+        "id": "hbm:tile.cable_detector",
+        "name": "tile.cable_detector"
+      }
+    ],
+    "hbm:cable_diode": [
+      {
+        "id": "hbm:tile.cable_diode",
+        "name": "tile.cable_diode"
+      }
+    ],
+    "hbm:cable_switch": [
+      {
+        "id": "hbm:tile.cable_switch",
+        "name": "tile.cable_switch"
+      }
+    ],
+    "hbm:capacitor_bus": [
+      {
+        "id": "hbm:tile.capacitor_bus",
+        "name": "tile.capacitor_bus"
+      },
+      {
+        "id": "hbm:capacitor_bus",
+        "name": "capacitor_bus"
+      }
+    ],
+    "hbm:capacitor_copper": [
+      {
+        "id": "hbm:tile.capacitor_copper",
+        "name": "tile.capacitor_copper"
+      },
+      {
+        "id": "hbm:capacitor_copper",
+        "name": "capacitor_copper"
+      }
+    ],
+    "hbm:capacitor_gold": [
+      {
+        "id": "hbm:tile.capacitor_gold",
+        "name": "tile.capacitor_gold"
+      },
+      {
+        "id": "hbm:capacitor_gold",
+        "name": "capacitor_gold"
+      }
+    ],
+    "hbm:capacitor_niobium": [
+      {
+        "id": "hbm:tile.capacitor_niobium",
+        "name": "tile.capacitor_niobium"
+      },
+      {
+        "id": "hbm:capacitor_niobium",
+        "name": "capacitor_niobium"
+      }
+    ],
+    "hbm:capacitor_schrabidate": [
+      {
+        "id": "hbm:tile.capacitor_schrabidate",
+        "name": "tile.capacitor_schrabidate"
+      },
+      {
+        "id": "hbm:capacitor_schrabidate",
+        "name": "capacitor_schrabidate"
+      }
+    ],
+    "hbm:capacitor_tantalium": [
+      {
+        "id": "hbm:tile.capacitor_tantalium",
+        "name": "tile.capacitor_tantalium"
+      },
+      {
+        "id": "hbm:capacitor_tantalium",
+        "name": "capacitor_tantalium"
+      }
+    ],
+    "hbm:cargo_door": [
+      {
+        "id": "hbm:tile.cargo_door",
+        "name": "tile.cargo_door"
+      }
+    ],
+    "hbm:cargo_elevator": [
+      {
+        "id": "hbm:tile.cargo_elevator",
+        "name": "tile.cargo_elevator"
+      }
+    ],
+    "hbm:charge_c4": [
+      {
+        "id": "hbm:tile.charge_c4",
+        "name": "tile.charge_c4"
+      }
+    ],
+    "hbm:charge_dynamite": [
+      {
+        "id": "hbm:tile.charge_dynamite",
+        "name": "tile.charge_dynamite"
+      }
+    ],
+    "hbm:charge_miner": [
+      {
+        "id": "hbm:tile.charge_miner",
+        "name": "tile.charge_miner"
+      }
+    ],
+    "hbm:charge_semtex": [
+      {
+        "id": "hbm:tile.charge_semtex",
+        "name": "tile.charge_semtex"
+      }
+    ],
+    "hbm:charger": [
+      {
+        "id": "hbm:tile.charger",
+        "name": "tile.charger"
+      }
+    ],
+    "hbm:chimney_brick": [
+      {
+        "id": "hbm:tile.chimney_brick",
+        "name": "tile.chimney_brick"
+      }
+    ],
+    "hbm:chimney_industrial": [
+      {
+        "id": "hbm:tile.chimney_industrial",
+        "name": "tile.chimney_industrial"
+      }
+    ],
+    "hbm:chlorine_gas": [
+      {
+        "id": "hbm:tile.chlorine_gas",
+        "name": "tile.chlorine_gas"
+      }
+    ],
+    "hbm:cluster_aluminium": [
+      {
+        "id": "hbm:tile.cluster_aluminium",
+        "name": "tile.cluster_aluminium"
+      }
+    ],
+    "hbm:cluster_copper": [
+      {
+        "id": "hbm:tile.cluster_copper",
+        "name": "tile.cluster_copper"
+      }
+    ],
+    "hbm:cluster_depth_iron": [
+      {
+        "id": "hbm:tile.cluster_depth_iron",
+        "name": "tile.cluster_depth_iron"
+      }
+    ],
+    "hbm:cluster_depth_titanium": [
+      {
+        "id": "hbm:tile.cluster_depth_titanium",
+        "name": "tile.cluster_depth_titanium"
+      }
+    ],
+    "hbm:cluster_depth_tungsten": [
+      {
+        "id": "hbm:tile.cluster_depth_tungsten",
+        "name": "tile.cluster_depth_tungsten"
+      }
+    ],
+    "hbm:cluster_iron": [
+      {
+        "id": "hbm:tile.cluster_iron",
+        "name": "tile.cluster_iron"
+      }
+    ],
+    "hbm:cluster_titanium": [
+      {
+        "id": "hbm:tile.cluster_titanium",
+        "name": "tile.cluster_titanium"
+      }
+    ],
+    "hbm:cm_block": [
+      {
+        "id": "hbm:tile.cm_block",
+        "name": "tile.cm_block"
+      }
+    ],
+    "hbm:cm_circuit": [
+      {
+        "id": "hbm:tile.cm_circuit",
+        "name": "tile.cm_circuit"
+      }
+    ],
+    "hbm:cm_engine": [
+      {
+        "id": "hbm:tile.cm_engine",
+        "name": "tile.cm_engine"
+      }
+    ],
+    "hbm:cm_flux": [
+      {
+        "id": "hbm:tile.cm_flux",
+        "name": "tile.cm_flux"
+      }
+    ],
+    "hbm:cm_heat": [
+      {
+        "id": "hbm:tile.cm_heat",
+        "name": "tile.cm_heat"
+      }
+    ],
+    "hbm:cm_port": [
+      {
+        "id": "hbm:tile.cm_port",
+        "name": "tile.cm_port"
+      }
+    ],
+    "hbm:cm_sheet": [
+      {
+        "id": "hbm:tile.cm_sheet",
+        "name": "tile.cm_sheet"
+      }
+    ],
+    "hbm:cm_tank": [
+      {
+        "id": "hbm:tile.cm_tank",
+        "name": "tile.cm_tank"
+      }
+    ],
+    "hbm:cmb_brick": [
+      {
+        "id": "hbm:tile.cmb_brick",
+        "name": "tile.cmb_brick"
+      }
+    ],
+    "hbm:cmb_brick_reinforced": [
+      {
+        "id": "hbm:tile.cmb_brick_reinforced",
+        "name": "tile.cmb_brick_reinforced"
+      }
+    ],
+    "hbm:compact_launcher": [
+      {
+        "id": "hbm:tile.compact_launcher",
+        "name": "tile.compact_launcher"
+      },
+      {
+        "id": "hbm:compact_launcher",
+        "name": "compact_launcher"
+      }
+    ],
+    "hbm:concrete": [
+      {
+        "id": "hbm:tile.concrete",
+        "name": "tile.concrete"
+      }
+    ],
+    "hbm:concrete_asbestos": [
+      {
+        "id": "hbm:tile.concrete_asbestos",
+        "name": "tile.concrete_asbestos"
+      }
+    ],
+    "hbm:concrete_asbestos_stairs": [
+      {
+        "id": "hbm:tile.concrete_asbestos_stairs",
+        "name": "tile.concrete_asbestos_stairs"
+      }
+    ],
+    "hbm:concrete_brick_double_slab": [
+      {
+        "id": "hbm:tile.concrete_brick_double_slab",
+        "name": "tile.concrete_brick_double_slab"
+      }
+    ],
+    "hbm:concrete_brick_slab": [
+      {
+        "id": "hbm:tile.concrete_brick_slab",
+        "name": "tile.concrete_brick_slab"
+      }
+    ],
+    "hbm:concrete_colored": [
+      {
+        "id": "hbm:tile.concrete_colored",
+        "name": "tile.concrete_colored"
+      }
+    ],
+    "hbm:concrete_colored_ext": [
+      {
+        "id": "hbm:tile.concrete_colored_ext",
+        "name": "tile.concrete_colored_ext"
+      }
+    ],
+    "hbm:concrete_double_slab": [
+      {
+        "id": "hbm:tile.concrete_double_slab",
+        "name": "tile.concrete_double_slab"
+      }
+    ],
+    "hbm:concrete_pillar": [
+      {
+        "id": "hbm:tile.concrete_pillar",
+        "name": "tile.concrete_pillar"
+      }
+    ],
+    "hbm:concrete_rebar": [
+      {
+        "id": "hbm:tile.concrete_rebar",
+        "name": "tile.concrete_rebar"
+      }
+    ],
+    "hbm:concrete_slab": [
+      {
+        "id": "hbm:tile.concrete_slab",
+        "name": "tile.concrete_slab"
+      }
+    ],
+    "hbm:concrete_smooth": [
+      {
+        "id": "hbm:tile.concrete_smooth",
+        "name": "tile.concrete_smooth"
+      }
+    ],
+    "hbm:concrete_smooth_stairs": [
+      {
+        "id": "hbm:tile.concrete_smooth_stairs",
+        "name": "tile.concrete_smooth_stairs"
+      }
+    ],
+    "hbm:concrete_stairs": [
+      {
+        "id": "hbm:tile.concrete_stairs",
+        "name": "tile.concrete_stairs"
+      }
+    ],
+    "hbm:concrete_super": [
+      {
+        "id": "hbm:tile.concrete_super",
+        "name": "tile.concrete_super"
+      },
+      {
+        "id": "hbm:concrete_super",
+        "name": "concrete_super"
+      }
+    ],
+    "hbm:concrete_super_broken": [
+      {
+        "id": "hbm:tile.concrete_super_broken",
+        "name": "tile.concrete_super_broken"
+      }
+    ],
+    "hbm:conveyor": [
+      {
+        "id": "hbm:tile.conveyor",
+        "name": "tile.conveyor"
+      }
+    ],
+    "hbm:conveyor_chute": [
+      {
+        "id": "hbm:tile.conveyor_chute",
+        "name": "tile.conveyor_chute"
+      }
+    ],
+    "hbm:conveyor_double": [
+      {
+        "id": "hbm:tile.conveyor_double",
+        "name": "tile.conveyor_double"
+      }
+    ],
+    "hbm:conveyor_express": [
+      {
+        "id": "hbm:tile.conveyor_express",
+        "name": "tile.conveyor_express"
+      }
+    ],
+    "hbm:conveyor_lift": [
+      {
+        "id": "hbm:tile.conveyor_lift",
+        "name": "tile.conveyor_lift"
+      }
+    ],
+    "hbm:conveyor_triple": [
+      {
+        "id": "hbm:tile.conveyor_triple",
+        "name": "tile.conveyor_triple"
+      }
+    ],
+    "hbm:corium_block": [
+      {
+        "id": "hbm:tile.corium_block",
+        "name": "tile.corium_block"
+      }
+    ],
+    "hbm:crane_boxer": [
+      {
+        "id": "hbm:tile.crane_boxer",
+        "name": "tile.crane_boxer"
+      }
+    ],
+    "hbm:crane_extractor": [
+      {
+        "id": "hbm:tile.crane_extractor",
+        "name": "tile.crane_extractor"
+      }
+    ],
+    "hbm:crane_grabber": [
+      {
+        "id": "hbm:tile.crane_grabber",
+        "name": "tile.crane_grabber"
+      }
+    ],
+    "hbm:crane_inserter": [
+      {
+        "id": "hbm:tile.crane_inserter",
+        "name": "tile.crane_inserter"
+      }
+    ],
+    "hbm:crane_partitioner": [
+      {
+        "id": "hbm:tile.crane_partitioner",
+        "name": "tile.crane_partitioner"
+      }
+    ],
+    "hbm:crane_router": [
+      {
+        "id": "hbm:tile.crane_router",
+        "name": "tile.crane_router"
+      }
+    ],
+    "hbm:crane_splitter": [
+      {
+        "id": "hbm:tile.crane_splitter",
+        "name": "tile.crane_splitter"
+      }
+    ],
+    "hbm:crane_unboxer": [
+      {
+        "id": "hbm:tile.crane_unboxer",
+        "name": "tile.crane_unboxer"
+      }
+    ],
+    "hbm:crashed_bomb": [
+      {
+        "id": "hbm:tile.crashed_bomb",
+        "name": "tile.crashed_bomb"
+      },
+      {
+        "id": "hbm:crashed_balefire",
+        "name": "crashed_balefire"
+      },
+      {
+        "id": "hbm:tile.crashed_balefire",
+        "name": "tile.crashed_balefire"
+      },
+      {
+        "id": "hbm:crashed_bomb",
+        "name": "crashed_bomb"
+      }
+    ],
+    "hbm:crate": [
+      {
+        "id": "hbm:tile.crate",
+        "name": "tile.crate"
+      }
+    ],
+    "hbm:crate_ammo": [
+      {
+        "id": "hbm:tile.crate_ammo",
+        "name": "tile.crate_ammo"
+      }
+    ],
+    "hbm:crate_can": [
+      {
+        "id": "hbm:tile.crate_can",
+        "name": "tile.crate_can"
+      }
+    ],
+    "hbm:crate_desh": [
+      {
+        "id": "hbm:tile.crate_desh",
+        "name": "tile.crate_desh"
+      }
+    ],
+    "hbm:crate_iron": [
+      {
+        "id": "hbm:tile.crate_iron",
+        "name": "tile.crate_iron"
+      }
+    ],
+    "hbm:crate_jungle": [
+      {
+        "id": "hbm:tile.crate_jungle",
+        "name": "tile.crate_jungle"
+      },
+      {
+        "id": "hbm:crate_jungle",
+        "name": "crate_jungle"
+      }
+    ],
+    "hbm:crate_lead": [
+      {
+        "id": "hbm:tile.crate_lead",
+        "name": "tile.crate_lead"
+      }
+    ],
+    "hbm:crate_metal": [
+      {
+        "id": "hbm:tile.crate_metal",
+        "name": "tile.crate_metal"
+      }
+    ],
+    "hbm:crate_red": [
+      {
+        "id": "hbm:tile.crate_red",
+        "name": "tile.crate_red"
+      }
+    ],
+    "hbm:crate_steel": [
+      {
+        "id": "hbm:tile.crate_steel",
+        "name": "tile.crate_steel"
+      }
+    ],
+    "hbm:crate_supply": [
+      {
+        "id": "hbm:tile.crate_supply",
+        "name": "tile.crate_supply"
+      }
+    ],
+    "hbm:crate_tungsten": [
+      {
+        "id": "hbm:tile.crate_tungsten",
+        "name": "tile.crate_tungsten"
+      }
+    ],
+    "hbm:crate_weapon": [
+      {
+        "id": "hbm:tile.crate_weapon",
+        "name": "tile.crate_weapon"
+      }
+    ],
+    "hbm:crystal_hardened": [
+      {
+        "id": "hbm:tile.crystal_hardened",
+        "name": "tile.crystal_hardened"
+      }
+    ],
+    "hbm:custom_machine": [
+      {
+        "id": "hbm:tile.custom_machine",
+        "name": "tile.custom_machine"
+      }
+    ],
+    "hbm:custom_machine_anchor": [
+      {
+        "id": "hbm:tile.custom_machine_anchor",
+        "name": "tile.custom_machine_anchor"
+      }
+    ],
+    "hbm:deco_aluminium": [
+      {
+        "id": "hbm:tile.deco_aluminium",
+        "name": "tile.deco_aluminium"
+      }
+    ],
+    "hbm:deco_asbestos": [
+      {
+        "id": "hbm:tile.deco_asbestos",
+        "name": "tile.deco_asbestos"
+      }
+    ],
+    "hbm:deco_beryllium": [
+      {
+        "id": "hbm:tile.deco_beryllium",
+        "name": "tile.deco_beryllium"
+      }
+    ],
+    "hbm:deco_computer": [
+      {
+        "id": "hbm:tile.deco_computer",
+        "name": "tile.deco_computer"
+      }
+    ],
+    "hbm:deco_crt": [
+      {
+        "id": "hbm:tile.deco_crt",
+        "name": "tile.deco_crt"
+      }
+    ],
+    "hbm:deco_emitter": [
+      {
+        "id": "hbm:tile.deco_emitter",
+        "name": "tile.deco_emitter"
+      }
+    ],
+    "hbm:deco_lead": [
+      {
+        "id": "hbm:tile.deco_lead",
+        "name": "tile.deco_lead"
+      }
+    ],
+    "hbm:deco_loot": [
+      {
+        "id": "hbm:tile.deco_loot",
+        "name": "tile.deco_loot"
+      }
+    ],
+    "hbm:deco_pipe": [
+      {
+        "id": "hbm:tile.deco_pipe",
+        "name": "tile.deco_pipe"
+      }
+    ],
+    "hbm:deco_pipe_framed": [
+      {
+        "id": "hbm:tile.deco_pipe_framed",
+        "name": "tile.deco_pipe_framed"
+      }
+    ],
+    "hbm:deco_pipe_framed_green": [
+      {
+        "id": "hbm:tile.deco_pipe_framed_green",
+        "name": "tile.deco_pipe_framed_green"
+      }
+    ],
+    "hbm:deco_pipe_framed_green_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_framed_green_rusted",
+        "name": "tile.deco_pipe_framed_green_rusted"
+      }
+    ],
+    "hbm:deco_pipe_framed_marked": [
+      {
+        "id": "hbm:tile.deco_pipe_framed_marked",
+        "name": "tile.deco_pipe_framed_marked"
+      }
+    ],
+    "hbm:deco_pipe_framed_red": [
+      {
+        "id": "hbm:tile.deco_pipe_framed_red",
+        "name": "tile.deco_pipe_framed_red"
+      }
+    ],
+    "hbm:deco_pipe_framed_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_framed_rusted",
+        "name": "tile.deco_pipe_framed_rusted"
+      }
+    ],
+    "hbm:deco_pipe_green": [
+      {
+        "id": "hbm:tile.deco_pipe_green",
+        "name": "tile.deco_pipe_green"
+      }
+    ],
+    "hbm:deco_pipe_green_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_green_rusted",
+        "name": "tile.deco_pipe_green_rusted"
+      }
+    ],
+    "hbm:deco_pipe_marked": [
+      {
+        "id": "hbm:tile.deco_pipe_marked",
+        "name": "tile.deco_pipe_marked"
+      }
+    ],
+    "hbm:deco_pipe_quad": [
+      {
+        "id": "hbm:tile.deco_pipe_quad",
+        "name": "tile.deco_pipe_quad"
+      }
+    ],
+    "hbm:deco_pipe_quad_green": [
+      {
+        "id": "hbm:tile.deco_pipe_quad_green",
+        "name": "tile.deco_pipe_quad_green"
+      }
+    ],
+    "hbm:deco_pipe_quad_green_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_quad_green_rusted",
+        "name": "tile.deco_pipe_quad_green_rusted"
+      }
+    ],
+    "hbm:deco_pipe_quad_marked": [
+      {
+        "id": "hbm:tile.deco_pipe_quad_marked",
+        "name": "tile.deco_pipe_quad_marked"
+      }
+    ],
+    "hbm:deco_pipe_quad_red": [
+      {
+        "id": "hbm:tile.deco_pipe_quad_red",
+        "name": "tile.deco_pipe_quad_red"
+      }
+    ],
+    "hbm:deco_pipe_quad_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_quad_rusted",
+        "name": "tile.deco_pipe_quad_rusted"
+      }
+    ],
+    "hbm:deco_pipe_red": [
+      {
+        "id": "hbm:tile.deco_pipe_red",
+        "name": "tile.deco_pipe_red"
+      }
+    ],
+    "hbm:deco_pipe_rim": [
+      {
+        "id": "hbm:tile.deco_pipe_rim",
+        "name": "tile.deco_pipe_rim"
+      }
+    ],
+    "hbm:deco_pipe_rim_green": [
+      {
+        "id": "hbm:tile.deco_pipe_rim_green",
+        "name": "tile.deco_pipe_rim_green"
+      }
+    ],
+    "hbm:deco_pipe_rim_green_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_rim_green_rusted",
+        "name": "tile.deco_pipe_rim_green_rusted"
+      }
+    ],
+    "hbm:deco_pipe_rim_marked": [
+      {
+        "id": "hbm:tile.deco_pipe_rim_marked",
+        "name": "tile.deco_pipe_rim_marked"
+      }
+    ],
+    "hbm:deco_pipe_rim_red": [
+      {
+        "id": "hbm:tile.deco_pipe_rim_red",
+        "name": "tile.deco_pipe_rim_red"
+      }
+    ],
+    "hbm:deco_pipe_rim_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_rim_rusted",
+        "name": "tile.deco_pipe_rim_rusted"
+      }
+    ],
+    "hbm:deco_pipe_rusted": [
+      {
+        "id": "hbm:tile.deco_pipe_rusted",
+        "name": "tile.deco_pipe_rusted"
+      }
+    ],
+    "hbm:deco_rbmk": [
+      {
+        "id": "hbm:tile.deco_rbmk",
+        "name": "tile.deco_rbmk"
+      }
+    ],
+    "hbm:deco_rbmk_smooth": [
+      {
+        "id": "hbm:tile.deco_rbmk_smooth",
+        "name": "tile.deco_rbmk_smooth"
+      }
+    ],
+    "hbm:deco_red_copper": [
+      {
+        "id": "hbm:tile.deco_red_copper",
+        "name": "tile.deco_red_copper"
+      }
+    ],
+    "hbm:deco_rusty_steel": [
+      {
+        "id": "hbm:tile.deco_rusty_steel",
+        "name": "tile.deco_rusty_steel"
+      }
+    ],
+    "hbm:deco_steel": [
+      {
+        "id": "hbm:tile.deco_steel",
+        "name": "tile.deco_steel"
+      }
+    ],
+    "hbm:deco_titanium": [
+      {
+        "id": "hbm:tile.deco_titanium",
+        "name": "tile.deco_titanium"
+      }
+    ],
+    "hbm:deco_toaster": [
+      {
+        "id": "hbm:tile.deco_toaster",
+        "name": "tile.deco_toaster"
+      }
+    ],
+    "hbm:deco_tungsten": [
+      {
+        "id": "hbm:tile.deco_tungsten",
+        "name": "tile.deco_tungsten"
+      }
+    ],
+    "hbm:decon": [
+      {
+        "id": "hbm:tile.decon",
+        "name": "tile.decon"
+      }
+    ],
+    "hbm:depth_brick": [
+      {
+        "id": "hbm:tile.depth_brick",
+        "name": "tile.depth_brick"
+      }
+    ],
+    "hbm:depth_dnt": [
+      {
+        "id": "hbm:tile.depth_dnt",
+        "name": "tile.depth_dnt"
+      }
+    ],
+    "hbm:depth_nether_brick": [
+      {
+        "id": "hbm:tile.depth_nether_brick",
+        "name": "tile.depth_nether_brick"
+      }
+    ],
+    "hbm:depth_nether_tiles": [
+      {
+        "id": "hbm:tile.depth_nether_tiles",
+        "name": "tile.depth_nether_tiles"
+      }
+    ],
+    "hbm:depth_tiles": [
+      {
+        "id": "hbm:tile.depth_tiles",
+        "name": "tile.depth_tiles"
+      }
+    ],
+    "hbm:det_charge": [
+      {
+        "id": "hbm:tile.det_charge",
+        "name": "tile.det_charge"
+      }
+    ],
+    "hbm:det_cord": [
+      {
+        "id": "hbm:tile.det_cord",
+        "name": "tile.det_cord"
+      }
+    ],
+    "hbm:det_miner": [
+      {
+        "id": "hbm:tile.det_miner",
+        "name": "tile.det_miner"
+      }
+    ],
+    "hbm:det_nuke": [
+      {
+        "id": "hbm:tile.det_nuke",
+        "name": "tile.det_nuke"
+      }
+    ],
+    "hbm:dfc_core": [
+      {
+        "id": "hbm:tile.dfc_core",
+        "name": "tile.dfc_core"
+      }
+    ],
+    "hbm:dfc_emitter": [
+      {
+        "id": "hbm:tile.dfc_emitter",
+        "name": "tile.dfc_emitter"
+      }
+    ],
+    "hbm:dfc_injector": [
+      {
+        "id": "hbm:tile.dfc_injector",
+        "name": "tile.dfc_injector"
+      }
+    ],
+    "hbm:dfc_receiver": [
+      {
+        "id": "hbm:tile.dfc_receiver",
+        "name": "tile.dfc_receiver"
+      }
+    ],
+    "hbm:dfc_stabilizer": [
+      {
+        "id": "hbm:tile.dfc_stabilizer",
+        "name": "tile.dfc_stabilizer"
+      }
+    ],
+    "hbm:digamma_matter": [
+      {
+        "id": "hbm:tile.digamma_matter",
+        "name": "tile.digamma_matter"
+      }
+    ],
+    "hbm:dirt_dead": [
+      {
+        "id": "hbm:tile.dirt_dead",
+        "name": "tile.dirt_dead"
+      }
+    ],
+    "hbm:dirt_oily": [
+      {
+        "id": "hbm:tile.dirt_oily",
+        "name": "tile.dirt_oily"
+      }
+    ],
+    "hbm:door_bunker": [
+      {
+        "id": "hbm:tile.door_bunker",
+        "name": "tile.door_bunker"
+      }
+    ],
+    "hbm:door_metal": [
+      {
+        "id": "hbm:tile.door_metal",
+        "name": "tile.door_metal"
+      }
+    ],
+    "hbm:door_office": [
+      {
+        "id": "hbm:tile.door_office",
+        "name": "tile.door_office"
+      }
+    ],
+    "hbm:door_red": [
+      {
+        "id": "hbm:tile.door_red",
+        "name": "tile.door_red"
+      }
+    ],
+    "hbm:drone_crate": [
+      {
+        "id": "hbm:tile.drone_crate",
+        "name": "tile.drone_crate"
+      }
+    ],
+    "hbm:drone_crate_provider": [
+      {
+        "id": "hbm:tile.drone_crate_provider",
+        "name": "tile.drone_crate_provider"
+      }
+    ],
+    "hbm:drone_crate_requester": [
+      {
+        "id": "hbm:tile.drone_crate_requester",
+        "name": "tile.drone_crate_requester"
+      }
+    ],
+    "hbm:drone_dock": [
+      {
+        "id": "hbm:tile.drone_dock",
+        "name": "tile.drone_dock"
+      }
+    ],
+    "hbm:drone_waypoint": [
+      {
+        "id": "hbm:tile.drone_waypoint",
+        "name": "tile.drone_waypoint"
+      }
+    ],
+    "hbm:drone_waypoint_request": [
+      {
+        "id": "hbm:tile.drone_waypoint_request",
+        "name": "tile.drone_waypoint_request"
+      }
+    ],
+    "hbm:ducrete": [
+      {
+        "id": "hbm:tile.ducrete",
+        "name": "tile.ducrete"
+      }
+    ],
+    "hbm:ducrete_smooth": [
+      {
+        "id": "hbm:tile.ducrete_smooth",
+        "name": "tile.ducrete_smooth"
+      }
+    ],
+    "hbm:ducrete_smooth_stairs": [
+      {
+        "id": "hbm:tile.ducrete_smooth_stairs",
+        "name": "tile.ducrete_smooth_stairs"
+      }
+    ],
+    "hbm:ducrete_stairs": [
+      {
+        "id": "hbm:tile.ducrete_stairs",
+        "name": "tile.ducrete_stairs"
+      }
+    ],
+    "hbm:dungeon_chain": [
+      {
+        "id": "hbm:tile.dungeon_chain",
+        "name": "tile.dungeon_chain"
+      }
+    ],
+    "hbm:dungeon_spawner": [
+      {
+        "id": "hbm:tile.dungeon_spawner",
+        "name": "tile.dungeon_spawner"
+      },
+      {
+        "id": "hbm:dungeon_spawner",
+        "name": "dungeon_spawner"
+      }
+    ],
+    "hbm:dynamite": [
+      {
+        "id": "hbm:tile.dynamite",
+        "name": "tile.dynamite"
+      }
+    ],
+    "hbm:emp_bomb": [
+      {
+        "id": "hbm:tile.emp_bomb",
+        "name": "tile.emp_bomb"
+      }
+    ],
+    "hbm:fallout": [
+      {
+        "id": "hbm:tile.fallout",
+        "name": "tile.fallout"
+      }
+    ],
+    "hbm:fan": [
+      {
+        "id": "hbm:tile.fan",
+        "name": "tile.fan"
+      }
+    ],
+    "hbm:fence_metal": [
+      {
+        "id": "hbm:tile.fence_metal",
+        "name": "tile.fence_metal"
+      }
+    ],
+    "hbm:field_disturber": [
+      {
+        "id": "hbm:tile.field_disturber",
+        "name": "tile.field_disturber"
+      }
+    ],
+    "hbm:filing_cabinet": [
+      {
+        "id": "hbm:tile.filing_cabinet",
+        "name": "tile.filing_cabinet"
+      },
+      {
+        "id": "hbm:filing_cabinet",
+        "name": "filing_cabinet"
+      }
+    ],
+    "hbm:fire_digamma": [
+      {
+        "id": "hbm:tile.fire_digamma",
+        "name": "tile.fire_digamma"
+      }
+    ],
+    "hbm:fire_door": [
+      {
+        "id": "hbm:tile.fire_door",
+        "name": "tile.fire_door"
+      }
+    ],
+    "hbm:fireworks": [
+      {
+        "id": "hbm:tile.fireworks",
+        "name": "tile.fireworks"
+      }
+    ],
+    "hbm:fissure_bomb": [
+      {
+        "id": "hbm:tile.fissure_bomb",
+        "name": "tile.fissure_bomb"
+      }
+    ],
+    "hbm:flame_war": [
+      {
+        "id": "hbm:tile.flame_war",
+        "name": "tile.flame_war"
+      }
+    ],
+    "hbm:float_bomb": [
+      {
+        "id": "hbm:tile.float_bomb",
+        "name": "tile.float_bomb"
+      }
+    ],
+    "hbm:floodlight": [
+      {
+        "id": "hbm:tile.floodlight",
+        "name": "tile.floodlight"
+      },
+      {
+        "id": "hbm:floodlight",
+        "name": "floodlight"
+      }
+    ],
+    "hbm:floodlight_beam": [
+      {
+        "id": "hbm:tile.floodlight_beam",
+        "name": "tile.floodlight_beam"
+      },
+      {
+        "id": "hbm:floodlight_beam",
+        "name": "floodlight_beam"
+      }
+    ],
+    "hbm:flow_control_pump": [
+      {
+        "id": "hbm:tile.flow_control_pump",
+        "name": "tile.flow_control_pump"
+      }
+    ],
+    "hbm:fluid_counter_valve": [
+      {
+        "id": "hbm:tile.fluid_counter_valve",
+        "name": "tile.fluid_counter_valve"
+      }
+    ],
+    "hbm:fluid_duct_box": [
+      {
+        "id": "hbm:tile.fluid_duct_box",
+        "name": "tile.fluid_duct_box"
+      }
+    ],
+    "hbm:fluid_duct_exhaust": [
+      {
+        "id": "hbm:tile.fluid_duct_exhaust",
+        "name": "tile.fluid_duct_exhaust"
+      }
+    ],
+    "hbm:fluid_duct_gauge": [
+      {
+        "id": "hbm:tile.fluid_duct_gauge",
+        "name": "tile.fluid_duct_gauge"
+      }
+    ],
+    "hbm:fluid_duct_neo": [
+      {
+        "id": "hbm:tile.fluid_duct_neo",
+        "name": "tile.fluid_duct_neo"
+      }
+    ],
+    "hbm:fluid_duct_paintable": [
+      {
+        "id": "hbm:tile.fluid_duct_paintable",
+        "name": "tile.fluid_duct_paintable"
+      }
+    ],
+    "hbm:fluid_duct_paintable_block_exhaust": [
+      {
+        "id": "hbm:tile.fluid_duct_paintable_block_exhaust",
+        "name": "tile.fluid_duct_paintable_block_exhaust"
+      }
+    ],
+    "hbm:fluid_pump": [
+      {
+        "id": "hbm:tile.fluid_pump",
+        "name": "tile.fluid_pump"
+      }
+    ],
+    "hbm:fluid_switch": [
+      {
+        "id": "hbm:tile.fluid_switch",
+        "name": "tile.fluid_switch"
+      }
+    ],
+    "hbm:fluid_valve": [
+      {
+        "id": "hbm:tile.fluid_valve",
+        "name": "tile.fluid_valve"
+      }
+    ],
+    "hbm:foam_layer": [
+      {
+        "id": "hbm:tile.foam_layer",
+        "name": "tile.foam_layer"
+      }
+    ],
+    "hbm:foundry_basin": [
+      {
+        "id": "hbm:tile.foundry_basin",
+        "name": "tile.foundry_basin"
+      }
+    ],
+    "hbm:foundry_channel": [
+      {
+        "id": "hbm:tile.foundry_channel",
+        "name": "tile.foundry_channel"
+      }
+    ],
+    "hbm:foundry_mold": [
+      {
+        "id": "hbm:tile.foundry_mold",
+        "name": "tile.foundry_mold"
+      }
+    ],
+    "hbm:foundry_outlet": [
+      {
+        "id": "hbm:tile.foundry_outlet",
+        "name": "tile.foundry_outlet"
+      }
+    ],
+    "hbm:foundry_slagtap": [
+      {
+        "id": "hbm:tile.foundry_slagtap",
+        "name": "tile.foundry_slagtap"
+      }
+    ],
+    "hbm:foundry_tank": [
+      {
+        "id": "hbm:tile.foundry_tank",
+        "name": "tile.foundry_tank"
+      }
+    ],
+    "hbm:fraction_spacer": [
+      {
+        "id": "hbm:tile.fraction_spacer",
+        "name": "tile.fraction_spacer"
+      }
+    ],
+    "hbm:frozen_dirt": [
+      {
+        "id": "hbm:tile.frozen_dirt",
+        "name": "tile.frozen_dirt"
+      }
+    ],
+    "hbm:frozen_grass": [
+      {
+        "id": "hbm:tile.frozen_grass",
+        "name": "tile.frozen_grass"
+      }
+    ],
+    "hbm:frozen_log": [
+      {
+        "id": "hbm:tile.frozen_log",
+        "name": "tile.frozen_log"
+      }
+    ],
+    "hbm:frozen_planks": [
+      {
+        "id": "hbm:tile.frozen_planks",
+        "name": "tile.frozen_planks"
+      }
+    ],
+    "hbm:furnace_combination": [
+      {
+        "id": "hbm:tile.furnace_combination",
+        "name": "tile.furnace_combination"
+      }
+    ],
+    "hbm:furnace_iron": [
+      {
+        "id": "hbm:tile.furnace_iron",
+        "name": "tile.furnace_iron"
+      }
+    ],
+    "hbm:furnace_steel": [
+      {
+        "id": "hbm:tile.furnace_steel",
+        "name": "tile.furnace_steel"
+      }
+    ],
+    "hbm:fusion_boiler": [
+      {
+        "id": "hbm:tile.fusion_boiler",
+        "name": "tile.fusion_boiler"
+      }
+    ],
+    "hbm:fusion_breeder": [
+      {
+        "id": "hbm:tile.fusion_breeder",
+        "name": "tile.fusion_breeder"
+      }
+    ],
+    "hbm:fusion_collector": [
+      {
+        "id": "hbm:tile.fusion_collector",
+        "name": "tile.fusion_collector"
+      }
+    ],
+    "hbm:fusion_component": [
+      {
+        "id": "hbm:tile.fusion_component",
+        "name": "tile.fusion_component"
+      }
+    ],
+    "hbm:fusion_coupler": [
+      {
+        "id": "hbm:tile.fusion_coupler",
+        "name": "tile.fusion_coupler"
+      }
+    ],
+    "hbm:fusion_hatch": [
+      {
+        "id": "hbm:tile.fusion_hatch",
+        "name": "tile.fusion_hatch"
+      },
+      {
+        "id": "hbm:fusion_hatch",
+        "name": "fusion_hatch"
+      }
+    ],
+    "hbm:fusion_heater": [
+      {
+        "id": "hbm:tile.fusion_heater",
+        "name": "tile.fusion_heater"
+      },
+      {
+        "id": "hbm:fusion_heater",
+        "name": "fusion_heater"
+      }
+    ],
+    "hbm:fusion_klystron": [
+      {
+        "id": "hbm:tile.fusion_klystron",
+        "name": "tile.fusion_klystron"
+      }
+    ],
+    "hbm:fusion_klystron_creative": [
+      {
+        "id": "hbm:tile.fusion_klystron_creative",
+        "name": "tile.fusion_klystron_creative"
+      }
+    ],
+    "hbm:fusion_mhdt": [
+      {
+        "id": "hbm:tile.fusion_mhdt",
+        "name": "tile.fusion_mhdt"
+      }
+    ],
+    "hbm:fusion_plasma_forge": [
+      {
+        "id": "hbm:tile.fusion_plasma_forge",
+        "name": "tile.fusion_plasma_forge"
+      }
+    ],
+    "hbm:fusion_torus": [
+      {
+        "id": "hbm:tile.fusion_torus",
+        "name": "tile.fusion_torus"
+      }
+    ],
+    "hbm:gas_asbestos": [
+      {
+        "id": "hbm:tile.gas_asbestos",
+        "name": "tile.gas_asbestos"
+      }
+    ],
+    "hbm:gas_coal": [
+      {
+        "id": "hbm:tile.gas_coal",
+        "name": "tile.gas_coal"
+      }
+    ],
+    "hbm:gas_explosive": [
+      {
+        "id": "hbm:tile.gas_explosive",
+        "name": "tile.gas_explosive"
+      }
+    ],
+    "hbm:gas_flammable": [
+      {
+        "id": "hbm:tile.gas_flammable",
+        "name": "tile.gas_flammable"
+      }
+    ],
+    "hbm:gas_meltdown": [
+      {
+        "id": "hbm:tile.gas_meltdown",
+        "name": "tile.gas_meltdown"
+      }
+    ],
+    "hbm:gas_monoxide": [
+      {
+        "id": "hbm:tile.gas_monoxide",
+        "name": "tile.gas_monoxide"
+      }
+    ],
+    "hbm:gas_radon": [
+      {
+        "id": "hbm:tile.gas_radon",
+        "name": "tile.gas_radon"
+      }
+    ],
+    "hbm:gas_radon_dense": [
+      {
+        "id": "hbm:tile.gas_radon_dense",
+        "name": "tile.gas_radon_dense"
+      }
+    ],
+    "hbm:gas_radon_tomb": [
+      {
+        "id": "hbm:tile.gas_radon_tomb",
+        "name": "tile.gas_radon_tomb"
+      }
+    ],
+    "hbm:geiger": [
+      {
+        "id": "hbm:tile.geiger",
+        "name": "tile.geiger"
+      }
+    ],
+    "hbm:geysir_chlorine": [
+      {
+        "id": "hbm:tile.geysir_chlorine",
+        "name": "tile.geysir_chlorine"
+      }
+    ],
+    "hbm:geysir_nether": [
+      {
+        "id": "hbm:tile.geysir_nether",
+        "name": "tile.geysir_nether"
+      }
+    ],
+    "hbm:glass_ash": [
+      {
+        "id": "hbm:tile.glass_ash",
+        "name": "tile.glass_ash"
+      },
+      {
+        "id": "hbm:glass_ash",
+        "name": "glass_ash"
+      }
+    ],
+    "hbm:glass_boron": [
+      {
+        "id": "hbm:tile.glass_boron",
+        "name": "tile.glass_boron"
+      }
+    ],
+    "hbm:glass_lead": [
+      {
+        "id": "hbm:tile.glass_lead",
+        "name": "tile.glass_lead"
+      }
+    ],
+    "hbm:glass_polonium": [
+      {
+        "id": "hbm:tile.glass_polonium",
+        "name": "tile.glass_polonium"
+      }
+    ],
+    "hbm:glass_quartz": [
+      {
+        "id": "hbm:tile.glass_quartz",
+        "name": "tile.glass_quartz"
+      }
+    ],
+    "hbm:glass_trinitite": [
+      {
+        "id": "hbm:tile.glass_trinitite",
+        "name": "tile.glass_trinitite"
+      }
+    ],
+    "hbm:glass_uranium": [
+      {
+        "id": "hbm:tile.glass_uranium",
+        "name": "tile.glass_uranium"
+      }
+    ],
+    "hbm:glyphid_base": [
+      {
+        "id": "hbm:tile.glyphid_base",
+        "name": "tile.glyphid_base"
+      }
+    ],
+    "hbm:glyphid_spawner": [
+      {
+        "id": "hbm:tile.glyphid_spawner",
+        "name": "tile.glyphid_spawner"
+      }
+    ],
+    "hbm:gneiss_brick": [
+      {
+        "id": "hbm:tile.gneiss_brick",
+        "name": "tile.gneiss_brick"
+      }
+    ],
+    "hbm:gneiss_chiseled": [
+      {
+        "id": "hbm:tile.gneiss_chiseled",
+        "name": "tile.gneiss_chiseled"
+      }
+    ],
+    "hbm:gneiss_tile": [
+      {
+        "id": "hbm:tile.gneiss_tile",
+        "name": "tile.gneiss_tile"
+      }
+    ],
+    "hbm:gravel_diamond": [
+      {
+        "id": "hbm:tile.gravel_diamond",
+        "name": "tile.gravel_diamond"
+      }
+    ],
+    "hbm:gravel_obsidian": [
+      {
+        "id": "hbm:tile.gravel_obsidian",
+        "name": "tile.gravel_obsidian"
+      }
+    ],
+    "hbm:hadron_coil_alloy": [
+      {
+        "id": "hbm:tile.hadron_coil_alloy",
+        "name": "tile.hadron_coil_alloy"
+      },
+      {
+        "id": "hbm:hadron_coil_alloy",
+        "name": "hadron_coil_alloy"
+      }
+    ],
+    "hbm:hadron_coil_chlorophyte": [
+      {
+        "id": "hbm:tile.hadron_coil_chlorophyte",
+        "name": "tile.hadron_coil_chlorophyte"
+      },
+      {
+        "id": "hbm:hadron_coil_chlorophyte",
+        "name": "hadron_coil_chlorophyte"
+      }
+    ],
+    "hbm:hadron_coil_gold": [
+      {
+        "id": "hbm:tile.hadron_coil_gold",
+        "name": "tile.hadron_coil_gold"
+      },
+      {
+        "id": "hbm:hadron_coil_gold",
+        "name": "hadron_coil_gold"
+      }
+    ],
+    "hbm:hadron_coil_magtung": [
+      {
+        "id": "hbm:tile.hadron_coil_magtung",
+        "name": "tile.hadron_coil_magtung"
+      },
+      {
+        "id": "hbm:hadron_coil_magtung",
+        "name": "hadron_coil_magtung"
+      }
+    ],
+    "hbm:hadron_coil_mese": [
+      {
+        "id": "hbm:tile.hadron_coil_mese",
+        "name": "tile.hadron_coil_mese"
+      },
+      {
+        "id": "hbm:hadron_coil_mese",
+        "name": "hadron_coil_mese"
+      }
+    ],
+    "hbm:hadron_coil_neodymium": [
+      {
+        "id": "hbm:tile.hadron_coil_neodymium",
+        "name": "tile.hadron_coil_neodymium"
+      },
+      {
+        "id": "hbm:hadron_coil_neodymium",
+        "name": "hadron_coil_neodymium"
+      }
+    ],
+    "hbm:hadron_coil_schrabidate": [
+      {
+        "id": "hbm:tile.hadron_coil_schrabidate",
+        "name": "tile.hadron_coil_schrabidate"
+      },
+      {
+        "id": "hbm:hadron_coil_schrabidate",
+        "name": "hadron_coil_schrabidate"
+      }
+    ],
+    "hbm:hadron_coil_schrabidium": [
+      {
+        "id": "hbm:tile.hadron_coil_schrabidium",
+        "name": "tile.hadron_coil_schrabidium"
+      },
+      {
+        "id": "hbm:hadron_coil_schrabidium",
+        "name": "hadron_coil_schrabidium"
+      }
+    ],
+    "hbm:hadron_coil_starmetal": [
+      {
+        "id": "hbm:tile.hadron_coil_starmetal",
+        "name": "tile.hadron_coil_starmetal"
+      },
+      {
+        "id": "hbm:hadron_coil_starmetal",
+        "name": "hadron_coil_starmetal"
+      }
+    ],
+    "hbm:heater_electric": [
+      {
+        "id": "hbm:tile.heater_electric",
+        "name": "tile.heater_electric"
+      }
+    ],
+    "hbm:heater_firebox": [
+      {
+        "id": "hbm:tile.heater_firebox",
+        "name": "tile.heater_firebox"
+      }
+    ],
+    "hbm:heater_heatex": [
+      {
+        "id": "hbm:tile.heater_heatex",
+        "name": "tile.heater_heatex"
+      }
+    ],
+    "hbm:heater_oilburner": [
+      {
+        "id": "hbm:tile.heater_oilburner",
+        "name": "tile.heater_oilburner"
+      }
+    ],
+    "hbm:heater_oven": [
+      {
+        "id": "hbm:tile.heater_oven",
+        "name": "tile.heater_oven"
+      }
+    ],
+    "hbm:hev_battery": [
+      {
+        "id": "hbm:tile.hev_battery",
+        "name": "tile.hev_battery"
+      }
+    ],
+    "hbm:icf": [
+      {
+        "id": "hbm:tile.icf",
+        "name": "tile.icf"
+      }
+    ],
+    "hbm:icf_block": [
+      {
+        "id": "hbm:tile.icf_block",
+        "name": "tile.icf_block"
+      }
+    ],
+    "hbm:icf_component": [
+      {
+        "id": "hbm:tile.icf_component",
+        "name": "tile.icf_component"
+      }
+    ],
+    "hbm:icf_controller": [
+      {
+        "id": "hbm:tile.icf_controller",
+        "name": "tile.icf_controller"
+      }
+    ],
+    "hbm:icf_laser_component": [
+      {
+        "id": "hbm:tile.icf_laser_component",
+        "name": "tile.icf_laser_component"
+      }
+    ],
+    "hbm:impact_dirt": [
+      {
+        "id": "hbm:tile.impact_dirt",
+        "name": "tile.impact_dirt"
+      }
+    ],
+    "hbm:ladder_copper": [
+      {
+        "id": "hbm:tile.ladder_copper",
+        "name": "tile.ladder_copper"
+      }
+    ],
+    "hbm:ladder_gold": [
+      {
+        "id": "hbm:tile.ladder_gold",
+        "name": "tile.ladder_gold"
+      }
+    ],
+    "hbm:ladder_steel": [
+      {
+        "id": "hbm:tile.ladder_steel",
+        "name": "tile.ladder_steel"
+      }
+    ],
+    "hbm:ladder_sturdy": [
+      {
+        "id": "hbm:tile.ladder_sturdy",
+        "name": "tile.ladder_sturdy"
+      }
+    ],
+    "hbm:ladder_titanium": [
+      {
+        "id": "hbm:tile.ladder_titanium",
+        "name": "tile.ladder_titanium"
+      }
+    ],
+    "hbm:ladder_tungsten": [
+      {
+        "id": "hbm:tile.ladder_tungsten",
+        "name": "tile.ladder_tungsten"
+      }
+    ],
+    "hbm:lamp_demon": [
+      {
+        "id": "hbm:tile.lamp_demon",
+        "name": "tile.lamp_demon"
+      }
+    ],
+    "hbm:lamp_tritium_blue_off": [
+      {
+        "id": "hbm:tile.lamp_tritium_blue_off",
+        "name": "tile.lamp_tritium_blue_off"
+      }
+    ],
+    "hbm:lamp_tritium_blue_on": [
+      {
+        "id": "hbm:tile.lamp_tritium_blue_on",
+        "name": "tile.lamp_tritium_blue_on"
+      }
+    ],
+    "hbm:lamp_tritium_green_off": [
+      {
+        "id": "hbm:tile.lamp_tritium_green_off",
+        "name": "tile.lamp_tritium_green_off"
+      }
+    ],
+    "hbm:lamp_tritium_green_on": [
+      {
+        "id": "hbm:tile.lamp_tritium_green_on",
+        "name": "tile.lamp_tritium_green_on"
+      }
+    ],
+    "hbm:lantern": [
+      {
+        "id": "hbm:tile.lantern",
+        "name": "tile.lantern"
+      }
+    ],
+    "hbm:lantern_behemoth": [
+      {
+        "id": "hbm:tile.lantern_behemoth",
+        "name": "tile.lantern_behemoth"
+      }
+    ],
+    "hbm:large_vehicle_door": [
+      {
+        "id": "hbm:tile.large_vehicle_door",
+        "name": "tile.large_vehicle_door"
+      }
+    ],
+    "hbm:launch_pad": [
+      {
+        "id": "hbm:tile.launch_pad",
+        "name": "tile.launch_pad"
+      }
+    ],
+    "hbm:launch_pad_large": [
+      {
+        "id": "hbm:tile.launch_pad_large",
+        "name": "tile.launch_pad_large"
+      }
+    ],
+    "hbm:launch_pad_rusted": [
+      {
+        "id": "hbm:tile.launch_pad_rusted",
+        "name": "tile.launch_pad_rusted"
+      }
+    ],
+    "hbm:launch_table": [
+      {
+        "id": "hbm:tile.launch_table",
+        "name": "tile.launch_table"
+      },
+      {
+        "id": "hbm:launch_table",
+        "name": "launch_table"
+      }
+    ],
+    "hbm:launchpad_lambda": [
+      {
+        "id": "hbm:tile.launchpad_lambda",
+        "name": "tile.launchpad_lambda"
+      }
+    ],
+    "hbm:launchpad_soyuz": [
+      {
+        "id": "hbm:tile.launchpad_soyuz",
+        "name": "tile.launchpad_soyuz"
+      }
+    ],
+    "hbm:leaves_layer": [
+      {
+        "id": "hbm:tile.leaves_layer",
+        "name": "tile.leaves_layer"
+      }
+    ],
+    "hbm:lightstone": [
+      {
+        "id": "hbm:tile.lightstone",
+        "name": "tile.lightstone"
+      }
+    ],
+    "hbm:lightstone_bricks_stairs": [
+      {
+        "id": "hbm:tile.lightstone_bricks_stairs",
+        "name": "tile.lightstone_bricks_stairs"
+      }
+    ],
+    "hbm:lightstone_tile_stairs": [
+      {
+        "id": "hbm:tile.lightstone_tile_stairs",
+        "name": "tile.lightstone_tile_stairs"
+      }
+    ],
+    "hbm:logic_block": [
+      {
+        "id": "hbm:tile.logic_block",
+        "name": "tile.logic_block"
+      }
+    ],
+    "hbm:logic_block_invis": [
+      {
+        "id": "hbm:tile.logic_block_invis",
+        "name": "tile.logic_block_invis"
+      }
+    ],
+    "hbm:lox_barrel": [
+      {
+        "id": "hbm:tile.lox_barrel",
+        "name": "tile.lox_barrel"
+      }
+    ],
+    "hbm:machine_ammo_press": [
+      {
+        "id": "hbm:tile.machine_ammo_press",
+        "name": "tile.machine_ammo_press"
+      }
+    ],
+    "hbm:machine_annihilator": [
+      {
+        "id": "hbm:tile.machine_annihilator",
+        "name": "tile.machine_annihilator"
+      }
+    ],
+    "hbm:machine_arc_furnace": [
+      {
+        "id": "hbm:tile.machine_arc_furnace",
+        "name": "tile.machine_arc_furnace"
+      }
+    ],
+    "hbm:machine_arc_welder": [
+      {
+        "id": "hbm:tile.machine_arc_welder",
+        "name": "tile.machine_arc_welder"
+      }
+    ],
+    "hbm:machine_armor_table": [
+      {
+        "id": "hbm:tile.machine_armor_table",
+        "name": "tile.machine_armor_table"
+      }
+    ],
+    "hbm:machine_ashpit": [
+      {
+        "id": "hbm:tile.machine_ashpit",
+        "name": "tile.machine_ashpit"
+      }
+    ],
+    "hbm:machine_assembly_factory": [
+      {
+        "id": "hbm:tile.machine_assembly_factory",
+        "name": "tile.machine_assembly_factory"
+      },
+      {
+        "id": "hbm:machine_assembly_factory",
+        "name": "machine_assembly_factory"
+      }
+    ],
+    "hbm:machine_assembly_machine": [
+      {
+        "id": "hbm:tile.machine_assembly_machine",
+        "name": "tile.machine_assembly_machine"
+      }
+    ],
+    "hbm:machine_autocrafter": [
+      {
+        "id": "hbm:tile.machine_autocrafter",
+        "name": "tile.machine_autocrafter"
+      }
+    ],
+    "hbm:machine_autosaw": [
+      {
+        "id": "hbm:tile.machine_autosaw",
+        "name": "tile.machine_autosaw"
+      },
+      {
+        "id": "hbm:machine_autosaw",
+        "name": "machine_autosaw"
+      }
+    ],
+    "hbm:machine_bat9000": [
+      {
+        "id": "hbm:tile.machine_bat9000",
+        "name": "tile.machine_bat9000"
+      }
+    ],
+    "hbm:machine_battery": [
+      {
+        "id": "hbm:tile.machine_battery",
+        "name": "tile.machine_battery"
+      }
+    ],
+    "hbm:machine_battery_potato": [
+      {
+        "id": "hbm:tile.machine_battery_potato",
+        "name": "tile.machine_battery_potato"
+      }
+    ],
+    "hbm:machine_battery_redd": [
+      {
+        "id": "hbm:tile.machine_battery_redd",
+        "name": "tile.machine_battery_redd"
+      }
+    ],
+    "hbm:machine_battery_socket": [
+      {
+        "id": "hbm:tile.machine_battery_socket",
+        "name": "tile.machine_battery_socket"
+      }
+    ],
+    "hbm:machine_bigasstank": [
+      {
+        "id": "hbm:tile.machine_bigasstank",
+        "name": "tile.machine_bigasstank"
+      }
+    ],
+    "hbm:machine_blast_furnace": [
+      {
+        "id": "hbm:tile.machine_blast_furnace",
+        "name": "tile.machine_blast_furnace"
+      }
+    ],
+    "hbm:machine_boiler": [
+      {
+        "id": "hbm:tile.machine_boiler",
+        "name": "tile.machine_boiler"
+      }
+    ],
+    "hbm:machine_boiler_off": [
+      {
+        "id": "hbm:tile.machine_boiler_off",
+        "name": "tile.machine_boiler_off"
+      }
+    ],
+    "hbm:machine_catalytic_cracker": [
+      {
+        "id": "hbm:tile.machine_catalytic_cracker",
+        "name": "tile.machine_catalytic_cracker"
+      }
+    ],
+    "hbm:machine_catalytic_reformer": [
+      {
+        "id": "hbm:tile.machine_catalytic_reformer",
+        "name": "tile.machine_catalytic_reformer"
+      }
+    ],
+    "hbm:machine_centrifuge": [
+      {
+        "id": "hbm:tile.machine_centrifuge",
+        "name": "tile.machine_centrifuge"
+      }
+    ],
+    "hbm:machine_chemical_factory": [
+      {
+        "id": "hbm:tile.machine_chemical_factory",
+        "name": "tile.machine_chemical_factory"
+      }
+    ],
+    "hbm:machine_chemical_plant": [
+      {
+        "id": "hbm:tile.machine_chemical_plant",
+        "name": "tile.machine_chemical_plant"
+      }
+    ],
+    "hbm:machine_chungus": [
+      {
+        "id": "hbm:tile.machine_chungus",
+        "name": "tile.machine_chungus"
+      }
+    ],
+    "hbm:machine_coker": [
+      {
+        "id": "hbm:tile.machine_coker",
+        "name": "tile.machine_coker"
+      }
+    ],
+    "hbm:machine_combustion_engine": [
+      {
+        "id": "hbm:tile.machine_combustion_engine",
+        "name": "tile.machine_combustion_engine"
+      }
+    ],
+    "hbm:machine_compressor": [
+      {
+        "id": "hbm:tile.machine_compressor",
+        "name": "tile.machine_compressor"
+      }
+    ],
+    "hbm:machine_compressor_compact": [
+      {
+        "id": "hbm:tile.machine_compressor_compact",
+        "name": "tile.machine_compressor_compact"
+      }
+    ],
+    "hbm:machine_condenser": [
+      {
+        "id": "hbm:tile.machine_condenser",
+        "name": "tile.machine_condenser"
+      }
+    ],
+    "hbm:machine_condenser_powered": [
+      {
+        "id": "hbm:tile.machine_condenser_powered",
+        "name": "tile.machine_condenser_powered"
+      },
+      {
+        "id": "hbm:machine_condenser_powered",
+        "name": "machine_condenser_powered"
+      }
+    ],
+    "hbm:machine_controller": [
+      {
+        "id": "hbm:tile.machine_controller",
+        "name": "tile.machine_controller"
+      },
+      {
+        "id": "hbm:machine_controller",
+        "name": "machine_controller"
+      }
+    ],
+    "hbm:machine_converter_he_rf": [
+      {
+        "id": "hbm:tile.machine_converter_he_rf",
+        "name": "tile.machine_converter_he_rf"
+      }
+    ],
+    "hbm:machine_converter_rf_he": [
+      {
+        "id": "hbm:tile.machine_converter_rf_he",
+        "name": "tile.machine_converter_rf_he"
+      }
+    ],
+    "hbm:machine_conveyor_press": [
+      {
+        "id": "hbm:tile.machine_conveyor_press",
+        "name": "tile.machine_conveyor_press"
+      },
+      {
+        "id": "hbm:machine_conveyor_press",
+        "name": "machine_conveyor_press"
+      }
+    ],
+    "hbm:machine_crucible": [
+      {
+        "id": "hbm:tile.machine_crucible",
+        "name": "tile.machine_crucible"
+      }
+    ],
+    "hbm:machine_crystallizer": [
+      {
+        "id": "hbm:tile.machine_crystallizer",
+        "name": "tile.machine_crystallizer"
+      }
+    ],
+    "hbm:machine_cyclotron": [
+      {
+        "id": "hbm:tile.machine_cyclotron",
+        "name": "tile.machine_cyclotron"
+      },
+      {
+        "id": "hbm:machine_cyclotron",
+        "name": "machine_cyclotron"
+      }
+    ],
+    "hbm:machine_detector": [
+      {
+        "id": "hbm:tile.machine_detector",
+        "name": "tile.machine_detector"
+      }
+    ],
+    "hbm:machine_deuterium_extractor": [
+      {
+        "id": "hbm:tile.machine_deuterium_extractor",
+        "name": "tile.machine_deuterium_extractor"
+      }
+    ],
+    "hbm:machine_deuterium_tower": [
+      {
+        "id": "hbm:tile.machine_deuterium_tower",
+        "name": "tile.machine_deuterium_tower"
+      }
+    ],
+    "hbm:machine_diesel": [
+      {
+        "id": "hbm:tile.machine_diesel",
+        "name": "tile.machine_diesel"
+      }
+    ],
+    "hbm:machine_difurnace_extension": [
+      {
+        "id": "hbm:tile.machine_difurnace_extension",
+        "name": "tile.machine_difurnace_extension"
+      }
+    ],
+    "hbm:machine_difurnace_off": [
+      {
+        "id": "hbm:tile.machine_difurnace_off",
+        "name": "tile.machine_difurnace_off"
+      }
+    ],
+    "hbm:machine_difurnace_on": [
+      {
+        "id": "hbm:tile.machine_difurnace_on",
+        "name": "tile.machine_difurnace_on"
+      }
+    ],
+    "hbm:machine_difurnace_rtg_off": [
+      {
+        "id": "hbm:tile.machine_difurnace_rtg_off",
+        "name": "tile.machine_difurnace_rtg_off"
+      },
+      {
+        "id": "hbm:machine_difurnace_rtg_off",
+        "name": "machine_difurnace_rtg_off"
+      }
+    ],
+    "hbm:machine_difurnace_rtg_on": [
+      {
+        "id": "hbm:tile.machine_difurnace_rtg_on",
+        "name": "tile.machine_difurnace_rtg_on"
+      },
+      {
+        "id": "hbm:machine_difurnace_rtg_on",
+        "name": "machine_difurnace_rtg_on"
+      }
+    ],
+    "hbm:machine_dineutronium_battery": [
+      {
+        "id": "hbm:tile.machine_dineutronium_battery",
+        "name": "tile.machine_dineutronium_battery"
+      }
+    ],
+    "hbm:machine_drain": [
+      {
+        "id": "hbm:tile.machine_drain",
+        "name": "tile.machine_drain"
+      }
+    ],
+    "hbm:machine_electric_furnace_off": [
+      {
+        "id": "hbm:tile.machine_electric_furnace_off",
+        "name": "tile.machine_electric_furnace_off"
+      }
+    ],
+    "hbm:machine_electric_furnace_on": [
+      {
+        "id": "hbm:tile.machine_electric_furnace_on",
+        "name": "tile.machine_electric_furnace_on"
+      }
+    ],
+    "hbm:machine_electrolyser": [
+      {
+        "id": "hbm:tile.machine_electrolyser",
+        "name": "tile.machine_electrolyser"
+      }
+    ],
+    "hbm:machine_epress": [
+      {
+        "id": "hbm:tile.machine_epress",
+        "name": "tile.machine_epress"
+      },
+      {
+        "id": "hbm:machine_epress",
+        "name": "machine_epress"
+      }
+    ],
+    "hbm:machine_excavator": [
+      {
+        "id": "hbm:tile.machine_excavator",
+        "name": "tile.machine_excavator"
+      }
+    ],
+    "hbm:machine_exposure_chamber": [
+      {
+        "id": "hbm:tile.machine_exposure_chamber",
+        "name": "tile.machine_exposure_chamber"
+      }
+    ],
+    "hbm:machine_fel": [
+      {
+        "id": "hbm:tile.machine_fel",
+        "name": "tile.machine_fel"
+      }
+    ],
+    "hbm:machine_flare": [
+      {
+        "id": "hbm:tile.machine_flare",
+        "name": "tile.machine_flare"
+      }
+    ],
+    "hbm:machine_fluidtank": [
+      {
+        "id": "hbm:tile.machine_fluidtank",
+        "name": "tile.machine_fluidtank"
+      }
+    ],
+    "hbm:machine_forcefield": [
+      {
+        "id": "hbm:tile.machine_forcefield",
+        "name": "tile.machine_forcefield"
+      }
+    ],
+    "hbm:machine_fracking_tower": [
+      {
+        "id": "hbm:tile.machine_fracking_tower",
+        "name": "tile.machine_fracking_tower"
+      }
+    ],
+    "hbm:machine_fraction_tower": [
+      {
+        "id": "hbm:tile.machine_fraction_tower",
+        "name": "tile.machine_fraction_tower"
+      }
+    ],
+    "hbm:machine_funnel": [
+      {
+        "id": "hbm:tile.machine_funnel",
+        "name": "tile.machine_funnel"
+      }
+    ],
+    "hbm:machine_furnace_brick_off": [
+      {
+        "id": "hbm:tile.machine_furnace_brick_off",
+        "name": "tile.machine_furnace_brick_off"
+      },
+      {
+        "id": "hbm:machine_furnace_brick_off",
+        "name": "machine_furnace_brick_off"
+      }
+    ],
+    "hbm:machine_furnace_brick_on": [
+      {
+        "id": "hbm:tile.machine_furnace_brick_on",
+        "name": "tile.machine_furnace_brick_on"
+      },
+      {
+        "id": "hbm:machine_furnace_brick_on",
+        "name": "machine_furnace_brick_on"
+      }
+    ],
+    "hbm:machine_gascent": [
+      {
+        "id": "hbm:tile.machine_gascent",
+        "name": "tile.machine_gascent"
+      }
+    ],
+    "hbm:machine_hephaestus": [
+      {
+        "id": "hbm:tile.machine_hephaestus",
+        "name": "tile.machine_hephaestus"
+      }
+    ],
+    "hbm:machine_hydrotreater": [
+      {
+        "id": "hbm:tile.machine_hydrotreater",
+        "name": "tile.machine_hydrotreater"
+      }
+    ],
+    "hbm:machine_icf_press": [
+      {
+        "id": "hbm:tile.machine_icf_press",
+        "name": "tile.machine_icf_press"
+      }
+    ],
+    "hbm:machine_industrial_boiler": [
+      {
+        "id": "hbm:tile.machine_industrial_boiler",
+        "name": "tile.machine_industrial_boiler"
+      }
+    ],
+    "hbm:machine_industrial_generator": [
+      {
+        "id": "hbm:tile.machine_industrial_generator",
+        "name": "tile.machine_industrial_generator"
+      }
+    ],
+    "hbm:machine_industrial_turbine": [
+      {
+        "id": "hbm:tile.machine_industrial_turbine",
+        "name": "tile.machine_industrial_turbine"
+      }
+    ],
+    "hbm:machine_intake": [
+      {
+        "id": "hbm:tile.machine_intake",
+        "name": "tile.machine_intake"
+      }
+    ],
+    "hbm:machine_keyforge": [
+      {
+        "id": "hbm:tile.machine_keyforge",
+        "name": "tile.machine_keyforge"
+      }
+    ],
+    "hbm:machine_large_turbine": [
+      {
+        "id": "hbm:tile.machine_large_turbine",
+        "name": "tile.machine_large_turbine"
+      },
+      {
+        "id": "hbm:machine_large_turbine",
+        "name": "machine_large_turbine"
+      }
+    ],
+    "hbm:machine_liquefactor": [
+      {
+        "id": "hbm:tile.machine_liquefactor",
+        "name": "tile.machine_liquefactor"
+      }
+    ],
+    "hbm:machine_lithium_battery": [
+      {
+        "id": "hbm:tile.machine_lithium_battery",
+        "name": "tile.machine_lithium_battery"
+      }
+    ],
+    "hbm:machine_lpw2": [
+      {
+        "id": "hbm:tile.machine_lpw2",
+        "name": "tile.machine_lpw2"
+      }
+    ],
+    "hbm:machine_microwave": [
+      {
+        "id": "hbm:tile.machine_microwave",
+        "name": "tile.machine_microwave"
+      }
+    ],
+    "hbm:machine_mining_laser": [
+      {
+        "id": "hbm:tile.machine_mining_laser",
+        "name": "tile.machine_mining_laser"
+      }
+    ],
+    "hbm:machine_missile_assembly": [
+      {
+        "id": "hbm:tile.machine_missile_assembly",
+        "name": "tile.machine_missile_assembly"
+      },
+      {
+        "id": "hbm:machine_missile_assembly",
+        "name": "machine_missile_assembly"
+      }
+    ],
+    "hbm:machine_mixer": [
+      {
+        "id": "hbm:tile.machine_mixer",
+        "name": "tile.machine_mixer"
+      }
+    ],
+    "hbm:machine_orbus": [
+      {
+        "id": "hbm:tile.machine_orbus",
+        "name": "tile.machine_orbus"
+      },
+      {
+        "id": "hbm:machine_orbus",
+        "name": "machine_orbus"
+      }
+    ],
+    "hbm:machine_ore_slopper": [
+      {
+        "id": "hbm:tile.machine_ore_slopper",
+        "name": "tile.machine_ore_slopper"
+      }
+    ],
+    "hbm:machine_precass": [
+      {
+        "id": "hbm:tile.machine_precass",
+        "name": "tile.machine_precass"
+      },
+      {
+        "id": "hbm:machine_precass",
+        "name": "machine_precass"
+      }
+    ],
+    "hbm:machine_press": [
+      {
+        "id": "hbm:tile.machine_press",
+        "name": "tile.machine_press"
+      }
+    ],
+    "hbm:machine_puf6_tank": [
+      {
+        "id": "hbm:tile.machine_puf6_tank",
+        "name": "tile.machine_puf6_tank"
+      },
+      {
+        "id": "hbm:machine_puf6_tank",
+        "name": "machine_puf6_tank"
+      }
+    ],
+    "hbm:machine_pumpjack": [
+      {
+        "id": "hbm:tile.machine_pumpjack",
+        "name": "tile.machine_pumpjack"
+      }
+    ],
+    "hbm:machine_purex": [
+      {
+        "id": "hbm:tile.machine_purex",
+        "name": "tile.machine_purex"
+      }
+    ],
+    "hbm:machine_pyrooven": [
+      {
+        "id": "hbm:tile.machine_pyrooven",
+        "name": "tile.machine_pyrooven"
+      }
+    ],
+    "hbm:machine_radar": [
+      {
+        "id": "hbm:tile.machine_radar",
+        "name": "tile.machine_radar"
+      }
+    ],
+    "hbm:machine_radar_large": [
+      {
+        "id": "hbm:tile.machine_radar_large",
+        "name": "tile.machine_radar_large"
+      }
+    ],
+    "hbm:machine_radgen": [
+      {
+        "id": "hbm:tile.machine_radgen",
+        "name": "tile.machine_radgen"
+      },
+      {
+        "id": "hbm:machine_radgen",
+        "name": "machine_radgen"
+      }
+    ],
+    "hbm:machine_radiolysis": [
+      {
+        "id": "hbm:tile.machine_radiolysis",
+        "name": "tile.machine_radiolysis"
+      }
+    ],
+    "hbm:machine_reactor": [
+      {
+        "id": "hbm:tile.machine_reactor",
+        "name": "tile.machine_reactor"
+      }
+    ],
+    "hbm:machine_reactor_small": [
+      {
+        "id": "hbm:tile.machine_reactor_small",
+        "name": "tile.machine_reactor_small"
+      }
+    ],
+    "hbm:machine_refinery": [
+      {
+        "id": "hbm:tile.machine_refinery",
+        "name": "tile.machine_refinery"
+      }
+    ],
+    "hbm:machine_rockmill": [
+      {
+        "id": "hbm:tile.machine_rockmill",
+        "name": "tile.machine_rockmill"
+      }
+    ],
+    "hbm:machine_rotary_furnace": [
+      {
+        "id": "hbm:tile.machine_rotary_furnace",
+        "name": "tile.machine_rotary_furnace"
+      }
+    ],
+    "hbm:machine_rtg_furnace_off": [
+      {
+        "id": "hbm:tile.machine_rtg_furnace_off",
+        "name": "tile.machine_rtg_furnace_off"
+      },
+      {
+        "id": "hbm:machine_rtg_furnace_off",
+        "name": "machine_rtg_furnace_off"
+      }
+    ],
+    "hbm:machine_rtg_furnace_on": [
+      {
+        "id": "hbm:tile.machine_rtg_furnace_on",
+        "name": "tile.machine_rtg_furnace_on"
+      },
+      {
+        "id": "hbm:machine_rtg_furnace_on",
+        "name": "machine_rtg_furnace_on"
+      }
+    ],
+    "hbm:machine_rtg_grey": [
+      {
+        "id": "hbm:tile.machine_rtg_grey",
+        "name": "tile.machine_rtg_grey"
+      }
+    ],
+    "hbm:machine_satlink": [
+      {
+        "id": "hbm:tile.machine_satlink",
+        "name": "tile.machine_satlink"
+      }
+    ],
+    "hbm:machine_satlinker": [
+      {
+        "id": "hbm:tile.machine_satlinker",
+        "name": "tile.machine_satlinker"
+      }
+    ],
+    "hbm:machine_sawmill": [
+      {
+        "id": "hbm:tile.machine_sawmill",
+        "name": "tile.machine_sawmill"
+      },
+      {
+        "id": "hbm:machine_sawmill",
+        "name": "machine_sawmill"
+      }
+    ],
+    "hbm:machine_schrabidium_battery": [
+      {
+        "id": "hbm:tile.machine_schrabidium_battery",
+        "name": "tile.machine_schrabidium_battery"
+      }
+    ],
+    "hbm:machine_shredder": [
+      {
+        "id": "hbm:tile.machine_shredder",
+        "name": "tile.machine_shredder"
+      }
+    ],
+    "hbm:machine_silex": [
+      {
+        "id": "hbm:tile.machine_silex",
+        "name": "tile.machine_silex"
+      }
+    ],
+    "hbm:machine_siren": [
+      {
+        "id": "hbm:tile.machine_siren",
+        "name": "tile.machine_siren"
+      }
+    ],
+    "hbm:machine_solar_boiler": [
+      {
+        "id": "hbm:tile.machine_solar_boiler",
+        "name": "tile.machine_solar_boiler"
+      }
+    ],
+    "hbm:machine_soldering_station": [
+      {
+        "id": "hbm:tile.machine_soldering_station",
+        "name": "tile.machine_soldering_station"
+      }
+    ],
+    "hbm:machine_solidifier": [
+      {
+        "id": "hbm:tile.machine_solidifier",
+        "name": "tile.machine_solidifier"
+      },
+      {
+        "id": "hbm:machine_solidifier",
+        "name": "machine_solidifier"
+      }
+    ],
+    "hbm:machine_steam_engine": [
+      {
+        "id": "hbm:tile.machine_steam_engine",
+        "name": "tile.machine_steam_engine"
+      }
+    ],
+    "hbm:machine_stirling": [
+      {
+        "id": "hbm:tile.machine_stirling",
+        "name": "tile.machine_stirling"
+      }
+    ],
+    "hbm:machine_stirling_creative": [
+      {
+        "id": "hbm:tile.machine_stirling_creative",
+        "name": "tile.machine_stirling_creative"
+      }
+    ],
+    "hbm:machine_stirling_steel": [
+      {
+        "id": "hbm:tile.machine_stirling_steel",
+        "name": "tile.machine_stirling_steel"
+      }
+    ],
+    "hbm:machine_storage_drum": [
+      {
+        "id": "hbm:tile.machine_storage_drum",
+        "name": "tile.machine_storage_drum"
+      }
+    ],
+    "hbm:machine_strand_caster": [
+      {
+        "id": "hbm:tile.machine_strand_caster",
+        "name": "tile.machine_strand_caster"
+      }
+    ],
+    "hbm:machine_supercomputer": [
+      {
+        "id": "hbm:tile.machine_supercomputer",
+        "name": "tile.machine_supercomputer"
+      }
+    ],
+    "hbm:machine_tape_drive": [
+      {
+        "id": "hbm:tile.machine_tape_drive",
+        "name": "tile.machine_tape_drive"
+      }
+    ],
+    "hbm:machine_teleporter": [
+      {
+        "id": "hbm:tile.machine_teleporter",
+        "name": "tile.machine_teleporter"
+      }
+    ],
+    "hbm:machine_thresher": [
+      {
+        "id": "hbm:tile.machine_thresher",
+        "name": "tile.machine_thresher"
+      }
+    ],
+    "hbm:machine_tower_large": [
+      {
+        "id": "hbm:tile.machine_tower_large",
+        "name": "tile.machine_tower_large"
+      }
+    ],
+    "hbm:machine_tower_small": [
+      {
+        "id": "hbm:tile.machine_tower_small",
+        "name": "tile.machine_tower_small"
+      }
+    ],
+    "hbm:machine_transformer": [
+      {
+        "id": "hbm:tile.machine_transformer",
+        "name": "tile.machine_transformer"
+      }
+    ],
+    "hbm:machine_turbinegas": [
+      {
+        "id": "hbm:tile.machine_turbinegas",
+        "name": "tile.machine_turbinegas"
+      }
+    ],
+    "hbm:machine_turbofan": [
+      {
+        "id": "hbm:tile.machine_turbofan",
+        "name": "tile.machine_turbofan"
+      }
+    ],
+    "hbm:machine_uf6_tank": [
+      {
+        "id": "hbm:tile.machine_uf6_tank",
+        "name": "tile.machine_uf6_tank"
+      },
+      {
+        "id": "hbm:machine_uf6_tank",
+        "name": "machine_uf6_tank"
+      }
+    ],
+    "hbm:machine_vacuum_distill": [
+      {
+        "id": "hbm:tile.machine_vacuum_distill",
+        "name": "tile.machine_vacuum_distill"
+      }
+    ],
+    "hbm:machine_waste_drum": [
+      {
+        "id": "hbm:tile.machine_waste_drum",
+        "name": "tile.machine_waste_drum"
+      }
+    ],
+    "hbm:machine_weapon_table": [
+      {
+        "id": "hbm:tile.machine_weapon_table",
+        "name": "tile.machine_weapon_table"
+      }
+    ],
+    "hbm:machine_well": [
+      {
+        "id": "hbm:tile.machine_well",
+        "name": "tile.machine_well"
+      }
+    ],
+    "hbm:machine_wood_burner": [
+      {
+        "id": "hbm:tile.machine_wood_burner",
+        "name": "tile.machine_wood_burner"
+      }
+    ],
+    "hbm:machine_zirnox": [
+      {
+        "id": "hbm:tile.machine_zirnox",
+        "name": "tile.machine_zirnox"
+      }
+    ],
+    "hbm:mass_storage": [
+      {
+        "id": "hbm:tile.mass_storage",
+        "name": "tile.mass_storage"
+      }
+    ],
+    "hbm:meteor_battery": [
+      {
+        "id": "hbm:tile.meteor_battery",
+        "name": "tile.meteor_battery"
+      }
+    ],
+    "hbm:meteor_brick": [
+      {
+        "id": "hbm:tile.meteor_brick",
+        "name": "tile.meteor_brick"
+      }
+    ],
+    "hbm:meteor_brick_chiseled": [
+      {
+        "id": "hbm:tile.meteor_brick_chiseled",
+        "name": "tile.meteor_brick_chiseled"
+      }
+    ],
+    "hbm:meteor_brick_cracked": [
+      {
+        "id": "hbm:tile.meteor_brick_cracked",
+        "name": "tile.meteor_brick_cracked"
+      }
+    ],
+    "hbm:meteor_brick_mossy": [
+      {
+        "id": "hbm:tile.meteor_brick_mossy",
+        "name": "tile.meteor_brick_mossy"
+      }
+    ],
+    "hbm:meteor_pillar": [
+      {
+        "id": "hbm:tile.meteor_pillar",
+        "name": "tile.meteor_pillar"
+      }
+    ],
+    "hbm:meteor_polished": [
+      {
+        "id": "hbm:tile.meteor_polished",
+        "name": "tile.meteor_polished"
+      }
+    ],
+    "hbm:meteor_spawner": [
+      {
+        "id": "hbm:tile.meteor_spawner",
+        "name": "tile.meteor_spawner"
+      }
+    ],
+    "hbm:mine_ap": [
+      {
+        "id": "hbm:tile.mine_ap",
+        "name": "tile.mine_ap"
+      }
+    ],
+    "hbm:mine_fat": [
+      {
+        "id": "hbm:tile.mine_fat",
+        "name": "tile.mine_fat"
+      }
+    ],
+    "hbm:mine_he": [
+      {
+        "id": "hbm:tile.mine_he",
+        "name": "tile.mine_he"
+      }
+    ],
+    "hbm:mine_naval": [
+      {
+        "id": "hbm:tile.mine_naval",
+        "name": "tile.mine_naval"
+      }
+    ],
+    "hbm:mine_shrap": [
+      {
+        "id": "hbm:tile.mine_shrap",
+        "name": "tile.mine_shrap"
+      }
+    ],
+    "hbm:moon_turf": [
+      {
+        "id": "hbm:tile.moon_turf",
+        "name": "tile.moon_turf"
+      }
+    ],
+    "hbm:mud_block": [
+      {
+        "id": "hbm:tile.mud_block",
+        "name": "tile.mud_block"
+      }
+    ],
+    "hbm:mush": [
+      {
+        "id": "hbm:tile.mush",
+        "name": "tile.mush"
+      }
+    ],
+    "hbm:mush_block": [
+      {
+        "id": "hbm:tile.mush_block",
+        "name": "tile.mush_block"
+      }
+    ],
+    "hbm:mush_block_stem": [
+      {
+        "id": "hbm:tile.mush_block_stem",
+        "name": "tile.mush_block_stem"
+      }
+    ],
+    "hbm:network_separator": [
+      {
+        "id": "hbm:tile.network_separator",
+        "name": "tile.network_separator"
+      }
+    ],
+    "hbm:ntm_dirt": [
+      {
+        "id": "hbm:tile.ntm_dirt",
+        "name": "tile.ntm_dirt"
+      }
+    ],
+    "hbm:nuke_boy": [
+      {
+        "id": "hbm:tile.nuke_boy",
+        "name": "tile.nuke_boy"
+      }
+    ],
+    "hbm:nuke_custom": [
+      {
+        "id": "hbm:tile.nuke_custom",
+        "name": "tile.nuke_custom"
+      }
+    ],
+    "hbm:nuke_fleija": [
+      {
+        "id": "hbm:tile.nuke_fleija",
+        "name": "tile.nuke_fleija"
+      }
+    ],
+    "hbm:nuke_fstbmb": [
+      {
+        "id": "hbm:tile.nuke_fstbmb",
+        "name": "tile.nuke_fstbmb"
+      }
+    ],
+    "hbm:nuke_gadget": [
+      {
+        "id": "hbm:tile.nuke_gadget",
+        "name": "tile.nuke_gadget"
+      }
+    ],
+    "hbm:nuke_man": [
+      {
+        "id": "hbm:tile.nuke_man",
+        "name": "tile.nuke_man"
+      }
+    ],
+    "hbm:nuke_mike": [
+      {
+        "id": "hbm:tile.nuke_mike",
+        "name": "tile.nuke_mike"
+      }
+    ],
+    "hbm:nuke_n2": [
+      {
+        "id": "hbm:tile.nuke_n2",
+        "name": "tile.nuke_n2"
+      }
+    ],
+    "hbm:nuke_prototype": [
+      {
+        "id": "hbm:tile.nuke_prototype",
+        "name": "tile.nuke_prototype"
+      }
+    ],
+    "hbm:nuke_solinium": [
+      {
+        "id": "hbm:tile.nuke_solinium",
+        "name": "tile.nuke_solinium"
+      }
+    ],
+    "hbm:nuke_tsar": [
+      {
+        "id": "hbm:tile.nuke_tsar",
+        "name": "tile.nuke_tsar"
+      }
+    ],
+    "hbm:oil_pipe": [
+      {
+        "id": "hbm:tile.oil_pipe",
+        "name": "tile.oil_pipe"
+      }
+    ],
+    "hbm:oil_spill": [
+      {
+        "id": "hbm:tile.oil_spill",
+        "name": "tile.oil_spill"
+      }
+    ],
+    "hbm:ore_alexandrite": [
+      {
+        "id": "hbm:tile.ore_alexandrite",
+        "name": "tile.ore_alexandrite"
+      }
+    ],
+    "hbm:ore_aluminium": [
+      {
+        "id": "hbm:tile.ore_aluminium",
+        "name": "tile.ore_aluminium"
+      }
+    ],
+    "hbm:ore_asbestos": [
+      {
+        "id": "hbm:tile.ore_asbestos",
+        "name": "tile.ore_asbestos"
+      }
+    ],
+    "hbm:ore_australium": [
+      {
+        "id": "hbm:tile.ore_australium",
+        "name": "tile.ore_australium"
+      }
+    ],
+    "hbm:ore_basalt": [
+      {
+        "id": "hbm:tile.ore_basalt",
+        "name": "tile.ore_basalt"
+      }
+    ],
+    "hbm:ore_bedrock": [
+      {
+        "id": "hbm:tile.ore_bedrock",
+        "name": "tile.ore_bedrock"
+      }
+    ],
+    "hbm:ore_bedrock_oil": [
+      {
+        "id": "hbm:tile.ore_bedrock_oil",
+        "name": "tile.ore_bedrock_oil"
+      }
+    ],
+    "hbm:ore_beryllium": [
+      {
+        "id": "hbm:tile.ore_beryllium",
+        "name": "tile.ore_beryllium"
+      }
+    ],
+    "hbm:ore_cinnebar": [
+      {
+        "id": "hbm:tile.ore_cinnebar",
+        "name": "tile.ore_cinnebar"
+      }
+    ],
+    "hbm:ore_cobalt": [
+      {
+        "id": "hbm:tile.ore_cobalt",
+        "name": "tile.ore_cobalt"
+      }
+    ],
+    "hbm:ore_coltan": [
+      {
+        "id": "hbm:tile.ore_coltan",
+        "name": "tile.ore_coltan"
+      }
+    ],
+    "hbm:ore_depth_borax": [
+      {
+        "id": "hbm:tile.ore_depth_borax",
+        "name": "tile.ore_depth_borax"
+      }
+    ],
+    "hbm:ore_depth_cinnebar": [
+      {
+        "id": "hbm:tile.ore_depth_cinnebar",
+        "name": "tile.ore_depth_cinnebar"
+      }
+    ],
+    "hbm:ore_depth_nether_neodymium": [
+      {
+        "id": "hbm:tile.ore_depth_nether_neodymium",
+        "name": "tile.ore_depth_nether_neodymium"
+      }
+    ],
+    "hbm:ore_depth_zirconium": [
+      {
+        "id": "hbm:tile.ore_depth_zirconium",
+        "name": "tile.ore_depth_zirconium"
+      }
+    ],
+    "hbm:ore_fluorite": [
+      {
+        "id": "hbm:tile.ore_fluorite",
+        "name": "tile.ore_fluorite"
+      }
+    ],
+    "hbm:ore_gneiss_asbestos": [
+      {
+        "id": "hbm:tile.ore_gneiss_asbestos",
+        "name": "tile.ore_gneiss_asbestos"
+      }
+    ],
+    "hbm:ore_gneiss_copper": [
+      {
+        "id": "hbm:tile.ore_gneiss_copper",
+        "name": "tile.ore_gneiss_copper"
+      }
+    ],
+    "hbm:ore_gneiss_gas": [
+      {
+        "id": "hbm:tile.ore_gneiss_gas",
+        "name": "tile.ore_gneiss_gas"
+      }
+    ],
+    "hbm:ore_gneiss_gold": [
+      {
+        "id": "hbm:tile.ore_gneiss_gold",
+        "name": "tile.ore_gneiss_gold"
+      }
+    ],
+    "hbm:ore_gneiss_iron": [
+      {
+        "id": "hbm:tile.ore_gneiss_iron",
+        "name": "tile.ore_gneiss_iron"
+      }
+    ],
+    "hbm:ore_gneiss_lithium": [
+      {
+        "id": "hbm:tile.ore_gneiss_lithium",
+        "name": "tile.ore_gneiss_lithium"
+      }
+    ],
+    "hbm:ore_gneiss_rare": [
+      {
+        "id": "hbm:tile.ore_gneiss_rare",
+        "name": "tile.ore_gneiss_rare"
+      }
+    ],
+    "hbm:ore_gneiss_schrabidium": [
+      {
+        "id": "hbm:tile.ore_gneiss_schrabidium",
+        "name": "tile.ore_gneiss_schrabidium"
+      }
+    ],
+    "hbm:ore_gneiss_uranium": [
+      {
+        "id": "hbm:tile.ore_gneiss_uranium",
+        "name": "tile.ore_gneiss_uranium"
+      }
+    ],
+    "hbm:ore_gneiss_uranium_scorched": [
+      {
+        "id": "hbm:tile.ore_gneiss_uranium_scorched",
+        "name": "tile.ore_gneiss_uranium_scorched"
+      }
+    ],
+    "hbm:ore_lead": [
+      {
+        "id": "hbm:tile.ore_lead",
+        "name": "tile.ore_lead"
+      }
+    ],
+    "hbm:ore_lignite": [
+      {
+        "id": "hbm:tile.ore_lignite",
+        "name": "tile.ore_lignite"
+      }
+    ],
+    "hbm:ore_meteor": [
+      {
+        "id": "hbm:tile.ore_meteor",
+        "name": "tile.ore_meteor"
+      }
+    ],
+    "hbm:ore_nether_coal": [
+      {
+        "id": "hbm:tile.ore_nether_coal",
+        "name": "tile.ore_nether_coal"
+      }
+    ],
+    "hbm:ore_nether_cobalt": [
+      {
+        "id": "hbm:tile.ore_nether_cobalt",
+        "name": "tile.ore_nether_cobalt"
+      }
+    ],
+    "hbm:ore_nether_fire": [
+      {
+        "id": "hbm:tile.ore_nether_fire",
+        "name": "tile.ore_nether_fire"
+      }
+    ],
+    "hbm:ore_nether_plutonium": [
+      {
+        "id": "hbm:tile.ore_nether_plutonium",
+        "name": "tile.ore_nether_plutonium"
+      }
+    ],
+    "hbm:ore_nether_schrabidium": [
+      {
+        "id": "hbm:tile.ore_nether_schrabidium",
+        "name": "tile.ore_nether_schrabidium"
+      }
+    ],
+    "hbm:ore_nether_smoldering": [
+      {
+        "id": "hbm:tile.ore_nether_smoldering",
+        "name": "tile.ore_nether_smoldering"
+      }
+    ],
+    "hbm:ore_nether_sulfur": [
+      {
+        "id": "hbm:tile.ore_nether_sulfur",
+        "name": "tile.ore_nether_sulfur"
+      }
+    ],
+    "hbm:ore_nether_tungsten": [
+      {
+        "id": "hbm:tile.ore_nether_tungsten",
+        "name": "tile.ore_nether_tungsten"
+      }
+    ],
+    "hbm:ore_nether_uranium": [
+      {
+        "id": "hbm:tile.ore_nether_uranium",
+        "name": "tile.ore_nether_uranium"
+      }
+    ],
+    "hbm:ore_nether_uranium_scorched": [
+      {
+        "id": "hbm:tile.ore_nether_uranium_scorched",
+        "name": "tile.ore_nether_uranium_scorched"
+      }
+    ],
+    "hbm:ore_niter": [
+      {
+        "id": "hbm:tile.ore_niter",
+        "name": "tile.ore_niter"
+      }
+    ],
+    "hbm:ore_oil": [
+      {
+        "id": "hbm:tile.ore_oil",
+        "name": "tile.ore_oil"
+      }
+    ],
+    "hbm:ore_oil_empty": [
+      {
+        "id": "hbm:tile.ore_oil_empty",
+        "name": "tile.ore_oil_empty"
+      }
+    ],
+    "hbm:ore_oil_sand": [
+      {
+        "id": "hbm:tile.ore_oil_sand",
+        "name": "tile.ore_oil_sand"
+      }
+    ],
+    "hbm:ore_rare": [
+      {
+        "id": "hbm:tile.ore_rare",
+        "name": "tile.ore_rare"
+      }
+    ],
+    "hbm:ore_schrabidium": [
+      {
+        "id": "hbm:tile.ore_schrabidium",
+        "name": "tile.ore_schrabidium"
+      }
+    ],
+    "hbm:ore_sellafield_diamond": [
+      {
+        "id": "hbm:tile.ore_sellafield_diamond",
+        "name": "tile.ore_sellafield_diamond"
+      }
+    ],
+    "hbm:ore_sellafield_emerald": [
+      {
+        "id": "hbm:tile.ore_sellafield_emerald",
+        "name": "tile.ore_sellafield_emerald"
+      }
+    ],
+    "hbm:ore_sellafield_radgem": [
+      {
+        "id": "hbm:tile.ore_sellafield_radgem",
+        "name": "tile.ore_sellafield_radgem"
+      }
+    ],
+    "hbm:ore_sellafield_schrabidium": [
+      {
+        "id": "hbm:tile.ore_sellafield_schrabidium",
+        "name": "tile.ore_sellafield_schrabidium"
+      }
+    ],
+    "hbm:ore_sellafield_uranium_scorched": [
+      {
+        "id": "hbm:tile.ore_sellafield_uranium_scorched",
+        "name": "tile.ore_sellafield_uranium_scorched"
+      }
+    ],
+    "hbm:ore_sulfur": [
+      {
+        "id": "hbm:tile.ore_sulfur",
+        "name": "tile.ore_sulfur"
+      }
+    ],
+    "hbm:ore_tektite_osmiridium": [
+      {
+        "id": "hbm:tile.ore_tektite_osmiridium",
+        "name": "tile.ore_tektite_osmiridium"
+      }
+    ],
+    "hbm:ore_thorium": [
+      {
+        "id": "hbm:tile.ore_thorium",
+        "name": "tile.ore_thorium"
+      }
+    ],
+    "hbm:ore_tikite": [
+      {
+        "id": "hbm:tile.ore_tikite",
+        "name": "tile.ore_tikite"
+      }
+    ],
+    "hbm:ore_titanium": [
+      {
+        "id": "hbm:tile.ore_titanium",
+        "name": "tile.ore_titanium"
+      }
+    ],
+    "hbm:ore_tungsten": [
+      {
+        "id": "hbm:tile.ore_tungsten",
+        "name": "tile.ore_tungsten"
+      }
+    ],
+    "hbm:ore_uranium": [
+      {
+        "id": "hbm:tile.ore_uranium",
+        "name": "tile.ore_uranium"
+      }
+    ],
+    "hbm:ore_uranium_scorched": [
+      {
+        "id": "hbm:tile.ore_uranium_scorched",
+        "name": "tile.ore_uranium_scorched"
+      }
+    ],
+    "hbm:ore_volcano": [
+      {
+        "id": "hbm:tile.ore_volcano",
+        "name": "tile.ore_volcano"
+      }
+    ],
+    "hbm:pa_beamline": [
+      {
+        "id": "hbm:tile.pa_beamline",
+        "name": "tile.pa_beamline"
+      }
+    ],
+    "hbm:pa_detector": [
+      {
+        "id": "hbm:tile.pa_detector",
+        "name": "tile.pa_detector"
+      }
+    ],
+    "hbm:pa_dipole": [
+      {
+        "id": "hbm:tile.pa_dipole",
+        "name": "tile.pa_dipole"
+      }
+    ],
+    "hbm:pa_quadrupole": [
+      {
+        "id": "hbm:tile.pa_quadrupole",
+        "name": "tile.pa_quadrupole"
+      }
+    ],
+    "hbm:pa_rfc": [
+      {
+        "id": "hbm:tile.pa_rfc",
+        "name": "tile.pa_rfc"
+      }
+    ],
+    "hbm:pa_source": [
+      {
+        "id": "hbm:tile.pa_source",
+        "name": "tile.pa_source"
+      }
+    ],
+    "hbm:part_emitter": [
+      {
+        "id": "hbm:tile.part_emitter",
+        "name": "tile.part_emitter"
+      }
+    ],
+    "hbm:pedestal": [
+      {
+        "id": "hbm:tile.pedestal",
+        "name": "tile.pedestal"
+      }
+    ],
+    "hbm:pile_block": [
+      {
+        "id": "hbm:tile.pile_block",
+        "name": "tile.pile_block"
+      }
+    ],
+    "hbm:pile_brick": [
+      {
+        "id": "hbm:tile.pile_brick",
+        "name": "tile.pile_brick"
+      }
+    ],
+    "hbm:pile_device": [
+      {
+        "id": "hbm:tile.pile_device",
+        "name": "tile.pile_device"
+      }
+    ],
+    "hbm:pink_barrel": [
+      {
+        "id": "hbm:tile.pink_barrel",
+        "name": "tile.pink_barrel"
+      }
+    ],
+    "hbm:pink_log": [
+      {
+        "id": "hbm:tile.pink_log",
+        "name": "tile.pink_log"
+      }
+    ],
+    "hbm:pink_planks": [
+      {
+        "id": "hbm:tile.pink_planks",
+        "name": "tile.pink_planks"
+      }
+    ],
+    "hbm:pink_stairs": [
+      {
+        "id": "hbm:tile.pink_stairs",
+        "name": "tile.pink_stairs"
+      }
+    ],
+    "hbm:pipe_anchor": [
+      {
+        "id": "hbm:tile.pipe_anchor",
+        "name": "tile.pipe_anchor"
+      }
+    ],
+    "hbm:pipe_anchor_exhaust": [
+      {
+        "id": "hbm:tile.pipe_anchor_exhaust",
+        "name": "tile.pipe_anchor_exhaust"
+      }
+    ],
+    "hbm:pipe_anchor_pneumatic": [
+      {
+        "id": "hbm:tile.pipe_anchor_pneumatic",
+        "name": "tile.pipe_anchor_pneumatic"
+      }
+    ],
+    "hbm:piston_inserter": [
+      {
+        "id": "hbm:tile.piston_inserter",
+        "name": "tile.piston_inserter"
+      }
+    ],
+    "hbm:plant_dead": [
+      {
+        "id": "hbm:tile.plant_dead",
+        "name": "tile.plant_dead"
+      }
+    ],
+    "hbm:plant_flower": [
+      {
+        "id": "hbm:tile.plant_flower",
+        "name": "tile.plant_flower"
+      }
+    ],
+    "hbm:plant_tall": [
+      {
+        "id": "hbm:tile.plant_tall",
+        "name": "tile.plant_tall"
+      }
+    ],
+    "hbm:platemetal": [
+      {
+        "id": "hbm:tile.platemetal",
+        "name": "tile.platemetal"
+      },
+      {
+        "id": "hbm:platemetal",
+        "name": "platemetal"
+      }
+    ],
+    "hbm:plushie": [
+      {
+        "id": "hbm:tile.plushie",
+        "name": "tile.plushie"
+      },
+      {
+        "id": "hbm:plushie",
+        "name": "plushie"
+      }
+    ],
+    "hbm:pneumatic_storage_access": [
+      {
+        "id": "hbm:tile.pneumatic_storage_access",
+        "name": "tile.pneumatic_storage_access"
+      }
+    ],
+    "hbm:pneumatic_storage_clutter": [
+      {
+        "id": "hbm:tile.pneumatic_storage_clutter",
+        "name": "tile.pneumatic_storage_clutter"
+      }
+    ],
+    "hbm:pneumatic_storage_exporter": [
+      {
+        "id": "hbm:tile.pneumatic_storage_exporter",
+        "name": "tile.pneumatic_storage_exporter"
+      }
+    ],
+    "hbm:pneumatic_storage_importer": [
+      {
+        "id": "hbm:tile.pneumatic_storage_importer",
+        "name": "tile.pneumatic_storage_importer"
+      }
+    ],
+    "hbm:pneumatic_storage_mono": [
+      {
+        "id": "hbm:tile.pneumatic_storage_mono",
+        "name": "tile.pneumatic_storage_mono"
+      }
+    ],
+    "hbm:pneumatic_tube": [
+      {
+        "id": "hbm:tile.pneumatic_tube",
+        "name": "tile.pneumatic_tube"
+      }
+    ],
+    "hbm:pneumatic_tube_paintable": [
+      {
+        "id": "hbm:tile.pneumatic_tube_paintable",
+        "name": "tile.pneumatic_tube_paintable"
+      }
+    ],
+    "hbm:pole_satellite_receiver": [
+      {
+        "id": "hbm:tile.pole_satellite_receiver",
+        "name": "tile.pole_satellite_receiver"
+      },
+      {
+        "id": "hbm:pole_satellite_receiver",
+        "name": "pole_satellite_receiver"
+      }
+    ],
+    "hbm:pole_top": [
+      {
+        "id": "hbm:tile.pole_top",
+        "name": "tile.pole_top"
+      },
+      {
+        "id": "hbm:pole_top",
+        "name": "pole_top"
+      }
+    ],
+    "hbm:press_preheater": [
+      {
+        "id": "hbm:tile.press_preheater",
+        "name": "tile.press_preheater"
+      }
+    ],
+    "hbm:pribris": [
+      {
+        "id": "hbm:tile.pribris",
+        "name": "tile.pribris"
+      }
+    ],
+    "hbm:pribris_burning": [
+      {
+        "id": "hbm:tile.pribris_burning",
+        "name": "tile.pribris_burning"
+      }
+    ],
+    "hbm:pribris_digamma": [
+      {
+        "id": "hbm:tile.pribris_digamma",
+        "name": "tile.pribris_digamma"
+      }
+    ],
+    "hbm:pribris_radiating": [
+      {
+        "id": "hbm:tile.pribris_radiating",
+        "name": "tile.pribris_radiating"
+      }
+    ],
+    "hbm:pump_electric": [
+      {
+        "id": "hbm:tile.pump_electric",
+        "name": "tile.pump_electric"
+      },
+      {
+        "id": "hbm:pump_electric",
+        "name": "pump_electric"
+      }
+    ],
+    "hbm:pump_steam": [
+      {
+        "id": "hbm:tile.pump_steam",
+        "name": "tile.pump_steam"
+      },
+      {
+        "id": "hbm:pump_steam",
+        "name": "pump_steam"
+      }
+    ],
+    "hbm:pwr_block": [
+      {
+        "id": "hbm:tile.pwr_block",
+        "name": "tile.pwr_block"
+      }
+    ],
+    "hbm:pwr_casing": [
+      {
+        "id": "hbm:tile.pwr_casing",
+        "name": "tile.pwr_casing"
+      }
+    ],
+    "hbm:pwr_channel": [
+      {
+        "id": "hbm:tile.pwr_channel",
+        "name": "tile.pwr_channel"
+      }
+    ],
+    "hbm:pwr_control": [
+      {
+        "id": "hbm:tile.pwr_control",
+        "name": "tile.pwr_control"
+      }
+    ],
+    "hbm:pwr_controller": [
+      {
+        "id": "hbm:tile.pwr_controller",
+        "name": "tile.pwr_controller"
+      }
+    ],
+    "hbm:pwr_fuel": [
+      {
+        "id": "hbm:tile.pwr_fuel",
+        "name": "tile.pwr_fuel"
+      }
+    ],
+    "hbm:pwr_heatex": [
+      {
+        "id": "hbm:tile.pwr_heatex",
+        "name": "tile.pwr_heatex"
+      }
+    ],
+    "hbm:pwr_heatsink": [
+      {
+        "id": "hbm:tile.pwr_heatsink",
+        "name": "tile.pwr_heatsink"
+      }
+    ],
+    "hbm:pwr_neutron_source": [
+      {
+        "id": "hbm:tile.pwr_neutron_source",
+        "name": "tile.pwr_neutron_source"
+      }
+    ],
+    "hbm:pwr_port": [
+      {
+        "id": "hbm:tile.pwr_port",
+        "name": "tile.pwr_port"
+      }
+    ],
+    "hbm:pwr_reflector": [
+      {
+        "id": "hbm:tile.pwr_reflector",
+        "name": "tile.pwr_reflector"
+      }
+    ],
+    "hbm:qe_containment": [
+      {
+        "id": "hbm:tile.qe_containment",
+        "name": "tile.qe_containment"
+      }
+    ],
+    "hbm:qe_sliding_door": [
+      {
+        "id": "hbm:tile.qe_sliding_door",
+        "name": "tile.qe_sliding_door"
+      }
+    ],
+    "hbm:rad_absorber": [
+      {
+        "id": "hbm:tile.rad_absorber",
+        "name": "tile.rad_absorber"
+      }
+    ],
+    "hbm:rad_lava_block": [
+      {
+        "id": "hbm:tile.rad_lava_block",
+        "name": "tile.rad_lava_block"
+      }
+    ],
+    "hbm:radar_screen": [
+      {
+        "id": "hbm:tile.radar_screen",
+        "name": "tile.radar_screen"
+      }
+    ],
+    "hbm:radio_autocal": [
+      {
+        "id": "hbm:tile.radio_autocal",
+        "name": "tile.radio_autocal"
+      }
+    ],
+    "hbm:radio_telex": [
+      {
+        "id": "hbm:tile.radio_telex",
+        "name": "tile.radio_telex"
+      }
+    ],
+    "hbm:radio_torch_controller": [
+      {
+        "id": "hbm:tile.radio_torch_controller",
+        "name": "tile.radio_torch_controller"
+      }
+    ],
+    "hbm:radio_torch_counter": [
+      {
+        "id": "hbm:tile.radio_torch_counter",
+        "name": "tile.radio_torch_counter"
+      }
+    ],
+    "hbm:radio_torch_logic": [
+      {
+        "id": "hbm:tile.radio_torch_logic",
+        "name": "tile.radio_torch_logic"
+      }
+    ],
+    "hbm:radio_torch_reader": [
+      {
+        "id": "hbm:tile.radio_torch_reader",
+        "name": "tile.radio_torch_reader"
+      }
+    ],
+    "hbm:radio_torch_receiver": [
+      {
+        "id": "hbm:tile.radio_torch_receiver",
+        "name": "tile.radio_torch_receiver"
+      }
+    ],
+    "hbm:radio_torch_sender": [
+      {
+        "id": "hbm:tile.radio_torch_sender",
+        "name": "tile.radio_torch_sender"
+      }
+    ],
+    "hbm:radiobox": [
+      {
+        "id": "hbm:tile.radiobox",
+        "name": "tile.radiobox"
+      }
+    ],
+    "hbm:radiorec": [
+      {
+        "id": "hbm:tile.radiorec",
+        "name": "tile.radiorec"
+      }
+    ],
+    "hbm:rail_booster": [
+      {
+        "id": "hbm:tile.rail_booster",
+        "name": "tile.rail_booster"
+      }
+    ],
+    "hbm:rail_highspeed": [
+      {
+        "id": "hbm:tile.rail_highspeed",
+        "name": "tile.rail_highspeed"
+      }
+    ],
+    "hbm:rail_narrow": [
+      {
+        "id": "hbm:tile.rail_narrow",
+        "name": "tile.rail_narrow"
+      }
+    ],
+    "hbm:rail_wood": [
+      {
+        "id": "hbm:tile.rail_wood",
+        "name": "tile.rail_wood"
+      }
+    ],
+    "hbm:rbmk_absorber": [
+      {
+        "id": "hbm:tile.rbmk_absorber",
+        "name": "tile.rbmk_absorber"
+      }
+    ],
+    "hbm:rbmk_autoloader": [
+      {
+        "id": "hbm:tile.rbmk_autoloader",
+        "name": "tile.rbmk_autoloader"
+      }
+    ],
+    "hbm:rbmk_blank": [
+      {
+        "id": "hbm:tile.rbmk_blank",
+        "name": "tile.rbmk_blank"
+      }
+    ],
+    "hbm:rbmk_boiler": [
+      {
+        "id": "hbm:tile.rbmk_boiler",
+        "name": "tile.rbmk_boiler"
+      }
+    ],
+    "hbm:rbmk_console": [
+      {
+        "id": "hbm:tile.rbmk_console",
+        "name": "tile.rbmk_console"
+      }
+    ],
+    "hbm:rbmk_control": [
+      {
+        "id": "hbm:tile.rbmk_control",
+        "name": "tile.rbmk_control"
+      }
+    ],
+    "hbm:rbmk_control_auto": [
+      {
+        "id": "hbm:tile.rbmk_control_auto",
+        "name": "tile.rbmk_control_auto"
+      }
+    ],
+    "hbm:rbmk_control_mod": [
+      {
+        "id": "hbm:tile.rbmk_control_mod",
+        "name": "tile.rbmk_control_mod"
+      }
+    ],
+    "hbm:rbmk_control_reasim": [
+      {
+        "id": "hbm:tile.rbmk_control_reasim",
+        "name": "tile.rbmk_control_reasim"
+      }
+    ],
+    "hbm:rbmk_control_reasim_auto": [
+      {
+        "id": "hbm:tile.rbmk_control_reasim_auto",
+        "name": "tile.rbmk_control_reasim_auto"
+      }
+    ],
+    "hbm:rbmk_cooler": [
+      {
+        "id": "hbm:tile.rbmk_cooler",
+        "name": "tile.rbmk_cooler"
+      }
+    ],
+    "hbm:rbmk_crane_console": [
+      {
+        "id": "hbm:tile.rbmk_crane_console",
+        "name": "tile.rbmk_crane_console"
+      }
+    ],
+    "hbm:rbmk_display": [
+      {
+        "id": "hbm:tile.rbmk_display",
+        "name": "tile.rbmk_display"
+      }
+    ],
+    "hbm:rbmk_display_blank": [
+      {
+        "id": "hbm:tile.rbmk_display_blank",
+        "name": "tile.rbmk_display_blank"
+      }
+    ],
+    "hbm:rbmk_gauge": [
+      {
+        "id": "hbm:tile.rbmk_gauge",
+        "name": "tile.rbmk_gauge"
+      }
+    ],
+    "hbm:rbmk_graph": [
+      {
+        "id": "hbm:tile.rbmk_graph",
+        "name": "tile.rbmk_graph"
+      }
+    ],
+    "hbm:rbmk_heater": [
+      {
+        "id": "hbm:tile.rbmk_heater",
+        "name": "tile.rbmk_heater"
+      }
+    ],
+    "hbm:rbmk_indicator": [
+      {
+        "id": "hbm:tile.rbmk_indicator",
+        "name": "tile.rbmk_indicator"
+      }
+    ],
+    "hbm:rbmk_key_pad": [
+      {
+        "id": "hbm:tile.rbmk_key_pad",
+        "name": "tile.rbmk_key_pad"
+      }
+    ],
+    "hbm:rbmk_lever": [
+      {
+        "id": "hbm:tile.rbmk_lever",
+        "name": "tile.rbmk_lever"
+      }
+    ],
+    "hbm:rbmk_loader": [
+      {
+        "id": "hbm:tile.rbmk_loader",
+        "name": "tile.rbmk_loader"
+      }
+    ],
+    "hbm:rbmk_moderator": [
+      {
+        "id": "hbm:tile.rbmk_moderator",
+        "name": "tile.rbmk_moderator"
+      }
+    ],
+    "hbm:rbmk_numitron": [
+      {
+        "id": "hbm:tile.rbmk_numitron",
+        "name": "tile.rbmk_numitron"
+      }
+    ],
+    "hbm:rbmk_outgasser": [
+      {
+        "id": "hbm:tile.rbmk_outgasser",
+        "name": "tile.rbmk_outgasser"
+      }
+    ],
+    "hbm:rbmk_reflector": [
+      {
+        "id": "hbm:tile.rbmk_reflector",
+        "name": "tile.rbmk_reflector"
+      }
+    ],
+    "hbm:rbmk_rod": [
+      {
+        "id": "hbm:tile.rbmk_rod",
+        "name": "tile.rbmk_rod"
+      }
+    ],
+    "hbm:rbmk_rod_mod": [
+      {
+        "id": "hbm:tile.rbmk_rod_mod",
+        "name": "tile.rbmk_rod_mod"
+      }
+    ],
+    "hbm:rbmk_rod_reasim": [
+      {
+        "id": "hbm:tile.rbmk_rod_reasim",
+        "name": "tile.rbmk_rod_reasim"
+      }
+    ],
+    "hbm:rbmk_rod_reasim_mod": [
+      {
+        "id": "hbm:tile.rbmk_rod_reasim_mod",
+        "name": "tile.rbmk_rod_reasim_mod"
+      }
+    ],
+    "hbm:rbmk_steam_inlet": [
+      {
+        "id": "hbm:tile.rbmk_steam_inlet",
+        "name": "tile.rbmk_steam_inlet"
+      }
+    ],
+    "hbm:rbmk_steam_outlet": [
+      {
+        "id": "hbm:tile.rbmk_steam_outlet",
+        "name": "tile.rbmk_steam_outlet"
+      }
+    ],
+    "hbm:rbmk_storage": [
+      {
+        "id": "hbm:tile.rbmk_storage",
+        "name": "tile.rbmk_storage"
+      }
+    ],
+    "hbm:rbmk_terminal": [
+      {
+        "id": "hbm:tile.rbmk_terminal",
+        "name": "tile.rbmk_terminal"
+      }
+    ],
+    "hbm:rebar": [
+      {
+        "id": "hbm:tile.rebar",
+        "name": "tile.rebar"
+      }
+    ],
+    "hbm:red_barrel": [
+      {
+        "id": "hbm:tile.red_barrel",
+        "name": "tile.red_barrel"
+      }
+    ],
+    "hbm:red_cable": [
+      {
+        "id": "hbm:tile.red_cable",
+        "name": "tile.red_cable"
+      }
+    ],
+    "hbm:red_cable_box": [
+      {
+        "id": "hbm:tile.red_cable_box",
+        "name": "tile.red_cable_box"
+      }
+    ],
+    "hbm:red_cable_classic": [
+      {
+        "id": "hbm:tile.red_cable_classic",
+        "name": "tile.red_cable_classic"
+      }
+    ],
+    "hbm:red_cable_gauge": [
+      {
+        "id": "hbm:tile.red_cable_gauge",
+        "name": "tile.red_cable_gauge"
+      }
+    ],
+    "hbm:red_cable_paintable": [
+      {
+        "id": "hbm:tile.red_cable_paintable",
+        "name": "tile.red_cable_paintable"
+      }
+    ],
+    "hbm:red_connector": [
+      {
+        "id": "hbm:tile.red_connector",
+        "name": "tile.red_connector"
+      }
+    ],
+    "hbm:red_connector_super": [
+      {
+        "id": "hbm:tile.red_connector_super",
+        "name": "tile.red_connector_super"
+      }
+    ],
+    "hbm:red_pylon": [
+      {
+        "id": "hbm:tile.red_pylon",
+        "name": "tile.red_pylon"
+      }
+    ],
+    "hbm:red_pylon_large": [
+      {
+        "id": "hbm:tile.red_pylon_large",
+        "name": "tile.red_pylon_large"
+      }
+    ],
+    "hbm:red_pylon_medium_steel": [
+      {
+        "id": "hbm:tile.red_pylon_medium_steel",
+        "name": "tile.red_pylon_medium_steel"
+      }
+    ],
+    "hbm:red_pylon_medium_steel_transformer": [
+      {
+        "id": "hbm:tile.red_pylon_medium_steel_transformer",
+        "name": "tile.red_pylon_medium_steel_transformer"
+      }
+    ],
+    "hbm:red_pylon_medium_wood": [
+      {
+        "id": "hbm:tile.red_pylon_medium_wood",
+        "name": "tile.red_pylon_medium_wood"
+      }
+    ],
+    "hbm:red_pylon_medium_wood_transformer": [
+      {
+        "id": "hbm:tile.red_pylon_medium_wood_transformer",
+        "name": "tile.red_pylon_medium_wood_transformer"
+      }
+    ],
+    "hbm:red_pylon_steel": [
+      {
+        "id": "hbm:tile.red_pylon_steel",
+        "name": "tile.red_pylon_steel"
+      }
+    ],
+    "hbm:red_wire_coated": [
+      {
+        "id": "hbm:tile.red_wire_coated",
+        "name": "tile.red_wire_coated"
+      }
+    ],
+    "hbm:reeds": [
+      {
+        "id": "hbm:tile.plant_reeds",
+        "name": "tile.plant_reeds"
+      },
+      {
+        "id": "hbm:reeds",
+        "name": "reeds"
+      }
+    ],
+    "hbm:refueler": [
+      {
+        "id": "hbm:tile.refueler",
+        "name": "tile.refueler"
+      }
+    ],
+    "hbm:reinforced_brick": [
+      {
+        "id": "hbm:tile.reinforced_brick",
+        "name": "tile.reinforced_brick"
+      }
+    ],
+    "hbm:reinforced_brick_stairs": [
+      {
+        "id": "hbm:tile.reinforced_brick_stairs",
+        "name": "tile.reinforced_brick_stairs"
+      }
+    ],
+    "hbm:reinforced_ducrete": [
+      {
+        "id": "hbm:tile.reinforced_ducrete",
+        "name": "tile.reinforced_ducrete"
+      }
+    ],
+    "hbm:reinforced_glass": [
+      {
+        "id": "hbm:tile.reinforced_glass",
+        "name": "tile.reinforced_glass"
+      }
+    ],
+    "hbm:reinforced_glass_pane": [
+      {
+        "id": "hbm:tile.reinforced_glass_pane",
+        "name": "tile.reinforced_glass_pane"
+      },
+      {
+        "id": "hbm:reinforced_glass_pane",
+        "name": "reinforced_glass_pane"
+      }
+    ],
+    "hbm:reinforced_laminate": [
+      {
+        "id": "hbm:tile.reinforced_laminate",
+        "name": "tile.reinforced_laminate"
+      }
+    ],
+    "hbm:reinforced_laminate_pane": [
+      {
+        "id": "hbm:tile.reinforced_laminate_pane",
+        "name": "tile.reinforced_laminate_pane"
+      }
+    ],
+    "hbm:reinforced_lamp_off": [
+      {
+        "id": "hbm:tile.reinforced_lamp_off",
+        "name": "tile.reinforced_lamp_off"
+      }
+    ],
+    "hbm:reinforced_lamp_on": [
+      {
+        "id": "hbm:tile.reinforced_lamp_on",
+        "name": "tile.reinforced_lamp_on"
+      }
+    ],
+    "hbm:reinforced_light": [
+      {
+        "id": "hbm:tile.reinforced_light",
+        "name": "tile.reinforced_light"
+      }
+    ],
+    "hbm:reinforced_sand": [
+      {
+        "id": "hbm:tile.reinforced_sand",
+        "name": "tile.reinforced_sand"
+      }
+    ],
+    "hbm:reinforced_stone": [
+      {
+        "id": "hbm:tile.reinforced_stone",
+        "name": "tile.reinforced_stone"
+      }
+    ],
+    "hbm:reinforced_stone_stairs": [
+      {
+        "id": "hbm:tile.reinforced_stone_stairs",
+        "name": "tile.reinforced_stone_stairs"
+      }
+    ],
+    "hbm:round_airlock_door": [
+      {
+        "id": "hbm:tile.round_airlock_door",
+        "name": "tile.round_airlock_door"
+      }
+    ],
+    "hbm:safe": [
+      {
+        "id": "hbm:tile.safe",
+        "name": "tile.safe"
+      }
+    ],
+    "hbm:sand_boron_layer": [
+      {
+        "id": "hbm:tile.sand_boron_layer",
+        "name": "tile.sand_boron_layer"
+      }
+    ],
+    "hbm:sand_dirty": [
+      {
+        "id": "hbm:tile.sand_dirty",
+        "name": "tile.sand_dirty"
+      }
+    ],
+    "hbm:sand_dirty_red": [
+      {
+        "id": "hbm:tile.sand_dirty_red",
+        "name": "tile.sand_dirty_red"
+      }
+    ],
+    "hbm:sand_mix": [
+      {
+        "id": "hbm:tile.sand_mix",
+        "name": "tile.sand_mix"
+      }
+    ],
+    "hbm:sandbags": [
+      {
+        "id": "hbm:tile.sandbags",
+        "name": "tile.sandbags"
+      },
+      {
+        "id": "hbm:sandbags",
+        "name": "sandbags"
+      }
+    ],
+    "hbm:sat_dock": [
+      {
+        "id": "hbm:tile.sat_dock",
+        "name": "tile.sat_dock"
+      }
+    ],
+    "hbm:schrabidic_block": [
+      {
+        "id": "hbm:tile.schrabidic_block",
+        "name": "tile.schrabidic_block"
+      }
+    ],
+    "hbm:seal_frame": [
+      {
+        "id": "hbm:tile.seal_frame",
+        "name": "tile.seal_frame"
+      }
+    ],
+    "hbm:secure_access_door": [
+      {
+        "id": "hbm:tile.secure_access_door",
+        "name": "tile.secure_access_door"
+      }
+    ],
+    "hbm:sellafield": [
+      {
+        "id": "hbm:tile.sellafield",
+        "name": "tile.sellafield"
+      }
+    ],
+    "hbm:sellafield_bedrock": [
+      {
+        "id": "hbm:tile.sellafield_bedrock",
+        "name": "tile.sellafield_bedrock"
+      }
+    ],
+    "hbm:sellafield_slaked": [
+      {
+        "id": "hbm:tile.sellafield_slaked",
+        "name": "tile.sellafield_slaked"
+      }
+    ],
+    "hbm:semtex": [
+      {
+        "id": "hbm:tile.semtex",
+        "name": "tile.semtex"
+      }
+    ],
+    "hbm:silo_hatch": [
+      {
+        "id": "hbm:tile.silo_hatch",
+        "name": "tile.silo_hatch"
+      }
+    ],
+    "hbm:silo_hatch_large": [
+      {
+        "id": "hbm:tile.silo_hatch_large",
+        "name": "tile.silo_hatch_large"
+      }
+    ],
+    "hbm:skeleton_holder": [
+      {
+        "id": "hbm:tile.skeleton_holder",
+        "name": "tile.skeleton_holder"
+      },
+      {
+        "id": "hbm:skeleton_holder",
+        "name": "skeleton_holder"
+      }
+    ],
+    "hbm:slag": [
+      {
+        "id": "hbm:tile.slag",
+        "name": "tile.slag"
+      }
+    ],
+    "hbm:sliding_blast_door": [
+      {
+        "id": "hbm:tile.sliding_blast_door",
+        "name": "tile.sliding_blast_door"
+      }
+    ],
+    "hbm:sliding_seal_door": [
+      {
+        "id": "hbm:tile.sliding_seal_door",
+        "name": "tile.sliding_seal_door"
+      }
+    ],
+    "hbm:snowglobe": [
+      {
+        "id": "hbm:tile.snowglobe",
+        "name": "tile.snowglobe"
+      },
+      {
+        "id": "hbm:snowglobe",
+        "name": "snowglobe"
+      }
+    ],
+    "hbm:solar_mirror": [
+      {
+        "id": "hbm:tile.solar_mirror",
+        "name": "tile.solar_mirror"
+      }
+    ],
+    "hbm:soyuz_capsule": [
+      {
+        "id": "hbm:tile.soyuz_capsule",
+        "name": "tile.soyuz_capsule"
+      },
+      {
+        "id": "hbm:soyuz_capsule",
+        "name": "soyuz_capsule"
+      }
+    ],
+    "hbm:soyuz_launcher": [
+      {
+        "id": "hbm:tile.soyuz_launcher",
+        "name": "tile.soyuz_launcher"
+      }
+    ],
+    "hbm:spikes": [
+      {
+        "id": "hbm:tile.spikes",
+        "name": "tile.spikes"
+      }
+    ],
+    "hbm:spotlight_beam": [
+      {
+        "id": "hbm:tile.spotlight_beam",
+        "name": "tile.spotlight_beam"
+      },
+      {
+        "id": "hbm:spotlight_beam",
+        "name": "spotlight_beam"
+      }
+    ],
+    "hbm:spotlight_fluoro": [
+      {
+        "id": "hbm:tile.spotlight_fluoro",
+        "name": "tile.spotlight_fluoro"
+      }
+    ],
+    "hbm:spotlight_fluoro_off": [
+      {
+        "id": "hbm:tile.spotlight_fluoro_off",
+        "name": "tile.spotlight_fluoro_off"
+      },
+      {
+        "id": "hbm:tile.spotlight_fluoro",
+        "name": "tile.spotlight_fluoro"
+      },
+      {
+        "id": "hbm:spotlight_fluoro",
+        "name": "spotlight_fluoro"
+      },
+      {
+        "id": "hbm:spotlight_fluoro_off",
+        "name": "spotlight_fluoro_off"
+      }
+    ],
+    "hbm:spotlight_halogen": [
+      {
+        "id": "hbm:tile.spotlight_halogen",
+        "name": "tile.spotlight_halogen"
+      }
+    ],
+    "hbm:spotlight_halogen_off": [
+      {
+        "id": "hbm:tile.spotlight_halogen_off",
+        "name": "tile.spotlight_halogen_off"
+      },
+      {
+        "id": "hbm:tile.spotlight_halogen",
+        "name": "tile.spotlight_halogen"
+      },
+      {
+        "id": "hbm:spotlight_halogen",
+        "name": "spotlight_halogen"
+      },
+      {
+        "id": "hbm:spotlight_halogen_off",
+        "name": "spotlight_halogen_off"
+      }
+    ],
+    "hbm:spotlight_incandescent": [
+      {
+        "id": "hbm:tile.spotlight_incandescent",
+        "name": "tile.spotlight_incandescent"
+      }
+    ],
+    "hbm:spotlight_incandescent_off": [
+      {
+        "id": "hbm:tile.spotlight_incandescent_off",
+        "name": "tile.spotlight_incandescent_off"
+      },
+      {
+        "id": "hbm:tile.spotlight_incandescent",
+        "name": "tile.spotlight_incandescent"
+      },
+      {
+        "id": "hbm:spotlight_incandescent",
+        "name": "spotlight_incandescent"
+      },
+      {
+        "id": "hbm:spotlight_incandescent_off",
+        "name": "spotlight_incandescent_off"
+      }
+    ],
+    "hbm:stalactite": [
+      {
+        "id": "hbm:tile.stalactite",
+        "name": "tile.stalactite"
+      }
+    ],
+    "hbm:stalagmite": [
+      {
+        "id": "hbm:tile.stalagmite",
+        "name": "tile.stalagmite"
+      }
+    ],
+    "hbm:statue_elb_f": [
+      {
+        "id": "hbm:tile.#undef",
+        "name": "tile.#undef"
+      }
+    ],
+    "hbm:steel_beam": [
+      {
+        "id": "hbm:tile.steel_beam",
+        "name": "tile.steel_beam"
+      }
+    ],
+    "hbm:steel_corner": [
+      {
+        "id": "hbm:tile.steel_corner",
+        "name": "tile.steel_corner"
+      }
+    ],
+    "hbm:steel_grate": [
+      {
+        "id": "hbm:tile.steel_grate",
+        "name": "tile.steel_grate"
+      }
+    ],
+    "hbm:steel_grate_wide": [
+      {
+        "id": "hbm:tile.steel_grate_wide",
+        "name": "tile.steel_grate_wide"
+      }
+    ],
+    "hbm:steel_poles": [
+      {
+        "id": "hbm:tile.steel_poles",
+        "name": "tile.steel_poles"
+      },
+      {
+        "id": "hbm:steel_poles",
+        "name": "steel_poles"
+      }
+    ],
+    "hbm:steel_roof": [
+      {
+        "id": "hbm:tile.steel_roof",
+        "name": "tile.steel_roof"
+      },
+      {
+        "id": "hbm:steel_roof",
+        "name": "steel_roof"
+      }
+    ],
+    "hbm:steel_scaffold": [
+      {
+        "id": "hbm:tile.steel_scaffold",
+        "name": "tile.steel_scaffold"
+      }
+    ],
+    "hbm:steel_wall": [
+      {
+        "id": "hbm:tile.steel_wall",
+        "name": "tile.steel_wall"
+      }
+    ],
+    "hbm:stone_cracked": [
+      {
+        "id": "hbm:tile.stone_cracked",
+        "name": "tile.stone_cracked"
+      }
+    ],
+    "hbm:stone_depth": [
+      {
+        "id": "hbm:tile.stone_depth",
+        "name": "tile.stone_depth"
+      }
+    ],
+    "hbm:stone_depth_nether": [
+      {
+        "id": "hbm:tile.stone_depth_nether",
+        "name": "tile.stone_depth_nether"
+      }
+    ],
+    "hbm:stone_gneiss": [
+      {
+        "id": "hbm:tile.stone_gneiss",
+        "name": "tile.stone_gneiss"
+      }
+    ],
+    "hbm:stone_keyhole": [
+      {
+        "id": "hbm:tile.stone_keyhole",
+        "name": "tile.stone_keyhole"
+      }
+    ],
+    "hbm:stone_keyhole_meta": [
+      {
+        "id": "hbm:tile.stone_keyhole_meta",
+        "name": "tile.stone_keyhole_meta"
+      }
+    ],
+    "hbm:stone_resource": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
+      }
+    ],
+    "hbm:struct_icf_core": [
+      {
+        "id": "hbm:tile.struct_icf_core",
+        "name": "tile.struct_icf_core"
+      }
+    ],
+    "hbm:struct_launcher": [
+      {
+        "id": "hbm:tile.struct_launcher",
+        "name": "tile.struct_launcher"
+      }
+    ],
+    "hbm:struct_launcher_core": [
+      {
+        "id": "hbm:tile.struct_launcher_core",
+        "name": "tile.struct_launcher_core"
+      },
+      {
+        "id": "hbm:struct_launcher_core",
+        "name": "struct_launcher_core"
+      }
+    ],
+    "hbm:struct_launcher_core_large": [
+      {
+        "id": "hbm:tile.struct_launcher_core_large",
+        "name": "tile.struct_launcher_core_large"
+      },
+      {
+        "id": "hbm:struct_launcher_core_large",
+        "name": "struct_launcher_core_large"
+      }
+    ],
+    "hbm:struct_scaffold": [
+      {
+        "id": "hbm:tile.struct_scaffold",
+        "name": "tile.struct_scaffold"
+      }
+    ],
+    "hbm:struct_soyuz_core": [
+      {
+        "id": "hbm:tile.struct_soyuz_core",
+        "name": "tile.struct_soyuz_core"
+      }
+    ],
+    "hbm:struct_torus_core": [
+      {
+        "id": "hbm:tile.struct_torus_core",
+        "name": "tile.struct_torus_core"
+      }
+    ],
+    "hbm:struct_watz_core": [
+      {
+        "id": "hbm:tile.struct_watz_core",
+        "name": "tile.struct_watz_core"
+      }
+    ],
+    "hbm:structure_anchor": [
+      {
+        "id": "hbm:tile.structure_anchor",
+        "name": "tile.structure_anchor"
+      }
+    ],
+    "hbm:substation": [
+      {
+        "id": "hbm:tile.substation",
+        "name": "tile.substation"
+      }
+    ],
+    "hbm:sulfuric_acid_block": [
+      {
+        "id": "hbm:tile.sulfuric_acid_block",
+        "name": "tile.sulfuric_acid_block"
+      }
+    ],
+    "hbm:taint": [
+      {
+        "id": "hbm:tile.taint",
+        "name": "tile.taint"
+      }
+    ],
+    "hbm:tape_recorder": [
+      {
+        "id": "hbm:tile.tape_recorder",
+        "name": "tile.tape_recorder"
+      },
+      {
+        "id": "hbm:tape_recorder",
+        "name": "tape_recorder"
+      }
+    ],
+    "hbm:tektite": [
+      {
+        "id": "hbm:tile.tektite",
+        "name": "tile.tektite"
+      }
+    ],
+    "hbm:teleanchor": [
+      {
+        "id": "hbm:tile.teleanchor",
+        "name": "tile.teleanchor"
+      }
+    ],
+    "hbm:tesla": [
+      {
+        "id": "hbm:tile.tesla",
+        "name": "tile.tesla"
+      }
+    ],
+    "hbm:therm_endo": [
+      {
+        "id": "hbm:tile.therm_endo",
+        "name": "tile.therm_endo"
+      }
+    ],
+    "hbm:therm_exo": [
+      {
+        "id": "hbm:tile.therm_exo",
+        "name": "tile.therm_exo"
+      }
+    ],
+    "hbm:tile_lab": [
+      {
+        "id": "hbm:tile.tile_lab",
+        "name": "tile.tile_lab"
+      }
+    ],
+    "hbm:tile_lab_broken": [
+      {
+        "id": "hbm:tile.tile_lab_broken",
+        "name": "tile.tile_lab_broken"
+      }
+    ],
+    "hbm:tile_lab_cracked": [
+      {
+        "id": "hbm:tile.tile_lab_cracked",
+        "name": "tile.tile_lab_cracked"
+      }
+    ],
+    "hbm:tnt_ntm": [
+      {
+        "id": "hbm:tile.tnt_ntm",
+        "name": "tile.tnt_ntm"
+      }
+    ],
+    "hbm:toxic_block": [
+      {
+        "id": "hbm:tile.toxic_block",
+        "name": "tile.toxic_block"
+      }
+    ],
+    "hbm:transition_seal": [
+      {
+        "id": "hbm:tile.transition_seal",
+        "name": "tile.transition_seal"
+      }
+    ],
+    "hbm:trapdoor_steel": [
+      {
+        "id": "hbm:tile.trapdoor_steel",
+        "name": "tile.trapdoor_steel"
+      },
+      {
+        "id": "hbm:trapdoor_steel",
+        "name": "trapdoor_steel"
+      }
+    ],
+    "hbm:turret_arty": [
+      {
+        "id": "hbm:tile.turret_arty",
+        "name": "tile.turret_arty"
+      }
+    ],
+    "hbm:turret_chekhov": [
+      {
+        "id": "hbm:tile.turret_chekhov",
+        "name": "tile.turret_chekhov"
+      }
+    ],
+    "hbm:turret_friendly": [
+      {
+        "id": "hbm:tile.turret_friendly",
+        "name": "tile.turret_friendly"
+      }
+    ],
+    "hbm:turret_fritz": [
+      {
+        "id": "hbm:tile.turret_fritz",
+        "name": "tile.turret_fritz"
+      },
+      {
+        "id": "hbm:turret_fritz",
+        "name": "turret_fritz"
+      }
+    ],
+    "hbm:turret_himars": [
+      {
+        "id": "hbm:tile.turret_himars",
+        "name": "tile.turret_himars"
+      }
+    ],
+    "hbm:turret_howard": [
+      {
+        "id": "hbm:tile.turret_howard",
+        "name": "tile.turret_howard"
+      }
+    ],
+    "hbm:turret_howard_damaged": [
+      {
+        "id": "hbm:tile.turret_howard_damaged",
+        "name": "tile.turret_howard_damaged"
+      }
+    ],
+    "hbm:turret_jeremy": [
+      {
+        "id": "hbm:tile.turret_jeremy",
+        "name": "tile.turret_jeremy"
+      }
+    ],
+    "hbm:turret_maxwell": [
+      {
+        "id": "hbm:tile.turret_maxwell",
+        "name": "tile.turret_maxwell"
+      }
+    ],
+    "hbm:turret_richard": [
+      {
+        "id": "hbm:tile.turret_richard",
+        "name": "tile.turret_richard"
+      },
+      {
+        "id": "hbm:turret_richard",
+        "name": "turret_richard"
+      }
+    ],
+    "hbm:turret_sentry": [
+      {
+        "id": "hbm:tile.turret_sentry",
+        "name": "tile.turret_sentry"
+      }
+    ],
+    "hbm:turret_sentry_damaged": [
+      {
+        "id": "hbm:tile.turret_sentry_damaged",
+        "name": "tile.turret_sentry_damaged"
+      }
+    ],
+    "hbm:turret_tauon": [
+      {
+        "id": "hbm:tile.turret_tauon",
+        "name": "tile.turret_tauon"
+      },
+      {
+        "id": "hbm:turret_tauon",
+        "name": "turret_tauon"
+      }
+    ],
+    "hbm:vault_door": [
+      {
+        "id": "hbm:tile.vault_door",
+        "name": "tile.vault_door"
+      }
+    ],
+    "hbm:vending_machine": [
+      {
+        "id": "hbm:tile.vending_machine",
+        "name": "tile.vending_machine"
+      }
+    ],
+    "hbm:vent_chlorine": [
+      {
+        "id": "hbm:tile.vent_chlorine",
+        "name": "tile.vent_chlorine"
+      }
+    ],
+    "hbm:vent_chlorine_seal": [
+      {
+        "id": "hbm:tile.vent_chlorine_seal",
+        "name": "tile.vent_chlorine_seal"
+      }
+    ],
+    "hbm:vent_cloud": [
+      {
+        "id": "hbm:tile.vent_cloud",
+        "name": "tile.vent_cloud"
+      }
+    ],
+    "hbm:vent_pink_cloud": [
+      {
+        "id": "hbm:tile.vent_pink_cloud",
+        "name": "tile.vent_pink_cloud"
+      }
+    ],
+    "hbm:vinyl_tile": [
+      {
+        "id": "hbm:tile.vinyl_tile",
+        "name": "tile.vinyl_tile"
+      },
+      {
+        "id": "hbm:vinyl_tile",
+        "name": "vinyl_tile"
+      }
+    ],
+    "hbm:vitrified_barrel": [
+      {
+        "id": "hbm:tile.vitrified_barrel",
+        "name": "tile.vitrified_barrel"
+      }
+    ],
+    "hbm:volcanic_lava_block": [
+      {
+        "id": "hbm:tile.volcanic_lava_block",
+        "name": "tile.volcanic_lava_block"
+      }
+    ],
+    "hbm:volcano_core": [
+      {
+        "id": "hbm:tile.volcano_core",
+        "name": "tile.volcano_core"
+      }
+    ],
+    "hbm:volcano_rad_core": [
+      {
+        "id": "hbm:tile.volcano_rad_core",
+        "name": "tile.volcano_rad_core"
+      }
+    ],
+    "hbm:wand_logic": [
+      {
+        "id": "hbm:tile.wand_logic",
+        "name": "tile.wand_logic"
+      }
+    ],
+    "hbm:waste_earth": [
+      {
+        "id": "hbm:tile.waste_earth",
+        "name": "tile.waste_earth"
+      }
+    ],
+    "hbm:waste_leaves": [
+      {
+        "id": "hbm:tile.waste_leaves",
+        "name": "tile.waste_leaves"
+      }
+    ],
+    "hbm:waste_log": [
+      {
+        "id": "hbm:tile.waste_log",
+        "name": "tile.waste_log"
+      }
+    ],
+    "hbm:waste_mycelium": [
+      {
+        "id": "hbm:tile.waste_mycelium",
+        "name": "tile.waste_mycelium"
+      }
+    ],
+    "hbm:waste_planks": [
+      {
+        "id": "hbm:tile.waste_planks",
+        "name": "tile.waste_planks"
+      }
+    ],
+    "hbm:waste_trinitite": [
+      {
+        "id": "hbm:tile.waste_trinitite",
+        "name": "tile.waste_trinitite"
+      }
+    ],
+    "hbm:waste_trinitite_red": [
+      {
+        "id": "hbm:tile.waste_trinitite_red",
+        "name": "tile.waste_trinitite_red"
+      }
+    ],
+    "hbm:water_door": [
+      {
+        "id": "hbm:tile.water_door",
+        "name": "tile.water_door"
+      }
+    ],
+    "hbm:watz": [
+      {
+        "id": "hbm:tile.watz",
+        "name": "tile.watz"
+      }
+    ],
+    "hbm:watz_cooler": [
+      {
+        "id": "hbm:tile.watz_cooler",
+        "name": "tile.watz_cooler"
+      }
+    ],
+    "hbm:watz_element": [
+      {
+        "id": "hbm:tile.watz_element",
+        "name": "tile.watz_element"
+      }
+    ],
+    "hbm:watz_end": [
+      {
+        "id": "hbm:tile.watz_end",
+        "name": "tile.watz_end"
+      }
+    ],
+    "hbm:watz_pump": [
+      {
+        "id": "hbm:tile.watz_pump",
+        "name": "tile.watz_pump"
+      }
+    ],
+    "hbm:wood_barrier": [
+      {
+        "id": "hbm:tile.wood_barrier",
+        "name": "tile.wood_barrier"
+      },
+      {
+        "id": "hbm:wood_barrier",
+        "name": "wood_barrier"
+      }
+    ],
+    "hbm:wood_structure": [
+      {
+        "id": "hbm:tile.wood_structure",
+        "name": "tile.wood_structure"
+      },
+      {
+        "id": "hbm:wood_structure",
+        "name": "wood_structure"
+      }
+    ],
+    "hbm:yellow_barrel": [
+      {
+        "id": "hbm:tile.yellow_barrel",
+        "name": "tile.yellow_barrel"
+      }
+    ],
+    "hbm:zirnox_destroyed": [
+      {
+        "id": "hbm:tile.zirnox_destroyed",
+        "name": "tile.zirnox_destroyed"
+      }
+    ],
+    "minecraft:acacia_leaves": [
+      {
+        "id": "minecraft:leaves2"
+      }
+    ],
+    "minecraft:acacia_log": [
+      {
+        "id": "minecraft:log2"
+      }
+    ],
+    "minecraft:acacia_planks": [
+      {
+        "id": "minecraft:planks"
+      }
+    ],
+    "minecraft:acacia_sapling": [
+      {
+        "id": "minecraft:sapling"
+      }
+    ],
+    "minecraft:acacia_slab": [
+      {
+        "id": "minecraft:double_wooden_slab"
+      },
+      {
+        "id": "minecraft:wooden_slab"
+      }
+    ],
+    "minecraft:acacia_stairs": [
+      {
+        "id": "minecraft:acacia_stairs"
+      }
+    ],
+    "minecraft:acacia_wood": [
+      {
+        "id": "minecraft:log2"
+      }
+    ],
+    "minecraft:activator_rail": [
+      {
+        "id": "minecraft:activator_rail"
+      }
+    ],
+    "minecraft:air": [
+      {
+        "id": "hbm:tile.barrel_iron",
+        "name": "tile.barrel_iron"
+      },
+      {
+        "id": "minecraft:air"
+      }
+    ],
+    "minecraft:allium": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:andesite": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:anvil": [
+      {
+        "id": "minecraft:anvil"
+      }
+    ],
+    "minecraft:azure_bluet": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:beacon": [
+      {
+        "id": "minecraft:beacon"
+      }
+    ],
+    "minecraft:bedrock": [
+      {
+        "id": "minecraft:bedrock"
+      }
+    ],
+    "minecraft:birch_leaves": [
+      {
+        "id": "minecraft:leaves"
+      }
+    ],
+    "minecraft:birch_log": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:birch_planks": [
+      {
+        "id": "minecraft:planks"
+      }
+    ],
+    "minecraft:birch_sapling": [
+      {
+        "id": "minecraft:sapling"
+      }
+    ],
+    "minecraft:birch_slab": [
+      {
+        "id": "minecraft:wooden_slab"
+      },
+      {
+        "id": "minecraft:double_wooden_slab"
+      }
+    ],
+    "minecraft:birch_stairs": [
+      {
+        "id": "minecraft:birch_stairs"
+      }
+    ],
+    "minecraft:birch_wood": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:black_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:black_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:black_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:black_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:black_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:blue_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:blue_orchid": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:blue_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:blue_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:blue_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:blue_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:bookshelf": [
+      {
+        "id": "minecraft:bookshelf"
+      }
+    ],
+    "minecraft:brewing_stand": [
+      {
+        "id": "minecraft:brewing_stand"
+      }
+    ],
+    "minecraft:brick_slab": [
+      {
+        "id": "minecraft:stone_slab"
+      },
+      {
+        "id": "minecraft:double_stone_slab"
+      }
+    ],
+    "minecraft:brick_stairs": [
+      {
+        "id": "minecraft:brick_stairs"
+      }
+    ],
+    "minecraft:bricks": [
+      {
+        "id": "minecraft:brick_block"
+      }
+    ],
+    "minecraft:brown_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:brown_mushroom": [
+      {
+        "id": "minecraft:brown_mushroom"
+      }
+    ],
+    "minecraft:brown_mushroom_block": [
+      {
+        "id": "minecraft:brown_mushroom_block"
+      }
+    ],
+    "minecraft:brown_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:brown_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:brown_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:brown_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:cactus": [
+      {
+        "id": "minecraft:cactus"
+      }
+    ],
+    "minecraft:cake": [
+      {
+        "id": "minecraft:cake"
+      }
+    ],
+    "minecraft:carrots": [
+      {
+        "id": "minecraft:carrots"
+      }
+    ],
+    "minecraft:carved_pumpkin": [
+      {
+        "id": "minecraft:pumpkin"
+      }
+    ],
+    "minecraft:cauldron": [
+      {
+        "id": "minecraft:cauldron"
+      }
+    ],
+    "minecraft:chest": [
+      {
+        "id": "minecraft:chest"
+      }
+    ],
+    "minecraft:chipped_anvil": [
+      {
+        "id": "minecraft:anvil"
+      }
+    ],
+    "minecraft:chiseled_quartz_block": [
+      {
+        "id": "minecraft:quartz_block"
+      }
+    ],
+    "minecraft:chiseled_sandstone": [
+      {
+        "id": "minecraft:sandstone"
+      }
+    ],
+    "minecraft:chiseled_stone_bricks": [
+      {
+        "id": "minecraft:stonebrick"
+      }
+    ],
+    "minecraft:clay": [
+      {
+        "id": "minecraft:clay"
+      }
+    ],
+    "minecraft:coal_block": [
+      {
+        "id": "minecraft:coal_block"
+      }
+    ],
+    "minecraft:coal_ore": [
+      {
+        "id": "hbm:tile.ore_coal_oil",
+        "name": "tile.ore_coal_oil"
+      },
+      {
+        "id": "minecraft:coal_ore"
+      }
+    ],
+    "minecraft:coarse_dirt": [
+      {
+        "id": "minecraft:dirt"
+      }
+    ],
+    "minecraft:cobblestone": [
+      {
+        "id": "minecraft:cobblestone"
+      }
+    ],
+    "minecraft:cobblestone_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:cobblestone_stairs": [
+      {
+        "id": "minecraft:stone_stairs"
+      }
+    ],
+    "minecraft:cobblestone_wall": [
+      {
+        "id": "minecraft:cobblestone_wall"
+      }
+    ],
+    "minecraft:cobweb": [
+      {
+        "id": "minecraft:web"
+      }
+    ],
+    "minecraft:cocoa": [
+      {
+        "id": "minecraft:cocoa"
+      }
+    ],
+    "minecraft:command_block": [
+      {
+        "id": "minecraft:command_block"
+      }
+    ],
+    "minecraft:comparator": [
+      {
+        "id": "minecraft:powered_comparator"
+      },
+      {
+        "id": "minecraft:unpowered_comparator"
+      }
+    ],
+    "minecraft:copper_block": [
+      {
+        "id": "hbm:tile.block_copper",
+        "name": "tile.block_copper"
+      }
+    ],
+    "minecraft:copper_ore": [
+      {
+        "id": "hbm:tile.ore_copper",
+        "name": "tile.ore_copper"
+      }
+    ],
+    "minecraft:cracked_stone_bricks": [
+      {
+        "id": "minecraft:stonebrick"
+      }
+    ],
+    "minecraft:crafting_table": [
+      {
+        "id": "minecraft:crafting_table"
+      }
+    ],
+    "minecraft:cut_sandstone": [
+      {
+        "id": "minecraft:sandstone"
+      }
+    ],
+    "minecraft:cyan_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:cyan_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:cyan_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:cyan_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:cyan_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:damaged_anvil": [
+      {
+        "id": "minecraft:anvil"
+      }
+    ],
+    "minecraft:dandelion": [
+      {
+        "id": "minecraft:yellow_flower"
+      }
+    ],
+    "minecraft:dark_oak_leaves": [
+      {
+        "id": "minecraft:leaves2"
+      }
+    ],
+    "minecraft:dark_oak_log": [
+      {
+        "id": "minecraft:log2"
+      }
+    ],
+    "minecraft:dark_oak_planks": [
+      {
+        "id": "minecraft:planks"
+      }
+    ],
+    "minecraft:dark_oak_sapling": [
+      {
+        "id": "minecraft:sapling"
+      }
+    ],
+    "minecraft:dark_oak_slab": [
+      {
+        "id": "minecraft:double_wooden_slab"
+      },
+      {
+        "id": "minecraft:wooden_slab"
+      }
+    ],
+    "minecraft:dark_oak_stairs": [
+      {
+        "id": "minecraft:dark_oak_stairs"
+      }
+    ],
+    "minecraft:dark_oak_wood": [
+      {
+        "id": "minecraft:log2"
+      }
+    ],
+    "minecraft:daylight_detector": [
+      {
+        "id": "minecraft:daylight_detector"
+      }
+    ],
+    "minecraft:dead_bush": [
+      {
+        "id": "minecraft:deadbush"
+      },
+      {
+        "id": "minecraft:tallgrass"
+      }
+    ],
+    "minecraft:detector_rail": [
+      {
+        "id": "minecraft:detector_rail"
+      }
+    ],
+    "minecraft:diamond_block": [
+      {
+        "id": "minecraft:diamond_block"
+      }
+    ],
+    "minecraft:diamond_ore": [
+      {
+        "id": "minecraft:diamond_ore"
+      }
+    ],
+    "minecraft:diorite": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:dirt": [
+      {
+        "id": "minecraft:dirt"
+      }
+    ],
+    "minecraft:dispenser": [
+      {
+        "id": "minecraft:dispenser"
+      }
+    ],
+    "minecraft:dragon_egg": [
+      {
+        "id": "minecraft:dragon_egg"
+      }
+    ],
+    "minecraft:dropper": [
+      {
+        "id": "minecraft:dropper"
+      }
+    ],
+    "minecraft:emerald_block": [
+      {
+        "id": "minecraft:emerald_block"
+      }
+    ],
+    "minecraft:emerald_ore": [
+      {
+        "id": "minecraft:emerald_ore"
+      }
+    ],
+    "minecraft:enchanting_table": [
+      {
+        "id": "minecraft:enchanting_table"
+      }
+    ],
+    "minecraft:end_portal": [
+      {
+        "id": "minecraft:end_portal"
+      }
+    ],
+    "minecraft:end_portal_frame": [
+      {
+        "id": "minecraft:end_portal_frame"
+      }
+    ],
+    "minecraft:end_stone": [
+      {
+        "id": "minecraft:end_stone"
+      }
+    ],
+    "minecraft:ender_chest": [
+      {
+        "id": "minecraft:ender_chest"
+      }
+    ],
+    "minecraft:farmland": [
+      {
+        "id": "minecraft:farmland"
+      }
+    ],
+    "minecraft:fern": [
+      {
+        "id": "minecraft:tallgrass"
+      }
+    ],
+    "minecraft:fire": [
+      {
+        "id": "minecraft:fire"
+      }
+    ],
+    "minecraft:furnace": [
+      {
+        "id": "minecraft:furnace"
+      },
+      {
+        "id": "minecraft:lit_furnace"
+      }
+    ],
+    "minecraft:glass": [
+      {
+        "id": "minecraft:glass"
+      }
+    ],
+    "minecraft:glass_pane": [
+      {
+        "id": "minecraft:glass_pane"
+      }
+    ],
+    "minecraft:glowstone": [
+      {
+        "id": "minecraft:glowstone"
+      }
+    ],
+    "minecraft:gold_block": [
+      {
+        "id": "minecraft:gold_block"
+      }
+    ],
+    "minecraft:gold_ore": [
+      {
+        "id": "minecraft:gold_ore"
+      }
+    ],
+    "minecraft:granite": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:grass_block": [
+      {
+        "id": "minecraft:grass"
+      }
+    ],
+    "minecraft:gravel": [
+      {
+        "id": "minecraft:gravel"
+      }
+    ],
+    "minecraft:gray_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:gray_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:gray_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:gray_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:gray_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:green_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:green_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:green_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:green_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:green_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:hay_block": [
+      {
+        "id": "minecraft:hay_block"
+      }
+    ],
+    "minecraft:heavy_weighted_pressure_plate": [
+      {
+        "id": "minecraft:heavy_weighted_pressure_plate"
+      }
+    ],
+    "minecraft:hopper": [
+      {
+        "id": "minecraft:hopper"
+      }
+    ],
+    "minecraft:ice": [
+      {
+        "id": "minecraft:ice"
+      }
+    ],
+    "minecraft:infested_chiseled_stone_bricks": [
+      {
+        "id": "minecraft:monster_egg"
+      }
+    ],
+    "minecraft:infested_cobblestone": [
+      {
+        "id": "minecraft:monster_egg"
+      }
+    ],
+    "minecraft:infested_cracked_stone_bricks": [
+      {
+        "id": "minecraft:monster_egg"
+      }
+    ],
+    "minecraft:infested_mossy_stone_bricks": [
+      {
+        "id": "minecraft:monster_egg"
+      }
+    ],
+    "minecraft:infested_stone": [
+      {
+        "id": "minecraft:monster_egg"
+      }
+    ],
+    "minecraft:infested_stone_bricks": [
+      {
+        "id": "minecraft:monster_egg"
+      }
+    ],
+    "minecraft:iron_bars": [
+      {
+        "id": "minecraft:iron_bars"
+      }
+    ],
+    "minecraft:iron_block": [
+      {
+        "id": "minecraft:iron_block"
+      }
+    ],
+    "minecraft:iron_door": [
+      {
+        "id": "minecraft:iron_door"
+      }
+    ],
+    "minecraft:iron_ore": [
+      {
+        "id": "minecraft:iron_ore"
+      }
+    ],
+    "minecraft:jack_o_lantern": [
+      {
+        "id": "minecraft:lit_pumpkin"
+      }
+    ],
+    "minecraft:jukebox": [
+      {
+        "id": "minecraft:jukebox"
+      }
+    ],
+    "minecraft:jungle_leaves": [
+      {
+        "id": "minecraft:leaves"
+      }
+    ],
+    "minecraft:jungle_log": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:jungle_planks": [
+      {
+        "id": "minecraft:planks"
+      }
+    ],
+    "minecraft:jungle_sapling": [
+      {
+        "id": "minecraft:sapling"
+      }
+    ],
+    "minecraft:jungle_slab": [
+      {
+        "id": "minecraft:double_wooden_slab"
+      },
+      {
+        "id": "minecraft:wooden_slab"
+      }
+    ],
+    "minecraft:jungle_stairs": [
+      {
+        "id": "minecraft:jungle_stairs"
+      }
+    ],
+    "minecraft:jungle_wood": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:ladder": [
+      {
+        "id": "minecraft:ladder"
+      }
+    ],
+    "minecraft:lapis_block": [
+      {
+        "id": "minecraft:lapis_block"
+      }
+    ],
+    "minecraft:lapis_ore": [
+      {
+        "id": "minecraft:lapis_ore"
+      }
+    ],
+    "minecraft:large_fern": [
+      {
+        "id": "minecraft:double_plant"
+      }
+    ],
+    "minecraft:lava": [
+      {
+        "id": "minecraft:lava"
+      },
+      {
+        "id": "minecraft:flowing_lava"
+      }
+    ],
+    "minecraft:lever": [
+      {
+        "id": "minecraft:lever"
+      }
+    ],
+    "minecraft:light_blue_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:light_blue_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:light_blue_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:light_blue_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:light_blue_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:light_gray_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:light_gray_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:light_gray_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:light_gray_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:light_gray_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:light_weighted_pressure_plate": [
+      {
+        "id": "minecraft:light_weighted_pressure_plate"
+      }
+    ],
+    "minecraft:lilac": [
+      {
+        "id": "minecraft:double_plant"
+      }
+    ],
+    "minecraft:lily_pad": [
+      {
+        "id": "minecraft:waterlily"
+      }
+    ],
+    "minecraft:lime_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:lime_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:lime_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:lime_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:lime_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:magenta_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:magenta_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:magenta_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:magenta_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:magenta_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:melon": [
+      {
+        "id": "minecraft:melon_block"
+      }
+    ],
+    "minecraft:melon_stem": [
+      {
+        "id": "minecraft:melon_stem"
+      }
+    ],
+    "minecraft:mossy_cobblestone": [
+      {
+        "id": "minecraft:mossy_cobblestone"
+      }
+    ],
+    "minecraft:mossy_cobblestone_wall": [
+      {
+        "id": "minecraft:cobblestone_wall"
+      }
+    ],
+    "minecraft:mossy_stone_bricks": [
+      {
+        "id": "minecraft:stonebrick"
+      }
+    ],
+    "minecraft:moving_piston": [
+      {
+        "id": "minecraft:piston_extension"
+      }
+    ],
+    "minecraft:mushroom_stem": [
+      {
+        "id": "minecraft:brown_mushroom_block"
+      },
+      {
+        "id": "minecraft:red_mushroom_block"
+      }
+    ],
+    "minecraft:mycelium": [
+      {
+        "id": "minecraft:mycelium"
+      }
+    ],
+    "minecraft:nether_brick_fence": [
+      {
+        "id": "minecraft:nether_brick_fence"
+      }
+    ],
+    "minecraft:nether_brick_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:nether_brick_stairs": [
+      {
+        "id": "minecraft:nether_brick_stairs"
+      }
+    ],
+    "minecraft:nether_bricks": [
+      {
+        "id": "minecraft:nether_brick"
+      }
+    ],
+    "minecraft:nether_portal": [
+      {
+        "id": "minecraft:portal"
+      }
+    ],
+    "minecraft:nether_quartz_ore": [
+      {
+        "id": "minecraft:quartz_ore"
+      }
+    ],
+    "minecraft:nether_wart": [
+      {
+        "id": "minecraft:nether_wart"
+      }
+    ],
+    "minecraft:netherrack": [
+      {
+        "id": "minecraft:netherrack"
+      }
+    ],
+    "minecraft:note_block": [
+      {
+        "id": "minecraft:noteblock"
+      }
+    ],
+    "minecraft:oak_button": [
+      {
+        "id": "minecraft:wooden_button"
+      }
+    ],
+    "minecraft:oak_door": [
+      {
+        "id": "minecraft:wooden_door"
+      }
+    ],
+    "minecraft:oak_fence": [
+      {
+        "id": "minecraft:fence"
+      }
+    ],
+    "minecraft:oak_fence_gate": [
+      {
+        "id": "minecraft:fence_gate"
+      }
+    ],
+    "minecraft:oak_leaves": [
+      {
+        "id": "minecraft:leaves"
+      }
+    ],
+    "minecraft:oak_log": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:oak_planks": [
+      {
+        "id": "minecraft:planks"
+      }
+    ],
+    "minecraft:oak_pressure_plate": [
+      {
+        "id": "minecraft:wooden_pressure_plate"
+      }
+    ],
+    "minecraft:oak_sapling": [
+      {
+        "id": "minecraft:sapling"
+      }
+    ],
+    "minecraft:oak_sign": [
+      {
+        "id": "minecraft:standing_sign"
+      }
+    ],
+    "minecraft:oak_slab": [
+      {
+        "id": "minecraft:wooden_slab"
+      },
+      {
+        "id": "minecraft:double_wooden_slab"
+      }
+    ],
+    "minecraft:oak_stairs": [
+      {
+        "id": "minecraft:oak_stairs"
+      }
+    ],
+    "minecraft:oak_trapdoor": [
+      {
+        "id": "minecraft:trapdoor"
+      }
+    ],
+    "minecraft:oak_wall_sign": [
+      {
+        "id": "minecraft:wall_sign"
+      }
+    ],
+    "minecraft:oak_wood": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:obsidian": [
+      {
+        "id": "minecraft:obsidian"
+      }
+    ],
+    "minecraft:orange_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:orange_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:orange_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:orange_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:orange_tulip": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:orange_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:oxeye_daisy": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:packed_ice": [
+      {
+        "id": "minecraft:packed_ice"
+      }
+    ],
+    "minecraft:peony": [
+      {
+        "id": "minecraft:double_plant"
+      }
+    ],
+    "minecraft:petrified_oak_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:pink_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:pink_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:pink_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:pink_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:pink_tulip": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:pink_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:piston": [
+      {
+        "id": "minecraft:piston"
+      }
+    ],
+    "minecraft:piston_head": [
+      {
+        "id": "minecraft:piston_head"
+      }
+    ],
+    "minecraft:podzol": [
+      {
+        "id": "minecraft:dirt"
+      }
+    ],
+    "minecraft:polished_andesite": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:polished_diorite": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:polished_granite": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:poppy": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:potatoes": [
+      {
+        "id": "minecraft:potatoes"
+      }
+    ],
+    "minecraft:potted_cactus": [
+      {
+        "id": "minecraft:flower_pot"
+      }
+    ],
+    "minecraft:powered_rail": [
+      {
+        "id": "minecraft:golden_rail"
+      }
+    ],
+    "minecraft:pumpkin_stem": [
+      {
+        "id": "minecraft:pumpkin_stem"
+      }
+    ],
+    "minecraft:purple_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:purple_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:purple_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:purple_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:purple_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:quartz_block": [
+      {
+        "id": "minecraft:quartz_block"
+      }
+    ],
+    "minecraft:quartz_pillar": [
+      {
+        "id": "minecraft:quartz_block"
+      }
+    ],
+    "minecraft:quartz_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:quartz_stairs": [
+      {
+        "id": "minecraft:quartz_stairs"
+      }
+    ],
+    "minecraft:rail": [
+      {
+        "id": "minecraft:rail"
+      }
+    ],
+    "minecraft:red_bed": [
+      {
+        "id": "minecraft:bed"
+      }
+    ],
+    "minecraft:red_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:red_mushroom": [
+      {
+        "id": "minecraft:red_mushroom"
+      }
+    ],
+    "minecraft:red_mushroom_block": [
+      {
+        "id": "minecraft:red_mushroom_block"
+      }
+    ],
+    "minecraft:red_sand": [
+      {
+        "id": "minecraft:sand"
+      }
+    ],
+    "minecraft:red_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:red_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:red_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:red_tulip": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:red_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:redstone_block": [
+      {
+        "id": "minecraft:redstone_block"
+      }
+    ],
+    "minecraft:redstone_lamp": [
+      {
+        "id": "minecraft:redstone_lamp"
+      },
+      {
+        "id": "minecraft:lit_redstone_lamp"
+      }
+    ],
+    "minecraft:redstone_ore": [
+      {
+        "id": "minecraft:lit_redstone_ore"
+      },
+      {
+        "id": "minecraft:redstone_ore"
+      }
+    ],
+    "minecraft:redstone_torch": [
+      {
+        "id": "minecraft:redstone_torch"
+      },
+      {
+        "id": "minecraft:unlit_redstone_torch"
+      }
+    ],
+    "minecraft:redstone_wall_torch": [
+      {
+        "id": "minecraft:redstone_torch"
+      },
+      {
+        "id": "minecraft:unlit_redstone_torch"
+      }
+    ],
+    "minecraft:redstone_wire": [
+      {
+        "id": "minecraft:redstone_wire"
+      }
+    ],
+    "minecraft:repeater": [
+      {
+        "id": "minecraft:powered_repeater"
+      },
+      {
+        "id": "minecraft:unpowered_repeater"
+      }
+    ],
+    "minecraft:rose_bush": [
+      {
+        "id": "minecraft:double_plant"
+      }
+    ],
+    "minecraft:sand": [
+      {
+        "id": "minecraft:sand"
+      }
+    ],
+    "minecraft:sandstone": [
+      {
+        "id": "minecraft:sandstone"
+      }
+    ],
+    "minecraft:sandstone_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:sandstone_stairs": [
+      {
+        "id": "minecraft:sandstone_stairs"
+      }
+    ],
+    "minecraft:short_grass": [
+      {
+        "id": "minecraft:tallgrass"
+      }
+    ],
+    "minecraft:smooth_quartz": [
+      {
+        "id": "minecraft:double_stone_slab"
+      }
+    ],
+    "minecraft:smooth_sandstone": [
+      {
+        "id": "minecraft:double_stone_slab"
+      }
+    ],
+    "minecraft:smooth_stone": [
+      {
+        "id": "minecraft:double_stone_slab"
+      }
+    ],
+    "minecraft:smooth_stone_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:snow": [
+      {
+        "id": "minecraft:snow_layer"
+      }
+    ],
+    "minecraft:snow_block": [
+      {
+        "id": "minecraft:snow"
+      }
+    ],
+    "minecraft:soul_sand": [
+      {
+        "id": "minecraft:soul_sand"
+      }
+    ],
+    "minecraft:spawner": [
+      {
+        "id": "minecraft:mob_spawner"
+      }
+    ],
+    "minecraft:sponge": [
+      {
+        "id": "minecraft:sponge"
+      }
+    ],
+    "minecraft:spruce_leaves": [
+      {
+        "id": "minecraft:leaves"
+      }
+    ],
+    "minecraft:spruce_log": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:spruce_planks": [
+      {
+        "id": "minecraft:planks"
+      }
+    ],
+    "minecraft:spruce_sapling": [
+      {
+        "id": "minecraft:sapling"
+      }
+    ],
+    "minecraft:spruce_slab": [
+      {
+        "id": "minecraft:wooden_slab"
+      },
+      {
+        "id": "minecraft:double_wooden_slab"
+      }
+    ],
+    "minecraft:spruce_stairs": [
+      {
+        "id": "minecraft:spruce_stairs"
+      }
+    ],
+    "minecraft:spruce_wood": [
+      {
+        "id": "minecraft:log"
+      }
+    ],
+    "minecraft:sticky_piston": [
+      {
+        "id": "minecraft:sticky_piston"
+      }
+    ],
+    "minecraft:stone": [
+      {
+        "id": "minecraft:stone"
+      }
+    ],
+    "minecraft:stone_brick_slab": [
+      {
+        "id": "minecraft:double_stone_slab"
+      },
+      {
+        "id": "minecraft:stone_slab"
+      }
+    ],
+    "minecraft:stone_brick_stairs": [
+      {
+        "id": "minecraft:stone_brick_stairs"
+      }
+    ],
+    "minecraft:stone_bricks": [
+      {
+        "id": "minecraft:stonebrick"
+      }
+    ],
+    "minecraft:stone_button": [
+      {
+        "id": "minecraft:stone_button"
+      }
+    ],
+    "minecraft:stone_pressure_plate": [
+      {
+        "id": "minecraft:stone_pressure_plate"
+      }
+    ],
+    "minecraft:sugar_cane": [
+      {
+        "id": "minecraft:reeds"
+      }
+    ],
+    "minecraft:sunflower": [
+      {
+        "id": "minecraft:double_plant"
+      }
+    ],
+    "minecraft:tall_grass": [
+      {
+        "id": "minecraft:double_plant"
+      }
+    ],
+    "minecraft:terracotta": [
+      {
+        "id": "minecraft:hardened_clay"
+      }
+    ],
+    "minecraft:tnt": [
+      {
+        "id": "minecraft:tnt"
+      }
+    ],
+    "minecraft:torch": [
+      {
+        "id": "minecraft:torch"
+      }
+    ],
+    "minecraft:trapped_chest": [
+      {
+        "id": "minecraft:trapped_chest"
+      }
+    ],
+    "minecraft:tripwire": [
+      {
+        "id": "minecraft:tripwire"
+      }
+    ],
+    "minecraft:tripwire_hook": [
+      {
+        "id": "minecraft:tripwire_hook"
+      }
+    ],
+    "minecraft:vine": [
+      {
+        "id": "minecraft:vine"
+      }
+    ],
+    "minecraft:wall_torch": [
+      {
+        "id": "minecraft:torch"
+      }
+    ],
+    "minecraft:water": [
+      {
+        "id": "minecraft:flowing_water"
+      },
+      {
+        "id": "minecraft:water"
+      }
+    ],
+    "minecraft:water_cauldron": [
+      {
+        "id": "minecraft:cauldron"
+      }
+    ],
+    "minecraft:wet_sponge": [
+      {
+        "id": "minecraft:sponge"
+      }
+    ],
+    "minecraft:wheat": [
+      {
+        "id": "minecraft:wheat"
+      }
+    ],
+    "minecraft:white_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:white_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:white_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:white_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:white_tulip": [
+      {
+        "id": "minecraft:red_flower"
+      }
+    ],
+    "minecraft:white_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ],
+    "minecraft:yellow_carpet": [
+      {
+        "id": "minecraft:carpet"
+      }
+    ],
+    "minecraft:yellow_stained_glass": [
+      {
+        "id": "minecraft:stained_glass"
+      }
+    ],
+    "minecraft:yellow_stained_glass_pane": [
+      {
+        "id": "minecraft:stained_glass_pane"
+      }
+    ],
+    "minecraft:yellow_terracotta": [
+      {
+        "id": "minecraft:stained_hardened_clay"
+      }
+    ],
+    "minecraft:yellow_wool": [
+      {
+        "id": "minecraft:wool"
+      }
+    ]
+  }
+}

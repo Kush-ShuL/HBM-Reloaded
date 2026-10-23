@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:powder_dineutronium"
+  },
+  "result": {
+    "id": "hbm:ingot_dineutronium",
+    "count": 1
+  },
+  "experience": 5.0,
+  "cookingtime": 200
+}

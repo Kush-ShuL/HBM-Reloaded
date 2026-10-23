@@ -1,0 +1,35 @@
+package com.hbm.machine.reactor.rbmk.thermal;
+import api.hbm.redstoneoverradio.IRORValueProvider;
+import com.hbm.api.computer.*;
+import com.hbm.fluid.*;
+import com.hbm.machine.reactor.rbmk.residue.RbmkDebrisEntity;
+import com.hbm.multiblock.NamedMultiblock;
+import net.minecraft.core.*;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+/** Genuine first Heatable step, HEATEXCHANGER efficiency and original2000TU-per-degree arithmetic. */
+public final class RbmkHeaterEntity extends RbmkThermalColumn implements WorldlyContainer,MenuProvider,NamedMultiblock,ComputerControl,IRORValueProvider {
+    public final FluidTank feed=new FluidTank(HbmFluids.COOLANT,16000),steam=new FluidTank(HbmFluids.COOLANT_HOT,16000);
+    private final NonNullList<ItemStack> items=NonNullList.withSize(1,ItemStack.EMPTY);private Component customName;
+    public RbmkHeaterEntity(BlockPos pos,BlockState state){super(RbmkThermalContent.HEATER_ENTITY.get(),pos,state);}
+    public static void tick(Level level,BlockPos pos,BlockState state,RbmkHeaterEntity machine){if(level instanceof ServerLevel world)machine.tick(world);}
+    private void tick(ServerLevel world){ports(world);if(heat<=50||feed.getFill()<=0)feed.setType(0,new ItemStack[]{items.getFirst()});var trait=feed.getTankType().getTrait(FluidTraits.Heatable.class);if(trait!=null){var step=trait.getFirstStep();steam.setTankType(step.typeProduced());double range=heat-steam.getTankType().temperature,eff=trait.getEfficiency(FluidTraits.HeatingType.HEATEXCHANGER);if(range>0&&eff>0){double tuPerDegree=2000D*eff;int input=feed.getFill()/step.amountReq(),output=(steam.getMaxFill()-steam.getFill())/step.amountProduced(),temperature=(int)Math.floor(range*tuPerDegree/step.heatReq()),ops=Math.min(input,Math.min(output,temperature));feed.setFill(feed.getFill()-step.amountReq()*ops);steam.setFill(steam.getFill()+step.amountProduced()*ops);heat-=(step.heatReq()*ops/tuPerDegree)*eff;}if(eff<=0){feed.setTankType(HbmFluids.NONE);steam.setTankType(HbmFluids.NONE);}}else{feed.setTankType(HbmFluids.NONE);steam.setTankType(HbmFluids.NONE);}baseTick(world);setChanged();}
+    @Override public String consoleType(){return "HEATEX";}
+    @Override public FluidTank[] getAllTanks(){return new FluidTank[]{feed,steam};}@Override public FluidTank[] getReceivingTanks(){return new FluidTank[]{feed};}@Override public FluidTank[] getSendingTanks(){return new FluidTank[]{steam};}
+    @Override protected void saveState(CompoundTag tag){super.saveState(tag);feed.writeToNBT(tag,"feed");steam.writeToNBT(tag,"steam");}@Override protected void loadState(CompoundTag tag){super.loadState(tag);feed.readFromNBT(tag,"feed");steam.readFromNBT(tag,"steam");}
+    @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);ContainerHelper.saveAllItems(tag,items,lookup);if(customName!=null)tag.putString("name",Component.Serializer.toJson(customName,lookup));}@Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);ContainerHelper.loadAllItems(tag,items,lookup);if(tag.contains("name"))customName=Component.Serializer.fromJson(tag.getString("name"),lookup);}
+    @Override public CompoundTag consoleData(){var tag=new CompoundTag();tag.putInt("water",feed.getFill());tag.putInt("maxWater",feed.getMaxFill());tag.putInt("steam",steam.getFill());tag.putInt("maxSteam",steam.getMaxFill());tag.putShort("type",(short)feed.getTankType().getID());tag.putShort("hottype",(short)steam.getTankType().getID());return tag;}
+    @Override public void onMelt(int reduce){int count=1+level.random.nextInt(2);for(int i=0;i<count;i++)spawnDebris(RbmkDebrisEntity.Type.BLANK);super.onMelt(reduce);}
+    @Override public String computerType(){return "rbmk_heater";}@Override public String[] computerMethods(){return new String[]{"getHeat","getFill","getFillMax","getExport","getExportMax","getFillType","getExportType","getInfo","getCoordinates"};}
+    @Override public Object[] callComputer(String method,ComputerArguments args)throws ComputerException{return switch(method){case "getHeat"->new Object[]{heat};case "getFill"->new Object[]{feed.getFill()};case "getFillMax"->new Object[]{feed.getMaxFill()};case "getExport"->new Object[]{steam.getFill()};case "getExportMax"->new Object[]{steam.getMaxFill()};case "getFillType"->new Object[]{feed.getTankType().getName()};case "getExportType"->new Object[]{steam.getTankType().getName()};case "getCoordinates"->new Object[]{worldPosition.getX(),worldPosition.getY(),worldPosition.getZ()};case "getInfo"->new Object[]{heat,feed.getFill(),feed.getMaxFill(),steam.getFill(),steam.getMaxFill(),feed.getTankType().getName(),steam.getTankType().getName(),worldPosition.getX(),worldPosition.getY(),worldPosition.getZ()};default->throw new ComputerException("No such method: "+method);};}
+    @Override public String[] getFunctionInfo(){return new String[]{PREFIX_VALUE+"in",PREFIX_VALUE+"out"};}@Override public String provideRORValue(String name){return name.equals(PREFIX_VALUE+"in")?""+feed.getFill():name.equals(PREFIX_VALUE+"out")?""+steam.getFill():null;}
+    @Override public int getContainerSize(){return 1;}@Override public boolean isEmpty(){return items.getFirst().isEmpty();}@Override public ItemStack getItem(int slot){return items.get(slot);}@Override public ItemStack removeItem(int slot,int amount){var result=ContainerHelper.removeItem(items,slot,amount);if(!result.isEmpty())setChanged();return result;}@Override public ItemStack removeItemNoUpdate(int slot){return ContainerHelper.takeItem(items,slot);}@Override public void setItem(int slot,ItemStack stack){items.set(slot,stack);if(stack.getCount()>64)stack.setCount(64);setChanged();}@Override public void clearContent(){items.clear();setChanged();}@Override public boolean stillValid(Player player){return level!=null&&level.getBlockEntity(worldPosition)==this&&player.distanceToSqr(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5)<=128;}@Override public boolean canPlaceItem(int slot,ItemStack stack){return false;}@Override public int[] getSlotsForFace(Direction side){return new int[0];}@Override public boolean canPlaceItemThroughFace(int slot,ItemStack stack,Direction side){return false;}@Override public boolean canTakeItemThroughFace(int slot,ItemStack stack,Direction side){return false;}
+    @Override public Component getDisplayName(){return customName==null?Component.translatable("container.rbmkHeater"):customName;}@Override public void setCustomName(Component value){customName=value;setChanged();}@Override public AbstractContainerMenu createMenu(int id,Inventory inventory,Player player){return new RbmkHeaterMenu(id,inventory,this,worldPosition);}
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:basalt"
+  },
+  "result": {
+    "id": "hbm:basalt_smooth",
+    "count": 1
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

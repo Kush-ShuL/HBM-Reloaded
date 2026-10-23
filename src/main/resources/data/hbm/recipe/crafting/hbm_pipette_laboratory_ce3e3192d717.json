@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:pipette_laboratory",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  C",
+    " R ",
+    "P  "
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_chip"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotrubber"
+    },
+    "P": {
+      "type": "neoforge:components",
+      "items": "hbm:pipette_boron",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

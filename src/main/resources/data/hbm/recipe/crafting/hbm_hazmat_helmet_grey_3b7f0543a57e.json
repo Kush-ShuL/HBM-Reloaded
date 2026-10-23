@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:hazmat_helmet_grey",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EEE",
+    "IEI",
+    "EFE"
+  ],
+  "key": {
+    "E": {
+      "item": "hbm:hazmat_cloth_grey"
+    },
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/plateiron"
+    }
+  }
+}

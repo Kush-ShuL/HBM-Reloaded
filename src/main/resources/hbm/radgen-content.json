@@ -1,0 +1,25 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_radgen",
+      "id": "hbm:machine_radgen",
+      "itemId": "hbm:machine_radgen",
+      "kind": "block",
+      "originalClass": "MachineRadGen",
+      "creativeTab": "machine",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1805
+      },
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    }
+  ]
+}

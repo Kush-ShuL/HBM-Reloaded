@@ -1,0 +1,22 @@
+{
+  "recipes": [
+    {
+      "output": "hbm:gun_heavy_revolver_lilmac",
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/PedestalRecipes.java:49",
+      "sourceJava": "register(new PedestalRecipe(new ItemStack(ModItems.gun_heavy_revolver_lilmac),\n\t\t\t\tnull,\t\t\t\t\t\t\t\t\t\tnew ComparableStack(ModItems.weapon_mod_special, 1, EnumModSpecial.SCOPE),\tnull,\n\t\t\t\tnew ComparableStack(ModItems.powder_magic),\tnew ComparableStack(ModItems.gun_heavy_revolver),\t\t\t\t\t\t\tnew OreDictStack(WEAPONSTEEL.plate()),\n\t\t\t\tnull,\t\t\t\t\t\t\t\t\t\tnew OreDictStack(BONE.grip()),\t\t\t\t\t\t\t\t\t\t\t\tnew ComparableStack(Items.apple, 3)));",
+      "status": "pending_actual_pedestal_and_ordinary_base_gun"
+    },
+    {
+      "output": "hbm:gun_maresleg_broken",
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/PedestalRecipes.java:44",
+      "sourceJava": "register(new PedestalRecipe(new ItemStack(ModItems.gun_maresleg_broken),\n\t\t\t\tnew ComparableStack(ModBlocks.barbed_wire),\tnew OreDictStack(WEAPONSTEEL.plate()),\t\tnew ComparableStack(ModBlocks.barbed_wire),\n\t\t\t\tnew OreDictStack(WEAPONSTEEL.plate()),\t\tnew ComparableStack(ModItems.gun_maresleg),\tnew OreDictStack(WEAPONSTEEL.plate()),\n\t\t\t\tnew ComparableStack(ModBlocks.barbed_wire),\tnew OreDictStack(WEAPONSTEEL.plate()),\t\tnew ComparableStack(ModBlocks.barbed_wire)));",
+      "status": "pending_actual_pedestal_and_ordinary_base_gun"
+    },
+    {
+      "output": "hbm:gun_autoshotgun_sexy",
+      "source": "legacy/src/main/java/com/hbm/inventory/recipes/PedestalRecipes.java:75",
+      "sourceJava": "register(new PedestalRecipe(new ItemStack(ModItems.gun_autoshotgun_sexy),\n\t\t\t\tnew ComparableStack(ModItems.bolt_spike, 16),\tnew ComparableStack(ModItems.wild_p),\t\t\tnew ComparableStack(ModItems.bolt_spike, 16),\n\t\t\t\tnew ComparableStack(ModItems.card_qos),\t\t\tnew ComparableStack(ModItems.gun_autoshotgun),\tnew ComparableStack(ModItems.card_aos),\n\t\t\t\tnew ComparableStack(ModItems.bolt_spike, 16),\tnew OreDictStack(STAR.ingot(), 16),\t\t\t\tnew ComparableStack(ModItems.bolt_spike, 16)));",
+      "status": "pending_actual_pedestal_and_ordinary_base_gun"
+    }
+  ]
+}

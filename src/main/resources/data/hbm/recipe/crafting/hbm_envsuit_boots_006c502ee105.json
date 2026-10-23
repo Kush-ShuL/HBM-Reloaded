@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "R R",
+    "T T"
+  ],
+  "key": {
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetitanium"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotrubber"
+    }
+  },
+  "result": {
+    "id": "hbm:envsuit_boots",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

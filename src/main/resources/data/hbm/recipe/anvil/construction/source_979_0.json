@@ -1,0 +1,49 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:egg_glyphid",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:glyphid_meat",
+        "count": 2
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:glyphid_meat",
+        "count": 1
+      },
+      "chance": 0.5
+    },
+    {
+      "stack": {
+        "id": "minecraft:bone",
+        "count": 1
+      },
+      "chance": 0.75
+    },
+    {
+      "stack": {
+        "id": "minecraft:experience_bottle",
+        "count": 1
+      },
+      "chance": 0.5
+    }
+  ],
+  "tier_lower": 1,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 979000000
+}

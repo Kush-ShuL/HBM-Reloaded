@@ -1,0 +1,44 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/oreredstone"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "hbm:nugget_mercury",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ],
+  "lbsm_results": [
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "minecraft:redstone",
+      "count": 3
+    },
+    {
+      "id": "hbm:nugget_mercury",
+      "count": 3
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ]
+}

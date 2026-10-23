@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crystal_virus",
+      "id": "hbm:crystal_virus",
+      "hasItem": true,
+      "legacyRegistryId": "hbm:tile.crystal_virus",
+      "originalClass": "CrystalVirus",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2286
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3508
+          },
+          "expression": "GameRegistry.registerBlock(crystal_virus, crystal_virus.getUnlocalizedName())",
+          "arguments": [
+            "crystal_virus",
+            "crystal_virus.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": null,
+      "maxStackSize": 64
+    },
+    {
+      "kind": "block",
+      "symbol": "crystal_pulsar",
+      "id": "hbm:crystal_pulsar",
+      "hasItem": true,
+      "legacyRegistryId": "hbm:tile.crystal_pulsar",
+      "originalClass": "CrystalPulsar",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2288
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3510
+          },
+          "expression": "GameRegistry.registerBlock(crystal_pulsar, crystal_pulsar.getUnlocalizedName())",
+          "arguments": [
+            "crystal_pulsar",
+            "crystal_pulsar.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": null,
+      "maxStackSize": 64
+    }
+  ]
+}

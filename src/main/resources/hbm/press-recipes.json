@@ -1,0 +1,936 @@
+{
+  "source": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 61
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(NETHERQUARTZ.dust()), Items.quartz)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_quartz",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "minecraft:quartz",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 62
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(LAPIS.dust()), new ItemStack(Items.dye, 1, 4))",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_lapis_lazuli",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustlapis"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "minecraft:lapis_lazuli",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 63
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(DIAMOND.dust()), Items.diamond)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_diamond",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustdiamond"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "minecraft:diamond",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 64
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(EMERALD.dust()), Items.emerald)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_emerald",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustemerald"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "minecraft:emerald",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 65
+      },
+      "expression": "makeRecipe(StampType.FLAT, new ComparableStack(ModItems.biomass), ModItems.biomass_compressed)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_biomass_compressed",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "hbm:biomass"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:biomass_compressed",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 66
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(ANY_COKE.gem()), ModItems.ingot_graphite)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_ingot_graphite",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/gemanycoke"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:ingot_graphite",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 67
+      },
+      "expression": "makeRecipe(StampType.FLAT, new ComparableStack(ModItems.meteorite_sword_reforged), ModItems.meteorite_sword_hardened)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_meteorite_sword_hardened",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "hbm:meteorite_sword_reforged"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:meteorite_sword_hardened",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 68
+      },
+      "expression": "makeRecipe(StampType.FLAT, new ComparableStack(Blocks.log, 1, 3), ModItems.ball_resin)",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_ball_resin",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:jungle_log"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:ball_resin",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 70
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(COAL.dust()), DictFrame.fromOne(ModItems.briquette, EnumBriquetteType.COAL))",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_briquette_0",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustcoal"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:briquette_coal",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 71
+      },
+      "expression": "makeRecipe(StampType.FLAT, new OreDictStack(LIGNITE.dust()), DictFrame.fromOne(ModItems.briquette, EnumBriquetteType.LIGNITE))",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_briquette_1",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustlignite"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:briquette_lignite",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 72
+      },
+      "expression": "makeRecipe(StampType.FLAT, new ComparableStack(ModItems.powder_sawdust), DictFrame.fromOne(ModItems.briquette, EnumBriquetteType.WOOD))",
+      "stamp": "flat",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/flat_briquette_2",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "hbm:powder_sawdust"
+        },
+        "stamp": "flat",
+        "result": {
+          "id": "hbm:briquette_wood",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 74
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(IRON.ingot()), ModItems.plate_iron)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_iron",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotiron"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_iron",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 75
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(GOLD.ingot()), ModItems.plate_gold)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_gold",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotgold"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_gold",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 76
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(TI.ingot()), ModItems.plate_titanium)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_titanium",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingottitanium"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_titanium",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 77
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(AL.ingot()), ModItems.plate_aluminium)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_aluminium",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotaluminum"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_aluminium",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 78
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(STEEL.ingot()), ModItems.plate_steel)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_steel",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotsteel"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_steel",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 79
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(PB.ingot()), ModItems.plate_lead)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_lead",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotlead"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_lead",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 80
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(CU.ingot()), ModItems.plate_copper)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_copper",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotcopper"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_copper",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 81
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(SA326.ingot()), ModItems.plate_schrabidium)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_schrabidium",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_schrabidium",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 82
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(CMB.ingot()), ModItems.plate_combine_steel)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_combine_steel",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_combine_steel",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 83
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(GUNMETAL.ingot()), ModItems.plate_gunmetal)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_gunmetal",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_gunmetal",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 84
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(WEAPONSTEEL.ingot()), ModItems.plate_weaponsteel)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_weaponsteel",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_weaponsteel",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 85
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(BIGMT.ingot()), ModItems.plate_saturnite)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_saturnite",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_saturnite",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 86
+      },
+      "expression": "makeRecipe(StampType.PLATE, new OreDictStack(DURA.ingot()), ModItems.plate_dura_steel)",
+      "stamp": "plate",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/plate_plate_dura_steel",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+        },
+        "stamp": "plate",
+        "result": {
+          "id": "hbm:plate_dura_steel",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 88
+      },
+      "expression": "makeRecipe(StampType.C9, new OreDictStack(GUNMETAL.plate()), DictFrame.fromOne(ModItems.casing, EnumCasingType.SMALL, 4))",
+      "stamp": "c9",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/c9_casing_0",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/plategunmetal"
+        },
+        "stamp": "c9",
+        "result": {
+          "id": "hbm:casing_small",
+          "count": 4
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 89
+      },
+      "expression": "makeRecipe(StampType.C50, new OreDictStack(GUNMETAL.plate()), DictFrame.fromOne(ModItems.casing, EnumCasingType.LARGE, 2))",
+      "stamp": "c50",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/c50_casing_1",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/plategunmetal"
+        },
+        "stamp": "c50",
+        "result": {
+          "id": "hbm:casing_large",
+          "count": 2
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 90
+      },
+      "expression": "makeRecipe(StampType.C9, new OreDictStack(WEAPONSTEEL.plate()), DictFrame.fromOne(ModItems.casing, EnumCasingType.SMALL_STEEL, 4))",
+      "stamp": "c9",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/c9_casing_2",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+        },
+        "stamp": "c9",
+        "result": {
+          "id": "hbm:casing_small_steel",
+          "count": 4
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 91
+      },
+      "expression": "makeRecipe(StampType.C50, new OreDictStack(WEAPONSTEEL.plate()), DictFrame.fromOne(ModItems.casing, EnumCasingType.LARGE_STEEL, 2))",
+      "stamp": "c50",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/c50_casing_3",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+        },
+        "stamp": "c50",
+        "result": {
+          "id": "hbm:casing_large_steel",
+          "count": 2
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 95
+      },
+      "expression": "makeRecipe(StampType.WIRE, new OreDictStack(MaterialShapes.INGOT.make(mat)), new ItemStack(ModItems.wire_fine, 8, mat.id))",
+      "stamp": "wire",
+      "migration": {
+        "status": "implemented_runtime_generated_recipe"
+      },
+      "generator": {
+        "hook": "com.hbm.machine.press.PressWireRecipes.register (called by PressContent.register)",
+        "nativeType": "hbm:press",
+        "idPattern": "hbm:press/generated_wire/<material.id>",
+        "materialOrder": "HbmMaterials.ordered(), including source custom hbmMats/hbmShapes configs",
+        "conditions": [
+          "material.autogen contains original WIRE shape",
+          "original case-sensitive OreDictionary name MaterialShapes.INGOT.make(material) exists"
+        ],
+        "input": "metadata-aware LegacyOreIngredient for first-alias INGOT ore name; no guessed material membership",
+        "output": {
+          "id": "hbm:wire_fine",
+          "count": 8,
+          "legacyMetadata": "<material.id>"
+        },
+        "lifecycle": "native RecipeHolder insertion at server start and before vanilla recipe synchronization on reload/login",
+        "viewers": "native synchronized RecipeManager is the actual machine, JEI and REI source",
+        "datapackOverrides": "explicit native recipe with the stable generated ID wins",
+        "runtimeRecipeCount": "depends on actual configured material and ore registry; not measured in game"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 99
+      },
+      "expression": "makeRecipe(StampType.CIRCUIT, new OreDictStack(SI.billet()), DictFrame.fromOne(ModItems.circuit, EnumCircuitType.SILICON))",
+      "stamp": "circuit",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/circuit_circuit_4",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/billetsilicon"
+        },
+        "stamp": "circuit",
+        "result": {
+          "id": "hbm:circuit_silicon",
+          "count": 1
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 101
+      },
+      "expression": "makeRecipe(StampType.PRINTING1, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE1))",
+      "stamp": "printing1",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing1_page_of__0",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing1",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 102
+      },
+      "expression": "makeRecipe(StampType.PRINTING2, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE2))",
+      "stamp": "printing2",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing2_page_of__1",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing2",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 1
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 103
+      },
+      "expression": "makeRecipe(StampType.PRINTING3, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE3))",
+      "stamp": "printing3",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing3_page_of__2",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing3",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 2
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 104
+      },
+      "expression": "makeRecipe(StampType.PRINTING4, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE4))",
+      "stamp": "printing4",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing4_page_of__3",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing4",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 3
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 105
+      },
+      "expression": "makeRecipe(StampType.PRINTING5, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE5))",
+      "stamp": "printing5",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing5_page_of__4",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing5",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 4
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 106
+      },
+      "expression": "makeRecipe(StampType.PRINTING6, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE6))",
+      "stamp": "printing6",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing6_page_of__5",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing6",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 5
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 107
+      },
+      "expression": "makeRecipe(StampType.PRINTING7, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE7))",
+      "stamp": "printing7",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing7_page_of__6",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing7",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 6
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/PressRecipes.java",
+        "line": 108
+      },
+      "expression": "makeRecipe(StampType.PRINTING8, new ComparableStack(Items.paper), DictFrame.fromOne(ModItems.page_of_, EnumPages.PAGE8))",
+      "stamp": "printing8",
+      "migration": {
+        "status": "implemented_datapack_recipe"
+      },
+      "id": "hbm:press/printing8_page_of__7",
+      "recipe": {
+        "type": "hbm:press",
+        "input": {
+          "item": "minecraft:paper"
+        },
+        "stamp": "printing8",
+        "result": {
+          "id": "hbm:page_of_",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 7
+          }
+        }
+      }
+    }
+  ]
+}

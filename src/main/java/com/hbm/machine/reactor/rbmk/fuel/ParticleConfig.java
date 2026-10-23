@@ -1,0 +1,4 @@
+package com.hbm.machine.reactor.rbmk.fuel;
+import net.neoforged.fml.ModContainer;import net.neoforged.fml.config.ModConfig;import net.neoforged.neoforge.common.ModConfigSpec;
+/** Unique original WeaponConfig dropped-singularity switch, reusable by later true singularity items. */
+public final class ParticleConfig {public static final ModConfigSpec SPEC;public static final ModConfigSpec.BooleanValue DROP_SINGULARITIES;static{var builder=new ModConfigSpec.Builder();DROP_SINGULARITIES=builder.comment("奇点和黑洞粒子落地时是否产生对应效果；关闭后落地物品仍被消耗。").define(java.util.List.of("droppedItems","singularityEffectsEnabled"),true);SPEC=builder.build();}public static void register(ModContainer container){container.registerConfig(ModConfig.Type.SERVER,SPEC,"hbm-particles.toml");}public static boolean droppedSingularities(){return !SPEC.isLoaded()||DROP_SINGULARITIES.get();}private ParticleConfig(){}}

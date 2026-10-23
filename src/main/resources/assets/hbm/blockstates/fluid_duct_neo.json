@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "open=false,variant=0": {
+      "model": "hbm:block/fluid_duct_neo"
+    },
+    "open=true,variant=0": {
+      "model": "hbm:block/fluid_duct_neo"
+    },
+    "open=false,variant=1": {
+      "model": "hbm:block/fluid_duct_neo"
+    },
+    "open=true,variant=1": {
+      "model": "hbm:block/fluid_duct_neo"
+    },
+    "open=false,variant=2": {
+      "model": "hbm:block/fluid_duct_neo"
+    },
+    "open=true,variant=2": {
+      "model": "hbm:block/fluid_duct_neo"
+    }
+  }
+}

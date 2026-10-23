@@ -1,0 +1,11 @@
+package com.hbm.client.reactor.pile.core;
+import com.hbm.machine.reactor.pile.core.*;import com.hbm.machine.refinery.deco.DecoSteelModel;import java.util.*;import java.util.function.Function;import net.minecraft.client.renderer.RenderType;import net.minecraft.client.renderer.block.model.BakedQuad;import net.minecraft.client.renderer.texture.*;import net.minecraft.client.resources.model.*;import net.minecraft.core.*;import net.minecraft.util.RandomSource;import net.minecraft.world.level.BlockAndTintGetter;import net.minecraft.world.level.block.state.BlockState;import net.neoforged.neoforge.client.model.BakedModelWrapper;import net.neoforged.neoforge.client.model.data.ModelData;
+/** Six original IBlockCT receivers, including their intentionally shared fallback base icons. */
+public final class PileCTModel extends BakedModelWrapper<BakedModel> {
+ private final BakedModel top,horizontal;
+ public PileCTModel(BakedModel original,int metadata,Function<Material,TextureAtlasSprite> sprites){super(original);top=wrap(original,sprites,"pile_block_top",metadata==7?"pile_block_control_top":"pile_block_top");String receiver=metadata==3||metadata==5?"pile_block_input":metadata==4||metadata==6?"pile_block_output":metadata==1?"pile_block_core":"pile_block";horizontal=wrap(original,sprites,metadata==1?"pile_block_top":"pile_block",receiver);}
+ private static BakedModel wrap(BakedModel original,Function<Material,TextureAtlasSprite> sprites,String base,String connected){return DecoSteelModel.wrap(original,sprites.apply(new Material(TextureAtlas.LOCATION_BLOCKS,PileCoreContent.id("block/"+base))),sprites.apply(new Material(TextureAtlas.LOCATION_BLOCKS,PileCoreContent.id("block/"+connected+"_ct"))),(state,other)->other.is(PileCoreContent.BODY.get()));}
+ @Override public ModelData getModelData(BlockAndTintGetter world,BlockPos pos,BlockState state,ModelData data){return top.getModelData(world,pos,state,data);}
+ @Override public List<BakedQuad> getQuads(BlockState state,Direction side,RandomSource random){return getQuads(state,side,random,ModelData.EMPTY,null);}
+ @Override public List<BakedQuad> getQuads(BlockState state,Direction side,RandomSource random,ModelData data,RenderType layer){return side==null?List.of():(side.getAxis()==Direction.Axis.Y?top:horizontal).getQuads(state,side,random,data,layer);}
+}

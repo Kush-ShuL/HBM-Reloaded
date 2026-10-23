@@ -1,0 +1,57 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_converter_he_rf",
+      "id": "hbm:machine_converter_he_rf",
+      "kind": "block",
+      "module": "energy-converters",
+      "originalClass": "com.hbm.blocks.machine.BlockConverterHeRf",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2031
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "machine_converter_rf_he",
+      "id": "hbm:machine_converter_rf_he",
+      "kind": "block",
+      "module": "energy-converters",
+      "originalClass": "com.hbm.blocks.machine.BlockConverterRfHe",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2032
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    }
+  ],
+  "hooks": {
+    "register": "ConverterContent.register(IEventBus)",
+    "creative": "ConverterContent.creativeStacks(String tab)",
+    "pickaxeTag": "hbm:mineable/pickaxe_converters",
+    "client": "Automatic source ILookOverlay subscriber; ordinary vanilla cube block/item model",
+    "FE": "Capabilities.EnergyStorage.BLOCK registered only for the two original converter BE classes",
+    "config": "config/hbmConfig/hbmMachines.json: HEToRFConverter and RFToHEConverter; public ConverterConfig.load() reloads"
+  },
+  "heCapacity": 5000000,
+  "rfCapacity": 1000000,
+  "rfMaximumReceive": 1000000,
+  "rfMaximumExtract": 1000000,
+  "defaults": {
+    "HEToRFConverter": {
+      "L:HE_Used": 5,
+      "L:RF_Created": 1,
+      "D:inputDecay2": 0
+    },
+    "RFToHEConverter": {
+      "L:RF_Used2": 2,
+      "L:HE_Created2": 5,
+      "D:inputDecay2": 0
+    }
+  },
+  "roundTrip": "10HE ->2RF/FE ->5HE: original50percent retention",
+  "syncRadius": 15,
+  "externalEnergy": "Only original converter blocks expose FE;1FE maps to original1RF storage unit. Ordinary nativeHE blocks do not expose FE/RF/EU."
+}

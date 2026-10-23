@@ -1,0 +1,40 @@
+{
+  "en_us": {
+    "item.hbm.card_aos": "Ace of Spades",
+    "item.hbm.card_qos": "Queen of Spades",
+    "item.hbm.clay_tablet": "Clay Tablet",
+    "stat.hbm.ntm_legendary": "Legendary Items Created",
+    "block.hbm.barbed_wire": "Barbed Wire",
+    "block.hbm.dungeon_chain": "Metal Chain",
+    "block.hbm.pedestal": "Pedestal",
+    "tooltip.hbm.pedestal_card.top": "Top of the line!",
+    "tooltip.hbm.pedestal_card.power": "Power!",
+    "tooltip.hbm.pedestal_card.ammo": "Guns now have a 33% chance to not consume ammo.",
+    "tooltip.hbm.pedestal_card.damage": "Adds a 33% chance to tank damage with no cap.",
+    "gui.hbm.pedestal.condition.full_moon": "Requires a full moon at night",
+    "gui.hbm.pedestal.condition.new_moon": "Requires a new moon at night",
+    "gui.hbm.pedestal.condition.sun": "Requires sunlight",
+    "gui.hbm.pedestal.condition.good_karma": "Requires a nearby player with reputation ≥10",
+    "gui.hbm.pedestal.condition.bad_karma": "Requires a nearby player with reputation ≤-10",
+    "gui.hbm.pedestal.contains": "%s × %s"
+  },
+  "zh_cn": {
+    "item.hbm.card_aos": "黑桃A",
+    "item.hbm.card_qos": "黑桃皇后",
+    "item.hbm.clay_tablet": "泥板",
+    "block.hbm.barbed_wire": "带刺铁丝网",
+    "block.hbm.dungeon_chain": "金属链",
+    "block.hbm.pedestal": "物品基座",
+    "stat.hbm.ntm_legendary": "制作传说物品次数",
+    "tooltip.hbm.pedestal_card.top": "无可挑剔！",
+    "tooltip.hbm.pedestal_card.power": "力量！",
+    "tooltip.hbm.pedestal_card.ammo": "枪械有33%的概率不消耗弹药。",
+    "tooltip.hbm.pedestal_card.damage": "有33%的概率完全免疫本次伤害，不受伤害量限制。",
+    "gui.hbm.pedestal.condition.full_moon": "需要满月之夜",
+    "gui.hbm.pedestal.condition.new_moon": "需要新月之夜",
+    "gui.hbm.pedestal.condition.sun": "需要太阳照耀",
+    "gui.hbm.pedestal.condition.good_karma": "附近玩家的声望需至少为10",
+    "gui.hbm.pedestal.condition.bad_karma": "附近玩家的声望需至多为-10",
+    "gui.hbm.pedestal.contains": "%s × %s"
+  }
+}

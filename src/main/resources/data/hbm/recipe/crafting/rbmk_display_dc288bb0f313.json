@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C",
+    "B"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:crt_display"
+    },
+    "B": {
+      "item": "hbm:rbmk_display_blank"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_display",
+    "count": 1
+  }
+}

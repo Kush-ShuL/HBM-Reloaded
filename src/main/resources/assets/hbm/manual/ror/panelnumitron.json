@@ -1,0 +1,23 @@
+{
+  "name": "Redstone-over-Radio Numeric Display",
+  "icon": [
+    "hbm:tile.rbmk_numitron",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.rbmk_numitron"
+    ]
+  ],
+  "title": {
+    "en_US": "Redstone-over-Radio Numeric Display",
+    "ru_RU": "Редстоун-по-радио цифровой дисплей",
+    "zh_CN": "无线红石数码管面板"
+  },
+  "content": {
+    "en_US": "Aesthetic [[redstone over radio|Redstone over Radio]] receiving device, needs to be configured with a scredriver first. Can represent numeric RoR values using a seven segment number display. Up to two displays can be enabled using the red buttons, each display can receive one value over its own RoR channel. Large values displayed will be shortened, using SI suffixes. Also useful for displaying item counts provided by an [[RoR item counter|Redstone-over-Radio Item Counter]].<br><br>{{Template:RoRPanels}}",
+    "ru_RU": "Информационное устройство приёма [[редстоун-по-радио|Redstone over Radio]], которое необходимо сначала настроить с помощью отвёртки. Может отображать числовые значения РпР с помощью семисегментного цифрового дисплея. С помощью красных кнопок можно активировать до двух дисплеев, каждый из которых может принимать одно значение по своему собственному каналу РпР. Большие отображаемые значения будут сокращены с использованием суффиксов СИ. Также полезно для отображения количества предметов, предоставляемого [[РпР предметного счётчика|Redstone-over-Radio Item Counter]].<br><br>{{Template:RoRPanels}}",
+    "zh_CN": "一种用于显示的[[无线红石|Redstone over Radio]]接收设备，必须先用螺丝刀配置。它使用七段数码管表示数值。通过红色按钮最多可启用两个显示器，各自在独立的 RoR 频道接收一个值。大数会使用国际单位制前缀缩写，也适合显示[[无线红石物品计数器|Redstone-over-Radio Item Counter]]提供的物品数量。<br><br>{{Template:RoRPanels}}"
+  }
+}

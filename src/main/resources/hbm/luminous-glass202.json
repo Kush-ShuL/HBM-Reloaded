@@ -1,0 +1,89 @@
+{
+  "module": "luminous-glass202",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "glass_uranium",
+      "id": "hbm:glass_uranium",
+      "legacyRegistryId": "hbm:tile.glass_uranium",
+      "originalClass": "BlockNTMGlassCT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1644
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2958
+          },
+          "expression": "GameRegistry.registerBlock(glass_uranium, glass_uranium.getUnlocalizedName())",
+          "arguments": [
+            "glass_uranium",
+            "glass_uranium.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "glass_trinitite",
+      "id": "hbm:glass_trinitite",
+      "legacyRegistryId": "hbm:tile.glass_trinitite",
+      "originalClass": "BlockNTMGlassCT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1645
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2959
+          },
+          "expression": "GameRegistry.registerBlock(glass_trinitite, glass_trinitite.getUnlocalizedName())",
+          "arguments": [
+            "glass_trinitite",
+            "glass_trinitite.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    },
+    {
+      "kind": "block",
+      "symbol": "glass_polonium",
+      "id": "hbm:glass_polonium",
+      "legacyRegistryId": "hbm:tile.glass_polonium",
+      "originalClass": "BlockNTMGlassCT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1646
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2960
+          },
+          "expression": "GameRegistry.registerBlock(glass_polonium, glass_polonium.getUnlocalizedName())",
+          "arguments": [
+            "glass_polonium",
+            "glass_polonium.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataIgnored": true,
+      "hasBlockEntity": false
+    }
+  ]
+}

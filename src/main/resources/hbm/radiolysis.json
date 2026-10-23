@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "symbol": "machine_radiolysis",
+      "id": "hbm:machine_radiolysis",
+      "kind": "block",
+      "creativeTab": "machine",
+      "originalClass": "MachineRadiolysis",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1856
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "recipes": 13,
+  "assembly": 1,
+  "sourceOcMethods": 0,
+  "storage": "nativeHE1M;private3fluidtanks2000each"
+}

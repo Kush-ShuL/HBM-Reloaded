@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_lead",
+    {
+      "id": "#c:ores/lead",
+      "required": false
+    }
+  ]
+}

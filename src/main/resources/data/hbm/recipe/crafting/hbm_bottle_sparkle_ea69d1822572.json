@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:bottle_sparkle",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:bottle_nuka"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/nuggetgold"
+    }
+  ]
+}

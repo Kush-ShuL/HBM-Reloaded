@@ -1,0 +1,64 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crate_iron",
+      "id": "hbm:crate_iron",
+      "originalClass": "BlockStorageCrate",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2176",
+      "slots": 36,
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "crate_steel",
+      "id": "hbm:crate_steel",
+      "originalClass": "BlockStorageCrate",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2177",
+      "slots": 54,
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "crate_desh",
+      "id": "hbm:crate_desh",
+      "originalClass": "BlockStorageCrate",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2178",
+      "slots": 104,
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "safe",
+      "id": "hbm:safe",
+      "originalClass": "BlockStorageCrate",
+      "creativeTab": "machine",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2181",
+      "slots": 15,
+      "stateProperty": "legacy_meta",
+      "stateMetadataRange": [
+        0,
+        15
+      ]
+    }
+  ],
+  "config": {
+    "CRATE_OPEN_HELD": true,
+    "CRATE_KEEP_CONTENTS": true
+  }
+}

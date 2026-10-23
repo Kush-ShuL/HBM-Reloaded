@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:brick_concrete_mossy"
+    }
+  },
+  "result": {
+    "id": "hbm:concrete_brick_slab",
+    "count": 6,
+    "components": {
+      "hbm:legacy_metadata": 1
+    }
+  }
+}

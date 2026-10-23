@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:chocolate_milk",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "NITROGLYCERIN",
+      "amount": 1000
+    }
+  ]
+}

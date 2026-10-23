@@ -1,0 +1,43 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_satlinker",
+      "id": "hbm:machine_satlinker",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1954
+      },
+      "legacyRegistryId": "hbm:tile.machine_satlinker",
+      "originalClass": "MachineSatLinker",
+      "creativeTab": "missile",
+      "stackSize": 64
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_coord",
+      "id": "hbm:sat_coord",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3441
+      },
+      "legacyRegistryId": "hbm:item.sat_coord",
+      "originalClass": "ItemSatInterface",
+      "creativeTab": "missile",
+      "stackSize": 1
+    },
+    {
+      "kind": "item",
+      "symbol": "sat_designator",
+      "id": "hbm:sat_designator",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3442
+      },
+      "legacyRegistryId": "hbm:item.sat_designator",
+      "originalClass": "ItemSatDesignator",
+      "creativeTab": "missile",
+      "stackSize": 1
+    }
+  ]
+}

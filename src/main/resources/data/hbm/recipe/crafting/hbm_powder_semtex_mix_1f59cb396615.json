@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:powder_semtex_mix",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:solid_fuel"
+    },
+    {
+      "item": "hbm:cordite"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+    }
+  ]
+}

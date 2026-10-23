@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:pwr_fuel",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 8
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F",
+    "I",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetplutonium241"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

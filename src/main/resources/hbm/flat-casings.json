@@ -1,0 +1,125 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "casing_small",
+      "id": "hbm:casing_small",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 0,
+      "sourceEnum": "SMALL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "casing_large",
+      "id": "hbm:casing_large",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 1,
+      "sourceEnum": "LARGE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "casing_small_steel",
+      "id": "hbm:casing_small_steel",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 2,
+      "sourceEnum": "SMALL_STEEL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "casing_large_steel",
+      "id": "hbm:casing_large_steel",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 3,
+      "sourceEnum": "LARGE_STEEL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "casing_shotshell",
+      "id": "hbm:casing_shotshell",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 4,
+      "sourceEnum": "SHOTSHELL",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "casing_buckshot",
+      "id": "hbm:casing_buckshot",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 5,
+      "sourceEnum": "BUCKSHOT",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "casing_buckshot_advanced",
+      "id": "hbm:casing_buckshot_advanced",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.casing",
+      "sourceLegacyRegistryId": "hbm:item.casing",
+      "sourceOrdinal": 6,
+      "sourceEnum": "BUCKSHOT_ADVANCED",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2640
+      }
+    }
+  ],
+  "sourceCreativeOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

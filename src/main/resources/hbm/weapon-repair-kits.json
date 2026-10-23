@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "gun_kit_1",
+      "id": "hbm:gun_kit_1",
+      "legacyRegistryId": "hbm:item.gun_kit_1",
+      "originalClass": "ItemRepairKit",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:2844",
+      "creativeTab": "consumable",
+      "maxDamage": 9
+    },
+    {
+      "kind": "item",
+      "symbol": "gun_kit_2",
+      "id": "hbm:gun_kit_2",
+      "legacyRegistryId": "hbm:item.gun_kit_2",
+      "originalClass": "ItemRepairKit",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:2845",
+      "creativeTab": "consumable",
+      "maxDamage": 99
+    }
+  ],
+  "uses": [
+    10,
+    100
+  ],
+  "repairFractionPerActualConfig": 0.25,
+  "recipes": [
+    "hbm:crafting/hbm_gun_kit_1_1acb556939c7",
+    "hbm:crafting/hbm_gun_kit_2_04cc9e43635f"
+  ]
+}

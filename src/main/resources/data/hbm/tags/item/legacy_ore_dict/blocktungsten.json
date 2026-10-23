@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_tungsten",
+    {
+      "id": "#c:storage_blocks/tungsten",
+      "required": false
+    }
+  ]
+}

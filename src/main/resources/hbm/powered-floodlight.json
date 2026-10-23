@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "floodlight",
+      "id": "hbm:floodlight",
+      "legacyRegistryId": "hbm:tile.floodlight",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1492
+      },
+      "originalClass": "Floodlight",
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "floodlight_beam",
+      "id": "hbm:floodlight_beam",
+      "legacyRegistryId": "hbm:tile.floodlight_beam",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1493
+      },
+      "originalClass": "FloodlightBeam",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/pipette_laboratory",
+    "layer1": "hbm:item/pipette_empty"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:pipette_filled": 0.5
+      },
+      "model": "hbm:item/pipette_laboratory_filled"
+    }
+  ]
+}

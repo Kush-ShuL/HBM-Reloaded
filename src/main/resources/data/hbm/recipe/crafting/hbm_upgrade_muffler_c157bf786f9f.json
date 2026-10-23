@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:upgrade_muffler",
+    "count": 16
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IWI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  }
+}

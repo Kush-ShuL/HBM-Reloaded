@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "power_net_tool",
+      "id": "hbm:power_net_tool",
+      "legacyRegistryId": "hbm:item.power_net_tool",
+      "originalClass": "ItemPowerNetTool",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3840
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5513
+          },
+          "expression": "GameRegistry.registerItem(power_net_tool, power_net_tool.getUnlocalizedName())",
+          "arguments": [
+            "power_net_tool",
+            "power_net_tool.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.powernettool.PowerNetToolContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1
+    }
+  ]
+}

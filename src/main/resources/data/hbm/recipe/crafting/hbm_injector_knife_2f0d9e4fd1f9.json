@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:injector_knife",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:injector_5htp"
+    },
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "minecraft:iron_sword",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 13
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "RCR",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+    },
+    "R": {
+      "item": "hbm:crystal_redstone"
+    },
+    "C": {
+      "item": "hbm:circuit_advanced"
+    }
+  }
+}

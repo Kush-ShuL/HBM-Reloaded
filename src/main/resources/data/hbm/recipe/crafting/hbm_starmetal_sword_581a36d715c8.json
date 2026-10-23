@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:starmetal_sword",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    " B ",
+    "ISI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "S": {
+      "item": "hbm:ring_starmetal"
+    },
+    "B": {
+      "item": "hbm:cobalt_decorated_sword"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleToolRecipes)"
+    }
+  ]
+}

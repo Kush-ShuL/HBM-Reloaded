@@ -1,0 +1,35 @@
+{
+  "entries": [
+    {
+      "symbol": "pile_rod",
+      "id": "hbm:pile_rod",
+      "kind": "item",
+      "creativeTab": "control",
+      "originalClass": "ItemPileRodMK2",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3010
+      },
+      "metadataRange": [
+        0,
+        8
+      ],
+      "names": [
+        "ra226be",
+        "po210be",
+        "zr",
+        "nu",
+        "pu239",
+        "rgp",
+        "waste",
+        "thorium",
+        "thorium_fuel"
+      ],
+      "enumClass": "EnumPileRod",
+      "runtimeValidated": false
+    }
+  ],
+  "sourceFuelVariants": 9,
+  "assemblerRecipes": 5,
+  "anvilRecipes": 4
+}

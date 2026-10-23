@@ -1,0 +1,17 @@
+{
+  "result": {
+    "id": "hbm:plate_polymer",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotbrick"
+    }
+  }
+}

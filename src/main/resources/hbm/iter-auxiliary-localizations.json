@@ -1,0 +1,18 @@
+{
+  "en_us": {
+    "tile.fusion_collector.name": "Fusion Reactor Collector Chamber",
+    "tile.fusion_collector.desc": "Can be connected to the main vessel$to increase byproduct yield.",
+    "block.hbm.fusion_collector": "Fusion Reactor Collector Chamber",
+    "tile.fusion_coupler.name": "Fusion Reactor Plasma Coupler",
+    "tile.fusion_coupler.desc": "Turns plasma output energy into$klystron energy, which can be used in a$second plasma vessel to ignite plasma.",
+    "block.hbm.fusion_coupler": "Fusion Reactor Plasma Coupler"
+  },
+  "zh_cn": {
+    "tile.fusion_collector.name": "聚变反应堆收集室",
+    "tile.fusion_collector.desc": "可通过与主机连接提升副产物产量",
+    "block.hbm.fusion_collector": "聚变反应堆收集室",
+    "tile.fusion_coupler.name": "聚变反应堆等离子体耦合器",
+    "tile.fusion_coupler.desc": "将等离子体输出的能量转化为速调管能量。$可以用于点燃第二个等离子体容器中的等离子体。",
+    "block.hbm.fusion_coupler": "聚变反应堆等离子体耦合器"
+  }
+}

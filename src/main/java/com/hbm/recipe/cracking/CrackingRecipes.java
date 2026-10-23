@@ -1,0 +1,10 @@
+package com.hbm.recipe.cracking;
+import com.google.gson.*;import com.hbm.fluid.*;import java.io.*;import java.nio.charset.StandardCharsets;import java.nio.file.*;import java.util.*;import net.neoforged.fml.loading.FMLPaths;
+/** Genuine source shared cracking map and hbmCracking.json replacement, reusable by the later catalytic cracker. */
+public final class CrackingRecipes {
+ public record Entry(HbmFluidType input,FluidStack left,FluidStack right){}
+ public static List<Entry> load(){Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmCracking.json");try{Files.createDirectories(directory);JsonObject root;if(Files.isRegularFile(active)){try(var reader=Files.newBufferedReader(active)){root=JsonParser.parseReader(reader).getAsJsonObject();}}else{try(var stream=CrackingRecipes.class.getResourceAsStream("/hbm/radiolysis-cracking-source.json")){if(stream==null)throw new IllegalStateException("Missing actual cracking source recipes");root=JsonParser.parseReader(new InputStreamReader(stream,StandardCharsets.UTF_8)).getAsJsonObject();}Files.writeString(directory.resolve("_hbmCracking.json"),new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}var entries=new LinkedHashMap<HbmFluidType,Entry>();for(var value:root.getAsJsonArray("recipes")){var row=value.getAsJsonObject();var input=fluid(row.get("input").getAsString());entries.put(input,new Entry(input,stack(row.getAsJsonArray("output1")),stack(row.getAsJsonArray("output2"))));}return List.copyOf(entries.values());}catch(IOException error){throw new UncheckedIOException("Cannot load original hbmCracking.json",error);}}
+ private static FluidStack stack(JsonArray array){return new FluidStack(fluid(array.get(0).getAsString()),array.get(1).getAsInt(),array.size()>2?array.get(2).getAsInt():0);}
+ private static HbmFluidType fluid(String name){var fluid=HbmFluids.fromName(name);if(fluid==HbmFluids.NONE&&!name.equals("NONE"))throw new IllegalArgumentException("Unknown original cracking fluid "+name);return fluid;}
+ private CrackingRecipes(){}
+}

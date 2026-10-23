@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:drone_waypoint",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "G",
+    "T",
+    "C"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyegreen"
+    },
+    "T": {
+      "item": "minecraft:redstone_torch"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    }
+  }
+}

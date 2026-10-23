@@ -1,0 +1,20 @@
+{
+  "type": "hbm:irradiation",
+  "input": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "minecraft:brown_mushroom"
+      }
+    },
+    "count": 1
+  },
+  "fusion_only": false,
+  "key_kind": "item",
+  "source_key": "minecraft:brown_mushroom",
+  "order": 10,
+  "solid_output": {
+    "id": "hbm:mush",
+    "count": 1
+  }
+}

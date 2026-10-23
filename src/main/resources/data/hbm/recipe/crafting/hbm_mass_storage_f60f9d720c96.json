@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:mass_storage",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " L ",
+    "ICI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingottitanium"
+    },
+    "C": {
+      "item": "hbm:crate_steel"
+    },
+    "L": {
+      "item": "hbm:circuit_vacuum_tube"
+    }
+  }
+}

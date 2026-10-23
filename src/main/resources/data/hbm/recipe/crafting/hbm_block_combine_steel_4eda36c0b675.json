@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:block_combine_steel",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:ingot_combine_steel"
+    }
+  }
+}

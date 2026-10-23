@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:rbmk_absorber",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "GRG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotboron"
+    },
+    "R": {
+      "item": "hbm:rbmk_blank"
+    }
+  }
+}

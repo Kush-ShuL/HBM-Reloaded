@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:coil_copper_torus",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "CPC",
+    " C "
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "C": {
+      "item": "hbm:coil_copper"
+    }
+  }
+}

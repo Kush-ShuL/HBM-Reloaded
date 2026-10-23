@@ -1,0 +1,38 @@
+package com.hbm.machine.coolingtower;
+import com.hbm.api.machine.MachineView;
+import com.hbm.energy.*;
+import com.hbm.fluid.*;
+import com.hbm.fluid.network.*;
+import com.hbm.multiblock.DummyableBlock;
+import java.util.*;
+import java.util.function.Consumer;
+import net.minecraft.core.*;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+/** True passive condenser tick; old SPENTSTEAM/WATER states and all original node grouping are preserved. */
+public final class CoolingTowerBlockEntity extends BlockEntity implements StandardFluidTransceiver,MachineView {
+ public final CoolingTowerKind kind;public final FluidTank[] tanks;public int age,waterTimer,throughput;private List<PowerNode> powerNodes=List.of();private FluidPorts fluidPorts;private List<BlockPos> active=List.of();private CompoundTag lastSent;public static Consumer<CoolingTowerBlockEntity> clientTick=machine->{};
+ public CoolingTowerBlockEntity(BlockPos pos,BlockState state){this(CoolingTowerContent.kind(state),pos,state);}
+ private CoolingTowerBlockEntity(CoolingTowerKind kind,BlockPos pos,BlockState state){super(CoolingTowerContent.ENTITIES.get(kind).get(),pos,state);this.kind=kind;tanks=new FluidTank[]{new FluidTank(HbmFluids.fromName("SPENTSTEAM"),CoolingTowerConfig.capacity(kind,true)),new FluidTank(HbmFluids.WATER,CoolingTowerConfig.capacity(kind,false))};}
+ @Override public boolean isValidBlockState(BlockState state){return getType().isValid(state)&&(!state.hasProperty(DummyableBlock.LEGACY_META)||DummyableBlock.isCore(state));}
+ public record Port(BlockPos position,List<Direction> sides){NodeConnection[] connections(){return sides.stream().map(side->new NodeConnection(position.relative(side),side)).toArray(NodeConnection[]::new);}}
+ public static List<Port> ports(CoolingTowerKind kind,BlockPos origin){var result=new ArrayList<Port>();if(kind==CoolingTowerKind.CONDENSER)return List.of(new Port(origin,List.of(Direction.values())));if(kind==CoolingTowerKind.SMALL){result.add(new Port(origin.offset(0,0,-2),List.of(Direction.NORTH)));result.add(new Port(origin.offset(2,0,0),List.of(Direction.EAST)));result.add(new Port(origin.offset(0,0,2),List.of(Direction.SOUTH)));result.add(new Port(origin.offset(-2,0,0),List.of(Direction.WEST)));}else{for(var side:List.of(Direction.NORTH,Direction.EAST,Direction.SOUTH,Direction.WEST))for(int offset:new int[]{-3,0,3}){var pos=switch(side){case NORTH->origin.offset(offset,0,-4);case EAST->origin.offset(4,0,offset);case SOUTH->origin.offset(offset,0,4);default->origin.offset(-4,0,offset);};result.add(new Port(pos,List.of(side)));}}return List.copyOf(result);}
+ public boolean portConnects(BlockPos pos,Direction side){return side!=null&&ports(kind,worldPosition).stream().anyMatch(port->port.position().equals(pos)&&port.sides().contains(side));}
+ private void updatePorts(ServerLevel server){var ports=ports(kind,worldPosition).stream().filter(port->server.hasChunkAt(port.position())&&server.getBlockState(port.position()).is(getBlockState().getBlock())&&(kind==CoolingTowerKind.CONDENSER||DummyableBlock.isCore(server.getBlockState(port.position()))||DummyableBlock.isPort(server.getBlockState(port.position())))).toList();var positions=ports.stream().map(Port::position).toList();if(!positions.equals(active)||powerNodes.stream().anyMatch(PowerNode::isExpired)){disconnect();active=List.copyOf(positions);var powers=new ArrayList<PowerNode>();var connections=new ArrayList<NodeConnection>();for(var port:ports){var node=new PowerNode(port.position()).setConnections(port.connections());HbmEnergy.nodespace(server).createNode(node);powers.add(node);connections.addAll(Arrays.asList(port.connections()));}powerNodes=List.copyOf(powers);if(!positions.isEmpty())fluidPorts=new FluidPorts(positions.toArray(BlockPos[]::new),connections.toArray(NodeConnection[]::new));}if(fluidPorts!=null)fluidPorts.update(server,this);}
+ public static void tick(Level level,BlockPos pos,BlockState state,CoolingTowerBlockEntity machine){if(level instanceof ServerLevel server)machine.serverTick(server);else clientTick.accept(machine);}
+ private void serverTick(ServerLevel server){age++;if(age>=2)age=0;if(waterTimer>0)waterTimer--;int convert=Math.min(tanks[0].getFill(),tanks[1].getMaxFill()-tanks[1].getFill());throughput=convert;tanks[0].setFill(tanks[0].getFill()-convert);if(convert>0)waterTimer=20;tanks[1].setFill(tanks[1].getFill()+convert);updatePorts(server);setChanged();var tag=getUpdateTag(server.registryAccess());if(!tag.equals(lastSent)||server.getGameTime()%20==0){lastSent=tag.copy();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);}}
+ @Override public boolean canConnect(HbmFluidType type,Direction side){return side!=null&&(kind==CoolingTowerKind.CONDENSER||side.getAxis().isHorizontal());}
+ @Override public FluidTank[] getAllTanks(){return tanks;}@Override public FluidTank[] getReceivingTanks(){return new FluidTank[]{tanks[0]};}@Override public FluidTank[] getSendingTanks(){return new FluidTank[]{tanks[1]};}
+ @Override public long transferFluid(HbmFluidType type,int pressure,long amount){long rest=StandardFluidTransceiver.super.transferFluid(type,pressure,amount);if(rest!=amount)setChanged();return rest;}@Override public void useUpFluid(HbmFluidType type,int pressure,long amount){StandardFluidTransceiver.super.useUpFluid(type,pressure,amount);setChanged();}
+ private void disconnect(){if(level instanceof ServerLevel server){for(var node:powerNodes)if(!node.isExpired())HbmEnergy.nodespace(server).destroyNode(node);if(fluidPorts!=null)fluidPorts.remove(server);}powerNodes=List.of();active=List.of();fluidPorts=null;}
+ @Override public void setRemoved(){disconnect();super.setRemoved();}@Override public void onChunkUnloaded(){disconnect();super.onChunkUnloaded();}
+ @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);tanks[0].writeToNBT(tag,"water");tanks[1].writeToNBT(tag,"steam");}
+ @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);tanks[0].readFromNBT(tag,"water");tanks[1].readFromNBT(tag,"steam");}
+ @Override public CompoundTag getUpdateTag(HolderLookup.Provider lookup){var tag=new CompoundTag();saveAdditional(tag,lookup);tag.putByte("waterTimer",(byte)waterTimer);tag.putInt("throughput",throughput);return tag;}@Override public void handleUpdateTag(CompoundTag tag,HolderLookup.Provider lookup){loadAdditional(tag,lookup);waterTimer=tag.getByte("waterTimer");throughput=tag.getInt("throughput");}
+ @Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}@Override public void onDataPacket(net.minecraft.network.Connection connection,ClientboundBlockEntityDataPacket packet,HolderLookup.Provider lookup){handleUpdateTag(packet.getTag(),lookup);}
+ @Override public long energyStored(){return 0;}@Override public long energyCapacity(){return 0;}@Override public List<TankView> tanks(){return Arrays.stream(tanks).map(tank->new TankView(tank.getTankType(),tank.getFill(),tank.getMaxFill())).toList();}
+}

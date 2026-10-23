@@ -1,0 +1,26 @@
+{
+  "parent": "hbm:nuclear_tech",
+  "display": {
+    "icon": {
+      "id": "hbm:injector_knife"
+    },
+    "title": {
+      "translate": "achievement.someWounds"
+    },
+    "description": {
+      "translate": "achievement.someWounds.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pain": {
+      "trigger": "hbm:source_achievement",
+      "conditions": {
+        "achievement": "hbm:some_wounds"
+      }
+    }
+  }
+}

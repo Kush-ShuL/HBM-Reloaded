@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.242.405",
+  "duration": 1200,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:moon_turf",
+          "count": 1
+        }
+      },
+      "count": 16
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PEROXIDE",
+      "amount": 500,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:chunk_ore_moonstone",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:moon_turf",
+  "order": 405
+}

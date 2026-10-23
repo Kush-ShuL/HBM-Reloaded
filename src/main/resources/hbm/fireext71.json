@@ -1,0 +1,92 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "gun_fireext",
+      "id": "hbm:gun_fireext",
+      "legacyRegistryId": "hbm:item.gun_fireext",
+      "originalClass": "ItemGunBaseNT",
+      "creativeTab": "weapon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/weapon/sedna/factory/XFactoryTool.java",
+        "line": 270
+      },
+      "maxStackSize": 1,
+      "weaponQuality": "UTILITY",
+      "pistol": false,
+      "builtInDual": false
+    },
+    {
+      "kind": "item",
+      "symbol": "ammo_fireext",
+      "id": "hbm:ammo_fireext",
+      "legacyRegistryId": "hbm:item.ammo_fireext",
+      "originalClass": "ItemAmmo",
+      "creativeTab": "weapon",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3584
+      },
+      "maxStackSize": 64,
+      "metadataRange": [
+        0,
+        2
+      ],
+      "names": [
+        "water",
+        "foam",
+        "sand"
+      ],
+      "enumClass": "AmmoFireExt",
+      "sourceInternalNames": [
+        "ammo_fireext",
+        "ammo_fireext_foam",
+        "ammo_fireext_sand"
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "foam_layer",
+      "id": "hbm:foam_layer",
+      "legacyRegistryId": "hbm:tile.foam_layer",
+      "originalClass": "BlockLayering",
+      "creativeTab": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1675
+      },
+      "sourceMetadataRange": [
+        0,
+        15
+      ],
+      "sourceItemMetadata": "Ordinary ItemBlock always places metadata0; source world metadata keeps all16 values",
+      "stateHelper": "ExtinguishingLayerBlock.fromLegacy(metadata)",
+      "noDrops": true
+    },
+    {
+      "kind": "block",
+      "symbol": "sand_boron_layer",
+      "id": "hbm:sand_boron_layer",
+      "legacyRegistryId": "hbm:tile.sand_boron_layer",
+      "originalClass": "BlockLayering",
+      "creativeTab": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1676
+      },
+      "sourceMetadataRange": [
+        0,
+        15
+      ],
+      "sourceItemMetadata": "Ordinary ItemBlock always places metadata0; source world metadata keeps all16 values",
+      "stateHelper": "ExtinguishingLayerBlock.fromLegacy(metadata)",
+      "noDrops": true
+    }
+  ],
+  "bullets": [
+    "hbm:tool/fext_water",
+    "hbm:tool/fext_foam",
+    "hbm:tool/fext_sand"
+  ],
+  "sourceAmmoReloadCount": 300
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_sodium",
+    {
+      "id": "#c:dusts/sodium",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 15
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "RFR",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_chip_bismoid"
+    },
+    "R": {
+      "item": "hbm:crystal_redstone"
+    },
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/receiverheavyanybismoidbronze"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "nether": [
+    {
+      "item": "minecraft:glowstone_dust",
+      "count": 4,
+      "tier": 1,
+      "color": 16383821,
+      "weightOption": "bedrockGlowstoneSpawn",
+      "defaultWeight": 100,
+      "source": "legacy/src/main/java/com/hbm/world/feature/BedrockOre.java:29"
+    },
+    {
+      "item": "powder_fire",
+      "count": 4,
+      "tier": 1,
+      "color": 14103583,
+      "weightOption": "bedrockPhosphorusSpawn",
+      "defaultWeight": 50,
+      "source": "legacy/src/main/java/com/hbm/world/feature/BedrockOre.java:30"
+    },
+    {
+      "item": "minecraft:quartz",
+      "count": 4,
+      "tier": 1,
+      "color": 15790045,
+      "weightOption": "bedrockQuartzSpawn",
+      "defaultWeight": 100,
+      "source": "legacy/src/main/java/com/hbm/world/feature/BedrockOre.java:31"
+    }
+  ],
+  "densityTypes": [
+    {
+      "name": "LIGHT_METAL",
+      "suffix": "light",
+      "light": 16777215,
+      "dark": 3487029,
+      "noiseSeed": 2082127
+    },
+    {
+      "name": "HEAVY_METAL",
+      "suffix": "heavy",
+      "light": 8816262,
+      "dark": 0,
+      "noiseSeed": 2082128
+    },
+    {
+      "name": "RARE_EARTH",
+      "suffix": "rare",
+      "light": 15132342,
+      "dark": 1842176,
+      "noiseSeed": 2082129
+    },
+    {
+      "name": "ACTINIDE",
+      "suffix": "actinide",
+      "light": 12699581,
+      "dark": 2830887,
+      "noiseSeed": 2082130
+    },
+    {
+      "name": "NON_METAL",
+      "suffix": "nonmetal",
+      "light": 11513775,
+      "dark": 986895,
+      "noiseSeed": 2082131
+    },
+    {
+      "name": "CRYSTALLINE",
+      "suffix": "crystal",
+      "light": 14876666,
+      "dark": 2001527,
+      "noiseSeed": 2082132
+    }
+  ],
+  "densityLevelSeed": 2114043,
+  "sourceWorldSeedIndependent": true,
+  "sourceChunkCenter": "((coordinate>>4)<<4)+8",
+  "sourceNoise": "official1.7.10 scalar four-octave NoiseGeneratorPerlin, two independently seeded fields multiplied, abs*.05 clamped0..2",
+  "sourceChance": {
+    "overworld": 10,
+    "nether": 10
+  },
+  "tierThresholds": [
+    0.75,
+    1,
+    1.5
+  ],
+  "tierFluids": [
+    null,
+    {
+      "type": "WATER",
+      "amount": 1000
+    },
+    {
+      "type": "SULFURIC_ACID",
+      "amount": 1000
+    },
+    {
+      "type": "SOLVENT",
+      "amount": 2000
+    }
+  ],
+  "sourceNode": {
+    "floorY": 0,
+    "horizontalRadius": 1,
+    "centerAlwaysWhenBedrock": true,
+    "otherCells": "world.rand.nextBoolean",
+    "shape": "world.rand.nextInt(10)"
+  },
+  "sourceShell": {
+    "radius": 3,
+    "yInclusive": [
+      1,
+      6
+    ],
+    "condition": "y<3 or exact bedrock, then replace exact stone or bedrock",
+    "runsEvenWithoutSuccessfulNode": true
+  },
+  "modernFloor": {
+    "overworldDefault": "translate original floor0 to actual minBuildHeight, including deepslate as the negative-Y counterpart of source stone",
+    "nether": "reuse DimensionOres.netherBase; source1..6 shell thickness and original source quantities remain unscaled",
+    "independentSourceLiteralY0Config": true
+  }
+}

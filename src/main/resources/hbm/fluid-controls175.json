@@ -1,0 +1,92 @@
+{
+  "module": "fluid-controls175",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "fluid_switch",
+      "id": "hbm:fluid_switch",
+      "legacyRegistryId": "hbm:tile.fluid_switch",
+      "originalClass": "FluidSwitch",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1890
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3178
+          },
+          "expression": "register(fluid_switch)",
+          "arguments": [
+            "fluid_switch"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "fluid_pump",
+      "id": "hbm:fluid_pump",
+      "legacyRegistryId": "hbm:tile.fluid_pump",
+      "originalClass": "FluidPump",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1892
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3179
+          },
+          "expression": "register(fluid_pump)",
+          "arguments": [
+            "fluid_pump"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": null,
+      "metadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "flow_control_pump",
+      "id": "hbm:flow_control_pump",
+      "legacyRegistryId": "hbm:tile.flow_control_pump",
+      "originalClass": "FlowControlPump",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1893
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3180
+          },
+          "expression": "register(flow_control_pump)",
+          "arguments": [
+            "flow_control_pump"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ]
+    }
+  ]
+}

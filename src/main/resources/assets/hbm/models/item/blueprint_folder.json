@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/blueprint_folder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:blueprint_kind": 1
+      },
+      "model": "hbm:item/blueprint_folder_discover"
+    },
+    {
+      "predicate": {
+        "hbm:blueprint_kind": 2
+      },
+      "model": "hbm:item/blueprint_folder_secret"
+    }
+  ]
+}

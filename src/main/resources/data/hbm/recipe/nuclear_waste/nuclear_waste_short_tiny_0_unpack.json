@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:nuclear_waste_short",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "hbm:nuclear_waste_short_tiny",
+    "count": 9,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "module": "source-centrifuge295",
+  "entries": [],
+  "sourceRecipeBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 96
+      },
+      "expression": "recipes.put(new OreDictStack(NETHERQUARTZ.ore()), new ItemStack[] { new ItemStack(ModItems.powder_quartz, 1), new ItemStack(ModItems.powder_quartz, 1), new ItemStack(ModItems.powder_lithium_tiny, 1), new ItemStack(Blocks.netherrack, 1) })",
+      "id": "hbm:centrifuge/source_96",
+      "file": "data/hbm/recipe/centrifuge/source_96.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 174
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.ore_tikite), new ItemStack[] { new ItemStack(ModItems.powder_plutonium, 1), new ItemStack(ModItems.powder_cobalt, 2), new ItemStack(ModItems.powder_niobium, 2), new ItemStack(Blocks.end_stone, 1) })",
+      "id": "hbm:centrifuge/source_174",
+      "file": "data/hbm/recipe/centrifuge/source_174.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 186
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.block_euphemium_cluster), new ItemStack[] { new ItemStack(ModItems.nugget_euphemium, 7), new ItemStack(ModItems.powder_schrabidium, 4), new ItemStack(ModItems.ingot_starmetal, 2), new ItemStack(ModItems.nugget_solinium, 2) })",
+      "id": "hbm:centrifuge/source_186",
+      "file": "data/hbm/recipe/centrifuge/source_186.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 192
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.ore_nether_fire), new ItemStack[] { new ItemStack(Items.blaze_powder, 2), new ItemStack(ModItems.powder_fire, 2), new ItemStack(ModItems.ingot_phosphorus), new ItemStack(Blocks.netherrack) })",
+      "id": "hbm:centrifuge/source_192",
+      "file": "data/hbm/recipe/centrifuge/source_192.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 210
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.block_slag), new ItemStack[] { new ItemStack(Blocks.gravel, 1), new ItemStack(ModItems.powder_fire, 1), new ItemStack(ModItems.powder_calcium), new ItemStack(ModItems.dust) })",
+      "id": "hbm:centrifuge/source_210",
+      "file": "data/hbm/recipe/centrifuge/source_210.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 296
+      },
+      "expression": "recipes.put(new OreDictStack(\"oreCertusQuartz\"), new ItemStack[] { qItem.copy(), qItem.copy(), qItem.copy(), qItem.copy() })",
+      "migration": {
+        "status": "implemented_runtime_registry_recipe",
+        "nativeVariants": "0 or 1 from the actual crystal registry",
+        "runtimeBinding": "CentrifugeRecipeConfig.addCertusDefault"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 303
+      },
+      "expression": "recipes.put(new ComparableStack(Items.blaze_rod), new ItemStack[] {new ItemStack(Items.blaze_powder, 1), new ItemStack(Items.blaze_powder, 1), new ItemStack(ModItems.powder_fire, 1), new ItemStack(ModItems.powder_fire, 1) })",
+      "id": "hbm:centrifuge/source_303",
+      "file": "data/hbm/recipe/centrifuge/source_303.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 326
+      },
+      "expression": "recipes.put(new ComparableStack(ModItems.crystal_phosphorus), new ItemStack[] { new ItemStack(ModItems.powder_fire, 3), new ItemStack(ModItems.powder_fire, 3), new ItemStack(ModItems.ingot_phosphorus, 2), new ItemStack(Items.blaze_powder, 2) })",
+      "id": "hbm:centrifuge/source_326",
+      "file": "data/hbm/recipe/centrifuge/source_326.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 367
+      },
+      "expression": "recipes.put(entry.getKey(), entry.getValue())",
+      "migration": {
+        "status": "existing_native_viewer_binding",
+        "nativeVariants": 0,
+        "runtimeBinding": "CentrifugeJeiPlugin.registerRecipes / CentrifugeReiPlugin.registerDisplays"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 388
+      },
+      "expression": "recipes.put(in, out)",
+      "migration": {
+        "status": "existing_runtime_json_reader",
+        "nativeVariants": 0,
+        "runtimeBinding": "CentrifugeRecipeConfig.legacyRecipe/install"
+      }
+    }
+  ],
+  "nativeRecipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 96
+      },
+      "expression": "recipes.put(new OreDictStack(NETHERQUARTZ.ore()), new ItemStack[] { new ItemStack(ModItems.powder_quartz, 1), new ItemStack(ModItems.powder_quartz, 1), new ItemStack(ModItems.powder_lithium_tiny, 1), new ItemStack(Blocks.netherrack, 1) })",
+      "id": "hbm:centrifuge/source_96",
+      "file": "data/hbm/recipe/centrifuge/source_96.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 174
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.ore_tikite), new ItemStack[] { new ItemStack(ModItems.powder_plutonium, 1), new ItemStack(ModItems.powder_cobalt, 2), new ItemStack(ModItems.powder_niobium, 2), new ItemStack(Blocks.end_stone, 1) })",
+      "id": "hbm:centrifuge/source_174",
+      "file": "data/hbm/recipe/centrifuge/source_174.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 186
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.block_euphemium_cluster), new ItemStack[] { new ItemStack(ModItems.nugget_euphemium, 7), new ItemStack(ModItems.powder_schrabidium, 4), new ItemStack(ModItems.ingot_starmetal, 2), new ItemStack(ModItems.nugget_solinium, 2) })",
+      "id": "hbm:centrifuge/source_186",
+      "file": "data/hbm/recipe/centrifuge/source_186.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 192
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.ore_nether_fire), new ItemStack[] { new ItemStack(Items.blaze_powder, 2), new ItemStack(ModItems.powder_fire, 2), new ItemStack(ModItems.ingot_phosphorus), new ItemStack(Blocks.netherrack) })",
+      "id": "hbm:centrifuge/source_192",
+      "file": "data/hbm/recipe/centrifuge/source_192.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 210
+      },
+      "expression": "recipes.put(new ComparableStack(ModBlocks.block_slag), new ItemStack[] { new ItemStack(Blocks.gravel, 1), new ItemStack(ModItems.powder_fire, 1), new ItemStack(ModItems.powder_calcium), new ItemStack(ModItems.dust) })",
+      "id": "hbm:centrifuge/source_210",
+      "file": "data/hbm/recipe/centrifuge/source_210.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 303
+      },
+      "expression": "recipes.put(new ComparableStack(Items.blaze_rod), new ItemStack[] {new ItemStack(Items.blaze_powder, 1), new ItemStack(Items.blaze_powder, 1), new ItemStack(ModItems.powder_fire, 1), new ItemStack(ModItems.powder_fire, 1) })",
+      "id": "hbm:centrifuge/source_303",
+      "file": "data/hbm/recipe/centrifuge/source_303.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CentrifugeRecipes.java",
+        "line": 326
+      },
+      "expression": "recipes.put(new ComparableStack(ModItems.crystal_phosphorus), new ItemStack[] { new ItemStack(ModItems.powder_fire, 3), new ItemStack(ModItems.powder_fire, 3), new ItemStack(ModItems.ingot_phosphorus, 2), new ItemStack(Items.blaze_powder, 2) })",
+      "id": "hbm:centrifuge/source_326",
+      "file": "data/hbm/recipe/centrifuge/source_326.json",
+      "migration": {
+        "status": "implemented_native_recipe"
+      }
+    }
+  ],
+  "reusedResources": [],
+  "counts": {
+    "selectedSourceStatements": 10,
+    "staticRecipes": 7,
+    "runtimeRegistryRecipes": 1,
+    "existingViewerMethods": 1,
+    "existingConfigurationReaders": 1,
+    "pending": 0
+  },
+  "compileSources": [
+    "src/main/java/com/hbm/machine/centrifuge/CentrifugeRecipeConfig.java"
+  ],
+  "canonicalSourceHelpers": "tools/port_centrifuge.py:source_mapping/source_recipe/source_runtime_binding",
+  "externalPrimarySources": [
+    "https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/neoforge/v19.2.17/src/main/java/appeng/api/ids/AEItemIds.java#L183"
+  ],
+  "semantics": [
+    "Original positional outputs/counts and exact-vs-dictionary input semantics retained, no second centrifuge backend.",
+    "Source296 reads the first actual crystalCertusQuartz entry at server initialization/reload; four separate output lanes each contain2 copies with original components.",
+    "The registry default is skipped when the user replaces default recipes, installed before IMC overrides and native recipe synchronization, and removed/rebuilt on reload through the existing exact holder ownership map.",
+    "No vanilla quartz substitution. The optional AE2 item is an actual registered modern counterpart; other contributors use the existing native dictionary tag/provider.",
+    "Source367 is the actual getRecipes viewer method; source388 is the existing readRecipe JSON callback. Neither creates a fictitious static recipe."
+  ],
+  "oldSaveCompatibility": false,
+  "validation": {
+    "sourceStaged": true,
+    "compiled": false,
+    "nativeLoaded": false,
+    "gameplayAccepted": false
+  }
+}

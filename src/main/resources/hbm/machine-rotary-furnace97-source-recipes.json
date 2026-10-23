@@ -1,0 +1,288 @@
+{
+  "recipes": [
+    {
+      "inputs": [
+        [
+          "dict",
+          "ingotIron",
+          1
+        ],
+        [
+          "dict",
+          "gemCoal",
+          1
+        ]
+      ],
+      "output": [
+        "Steel",
+        72
+      ],
+      "duration": 100,
+      "steam": 100
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "ingotIron",
+          1
+        ],
+        [
+          "dict",
+          "gemAnyCoke",
+          1
+        ]
+      ],
+      "output": [
+        "Steel",
+        72
+      ],
+      "duration": 100,
+      "steam": 100
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "bedrockorefragmentIron",
+          9
+        ],
+        [
+          "dict",
+          "gemCoal",
+          1
+        ]
+      ],
+      "output": [
+        "Steel",
+        144
+      ],
+      "duration": 200,
+      "steam": 25
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "bedrockorefragmentIron",
+          9
+        ],
+        [
+          "dict",
+          "gemAnyCoke",
+          1
+        ]
+      ],
+      "output": [
+        "Steel",
+        216
+      ],
+      "duration": 200,
+      "steam": 25
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "bedrockorefragmentIron",
+          9
+        ],
+        [
+          "dict",
+          "gemAnyCoke",
+          1
+        ],
+        [
+          "item",
+          "hbm:powder_flux",
+          1,
+          0
+        ]
+      ],
+      "output": [
+        "Steel",
+        288
+      ],
+      "duration": 400,
+      "steam": 25
+    },
+    {
+      "inputs": [
+        [
+          "item",
+          "hbm:powder_desh_ready",
+          1,
+          0
+        ]
+      ],
+      "output": [
+        "WorkersAlloy",
+        72
+      ],
+      "duration": 100,
+      "steam": 200,
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "ingotCopper",
+          3
+        ],
+        [
+          "dict",
+          "ingotAluminum",
+          1
+        ]
+      ],
+      "output": [
+        "GunMetal",
+        288
+      ],
+      "duration": 200,
+      "steam": 100
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "ingotSteel",
+          1
+        ],
+        [
+          "item",
+          "hbm:powder_flux",
+          2,
+          0
+        ]
+      ],
+      "output": [
+        "WeaponSteel",
+        72
+      ],
+      "duration": 200,
+      "steam": 400,
+      "fluid": [
+        "GAS_COKER",
+        100,
+        0
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "dustDuraSteel",
+          4
+        ],
+        [
+          "dict",
+          "dustCopper",
+          1
+        ]
+      ],
+      "output": [
+        "Saturnite",
+        144
+      ],
+      "duration": 200,
+      "steam": 400,
+      "fluid": [
+        "REFORMGAS",
+        250,
+        0
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "dict",
+          "dustDuraSteel",
+          4
+        ],
+        [
+          "dict",
+          "dustCopper",
+          1
+        ],
+        [
+          "dict",
+          "dustBorax",
+          1
+        ]
+      ],
+      "output": [
+        "Saturnite",
+        288
+      ],
+      "duration": 200,
+      "steam": 300,
+      "fluid": [
+        "REFORMGAS",
+        250,
+        0
+      ]
+    },
+    {
+      "inputs": [],
+      "output": [
+        "Aluminum",
+        144
+      ],
+      "duration": 100,
+      "steam": 400,
+      "fluid": [
+        "SODIUM_ALUMINATE",
+        150,
+        0
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "item",
+          "hbm:powder_flux",
+          2,
+          0
+        ]
+      ],
+      "output": [
+        "Aluminum",
+        216
+      ],
+      "duration": 40,
+      "steam": 200,
+      "fluid": [
+        "SODIUM_ALUMINATE",
+        150,
+        0
+      ]
+    },
+    {
+      "inputs": [
+        [
+          "item",
+          "hbm:powder_flux",
+          1,
+          0
+        ]
+      ],
+      "output": [
+        "Titanium",
+        288
+      ],
+      "duration": 40,
+      "steam": 100,
+      "fluid": [
+        "TITANIUM_TETRACHLORIDE",
+        1000,
+        0
+      ]
+    }
+  ]
+}

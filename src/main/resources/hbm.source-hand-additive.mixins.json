@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.client.weapon.forward.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ForwardCompositeTypeAccess",
+    "ForwardCompositeStateAccess",
+    "ForwardTextureAccess",
+    "ForwardLightTextureAccess",
+    "GunForwardRenderTypeMixin",
+    "GunForwardFrameMixin",
+    "GunForwardIrisHandMixin",
+    "GunForwardIrisFinalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

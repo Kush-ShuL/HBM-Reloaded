@@ -1,0 +1,33 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "neoforge:compound",
+    "children": [
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotsteel"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platesteel"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/gemsteel"
+      },
+      {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/duststeel"
+      }
+    ]
+  },
+  "second": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+  },
+  "result": {
+    "id": "hbm:ingot_tcalloy",
+    "count": 1
+  },
+  "order": 8
+}

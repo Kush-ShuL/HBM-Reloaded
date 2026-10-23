@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_weaponsteel",
+    {
+      "id": "#c:ingots/weapon_steel",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.explastic",
+  "duration": 120,
+  "power": 100000,
+  "ignition_temp": 1000000,
+  "order": 10,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:item_expensive_plastic",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 16
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotrubber"
+      },
+      "count": 8
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "SOLVENT",
+      "amount": 1000,
+      "pressure": 0
+    }
+  ]
+}

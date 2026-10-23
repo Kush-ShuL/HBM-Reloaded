@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:singularity_super_heated",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CTC",
+    "TST",
+    "CTC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesaturnite"
+    },
+    "T": {
+      "item": "hbm:powder_power"
+    },
+    "S": {
+      "item": "hbm:singularity"
+    }
+  }
+}

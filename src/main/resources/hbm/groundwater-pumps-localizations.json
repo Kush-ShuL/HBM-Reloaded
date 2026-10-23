@@ -1,0 +1,28 @@
+{
+  "en_us": {
+    "block.hbm.pump_steam": "Steam-Powered Groundwater Pump",
+    "tooltip.hbm.groundwater.pump_steam.0": "Uses steam to pump up groundwater",
+    "tooltip.hbm.groundwater.pump_steam.1": "Generates up to 1,000mB/t",
+    "tooltip.hbm.groundwater.pump_steam.2": "Needs to be placed below Y:70",
+    "block.hbm.pump_electric": "Electric Groundwater Pump",
+    "tooltip.hbm.groundwater.pump_electric.0": "Uses electricity to pump up groundwater",
+    "tooltip.hbm.groundwater.pump_electric.1": "Generates up to 10,000mB/t",
+    "tooltip.hbm.groundwater.pump_electric.2": "Needs to be placed below Y:70",
+    "gui.hbm.groundwater.altitude": "! ! ! ALTITUDE ! ! !",
+    "gui.hbm.groundwater.invalid_ground": "! ! ! NO VALID GROUND ! ! !",
+    "config.jade.plugin_hbm.groundwater_pump": "Groundwater pump ground conditions"
+  },
+  "zh_cn": {
+    "block.hbm.pump_steam": "蒸汽动力地下水泵",
+    "tooltip.hbm.groundwater.pump_steam.0": "使用蒸汽抽取地下水",
+    "tooltip.hbm.groundwater.pump_steam.1": "产水量高达1000mB/t",
+    "tooltip.hbm.groundwater.pump_steam.2": "需要放置在Y:70以下",
+    "block.hbm.pump_electric": "电动地下水泵",
+    "tooltip.hbm.groundwater.pump_electric.0": "用电力抽取地下水",
+    "tooltip.hbm.groundwater.pump_electric.1": "产水量高达10000mB/t",
+    "tooltip.hbm.groundwater.pump_electric.2": "需要放置在Y:70以下",
+    "gui.hbm.groundwater.altitude": "! ! ! 海拔过高 ! ! !",
+    "gui.hbm.groundwater.invalid_ground": "! ! ! 无有效地基 ! ! !",
+    "config.jade.plugin_hbm.groundwater_pump": "地下水泵地基条件"
+  }
+}

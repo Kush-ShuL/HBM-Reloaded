@@ -1,0 +1,19 @@
+{
+  "targetMinecraft": "1.21.1",
+  "textures": [
+    {
+      "texture": "gravel_diamond",
+      "vanillaHost": "gravel",
+      "replacedHostPixels": 204,
+      "retainedDetailPixels": 52,
+      "method": "exact_legacy_host_difference"
+    },
+    {
+      "texture": "reinforced_light",
+      "vanillaHost": "glowstone",
+      "replacedHostPixels": 144,
+      "retainedDetailPixels": 112,
+      "method": "original_steel_frame_and_window_shading_on_modern_glowstone"
+    }
+  ]
+}

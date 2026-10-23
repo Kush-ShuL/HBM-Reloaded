@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hide_overlay=false": {
+      "model": "hbm:block/pneumatic_tube_paintable"
+    },
+    "hide_overlay=true": {
+      "model": "hbm:block/pneumatic_tube_paintable"
+    }
+  }
+}

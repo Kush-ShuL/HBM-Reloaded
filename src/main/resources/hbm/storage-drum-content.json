@@ -1,0 +1,26 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_storage_drum",
+      "id": "hbm:machine_storage_drum",
+      "itemId": "hbm:machine_storage_drum",
+      "kind": "block",
+      "originalClass": "StorageDrum",
+      "creativeTab": "machine",
+      "sourceMetadataIgnored": true,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2277
+      },
+      "status": "source-port-staged-target-pending",
+      "runtimeValidated": false
+    }
+  ]
+}

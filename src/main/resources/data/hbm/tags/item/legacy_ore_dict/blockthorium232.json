@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_thorium",
+    {
+      "id": "#c:storage_blocks/th232",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/thorium",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/thorium232",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/battery_schrabidium_top",
+    "up": "hbm:block/battery_schrabidium_top",
+    "north": "hbm:block/battery_schrabidium_side",
+    "south": "hbm:block/battery_schrabidium_front",
+    "east": "hbm:block/battery_schrabidium_side",
+    "west": "hbm:block/battery_schrabidium_side",
+    "particle": "hbm:block/battery_schrabidium_side"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "entries": [],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_taintcrawler",
+      "id": "hbm:entity_taintcrawler",
+      "originalClass": "EntityBlockSpider",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 127
+      },
+      "width": 0.95,
+      "height": 1.25,
+      "trackingRangeBlocks": 1000,
+      "nativeTrackingChunks": 63,
+      "trackingInterval": 1,
+      "velocityUpdates": true,
+      "sourceEgg": false
+    }
+  ]
+}

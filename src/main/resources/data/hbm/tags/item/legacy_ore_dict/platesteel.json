@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:plate_steel",
+    {
+      "id": "#c:plates/steel",
+      "required": false
+    }
+  ]
+}

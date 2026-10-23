@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "port=false": {
+      "model": "hbm:block/pwr_block"
+    },
+    "port=true": {
+      "model": "hbm:block/pwr_block_port"
+    }
+  }
+}

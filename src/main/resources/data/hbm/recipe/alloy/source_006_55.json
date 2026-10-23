@@ -1,0 +1,23 @@
+{
+  "type": "hbm:alloy",
+  "first": {
+    "type": "hbm:alloy_legacy_stack",
+    "stack": {
+      "id": "hbm:canister_full",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 46,
+        "hbm:fluid_type": 46
+      }
+    }
+  },
+  "second": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/slimeball"
+  },
+  "result": {
+    "id": "hbm:canister_napalm",
+    "count": 1
+  },
+  "order": 6
+}

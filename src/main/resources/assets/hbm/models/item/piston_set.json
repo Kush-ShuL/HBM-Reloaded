@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:item/piston_set_steel",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/piston_set_dura"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/piston_set_desh"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/piston_set_starmetal"
+    }
+  ]
+}

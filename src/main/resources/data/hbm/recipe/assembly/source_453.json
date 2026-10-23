@@ -1,0 +1,38 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.capacitorniobium",
+  "duration": 100,
+  "power": 1000,
+  "order": 150,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:battery_pack",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 8
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/wiredenseniobium"
+      },
+      "count": 24
+    }
+  ]
+}

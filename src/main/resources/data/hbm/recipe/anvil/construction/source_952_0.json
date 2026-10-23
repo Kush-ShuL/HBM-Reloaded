@@ -1,0 +1,78 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:machine_reactor_small",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:ingot_steel",
+        "count": 8
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:ingot_tcalloy",
+        "count": 4
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:motor_desh",
+        "count": 2
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:ingot_boron",
+        "count": 5
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:plate_lead",
+        "count": 8
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:crt_display",
+        "count": 3
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:circuit_basic",
+        "count": 1
+      },
+      "chance": 1.0
+    },
+    {
+      "stack": {
+        "id": "hbm:circuit_basic",
+        "count": 1
+      },
+      "chance": 0.5
+    }
+  ],
+  "tier_lower": 4,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 952000000,
+  "source_mode": "not528"
+}

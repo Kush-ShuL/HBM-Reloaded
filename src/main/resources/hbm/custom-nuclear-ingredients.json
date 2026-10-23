@@ -1,0 +1,666 @@
+{
+  "entries": [
+    {
+      "symbol": "gunpowder",
+      "id": "minecraft:gunpowder",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 0.8,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 196
+      }
+    },
+    {
+      "symbol": "tnt",
+      "id": "minecraft:tnt",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 4.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 197
+      }
+    },
+    {
+      "symbol": "det_cord",
+      "id": "hbm:det_cord",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 1.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 198
+      }
+    },
+    {
+      "symbol": "ingot_semtex",
+      "id": "hbm:ingot_semtex",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 8.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 199
+      }
+    },
+    {
+      "symbol": "det_charge",
+      "id": "hbm:det_charge",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 200
+      }
+    },
+    {
+      "symbol": "red_barrel",
+      "id": "hbm:red_barrel",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 2.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 201
+      }
+    },
+    {
+      "symbol": "pink_barrel",
+      "id": "hbm:pink_barrel",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 4.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 202
+      }
+    },
+    {
+      "symbol": "custom_tnt",
+      "id": "hbm:custom_tnt",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 10.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 203
+      }
+    },
+    {
+      "symbol": "ingot_u233",
+      "id": "hbm:ingot_u233",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 205
+      }
+    },
+    {
+      "symbol": "ingot_u235",
+      "id": "hbm:ingot_u235",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 206
+      }
+    },
+    {
+      "symbol": "ingot_pu239",
+      "id": "hbm:ingot_pu239",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 25.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 207
+      }
+    },
+    {
+      "symbol": "ingot_pu241",
+      "id": "hbm:ingot_pu241",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 25.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 208
+      }
+    },
+    {
+      "symbol": "ingot_neptunium",
+      "id": "hbm:ingot_neptunium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 30.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 209
+      }
+    },
+    {
+      "symbol": "nugget_u233",
+      "id": "hbm:nugget_u233",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 210
+      }
+    },
+    {
+      "symbol": "nugget_u235",
+      "id": "hbm:nugget_u235",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 211
+      }
+    },
+    {
+      "symbol": "nugget_pu239",
+      "id": "hbm:nugget_pu239",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 2.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 212
+      }
+    },
+    {
+      "symbol": "nugget_pu241",
+      "id": "hbm:nugget_pu241",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 2.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 213
+      }
+    },
+    {
+      "symbol": "nugget_neptunium",
+      "id": "hbm:nugget_neptunium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 3.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 214
+      }
+    },
+    {
+      "symbol": "powder_neptunium",
+      "id": "hbm:powder_neptunium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 30.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 215
+      }
+    },
+    {
+      "symbol": "custom_nuke",
+      "id": "hbm:custom_nuke",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 30.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 216
+      }
+    },
+    {
+      "symbol": "cell_deuterium",
+      "id": "hbm:cell_deuterium",
+      "metadata": 0,
+      "stage": "HYDRO",
+      "value": 20.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 218
+      }
+    },
+    {
+      "symbol": "cell_tritium",
+      "id": "hbm:cell_tritium",
+      "metadata": 0,
+      "stage": "HYDRO",
+      "value": 30.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 219
+      }
+    },
+    {
+      "symbol": "lithium",
+      "id": "hbm:lithium",
+      "metadata": 0,
+      "stage": "HYDRO",
+      "value": 20.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 220
+      }
+    },
+    {
+      "symbol": "custom_hydro",
+      "id": "hbm:custom_hydro",
+      "metadata": 0,
+      "stage": "HYDRO",
+      "value": 30.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 221
+      }
+    },
+    {
+      "symbol": "cell_antimatter",
+      "id": "hbm:cell_antimatter",
+      "metadata": 0,
+      "stage": "AMAT",
+      "value": 5.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 223
+      }
+    },
+    {
+      "symbol": "custom_amat",
+      "id": "hbm:custom_amat",
+      "metadata": 0,
+      "stage": "AMAT",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 224
+      }
+    },
+    {
+      "symbol": "egg_balefire_shard",
+      "id": "hbm:egg_balefire_shard",
+      "metadata": 0,
+      "stage": "AMAT",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 225
+      }
+    },
+    {
+      "symbol": "egg_balefire",
+      "id": "hbm:egg_balefire",
+      "metadata": 0,
+      "stage": "AMAT",
+      "value": 150.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 226
+      }
+    },
+    {
+      "symbol": "ingot_tungsten",
+      "id": "hbm:ingot_tungsten",
+      "metadata": 0,
+      "stage": "DIRTY",
+      "value": 1.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 228
+      }
+    },
+    {
+      "symbol": "custom_dirty",
+      "id": "hbm:custom_dirty",
+      "metadata": 0,
+      "stage": "DIRTY",
+      "value": 10.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 229
+      }
+    },
+    {
+      "symbol": "ingot_schrabidium",
+      "id": "hbm:ingot_schrabidium",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 5.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 231
+      }
+    },
+    {
+      "symbol": "block_schrabidium",
+      "id": "hbm:block_schrabidium",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 50.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 232
+      }
+    },
+    {
+      "symbol": "nugget_schrabidium",
+      "id": "hbm:nugget_schrabidium",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 0.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 233
+      }
+    },
+    {
+      "symbol": "powder_schrabidium",
+      "id": "hbm:powder_schrabidium",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 5.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 234
+      }
+    },
+    {
+      "symbol": "cell_sas3",
+      "id": "hbm:cell_sas3",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 7.5,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 235
+      }
+    },
+    {
+      "symbol": "cell_anti_schrabidium",
+      "id": "hbm:cell_anti_schrabidium",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 236
+      }
+    },
+    {
+      "symbol": "custom_schrab",
+      "id": "hbm:custom_schrab",
+      "metadata": 0,
+      "stage": "SCHRAB",
+      "value": 15.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 237
+      }
+    },
+    {
+      "symbol": "nugget_euphemium",
+      "id": "hbm:nugget_euphemium",
+      "metadata": 0,
+      "stage": "EUPH",
+      "value": 1.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 239
+      }
+    },
+    {
+      "symbol": "ingot_euphemium",
+      "id": "hbm:ingot_euphemium",
+      "metadata": 0,
+      "stage": "EUPH",
+      "value": 1.0,
+      "operation": "ADD",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 240
+      }
+    },
+    {
+      "symbol": "redstone",
+      "id": "minecraft:redstone",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 1.05,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 242
+      }
+    },
+    {
+      "symbol": "redstone_block",
+      "id": "minecraft:redstone_block",
+      "metadata": 0,
+      "stage": "TNT",
+      "value": 1.5,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 243
+      }
+    },
+    {
+      "symbol": "ingot_uranium",
+      "id": "hbm:ingot_uranium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.05,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 245
+      }
+    },
+    {
+      "symbol": "ingot_plutonium",
+      "id": "hbm:ingot_plutonium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.15,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 246
+      }
+    },
+    {
+      "symbol": "ingot_u238",
+      "id": "hbm:ingot_u238",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.1,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 247
+      }
+    },
+    {
+      "symbol": "ingot_pu238",
+      "id": "hbm:ingot_pu238",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.15,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 248
+      }
+    },
+    {
+      "symbol": "nugget_uranium",
+      "id": "hbm:nugget_uranium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.005,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 249
+      }
+    },
+    {
+      "symbol": "nugget_plutonium",
+      "id": "hbm:nugget_plutonium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.15,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 250
+      }
+    },
+    {
+      "symbol": "nugget_u238",
+      "id": "hbm:nugget_u238",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.01,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 251
+      }
+    },
+    {
+      "symbol": "nugget_pu238",
+      "id": "hbm:nugget_pu238",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.015,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 252
+      }
+    },
+    {
+      "symbol": "powder_uranium",
+      "id": "hbm:powder_uranium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.05,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 253
+      }
+    },
+    {
+      "symbol": "powder_plutonium",
+      "id": "hbm:powder_plutonium",
+      "metadata": 0,
+      "stage": "NUKE",
+      "value": 1.15,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 254
+      }
+    },
+    {
+      "symbol": "ingot_pu240",
+      "id": "hbm:ingot_pu240",
+      "metadata": 0,
+      "stage": "DIRTY",
+      "value": 1.05,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 256
+      }
+    },
+    {
+      "symbol": "nuclear_waste",
+      "id": "hbm:nuclear_waste",
+      "metadata": 0,
+      "stage": "DIRTY",
+      "value": 1.025,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 257
+      }
+    },
+    {
+      "symbol": "block_waste",
+      "id": "hbm:block_waste",
+      "metadata": 0,
+      "stage": "DIRTY",
+      "value": 1.25,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 258
+      }
+    },
+    {
+      "symbol": "yellow_barrel",
+      "id": "hbm:yellow_barrel",
+      "metadata": 0,
+      "stage": "DIRTY",
+      "value": 1.2,
+      "operation": "MULT",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/tileentity/bomb/TileEntityNukeCustom.java",
+        "line": 259
+      }
+    }
+  ],
+  "source": "TileEntityNukeCustom.registerBombItems",
+  "unbound": []
+}

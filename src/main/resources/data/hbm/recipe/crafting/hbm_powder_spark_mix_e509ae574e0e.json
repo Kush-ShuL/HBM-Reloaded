@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:powder_spark_mix",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustworkersalloy"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dusteuphemium"
+    },
+    {
+      "item": "hbm:powder_power"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "schrabidium_hammer",
+      "id": "hbm:schrabidium_hammer",
+      "legacyRegistryId": "hbm:item.schrabidium_hammer",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4289
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "shimmer_sledge",
+      "id": "hbm:shimmer_sledge",
+      "legacyRegistryId": "hbm:item.shimmer_sledge",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4290
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "shimmer_axe",
+      "id": "hbm:shimmer_axe",
+      "legacyRegistryId": "hbm:item.shimmer_axe",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4291
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "ullapool_caber",
+      "id": "hbm:ullapool_caber",
+      "legacyRegistryId": "hbm:item.ullapool_caber",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3607
+      },
+      "creativeTab": "weapon",
+      "nativeCreativeTab": null,
+      "maxDamage": 750
+    },
+    {
+      "kind": "item",
+      "symbol": "wrench_flipped",
+      "id": "hbm:wrench_flipped",
+      "legacyRegistryId": "hbm:item.wrench_flipped",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4297
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "memespoon",
+      "id": "hbm:memespoon",
+      "legacyRegistryId": "hbm:item.memespoon",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4298
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 750
+    },
+    {
+      "kind": "item",
+      "symbol": "wood_gavel",
+      "id": "hbm:wood_gavel",
+      "legacyRegistryId": "hbm:item.wood_gavel",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4299
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 59
+    },
+    {
+      "kind": "item",
+      "symbol": "stopsign",
+      "id": "hbm:stopsign",
+      "legacyRegistryId": "hbm:item.stopsign",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4312
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 2000
+    },
+    {
+      "kind": "item",
+      "symbol": "sopsign",
+      "id": "hbm:sopsign",
+      "legacyRegistryId": "hbm:item.sopsign",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4313
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 2000
+    },
+    {
+      "kind": "item",
+      "symbol": "chernobylsign",
+      "id": "hbm:chernobylsign",
+      "legacyRegistryId": "hbm:item.chernobylsign",
+      "originalClass": "WeaponSpecial",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4314
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 2000
+    },
+    {
+      "kind": "item",
+      "symbol": "reer_graar",
+      "id": "hbm:reer_graar",
+      "legacyRegistryId": "hbm:item.reer_graar",
+      "originalClass": "ModSword",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4311
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1000
+    },
+    {
+      "kind": "item",
+      "symbol": "big_sword",
+      "id": "hbm:big_sword",
+      "legacyRegistryId": "hbm:item.big_sword",
+      "originalClass": "BigSword",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2092
+      },
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat",
+      "maxDamage": 1561
+    }
+  ],
+  "reused": [
+    {
+      "symbol": "bottle_opener",
+      "id": "hbm:bottle_opener",
+      "status": "actual existing unique ItemSword subclass reused, no second ID"
+    },
+    {
+      "symbol": "lead_gavel",
+      "id": "hbm:lead_gavel",
+      "status": "actual existing unique ItemSword subclass reused, no second ID"
+    },
+    {
+      "symbol": "diamond_gavel",
+      "id": "hbm:diamond_gavel",
+      "status": "actual existing unique ItemSword subclass reused, no second ID"
+    },
+    {
+      "symbol": "pipe_lead",
+      "id": "hbm:weapon_pipe_lead",
+      "status": "actual existing unique ItemSword subclass reused, no second ID"
+    }
+  ],
+  "declarationOnly": {
+    "symbol": "pch",
+    "source": "legacy/src/main/java/com/hbm/items/ModItems.java:4293",
+    "registered": false,
+    "sourceRegistration": [],
+    "implementation": "LegacyMeleeContent.PCH real unregistered source object with HAMMER tier but no HAMMER identity hit/movement/rarity branch, no creative tab or invented recipe."
+  },
+  "recipes": [
+    "hbm:crafting/hbm_big_sword_4974ccbd7d93",
+    "hbm:crafting/hbm_shimmer_head_27384c25ea16",
+    "hbm:crafting/hbm_shimmer_axe_head_d9695bd207b3",
+    "hbm:crafting/hbm_shimmer_handle_bab2653dd8b7",
+    "hbm:crafting/hbm_shimmer_sledge_3392ad772e28",
+    "hbm:crafting/hbm_shimmer_axe_e28ef4e72162",
+    "hbm:crafting/hbm_wrench_flipped_b5139bef8c68",
+    "hbm:crafting/hbm_memespoon_2579188e1b34",
+    "hbm:crafting/hbm_bottle_opener_e41700eac24e",
+    "hbm:crafting/hbm_wood_gavel_5b0fdd4b014d",
+    "hbm:crafting/hbm_lead_gavel_8c889c3cc1b7",
+    "hbm:crafting/hbm_weapon_pipe_lead_da13bcf683db",
+    "hbm:crafting/hbm_ullapool_caber_a7e72e5d3abd",
+    "hbm:plasma_forge/source_211"
+  ]
+}

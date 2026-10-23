@@ -1,0 +1,33 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldcopper",
+  "duration": 50,
+  "power": 1000,
+  "ignition_temp": 500000,
+  "order": 15,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2900
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplecopper"
+      },
+      "count": 2
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

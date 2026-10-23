@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_pu238",
+    {
+      "id": "#c:ingots/plutonium238",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/pu238",
+      "required": false
+    }
+  ]
+}

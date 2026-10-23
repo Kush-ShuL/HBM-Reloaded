@@ -1,0 +1,487 @@
+{
+  "module": "source-smelting280",
+  "entries": [],
+  "nativeRecipes": [
+    {
+      "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_graphite_in_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 112
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_graphite_in_0.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_graphite_in_0.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "type": "neoforge:components",
+          "items": "hbm:arc_electrode_burnt",
+          "components": {
+            "hbm:legacy_metadata": 0
+          },
+          "strict": false
+        },
+        "result": {
+          "id": "hbm:ingot_graphite",
+          "count": 1
+        },
+        "experience": 3.0,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_lanthanium_in_1",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 113
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_lanthanium_in_1.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_lanthanium_in_1.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "type": "neoforge:components",
+          "items": "hbm:arc_electrode_burnt",
+          "components": {
+            "hbm:legacy_metadata": 1
+          },
+          "strict": false
+        },
+        "result": {
+          "id": "hbm:ingot_lanthanium",
+          "count": 1
+        },
+        "experience": 3.0,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_desh_in_2",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 114
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_desh_in_2.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_desh_in_2.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "type": "neoforge:components",
+          "items": "hbm:arc_electrode_burnt",
+          "components": {
+            "hbm:legacy_metadata": 2
+          },
+          "strict": false
+        },
+        "result": {
+          "id": "hbm:ingot_desh",
+          "count": 1
+        },
+        "experience": 3.0,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_saturnite_in_3",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 115
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_saturnite_in_3.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_saturnite_in_3.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "type": "neoforge:components",
+          "items": "hbm:arc_electrode_burnt",
+          "components": {
+            "hbm:legacy_metadata": 3
+          },
+          "strict": false
+        },
+        "result": {
+          "id": "hbm:ingot_saturnite",
+          "count": 1
+        },
+        "experience": 3.0,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_rag_damp_to_hbm_rag",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 118
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_rag_damp_to_hbm_rag.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_rag_damp_to_hbm_rag.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "item": "hbm:rag_damp"
+        },
+        "result": {
+          "id": "hbm:rag",
+          "count": 1
+        },
+        "experience": 0.1,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_rag_piss_to_hbm_rag",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 119
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_rag_piss_to_hbm_rag.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_rag_piss_to_hbm_rag.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "item": "hbm:rag_piss"
+        },
+        "result": {
+          "id": "hbm:rag",
+          "count": 1
+        },
+        "experience": 0.1,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 120
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "type": "neoforge:components",
+          "items": "hbm:plant_flower",
+          "components": {
+            "hbm:legacy_metadata": 1
+          },
+          "strict": false
+        },
+        "result": {
+          "id": "hbm:plant_item",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        },
+        "experience": 0.1,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_ash_digamma_to_hbm_glass_ash",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 134
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_ash_digamma_to_hbm_glass_ash.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_ash_digamma_to_hbm_glass_ash.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "item": "hbm:ash_digamma"
+        },
+        "result": {
+          "id": "hbm:glass_ash",
+          "count": 1
+        },
+        "experience": 10.0,
+        "cookingtime": 200
+      },
+      "status": "existing-identical-canonical-resource"
+    },
+    {
+      "id": "hbm:smelting/hbm_ingot_schraranium_to_hbm_nugget_schrabidium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 137
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_ingot_schraranium_to_hbm_nugget_schrabidium.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_ingot_schraranium_to_hbm_nugget_schrabidium.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "item": "hbm:ingot_schraranium"
+        },
+        "result": {
+          "id": "hbm:nugget_schrabidium",
+          "count": 1
+        },
+        "experience": 2.0,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_crystal_starmetal_to_hbm_ingot_starmetal",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 162
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_crystal_starmetal_to_hbm_ingot_starmetal.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_crystal_starmetal_to_hbm_ingot_starmetal.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "item": "hbm:crystal_starmetal"
+        },
+        "result": {
+          "id": "hbm:ingot_starmetal",
+          "count": 2
+        },
+        "experience": 2.0,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "id": "hbm:smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 173
+      },
+      "variant": 0,
+      "resource": "data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
+      "recipe": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "ingredient": {
+          "item": "hbm:scrap_plastic"
+        },
+        "result": {
+          "id": "hbm:ingot_polymer",
+          "count": 1
+        },
+        "experience": 0.1,
+        "cookingtime": 200
+      },
+      "status": "exact-native-source-binding-staged"
+    }
+  ],
+  "sourceRecipeBindings": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 112
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_graphite_in_0",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_graphite_in_0.json",
+          "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_graphite_in_0.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 113
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_lanthanium_in_1",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_lanthanium_in_1.json",
+          "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_lanthanium_in_1.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 114
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_desh_in_2",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_desh_in_2.json",
+          "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_desh_in_2.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 115
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_arc_electrode_burnt_to_hbm_ingot_saturnite_in_3",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_saturnite_in_3.json",
+          "resource": "data/hbm/recipe/smelting/hbm_arc_electrode_burnt_to_hbm_ingot_saturnite_in_3.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 118
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_rag_damp_to_hbm_rag",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_rag_damp_to_hbm_rag.json",
+          "resource": "data/hbm/recipe/smelting/hbm_rag_damp_to_hbm_rag.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 119
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_rag_piss_to_hbm_rag",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_rag_piss_to_hbm_rag.json",
+          "resource": "data/hbm/recipe/smelting/hbm_rag_piss_to_hbm_rag.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 120
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
+          "resource": "data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 134
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_ash_digamma_to_hbm_glass_ash",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_ash_digamma_to_hbm_glass_ash.json",
+          "resource": "data/hbm/recipe/smelting/hbm_ash_digamma_to_hbm_glass_ash.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "existing-identical-canonical-resource"
+        }
+      ],
+      "status": "existing-identical-canonical-resource"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 137
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_ingot_schraranium_to_hbm_nugget_schrabidium",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_ingot_schraranium_to_hbm_nugget_schrabidium.json",
+          "resource": "data/hbm/recipe/smelting/hbm_ingot_schraranium_to_hbm_nugget_schrabidium.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 162
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_crystal_starmetal_to_hbm_ingot_starmetal",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_crystal_starmetal_to_hbm_ingot_starmetal.json",
+          "resource": "data/hbm/recipe/smelting/hbm_crystal_starmetal_to_hbm_ingot_starmetal.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
+        "line": 173
+      },
+      "nativeBindings": [
+        {
+          "id": "hbm:smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
+          "resource": "data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
+          "type": "minecraft:smelting",
+          "ownerReport": "migration/source-smelting280.json",
+          "status": "exact-native-source-binding-staged"
+        }
+      ],
+      "status": "exact-native-source-binding-staged"
+    }
+  ]
+}

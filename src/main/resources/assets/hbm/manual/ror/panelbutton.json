@@ -1,0 +1,23 @@
+{
+  "name": "Redstone-over-Radio Keypad",
+  "icon": [
+    "hbm:tile.rbmk_key_pad",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:tile.rbmk_key_pad"
+    ]
+  ],
+  "title": {
+    "en_US": "Redstone-over-Radio Keypad",
+    "ru_RU": "Редстоун-по-радио клавиатура",
+    "zh_CN": "无线红石按键面板"
+  },
+  "content": {
+    "en_US": "Interactive [[redstone over radio|Redstone over Radio]] transmitting device, needs to be configured with a scredriver first. Up to four buttons can be enabled using the red buttons, each button can transmit one value over its own RoR channel. This is useful for [RoR controllers|Redstone-over-Radio Controller], allowing things like RBMK settings to be adjusted with the push of a button.<br><br>The color setting accepts hexadecimal values, i.e. up to six characters with groups of two representing red, green and blue color components respectively. As a rule of thumb: FF is full color, 80 is half color and 00 is no color. FF8000 (full red, half green and no blue) is therefore orange.<br><br>The polling setting on the keypad turns the button into a locking one, the button remains pressed, sending the RoR signal each tick, until it is unpressed. State change buttons only send the command once when initially pressed.<br><br>{{Template:RoRPanels}}",
+    "ru_RU": "Интерактивное устройство передачи [[редстоун-по-радио|Redstone over Radio]], которое необходимо сначала настроить с помощью отвёртки. С помощью красных кнопок можно активировать до четырех клавиш, каждая из которых может передавать одно значение по своему собственному каналу РпР. Это полезно для [РпР контроллера|Redstone-over-Radio Controller], позволяющее изменять такие параметры, как настройки РБМК, простым нажатием кнопки.<br><br>Настройка цвета принимает шестнадцатеричные значения, т.е. до шести символов, где группы по два представляют красный, зелёный и синий компоненты цвета соответственно. Как правило: FF — полный цвет, 80 — половинный цвет и 00 — отсутствие цвета. Таким образом, FF8000 (полный красный, половина зелёного и отсутствие синего) — это оранжевый.<br><br>Настройка опроса \"polling\" на клавиатуре превращает кнопку в залипающую: она остаётся нажатой, отправляя сигнал РпР каждый тик, пока её не отожмут. Кнопки изменения состояния \"state change\" отправляют команду только один раз при начальном нажатии.<br><br>{{Template:RoRPanels}}",
+    "zh_CN": "一种可交互的[[无线红石|Redstone over Radio]]发射设备，必须先用螺丝刀配置。通过红色按钮最多可启用四个按键，每个按键可在各自的 RoR 频道发送一个值。配合[无线红石控制器|Redstone-over-Radio Controller]使用，就能按一下按钮来调整 RBMK 参数等设置。<br><br>颜色使用十六进制值，最多六个字符，每两个字符依次表示红、绿、蓝分量。简单来说：FF 表示全强度，80 表示一半，00 表示没有。因此 FF8000（全红、半绿、无蓝）就是橙色。<br><br>启用轮询后，按键会保持按下状态，每刻发送 RoR 信号，直到再次松开。状态变化模式则只在最初按下时发送一次命令。<br><br>{{Template:RoRPanels}}"
+  }
+}

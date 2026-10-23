@@ -1,0 +1,33 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.weldzirconium",
+  "duration": 300,
+  "power": 10000,
+  "ignition_temp": 500000,
+  "order": 17,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_welded",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 4000
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplezirconium"
+      },
+      "count": 2
+    }
+  ],
+  "group": "autoswitch.weldPlates"
+}

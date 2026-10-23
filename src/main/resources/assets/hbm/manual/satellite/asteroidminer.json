@@ -1,0 +1,25 @@
+{
+  "name": "Asteroid Mining Ship",
+  "icon": [
+    "hbm:satellite_miner_astro",
+    1,
+    0
+  ],
+  "trigger": [
+    [
+      "hbm:satellite_miner_astro",
+      1,
+      0
+    ]
+  ],
+  "title": {
+    "en_US": "Asteroid Mining Ship",
+    "ru_RU": "Астероидный астродобытчик",
+    "zh_CN": "小行星采矿船"
+  },
+  "content": {
+    "en_US": "The asteroid mining ship will, if connected to a satellite ID chip which is inserted into a cargo landing pad, land in regular intervals to deliver items mined in space. Do note that one mining ship can only supply a single cargo landing pad. Also keep the landing pad free of obstructions, as the drop ship may explode when impacting other blocks.<br><br>{{Template:SatOverview}}",
+    "ru_RU": "Астероидный астродобытчик, если он связан с ID-чипом спутника, вставленным в грузовую посадочную площадку, будет регулярно приземляться для доставки ресурсов, добытых в космосе. Обратите внимание, что один астродобытчик может снабжать только одну посадочную площадку. Также держите посадочную площадку свободной от препятствий, так как астродобытчик может взорваться при столкновении с другими блоками.<br><br>{{Template:SatOverview}}",
+    "zh_CN": "将已绑定采矿船的卫星 ID 芯片放入货运着陆平台后，小行星采矿船会定期降落，运送在太空采集的物品。一艘采矿船只能为一座货运着陆平台供货。请保持着陆平台上方畅通，因为运输船撞到其他方块时可能爆炸。<br><br>{{Template:SatOverview}}"
+  }
+}

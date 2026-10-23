@@ -1,0 +1,10 @@
+{
+  "loader": "hbm:deco_crt",
+  "metadata": 10,
+  "inventory": false,
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "hbm:block/crt_blinking"
+  }
+}

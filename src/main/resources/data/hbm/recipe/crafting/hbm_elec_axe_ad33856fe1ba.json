@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " DP",
+    "RRM",
+    " PB"
+  ],
+  "key": {
+    "P": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+    },
+    "R": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltdurasteel"
+    },
+    "M": {
+      "item": "hbm:motor"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:battery_pack",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "id": "hbm:elec_axe",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

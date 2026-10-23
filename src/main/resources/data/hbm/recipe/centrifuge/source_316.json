@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_niter"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:niter",
+      "count": 3
+    },
+    {
+      "id": "hbm:niter",
+      "count": 3
+    },
+    {
+      "id": "hbm:niter",
+      "count": 3
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    }
+  ]
+}

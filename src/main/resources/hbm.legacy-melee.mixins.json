@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.weapon.legacymelee.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SpecialRarityMixin"
+  ],
+  "client": [
+    "BigSwordPoseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

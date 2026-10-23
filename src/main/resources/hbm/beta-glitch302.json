@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "beta",
+      "id": "hbm:beta",
+      "legacyRegistryId": "hbm:item.beta",
+      "originalClass": "ItemDrop",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 35
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6197
+          },
+          "expression": "GameRegistry.registerItem(beta, beta.getUnlocalizedName())",
+          "arguments": [
+            "beta",
+            "beta.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.glitch.GlitchContent",
+      "creativeTab": null,
+      "maxStackSize": 1,
+      "maxDamage": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "glitch",
+      "id": "hbm:glitch",
+      "legacyRegistryId": "hbm:item.glitch",
+      "originalClass": "ItemGlitch",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4342
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6390
+          },
+          "expression": "GameRegistry.registerItem(glitch, glitch.getUnlocalizedName())",
+          "arguments": [
+            "glitch",
+            "glitch.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.glitch.GlitchContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "maxDamage": 1
+    }
+  ]
+}

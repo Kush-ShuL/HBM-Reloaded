@@ -1,0 +1,25 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/blocklithium"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/blocklithium",
+      "raw": "blockLithium"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java",
+        "line": 454
+      },
+      "expression": "LI.block(block_lithium)",
+      "tag": "hbm:legacy_ore_dict/blocklithium",
+      "members": [
+        "hbm:block_lithium"
+      ]
+    }
+  ]
+}

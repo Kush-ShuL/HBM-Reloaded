@@ -1,0 +1,473 @@
+{
+  "recipes": [
+    {
+      "input": [
+        "dict",
+        "dustCoal",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "fluid": [
+        "WOODOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 204
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCoal",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "fluid": [
+        "FISHOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 204
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCoal",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 0
+        }
+      },
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 204
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustTitanium",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 15
+        }
+      },
+      "fluid": [
+        "WOODOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 205
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustTitanium",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 15
+        }
+      },
+      "fluid": [
+        "FISHOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 205
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustTitanium",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 15
+        }
+      },
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 205
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustIron",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 1
+        }
+      },
+      "fluid": [
+        "WOODOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 206
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustIron",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 1
+        }
+      },
+      "fluid": [
+        "FISHOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 206
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustIron",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 1
+        }
+      },
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 206
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustTungsten",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 11
+        }
+      },
+      "fluid": [
+        "WOODOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 207
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustTungsten",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 11
+        }
+      },
+      "fluid": [
+        "FISHOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 207
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustTungsten",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 11
+        }
+      },
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 207
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCopper",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      },
+      "fluid": [
+        "WOODOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 208
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCopper",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      },
+      "fluid": [
+        "FISHOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 208
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCopper",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      },
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 208
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCobalt",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "fluid": [
+        "WOODOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 209
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCobalt",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "fluid": [
+        "FISHOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 209
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    },
+    {
+      "input": [
+        "dict",
+        "dustCobalt",
+        1
+      ],
+      "output": {
+        "id": "hbm:chemical_dye",
+        "count": 4,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "fluid": [
+        "LIGHTOIL",
+        100,
+        0
+      ],
+      "duration": 20,
+      "productivity": 0.15,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/CrystallizerRecipes.java",
+        "line": 209
+      },
+      "runtimeBinding": "pending_genuine_Crystallizer"
+    }
+  ],
+  "pendingDependency": "Genuine machine_crystallizer/CrystallizerRecipes; no fake source recipes or machine registered"
+}

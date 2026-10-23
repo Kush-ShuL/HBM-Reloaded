@@ -1,0 +1,62 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.processorbit_pfm",
+  "order": 10,
+  "duration": 36000,
+  "power": 10000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 8
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 9
+            }
+          },
+          "weight": 65
+        },
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 3
+            }
+          },
+          "weight": 35
+        }
+      ],
+      "weighted": true
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "PERFLUOROMETHYL_COLD",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ],
+  "output_fluids": [
+    {
+      "type": "PERFLUOROMETHYL",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "module": "piston-inserter226",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "piston_inserter",
+      "id": "hbm:piston_inserter",
+      "legacyRegistryId": "hbm:tile.piston_inserter",
+      "originalClass": "PistonInserter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1919
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3219
+          },
+          "expression": "register(piston_inserter)",
+          "arguments": [
+            "piston_inserter"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": null,
+      "deprecatedSourceStillRegistered": true,
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventorySlots": 1,
+      "hasBlockEntity": true
+    }
+  ]
+}

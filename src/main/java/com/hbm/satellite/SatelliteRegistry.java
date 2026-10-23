@@ -1,0 +1,12 @@
+package com.hbm.satellite;
+import java.util.*;import java.util.function.Supplier;import com.hbm.satellite.types.*;import com.hbm.satellite.item.*;import net.minecraft.server.level.ServerLevel;import net.minecraft.world.item.ItemStack;
+/** Explicit real factories, source IDs unchanged. Unimplemented source satellites do not become fake base instances. */
+public final class SatelliteRegistry {
+ private record Definition(Class<? extends SatelliteBase> type,Supplier<? extends SatelliteBase> factory){}
+ private static final Map<Integer,Definition> TYPES=new HashMap<>();static{bind(0,SatelliteMapper.class,SatelliteMapper::new);bind(1,SatelliteScanner.class,SatelliteScanner::new);bind(2,SatelliteRadar.class,SatelliteRadar::new);bind(4,SatelliteResonator.class,SatelliteResonator::new);bind(5,SatelliteRelay.class,SatelliteRelay::new);bind(10,SatelliteDetector.class,SatelliteDetector::new);bind(11,SatelliteRayScan.class,SatelliteRayScan::new);}
+ public static void bind(int id,Class<? extends SatelliteBase> type,Supplier<? extends SatelliteBase> factory){var previous=TYPES.putIfAbsent(id,new Definition(type,factory));if(previous!=null&&previous.type()!=type)throw new IllegalStateException("Satellite source id already bound: "+id);}
+ public static boolean ready(int id){return TYPES.containsKey(id);}public static SatelliteBase createFromId(int id){var def=TYPES.get(id);return def==null?null:def.factory().get();}public static int idOf(Class<? extends SatelliteBase> type){for(var entry:TYPES.entrySet())if(entry.getValue().type()==type)return entry.getKey();throw new IllegalArgumentException("Unregistered satellite class "+type);}
+ public static SatelliteBase createFromItem(ItemStack stack){if(stack.isEmpty())return null;if(stack.getItem() instanceof com.hbm.item.bobmazon.GeraldFrequencyChip)return createFromId(8);if(stack.getItem() instanceof SatelliteItem)return createFromId(SatelliteItem.kind(stack).sourceClassId);return null;}
+ public static boolean orbit(ServerLevel world,ItemStack stack,int frequency,double x,double y,double z){var data=SatelliteSavedData.getData(world);var existing=data.getSatFromFreq(frequency);if(existing!=null){existing.onPartDelivered(world,stack);return true;}if(data.isFreqTaken(frequency))return false;var satellite=createFromItem(stack);if(satellite==null)return false;data.sats.put(frequency,satellite);satellite.onOrbit(world,x,y,z);data.setDirty();return true;}
+ private SatelliteRegistry(){}
+}

@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "meltdown_tool",
+      "id": "hbm:meltdown_tool",
+      "legacyRegistryId": "hbm:item.meltdown_tool",
+      "originalClass": "ItemDyatlov",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3647
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6295
+          },
+          "expression": "GameRegistry.registerItem(meltdown_tool, meltdown_tool.getUnlocalizedName())",
+          "arguments": [
+            "meltdown_tool",
+            "meltdown_tool.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.meltdowntool.MeltdownToolContent",
+      "creativeTab": "control",
+      "maxStackSize": 1
+    }
+  ]
+}

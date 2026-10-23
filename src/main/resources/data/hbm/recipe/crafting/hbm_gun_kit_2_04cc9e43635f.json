@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:gun_kit_2",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:gun_kit_1",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    {
+      "item": "hbm:wrench"
+    },
+    {
+      "item": "hbm:ducttape"
+    },
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "LUBRICANT",
+      "amount": 1000
+    }
+  ]
+}

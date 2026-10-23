@@ -1,0 +1,37 @@
+{
+  "type": "hbm:fusion",
+  "name": "fus.cl",
+  "order": 6,
+  "r": 1.0,
+  "g": 0.6,
+  "b": 0.2,
+  "ignition_temp": 3750000,
+  "output_temp": 10000000,
+  "neutron_flux": 1000.0,
+  "named": true,
+  "icon": {
+    "id": "hbm:powder_chlorophyte",
+    "count": 1
+  },
+  "power": 25000,
+  "duration": 100,
+  "input_fluids": [
+    {
+      "type": "CHLORINE",
+      "amount": 20,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:powder_chlorophyte",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

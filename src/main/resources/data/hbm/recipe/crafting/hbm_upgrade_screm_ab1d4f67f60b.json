@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:upgrade_screm",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SUS",
+    "SCS",
+    "SUS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "U": {
+      "item": "hbm:upgrade_template"
+    },
+    "C": {
+      "item": "hbm:crystal_xen"
+    }
+  }
+}

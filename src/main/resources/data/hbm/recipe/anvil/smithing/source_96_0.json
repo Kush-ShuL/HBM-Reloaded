@@ -1,0 +1,24 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 1,
+  "result": {
+    "id": "hbm:ingot_gunmetal",
+    "count": 1
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotaluminum"
+    },
+    "count": 1
+  },
+  "kind": "normal",
+  "order": 96000000
+}

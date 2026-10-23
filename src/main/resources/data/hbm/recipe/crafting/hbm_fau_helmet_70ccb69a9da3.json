@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PWP",
+    "PBP",
+    "FSF"
+  ],
+  "key": {
+    "P": {
+      "item": "hbm:plate_armor_fau"
+    },
+    "W": {
+      "item": "minecraft:red_wool"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:starmetal_helmet",
+      "components": {
+        "minecraft:damage": 0
+      },
+      "strict": false
+    },
+    "F": {
+      "item": "hbm:gas_mask_filter"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+    }
+  },
+  "result": {
+    "id": "hbm:fau_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  }
+}

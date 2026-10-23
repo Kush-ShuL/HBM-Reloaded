@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_lead",
+    {
+      "id": "#c:storage_blocks/lead",
+      "required": false
+    }
+  ]
+}

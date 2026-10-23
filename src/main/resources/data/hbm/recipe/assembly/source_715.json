@@ -1,0 +1,35 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.mancore",
+  "duration": 1200,
+  "power": 100,
+  "order": 230,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:man_core",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/nuggetberyllium"
+      },
+      "count": 2
+    }
+  ]
+}

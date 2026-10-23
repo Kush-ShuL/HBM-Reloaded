@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "geysir_chlorine",
+      "id": "hbm:geysir_chlorine",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1699
+      },
+      "legacyRegistryId": "hbm:tile.geysir_chlorine",
+      "originalClass": "BlockGeysir",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    },
+    {
+      "kind": "block",
+      "symbol": "geysir_nether",
+      "id": "hbm:geysir_nether",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1700
+      },
+      "legacyRegistryId": "hbm:tile.geysir_nether",
+      "originalClass": "BlockGeysir",
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ]
+    }
+  ]
+}

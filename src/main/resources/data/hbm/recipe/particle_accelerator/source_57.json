@@ -1,0 +1,27 @@
+{
+  "type": "hbm:particle_accelerator",
+  "input1": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_hydrogen"
+      }
+    },
+    "count": 1
+  },
+  "input2": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:particle_lead"
+      }
+    },
+    "count": 1
+  },
+  "momentum": 6500,
+  "output1": {
+    "id": "hbm:particle_higgs",
+    "count": 1
+  },
+  "order": 4
+}

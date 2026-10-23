@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#hbm:pigeon_source_plains",
+  "spawners": [
+    {
+      "type": "hbm:entity_pigeon",
+      "weight": 1,
+      "minCount": 5,
+      "maxCount": 10
+    }
+  ]
+}

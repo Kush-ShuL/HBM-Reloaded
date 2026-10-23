@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:ash_digamma"
+  },
+  "result": {
+    "id": "hbm:glass_ash",
+    "count": 1
+  },
+  "experience": 10.0,
+  "cookingtime": 200
+}

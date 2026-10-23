@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:machine_electric_furnace_off",
+    "hbm:machine_electric_furnace_on",
+    "hbm:machine_battery_potato",
+    "hbm:machine_battery",
+    "hbm:machine_lithium_battery",
+    "hbm:machine_schrabidium_battery",
+    "hbm:machine_dineutronium_battery",
+    "hbm:red_wire_coated",
+    "hbm:red_cable",
+    "hbm:red_cable_classic",
+    "hbm:red_cable_paintable",
+    "hbm:red_cable_gauge",
+    "hbm:red_cable_box",
+    "hbm:cable_switch",
+    "hbm:cable_detector",
+    "hbm:cable_diode",
+    {
+      "id": "#hbm:mineable/pickaxe/stairs",
+      "required": false
+    }
+  ]
+}

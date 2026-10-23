@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "kind": "item",
+      "symbol": "taurun_helmet",
+      "id": "hbm:taurun_helmet",
+      "legacyRegistryId": "hbm:item.taurun_helmet",
+      "originalClass": "ArmorTaurun",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:310",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat"
+    },
+    {
+      "kind": "item",
+      "symbol": "taurun_plate",
+      "id": "hbm:taurun_plate",
+      "legacyRegistryId": "hbm:item.taurun_plate",
+      "originalClass": "ArmorTaurun",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:316",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat"
+    },
+    {
+      "kind": "item",
+      "symbol": "taurun_legs",
+      "id": "hbm:taurun_legs",
+      "legacyRegistryId": "hbm:item.taurun_legs",
+      "originalClass": "ArmorTaurun",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:317",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat"
+    },
+    {
+      "kind": "item",
+      "symbol": "taurun_boots",
+      "id": "hbm:taurun_boots",
+      "legacyRegistryId": "hbm:item.taurun_boots",
+      "originalClass": "ArmorTaurun",
+      "source": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java:318",
+      "creativeTab": "none",
+      "nativeCreativeTab": "minecraft:combat"
+    }
+  ],
+  "sourceArmorMaterial": "HBM_TRENCH (distinct original material identity from later Trenchmaster despite identical enum name)",
+  "material": "hbm:taurun",
+  "defense": [
+    3,
+    8,
+    6,
+    3
+  ],
+  "maxDamage": 0,
+  "enchantability": 10,
+  "repair": "hbm:plate_iron",
+  "fullSetRadiationExponent": 0.125,
+  "hazardsHelmetOnly": [
+    "PARTICLE_COARSE",
+    "PARTICLE_FINE",
+    "GAS_LUNG",
+    "BACTERIA",
+    "GAS_BLISTERING",
+    "GAS_MONOXIDE",
+    "LIGHT",
+    "SAND"
+  ]
+}

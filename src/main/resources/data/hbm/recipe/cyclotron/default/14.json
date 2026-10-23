@@ -1,0 +1,52 @@
+{
+  "type": "hbm:cyclotron",
+  "data": {
+    "name": "cyclotron.14",
+    "duration": 690,
+    "power": 1000000,
+    "input_items": [
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:part_beryllium",
+            "count": 1
+          }
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+        },
+        "count": 1
+      }
+    ],
+    "output_items": [
+      {
+        "pool": [
+          {
+            "stack": {
+              "id": "hbm:sulfur",
+              "count": 1
+            }
+          }
+        ]
+      }
+    ],
+    "output_fluids": [
+      {
+        "type": "AMAT",
+        "amount": 25
+      }
+    ],
+    "icon": {
+      "id": "hbm:part_beryllium",
+      "count": 1
+    },
+    "order": 14
+  },
+  "source_key": "hbm:item.part_beryllium@0x1|dict:dustNetherQuartz@0x1",
+  "source_hash": -1710692575
+}

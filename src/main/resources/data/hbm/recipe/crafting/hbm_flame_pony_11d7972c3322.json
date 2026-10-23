@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:flame_pony",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " O ",
+    "DPD",
+    " O "
+  ],
+  "key": {
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyepink"
+    },
+    "O": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dyeyellow"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  }
+}

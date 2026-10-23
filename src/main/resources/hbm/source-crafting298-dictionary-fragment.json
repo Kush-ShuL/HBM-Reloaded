@@ -1,0 +1,25 @@
+{
+  "order": [
+    "hbm:legacy_ore_dict/nuggetpluonium240"
+  ],
+  "names": [
+    {
+      "tag": "hbm:legacy_ore_dict/nuggetpluonium240",
+      "raw": "nuggetPluonium240"
+    }
+  ],
+  "memberships": [],
+  "registrations": [
+    {
+      "raw": "ingotNickel",
+      "tag": "hbm:legacy_ore_dict/ingotnickel",
+      "condition": "Actual optional native tag/provider has real members",
+      "runtimeOwner": "SourceRtgRecyclingRecipes"
+    },
+    {
+      "raw": "nuggetPluonium240",
+      "source": "legacy/src/main/java/com/hbm/crafting/MineralRecipes.java:419",
+      "sourceIssue": "Exact source typo; getOres implicitly registered the empty name, no real membership invented."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "soyuz_capsule",
+      "id": "hbm:soyuz_capsule",
+      "originalClass": "SoyuzCapsule",
+      "source": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java:2096",
+      "legacyRegistryId": "hbm:tile.soyuz_capsule",
+      "creativeTab": "missile",
+      "itemMetadata": [
+        0
+      ],
+      "worldMetadataRange": [
+        0,
+        15
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "missile_soyuz",
+      "id": "hbm:missile_soyuz",
+      "originalClass": "ItemSoyuz",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:3425",
+      "legacyRegistryId": "hbm:item.missile_soyuz",
+      "creativeTab": "missile",
+      "stackSize": 1,
+      "metadataRange": [
+        0,
+        2
+      ],
+      "itemMetadata": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "item",
+      "symbol": "record_glass",
+      "id": "hbm:record_glass",
+      "originalClass": "ItemModRecord",
+      "source": "legacy/src/main/java/com/hbm/items/ModItems.java:4333",
+      "legacyRegistryId": "hbm:item.record_glass",
+      "creativeTab": null,
+      "stackSize": 1
+    }
+  ]
+}

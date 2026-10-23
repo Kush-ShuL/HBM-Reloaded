@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_lead"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_lead",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_lead",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_gold",
+      "count": 1
+    },
+    {
+      "id": "hbm:powder_lithium_tiny",
+      "count": 1
+    }
+  ]
+}

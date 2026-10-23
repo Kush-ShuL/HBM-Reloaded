@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "symbol": "pwr_printer",
+      "id": "hbm:pwr_printer",
+      "kind": "item",
+      "creativeTab": "control",
+      "originalClass": "ItemPWRPrinter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3023
+      },
+      "runtimeValidated": false
+    }
+  ],
+  "sourceCrafting": [],
+  "craftingNote": "The actual source registers only the tool on controlTab; no recipe/NEI processing category exists."
+}

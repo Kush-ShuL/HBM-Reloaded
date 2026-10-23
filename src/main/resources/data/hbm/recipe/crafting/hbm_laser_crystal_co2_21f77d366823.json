@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:laser_crystal_co2",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QDQ",
+    "NCN",
+    "QDQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "hbm:glass_quartz"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+    },
+    "N": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotniobium"
+    },
+    "C": {
+      "type": "neoforge:components",
+      "items": "hbm:fluid_tank_full",
+      "components": {
+        "hbm:legacy_metadata": 55,
+        "hbm:fluid_type": 55
+      },
+      "strict": false
+    }
+  }
+}

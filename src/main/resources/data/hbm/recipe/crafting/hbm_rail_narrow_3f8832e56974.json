@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:rail_narrow",
+    "count": 64
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S S",
+    "S S",
+    "S S"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:steel_beam"
+    }
+  }
+}

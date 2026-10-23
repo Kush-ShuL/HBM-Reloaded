@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_th232",
+    {
+      "id": "#c:ingots/th232",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/thorium",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/thorium232",
+      "required": false
+    }
+  ]
+}

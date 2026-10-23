@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ICI",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "C": {
+      "item": "hbm:cladding_lead"
+    },
+    "B": {
+      "item": "hbm:hazmat_boots_grey"
+    }
+  },
+  "result": {
+    "id": "hbm:liquidator_boots",
+    "count": 1
+  }
+}

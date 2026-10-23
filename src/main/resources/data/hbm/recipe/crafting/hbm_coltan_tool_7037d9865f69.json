@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:coltan_tool",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ACA",
+    "CXC",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/crystalcinnabar"
+    },
+    "X": {
+      "item": "minecraft:compass"
+    }
+  }
+}

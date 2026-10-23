@@ -1,0 +1,55 @@
+{
+  "type": "hbm:cyclotron",
+  "data": {
+    "name": "cyclotron.41",
+    "duration": 690,
+    "power": 1000000,
+    "input_items": [
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:part_plutonium",
+            "count": 1
+          }
+        },
+        "count": 1
+      },
+      {
+        "ingredient": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:pellet_charged",
+            "count": 1
+          }
+        },
+        "count": 1
+      }
+    ],
+    "output_items": [
+      {
+        "pool": [
+          {
+            "stack": {
+              "id": "hbm:nugget_schrabidium",
+              "count": 1
+            }
+          }
+        ]
+      }
+    ],
+    "output_fluids": [
+      {
+        "type": "AMAT",
+        "amount": 1000
+      }
+    ],
+    "icon": {
+      "id": "hbm:part_plutonium",
+      "count": 1
+    },
+    "order": 41
+  },
+  "source_key": "hbm:item.part_plutonium@0x1|item:hbm:item.pellet_charged@0x1",
+  "source_hash": -667527523
+}

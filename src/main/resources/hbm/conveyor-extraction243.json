@@ -1,0 +1,95 @@
+{
+  "module": "conveyor-extraction243",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "crane_extractor",
+      "id": "hbm:crane_extractor",
+      "legacyRegistryId": "hbm:tile.crane_extractor",
+      "originalClass": "CraneExtractor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1910
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3191
+          },
+          "expression": "register(crane_extractor)",
+          "arguments": [
+            "crane_extractor"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "hasBlockEntity": true,
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventorySlots": 20
+    },
+    {
+      "kind": "block",
+      "symbol": "crane_inserter",
+      "id": "hbm:crane_inserter",
+      "legacyRegistryId": "hbm:tile.crane_inserter",
+      "originalClass": "CraneInserter",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1911
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 3192
+          },
+          "expression": "register(crane_inserter)",
+          "arguments": [
+            "crane_inserter"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "machine",
+      "hasBlockEntity": true,
+      "rawMetadata": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "inventorySlots": 21
+    }
+  ]
+}

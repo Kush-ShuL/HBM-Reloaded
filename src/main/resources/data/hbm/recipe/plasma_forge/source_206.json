@@ -1,0 +1,50 @@
+{
+  "type": "hbm:plasma_forge",
+  "name": "plsm.icfpress",
+  "duration": 800,
+  "power": 10000000,
+  "ignition_temp": 1000000,
+  "order": 36,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:machine_icf_press",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/platetriplegold"
+      },
+      "count": 8
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:motor"
+        }
+      },
+      "count": 4
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:circuit_bismoid"
+        }
+      },
+      "count": 1
+    }
+  ],
+  "pools_528": [
+    "528.chlorophyte"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:machine_conveyor_press",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CPC",
+    "CBC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platecopper"
+    },
+    "P": {
+      "item": "hbm:machine_epress"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:conveyor_wand",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

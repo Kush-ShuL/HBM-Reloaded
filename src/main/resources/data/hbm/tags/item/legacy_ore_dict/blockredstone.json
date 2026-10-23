@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:redstone_block",
+    {
+      "id": "#c:storage_blocks/redstone",
+      "required": false
+    }
+  ]
+}

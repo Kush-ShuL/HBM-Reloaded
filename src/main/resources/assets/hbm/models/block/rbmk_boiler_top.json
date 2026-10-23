@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_piped",
+  "inventory": false,
+  "top": true,
+  "lid": false,
+  "textures": {
+    "side": "hbm:block/rbmk/rbmk_boiler_side",
+    "top": "hbm:block/rbmk/rbmk_boiler_top",
+    "pipe_top": "hbm:block/rbmk/rbmk_boiler_pipe_top",
+    "pipe_side": "hbm:block/rbmk/rbmk_boiler_pipe_side",
+    "cover_top": "hbm:block/rbmk/rbmk_boiler_cover_top",
+    "cover_side": "hbm:block/rbmk/rbmk_boiler_cover_side",
+    "glass_top": "hbm:block/rbmk/rbmk_boiler_glass_top",
+    "glass_side": "hbm:block/rbmk/rbmk_boiler_glass_side",
+    "bottom": "hbm:block/rbmk/rbmk_boiler_top",
+    "particle": "hbm:block/rbmk/rbmk_boiler_side"
+  }
+}

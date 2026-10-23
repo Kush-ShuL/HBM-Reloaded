@@ -1,0 +1,5 @@
+package com.hbm.satellite.link.client;
+import com.hbm.satellite.link.*;import net.neoforged.api.distmarker.Dist;import net.neoforged.bus.api.SubscribeEvent;import net.neoforged.fml.common.EventBusSubscriber;import net.neoforged.neoforge.client.event.*;
+@EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)public final class SatelliteLinkClient{
+ @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers event){event.registerBlockEntityRenderer(SatelliteLinkContent.ENTITY.get(),SatelliteLinkRenderer::new);}@SubscribeEvent public static void extensions(net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent event){event.registerItem(new net.neoforged.neoforge.client.extensions.common.IClientItemExtensions(){private SatelliteLinkItemRenderer renderer;@Override public net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer getCustomRenderer(){if(renderer==null)renderer=new SatelliteLinkItemRenderer();return renderer;}},SatelliteLinkContent.ITEM.get());}private SatelliteLinkClient(){}
+}

@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:rtty_designator",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "R",
+    "C",
+    "T"
+  ],
+  "key": {
+    "R": {
+      "item": "hbm:radio_torch_reader"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    },
+    "T": {
+      "type": "neoforge:components",
+      "items": "hbm:rangefinder",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

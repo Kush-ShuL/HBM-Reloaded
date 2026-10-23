@@ -1,0 +1,28 @@
+{
+  "en_us": {
+    "tile.crane_router.name": "Conveyor Sorter",
+    "tile.crane_router.desc": "Sorts item based on defined criteria$Sides can be defined as blacklist, whitelist or wildcard$Wildcard sides are only chosen if no other filter matches",
+    "container.craneRouter": "Conveyor Router",
+    "block.hbm.crane_router": "Conveyor Sorter",
+    "gui.hbm.crane_router.mode.0": "OFF",
+    "gui.hbm.crane_router.mode.1": "WHITELIST",
+    "gui.hbm.crane_router.mode.2": "BLACKLIST",
+    "gui.hbm.crane_router.mode.3": "WILDCARD",
+    "gui.hbm.crane_router.mode.1.desc": "Route if filter matches",
+    "gui.hbm.crane_router.mode.2.desc": "Route if filter doesn't match",
+    "gui.hbm.crane_router.mode.3.desc": "Route if no other route is valid"
+  },
+  "zh_cn": {
+    "tile.crane_router.name": "输送带分拣机",
+    "tile.crane_router.desc": "根据定义的条件对项目排序$侧面可以定义为黑名单、白名单或通配符$只有在没有其他筛选器匹配的情况下才选择通配符侧面",
+    "container.craneRouter": "传送路由器",
+    "block.hbm.crane_router": "输送带分拣机",
+    "gui.hbm.crane_router.mode.0": "关闭",
+    "gui.hbm.crane_router.mode.1": "白名单",
+    "gui.hbm.crane_router.mode.2": "黑名单",
+    "gui.hbm.crane_router.mode.3": "通配路由",
+    "gui.hbm.crane_router.mode.1.desc": "筛选器匹配时从此面输出",
+    "gui.hbm.crane_router.mode.2.desc": "筛选器不匹配时从此面输出",
+    "gui.hbm.crane_router.mode.3.desc": "没有其他可用路由时从此面输出"
+  }
+}

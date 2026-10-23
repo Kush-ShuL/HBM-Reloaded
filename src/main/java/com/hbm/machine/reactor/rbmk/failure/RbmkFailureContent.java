@@ -1,0 +1,4 @@
+package com.hbm.machine.reactor.rbmk.failure;
+import net.minecraft.core.registries.Registries;import net.minecraft.world.entity.*;import net.neoforged.bus.api.IEventBus;import net.neoforged.neoforge.registries.*;
+/** Actual source EntitySpear dependency; other failure parts are added only when their implementations close. */
+public final class RbmkFailureContent {private static final DeferredRegister<EntityType<?>> ENTITIES=DeferredRegister.create(Registries.ENTITY_TYPE,"hbm");public static final DeferredHolder<EntityType<?>,EntityType<DigammaSpear>> SPEAR=ENTITIES.register("entity_digamma_spear",()->EntityType.Builder.<DigammaSpear>of(DigammaSpear::new,MobCategory.MISC).sized(2,10).fireImmune().clientTrackingRange(63).updateInterval(1).setShouldReceiveVelocityUpdates(true).build("hbm:entity_digamma_spear"));public static void register(IEventBus bus){ENTITIES.register(bus);RbmkFailureEffects.register(bus);}private RbmkFailureContent(){}}

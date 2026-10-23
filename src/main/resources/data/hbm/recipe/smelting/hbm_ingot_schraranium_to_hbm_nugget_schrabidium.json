@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "hbm:ingot_schraranium"
+  },
+  "result": {
+    "id": "hbm:nugget_schrabidium",
+    "count": 1
+  },
+  "experience": 2.0,
+  "cookingtime": 200
+}

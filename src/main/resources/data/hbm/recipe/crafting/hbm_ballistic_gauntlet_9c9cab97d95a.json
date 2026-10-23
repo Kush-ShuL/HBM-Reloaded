@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:ballistic_gauntlet",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " WS",
+    "WRS",
+    " RS"
+  ],
+  "key": {
+    "W": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+    },
+    "R": {
+      "item": "hbm:ring_starmetal"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    }
+  }
+}

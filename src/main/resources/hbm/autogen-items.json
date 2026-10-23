@@ -1,0 +1,286 @@
+{
+  "items": [
+    {
+      "symbol": "bedrock_ore_fragment",
+      "id": "bedrock_ore_fragment",
+      "shape": "FRAGMENT",
+      "class": "ItemAutogen",
+      "texture": "bedrock_ore_fragment",
+      "descriptionId": "item.bedrock_ore_fragment.name",
+      "textureOverrides": {
+        "8300": "bedrock_ore_fragment_bismuth"
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2306
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "bolt",
+      "id": "bolt",
+      "shape": "BOLT",
+      "class": "ItemAutogen",
+      "texture": "bolt",
+      "descriptionId": "item.boltntm.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2180
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "ingot_raw",
+      "id": "ingot_raw",
+      "shape": "INGOT",
+      "class": "ItemAutogen",
+      "texture": "ingot_raw",
+      "descriptionId": "item.ingot_raw.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2766
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "nugget_raw",
+      "id": "nugget_raw",
+      "shape": "NUGGET",
+      "class": "ItemAutogen",
+      "texture": "nugget_raw",
+      "descriptionId": "item.nugget_raw.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2767
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_barrel_heavy",
+      "id": "part_barrel_heavy",
+      "shape": "HEAVYBARREL",
+      "class": "ItemAutogen",
+      "texture": "part_barrel_heavy",
+      "descriptionId": "item.part_barrel_heavy.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2779
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_barrel_light",
+      "id": "part_barrel_light",
+      "shape": "LIGHTBARREL",
+      "class": "ItemAutogen",
+      "texture": "part_barrel_light",
+      "descriptionId": "item.part_barrel_light.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2778
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_grip",
+      "id": "part_grip",
+      "shape": "GRIP",
+      "class": "ItemAutogen",
+      "texture": "part_grip",
+      "descriptionId": "item.part_grip.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2784
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_mechanism",
+      "id": "part_mechanism",
+      "shape": "MECHANISM",
+      "class": "ItemAutogen",
+      "texture": "part_mechanism",
+      "descriptionId": "item.part_mechanism.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2782
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_receiver_heavy",
+      "id": "part_receiver_heavy",
+      "shape": "HEAVYRECEIVER",
+      "class": "ItemAutogen",
+      "texture": "part_receiver_heavy",
+      "descriptionId": "item.part_receiver_heavy.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2781
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_receiver_light",
+      "id": "part_receiver_light",
+      "shape": "LIGHTRECEIVER",
+      "class": "ItemAutogen",
+      "texture": "part_receiver_light",
+      "descriptionId": "item.part_receiver_light.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2780
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "part_stock",
+      "id": "part_stock",
+      "shape": "STOCK",
+      "class": "ItemAutogen",
+      "texture": "part_stock",
+      "descriptionId": "item.part_stock.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2783
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "pipe",
+      "id": "pipe",
+      "shape": "PIPE",
+      "class": "ItemAutogen",
+      "texture": "pipe",
+      "descriptionId": "item.pipentm.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2580
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "plate_cast",
+      "id": "plate_cast",
+      "shape": "CASTPLATE",
+      "class": "ItemAutogen",
+      "texture": "plate_cast",
+      "descriptionId": "item.plate_cast.name",
+      "textureOverrides": {
+        "8300": "plate_cast_bismuth"
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2768
+      },
+      "oreRequiresSmeltable": true
+    },
+    {
+      "symbol": "plate_welded",
+      "id": "plate_welded",
+      "shape": "WELDEDPLATE",
+      "class": "ItemAutogen",
+      "texture": "plate_welded",
+      "descriptionId": "item.plate_welded.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2769
+      },
+      "oreRequiresSmeltable": true
+    },
+    {
+      "symbol": "scraps",
+      "id": "scraps",
+      "shape": null,
+      "class": "ItemScraps",
+      "texture": "scraps",
+      "descriptionId": "item.scraps.name",
+      "textureOverrides": {
+        "8300": "scraps_bismuth"
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2765
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "shell",
+      "id": "shell",
+      "shape": "SHELL",
+      "class": "ItemAutogen",
+      "texture": "shell",
+      "descriptionId": "item.shellntm.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2579
+      },
+      "oreRequiresSmeltable": false
+    },
+    {
+      "symbol": "wire_dense",
+      "id": "wire_dense",
+      "shape": "DENSEWIRE",
+      "class": "ItemAutogen",
+      "texture": "wire_dense",
+      "descriptionId": "item.wire_dense.name",
+      "textureOverrides": {},
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2776
+      },
+      "oreRequiresSmeltable": true
+    },
+    {
+      "symbol": "wire_fine",
+      "id": "wire_fine",
+      "shape": "WIRE",
+      "class": "ItemAutogen",
+      "texture": "wire_fine",
+      "descriptionId": "item.wire_fine.name",
+      "textureOverrides": {
+        "1300": "wire_aluminium",
+        "2900": "wire_copper",
+        "31": "wire_red_copper",
+        "7900": "wire_gold",
+        "7400": "wire_tungsten",
+        "699": "wire_carbon",
+        "12626": "wire_schrabidium",
+        "38": "wire_magnetized_tungsten"
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2770
+      },
+      "oreRequiresSmeltable": false
+    }
+  ],
+  "recolor": {
+    "sourceLight": 16777215,
+    "sourceDark": 5263440,
+    "algorithm": "For each RGB channel: int(light + ((channel-255D)/(80D-255D))*(dark-light)) &255; preserve alpha; no clamp.",
+    "overrideOrder": [
+      "explicit aot texture",
+      "generated remap if unequal solid endpoints and shape membership (or scraps)",
+      "base texture tinted moltenColor"
+    ]
+  },
+  "customShapeTemplate": {
+    "descriptionId": "item.<original_shape_name>.name",
+    "texture": "<original_shape_name>",
+    "registration": "one actual ItemAutogen per source custom shape; metadata remains material ID"
+  }
+}

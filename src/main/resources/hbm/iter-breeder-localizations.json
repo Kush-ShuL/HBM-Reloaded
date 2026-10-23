@@ -1,0 +1,22 @@
+{
+  "en_us": {
+    "tile.fusion_breeder.name": "Fusion Reactor Breeding Chamber",
+    "tile.fusion_breeder.desc": "Uses output neutron flux from$a fusion reactor to process materials.$Useful for making tritium fuel.",
+    "container.fusionBreeder": "Fusion Reactor Breeder",
+    "block.hbm.fusion_breeder": "Fusion Reactor Breeding Chamber",
+    "jade.hbm.fusion_breeder.progress": "Neutron breeding",
+    "gui.hbm.fusion_breeder.flux_rate": "§a-> §r%s flux/t",
+    "gui.hbm.fusion_breeder.flux": "%s / %s flux",
+    "gui.hbm.fusion_breeder.requirement": "Requires over 10,000 flux"
+  },
+  "zh_cn": {
+    "tile.fusion_breeder.name": "聚变反应堆增殖舱",
+    "tile.fusion_breeder.desc": "使用来自聚变反应堆的中子通量来处理材料。$用于制造氚燃料。",
+    "container.fusionBreeder": "聚变反应堆增殖舱",
+    "block.hbm.fusion_breeder": "聚变反应堆增殖舱",
+    "jade.hbm.fusion_breeder.progress": "中子增殖",
+    "gui.hbm.fusion_breeder.flux_rate": "§a-> §r%s flux/t",
+    "gui.hbm.fusion_breeder.flux": "%s / %s flux",
+    "gui.hbm.fusion_breeder.requirement": "需超过10,000中子通量"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "result": {
+    "id": "hbm:ore_uranium",
+    "count": 8
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "OOO",
+    "OBO",
+    "OOO"
+  ],
+  "key": {
+    "O": {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "hbm:ore_uranium_scorched"
+        },
+        {
+          "item": "hbm:deepslate_ore_uranium_scorched"
+        }
+      ]
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+    }
+  ]
+}

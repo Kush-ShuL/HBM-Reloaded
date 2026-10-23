@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:teleanchor",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ODO",
+    "EAE",
+    "ODO"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "D": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/gemdiamond"
+    },
+    "E": {
+      "item": "hbm:powder_magic"
+    },
+    "A": {
+      "item": "hbm:gem_alexandrite"
+    }
+  }
+}

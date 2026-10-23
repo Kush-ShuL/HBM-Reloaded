@@ -1,0 +1,82 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "marshmallow",
+      "id": "hbm:marshmallow",
+      "legacyRegistryId": "hbm:item.marshmallow",
+      "originalClass": "ItemMarshmallow",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3636
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6002
+          },
+          "expression": "GameRegistry.registerItem(marshmallow, marshmallow.getUnlocalizedName())",
+          "arguments": [
+            "marshmallow",
+            "marshmallow.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.marshmallow.MarshmallowContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 1,
+      "sourceMetadata": [
+        0,
+        1
+      ],
+      "metadataRange": [
+        0,
+        1
+      ],
+      "full3D": true,
+      "food": null
+    },
+    {
+      "kind": "item",
+      "symbol": "ingot_smore",
+      "id": "hbm:ingot_smore",
+      "legacyRegistryId": "hbm:item.ingot_smore",
+      "originalClass": "ItemFood",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2122
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 4519
+          },
+          "expression": "GameRegistry.registerItem(ingot_smore, ingot_smore.getUnlocalizedName())",
+          "arguments": [
+            "ingot_smore",
+            "ingot_smore.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.item.marshmallow.MarshmallowContent",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "sourceMetadata": [
+        0
+      ],
+      "metadataRange": [
+        0,
+        0
+      ],
+      "full3D": false,
+      "food": {
+        "nutrition": 10,
+        "saturationModifier": 20,
+        "alwaysEdible": false,
+        "wolfFood": false
+      }
+    }
+  ]
+}

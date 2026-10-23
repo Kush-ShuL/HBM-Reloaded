@@ -1,0 +1,43 @@
+{
+  "module": "transition-seal253",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "transition_seal",
+      "id": "hbm:transition_seal",
+      "legacyRegistryId": "hbm:tile.transition_seal",
+      "originalClass": "BlockDoorGeneric",
+      "sourceDeclaration": "TRANSITION_SEAL",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2051
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2977
+          },
+          "expression": "GameRegistry.registerBlock(transition_seal, transition_seal.getUnlocalizedName())",
+          "arguments": [
+            "transition_seal",
+            "transition_seal.getUnlocalizedName()"
+          ],
+          "itemBlockClass": "ItemBlock"
+        }
+      ],
+      "creativeTab": "machine",
+      "metadataRange": [
+        0,
+        15
+      ],
+      "skins": 0,
+      "hasBlockEntity": true,
+      "blockEntity": "hbm:generic_door"
+    }
+  ],
+  "sourceBlockEntityAlias": "tileentity_ntm_door",
+  "model": "hbm:models/doors/seal.dae",
+  "animationLengthMillis": 24040,
+  "noOriginalItemRenderer": true
+}

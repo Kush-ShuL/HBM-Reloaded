@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {
+      "symbol": "machine_wood_burner",
+      "id": "hbm:machine_wood_burner",
+      "kind": "block",
+      "module": "woodburner",
+      "originalClass": "MachineWoodBurner",
+      "class": "MachineWoodBurner",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1845
+      },
+      "creativeTab": "machine",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false
+    }
+  ]
+}

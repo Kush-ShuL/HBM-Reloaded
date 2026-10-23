@@ -1,0 +1,4841 @@
+{
+  "entrypoint": "com.hbm.machine.shredder.ShredderContent.register",
+  "items": [
+    {
+      "symbol": "machine_shredder",
+      "id": "hbm:machine_shredder",
+      "kind": "block"
+    },
+    {
+      "symbol": "blades_steel",
+      "id": "hbm:blades_steel",
+      "kind": "item"
+    },
+    {
+      "symbol": "blades_titanium",
+      "id": "hbm:blades_titanium",
+      "kind": "item"
+    },
+    {
+      "symbol": "blades_desh",
+      "id": "hbm:blades_desh",
+      "kind": "item"
+    }
+  ],
+  "defaults": [
+    {
+      "id": "hbm:shredder/source/f2a412a455125479",
+      "input": {
+        "id": "hbm:scrap",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:dust",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 139
+      }
+    },
+    {
+      "id": "hbm:shredder/source/416d0cba9644c51c",
+      "input": {
+        "id": "hbm:dust",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:dust",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 140
+      }
+    },
+    {
+      "id": "hbm:shredder/source/3cfc056faa1853b3",
+      "input": {
+        "id": "hbm:dust_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:dust_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 141
+      }
+    },
+    {
+      "id": "hbm:shredder/source/0ff648f4efb78634",
+      "input": {
+        "id": "minecraft:glowstone",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:glowstone_dust",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 142
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7e7c9858117e9aa0",
+      "input": {
+        "id": "minecraft:quartz_block",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 143
+      }
+    },
+    {
+      "id": "hbm:shredder/source/a3e2dd49f4aedba9",
+      "input": {
+        "id": "minecraft:chiseled_quartz_block",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 144
+      }
+    },
+    {
+      "id": "hbm:shredder/source/a242de888efe0ecf",
+      "input": {
+        "id": "minecraft:quartz_pillar",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 145
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f5673944fcae3224",
+      "input": {
+        "id": "minecraft:quartz_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 146
+      }
+    },
+    {
+      "id": "hbm:shredder/source/fb44b641deb2d38d",
+      "input": {
+        "id": "minecraft:quartz_slab",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 147
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5e81c94b548af513",
+      "input": {
+        "id": "minecraft:quartz",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 148
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c79b8384cd410a9a",
+      "input": {
+        "id": "minecraft:nether_quartz_ore",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_quartz",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 149
+      }
+    },
+    {
+      "id": "hbm:shredder/source/35caa4de4aaf214b",
+      "input": {
+        "id": "hbm:ore_nether_fire",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_fire",
+        "count": 6,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 150
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f4bcd962b93f49bb",
+      "input": {
+        "id": "hbm:brick_light",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 152
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d730ff758ab60f05",
+      "input": {
+        "id": "hbm:concrete",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 153
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c50ddc379eed754b",
+      "input": {
+        "id": "hbm:concrete_smooth",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 154
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5681e799ca5393e9",
+      "input": {
+        "id": "hbm:brick_concrete",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 155
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c7adee305ac6b18c",
+      "input": {
+        "id": "hbm:brick_concrete_mossy",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 156
+      }
+    },
+    {
+      "id": "hbm:shredder/source/165e6ff64b75be2b",
+      "input": {
+        "id": "hbm:brick_concrete_cracked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 157
+      }
+    },
+    {
+      "id": "hbm:shredder/source/e2aa733960cae176",
+      "input": {
+        "id": "hbm:brick_concrete_broken",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 158
+      }
+    },
+    {
+      "id": "hbm:shredder/source/023e405393187b02",
+      "input": {
+        "id": "hbm:brick_obsidian",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:gravel_obsidian",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 159
+      }
+    },
+    {
+      "id": "hbm:shredder/source/8ed73fad89196d4f",
+      "input": {
+        "id": "minecraft:obsidian",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:gravel_obsidian",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 160
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f02ca8068d81f00d",
+      "input": {
+        "id": "minecraft:stone",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 161
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b6f68cff100eafde",
+      "input": {
+        "id": "hbm:ore_oil_empty",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 162
+      }
+    },
+    {
+      "id": "hbm:shredder/source/4c6177f25378f30f",
+      "input": {
+        "id": "hbm:deepslate_ore_oil_empty",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 162
+      }
+    },
+    {
+      "id": "hbm:shredder/source/2995e2c6be63f272",
+      "input": {
+        "id": "minecraft:cobblestone",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 163
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c4fe28cf66530a15",
+      "input": {
+        "id": "minecraft:stone_bricks",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 164
+      }
+    },
+    {
+      "id": "hbm:shredder/source/cdad657c59a0e1cc",
+      "input": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:sand",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 165
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b55a44e2da45bed1",
+      "input": {
+        "id": "minecraft:bricks",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 166
+      }
+    },
+    {
+      "id": "hbm:shredder/source/ad0936d4adba8dff",
+      "input": {
+        "id": "minecraft:brick_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 167
+      }
+    },
+    {
+      "id": "hbm:shredder/source/378d1804e8e9f439",
+      "input": {
+        "id": "minecraft:flower_pot",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 168
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d3113cd81a095ec4",
+      "input": {
+        "id": "minecraft:brick",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 169
+      }
+    },
+    {
+      "id": "hbm:shredder/source/394a0282df0fcfbf",
+      "input": {
+        "id": "minecraft:sandstone",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:sand",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 170
+      }
+    },
+    {
+      "id": "hbm:shredder/source/3ab39dda7fbb0a3d",
+      "input": {
+        "id": "minecraft:sandstone_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:sand",
+        "count": 6,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 171
+      }
+    },
+    {
+      "id": "hbm:shredder/source/6dfbcdfbba129179",
+      "input": {
+        "id": "minecraft:clay",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 172
+      }
+    },
+    {
+      "id": "hbm:shredder/source/2af5cca866e3f961",
+      "input": {
+        "id": "minecraft:terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 173
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f908fc0bf8f3bd71",
+      "input": {
+        "id": "minecraft:tnt",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gunpowder",
+        "count": 5,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 174
+      }
+    },
+    {
+      "id": "hbm:shredder/source/81a53cffffe9b4f6",
+      "input": {
+        "id": "hbm:stone_resource",
+        "count": 1,
+        "metadata": 4,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "result": {
+        "id": "hbm:powder_limestone",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 175
+      }
+    },
+    {
+      "id": "hbm:shredder/source/4be2c6199f14e617",
+      "input": {
+        "id": "hbm:stone_gneiss",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_lithium_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 176
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c1f7d5fcfe45cc78",
+      "input": {
+        "id": "hbm:fragment_neodymium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_neodymium_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 177
+      }
+    },
+    {
+      "id": "hbm:shredder/source/0882986539dc71ed",
+      "input": {
+        "id": "hbm:fragment_cobalt",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_cobalt_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 178
+      }
+    },
+    {
+      "id": "hbm:shredder/source/170c1d78dd036867",
+      "input": {
+        "id": "hbm:fragment_niobium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_niobium_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 179
+      }
+    },
+    {
+      "id": "hbm:shredder/source/92455d1ac730f00c",
+      "input": {
+        "id": "hbm:fragment_cerium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_cerium_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 180
+      }
+    },
+    {
+      "id": "hbm:shredder/source/df1cd9ff7cfa751f",
+      "input": {
+        "id": "hbm:fragment_lanthanium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_lanthanium_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 181
+      }
+    },
+    {
+      "id": "hbm:shredder/source/87dcd5a119f25884",
+      "input": {
+        "id": "hbm:fragment_actinium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_actinium_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 182
+      }
+    },
+    {
+      "id": "hbm:shredder/source/28e517ee9b1cd726",
+      "input": {
+        "id": "hbm:fragment_boron",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_boron_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 183
+      }
+    },
+    {
+      "id": "hbm:shredder/source/addf9365c76551d2",
+      "input": {
+        "id": "hbm:fragment_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite_tiny",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 184
+      }
+    },
+    {
+      "id": "hbm:shredder/source/ce86e9c995771907",
+      "input": {
+        "id": "hbm:block_meteor",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 10,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 185
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7c90b5d650b05d0a",
+      "input": {
+        "id": "minecraft:enchanted_book",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_magic",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 186
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1a37d9decc282e4c",
+      "input": {
+        "id": "hbm:meteor_polished",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 187
+      }
+    },
+    {
+      "id": "hbm:shredder/source/593610c246a36ae5",
+      "input": {
+        "id": "hbm:meteor_brick",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 188
+      }
+    },
+    {
+      "id": "hbm:shredder/source/6d4a931e68e4ec3f",
+      "input": {
+        "id": "hbm:meteor_brick_mossy",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 189
+      }
+    },
+    {
+      "id": "hbm:shredder/source/83856594351e5687",
+      "input": {
+        "id": "hbm:meteor_brick_cracked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 190
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f71e7867dbc4baae",
+      "input": {
+        "id": "hbm:meteor_brick_chiseled",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 191
+      }
+    },
+    {
+      "id": "hbm:shredder/source/50d9d94de8d2d1a4",
+      "input": {
+        "id": "hbm:meteor_pillar",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_meteorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 192
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f2538c3b422066ae",
+      "input": {
+        "id": "hbm:ore_rare",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_desh_mix",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 193
+      }
+    },
+    {
+      "id": "hbm:shredder/source/589ebafc22b7ec0d",
+      "input": {
+        "id": "hbm:deepslate_ore_rare",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_desh_mix",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 193
+      }
+    },
+    {
+      "id": "hbm:shredder/source/0cf32d3bf84ece4d",
+      "input": {
+        "id": "minecraft:diamond_ore",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:gravel_diamond",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 194
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d8a7f3763fc70d12",
+      "input": {
+        "id": "minecraft:deepslate_diamond_ore",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:gravel_diamond",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 194
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1380105bd84e1975",
+      "input": {
+        "id": "hbm:ore_sellafield_diamond",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:gravel_diamond",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 195
+      }
+    },
+    {
+      "id": "hbm:shredder/source/10ff19c486987ccc",
+      "input": {
+        "id": "hbm:ingot_schrabidate",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_schrabidate",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 197
+      }
+    },
+    {
+      "id": "hbm:shredder/source/abc9e842a9bfc415",
+      "input": {
+        "id": "hbm:block_schrabidate",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_schrabidate",
+        "count": 9,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 198
+      }
+    },
+    {
+      "id": "hbm:shredder/source/8ea5e751991e68ea",
+      "input": {
+        "id": "hbm:coal_infernal",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_coal",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 199
+      }
+    },
+    {
+      "id": "hbm:shredder/source/42fb7a4357835d2a",
+      "input": {
+        "id": "minecraft:fermented_spider_eye",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_poison",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 200
+      }
+    },
+    {
+      "id": "hbm:shredder/source/989bc2e8480c3f2f",
+      "input": {
+        "id": "minecraft:poisonous_potato",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_poison",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 201
+      }
+    },
+    {
+      "id": "hbm:shredder/source/e14e33af638d702b",
+      "input": {
+        "id": "hbm:ore_tektite_osmiridium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_tektite",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 202
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c723d34e320b2909",
+      "input": {
+        "id": "minecraft:dirt",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:dust",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 203
+      }
+    },
+    {
+      "id": "hbm:shredder/source/0ac37f4246085357",
+      "input": {
+        "id": "minecraft:sugar_cane",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:sugar",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 204
+      }
+    },
+    {
+      "id": "hbm:shredder/source/46ee01d0e483f1f7",
+      "input": {
+        "id": "minecraft:apple",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:sugar",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 205
+      }
+    },
+    {
+      "id": "hbm:shredder/source/982670c4af38fdc5",
+      "input": {
+        "id": "minecraft:carrot",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:sugar",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 206
+      }
+    },
+    {
+      "id": "hbm:shredder/source/4d0d266b8b731ea3",
+      "input": {
+        "id": "hbm:can_empty",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_aluminium",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 207
+      }
+    },
+    {
+      "id": "hbm:shredder/source/830d97689e10fc5d",
+      "input": {
+        "id": "hbm:chunk_ore_rare",
+        "count": 1
+      },
+      "result": {
+        "id": "hbm:powder_desh_mix",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 208
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d61bfdcca1a59cee",
+      "input": {
+        "id": "minecraft:sand",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:dust",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 209
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f45749886c5ba7c4",
+      "input": {
+        "id": "hbm:ore_aluminium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:chunk_ore_cryolite",
+        "count": 2
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 211
+      }
+    },
+    {
+      "id": "hbm:shredder/source/cdfe34730f5ccbde",
+      "input": {
+        "id": "hbm:deepslate_ore_aluminium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:chunk_ore_cryolite",
+        "count": 2
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 211
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f0706a01ca2da795",
+      "input": {
+        "id": "minecraft:skeleton_skull",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:biomass",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 239
+      }
+    },
+    {
+      "id": "hbm:shredder/source/8dbf001324505f6b",
+      "input": {
+        "id": "minecraft:wither_skeleton_skull",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:biomass",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 239
+      }
+    },
+    {
+      "id": "hbm:shredder/source/66ea1af00a1ab969",
+      "input": {
+        "id": "minecraft:zombie_head",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:biomass",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 239
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b476e0bc3e75e4ee",
+      "input": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:biomass",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 239
+      }
+    },
+    {
+      "id": "hbm:shredder/source/3bdb2fe56aa22717",
+      "input": {
+        "id": "minecraft:creeper_head",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:biomass",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 239
+      }
+    },
+    {
+      "id": "hbm:shredder/source/43472c87ee8174ef",
+      "input": {
+        "id": "hbm:crystal_coal",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_coal",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 243
+      }
+    },
+    {
+      "id": "hbm:shredder/source/66803bbb9e4095e9",
+      "input": {
+        "id": "hbm:crystal_iron",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_iron",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 244
+      }
+    },
+    {
+      "id": "hbm:shredder/source/dd547f1bb81c3422",
+      "input": {
+        "id": "hbm:crystal_gold",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_gold",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 245
+      }
+    },
+    {
+      "id": "hbm:shredder/source/8e1888bd9f6d2db5",
+      "input": {
+        "id": "hbm:crystal_redstone",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:redstone",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 246
+      }
+    },
+    {
+      "id": "hbm:shredder/source/06938f76984ed7bf",
+      "input": {
+        "id": "hbm:crystal_lapis",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_lapis",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 247
+      }
+    },
+    {
+      "id": "hbm:shredder/source/0265cb8cd4912f06",
+      "input": {
+        "id": "hbm:crystal_diamond",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_diamond",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 248
+      }
+    },
+    {
+      "id": "hbm:shredder/source/97c24b95a66241ed",
+      "input": {
+        "id": "hbm:crystal_uranium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_uranium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 249
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5daa130e98c301fe",
+      "input": {
+        "id": "hbm:crystal_plutonium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_plutonium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 250
+      }
+    },
+    {
+      "id": "hbm:shredder/source/88e830a1d7b1dd4f",
+      "input": {
+        "id": "hbm:crystal_thorium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_thorium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 251
+      }
+    },
+    {
+      "id": "hbm:shredder/source/fab5849970d62f40",
+      "input": {
+        "id": "hbm:crystal_titanium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_titanium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 252
+      }
+    },
+    {
+      "id": "hbm:shredder/source/9c79995c23788e9c",
+      "input": {
+        "id": "hbm:crystal_sulfur",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:sulfur",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 253
+      }
+    },
+    {
+      "id": "hbm:shredder/source/9bd6dcf8aedea824",
+      "input": {
+        "id": "hbm:crystal_niter",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:niter",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 254
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1413bcfee675e4b7",
+      "input": {
+        "id": "hbm:crystal_copper",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_copper",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 255
+      }
+    },
+    {
+      "id": "hbm:shredder/source/14c43dd93ac3896e",
+      "input": {
+        "id": "hbm:crystal_tungsten",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_tungsten",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 256
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1f76d26c5887cd10",
+      "input": {
+        "id": "hbm:crystal_aluminium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_aluminium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 257
+      }
+    },
+    {
+      "id": "hbm:shredder/source/aec0a6db8abaca2f",
+      "input": {
+        "id": "hbm:crystal_fluorite",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:fluorite",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 258
+      }
+    },
+    {
+      "id": "hbm:shredder/source/094c9e7615656c86",
+      "input": {
+        "id": "hbm:crystal_beryllium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_beryllium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 259
+      }
+    },
+    {
+      "id": "hbm:shredder/source/164c2a2b58adcc0e",
+      "input": {
+        "id": "hbm:crystal_lead",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_lead",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 260
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b9eddaa0ff7f2615",
+      "input": {
+        "id": "hbm:crystal_schraranium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:nugget_schrabidium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 261
+      }
+    },
+    {
+      "id": "hbm:shredder/source/76cb39e12e29eae9",
+      "input": {
+        "id": "hbm:crystal_schrabidium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_schrabidium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 262
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5991bf7523011bae",
+      "input": {
+        "id": "hbm:crystal_rare",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_desh_mix",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 263
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5ad7ed3ad4303e9f",
+      "input": {
+        "id": "hbm:crystal_phosphorus",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_fire",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 264
+      }
+    },
+    {
+      "id": "hbm:shredder/source/384e5f758b7545b2",
+      "input": {
+        "id": "hbm:crystal_trixite",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_plutonium",
+        "count": 6,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 265
+      }
+    },
+    {
+      "id": "hbm:shredder/source/05489616c7aa1102",
+      "input": {
+        "id": "hbm:crystal_lithium",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_lithium",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 266
+      }
+    },
+    {
+      "id": "hbm:shredder/source/aa6c3a5c87b601e0",
+      "input": {
+        "id": "hbm:crystal_starmetal",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_dura_steel",
+        "count": 6,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 267
+      }
+    },
+    {
+      "id": "hbm:shredder/source/9414df0029e17826",
+      "input": {
+        "id": "hbm:crystal_cobalt",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_cobalt",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 268
+      }
+    },
+    {
+      "id": "hbm:shredder/source/18a783f65b45c502",
+      "input": {
+        "id": "hbm:steel_wall",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 9,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 273
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5d19a101f12130b3",
+      "input": {
+        "id": "hbm:steel_corner",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 18,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 274
+      }
+    },
+    {
+      "id": "hbm:shredder/source/8435a14bc1fb58dc",
+      "input": {
+        "id": "hbm:steel_scaffold",
+        "count": 1,
+        "metadata": 32767
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 276
+      }
+    },
+    {
+      "id": "hbm:shredder/source/8bbbef9938f95011",
+      "input": {
+        "id": "hbm:coil_copper",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_red_copper",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 277
+      }
+    },
+    {
+      "id": "hbm:shredder/source/bddf543d10d4d2c6",
+      "input": {
+        "id": "hbm:coil_copper_torus",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_red_copper",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 278
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c854faa6f4d65fc2",
+      "input": {
+        "id": "hbm:coil_gold",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_gold",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 279
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d97971cdd99a3df9",
+      "input": {
+        "id": "hbm:coil_gold_torus",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_gold",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 280
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b0a5f79c5d2066f1",
+      "input": {
+        "id": "hbm:coil_tungsten",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_tungsten",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 281
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5aea92ddcfe41cdc",
+      "input": {
+        "id": "hbm:coil_magnetized_tungsten",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_magnetized_tungsten",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 282
+      }
+    },
+    {
+      "id": "hbm:shredder/source/3ae477bdea7f4a25",
+      "input": {
+        "id": "hbm:crate_iron",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_iron",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 283
+      }
+    },
+    {
+      "id": "hbm:shredder/source/15c196710bc21fe9",
+      "input": {
+        "id": "hbm:crate_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 8,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 284
+      }
+    },
+    {
+      "id": "hbm:shredder/source/9e80e52d761c2ba8",
+      "input": {
+        "id": "minecraft:anvil",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_iron",
+        "count": 31,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 286
+      }
+    },
+    {
+      "id": "hbm:shredder/source/671319de3f6b0a68",
+      "input": {
+        "id": "hbm:steel_grate",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 288
+      }
+    },
+    {
+      "id": "hbm:shredder/source/a4861628aa9f1424",
+      "input": {
+        "id": "hbm:pipes_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 27,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 289
+      }
+    },
+    {
+      "id": "hbm:shredder/source/60f0c619034426e0",
+      "input": {
+        "id": "hbm:sellafield_slaked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 293
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1193cec0e177ff21",
+      "input": {
+        "id": "hbm:sellafield",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 294
+      }
+    },
+    {
+      "id": "hbm:shredder/source/a0b3543b56ae934e",
+      "input": {
+        "id": "hbm:sellafield",
+        "count": 1,
+        "metadata": 1,
+        "components": {
+          "hbm:legacy_metadata": 1
+        }
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 295
+      }
+    },
+    {
+      "id": "hbm:shredder/source/2a83f7ee0ab0a2c1",
+      "input": {
+        "id": "hbm:sellafield",
+        "count": 1,
+        "metadata": 2,
+        "components": {
+          "hbm:legacy_metadata": 2
+        }
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 296
+      }
+    },
+    {
+      "id": "hbm:shredder/source/3b5b47d4acf59cd1",
+      "input": {
+        "id": "hbm:sellafield",
+        "count": 1,
+        "metadata": 3,
+        "components": {
+          "hbm:legacy_metadata": 3
+        }
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 5,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 297
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d1d788cc3a876b16",
+      "input": {
+        "id": "hbm:sellafield",
+        "count": 1,
+        "metadata": 4,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 7,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 298
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c78e563a48aa032a",
+      "input": {
+        "id": "hbm:sellafield",
+        "count": 1,
+        "metadata": 5,
+        "components": {
+          "hbm:legacy_metadata": 5
+        }
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 15,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 299
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b1d16815cfe40806",
+      "input": {
+        "id": "hbm:dirt_dead",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_oil",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 302
+      }
+    },
+    {
+      "id": "hbm:shredder/source/88bc64323c6b85c8",
+      "input": {
+        "id": "hbm:dirt_oily",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_oil",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 303
+      }
+    },
+    {
+      "id": "hbm:shredder/source/036985b76a1fe261",
+      "input": {
+        "id": "hbm:sand_dirty",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_oil",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 304
+      }
+    },
+    {
+      "id": "hbm:shredder/source/e5331b8335cd2d77",
+      "input": {
+        "id": "hbm:sand_dirty_red",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_oil",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 305
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f99eb00ac9d774cc",
+      "input": {
+        "id": "hbm:stone_cracked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_oil",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 306
+      }
+    },
+    {
+      "id": "hbm:shredder/source/874136455287cffe",
+      "input": {
+        "id": "hbm:deco_pipe",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 310
+      }
+    },
+    {
+      "id": "hbm:shredder/source/41702b040f9c8e4c",
+      "input": {
+        "id": "hbm:deco_pipe_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 311
+      }
+    },
+    {
+      "id": "hbm:shredder/source/cd2be8e151b098f2",
+      "input": {
+        "id": "hbm:deco_pipe_green",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 312
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7d78cf62d40f56f6",
+      "input": {
+        "id": "hbm:deco_pipe_green_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 313
+      }
+    },
+    {
+      "id": "hbm:shredder/source/a3770c4902cfcef8",
+      "input": {
+        "id": "hbm:deco_pipe_red",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 314
+      }
+    },
+    {
+      "id": "hbm:shredder/source/479c2bb460f12c62",
+      "input": {
+        "id": "hbm:deco_pipe_marked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 315
+      }
+    },
+    {
+      "id": "hbm:shredder/source/120673d140b27a74",
+      "input": {
+        "id": "hbm:deco_pipe_rim",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 316
+      }
+    },
+    {
+      "id": "hbm:shredder/source/febc6b0c0bf3d1c9",
+      "input": {
+        "id": "hbm:deco_pipe_rim_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 317
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b3519a5fc941977b",
+      "input": {
+        "id": "hbm:deco_pipe_rim_green",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 318
+      }
+    },
+    {
+      "id": "hbm:shredder/source/9fd38bc59355c293",
+      "input": {
+        "id": "hbm:deco_pipe_rim_green_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 319
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f377b7d37992ef2f",
+      "input": {
+        "id": "hbm:deco_pipe_rim_red",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 320
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b775a82f9a7bd858",
+      "input": {
+        "id": "hbm:deco_pipe_rim_marked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 321
+      }
+    },
+    {
+      "id": "hbm:shredder/source/42470e16519c7cb2",
+      "input": {
+        "id": "hbm:deco_pipe_quad",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 322
+      }
+    },
+    {
+      "id": "hbm:shredder/source/69fc27ec80d3175a",
+      "input": {
+        "id": "hbm:deco_pipe_quad_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 323
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f9b738a07ab684c9",
+      "input": {
+        "id": "hbm:deco_pipe_quad_green",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 324
+      }
+    },
+    {
+      "id": "hbm:shredder/source/eea22751f68653d2",
+      "input": {
+        "id": "hbm:deco_pipe_quad_green_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 325
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7ff662e77d522e90",
+      "input": {
+        "id": "hbm:deco_pipe_quad_red",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 326
+      }
+    },
+    {
+      "id": "hbm:shredder/source/695355444f11edcb",
+      "input": {
+        "id": "hbm:deco_pipe_quad_marked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 327
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5bbab46cee1cf2ec",
+      "input": {
+        "id": "hbm:deco_pipe_framed",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 328
+      }
+    },
+    {
+      "id": "hbm:shredder/source/bb1aeb4bec0c6929",
+      "input": {
+        "id": "hbm:deco_pipe_framed_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 329
+      }
+    },
+    {
+      "id": "hbm:shredder/source/62f7eb0b9bbdfe49",
+      "input": {
+        "id": "hbm:deco_pipe_framed_green",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 330
+      }
+    },
+    {
+      "id": "hbm:shredder/source/067dbfeb99f7f888",
+      "input": {
+        "id": "hbm:deco_pipe_framed_green_rusted",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 331
+      }
+    },
+    {
+      "id": "hbm:shredder/source/0cbb330d4a3c491a",
+      "input": {
+        "id": "hbm:deco_pipe_framed_red",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 332
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b51e5fd529980f5c",
+      "input": {
+        "id": "hbm:deco_pipe_framed_marked",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 333
+      }
+    },
+    {
+      "id": "hbm:shredder/source/ce650ecb0f155e8d",
+      "input": {
+        "id": "minecraft:white_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/010b1ad56f074976",
+      "input": {
+        "id": "minecraft:orange_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/e61b2127458d89a3",
+      "input": {
+        "id": "minecraft:magenta_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1ebbbe0d82b5d4e8",
+      "input": {
+        "id": "minecraft:light_blue_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7481861ff8c9a142",
+      "input": {
+        "id": "minecraft:yellow_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/e4dc2318d24a6e1e",
+      "input": {
+        "id": "minecraft:lime_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/a77a84fc7c15b935",
+      "input": {
+        "id": "minecraft:pink_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/132cd0c7fe232bce",
+      "input": {
+        "id": "minecraft:gray_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d1a1feb5267b3961",
+      "input": {
+        "id": "minecraft:light_gray_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/1d18c9ca08b8e6ff",
+      "input": {
+        "id": "minecraft:cyan_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/dcbf20342b6accf1",
+      "input": {
+        "id": "minecraft:purple_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7c1af5dd03b48ad0",
+      "input": {
+        "id": "minecraft:blue_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/73160015e7bafd9d",
+      "input": {
+        "id": "minecraft:brown_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f407bfbeb3ec237e",
+      "input": {
+        "id": "minecraft:green_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/6b33d7cf0ddcda91",
+      "input": {
+        "id": "minecraft:red_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/aa962b08c4586cab",
+      "input": {
+        "id": "minecraft:black_terracotta",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:clay_ball",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 337
+      }
+    },
+    {
+      "id": "hbm:shredder/source/5b957133c607aa58",
+      "input": {
+        "id": "minecraft:white_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/c4aa3717dbcee4f9",
+      "input": {
+        "id": "minecraft:orange_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/3566a8a4554a4254",
+      "input": {
+        "id": "minecraft:magenta_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/7e63dfb382243a17",
+      "input": {
+        "id": "minecraft:light_blue_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f559ab66a96812e4",
+      "input": {
+        "id": "minecraft:yellow_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/f036e2f8ed5525c4",
+      "input": {
+        "id": "minecraft:lime_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/22fa91dfc7be5823",
+      "input": {
+        "id": "minecraft:pink_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/db7cbd0b7313ffaa",
+      "input": {
+        "id": "minecraft:gray_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b06170beebd40eba",
+      "input": {
+        "id": "minecraft:light_gray_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/2b99b577b09818a0",
+      "input": {
+        "id": "minecraft:cyan_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/279bd88c76ca6186",
+      "input": {
+        "id": "minecraft:purple_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/44874b314796a684",
+      "input": {
+        "id": "minecraft:blue_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b0eddfa795609a39",
+      "input": {
+        "id": "minecraft:brown_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/6fd75b22c69f7825",
+      "input": {
+        "id": "minecraft:green_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d7f84f71e6dcc11e",
+      "input": {
+        "id": "minecraft:red_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/aa2d0b91ca2578df",
+      "input": {
+        "id": "minecraft:black_wool",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "minecraft:string",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 338
+      }
+    },
+    {
+      "id": "hbm:shredder/source/2873f4c28c6a90e9",
+      "input": {
+        "id": "hbm:debris_concrete",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 2,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 348
+      }
+    },
+    {
+      "id": "hbm:shredder/source/d646991fd912bd07",
+      "input": {
+        "id": "hbm:debris_shrapnel",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 5,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 349
+      }
+    },
+    {
+      "id": "hbm:shredder/source/bb52e7ac0cfc1a53",
+      "input": {
+        "id": "hbm:debris_exchanger",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 350
+      }
+    },
+    {
+      "id": "hbm:shredder/source/91582da36951976e",
+      "input": {
+        "id": "hbm:debris_element",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_nuclear",
+        "count": 4,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 351
+      }
+    },
+    {
+      "id": "hbm:shredder/source/992c111df9de2681",
+      "input": {
+        "id": "hbm:debris_metal",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 3,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 352
+      }
+    },
+    {
+      "id": "hbm:shredder/source/b32988a8b8ffd4a3",
+      "input": {
+        "id": "hbm:debris_graphite",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_coal",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 353
+      }
+    },
+    {
+      "id": "hbm:shredder/source/6fdc361fede08a1b",
+      "input": {
+        "id": "hbm:steel_roof",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:powder_steel_tiny",
+        "count": 9,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 272
+      }
+    },
+    {
+      "id": "hbm:shredder/source/6744a586ad6a7dd7",
+      "input": {
+        "id": "hbm:stone_porous",
+        "count": 1,
+        "metadata": 0
+      },
+      "result": {
+        "id": "hbm:scrap_oil",
+        "count": 1,
+        "metadata": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/ShredderRecipes.java",
+        "line": 307
+      }
+    }
+  ],
+  "legacyAliases": {
+    "hbm:item.acetylene_torch": "hbm:acetylene_torch",
+    "hbm:item.achievement_icon": "hbm:achievement_icon",
+    "hbm:item.ammo_container": "hbm:ammo_container",
+    "hbm:item.ammo_debug": "hbm:ammo_debug",
+    "hbm:item.ammo_dgk": "hbm:ammo_dgk",
+    "hbm:item.ams_catalyst_blank": "hbm:ams_catalyst_blank",
+    "hbm:item.asbestos_cloth": "hbm:asbestos_cloth",
+    "hbm:item.assembly_nuke": "hbm:assembly_nuke",
+    "hbm:item.balefire_and_steel": "hbm:balefire_and_steel",
+    "hbm:item.ball_dynamite": "hbm:ball_dynamite",
+    "hbm:item.ball_fireclay": "hbm:ball_fireclay",
+    "hbm:item.ball_resin": "hbm:ball_resin",
+    "hbm:item.ball_tatb": "hbm:ball_tatb",
+    "hbm:item.ball_tnt": "hbm:ball_tnt",
+    "hbm:item.ballistite": "hbm:ballistite",
+    "hbm:item.battery_creative": "hbm:battery_creative",
+    "hbm:item.battery_pack": "hbm:battery_pack",
+    "hbm:item.battery_potato": "hbm:battery_potato",
+    "hbm:item.battery_sc": "hbm:battery_sc",
+    "hbm:item.battery_spark": "hbm:battery_spark",
+    "hbm:item.battery_trixite": "hbm:battery_trixite",
+    "hbm:item.bedrock_ore_fragment": "hbm:bedrock_ore_fragment",
+    "hbm:item.billet_actinium": "hbm:billet_actinium",
+    "hbm:item.billet_am241": "hbm:billet_am241",
+    "hbm:item.billet_am242": "hbm:billet_am242",
+    "hbm:item.billet_am_mix": "hbm:billet_am_mix",
+    "hbm:item.billet_americium_fuel": "hbm:billet_americium_fuel",
+    "hbm:item.billet_au198": "hbm:billet_au198",
+    "hbm:item.billet_australium": "hbm:billet_australium",
+    "hbm:item.billet_australium_greater": "hbm:billet_australium_greater",
+    "hbm:item.billet_australium_lesser": "hbm:billet_australium_lesser",
+    "hbm:item.billet_balefire_gold": "hbm:billet_balefire_gold",
+    "hbm:item.billet_beryllium": "hbm:billet_beryllium",
+    "hbm:item.billet_bismuth": "hbm:billet_bismuth",
+    "hbm:item.billet_co60": "hbm:billet_co60",
+    "hbm:item.billet_cobalt": "hbm:billet_cobalt",
+    "hbm:item.billet_flashlead": "hbm:billet_flashlead",
+    "hbm:item.billet_gh336": "hbm:billet_gh336",
+    "hbm:item.billet_hes": "hbm:billet_hes",
+    "hbm:item.billet_les": "hbm:billet_les",
+    "hbm:item.billet_mox_fuel": "hbm:billet_mox_fuel",
+    "hbm:item.billet_neptunium": "hbm:billet_neptunium",
+    "hbm:item.billet_neptunium_fuel": "hbm:billet_neptunium_fuel",
+    "hbm:item.billet_nuclear_waste": "hbm:billet_nuclear_waste",
+    "hbm:item.billet_pb209": "hbm:billet_pb209",
+    "hbm:item.billet_plutonium": "hbm:billet_plutonium",
+    "hbm:item.billet_plutonium_fuel": "hbm:billet_plutonium_fuel",
+    "hbm:item.billet_po210be": "hbm:billet_po210be",
+    "hbm:item.billet_polonium": "hbm:billet_polonium",
+    "hbm:item.billet_pu238": "hbm:billet_pu238",
+    "hbm:item.billet_pu238be": "hbm:billet_pu238be",
+    "hbm:item.billet_pu239": "hbm:billet_pu239",
+    "hbm:item.billet_pu240": "hbm:billet_pu240",
+    "hbm:item.billet_pu241": "hbm:billet_pu241",
+    "hbm:item.billet_pu_mix": "hbm:billet_pu_mix",
+    "hbm:item.billet_ra226": "hbm:billet_ra226",
+    "hbm:item.billet_ra226be": "hbm:billet_ra226be",
+    "hbm:item.billet_schrabidium": "hbm:billet_schrabidium",
+    "hbm:item.billet_schrabidium_fuel": "hbm:billet_schrabidium_fuel",
+    "hbm:item.billet_silicon": "hbm:billet_silicon",
+    "hbm:item.billet_solinium": "hbm:billet_solinium",
+    "hbm:item.billet_sr90": "hbm:billet_sr90",
+    "hbm:item.billet_technetium": "hbm:billet_technetium",
+    "hbm:item.billet_th232": "hbm:billet_th232",
+    "hbm:item.billet_thorium_fuel": "hbm:billet_thorium_fuel",
+    "hbm:item.billet_u233": "hbm:billet_u233",
+    "hbm:item.billet_u235": "hbm:billet_u235",
+    "hbm:item.billet_u238": "hbm:billet_u238",
+    "hbm:item.billet_uranium": "hbm:billet_uranium",
+    "hbm:item.billet_uranium_fuel": "hbm:billet_uranium_fuel",
+    "hbm:item.billet_uzh": "hbm:billet_uzh",
+    "hbm:item.billet_yharonite": "hbm:billet_yharonite",
+    "hbm:item.billet_zfb_am_mix": "hbm:billet_zfb_am_mix",
+    "hbm:item.billet_zfb_bismuth": "hbm:billet_zfb_bismuth",
+    "hbm:item.billet_zfb_pu241": "hbm:billet_zfb_pu241",
+    "hbm:item.billet_zirconium": "hbm:billet_zirconium",
+    "hbm:item.biomass": "hbm:biomass",
+    "hbm:item.biomass_compressed": "hbm:biomass_compressed",
+    "hbm:item.black_diamond": "hbm:black_diamond",
+    "hbm:item.blade_meteorite": "hbm:blade_meteorite",
+    "hbm:item.blade_titanium": "hbm:blade_titanium",
+    "hbm:item.blade_tungsten": "hbm:blade_tungsten",
+    "hbm:item.blades_desh": "hbm:blades_desh",
+    "hbm:item.blades_steel": "hbm:blades_steel",
+    "hbm:item.blades_titanium": "hbm:blades_titanium",
+    "hbm:item.blowtorch": "hbm:blowtorch",
+    "hbm:item.blueprint_folder": "hbm:blueprint_folder",
+    "hbm:item.blueprints": "hbm:blueprints",
+    "hbm:item.bolt": "hbm:bolt",
+    "hbm:item.bolt_spike": "hbm:bolt_spike",
+    "hbm:item.book_lore": "hbm:book_lore",
+    "hbm:item.book_of_": "hbm:book_of_",
+    "hbm:item.book_secret": "hbm:book_secret",
+    "hbm:item.bottle2_empty": "hbm:bottle2_empty",
+    "hbm:item.bottle2_fritz": "hbm:bottle2_fritz",
+    "hbm:item.bottle2_korl": "hbm:bottle2_korl",
+    "hbm:item.bottle_cherry": "hbm:bottle_cherry",
+    "hbm:item.bottle_empty": "hbm:bottle_empty",
+    "hbm:item.bottle_mercury": "hbm:bottle_mercury",
+    "hbm:item.bottle_nuka": "hbm:bottle_nuka",
+    "hbm:item.bottle_opener": "hbm:bottle_opener",
+    "hbm:item.bottle_quantum": "hbm:bottle_quantum",
+    "hbm:item.bottle_rad": "hbm:bottle_rad",
+    "hbm:item.bottle_sparkle": "hbm:bottle_sparkle",
+    "hbm:item.boy_bullet": "hbm:boy_bullet",
+    "hbm:item.boy_igniter": "hbm:boy_igniter",
+    "hbm:item.boy_kit": "hbm:boy_kit",
+    "hbm:item.boy_propellant": "hbm:boy_propellant",
+    "hbm:item.boy_shielding": "hbm:boy_shielding",
+    "hbm:item.boy_target": "hbm:boy_target",
+    "hbm:item.bucket_acid": "hbm:bucket_acid",
+    "hbm:item.bucket_mud": "hbm:bucket_mud",
+    "hbm:item.bucket_schrabidic_acid": "hbm:bucket_schrabidic_acid",
+    "hbm:item.bucket_sulfuric_acid": "hbm:bucket_sulfuric_acid",
+    "hbm:item.bucket_toxic": "hbm:bucket_toxic",
+    "hbm:item.burnt_bark": "hbm:burnt_bark",
+    "hbm:item.can_bepis": "hbm:can_bepis",
+    "hbm:item.can_breen": "hbm:can_breen",
+    "hbm:item.can_creature": "hbm:can_creature",
+    "hbm:item.can_empty": "hbm:can_empty",
+    "hbm:item.can_key": "hbm:can_key",
+    "hbm:item.can_luna": "hbm:can_luna",
+    "hbm:item.can_mrsugar": "hbm:can_mrsugar",
+    "hbm:item.can_mug": "hbm:can_mug",
+    "hbm:item.can_overcharge": "hbm:can_overcharge",
+    "hbm:item.can_redbomb": "hbm:can_redbomb",
+    "hbm:item.can_smart": "hbm:can_smart",
+    "hbm:item.canister_empty": "hbm:canister_empty",
+    "hbm:item.canister_full": "hbm:canister_full",
+    "hbm:item.canister_napalm": "hbm:canister_napalm",
+    "hbm:item.canned_conserve": "hbm:canned_conserve",
+    "hbm:item.cap_fritz": "hbm:cap_fritz",
+    "hbm:item.cap_korl": "hbm:cap_korl",
+    "hbm:item.cap_nuka": "hbm:cap_nuka",
+    "hbm:item.cap_quantum": "hbm:cap_quantum",
+    "hbm:item.cap_rad": "hbm:cap_rad",
+    "hbm:item.cap_sparkle": "hbm:cap_sparkle",
+    "hbm:item.catalyst_clay": "hbm:catalyst_clay",
+    "hbm:item.catalytic_converter": "hbm:catalytic_converter",
+    "hbm:item.cbt_device": "hbm:cbt_device",
+    "hbm:item.cell_anti_schrabidium": "hbm:cell_anti_schrabidium",
+    "hbm:item.cell_antimatter": "hbm:cell_antimatter",
+    "hbm:item.cell_balefire": "hbm:cell_balefire",
+    "hbm:item.cell_deuterium": "hbm:cell_deuterium",
+    "hbm:item.cell_empty": "hbm:cell_empty",
+    "hbm:item.cell_puf6": "hbm:cell_puf6",
+    "hbm:item.cell_sas3": "hbm:cell_sas3",
+    "hbm:item.cell_tritium": "hbm:cell_tritium",
+    "hbm:item.cell_uf6": "hbm:cell_uf6",
+    "hbm:item.centrifuge_element": "hbm:centrifuge_element",
+    "hbm:item.chemistry_set": "hbm:chemistry_set",
+    "hbm:item.chlorine1": "hbm:chlorine1",
+    "hbm:item.chlorine2": "hbm:chlorine2",
+    "hbm:item.chlorine3": "hbm:chlorine3",
+    "hbm:item.chlorine4": "hbm:chlorine4",
+    "hbm:item.chlorine5": "hbm:chlorine5",
+    "hbm:item.chlorine6": "hbm:chlorine6",
+    "hbm:item.chlorine7": "hbm:chlorine7",
+    "hbm:item.chlorine8": "hbm:chlorine8",
+    "hbm:item.chlorine_pinwheel": "hbm:chlorine_pinwheel",
+    "hbm:item.chocolate": "hbm:chocolate",
+    "hbm:item.chocolate_milk": "hbm:chocolate_milk",
+    "hbm:item.cigarette": "hbm:cigarette",
+    "hbm:item.cinnebar": "hbm:cinnebar",
+    "hbm:item.circuit_star": "hbm:circuit_star",
+    "hbm:item.circuit_star_piece": "hbm:circuit_star_piece",
+    "hbm:item.cladding_desh": "hbm:cladding_desh",
+    "hbm:item.cladding_ghiorsium": "hbm:cladding_ghiorsium",
+    "hbm:item.cladding_lead": "hbm:cladding_lead",
+    "hbm:item.cladding_paint": "hbm:cladding_paint",
+    "hbm:item.cladding_rubber": "hbm:cladding_rubber",
+    "hbm:item.cloud1": "hbm:cloud1",
+    "hbm:item.cloud2": "hbm:cloud2",
+    "hbm:item.cloud3": "hbm:cloud3",
+    "hbm:item.cloud4": "hbm:cloud4",
+    "hbm:item.cloud5": "hbm:cloud5",
+    "hbm:item.cloud6": "hbm:cloud6",
+    "hbm:item.cloud7": "hbm:cloud7",
+    "hbm:item.cloud8": "hbm:cloud8",
+    "hbm:item.coal_eternal": "hbm:coal_eternal",
+    "hbm:item.coal_infernal": "hbm:coal_infernal",
+    "hbm:item.cobalt_pickaxe": "hbm:cobalt_pickaxe",
+    "hbm:item.coffee": "hbm:coffee",
+    "hbm:item.coffee_radium": "hbm:coffee_radium",
+    "hbm:item.coil_copper": "hbm:coil_copper",
+    "hbm:item.coil_copper_torus": "hbm:coil_copper_torus",
+    "hbm:item.coil_gold": "hbm:coil_gold",
+    "hbm:item.coil_gold_torus": "hbm:coil_gold_torus",
+    "hbm:item.coil_magnetized_tungsten": "hbm:coil_magnetized_tungsten",
+    "hbm:item.coil_tungsten": "hbm:coil_tungsten",
+    "hbm:item.coin_creeper": "hbm:coin_creeper",
+    "hbm:item.coin_maskman": "hbm:coin_maskman",
+    "hbm:item.coin_radiation": "hbm:coin_radiation",
+    "hbm:item.coin_token": "hbm:coin_token",
+    "hbm:item.coin_ufo": "hbm:coin_ufo",
+    "hbm:item.coin_worm": "hbm:coin_worm",
+    "hbm:item.combine_scrap": "hbm:combine_scrap",
+    "hbm:item.cordite": "hbm:cordite",
+    "hbm:item.crackpipe": "hbm:crackpipe",
+    "hbm:item.crowbar": "hbm:crowbar",
+    "hbm:item.crt_display": "hbm:crt_display",
+    "hbm:item.crystal_aluminium": "hbm:crystal_aluminium",
+    "hbm:item.crystal_beryllium": "hbm:crystal_beryllium",
+    "hbm:item.crystal_charred": "hbm:crystal_charred",
+    "hbm:item.crystal_cinnebar": "hbm:crystal_cinnebar",
+    "hbm:item.crystal_coal": "hbm:crystal_coal",
+    "hbm:item.crystal_cobalt": "hbm:crystal_cobalt",
+    "hbm:item.crystal_copper": "hbm:crystal_copper",
+    "hbm:item.crystal_diamond": "hbm:crystal_diamond",
+    "hbm:item.crystal_fluorite": "hbm:crystal_fluorite",
+    "hbm:item.crystal_gold": "hbm:crystal_gold",
+    "hbm:item.crystal_horn": "hbm:crystal_horn",
+    "hbm:item.crystal_iron": "hbm:crystal_iron",
+    "hbm:item.crystal_lapis": "hbm:crystal_lapis",
+    "hbm:item.crystal_lead": "hbm:crystal_lead",
+    "hbm:item.crystal_lithium": "hbm:crystal_lithium",
+    "hbm:item.crystal_niter": "hbm:crystal_niter",
+    "hbm:item.crystal_osmiridium": "hbm:crystal_osmiridium",
+    "hbm:item.crystal_phosphorus": "hbm:crystal_phosphorus",
+    "hbm:item.crystal_plutonium": "hbm:crystal_plutonium",
+    "hbm:item.crystal_rare": "hbm:crystal_rare",
+    "hbm:item.crystal_redstone": "hbm:crystal_redstone",
+    "hbm:item.crystal_schrabidium": "hbm:crystal_schrabidium",
+    "hbm:item.crystal_schraranium": "hbm:crystal_schraranium",
+    "hbm:item.crystal_starmetal": "hbm:crystal_starmetal",
+    "hbm:item.crystal_sulfur": "hbm:crystal_sulfur",
+    "hbm:item.crystal_thorium": "hbm:crystal_thorium",
+    "hbm:item.crystal_titanium": "hbm:crystal_titanium",
+    "hbm:item.crystal_trixite": "hbm:crystal_trixite",
+    "hbm:item.crystal_tungsten": "hbm:crystal_tungsten",
+    "hbm:item.crystal_uranium": "hbm:crystal_uranium",
+    "hbm:item.cube_power": "hbm:cube_power",
+    "hbm:item.custom_amat": "hbm:custom_amat",
+    "hbm:item.custom_dirty": "hbm:custom_dirty",
+    "hbm:item.custom_fall": "hbm:custom_fall",
+    "hbm:item.custom_hydro": "hbm:custom_hydro",
+    "hbm:item.custom_kit": "hbm:custom_kit",
+    "hbm:item.custom_nuke": "hbm:custom_nuke",
+    "hbm:item.custom_schrab": "hbm:custom_schrab",
+    "hbm:item.custom_tnt": "hbm:custom_tnt",
+    "hbm:item.debris_concrete": "hbm:debris_concrete",
+    "hbm:item.debris_element": "hbm:debris_element",
+    "hbm:item.debris_exchanger": "hbm:debris_exchanger",
+    "hbm:item.debris_fuel": "hbm:debris_fuel",
+    "hbm:item.debris_graphite": "hbm:debris_graphite",
+    "hbm:item.debris_metal": "hbm:debris_metal",
+    "hbm:item.debris_shrapnel": "hbm:debris_shrapnel",
+    "hbm:item.definitelyfood": "hbm:definitelyfood",
+    "hbm:item.demon_core_closed": "hbm:demon_core_closed",
+    "hbm:item.designator": "hbm:designator",
+    "hbm:item.detonator": "hbm:detonator",
+    "hbm:item.detonator_de": "hbm:detonator_de",
+    "hbm:item.detonator_deadman": "hbm:detonator_deadman",
+    "hbm:item.detonator_laser": "hbm:detonator_laser",
+    "hbm:item.detonator_multi": "hbm:detonator_multi",
+    "hbm:item.deuterium_filter": "hbm:deuterium_filter",
+    "hbm:item.diamond_gavel": "hbm:diamond_gavel",
+    "hbm:item.disperser_canister_empty": "hbm:disperser_canister_empty",
+    "hbm:item.door_bunker": "hbm:door_bunker",
+    "hbm:item.door_metal": "hbm:door_metal",
+    "hbm:item.door_office": "hbm:door_office",
+    "hbm:item.door_red": "hbm:door_red",
+    "hbm:item.drill_titanium": "hbm:drill_titanium",
+    "hbm:item.drillbit": "hbm:drillbit",
+    "hbm:item.ducttape": "hbm:ducttape",
+    "hbm:item.dust": "hbm:dust",
+    "hbm:item.dust_tiny": "hbm:dust_tiny",
+    "hbm:item.dysfunctional_reactor": "hbm:dysfunctional_reactor",
+    "hbm:item.early_explosive_lenses": "hbm:early_explosive_lenses",
+    "hbm:item.egg_balefire": "hbm:egg_balefire",
+    "hbm:item.egg_balefire_shard": "hbm:egg_balefire_shard",
+    "hbm:item.egg_glyphid": "hbm:egg_glyphid",
+    "hbm:item.entanglement_kit": "hbm:entanglement_kit",
+    "hbm:item.explosive_lenses": "hbm:explosive_lenses",
+    "hbm:item.fallout": "hbm:fallout",
+    "hbm:item.filter_coal": "hbm:filter_coal",
+    "hbm:item.fins_big_steel": "hbm:fins_big_steel",
+    "hbm:item.fins_flat": "hbm:fins_flat",
+    "hbm:item.fins_quad_titanium": "hbm:fins_quad_titanium",
+    "hbm:item.fins_small_steel": "hbm:fins_small_steel",
+    "hbm:item.fins_tri_steel": "hbm:fins_tri_steel",
+    "hbm:item.five_htp": "hbm:five_htp",
+    "hbm:item.flame_conspiracy": "hbm:flame_conspiracy",
+    "hbm:item.flame_opinion": "hbm:flame_opinion",
+    "hbm:item.flame_politics": "hbm:flame_politics",
+    "hbm:item.flame_pony": "hbm:flame_pony",
+    "hbm:item.fleija_core": "hbm:fleija_core",
+    "hbm:item.fleija_igniter": "hbm:fleija_igniter",
+    "hbm:item.fleija_kit": "hbm:fleija_kit",
+    "hbm:item.fleija_propellant": "hbm:fleija_propellant",
+    "hbm:item.fluid_barrel_empty": "hbm:fluid_barrel_empty",
+    "hbm:item.fluid_barrel_full": "hbm:fluid_barrel_full",
+    "hbm:item.fluid_barrel_infinite": "hbm:fluid_barrel_infinite",
+    "hbm:item.fluid_duct": "hbm:fluid_duct",
+    "hbm:item.fluid_icon": "hbm:fluid_icon",
+    "hbm:item.fluid_identifier_multi": "hbm:fluid_identifier_multi",
+    "hbm:item.fluid_pack_empty": "hbm:fluid_pack_empty",
+    "hbm:item.fluid_pack_full": "hbm:fluid_pack_full",
+    "hbm:item.fluid_tank_empty": "hbm:fluid_tank_empty",
+    "hbm:item.fluid_tank_full": "hbm:fluid_tank_full",
+    "hbm:item.fluid_tank_lead_empty": "hbm:fluid_tank_lead_empty",
+    "hbm:item.fluid_tank_lead_full": "hbm:fluid_tank_lead_full",
+    "hbm:item.fluorite": "hbm:fluorite",
+    "hbm:item.flywheel_beryllium": "hbm:flywheel_beryllium",
+    "hbm:item.fmn": "hbm:fmn",
+    "hbm:item.fragment_actinium": "hbm:fragment_actinium",
+    "hbm:item.fragment_boron": "hbm:fragment_boron",
+    "hbm:item.fragment_cerium": "hbm:fragment_cerium",
+    "hbm:item.fragment_cobalt": "hbm:fragment_cobalt",
+    "hbm:item.fragment_coltan": "hbm:fragment_coltan",
+    "hbm:item.fragment_lanthanium": "hbm:fragment_lanthanium",
+    "hbm:item.fragment_meteorite": "hbm:fragment_meteorite",
+    "hbm:item.fragment_neodymium": "hbm:fragment_neodymium",
+    "hbm:item.fragment_niobium": "hbm:fragment_niobium",
+    "hbm:item.fuel_additive": "hbm:fuel_additive",
+    "hbm:item.fuel_tank_large": "hbm:fuel_tank_large",
+    "hbm:item.fuel_tank_medium": "hbm:fuel_tank_medium",
+    "hbm:item.fuel_tank_small": "hbm:fuel_tank_small",
+    "hbm:item.fuse": "hbm:fuse",
+    "hbm:item.gadget_core": "hbm:gadget_core",
+    "hbm:item.gadget_kit": "hbm:gadget_kit",
+    "hbm:item.gadget_wireing": "hbm:gadget_wireing",
+    "hbm:item.gas_empty": "hbm:gas_empty",
+    "hbm:item.gas_full": "hbm:gas_full",
+    "hbm:item.gas_mask_filter": "hbm:gas_mask_filter",
+    "hbm:item.gas_mask_filter_combo": "hbm:gas_mask_filter_combo",
+    "hbm:item.gas_mask_filter_mono": "hbm:gas_mask_filter_mono",
+    "hbm:item.gas_mask_filter_piss": "hbm:gas_mask_filter_piss",
+    "hbm:item.gas_mask_filter_rag": "hbm:gas_mask_filter_rag",
+    "hbm:item.geiger_counter": "hbm:geiger_counter",
+    "hbm:item.gem_alexandrite": "hbm:gem_alexandrite",
+    "hbm:item.gem_rad": "hbm:gem_rad",
+    "hbm:item.gem_sodalite": "hbm:gem_sodalite",
+    "hbm:item.gem_tantalium": "hbm:gem_tantalium",
+    "hbm:item.gem_volcanic": "hbm:gem_volcanic",
+    "hbm:item.glyphid_gland_empty": "hbm:glyphid_gland_empty",
+    "hbm:item.grenade_extra": "hbm:grenade_extra",
+    "hbm:item.grenade_filling": "hbm:grenade_filling",
+    "hbm:item.grenade_fuze": "hbm:grenade_fuze",
+    "hbm:item.grenade_shell": "hbm:grenade_shell",
+    "hbm:item.grenade_universal": "hbm:grenade_universal",
+    "hbm:item.gun_pepperbox": "hbm:gun_pepperbox",
+    "hbm:item.hazmat_boots": "hbm:hazmat_boots",
+    "hbm:item.hazmat_boots_grey": "hbm:hazmat_boots_grey",
+    "hbm:item.hazmat_boots_red": "hbm:hazmat_boots_red",
+    "hbm:item.hazmat_cloth": "hbm:hazmat_cloth",
+    "hbm:item.hazmat_cloth_grey": "hbm:hazmat_cloth_grey",
+    "hbm:item.hazmat_cloth_red": "hbm:hazmat_cloth_red",
+    "hbm:item.hazmat_helmet": "hbm:hazmat_helmet",
+    "hbm:item.hazmat_helmet_grey": "hbm:hazmat_helmet_grey",
+    "hbm:item.hazmat_helmet_red": "hbm:hazmat_helmet_red",
+    "hbm:item.hazmat_legs": "hbm:hazmat_legs",
+    "hbm:item.hazmat_legs_grey": "hbm:hazmat_legs_grey",
+    "hbm:item.hazmat_legs_red": "hbm:hazmat_legs_red",
+    "hbm:item.hazmat_plate": "hbm:hazmat_plate",
+    "hbm:item.hazmat_plate_grey": "hbm:hazmat_plate_grey",
+    "hbm:item.hazmat_plate_red": "hbm:hazmat_plate_red",
+    "hbm:item.heart_booster": "hbm:heart_booster",
+    "hbm:item.heart_container": "hbm:heart_container",
+    "hbm:item.heart_fab": "hbm:heart_fab",
+    "hbm:item.heart_piece": "hbm:heart_piece",
+    "hbm:item.holotape_damaged": "hbm:holotape_damaged",
+    "hbm:item.icf_pellet_depleted": "hbm:icf_pellet_depleted",
+    "hbm:item.icf_pellet_empty": "hbm:icf_pellet_empty",
+    "hbm:item.igniter": "hbm:igniter",
+    "hbm:item.inf_water": "hbm:inf_water",
+    "hbm:item.inf_water_mk2": "hbm:inf_water_mk2",
+    "hbm:item.ingot_actinium": "hbm:ingot_actinium",
+    "hbm:item.ingot_aluminium": "hbm:ingot_aluminium",
+    "hbm:item.ingot_am241": "hbm:ingot_am241",
+    "hbm:item.ingot_am242": "hbm:ingot_am242",
+    "hbm:item.ingot_am_mix": "hbm:ingot_am_mix",
+    "hbm:item.ingot_americium_fuel": "hbm:ingot_americium_fuel",
+    "hbm:item.ingot_arsenic": "hbm:ingot_arsenic",
+    "hbm:item.ingot_arsenic_bronze": "hbm:ingot_arsenic_bronze",
+    "hbm:item.ingot_asbestos": "hbm:ingot_asbestos",
+    "hbm:item.ingot_au198": "hbm:ingot_au198",
+    "hbm:item.ingot_australium": "hbm:ingot_australium",
+    "hbm:item.ingot_bakelite": "hbm:ingot_bakelite",
+    "hbm:item.ingot_beryllium": "hbm:ingot_beryllium",
+    "hbm:item.ingot_biorubber": "hbm:ingot_biorubber",
+    "hbm:item.ingot_bismuth": "hbm:ingot_bismuth",
+    "hbm:item.ingot_bismuth_bronze": "hbm:ingot_bismuth_bronze",
+    "hbm:item.ingot_boron": "hbm:ingot_boron",
+    "hbm:item.ingot_bscco": "hbm:ingot_bscco",
+    "hbm:item.ingot_cadmium": "hbm:ingot_cadmium",
+    "hbm:item.ingot_calcium": "hbm:ingot_calcium",
+    "hbm:item.ingot_cdalloy": "hbm:ingot_cdalloy",
+    "hbm:item.ingot_cft": "hbm:ingot_cft",
+    "hbm:item.ingot_chainsteel": "hbm:ingot_chainsteel",
+    "hbm:item.ingot_co60": "hbm:ingot_co60",
+    "hbm:item.ingot_cobalt": "hbm:ingot_cobalt",
+    "hbm:item.ingot_combine_steel": "hbm:ingot_combine_steel",
+    "hbm:item.ingot_copper": "minecraft:copper_ingot",
+    "hbm:item.ingot_desh": "hbm:ingot_desh",
+    "hbm:item.ingot_dineutronium": "hbm:ingot_dineutronium",
+    "hbm:item.ingot_dura_steel": "hbm:ingot_dura_steel",
+    "hbm:item.ingot_electronium": "hbm:ingot_electronium",
+    "hbm:item.ingot_euphemium": "hbm:ingot_euphemium",
+    "hbm:item.ingot_ferrouranium": "hbm:ingot_ferrouranium",
+    "hbm:item.ingot_fiberglass": "hbm:ingot_fiberglass",
+    "hbm:item.ingot_firebrick": "hbm:ingot_firebrick",
+    "hbm:item.ingot_gh336": "hbm:ingot_gh336",
+    "hbm:item.ingot_graphite": "hbm:ingot_graphite",
+    "hbm:item.ingot_gunmetal": "hbm:ingot_gunmetal",
+    "hbm:item.ingot_hes": "hbm:ingot_hes",
+    "hbm:item.ingot_lanthanium": "hbm:ingot_lanthanium",
+    "hbm:item.ingot_lead": "hbm:ingot_lead",
+    "hbm:item.ingot_les": "hbm:ingot_les",
+    "hbm:item.ingot_magnetized_tungsten": "hbm:ingot_magnetized_tungsten",
+    "hbm:item.nugget_mercury": "hbm:nugget_mercury",
+    "hbm:item.ingot_meteorite": "hbm:ingot_meteorite",
+    "hbm:item.ingot_meteorite_forged": "hbm:ingot_meteorite_forged",
+    "hbm:item.ingot_mox_fuel": "hbm:ingot_mox_fuel",
+    "hbm:item.ingot_mud": "hbm:ingot_mud",
+    "hbm:item.ingot_neptunium": "hbm:ingot_neptunium",
+    "hbm:item.ingot_neptunium_fuel": "hbm:ingot_neptunium_fuel",
+    "hbm:item.ingot_niobium": "hbm:ingot_niobium",
+    "hbm:item.ingot_osmiridium": "hbm:ingot_osmiridium",
+    "hbm:item.ingot_pb209": "hbm:ingot_pb209",
+    "hbm:item.ingot_pc": "hbm:ingot_pc",
+    "hbm:item.ingot_phosphorus": "hbm:ingot_phosphorus",
+    "hbm:item.ingot_plutonium": "hbm:ingot_plutonium",
+    "hbm:item.ingot_plutonium_fuel": "hbm:ingot_plutonium_fuel",
+    "hbm:item.ingot_polonium": "hbm:ingot_polonium",
+    "hbm:item.ingot_polymer": "hbm:ingot_polymer",
+    "hbm:item.ingot_pu238": "hbm:ingot_pu238",
+    "hbm:item.ingot_pu239": "hbm:ingot_pu239",
+    "hbm:item.ingot_pu240": "hbm:ingot_pu240",
+    "hbm:item.ingot_pu241": "hbm:ingot_pu241",
+    "hbm:item.ingot_pu_mix": "hbm:ingot_pu_mix",
+    "hbm:item.ingot_pvc": "hbm:ingot_pvc",
+    "hbm:item.ingot_ra226": "hbm:ingot_ra226",
+    "hbm:item.ingot_raw": "hbm:ingot_raw",
+    "hbm:item.ingot_red_copper": "hbm:ingot_red_copper",
+    "hbm:item.ingot_rubber": "hbm:ingot_rubber",
+    "hbm:item.ingot_saturnite": "hbm:ingot_saturnite",
+    "hbm:item.ingot_schrabidate": "hbm:ingot_schrabidate",
+    "hbm:item.ingot_schrabidium": "hbm:ingot_schrabidium",
+    "hbm:item.ingot_schrabidium_fuel": "hbm:ingot_schrabidium_fuel",
+    "hbm:item.ingot_semtex": "hbm:ingot_semtex",
+    "hbm:item.ingot_silicon": "hbm:ingot_silicon",
+    "hbm:item.ingot_solinium": "hbm:ingot_solinium",
+    "hbm:item.ingot_sr90": "hbm:ingot_sr90",
+    "hbm:item.ingot_starmetal": "hbm:ingot_starmetal",
+    "hbm:item.ingot_steel": "hbm:ingot_steel",
+    "hbm:item.ingot_steel_dusted": "hbm:ingot_steel_dusted",
+    "hbm:item.ingot_tantalium": "hbm:ingot_tantalium",
+    "hbm:item.ingot_tcalloy": "hbm:ingot_tcalloy",
+    "hbm:item.ingot_technetium": "hbm:ingot_technetium",
+    "hbm:item.ingot_th232": "hbm:ingot_th232",
+    "hbm:item.ingot_thorium_fuel": "hbm:ingot_thorium_fuel",
+    "hbm:item.ingot_titanium": "hbm:ingot_titanium",
+    "hbm:item.ingot_tungsten": "hbm:ingot_tungsten",
+    "hbm:item.ingot_tungsten_carbide": "hbm:ingot_tungsten_carbide",
+    "hbm:item.ingot_u233": "hbm:ingot_u233",
+    "hbm:item.ingot_u235": "hbm:ingot_u235",
+    "hbm:item.ingot_u238": "hbm:ingot_u238",
+    "hbm:item.ingot_u238m2": "hbm:ingot_u238m2",
+    "hbm:item.ingot_uranium": "hbm:ingot_uranium",
+    "hbm:item.ingot_uranium_fuel": "hbm:ingot_uranium_fuel",
+    "hbm:item.ingot_weaponsteel": "hbm:ingot_weaponsteel",
+    "hbm:item.ingot_zirconium": "hbm:ingot_zirconium",
+    "hbm:item.injector_5htp": "hbm:injector_5htp",
+    "hbm:item.injector_knife": "hbm:injector_knife",
+    "hbm:item.ink": "hbm:ink",
+    "hbm:item.item_secret": "hbm:item_secret",
+    "hbm:item.iv_blood": "hbm:iv_blood",
+    "hbm:item.iv_empty": "hbm:iv_empty",
+    "hbm:item.iv_xp": "hbm:iv_xp",
+    "hbm:item.iv_xp_empty": "hbm:iv_xp_empty",
+    "hbm:item.key": "hbm:key",
+    "hbm:item.key_fake": "hbm:key_fake",
+    "hbm:item.key_kit": "hbm:key_kit",
+    "hbm:item.key_red": "hbm:key_red",
+    "hbm:item.key_red_cracked": "hbm:key_red_cracked",
+    "hbm:item.launch_code": "hbm:launch_code",
+    "hbm:item.launch_code_piece": "hbm:launch_code_piece",
+    "hbm:item.launch_key": "hbm:launch_key",
+    "hbm:item.lead_gavel": "hbm:lead_gavel",
+    "hbm:item.lignite": "hbm:lignite",
+    "hbm:item.lithium": "hbm:lithium",
+    "hbm:item.magnetron": "hbm:magnetron",
+    "hbm:item.man_core": "hbm:man_core",
+    "hbm:item.man_igniter": "hbm:man_igniter",
+    "hbm:item.man_kit": "hbm:man_kit",
+    "hbm:item.mech_key": "hbm:mech_key",
+    "hbm:item.med_bag": "hbm:med_bag",
+    "hbm:item.memory": "hbm:memory",
+    "hbm:item.mese_gavel": "hbm:mese_gavel",
+    "hbm:item.mike_cooling_unit": "hbm:mike_cooling_unit",
+    "hbm:item.mike_core": "hbm:mike_core",
+    "hbm:item.mike_deut": "hbm:mike_deut",
+    "hbm:item.mike_kit": "hbm:mike_kit",
+    "hbm:item.missile_assembly": "hbm:missile_assembly",
+    "hbm:item.missile_lambda": "hbm:missile_lambda",
+    "hbm:item.missile_soyuz_lander": "hbm:missile_soyuz_lander",
+    "hbm:item.mold": "hbm:mold",
+    "hbm:item.mold_base": "hbm:mold_base",
+    "hbm:item.morning_glory": "hbm:morning_glory",
+    "hbm:item.motor": "hbm:motor",
+    "hbm:item.motor_bismuth": "hbm:motor_bismuth",
+    "hbm:item.motor_desh": "hbm:motor_desh",
+    "hbm:item.multi_kit": "hbm:multi_kit",
+    "hbm:item.mysteryshovel": "hbm:mysteryshovel",
+    "hbm:item.n2_charge": "hbm:n2_charge",
+    "hbm:item.neutron_reflector": "hbm:neutron_reflector",
+    "hbm:item.niter": "hbm:niter",
+    "hbm:item.nitra": "hbm:nitra",
+    "hbm:item.nitra_small": "hbm:nitra_small",
+    "hbm:item.nothing": "hbm:nothing",
+    "hbm:item.nuclear_waste": "hbm:nuclear_waste",
+    "hbm:item.nugget_actinium": "hbm:nugget_actinium",
+    "hbm:item.nugget_am241": "hbm:nugget_am241",
+    "hbm:item.nugget_am242": "hbm:nugget_am242",
+    "hbm:item.nugget_am_mix": "hbm:nugget_am_mix",
+    "hbm:item.nugget_americium_fuel": "hbm:nugget_americium_fuel",
+    "hbm:item.nugget_arsenic": "hbm:nugget_arsenic",
+    "hbm:item.nugget_au198": "hbm:nugget_au198",
+    "hbm:item.nugget_australium": "hbm:nugget_australium",
+    "hbm:item.nugget_australium_greater": "hbm:nugget_australium_greater",
+    "hbm:item.nugget_australium_lesser": "hbm:nugget_australium_lesser",
+    "hbm:item.nugget_beryllium": "hbm:nugget_beryllium",
+    "hbm:item.nugget_bismuth": "hbm:nugget_bismuth",
+    "hbm:item.nugget_co60": "hbm:nugget_co60",
+    "hbm:item.nugget_cobalt": "hbm:nugget_cobalt",
+    "hbm:item.nugget_desh": "hbm:nugget_desh",
+    "hbm:item.nugget_dineutronium": "hbm:nugget_dineutronium",
+    "hbm:item.nugget_euphemium": "hbm:nugget_euphemium",
+    "hbm:item.nugget_gh336": "hbm:nugget_gh336",
+    "hbm:item.nugget_hes": "hbm:nugget_hes",
+    "hbm:item.nugget_lead": "hbm:nugget_lead",
+    "hbm:item.nugget_les": "hbm:nugget_les",
+    "hbm:item.nugget_mercury_tiny": "hbm:nugget_mercury_tiny",
+    "hbm:item.nugget_mox_fuel": "hbm:nugget_mox_fuel",
+    "hbm:item.nugget_neptunium": "hbm:nugget_neptunium",
+    "hbm:item.nugget_neptunium_fuel": "hbm:nugget_neptunium_fuel",
+    "hbm:item.nugget_niobium": "hbm:nugget_niobium",
+    "hbm:item.nugget_osmiridium": "hbm:nugget_osmiridium",
+    "hbm:item.nugget_pb209": "hbm:nugget_pb209",
+    "hbm:item.nugget_plutonium": "hbm:nugget_plutonium",
+    "hbm:item.nugget_plutonium_fuel": "hbm:nugget_plutonium_fuel",
+    "hbm:item.nugget_polonium": "hbm:nugget_polonium",
+    "hbm:item.nugget_pu238": "hbm:nugget_pu238",
+    "hbm:item.nugget_pu239": "hbm:nugget_pu239",
+    "hbm:item.nugget_pu240": "hbm:nugget_pu240",
+    "hbm:item.nugget_pu241": "hbm:nugget_pu241",
+    "hbm:item.nugget_pu_mix": "hbm:nugget_pu_mix",
+    "hbm:item.nugget_ra226": "hbm:nugget_ra226",
+    "hbm:item.nugget_raw": "hbm:nugget_raw",
+    "hbm:item.nugget_schrabidium": "hbm:nugget_schrabidium",
+    "hbm:item.nugget_schrabidium_fuel": "hbm:nugget_schrabidium_fuel",
+    "hbm:item.nugget_silicon": "hbm:nugget_silicon",
+    "hbm:item.nugget_solinium": "hbm:nugget_solinium",
+    "hbm:item.nugget_sr90": "hbm:nugget_sr90",
+    "hbm:item.nugget_tantalium": "hbm:nugget_tantalium",
+    "hbm:item.nugget_technetium": "hbm:nugget_technetium",
+    "hbm:item.nugget_th232": "hbm:nugget_th232",
+    "hbm:item.nugget_thorium_fuel": "hbm:nugget_thorium_fuel",
+    "hbm:item.nugget_u233": "hbm:nugget_u233",
+    "hbm:item.nugget_u235": "hbm:nugget_u235",
+    "hbm:item.nugget_u238": "hbm:nugget_u238",
+    "hbm:item.nugget_uranium": "hbm:nugget_uranium",
+    "hbm:item.nugget_uranium_fuel": "hbm:nugget_uranium_fuel",
+    "hbm:item.nugget_zirconium": "hbm:nugget_zirconium",
+    "hbm:item.orange1": "hbm:orange1",
+    "hbm:item.orange2": "hbm:orange2",
+    "hbm:item.orange3": "hbm:orange3",
+    "hbm:item.orange4": "hbm:orange4",
+    "hbm:item.orange5": "hbm:orange5",
+    "hbm:item.orange6": "hbm:orange6",
+    "hbm:item.orange7": "hbm:orange7",
+    "hbm:item.orange8": "hbm:orange8",
+    "hbm:item.padlock": "hbm:padlock",
+    "hbm:item.padlock_reinforced": "hbm:padlock_reinforced",
+    "hbm:item.padlock_rusty": "hbm:padlock_rusty",
+    "hbm:item.padlock_unbreakable": "hbm:padlock_unbreakable",
+    "hbm:item.page_of_": "hbm:page_of_",
+    "hbm:item.part_barrel_heavy": "hbm:part_barrel_heavy",
+    "hbm:item.part_barrel_light": "hbm:part_barrel_light",
+    "hbm:item.part_beryllium": "hbm:part_beryllium",
+    "hbm:item.part_carbon": "hbm:part_carbon",
+    "hbm:item.part_copper": "hbm:part_copper",
+    "hbm:item.part_grip": "hbm:part_grip",
+    "hbm:item.part_lithium": "hbm:part_lithium",
+    "hbm:item.part_mechanism": "hbm:part_mechanism",
+    "hbm:item.part_plutonium": "hbm:part_plutonium",
+    "hbm:item.part_receiver_heavy": "hbm:part_receiver_heavy",
+    "hbm:item.part_receiver_light": "hbm:part_receiver_light",
+    "hbm:item.part_stock": "hbm:part_stock",
+    "hbm:item.particle_amat": "hbm:particle_amat",
+    "hbm:item.particle_aschrab": "hbm:particle_aschrab",
+    "hbm:item.particle_copper": "hbm:particle_copper",
+    "hbm:item.particle_dark": "hbm:particle_dark",
+    "hbm:item.particle_empty": "hbm:particle_empty",
+    "hbm:item.particle_higgs": "hbm:particle_higgs",
+    "hbm:item.particle_hydrogen": "hbm:particle_hydrogen",
+    "hbm:item.particle_lead": "hbm:particle_lead",
+    "hbm:item.particle_lutece": "hbm:particle_lutece",
+    "hbm:item.particle_muon": "hbm:particle_muon",
+    "hbm:item.particle_sparkticle": "hbm:particle_sparkticle",
+    "hbm:item.particle_strange": "hbm:particle_strange",
+    "hbm:item.particle_tachyon": "hbm:particle_tachyon",
+    "hbm:item.parts_legendary": "hbm:parts_legendary",
+    "hbm:item.pc1": "hbm:pc1",
+    "hbm:item.pc2": "hbm:pc2",
+    "hbm:item.pc3": "hbm:pc3",
+    "hbm:item.pc4": "hbm:pc4",
+    "hbm:item.pc5": "hbm:pc5",
+    "hbm:item.pc6": "hbm:pc6",
+    "hbm:item.pc7": "hbm:pc7",
+    "hbm:item.pc8": "hbm:pc8",
+    "hbm:item.pedestal_steel": "hbm:pedestal_steel",
+    "hbm:item.pellet_buckshot": "hbm:pellet_buckshot",
+    "hbm:item.pellet_charged": "hbm:pellet_charged",
+    "hbm:item.pellet_cluster": "hbm:pellet_cluster",
+    "hbm:item.pellet_gas": "hbm:pellet_gas",
+    "hbm:item.pellet_rtg": "hbm:pellet_rtg",
+    "hbm:item.pellet_rtg_actinium": "hbm:pellet_rtg_actinium",
+    "hbm:item.pellet_rtg_americium": "hbm:pellet_rtg_americium",
+    "hbm:item.pellet_rtg_cobalt": "hbm:pellet_rtg_cobalt",
+    "hbm:item.pellet_rtg_depleted": "hbm:pellet_rtg_depleted",
+    "hbm:item.pellet_rtg_gold": "hbm:pellet_rtg_gold",
+    "hbm:item.pellet_rtg_lead": "hbm:pellet_rtg_lead",
+    "hbm:item.pellet_rtg_polonium": "hbm:pellet_rtg_polonium",
+    "hbm:item.pellet_rtg_radium": "hbm:pellet_rtg_radium",
+    "hbm:item.pellet_rtg_strontium": "hbm:pellet_rtg_strontium",
+    "hbm:item.pellet_rtg_weak": "hbm:pellet_rtg_weak",
+    "hbm:item.photo_panel": "hbm:photo_panel",
+    "hbm:item.pill_herbal": "hbm:pill_herbal",
+    "hbm:item.pill_iodine": "hbm:pill_iodine",
+    "hbm:item.pill_red": "hbm:pill_red",
+    "hbm:item.pin": "hbm:pin",
+    "hbm:item.pipe": "hbm:pipe",
+    "hbm:item.weapon_pipe_lead": "hbm:weapon_pipe_lead",
+    "hbm:item.pipes_steel": "hbm:pipes_steel",
+    "hbm:item.piston_selenium": "hbm:piston_selenium",
+    "hbm:item.plan_c": "hbm:plan_c",
+    "hbm:item.plant_item": "hbm:plant_item",
+    "hbm:item.plate_aluminium": "hbm:plate_aluminium",
+    "hbm:item.plate_armor_ajr": "hbm:plate_armor_ajr",
+    "hbm:item.plate_armor_dnt": "hbm:plate_armor_dnt",
+    "hbm:item.plate_armor_fau": "hbm:plate_armor_fau",
+    "hbm:item.plate_armor_hev": "hbm:plate_armor_hev",
+    "hbm:item.plate_armor_lunar": "hbm:plate_armor_lunar",
+    "hbm:item.plate_armor_titanium": "hbm:plate_armor_titanium",
+    "hbm:item.plate_bismuth": "hbm:plate_bismuth",
+    "hbm:item.plate_cast": "hbm:plate_cast",
+    "hbm:item.plate_combine_steel": "hbm:plate_combine_steel",
+    "hbm:item.plate_copper": "hbm:plate_copper",
+    "hbm:item.plate_dalekanium": "hbm:plate_dalekanium",
+    "hbm:item.plate_desh": "hbm:plate_desh",
+    "hbm:item.plate_dineutronium": "hbm:plate_dineutronium",
+    "hbm:item.plate_dura_steel": "hbm:plate_dura_steel",
+    "hbm:item.plate_euphemium": "hbm:plate_euphemium",
+    "hbm:item.plate_fuel_mox": "hbm:plate_fuel_mox",
+    "hbm:item.plate_fuel_pu238be": "hbm:plate_fuel_pu238be",
+    "hbm:item.plate_fuel_pu239": "hbm:plate_fuel_pu239",
+    "hbm:item.plate_fuel_ra226be": "hbm:plate_fuel_ra226be",
+    "hbm:item.plate_fuel_sa326": "hbm:plate_fuel_sa326",
+    "hbm:item.plate_fuel_u233": "hbm:plate_fuel_u233",
+    "hbm:item.plate_fuel_u235": "hbm:plate_fuel_u235",
+    "hbm:item.plate_gold": "hbm:plate_gold",
+    "hbm:item.plate_gunmetal": "hbm:plate_gunmetal",
+    "hbm:item.plate_iron": "hbm:plate_iron",
+    "hbm:item.plate_kevlar": "hbm:plate_kevlar",
+    "hbm:item.plate_lead": "hbm:plate_lead",
+    "hbm:item.plate_mixed": "hbm:plate_mixed",
+    "hbm:item.plate_paa": "hbm:plate_paa",
+    "hbm:item.plate_polymer": "hbm:plate_polymer",
+    "hbm:item.plate_saturnite": "hbm:plate_saturnite",
+    "hbm:item.plate_schrabidium": "hbm:plate_schrabidium",
+    "hbm:item.plate_steel": "hbm:plate_steel",
+    "hbm:item.plate_titanium": "hbm:plate_titanium",
+    "hbm:item.plate_weaponsteel": "hbm:plate_weaponsteel",
+    "hbm:item.plate_welded": "hbm:plate_welded",
+    "hbm:item.powder_actinium": "hbm:powder_actinium",
+    "hbm:item.powder_actinium_tiny": "hbm:powder_actinium_tiny",
+    "hbm:item.powder_aluminium": "hbm:powder_aluminium",
+    "hbm:item.powder_asbestos": "hbm:powder_asbestos",
+    "hbm:item.powder_astatine": "hbm:powder_astatine",
+    "hbm:item.powder_at209": "hbm:powder_at209",
+    "hbm:item.powder_au198": "hbm:powder_au198",
+    "hbm:item.powder_australium": "hbm:powder_australium",
+    "hbm:item.powder_bakelite": "hbm:powder_bakelite",
+    "hbm:item.powder_balefire": "hbm:powder_balefire",
+    "hbm:item.powder_beryllium": "hbm:powder_beryllium",
+    "hbm:item.powder_bismuth": "hbm:powder_bismuth",
+    "hbm:item.powder_borax": "hbm:powder_borax",
+    "hbm:item.powder_boron": "hbm:powder_boron",
+    "hbm:item.powder_boron_tiny": "hbm:powder_boron_tiny",
+    "hbm:item.powder_bromine": "hbm:powder_bromine",
+    "hbm:item.powder_cadmium": "hbm:powder_cadmium",
+    "hbm:item.powder_caesium": "hbm:powder_caesium",
+    "hbm:item.powder_calcium": "hbm:powder_calcium",
+    "hbm:item.powder_cement": "hbm:powder_cement",
+    "hbm:item.powder_cerium": "hbm:powder_cerium",
+    "hbm:item.powder_cerium_tiny": "hbm:powder_cerium_tiny",
+    "hbm:item.powder_chlorocalcite": "hbm:powder_chlorocalcite",
+    "hbm:item.powder_chlorophyte": "hbm:powder_chlorophyte",
+    "hbm:item.powder_co60": "hbm:powder_co60",
+    "hbm:item.powder_coal": "hbm:powder_coal",
+    "hbm:item.powder_coal_tiny": "hbm:powder_coal_tiny",
+    "hbm:item.powder_cobalt": "hbm:powder_cobalt",
+    "hbm:item.powder_cobalt_tiny": "hbm:powder_cobalt_tiny",
+    "hbm:item.powder_coltan": "hbm:powder_coltan",
+    "hbm:item.powder_coltan_ore": "hbm:powder_coltan_ore",
+    "hbm:item.powder_combine_steel": "hbm:powder_combine_steel",
+    "hbm:item.powder_copper": "hbm:powder_copper",
+    "hbm:item.powder_cs137": "hbm:powder_cs137",
+    "hbm:item.powder_cs137_tiny": "hbm:powder_cs137_tiny",
+    "hbm:item.powder_desh": "hbm:powder_desh",
+    "hbm:item.powder_desh_mix": "hbm:powder_desh_mix",
+    "hbm:item.powder_desh_ready": "hbm:powder_desh_ready",
+    "hbm:item.powder_diamond": "hbm:powder_diamond",
+    "hbm:item.powder_dineutronium": "hbm:powder_dineutronium",
+    "hbm:item.powder_dura_steel": "hbm:powder_dura_steel",
+    "hbm:item.powder_emerald": "hbm:powder_emerald",
+    "hbm:item.powder_euphemium": "hbm:powder_euphemium",
+    "hbm:item.powder_fire": "hbm:powder_fire",
+    "hbm:item.powder_flux": "hbm:powder_flux",
+    "hbm:item.powder_gold": "hbm:powder_gold",
+    "hbm:item.powder_i131": "hbm:powder_i131",
+    "hbm:item.powder_i131_tiny": "hbm:powder_i131_tiny",
+    "hbm:item.powder_ice": "hbm:powder_ice",
+    "hbm:item.powder_impure_osmiridium": "hbm:powder_impure_osmiridium",
+    "hbm:item.powder_iodine": "hbm:powder_iodine",
+    "hbm:item.powder_iron": "hbm:powder_iron",
+    "hbm:item.powder_lanthanium": "hbm:powder_lanthanium",
+    "hbm:item.powder_lanthanium_tiny": "hbm:powder_lanthanium_tiny",
+    "hbm:item.powder_lapis": "hbm:powder_lapis",
+    "hbm:item.powder_lead": "hbm:powder_lead",
+    "hbm:item.powder_lignite": "hbm:powder_lignite",
+    "hbm:item.powder_limestone": "hbm:powder_limestone",
+    "hbm:item.powder_lithium": "hbm:powder_lithium",
+    "hbm:item.powder_lithium_tiny": "hbm:powder_lithium_tiny",
+    "hbm:item.powder_magic": "hbm:powder_magic",
+    "hbm:item.powder_magnetized_tungsten": "hbm:powder_magnetized_tungsten",
+    "hbm:item.powder_meteorite": "hbm:powder_meteorite",
+    "hbm:item.powder_meteorite_tiny": "hbm:powder_meteorite_tiny",
+    "hbm:item.powder_molysite": "hbm:powder_molysite",
+    "hbm:item.powder_neodymium": "hbm:powder_neodymium",
+    "hbm:item.powder_neodymium_tiny": "hbm:powder_neodymium_tiny",
+    "hbm:item.powder_neptunium": "hbm:powder_neptunium",
+    "hbm:item.powder_niobium": "hbm:powder_niobium",
+    "hbm:item.powder_niobium_tiny": "hbm:powder_niobium_tiny",
+    "hbm:item.powder_nitan_mix": "hbm:powder_nitan_mix",
+    "hbm:item.powder_paleogenite": "hbm:powder_paleogenite",
+    "hbm:item.powder_paleogenite_tiny": "hbm:powder_paleogenite_tiny",
+    "hbm:item.powder_plutonium": "hbm:powder_plutonium",
+    "hbm:item.powder_poison": "hbm:powder_poison",
+    "hbm:item.powder_polonium": "hbm:powder_polonium",
+    "hbm:item.powder_polymer": "hbm:powder_polymer",
+    "hbm:item.powder_power": "hbm:powder_power",
+    "hbm:item.powder_quartz": "hbm:powder_quartz",
+    "hbm:item.powder_ra226": "hbm:powder_ra226",
+    "hbm:item.powder_red_copper": "hbm:powder_red_copper",
+    "hbm:item.powder_sawdust": "hbm:powder_sawdust",
+    "hbm:item.powder_schrabidate": "hbm:powder_schrabidate",
+    "hbm:item.powder_schrabidium": "hbm:powder_schrabidium",
+    "hbm:item.powder_semtex_mix": "hbm:powder_semtex_mix",
+    "hbm:item.powder_sodium": "hbm:powder_sodium",
+    "hbm:item.powder_spark_mix": "hbm:powder_spark_mix",
+    "hbm:item.powder_sr90": "hbm:powder_sr90",
+    "hbm:item.powder_sr90_tiny": "hbm:powder_sr90_tiny",
+    "hbm:item.powder_steel": "hbm:powder_steel",
+    "hbm:item.powder_steel_tiny": "hbm:powder_steel_tiny",
+    "hbm:item.powder_strontium": "hbm:powder_strontium",
+    "hbm:item.powder_tantalium": "hbm:powder_tantalium",
+    "hbm:item.powder_tcalloy": "hbm:powder_tcalloy",
+    "hbm:item.powder_tektite": "hbm:powder_tektite",
+    "hbm:item.powder_tennessine": "hbm:powder_tennessine",
+    "hbm:item.powder_thermite": "hbm:powder_thermite",
+    "hbm:item.powder_thorium": "hbm:powder_thorium",
+    "hbm:item.powder_titanium": "hbm:powder_titanium",
+    "hbm:item.powder_tungsten": "hbm:powder_tungsten",
+    "hbm:item.powder_uranium": "hbm:powder_uranium",
+    "hbm:item.powder_xe135": "hbm:powder_xe135",
+    "hbm:item.powder_xe135_tiny": "hbm:powder_xe135_tiny",
+    "hbm:item.powder_yellowcake": "hbm:powder_yellowcake",
+    "hbm:item.powder_zirconium": "hbm:powder_zirconium",
+    "hbm:item.prototype_kit": "hbm:prototype_kit",
+    "hbm:item.pudding": "hbm:pudding",
+    "hbm:item.pwr_fuel_depleted": "hbm:pwr_fuel_depleted",
+    "hbm:item.pwr_fuel_hot": "hbm:pwr_fuel_hot",
+    "hbm:item.radaway": "hbm:radaway",
+    "hbm:item.radaway_flush": "hbm:radaway_flush",
+    "hbm:item.radaway_strong": "hbm:radaway_strong",
+    "hbm:item.radx": "hbm:radx",
+    "hbm:item.rag_damp": "hbm:rag_damp",
+    "hbm:item.rag_piss": "hbm:rag_piss",
+    "hbm:item.rbmk_fuel_empty": "hbm:rbmk_fuel_empty",
+    "hbm:item.reacher": "hbm:reacher",
+    "hbm:item.reactor_core": "hbm:reactor_core",
+    "hbm:item.ring_pull": "hbm:ring_pull",
+    "hbm:item.ring_starmetal": "hbm:ring_starmetal",
+    "hbm:item.rocket_fuel": "hbm:rocket_fuel",
+    "hbm:item.rod": "hbm:rod",
+    "hbm:item.rod_dual": "hbm:rod_dual",
+    "hbm:item.rod_dual_empty": "hbm:rod_dual_empty",
+    "hbm:item.rod_empty": "hbm:rod_empty",
+    "hbm:item.rod_of_discord": "hbm:rod_of_discord",
+    "hbm:item.rod_quad": "hbm:rod_quad",
+    "hbm:item.rod_quad_empty": "hbm:rod_quad_empty",
+    "hbm:item.rod_zirnox": "hbm:rod_zirnox",
+    "hbm:item.rod_zirnox_empty": "hbm:rod_zirnox_empty",
+    "hbm:item.rod_zirnox_les_fuel_depleted": "hbm:rod_zirnox_les_fuel_depleted",
+    "hbm:item.rod_zirnox_mox_fuel_depleted": "hbm:rod_zirnox_mox_fuel_depleted",
+    "hbm:item.rod_zirnox_natural_uranium_fuel_depleted": "hbm:rod_zirnox_natural_uranium_fuel_depleted",
+    "hbm:item.rod_zirnox_plutonium_fuel_depleted": "hbm:rod_zirnox_plutonium_fuel_depleted",
+    "hbm:item.rod_zirnox_thorium_fuel_depleted": "hbm:rod_zirnox_thorium_fuel_depleted",
+    "hbm:item.rod_zirnox_tritium": "hbm:rod_zirnox_tritium",
+    "hbm:item.rod_zirnox_u233_fuel_depleted": "hbm:rod_zirnox_u233_fuel_depleted",
+    "hbm:item.rod_zirnox_u235_fuel_depleted": "hbm:rod_zirnox_u235_fuel_depleted",
+    "hbm:item.rod_zirnox_uranium_fuel_depleted": "hbm:rod_zirnox_uranium_fuel_depleted",
+    "hbm:item.rod_zirnox_zfb_mox_depleted": "hbm:rod_zirnox_zfb_mox_depleted",
+    "hbm:item.rtg_unit": "hbm:rtg_unit",
+    "hbm:item.rune_blank": "hbm:rune_blank",
+    "hbm:item.rune_dagaz": "hbm:rune_dagaz",
+    "hbm:item.rune_hagalaz": "hbm:rune_hagalaz",
+    "hbm:item.rune_isa": "hbm:rune_isa",
+    "hbm:item.rune_jera": "hbm:rune_jera",
+    "hbm:item.rune_thurisaz": "hbm:rune_thurisaz",
+    "hbm:item.safety_fuse": "hbm:safety_fuse",
+    "hbm:item.sawblade": "hbm:sawblade",
+    "hbm:item.scrap": "hbm:scrap",
+    "hbm:item.scrap_nuclear": "hbm:scrap_nuclear",
+    "hbm:item.scrap_oil": "hbm:scrap_oil",
+    "hbm:item.scraps": "hbm:scraps",
+    "hbm:item.screwdriver": "hbm:screwdriver",
+    "hbm:item.screwdriver_desh": "hbm:screwdriver_desh",
+    "hbm:item.scrumpy": "hbm:scrumpy",
+    "hbm:item.seg_10": "hbm:seg_10",
+    "hbm:item.seg_15": "hbm:seg_15",
+    "hbm:item.seg_20": "hbm:seg_20",
+    "hbm:item.serum": "hbm:serum",
+    "hbm:item.settings_tool": "hbm:settings_tool",
+    "hbm:item.shell": "hbm:shell",
+    "hbm:item.shimmer_axe_head": "hbm:shimmer_axe_head",
+    "hbm:item.shimmer_handle": "hbm:shimmer_handle",
+    "hbm:item.shimmer_head": "hbm:shimmer_head",
+    "hbm:item.siox": "hbm:siox",
+    "hbm:item.solid_fuel": "hbm:solid_fuel",
+    "hbm:item.solid_fuel_bf": "hbm:solid_fuel_bf",
+    "hbm:item.solid_fuel_presto": "hbm:solid_fuel_presto",
+    "hbm:item.solid_fuel_presto_bf": "hbm:solid_fuel_presto_bf",
+    "hbm:item.solid_fuel_presto_triplet": "hbm:solid_fuel_presto_triplet",
+    "hbm:item.solid_fuel_presto_triplet_bf": "hbm:solid_fuel_presto_triplet_bf",
+    "hbm:item.solinium_core": "hbm:solinium_core",
+    "hbm:item.solinium_igniter": "hbm:solinium_igniter",
+    "hbm:item.solinium_kit": "hbm:solinium_kit",
+    "hbm:item.solinium_propellant": "hbm:solinium_propellant",
+    "hbm:item.sphere_steel": "hbm:sphere_steel",
+    "hbm:item.stamp_357": "hbm:stamp_357",
+    "hbm:item.stamp_44": "hbm:stamp_44",
+    "hbm:item.stamp_50": "hbm:stamp_50",
+    "hbm:item.stamp_9": "hbm:stamp_9",
+    "hbm:item.stamp_book": "hbm:stamp_book",
+    "hbm:item.stamp_desh_357": "hbm:stamp_desh_357",
+    "hbm:item.stamp_desh_44": "hbm:stamp_desh_44",
+    "hbm:item.stamp_desh_50": "hbm:stamp_desh_50",
+    "hbm:item.stamp_desh_9": "hbm:stamp_desh_9",
+    "hbm:item.stamp_desh_circuit": "hbm:stamp_desh_circuit",
+    "hbm:item.stamp_desh_flat": "hbm:stamp_desh_flat",
+    "hbm:item.stamp_desh_plate": "hbm:stamp_desh_plate",
+    "hbm:item.stamp_desh_wire": "hbm:stamp_desh_wire",
+    "hbm:item.stamp_iron_circuit": "hbm:stamp_iron_circuit",
+    "hbm:item.stamp_iron_flat": "hbm:stamp_iron_flat",
+    "hbm:item.stamp_iron_plate": "hbm:stamp_iron_plate",
+    "hbm:item.stamp_iron_wire": "hbm:stamp_iron_wire",
+    "hbm:item.stamp_obsidian_circuit": "hbm:stamp_obsidian_circuit",
+    "hbm:item.stamp_obsidian_flat": "hbm:stamp_obsidian_flat",
+    "hbm:item.stamp_obsidian_plate": "hbm:stamp_obsidian_plate",
+    "hbm:item.stamp_obsidian_wire": "hbm:stamp_obsidian_wire",
+    "hbm:item.stamp_steel_circuit": "hbm:stamp_steel_circuit",
+    "hbm:item.stamp_steel_flat": "hbm:stamp_steel_flat",
+    "hbm:item.stamp_steel_plate": "hbm:stamp_steel_plate",
+    "hbm:item.stamp_steel_wire": "hbm:stamp_steel_wire",
+    "hbm:item.stamp_stone_circuit": "hbm:stamp_stone_circuit",
+    "hbm:item.stamp_stone_flat": "hbm:stamp_stone_flat",
+    "hbm:item.stamp_stone_plate": "hbm:stamp_stone_plate",
+    "hbm:item.stamp_stone_wire": "hbm:stamp_stone_wire",
+    "hbm:item.stamp_titanium_circuit": "hbm:stamp_titanium_circuit",
+    "hbm:item.stamp_titanium_flat": "hbm:stamp_titanium_flat",
+    "hbm:item.stamp_titanium_plate": "hbm:stamp_titanium_plate",
+    "hbm:item.stamp_titanium_wire": "hbm:stamp_titanium_wire",
+    "hbm:item.stick_c4": "hbm:stick_c4",
+    "hbm:item.stick_dynamite": "hbm:stick_dynamite",
+    "hbm:item.stick_semtex": "hbm:stick_semtex",
+    "hbm:item.stick_tnt": "hbm:stick_tnt",
+    "hbm:item.sulfur": "hbm:sulfur",
+    "hbm:item.syringe_antidote": "hbm:syringe_antidote",
+    "hbm:item.syringe_awesome": "hbm:syringe_awesome",
+    "hbm:item.syringe_empty": "hbm:syringe_empty",
+    "hbm:item.syringe_metal_empty": "hbm:syringe_metal_empty",
+    "hbm:item.syringe_metal_medx": "hbm:syringe_metal_medx",
+    "hbm:item.syringe_metal_psycho": "hbm:syringe_metal_psycho",
+    "hbm:item.syringe_metal_stimpak": "hbm:syringe_metal_stimpak",
+    "hbm:item.syringe_metal_super": "hbm:syringe_metal_super",
+    "hbm:item.syringe_mkunicorn": "hbm:syringe_mkunicorn",
+    "hbm:item.syringe_poison": "hbm:syringe_poison",
+    "hbm:item.syringe_taint": "hbm:syringe_taint",
+    "hbm:item.tank_steel": "hbm:tank_steel",
+    "hbm:item.template_folder": "hbm:template_folder",
+    "hbm:item.thermo_element": "hbm:thermo_element",
+    "hbm:item.thruster_large": "hbm:thruster_large",
+    "hbm:item.thruster_medium": "hbm:thruster_medium",
+    "hbm:item.thruster_nuclear": "hbm:thruster_nuclear",
+    "hbm:item.thruster_small": "hbm:thruster_small",
+    "hbm:item.tsar_core": "hbm:tsar_core",
+    "hbm:item.tsar_kit": "hbm:tsar_kit",
+    "hbm:item.turbine_titanium": "hbm:turbine_titanium",
+    "hbm:item.turbine_tungsten": "hbm:turbine_tungsten",
+    "hbm:item.twinkie": "hbm:twinkie",
+    "hbm:item.undefined": "hbm:undefined",
+    "hbm:item.upgrade_overdrive_1": "hbm:upgrade_overdrive_1",
+    "hbm:item.upgrade_overdrive_2": "hbm:upgrade_overdrive_2",
+    "hbm:item.upgrade_overdrive_3": "hbm:upgrade_overdrive_3",
+    "hbm:item.upgrade_power_1": "hbm:upgrade_power_1",
+    "hbm:item.upgrade_power_2": "hbm:upgrade_power_2",
+    "hbm:item.upgrade_power_3": "hbm:upgrade_power_3",
+    "hbm:item.upgrade_speed_1": "hbm:upgrade_speed_1",
+    "hbm:item.upgrade_speed_2": "hbm:upgrade_speed_2",
+    "hbm:item.upgrade_speed_3": "hbm:upgrade_speed_3",
+    "hbm:item.upgrade_template": "hbm:upgrade_template",
+    "hbm:item.warhead_buster_large": "hbm:warhead_buster_large",
+    "hbm:item.warhead_buster_medium": "hbm:warhead_buster_medium",
+    "hbm:item.warhead_buster_small": "hbm:warhead_buster_small",
+    "hbm:item.warhead_cluster_large": "hbm:warhead_cluster_large",
+    "hbm:item.warhead_cluster_medium": "hbm:warhead_cluster_medium",
+    "hbm:item.warhead_cluster_small": "hbm:warhead_cluster_small",
+    "hbm:item.warhead_generic_large": "hbm:warhead_generic_large",
+    "hbm:item.warhead_generic_medium": "hbm:warhead_generic_medium",
+    "hbm:item.warhead_generic_small": "hbm:warhead_generic_small",
+    "hbm:item.warhead_incendiary_large": "hbm:warhead_incendiary_large",
+    "hbm:item.warhead_incendiary_medium": "hbm:warhead_incendiary_medium",
+    "hbm:item.warhead_incendiary_small": "hbm:warhead_incendiary_small",
+    "hbm:item.warhead_mirv": "hbm:warhead_mirv",
+    "hbm:item.warhead_nuclear": "hbm:warhead_nuclear",
+    "hbm:item.warhead_volcano": "hbm:warhead_volcano",
+    "hbm:item.waste_mox": "hbm:waste_mox",
+    "hbm:item.waste_natural_uranium": "hbm:waste_natural_uranium",
+    "hbm:item.waste_plate_mox": "hbm:waste_plate_mox",
+    "hbm:item.waste_plate_pu238be": "hbm:waste_plate_pu238be",
+    "hbm:item.waste_plate_pu239": "hbm:waste_plate_pu239",
+    "hbm:item.waste_plate_ra226be": "hbm:waste_plate_ra226be",
+    "hbm:item.waste_plate_sa326": "hbm:waste_plate_sa326",
+    "hbm:item.waste_plate_u233": "hbm:waste_plate_u233",
+    "hbm:item.waste_plate_u235": "hbm:waste_plate_u235",
+    "hbm:item.waste_plutonium": "hbm:waste_plutonium",
+    "hbm:item.waste_schrabidium": "hbm:waste_schrabidium",
+    "hbm:item.waste_thorium": "hbm:waste_thorium",
+    "hbm:item.waste_u233": "hbm:waste_u233",
+    "hbm:item.waste_u235": "hbm:waste_u235",
+    "hbm:item.waste_uranium": "hbm:waste_uranium",
+    "hbm:item.waste_zfb_mox": "hbm:waste_zfb_mox",
+    "hbm:item.watch": "hbm:watch",
+    "hbm:item.weapon_mod_generic": "hbm:weapon_mod_generic",
+    "hbm:item.weapon_mod_special": "hbm:weapon_mod_special",
+    "hbm:item.weapon_mod_test": "hbm:weapon_mod_test",
+    "hbm:item.wild_p": "hbm:wild_p",
+    "hbm:item.wire_dense": "hbm:wire_dense",
+    "hbm:item.wire_fine": "hbm:wire_fine",
+    "hbm:item.wiring_red_copper": "hbm:wiring_red_copper",
+    "hbm:item.wrench": "hbm:wrench",
+    "hbm:item.xanax": "hbm:xanax",
+    "hbm:tile.ancient_scrap": "hbm:ancient_scrap",
+    "hbm:tile.anvil_arsenic_bronze": "hbm:anvil_arsenic_bronze",
+    "hbm:tile.anvil_bismuth_bronze": "hbm:anvil_bismuth_bronze",
+    "hbm:tile.anvil_desh": "hbm:anvil_desh",
+    "hbm:tile.anvil_dnt": "hbm:anvil_dnt",
+    "hbm:tile.anvil_ferrouranium": "hbm:anvil_ferrouranium",
+    "hbm:tile.anvil_iron": "hbm:anvil_iron",
+    "hbm:tile.anvil_lead": "hbm:anvil_lead",
+    "hbm:tile.anvil_murky": "hbm:anvil_murky",
+    "hbm:tile.anvil_osmiridium": "hbm:anvil_osmiridium",
+    "hbm:tile.anvil_saturnite": "hbm:anvil_saturnite",
+    "hbm:tile.anvil_schrabidate": "hbm:anvil_schrabidate",
+    "hbm:tile.anvil_steel": "hbm:anvil_steel",
+    "hbm:tile.asphalt": "hbm:asphalt",
+    "hbm:tile.asphalt_stairs": "hbm:asphalt_stairs",
+    "hbm:tile.balefire": "hbm:balefire",
+    "hbm:tile.barrel_antimatter": "hbm:barrel_antimatter",
+    "hbm:tile.barrel_corroded": "hbm:barrel_corroded",
+    "hbm:tile.barrel_plastic": "hbm:barrel_plastic",
+    "hbm:tile.barrel_steel": "hbm:barrel_steel",
+    "hbm:tile.barrel_tcalloy": "hbm:barrel_tcalloy",
+    "hbm:tile.basalt": "hbm:basalt",
+    "hbm:tile.basalt_brick": "hbm:basalt_brick",
+    "hbm:tile.basalt_polished": "hbm:basalt_polished",
+    "hbm:tile.basalt_smooth": "hbm:basalt_smooth",
+    "hbm:tile.basalt_tiles": "hbm:basalt_tiles",
+    "hbm:tile.block_actinium": "hbm:block_actinium",
+    "hbm:tile.block_aluminium": "hbm:block_aluminium",
+    "hbm:tile.block_asbestos": "hbm:block_asbestos",
+    "hbm:tile.block_australium": "hbm:block_australium",
+    "hbm:tile.block_bakelite": "hbm:block_bakelite",
+    "hbm:tile.block_beryllium": "hbm:block_beryllium",
+    "hbm:tile.block_bismuth": "hbm:block_bismuth",
+    "hbm:tile.block_boron": "hbm:block_boron",
+    "hbm:tile.block_c4": "hbm:block_c4",
+    "hbm:tile.block_cadmium": "hbm:block_cadmium",
+    "hbm:tile.block_cdalloy": "hbm:block_cdalloy",
+    "hbm:tile.block_cobalt": "hbm:block_cobalt",
+    "hbm:tile.block_coltan": "hbm:block_coltan",
+    "hbm:tile.block_combine_steel": "hbm:block_combine_steel",
+    "hbm:tile.block_copper": "minecraft:copper_block",
+    "hbm:tile.block_corium": "hbm:block_corium",
+    "hbm:tile.block_corium_cobble": "hbm:block_corium_cobble",
+    "hbm:tile.block_desh": "hbm:block_desh",
+    "hbm:tile.block_dineutronium": "hbm:block_dineutronium",
+    "hbm:tile.block_dura_steel": "hbm:block_dura_steel",
+    "hbm:tile.block_electrical_scrap": "hbm:block_electrical_scrap",
+    "hbm:tile.block_euphemium": "hbm:block_euphemium",
+    "hbm:tile.block_euphemium_cluster": "hbm:block_euphemium_cluster",
+    "hbm:tile.block_fallout": "hbm:block_fallout",
+    "hbm:tile.block_fiberglass": "hbm:block_fiberglass",
+    "hbm:tile.block_fluorite": "hbm:block_fluorite",
+    "hbm:tile.block_foam": "hbm:block_foam",
+    "hbm:tile.block_insulator": "hbm:block_insulator",
+    "hbm:tile.block_lanthanium": "hbm:block_lanthanium",
+    "hbm:tile.block_lead": "hbm:block_lead",
+    "hbm:tile.block_magnetized_tungsten": "hbm:block_magnetized_tungsten",
+    "hbm:tile.block_meteor": "hbm:block_meteor",
+    "hbm:tile.block_meteor_cobble": "hbm:block_meteor_cobble",
+    "hbm:tile.block_mox_fuel": "hbm:block_mox_fuel",
+    "hbm:tile.block_neptunium": "hbm:block_neptunium",
+    "hbm:tile.block_niobium": "hbm:block_niobium",
+    "hbm:tile.block_niter": "hbm:block_niter",
+    "hbm:tile.block_plutonium": "hbm:block_plutonium",
+    "hbm:tile.block_plutonium_fuel": "hbm:block_plutonium_fuel",
+    "hbm:tile.block_polonium": "hbm:block_polonium",
+    "hbm:tile.block_polymer": "hbm:block_polymer",
+    "hbm:tile.block_pu238": "hbm:block_pu238",
+    "hbm:tile.block_pu239": "hbm:block_pu239",
+    "hbm:tile.block_pu240": "hbm:block_pu240",
+    "hbm:tile.block_pu_mix": "hbm:block_pu_mix",
+    "hbm:tile.block_ra226": "hbm:block_ra226",
+    "hbm:tile.block_red_copper": "hbm:block_red_copper",
+    "hbm:tile.block_red_phosphorus": "hbm:block_red_phosphorus",
+    "hbm:tile.block_rubber": "hbm:block_rubber",
+    "hbm:tile.block_schrabidate": "hbm:block_schrabidate",
+    "hbm:tile.block_schrabidium": "hbm:block_schrabidium",
+    "hbm:tile.block_schrabidium_cluster": "hbm:block_schrabidium_cluster",
+    "hbm:tile.block_schrabidium_fuel": "hbm:block_schrabidium_fuel",
+    "hbm:tile.block_schraranium": "hbm:block_schraranium",
+    "hbm:tile.block_scrap": "hbm:block_scrap",
+    "hbm:tile.block_semtex": "hbm:block_semtex",
+    "hbm:tile.block_smore": "hbm:block_smore",
+    "hbm:tile.block_solinium": "hbm:block_solinium",
+    "hbm:tile.block_starmetal": "hbm:block_starmetal",
+    "hbm:tile.block_steel": "hbm:block_steel",
+    "hbm:tile.block_sulfur": "hbm:block_sulfur",
+    "hbm:tile.block_tantalium": "hbm:block_tantalium",
+    "hbm:tile.block_tcalloy": "hbm:block_tcalloy",
+    "hbm:tile.block_thorium": "hbm:block_thorium",
+    "hbm:tile.block_thorium_fuel": "hbm:block_thorium_fuel",
+    "hbm:tile.block_titanium": "hbm:block_titanium",
+    "hbm:tile.block_trinitite": "hbm:block_trinitite",
+    "hbm:tile.block_tritium": "hbm:block_tritium",
+    "hbm:tile.block_tungsten": "hbm:block_tungsten",
+    "hbm:tile.block_u233": "hbm:block_u233",
+    "hbm:tile.block_u235": "hbm:block_u235",
+    "hbm:tile.block_u238": "hbm:block_u238",
+    "hbm:tile.block_uranium": "hbm:block_uranium",
+    "hbm:tile.block_uranium_fuel": "hbm:block_uranium_fuel",
+    "hbm:tile.block_waste": "hbm:block_waste",
+    "hbm:tile.block_waste_painted": "hbm:block_waste_painted",
+    "hbm:tile.block_waste_vitrified": "hbm:block_waste_vitrified",
+    "hbm:tile.block_white_phosphorus": "hbm:block_white_phosphorus",
+    "hbm:tile.block_yellowcake": "hbm:block_yellowcake",
+    "hbm:tile.block_zirconium": "hbm:block_zirconium",
+    "hbm:tile.bobblehead": "hbm:bobblehead",
+    "hbm:tile.bomb_multi": "hbm:bomb_multi",
+    "hbm:tile.brick_asbestos": "hbm:brick_asbestos",
+    "hbm:tile.brick_asbestos_stairs": "hbm:brick_asbestos_stairs",
+    "hbm:tile.brick_compound": "hbm:brick_compound",
+    "hbm:tile.brick_compound_stairs": "hbm:brick_compound_stairs",
+    "hbm:tile.brick_concrete": "hbm:brick_concrete",
+    "hbm:tile.brick_concrete_broken": "hbm:brick_concrete_broken",
+    "hbm:tile.brick_concrete_broken_stairs": "hbm:brick_concrete_broken_stairs",
+    "hbm:tile.brick_concrete_cracked": "hbm:brick_concrete_cracked",
+    "hbm:tile.brick_concrete_cracked_stairs": "hbm:brick_concrete_cracked_stairs",
+    "hbm:tile.brick_concrete_mossy": "hbm:brick_concrete_mossy",
+    "hbm:tile.brick_concrete_mossy_stairs": "hbm:brick_concrete_mossy_stairs",
+    "hbm:tile.brick_concrete_stairs": "hbm:brick_concrete_stairs",
+    "hbm:tile.brick_double_slab": "hbm:brick_double_slab",
+    "hbm:tile.brick_ducrete": "hbm:brick_ducrete",
+    "hbm:tile.brick_ducrete_stairs": "hbm:brick_ducrete_stairs",
+    "hbm:tile.brick_fire": "hbm:brick_fire",
+    "hbm:tile.brick_fire_stairs": "hbm:brick_fire_stairs",
+    "hbm:tile.brick_jungle": "hbm:brick_jungle",
+    "hbm:tile.brick_jungle_cracked": "hbm:brick_jungle_cracked",
+    "hbm:tile.brick_jungle_lava": "hbm:brick_jungle_lava",
+    "hbm:tile.brick_light": "hbm:brick_light",
+    "hbm:tile.brick_light_stairs": "hbm:brick_light_stairs",
+    "hbm:tile.brick_obsidian": "hbm:brick_obsidian",
+    "hbm:tile.brick_obsidian_stairs": "hbm:brick_obsidian_stairs",
+    "hbm:tile.brick_slab": "hbm:brick_slab",
+    "hbm:tile.c4": "hbm:c4",
+    "hbm:tile.cable_detector": "hbm:cable_detector",
+    "hbm:tile.cable_diode": "hbm:cable_diode",
+    "hbm:tile.cable_switch": "hbm:cable_switch",
+    "hbm:tile.charge_c4": "hbm:charge_c4",
+    "hbm:tile.charge_dynamite": "hbm:charge_dynamite",
+    "hbm:tile.charge_miner": "hbm:charge_miner",
+    "hbm:tile.charge_semtex": "hbm:charge_semtex",
+    "hbm:tile.charger": "hbm:charger",
+    "hbm:tile.chimney_brick": "hbm:chimney_brick",
+    "hbm:tile.chimney_industrial": "hbm:chimney_industrial",
+    "hbm:tile.chlorine_gas": "hbm:chlorine_gas",
+    "hbm:tile.cluster_aluminium": "hbm:cluster_aluminium",
+    "hbm:tile.cluster_copper": "hbm:cluster_copper",
+    "hbm:tile.cluster_depth_iron": "hbm:cluster_depth_iron",
+    "hbm:tile.cluster_depth_titanium": "hbm:cluster_depth_titanium",
+    "hbm:tile.cluster_depth_tungsten": "hbm:cluster_depth_tungsten",
+    "hbm:tile.cluster_iron": "hbm:cluster_iron",
+    "hbm:tile.cluster_titanium": "hbm:cluster_titanium",
+    "hbm:tile.cmb_brick": "hbm:cmb_brick",
+    "hbm:tile.cmb_brick_reinforced": "hbm:cmb_brick_reinforced",
+    "hbm:tile.concrete": "hbm:concrete",
+    "hbm:tile.concrete_asbestos": "hbm:concrete_asbestos",
+    "hbm:tile.concrete_asbestos_stairs": "hbm:concrete_asbestos_stairs",
+    "hbm:tile.concrete_brick_double_slab": "hbm:concrete_brick_double_slab",
+    "hbm:tile.concrete_brick_slab": "hbm:concrete_brick_slab",
+    "hbm:tile.concrete_colored": "hbm:concrete_colored",
+    "hbm:tile.concrete_colored_ext": "hbm:concrete_colored_ext",
+    "hbm:tile.concrete_double_slab": "hbm:concrete_double_slab",
+    "hbm:tile.concrete_pillar": "hbm:concrete_pillar",
+    "hbm:tile.concrete_rebar": "hbm:concrete_rebar",
+    "hbm:tile.concrete_slab": "hbm:concrete_slab",
+    "hbm:tile.concrete_smooth": "hbm:concrete_smooth",
+    "hbm:tile.concrete_smooth_stairs": "hbm:concrete_smooth_stairs",
+    "hbm:tile.concrete_stairs": "hbm:concrete_stairs",
+    "hbm:tile.concrete_super_broken": "hbm:concrete_super_broken",
+    "hbm:tile.crashed_bomb": "hbm:crashed_bomb",
+    "hbm:tile.crate": "hbm:crate",
+    "hbm:tile.crate_ammo": "hbm:crate_ammo",
+    "hbm:tile.crate_can": "hbm:crate_can",
+    "hbm:tile.crate_desh": "hbm:crate_desh",
+    "hbm:tile.crate_iron": "hbm:crate_iron",
+    "hbm:tile.crate_lead": "hbm:crate_lead",
+    "hbm:tile.crate_metal": "hbm:crate_metal",
+    "hbm:tile.crate_steel": "hbm:crate_steel",
+    "hbm:tile.crate_supply": "hbm:crate_supply",
+    "hbm:tile.crystal_hardened": "hbm:crystal_hardened",
+    "hbm:tile.deco_aluminium": "hbm:deco_aluminium",
+    "hbm:tile.deco_asbestos": "hbm:deco_asbestos",
+    "hbm:tile.deco_beryllium": "hbm:deco_beryllium",
+    "hbm:tile.deco_computer": "hbm:deco_computer",
+    "hbm:tile.deco_lead": "hbm:deco_lead",
+    "hbm:tile.deco_loot": "hbm:deco_loot",
+    "hbm:tile.deco_pipe": "hbm:deco_pipe",
+    "hbm:tile.deco_pipe_framed": "hbm:deco_pipe_framed",
+    "hbm:tile.deco_pipe_framed_green": "hbm:deco_pipe_framed_green",
+    "hbm:tile.deco_pipe_framed_green_rusted": "hbm:deco_pipe_framed_green_rusted",
+    "hbm:tile.deco_pipe_framed_marked": "hbm:deco_pipe_framed_marked",
+    "hbm:tile.deco_pipe_framed_red": "hbm:deco_pipe_framed_red",
+    "hbm:tile.deco_pipe_framed_rusted": "hbm:deco_pipe_framed_rusted",
+    "hbm:tile.deco_pipe_green": "hbm:deco_pipe_green",
+    "hbm:tile.deco_pipe_green_rusted": "hbm:deco_pipe_green_rusted",
+    "hbm:tile.deco_pipe_marked": "hbm:deco_pipe_marked",
+    "hbm:tile.deco_pipe_quad": "hbm:deco_pipe_quad",
+    "hbm:tile.deco_pipe_quad_green": "hbm:deco_pipe_quad_green",
+    "hbm:tile.deco_pipe_quad_green_rusted": "hbm:deco_pipe_quad_green_rusted",
+    "hbm:tile.deco_pipe_quad_marked": "hbm:deco_pipe_quad_marked",
+    "hbm:tile.deco_pipe_quad_red": "hbm:deco_pipe_quad_red",
+    "hbm:tile.deco_pipe_quad_rusted": "hbm:deco_pipe_quad_rusted",
+    "hbm:tile.deco_pipe_red": "hbm:deco_pipe_red",
+    "hbm:tile.deco_pipe_rim": "hbm:deco_pipe_rim",
+    "hbm:tile.deco_pipe_rim_green": "hbm:deco_pipe_rim_green",
+    "hbm:tile.deco_pipe_rim_green_rusted": "hbm:deco_pipe_rim_green_rusted",
+    "hbm:tile.deco_pipe_rim_marked": "hbm:deco_pipe_rim_marked",
+    "hbm:tile.deco_pipe_rim_red": "hbm:deco_pipe_rim_red",
+    "hbm:tile.deco_pipe_rim_rusted": "hbm:deco_pipe_rim_rusted",
+    "hbm:tile.deco_pipe_rusted": "hbm:deco_pipe_rusted",
+    "hbm:tile.deco_rbmk": "hbm:deco_rbmk",
+    "hbm:tile.deco_rbmk_smooth": "hbm:deco_rbmk_smooth",
+    "hbm:tile.deco_red_copper": "hbm:deco_red_copper",
+    "hbm:tile.deco_rusty_steel": "hbm:deco_rusty_steel",
+    "hbm:tile.deco_steel": "hbm:deco_steel",
+    "hbm:tile.deco_titanium": "hbm:deco_titanium",
+    "hbm:tile.deco_tungsten": "hbm:deco_tungsten",
+    "hbm:tile.det_charge": "hbm:det_charge",
+    "hbm:tile.det_cord": "hbm:det_cord",
+    "hbm:tile.det_miner": "hbm:det_miner",
+    "hbm:tile.det_nuke": "hbm:det_nuke",
+    "hbm:tile.dirt_dead": "hbm:dirt_dead",
+    "hbm:tile.dirt_oily": "hbm:dirt_oily",
+    "hbm:tile.door_bunker": "hbm:door_bunker",
+    "hbm:tile.door_metal": "hbm:door_metal",
+    "hbm:tile.door_office": "hbm:door_office",
+    "hbm:tile.door_red": "hbm:door_red",
+    "hbm:tile.ducrete": "hbm:ducrete",
+    "hbm:tile.ducrete_smooth": "hbm:ducrete_smooth",
+    "hbm:tile.ducrete_smooth_stairs": "hbm:ducrete_smooth_stairs",
+    "hbm:tile.ducrete_stairs": "hbm:ducrete_stairs",
+    "hbm:tile.dynamite": "hbm:dynamite",
+    "hbm:tile.emp_bomb": "hbm:emp_bomb",
+    "hbm:tile.fallout": "hbm:fallout_block",
+    "hbm:tile.fence_metal": "hbm:fence_metal",
+    "hbm:tile.flame_war": "hbm:flame_war",
+    "hbm:tile.float_bomb": "hbm:float_bomb",
+    "hbm:tile.fluid_counter_valve": "hbm:fluid_counter_valve",
+    "hbm:tile.fluid_duct_box": "hbm:fluid_duct_box",
+    "hbm:tile.fluid_duct_exhaust": "hbm:fluid_duct_exhaust",
+    "hbm:tile.fluid_duct_gauge": "hbm:fluid_duct_gauge",
+    "hbm:tile.fluid_duct_neo": "hbm:fluid_duct_neo",
+    "hbm:tile.fluid_duct_paintable": "hbm:fluid_duct_paintable",
+    "hbm:tile.fluid_duct_paintable_block_exhaust": "hbm:fluid_duct_paintable_block_exhaust",
+    "hbm:tile.fluid_valve": "hbm:fluid_valve",
+    "hbm:tile.foundry_basin": "hbm:foundry_basin",
+    "hbm:tile.foundry_channel": "hbm:foundry_channel",
+    "hbm:tile.foundry_mold": "hbm:foundry_mold",
+    "hbm:tile.foundry_outlet": "hbm:foundry_outlet",
+    "hbm:tile.foundry_slagtap": "hbm:foundry_slagtap",
+    "hbm:tile.foundry_tank": "hbm:foundry_tank",
+    "hbm:tile.frozen_dirt": "hbm:frozen_dirt",
+    "hbm:tile.frozen_grass": "hbm:frozen_grass",
+    "hbm:tile.frozen_log": "hbm:frozen_log",
+    "hbm:tile.frozen_planks": "hbm:frozen_planks",
+    "hbm:tile.fusion_heater": "hbm:fusion_heater",
+    "hbm:tile.gas_asbestos": "hbm:gas_asbestos",
+    "hbm:tile.gas_coal": "hbm:gas_coal",
+    "hbm:tile.gas_explosive": "hbm:gas_explosive",
+    "hbm:tile.gas_flammable": "hbm:gas_flammable",
+    "hbm:tile.gas_meltdown": "hbm:gas_meltdown",
+    "hbm:tile.gas_monoxide": "hbm:gas_monoxide",
+    "hbm:tile.gas_radon": "hbm:gas_radon",
+    "hbm:tile.gas_radon_dense": "hbm:gas_radon_dense",
+    "hbm:tile.gas_radon_tomb": "hbm:gas_radon_tomb",
+    "hbm:tile.geiger": "hbm:geiger",
+    "hbm:tile.glass_quartz": "hbm:glass_quartz",
+    "hbm:tile.gneiss_brick": "hbm:gneiss_brick",
+    "hbm:tile.gneiss_chiseled": "hbm:gneiss_chiseled",
+    "hbm:tile.gneiss_tile": "hbm:gneiss_tile",
+    "hbm:tile.gravel_diamond": "hbm:gravel_diamond",
+    "hbm:tile.gravel_obsidian": "hbm:gravel_obsidian",
+    "hbm:tile.heater_electric": "hbm:heater_electric",
+    "hbm:tile.heater_firebox": "hbm:heater_firebox",
+    "hbm:tile.heater_heatex": "hbm:heater_heatex",
+    "hbm:tile.heater_oilburner": "hbm:heater_oilburner",
+    "hbm:tile.heater_oven": "hbm:heater_oven",
+    "hbm:tile.ladder_copper": "hbm:ladder_copper",
+    "hbm:tile.ladder_gold": "hbm:ladder_gold",
+    "hbm:tile.ladder_steel": "hbm:ladder_steel",
+    "hbm:tile.ladder_sturdy": "hbm:ladder_sturdy",
+    "hbm:tile.ladder_titanium": "hbm:ladder_titanium",
+    "hbm:tile.leaves_layer": "hbm:leaves_layer",
+    "hbm:tile.lightstone": "hbm:lightstone",
+    "hbm:tile.lightstone_bricks_stairs": "hbm:lightstone_bricks_stairs",
+    "hbm:tile.lox_barrel": "hbm:lox_barrel",
+    "hbm:tile.machine_armor_table": "hbm:machine_armor_table",
+    "hbm:tile.machine_ashpit": "hbm:machine_ashpit",
+    "hbm:tile.machine_assembly_machine": "hbm:machine_assembly_machine",
+    "hbm:tile.machine_battery": "hbm:machine_battery",
+    "hbm:tile.machine_battery_potato": "hbm:machine_battery_potato",
+    "hbm:tile.machine_battery_socket": "hbm:machine_battery_socket",
+    "hbm:tile.machine_centrifuge": "hbm:machine_centrifuge",
+    "hbm:tile.machine_chemical_plant": "hbm:machine_chemical_plant",
+    "hbm:tile.machine_converter_he_rf": "hbm:machine_converter_he_rf",
+    "hbm:tile.machine_converter_rf_he": "hbm:machine_converter_rf_he",
+    "hbm:tile.machine_crucible": "hbm:machine_crucible",
+    "hbm:tile.machine_diesel": "hbm:machine_diesel",
+    "hbm:tile.machine_difurnace_extension": "hbm:machine_difurnace_extension",
+    "hbm:tile.machine_difurnace_off": "hbm:machine_difurnace_off",
+    "hbm:tile.machine_difurnace_on": "hbm:machine_difurnace_on",
+    "hbm:tile.machine_dineutronium_battery": "hbm:machine_dineutronium_battery",
+    "hbm:tile.machine_electric_furnace_off": "hbm:machine_electric_furnace_off",
+    "hbm:tile.machine_electric_furnace_on": "hbm:machine_electric_furnace_on",
+    "hbm:tile.machine_fluidtank": "hbm:machine_fluidtank",
+    "hbm:tile.machine_funnel": "hbm:machine_funnel",
+    "hbm:tile.machine_industrial_boiler": "hbm:machine_industrial_boiler",
+    "hbm:tile.machine_industrial_turbine": "hbm:machine_industrial_turbine",
+    "hbm:tile.machine_keyforge": "hbm:machine_keyforge",
+    "hbm:tile.machine_lithium_battery": "hbm:machine_lithium_battery",
+    "hbm:tile.machine_press": "hbm:machine_press",
+    "hbm:tile.machine_reactor": "hbm:machine_reactor",
+    "hbm:tile.machine_refinery": "hbm:machine_refinery",
+    "hbm:tile.machine_rtg_grey": "hbm:machine_rtg_grey",
+    "hbm:tile.machine_schrabidium_battery": "hbm:machine_schrabidium_battery",
+    "hbm:tile.machine_shredder": "hbm:machine_shredder",
+    "hbm:tile.machine_transformer": "hbm:machine_transformer",
+    "hbm:tile.machine_vacuum_distill": "hbm:machine_vacuum_distill",
+    "hbm:tile.machine_wood_burner": "hbm:machine_wood_burner",
+    "hbm:tile.mass_storage": "hbm:mass_storage",
+    "hbm:tile.meteor_battery": "hbm:meteor_battery",
+    "hbm:tile.meteor_brick": "hbm:meteor_brick",
+    "hbm:tile.meteor_brick_chiseled": "hbm:meteor_brick_chiseled",
+    "hbm:tile.meteor_brick_cracked": "hbm:meteor_brick_cracked",
+    "hbm:tile.meteor_brick_mossy": "hbm:meteor_brick_mossy",
+    "hbm:tile.meteor_pillar": "hbm:meteor_pillar",
+    "hbm:tile.meteor_polished": "hbm:meteor_polished",
+    "hbm:tile.meteor_spawner": "hbm:meteor_spawner",
+    "hbm:tile.mine_ap": "hbm:mine_ap",
+    "hbm:tile.mine_fat": "hbm:mine_fat",
+    "hbm:tile.mine_he": "hbm:mine_he",
+    "hbm:tile.mine_naval": "hbm:mine_naval",
+    "hbm:tile.mine_shrap": "hbm:mine_shrap",
+    "hbm:tile.moon_turf": "hbm:moon_turf",
+    "hbm:tile.mush": "hbm:mush",
+    "hbm:tile.mush_block": "hbm:mush_block",
+    "hbm:tile.mush_block_stem": "hbm:mush_block_stem",
+    "hbm:tile.ntm_dirt": "hbm:ntm_dirt",
+    "hbm:tile.nuke_boy": "hbm:nuke_boy",
+    "hbm:tile.nuke_custom": "hbm:nuke_custom",
+    "hbm:tile.nuke_fleija": "hbm:nuke_fleija",
+    "hbm:tile.nuke_fstbmb": "hbm:nuke_fstbmb",
+    "hbm:tile.nuke_gadget": "hbm:nuke_gadget",
+    "hbm:tile.nuke_man": "hbm:nuke_man",
+    "hbm:tile.nuke_mike": "hbm:nuke_mike",
+    "hbm:tile.nuke_n2": "hbm:nuke_n2",
+    "hbm:tile.nuke_prototype": "hbm:nuke_prototype",
+    "hbm:tile.nuke_solinium": "hbm:nuke_solinium",
+    "hbm:tile.nuke_tsar": "hbm:nuke_tsar",
+    "hbm:tile.ore_alexandrite": "hbm:ore_alexandrite",
+    "hbm:tile.ore_aluminium": "hbm:ore_aluminium",
+    "hbm:tile.ore_asbestos": "hbm:ore_asbestos",
+    "hbm:tile.ore_australium": "hbm:ore_australium",
+    "hbm:tile.ore_basalt": "hbm:ore_basalt",
+    "hbm:tile.ore_bedrock": "hbm:ore_bedrock",
+    "hbm:tile.ore_bedrock_oil": "hbm:ore_bedrock_oil",
+    "hbm:tile.ore_beryllium": "hbm:ore_beryllium",
+    "hbm:tile.ore_cinnebar": "hbm:ore_cinnebar",
+    "hbm:tile.ore_cobalt": "hbm:ore_cobalt",
+    "hbm:tile.ore_coltan": "hbm:ore_coltan",
+    "hbm:tile.ore_copper": "minecraft:copper_ore",
+    "hbm:tile.ore_depth_borax": "hbm:ore_depth_borax",
+    "hbm:tile.ore_depth_cinnebar": "hbm:ore_depth_cinnebar",
+    "hbm:tile.ore_depth_nether_neodymium": "hbm:ore_depth_nether_neodymium",
+    "hbm:tile.ore_depth_zirconium": "hbm:ore_depth_zirconium",
+    "hbm:tile.ore_fluorite": "hbm:ore_fluorite",
+    "hbm:tile.ore_gneiss_asbestos": "hbm:ore_gneiss_asbestos",
+    "hbm:tile.ore_gneiss_copper": "hbm:ore_gneiss_copper",
+    "hbm:tile.ore_gneiss_gas": "hbm:ore_gneiss_gas",
+    "hbm:tile.ore_gneiss_gold": "hbm:ore_gneiss_gold",
+    "hbm:tile.ore_gneiss_iron": "hbm:ore_gneiss_iron",
+    "hbm:tile.ore_gneiss_lithium": "hbm:ore_gneiss_lithium",
+    "hbm:tile.ore_gneiss_rare": "hbm:ore_gneiss_rare",
+    "hbm:tile.ore_gneiss_schrabidium": "hbm:ore_gneiss_schrabidium",
+    "hbm:tile.ore_gneiss_uranium": "hbm:ore_gneiss_uranium",
+    "hbm:tile.ore_gneiss_uranium_scorched": "hbm:ore_gneiss_uranium_scorched",
+    "hbm:tile.ore_lead": "hbm:ore_lead",
+    "hbm:tile.ore_lignite": "hbm:ore_lignite",
+    "hbm:tile.ore_meteor": "hbm:ore_meteor",
+    "hbm:tile.ore_nether_coal": "hbm:ore_nether_coal",
+    "hbm:tile.ore_nether_cobalt": "hbm:ore_nether_cobalt",
+    "hbm:tile.ore_nether_fire": "hbm:ore_nether_fire",
+    "hbm:tile.ore_nether_plutonium": "hbm:ore_nether_plutonium",
+    "hbm:tile.ore_nether_schrabidium": "hbm:ore_nether_schrabidium",
+    "hbm:tile.ore_nether_smoldering": "hbm:ore_nether_smoldering",
+    "hbm:tile.ore_nether_sulfur": "hbm:ore_nether_sulfur",
+    "hbm:tile.ore_nether_tungsten": "hbm:ore_nether_tungsten",
+    "hbm:tile.ore_nether_uranium": "hbm:ore_nether_uranium",
+    "hbm:tile.ore_nether_uranium_scorched": "hbm:ore_nether_uranium_scorched",
+    "hbm:tile.ore_niter": "hbm:ore_niter",
+    "hbm:tile.ore_oil": "hbm:ore_oil",
+    "hbm:tile.ore_oil_empty": "hbm:ore_oil_empty",
+    "hbm:tile.ore_oil_sand": "hbm:ore_oil_sand",
+    "hbm:tile.ore_rare": "hbm:ore_rare",
+    "hbm:tile.ore_schrabidium": "hbm:ore_schrabidium",
+    "hbm:tile.ore_sellafield_diamond": "hbm:ore_sellafield_diamond",
+    "hbm:tile.ore_sellafield_emerald": "hbm:ore_sellafield_emerald",
+    "hbm:tile.ore_sellafield_radgem": "hbm:ore_sellafield_radgem",
+    "hbm:tile.ore_sellafield_schrabidium": "hbm:ore_sellafield_schrabidium",
+    "hbm:tile.ore_sellafield_uranium_scorched": "hbm:ore_sellafield_uranium_scorched",
+    "hbm:tile.ore_sulfur": "hbm:ore_sulfur",
+    "hbm:tile.ore_tektite_osmiridium": "hbm:ore_tektite_osmiridium",
+    "hbm:tile.ore_thorium": "hbm:ore_thorium",
+    "hbm:tile.ore_tikite": "hbm:ore_tikite",
+    "hbm:tile.ore_titanium": "hbm:ore_titanium",
+    "hbm:tile.ore_tungsten": "hbm:ore_tungsten",
+    "hbm:tile.ore_uranium": "hbm:ore_uranium",
+    "hbm:tile.ore_uranium_scorched": "hbm:ore_uranium_scorched",
+    "hbm:tile.ore_volcano": "hbm:ore_volcano",
+    "hbm:tile.pink_barrel": "hbm:pink_barrel",
+    "hbm:tile.pink_planks": "hbm:pink_planks",
+    "hbm:tile.pink_stairs": "hbm:pink_stairs",
+    "hbm:tile.pipe_anchor": "hbm:pipe_anchor",
+    "hbm:tile.pipe_anchor_exhaust": "hbm:pipe_anchor_exhaust",
+    "hbm:tile.plant_dead": "hbm:plant_dead",
+    "hbm:tile.press_preheater": "hbm:press_preheater",
+    "hbm:tile.pwr_casing": "hbm:pwr_casing",
+    "hbm:tile.pwr_heatex": "hbm:pwr_heatex",
+    "hbm:tile.pwr_heatsink": "hbm:pwr_heatsink",
+    "hbm:tile.pwr_neutron_source": "hbm:pwr_neutron_source",
+    "hbm:tile.pwr_port": "hbm:pwr_port",
+    "hbm:tile.pwr_reflector": "hbm:pwr_reflector",
+    "hbm:tile.radiorec": "hbm:radiorec",
+    "hbm:tile.machine_reactor_small": "hbm:machine_reactor_small",
+    "hbm:tile.machine_zirnox": "hbm:machine_zirnox",
+    "hbm:tile.red_barrel": "hbm:red_barrel",
+    "hbm:tile.red_cable": "hbm:red_cable",
+    "hbm:tile.red_cable_box": "hbm:red_cable_box",
+    "hbm:tile.red_cable_classic": "hbm:red_cable_classic",
+    "hbm:tile.red_cable_gauge": "hbm:red_cable_gauge",
+    "hbm:tile.red_cable_paintable": "hbm:red_cable_paintable",
+    "hbm:tile.red_connector": "hbm:red_connector",
+    "hbm:tile.red_connector_super": "hbm:red_connector_super",
+    "hbm:tile.red_pylon": "hbm:red_pylon",
+    "hbm:tile.red_pylon_large": "hbm:red_pylon_large",
+    "hbm:tile.red_pylon_medium_steel": "hbm:red_pylon_medium_steel",
+    "hbm:tile.red_pylon_medium_steel_transformer": "hbm:red_pylon_medium_steel_transformer",
+    "hbm:tile.red_pylon_medium_wood": "hbm:red_pylon_medium_wood",
+    "hbm:tile.red_pylon_medium_wood_transformer": "hbm:red_pylon_medium_wood_transformer",
+    "hbm:tile.red_pylon_steel": "hbm:red_pylon_steel",
+    "hbm:tile.red_wire_coated": "hbm:red_wire_coated",
+    "hbm:tile.reinforced_brick": "hbm:reinforced_brick",
+    "hbm:tile.reinforced_brick_stairs": "hbm:reinforced_brick_stairs",
+    "hbm:tile.reinforced_ducrete": "hbm:reinforced_ducrete",
+    "hbm:tile.reinforced_glass": "hbm:reinforced_glass",
+    "hbm:tile.reinforced_light": "hbm:reinforced_light",
+    "hbm:tile.reinforced_sand": "hbm:reinforced_sand",
+    "hbm:tile.reinforced_stone": "hbm:reinforced_stone",
+    "hbm:tile.reinforced_stone_stairs": "hbm:reinforced_stone_stairs",
+    "hbm:tile.safe": "hbm:safe",
+    "hbm:tile.sand_dirty": "hbm:sand_dirty",
+    "hbm:tile.sand_dirty_red": "hbm:sand_dirty_red",
+    "hbm:tile.seal_frame": "hbm:seal_frame",
+    "hbm:tile.sellafield": "hbm:sellafield",
+    "hbm:tile.sellafield_bedrock": "hbm:sellafield_bedrock",
+    "hbm:tile.sellafield_slaked": "hbm:sellafield_slaked",
+    "hbm:tile.semtex": "hbm:semtex",
+    "hbm:tile.spikes": "hbm:spikes",
+    "hbm:tile.#undef": "hbm:statue_elb_f",
+    "hbm:tile.steel_corner": "hbm:steel_corner",
+    "hbm:tile.steel_grate": "hbm:steel_grate",
+    "hbm:tile.steel_grate_wide": "hbm:steel_grate_wide",
+    "hbm:tile.steel_scaffold": "hbm:steel_scaffold",
+    "hbm:tile.steel_wall": "hbm:steel_wall",
+    "hbm:tile.stone_cracked": "hbm:stone_cracked",
+    "hbm:tile.stone_gneiss": "hbm:stone_gneiss",
+    "hbm:tile.stone_resource": "hbm:stone_resource",
+    "hbm:tile.struct_launcher": "hbm:struct_launcher",
+    "hbm:tile.struct_scaffold": "hbm:struct_scaffold",
+    "hbm:tile.structure_anchor": "hbm:structure_anchor",
+    "hbm:tile.substation": "hbm:substation",
+    "hbm:tile.tektite": "hbm:tektite",
+    "hbm:tile.tesla": "hbm:tesla",
+    "hbm:tile.therm_endo": "hbm:therm_endo",
+    "hbm:tile.therm_exo": "hbm:therm_exo",
+    "hbm:tile.tile_lab": "hbm:tile_lab",
+    "hbm:tile.tile_lab_broken": "hbm:tile_lab_broken",
+    "hbm:tile.tile_lab_cracked": "hbm:tile_lab_cracked",
+    "hbm:tile.tnt_ntm": "hbm:tnt_ntm",
+    "hbm:tile.vitrified_barrel": "hbm:vitrified_barrel",
+    "hbm:tile.waste_earth": "hbm:waste_earth",
+    "hbm:tile.waste_leaves": "hbm:waste_leaves",
+    "hbm:tile.waste_log": "hbm:waste_log",
+    "hbm:tile.waste_mycelium": "hbm:waste_mycelium",
+    "hbm:tile.waste_planks": "hbm:waste_planks",
+    "hbm:tile.waste_trinitite": "hbm:waste_trinitite",
+    "hbm:tile.waste_trinitite_red": "hbm:waste_trinitite_red",
+    "hbm:tile.watz_cooler": "hbm:watz_cooler",
+    "hbm:tile.watz_element": "hbm:watz_element",
+    "hbm:tile.yellow_barrel": "hbm:yellow_barrel",
+    "hbm:tile.zirnox_destroyed": "hbm:zirnox_destroyed",
+    "hbm:tile.steel_roof": "hbm:steel_roof",
+    "hbm:tile.stone_porous": "hbm:stone_porous",
+    "hbm:tile.stone_biome": "hbm:stone_biome"
+  },
+  "oreDefaultLoops": [
+    [
+      "logWood",
+      "hbm:powder_sawdust",
+      4
+    ],
+    [
+      "plankWood",
+      "hbm:powder_sawdust",
+      1
+    ],
+    [
+      "treeSapling",
+      "minecraft:stick",
+      1
+    ],
+    [
+      "dustLapis",
+      "hbm:powder_cobalt_tiny",
+      1
+    ]
+  ]
+}

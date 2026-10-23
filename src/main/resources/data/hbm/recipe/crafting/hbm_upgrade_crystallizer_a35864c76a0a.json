@@ -1,0 +1,39 @@
+{
+  "result": {
+    "id": "hbm:upgrade_crystallizer",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PHP",
+    "CUC",
+    "DTD"
+  ],
+  "key": {
+    "P": {
+      "type": "neoforge:components",
+      "items": "hbm:fluid_barrel_full",
+      "components": {
+        "hbm:legacy_metadata": 35,
+        "hbm:fluid_type": 35
+      },
+      "strict": false
+    },
+    "H": {
+      "item": "hbm:circuit_advanced"
+    },
+    "C": {
+      "item": "hbm:barrel_steel"
+    },
+    "U": {
+      "item": "hbm:upgrade_centrifuge"
+    },
+    "D": {
+      "item": "hbm:motor"
+    },
+    "T": {
+      "item": "hbm:machine_transformer"
+    }
+  }
+}

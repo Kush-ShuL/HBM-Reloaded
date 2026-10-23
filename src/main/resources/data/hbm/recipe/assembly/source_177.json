@@ -1,0 +1,32 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.pilezr",
+  "duration": 40,
+  "power": 200,
+  "order": 49,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:pile_rod",
+            "count": 3,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:legacy_ore_dict",
+        "tag": "hbm:legacy_ore_dict/billetzirconium"
+      },
+      "count": 1
+    }
+  ],
+  "group": "autoswitch.pilerod"
+}

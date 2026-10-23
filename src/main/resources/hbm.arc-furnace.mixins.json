@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.machine.arcfurnace.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FallingSandDropsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

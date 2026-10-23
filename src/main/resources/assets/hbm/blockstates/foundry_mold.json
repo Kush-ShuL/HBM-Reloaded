@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hbm:block/foundry_mold"
+    },
+    "facing=south": {
+      "model": "hbm:block/foundry_mold"
+    },
+    "facing=west": {
+      "model": "hbm:block/foundry_mold"
+    },
+    "facing=east": {
+      "model": "hbm:block/foundry_mold"
+    }
+  }
+}

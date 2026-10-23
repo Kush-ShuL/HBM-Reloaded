@@ -1,0 +1,34 @@
+{
+  "module": "lightstone-tile-stairs229",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "lightstone_tile_stairs",
+      "id": "hbm:lightstone_tile_stairs",
+      "legacyRegistryId": "hbm:tile.lightstone_tile_stairs",
+      "originalClass": "BlockGenericStairs",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1555
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2685
+          },
+          "expression": "register(lightstone_tile_stairs)",
+          "arguments": [
+            "lightstone_tile_stairs"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "parent": "hbm:lightstone",
+      "parentMetadata": 1,
+      "parentEnum": "LightstoneType.TILE",
+      "hasBlockEntity": false
+    }
+  ]
+}

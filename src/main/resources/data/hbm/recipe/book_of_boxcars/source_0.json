@@ -1,0 +1,28 @@
+{
+  "type": "hbm:book_of_boxcars",
+  "order": 0,
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "hbm:ingot_u238m2"
+      },
+      "metadata": 1
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ingot_u238m2"
+      },
+      "metadata": 2
+    },
+    {
+      "ingredient": {
+        "item": "hbm:ingot_u238m2"
+      },
+      "metadata": 3
+    }
+  ],
+  "result": {
+    "id": "hbm:ingot_u238m2",
+    "count": 1
+  }
+}

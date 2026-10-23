@@ -1,0 +1,36 @@
+{
+  "result": {
+    "id": "hbm:canister_full",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 20,
+      "hbm:fluid_type": 20
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:canister_full",
+      "components": {
+        "hbm:legacy_metadata": 10,
+        "hbm:fluid_type": 10
+      },
+      "strict": false
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustredstone"
+    },
+    {
+      "item": "hbm:canister_empty"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleCrafting)"
+    }
+  ]
+}

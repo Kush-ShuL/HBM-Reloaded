@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:crane_extractor",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CPC",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsteel"
+    },
+    "B": {
+      "type": "neoforge:components",
+      "items": "hbm:conveyor_wand",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    "P": {
+      "item": "hbm:part_generic_piston_pneumatic"
+    }
+  }
+}

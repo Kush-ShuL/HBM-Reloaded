@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "covered=false,facing=south": {
+      "model": "hbm:block/machine_difurnace_on",
+      "y": 0
+    },
+    "covered=false,facing=west": {
+      "model": "hbm:block/machine_difurnace_on",
+      "y": 90
+    },
+    "covered=false,facing=north": {
+      "model": "hbm:block/machine_difurnace_on",
+      "y": 180
+    },
+    "covered=false,facing=east": {
+      "model": "hbm:block/machine_difurnace_on",
+      "y": 270
+    },
+    "covered=true,facing=south": {
+      "model": "hbm:block/machine_difurnace_on_covered",
+      "y": 0
+    },
+    "covered=true,facing=west": {
+      "model": "hbm:block/machine_difurnace_on_covered",
+      "y": 90
+    },
+    "covered=true,facing=north": {
+      "model": "hbm:block/machine_difurnace_on_covered",
+      "y": 180
+    },
+    "covered=true,facing=east": {
+      "model": "hbm:block/machine_difurnace_on_covered",
+      "y": 270
+    }
+  }
+}

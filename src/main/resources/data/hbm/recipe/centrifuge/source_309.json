@@ -1,0 +1,25 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "item": "hbm:crystal_lapis"
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:powder_lapis",
+      "count": 4
+    },
+    {
+      "id": "hbm:powder_lapis",
+      "count": 4
+    },
+    {
+      "id": "hbm:powder_cobalt",
+      "count": 1
+    },
+    {
+      "id": "hbm:gem_sodalite",
+      "count": 2
+    }
+  ]
+}

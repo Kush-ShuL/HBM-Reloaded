@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:mp_fuselage_10_long_kerosene_insulation",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CTC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+    },
+    "T": {
+      "type": "neoforge:components",
+      "items": "hbm:mp_fuselage_10_long_kerosene",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    }
+  }
+}

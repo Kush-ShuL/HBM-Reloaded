@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BGB",
+    "GRG",
+    "BGB"
+  ],
+  "key": {
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockgraphite"
+    },
+    "R": {
+      "item": "hbm:rbmk_control"
+    },
+    "B": {
+      "item": "hbm:nugget_bismuth"
+    }
+  },
+  "result": {
+    "id": "hbm:rbmk_control_mod",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "hbm:general_mode",
+      "expression": "!GeneralConfig.enable528"
+    }
+  ]
+}

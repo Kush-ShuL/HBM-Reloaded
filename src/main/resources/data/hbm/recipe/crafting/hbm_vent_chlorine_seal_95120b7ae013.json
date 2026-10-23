@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:vent_chlorine_seal",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ISI",
+    "SCS",
+    "ISI"
+  ],
+  "key": {
+    "I": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "C": {
+      "item": "hbm:chlorine_pinwheel"
+    }
+  }
+}

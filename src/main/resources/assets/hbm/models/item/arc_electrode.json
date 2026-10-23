@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:item/arc_electrode.graphite",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/arc_electrode.lanthanium"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/arc_electrode.desh"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/arc_electrode.saturnite"
+    }
+  ]
+}

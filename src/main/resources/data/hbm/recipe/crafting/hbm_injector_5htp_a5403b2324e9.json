@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:injector_5htp",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:five_htp"
+    },
+    {
+      "item": "hbm:circuit_basic"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesaturnite"
+    }
+  ]
+}

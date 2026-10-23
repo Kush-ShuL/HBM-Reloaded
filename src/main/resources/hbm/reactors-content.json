@@ -1,0 +1,393 @@
+{
+  "entries": [
+    {
+      "symbol": "reactor_research",
+      "id": "hbm:machine_reactor_small",
+      "kind": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2233
+      },
+      "originalClass": "ReactorResearch",
+      "creativeTab": "machine",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "machine_reactor_breeding",
+      "id": "hbm:machine_reactor",
+      "kind": "block",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1795
+      },
+      "originalClass": "MachineReactorBreeding",
+      "creativeTab": "machine",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "plate_fuel_u233",
+      "id": "hbm:plate_fuel_u233",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3012
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_u233",
+      "id": "hbm:waste_plate_u233",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2994
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "plate_fuel_u235",
+      "id": "hbm:plate_fuel_u235",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3013
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_u235",
+      "id": "hbm:waste_plate_u235",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2995
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "plate_fuel_mox",
+      "id": "hbm:plate_fuel_mox",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3014
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_mox",
+      "id": "hbm:waste_plate_mox",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2996
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "plate_fuel_pu239",
+      "id": "hbm:plate_fuel_pu239",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3015
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_pu239",
+      "id": "hbm:waste_plate_pu239",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2997
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "plate_fuel_sa326",
+      "id": "hbm:plate_fuel_sa326",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3016
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_sa326",
+      "id": "hbm:waste_plate_sa326",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2998
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "plate_fuel_ra226be",
+      "id": "hbm:plate_fuel_ra226be",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3017
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_ra226be",
+      "id": "hbm:waste_plate_ra226be",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2999
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "plate_fuel_pu238be",
+      "id": "hbm:plate_fuel_pu238be",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3018
+      },
+      "originalClass": "ItemPlateFuel",
+      "creativeTab": "control",
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "waste_plate_pu238be",
+      "id": "hbm:waste_plate_pu238be",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3000
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": null,
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_natural_uranium",
+      "id": "hbm:waste_natural_uranium",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2984
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_uranium",
+      "id": "hbm:waste_uranium",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2985
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_thorium",
+      "id": "hbm:waste_thorium",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2986
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_mox",
+      "id": "hbm:waste_mox",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2987
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_plutonium",
+      "id": "hbm:waste_plutonium",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2988
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_u233",
+      "id": "hbm:waste_u233",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2989
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_u235",
+      "id": "hbm:waste_u235",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2990
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_schrabidium",
+      "id": "hbm:waste_schrabidium",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2991
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    },
+    {
+      "symbol": "waste_zfb_mox",
+      "id": "hbm:waste_zfb_mox",
+      "kind": "item",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2992
+      },
+      "originalClass": "ItemDepletedFuel",
+      "creativeTab": "parts",
+      "variants": 2,
+      "runtimeValidated": false,
+      "metadataRange": [
+        0,
+        1
+      ]
+    }
+  ]
+}

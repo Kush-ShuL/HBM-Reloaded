@@ -1,0 +1,21 @@
+{
+  "type": "hbm:irradiation",
+  "input": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:oil_tar_wax"
+      }
+    },
+    "count": 1
+  },
+  "fusion_only": false,
+  "key_kind": "item",
+  "source_key": "hbm:oil_tar",
+  "order": 18,
+  "fluid_output": {
+    "type": "RADIOSOLVENT",
+    "amount": 100,
+    "pressure": 0
+  }
+}

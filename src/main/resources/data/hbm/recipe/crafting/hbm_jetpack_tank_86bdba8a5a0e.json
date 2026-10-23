@@ -1,0 +1,31 @@
+{
+  "result": {
+    "id": "hbm:jetpack_tank",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "BKB",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "K": {
+      "type": "hbm:source_fluid_container",
+      "fluid": "KEROSENE",
+      "amount": 1000
+    }
+  }
+}

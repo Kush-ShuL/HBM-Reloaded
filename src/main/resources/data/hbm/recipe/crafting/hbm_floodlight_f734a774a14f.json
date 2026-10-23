@@ -1,0 +1,29 @@
+{
+  "result": {
+    "id": "hbm:floodlight",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CSC",
+    "TST",
+    "G G"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_capacitor"
+    },
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platesteel"
+    },
+    "T": {
+      "item": "hbm:coil_tungsten"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/paneglass"
+    }
+  }
+}

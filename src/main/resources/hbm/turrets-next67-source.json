@@ -1,0 +1,34 @@
+{
+  "source": "TileEntityTurretTauon",
+  "ammoConfigs": [
+    "hbm:accelerator/tau_uranium"
+  ],
+  "ammoItem": "Existing PistolAmmo.TAU_URANIUM, ammo_standard metadata70",
+  "maxHE": 100000,
+  "activeHEPerTick": 1000,
+  "baseDamageConfig": "TURRET_TAUON_DAMAGE",
+  "baseDamageDefault": 30,
+  "shotDamage": "baseDamage*(1+world.rand.nextFloat()/3F), actual SUBATOMIC DamageClass with null shooter/projectile",
+  "shotIntervalAlignedTicks": 5,
+  "range": 128,
+  "grace": 3,
+  "yawSpeedDegrees": 9,
+  "pitchSpeedDegrees": 6,
+  "elevation": 35,
+  "depression": 35,
+  "barrelLength": 1.9375,
+  "heightOffset": 1.5,
+  "acceptableInaccuracyDegrees": 5,
+  "detectorInterval": 10,
+  "sourceQuirks": [
+    "No projectile is created: source directly attacks the actual target and consumes one real uranium ammo even if native hurt refuses damage.",
+    "Active base energy is consumed every on/powered tick whether a shot occurs or not; no extra per-shot energy charge is invented.",
+    "Firing timer increments only when the shared base is aligned; it is not reset between target loss or bursts and is not persisted.",
+    "Child client distance/beam decrement/rotor update occurs before the base angle synchronization.",
+    "Null tPos preserves lastDist; source beam may retain that last true length for its3-client-tick lifetime.",
+    "Original source sound directly uses4volume/.9+rand*.3pitch; no added muffler factor."
+  ],
+  "beam": "Existing DfcComponentBeams RANDOM/LINE only, outerffa200/innerffd000, seed(int)worldtime/5%360,segments(int)lastDist+1,size.1,layers0,width0; lastDist uses originalfloat sqrt.",
+  "muzzle": "Existing WeldingParticlePacket5sparks+oneHadron,smallfalse, exact legacy muzzle matrix; radius50 measured at core, not muzzle.",
+  "client": "rotor+45/clienttick if tPos!=null; original360wrap/prevSpin; source3tick beam flash; no transient animation field saved."
+}

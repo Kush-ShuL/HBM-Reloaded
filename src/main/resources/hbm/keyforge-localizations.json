@@ -1,0 +1,40 @@
+{
+  "en_us": {
+    "tooltip.hbm.key.pins": "Pin configuration: %s",
+    "tooltip.hbm.key.pins_unset": "Pins not set!",
+    "tooltip.hbm.key.immutable": "Pins can neither be changed, nor copied.",
+    "tooltip.hbm.key.counterfeit_kit": "Use on a locked container to create two counterfeit keys!",
+    "message.hbm.key.counterfeit_elaborate": "This lock is too elaborate for a counterfeit key to be made",
+    "message.hbm.key.counterfeit_alternative": "Perhaps there is another way around here to unlock it",
+    "container.keyForge": "Locksmith Table",
+    "desc.gui.keyforge.key": "§2Linking§r$The first slot will copy the key/lock's$pin configuration and paste it to the second slot.",
+    "desc.gui.keyforge.random": "§bSetup§r$The third slot will randomize the$key/lock's pin configuration.",
+    "block.hbm.machine_keyforge": "Locksmith Table",
+    "item.hbm.key": "Key",
+    "item.hbm.key_fake": "Counterfeit Key",
+    "item.hbm.key_kit": "Key Imitation Kit",
+    "item.hbm.padlock_rusty": "Rusty Padlock",
+    "item.hbm.padlock": "Padlock",
+    "item.hbm.padlock_reinforced": "Reinforced Padlock",
+    "item.hbm.padlock_unbreakable": "Unbreakable Padlock"
+  },
+  "zh_cn": {
+    "tooltip.hbm.key.pins": "弹子配置：%s",
+    "tooltip.hbm.key.pins_unset": "尚未设置弹子！",
+    "tooltip.hbm.key.immutable": "弹子无法修改或复制。",
+    "tooltip.hbm.key.counterfeit_kit": "对上锁的容器使用，制作两把仿制钥匙！",
+    "message.hbm.key.counterfeit_elaborate": "这把锁过于精密，无法制作仿制钥匙",
+    "message.hbm.key.counterfeit_alternative": "也许附近还有其他开锁的方法",
+    "container.keyForge": "锁匠桌",
+    "desc.gui.keyforge.key": "第一个槽位将复制钥匙或者锁的弹子配置$并将其复制到第二个槽位。",
+    "desc.gui.keyforge.random": "第三个槽位则会随机化锁或者钥匙的弹子配置。",
+    "block.hbm.machine_keyforge": "锁匠桌",
+    "item.hbm.key": "钥匙",
+    "item.hbm.key_fake": "伪造钥匙",
+    "item.hbm.key_kit": "钥匙仿制套件",
+    "item.hbm.padlock_rusty": "生锈的挂锁",
+    "item.hbm.padlock": "挂锁",
+    "item.hbm.padlock_reinforced": "加强挂锁",
+    "item.hbm.padlock_unbreakable": "牢不可破的挂锁"
+  }
+}

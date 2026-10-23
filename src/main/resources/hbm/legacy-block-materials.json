@@ -1,0 +1,6322 @@
+{
+  "minecraft:air": {
+    "name": "air",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:stone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:grass": {
+    "name": "grass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:dirt": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:cobblestone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:planks": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:sapling": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:bedrock": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:flowing_water": {
+    "name": "water",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:water": {
+    "name": "water",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:flowing_lava": {
+    "name": "lava",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:lava": {
+    "name": "lava",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:sand": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:gravel": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:gold_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:iron_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:coal_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:log": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:leaves": {
+    "name": "leaves",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:sponge": {
+    "name": "sponge",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:glass": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:lapis_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:lapis_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:dispenser": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:sandstone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:noteblock": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:bed": {
+    "name": "cloth",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:golden_rail": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:detector_rail": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:sticky_piston": {
+    "name": "piston",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:web": {
+    "name": "web",
+    "solid": true,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:tallgrass": {
+    "name": "vine",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": true
+  },
+  "minecraft:deadbush": {
+    "name": "vine",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": true
+  },
+  "minecraft:piston": {
+    "name": "piston",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:piston_head": {
+    "name": "piston",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:wool": {
+    "name": "cloth",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:piston_extension": {
+    "name": "piston",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:yellow_flower": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:red_flower": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:brown_mushroom": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:red_mushroom": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:gold_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:iron_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:double_stone_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stone_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:brick_block": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:tnt": {
+    "name": "tnt",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:bookshelf": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:mossy_cobblestone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:obsidian": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:torch": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:fire": {
+    "name": "fire",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:mob_spawner": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:oak_stairs": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:chest": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:redstone_wire": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:diamond_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:diamond_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:crafting_table": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:wheat": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:farmland": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:furnace": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:lit_furnace": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:standing_sign": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:wooden_door": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:ladder": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:rail": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stone_stairs": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:wall_sign": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:lever": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stone_pressure_plate": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:iron_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:wooden_pressure_plate": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:redstone_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:lit_redstone_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:unlit_redstone_torch": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:redstone_torch": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stone_button": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:snow_layer": {
+    "name": "snow",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": false
+  },
+  "minecraft:ice": {
+    "name": "ice",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:snow": {
+    "name": "craftedSnow",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:cactus": {
+    "name": "cactus",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:clay": {
+    "name": "clay",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:reeds": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:jukebox": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:fence": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:pumpkin": {
+    "name": "gourd",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:netherrack": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:soul_sand": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:glowstone": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:portal": {
+    "name": "portal",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:lit_pumpkin": {
+    "name": "gourd",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:cake": {
+    "name": "cake",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:unpowered_repeater": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:powered_repeater": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stained_glass": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:trapdoor": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:monster_egg": {
+    "name": "clay",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stonebrick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:brown_mushroom_block": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:red_mushroom_block": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:iron_bars": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:glass_pane": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:melon_block": {
+    "name": "gourd",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:pumpkin_stem": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:melon_stem": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:vine": {
+    "name": "vine",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": true
+  },
+  "minecraft:fence_gate": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:brick_stairs": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stone_brick_stairs": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:mycelium": {
+    "name": "grass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:waterlily": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:nether_brick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:nether_brick_fence": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:nether_brick_stairs": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:nether_wart": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:enchanting_table": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:brewing_stand": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:cauldron": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:end_portal": {
+    "name": "portal",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:end_portal_frame": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:end_stone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:dragon_egg": {
+    "name": "dragonEgg",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:redstone_lamp": {
+    "name": "redstoneLight",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:lit_redstone_lamp": {
+    "name": "redstoneLight",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:double_wooden_slab": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:wooden_slab": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:cocoa": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:sandstone_stairs": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:emerald_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:ender_chest": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:tripwire_hook": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:tripwire": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:emerald_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:spruce_stairs": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:birch_stairs": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:jungle_stairs": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:command_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:beacon": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:cobblestone_wall": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:flower_pot": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:carrots": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:potatoes": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:wooden_button": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:skull": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:anvil": {
+    "name": "anvil",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:trapped_chest": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:light_weighted_pressure_plate": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:heavy_weighted_pressure_plate": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:unpowered_comparator": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:powered_comparator": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:daylight_detector": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:redstone_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:quartz_ore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:hopper": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:quartz_block": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:quartz_stairs": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:activator_rail": {
+    "name": "circuits",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:dropper": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stained_hardened_clay": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:stained_glass_pane": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:leaves2": {
+    "name": "leaves",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:log2": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:acacia_stairs": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:dark_oak_stairs": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:hay_block": {
+    "name": "grass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:carpet": {
+    "name": "carpet",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "minecraft:hardened_clay": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:coal_block": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:packed_ice": {
+    "name": "packedIce",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "minecraft:double_plant": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ancient_scrap": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_arsenic_bronze": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_bismuth_bronze": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_desh": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_dnt": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_ferrouranium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_iron": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_lead": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_murky": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_osmiridium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_saturnite": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_schrabidate": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:anvil_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ash_digamma": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:asphalt": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:asphalt_light": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barbed_wire": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barbed_wire_acid": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barbed_wire_fire": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barbed_wire_poison": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barbed_wire_ultradeath": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barbed_wire_wither": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barrel_antimatter": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barrel_corroded": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barrel_plastic": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barrel_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barrel_tcalloy": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:barricade": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:basalt": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:basalt_brick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:basalt_polished": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:basalt_smooth": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:basalt_tiles": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:blast_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_aluminium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_asbestos": {
+    "name": "cloth",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:block_australium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_bakelite": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_beryllium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_bismuth": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_boron": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_c4": {
+    "name": "tnt",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:block_cadmium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_cdalloy": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_cobalt": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_coltan": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_combine_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_copper": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_corium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_corium_cobble": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_desh": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_dineutronium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_dura_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_electrical_scrap": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_euphemium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_euphemium_cluster": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_fiberglass": {
+    "name": "cloth",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:block_fluorite": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_foam": {
+    "name": "craftedSnow",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_graphite": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_insulator": {
+    "name": "cloth",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:block_lanthanium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_lead": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_lithium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_magnetized_tungsten": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_meteor": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_meteor_broken": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_meteor_cobble": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_meteor_molten": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_meteor_treasure": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_niobium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_niter": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_polymer": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_red_copper": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_rubber": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_schrabidium_cluster": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_scrap": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_semtex": {
+    "name": "tnt",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:block_slag": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_smore": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_starmetal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_sulfur": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_tantalium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_tcalloy": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_titanium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_tritium": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_tungsten": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_white_phosphorus": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:block_zirconium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:boat": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:bomb_multi": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:book_guide": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:boxcar": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_asbestos": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_compound": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_concrete": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_concrete_broken": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_concrete_cracked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_concrete_marked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_concrete_mossy": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_double_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_ducrete": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_fire": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_circle": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_cracked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_fragile": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_glyph": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_lava": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_mystic": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_ooze": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_jungle_trap": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_light": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_obsidian": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_red": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:brick_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:broadcaster_pc": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:burning_earth": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cable_detector": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cable_diode": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cable_switch": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:capacitor_bus": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:capacitor_copper": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:capacitor_gold": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:capacitor_niobium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:capacitor_schrabidate": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:capacitor_tantalium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cargo_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dungeon_chain": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:charger": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:chimney_brick": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:chimney_industrial": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cluster_aluminium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cluster_copper": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cluster_iron": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cluster_titanium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_circuit": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_engine": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_flux": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_heat": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_port": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_sheet": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cm_tank": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cmb_brick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:cmb_brick_reinforced": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:compact_launcher": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_asbestos": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_brick_double_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_brick_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_colored": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_colored_ext": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_double_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_liquid": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_pillar": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_rebar": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_smooth": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:concrete_super_broken": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crashed_bomb": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:crate_ammo": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_can": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:crate_desh": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_iron": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_jungle": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_lead": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_metal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_red": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_supply": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:crate_tungsten": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crate_weapon": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:crystal_hardened": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crystal_pulsar": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:crystal_virus": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_aluminium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_asbestos": {
+    "name": "cloth",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:deco_beryllium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_computer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_crt": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_lead": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_framed": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_framed_green": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_framed_green_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_framed_marked": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_framed_red": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_framed_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_green": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_green_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_marked": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_quad": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_quad_green": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_quad_green_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_quad_marked": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_quad_red": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_quad_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_red": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rim": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rim_green": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rim_green_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rim_marked": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rim_red": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rim_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_pipe_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_rbmk": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_rbmk_smooth": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_red_copper": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_rusty_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_titanium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_toaster": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:deco_tungsten": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:decon": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:det_charge": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:det_cord": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:det_miner": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:det_nuke": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dfc_core": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dfc_emitter": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dfc_injector": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dfc_receiver": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dfc_stabilizer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dirt_dead": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dirt_oily": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:door_bunker": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:door_metal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:door_office": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:door_red": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ducrete": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ducrete_smooth": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dummy_block_blast": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dummy_plate_compact_launcher": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dummy_plate_launch_table": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dummy_port_compact_launcher": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:dummy_port_launch_table": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:emp_bomb": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:event_tester": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fallout": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fence_metal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:filing_cabinet": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fire_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fireworks": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:flame_war": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:float_bomb": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:floodlight": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_counter_valve": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_duct_box": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_duct_exhaust": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_duct_neo": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_pump": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_switch": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fluid_valve": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:foam_layer": {
+    "name": "snow",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": true,
+    "flammable": false
+  },
+  "hbm:fraction_spacer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:frozen_dirt": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:frozen_grass": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:frozen_log": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:frozen_planks": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:fusion_hatch": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:fusion_heater": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:geiger": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:geysir_chlorine": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:geysir_nether": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_ash": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_boron": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_lead": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_polarized": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_polonium": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_quartz": {
+    "name": "packedIce",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_trinitite": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:glass_uranium": {
+    "name": "glass",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:gneiss_brick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:gneiss_chiseled": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:gneiss_tile": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:gravel_diamond": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:gravel_obsidian": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_alloy": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_chlorophyte": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_gold": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_magtung": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_mese": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_neodymium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_schrabidate": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_schrabidium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hadron_coil_starmetal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:hev_battery": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:icf_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:impact_dirt": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:lamp_tritium_blue_off": {
+    "name": "redstoneLight",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:lamp_tritium_blue_on": {
+    "name": "redstoneLight",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:lamp_tritium_green_off": {
+    "name": "redstoneLight",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:lamp_tritium_green_on": {
+    "name": "redstoneLight",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:large_vehicle_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:launch_pad": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:launch_pad_large": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:launch_pad_rusted": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:launch_table": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:leaves_layer": {
+    "name": "leaves",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:lightstone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:lox_barrel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_arc_welder": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_armor_table": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_assembly_factory": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_assembly_machine": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_bat9000": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_battery": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_battery_potato": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_catalytic_cracker": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_catalytic_reformer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_centrifuge": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_chemical_factory": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_chemical_plant": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_coker": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_condenser": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_condenser_powered": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_controller": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_converter_he_rf": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_converter_rf_he": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_conveyor_press": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_crystallizer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_cyclotron": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_detector": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_deuterium_extractor": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_deuterium_tower": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_dineutronium_battery": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_drain": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_epress": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_exposure_chamber": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_fel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_flare": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_fluidtank": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_forcefield": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_fraction_tower": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_gascent": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_hephaestus": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_hydrotreater": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_industrial_generator": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_keyforge": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_large_turbine": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_lithium_battery": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_microwave": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_mining_laser": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_missile_assembly": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_mixer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_orbus": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_precass": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_press": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_puf6_tank": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_purex": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_pyrooven": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_radar": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_radar_large": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_radgen": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_radiolysis": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_reactor": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_refinery": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_rockmill": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_rotary_furnace": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_rtg_grey": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_satlinker": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_schrabidium_battery": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_shredder": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_silex": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_siren": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_solar_boiler": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_soldering_station": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_storage_drum": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_supercomputer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_teleporter": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_tower_large": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_tower_small": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_transformer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_turbinegas": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_turbofan": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_uf6_tank": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_vacuum_distill": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_waste_drum": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_wood_burner": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_battery": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_brick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_brick_chiseled": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_brick_cracked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_brick_mossy": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_pillar": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_polished": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:meteor_spawner": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mine_ap": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mine_fat": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mine_he": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mine_naval": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mine_shrap": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:moon_turf": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mush": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mush_block": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:mush_block_stem": {
+    "name": "plants",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_boy": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_custom": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_fleija": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_fstbmb": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_gadget": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_man": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_mike": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_n2": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_prototype": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_solinium": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:nuke_tsar": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:obj_tester": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:oil_pipe": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:oil_spill": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_aluminium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_asbestos": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_australium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_bedrock_oil": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_beryllium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_cinnebar": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_cobalt": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_coltan": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_copper": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_fluorite": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_asbestos": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_copper": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_gas": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_gold": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_iron": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_lithium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_rare": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_schrabidium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_uranium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_gneiss_uranium_scorched": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_lead": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_lignite": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_coal": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_cobalt": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_fire": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_plutonium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_schrabidium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_smoldering": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_sulfur": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_tungsten": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_uranium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_nether_uranium_scorched": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_niter": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_oil": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_oil_empty": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_oil_sand": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_rare": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_schrabidium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_sellafield_diamond": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_sellafield_emerald": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_sellafield_radgem": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_sellafield_schrabidium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_sellafield_uranium_scorched": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_sulfur": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_tektite_osmiridium": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_thorium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_tikite": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_titanium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_tungsten": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_uranium": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:ore_uranium_scorched": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pink_barrel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pink_double_slab": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:pink_planks": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:pink_slab": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:platemetal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pole_satellite_receiver": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pole_top": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:press_preheater": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_block": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_casing": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_channel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_control": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_controller": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_fuel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_heatex": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_heatsink": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_neutron_source": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_port": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:pwr_reflector": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:qe_containment": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:qe_sliding_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:rad_absorber": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:rad_lava_block": {
+    "name": "lava",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "hbm:radar_screen": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:radiobox": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:radiorec": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:rbmk_loader": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:rbmk_steam_inlet": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:rbmk_steam_outlet": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_reactor_small": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:machine_zirnox": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_barrel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_cable": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_cable_box": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_cable_classic": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_connector": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_connector_super": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_pylon": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_pylon_large": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_pylon_medium_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_pylon_medium_steel_transformer": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_pylon_medium_wood": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:red_pylon_medium_wood_transformer": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:red_pylon_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:red_wire_coated": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:refueler": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_brick": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_ducrete": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_glass": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_glass_pane": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_laminate": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_laminate_pane": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_lamp_off": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_lamp_on": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_light": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_sand": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:reinforced_stone": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:round_airlock_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:safe": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sand_boron_layer": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sand_dirty": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sand_dirty_red": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sand_mix": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sandbags": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:seal_controller": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:seal_frame": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:seal_hatch": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:secure_access_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sellafield": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sellafield_bedrock": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sellafield_slaked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:silo_hatch": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:silo_hatch_large": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sliding_blast_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sliding_seal_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:solar_mirror": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:soyuz_capsule": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:soyuz_launcher": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spikes": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spotlight_fluoro": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spotlight_fluoro_off": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spotlight_halogen": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spotlight_halogen_off": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spotlight_incandescent": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:spotlight_incandescent_off": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:#undef": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_beam": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_corner": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_grate": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_grate_wide": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_poles": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_roof": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:steel_wall": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:stone_cracked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:stone_gneiss": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:stone_keyhole_meta": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:stones_double_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:stones_slab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_icf_core": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_launcher": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_launcher_core": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_launcher_core_large": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_scaffold": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_soyuz_core": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_torus_core": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:struct_watz_core": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:structure_anchor": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:substation": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:sulfuric_acid_block": {
+    "name": "water",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "hbm:taint": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:taint_barrel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:tape_recorder": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:tektite": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:tesla": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:therm_endo": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:therm_exo": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:tile_lab": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:tile_lab_broken": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:tile_lab_cracked": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:transition_seal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:trapdoor_steel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_arty": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_chekhov": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_friendly": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_fritz": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_himars": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_howard": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_howard_damaged": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_jeremy": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_maxwell": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_richard": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:turret_tauon": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vault_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vent_chlorine": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vent_chlorine_seal": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vent_cloud": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vent_pink_cloud": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vinyl_tile": {
+    "name": "rock",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:vitrified_barrel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:volcanic_lava_block": {
+    "name": "lava",
+    "solid": false,
+    "blocksMovement": false,
+    "liquid": true,
+    "replaceable": true,
+    "flammable": false
+  },
+  "hbm:waste_earth": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:waste_leaves": {
+    "name": "leaves",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:waste_log": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:waste_mycelium": {
+    "name": "ground",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:waste_planks": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:waste_trinitite": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:waste_trinitite_red": {
+    "name": "sand",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:water_door": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:watz_cooler": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:watz_element": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:watz_end": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:wood_barrier": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:wood_structure": {
+    "name": "wood",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": true
+  },
+  "hbm:yellow_barrel": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  },
+  "hbm:zirnox_destroyed": {
+    "name": "iron",
+    "solid": true,
+    "blocksMovement": true,
+    "liquid": false,
+    "replaceable": false,
+    "flammable": false
+  }
+}

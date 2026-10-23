@@ -1,0 +1,279 @@
+{
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "machine_forcefield",
+      "id": "hbm:machine_forcefield",
+      "legacyRegistryId": "tile.machine_forcefield",
+      "originalClass": "MachineForceField",
+      "creativeTab": "missile",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 2284
+      },
+      "worldMetadataSemantics": "All originalmetadata ignored; no orientation property invented",
+      "blockEntity": "hbm:forcefield",
+      "legacyBlockEntityId": "tileentity_machine_field"
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_radius",
+      "id": "hbm:upgrade_radius",
+      "legacyRegistryId": "item.upgrade_radius",
+      "originalClass": "ItemMachineUpgrade",
+      "creativeTab": "control",
+      "stackSize": 16,
+      "upgradeType": "SPECIAL",
+      "tier": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3754
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_health",
+      "id": "hbm:upgrade_health",
+      "legacyRegistryId": "item.upgrade_health",
+      "originalClass": "ItemMachineUpgrade",
+      "creativeTab": "control",
+      "stackSize": 16,
+      "upgradeType": "SPECIAL",
+      "tier": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3755
+      }
+    }
+  ],
+  "sourceRecipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/AssemblyMachineRecipes.java",
+        "line": 398
+      },
+      "expression": "new GenericRecipe(\"ass.forcefield\").setup(600, 100).outputItems(new ItemStack(ModBlocks.machine_forcefield, 1)) .inputItems(new OreDictStack(DURA.plate(), 8), new ComparableStack(ModItems.plate_desh, 4), new ComparableStack(ModItems.coil_gold_torus, 6), new ComparableStack(ModItems.coil_magnetized_tungsten, 12), new ComparableStack(ModItems.motor, 1), new ComparableStack(ModItems.upgrade_radius, 1), new ComparableStack(ModItems.upgrade_health, 1), new ComparableStack(ModItems.circuit, 4, EnumCircuitType.ADVANCED), new ComparableStack(ModBlocks.machine_transformer, 1))",
+      "name": "ass.forcefield",
+      "id": "hbm:assembly/source_398",
+      "recipe": {
+        "type": "hbm:assembly",
+        "name": "ass.forcefield",
+        "duration": 600,
+        "power": 100,
+        "order": 132,
+        "output_items": [
+          {
+            "pool": [
+              {
+                "stack": {
+                  "id": "hbm:machine_forcefield",
+                  "count": 1
+                }
+              }
+            ]
+          }
+        ],
+        "input_items": [
+          {
+            "ingredient": {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platedurasteel"
+            },
+            "count": 8
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:plate_desh"
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:coil_gold_torus"
+              }
+            },
+            "count": 6
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:coil_magnetized_tungsten"
+              }
+            },
+            "count": 12
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:motor"
+              }
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:upgrade_radius"
+              }
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:upgrade_health"
+              }
+            },
+            "count": 1
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:circuit_advanced"
+              }
+            },
+            "count": 4
+          },
+          {
+            "ingredient": {
+              "type": "hbm:alloy_legacy_stack",
+              "stack": {
+                "id": "hbm:machine_transformer"
+              }
+            },
+            "count": 1
+          }
+        ]
+      },
+      "status": "native_recipe"
+    }
+  ],
+  "pendingSolderingRecipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/SolderingRecipes.java",
+        "line": 193
+      },
+      "expression": "new SolderingRecipe(new ItemStack(ModItems.upgrade_radius), 200, 1_000, new AStack[] {new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CHIP), new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CAPACITOR)}, new AStack[] {new ComparableStack(ModItems.upgrade_template), new OreDictStack(\"dustGlowstone\", 4)}, new AStack[] {}",
+      "status": "pending_actual_soldering_machine",
+      "reason": "Original SolderingRecipe three-lane machine is not migrated. No replacement crafting/furnace recipe is invented.",
+      "data": {
+        "result": {
+          "id": "hbm:upgrade_radius",
+          "count": 1
+        },
+        "duration": 200,
+        "power": 1000,
+        "input_lanes": [
+          [
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:circuit_chip"
+                }
+              },
+              "count": 4
+            },
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:circuit_capacitor"
+                }
+              },
+              "count": 4
+            }
+          ],
+          [
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:upgrade_template"
+                }
+              },
+              "count": 1
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/dustglowstone"
+              },
+              "count": 4
+            }
+          ],
+          []
+        ]
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/SolderingRecipes.java",
+        "line": 198
+      },
+      "expression": "new SolderingRecipe(new ItemStack(ModItems.upgrade_health), 200, 1_000, new AStack[] {new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CHIP), new ComparableStack(ModItems.circuit, 4, EnumCircuitType.CAPACITOR)}, new AStack[] {new ComparableStack(ModItems.upgrade_template), new OreDictStack(LI.dust(), 4)}, new AStack[] {}",
+      "status": "pending_actual_soldering_machine",
+      "reason": "Original SolderingRecipe three-lane machine is not migrated. No replacement crafting/furnace recipe is invented.",
+      "data": {
+        "result": {
+          "id": "hbm:upgrade_health",
+          "count": 1
+        },
+        "duration": 200,
+        "power": 1000,
+        "input_lanes": [
+          [
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:circuit_chip"
+                }
+              },
+              "count": 4
+            },
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:circuit_capacitor"
+                }
+              },
+              "count": 4
+            }
+          ],
+          [
+            {
+              "ingredient": {
+                "type": "hbm:alloy_legacy_stack",
+                "stack": {
+                  "id": "hbm:upgrade_template"
+                }
+              },
+              "count": 1
+            },
+            {
+              "ingredient": {
+                "type": "hbm:legacy_ore_dict",
+                "tag": "hbm:legacy_ore_dict/dustlithium"
+              },
+              "count": 4
+            }
+          ],
+          []
+        ]
+      }
+    }
+  ]
+}

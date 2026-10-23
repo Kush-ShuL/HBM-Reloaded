@@ -1,0 +1,44 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/oretitanium"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "hbm:powder_titanium",
+      "count": 1
+    },
+    {
+      "id": "hbm:chunk_ore_ilmenite",
+      "count": 2
+    },
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ],
+  "lbsm_results": [
+    {
+      "id": "hbm:powder_titanium",
+      "count": 2
+    },
+    {
+      "id": "hbm:chunk_ore_ilmenite",
+      "count": 4
+    },
+    {
+      "id": "hbm:powder_iron",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ]
+}

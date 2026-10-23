@@ -1,0 +1,36 @@
+{
+  "module": "phosphor-vines255",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "vine_phosphor",
+      "id": "hbm:vine_phosphor",
+      "hasItem": true,
+      "originalClass": "BlockHangingVine",
+      "legacyRegistryId": "hbm:tile.vine_phosphor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1661
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2820
+          },
+          "expression": "register(vine_phosphor)",
+          "arguments": [
+            "vine_phosphor"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "worldMetadataRange": [
+        0
+      ],
+      "maxStackSize": 64,
+      "hasBlockEntity": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.dalekanium",
+  "duration": 200,
+  "power": 100,
+  "order": 14,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:plate_dalekanium",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:block_meteor"
+        }
+      },
+      "count": 1
+    }
+  ]
+}

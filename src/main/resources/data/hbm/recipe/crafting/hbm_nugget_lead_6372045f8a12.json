@@ -1,0 +1,18 @@
+{
+  "result": {
+    "id": "hbm:nugget_lead",
+    "count": 12
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:rod_dual",
+      "components": {
+        "hbm:legacy_metadata": 13
+      },
+      "strict": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:billet_mox_fuel",
+    "count": 3
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:billet_uranium_fuel"
+    },
+    {
+      "item": "hbm:billet_uranium_fuel"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/billetplutonium239"
+    }
+  ]
+}

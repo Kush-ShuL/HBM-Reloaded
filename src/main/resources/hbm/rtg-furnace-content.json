@@ -1,0 +1,50 @@
+{
+  "registered": [
+    {
+      "symbol": "machine_rtg_furnace_off",
+      "id": "hbm:machine_rtg_furnace_off",
+      "itemId": "hbm:machine_rtg_furnace_off",
+      "kind": "block",
+      "originalClass": "MachineRtgFurnace",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1799
+      },
+      "sourceDeprecated": true,
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "viewerHidden": false,
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "machine_rtg_furnace_on",
+      "id": "hbm:machine_rtg_furnace_on",
+      "itemId": "hbm:machine_rtg_furnace_on",
+      "kind": "block",
+      "originalClass": "MachineRtgFurnace",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1800
+      },
+      "sourceDeprecated": true,
+      "creativeTab": null,
+      "worldMetadataRange": [
+        0,
+        15
+      ],
+      "itemMetadata": [
+        0
+      ],
+      "viewerHidden": true,
+      "status": "source-complete-uncompiled",
+      "runtimeValidated": false
+    }
+  ]
+}

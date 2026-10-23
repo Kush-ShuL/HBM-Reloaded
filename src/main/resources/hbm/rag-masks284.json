@@ -1,0 +1,62 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "mask_rag",
+      "id": "hbm:mask_rag",
+      "legacyRegistryId": "hbm:item.mask_rag",
+      "originalClass": "ModArmor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 31
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6194
+          },
+          "expression": "GameRegistry.registerItem(mask_rag, mask_rag.getUnlocalizedName())",
+          "arguments": [
+            "mask_rag",
+            "mask_rag.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.equipment.ragmasks.RagMasksContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "equipmentSlot": "head"
+    },
+    {
+      "kind": "item",
+      "symbol": "mask_piss",
+      "id": "hbm:mask_piss",
+      "legacyRegistryId": "hbm:item.mask_piss",
+      "originalClass": "ModArmor",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 32
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6195
+          },
+          "expression": "GameRegistry.registerItem(mask_piss, mask_piss.getUnlocalizedName())",
+          "arguments": [
+            "mask_piss",
+            "mask_piss.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.equipment.ragmasks.RagMasksContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "equipmentSlot": "head"
+    }
+  ]
+}

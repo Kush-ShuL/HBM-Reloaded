@@ -1,0 +1,36 @@
+package com.hbm.weapon.sedna.gun.heavypowder;
+import java.util.*;
+import java.util.function.*;
+import com.hbm.weapon.sedna.BulletConfig;
+import com.hbm.weapon.sedna.gun.*;
+import com.hbm.weapon.sedna.gun.ItemGunBaseNT.*;
+import com.hbm.weapon.sedna.gun.factory.*;
+import com.hbm.weapon.sedna.gun.mags.*;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing;
+import com.hbm.weapon.sedna.gun.particle.SpentCasing.CasingType;
+import com.hbm.client.animation.bus.*;
+import com.hbm.client.animation.bus.BusAnimationKeyframe.IType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import com.hbm.damage.LegacyEntityDamage;
+import com.hbm.damage.DamageResistanceHandler.DamageClass;
+import com.hbm.weapon.sedna.gun.mods.XWeaponModManager;
+import com.hbm.weapon.sedna.gun.legendary.CasingEffects;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunFactory;
+import com.hbm.weapon.sedna.gun.legendary.LegendaryGunAnimations;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.*;
+import com.hbm.weapon.sedna.gun.pistols.PistolAmmo;
+import com.hbm.entity.projectile.EntityBulletBaseMK4;
+public final class HeavyPowderSounds {
+ public static final String GUN_DRY_FIRE="hbm:weapon.reload.dryFireClick";
+ public static final String GUN_MAG_INSERT="hbm:weapon.reload.magInsert";
+ public static final String GUN_MAG_REMOVE="hbm:weapon.reload.magRemove";
+ public static final String GUN_MAG_SMALL_INSERT="hbm:weapon.reload.magSmallInsert";
+ public static final String GUN_POWDER_FIRE="hbm:weapon.fire.blackPowder";
+ public static final String GUN_REVOLVER_CLOSE="hbm:weapon.reload.revolverClose";
+ public static final String GUN_REVOLVER_COCK="hbm:weapon.reload.revolverCock";
+ public static final String GUN_SHOTGUN_FIRE="hbm:weapon.fire.shotgun";
+ public static final String GUN_SHREDDER_FIRE="hbm:weapon.fire.shotgunAuto";
+}

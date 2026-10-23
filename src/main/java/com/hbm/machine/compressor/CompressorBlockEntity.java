@@ -1,0 +1,71 @@
+package com.hbm.machine.compressor;
+import com.hbm.api.machine.*;
+import com.hbm.energy.*;
+import com.hbm.fluid.*;
+import com.hbm.fluid.network.*;
+import com.hbm.item.battery.*;
+import com.hbm.machine.centrifuge.OverdriveUpgradeItem;
+import com.hbm.machine.electricfurnace.FurnaceUpgradeItem;
+import com.hbm.multiblock.*;
+import java.math.BigInteger;
+import java.util.*;
+import java.util.function.Consumer;
+import net.minecraft.core.*;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.inventory.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+/** Original shared four-slot compressor, strict HE>cost gate, all five special routes and generic compression. */
+public final class CompressorBlockEntity extends BlockEntity implements WorldlyContainer,MenuProvider,NamedMultiblock,EnergyReceiver,SidedEnergyConnector,StandardFluidTransceiver,MachineView,IFluidCopiable, com.hbm.multiblock.MuffledMachine {
+ public static Consumer<CompressorBlockEntity> CLIENT_TICK=m->{};
+ public static final BigInteger CAPACITY=BigInteger.valueOf(100000);
+ private BigInteger power=BigInteger.ZERO;private final ItemStack[] slots=new ItemStack[4];
+ public final FluidTank[] tanks={new FluidTank(HbmFluids.NONE,16000),new FluidTank(HbmFluids.NONE,16000).withPressure(1)};
+ public int progress,processTime=100,powerRequirement;public boolean isOn,muffled,tilted;
+ public float fanSpin,prevFanSpin,piston,prevPiston,randSpeed=.1F;public boolean pistonDir;
+ private Component customName;private CompoundTag lastSentState;
+ private final Map<BlockPos,PowerNode> nodes=new LinkedHashMap<>();private FluidPorts fluidPorts;private List<Port> loadedPorts=List.of();
+ public record Port(BlockPos position,Direction side){}
+ public CompressorBlockEntity(BlockPos pos,BlockState state){super(CompressorContent.ENTITY.get(),pos,state);Arrays.fill(slots,ItemStack.EMPTY);}
+ public boolean compact(){return ((CompressorBlock)getBlockState().getBlock()).compact;}
+ @Override public boolean isValidBlockState(BlockState state){return super.isValidBlockState(state)&&DummyableBlock.isCore(state);}
+ public static List<Port> ports(BlockPos core,Direction facing,boolean compact){if(!compact){Direction rot=facing.getCounterClockWise();return List.of(new Port(core.relative(rot),rot),new Port(core.relative(rot.getOpposite()),rot.getOpposite()),new Port(core.relative(facing.getOpposite()),facing.getOpposite()));}Direction rot=facing.getClockWise();return List.of(new Port(core.relative(rot,3).above(),rot),new Port(core.relative(rot,-3).above(),rot.getOpposite()),new Port(core.relative(facing).relative(rot,-1).above(),facing),new Port(core.relative(facing).relative(rot).above(),facing),new Port(core.relative(facing,-1).relative(rot,-1).above(),facing.getOpposite()),new Port(core.relative(facing,-1).relative(rot).above(),facing.getOpposite()));}
+ public boolean portConnects(BlockPos position,Direction side){return side!=null&&ports(worldPosition,DummyableBlock.facing(getBlockState()),compact()).stream().anyMatch(p->p.position.equals(position)&&p.side==side);}
+ @Override public void setCustomName(Component name){customName=name;setChanged();}@Override public Component getDisplayName(){return customName==null?Component.translatable("container.machineCompressor"):customName;}
+ @Override public AbstractContainerMenu createMenu(int id,Inventory player,Player p){return new CompressorMenu(id,player,this,menuData,worldPosition);}
+ public static void tick(Level level,BlockPos pos,BlockState state,CompressorBlockEntity machine){if(level instanceof ServerLevel server)machine.serverTick(server);else CLIENT_TICK.accept(machine);}
+ public CompressorRecipe special(){return level==null?null:CompressorRecipeConfig.find(level.getRecipeManager(),tanks[0].getTankType(),tanks[0].getPressure());}
+ private void setupTanks(){var recipe=special();if(recipe==null)tanks[1].withPressure(tanks[0].getPressure()+1).setTankType(tanks[0].getTankType());else{var output=recipe.outputFluids().getFirst();tanks[1].withPressure(output.pressure).setTankType(output.type);}}
+ private void serverTick(ServerLevel server){updatePorts(server);chargeBattery();tanks[0].setType(0,slots);setupTanks();int speed=0,saving=0,over=0;for(int index=1;index<=3;index++){var item=slots[index].getItem();if(item instanceof FurnaceUpgradeItem upgrade){if(upgrade.type()==FurnaceUpgradeItem.Type.SPEED)speed+=upgrade.tier();else saving+=upgrade.tier();}else if(item instanceof OverdriveUpgradeItem upgrade)over+=upgrade.tier();}speed=Math.min(3,speed);saving=Math.min(3,saving);over=Math.min(9,over);var rec=special();int base=rec==null?100:rec.duration();processTime=rec==null?(speed==3?10:speed==2?20:speed==1?60:base):base/(speed+1);processTime=Math.max(1,processTime/(over+1));powerRequirement=2500/(saving+1)*(over*2+1);int input=rec==null?1000:rec.inputFluids().getFirst().fill,output=rec==null?1000:rec.outputFluids().getFirst().fill;if(power.compareTo(BigInteger.valueOf(powerRequirement))>0&&tanks[0].getFill()>=input&&(long)tanks[1].getFill()+output<=tanks[1].getMaxFill()){isOn=true;progress++;power=power.subtract(BigInteger.valueOf(powerRequirement));if(progress>=processTime){progress=0;tanks[0].setFill(tanks[0].getFill()-input);tanks[1].setFill(tanks[1].getFill()+output);}setChanged();}else{progress=0;isOn=false;}var tag=getUpdateTag(server.registryAccess());if(!tag.equals(lastSentState)||server.getGameTime()%20==0){lastSentState=tag;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->tag);for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);}}
+ private void chargeBattery(){if(power.signum()<0){power=BigInteger.ZERO;return;}if(power.compareTo(CAPACITY)>0){power=CAPACITY;return;}if(slots[1].getItem() instanceof CreativeBatteryItem){power=CAPACITY;return;}if(slots[1].getItem() instanceof HbmBattery battery){long amount=Math.min(Math.min(CAPACITY.subtract(power).longValueExact(),battery.getDischargeRate(slots[1])),battery.getCharge(slots[1]));battery.dischargeBattery(slots[1],amount);power=power.add(BigInteger.valueOf(amount));if(amount>0)setChanged();}}
+ public void compression(int value){if(value<0||value>4||value==tanks[0].getPressure())return;tanks[0].withPressure(value);var rec=special();if(rec==null)tanks[1].withPressure(value+1);else{var output=rec.outputFluids().getFirst();tanks[1].withPressure(output.pressure).setTankType(output.type);}setChanged();}
+ private void updatePorts(ServerLevel server){var current=new ArrayList<Port>();for(var p:ports(worldPosition,DummyableBlock.facing(getBlockState()),compact()))if(server.hasChunkAt(p.position)&&server.getBlockState(p.position).is(getBlockState().getBlock())&&DummyableBlock.isPort(server.getBlockState(p.position)))current.add(p);if(!current.equals(loadedPorts)||nodes.values().stream().anyMatch(PowerNode::isExpired)){disconnect();loadedPorts=List.copyOf(current);var connections=new ArrayList<NodeConnection>();for(var p:current){var connection=new NodeConnection(p.position.relative(p.side),p.side);var node=new PowerNode(p.position).setConnections(connection);HbmEnergy.nodespace(server).createNode(node);nodes.put(p.position,node);connections.add(connection);}if(!current.isEmpty())fluidPorts=new FluidPorts(current.stream().map(Port::position).toArray(BlockPos[]::new),connections.toArray(NodeConnection[]::new));}if(fluidPorts!=null)fluidPorts.update(server,this);for(var node:nodes.values())if(node.hasValidNet())node.addReceiver(this);}
+ private void disconnect(){if(level instanceof ServerLevel server){for(var node:nodes.values())HbmEnergy.nodespace(server).destroyNode(node);if(fluidPorts!=null)fluidPorts.remove(server);}nodes.clear();fluidPorts=null;loadedPorts=List.of();}
+ @Override public void setRemoved(){disconnect();super.setRemoved();}@Override public void onChunkUnloaded(){disconnect();super.onChunkUnloaded();}
+ @Override public boolean isLoaded(){return !isRemoved()&&level!=null&&level.hasChunkAt(worldPosition);}@Override public boolean canConnect(Direction side){return side!=null;}@Override public boolean canConnect(HbmFluidType type,Direction side){return side!=null;}
+ @Override public long getPower(){return power.longValueExact();}@Override public long getMaxPower(){return 100000;}@Override public void setPower(long amount){setPowerExact(BigInteger.valueOf(amount));}@Override public BigInteger getPowerExact(){return power;}@Override public BigInteger getMaxPowerExact(){return CAPACITY;}@Override public void setPowerExact(BigInteger amount){power=amount;setChanged();}
+ @Override public FluidTank[] getAllTanks(){return tanks;}@Override public FluidTank[] getReceivingTanks(){return new FluidTank[]{tanks[0]};}@Override public FluidTank[] getSendingTanks(){return new FluidTank[]{tanks[1]};}@Override public long getProviderSpeed(HbmFluidType type,int pressure){return 1000000000L;}@Override public long getReceiverSpeed(HbmFluidType type,int pressure){return 1000000000L;}
+ @Override public long transferFluid(HbmFluidType type,int pressure,long amount){long rejected=StandardFluidTransceiver.super.transferFluid(type,pressure,amount);if(rejected!=amount)setChanged();return rejected;}@Override public void useUpFluid(HbmFluidType type,int pressure,long amount){StandardFluidTransceiver.super.useUpFluid(type,pressure,amount);if(amount>0)setChanged();}
+ @Override public long energyStored(){return getPower();}@Override public long energyCapacity(){return 100000;}@Override public List<TankView> tanks(){return Arrays.stream(tanks).map(t->new TankView(t.getTankType(),t.getFill(),t.getMaxFill())).toList();}@Override public List<ProgressView> progressBars(){return List.of(new ProgressView("jade.hbm.processing",progress,processTime,0x71c78b));}
+ @Override public CompoundTag getSettings(Level level,BlockPos pos){var tag=IFluidCopiable.super.getSettings(level,pos);tag.putInt("compression",tanks[0].getPressure());return tag;}@Override public void pasteSettings(CompoundTag tag,int index,Level level,Player player,BlockPos pos){if(tag.contains("compression"))compression(tag.getInt("compression"));IFluidCopiable.super.pasteSettings(tag,index,level,player,pos);}
+ private void saveState(CompoundTag tag){tag.putLong("power",getPower());tag.putString("powerExact",power.toString());tag.putInt("progress",progress);tanks[0].writeToNBT(tag,"0");tanks[1].writeToNBT(tag,"1");tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);}
+ private void loadState(CompoundTag tag){power=tag.contains("powerExact")?new BigInteger(tag.getString("powerExact")):BigInteger.valueOf(tag.getLong("power"));progress=tag.getInt("progress");tanks[0].readFromNBT(tag,"0");tanks[1].readFromNBT(tag,"1");muffled=tag.getBoolean("muffled");tilted=tag.getBoolean("tilted");}
+ @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);var inventory=NonNullList.withSize(4,ItemStack.EMPTY);for(int i=0;i<4;i++)inventory.set(i,slots[i]);ContainerHelper.saveAllItems(tag,inventory,lookup);saveState(tag);if(customName!=null)tag.putString("CustomName",Component.Serializer.toJson(customName,lookup));}
+ @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);var inventory=NonNullList.withSize(4,ItemStack.EMPTY);ContainerHelper.loadAllItems(tag,inventory,lookup);for(int i=0;i<4;i++)slots[i]=inventory.get(i);loadState(tag);if(tag.contains("CustomName"))customName=Component.Serializer.fromJson(tag.getString("CustomName"),lookup);}
+ @Override public CompoundTag getUpdateTag(HolderLookup.Provider lookup){var tag=new CompoundTag();saveState(tag);tag.putBoolean("isOn",isOn);tag.putInt("processTime",processTime);tag.putInt("powerRequirement",powerRequirement);return tag;}@Override public void handleUpdateTag(CompoundTag tag,HolderLookup.Provider lookup){loadState(tag);isOn=tag.getBoolean("isOn");processTime=tag.getInt("processTime");powerRequirement=tag.getInt("powerRequirement");}
+ @Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}@Override public void onDataPacket(net.minecraft.network.Connection conn,ClientboundBlockEntityDataPacket packet,HolderLookup.Provider lookup){handleUpdateTag(packet.getTag(),lookup);}
+ @Override public int getContainerSize(){return 4;}@Override public boolean isEmpty(){return Arrays.stream(slots).allMatch(ItemStack::isEmpty);}@Override public ItemStack getItem(int slot){return slots[slot];}@Override public ItemStack removeItem(int slot,int count){var result=slots[slot].split(count);if(!result.isEmpty())setChanged();return result;}@Override public ItemStack removeItemNoUpdate(int slot){var result=slots[slot];slots[slot]=ItemStack.EMPTY;return result;}@Override public void setItem(int slot,ItemStack stack){slots[slot]=stack;setChanged();}@Override public void clearContent(){Arrays.fill(slots,ItemStack.EMPTY);setChanged();}
+ @Override public boolean stillValid(Player player){return level!=null&&level.getBlockEntity(worldPosition)==this&&player.distanceToSqr(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5)<=144;}
+ @Override public boolean canPlaceItem(int slot,ItemStack stack){return false;}@Override public int[] getSlotsForFace(Direction side){return new int[0];}@Override public boolean canPlaceItemThroughFace(int slot,ItemStack stack,Direction side){return false;}@Override public boolean canTakeItemThroughFace(int slot,ItemStack stack,Direction side){return false;}
+ private final ContainerData menuData=new ContainerData(){public int getCount(){return 4;}public int get(int index){return(int)(getPower()>>>(index*16))&65535;}public void set(int i,int value){}};
+
+ @Override public boolean isMuffled(){return muffled;}
+ @Override public void setMuffled(boolean value){muffled=value;}
+}

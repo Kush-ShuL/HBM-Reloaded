@@ -1,0 +1,38 @@
+{
+  "result": {
+    "id": "hbm:memespoon",
+    "count": 1,
+    "components": {
+      "minecraft:damage": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CGC",
+    "PSP",
+    "IAI"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:powder_yellowcake"
+    },
+    "G": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/blockthorium232"
+    },
+    "P": {
+      "item": "hbm:photo_panel"
+    },
+    "S": {
+      "item": "hbm:steel_shovel"
+    },
+    "I": {
+      "item": "hbm:plate_polymer"
+    },
+    "A": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotaustralium"
+    }
+  }
+}

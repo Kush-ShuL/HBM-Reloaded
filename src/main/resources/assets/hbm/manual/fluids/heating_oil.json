@@ -1,0 +1,25 @@
+{
+  "name": "Heating Oil",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    15
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      15
+    ]
+  ],
+  "title": {
+    "en_US": "Heating Oil",
+    "ru_RU": "Мазут",
+    "zh_CN": "燃油"
+  },
+  "content": {
+    "en_US": "Heating oil can first be obtained by [[fractioning|Fractioning Tower]] [[naphtha|Naphtha]] or [[industrial oil|Industrial Oil]]. It is primarily used as an ingredient in [[engine lubricant|Engine Lubricant]] or as an early [[fuel|Fuels]] source.<br><br>{{Template:Oil1}}",
+    "ru_RU": "Мазут можно впервые получить путём [[ректификации|Fractioning Tower]] [[нафты|Naphtha]] или [[промышленного масла|Industrial Oil]]. Он в основном используется в качестве ингредиента для [[моторного масла|Engine Lubricant]] или как ранний источник [[топлива|Fuels]].<br><br>{{Template:Oil1}}",
+    "zh_CN": "最初可在[[分馏塔|Fractioning Tower]]中处理[[石脑油|Naphtha]]或[[工业油|Industrial Oil]]获得。它主要用作[[润滑油|Engine Lubricant]]的原料，也可作为早期的[[燃料|Fuels]]。<br><br>{{Template:Oil1}}"
+  }
+}

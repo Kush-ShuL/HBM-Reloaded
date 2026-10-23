@@ -1,0 +1,20 @@
+{
+  "result": {
+    "id": "hbm:mine_shrap",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "L",
+    "M"
+  ],
+  "key": {
+    "M": {
+      "item": "hbm:mine_ap"
+    },
+    "L": {
+      "item": "hbm:pellet_buckshot"
+    }
+  }
+}

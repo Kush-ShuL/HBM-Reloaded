@@ -1,0 +1,249 @@
+{
+  "entries": [
+    {
+      "symbol": "red_connector",
+      "id": "hbm:red_connector",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.ConnectorRedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1865
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_connector_super",
+      "id": "hbm:red_connector_super",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.ConnectorRedWireSuper",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1866
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon",
+      "id": "hbm:red_pylon",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonRedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1867
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon_steel",
+      "id": "hbm:red_pylon_steel",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonRedWire",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1868
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon_medium_wood",
+      "id": "hbm:red_pylon_medium_wood",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonMedium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1869
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon_medium_wood_transformer",
+      "id": "hbm:red_pylon_medium_wood_transformer",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonMedium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1870
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon_medium_steel",
+      "id": "hbm:red_pylon_medium_steel",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonMedium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1871
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon_medium_steel_transformer",
+      "id": "hbm:red_pylon_medium_steel_transformer",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonMedium",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1872
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "red_pylon_large",
+      "id": "hbm:red_pylon_large",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.PylonLarge",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1873
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "substation",
+      "id": "hbm:substation",
+      "kind": "block",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.blocks.network.Substation",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1874
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "wiring_red_copper",
+      "id": "hbm:wiring_red_copper",
+      "kind": "item",
+      "module": "power-pylons",
+      "originalClass": "com.hbm.items.tool.ItemWiring",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2642
+      },
+      "variants": 1,
+      "runtimeValidated": false
+    }
+  ],
+  "hooks": {
+    "register": "PylonContent.register(IEventBus,ModContainer)",
+    "creative": "PylonContent.creativeStacks(String tab)",
+    "pickaxeTag": "hbm:mineable/pickaxe_pylons",
+    "axeTag": "hbm:mineable/axe_pylons",
+    "client": "Automatic mod-bus renderers/item extension and game-bus inventory HUD subscriber",
+    "jade": "Automatic optional @WailaPlugin, server-authoritative link count even when targeting dummy parts",
+    "energy": "NativeHE EnergyConductor and original UNKNOWN-direction remote declarations, never FE/RF/EU",
+    "config": "Client hbm-wires-client.toml: RENDER_CABLE_HANG default true, original INFO_POSITION / INFO_OFFSET_HORIZONTAL / INFO_OFFSET_VERTICAL defaults zero"
+  },
+  "creative": {
+    "machine": [
+      "hbm:red_connector",
+      "hbm:red_connector_super",
+      "hbm:red_pylon",
+      "hbm:red_pylon_steel",
+      "hbm:red_pylon_medium_wood",
+      "hbm:red_pylon_medium_wood_transformer",
+      "hbm:red_pylon_medium_steel",
+      "hbm:red_pylon_medium_steel_transformer",
+      "hbm:red_pylon_large",
+      "hbm:substation"
+    ],
+    "parts": [
+      "hbm:wiring_red_copper"
+    ]
+  },
+  "pylons": [
+    {
+      "symbol": "red_connector",
+      "wireCount": 1,
+      "range": 10
+    },
+    {
+      "symbol": "red_connector_super",
+      "wireCount": 1,
+      "range": 100
+    },
+    {
+      "symbol": "red_pylon",
+      "wireCount": 1,
+      "range": 25
+    },
+    {
+      "symbol": "red_pylon_steel",
+      "wireCount": 1,
+      "range": 25
+    },
+    {
+      "symbol": "red_pylon_medium_wood",
+      "wireCount": 3,
+      "range": 45
+    },
+    {
+      "symbol": "red_pylon_medium_wood_transformer",
+      "wireCount": 3,
+      "range": 45
+    },
+    {
+      "symbol": "red_pylon_medium_steel",
+      "wireCount": 3,
+      "range": 45
+    },
+    {
+      "symbol": "red_pylon_medium_steel_transformer",
+      "wireCount": 3,
+      "range": 45
+    },
+    {
+      "symbol": "red_pylon_large",
+      "wireCount": 4,
+      "range": 100
+    },
+    {
+      "symbol": "substation",
+      "wireCount": 4,
+      "range": 20
+    }
+  ],
+  "wire": {
+    "tool": "wiring_red_copper",
+    "maxStackSize": 64,
+    "consumedOnConnect": false,
+    "startDataKeys": [
+      "x",
+      "y",
+      "z"
+    ],
+    "hasDimensionKey": false,
+    "maxViewDistance": 256,
+    "halfSegments": 10,
+    "girth": 0.03125,
+    "sag": "min(halfLineLength/15,2.5)",
+    "repeatedTexture": "ceil(segmentLength*8) with original direction sign"
+  },
+  "sourceNames": {
+    "tool": "ItemWiring",
+    "noSourceClass": [
+      "WireSystem",
+      "ItemWireCoil"
+    ]
+  }
+}

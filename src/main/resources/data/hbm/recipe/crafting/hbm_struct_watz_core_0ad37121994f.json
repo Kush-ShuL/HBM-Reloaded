@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "hbm:struct_watz_core",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CBC",
+    "BHB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_advanced"
+    },
+    "B": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+    },
+    "H": {
+      "item": "hbm:watz_cooler"
+    }
+  }
+}

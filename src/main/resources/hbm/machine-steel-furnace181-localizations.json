@@ -1,0 +1,24 @@
+{
+  "en_us": {
+    "tile.furnace_steel.name": "Steel Furnace",
+    "tile.furnace_steel.desc": "Very large furnace that can provide bonus items$when smelting ores. Requires external heat source.$Heat transfer rate: ΔT*0.05 TU/t$(Δ means difference and T means temperature)",
+    "container.furnaceSteel": "Steel Furnace",
+    "block.hbm.furnace_steel": "Steel Furnace",
+    "gui.hbm.steel_furnace.heat": "Heat",
+    "gui.hbm.steel_furnace.bonus": "Bonus: %s%%",
+    "gui.hbm.steel_furnace.progress1": "Process 1",
+    "gui.hbm.steel_furnace.progress2": "Process 2",
+    "gui.hbm.steel_furnace.progress3": "Process 3"
+  },
+  "zh_cn": {
+    "tile.furnace_steel.name": "钢炉",
+    "tile.furnace_steel.desc": "非常大的熔炉，冶炼矿石时可提供加成。$需要外部热源$传热率：ΔT*0.05tu/T$（Δ表示差值，T表示温度）",
+    "container.furnaceSteel": "钢炉",
+    "block.hbm.furnace_steel": "钢炉",
+    "gui.hbm.steel_furnace.heat": "热量",
+    "gui.hbm.steel_furnace.bonus": "额外产量：%s%%",
+    "gui.hbm.steel_furnace.progress1": "加工进度 1",
+    "gui.hbm.steel_furnace.progress2": "加工进度 2",
+    "gui.hbm.steel_furnace.progress3": "加工进度 3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "result": {
+    "id": "hbm:rbmk_terminal",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "R ",
+    "CD",
+    "B "
+  ],
+  "key": {
+    "R": {
+      "item": "hbm:radio_torch_sender"
+    },
+    "B": {
+      "item": "hbm:rbmk_display_blank"
+    },
+    "C": {
+      "item": "hbm:circuit_analog"
+    },
+    "D": {
+      "item": "hbm:crt_display"
+    }
+  }
+}

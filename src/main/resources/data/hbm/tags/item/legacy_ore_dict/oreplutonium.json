@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ore_nether_plutonium",
+    {
+      "id": "#c:ores/plutonium",
+      "required": false
+    }
+  ]
+}

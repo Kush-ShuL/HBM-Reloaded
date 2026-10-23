@@ -1,0 +1,11 @@
+{
+  "parent": "hbm:block/vinyl_tile_large",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/vinyl_tile_small"
+    }
+  ]
+}

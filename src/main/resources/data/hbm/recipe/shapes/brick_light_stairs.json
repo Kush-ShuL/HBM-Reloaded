@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:brick_light"
+    }
+  },
+  "result": {
+    "id": "hbm:brick_light_stairs",
+    "count": 4
+  }
+}

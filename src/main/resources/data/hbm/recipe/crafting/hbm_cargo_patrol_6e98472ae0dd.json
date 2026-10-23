@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:drone",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "category": "misc",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E",
+    "D"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "D": {
+      "type": "neoforge:components",
+      "items": "hbm:drone",
+      "components": {
+        "hbm:legacy_metadata": 2
+      },
+      "strict": false
+    }
+  }
+}

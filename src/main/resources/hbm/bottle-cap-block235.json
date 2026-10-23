@@ -1,0 +1,48 @@
+{
+  "module": "bottle-cap-block235",
+  "entries": [
+    {
+      "kind": "block",
+      "symbol": "block_cap",
+      "id": "hbm:block_cap",
+      "legacyRegistryId": "hbm:tile.block_cap",
+      "originalClass": "BlockCap",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1431
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2584
+          },
+          "expression": "register(block_cap)",
+          "arguments": [
+            "block_cap"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "metadataRange": [
+        0,
+        5
+      ],
+      "names": [
+        "nuka",
+        "quantum",
+        "sparkle",
+        "rad",
+        "korl",
+        "fritz"
+      ],
+      "enumClass": "EnumCapBlock",
+      "stateMetadataRange": [
+        0,
+        15
+      ],
+      "hasBlockEntity": false
+    }
+  ]
+}

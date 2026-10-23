@@ -1,0 +1,25 @@
+{
+  "name": "Biogas",
+  "icon": [
+    "hbm:item.fluid_icon",
+    1,
+    26
+  ],
+  "trigger": [
+    [
+      "hbm:item.fluid_icon",
+      1,
+      26
+    ]
+  ],
+  "title": {
+    "en_US": "Biogas",
+    "ru_RU": "Биогаз",
+    "zh_CN": "沼气"
+  },
+  "content": {
+    "en_US": "Biogas can be obtained by [[combining|Chemical Plant]] biomass with [[compressed air|Compressed Air]]. Through [[mixing|Chemical Plant]] with [[ethanol|Ethanol]] it can be used to produce [[biofuel|Biofuel]]. Addtionally, it may also be used to create additional [[petroleum gas|Petroleum Gas]] and [[aromatic hydrocarbons|Aromatic Hydrocarbons]]. It may also be produced by [[liquifying|Liquification Machine]] biomass.",
+    "ru_RU": "Биогаз можно получить путем [[объединения|Chemical Plant]] биомассы со [[сжатым воздухом|Compressed Air]]. Путем [[смешивания|Chemical Plant]] с [[этанолом|Ethanol]] его можно использовать для производства [[биотоплива|Biofuel]]. Кроме того, его можно применять для создания дополнительного [[попутного нефтяного газа|Petroleum Gas]] и [[ароматических углеводородов|Aromatic Hydrocarbons]]. Его также можно получить путем [[сжижения|Liquification Machine]] биомассы.",
+    "zh_CN": "在[[化工厂|Chemical Plant]]中将生物质与[[压缩空气|Compressed Air]]混合，可制得沼气。它可与[[乙醇|Ethanol]]在[[化工厂|Chemical Plant]]中混合，制成[[生物燃料|Biofuel]]。此外，它也可用于增产[[石油气|Petroleum Gas]]和[[芳香烃|Aromatic Hydrocarbons]]。在[[液化机|Liquification Machine]]中液化生物质同样可以制得沼气。"
+  }
+}

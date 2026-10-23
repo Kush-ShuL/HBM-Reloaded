@@ -1,0 +1,33 @@
+{
+  "result": {
+    "id": "hbm:mp_warhead_15_boxcar",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SNS",
+    "CBC",
+    "SFS"
+  ],
+  "key": {
+    "S": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+    },
+    "N": {
+      "item": "hbm:det_nuke"
+    },
+    "C": {
+      "item": "hbm:circuit_advanced"
+    },
+    "B": {
+      "item": "hbm:boxcar"
+    },
+    "F": {
+      "type": "hbm:source_fluid_container",
+      "fluid": "TRITIUM",
+      "amount": 16000
+    }
+  }
+}

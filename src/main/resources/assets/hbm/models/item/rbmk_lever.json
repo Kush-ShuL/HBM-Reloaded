@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_panel_inventory",
+  "textures": {
+    "all": "hbm:block/rbmk/rbmk_display",
+    "particle": "hbm:block/rbmk/rbmk_display",
+    "lever": "hbm:block/rbmk/panel_lever"
+  },
+  "overlays": [
+    {
+      "model": "hbm:models/rbmk/lever.obj",
+      "texture": "lever",
+      "uv_scale": [
+        0.625,
+        0.9375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0,
+            0.25
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/lever.obj",
+      "texture": "lever",
+      "uv_scale": [
+        0.625,
+        0.9375
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0,
+            -0.25
+          ]
+        }
+      ]
+    }
+  ]
+}

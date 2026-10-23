@@ -1,0 +1,28 @@
+{
+  "en_us": {
+    "container.radiolysis": "RTG and Radiolysis Chamber",
+    "desc.gui.radiolysis.desc": "§9Description§r$This RTG is more efficient then others, and$comes equipped with a radiolysis chamber for$cracking and sterilization.",
+    "desc.gui.rtg.heat": "§eCurrent heat level: %s",
+    "desc.gui.rtg.pellets": "Accepted Pellets:",
+    "desc.gui.rtg.pelletHeat": "%s (%s heat)",
+    "desc.gui.rtg.pelletPower": "%s (%s HE/tick)",
+    "tile.machine_radiolysis.name": "Radioisotope Thermoelectric Generator and Radiolysis Chamber",
+    "block.hbm.machine_radiolysis": "Radioisotope Thermoelectric Generator and Radiolysis Chamber",
+    "jei.hbm.radiolysis": "Radiolysis",
+    "config.jade.plugin_hbm.radiolysis_state": "RTG and radiolysis status",
+    "jade.hbm.radiolysis.output": "Output: %s HE/tick"
+  },
+  "zh_cn": {
+    "container.radiolysis": "RTG辐射裂解室",
+    "desc.gui.radiolysis.desc": "§9说明§r$该RTG比其他RTG更高效，$并且配备了一个用于$裂解和灭菌的辐解室。",
+    "desc.gui.rtg.heat": "§e当前热等级：%s",
+    "desc.gui.rtg.pellets": "接受的靶丸：",
+    "desc.gui.rtg.pelletHeat": "%s (%s 热量)",
+    "desc.gui.rtg.pelletPower": "%s (%s HE/刻)",
+    "tile.machine_radiolysis.name": "放射性同位素热电机和辐射裂解室",
+    "block.hbm.machine_radiolysis": "放射性同位素热电机和辐射裂解室",
+    "jei.hbm.radiolysis": "辐射裂解",
+    "config.jade.plugin_hbm.radiolysis_state": "RTG 辐解室状态",
+    "jade.hbm.radiolysis.output": "输出：%s HE/刻"
+  }
+}

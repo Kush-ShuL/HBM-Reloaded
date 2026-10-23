@@ -1,0 +1,35 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "neoforge:components",
+    "items": "hbm:bedrock_ore",
+    "components": {
+      "hbm:legacy_metadata": 162
+    },
+    "strict": false
+  },
+  "exact_input": true,
+  "results": [
+    {
+      "id": "hbm:bedrock_ore_fragment",
+      "count": 5,
+      "components": {
+        "hbm:legacy_metadata": 2700
+      }
+    },
+    {
+      "id": "hbm:bedrock_ore_fragment",
+      "count": 5,
+      "components": {
+        "hbm:legacy_metadata": 20000
+      }
+    },
+    {
+      "id": "hbm:bedrock_ore",
+      "count": 1,
+      "components": {
+        "hbm:legacy_metadata": 210
+      }
+    }
+  ]
+}

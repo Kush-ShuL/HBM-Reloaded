@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:chemical_dye",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 4
+        }
+      }
+    },
+    {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:chemical_dye",
+        "count": 1,
+        "components": {
+          "hbm:legacy_metadata": 15
+        }
+      }
+    }
+  ],
+  "result": {
+    "id": "hbm:chemical_dye",
+    "count": 2,
+    "components": {
+      "hbm:legacy_metadata": 12
+    }
+  }
+}

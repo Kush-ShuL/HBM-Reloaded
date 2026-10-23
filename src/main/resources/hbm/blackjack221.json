@@ -1,0 +1,171 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "bj_helmet",
+      "id": "hbm:bj_helmet",
+      "legacyRegistryId": "hbm:item.bj_helmet",
+      "originalClass": "ArmorBJ",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 223
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6251
+          },
+          "expression": "GameRegistry.registerItem(bj_helmet, bj_helmet.getUnlocalizedName())",
+          "arguments": [
+            "bj_helmet",
+            "bj_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.blackjack.BlackjackContent",
+      "creativeTab": "minecraft:combat",
+      "maxStackSize": 1,
+      "damageItem": true
+    },
+    {
+      "kind": "item",
+      "symbol": "bj_plate",
+      "id": "hbm:bj_plate",
+      "legacyRegistryId": "hbm:item.bj_plate",
+      "originalClass": "ArmorBJ",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 237
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6252
+          },
+          "expression": "GameRegistry.registerItem(bj_plate, bj_plate.getUnlocalizedName())",
+          "arguments": [
+            "bj_plate",
+            "bj_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.blackjack.BlackjackContent",
+      "creativeTab": "minecraft:combat",
+      "maxStackSize": 1,
+      "damageItem": true
+    },
+    {
+      "kind": "item",
+      "symbol": "bj_plate_jetpack",
+      "id": "hbm:bj_plate_jetpack",
+      "legacyRegistryId": "hbm:item.bj_plate_jetpack",
+      "originalClass": "ArmorBJJetpack",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 238
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6253
+          },
+          "expression": "GameRegistry.registerItem(bj_plate_jetpack, bj_plate_jetpack.getUnlocalizedName())",
+          "arguments": [
+            "bj_plate_jetpack",
+            "bj_plate_jetpack.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.blackjack.BlackjackContent",
+      "creativeTab": "minecraft:combat",
+      "maxStackSize": 1,
+      "damageItem": true
+    },
+    {
+      "kind": "item",
+      "symbol": "bj_legs",
+      "id": "hbm:bj_legs",
+      "legacyRegistryId": "hbm:item.bj_legs",
+      "originalClass": "ArmorBJ",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 239
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6254
+          },
+          "expression": "GameRegistry.registerItem(bj_legs, bj_legs.getUnlocalizedName())",
+          "arguments": [
+            "bj_legs",
+            "bj_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.blackjack.BlackjackContent",
+      "creativeTab": "minecraft:combat",
+      "maxStackSize": 1,
+      "damageItem": true
+    },
+    {
+      "kind": "item",
+      "symbol": "bj_boots",
+      "id": "hbm:bj_boots",
+      "legacyRegistryId": "hbm:item.bj_boots",
+      "originalClass": "ArmorBJ",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 240
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6255
+          },
+          "expression": "GameRegistry.registerItem(bj_boots, bj_boots.getUnlocalizedName())",
+          "arguments": [
+            "bj_boots",
+            "bj_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.blackjack.BlackjackContent",
+      "creativeTab": "minecraft:combat",
+      "maxStackSize": 1,
+      "damageItem": true
+    },
+    {
+      "kind": "item",
+      "symbol": "pancake",
+      "id": "hbm:pancake",
+      "legacyRegistryId": "hbm:item.pancake",
+      "originalClass": "ItemPancake",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3633
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5999
+          },
+          "expression": "GameRegistry.registerItem(pancake, pancake.getUnlocalizedName())",
+          "arguments": [
+            "pancake",
+            "pancake.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.blackjack.BlackjackContent",
+      "creativeTab": "consumable",
+      "maxStackSize": 64
+    }
+  ]
+}

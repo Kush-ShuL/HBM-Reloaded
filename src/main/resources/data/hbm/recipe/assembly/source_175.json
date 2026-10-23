@@ -1,0 +1,34 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.pilepobe",
+  "duration": 40,
+  "power": 200,
+  "order": 48,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:pile_rod",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:billet_po210be"
+        }
+      },
+      "count": 3
+    }
+  ],
+  "group": "autoswitch.pilerod"
+}

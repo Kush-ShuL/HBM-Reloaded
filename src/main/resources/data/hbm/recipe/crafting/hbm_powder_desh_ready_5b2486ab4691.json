@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:powder_desh_ready",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:powder_desh_mix"
+    },
+    {
+      "item": "hbm:nugget_mercury"
+    },
+    {
+      "item": "hbm:nugget_mercury"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustcoal"
+    }
+  ]
+}

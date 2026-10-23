@@ -1,0 +1,653 @@
+{
+  "recipes": [
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 48
+      },
+      "expression": "addRecipe(IRON, COAL, new ItemStack(ModItems.ingot_steel, 1))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_000_48",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotiron"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plateiron"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemiron"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustiron"
+            }
+          ]
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platecoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemcoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustcoal"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:ingot_steel",
+          "count": 1
+        },
+        "order": 0
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 49
+      },
+      "expression": "addRecipe(IRON, ANY_COKE, new ItemStack(ModItems.ingot_steel, 1))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_001_49",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotiron"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plateiron"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemiron"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustiron"
+            }
+          ]
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotanycoke"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plateanycoke"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemanycoke"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustanycoke"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:ingot_steel",
+          "count": 1
+        },
+        "order": 1
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 50
+      },
+      "expression": "addRecipe(IRON.ore(), COAL, new ItemStack(ModItems.ingot_steel, 2))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_002_50",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/oreiron"
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platecoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemcoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustcoal"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:ingot_steel",
+          "count": 2
+        },
+        "order": 2
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 51
+      },
+      "expression": "addRecipe(IRON.ore(), ANY_COKE, new ItemStack(ModItems.ingot_steel, 3))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_003_51",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/oreiron"
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotanycoke"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plateanycoke"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemanycoke"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustanycoke"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:ingot_steel",
+          "count": 3
+        },
+        "order": 3
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 52
+      },
+      "expression": "addRecipe(IRON.ore(), new ComparableStack(ModItems.powder_flux), new ItemStack(ModItems.ingot_steel, 3))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_004_52",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/oreiron"
+        },
+        "second": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:powder_flux",
+            "count": 1
+          }
+        },
+        "result": {
+          "id": "hbm:ingot_steel",
+          "count": 3
+        },
+        "order": 4
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 54
+      },
+      "expression": "addRecipe(CU, REDSTONE, new ItemStack(ModItems.ingot_red_copper, 2))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_005_54",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcopper"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platecopper"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemcopper"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustcopper"
+            }
+          ]
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotredstone"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/plateredstone"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemredstone"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustredstone"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:ingot_red_copper",
+          "count": 2
+        },
+        "order": 5
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 55
+      },
+      "expression": "addRecipe(new ComparableStack(ModItems.canister_full, 1, Fluids.GASOLINE.getID()), \"slimeball\", new ItemStack(ModItems.canister_napalm))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_006_55",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:canister_full",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 46,
+              "hbm:fluid_type": 46
+            }
+          }
+        },
+        "second": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/slimeball"
+        },
+        "result": {
+          "id": "hbm:canister_napalm",
+          "count": 1
+        },
+        "order": 6
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 56
+      },
+      "expression": "addRecipe(W, SA326.nugget(), new ItemStack(ModItems.ingot_magnetized_tungsten))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_007_56",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingottungsten"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platetungsten"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemtungsten"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dusttungsten"
+            }
+          ]
+        },
+        "second": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+        },
+        "result": {
+          "id": "hbm:ingot_magnetized_tungsten",
+          "count": 1
+        },
+        "order": 7
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 57
+      },
+      "expression": "addRecipe(STEEL, TC99.nugget(), new ItemStack(ModItems.ingot_tcalloy))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_008_57",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotsteel"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platesteel"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemsteel"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/duststeel"
+            }
+          ]
+        },
+        "second": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+        },
+        "result": {
+          "id": "hbm:ingot_tcalloy",
+          "count": 1
+        },
+        "order": 8
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 58
+      },
+      "expression": "addRecipe(GOLD.plate(), ModItems.plate_mixed, new ItemStack(ModItems.plate_paa, 2))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_009_58",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:legacy_ore_dict",
+          "tag": "hbm:legacy_ore_dict/plategold"
+        },
+        "second": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:plate_mixed",
+            "count": 1
+          }
+        },
+        "result": {
+          "id": "hbm:plate_paa",
+          "count": 2
+        },
+        "order": 9
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 59
+      },
+      "expression": "addRecipe(BIGMT, ModItems.ingot_meteorite, new ItemStack(ModItems.ingot_starmetal, 2))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_010_59",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platesaturnite"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemsaturnite"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustsaturnite"
+            }
+          ]
+        },
+        "second": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:ingot_meteorite",
+            "count": 1
+          }
+        },
+        "result": {
+          "id": "hbm:ingot_starmetal",
+          "count": 2
+        },
+        "order": 10
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 60
+      },
+      "expression": "addRecipe(CO, ModItems.powder_meteorite, new ItemStack(ModItems.ingot_meteorite))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_011_60",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platecobalt"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemcobalt"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustcobalt"
+            }
+          ]
+        },
+        "second": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:powder_meteorite",
+            "count": 1
+          }
+        },
+        "result": {
+          "id": "hbm:ingot_meteorite",
+          "count": 1
+        },
+        "order": 11
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 61
+      },
+      "expression": "addRecipe(ModItems.meteorite_sword_hardened, CO, new ItemStack(ModItems.meteorite_sword_alloyed))",
+      "migration": {
+        "status": "implemented_native_recipe"
+      },
+      "id": "hbm:alloy/source_012_61",
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:meteorite_sword_hardened",
+            "count": 1
+          }
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platecobalt"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemcobalt"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustcobalt"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:meteorite_sword_alloyed",
+          "count": 1
+        },
+        "order": 12,
+        "hidden": true
+      }
+    },
+    {
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/inventory/recipes/BlastFurnaceRecipes.java",
+        "line": 64
+      },
+      "expression": "addRecipe(ModItems.canister_empty, COAL, new ItemStack(ModItems.canister_full, 1, Fluids.OIL.getID()))",
+      "migration": {
+        "status": "implemented_conditional_runtime_recipe",
+        "condition": "enableLBSM && enableLBSMSimpleChemsitry"
+      },
+      "sourceControl": [
+        "if(GeneralConfig.enableLBSM && GeneralConfig.enableLBSMSimpleChemsitry)"
+      ],
+      "recipe": {
+        "type": "hbm:alloy",
+        "first": {
+          "type": "hbm:alloy_legacy_stack",
+          "stack": {
+            "id": "hbm:canister_empty",
+            "count": 1
+          }
+        },
+        "second": {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/ingotcoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/platecoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/gemcoal"
+            },
+            {
+              "type": "hbm:legacy_ore_dict",
+              "tag": "hbm:legacy_ore_dict/dustcoal"
+            }
+          ]
+        },
+        "result": {
+          "id": "hbm:canister_full",
+          "count": 1,
+          "components": {
+            "hbm:legacy_metadata": 10,
+            "hbm:fluid_type": 10
+          }
+        },
+        "order": 13
+      }
+    }
+  ]
+}

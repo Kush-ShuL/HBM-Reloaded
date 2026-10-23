@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "CC ",
+    " I ",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "tag": "hbm:legacy_ore_dict/platecopper"
+    },
+    "I": {
+      "tag": "hbm:legacy_ore_dict/ingotiron"
+    }
+  },
+  "result": {
+    "id": "hbm:blowtorch",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "23": 0
+      }
+    }
+  }
+}

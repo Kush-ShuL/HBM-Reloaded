@@ -1,0 +1,34 @@
+{
+  "en_us": {
+    "container.machinePrecAss": "Precision Assembly Machine",
+    "item.broken_item.name": "Broken Item",
+    "item.broken_item.prefix": "Broken %s",
+    "precass.recycle": "Recycling of %s",
+    "block.hbm.machine_precass": "Precision Assembly Machine",
+    "item.hbm.broken_item": "Broken Item",
+    "config.jade.plugin_hbm.precision_assembler_state": "Precision Assembly Machine",
+    "jade.hbm.precass.recipe": "Recipe: %s",
+    "gui.hbm.precass.duration": "%s ticks",
+    "gui.hbm.precass.power": "%s HE/t",
+    "gui.hbm.precass.per_item": "%s%% per item",
+    "gui.hbm.precass.selection": "%s%% selection",
+    "gui.hbm.precass.one_of": "  One of:",
+    "gui.hbm.precass.yes": "YES"
+  },
+  "zh_cn": {
+    "container.machinePrecAss": "精密装配机",
+    "item.broken_item.name": "损坏的物品",
+    "item.broken_item.prefix": "破损 %s",
+    "precass.recycle": "回收率 %s",
+    "block.hbm.machine_precass": "精密装配机",
+    "item.hbm.broken_item": "损坏的物品",
+    "config.jade.plugin_hbm.precision_assembler_state": "精密装配机",
+    "jade.hbm.precass.recipe": "配方：%s",
+    "gui.hbm.precass.duration": "%s刻",
+    "gui.hbm.precass.power": "%s HE/刻",
+    "gui.hbm.precass.per_item": "每个物品回收概率：%s%%",
+    "gui.hbm.precass.selection": "抽取概率：%s%%",
+    "gui.hbm.precass.one_of": "  以下产物之一：",
+    "gui.hbm.precass.yes": "是"
+  }
+}

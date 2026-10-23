@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "crucible",
+      "id": "hbm:crucible",
+      "legacyRegistryId": "hbm:item.crucible",
+      "originalClass": "ItemCrucible",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3593
+      },
+      "creativeTab": "weapon",
+      "maxStackSize": 1,
+      "maxDamage": 3,
+      "damageSemantics": "Source durability is three blade charges. Full damage0, source crafted and Bobmazon-offered damage3. No legacy_metadata variant.",
+      "originalSuperclass": "ItemSwordAbility",
+      "abilities": [],
+      "sourceFull3D": true
+    }
+  ]
+}

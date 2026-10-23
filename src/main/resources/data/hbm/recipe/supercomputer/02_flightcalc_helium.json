@@ -1,0 +1,55 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.flightcalc_helium",
+  "order": 2,
+  "duration": 1200,
+  "power": 10000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 0
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 4
+            }
+          },
+          "weight": 25
+        },
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 2
+            }
+          },
+          "weight": 75
+        }
+      ],
+      "weighted": true
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "HELIUM4",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ]
+}

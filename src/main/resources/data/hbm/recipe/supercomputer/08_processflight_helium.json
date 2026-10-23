@@ -1,0 +1,55 @@
+{
+  "type": "hbm:supercomputer",
+  "name": "com.processflight_helium",
+  "order": 8,
+  "duration": 2400,
+  "power": 10000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:drive",
+          "components": {
+            "hbm:legacy_metadata": 6
+          }
+        }
+      },
+      "count": 1
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 7
+            }
+          },
+          "weight": 90
+        },
+        {
+          "stack": {
+            "id": "hbm:drive",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 3
+            }
+          },
+          "weight": 10
+        }
+      ],
+      "weighted": true
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "HELIUM4",
+      "amount": 16000,
+      "pressure": 0
+    }
+  ]
+}

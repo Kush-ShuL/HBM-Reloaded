@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "hbm:block/battery_potato_top",
+    "side": "hbm:block/battery_potato_side",
+    "front": "hbm:block/battery_potato_front",
+    "particle": "hbm:block/battery_potato_side"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:ingot_c4",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "hbm:source_fluid_container",
+      "fluid": "UNSATURATEDS",
+      "amount": 1000
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+    },
+    {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ntmchemistryset"
+    }
+  ]
+}

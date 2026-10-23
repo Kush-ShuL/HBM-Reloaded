@@ -1,0 +1,90 @@
+{
+  "types": [
+    "SOOT",
+    "POISON",
+    "HEAVYMETAL",
+    "FALLOUT"
+  ],
+  "cellSide": 64,
+  "updatePeriodTicks": 60,
+  "existingCanonicalPersistence": "dimension-local hbm_pollution.dat SavedData, original entries/chunkX/chunkZ/channel-name fields",
+  "sourceSpread": {
+    "soot": {
+      "above": 10,
+      "eachCardinal": 0.05,
+      "remaining": 0.8,
+      "decay": 0.99
+    },
+    "poison": {
+      "above": 10,
+      "eachCardinal": 0.025,
+      "remaining": 0.9,
+      "otherwiseDecay": 0.995
+    },
+    "heavyMetalDecay": 0.9995,
+    "fallout": "source leaves stored values unchanged; do not convert it into the separate radiation grid"
+  },
+  "newVisibleConsumers": {
+    "sync": "four source floats per player tick; authoritative modern fog settings and dimension guard",
+    "sootSmoothingPerClientWorldTick": 0.05,
+    "smogStart": 0,
+    "smogEnd": "renderDistanceChunks*16/(1+(smoothedSoot-threshold)*5/divisor)",
+    "smogGray": 0.15,
+    "detector": {
+      "periodTicks": 10,
+      "ids": [
+        100,
+        101,
+        102
+      ],
+      "lifetimeMs": 4000,
+      "channels": [
+        "SOOT",
+        "POISON",
+        "HEAVYMETAL"
+      ],
+      "falloutDisplay": "commented out in original, remains omitted"
+    }
+  },
+  "poison": {
+    "intervalTicks": 60,
+    "thresholds": [
+      10,
+      25,
+      50
+    ],
+    "effects": [
+      "poison0",
+      "poison1",
+      "wither2"
+    ],
+    "durationTicks": 100,
+    "protection": "GAS_BLISTERING"
+  },
+  "ambientLead": {
+    "intervalTicks": 60,
+    "strictLowerThreshold": 25,
+    "amplifier": "<50:0; >=50:2 (source >=75 branch is also2)",
+    "durationTicks": 100,
+    "protection": "PARTICLE_FINE"
+  },
+  "blockLead": {
+    "thresholds": [
+      5,
+      10,
+      25
+    ],
+    "amplifiers": [
+      0,
+      1,
+      2
+    ],
+    "durationTicks": 100,
+    "protection": "PARTICLE_FINE"
+  },
+  "sourceCleaning": {
+    "decrement": "existing PollutionSystem.decrement preserves the original emission multiplier semantics",
+    "smokestacks": "existing real private SMOKE/LEADED/POISON routing and .25/.1 or actual rampant override; it reduces emitted smoke, not arbitrary atmospheric removal",
+    "customMachine": "TileEntityCustomMachine.pollution negative recipe branch remains tied to the actual future custom-machine recipe executor, no fake cleaner block introduced"
+  }
+}

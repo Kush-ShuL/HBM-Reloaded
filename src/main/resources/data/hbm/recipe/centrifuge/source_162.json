@@ -1,0 +1,26 @@
+{
+  "type": "hbm:centrifuge",
+  "input": {
+    "type": "hbm:legacy_ore_dict",
+    "tag": "hbm:legacy_ore_dict/orefluorite"
+  },
+  "exact_input": false,
+  "results": [
+    {
+      "id": "hbm:fluorite",
+      "count": 3
+    },
+    {
+      "id": "hbm:fluorite",
+      "count": 3
+    },
+    {
+      "id": "hbm:gem_sodalite",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 1
+    }
+  ]
+}

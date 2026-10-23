@@ -1,0 +1,935 @@
+{
+  "parent": "hbm:item/bedrock_processing/grade_0_light",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:item/bedrock_processing/grade_0_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:item/bedrock_processing/grade_0_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:item/bedrock_processing/grade_0_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:item/bedrock_processing/grade_0_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 5
+      },
+      "model": "hbm:item/bedrock_processing/grade_0_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 16
+      },
+      "model": "hbm:item/bedrock_processing/grade_1_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 17
+      },
+      "model": "hbm:item/bedrock_processing/grade_1_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 18
+      },
+      "model": "hbm:item/bedrock_processing/grade_1_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 19
+      },
+      "model": "hbm:item/bedrock_processing/grade_1_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 20
+      },
+      "model": "hbm:item/bedrock_processing/grade_1_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 21
+      },
+      "model": "hbm:item/bedrock_processing/grade_1_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 32
+      },
+      "model": "hbm:item/bedrock_processing/grade_2_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 33
+      },
+      "model": "hbm:item/bedrock_processing/grade_2_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 34
+      },
+      "model": "hbm:item/bedrock_processing/grade_2_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 35
+      },
+      "model": "hbm:item/bedrock_processing/grade_2_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 36
+      },
+      "model": "hbm:item/bedrock_processing/grade_2_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 37
+      },
+      "model": "hbm:item/bedrock_processing/grade_2_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 48
+      },
+      "model": "hbm:item/bedrock_processing/grade_3_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 49
+      },
+      "model": "hbm:item/bedrock_processing/grade_3_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 50
+      },
+      "model": "hbm:item/bedrock_processing/grade_3_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 51
+      },
+      "model": "hbm:item/bedrock_processing/grade_3_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 52
+      },
+      "model": "hbm:item/bedrock_processing/grade_3_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 53
+      },
+      "model": "hbm:item/bedrock_processing/grade_3_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 64
+      },
+      "model": "hbm:item/bedrock_processing/grade_4_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 65
+      },
+      "model": "hbm:item/bedrock_processing/grade_4_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 66
+      },
+      "model": "hbm:item/bedrock_processing/grade_4_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 67
+      },
+      "model": "hbm:item/bedrock_processing/grade_4_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 68
+      },
+      "model": "hbm:item/bedrock_processing/grade_4_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 69
+      },
+      "model": "hbm:item/bedrock_processing/grade_4_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 80
+      },
+      "model": "hbm:item/bedrock_processing/grade_5_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 81
+      },
+      "model": "hbm:item/bedrock_processing/grade_5_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 82
+      },
+      "model": "hbm:item/bedrock_processing/grade_5_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 83
+      },
+      "model": "hbm:item/bedrock_processing/grade_5_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 84
+      },
+      "model": "hbm:item/bedrock_processing/grade_5_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 85
+      },
+      "model": "hbm:item/bedrock_processing/grade_5_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 96
+      },
+      "model": "hbm:item/bedrock_processing/grade_6_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 97
+      },
+      "model": "hbm:item/bedrock_processing/grade_6_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 98
+      },
+      "model": "hbm:item/bedrock_processing/grade_6_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 99
+      },
+      "model": "hbm:item/bedrock_processing/grade_6_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 100
+      },
+      "model": "hbm:item/bedrock_processing/grade_6_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 101
+      },
+      "model": "hbm:item/bedrock_processing/grade_6_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 112
+      },
+      "model": "hbm:item/bedrock_processing/grade_7_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 113
+      },
+      "model": "hbm:item/bedrock_processing/grade_7_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 114
+      },
+      "model": "hbm:item/bedrock_processing/grade_7_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 115
+      },
+      "model": "hbm:item/bedrock_processing/grade_7_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 116
+      },
+      "model": "hbm:item/bedrock_processing/grade_7_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 117
+      },
+      "model": "hbm:item/bedrock_processing/grade_7_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 128
+      },
+      "model": "hbm:item/bedrock_processing/grade_8_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 129
+      },
+      "model": "hbm:item/bedrock_processing/grade_8_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 130
+      },
+      "model": "hbm:item/bedrock_processing/grade_8_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 131
+      },
+      "model": "hbm:item/bedrock_processing/grade_8_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 132
+      },
+      "model": "hbm:item/bedrock_processing/grade_8_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 133
+      },
+      "model": "hbm:item/bedrock_processing/grade_8_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 144
+      },
+      "model": "hbm:item/bedrock_processing/grade_9_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 145
+      },
+      "model": "hbm:item/bedrock_processing/grade_9_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 146
+      },
+      "model": "hbm:item/bedrock_processing/grade_9_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 147
+      },
+      "model": "hbm:item/bedrock_processing/grade_9_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 148
+      },
+      "model": "hbm:item/bedrock_processing/grade_9_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 149
+      },
+      "model": "hbm:item/bedrock_processing/grade_9_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 160
+      },
+      "model": "hbm:item/bedrock_processing/grade_10_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 161
+      },
+      "model": "hbm:item/bedrock_processing/grade_10_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 162
+      },
+      "model": "hbm:item/bedrock_processing/grade_10_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 163
+      },
+      "model": "hbm:item/bedrock_processing/grade_10_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 164
+      },
+      "model": "hbm:item/bedrock_processing/grade_10_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 165
+      },
+      "model": "hbm:item/bedrock_processing/grade_10_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 176
+      },
+      "model": "hbm:item/bedrock_processing/grade_11_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 177
+      },
+      "model": "hbm:item/bedrock_processing/grade_11_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 178
+      },
+      "model": "hbm:item/bedrock_processing/grade_11_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 179
+      },
+      "model": "hbm:item/bedrock_processing/grade_11_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 180
+      },
+      "model": "hbm:item/bedrock_processing/grade_11_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 181
+      },
+      "model": "hbm:item/bedrock_processing/grade_11_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 192
+      },
+      "model": "hbm:item/bedrock_processing/grade_12_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 193
+      },
+      "model": "hbm:item/bedrock_processing/grade_12_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 194
+      },
+      "model": "hbm:item/bedrock_processing/grade_12_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 195
+      },
+      "model": "hbm:item/bedrock_processing/grade_12_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 196
+      },
+      "model": "hbm:item/bedrock_processing/grade_12_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 197
+      },
+      "model": "hbm:item/bedrock_processing/grade_12_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 208
+      },
+      "model": "hbm:item/bedrock_processing/grade_13_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 209
+      },
+      "model": "hbm:item/bedrock_processing/grade_13_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 210
+      },
+      "model": "hbm:item/bedrock_processing/grade_13_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 211
+      },
+      "model": "hbm:item/bedrock_processing/grade_13_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 212
+      },
+      "model": "hbm:item/bedrock_processing/grade_13_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 213
+      },
+      "model": "hbm:item/bedrock_processing/grade_13_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 224
+      },
+      "model": "hbm:item/bedrock_processing/grade_14_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 225
+      },
+      "model": "hbm:item/bedrock_processing/grade_14_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 226
+      },
+      "model": "hbm:item/bedrock_processing/grade_14_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 227
+      },
+      "model": "hbm:item/bedrock_processing/grade_14_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 228
+      },
+      "model": "hbm:item/bedrock_processing/grade_14_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 229
+      },
+      "model": "hbm:item/bedrock_processing/grade_14_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 240
+      },
+      "model": "hbm:item/bedrock_processing/grade_15_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 241
+      },
+      "model": "hbm:item/bedrock_processing/grade_15_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 242
+      },
+      "model": "hbm:item/bedrock_processing/grade_15_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 243
+      },
+      "model": "hbm:item/bedrock_processing/grade_15_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 244
+      },
+      "model": "hbm:item/bedrock_processing/grade_15_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 245
+      },
+      "model": "hbm:item/bedrock_processing/grade_15_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 256
+      },
+      "model": "hbm:item/bedrock_processing/grade_16_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 257
+      },
+      "model": "hbm:item/bedrock_processing/grade_16_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 258
+      },
+      "model": "hbm:item/bedrock_processing/grade_16_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 259
+      },
+      "model": "hbm:item/bedrock_processing/grade_16_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 260
+      },
+      "model": "hbm:item/bedrock_processing/grade_16_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 261
+      },
+      "model": "hbm:item/bedrock_processing/grade_16_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 272
+      },
+      "model": "hbm:item/bedrock_processing/grade_17_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 273
+      },
+      "model": "hbm:item/bedrock_processing/grade_17_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 274
+      },
+      "model": "hbm:item/bedrock_processing/grade_17_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 275
+      },
+      "model": "hbm:item/bedrock_processing/grade_17_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 276
+      },
+      "model": "hbm:item/bedrock_processing/grade_17_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 277
+      },
+      "model": "hbm:item/bedrock_processing/grade_17_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 288
+      },
+      "model": "hbm:item/bedrock_processing/grade_18_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 289
+      },
+      "model": "hbm:item/bedrock_processing/grade_18_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 290
+      },
+      "model": "hbm:item/bedrock_processing/grade_18_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 291
+      },
+      "model": "hbm:item/bedrock_processing/grade_18_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 292
+      },
+      "model": "hbm:item/bedrock_processing/grade_18_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 293
+      },
+      "model": "hbm:item/bedrock_processing/grade_18_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 304
+      },
+      "model": "hbm:item/bedrock_processing/grade_19_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 305
+      },
+      "model": "hbm:item/bedrock_processing/grade_19_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 306
+      },
+      "model": "hbm:item/bedrock_processing/grade_19_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 307
+      },
+      "model": "hbm:item/bedrock_processing/grade_19_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 308
+      },
+      "model": "hbm:item/bedrock_processing/grade_19_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 309
+      },
+      "model": "hbm:item/bedrock_processing/grade_19_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 320
+      },
+      "model": "hbm:item/bedrock_processing/grade_20_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 321
+      },
+      "model": "hbm:item/bedrock_processing/grade_20_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 322
+      },
+      "model": "hbm:item/bedrock_processing/grade_20_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 323
+      },
+      "model": "hbm:item/bedrock_processing/grade_20_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 324
+      },
+      "model": "hbm:item/bedrock_processing/grade_20_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 325
+      },
+      "model": "hbm:item/bedrock_processing/grade_20_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 336
+      },
+      "model": "hbm:item/bedrock_processing/grade_21_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 337
+      },
+      "model": "hbm:item/bedrock_processing/grade_21_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 338
+      },
+      "model": "hbm:item/bedrock_processing/grade_21_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 339
+      },
+      "model": "hbm:item/bedrock_processing/grade_21_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 340
+      },
+      "model": "hbm:item/bedrock_processing/grade_21_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 341
+      },
+      "model": "hbm:item/bedrock_processing/grade_21_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 352
+      },
+      "model": "hbm:item/bedrock_processing/grade_22_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 353
+      },
+      "model": "hbm:item/bedrock_processing/grade_22_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 354
+      },
+      "model": "hbm:item/bedrock_processing/grade_22_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 355
+      },
+      "model": "hbm:item/bedrock_processing/grade_22_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 356
+      },
+      "model": "hbm:item/bedrock_processing/grade_22_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 357
+      },
+      "model": "hbm:item/bedrock_processing/grade_22_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 368
+      },
+      "model": "hbm:item/bedrock_processing/grade_23_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 369
+      },
+      "model": "hbm:item/bedrock_processing/grade_23_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 370
+      },
+      "model": "hbm:item/bedrock_processing/grade_23_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 371
+      },
+      "model": "hbm:item/bedrock_processing/grade_23_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 372
+      },
+      "model": "hbm:item/bedrock_processing/grade_23_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 373
+      },
+      "model": "hbm:item/bedrock_processing/grade_23_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 384
+      },
+      "model": "hbm:item/bedrock_processing/grade_24_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 385
+      },
+      "model": "hbm:item/bedrock_processing/grade_24_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 386
+      },
+      "model": "hbm:item/bedrock_processing/grade_24_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 387
+      },
+      "model": "hbm:item/bedrock_processing/grade_24_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 388
+      },
+      "model": "hbm:item/bedrock_processing/grade_24_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 389
+      },
+      "model": "hbm:item/bedrock_processing/grade_24_crystal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 400
+      },
+      "model": "hbm:item/bedrock_processing/grade_25_light"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 401
+      },
+      "model": "hbm:item/bedrock_processing/grade_25_heavy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 402
+      },
+      "model": "hbm:item/bedrock_processing/grade_25_rare"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 403
+      },
+      "model": "hbm:item/bedrock_processing/grade_25_actinide"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 404
+      },
+      "model": "hbm:item/bedrock_processing/grade_25_nonmetal"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 405
+      },
+      "model": "hbm:item/bedrock_processing/grade_25_crystal"
+    }
+  ]
+}

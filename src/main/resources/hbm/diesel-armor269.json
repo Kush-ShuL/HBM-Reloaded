@@ -1,0 +1,140 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "dieselsuit_helmet",
+      "id": "hbm:dieselsuit_helmet",
+      "legacyRegistryId": "hbm:item.dieselsuit_helmet",
+      "originalClass": "ArmorDiesel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 151
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6227
+          },
+          "expression": "GameRegistry.registerItem(dieselsuit_helmet, dieselsuit_helmet.getUnlocalizedName())",
+          "arguments": [
+            "dieselsuit_helmet",
+            "dieselsuit_helmet.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.diesel.DieselArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1650,
+      "fuel": {
+        "capacity": 64000,
+        "fillRate": 500,
+        "consumption": 50,
+        "drainPer10Tick": 1
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "dieselsuit_plate",
+      "id": "hbm:dieselsuit_plate",
+      "legacyRegistryId": "hbm:item.dieselsuit_plate",
+      "originalClass": "ArmorDiesel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 157
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6228
+          },
+          "expression": "GameRegistry.registerItem(dieselsuit_plate, dieselsuit_plate.getUnlocalizedName())",
+          "arguments": [
+            "dieselsuit_plate",
+            "dieselsuit_plate.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.diesel.DieselArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2400,
+      "fuel": {
+        "capacity": 64000,
+        "fillRate": 500,
+        "consumption": 50,
+        "drainPer10Tick": 1
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "dieselsuit_legs",
+      "id": "hbm:dieselsuit_legs",
+      "legacyRegistryId": "hbm:item.dieselsuit_legs",
+      "originalClass": "ArmorDiesel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 158
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6229
+          },
+          "expression": "GameRegistry.registerItem(dieselsuit_legs, dieselsuit_legs.getUnlocalizedName())",
+          "arguments": [
+            "dieselsuit_legs",
+            "dieselsuit_legs.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.diesel.DieselArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 2250,
+      "fuel": {
+        "capacity": 64000,
+        "fillRate": 500,
+        "consumption": 50,
+        "drainPer10Tick": 1
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "dieselsuit_boots",
+      "id": "hbm:dieselsuit_boots",
+      "legacyRegistryId": "hbm:item.dieselsuit_boots",
+      "originalClass": "ArmorDiesel",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItemsArmor.java",
+        "line": 159
+      },
+      "registrationSource": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 6230
+          },
+          "expression": "GameRegistry.registerItem(dieselsuit_boots, dieselsuit_boots.getUnlocalizedName())",
+          "arguments": [
+            "dieselsuit_boots",
+            "dieselsuit_boots.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "registeredBy": "com.hbm.armor.diesel.DieselArmorContent",
+      "creativeTab": "vanilla:combat",
+      "maxStackSize": 1,
+      "maxDamage": 1950,
+      "fuel": {
+        "capacity": 64000,
+        "fillRate": 500,
+        "consumption": 50,
+        "drainPer10Tick": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "hbm:rbmk_panel_inventory",
+  "textures": {
+    "all": "hbm:block/rbmk/rbmk_display",
+    "particle": "hbm:block/rbmk/rbmk_display",
+    "graph": "hbm:block/rbmk/panel_graph"
+  },
+  "overlays": [
+    {
+      "model": "hbm:models/rbmk/numitron.obj",
+      "texture": "graph",
+      "uv_scale": [
+        0.9375,
+        0.6875
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            0.25,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "model": "hbm:models/rbmk/numitron.obj",
+      "texture": "graph",
+      "uv_scale": [
+        0.9375,
+        0.6875
+      ],
+      "transforms": [
+        {
+          "translate": [
+            0.25,
+            -0.25,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

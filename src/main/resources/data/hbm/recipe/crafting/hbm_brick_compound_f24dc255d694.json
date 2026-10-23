@@ -1,0 +1,26 @@
+{
+  "result": {
+    "id": "hbm:brick_compound",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FBF",
+    "BTB",
+    "FBF"
+  ],
+  "key": {
+    "F": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/boltsteel"
+    },
+    "B": {
+      "item": "hbm:reinforced_brick"
+    },
+    "T": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/anytar"
+    }
+  }
+}

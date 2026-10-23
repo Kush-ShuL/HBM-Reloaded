@@ -1,0 +1,32 @@
+{
+  "result": {
+    "id": "hbm:ammo_shell",
+    "count": 4,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "GHG",
+    "CCC"
+  ],
+  "key": {
+    "T": {
+      "item": "hbm:tnt_ntm"
+    },
+    "G": {
+      "item": "hbm:ballistite"
+    },
+    "H": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/shellsteel"
+    },
+    "C": {
+      "type": "hbm:legacy_ore_dict",
+      "tag": "hbm:legacy_ore_dict/ingotcopper"
+    }
+  }
+}

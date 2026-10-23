@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "radiation_elemental_spawn_egg",
+      "id": "hbm:radiation_elemental_spawn_egg",
+      "originalClass": "EntityMappings.addMob spawn-egg helper",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 184
+      },
+      "creativeTab": "minecraft:spawn_eggs",
+      "helperForEntity": "hbm:entity_ntm_radiation_blaze"
+    }
+  ],
+  "entities": [
+    {
+      "kind": "entity",
+      "symbol": "entity_ntm_radiation_blaze",
+      "id": "hbm:entity_ntm_radiation_blaze",
+      "originalClass": "EntityRADBeast",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/entity/EntityMappings.java",
+        "line": 184
+      },
+      "dimensions": [
+        0.6,
+        1.8
+      ],
+      "trackingRange": 80,
+      "trackingUpdates": 3,
+      "velocityUpdates": true,
+      "eggColors": [
+        "0x303030",
+        "0x008000"
+      ]
+    }
+  ]
+}
