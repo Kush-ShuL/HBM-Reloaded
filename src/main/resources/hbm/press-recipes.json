@@ -734,7 +734,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing1_page_of__0",
+      "id": "hbm:press/printing1_page_of_page1",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -742,11 +742,8 @@
         },
         "stamp": "printing1",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:page_of_page1",
+          "count": 1
         }
       }
     },
@@ -760,7 +757,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing2_page_of__1",
+      "id": "hbm:press/printing2_page_of_page2",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -768,11 +765,8 @@
         },
         "stamp": "printing2",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:page_of_page2",
+          "count": 1
         }
       }
     },
@@ -786,7 +780,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing3_page_of__2",
+      "id": "hbm:press/printing3_page_of_page3",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -794,11 +788,8 @@
         },
         "stamp": "printing3",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:page_of_page3",
+          "count": 1
         }
       }
     },
@@ -812,7 +803,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing4_page_of__3",
+      "id": "hbm:press/printing4_page_of_page4",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -820,11 +811,8 @@
         },
         "stamp": "printing4",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:page_of_page4",
+          "count": 1
         }
       }
     },
@@ -838,7 +826,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing5_page_of__4",
+      "id": "hbm:press/printing5_page_of_page5",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -846,11 +834,8 @@
         },
         "stamp": "printing5",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:page_of_page5",
+          "count": 1
         }
       }
     },
@@ -864,7 +849,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing6_page_of__5",
+      "id": "hbm:press/printing6_page_of_page6",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -872,11 +857,8 @@
         },
         "stamp": "printing6",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:page_of_page6",
+          "count": 1
         }
       }
     },
@@ -890,7 +872,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing7_page_of__6",
+      "id": "hbm:press/printing7_page_of_page7",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -898,11 +880,8 @@
         },
         "stamp": "printing7",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:page_of_page7",
+          "count": 1
         }
       }
     },
@@ -916,7 +895,7 @@
       "migration": {
         "status": "implemented_datapack_recipe"
       },
-      "id": "hbm:press/printing8_page_of__7",
+      "id": "hbm:press/printing8_page_of_page8",
       "recipe": {
         "type": "hbm:press",
         "input": {
@@ -924,11 +903,8 @@
         },
         "stamp": "printing8",
         "result": {
-          "id": "hbm:page_of_",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:page_of_page8",
+          "count": 1
         }
       }
     }
