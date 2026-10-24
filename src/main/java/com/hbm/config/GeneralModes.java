@@ -102,16 +102,43 @@ public final class GeneralModes {
     public static int coltanFrequency(){var snapshot=remote;return snapshot!=null?snapshot.coltan:SPEC.isLoaded()?COLTAN.get():2;}
     public static int schrabRate(){var snapshot=remote;return snapshot!=null?snapshot.schrab:SPEC.isLoaded()?SCHRAB.get():20;}
     public static boolean lbsm(String key){return lbsm()&&flag(key);}
+    public static Snapshot synchronizedSnapshot(){return remote;}
     public static void clearRemote(){remote=null;}
-    private static Snapshot local(){var values=new LinkedHashMap<String,Boolean>();for(var pair:FLAGS.entrySet())values.put(pair.getKey(),SPEC.isLoaded()?pair.getValue().get():DEFAULTS.get(pair.getKey()));return new Snapshot(values,SPEC.isLoaded()?COLTAN.get():2,SPEC.isLoaded()?SCHRAB.get():20);}
-    public record Snapshot(Map<String,Boolean> flags,int coltan,int schrab) implements CustomPacketPayload {
+    private static Snapshot local(net.minecraft.server.MinecraftServer server){
+        var values=new LinkedHashMap<String,Boolean>();
+        for(var pair:FLAGS.entrySet())values.put(pair.getKey(),SPEC.isLoaded()?pair.getValue().get():DEFAULTS.get(pair.getKey()));
+        int coltan=SPEC.isLoaded()?COLTAN.get():2,schrab=SPEC.isLoaded()?SCHRAB.get():20;
+        boolean badge528=values.get("enable528Mode")&&values.get("X528_forceReasimBoilers")
+                &&!values.get("X528_enableColtanSpawning")&&values.get("X528_enableBosniaSimulator")
+                &&values.get("X528_enable528NetherBurn")&&values.get("X528_enable528PressurizedRecipes")
+                &&values.get("X528_enable528ExplosiveEnergistics")&&values.get("X528_enable528MachineGravity")&&coltan<=2;
+        boolean badgeExpensive=values.get("1.99_enableExpensiveMode")
+                &&!com.hbm.machine.precisionassembler.PrecisionAssemblerRecipeConfig.customized(server.getRecipeManager());
+        boolean badgeRampant=com.hbm.entity.mob.glyphid.GlyphidConfig.rampant()
+                &&com.hbm.entity.mob.glyphid.GlyphidConfig.naturalScouts()
+                &&com.hbm.entity.mob.glyphid.GlyphidConfig.scoutThreshold()<=.1D
+                &&com.hbm.entity.mob.glyphid.GlyphidConfig.extended()
+                &&com.hbm.entity.mob.glyphid.GlyphidConfig.dig()
+                &&com.hbm.entity.mob.glyphid.GlyphidConfig.guidance();
+        return new Snapshot(values,coltan,schrab,badge528,badgeExpensive,badgeRampant);
+    }
+    /** 三个徽章值由服务端按实际配置和已装载配方计算；客户端不以本地COMMON配置猜测。 */
+    public record Snapshot(Map<String,Boolean> flags,int coltan,int schrab,
+                           boolean badge528,boolean badgeExpensive,boolean badgeRampant) implements CustomPacketPayload {
         public static final Type<Snapshot> TYPE=new Type<>(ResourceLocation.fromNamespaceAndPath("hbm","general_modes"));
-        public static final StreamCodec<RegistryFriendlyByteBuf,Snapshot> CODEC=StreamCodec.of((buffer,value)->{buffer.writeVarInt(value.flags.size());value.flags.forEach((key,flag)->{buffer.writeUtf(key,64);buffer.writeBoolean(flag);});buffer.writeVarInt(value.coltan);buffer.writeVarInt(value.schrab);},buffer->{int count=buffer.readVarInt();if(count<0||count>64)throw new IllegalArgumentException("Invalid GeneralConfig flags");var flags=new LinkedHashMap<String,Boolean>();for(int i=0;i<count;i++)flags.put(buffer.readUtf(64),buffer.readBoolean());return new Snapshot(Map.copyOf(flags),buffer.readVarInt(),buffer.readVarInt());});
+        public static final StreamCodec<RegistryFriendlyByteBuf,Snapshot> CODEC=StreamCodec.of((buffer,value)->{buffer.writeVarInt(value.flags.size());value.flags.forEach((key,flag)->{buffer.writeUtf(key,64);buffer.writeBoolean(flag);});buffer.writeVarInt(value.coltan);buffer.writeVarInt(value.schrab);buffer.writeBoolean(value.badge528);buffer.writeBoolean(value.badgeExpensive);buffer.writeBoolean(value.badgeRampant);},buffer->{int count=buffer.readVarInt();if(count<0||count>64)throw new IllegalArgumentException("Invalid GeneralConfig flags");var flags=new LinkedHashMap<String,Boolean>();for(int i=0;i<count;i++)flags.put(buffer.readUtf(64),buffer.readBoolean());return new Snapshot(Map.copyOf(flags),buffer.readVarInt(),buffer.readVarInt(),buffer.readBoolean(),buffer.readBoolean(),buffer.readBoolean());});
         public Snapshot{flags=Map.copyOf(flags);}
         @Override public Type<? extends CustomPacketPayload> type(){return TYPE;}
     }
     public static void register(IEventBus bus,ModContainer container){SourceMekanismCrafting.register();if(net.neoforged.fml.ModList.get().isLoaded("mekanism"))com.hbm.registry.HbmOreDictionary.registerName("alloyUltimate");CONDITIONS.register(bus);container.registerConfig(ModConfig.Type.COMMON,SPEC,"hbm-general-common.toml");bus.addListener(GeneralModes::payloads);NeoForge.EVENT_BUS.addListener((ServerAboutToStartEvent event)->clearRemote());NeoForge.EVENT_BUS.addListener(GeneralModes::synchronize);}
     private static void payloads(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(Snapshot.TYPE,Snapshot.CODEC,(packet,context)->context.enqueueWork(()->remote=packet));}
-    private static void synchronize(OnDatapackSyncEvent event){var snapshot=local();if(event.getPlayer()!=null)PacketDistributor.sendToPlayer(event.getPlayer(),snapshot);else for(var player:event.getPlayerList().getPlayers())PacketDistributor.sendToPlayer(player,snapshot);}
+    private static void synchronize(OnDatapackSyncEvent event){var snapshot=local(event.getPlayerList().getServer());if(event.getPlayer()!=null)PacketDistributor.sendToPlayer(event.getPlayer(),snapshot);else for(var player:event.getPlayerList().getPlayers())PacketDistributor.sendToPlayer(player,snapshot);}
+    /** 精密装配配方装载完成后，经同一个模式包同步最新的真实徽章状态。 */
+    public static void synchronizeCurrentState(net.minecraft.server.MinecraftServer server){
+        var players=server.getPlayerList();
+        if(players==null||players.getPlayers().isEmpty())return;
+        var snapshot=local(server);
+        for(var player:players.getPlayers())PacketDistributor.sendToPlayer(player,snapshot);
+    }
     private GeneralModes(){}
 }

@@ -18,6 +18,8 @@ public final class ClientEffectsConfig {
     private static final ModConfigSpec.IntValue SOLAR_BOILER_MAX_HELIOSTAT_BEAMS;
     // 打开主菜单时，是否小概率换成本模组的随机标语；默认开启。
     private static final ModConfigSpec.BooleanValue CUSTOM_MAIN_MENU_SPLASHES;
+    // HUD左上角是否显示满足完整规则的模式徽章；默认开启。
+    private static final ModConfigSpec.BooleanValue MODE_BADGES;
 
     static {
         var builder = new ModConfigSpec.Builder();
@@ -41,6 +43,10 @@ public final class ClientEffectsConfig {
                 "打开主菜单时，小概率换成本模组的随机标语。默认true；关闭后不再进行新的替换。",
                 "已替换的当前主菜单对象保留现有文字；不改变 Minecraft 自身隐藏标语的选项。")
                 .define(java.util.List.of("mainMenu", "customSplashesEnabled"), true);
+        MODE_BADGES = builder.comment(
+                "在 HUD 左上角显示模式徽章。默认true；仅显示服务器确认满足完整模式规则的徽章。",
+                "只控制徽章显示；不改变模式、配方或生物行为。按F1隐藏 HUD 时也隐藏徽章。")
+                .define(java.util.List.of("hud", "modeBadgesEnabled"), true);
         SPEC = builder.build();
     }
 
@@ -57,6 +63,8 @@ public final class ClientEffectsConfig {
     public static int solarBoilerHeliostatBeamLimit() { return SPEC.isLoaded() ? SOLAR_BOILER_MAX_HELIOSTAT_BEAMS.get() : 250; }
 
     public static boolean mainMenuCustomSplashesEnabled() { return !SPEC.isLoaded() || CUSTOM_MAIN_MENU_SPLASHES.get(); }
+
+    public static boolean modeBadgesEnabled() { return !SPEC.isLoaded() || MODE_BADGES.get(); }
 
     private ClientEffectsConfig() {}
 }

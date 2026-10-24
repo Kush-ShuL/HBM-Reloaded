@@ -21,6 +21,9 @@ import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 /** Original hbmPrecisionAssembly.json and source mode defaults; registerPair resolves the actual first live OreDictionary choice. */
 public final class PrecisionAssemblerRecipeConfig {
  private static final Map<String,String>ALIASES=new LinkedHashMap<>();private static final Map<RecipeManager,Map<ResourceLocation,RecipeHolder<?>>>INSTALLED=new WeakHashMap<>();private static final List<String>UNRESOLVED=new ArrayList<>();
+ // 各实际RecipeManager最近完成装载的配方表是否来自自定义文件；只记录真实装载分支。
+ private static final Map<RecipeManager,Boolean>CUSTOMIZED=new WeakHashMap<>();
+ public static boolean customized(RecipeManager manager){return CUSTOMIZED.getOrDefault(manager,false);}
  public static Map<String,String>aliases(){return Collections.unmodifiableMap(ALIASES);}
  public static String sourceName(Item item){String actual=BuiltInRegistries.ITEM.getKey(item).toString();for(var entry:ALIASES.entrySet())if(entry.getValue().equals(actual)&&(entry.getKey().startsWith("hbm:item.")||entry.getKey().startsWith("hbm:tile.")))return entry.getKey();return actual;}
  public static List<String>unresolved(){return List.copyOf(UNRESOLVED);}
@@ -43,8 +46,8 @@ public final class PrecisionAssemblerRecipeConfig {
       add(additions,"default/"+order+"/recycle",data(original,original.name()+".recycle",List.of(input),List.of(),recovered,recoveredFluid,List.of(),broken,"precass.recycle",order*2+1));
      }else add(additions,(custom?"config/":"default/")+order,data(original,original.name(),original.inputItems(),original.inputFluids(),original.outputItems(),original.outputFluids(),original.pools(),original.icon(),original.nameWrapper(),order*2));
     }catch(Exception error){UNRESOLVED.add(label+": "+error.getMessage());}order++;}
-   var exported=new JsonObject();exported.addProperty("comment","改名为 hbmPrecisionAssembly.json 后替换完整默认配方表。次品按权重产出，回收概率对每个物品独立计算。");var recipes=new JsonArray();for(var holder:additions.values())recipes.add(GenericRecipeConfigCodec.write(((PrecisionAssemblerRecipe)holder.value()).data()));exported.add("recipes",recipes);Files.writeString(directory.resolve("_hbmPrecisionAssembly.json"),new GsonBuilder().setPrettyPrinting().create().toJson(exported)+"\n");
-  }catch(Exception error){LogUtils.getLogger().error("Cannot load original precision assembler recipes",error);}additions.forEach(merged::put);manager.replaceRecipes(merged.values());INSTALLED.put(manager,additions);Blueprints.registerRecipes(ResourceLocation.fromNamespaceAndPath("hbm","precision_assembly"),recipes(manager));for(var error:UNRESOLVED)LogUtils.getLogger().warn("Unbound precision assembler recipe: {}",error);
+   CUSTOMIZED.put(manager,custom);var exported=new JsonObject();exported.addProperty("comment","改名为 hbmPrecisionAssembly.json 后替换完整默认配方表。次品按权重产出，回收概率对每个物品独立计算。");var recipes=new JsonArray();for(var holder:additions.values())recipes.add(GenericRecipeConfigCodec.write(((PrecisionAssemblerRecipe)holder.value()).data()));exported.add("recipes",recipes);Files.writeString(directory.resolve("_hbmPrecisionAssembly.json"),new GsonBuilder().setPrettyPrinting().create().toJson(exported)+"\n");
+  }catch(Exception error){LogUtils.getLogger().error("Cannot load original precision assembler recipes",error);}additions.forEach(merged::put);manager.replaceRecipes(merged.values());INSTALLED.put(manager,additions);Blueprints.registerRecipes(ResourceLocation.fromNamespaceAndPath("hbm","precision_assembly"),recipes(manager));for(var error:UNRESOLVED)LogUtils.getLogger().warn("Unbound precision assembler recipe: {}",error);com.hbm.config.GeneralModes.synchronizeCurrentState(server);
  }
  private PrecisionAssemblerRecipeConfig(){}
 }
