@@ -29,7 +29,7 @@ public abstract class PileTickingBlockEntity extends BlockEntity implements com.
  @Override public void handleUpdateTag(CompoundTag tag,HolderLookup.Provider registries){if(!tag.contains("hbm:pile_sync"))return;var buffer=Unpooled.wrappedBuffer(tag.getByteArray("hbm:pile_sync"));try{deserialize(buffer);}finally{buffer.release();}}
  @Override public void onDataPacket(net.minecraft.network.Connection connection,ClientboundBlockEntityDataPacket packet,HolderLookup.Provider registries){handleUpdateTag(packet.getTag(),registries);}
  @Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}
- protected void networkPackNT(int range){if(getLevel() instanceof ServerLevel server){var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(xCoord+.5,yCoord+.5,zCoord+.5)<range*range)player.connection.send(packet);}}
+ protected void networkPackNT(int range){if(getLevel() instanceof ServerLevel server){var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(xCoord+.5,yCoord+.5,zCoord+.5)<range*range)player.connection.send(packet);dispatchScope.commit();}}}
  protected CompoundTag saveStack(ItemStack stack){return (CompoundTag)stack.save(stackRegistries!=null?stackRegistries:getLevel().registryAccess());}
  protected ItemStack readStack(CompoundTag tag){var stack=ItemStack.parseOptional(stackRegistries!=null?stackRegistries:getLevel().registryAccess(),tag);return stack.isEmpty()?null:stack;}
 

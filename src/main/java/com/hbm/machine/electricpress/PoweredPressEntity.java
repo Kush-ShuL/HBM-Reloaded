@@ -34,7 +34,7 @@ public abstract class PoweredPressEntity extends BlockEntity implements WorldlyC
     protected abstract void loadPress(CompoundTag tag);
     protected abstract void writeSync(CompoundTag tag,HolderLookup.Provider lookup);
     protected abstract void readSync(CompoundTag tag,HolderLookup.Provider lookup);
-    public static void tick(Level level,BlockPos pos,BlockState state,PoweredPressEntity machine){if(level instanceof ServerLevel server){machine.updatePower(server);machine.serverTick(server);var packet=machine.getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<2500)player.connection.send(packet);}else machine.clientTick();}
+    public static void tick(Level level,BlockPos pos,BlockState state,PoweredPressEntity machine){if(level instanceof ServerLevel server){machine.updatePower(server);machine.serverTick(server);var packet=machine.getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<2500)player.connection.send(packet);dispatchScope.commit();}}else machine.clientTick();}
     private void updatePower(ServerLevel server){if(node==null||node.isExpired()){node=new PowerNode(worldPosition).setConnections(Arrays.stream(Direction.values()).map(side->new NodeConnection(worldPosition.relative(side),side)).toArray(NodeConnection[]::new));HbmEnergy.nodespace(server).createNode(node);}if(node.hasValidNet())node.addReceiver(this);}
     private void disconnect(){if(node!=null&&level instanceof ServerLevel server)HbmEnergy.nodespace(server).destroyNode(node);node=null;}
     @Override public void setRemoved(){disconnect();super.setRemoved();}

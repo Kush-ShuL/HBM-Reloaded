@@ -18,7 +18,7 @@ public final class RadioReceiverBlockEntity extends BlockEntity implements com.h
         }}
         // TileEntityLoadedBase.networkPackNT suppresses duplicate serialized payloads, except every20 ticks for renewed trackers.
         if(packed&&java.util.Objects.equals(channel,lastChannel)&&isOn==lastOn&&server.getGameTime()%20L!=0)return;
-        packed=true;lastChannel=channel;lastOn=isOn;var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225D)player.connection.send(packet);
+        packed=true;lastChannel=channel;lastOn=isOn;var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225D)player.connection.send(packet);dispatchScope.commit();}
     }
     private void write(CompoundTag tag){tag.putString("channel",channel);tag.putBoolean("isOn",isOn);tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);}
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);write(tag);}

@@ -47,7 +47,7 @@ public final class HydrotreaterBlockEntity extends BlockEntity implements Worldl
         changed|=tanks[0].loadTank(1,2,slots);changed|=tanks[1].loadTank(3,4,slots);
         if(server.getGameTime()%2==0)changed|=reform(server);
         changed|=tanks[2].unloadTank(5,6,slots);changed|=tanks[3].unloadTank(7,8,slots);if(changed)setChanged();
-        var packetState=getUpdateTag(server.registryAccess());if(!packetState.equals(lastSentState)||server.getGameTime()%20==0){lastSentState=packetState;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->packetState);for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625)player.connection.send(packet);}
+        var packetState=getUpdateTag(server.registryAccess());if(!packetState.equals(lastSentState)||server.getGameTime()%20==0){lastSentState=packetState;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->packetState);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625)player.connection.send(packet);dispatchScope.commit();}}
     }
     public static boolean catalyst(ItemStack stack){return !stack.isEmpty()&&BuiltInRegistries.ITEM.getKey(stack.getItem()).equals(net.minecraft.resources.ResourceLocation.parse("hbm:catalytic_converter"));}
     private boolean reform(ServerLevel server){

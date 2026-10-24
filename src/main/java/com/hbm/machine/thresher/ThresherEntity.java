@@ -55,7 +55,7 @@ public final class ThresherEntity extends BlockEntity implements StandardFluidRe
             else if(state==2){angle-=82.5F/60F;if(angle<=0){angle=0;state=0;delay=200+server.random.nextInt(100);}}
             if(angle!=0)sweep(server,dir,rot);
         }
-        var packet=getUpdatePacket();var snapshot=packet.getTag();if(!snapshot.equals(lastSnapshot)||server.getGameTime()%20==0){lastSnapshot=snapshot.copy();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);}
+        var packet=getUpdatePacket();var snapshot=packet.getTag();if(!snapshot.equals(lastSnapshot)||server.getGameTime()%20==0){lastSnapshot=snapshot.copy();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);dispatchScope.commit();}}
         setChanged();
     }
     private void sweep(ServerLevel server,ForgeDirection dir,ForgeDirection rot){

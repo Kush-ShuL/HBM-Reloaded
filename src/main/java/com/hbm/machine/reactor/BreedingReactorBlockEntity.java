@@ -21,7 +21,7 @@ public final class BreedingReactorBlockEntity extends ReactorInventory {
     private void serverTick(ServerLevel server){
         flux=0;for(var side:Direction.Plane.HORIZONTAL){var pos=worldPosition.relative(side);var state=server.getBlockState(pos);if(state.getBlock() instanceof ResearchReactorBlock block){var core=block.findCore(server,pos);if(core!=null&&server.getBlockEntity(core) instanceof ResearchReactorBlockEntity reactor)flux+=reactor.totalFlux;}}
         var recipe=recipe();if(canProcess(recipe)){progress+=.0025F*(flux/recipe.flux());if(progress>=1){progress=0;if(canProcess(recipe)){if(slots[1].isEmpty())slots[1]=recipe.result().copy();else slots[1].grow(recipe.result().getCount());slots[0].shrink(1);}setChanged();}}else progress=0;
-        setChanged();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<20*20)player.connection.send(packet);
+        setChanged();var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<20*20)player.connection.send(packet);dispatchScope.commit();}
     }
     private BreedingRecipe recipe(){if(level==null||slots[0].isEmpty())return null;return BreedingRecipeConfig.recipes(level.getRecipeManager()).stream().filter(recipe->recipe.input().test(slots[0])).findFirst().orElse(null);}
     private boolean canProcess(BreedingRecipe recipe){if(recipe==null||flux<recipe.flux())return false;if(slots[1].isEmpty())return true;return sameLegacy(slots[1],recipe.result())&&slots[1].getCount()<slots[1].getMaxStackSize();}

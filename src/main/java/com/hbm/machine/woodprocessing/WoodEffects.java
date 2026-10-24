@@ -27,6 +27,6 @@ public record WoodEffects(double x,double y,double z,int count) implements Custo
         level.playSound(null,entity.getX(),entity.getY(),entity.getZ(),SoundEvents.ZOMBIE_BREAK_WOODEN_DOOR,SoundSource.HOSTILE,2,.95F+level.random.nextFloat()*.2F);
         int count=Math.min((int)Math.ceil(entity.getMaxHealth()/4),250)*4;
         var packet=new WoodEffects(entity.getX(),entity.getY()+entity.getBbHeight()*.5,entity.getZ(),count);
-        for(var player:level.players())if(player.distanceToSqr(entity.getX(),entity.getY(),entity.getZ())<2500)PacketDistributor.sendToPlayer(player,packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(level.getServer(),packet)){for(var player:level.players())if(player.distanceToSqr(entity.getX(),entity.getY(),entity.getZ())<2500)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}
     }}
 }

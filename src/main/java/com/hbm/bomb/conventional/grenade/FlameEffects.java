@@ -15,6 +15,6 @@ public record FlameEffects(double x,double y,double z,int meta) implements Custo
     public static final StreamCodec<RegistryFriendlyByteBuf,FlameEffects> CODEC=StreamCodec.of((b,p)->{b.writeDouble(p.x);b.writeDouble(p.y);b.writeDouble(p.z);b.writeInt(p.meta);},b->new FlameEffects(b.readDouble(),b.readDouble(),b.readDouble(),b.readInt()));
     @Override public Type<FlameEffects> type(){return TYPE;}
     public static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(TYPE,CODEC,(p,c)->c.enqueueWork(()->com.hbm.client.bomb.conventional.grenade.LingeringFlameParticle.receive(p)));}
-    public static void send(Level level,double x,double y,double z,int meta){if(level instanceof ServerLevel server){var packet=new FlameEffects(x,y,z,meta);for(var player:server.players())if(player.distanceToSqr(x,y,z)<=2500)PacketDistributor.sendToPlayer(player,packet);}}
+    public static void send(Level level,double x,double y,double z,int meta){if(level instanceof ServerLevel server){var packet=new FlameEffects(x,y,z,meta);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(x,y,z)<=2500)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}}
     public static void client(Level level,double x,double y,double z,int meta){if(level.isClientSide)com.hbm.client.bomb.conventional.grenade.LingeringFlameParticle.receive(new FlameEffects(x,y,z,meta));}
 }

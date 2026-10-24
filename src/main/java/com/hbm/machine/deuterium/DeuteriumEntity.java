@@ -46,7 +46,7 @@ public class DeuteriumEntity extends BlockEntity implements EnergyReceiver,Sided
         CompoundTag packet=getUpdateTag(server.registryAccess());
         if(server.getGameTime()%20==0||!packet.equals(lastPacked)){
             lastPacked=packet.copy();var update=ClientboundBlockEntityDataPacket.create(this);
-            for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(update);
+            try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),update)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(update);dispatchScope.commit();}
         }
     }
     private NodeConnection[] connections(){

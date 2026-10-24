@@ -51,7 +51,7 @@ public final class PistonInserterEntity extends BlockEntity implements Container
                 }
             }else piston.delay--;
             var packet=ClientboundBlockEntityDataPacket.create(piston,(entity,lookup)->{var tag=new CompoundTag();tag.putBoolean("PistonNetworkState",true);tag.putInt("extend",piston.extend);if(!piston.slot.isEmpty())tag.put("stack",piston.slot.save(lookup));return tag;});
-            for(var player:server.players())if(player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<25*25)player.connection.send(packet);
+            try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<25*25)player.connection.send(packet);dispatchScope.commit();}
         }else{
             piston.lastExtend=piston.renderExtend;
             if(piston.turnProgress>0){piston.renderExtend+=(piston.syncExtend-piston.renderExtend)/(double)piston.turnProgress;piston.turnProgress--;}else piston.renderExtend=piston.syncExtend;

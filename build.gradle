@@ -79,5 +79,8 @@ tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = fal
 idea { module { downloadSources = true; downloadJavadoc = true } }
 
 // Carry the original LGPL grant and its GPL terms with every distributed binary/source artifact.
-tasks.named('jar') { from('LICENSE', 'LICENSE.LESSER') }
+tasks.named('jar') {
+    archiveFileName = 'HBM-Reloaded-X5846.jar'
+    from('LICENSE', 'LICENSE.LESSER')
+}
 tasks.named('sourcesJar') { from('LICENSE', 'LICENSE.LESSER') }

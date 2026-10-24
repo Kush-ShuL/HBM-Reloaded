@@ -34,7 +34,7 @@ public final class FunnelBlockEntity extends BaseContainerBlockEntity implements
         }
         if(changed)setChanged();
         if(packed&&mode==lastMode&&muffled==lastMuffled&&tilted==lastTilted&&server.getGameTime()%20!=0)return;
-        packed=true;lastMode=mode;lastMuffled=muffled;lastTilted=tilted;var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225D)player.connection.send(packet);
+        packed=true;lastMode=mode;lastMuffled=muffled;lastTilted=tilted;var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225D)player.connection.send(packet);dispatchScope.commit();}
     }
     public ItemStack getFrom4(ItemStack ingredient){return find(ingredient,false);}
     public ItemStack getFrom9(ItemStack ingredient){return find(ingredient,true);}

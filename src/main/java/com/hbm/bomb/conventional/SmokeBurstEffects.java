@@ -17,5 +17,5 @@ public record SmokeBurstEffects(double x,double y,double z,int count,boolean rad
     public static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(TYPE,CODEC,(p,c)->c.enqueueWork(()->com.hbm.client.bomb.conventional.SmokeBurstParticles.receive(p)));}
     public static void cloud(Level level,double x,double y,double z,int count){send(level,new SmokeBurstEffects(x,y,z,count,false));}
     public static void radial(Level level,double x,double y,double z,int count){send(level,new SmokeBurstEffects(x,y,z,count,true));}
-    private static void send(Level level,SmokeBurstEffects packet){if(level instanceof ServerLevel server)for(var player:server.players())if(player.distanceToSqr(packet.x,packet.y,packet.z)<=250D*250D)PacketDistributor.sendToPlayer(player,packet);}
+    private static void send(Level level,SmokeBurstEffects packet){if(level instanceof ServerLevel server)try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(packet.x,packet.y,packet.z)<=250D*250D)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}
 }

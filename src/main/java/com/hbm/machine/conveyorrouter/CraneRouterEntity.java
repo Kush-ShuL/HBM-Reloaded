@@ -26,7 +26,7 @@ public final class CraneRouterEntity extends BlockEntity implements WorldlyConta
     public int[] modes=new int[6];
     private Component customName;private boolean muffled;
     public CraneRouterEntity(BlockPos pos,BlockState state){super(CraneRouterContent.ENTITY.get(),pos,state);Arrays.fill(slots,ItemStack.EMPTY);for(int i=0;i<6;i++)patterns[i]=new PatternMatcher(5);}
-    public void serverTick(){if(level instanceof ServerLevel server){var packet=ClientboundBlockEntityDataPacket.create(this,(entity,lookup)->{var data=new CompoundTag();data.putBoolean("RouterNetworkState",true);writeRouting(data);data.putBoolean("muffled",muffled);return data;});for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<15*15)player.connection.send(packet);}}
+    public void serverTick(){if(level instanceof ServerLevel server){var packet=ClientboundBlockEntityDataPacket.create(this,(entity,lookup)->{var data=new CompoundTag();data.putBoolean("RouterNetworkState",true);writeRouting(data);data.putBoolean("muffled",muffled);return data;});try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<15*15)player.connection.send(packet);dispatchScope.commit();}}}
     public void nextMode(int index){patterns[index/5].nextMode(slots[index],index%5);setChanged();}
     public void initPattern(ItemStack stack,int index){patterns[index/5].initPatternSmart(stack,index%5);setChanged();}
     public boolean hasPermission(Player player){return player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<20*20;}

@@ -43,7 +43,7 @@ public final class CargoElevatorEntity extends BlockEntity implements IRORIntera
             lift.extension=Mth.clamp(lift.extension,0,lift.height);lift.renderPlatform=true;
             var network=lift.networkTag();
             // Original TileEntityLoadedBase.networkPackNT: changes immediately, identical payload once/second.
-            if(!network.equals(lift.lastNetworkTag)||server.getGameTime()%20==0){lift.lastNetworkTag=network.copy();var packet=ClientboundBlockEntityDataPacket.create(lift,(entity,lookup)->network);for(var player:server.players())if(player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<300D*300D)player.connection.send(packet);}
+            if(!network.equals(lift.lastNetworkTag)||server.getGameTime()%20==0){lift.lastNetworkTag=network.copy();var packet=ClientboundBlockEntityDataPacket.create(lift,(entity,lookup)->network);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<300D*300D)player.connection.send(packet);dispatchScope.commit();}}
         }else if(lift.sync>0){lift.extension+=(lift.syncExtension-lift.extension)/(float)lift.sync;--lift.sync;}
         else lift.extension=lift.syncExtension;
         if(lift.extension!=lift.prevExtension){

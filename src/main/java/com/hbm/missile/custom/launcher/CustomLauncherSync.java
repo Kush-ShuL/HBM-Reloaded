@@ -23,6 +23,6 @@ public record CustomLauncherSync(BlockPos pos, CompoundTag data) implements Cust
     }
     static void send(ServerLevel server, CustomLauncherEntity machine, CompoundTag data, int radius) {
         var packet = new CustomLauncherSync(machine.getBlockPos(), data);
-        for (var player : server.players()) if (player.distanceToSqr(machine.getBlockPos().getX(), machine.getBlockPos().getY(), machine.getBlockPos().getZ()) < radius * radius) PacketDistributor.sendToPlayer(player, packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for (var player : server.players()) if (player.distanceToSqr(machine.getBlockPos().getX(), machine.getBlockPos().getY(), machine.getBlockPos().getZ()) < radius * radius) PacketDistributor.sendToPlayer(player, packet);dispatchScope.commit();}
     }
 }

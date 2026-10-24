@@ -21,7 +21,7 @@ public final class RadioLogicEntity extends BlockEntity implements MuffledMachin
    if(descending){for(int i=15;i>=0;i--)if(!mapping[i].isEmpty()&&parseSignal(message,i)){next=i;break;}}else for(int i=0;i<=15;i++)if(!mapping[i].isEmpty()&&parseSignal(message,i)){next=i;break;}
    if(lastState!=next)output(next);
   }else if(polling&&lastState!=0)output(0);}
-  var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);
+  var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);dispatchScope.commit();}
  }
  public boolean parseSignal(String signal,int index){int condition=conditions[index];if(condition<=5){long sig,map;try{sig=Long.parseLong(signal);map=Long.parseLong(mapping[index]);}catch(Exception ignored){return false;}return switch(condition){case 1->sig<=map;case 2->sig>=map;case 3->sig>map;case 4->sig==map;case 5->sig!=map;default->sig<map;};}return switch(condition){case 7->!signal.equals(mapping[index]);case 8->signal.contains(mapping[index]);case 9->!signal.contains(mapping[index]);default->signal.equals(mapping[index]);};}
  private void output(int state){lastState=state;setChanged();level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),2);level.updateNeighborsAt(worldPosition,getBlockState().getBlock());}

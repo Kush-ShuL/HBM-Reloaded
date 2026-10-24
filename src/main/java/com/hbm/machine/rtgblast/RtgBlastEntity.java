@@ -69,7 +69,7 @@ public final class RtgBlastEntity extends BlockEntity implements WorldlyContaine
         running=progress>0||(canProcess()&&hasPower()); // Preserve second real source availability check and short circuit.
         var next=(running?RtgBlastContent.ON.get():RtgBlastContent.OFF.get()).defaultBlockState().setValue(RtgBlastBlock.META,getBlockState().getValue(RtgBlastBlock.META));
         server.setBlock(worldPosition,next,3);
-        var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<100D)player.connection.send(packet);
+        var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<100D)player.connection.send(packet);dispatchScope.commit();}
     }
     public void cycleSide(int slot){if(slot==0)sideUpper=(byte)((sideUpper+1)%6);if(slot==1)sideLower=(byte)((sideLower+1)%6);setChanged();}
     @Override public Component getDisplayName(){return name.isEmpty()?Component.translatable("container.diFurnaceRTG"):Component.literal(name);}

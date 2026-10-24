@@ -56,7 +56,7 @@ public abstract class RbmkColumnEntity extends BlockEntity implements RbmkColumn
         lastPacked = tag.copy();
         var packet = ClientboundBlockEntityDataPacket.create(this, (ignored, lookup) -> tag);
         int range = trackingRange();
-        for (var player : world.players()) if (player.distanceToSqr(worldPosition.getX(), worldPosition.getY(), worldPosition.getZ()) < range * range) player.connection.send(packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(world.getServer(),packet)){for (var player : world.players()) if (player.distanceToSqr(worldPosition.getX(), worldPosition.getY(), worldPosition.getZ()) < range * range) player.connection.send(packet);dispatchScope.commit();}
     }
     @Override public double passiveCooling(int neighbors) {
         double min = RbmkDials.getPassiveCoolingInner(level), max = RbmkDials.getPassiveCooling(level);

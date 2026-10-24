@@ -59,7 +59,7 @@ public final class AutosawEntity extends BlockEntity implements StandardFluidRec
             if(state==1){rotationPitch+=2;if(rotationPitch>80){rotationPitch=80;state=2;}}
             if(state==2){rotationPitch-=2;if(rotationPitch<=0){rotationPitch=0;state=0;}}
         }
-        var packet=getUpdatePacket();var snapshot=packet.getTag();if(!snapshot.equals(lastSnapshot)||server.getGameTime()%20==0){lastSnapshot=snapshot.copy();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);}
+        var packet=getUpdatePacket();var snapshot=packet.getTag();if(!snapshot.equals(lastSnapshot)||server.getGameTime()%20==0){lastSnapshot=snapshot.copy();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);dispatchScope.commit();}}
         setChanged();
     }
     private void clientTick(){

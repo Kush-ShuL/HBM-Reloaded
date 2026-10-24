@@ -18,7 +18,7 @@ public final class ForceFieldBlockEntity extends BlockEntity implements WorldlyC
   }
   if(cooldown>0)cooldown--;else{if(health<maxHealth)health=(int)(health+(maxHealth/100)*ForceFieldConfig.healthRegenModif);if(health>maxHealth)health=maxHealth;}
   if(isOn&&cooldown==0&&health>0&&power.compareTo(BigInteger.valueOf(powerCons))>=0){boundary.update(world,worldPosition,radius,muffled,this::damage);if(!world.isClientSide)power=power.subtract(BigInteger.valueOf(powerCons));}else boundary.clear();
-  if(world instanceof ServerLevel server){if(power.compareTo(BigInteger.valueOf(powerCons))<0)power=BigInteger.ZERO;setChanged();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<250000)player.connection.send(packet);}
+  if(world instanceof ServerLevel server){if(power.compareTo(BigInteger.valueOf(powerCons))<0)power=BigInteger.ZERO;setChanged();var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<250000)player.connection.send(packet);dispatchScope.commit();}}
  }
  private void damage(int amount){health-=amount;if(amount>=maxHealth/250)blink=5;if(health<=0){health=0;cooldown=(int)(100+radius*(float)ForceFieldConfig.cooldownModif);}}
  public boolean fieldVisible(){return isOn&&health>0&&power.signum()>0&&cooldown==0;}

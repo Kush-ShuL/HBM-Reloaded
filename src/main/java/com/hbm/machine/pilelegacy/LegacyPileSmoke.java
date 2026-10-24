@@ -18,5 +18,5 @@ public record LegacyPileSmoke(double x,double y,double z) implements CustomPacke
     public static Consumer<LegacyPileSmoke> client=packet->{};
     @Override public Type<? extends CustomPacketPayload> type(){return TYPE;}
     static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(TYPE,CODEC,(packet,context)->context.enqueueWork(()->client.accept(packet)));}
-    static void send(Level level,BlockPos source,double x,double y,double z){if(level instanceof ServerLevel server){var packet=new LegacyPileSmoke(x,y,z);for(var player:server.players())if(player.distanceToSqr(source.getX()+.5,source.getY()+1,source.getZ()+.5)<400)PacketDistributor.sendToPlayer(player,packet);}}
+    static void send(Level level,BlockPos source,double x,double y,double z){if(level instanceof ServerLevel server){var packet=new LegacyPileSmoke(x,y,z);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(source.getX()+.5,source.getY()+1,source.getZ()+.5)<400)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}}
 }

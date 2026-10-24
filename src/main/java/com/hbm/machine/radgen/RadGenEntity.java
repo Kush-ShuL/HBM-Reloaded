@@ -92,7 +92,7 @@ public final class RadGenEntity extends BlockEntity implements WorldlyContainer,
         if (power.compareTo(BigInteger.valueOf(MAX_POWER)) > 0) power = BigInteger.valueOf(MAX_POWER);
         setChanged();
         var packet = getUpdatePacket();
-        for (var player : server.players()) if (player.distanceToSqr(worldPosition.getX(), worldPosition.getY(), worldPosition.getZ()) < 2500) player.connection.send(packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for (var player : server.players()) if (player.distanceToSqr(worldPosition.getX(), worldPosition.getY(), worldPosition.getZ()) < 2500) player.connection.send(packet);dispatchScope.commit();}
     }
     private void disconnect() { if (node != null && level instanceof ServerLevel server) HbmEnergy.nodespace(server).destroyNode(node); node = null; }
     @Override public void setRemoved() { disconnect(); super.setRemoved(); }

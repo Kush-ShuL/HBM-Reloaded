@@ -18,5 +18,5 @@ public record LargeConventionalEffects(double x,double y,double z,int clouds,flo
     public static void small(Level level,double x,double y,double z){send(level,new LargeConventionalEffects(x,y,z,10,2,.5F,25,5,8,20,.75F,1,-2,150));}
     public static void standard(Level level,double x,double y,double z){send(level,new LargeConventionalEffects(x,y,z,15,5,1,45,10,16,50,1,3,-2,200));}
     public static void large(Level level,double x,double y,double z){send(level,new LargeConventionalEffects(x,y,z,30,6.5F,2,65,25,16,50,1.25F,3,-2,350));}
-    private static void send(Level level,LargeConventionalEffects packet){if(level instanceof ServerLevel server){double radius=Math.max(300,(int)packet.soundRange);for(var player:server.players())if(player.distanceToSqr(packet.x,packet.y,packet.z)<=radius*radius)PacketDistributor.sendToPlayer(player,packet);}}
+    private static void send(Level level,LargeConventionalEffects packet){if(level instanceof ServerLevel server){double radius=Math.max(300,(int)packet.soundRange);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(packet.x,packet.y,packet.z)<=radius*radius)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}}
 }

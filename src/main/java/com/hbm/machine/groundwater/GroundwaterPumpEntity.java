@@ -62,7 +62,7 @@ public abstract class GroundwaterPumpEntity extends BlockEntity implements Stand
         var data=getUpdateTag(server.registryAccess());
         if(server.getGameTime()%20==0||!data.equals(lastPacked)){
             lastPacked=data.copy();var packet=getUpdatePacket();
-            for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);
+            try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);dispatchScope.commit();}
         }
     }
     protected abstract boolean canOperate();

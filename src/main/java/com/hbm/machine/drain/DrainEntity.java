@@ -31,7 +31,7 @@ public final class DrainEntity extends BlockEntity implements StandardFluidRecei
  private void serverTick(ServerLevel server){
   if(ports==null){var dir=DummyableBlock.facing(getBlockState());ports=new FluidPorts(new BlockPos[]{worldPosition},new NodeConnection[]{new NodeConnection(worldPosition.relative(dir),dir),new NodeConnection(worldPosition.relative(dir.getClockWise()),dir.getClockWise()),new NodeConnection(worldPosition.relative(dir.getCounterClockWise()),dir.getCounterClockWise())});}
   ports.update(server,this);
-  var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);
+  var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);dispatchScope.commit();}
   if(tank.getFill()<=0)return;
   var type=tank.getTankType();if(type.isAntimatter()){server.explode(null,worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,10,true,Level.ExplosionInteraction.BLOCK);return;}
   int amount=Math.max(tank.getFill()/2,1);tank.setFill(tank.getFill()-amount);type.release(server,worldPosition,tank,amount,FluidTraits.Release.SPILL);setChanged();

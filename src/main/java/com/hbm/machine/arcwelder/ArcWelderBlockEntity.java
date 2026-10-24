@@ -61,7 +61,7 @@ public final class ArcWelderBlockEntity extends BlockEntity implements WorldlyCo
             }else progress=0;
         }else{progress=0;consumption=100;intendedMaxPower=2000;}
         maxPower=Math.max(intendedMaxPower,power);display=ItemStack.EMPTY;var displayRecipe=ArcWelderRecipes.recipes(server.getRecipeManager()).stream().filter(value->value.accepts(this::getItem)).findFirst().orElse(null);if(displayRecipe!=null){var output=displayRecipe.output();display=new ItemStack(output.getItem());if(output.has(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get()))display.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),output.get(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get()));else if(output.isDamageableItem())display.setDamageValue(output.getDamageValue());}
-        setChanged();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625)player.connection.send(packet);
+        setChanged();var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625)player.connection.send(packet);dispatchScope.commit();}
     }
     public boolean canProcess(ArcWelderRecipe recipe){
         if(power<consumption)return false;var fluid=recipe.fluid();if(fluid!=null&&(tank.getTankType()!=fluid.type||tank.getFill()<fluid.fill))return false;

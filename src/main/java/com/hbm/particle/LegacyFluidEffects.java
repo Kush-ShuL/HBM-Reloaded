@@ -29,6 +29,6 @@ public final class LegacyFluidEffects {
     public static void tower(Level level,double x,double y,double z,Tower tower){send(level,new Packet(false,x,y,z,0,0,0,0,tower));}
     public static void gasFlame(Level level,double x,double y,double z,double mx,double my,double mz){gasFlame(level,x,y,z,mx,my,mz,6.5F);}
     public static void gasFlame(Level level,double x,double y,double z,double mx,double my,double mz,float scale){send(level,new Packet(true,x,y,z,mx,my,mz,scale>0?scale:6.5F,null));}
-    private static void send(Level level,Packet packet){if(level instanceof ServerLevel server){for(var player:server.players())if(player.distanceToSqr(packet.x,packet.y,packet.z)<22500)PacketDistributor.sendToPlayer(player,packet);}else com.hbm.client.particle.LegacyFluidEffectsClient.receive(packet);}
+    private static void send(Level level,Packet packet){if(level instanceof ServerLevel server){try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(packet.x,packet.y,packet.z)<22500)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}else com.hbm.client.particle.LegacyFluidEffectsClient.receive(packet);}
     private LegacyFluidEffects(){}
 }

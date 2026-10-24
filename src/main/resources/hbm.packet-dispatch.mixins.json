@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.network.dispatch.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ConnectionDispatchMixin",
+    "PlayerListDispatchMixin",
+    "ChunkHolderDispatchMixin",
+    "AttachmentDispatchMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

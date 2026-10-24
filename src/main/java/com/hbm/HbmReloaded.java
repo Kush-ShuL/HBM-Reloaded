@@ -53,6 +53,7 @@ public final class HbmReloaded {
         com.hbm.ore.OreProcessingConfig.register(container);
         com.hbm.fluid.FluidInteropConfig.register(container);
         LegacyStartup.initialize();
+        com.hbm.network.dispatch.PacketDispatch.register(container);
         com.hbm.damage.DamageResistanceHandler.register();
         HbmFluids.register();
         com.hbm.fluid.interop.FluidInterop.register(modBus);

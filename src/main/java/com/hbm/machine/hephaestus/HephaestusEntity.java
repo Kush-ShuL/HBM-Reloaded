@@ -66,7 +66,7 @@ public final class HephaestusEntity extends BlockEntity implements StandardFluid
         bufferedHeat=getTotalHeat();
         setChanged();
         var packet=getUpdatePacket();
-        for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<150D*150D)player.connection.send(packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<150D*150D)player.connection.send(packet);dispatchScope.commit();}
     }
     private int heatFromBlock(ServerLevel server,int x,int y,int z){
         var block=server.getBlockState(new BlockPos(x,y,z)).getBlock();

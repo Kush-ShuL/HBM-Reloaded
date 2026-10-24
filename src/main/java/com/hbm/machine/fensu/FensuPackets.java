@@ -18,6 +18,6 @@ public final class FensuPackets {
         @Override public Type<? extends CustomPacketPayload> type(){return TYPE;}
     }
     static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(State.TYPE,State.CODEC,(state,context)->context.enqueueWork(()->com.hbm.client.fensu.FensuClient.receive(state)));}
-    static void send(FensuBlockEntity machine){if(machine.getLevel() instanceof ServerLevel level){var p=machine.getBlockPos();var packet=new State(p,machine.storedPower(),machine.delta,machine.redLow,machine.redHigh,(byte)machine.getPriority().ordinal(),machine.muffled,machine.tilted);for(var player:level.players())if(player.distanceToSqr(p.getX(),p.getY(),p.getZ())<=10000)PacketDistributor.sendToPlayer(player,packet);}}
+    static void send(FensuBlockEntity machine){if(machine.getLevel() instanceof ServerLevel level){var p=machine.getBlockPos();var packet=new State(p,machine.storedPower(),machine.delta,machine.redLow,machine.redHigh,(byte)machine.getPriority().ordinal(),machine.muffled,machine.tilted);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(level.getServer(),packet)){for(var player:level.players())if(player.distanceToSqr(p.getX(),p.getY(),p.getZ())<=10000)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}}
     private FensuPackets(){}
 }

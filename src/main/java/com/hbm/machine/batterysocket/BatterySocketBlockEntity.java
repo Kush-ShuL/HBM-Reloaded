@@ -114,7 +114,7 @@ public final class BatterySocketBlockEntity extends BlockEntity implements World
         if(comparator!=lastRedstone) for(BlockPos port:portPositions(worldPosition,getBlockState())) { if(level.getBlockEntity(port)!=null) level.getBlockEntity(port).setChanged();level.updateNeighbourForOutputSignal(port,getBlockState().getBlock()); }
         lastRedstone=comparator;prevPowerState=getPower();
         // Source BatteryBase.networkPackNT(100) runs before SC fluctuation and this tick's log update.
-        var packet=getUpdatePacket();for(var player:server.players()) if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000) player.connection.send(packet);
+        var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players()) if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000) player.connection.send(packet);dispatchScope.commit();}
         if(hasSCLoaded()) {
             if(damageTarget==0) pickNewSCTarget(server);
             damageTimer++;

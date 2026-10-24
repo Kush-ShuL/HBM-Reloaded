@@ -98,7 +98,7 @@ public final class BrickFurnaceEntity extends BlockEntity implements WorldlyCont
         }
         if(dirty)setChanged();
         var packed=getUpdateTag(server.registryAccess());
-        if(!packed.equals(lastPacked)||server.getGameTime()%20==0){lastPacked=packed;var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225D)player.connection.send(packet);}
+        if(!packed.equals(lastPacked)||server.getGameTime()%20==0){lastPacked=packed;var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225D)player.connection.send(packet);dispatchScope.commit();}}
     }
     @Override public Component getDisplayName(){return customName.isEmpty()?Component.translatable("container.furnaceBrick"):Component.literal(customName);}
     @Override public void setCustomName(Component name){customName=name.getString();setChanged();}

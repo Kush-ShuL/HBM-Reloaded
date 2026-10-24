@@ -52,7 +52,7 @@ public abstract class ConverterBlockEntity extends BlockEntity implements Energy
         // Original TilePort's first node update waits for an actual network before subscription.
         if(node.hasValidNet()){if(this instanceof EnergyReceiver receiver)node.addReceiver(receiver);if(this instanceof EnergyProvider provider)node.addProvider(provider);}
         convert(server);
-        var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225)player.connection.send(packet);
+        var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225)player.connection.send(packet);dispatchScope.commit();}
     }
     @Override public long getPower(){return power;}
     @Override public long getMaxPower(){return MAX_POWER;}

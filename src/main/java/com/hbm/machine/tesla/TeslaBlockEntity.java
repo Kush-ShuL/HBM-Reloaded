@@ -42,7 +42,7 @@ public final class TeslaBlockEntity extends BlockEntity implements EnergyReceive
         if(power.compareTo(PULSE)>=0){power=power.subtract(PULSE);targets=TeslaDischarge.zap(server,origin(),RANGE,null);}
         // networkPackNT(100), including the empty list that ends a previous beam.
         var packet=getUpdatePacket();
-        for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);dispatchScope.commit();}
     }
     @Override public long getPower(){return power.longValueExact();}
     @Override public long getMaxPower(){return CAPACITY;}

@@ -39,7 +39,7 @@ public final class ZirnoxBlockEntity extends ReactorInventory implements Standar
         pressure=carbonDioxide.getFill()*2+(int)((float)heat*((float)carbonDioxide.getFill()/carbonDioxide.getMaxFill()));
         if(heat>0&&heat<MAX_HEAT){if(water.getFill()>0&&carbonDioxide.getFill()>0&&steam.getFill()<steam.getMaxFill()){generateSteam();heat-=(int)((float)heat*pressure/1000000F);}else heat-=10;if(server.getGameTime()%100==0)com.hbm.satellite.SatelliteRayEvents.reportEvent(server,worldPosition.getX(),worldPosition.getY(),worldPosition.getZ(),com.hbm.satellite.SatelliteRayEvents.RayEvent.INFO_NUCLEAR,200);}
         if(pressure>MAX_PRESSURE||heat>MAX_HEAT){meltdown(server);return;}
-        setChanged();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);
+        setChanged();var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);dispatchScope.commit();}
     }
     private void generateSteam(){if(heat<=10256)return;int cycle=(int)((((float)heat-10256F)/MAX_HEAT)*Math.min((float)carbonDioxide.getFill()/14000F,1F)*25F*7.5F);output=cycle;water.setFill(Math.max(water.getFill()-cycle,0));steam.setFill(Math.min(steam.getFill()+cycle,steam.getMaxFill()));}
     private boolean fuel(int slot){return slots[slot].getItem() instanceof ZirnoxRod rod&&!rod.type().breeding;}

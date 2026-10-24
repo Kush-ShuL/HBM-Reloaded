@@ -16,7 +16,7 @@ public record PowerNetToolNotice(double x,double y,double z,String text) impleme
     @Override public Type<PowerNetToolNotice> type() { return TYPE; }
     public static void send(ServerLevel level,BlockPos pos,String text) {
         var packet = new PowerNetToolNotice(pos.getX()+.5,pos.getY()+1.5,pos.getZ()+.5,text);
-        for (var player : level.players()) if (player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<400) PacketDistributor.sendToPlayer(player,packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(level.getServer(),packet)){for (var player : level.players()) if (player.distanceToSqr(pos.getX(),pos.getY(),pos.getZ())<400) PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}
     }
     public static void register(RegisterPayloadHandlersEvent event) { event.registrar("1").playToClient(TYPE,CODEC,(packet,context)->context.enqueueWork(()->CLIENT.accept(packet))); }
 }

@@ -43,7 +43,7 @@ public class BarrelBlockEntity extends BlockEntity implements WorldlyContainer,M
         updatePorts(server);byte comparator=comparatorPower();if(lastRedstone!=comparator){setChanged();updateComparators(server);}lastRedstone=comparator;
         boolean changed=tank.setType(0,1,slots);changed|=tank.loadTank(2,3,slots);changed|=tank.unloadTank(4,5,slots);if(changed)setChanged();
         if(tank.getFill()>0)checkFluidInteraction(server);
-        if(!isRemoved()){var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<trackingRange()*trackingRange())player.connection.send(packet);}
+        if(!isRemoved()){var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<trackingRange()*trackingRange())player.connection.send(packet);dispatchScope.commit();}}
     }
     public int trackingRange(){return 50;}
     protected void updatePorts(ServerLevel level){if(fluidPorts==null)fluidPorts=new FluidPorts(worldPosition);fluidPorts.update(level,this);}

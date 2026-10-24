@@ -50,7 +50,7 @@ public final class TeleporterEntity extends BlockEntity implements EnergyReceive
         var tag=getUpdateTag(world.registryAccess());
         if(!tag.equals(lastPacked)||world.getGameTime()%20==0){
             lastPacked=tag;var packet=getUpdatePacket();
-            for(var player:world.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<15D*15D)player.connection.send(packet);
+            try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(world.getServer(),packet)){for(var player:world.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<15D*15D)player.connection.send(packet);dispatchScope.commit();}
         }
     }
     public ResourceKey<Level> destination(){return TeleportDimensions.resolve(targetDim,targetDimension);}

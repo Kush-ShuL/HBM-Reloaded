@@ -70,7 +70,7 @@ public final class WoodBurnerBlockEntity extends BlockEntity implements WorldlyC
         }
         power+=powerGen; if(power>MAX_POWER) power=MAX_POWER;
         if(changed||power!=previousPower||burnTime!=previousBurn||tank.getFill()!=previousFill||tank.getTankType()!=previousType) setChanged();
-        var packet=getUpdatePacket(); for(var player:server.players()) if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625) player.connection.send(packet);
+        var packet=getUpdatePacket(); try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players()) if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<625) player.connection.send(packet);dispatchScope.commit();}
     }
     private void chargeBattery() {
         if(power<0) { power=0; return; } if(power>MAX_POWER) { power=MAX_POWER; return; }

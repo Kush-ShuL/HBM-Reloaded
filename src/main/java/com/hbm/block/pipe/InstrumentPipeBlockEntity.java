@@ -26,7 +26,7 @@ public final class InstrumentPipeBlockEntity extends NativePipeBlockEntity imple
         }
         // Source networkPackNT radius 25, per tick. Trackers are not reconstructed on clients.
         var packet = getUpdatePacket();
-        for (var player : server.players()) if (player.distanceToSqr(getBlockPos().getX(), getBlockPos().getY(), getBlockPos().getZ()) < 625) player.connection.send(packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for (var player : server.players()) if (player.distanceToSqr(getBlockPos().getX(), getBlockPos().getY(), getBlockPos().getZ()) < 625) player.connection.send(packet);dispatchScope.commit();}
     }
     private boolean pending() { return node != null && node.network() != null && type != HbmFluids.NONE && level != null && lastCounterUpdate != level.getGameTime(); }
     private void updateCounter() { if (pending()) { counter += node.network().fluidTracker; lastCounterUpdate = level.getGameTime(); } }

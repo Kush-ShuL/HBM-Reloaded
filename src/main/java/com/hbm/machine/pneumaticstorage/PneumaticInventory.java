@@ -25,7 +25,7 @@ public abstract class PneumaticInventory extends BlockEntity implements WorldlyC
     protected PneumaticInventory(PneumaticKind kind,BlockPos pos,BlockState state){super(PneumaticStorageContent.entity(kind),pos,state);this.kind=kind;slots=new ItemStack[kind.slots];Arrays.fill(slots,ItemStack.EMPTY);}
     public static void tick(Level level,BlockPos pos,BlockState state,PneumaticInventory machine){if(level instanceof ServerLevel server)machine.updateServer(server);}
     protected abstract void updateServer(ServerLevel server);
-    protected void synchronize(ServerLevel server){var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225)player.connection.send(packet);}
+    protected void synchronize(ServerLevel server){var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<225)player.connection.send(packet);dispatchScope.commit();}}
     @Override public boolean canConnectPneumatic(Direction side){return true;}
     @Override public Component getDisplayName(){return customName==null?Component.translatable(kind.title()):customName;}
     public void setCustomName(Component name){customName=name;setChanged();}

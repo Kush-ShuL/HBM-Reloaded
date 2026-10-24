@@ -18,6 +18,6 @@ public record ConventionalEffects(double x,double y,double z,int clouds,float sc
     public static void compose(Level level,double x,double y,double z,int count,float scale,float speed){
         if(!(level instanceof ServerLevel server))return;
         var packet=new ConventionalEffects(x,y,z,count,scale,speed);
-        for(var player:server.players())if(player.distanceToSqr(x,y,z)<=200D*200D)PacketDistributor.sendToPlayer(player,packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(x,y,z)<=200D*200D)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}
     }
 }

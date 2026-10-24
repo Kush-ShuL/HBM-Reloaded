@@ -92,7 +92,7 @@ public final class ChemicalPlantBlockEntity extends BlockEntity implements World
             }
         }
         var packet=getUpdatePacket();
-        for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<10000)player.connection.send(packet);dispatchScope.commit();}
     }
     private void chargeBattery() {
         if(power<0){power=0;return;}if(power>maxPower){power=maxPower;return;}

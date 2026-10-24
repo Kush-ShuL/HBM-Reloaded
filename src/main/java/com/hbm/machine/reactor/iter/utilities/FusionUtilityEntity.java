@@ -16,7 +16,7 @@ public abstract class FusionUtilityEntity extends BlockEntity implements Machine
  @Override public long energyStored(){return 0;}@Override public long energyCapacity(){return 0;}
  protected abstract void saveMachine(CompoundTag tag);protected abstract void loadMachine(CompoundTag tag);
  protected void writeSync(CompoundTag tag){saveMachine(tag);}protected void readSync(CompoundTag tag){loadMachine(tag);}
- protected final void sync(int radius){setChanged();if(level instanceof ServerLevel server){var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<radius*radius)player.connection.send(packet);}}
+ protected final void sync(int radius){setChanged();if(level instanceof ServerLevel server){var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<radius*radius)player.connection.send(packet);dispatchScope.commit();}}}
  @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);saveMachine(tag);}
  @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);muffled=tag.getBoolean("muffled");tilted=tag.getBoolean("tilted");loadMachine(tag);}
  @Override public CompoundTag getUpdateTag(HolderLookup.Provider lookup){var tag=new CompoundTag();tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);writeSync(tag);return tag;}

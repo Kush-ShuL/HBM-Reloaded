@@ -49,7 +49,7 @@ public final class RefuelerEntity extends BlockEntity implements StandardFluidRe
         if(station.operating){if(station.operatingTime%20==0)server.playSound(null,pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5,SoundEvents.FIRE_EXTINGUISH,SoundSource.BLOCKS,.2F,.5F);station.operatingTime++;}else station.operatingTime=0;
         if(old!=station.tank.getFill())station.setChanged();
         // Source networkPackNT(150): send the actual native BE packet only to that radius.
-        var packet=ClientboundBlockEntityDataPacket.create(station);for(var player:server.players())if(player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<22500)player.connection.send(packet);
+        var packet=ClientboundBlockEntityDataPacket.create(station);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<22500)player.connection.send(packet);dispatchScope.commit();}
     }
     private boolean fill(ItemStack stack){if(!(stack.getItem()instanceof FillableItem item)||!item.acceptsFluid(tank.getTankType(),stack))return false;int before=tank.getFill();tank.setFill(item.tryFill(tank.getTankType(),before,stack));return tank.getFill()<before;}
     @Override public FluidTank[] getAllTanks(){return new FluidTank[]{tank};}

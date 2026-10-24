@@ -33,7 +33,7 @@ public record NetworkPortDebug(double x,double y,double z,double mx,double my,do
             double y=offset.getY()+.5-direction.getStepY()*.5+level.random.nextDouble()*.5-.25;
             double z=offset.getZ()+.5-direction.getStepZ()*.5+level.random.nextDouble()*.5-.25;
             var packet=new NetworkPortDebug(x,y,z,direction.getStepX()*motion,direction.getStepY()*motion,direction.getStepZ()*motion,fluid,color);
-            for(var player:level.players())if(player.distanceToSqr(x,y,z)<625)PacketDistributor.sendToPlayer(player,packet);
+            try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(level.getServer(),packet)){for(var player:level.players())if(player.distanceToSqr(x,y,z)<625)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}
         }
     }
 }

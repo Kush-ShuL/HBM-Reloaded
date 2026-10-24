@@ -45,7 +45,7 @@ public final class CasingEffects {
     }
     private static void send(Level level,double x,double y,double z,double mx,double my,double mz,float yaw,float pitch,float pitchMomentum,float yawMomentum,String casing,boolean smoke,int life,double lift,int nodeLife){
         var data=new CompoundTag();data.putDouble("mX",mx);data.putDouble("mY",my);data.putDouble("mZ",mz);data.putFloat("yaw",yaw);data.putFloat("pitch",pitch);data.putFloat("mPitch",pitchMomentum);data.putFloat("mYaw",yawMomentum);data.putString("name",casing);data.putBoolean("smoking",smoke);data.putInt("smokeLife",life);data.putDouble("smokeLift",lift);data.putInt("nodeLife",nodeLife);
-        if(level instanceof ServerLevel server){var packet=new Packet(x,y,z,data);for(var player:server.players())if(player.distanceToSqr(x,y,z)<=2500)PacketDistributor.sendToPlayer(player,packet);}
+        if(level instanceof ServerLevel server){var packet=new Packet(x,y,z,data);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(x,y,z)<=2500)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}
     }
     private static final class Vector {
         double x,y,z;Vector(double x,double y,double z){this.x=x;this.y=y;this.z=z;}

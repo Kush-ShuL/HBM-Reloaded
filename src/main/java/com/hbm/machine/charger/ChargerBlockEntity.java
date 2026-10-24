@@ -60,7 +60,7 @@ public final class ChargerBlockEntity extends BlockEntity implements EnergyRecei
         for(var player:players)for(var slot:EQUIPMENT){var stack=player.getItemBySlot(slot);if(stack.getItem() instanceof HbmBattery battery)demand=demand.add(BigInteger.valueOf(Math.min(battery.getMaxCharge(stack)-battery.getCharge(stack),battery.getChargeRate(stack))).max(BigInteger.ZERO));}
         particles=lastOperation>0;
         if(particles){lastOperation--;if(server.getGameTime()%20==0)sound(SoundEvents.FIRE_EXTINGUISH,.2F,.5F);}
-        var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);
+        var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);dispatchScope.commit();}
     }
     private void sound(net.minecraft.sounds.SoundEvent sound,float volume,float pitch){
         if(level==null)return;

@@ -19,5 +19,5 @@ public record NuclearMukeEffects(double x,double y,double z,String effect,boolea
     @Override public Type<NuclearMukeEffects> type(){return TYPE;}
     @SubscribeEvent public static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(TYPE,CODEC,(p,c)->c.enqueueWork(()->com.hbm.client.bomb.nuclear.MukeClient.receive(p)));}
     public static void send(Level level,double x,double y,double z,String type,boolean bf){sendAtOrigin(level,x,y,z,type,bf,x,y,z);}
-    public static void sendAtOrigin(Level level,double x,double y,double z,String type,boolean bf,double ox,double oy,double oz){if(level instanceof ServerLevel server){var packet=new NuclearMukeEffects(x,y,z,type,bf);for(var player:server.players())if(player.distanceToSqr(ox,oy,oz)<=250D*250D)PacketDistributor.sendToPlayer(player,packet);}}
+    public static void sendAtOrigin(Level level,double x,double y,double z,String type,boolean bf,double ox,double oy,double oz){if(level instanceof ServerLevel server){var packet=new NuclearMukeEffects(x,y,z,type,bf);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(ox,oy,oz)<=250D*250D)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}}
 }

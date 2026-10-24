@@ -36,7 +36,7 @@ public final class SolidifierEntity extends BlockEntity implements WorldlyContai
   var recipe=SolidificationRecipes.find(server.getRecipeManager(),tank.getTankType());
   processing=canProcess(recipe);
   if(processing){power=power.subtract(BigInteger.valueOf(usage));if(++progress>=processTime){tank.setFill(tank.getFill()-recipe.input().fill);if(slots[0].isEmpty())slots[0]=recipe.output().copy();else slots[0].grow(recipe.output().getCount());progress=0;}setChanged();}else if(progress!=0){progress=0;setChanged();}
-  var packet=ClientboundBlockEntityDataPacket.create(this);for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);
+  var packet=ClientboundBlockEntityDataPacket.create(this);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);dispatchScope.commit();}
  }
  /** Item+source damage equality deliberately ignores source output NBT,as the original canProcess does. */
  private boolean canProcess(SolidifierRecipe recipe){if(power.compareTo(BigInteger.valueOf(usage))<0||recipe==null||recipe.input().fill>tank.getFill())return false;var output=recipe.output();return slots[0].isEmpty()||slots[0].is(output.getItem())&&com.hbm.material.HbmMaterials.metadata(slots[0])==com.hbm.material.HbmMaterials.metadata(output)&&slots[0].getCount()+output.getCount()<=slots[0].getMaxStackSize();}

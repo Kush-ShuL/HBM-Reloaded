@@ -30,6 +30,6 @@ public record ExplosionVisuals(int effect,double x,double y,double z,float size,
     public static void send(Level level,int effect,double x,double y,double z,float size,List<BlockPos> blocks,double range){
         if(!(level instanceof ServerLevel server))return;
         var packet=new ExplosionVisuals(effect,x,y,z,size,List.copyOf(blocks));
-        for(var player:server.players())if(player.distanceToSqr(x,y,z)<=range*range)PacketDistributor.sendToPlayer(player,packet);
+        try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(x,y,z)<=range*range)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}
     }
 }

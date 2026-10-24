@@ -13,6 +13,9 @@ Development version: migration work is in progress.
 '''
 
 [[mixins]]
+config="hbm.packet-dispatch.mixins.json"
+
+[[mixins]]
 config="hbm.legacy-armor.mixins.json"
 
 [[mixins]]

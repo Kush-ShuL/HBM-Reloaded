@@ -36,7 +36,7 @@ public final class ResearchReactorBlockEntity extends ReactorInventory {
         if(heat>0){water=countWater();if(water>0)heat-=(heat*.07F*water/12);else heat--;if(heat<0)heat=0;}
         if(heat>MAX_HEAT){explode(server);return;}
         if(rodLevel>0&&heat>0&&!(blocksRad(worldPosition.offset(1,1,0))&&blocksRad(worldPosition.offset(-1,1,0))&&blocksRad(worldPosition.offset(0,1,1))&&blocksRad(worldPosition.offset(0,1,-1))))HbmRadiation.incrementRad(server,worldPosition.getX(),worldPosition.getY(),worldPosition.getZ(),(float)heat/MAX_HEAT*50F);
-        setChanged();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<150*150)player.connection.send(packet);
+        setChanged();var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<150*150)player.connection.send(packet);dispatchScope.commit();}
     }
     private void reaction(){
         for(int i=0;i<12;i++){

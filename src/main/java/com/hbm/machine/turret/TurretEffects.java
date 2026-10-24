@@ -18,6 +18,6 @@ public final class TurretEffects {
         @Override public Type<Packet> type(){return TYPE;}
     }
     public static void register(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(Packet.TYPE,Packet.CODEC,(packet,context)->context.enqueueWork(()->client.accept(packet)));}
-    public static void send(ServerLevel level,BlockPos origin,double x,double y,double z,CompoundTag data){var packet=new Packet(x,y,z,data);for(var player:level.players())if(player.distanceToSqr(origin.getX(),origin.getY(),origin.getZ())<=2500)PacketDistributor.sendToPlayer(player,packet);}
+    public static void send(ServerLevel level,BlockPos origin,double x,double y,double z,CompoundTag data){var packet=new Packet(x,y,z,data);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginPayloadGroup(level.getServer(),packet)){for(var player:level.players())if(player.distanceToSqr(origin.getX(),origin.getY(),origin.getZ())<=2500)PacketDistributor.sendToPlayer(player,packet);dispatchScope.commit();}}
     private TurretEffects(){}
 }

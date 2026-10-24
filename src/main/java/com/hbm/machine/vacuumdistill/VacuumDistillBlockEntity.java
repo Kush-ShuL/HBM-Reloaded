@@ -45,7 +45,7 @@ public final class VacuumDistillBlockEntity extends BlockEntity implements World
     public static void tick(Level level,BlockPos pos,BlockState state,VacuumDistillBlockEntity machine){if(level instanceof ServerLevel server)machine.serverTick(server);else CLIENT_TICK.accept(machine);}
     private void serverTick(ServerLevel server){
         updatePorts(server);isOn=false;chargeBattery();boolean changed=tanks[0].setType(11,slots);changed|=tanks[0].loadTank(1,2,slots);changed|=refine(server);for(int tank=1;tank<5;tank++)changed|=tanks[tank].unloadTank(1+tank*2,2+tank*2,slots);if(changed)setChanged();
-        var packetState=getUpdateTag(server.registryAccess());if(!packetState.equals(lastSentState)||server.getGameTime()%20==0){lastSentState=packetState;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->packetState);for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);}
+        var packetState=getUpdateTag(server.registryAccess());if(!packetState.equals(lastSentState)||server.getGameTime()%20==0){lastSentState=packetState;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->packetState);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);dispatchScope.commit();}}
     }
     private boolean refine(ServerLevel server){
         var recipe=VacuumDistillRecipeConfig.find(server.getRecipeManager(),tanks[0].getTankType());

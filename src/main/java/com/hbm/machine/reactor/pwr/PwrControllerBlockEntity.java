@@ -222,7 +222,7 @@ if(this.amountLoaded <= 0) this.tanks[0].setType(2, slots);
 			}
 
 			
-        setChanged();var tag=getUpdateTag(server.registryAccess());if(!tag.equals(lastSent)||server.getGameTime()%20==0){lastSent=tag;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->tag);for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);}
+        setChanged();var tag=getUpdateTag(server.registryAccess());if(!tag.equals(lastSent)||server.getGameTime()%20==0){lastSent=tag;var packet=ClientboundBlockEntityDataPacket.create(this,(ignored,lookup)->tag);try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);dispatchScope.commit();}}
     }
 protected void updateCoolant() {
 

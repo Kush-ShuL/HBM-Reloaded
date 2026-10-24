@@ -44,7 +44,7 @@ public final class RtgBlockEntity extends BlockEntity implements WorldlyContaine
         long previous=power;power+=heat*5;if(power>MAX_POWER)power=MAX_POWER;
         if(modified||previous!=power)setChanged();
         // Original packet radius 50; container heat is synchronized separately.
-        var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);
+        var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<2500)player.connection.send(packet);dispatchScope.commit();}
     }
     private void disconnect(){if(level instanceof ServerLevel server&&node!=null)HbmEnergy.nodespace(server).destroyNode(node);node=null;}
     @Override public void onChunkUnloaded(){disconnect();super.onChunkUnloaded();}

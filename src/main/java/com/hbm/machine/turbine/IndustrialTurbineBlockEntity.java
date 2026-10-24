@@ -59,7 +59,7 @@ public final class IndustrialTurbineBlockEntity extends BlockEntity implements E
         BigInteger target=Double.isFinite(spin)?scaled(maxPower,Math.max(spin,.05)):maxPower.multiply(flywheelEnergy).divide(FLYWHEEL_MASS);
         lastPowerTarget=target.min(flywheelEnergy);flywheelEnergy=flywheelEnergy.subtract(lastPowerTarget);powerBuffer=lastPowerTarget;
         outletSnapshot=new CompoundTag();tanks[1].writeToNBT(outletSnapshot,"steam");if(!valid)tanks[1].setTankType(HbmFluids.NONE);
-        setChanged();var packet=getUpdatePacket();for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);
+        setChanged();var packet=getUpdatePacket();try(var dispatchScope=com.hbm.network.dispatch.PacketDispatch.beginGroup(server.getServer(),packet)){for(var player:server.players())if(player.distanceToSqr(worldPosition.getX(),worldPosition.getY(),worldPosition.getZ())<22500)player.connection.send(packet);dispatchScope.commit();}
     }
     private static BigInteger scaled(BigInteger value,double factor){double original=value.doubleValue()*factor;if(value.bitLength()<63&&Double.isFinite(original)&&original>=-0x1.0p63&&original<0x1.0p63)return BigInteger.valueOf((long)original);return new BigDecimal(value).multiply(BigDecimal.valueOf(factor)).toBigInteger();}
     private void clientTick(){lastRotor=rotor;float speed=spin>=.5?30:(float)(Math.pow(spin*2,.5)*30);rotor+=speed;if(rotor>=360){lastRotor-=360;rotor-=360;}clientTick.accept(this);}
