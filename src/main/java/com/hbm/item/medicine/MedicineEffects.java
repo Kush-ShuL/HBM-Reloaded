@@ -61,7 +61,7 @@ public final class MedicineEffects {
                     if(MedicineConfig.TAINT_TRAILS.get()) {
                         var pos=entity.blockPosition().below();var old=level.getBlockState(pos);
                         var block=BuiltInRegistries.BLOCK.getOptional(ResourceLocation.fromNamespaceAndPath("hbm","taint"));
-                        if(entity.blockPosition().getY()>1&&old.isSolidRender(level,pos)&&!old.isAir()&&block.isPresent())
+                        if(entity.blockPosition().getY()>1&&com.hbm.block.LegacyBlockTraits.isNormalCube(level,pos,old)&&!old.isAir()&&block.isPresent())
                             level.setBlock(pos,MedicineContent.taintTrail(block.get().defaultBlockState()),2);
                     }
                 }
