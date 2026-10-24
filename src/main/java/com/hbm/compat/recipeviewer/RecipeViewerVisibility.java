@@ -1,7 +1,7 @@
 package com.hbm.compat.recipeviewer;
 
 import com.hbm.client.config.ClientEffectsConfig;
-import com.hbm.item.EnumMultiItem;
+import com.hbm.item.secret.FlatSecretContent;
 import com.hbm.item.meteoritesword.MeteoriteSwordContent;
 import com.hbm.recipe.generic.Blueprints;
 import com.hbm.weapon.sedna.ammo.FlatAmmoContent;
@@ -11,15 +11,11 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 /** One display policy: global secret entries and recipe exclusions have intentionally distinct scopes. */
 public final class RecipeViewerVisibility {
-    private static final ResourceLocation SECRET_MATERIAL = ResourceLocation.fromNamespaceAndPath("hbm", "item_secret");
-
     public static boolean hideSecretsEnabled() { return ClientEffectsConfig.recipeViewerHideSecretsEnabled(); }
 
     public static boolean secretEntry(ItemStack stack) {
@@ -49,7 +45,7 @@ public final class RecipeViewerVisibility {
 
     // 秘密材料族的唯一条目与物品身份入口；索引与配方判定共用真实注册实例。
     private static final class SecretMaterials {
-        private static final List<ItemStack> STACKS = ((EnumMultiItem) BuiltInRegistries.ITEM.get(SECRET_MATERIAL)).creativeStacks();
+        private static final List<ItemStack> STACKS = FlatSecretContent.allStacks();
         private static final Set<Item> ITEMS = STACKS.stream().map(ItemStack::getItem)
                 .collect(java.util.stream.Collectors.toUnmodifiableSet());
     }

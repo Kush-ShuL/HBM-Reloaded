@@ -110,29 +110,6 @@
       "enumClass": "ItemEnums.EnumFuelAdditive"
     },
     {
-      "id": "item_secret",
-      "symbol": "item_secret",
-      "tab": null,
-      "stackSize": 64,
-      "multiName": true,
-      "multiTexture": true,
-      "names": [
-        "canister",
-        "controller",
-        "selenium_steel",
-        "aberrator",
-        "folly"
-      ],
-      "order": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "enumClass": "EnumSecretType"
-    },
-    {
       "id": "page_of_",
       "symbol": "page_of_",
       "tab": null,

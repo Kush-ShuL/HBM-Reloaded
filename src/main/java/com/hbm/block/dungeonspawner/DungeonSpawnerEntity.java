@@ -77,8 +77,7 @@ public final class DungeonSpawnerEntity extends BlockEntity {
                 ItemStack reward;
                 // This RNG draw occurs only if the real holder exists.
                 if(server.random.nextInt(5)==0){
-                    reward=new ItemStack(HbmContent.item("item_secret"));
-                    reward.set(HbmHazards.LEGACY_METADATA.get(),3); // EnumSecretType.ABERRATOR
+                    reward=com.hbm.item.secret.FlatSecretContent.stack(3,1);
                 }else{
                     reward=new ItemStack(PedestalContent.TABLET.get());
                     reward.set(HbmHazards.LEGACY_METADATA.get(),1);

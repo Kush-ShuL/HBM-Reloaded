@@ -87,7 +87,7 @@ public final class LogicProgram {
         action("SKELETON_GUN_TIER_3", tile -> skeletons(tile, 3), dependencies(new String[0], new String[0], MobUtil.slotPoolGunsTier3, MobUtil.slotPoolAdvRanged));
         action("ZOMBIE_TIER_1", tile -> zombies(tile, false), dependencies(new String[0], new String[0], MobUtil.slotPoolCommon));
         action("ZOMBIE_TIER_2", tile -> zombies(tile, true), dependencies(new String[0], new String[0], MobUtil.slotPoolAdv));
-        action("ABERRATOR", LogicProgram::aberrator, dependencies(new String[]{"item_secret", "clay_tablet"}, new String[0]));
+        action("ABERRATOR", LogicProgram::aberrator, dependencies(new String[]{"item_secret_aberrator", "clay_tablet"}, new String[0]));
         action("PUZZLE_TEST", LogicProgram::puzzle, dependencies(new String[]{"gun_bolter"}, new String[]{"crate_steel"}));
         action("MISSILE_STRIKE", LogicProgram::missile, dependencies(new String[0], new String[]{"block_electrical_scrap"}));
         action("IRRADIATE_ENTITIES_AOE", LogicProgram::irradiate, READY);
@@ -201,7 +201,7 @@ public final class LogicProgram {
         }
         if (tile.phase > 2) {
             if (world.getBlockEntity(p.above(18)) instanceof SkeletonHolderEntity holder)
-                holder.setItem(world.random.nextInt(5) == 0 ? LogicWorld.stack("item_secret", 3) : LogicWorld.stack("clay_tablet", 1));
+                holder.setItem(world.random.nextInt(5) == 0 ? LogicWorld.stack("item_secret_aberrator") : LogicWorld.stack("clay_tablet", 1));
             world.setBlock(p, Blocks.OBSIDIAN.defaultBlockState(), 3);
         }
     }
