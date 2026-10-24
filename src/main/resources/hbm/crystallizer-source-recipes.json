@@ -2343,11 +2343,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 0
-                }
+                "id": "hbm:circuit_star_piece_board_blank",
+                "count": 1
               }
             }
           ]
@@ -2390,11 +2387,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 1
-                }
+                "id": "hbm:circuit_star_piece_board_transistor",
+                "count": 1
               }
             }
           ]
@@ -2437,11 +2431,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 2
-                }
+                "id": "hbm:circuit_star_piece_board_converter",
+                "count": 1
               }
             }
           ]
@@ -2484,11 +2475,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 3
-                }
+                "id": "hbm:circuit_star_piece_bridge_north",
+                "count": 1
               }
             }
           ]
@@ -2531,11 +2519,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 4
-                }
+                "id": "hbm:circuit_star_piece_bridge_south",
+                "count": 1
               }
             }
           ]
@@ -2578,11 +2563,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 5
-                }
+                "id": "hbm:circuit_star_piece_bridge_io",
+                "count": 1
               }
             }
           ]
@@ -2625,11 +2607,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 6
-                }
+                "id": "hbm:circuit_star_piece_bridge_bus",
+                "count": 1
               }
             }
           ]
@@ -2672,11 +2651,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 7
-                }
+                "id": "hbm:circuit_star_piece_bridge_chipset",
+                "count": 1
               }
             }
           ]
@@ -2719,11 +2695,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 8
-                }
+                "id": "hbm:circuit_star_piece_bridge_cmos",
+                "count": 1
               }
             }
           ]
@@ -2766,11 +2739,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 9
-                }
+                "id": "hbm:circuit_star_piece_bridge_bios",
+                "count": 1
               }
             }
           ]
@@ -2813,11 +2783,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 10
-                }
+                "id": "hbm:circuit_star_piece_cpu_register",
+                "count": 1
               }
             }
           ]
@@ -2860,11 +2827,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 11
-                }
+                "id": "hbm:circuit_star_piece_cpu_clock",
+                "count": 1
               }
             }
           ]
@@ -2907,11 +2871,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 12
-                }
+                "id": "hbm:circuit_star_piece_cpu_logic",
+                "count": 1
               }
             }
           ]
@@ -2954,11 +2915,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 13
-                }
+                "id": "hbm:circuit_star_piece_cpu_cache",
+                "count": 1
               }
             }
           ]
@@ -3001,11 +2959,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 14
-                }
+                "id": "hbm:circuit_star_piece_cpu_ext",
+                "count": 1
               }
             }
           ]
@@ -3048,11 +3003,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 15
-                }
+                "id": "hbm:circuit_star_piece_cpu_socket",
+                "count": 1
               }
             }
           ]
@@ -3095,11 +3047,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 16
-                }
+                "id": "hbm:circuit_star_piece_mem_socket",
+                "count": 1
               }
             }
           ]
@@ -3142,11 +3091,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 17
-                }
+                "id": "hbm:circuit_star_piece_mem_16k_a",
+                "count": 1
               }
             }
           ]
@@ -3189,11 +3135,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 18
-                }
+                "id": "hbm:circuit_star_piece_mem_16k_b",
+                "count": 1
               }
             }
           ]
@@ -3236,11 +3179,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 19
-                }
+                "id": "hbm:circuit_star_piece_mem_16k_c",
+                "count": 1
               }
             }
           ]
@@ -3283,11 +3223,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 20
-                }
+                "id": "hbm:circuit_star_piece_mem_16k_d",
+                "count": 1
               }
             }
           ]
@@ -3330,11 +3267,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 21
-                }
+                "id": "hbm:circuit_star_piece_card_board",
+                "count": 1
               }
             }
           ]
@@ -3377,11 +3311,8 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:circuit_star_piece",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 22
-                }
+                "id": "hbm:circuit_star_piece_card_processor",
+                "count": 1
               }
             }
           ]

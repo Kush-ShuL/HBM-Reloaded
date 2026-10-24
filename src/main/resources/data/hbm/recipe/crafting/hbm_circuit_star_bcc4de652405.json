@@ -1,0 +1,51 @@
+{
+  "result": {
+    "id": "hbm:circuit_star",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_component",
+      "components": {
+        "hbm:legacy_metadata": 0
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_component",
+      "components": {
+        "hbm:legacy_metadata": 1
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_component",
+      "components": {
+        "hbm:legacy_metadata": 2
+      },
+      "strict": false
+    },
+    {
+      "type": "neoforge:components",
+      "items": "hbm:circuit_star_component",
+      "components": {
+        "hbm:legacy_metadata": 3
+      },
+      "strict": false
+    },
+    {
+      "item": "hbm:circuit_star_piece_board_transistor"
+    },
+    {
+      "item": "hbm:circuit_star_piece_board_converter"
+    },
+    {
+      "item": "hbm:circuit_star_piece_board_blank"
+    }
+  ]
+}

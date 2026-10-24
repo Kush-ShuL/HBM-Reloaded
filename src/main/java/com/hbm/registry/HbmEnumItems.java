@@ -25,7 +25,7 @@ public final class HbmEnumItems {
             if (stream == null) throw new IllegalStateException("Missing enum-items.json: run tools/port_enum_items.py");
             var content = new Gson().fromJson(new InputStreamReader(stream, StandardCharsets.UTF_8), Content.class);
             for (Spec spec : content.items()) {
-                if (spec.id().equals("ammo_standard") || spec.id().equals("ammo_secret") || spec.id().equals("casing") || spec.id().equals("chunk_ore") || spec.id().equals("coke") || spec.id().equals("briquette") || spec.id().equals("powder_ash") || spec.id().equals("oil_tar") || spec.id().equals("weapon_mod_caliber") || spec.id().equals("ingot_metal") || spec.id().equals("item_secret") || spec.id().equals("plant_item")) continue; // Source descriptors are not registered physical items.
+                if (spec.id().equals("ammo_standard") || spec.id().equals("ammo_secret") || spec.id().equals("casing") || spec.id().equals("chunk_ore") || spec.id().equals("coke") || spec.id().equals("briquette") || spec.id().equals("powder_ash") || spec.id().equals("oil_tar") || spec.id().equals("weapon_mod_caliber") || spec.id().equals("ingot_metal") || spec.id().equals("item_secret") || spec.id().equals("plant_item") || spec.id().equals("circuit_star_piece")) continue; // Source descriptors are not registered physical items.
                 var item = ITEMS.register(spec.id(), () -> new EnumMultiItem(spec.id(), spec.stackSize(), spec.multiName(), spec.names(), spec.order()));
                 ALL.add(item);
                 if (spec.tab() != null) TABS.computeIfAbsent(spec.tab(), ignored -> new ArrayList<>()).add(item);
@@ -42,6 +42,7 @@ public final class HbmEnumItems {
         com.hbm.item.oiltar.FlatOilTarContent.register(bus);
         com.hbm.item.ingotmetal.FlatIngotMetalContent.register(bus);
         com.hbm.item.secret.FlatSecretContent.register(bus);
+        com.hbm.item.circuitpiece.FlatCircuitPieceContent.register(bus);
         com.hbm.weapon.sedna.gun.mods.caliber.FlatCaliberContent.register(bus);
     }
 

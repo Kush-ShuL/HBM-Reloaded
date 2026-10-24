@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:circuit_star_component",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 3
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:circuit_star_piece_card_board"
+    },
+    {
+      "item": "hbm:circuit_star_piece_card_processor"
+    }
+  ]
+}

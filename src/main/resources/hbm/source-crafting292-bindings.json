@@ -437,8 +437,8 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/hbm_circuit_star_component_25b46a502cf9",
-          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_25b46a502cf9.json",
+          "id": "hbm:crafting/hbm_circuit_star_component_d6498debda00",
+          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_d6498debda00.json",
           "status": "existing-real-native-resource",
           "type": "minecraft:crafting_shapeless",
           "variant": 0,
@@ -455,60 +455,25 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 9
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_bios"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_bus"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_chipset"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 8
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_cmos"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_io"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_north"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_bridge_south"
               }
             ]
           }
@@ -523,8 +488,8 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/hbm_circuit_star_component_face2a901d09",
-          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_face2a901d09.json",
+          "id": "hbm:crafting/hbm_circuit_star_component_47fcc61cc880",
+          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_47fcc61cc880.json",
           "status": "existing-real-native-resource",
           "type": "minecraft:crafting_shapeless",
           "variant": 0,
@@ -541,52 +506,22 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 13
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_cpu_cache"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 11
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_cpu_clock"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 14
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_cpu_ext"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 12
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_cpu_logic"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 10
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_cpu_register"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 15
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_cpu_socket"
               }
             ]
           }
@@ -601,8 +536,8 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/hbm_circuit_star_component_225e663be234",
-          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_225e663be234.json",
+          "id": "hbm:crafting/hbm_circuit_star_component_8ad7a297cdd5",
+          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_8ad7a297cdd5.json",
           "status": "existing-real-native-resource",
           "type": "minecraft:crafting_shapeless",
           "variant": 0,
@@ -619,44 +554,19 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 16
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_mem_socket"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 17
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_mem_16k_a"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 18
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_mem_16k_b"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 19
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_mem_16k_c"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 20
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_mem_16k_d"
               }
             ]
           }
@@ -671,8 +581,8 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/hbm_circuit_star_component_02dc4fed0922",
-          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_02dc4fed0922.json",
+          "id": "hbm:crafting/hbm_circuit_star_component_d2d1a66eb849",
+          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_d2d1a66eb849.json",
           "status": "existing-real-native-resource",
           "type": "minecraft:crafting_shapeless",
           "variant": 0,
@@ -689,20 +599,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 21
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_card_board"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 22
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_card_processor"
               }
             ]
           }
@@ -717,8 +617,8 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/hbm_circuit_star_6aca9d72679c",
-          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_6aca9d72679c.json",
+          "id": "hbm:crafting/hbm_circuit_star_bcc4de652405",
+          "resource": "data/hbm/recipe/crafting/hbm_circuit_star_bcc4de652405.json",
           "status": "existing-real-native-resource",
           "type": "minecraft:crafting_shapeless",
           "variant": 0,
@@ -764,28 +664,13 @@
                 "strict": false
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_board_transistor"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_board_converter"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_piece",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:circuit_star_piece_board_blank"
               }
             ]
           }
@@ -3814,8 +3699,8 @@
         "ModItems.circuit_star_component.stackFromEnum(CircuitComponentType.CHIPSET)",
         "new Object[] {\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_BIOS),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_BUS),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_CHIPSET),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_CMOS),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_IO),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_NORTH),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BRIDGE_SOUTH)\n\t\t}"
       ],
-      "id": "hbm:crafting/hbm_circuit_star_component_25b46a502cf9",
-      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_25b46a502cf9.json",
+      "id": "hbm:crafting/hbm_circuit_star_component_d6498debda00",
+      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_d6498debda00.json",
       "status": "existing-real-native-resource",
       "type": "minecraft:crafting_shapeless",
       "variant": 0,
@@ -3832,60 +3717,25 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 9
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_bios"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_bus"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_chipset"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 8
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_cmos"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_io"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_north"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_bridge_south"
           }
         ]
       }
@@ -3899,8 +3749,8 @@
         "ModItems.circuit_star_component.stackFromEnum(CircuitComponentType.CPU)",
         "new Object[] {\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CPU_CACHE),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CPU_CLOCK),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CPU_EXT),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CPU_LOGIC),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CPU_REGISTER),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CPU_SOCKET)\n\t\t}"
       ],
-      "id": "hbm:crafting/hbm_circuit_star_component_face2a901d09",
-      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_face2a901d09.json",
+      "id": "hbm:crafting/hbm_circuit_star_component_47fcc61cc880",
+      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_47fcc61cc880.json",
       "status": "existing-real-native-resource",
       "type": "minecraft:crafting_shapeless",
       "variant": 0,
@@ -3917,52 +3767,22 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 13
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_cpu_cache"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 11
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_cpu_clock"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 14
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_cpu_ext"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 12
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_cpu_logic"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 10
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_cpu_register"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 15
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_cpu_socket"
           }
         ]
       }
@@ -3976,8 +3796,8 @@
         "ModItems.circuit_star_component.stackFromEnum(CircuitComponentType.RAM)",
         "new Object[] {\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.MEM_SOCKET),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.MEM_16K_A),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.MEM_16K_B),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.MEM_16K_C),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.MEM_16K_D)\n\t\t}"
       ],
-      "id": "hbm:crafting/hbm_circuit_star_component_225e663be234",
-      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_225e663be234.json",
+      "id": "hbm:crafting/hbm_circuit_star_component_8ad7a297cdd5",
+      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_8ad7a297cdd5.json",
       "status": "existing-real-native-resource",
       "type": "minecraft:crafting_shapeless",
       "variant": 0,
@@ -3994,44 +3814,19 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 16
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_mem_socket"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 17
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_mem_16k_a"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 18
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_mem_16k_b"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 19
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_mem_16k_c"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 20
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_mem_16k_d"
           }
         ]
       }
@@ -4045,8 +3840,8 @@
         "ModItems.circuit_star_component.stackFromEnum(CircuitComponentType.CARD)",
         "new Object[] {\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CARD_BOARD),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.CARD_PROCESSOR)\n\t\t}"
       ],
-      "id": "hbm:crafting/hbm_circuit_star_component_02dc4fed0922",
-      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_02dc4fed0922.json",
+      "id": "hbm:crafting/hbm_circuit_star_component_d2d1a66eb849",
+      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_component_d2d1a66eb849.json",
       "status": "existing-real-native-resource",
       "type": "minecraft:crafting_shapeless",
       "variant": 0,
@@ -4063,20 +3858,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 21
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_card_board"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 22
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_card_processor"
           }
         ]
       }
@@ -4090,8 +3875,8 @@
         "new ItemStack(ModItems.circuit_star)",
         "new Object[] {\n\t\t\t\tModItems.circuit_star_component.stackFromEnum(CircuitComponentType.CHIPSET),\n\t\t\t\tModItems.circuit_star_component.stackFromEnum(CircuitComponentType.CPU),\n\t\t\t\tModItems.circuit_star_component.stackFromEnum(CircuitComponentType.RAM),\n\t\t\t\tModItems.circuit_star_component.stackFromEnum(CircuitComponentType.CARD),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BOARD_TRANSISTOR),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BOARD_CONVERTER),\n\t\t\t\tModItems.circuit_star_piece.stackFromEnum(ScrapType.BOARD_BLANK)\n\t\t}"
       ],
-      "id": "hbm:crafting/hbm_circuit_star_6aca9d72679c",
-      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_6aca9d72679c.json",
+      "id": "hbm:crafting/hbm_circuit_star_bcc4de652405",
+      "resource": "data/hbm/recipe/crafting/hbm_circuit_star_bcc4de652405.json",
       "status": "existing-real-native-resource",
       "type": "minecraft:crafting_shapeless",
       "variant": 0,
@@ -4137,28 +3922,13 @@
             "strict": false
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_board_transistor"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_board_converter"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_piece",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:circuit_star_piece_board_blank"
           }
         ]
       }

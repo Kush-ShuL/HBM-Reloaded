@@ -1,0 +1,34 @@
+{
+  "result": {
+    "id": "hbm:circuit_star_component",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 0
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:circuit_star_piece_bridge_bios"
+    },
+    {
+      "item": "hbm:circuit_star_piece_bridge_bus"
+    },
+    {
+      "item": "hbm:circuit_star_piece_bridge_chipset"
+    },
+    {
+      "item": "hbm:circuit_star_piece_bridge_cmos"
+    },
+    {
+      "item": "hbm:circuit_star_piece_bridge_io"
+    },
+    {
+      "item": "hbm:circuit_star_piece_bridge_north"
+    },
+    {
+      "item": "hbm:circuit_star_piece_bridge_south"
+    }
+  ]
+}

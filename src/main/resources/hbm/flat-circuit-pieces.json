@@ -1,0 +1,400 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_board_blank",
+      "id": "hbm:circuit_star_piece_board_blank",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 0,
+      "sourceEnum": "BOARD_BLANK",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_board_transistor",
+      "id": "hbm:circuit_star_piece_board_transistor",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 1,
+      "sourceEnum": "BOARD_TRANSISTOR",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_board_converter",
+      "id": "hbm:circuit_star_piece_board_converter",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 2,
+      "sourceEnum": "BOARD_CONVERTER",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_north",
+      "id": "hbm:circuit_star_piece_bridge_north",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 3,
+      "sourceEnum": "BRIDGE_NORTH",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_south",
+      "id": "hbm:circuit_star_piece_bridge_south",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 4,
+      "sourceEnum": "BRIDGE_SOUTH",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_io",
+      "id": "hbm:circuit_star_piece_bridge_io",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 5,
+      "sourceEnum": "BRIDGE_IO",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_bus",
+      "id": "hbm:circuit_star_piece_bridge_bus",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 6,
+      "sourceEnum": "BRIDGE_BUS",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_chipset",
+      "id": "hbm:circuit_star_piece_bridge_chipset",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 7,
+      "sourceEnum": "BRIDGE_CHIPSET",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_cmos",
+      "id": "hbm:circuit_star_piece_bridge_cmos",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 8,
+      "sourceEnum": "BRIDGE_CMOS",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_bridge_bios",
+      "id": "hbm:circuit_star_piece_bridge_bios",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 9,
+      "sourceEnum": "BRIDGE_BIOS",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_cpu_register",
+      "id": "hbm:circuit_star_piece_cpu_register",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 10,
+      "sourceEnum": "CPU_REGISTER",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_cpu_clock",
+      "id": "hbm:circuit_star_piece_cpu_clock",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 11,
+      "sourceEnum": "CPU_CLOCK",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_cpu_logic",
+      "id": "hbm:circuit_star_piece_cpu_logic",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 12,
+      "sourceEnum": "CPU_LOGIC",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_cpu_cache",
+      "id": "hbm:circuit_star_piece_cpu_cache",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 13,
+      "sourceEnum": "CPU_CACHE",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_cpu_ext",
+      "id": "hbm:circuit_star_piece_cpu_ext",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 14,
+      "sourceEnum": "CPU_EXT",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_cpu_socket",
+      "id": "hbm:circuit_star_piece_cpu_socket",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 15,
+      "sourceEnum": "CPU_SOCKET",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_mem_socket",
+      "id": "hbm:circuit_star_piece_mem_socket",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 16,
+      "sourceEnum": "MEM_SOCKET",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_mem_16k_a",
+      "id": "hbm:circuit_star_piece_mem_16k_a",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 17,
+      "sourceEnum": "MEM_16K_A",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_mem_16k_b",
+      "id": "hbm:circuit_star_piece_mem_16k_b",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 18,
+      "sourceEnum": "MEM_16K_B",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_mem_16k_c",
+      "id": "hbm:circuit_star_piece_mem_16k_c",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 19,
+      "sourceEnum": "MEM_16K_C",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_mem_16k_d",
+      "id": "hbm:circuit_star_piece_mem_16k_d",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 20,
+      "sourceEnum": "MEM_16K_D",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_card_board",
+      "id": "hbm:circuit_star_piece_card_board",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 21,
+      "sourceEnum": "CARD_BOARD",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_piece_card_processor",
+      "id": "hbm:circuit_star_piece_card_processor",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.circuit_star_piece",
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_piece",
+      "sourceOrdinal": 22,
+      "sourceEnum": "CARD_PROCESSOR",
+      "creativeTab": null,
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2636
+      }
+    }
+  ],
+  "sourceCreativeTab": null,
+  "sourceOrder": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "registeredBy": "HbmEnumItems existing lifecycle",
+  "sourceHiddenInViewers": false
+}

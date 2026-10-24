@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": "hbm:circuit_star_component",
+    "count": 1,
+    "components": {
+      "hbm:legacy_metadata": 2
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:circuit_star_piece_mem_socket"
+    },
+    {
+      "item": "hbm:circuit_star_piece_mem_16k_a"
+    },
+    {
+      "item": "hbm:circuit_star_piece_mem_16k_b"
+    },
+    {
+      "item": "hbm:circuit_star_piece_mem_16k_c"
+    },
+    {
+      "item": "hbm:circuit_star_piece_mem_16k_d"
+    }
+  ]
+}
