@@ -97,6 +97,7 @@ public final class GunClientEvents {
         var gun=(ItemGunBaseNT)stack.getItem();
         var graphics=event.getGuiGraphics();
         if(event.getName().equals(VanillaGuiLayers.CROSSHAIR)){
+            if(com.hbm.client.bomb.nuclear.NuclearClientEffects.crosshairFlashActive())return;
             event.setCanceled(true);var config=gun.getConfig(stack,0);var crosshair=config.getCrosshair(stack);
             if(crosshair==null||crosshair==Crosshair.NONE||config.getHideCrosshair(stack)&&ItemGunBaseNT.aimingProgress>=1)return;
             graphics.flush();RenderSystem.enableBlend();RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.ONE_MINUS_DST_COLOR,GlStateManager.DestFactor.ONE_MINUS_SRC_COLOR,GlStateManager.SourceFactor.ONE,GlStateManager.DestFactor.ZERO);

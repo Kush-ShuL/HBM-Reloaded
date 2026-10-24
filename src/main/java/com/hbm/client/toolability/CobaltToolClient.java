@@ -26,7 +26,7 @@ public final class CobaltToolClient {
         boolean down=CYCLE.isDown();if(down&&!wasDown)PacketDistributor.sendToServer(new CobaltPayloads.Cycle());wasDown=down;
     }
     @SubscribeEvent public static void render(RenderGuiLayerEvent.Pre event){
-        if(!event.getName().equals(VanillaGuiLayers.CROSSHAIR))return;var client=Minecraft.getInstance();if(client.options.hideGui||client.player==null||client.level==null||!(client.player.getMainHandItem().getItem() instanceof SourceAbilityTool)||CobaltPresets.read(client.player.getMainHandItem()).active().area()==0)return;
+        if(!event.getName().equals(VanillaGuiLayers.CROSSHAIR)||com.hbm.client.bomb.nuclear.NuclearClientEffects.crosshairFlashActive())return;var client=Minecraft.getInstance();if(client.options.hideGui||client.player==null||client.level==null||!(client.player.getMainHandItem().getItem() instanceof SourceAbilityTool)||CobaltPresets.read(client.player.getMainHandItem()).active().area()==0)return;
         var graphics=event.getGuiGraphics();graphics.flush();RenderSystem.enableBlend();RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.ONE_MINUS_DST_COLOR,GlStateManager.DestFactor.ONE_MINUS_SRC_COLOR,GlStateManager.SourceFactor.ONE,GlStateManager.DestFactor.ZERO);
         graphics.blit(CobaltToolScreen.TEXTURE,graphics.guiWidth()/2-24+CobaltToolClientConfig.HUD_X.get(),graphics.guiHeight()/2+8+CobaltToolClientConfig.HUD_Y.get(),(CobaltPresets.read(client.player.getMainHandItem()).active().area()-1)*16,138,16,16,256,256);graphics.flush();RenderSystem.defaultBlendFunc();RenderSystem.disableBlend();
     }

@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Predicate;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSourceStack;
@@ -30,9 +31,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterClientCommandsEvent;
 import org.slf4j.Logger;
 
-/** 按实际物品或方块类名导出 Wiki 图片；仅在玩家执行客户端命令后打开。 */
+/** 按实际物品或方块类名导出 Wiki 图片；与开发快捷键共用原生物品变体收集器。 */
 @EventBusSubscriber(modid = "hbm", value = Dist.CLIENT)
 public final class CommandWikiRender {
+    public static final String OUTPUT_DIRECTORY="wiki-block-renders-256";
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final SimpleCommandExceptionType USAGE = new SimpleCommandExceptionType(
             Component.literal("/ntmwikirender <type> ").withStyle(ChatFormatting.GREEN)
@@ -57,6 +59,17 @@ public final class CommandWikiRender {
             throw CommandSourceStack.ERROR_NOT_PLAYER.create();
         }
         LOGGER.info("Taking a screenshot of {}", type);
+        var preview=collectVariants(item->item.getClass().getSimpleName().equalsIgnoreCase(type)
+                ||item instanceof BlockItem blockItem&&blockItem.getBlock().getClass().getSimpleName().equalsIgnoreCase(type));
+        minecraft.player.closeContainer();
+        minecraft.setScreen(new WikiRenderScreen(preview,type,OUTPUT_DIRECTORY,16));
+        return 1;
+    }
+
+    /** The command and explicit bulk-gun shortcut retain one actual native variant producer. */
+    public static List<ItemStack> collectVariants(Predicate<Item> filter) {
+        Minecraft minecraft=Minecraft.getInstance();
+        if(minecraft.player==null||minecraft.level==null)throw new IllegalStateException("Wiki item collection requires a current client player/world");
 
         // 原生创造栏生成器是组件变体的真实入口；本次主动生成，避免沿用流体等重载前的缓存。
         var parameters = new CreativeModeTab.ItemDisplayParameters(minecraft.player.connection.enabledFeatures(),
@@ -77,9 +90,7 @@ public final class CommandWikiRender {
             var id = BuiltInRegistries.ITEM.getKey(item);
             if (!id.getNamespace().equals("hbm") || item == HbmCreativeTabs.UI_ICON.get()
                     || item instanceof com.hbm.item.FixedEnumItem fixed && fixed.family().equals("achievement_icon")) continue;
-            if (!item.getClass().getSimpleName().equalsIgnoreCase(type)
-                    && (!(item instanceof BlockItem blockItem)
-                    || !blockItem.getBlock().getClass().getSimpleName().equalsIgnoreCase(type))) continue;
+            if(!filter.test(item))continue;
             Class<? extends Item> itemClass = item.getClass();
             if (itemClass == RbmkPelletItem.class || itemClass == WastePlateItem.class || itemClass == TypedPipeItem.class) {
                 preview.add(new ItemStack(item));
@@ -93,8 +104,6 @@ public final class CommandWikiRender {
                 }
             }
         }
-        minecraft.player.closeContainer();
-        minecraft.setScreen(new WikiRenderScreen(preview, type, "wiki-block-renders-256", 16));
-        return 1;
+        return preview;
     }
 }

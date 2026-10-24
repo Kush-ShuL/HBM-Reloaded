@@ -25,11 +25,19 @@ public final class MurkWingRenderer {
     private static final ResourceLocation MODEL=ResourceLocation.parse("hbm:models/armor/murk.obj"),TEXTURE=ResourceLocation.parse("hbm:textures/armor/wings_murk.png"),BOOST=ResourceLocation.parse("hbm:textures/models/jetpack.png");
     private static final ModelJetPack BOOST_MODEL=new ModelJetPack();
     public static void render(PoseStack poses,MultiBufferSource buffers,int light,LivingEntity wearer,ItemStack stack,SourceWingsItem item,HumanoidModel<?> parent){
+        renderWings(poses,buffers,light,wearer,item.limp,stack.hasFoil(),TEXTURE,parent);
+    }
+    /** The source author wings use this same four-part model and pivots, with type2/type3 textures. */
+    public static void renderAuthorWings(PoseStack poses,MultiBufferSource buffers,int light,LivingEntity wearer,int type,HumanoidModel<?> parent){
+        var texture=ResourceLocation.parse(type==2?"hbm:textures/armor/wings_bob.png":"hbm:textures/armor/wings_black.png");
+        renderWings(poses,buffers,light,wearer,false,false,texture,parent);
+    }
+    private static void renderWings(PoseStack poses,MultiBufferSource buffers,int light,LivingEntity wearer,boolean limp,boolean foil,ResourceLocation texture,HumanoidModel<?> parent){
         var mesh=LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL);
-        var vertices=ItemRenderer.getArmorFoilBuffer(buffers,RenderType.entityCutout(TEXTURE),stack.hasFoil());
+        var vertices=ItemRenderer.getArmorFoilBuffer(buffers,RenderType.entityCutout(texture),foil);
         double rot=Math.sin(wearer.tickCount*.2D)*20,rot2=Math.sin(wearer.tickCount*.2D-Math.PI*.5D)*50+30;
-        if(!item.limp&&wearer.onGround()){rot=20;rot2=160;}
-        if(item.limp){if(wearer.onGround()){rot=30;rot2=-30;}else if(wearer.getDeltaMovement().y<-.1){rot=0;rot2=10;}else{rot=30;rot2=20;}}
+        if(!limp&&wearer.onGround()){rot=20;rot2=160;}
+        if(limp){if(wearer.onGround()){rot=30;rot2=-30;}else if(wearer.getDeltaMovement().y<-.1){rot=0;rot2=10;}else{rot=30;rot2=20;}}
         poses.pushPose();try{
             var body=parent.body;poses.translate(body.x/16F,body.y/16F,body.z/16F);
             if(body.zRot!=0)poses.mulPose(Axis.ZP.rotation(body.zRot));if(body.yRot!=0)poses.mulPose(Axis.YP.rotation(body.yRot));if(body.xRot!=0)poses.mulPose(Axis.XP.rotation(body.xRot));
