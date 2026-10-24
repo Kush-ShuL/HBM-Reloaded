@@ -19,7 +19,7 @@ public final class CommandRadiation {
 
     @SubscribeEvent public static void register(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("ntmrad")
-                .requires(source -> source.hasPermission(2))
+                .requires(source -> source.hasPermission(4))
                 .executes(context -> usage(context.getSource()))
                 .then(Commands.literal("clear")
                         .executes(context -> clear(context.getSource()))

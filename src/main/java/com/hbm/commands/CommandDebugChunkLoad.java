@@ -16,7 +16,7 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 @EventBusSubscriber(modid="hbm")
 public final class CommandDebugChunkLoad {
     @SubscribeEvent public static void register(RegisterCommandsEvent event) {
-        event.getDispatcher().register(Commands.literal("ntmloadchunk").requires(source->source.hasPermission(2))
+        event.getDispatcher().register(Commands.literal("ntmloadchunk").requires(source->source.hasPermission(4))
                 .executes(context->0).then(Commands.argument("coordinates",StringArgumentType.greedyString())
                         .executes(context->run(context.getSource(),StringArgumentType.getString(context,"coordinates")))));
     }

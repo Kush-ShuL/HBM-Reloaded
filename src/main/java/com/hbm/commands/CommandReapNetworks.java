@@ -13,7 +13,7 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 @EventBusSubscriber(modid="hbm")
 public final class CommandReapNetworks {
     @SubscribeEvent public static void register(RegisterCommandsEvent event){
-        event.getDispatcher().register(Commands.literal("ntmreapnetworks").requires(source->source.hasPermission(2))
+        event.getDispatcher().register(Commands.literal("ntmreapnetworks").requires(source->source.hasPermission(4))
                 .executes(context->run(context.getSource()))
                 .then(Commands.argument("ignored",StringArgumentType.greedyString()).executes(context->run(context.getSource()))));
     }

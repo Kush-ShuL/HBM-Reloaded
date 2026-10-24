@@ -16,14 +16,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 
-/** Original permission-two server reload command; extra arguments are ignored. */
+/** Original permission-four server reload command; extra arguments are ignored. */
 @EventBusSubscriber(modid="hbm")
 public final class CommandReloadRecipes {
     private static final java.util.Set<net.minecraft.server.MinecraftServer> RELOADING=new java.util.HashSet<>();
     @SubscribeEvent public static void stopped(net.neoforged.neoforge.event.server.ServerStoppedEvent event){RELOADING.remove(event.getServer());}
     @SubscribeEvent public static void register(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("ntmreload")
-            .requires(source -> source.hasPermission(2))
+            .requires(source -> source.hasPermission(4))
             .executes(context -> run(context.getSource()))
             .then(Commands.argument("ignoredArguments", StringArgumentType.greedyString())
                 .executes(context -> run(context.getSource()))));

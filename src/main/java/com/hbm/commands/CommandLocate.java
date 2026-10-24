@@ -23,7 +23,7 @@ import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
-/** Original player-only permission-two /ntmlocate, using native natural starts without loading chunks. */
+/** Original player-only permission-four /ntmlocate, using native natural starts without loading chunks. */
 @EventBusSubscriber(modid = HbmReloaded.MOD_ID)
 public final class CommandLocate {
     private static final int VISITS_PER_TICK = 4096;
@@ -36,7 +36,7 @@ public final class CommandLocate {
 
     @SubscribeEvent
     public static void register(RegisterCommandsEvent event) {
-        event.getDispatcher().register(Commands.literal("ntmlocate").requires(source -> source.hasPermission(2))
+        event.getDispatcher().register(Commands.literal("ntmlocate").requires(source -> source.hasPermission(4))
                 .executes(context -> usage(context.getSource()))
                 .then(Commands.literal("list").executes(context -> list(context.getSource()))
                         .then(Commands.argument("ignoredArguments", StringArgumentType.greedyString())
