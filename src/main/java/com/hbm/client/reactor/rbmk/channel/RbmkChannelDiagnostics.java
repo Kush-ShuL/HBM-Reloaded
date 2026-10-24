@@ -12,7 +12,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Original additional DODD fuel/flux fields, after the common real heat/water/steam bars. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class RbmkChannelDiagnostics {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event) {
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event) {if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockState(hit.getBlockPos()).getBlock() instanceof RbmkFuelChannelBlock block)||!(block.core(mc.level,hit.getBlockPos()) instanceof RbmkFuelChannelEntity channel))return;
         var data=channel.diagnosticData();var keys=new TreeSet<>(data.getAllKeys());keys.removeAll(java.util.Set.of("heat","reasimWater","reasimSteam","x","y","z","items","id","muffled"));
         var g=event.getGuiGraphics();var font=LegacyFonts.get();int x=g.guiWidth()/2+8,y=g.guiHeight()/2+44;

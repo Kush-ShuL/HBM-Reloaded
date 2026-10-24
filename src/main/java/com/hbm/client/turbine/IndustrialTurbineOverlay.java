@@ -21,7 +21,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Original industrial/Leviathan look information beside the crosshair, also when Jade is installed. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class IndustrialTurbineOverlay {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();
         if(mc.options.hideGui||mc.screen!=null||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit))return;
         var block=mc.level.getBlockState(hit.getBlockPos()).getBlock();

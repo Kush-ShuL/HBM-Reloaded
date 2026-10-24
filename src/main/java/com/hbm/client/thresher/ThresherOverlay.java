@@ -12,7 +12,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Original look info fallback; native Jade uses the same real server fluid view and suspension field. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class ThresherOverlay {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockEntity(hit.getBlockPos()) instanceof ThresherEntity machine))return;
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockEntity(hit.getBlockPos()) instanceof ThresherEntity machine))return;
         var graphics=event.getGuiGraphics();var font=LegacyFonts.get();int x=graphics.guiWidth()/2+8,y=graphics.guiHeight()/2-10;
         graphics.drawString(font,Component.translatable("block.hbm.machine_thresher"),x,y,0xffff00,true);y+=12;
         graphics.fill(x+1,y+1,x+1+(int)(178D*machine.tank.getFill()/machine.tank.getMaxFill()),y+11,0xa0000000|machine.tank.getTankType().getColor()&0xffffff);

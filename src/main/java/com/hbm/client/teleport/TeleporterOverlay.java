@@ -13,7 +13,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Source look overlay, localized; retain the user's real-resource bar preference with no empty black backing. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class TeleporterOverlay {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockEntity(hit.getBlockPos()) instanceof TeleporterEntity machine))return;
         var g=event.getGuiGraphics();int x=g.guiWidth()/2+8,y=g.guiHeight()/2-10;
         g.drawString(LegacyFonts.get(),Component.translatable("tile.machine_teleporter.name"),x,y,0xffff00,true);y+=12;

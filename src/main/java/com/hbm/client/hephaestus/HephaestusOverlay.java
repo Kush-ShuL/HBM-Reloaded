@@ -12,7 +12,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Actual no-GUI ILookOverlay, using the existing clear-background resource-bar convention. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class HephaestusOverlay {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();
         if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockState(hit.getBlockPos()).getBlock() instanceof HephaestusBlock block))return;
         var pos=block.findCore(mc.level,hit.getBlockPos());

@@ -27,7 +27,7 @@ public final class TandemClient {
     }
     @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
     public static final class Overlay {
-        @SubscribeEvent public static void draw(RenderGuiEvent.Post event){
+        @SubscribeEvent public static void draw(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
             var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockEntity(hit.getBlockPos()) instanceof TandemEntity tile))return;
             var graphics=event.getGuiGraphics();var font=LegacyFonts.get();int x=graphics.guiWidth()/2+8,y=graphics.guiHeight()/2;
             Component name=TandemContent.BLOCK.get().getName();graphics.drawString(font,name,x+1,y-9,0x404000,false);graphics.drawString(font,name,x,y-10,0xffff00,false);

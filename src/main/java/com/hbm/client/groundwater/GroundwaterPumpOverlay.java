@@ -20,7 +20,7 @@ public final class GroundwaterPumpOverlay {
     private static Component fluid(FluidTank tank,boolean input){return Component.literal(input?"-> ":"<- ").withStyle(input?ChatFormatting.GREEN:ChatFormatting.RED)
             .append(tank.getTankType().displayName().copy().withStyle(ChatFormatting.RESET))
             .append(Component.literal(": "+number(tank.getFill())+" / "+number(tank.getMaxFill())+"mB").withStyle(ChatFormatting.RESET));}
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();if(mc.level==null||mc.options.hideGui||!(mc.hitResult instanceof BlockHitResult hit))return;
         var state=mc.level.getBlockState(hit.getBlockPos());if(!(state.getBlock() instanceof GroundwaterPumpBlock block))return;
         var pos=block.findCore(mc.level,hit.getBlockPos());if(pos==null||!(mc.level.getBlockEntity(pos) instanceof GroundwaterPumpEntity pump))return;

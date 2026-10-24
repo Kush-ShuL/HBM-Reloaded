@@ -13,7 +13,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Original DODD look data, using the requested progress bars and the shared current Minecraft font. */
 @EventBusSubscriber(modid = "hbm", value = Dist.CLIENT)
 public final class RbmkDiagnostics {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event) {
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event) {if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc = Minecraft.getInstance();
         if (mc.options.hideGui || mc.level == null || !(mc.hitResult instanceof BlockHitResult hit)
                 || !(mc.level.getBlockState(hit.getBlockPos()).getBlock() instanceof RbmkColumnBlock block)) return;

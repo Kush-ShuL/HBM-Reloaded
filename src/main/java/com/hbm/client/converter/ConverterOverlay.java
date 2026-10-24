@@ -16,7 +16,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class ConverterOverlay {
     private ConverterOverlay(){}
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockEntity(hit.getBlockPos()) instanceof ConverterBlockEntity converter))return;
         var graphics=event.getGuiGraphics();var font=LegacyFonts.get();int x=graphics.guiWidth()/2+8,y=graphics.guiHeight()/2;var title=converter.getBlockState().getBlock().getName();
         graphics.drawString(font,title,x+1,y-9,0x404000,false);graphics.drawString(font,title,x,y-10,0xFFFF00,false);

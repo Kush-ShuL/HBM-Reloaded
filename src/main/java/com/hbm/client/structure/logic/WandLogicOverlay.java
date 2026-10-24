@@ -17,7 +17,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Original ILookOverlay authoring readout, independent of Jade and preserving source row order. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class WandLogicOverlay {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event) {
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event) {if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc = Minecraft.getInstance();
         if (mc.options.hideGui || mc.level == null || !(mc.hitResult instanceof BlockHitResult hit)
                 || !(mc.level.getBlockState(hit.getBlockPos()).getBlock() instanceof WandLogicBlock block)

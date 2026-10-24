@@ -29,6 +29,7 @@ public final class PipeOverlay {
             Component text=held.getHoverName().copy().append(": "+distance+"m");
             graphics.fill(10,10,20+font.width(text),27,0x80404040); graphics.drawString(font,text,15,15,0xFFFFFFFF,false);
         }
+        if (!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled()) return;
         if (!(minecraft.hitResult instanceof BlockHitResult hit) || !(minecraft.level.getBlockEntity(hit.getBlockPos()) instanceof NativePipeBlockEntity pipe)) return;
         int x=graphics.guiWidth()/2+8,y=graphics.guiHeight()/2;
         var title=pipe.getBlockState().getBlock().getName();

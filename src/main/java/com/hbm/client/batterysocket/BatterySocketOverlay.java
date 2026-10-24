@@ -14,7 +14,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class BatterySocketOverlay {
     private BatterySocketOverlay(){}
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();if(mc.options.hideGui||mc.level==null||!(mc.hitResult instanceof BlockHitResult hit)||!(mc.level.getBlockState(hit.getBlockPos()).getBlock() instanceof BatterySocketBlock block))return;
         var pos=block.findCore(mc.level,hit.getBlockPos());if(pos==null||!(mc.level.getBlockEntity(pos) instanceof BatterySocketBlockEntity socket)||socket.displayedStack().isEmpty())return;
         var graphics=event.getGuiGraphics();var font=LegacyFonts.get();int x=graphics.guiWidth()/2+8,y=graphics.guiHeight()/2;var title=socket.displayedStack().getHoverName();

@@ -2,7 +2,6 @@ package com.hbm.client.ore;
 
 import com.hbm.block.ore.BedrockOreBlock;
 import com.hbm.block.ore.BedrockOreEntity;
-import com.hbm.client.config.LegacyClientConfig;
 import com.hbm.item.settings.client.LegacyInfoSystem;
 import java.util.Set;
 import net.minecraft.client.Minecraft;
@@ -25,7 +24,7 @@ public final class BedrockOreOverlay {
     @SubscribeEvent public static void render(RenderGuiLayerEvent.Pre event) {
         if(!VanillaGuiLayers.CROSSHAIR.equals(event.getName()))return;
         var client=Minecraft.getInstance();
-        if(client.options.hideGui||client.player==null||client.level==null||!LegacyClientConfig.doddDiagnostic()
+        if(client.options.hideGui||client.player==null||client.level==null||!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled()
                 ||!(client.hitResult instanceof BlockHitResult hit)||hit.getType()!=HitResult.Type.BLOCK)return;
         var held=client.player.getMainHandItem();
         if(!held.isEmpty()&&HELD_LOOK_OVERLAY.contains(BuiltInRegistries.ITEM.getKey(held.getItem()).toString()))return;

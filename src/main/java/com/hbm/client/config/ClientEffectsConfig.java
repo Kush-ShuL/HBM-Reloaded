@@ -23,6 +23,11 @@ public final class ClientEffectsConfig {
     // 配方浏览器是否隐藏秘密物品及相关通用机器配方；默认开启。
     private static final ModConfigSpec.BooleanValue RECIPE_VIEWER_HIDE_SECRETS;
 
+    // 是否显示准星所指方块和工具的实时观察提示；默认开启。
+    private static final ModConfigSpec.BooleanValue LOOK_OVERLAY;
+    // 是否额外显示所指方块的真实注册ID和状态属性；默认关闭，受观察提示总开关控制。
+    private static final ModConfigSpec.BooleanValue BLOCK_STATE_DEBUG;
+
     static {
         var builder = new ModConfigSpec.Builder();
         NUCLEAR_HUD_SHAKE = builder.comment(
@@ -54,6 +59,14 @@ public final class ClientEffectsConfig {
                 "更改后重载配方浏览器或重启客户端，以重新索引条目和配方。只控制展示，不改变实际合成或处理。",
                 "泥板配方仍需单独显式允许；其他独立隐藏规则、蓝图册图标和创造栏规则不由此开关解除。")
                 .define(java.util.List.of("recipeViewer", "hideSecretsEnabled"), true);
+        LOOK_OVERLAY = builder.comment(
+                "显示准星所指方块和工具的实时观察提示，包括 RBMK 诊断、机器、管道和结构工具。默认true。",
+                "只控制观察提示；不改变机器状态、Jade 提示、计时通知、工具能力图标或世界中的结构预览。")
+                .define(java.util.List.of("hud", "lookOverlayEnabled"), true);
+        BLOCK_STATE_DEBUG = builder.comment(
+                "在准星旁额外显示所指方块的注册ID、描述键和当前状态属性。默认false；仅在观察提示总开关开启时显示。",
+                "显示当前原生方块状态，不生成旧版元数据编号，不改变方块或存档。")
+                .define(java.util.List.of("hud", "blockStateDebugEnabled"), false);
         SPEC = builder.build();
     }
 
@@ -74,6 +87,10 @@ public final class ClientEffectsConfig {
     public static boolean modeBadgesEnabled() { return !SPEC.isLoaded() || MODE_BADGES.get(); }
 
     public static boolean recipeViewerHideSecretsEnabled() { return !SPEC.isLoaded() || RECIPE_VIEWER_HIDE_SECRETS.get(); }
+
+    public static boolean lookOverlayEnabled() { return !SPEC.isLoaded() || LOOK_OVERLAY.get(); }
+
+    public static boolean blockStateDebugEnabled() { return SPEC.isLoaded() && BLOCK_STATE_DEBUG.get(); }
 
     private ClientEffectsConfig() {}
 }

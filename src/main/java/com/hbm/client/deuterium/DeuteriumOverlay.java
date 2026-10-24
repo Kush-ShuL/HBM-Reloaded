@@ -15,7 +15,7 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
 /** Original ILookOverlay, independent of the optional Jade plugin and without a fabricated GUI/progress bar. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class DeuteriumOverlay {
-    @SubscribeEvent public static void render(RenderGuiEvent.Post event){
+    @SubscribeEvent public static void render(RenderGuiEvent.Post event){if(!com.hbm.item.settings.client.LegacyInfoSystem.lookOverlayEnabled())return;
         var mc=Minecraft.getInstance();if(mc.level==null||mc.options.hideGui||!(mc.hitResult instanceof BlockHitResult hit))return;
         var state=mc.level.getBlockState(hit.getBlockPos());var pos=hit.getBlockPos();
         if(state.getBlock() instanceof DeuteriumTowerBlock block){pos=block.findCore(mc.level,pos);if(pos==null)return;}
