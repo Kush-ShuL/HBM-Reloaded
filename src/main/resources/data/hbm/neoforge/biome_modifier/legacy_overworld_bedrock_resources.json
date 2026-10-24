@@ -1,6 +1,8 @@
 {
   "type": "hbm:bedrock_resource_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": {
+    "type": "neoforge:any"
+  },
   "feature": "hbm:legacy_overworld_bedrock_resources",
   "nether": false
 }

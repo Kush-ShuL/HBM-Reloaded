@@ -16,7 +16,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 public final class GneissVeinsFeature extends Feature<NoneFeatureConfiguration> {
     public GneissVeinsFeature(){super(NoneFeatureConfiguration.CODEC);}
     @Override public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context){
-        var level=context.level();if(!com.hbm.config.WorldgenControls.ores())return false;if(!level.getLevel().dimension().equals(Level.OVERWORLD)||!OreWorldgen.OVERWORLD.get())return false;
+        var level=context.level();if(!com.hbm.config.WorldgenControls.ores())return false;var dimension=level.getLevel().dimension();if(dimension.equals(Level.NETHER)||dimension.equals(Level.END)||!dimension.equals(Level.OVERWORLD)&&!com.hbm.config.WorldgenControls.moddedDimensions()||!OreWorldgen.OVERWORLD.get())return false;
         int chunkX=context.origin().getX()&~15,chunkZ=context.origin().getZ()&~15,changed=0;var random=context.random();
         if(com.hbm.config.WorldgenControls.feature("gneiss_ores"))for(var profile:GneissGeology.PROFILES)changed+=population(level,random,chunkX,chunkZ,profile,GneissGeology.count(profile),0,level.getMinBuildHeight(),level.getMaxBuildHeight()-1,false);
         int minimum=GneissGeology.deepMin(level),maximum=GneissGeology.deepMax(level);

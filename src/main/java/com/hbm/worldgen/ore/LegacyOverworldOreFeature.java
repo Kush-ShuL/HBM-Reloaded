@@ -2,6 +2,7 @@ package com.hbm.worldgen.ore;
 
 import com.hbm.registry.HbmDeepslateOres;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
@@ -12,7 +13,10 @@ public final class LegacyOverworldOreFeature extends Feature<NoneFeatureConfigur
     public LegacyOverworldOreFeature() { super(NoneFeatureConfiguration.CODEC); }
     @Override public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
         if (!com.hbm.config.WorldgenControls.ores() || !OreWorldgen.OVERWORLD.get()) return false;
-        WorldGenLevel level = context.level(); RandomSource random = context.random();
+        WorldGenLevel level = context.level();
+        var dimension = level.getLevel().dimension();
+        if (dimension.equals(Level.NETHER)||dimension.equals(Level.END)||!dimension.equals(Level.OVERWORLD)&&!com.hbm.config.WorldgenControls.moddedDimensions()) return false;
+        RandomSource random = context.random();
         int chunkX = context.origin().getX() & ~15, chunkZ = context.origin().getZ() & ~15;
         int placed = com.hbm.config.WorldgenControls.feature("overworld_ores") ? layer(level, random, chunkX, chunkZ, false) : 0;
         if (com.hbm.config.WorldgenControls.feature("deepslate_ores") && OreWorldgen.DEEP.get() && deepMin(level) <= deepMax(level)) placed += layer(level, random, chunkX, chunkZ, true);

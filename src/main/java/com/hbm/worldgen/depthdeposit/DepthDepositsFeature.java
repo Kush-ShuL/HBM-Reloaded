@@ -18,7 +18,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 public final class DepthDepositsFeature extends Feature<NoneFeatureConfiguration> {
     public DepthDepositsFeature(){super(NoneFeatureConfiguration.CODEC);}
     @Override public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context){
-        var level=context.level();if(!com.hbm.config.WorldgenControls.ores())return false;if(!level.getLevel().dimension().equals(Level.OVERWORLD)||!OreWorldgen.OVERWORLD.get())return false;
+        var level=context.level();if(!com.hbm.config.WorldgenControls.ores())return false;var dimension=level.getLevel().dimension();if(dimension.equals(Level.NETHER)||dimension.equals(Level.END)||!dimension.equals(Level.OVERWORLD)&&!com.hbm.config.WorldgenControls.moddedDimensions()||!OreWorldgen.OVERWORLD.get())return false;
         int chunkX=context.origin().getX()&~15,chunkZ=context.origin().getZ()&~15;RandomSource random=context.random();int count=0;
         // Preserve all six original positive-band calls before consuming any random
         // numbers for the optional modern extension.

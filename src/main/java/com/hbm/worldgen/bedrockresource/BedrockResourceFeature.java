@@ -22,7 +22,7 @@ public final class BedrockResourceFeature extends Feature<NoneFeatureConfigurati
     @Override public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context){
         if(!com.hbm.config.WorldgenControls.oreFeature(nether?"nether_bedrock":"overworld_bedrock"))return false;var control=com.hbm.config.WorldgenControls.rule(nether?"nether_bedrock":"overworld_bedrock",nether?"weighted_resources":"bedrock_ore_base");if(!control.enabled())return false;
         var level=context.level();var dimension=level.getLevel().dimension();
-        if(nether?(!dimension.equals(Level.NETHER)||!BedrockResources.NETHER.get()||!DimensionOres.NETHER.get()):(!dimension.equals(Level.OVERWORLD)||!BedrockResources.OVERWORLD.get()||!OreWorldgen.OVERWORLD.get()))return false;
+        if(nether?(!dimension.equals(Level.NETHER)||!BedrockResources.NETHER.get()||!DimensionOres.NETHER.get()):(dimension.equals(Level.NETHER)||dimension.equals(Level.END)||!dimension.equals(Level.OVERWORLD)&&!com.hbm.config.WorldgenControls.moddedDimensions()||!BedrockResources.OVERWORLD.get()||!OreWorldgen.OVERWORLD.get()))return false;
         var random=context.random();int chance=control.chance(nether?BedrockResources.NETHER_CHANCE.get():BedrockResources.OVERWORLD_CHANCE.get());if(chance==0||random.nextInt(chance)!=0)return false;
         ItemStack stack;int color,tier;FluidStack acid;
         if(nether){
