@@ -3,7 +3,6 @@ import com.hbm.api.machine.MachineView;
 import com.hbm.energy.*;
 import com.hbm.fluid.*;
 import com.hbm.fluid.network.*;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.item.battery.*;
 import com.hbm.multiblock.*;
 import com.hbm.pollution.*;
@@ -81,7 +80,7 @@ public final class WoodBurnerBlockEntity extends BlockEntity implements WorldlyC
     private boolean processAsh(int level,int type) {
         if(level<2000) return false;
         Item ash=com.hbm.item.ash.FlatAshContent.ASHES.get(type).get(); if(ash==Items.AIR) return false;
-        if(slots[1].isEmpty()) { slots[1]=new ItemStack(ash); slots[1].set(HbmHazards.LEGACY_METADATA.get(),type); return true; }
+        if(slots[1].isEmpty()) { slots[1]=new ItemStack(ash); return true; }
         if(slots[1].getCount()<slots[1].getMaxStackSize()&&slots[1].getItem()==ash) { slots[1].grow(1); return true; } return false;
     }
     private void updatePorts(ServerLevel server) {
