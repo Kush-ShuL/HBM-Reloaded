@@ -18,7 +18,7 @@ public final class NuclearBalefireExplosion extends NuclearChunkloadingEntity im
  @Override public void tick(){
   if(level().isClientSide)return;
   loadChunk(Mth.floor(getX()/16D),Mth.floor(getZ()/16D));
-  if(!did){explosion=new ExplosionBalefire((int)getX(),(int)getY(),(int)getZ(),level(),destructionRange);did=true;}
+  if(!did){com.hbm.logging.SourceActionLog.info("[NUKE] Initialized BF explosion at {} / {} / {} with strength {}!",getX(),getY(),getZ(),destructionRange);explosion=new ExplosionBalefire((int)getX(),(int)getY(),(int)getZ(),level(),destructionRange);did=true;}
   speed++;long deadline=NuclearTickBudget.deadline(level(),this);
   for(int i=0;i<speed&&System.nanoTime()<deadline;i++){
    if(explosion.updateUntil(deadline)){discard();age++;return;}

@@ -33,7 +33,7 @@ public final class EntityTomBlast extends NuclearChunkloadingEntity implements c
         super.tick();if(!(level() instanceof ServerLevel world))return;
         try{
             loadChunk(net.minecraft.util.Mth.floor(getX()/16D),net.minecraft.util.Mth.floor(getZ()/16D));ACTIVE.add(this);
-            if(!did){exp=new ExplosionTom((int)getX(),(int)getY(),(int)getZ(),world,destructionRange);did=true;}
+            if(!did){com.hbm.logging.SourceActionLog.info("[NUKE] Initialized TOM explosion at {} / {} / {} with strength {}!",getX(),getY(),getZ(),destructionRange);exp=new ExplosionTom((int)getX(),(int)getY(),(int)getZ(),world,destructionRange);did=true;}
             // User-configured faster batches retain their exact column/y cursor across
             // both asynchronous FULL-chunk waits and this tick's CPU time slice.
             if(batchRemaining==0){

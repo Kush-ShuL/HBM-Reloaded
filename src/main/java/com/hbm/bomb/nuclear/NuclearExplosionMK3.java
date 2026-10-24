@@ -39,7 +39,7 @@ public final class NuclearExplosionMK3 extends NuclearChunkloadingEntity impleme
  @Override public void tick(){
   if(!level().isClientSide)loadChunk(Mth.floor(getX()/16D),Mth.floor(getZ()/16D));
   if(!did){
-   if(level() instanceof ServerLevel server){var achievement=server.getServer().getAdvancements().get(net.minecraft.resources.ResourceLocation.parse("hbm:manhattan"));if(achievement!=null)for(var player:server.players())player.getAdvancements().award(achievement,"detonated");if(NuclearConfig.EXTENDED_LOGGING.get())com.hbm.HbmReloaded.LOGGER.info("[NUKE] Initialized mk3 explosion at {} / {} / {} with strength {}!",getX(),getY(),getZ(),destructionRange);}
+   if(level() instanceof ServerLevel server){var achievement=server.getServer().getAdvancements().get(net.minecraft.resources.ResourceLocation.parse("hbm:manhattan"));if(achievement!=null)for(var player:server.players())player.getAdvancements().award(achievement,"detonated");if(com.hbm.logging.SourceActionLog.enabled())com.hbm.HbmReloaded.LOGGER.info("[NUKE] Initialized mk3 explosion at {} / {} / {} with strength {}!",getX(),getY(),getZ(),destructionRange);}
    initialize();SatelliteBursts.reportEvent(level(),SatelliteBursts.DURATION_HIGH,SatelliteBursts.BurstIntensity.HIGH,getX(),getZ());did=true;
   }
   speed++;boolean flag=waste&&destructionComplete;

@@ -61,8 +61,8 @@ public final class EntityWastePearl extends EntityThrowableNT implements LegacyT
     @Override protected void onImpact(HitResult hit){
         if(!level().isClientSide&&pendingImpact!=null)return;
         if(hit instanceof EntityHitResult entity)entity.getEntity().hurt(damageSources().thrown(this,getThrower()),0F);
-        if(!level().isClientSide&&ConventionalContent.EXTENDED_LOGGING.getAsBoolean())
-            org.slf4j.LoggerFactory.getLogger("hbm").info("[GREN] Set off grenade at {} / {} / {} by {}!",(int)getX(),(int)getY(),(int)getZ(),getThrower() instanceof Player player?player.getDisplayName().getString():"null");
+        if(!level().isClientSide&&com.hbm.logging.SourceActionLog.enabled())
+            com.hbm.HbmReloaded.LOGGER.info("[GREN] Set off grenade at {} / {} / {} by {}!",(int)getX(),(int)getY(),(int)getZ(),getThrower() instanceof Player player?player.getDisplayName().getString():"null");
         explode();
     }
     public void explode(){

@@ -36,7 +36,7 @@ public final class UniversalGrenade extends EntityThrowableInterp {
         fuze().impact(this,hit);var extra=extra();if(extra!=null)extra.impact(this,hit);if(isRemoved())return;
         if(hit instanceof BlockHitResult block){var side=block.getDirection();var offset=Vec3.atLowerCornerOf(side.getNormal()).scale(.05);setPos(hit.getLocation().add(offset));var motion=getDeltaMovement();if(motion.length()>.2)level().playSound(null,getX(),getY(),getZ(),HbmSounds.get("weapon.grenadeBounce"),SoundSource.NEUTRAL,1,1);double bounce=shell().bounce;setDeltaMovement(motion.multiply(side.getStepX()!=0?-bounce:.8,side.getStepY()!=0?-bounce:.8,side.getStepZ()!=0?-bounce:.8));forceTeleport();entityData.set(BOUNCES,bounces()+1);}
     }
-    public void explode(){discard();GrenadeEffects.explode(filling(),this);var extra=extra();if(extra!=null)extra.explode(this);if(ConventionalContent.EXTENDED_LOGGING.getAsBoolean())org.slf4j.LoggerFactory.getLogger("hbm").info("[GREN] Set off grenade at {} / {} / {} by {}!",(int)getX(),(int)getY(),(int)getZ(),getThrower() instanceof Player player?player.getDisplayName().getString():"null");}
+    public void explode(){discard();GrenadeEffects.explode(filling(),this);var extra=extra();if(extra!=null)extra.explode(this);if(com.hbm.logging.SourceActionLog.enabled())com.hbm.HbmReloaded.LOGGER.info("[GREN] Set off grenade at {} / {} / {} by {}!",(int)getX(),(int)getY(),(int)getZ(),getThrower() instanceof Player player?player.getDisplayName().getString():"null");}
     @Override protected int groundDespawn(){return 0;}
     @Override public boolean fullBlockCollisions(){return true;}
 }

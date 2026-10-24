@@ -24,6 +24,7 @@ public final class NuclearExplosionMK5 extends NuclearChunkloadingEntity impleme
  private int falloutAdd;
  private boolean falloutStarted;
  private IExplosionRay explosion;
+ private long explosionStart;
  /** Observers may consume the same real source burst; the repository is always updated below. */
  public static final List<Consumer<NuclearExplosionMK5>> HIGH_BURST=new CopyOnWriteArrayList<>();
  public NuclearExplosionMK5(EntityType<? extends NuclearExplosionMK5> type,Level level){super(type,level);}
@@ -35,7 +36,7 @@ public final class NuclearExplosionMK5 extends NuclearChunkloadingEntity impleme
   if(!level().isClientSide&&fallout&&explosion!=null&&tickCount<10&&strength>=75)radiate(2_500_000F/(tickCount*5+1),length*2);
   if(level() instanceof net.minecraft.server.level.ServerLevel server){var advancement=server.getServer().getAdvancements().get(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("hbm","manhattan"));if(advancement!=null)for(var player:server.players())player.getAdvancements().award(advancement,"detonated");}
   ExplosionNukeGeneric.dealDamage(level(),getX(),getY(),getZ(),length*2);
-  if(explosion==null){explosion=new ExplosionNukeRayBatched(level(),(int)getX(),(int)getY(),(int)getZ(),strength,speed,length);SatelliteBursts.reportEvent(level(),SatelliteBursts.DURATION_HIGH,SatelliteBursts.BurstIntensity.HIGH,getX(),getZ());for(var event:HIGH_BURST)event.accept(this);}
+  if(explosion==null){explosionStart=System.currentTimeMillis();explosion=new ExplosionNukeRayBatched(level(),(int)getX(),(int)getY(),(int)getZ(),strength,speed,length);SatelliteBursts.reportEvent(level(),SatelliteBursts.DURATION_HIGH,SatelliteBursts.BurstIntensity.HIGH,getX(),getZ());for(var event:HIGH_BURST)event.accept(this);}
   if(!explosion.isComplete()){
    long deadline=NuclearTickBudget.deadline(level(),this);
    if(explosion instanceof ExplosionNukeRayBatched batched){
@@ -47,6 +48,7 @@ public final class NuclearExplosionMK5 extends NuclearChunkloadingEntity impleme
    else if(System.nanoTime()<deadline){int remaining=(int)Math.max(1,(deadline-System.nanoTime())/1_000_000L);explosion.cacheChunksTick(remaining);remaining=(int)Math.max(0,(deadline-System.nanoTime())/1_000_000L);if(remaining>0)explosion.destructionTick(remaining);}
   }
   else {
+   if(explosionStart!=0)com.hbm.logging.SourceActionLog.info("[NUKE] Explosion complete. Time elapsed: {}ms",System.currentTimeMillis()-explosionStart);
    // Source MK5 starts its full fallout sweep only after all terrain work is done.
    if(fallout&&!falloutStarted){var rain=new NuclearFalloutRain(NuclearContent.FALLOUT_RAIN.get(),level());rain.setPos(position());rain.setScale((int)(length*2.5+falloutAdd)*NuclearConfig.FALLOUT_RANGE.get()/100);rain.followBlast(this);falloutStarted=level().addFreshEntity(rain);}
    discard();
@@ -64,7 +66,7 @@ public final class NuclearExplosionMK5 extends NuclearChunkloadingEntity impleme
  @Override public void remove(RemovalReason reason){if(explosion!=null){if(reason.shouldDestroy()||reason==RemovalReason.CHANGED_DIMENSION)explosion.cancel();else if(explosion instanceof ExplosionNukeRayBatched batched)batched.suspend();}super.remove(reason);}
  @Override protected void readAdditionalSaveData(CompoundTag tag){tickCount=tag.getInt("ticksExisted");strength=tag.getInt("strength");speed=tag.getInt("speed");length=tag.getInt("length");fallout=!tag.contains("fallout")||tag.getBoolean("fallout");falloutAdd=tag.getInt("falloutAdd");falloutStarted=tag.getBoolean("falloutStarted");loadTicket(tag);}
  @Override protected void addAdditionalSaveData(CompoundTag tag){tag.putInt("ticksExisted",tickCount);tag.putInt("strength",strength);tag.putInt("speed",speed);tag.putInt("length",length);tag.putBoolean("fallout",fallout);tag.putInt("falloutAdd",falloutAdd);tag.putBoolean("falloutStarted",falloutStarted);saveTicket(tag);}
- public static NuclearExplosionMK5 statFac(Level level,int r,double x,double y,double z){if(r==0)r=25;r*=2;var entity=new NuclearExplosionMK5(NuclearContent.MK5.get(),level);entity.strength=r;entity.speed=(int)Math.ceil(100000/entity.strength);entity.length=entity.strength/2;entity.setPos(x,y,z);entity.loadChunk(Mth.floor(x/16D),Mth.floor(z/16D));return entity;}
+ public static NuclearExplosionMK5 statFac(Level level,int r,double x,double y,double z){if(!level.isClientSide)com.hbm.logging.SourceActionLog.info("[NUKE] Initialized explosion at {} / {} / {} with strength {}!",x,y,z,r);if(r==0)r=25;r*=2;var entity=new NuclearExplosionMK5(NuclearContent.MK5.get(),level);entity.strength=r;entity.speed=(int)Math.ceil(100000/entity.strength);entity.length=entity.strength/2;entity.setPos(x,y,z);entity.loadChunk(Mth.floor(x/16D),Mth.floor(z/16D));return entity;}
  public static NuclearExplosionMK5 statFacNoRad(Level level,int r,double x,double y,double z){var entity=statFac(level,r,x,y,z);entity.fallout=false;return entity;}
  public NuclearExplosionMK5 moreFallout(int extra){falloutAdd=extra;return this;}
 }

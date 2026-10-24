@@ -31,11 +31,10 @@ public final class ConventionalContent {
     public static final DeferredHolder<EntityType<?>, EntityType<PrimedExplosive>> PRIMED = ENTITIES.register("tnt_primed_base", () -> EntityType.Builder.<PrimedExplosive>of(PrimedExplosive::new, MobCategory.MISC).sized(.98F, .98F).clientTrackingRange(63).updateInterval(1).build("hbm:tnt_primed_base"));
     private static final Map<String, DeferredItem<? extends Item>> BY_ID = new LinkedHashMap<>();
     private static final ModConfigSpec CONFIG;
-    public static final BooleanSupplier DEAD_EXPLOSIVE_ENABLED,EXTENDED_LOGGING;
+    public static final BooleanSupplier DEAD_EXPLOSIVE_ENABLED;
     static {
         var config = new ModConfigSpec.Builder();
         DEAD_EXPLOSIVE_ENABLED = config.comment("掉落型自爆引爆器是否触发自身爆炸；关闭后掉落物品仍被消耗。").define(java.util.List.of("droppedItems","selfDestructExplosionsEnabled"), true);
-        EXTENDED_LOGGING=config.comment("记录扩展诊断日志，默认关闭。").define(java.util.List.of("diagnostics","extendedLoggingEnabled"),false);
         CONFIG = config.build();
         BY_ID.put("charge_dynamite",ITEMS.register("charge_dynamite",()->new BlockItem(CHARGE_DYNAMITE.get(),new Item.Properties())));
         BY_ID.put("charge_c4",ITEMS.register("charge_c4",()->new BlockItem(CHARGE_C4.get(),new Item.Properties())));

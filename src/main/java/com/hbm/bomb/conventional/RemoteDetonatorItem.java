@@ -62,6 +62,14 @@ public final class RemoteDetonatorItem extends Item {
     public static BombReturnCode trigger(Level level, BlockPos pos) {
         return level.getBlockState(pos).getBlock() instanceof IBomb bomb ? bomb.explode(level, pos.getX(), pos.getY(), pos.getZ()) : BombReturnCode.ERROR_NO_BOMB;
     }
+    /** Source logs every actual IBomb attempt, including unsuccessful BombReturnCode results. */
+    private static BombReturnCode triggerByPlayer(Level level, BlockPos pos, Player player) {
+        boolean bomb = level.getBlockState(pos).getBlock() instanceof IBomb;
+        var result = trigger(level, pos);
+        if (bomb) com.hbm.logging.SourceActionLog.info("[DET] Tried to detonate block at {} / {} / {} by {}!",
+                pos.getX(), pos.getY(), pos.getZ(), player.getDisplayName().getString());
+        return result;
+    }
     @Override public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         var stack = player.getItemInHand(hand);
         if (kind == Kind.DEAD_MAN || kind == Kind.DEAD_EXPLOSIVE) return InteractionResultHolder.pass(stack);
@@ -78,14 +86,14 @@ public final class RemoteDetonatorItem extends Item {
                 if (!level.isClientSide) message(player, stack, Component.translatable("hbm.explosives.position.cleared"), ChatFormatting.RED, false);
             } else {
                 int[] xs = tag.getIntArray("xValues"), ys = tag.getIntArray("yValues"), zs = tag.getIntArray("zValues"); int successful = 0;
-                if (!level.isClientSide) for (int i = 0; i < xs.length; i++) if (trigger(level, new BlockPos(xs[i], ys[i], zs[i])).wasSuccessful()) successful++;
+                if (!level.isClientSide) for (int i = 0; i < xs.length; i++) if (triggerByPlayer(level, new BlockPos(xs[i], ys[i], zs[i]), player).wasSuccessful()) successful++;
                 sound(level, player, true, 1F);
                 if (!level.isClientSide) message(player, stack, Component.translatable("hbm.explosives.position.triggered",successful,xs.length), ChatFormatting.YELLOW, false);
             }
         } else {
             var pos = new BlockPos(tag.getInt("x"), tag.getInt("y"), tag.getInt("z"));
             if (level.getBlockState(pos).getBlock() instanceof IBomb) sound(level, player, true, 1F);
-            if (!level.isClientSide) { var result = trigger(level, pos); message(player, stack, Component.translatable(result.getUnlocalizedMessage()), result.wasSuccessful() ? ChatFormatting.YELLOW : ChatFormatting.RED, false); }
+            if (!level.isClientSide) { var result = triggerByPlayer(level, pos, player); message(player, stack, Component.translatable(result.getUnlocalizedMessage()), result.wasSuccessful() ? ChatFormatting.YELLOW : ChatFormatting.RED, false); }
         }
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide);
     }
@@ -94,7 +102,7 @@ public final class RemoteDetonatorItem extends Item {
         var hit = level.clip(new ClipContext(eye, end, ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, player));
         var pos = hit.getBlockPos();
         if (!level.isClientSide) {
-            var result = trigger(level, pos); level.playSound(null,player.getX(),player.getY(),player.getZ(),HbmSounds.get(result!=BombReturnCode.ERROR_NO_BOMB?"item.techBleep":"item.techBoop"),SoundSource.PLAYERS,1,1);
+            var result = triggerByPlayer(level, pos, player); level.playSound(null,player.getX(),player.getY(),player.getZ(),HbmSounds.get(result!=BombReturnCode.ERROR_NO_BOMB?"item.techBleep":"item.techBoop"),SoundSource.PLAYERS,1,1);
             // Source PlayerInformPacket uses ID_DETONATOR=8 in the shared top-left information box.
             DetonatorNotice.send(player,result);
         } else {
@@ -104,11 +112,19 @@ public final class RemoteDetonatorItem extends Item {
     }
     @Override public boolean onEntityItemUpdate(ItemStack stack, ItemEntity entity) {
         if (kind == Kind.DEAD_MAN && !entity.level().isClientSide) {
-            var tag = data(stack); if (tag != null) trigger(entity.level(), new BlockPos(tag.getInt("x"), tag.getInt("y"), tag.getInt("z")));
+            var tag = data(stack); if (tag != null) {
+                var pos = new BlockPos(tag.getInt("x"), tag.getInt("y"), tag.getInt("z"));
+                boolean bomb = entity.level().getBlockState(pos).getBlock() instanceof IBomb;
+                trigger(entity.level(), pos);
+                if (bomb) com.hbm.logging.SourceActionLog.info("[DET] Tried to detonate block at {} / {} / {} by dead man's switch!", pos.getX(), pos.getY(), pos.getZ());
+            }
             entity.level().explode(entity, entity.getX(), entity.getY(), entity.getZ(), 0, Level.ExplosionInteraction.TNT); entity.discard();
         }
         if (kind == Kind.DEAD_EXPLOSIVE) {
-            if (!entity.level().isClientSide && ConventionalContent.DEAD_EXPLOSIVE_ENABLED.getAsBoolean()) entity.level().explode(entity, entity.getX(), entity.getY(), entity.getZ(), 15, Level.ExplosionInteraction.TNT);
+            if (!entity.level().isClientSide && ConventionalContent.DEAD_EXPLOSIVE_ENABLED.getAsBoolean()) {
+                entity.level().explode(entity, entity.getX(), entity.getY(), entity.getZ(), 15, Level.ExplosionInteraction.TNT);
+                com.hbm.logging.SourceActionLog.info("[DET] Detonated dead man's explosive at {} / {} / {}!", (int)entity.getX(), (int)entity.getY(), (int)entity.getZ());
+            }
             entity.discard();
         }
         // Source returns true once the dropped item touches ground; it is gone regardless of config.

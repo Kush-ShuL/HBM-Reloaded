@@ -39,7 +39,7 @@ public final class GenericGrenade extends Entity implements TraceableEntity {
         float yaw=(float)(Math.atan2(velocity.x,velocity.z)*180D/Math.PI);while(yaw-yRotO< -180)yRotO-=360;while(yaw-yRotO>=180)yRotO+=360;setYRot(yRotO+(yaw-yRotO)*.2F);
         float drag=.99F;if(isInWater()){for(int i=0;i<4;i++)level().addParticle(ParticleTypes.BUBBLE,location.x-velocity.x*.25F,location.y-velocity.y*.25F,location.z-velocity.z*.25F,velocity.x,velocity.y,velocity.z);drag=.8F;}
         setDeltaMovement(velocity.scale((double)drag).add(0,-(double).03F,0));setPos(location);timer++;
-        if(timer>=grenade().fuseTicks()&&!level().isClientSide){grenade().explode(this,getOwner());discard();if(ConventionalContent.EXTENDED_LOGGING.getAsBoolean())org.slf4j.LoggerFactory.getLogger("hbm").info("[GREN] Set off grenade at {} / {} / {} by {}!",(int)getX(),(int)getY(),(int)getZ(),getOwner() instanceof Player player?player.getDisplayName().getString():"null");}
+        if(timer>=grenade().fuseTicks()&&!level().isClientSide){grenade().explode(this,getOwner());discard();if(com.hbm.logging.SourceActionLog.enabled())com.hbm.HbmReloaded.LOGGER.info("[GREN] Set off grenade at {} / {} / {} by {}!",(int)getX(),(int)getY(),(int)getZ(),getOwner() instanceof Player player?player.getDisplayName().getString():"null");}
     }
     @Override public boolean shouldRenderAtSqrDistance(double distance){double range=getBoundingBox().getSize()*4D*64D;return distance<range*range;}
     @Override protected void addAdditionalSaveData(CompoundTag tag){tag.putInt("timer",timer);tag.putString("grenade",BuiltInRegistries.ITEM.getKey(grenade()).toString());}

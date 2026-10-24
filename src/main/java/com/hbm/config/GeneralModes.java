@@ -22,6 +22,7 @@ public final class GeneralModes {
     private static final Map<String,ModConfigSpec.BooleanValue> FLAGS=new LinkedHashMap<>();
     private static final Map<String,Boolean> DEFAULTS=new LinkedHashMap<>();
     private static final ModConfigSpec.IntValue COLTAN,SCHRAB;
+    private static final ModConfigSpec.BooleanValue LOGIN_MESSAGES,EXTENDED_LOGGING;
     private static volatile Snapshot remote;
     static {
         var builder=new ModConfigSpec.Builder();
@@ -45,6 +46,10 @@ public final class GeneralModes {
         flag(builder,"enableLessBullshitMode",false);
         for(String key:List.of("LBSM_shortDecay","LBSM_recipeSimpleArmor","LBSM_recipeSimpleTool","LBSM_recipeSimpleAlloy","LBSM_recipeSimpleChemistry","LBSM_recipeSimpleCentrifuge","LBSM_recipeUnlockAnvil","LBSM_recipeSimpleCrafting","LBSM_recipeSimpleMedicine","LBSM_safeCrates","LBSM_safeMEDrives"))flag(builder,key,true);
         SCHRAB=builder.defineInRange(java.util.List.of("qualityOfLife","schrabidiumOreChanceDenominator"),20,1,Integer.MAX_VALUE);
+        LOGIN_MESSAGES=builder.comment("玩家登录时显示欢迎与当前模组、Minecraft版本；加载器已有更新结果时显示新版本提示。默认true。")
+                .define(java.util.List.of("messages","login","enabled"),true);
+        EXTENDED_LOGGING=builder.comment("启用扩展事件日志。默认false；仅控制日志记录，不改变对应玩法。")
+                .define(java.util.List.of("diagnostics","extendedLoggingEnabled"),false);
         SPEC=builder.build();
     }
     private static java.util.List<String> configPath(String key){return switch(key){
@@ -88,6 +93,9 @@ public final class GeneralModes {
     public static boolean flag(String key){var snapshot=remote;if(snapshot!=null&&snapshot.flags.containsKey(key))return snapshot.flags.get(key);var field=FLAGS.get(key);if(field==null)throw new IllegalArgumentException("Unknown original GeneralConfig flag "+key);return SPEC.isLoaded()?field.get():DEFAULTS.get(key);}
     /** Original client sky/provider switches remain local; use the same spec/defaults without the server mode snapshot. */
     public static boolean localFlag(String key){var field=FLAGS.get(key);if(field==null)throw new IllegalArgumentException("Unknown original GeneralConfig flag "+key);return SPEC.isLoaded()?field.get():DEFAULTS.get(key); }
+    /** Server-local messages and logging are independent of the synchronized mode flags. */
+    public static boolean loginMessagesEnabled(){return !SPEC.isLoaded()||LOGIN_MESSAGES.get();}
+    public static boolean extendedLogging(){return SPEC.isLoaded()&&EXTENDED_LOGGING.get();}
     public static boolean mode528(){return flag("enable528Mode");}
     public static boolean lbsm(){return !mode528()&&flag("enableLessBullshitMode");}
     public static boolean expensive(){return flag("1.99_enableExpensiveMode");}
@@ -130,7 +138,7 @@ public final class GeneralModes {
         public Snapshot{flags=Map.copyOf(flags);}
         @Override public Type<? extends CustomPacketPayload> type(){return TYPE;}
     }
-    public static void register(IEventBus bus,ModContainer container){SourceMekanismCrafting.register();CONDITIONS.register(bus);container.registerConfig(ModConfig.Type.COMMON,SPEC,"hbm-general-common.toml");bus.addListener(GeneralModes::payloads);NeoForge.EVENT_BUS.addListener((ServerAboutToStartEvent event)->clearRemote());NeoForge.EVENT_BUS.addListener(GeneralModes::synchronize);}
+    public static void register(IEventBus bus,ModContainer container){com.hbm.player.LoginMessages.register();SourceMekanismCrafting.register();CONDITIONS.register(bus);container.registerConfig(ModConfig.Type.COMMON,SPEC,"hbm-general-common.toml");bus.addListener(GeneralModes::payloads);NeoForge.EVENT_BUS.addListener((ServerAboutToStartEvent event)->clearRemote());NeoForge.EVENT_BUS.addListener(GeneralModes::synchronize);}
     private static void payloads(RegisterPayloadHandlersEvent event){event.registrar("2").playToClient(Snapshot.TYPE,Snapshot.CODEC,(packet,context)->context.enqueueWork(()->remote=packet));}
     private static void synchronize(OnDatapackSyncEvent event){var snapshot=local(event.getPlayerList().getServer());if(event.getPlayer()!=null)PacketDistributor.sendToPlayer(event.getPlayer(),snapshot);else for(var player:event.getPlayerList().getPlayers())PacketDistributor.sendToPlayer(player,snapshot);}
     /** 精密装配配方装载完成后，经同一个模式包同步最新的真实徽章状态。 */

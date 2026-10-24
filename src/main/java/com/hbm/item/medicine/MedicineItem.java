@@ -179,7 +179,7 @@ public final class MedicineItem extends Item {
         } else switch(id) {
             case "med_bag" -> {if(selfUse&&!MedicineEffects.hasPotionSickness(target)){target.setHealth(target.getMaxHealth());cleanse(target);MedicineEffects.potionSickness(target,15);stack.shrink(1);}}
             case "syringe_taint" -> {effect(target,MedicineEffects.TAINT,60*20,0);effect(target,MobEffects.CONFUSION,5*20,0);consume(stack,source,"item.syringe","syringe_metal_empty");give(source,"bottle2_empty");}
-            case "syringe_mkunicorn" -> {if(!selfUse){MedicineDisease.setContagion(target,3*60*60*20);stack.shrink(1);sound(target,"item.syringe");if(MedicineConfig.EXTENDED_LOGGING.get())com.mojang.logging.LogUtils.getLogger().info("[MKU] {} used an MKU syringe!",source.getName().getString());}}
+            case "syringe_mkunicorn" -> {if(!selfUse){MedicineDisease.setContagion(target,3*60*60*20);stack.shrink(1);sound(target,"item.syringe");if(com.hbm.logging.SourceActionLog.enabled())com.hbm.HbmReloaded.LOGGER.info("[MKU] {} used an MKU syringe!",source.getName().getString());}}
             case "jetpack_tank" -> {if(selfUse&&source instanceof Player player)com.hbm.equipment.jetpack.JetpackTankRefill.use(stack,player);}
             case "cbt_device" -> {if(selfUse){effect(target,MedicineEffects.BANG,30,0);stack.shrink(1);sound(target,"item.vice");}}
             default -> throw new IllegalStateException("Unknown original syringe "+id);

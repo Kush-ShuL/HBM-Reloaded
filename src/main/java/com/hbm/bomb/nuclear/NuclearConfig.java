@@ -12,7 +12,7 @@ public final class NuclearConfig {
  public static final ModConfigSpec SPEC;
  public static final Map<String,ModConfigSpec.IntValue> RADII=new LinkedHashMap<>();
  public static final ModConfigSpec.IntValue TICK_BUDGET,FALLOUT_DELAY,FALLOUT_RANGE,BLAST_SPEED,EXPLOSION_LIFESPAN,TOM_MIN_COLUMNS,TOM_ACCELERATION,TOM_MAX_COLUMNS,TOM_TICK_BUDGET,TOM_RESIDENT_CHUNKS;
- public static final ModConfigSpec.BooleanValue CHUNKLOADING,CRATER_BIOMES,MYCELIUM,CLEANUP_DEAD_DIRT,EXTENDED_LOGGING,DROP_CELL,DROP_SINGULARITY,DROP_CRYSTAL;
+ public static final ModConfigSpec.BooleanValue CHUNKLOADING,CRATER_BIOMES,MYCELIUM,CLEANUP_DEAD_DIRT,DROP_CELL,DROP_SINGULARITY,DROP_CRYSTAL;
  public static final ModConfigSpec.DoubleValue CRATER_RADIATION,CRATER_INNER_RADIATION,CRATER_OUTER_RADIATION,CRATER_WATER_MULTIPLIER;
  static {
   var config=new ModConfigSpec.Builder();
@@ -52,8 +52,6 @@ public final class NuclearConfig {
   BLAST_SPEED=config.defineInRange("processing.mk3.blocksPerTick",1024,1,2147483647);
   config.comment("单位：现实秒。原 MK3 爆炸重新读档时，距保存的现实时间超过此值就终止。","默认 0：不启用此超时。不是爆炸动画寿命，也不是游戏刻数。");
   EXPLOSION_LIFESPAN=config.defineInRange("processing.mk3.maximumUnloadedSeconds",0,0,2147483647);
-  config.comment("是否记录原核爆扩展诊断日志。默认 false，不改变地形或伤害。");
-  EXTENDED_LOGGING=config.define("processing.extendedLogging",false);
   config.comment("单位：游戏刻（正常 20 TPS 时每刻约 0.05 秒）。沉降相邻计算批次的等待参数。","默认 4；0 为不增加等待。沉降仍在对应主爆炸地形处理完成后启动。");
   FALLOUT_DELAY=config.defineInRange("fallout.chunkDelayTicks",4,0,10000);
   config.comment("单位：百分比。乘在原始沉降范围公式上，100 保持原范围。","这是沉降的范围倍率，不是主爆炸半径或辐射剂量倍率；默认 100。");
