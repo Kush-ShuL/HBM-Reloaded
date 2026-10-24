@@ -25,6 +25,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import org.joml.Vector3f;
 
 /** The source single/multi/laser detonators and the two ItemDrop dead-man variants. */
@@ -108,6 +109,24 @@ public final class RemoteDetonatorItem extends Item {
         } else {
             Vec3 vector = Vec3.atCenterOf(pos).subtract(player.position()); double length = Math.min(vector.length(), 15); vector = vector.normalize();
             for (int i = 0; i < length; i++) { double distance = level.random.nextDouble() * length + 3; var particle = player.position().add(vector.scale(distance)); level.addParticle(new DustParticleOptions(new Vector3f(1, 0, 0), 1), particle.x, particle.y, particle.z, 0, 0, 0); }
+        }
+    }
+    /** Source LOWEST death path runs before inventory drops, including keepInventory deaths. */
+    static void playerDeath(LivingDeathEvent event) {
+        if (!(event.getEntity() instanceof Player player)) return;
+        var inventory = player.getInventory();
+        for (int slot = 0; slot < inventory.getContainerSize(); slot++) {
+            var stack = inventory.getItem(slot);
+            if (!(stack.getItem() instanceof RemoteDetonatorItem detonator) || detonator.kind != Kind.DEAD_MAN) continue;
+            var tag = data(stack);
+            if (tag == null) continue;
+            var pos = new BlockPos(tag.getInt("x"), tag.getInt("y"), tag.getInt("z"));
+            if (!player.level().isClientSide && player.level().getBlockState(pos).getBlock() instanceof IBomb) {
+                trigger(player.level(), pos);
+                com.hbm.logging.SourceActionLog.info("[DET] Tried to detonate block at {} / {} / {} by dead man's switch from {}!",
+                        pos.getX(), pos.getY(), pos.getZ(), player.getDisplayName().getString());
+            }
+            inventory.setItem(slot, ItemStack.EMPTY);
         }
     }
     @Override public boolean onEntityItemUpdate(ItemStack stack, ItemEntity entity) {

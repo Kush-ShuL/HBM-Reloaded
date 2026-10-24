@@ -13,8 +13,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -60,6 +62,7 @@ public final class ConventionalContent {
     private static void remote(String id, RemoteDetonatorItem.Kind kind) { BY_ID.put(id, ITEMS.register(id, () -> new RemoteDetonatorItem(kind))); }
     public static void register(IEventBus bus, ModContainer container) {
         BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); BLOCK_ENTITIES.register(bus); bus.addListener(ConventionalEffects::register); bus.addListener(LargeConventionalEffects::register); bus.addListener(SmokeBurstEffects::register); bus.addListener(TinyExplosionEffects::register);
+        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, RemoteDetonatorItem::playerDeath);
         container.registerConfig(ModConfig.Type.COMMON, CONFIG, "hbm-conventional.toml");
         LandmineContent.register(bus,container);
         ConventionalProjectiles.register(bus);MultiBombContent.register(bus);HazardousBarrels.register(bus);com.hbm.bomb.conventional.grenade.GrenadeContent.register(bus);

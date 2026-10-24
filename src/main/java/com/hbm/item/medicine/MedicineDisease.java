@@ -39,7 +39,7 @@ public final class MedicineDisease {
     private static final List<String> SEALED_SETS=List.of("hazmat_paa","liquidator","euphemium","rpa","fau","dns");
     private MedicineDisease() {}
     static void register(IEventBus bus) {
-        ATTACHMENTS.register(bus);NeoForge.EVENT_BUS.addListener(MedicineDisease::tick);NeoForge.EVENT_BUS.addListener(MedicineDisease::drops);NeoForge.EVENT_BUS.addListener(MedicineDisease::hurt);
+        ATTACHMENTS.register(bus);NeoForge.EVENT_BUS.addListener(MedicineDisease::tick);NeoForge.EVENT_BUS.addListener(MedicineDisease::drops);
     }
     public static int contagion(LivingEntity entity) {return MedicineConfig.ENABLE_MKU.get()&&entity.hasData(DATA)?entity.getData(DATA).contagion:0;}
     public static void setContagion(LivingEntity entity,int ticks) {entity.getData(DATA).contagion=ticks;if(entity instanceof net.minecraft.server.level.ServerPlayer)entity.syncData(DATA);}
@@ -94,7 +94,8 @@ public final class MedicineDisease {
     private static void drops(LivingDropsEvent event) {
         if(!event.getEntity().level().isClientSide&&contagion(event.getEntity())>0)event.getDrops().forEach(item->contaminate(item.getItem()));
     }
-    private static void hurt(LivingIncomingDamageEvent event) {
+    /** Source damage order: after player shield absorption, before every armor mod callback. */
+    public static void applyDamageAmplification(LivingIncomingDamageEvent event) {
         if(contagion(event.getEntity())>0&&event.getAmount()<100)event.setAmount(event.getAmount()*2);
     }
     public static final class DiseaseData implements INBTSerializable<CompoundTag> {
