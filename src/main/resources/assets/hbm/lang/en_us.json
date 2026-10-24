@@ -12530,5 +12530,8 @@
   "commands.hbm.chunk_diagnostic.no_data": "No saved chunk data at %s, %s.",
   "commands.hbm.chunk_diagnostic.missing_list": "Block entity tag list missing.",
   "commands.hbm.chunk_diagnostic.empty_list": "Block entity tag list empty.",
-  "commands.hbm.chunk_diagnostic.read_failed": "Could not read chunk data: %s"
+  "commands.hbm.chunk_diagnostic.read_failed": "Could not read chunk data: %s",
+  "disconnect.hbm.fluid_sync.invalid_ack": "Invalid HBM fluid definition acknowledgement",
+  "disconnect.hbm.fluid_sync.timeout": "HBM fluid definition synchronization timed out",
+  "disconnect.hbm.fluid_sync.apply_failed": "Cannot apply server HBM fluid definitions and containers"
 }

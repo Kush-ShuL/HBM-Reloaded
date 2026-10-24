@@ -38,6 +38,10 @@ public final class HbmFluidType {
     HbmFluidType(JsonObject definition) { setupBase(definition); }
 
     void setupBase(JsonObject data) {
+        // 每次完整定义应用均重置可选值，避免上一次服务器或重载的样式、名称和特性残留。
+        containers.clear();
+        traits.clear();
+        localizedOverride = data.has("localizedOverride") ? data.get("localizedOverride").getAsString() : null;
         id = data.get("id").getAsInt();
         name = data.get("name").getAsString();
         color = data.get("color").getAsInt();
@@ -61,6 +65,9 @@ public final class HbmFluidType {
     }
 
     void setupCustom(String internalName, JsonObject data) {
+        containers.clear();
+        traits.clear();
+        localizedOverride = null;
         name = internalName;
         id = data.get("id").getAsInt();
         localizedOverride = data.get("name").getAsString();
@@ -116,6 +123,40 @@ public final class HbmFluidType {
     public boolean hasNoID() { return hasTrait("noid"); }
     public boolean needsLeadContainer() { return hasTrait("leadcontainer"); }
     public boolean isDispersable() { return !(hasTrait("amat") || hasTrait("nocontainer") || hasTrait("viscous")); }
+
+    /** Complete in-memory definition; no configuration I/O or integration callbacks. */
+    JsonObject definitionJson() {
+        var data = new JsonObject();
+        data.addProperty("id", id);
+        data.addProperty("name", name);
+        data.addProperty("color", color);
+        data.addProperty("tint", tint);
+        data.addProperty("p", poison);
+        data.addProperty("f", flammability);
+        data.addProperty("r", reactivity);
+        data.addProperty("symbolMark", symbol.name());
+        data.addProperty("temperature", temperature);
+        data.addProperty("texture", texture.toString());
+        data.addProperty("renderWithTint", renderWithTint);
+        if (localizedOverride != null) data.addProperty("localizedOverride", localizedOverride);
+        var styles = new JsonObject();
+        var canister = getContainer(Canister.class);
+        if (canister != null) {
+            var style = new JsonObject();
+            style.addProperty("color", canister.color());
+            styles.add("canister", style);
+        }
+        var gastank = getContainer(Gastank.class);
+        if (gastank != null) {
+            var style = new JsonObject();
+            style.addProperty("bottleColor", gastank.bottleColor());
+            style.addProperty("labelColor", gastank.labelColor());
+            styles.add("gastank", style);
+        }
+        data.add("containers", styles);
+        data.add("traits", traitsJson());
+        return data;
+    }
 
     public JsonObject traitsJson() {
         var object = new JsonObject();

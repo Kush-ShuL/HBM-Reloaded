@@ -22,9 +22,17 @@ public final class FluidContainerRegistry {
     public record Container(ItemStack fullContainer, ItemStack emptyContainer, HbmFluidType type, int content) {}
     public static final List<Container> allContainers = new ArrayList<>();
     private static final Map<HbmFluidType, List<Container>> BY_TYPE = new IdentityHashMap<>();
+    // 仅抑制 reloadFluids 中本注册表原有的内部重建回调；外部 listener 仍完整运行。
+    private static boolean reloading;
+    // 远程容器字典身份只覆盖实际消费值，不修改本机COMMON配置。null表示本机原生值。
+    private static Boolean remoteContainerCompat;
     private FluidContainerRegistry() {}
     public static void rebuild() {
-        allContainers.clear(); BY_TYPE.clear();
+        if (reloading) return;
+        clear();
+        registerDefaults();
+    }
+    private static void registerDefaults() {
         try (var stream = FluidContainerRegistry.class.getResourceAsStream("/hbm/fluid-items.json")) {
             if (stream == null) throw new IllegalStateException("Missing fluid-items.json: run tools/port_fluid_items.py");
             var root = JsonParser.parseReader(new InputStreamReader(stream, StandardCharsets.UTF_8)).getAsJsonObject();
@@ -50,6 +58,47 @@ public final class FluidContainerRegistry {
             dynamic(FluidItemContent.BARREL.get(), "fluid_barrel_empty", type, 16000);
         }
     }
+    /** Clear once, preserve external listener registrations, then append original defaults. */
+    public static void reload() {
+        clear();
+        reloading = true;
+        try { HbmFluids.reloadFluids(); }
+        finally {
+            reloading = false;
+            registerDefaults();
+        }
+    }
+
+    private static void clear() { allContainers.clear(); BY_TYPE.clear(); }
+
+    /** Raw fluid IDs deliberately remain unresolved during network decoding. */
+    public record ContainerSnapshot(ItemStack fullContainer, ItemStack emptyContainer, int fluidId, int content) {
+        public ContainerSnapshot { fullContainer = fullContainer.copy(); emptyContainer = emptyContainer.copy(); }
+    }
+
+    public static List<ContainerSnapshot> snapshot() {
+        return allContainers.stream().map(value -> new ContainerSnapshot(value.fullContainer(), value.emptyContainer(),
+                value.type().getID(), value.content())).toList();
+    }
+
+    /** Called on MAIN after definitions; preserve first-match ordering and every stack component. */
+    public static boolean containerCompat() {
+        return remoteContainerCompat != null ? remoteContainerCompat : FluidContainerConfig.CONTAINER_COMPAT.get();
+    }
+    public static Boolean containerCompatOverride() { return remoteContainerCompat; }
+
+    public static void applySnapshot(List<ContainerSnapshot> snapshot, Boolean containerCompat) {
+        var resolved = new ArrayList<Container>();
+        for (var value : snapshot) {
+            var type = HbmFluids.fromID(value.fluidId());
+            if (type.getID() != value.fluidId()) throw new IllegalArgumentException("Unknown container fluid " + value.fluidId());
+            resolved.add(new Container(value.fullContainer().copy(), value.emptyContainer().copy(), type, value.content()));
+        }
+        clear();
+        resolved.forEach(FluidContainerRegistry::registerContainer);
+        remoteContainerCompat = containerCompat;
+    }
+
     private static void dynamic(net.minecraft.world.item.Item full, String empty, HbmFluidType type, int amount) {
         registerContainer(new Container(FluidItemContent.stack(full, type), new ItemStack(com.hbm.registry.HbmContent.item(empty)), type, amount));
     }
@@ -60,12 +109,12 @@ public final class FluidContainerRegistry {
     public static List<String> oreTags(ItemStack stack) {
         var result = new java.util.LinkedHashSet<String>();
         for (var value : allContainers) if (sameItem(value.fullContainer(), stack)) {
-            result.add("hbm:legacy_ore_dict/" + value.type().getDict(value.content(), FluidContainerConfig.CONTAINER_COMPAT.get()).toLowerCase(java.util.Locale.US));
+            result.add("hbm:legacy_ore_dict/" + value.type().getDict(value.content(), containerCompat()).toLowerCase(java.util.Locale.US));
         }
         return List.copyOf(result);
     }
     public static java.util.stream.Stream<ItemStack> oreStacks(String tag) {
-        return allContainers.stream().filter(value -> tag.equals("hbm:legacy_ore_dict/" + value.type().getDict(value.content(), FluidContainerConfig.CONTAINER_COMPAT.get()).toLowerCase(java.util.Locale.US)))
+        return allContainers.stream().filter(value -> tag.equals("hbm:legacy_ore_dict/" + value.type().getDict(value.content(), containerCompat()).toLowerCase(java.util.Locale.US)))
                 .map(value -> value.fullContainer().copy());
     }
     public static List<Container> getContainers(HbmFluidType type) { return BY_TYPE.get(type); }

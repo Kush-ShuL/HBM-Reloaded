@@ -226,6 +226,11 @@ public final class HbmFluids {
             HbmReloaded.LOGGER.error("Cannot initialize custom NTM fluid configuration", error);
             return;
         }
+        // 固定 public static 实例身份保持不变；已删除的覆盖值回到原始定义。
+        for (var value : SOURCE.getAsJsonArray("fluids")) {
+            var row = value.getAsJsonObject();
+            BY_SYMBOL.get(row.get("symbol").getAsString()).setupBase(row);
+        }
         removeForReload(CUSTOM);
         removeForReload(FOREIGN);
         readCustomFluids(types);
@@ -286,6 +291,98 @@ public final class HbmFluids {
         var root = new JsonObject();
         for (var type : NICE_ORDER) root.add(type.getName(), type.traitsJson());
         write(path, root);
+    }
+
+    /** Active definitions in exact registration/nice order, including custom and foreign types. */
+    public static JsonObject definitionSnapshot() {
+        var snapshot = new JsonObject();
+        var definitions = new com.google.gson.JsonArray();
+        for (var type : REGISTER_ORDER) {
+            var row = type.definitionJson();
+            String fixedSymbol = BY_SYMBOL.entrySet().stream().filter(entry -> entry.getValue() == type)
+                    .map(Map.Entry::getKey).findFirst().orElse(null);
+            if (fixedSymbol != null) row.addProperty("fixedSymbol", fixedSymbol);
+            row.addProperty("kind", fixedSymbol != null ? "fixed" : CUSTOM.contains(type) ? "custom" : "foreign");
+            definitions.add(row);
+        }
+        var nice = new com.google.gson.JsonArray();
+        NICE_ORDER.forEach(type -> nice.add(type.getID()));
+        snapshot.add("definitions", definitions);
+        snapshot.add("niceOrder", nice);
+        return snapshot;
+    }
+
+    /** Keeps local identities and the dormant migration cache for exact disconnect restoration. */
+    public record LocalState(JsonObject definitions, Map<String, HbmFluidType> identities,
+                             Map<String, HbmFluidType> migration) {}
+
+    public static LocalState captureLocalState() {
+        return new LocalState(definitionSnapshot(), new LinkedHashMap<>(BY_NAME), new LinkedHashMap<>(MIGRATION));
+    }
+
+    public static void restoreLocalState(LocalState state) {
+        applyDefinitions(state.definitions(), state.identities());
+        MIGRATION.clear();
+        MIGRATION.putAll(state.migration());
+    }
+
+    public static void applyDefinitions(JsonObject snapshot) { applyDefinitions(snapshot, Map.of()); }
+
+    /** Pure memory application: never reads/writes config or runs additionalListeners. */
+    private static void applyDefinitions(JsonObject snapshot, Map<String, HbmFluidType> preferred) {
+        var definitions = snapshot.getAsJsonArray("definitions");
+        if (definitions.size() < BY_SYMBOL.size() || definitions.size() > 16384)
+            throw new IllegalArgumentException("Invalid fluid definition count");
+        var parsed = new ArrayList<HbmFluidType>();
+        var kinds = new ArrayList<String>();
+        var symbols = new ArrayList<String>();
+        var ids = new java.util.HashSet<Integer>();
+        var names = new java.util.HashSet<String>();
+        var fixed = new java.util.HashSet<String>();
+        for (var value : definitions) {
+            var row = value.getAsJsonObject();
+            var type = new HbmFluidType(row);
+            if (!ids.add(type.getID()) || !names.add(type.getName()))
+                throw new IllegalArgumentException("Duplicate fluid ID or name");
+            String kind = row.get("kind").getAsString();
+            String symbol = row.has("fixedSymbol") ? row.get("fixedSymbol").getAsString() : null;
+            if ("fixed".equals(kind)) {
+                var identity = BY_SYMBOL.get(symbol);
+                if (identity == null || !fixed.add(symbol) || identity.getID() != type.getID()
+                        || !identity.getName().equals(type.getName()))
+                    throw new IllegalArgumentException("Changed fixed fluid identity " + symbol);
+            } else if ((!"custom".equals(kind) && !"foreign".equals(kind)) || symbol != null) {
+                throw new IllegalArgumentException("Invalid fluid definition kind");
+            }
+            parsed.add(type);
+            kinds.add(kind);
+            symbols.add(symbol);
+        }
+        if (fixed.size() != BY_SYMBOL.size()) throw new IllegalArgumentException("Missing fixed fluid identity");
+        var nice = new ArrayList<Integer>();
+        var niceIds = new java.util.HashSet<Integer>();
+        for (var value : snapshot.getAsJsonArray("niceOrder")) {
+            int id = value.getAsInt();
+            if (!ids.contains(id) || !niceIds.add(id)) throw new IllegalArgumentException("Invalid fluid nice order");
+            nice.add(id);
+        }
+        if (nice.size() != parsed.size()) throw new IllegalArgumentException("Incomplete fluid nice order");
+        // Validate every row and order before touching the live, identity-sensitive registry.
+        var previous = new LinkedHashMap<>(BY_NAME);
+        previous.putAll(preferred);
+        BY_ID.clear(); BY_NAME.clear(); REGISTER_ORDER.clear(); NICE_ORDER.clear(); CUSTOM.clear(); FOREIGN.clear();
+        for (int index = 0; index < parsed.size(); index++) {
+            var definition = parsed.get(index);
+            String kind = kinds.get(index);
+            HbmFluidType type = "fixed".equals(kind) ? BY_SYMBOL.get(symbols.get(index)) : previous.get(definition.getName());
+            // A custom/foreign row must never repurpose a public static fluid object.
+            if (type == null || (!"fixed".equals(kind) && BY_SYMBOL.containsValue(type))) type = definition;
+            else type.setupBase(definition.definitionJson());
+            add(type);
+            if ("custom".equals(kind)) CUSTOM.add(type);
+            if ("foreign".equals(kind)) FOREIGN.add(type);
+        }
+        nice.forEach(id -> NICE_ORDER.add(BY_ID.get(id)));
     }
 
     public static HbmFluidType fromID(int id) { return BY_ID.getOrDefault(id, BY_NAME.get("NONE")); }
