@@ -25,6 +25,18 @@ public final class NuclearClientEffects {
  public static void lightningFlash(){if(Minecraft.getInstance().level!=null)Minecraft.getInstance().level.setSkyFlashTime(2);}
  public static void playExplosion(double x,double y,double z){var world=Minecraft.getInstance().level;if(world!=null)world.playLocalSound(x,y,z,HbmSounds.get("weapon.nuclearExplosion"),SoundSource.BLOCKS,10000F,1F,false);}
  private static boolean enabled(){if(flashEnabled!=null)return flashEnabled;flashEnabled=true;var path=FMLPaths.CONFIGDIR.get().resolve("hbmConfig/hbmClient.json");try{if(Files.exists(path)){var config=JsonParser.parseString(Files.readString(path)).getAsJsonObject();if(config.has("NUKE_HUD_FLASH"))flashEnabled=config.get("NUKE_HUD_FLASH").getAsBoolean();}}catch(Exception exception){com.hbm.HbmReloaded.LOGGER.error("Cannot read original nuclear HUD flash option",exception);}return flashEnabled;}
+ // GuiLayerManager owns the enclosing HUD pose; its final pop also restores this translation.
+ @SubscribeEvent(priority=net.neoforged.bus.api.EventPriority.HIGHEST)
+ public static void shakeHud(RenderGuiLayerEvent.Pre event){
+  if(!event.getName().equals(VanillaGuiLayers.HOTBAR)
+    ||!com.hbm.client.config.ClientEffectsConfig.nuclearHudShakeEnabled())return;
+  long now=System.currentTimeMillis(),remaining=shakeTimestamp+1500L-now;
+  if(remaining<=0)return;
+  double multiplier=remaining/1500D*2D;
+  double horizontal=net.minecraft.util.Mth.clamp(Math.sin(now*.02D),-.7D,.7D)*15D;
+  double vertical=net.minecraft.util.Mth.clamp(Math.sin(now*.01D+2D),-.7D,.7D)*3D;
+  event.getGuiGraphics().pose().translate(horizontal*multiplier,vertical*multiplier,0);
+ }
  @SubscribeEvent public static void overlay(RenderGuiLayerEvent.Pre event){
   long remaining=flashTimestamp+5000-System.currentTimeMillis();if(!event.getName().equals(VanillaGuiLayers.CROSSHAIR)||remaining<=0||!enabled())return;
   var graphics=event.getGuiGraphics();graphics.flush();RenderSystem.setShader(GameRenderer::getPositionColorShader);RenderSystem.enableBlend();RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA,GlStateManager.DestFactor.ONE);RenderSystem.depthMask(false);

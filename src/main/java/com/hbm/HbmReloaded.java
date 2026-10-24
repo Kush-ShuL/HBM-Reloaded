@@ -85,6 +85,7 @@ public final class HbmReloaded {
         PylonContent.register(modBus, container);
         SettingsToolContent.register(modBus);
         com.hbm.client.config.ClientTooltipConfig.register(container);
+        com.hbm.client.config.ClientEffectsConfig.register(container);
         AnvilContent.register(modBus);
         HazmatContent.register(modBus);
         MedicineContent.register(modBus, container);
