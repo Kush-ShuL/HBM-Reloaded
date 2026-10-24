@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:bomb_caller",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 1
-    }
+    "id": "hbm:bomb_caller_napalm",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -18,12 +15,7 @@
       "item": "hbm:grenade_filling_inc"
     },
     "R": {
-      "type": "neoforge:components",
-      "items": "hbm:rangefinder",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:rangefinder"
     }
   }
 }

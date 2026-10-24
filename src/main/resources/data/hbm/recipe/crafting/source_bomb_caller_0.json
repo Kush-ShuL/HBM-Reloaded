@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:bomb_caller",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 0
-    }
+    "id": "hbm:bomb_caller_carpet",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -18,12 +15,7 @@
       "item": "minecraft:tnt"
     },
     "R": {
-      "type": "neoforge:components",
-      "items": "hbm:rangefinder",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:rangefinder"
     }
   }
 }

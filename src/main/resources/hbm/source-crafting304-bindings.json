@@ -2112,12 +2112,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rangefinder",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:rangefinder"
               },
               {
                 "item": "hbm:circuit_advanced"
@@ -7399,12 +7394,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rangefinder",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:rangefinder"
           },
           {
             "item": "hbm:circuit_advanced"

@@ -1686,12 +1686,7 @@
             "item": "hbm:circuit_analog"
           },
           "T": {
-            "type": "neoforge:components",
-            "items": "hbm:rangefinder",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:rangefinder"
           }
         }
       },

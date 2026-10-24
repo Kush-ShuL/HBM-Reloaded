@@ -1927,6 +1927,54 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:bomb_caller_atomic",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_boxcar",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_carpet",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_chlorine",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_napalm",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_orange",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_pink_cloud",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bomb_caller_stinger",
+      "sourceFamily": "ModItems.bomb_caller",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:book_guide_hadron",
       "sourceFamily": "ModItems.book_guide",
       "sourceMetadata": 2,
@@ -5746,6 +5794,18 @@
       "sourceFamily": "ModItems.pwr_fuel",
       "sourceMetadata": 5,
       "hasSubtypes": true
+    },
+    {
+      "id": "hbm:rangefinder",
+      "sourceFamily": "ModItems.rangefinder",
+      "sourceMetadata": 0,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:rangefinder_polarized",
+      "sourceFamily": "ModItems.rangefinder",
+      "sourceMetadata": 1,
+      "hasSubtypes": false
     },
     {
       "id": "hbm:rod_ac227",
