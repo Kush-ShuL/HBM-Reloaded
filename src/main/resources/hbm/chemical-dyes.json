@@ -1,74 +1,516 @@
 {
   "entries": [
     {
-      "symbol": "chemical_dye",
-      "id": "hbm:chemical_dye",
       "kind": "item",
-      "creativeTab": "parts",
+      "symbol": "chemical_dye_black",
+      "id": "hbm:chemical_dye_black",
       "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 0,
+      "sourceEnum": "BLACK",
+      "creativeTab": "parts",
+      "color": "black",
+      "sourceRGB": 1973019,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2196
-      },
-      "metadataRange": [
-        0,
-        15
-      ],
-      "names": [
-        "black",
-        "red",
-        "green",
-        "brown",
-        "blue",
-        "purple",
-        "cyan",
-        "silver",
-        "gray",
-        "pink",
-        "lime",
-        "yellow",
-        "lightblue",
-        "magenta",
-        "orange",
-        "white"
-      ],
-      "enumClass": "EnumChemDye",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "crayon",
-      "id": "hbm:crayon",
       "kind": "item",
+      "symbol": "chemical_dye_red",
+      "id": "hbm:chemical_dye_red",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 1,
+      "sourceEnum": "RED",
       "creativeTab": "parts",
+      "color": "red",
+      "sourceRGB": 11743532,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_green",
+      "id": "hbm:chemical_dye_green",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 2,
+      "sourceEnum": "GREEN",
+      "creativeTab": "parts",
+      "color": "green",
+      "sourceRGB": 3887386,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_brown",
+      "id": "hbm:chemical_dye_brown",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 3,
+      "sourceEnum": "BROWN",
+      "creativeTab": "parts",
+      "color": "brown",
+      "sourceRGB": 5320730,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_blue",
+      "id": "hbm:chemical_dye_blue",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 4,
+      "sourceEnum": "BLUE",
+      "creativeTab": "parts",
+      "color": "blue",
+      "sourceRGB": 2437522,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_purple",
+      "id": "hbm:chemical_dye_purple",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 5,
+      "sourceEnum": "PURPLE",
+      "creativeTab": "parts",
+      "color": "purple",
+      "sourceRGB": 8073150,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_cyan",
+      "id": "hbm:chemical_dye_cyan",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 6,
+      "sourceEnum": "CYAN",
+      "creativeTab": "parts",
+      "color": "cyan",
+      "sourceRGB": 2651799,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_light_gray",
+      "id": "hbm:chemical_dye_light_gray",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 7,
+      "sourceEnum": "SILVER",
+      "creativeTab": "parts",
+      "color": "light_gray",
+      "sourceRGB": 11250603,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_gray",
+      "id": "hbm:chemical_dye_gray",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 8,
+      "sourceEnum": "GRAY",
+      "creativeTab": "parts",
+      "color": "gray",
+      "sourceRGB": 4408131,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_pink",
+      "id": "hbm:chemical_dye_pink",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 9,
+      "sourceEnum": "PINK",
+      "creativeTab": "parts",
+      "color": "pink",
+      "sourceRGB": 14188952,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_lime",
+      "id": "hbm:chemical_dye_lime",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 10,
+      "sourceEnum": "LIME",
+      "creativeTab": "parts",
+      "color": "lime",
+      "sourceRGB": 4312372,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_yellow",
+      "id": "hbm:chemical_dye_yellow",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 11,
+      "sourceEnum": "YELLOW",
+      "creativeTab": "parts",
+      "color": "yellow",
+      "sourceRGB": 14602026,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_light_blue",
+      "id": "hbm:chemical_dye_light_blue",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 12,
+      "sourceEnum": "LIGHTBLUE",
+      "creativeTab": "parts",
+      "color": "light_blue",
+      "sourceRGB": 6719955,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_magenta",
+      "id": "hbm:chemical_dye_magenta",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 13,
+      "sourceEnum": "MAGENTA",
+      "creativeTab": "parts",
+      "color": "magenta",
+      "sourceRGB": 12801229,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_orange",
+      "id": "hbm:chemical_dye_orange",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 14,
+      "sourceEnum": "ORANGE",
+      "creativeTab": "parts",
+      "color": "orange",
+      "sourceRGB": 15435844,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "chemical_dye_white",
+      "id": "hbm:chemical_dye_white",
+      "originalClass": "ItemChemicalDye",
+      "sourceField": "ModItems.chemical_dye",
+      "sourceOrdinal": 15,
+      "sourceEnum": "WHITE",
+      "creativeTab": "parts",
+      "color": "white",
+      "sourceRGB": 15790320,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2196
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_black",
+      "id": "hbm:crayon_black",
       "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 0,
+      "sourceEnum": "BLACK",
+      "creativeTab": "parts",
+      "color": "black",
+      "sourceRGB": 1973019,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2197
-      },
-      "metadataRange": [
-        0,
-        15
-      ],
-      "names": [
-        "black",
-        "red",
-        "green",
-        "brown",
-        "blue",
-        "purple",
-        "cyan",
-        "silver",
-        "gray",
-        "pink",
-        "lime",
-        "yellow",
-        "lightblue",
-        "magenta",
-        "orange",
-        "white"
-      ],
-      "enumClass": "EnumChemDye",
-      "runtimeValidated": false
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_red",
+      "id": "hbm:crayon_red",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 1,
+      "sourceEnum": "RED",
+      "creativeTab": "parts",
+      "color": "red",
+      "sourceRGB": 11743532,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_green",
+      "id": "hbm:crayon_green",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 2,
+      "sourceEnum": "GREEN",
+      "creativeTab": "parts",
+      "color": "green",
+      "sourceRGB": 3887386,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_brown",
+      "id": "hbm:crayon_brown",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 3,
+      "sourceEnum": "BROWN",
+      "creativeTab": "parts",
+      "color": "brown",
+      "sourceRGB": 5320730,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_blue",
+      "id": "hbm:crayon_blue",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 4,
+      "sourceEnum": "BLUE",
+      "creativeTab": "parts",
+      "color": "blue",
+      "sourceRGB": 2437522,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_purple",
+      "id": "hbm:crayon_purple",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 5,
+      "sourceEnum": "PURPLE",
+      "creativeTab": "parts",
+      "color": "purple",
+      "sourceRGB": 8073150,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_cyan",
+      "id": "hbm:crayon_cyan",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 6,
+      "sourceEnum": "CYAN",
+      "creativeTab": "parts",
+      "color": "cyan",
+      "sourceRGB": 2651799,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_light_gray",
+      "id": "hbm:crayon_light_gray",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 7,
+      "sourceEnum": "SILVER",
+      "creativeTab": "parts",
+      "color": "light_gray",
+      "sourceRGB": 11250603,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_gray",
+      "id": "hbm:crayon_gray",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 8,
+      "sourceEnum": "GRAY",
+      "creativeTab": "parts",
+      "color": "gray",
+      "sourceRGB": 4408131,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_pink",
+      "id": "hbm:crayon_pink",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 9,
+      "sourceEnum": "PINK",
+      "creativeTab": "parts",
+      "color": "pink",
+      "sourceRGB": 14188952,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_lime",
+      "id": "hbm:crayon_lime",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 10,
+      "sourceEnum": "LIME",
+      "creativeTab": "parts",
+      "color": "lime",
+      "sourceRGB": 4312372,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_yellow",
+      "id": "hbm:crayon_yellow",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 11,
+      "sourceEnum": "YELLOW",
+      "creativeTab": "parts",
+      "color": "yellow",
+      "sourceRGB": 14602026,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_light_blue",
+      "id": "hbm:crayon_light_blue",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 12,
+      "sourceEnum": "LIGHTBLUE",
+      "creativeTab": "parts",
+      "color": "light_blue",
+      "sourceRGB": 6719955,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_magenta",
+      "id": "hbm:crayon_magenta",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 13,
+      "sourceEnum": "MAGENTA",
+      "creativeTab": "parts",
+      "color": "magenta",
+      "sourceRGB": 12801229,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_orange",
+      "id": "hbm:crayon_orange",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 14,
+      "sourceEnum": "ORANGE",
+      "creativeTab": "parts",
+      "color": "orange",
+      "sourceRGB": 15435844,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "crayon_white",
+      "id": "hbm:crayon_white",
+      "originalClass": "ItemCrayon",
+      "sourceField": "ModItems.crayon",
+      "sourceOrdinal": 15,
+      "sourceEnum": "WHITE",
+      "creativeTab": "parts",
+      "color": "white",
+      "sourceRGB": 15790320,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2197
+      }
     }
   ],
   "recipes": 27,

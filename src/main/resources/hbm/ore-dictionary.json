@@ -5235,16 +5235,100 @@
       "tag": "hbm:legacy_ore_dict/dye",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 32767
-          }
+          "id": "hbm:chemical_dye_black"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 32767
-          }
+          "id": "hbm:chemical_dye_red"
+        },
+        {
+          "id": "hbm:chemical_dye_green"
+        },
+        {
+          "id": "hbm:chemical_dye_brown"
+        },
+        {
+          "id": "hbm:chemical_dye_blue"
+        },
+        {
+          "id": "hbm:chemical_dye_purple"
+        },
+        {
+          "id": "hbm:chemical_dye_cyan"
+        },
+        {
+          "id": "hbm:chemical_dye_light_gray"
+        },
+        {
+          "id": "hbm:chemical_dye_gray"
+        },
+        {
+          "id": "hbm:chemical_dye_pink"
+        },
+        {
+          "id": "hbm:chemical_dye_lime"
+        },
+        {
+          "id": "hbm:chemical_dye_yellow"
+        },
+        {
+          "id": "hbm:chemical_dye_light_blue"
+        },
+        {
+          "id": "hbm:chemical_dye_magenta"
+        },
+        {
+          "id": "hbm:chemical_dye_orange"
+        },
+        {
+          "id": "hbm:chemical_dye_white"
+        },
+        {
+          "id": "hbm:crayon_black"
+        },
+        {
+          "id": "hbm:crayon_red"
+        },
+        {
+          "id": "hbm:crayon_green"
+        },
+        {
+          "id": "hbm:crayon_brown"
+        },
+        {
+          "id": "hbm:crayon_blue"
+        },
+        {
+          "id": "hbm:crayon_purple"
+        },
+        {
+          "id": "hbm:crayon_cyan"
+        },
+        {
+          "id": "hbm:crayon_light_gray"
+        },
+        {
+          "id": "hbm:crayon_gray"
+        },
+        {
+          "id": "hbm:crayon_pink"
+        },
+        {
+          "id": "hbm:crayon_lime"
+        },
+        {
+          "id": "hbm:crayon_yellow"
+        },
+        {
+          "id": "hbm:crayon_light_blue"
+        },
+        {
+          "id": "hbm:crayon_magenta"
+        },
+        {
+          "id": "hbm:crayon_orange"
+        },
+        {
+          "id": "hbm:crayon_white"
         },
         {
           "id": "hbm:oil_tar_crude"
@@ -5300,16 +5384,10 @@
           "id": "hbm:powder_ash_soot"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:chemical_dye_black"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:crayon_black"
         }
       ]
     },
@@ -5323,16 +5401,10 @@
           "id": "hbm:powder_ash_misc"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:chemical_dye_gray"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:crayon_gray"
         }
       ]
     },
@@ -5346,16 +5418,10 @@
           "id": "hbm:powder_ash_fly"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:chemical_dye_brown"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:crayon_brown"
         }
       ]
     },
@@ -5366,16 +5432,10 @@
           "id": "hbm:oil_tar_wax"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:chemical_dye_cyan"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:crayon_cyan"
         }
       ]
     },
@@ -5386,16 +5446,10 @@
           "id": "hbm:oil_tar_paraffin"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 15
-          }
+          "id": "hbm:chemical_dye_white"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 15
-          }
+          "id": "hbm:crayon_white"
         }
       ]
     },
@@ -5406,16 +5460,10 @@
           "id": "hbm:powder_ash_wood"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:chemical_dye_light_gray"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:crayon_light_gray"
         }
       ]
     },
@@ -5426,16 +5474,10 @@
           "id": "hbm:powder_ash_fullerene"
         },
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 13
-          }
+          "id": "hbm:chemical_dye_magenta"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 13
-          }
+          "id": "hbm:crayon_magenta"
         }
       ]
     },
@@ -5443,16 +5485,10 @@
       "tag": "hbm:legacy_ore_dict/dyered",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:chemical_dye_red"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:crayon_red"
         }
       ]
     },
@@ -5460,16 +5496,10 @@
       "tag": "hbm:legacy_ore_dict/dyegreen",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:chemical_dye_green"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:crayon_green"
         }
       ]
     },
@@ -5477,16 +5507,10 @@
       "tag": "hbm:legacy_ore_dict/dyeblue",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:chemical_dye_blue"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:crayon_blue"
         }
       ]
     },
@@ -5494,16 +5518,10 @@
       "tag": "hbm:legacy_ore_dict/dyepurple",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:chemical_dye_purple"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:crayon_purple"
         }
       ]
     },
@@ -5511,16 +5529,10 @@
       "tag": "hbm:legacy_ore_dict/dyepink",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:chemical_dye_pink"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:crayon_pink"
         }
       ]
     },
@@ -5528,16 +5540,10 @@
       "tag": "hbm:legacy_ore_dict/dyelime",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:chemical_dye_lime"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:crayon_lime"
         }
       ]
     },
@@ -5545,16 +5551,10 @@
       "tag": "hbm:legacy_ore_dict/dyeyellow",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:chemical_dye_yellow"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:crayon_yellow"
         }
       ]
     },
@@ -5562,16 +5562,10 @@
       "tag": "hbm:legacy_ore_dict/dyelightblue",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:chemical_dye_light_blue"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:crayon_light_blue"
         }
       ]
     },
@@ -5579,16 +5573,10 @@
       "tag": "hbm:legacy_ore_dict/dyeorange",
       "members": [
         {
-          "id": "hbm:chemical_dye",
-          "components": {
-            "hbm:legacy_metadata": 14
-          }
+          "id": "hbm:chemical_dye_orange"
         },
         {
-          "id": "hbm:crayon",
-          "components": {
-            "hbm:legacy_metadata": 14
-          }
+          "id": "hbm:crayon_orange"
         }
       ]
     },

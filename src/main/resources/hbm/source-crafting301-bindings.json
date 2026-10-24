@@ -14010,14 +14010,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 0
-                  }
-                }
+                "item": "hbm:chemical_dye_black"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14028,11 +14021,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:crayon_black",
+              "count": 4
             }
           }
         },
@@ -14050,14 +14040,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 1
-                  }
-                }
+                "item": "hbm:chemical_dye_red"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14068,11 +14051,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:crayon_red",
+              "count": 4
             }
           }
         },
@@ -14090,14 +14070,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 2
-                  }
-                }
+                "item": "hbm:chemical_dye_green"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14108,11 +14081,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:crayon_green",
+              "count": 4
             }
           }
         },
@@ -14130,14 +14100,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 3
-                  }
-                }
+                "item": "hbm:chemical_dye_brown"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14148,11 +14111,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:crayon_brown",
+              "count": 4
             }
           }
         },
@@ -14170,14 +14130,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 4
-                  }
-                }
+                "item": "hbm:chemical_dye_blue"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14188,11 +14141,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:crayon_blue",
+              "count": 4
             }
           }
         },
@@ -14210,14 +14160,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 5
-                  }
-                }
+                "item": "hbm:chemical_dye_purple"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14228,11 +14171,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:crayon_purple",
+              "count": 4
             }
           }
         },
@@ -14250,14 +14190,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 6
-                  }
-                }
+                "item": "hbm:chemical_dye_cyan"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14268,11 +14201,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:crayon_cyan",
+              "count": 4
             }
           }
         },
@@ -14290,14 +14220,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 7
-                  }
-                }
+                "item": "hbm:chemical_dye_light_gray"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14308,11 +14231,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:crayon_light_gray",
+              "count": 4
             }
           }
         },
@@ -14330,14 +14250,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 8
-                  }
-                }
+                "item": "hbm:chemical_dye_gray"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14348,11 +14261,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 8
-              }
+              "id": "hbm:crayon_gray",
+              "count": 4
             }
           }
         },
@@ -14370,14 +14280,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 9
-                  }
-                }
+                "item": "hbm:chemical_dye_pink"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14388,11 +14291,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 9
-              }
+              "id": "hbm:crayon_pink",
+              "count": 4
             }
           }
         },
@@ -14410,14 +14310,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 10
-                  }
-                }
+                "item": "hbm:chemical_dye_lime"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14428,11 +14321,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 10
-              }
+              "id": "hbm:crayon_lime",
+              "count": 4
             }
           }
         },
@@ -14450,14 +14340,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 11
-                  }
-                }
+                "item": "hbm:chemical_dye_yellow"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14468,11 +14351,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 11
-              }
+              "id": "hbm:crayon_yellow",
+              "count": 4
             }
           }
         },
@@ -14490,14 +14370,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 12
-                  }
-                }
+                "item": "hbm:chemical_dye_light_blue"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14508,11 +14381,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 12
-              }
+              "id": "hbm:crayon_light_blue",
+              "count": 4
             }
           }
         },
@@ -14530,14 +14400,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 13
-                  }
-                }
+                "item": "hbm:chemical_dye_magenta"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14548,11 +14411,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 13
-              }
+              "id": "hbm:crayon_magenta",
+              "count": 4
             }
           }
         },
@@ -14570,14 +14430,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 14
-                  }
-                }
+                "item": "hbm:chemical_dye_orange"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14588,11 +14441,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 14
-              }
+              "id": "hbm:crayon_orange",
+              "count": 4
             }
           }
         },
@@ -14610,14 +14460,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:alloy_legacy_stack",
-                "stack": {
-                  "id": "hbm:chemical_dye",
-                  "count": 1,
-                  "components": {
-                    "hbm:legacy_metadata": 15
-                  }
-                }
+                "item": "hbm:chemical_dye_white"
               },
               {
                 "type": "hbm:legacy_ore_dict",
@@ -14628,11 +14471,8 @@
               }
             ],
             "result": {
-              "id": "hbm:crayon",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 15
-              }
+              "id": "hbm:crayon_white",
+              "count": 4
             }
           }
         }
@@ -35614,14 +35454,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
-            }
+            "item": "hbm:chemical_dye_black"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35632,11 +35465,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:crayon_black",
+          "count": 4
         }
       }
     },
@@ -35662,14 +35492,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
-            }
+            "item": "hbm:chemical_dye_red"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35680,11 +35503,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:crayon_red",
+          "count": 4
         }
       }
     },
@@ -35710,14 +35530,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
-            }
+            "item": "hbm:chemical_dye_green"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35728,11 +35541,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:crayon_green",
+          "count": 4
         }
       }
     },
@@ -35758,14 +35568,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
-            }
+            "item": "hbm:chemical_dye_brown"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35776,11 +35579,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:crayon_brown",
+          "count": 4
         }
       }
     },
@@ -35806,14 +35606,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
-            }
+            "item": "hbm:chemical_dye_blue"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35824,11 +35617,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:crayon_blue",
+          "count": 4
         }
       }
     },
@@ -35854,14 +35644,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
-            }
+            "item": "hbm:chemical_dye_purple"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35872,11 +35655,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:crayon_purple",
+          "count": 4
         }
       }
     },
@@ -35902,14 +35682,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
-            }
+            "item": "hbm:chemical_dye_cyan"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35920,11 +35693,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:crayon_cyan",
+          "count": 4
         }
       }
     },
@@ -35950,14 +35720,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
-            }
+            "item": "hbm:chemical_dye_light_gray"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -35968,11 +35731,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:crayon_light_gray",
+          "count": 4
         }
       }
     },
@@ -35998,14 +35758,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 8
-              }
-            }
+            "item": "hbm:chemical_dye_gray"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36016,11 +35769,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:crayon_gray",
+          "count": 4
         }
       }
     },
@@ -36046,14 +35796,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 9
-              }
-            }
+            "item": "hbm:chemical_dye_pink"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36064,11 +35807,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:crayon_pink",
+          "count": 4
         }
       }
     },
@@ -36094,14 +35834,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 10
-              }
-            }
+            "item": "hbm:chemical_dye_lime"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36112,11 +35845,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:crayon_lime",
+          "count": 4
         }
       }
     },
@@ -36142,14 +35872,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 11
-              }
-            }
+            "item": "hbm:chemical_dye_yellow"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36160,11 +35883,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:crayon_yellow",
+          "count": 4
         }
       }
     },
@@ -36190,14 +35910,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 12
-              }
-            }
+            "item": "hbm:chemical_dye_light_blue"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36208,11 +35921,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:crayon_light_blue",
+          "count": 4
         }
       }
     },
@@ -36238,14 +35948,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 13
-              }
-            }
+            "item": "hbm:chemical_dye_magenta"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36256,11 +35959,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 13
-          }
+          "id": "hbm:crayon_magenta",
+          "count": 4
         }
       }
     },
@@ -36286,14 +35986,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 14
-              }
-            }
+            "item": "hbm:chemical_dye_orange"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36304,11 +35997,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 14
-          }
+          "id": "hbm:crayon_orange",
+          "count": 4
         }
       }
     },
@@ -36334,14 +36024,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:alloy_legacy_stack",
-            "stack": {
-              "id": "hbm:chemical_dye",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 15
-              }
-            }
+            "item": "hbm:chemical_dye_white"
           },
           {
             "type": "hbm:legacy_ore_dict",
@@ -36352,11 +36035,8 @@
           }
         ],
         "result": {
-          "id": "hbm:crayon",
-          "count": 4,
-          "components": {
-            "hbm:legacy_metadata": 15
-          }
+          "id": "hbm:crayon_white",
+          "count": 4
         }
       }
     },

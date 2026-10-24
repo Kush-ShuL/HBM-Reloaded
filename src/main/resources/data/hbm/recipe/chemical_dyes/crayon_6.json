@@ -3,14 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:alloy_legacy_stack",
-      "stack": {
-        "id": "hbm:chemical_dye",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 6
-        }
-      }
+      "item": "hbm:chemical_dye_cyan"
     },
     {
       "type": "hbm:legacy_ore_dict",
@@ -21,10 +14,7 @@
     }
   ],
   "result": {
-    "id": "hbm:crayon",
-    "count": 4,
-    "components": {
-      "hbm:legacy_metadata": 6
-    }
+    "id": "hbm:crayon_cyan",
+    "count": 4
   }
 }

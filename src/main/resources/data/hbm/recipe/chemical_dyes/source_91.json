@@ -3,31 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:alloy_legacy_stack",
-      "stack": {
-        "id": "hbm:chemical_dye",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 2
-        }
-      }
+      "item": "hbm:chemical_dye_green"
     },
     {
-      "type": "hbm:alloy_legacy_stack",
-      "stack": {
-        "id": "hbm:chemical_dye",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 15
-        }
-      }
+      "item": "hbm:chemical_dye_white"
     }
   ],
   "result": {
-    "id": "hbm:chemical_dye",
-    "count": 2,
-    "components": {
-      "hbm:legacy_metadata": 10
-    }
+    "id": "hbm:chemical_dye_lime",
+    "count": 2
   }
 }

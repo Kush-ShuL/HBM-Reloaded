@@ -1,7 +1,6 @@
 package com.hbm.compat.computercraft.cable;
 import com.hbm.api.tool.ToolableBlock;
 import com.hbm.hazard.HbmHazards;
-import com.hbm.registry.HbmOreDictionary;
 import com.hbm.world.structure.logic.LogicDisguiseState;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.*;
@@ -34,7 +33,7 @@ public final class PaintableComputerCableBlock extends BaseEntityBlock implement
             var paint=LogicDisguiseState.resolve(BuiltInRegistries.BLOCK.getKey(block).toString(),meta);if(paint==null)return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
             var properties=stack.get(DataComponents.BLOCK_STATE);if(properties!=null)paint=properties.apply(paint);
             if(block!=this&&paint.isSolidRender(level,pos)&&Block.isShapeFullBlock(paint.getShape(level,pos))&&paint.getRenderShape()==RenderShape.MODEL&&cable.paint()==null){if(!level.isClientSide)cable.setPaint(paint,meta);return ItemInteractionResult.sidedSuccess(level.isClientSide);}
-        }else if(HbmOreDictionary.names(stack).contains("dye")){if(!level.isClientSide)cable.setColor(SourceCableColors.fromDye(stack));}
+        }else if(stack.is(SourceCableColors.DYES)){if(!level.isClientSide)cable.setColor(SourceCableColors.fromDye(stack));}
         // Source dye operation deliberately falls through false and does not consume dye.
         return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
