@@ -11,8 +11,8 @@
             1800
           ],
           "solidInput": [
-            "dict",
-            "dustSaltpeter",
+            "tag",
+            "c:dusts/saltpeter",
             1
           ]
         }
@@ -87,8 +87,8 @@
             100
           ],
           "solidInput": [
-            "dict",
-            "dustSulfur",
+            "tag",
+            "c:dusts/sulfur",
             1
           ]
         }
@@ -105,8 +105,8 @@
             500
           ],
           "solidInput": [
-            "dict",
-            "dustDiamond",
+            "tag",
+            "c:dusts/diamond",
             1
           ]
         }
@@ -180,8 +180,8 @@
             250
           ],
           "solidInput": [
-            "dict",
-            "dustSulfur",
+            "tag",
+            "c:dusts/sulfur",
             1
           ]
         }
@@ -342,8 +342,8 @@
             800
           ],
           "solidInput": [
-            "dict",
-            "dustSulfur",
+            "tag",
+            "c:dusts/sulfur",
             1
           ]
         }
@@ -360,8 +360,8 @@
             500
           ],
           "solidInput": [
-            "dict",
-            "dustSaltpeter",
+            "tag",
+            "c:dusts/saltpeter",
             1
           ]
         }
@@ -534,8 +534,8 @@
             1000
           ],
           "solidInput": [
-            "dict",
-            "dustThorium232",
+            "tag",
+            "c:dusts/thorium_232",
             1
           ]
         }
@@ -710,8 +710,8 @@
             250
           ],
           "solidInput": [
-            "dict",
-            "dustChlorocalcite",
+            "tag",
+            "c:dusts/chlorocalcite",
             1
           ]
         }
@@ -775,9 +775,9 @@
           ],
           "solidInput": [
             "item",
-            "hbm:stone_resource",
+            "hbm:stone_resource_bauxite",
             1,
-            5
+            0
           ]
         }
       ]
@@ -812,8 +812,8 @@
             150
           ],
           "solidInput": [
-            "dict",
-            "dustFluorite",
+            "tag",
+            "c:dusts/fluorite",
             3
           ]
         },
@@ -848,8 +848,8 @@
             500
           ],
           "solidInput": [
-            "dict",
-            "dustFluorite",
+            "tag",
+            "c:dusts/fluorite",
             1
           ]
         }
@@ -862,8 +862,8 @@
           "duration": 20,
           "outputAmount": 50,
           "solidInput": [
-            "dict",
-            "anyTar",
+            "tag",
+            "hbm:tars",
             1
           ]
         }

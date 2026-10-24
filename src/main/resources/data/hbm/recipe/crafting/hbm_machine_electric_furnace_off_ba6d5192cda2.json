@@ -12,15 +12,13 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotberyllium"
+      "tag": "c:ingots/beryllium"
     },
     "R": {
       "item": "hbm:coil_tungsten"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+      "tag": "hbm:plates/cast/copper"
     },
     "F": {
       "item": "minecraft:furnace"

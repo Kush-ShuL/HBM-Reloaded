@@ -28,22 +28,19 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 6
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+        "tag": "hbm:material_groups/highexplosive/ingots"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+        "tag": "c:dusts/red_phosphorus"
       },
       "count": 6
     },

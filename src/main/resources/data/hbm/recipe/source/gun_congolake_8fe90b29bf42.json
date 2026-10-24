@@ -8,24 +8,19 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavydurasteel"
+      "tag": "hbm:gun_parts/barrels/heavy/dura_steel"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverlightdurasteel"
+      "tag": "hbm:gun_parts/receivers/light/dura_steel"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stockwood"
+      "tag": "hbm:gun_parts/stocks/wood"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripwood"
+      "tag": "hbm:gun_parts/grips/wood"
     }
   },
   "result": {

@@ -19,22 +19,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripletitanium"
+        "tag": "hbm:plates/cast/titanium"
       },
       "count": 12
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplelead"
+        "tag": "hbm:plates/cast/lead"
       },
       "count": 6
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/billetplutonium239"
+        "tag": "hbm:billets/plutonium_239"
       },
       "count": 8
     },

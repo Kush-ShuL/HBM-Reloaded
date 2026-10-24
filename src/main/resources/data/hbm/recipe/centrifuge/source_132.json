@@ -1,8 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/orerareearth"
+    "tag": "c:ores/rare_earth"
   },
   "exact_input": false,
   "results": [

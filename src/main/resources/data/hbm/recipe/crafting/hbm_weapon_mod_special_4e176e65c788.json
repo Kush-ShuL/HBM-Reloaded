@@ -15,15 +15,13 @@
   ],
   "key": {
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+      "tag": "hbm:material_groups/bismoid_bronze/plates/cast"
     },
     "P": {
       "item": "hbm:piston_selenium"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     }
   }
 }

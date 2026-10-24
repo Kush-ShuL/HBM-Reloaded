@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:ingots/malachite",
+      "required": false
+    },
+    "hbm:chunk_ore_malachite"
+  ]
+}

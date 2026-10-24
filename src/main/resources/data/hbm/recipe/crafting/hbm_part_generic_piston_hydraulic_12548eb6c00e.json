@@ -12,12 +12,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottitanium"
+      "tag": "c:ingots/titanium"
     },
     "P": {
       "type": "hbm:source_fluid_container",

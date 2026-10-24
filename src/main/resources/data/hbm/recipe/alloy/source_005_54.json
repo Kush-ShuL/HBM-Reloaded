@@ -4,20 +4,16 @@
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotcopper"
+        "tag": "c:ingots/copper"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecopper"
+        "tag": "c:plates/copper"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemcopper"
+        "tag": "c:gems/copper"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustcopper"
+        "tag": "c:dusts/copper"
       }
     ]
   },
@@ -25,20 +21,16 @@
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotredstone"
+        "tag": "c:ingots/redstone"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateredstone"
+        "tag": "c:plates/redstone"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemredstone"
+        "tag": "c:gems/redstone"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustredstone"
+        "tag": "c:dusts/redstone"
       }
     ]
   },

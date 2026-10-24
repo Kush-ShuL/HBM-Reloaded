@@ -15,12 +15,10 @@
   ],
   "key": {
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensegold"
+      "tag": "hbm:wires/dense/gold"
     },
     "S": {
       "type": "neoforge:components",

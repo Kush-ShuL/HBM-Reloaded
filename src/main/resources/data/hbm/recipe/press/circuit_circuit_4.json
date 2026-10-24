@@ -2,8 +2,7 @@
   "type": "hbm:press",
   "stamp": "circuit",
   "input": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/billetsilicon"
+    "tag": "hbm:billets/silicon"
   },
   "result": {
     "id": "hbm:circuit_silicon",

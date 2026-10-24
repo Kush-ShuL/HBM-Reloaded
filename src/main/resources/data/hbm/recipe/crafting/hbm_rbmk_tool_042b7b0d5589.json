@@ -12,12 +12,10 @@
   ],
   "key": {
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotlead"
+      "tag": "c:ingots/lead"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     }
   }
 }

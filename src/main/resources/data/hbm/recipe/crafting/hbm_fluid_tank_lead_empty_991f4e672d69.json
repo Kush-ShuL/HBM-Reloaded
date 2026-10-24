@@ -12,12 +12,10 @@
   ],
   "key": {
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platelead"
+      "tag": "c:plates/lead"
     },
     "U": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/billeturanium238"
+      "tag": "hbm:billets/uranium_238"
     },
     "T": {
       "item": "hbm:fluid_tank_empty"

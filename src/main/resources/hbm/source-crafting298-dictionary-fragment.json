@@ -1,10 +1,10 @@
 {
   "order": [
-    "hbm:legacy_ore_dict/nuggetpluonium240"
+    "c:nuggets/pluonium_240"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/nuggetpluonium240",
+      "tag": "c:nuggets/pluonium_240",
       "raw": "nuggetPluonium240"
     }
   ],
@@ -12,7 +12,7 @@
   "registrations": [
     {
       "raw": "ingotNickel",
-      "tag": "hbm:legacy_ore_dict/ingotnickel",
+      "tag": "c:ingots/nickel",
       "condition": "Actual optional native tag/provider has real members",
       "runtimeOwner": "SourceRtgRecyclingRecipes"
     },

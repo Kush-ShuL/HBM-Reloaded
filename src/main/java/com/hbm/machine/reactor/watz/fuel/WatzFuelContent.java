@@ -13,7 +13,7 @@ public final class WatzFuelContent {
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
     private static final DeferredRegister<MapCodec<? extends ICondition>> CONDITIONS=DeferredRegister.create(NeoForgeRegistries.Keys.CONDITION_CODECS,"hbm");
     public static final DeferredItem<WatzPelletItem> FRESH=ITEMS.register("watz_pellet",()->new WatzPelletItem(false)),DEPLETED=ITEMS.register("watz_pellet_depleted",()->new WatzPelletItem(true));
-    private static final DeferredHolder<MapCodec<? extends ICondition>,MapCodec<WatzOreNameCondition>> ORE_CONDITION=CONDITIONS.register("watz_ore_name",()->WatzOreNameCondition.CODEC);
+    private static final DeferredHolder<MapCodec<? extends ICondition>,MapCodec<com.hbm.recipe.ItemTagExistsCondition>> TAG_CONDITION=CONDITIONS.register("item_tag_exists",()->com.hbm.recipe.ItemTagExistsCondition.CODEC);
     public static void register(IEventBus bus){ITEMS.register(bus);CONDITIONS.register(bus);}
     public static ItemStack stack(boolean depleted,int meta){var stack=new ItemStack(depleted?DEPLETED.get():FRESH.get());stack.set(HbmHazards.LEGACY_METADATA.get(),meta);return stack;}
     public static List<ItemStack> stacks(){var result=new ArrayList<ItemStack>();for(boolean depleted:new boolean[]{false,true})for(int i=0;i<WatzFuelType.values().length;i++)result.add(stack(depleted,i));return result;}

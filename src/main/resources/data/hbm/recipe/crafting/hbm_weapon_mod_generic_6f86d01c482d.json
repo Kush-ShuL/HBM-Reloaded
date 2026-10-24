@@ -10,12 +10,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      "tag": "c:plates/weapon_steel"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripleferrouranium"
+      "tag": "hbm:plates/cast/ferrouranium"
     },
     {
       "item": "hbm:ducttape"

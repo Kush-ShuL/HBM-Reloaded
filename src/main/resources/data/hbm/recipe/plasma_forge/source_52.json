@@ -20,36 +20,31 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+        "tag": "c:ingots/euphemium"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustastatine"
+        "tag": "c:dusts/astatine"
       },
       "count": 3
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustbismuth"
+        "tag": "c:dusts/bismuth"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemvolcanic"
+        "tag": "c:gems/volcanic"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotosmiridium"
+        "tag": "c:ingots/osmiridium"
       },
       "count": 1
     }

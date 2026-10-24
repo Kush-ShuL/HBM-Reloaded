@@ -6,8 +6,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/oreberyllium"
+        "tag": "c:ores/beryllium"
       },
       "count": 1
     }
@@ -32,7 +31,7 @@
     }
   ],
   "productivity": 0.05,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/oreberyllium",
+  "key_kind": "tag",
+  "source_key": "c:ores/beryllium",
   "order": 18
 }

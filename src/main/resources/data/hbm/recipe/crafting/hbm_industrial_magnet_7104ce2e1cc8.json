@@ -8,15 +8,13 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     },
     "M": {
       "item": "hbm:horseshoe_magnet"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+      "tag": "hbm:wires/dense/mingrade"
     }
   },
   "result": {

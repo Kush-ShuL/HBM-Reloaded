@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetitanium"
+        "tag": "c:plates/titanium"
       },
       "count": 6
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefineschrabidium"
+        "tag": "hbm:wires/fine/schrabidium"
       },
       "count": 2
     },

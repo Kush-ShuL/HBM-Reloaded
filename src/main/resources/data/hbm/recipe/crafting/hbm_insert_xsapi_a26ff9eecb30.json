@@ -8,8 +8,7 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotasbestos"
+      "tag": "c:ingots/asbestos"
     },
     "K": {
       "item": "hbm:insert_esapi"
@@ -18,8 +17,7 @@
       "item": "hbm:ducttape"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesaturnite"
+      "tag": "c:plates/saturnite"
     }
   },
   "result": {

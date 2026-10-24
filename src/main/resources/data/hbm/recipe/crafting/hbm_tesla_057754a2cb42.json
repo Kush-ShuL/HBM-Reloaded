@@ -15,19 +15,16 @@
       "item": "hbm:coil_copper"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "T": {
       "item": "hbm:machine_transformer"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plankwood"
+      "tag": "minecraft:planks"
     }
   }
 }

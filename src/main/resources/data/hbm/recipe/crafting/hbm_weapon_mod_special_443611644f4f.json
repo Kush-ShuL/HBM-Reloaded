@@ -15,12 +15,10 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      "tag": "c:plates/weapon_steel"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrellightdurasteel"
+      "tag": "hbm:gun_parts/barrels/light/dura_steel"
     }
   }
 }

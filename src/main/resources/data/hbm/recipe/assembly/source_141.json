@@ -20,8 +20,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "count": 4
     },
@@ -36,8 +35,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustcaesium137"
+        "tag": "c:dusts/caesium_137"
       },
       "count": 1
     }

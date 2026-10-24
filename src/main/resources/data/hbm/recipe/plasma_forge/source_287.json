@@ -27,15 +27,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupleosmiridium"
+        "tag": "hbm:plates/welded/osmiridium"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredenseschrabidate"
+        "tag": "hbm:wires/dense/schrabidate"
       },
       "count": 16
     },

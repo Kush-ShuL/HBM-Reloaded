@@ -19,36 +19,31 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetitanium"
+        "tag": "c:plates/titanium"
       },
       "count": 20
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platealuminum"
+        "tag": "c:plates/aluminum"
       },
       "count": 20
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyeblack"
+        "tag": "c:dyes/black"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+        "tag": "hbm:material_groups/highexplosive/ingots"
       },
       "count": 4
     },
@@ -63,8 +58,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/boltsteel"
+        "tag": "hbm:bolts/steel"
       },
       "count": 32
     }

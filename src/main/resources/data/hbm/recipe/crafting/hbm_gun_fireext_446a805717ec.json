@@ -11,12 +11,10 @@
   ],
   "key": {
     "H": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      "tag": "hbm:pipes/steel"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/boltsteel"
+      "tag": "hbm:bolts/steel"
     },
     "T": {
       "item": "hbm:tank_steel"

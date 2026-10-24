@@ -11,19 +11,16 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavyweaponsteel"
+      "tag": "hbm:gun_parts/barrels/heavy/weapon_steel"
     },
     "P": {
       "item": "hbm:circuit_advanced"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripweaponsteel"
+      "tag": "hbm:gun_parts/grips/weapon_steel"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     }
   }
 }

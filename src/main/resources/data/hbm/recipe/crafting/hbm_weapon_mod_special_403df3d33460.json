@@ -15,16 +15,13 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+      "tag": "c:ingots/weapon_steel"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotrubber"
+      "tag": "c:ingots/rubber"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     }
   }
 }

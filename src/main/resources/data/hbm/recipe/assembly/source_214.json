@@ -19,36 +19,31 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotsteel"
+        "tag": "c:ingots/steel"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+        "tag": "c:ingots/dura_steel"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplelead"
+        "tag": "hbm:plates/cast/lead"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+        "tag": "hbm:material_groups/rubber/ingots"
       },
       "count": 12
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/boltdurasteel"
+        "tag": "hbm:bolts/dura_steel"
       },
       "count": 32
     },

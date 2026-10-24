@@ -2,14 +2,13 @@
   "type": "hbm:irradiation",
   "input": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotthorium232"
+      "tag": "c:ingots/thorium_232"
     },
     "count": 1
   },
   "fusion_only": false,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/ingotthorium232",
+  "key_kind": "tag",
+  "source_key": "c:ingots/thorium_232",
   "order": 7,
   "solid_output": {
     "id": "hbm:ingot_thorium_fuel",

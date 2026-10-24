@@ -7,16 +7,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcoal"
+      "tag": "c:dusts/coal"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+      "tag": "c:dusts/saltpeter"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustbromine"
+      "tag": "c:dusts/bromine"
     }
   ],
   "neoforge:conditions": [

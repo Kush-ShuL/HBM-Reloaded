@@ -1,14 +1,48 @@
 {
-  "comment": "合金高炉配方表。每种输入消耗一个物品；dictframe 使用区分大小写的材料名后缀匹配锭、板、宝石和粉。",
+  "comment": "合金高炉配方表。每种输入消耗一个物品；tag 使用完整标签 ID，ingredient 保留原生组合条件。",
   "recipes": [
     {
       "input1": [
-        "dictframe",
-        "Iron"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/iron"
+            },
+            {
+              "tag": "c:plates/iron"
+            },
+            {
+              "tag": "c:gems/iron"
+            },
+            {
+              "tag": "c:dusts/iron"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
-        "dictframe",
-        "Coal"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/coal"
+            },
+            {
+              "tag": "c:plates/coal"
+            },
+            {
+              "tag": "c:gems/coal"
+            },
+            {
+              "tag": "c:dusts/coal"
+            }
+          ]
+        },
+        1
       ],
       "output": [
         "hbm:ingot_steel",
@@ -18,12 +52,46 @@
     },
     {
       "input1": [
-        "dictframe",
-        "Iron"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/iron"
+            },
+            {
+              "tag": "c:plates/iron"
+            },
+            {
+              "tag": "c:gems/iron"
+            },
+            {
+              "tag": "c:dusts/iron"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
-        "dictframe",
-        "AnyCoke"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "hbm:material_groups/coke/ingots"
+            },
+            {
+              "tag": "hbm:material_groups/coke/plates"
+            },
+            {
+              "tag": "c:gems/coke"
+            },
+            {
+              "tag": "hbm:material_groups/coke/dusts"
+            }
+          ]
+        },
+        1
       ],
       "output": [
         "hbm:ingot_steel",
@@ -33,12 +101,29 @@
     },
     {
       "input1": [
-        "dict",
-        "oreIron"
+        "tag",
+        "c:ores/iron"
       ],
       "input2": [
-        "dictframe",
-        "Coal"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/coal"
+            },
+            {
+              "tag": "c:plates/coal"
+            },
+            {
+              "tag": "c:gems/coal"
+            },
+            {
+              "tag": "c:dusts/coal"
+            }
+          ]
+        },
+        1
       ],
       "output": [
         "hbm:ingot_steel",
@@ -48,12 +133,29 @@
     },
     {
       "input1": [
-        "dict",
-        "oreIron"
+        "tag",
+        "c:ores/iron"
       ],
       "input2": [
-        "dictframe",
-        "AnyCoke"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "hbm:material_groups/coke/ingots"
+            },
+            {
+              "tag": "hbm:material_groups/coke/plates"
+            },
+            {
+              "tag": "c:gems/coke"
+            },
+            {
+              "tag": "hbm:material_groups/coke/dusts"
+            }
+          ]
+        },
+        1
       ],
       "output": [
         "hbm:ingot_steel",
@@ -63,8 +165,8 @@
     },
     {
       "input1": [
-        "dict",
-        "oreIron"
+        "tag",
+        "c:ores/iron"
       ],
       "input2": [
         "item",
@@ -80,12 +182,46 @@
     },
     {
       "input1": [
-        "dictframe",
-        "Copper"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/copper"
+            },
+            {
+              "tag": "c:plates/copper"
+            },
+            {
+              "tag": "c:gems/copper"
+            },
+            {
+              "tag": "c:dusts/copper"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
-        "dictframe",
-        "Redstone"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/redstone"
+            },
+            {
+              "tag": "c:plates/redstone"
+            },
+            {
+              "tag": "c:gems/redstone"
+            },
+            {
+              "tag": "c:dusts/redstone"
+            }
+          ]
+        },
+        1
       ],
       "output": [
         "hbm:ingot_red_copper",
@@ -101,8 +237,8 @@
         46
       ],
       "input2": [
-        "dict",
-        "slimeball"
+        "tag",
+        "c:slime_balls"
       ],
       "output": [
         "hbm:canister_napalm",
@@ -112,12 +248,29 @@
     },
     {
       "input1": [
-        "dictframe",
-        "Tungsten"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/tungsten"
+            },
+            {
+              "tag": "c:plates/tungsten"
+            },
+            {
+              "tag": "c:gems/tungsten"
+            },
+            {
+              "tag": "c:dusts/tungsten"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
-        "dict",
-        "nuggetSchrabidium"
+        "tag",
+        "c:nuggets/schrabidium"
       ],
       "output": [
         "hbm:ingot_magnetized_tungsten",
@@ -127,12 +280,29 @@
     },
     {
       "input1": [
-        "dictframe",
-        "Steel"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/steel"
+            },
+            {
+              "tag": "c:plates/steel"
+            },
+            {
+              "tag": "c:gems/steel"
+            },
+            {
+              "tag": "c:dusts/steel"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
-        "dict",
-        "nuggetTechnetium99"
+        "tag",
+        "c:nuggets/technetium_99"
       ],
       "output": [
         "hbm:ingot_tcalloy",
@@ -142,8 +312,8 @@
     },
     {
       "input1": [
-        "dict",
-        "plateGold"
+        "tag",
+        "c:plates/gold"
       ],
       "input2": [
         "item",
@@ -159,8 +329,25 @@
     },
     {
       "input1": [
-        "dictframe",
-        "Saturnite"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/saturnite"
+            },
+            {
+              "tag": "c:plates/saturnite"
+            },
+            {
+              "tag": "c:gems/saturnite"
+            },
+            {
+              "tag": "c:dusts/saturnite"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
         "item",
@@ -176,8 +363,25 @@
     },
     {
       "input1": [
-        "dictframe",
-        "Cobalt"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/cobalt"
+            },
+            {
+              "tag": "c:plates/cobalt"
+            },
+            {
+              "tag": "c:gems/cobalt"
+            },
+            {
+              "tag": "c:dusts/cobalt"
+            }
+          ]
+        },
+        1
       ],
       "input2": [
         "item",
@@ -199,8 +403,25 @@
         0
       ],
       "input2": [
-        "dictframe",
-        "Cobalt"
+        "ingredient",
+        {
+          "type": "neoforge:compound",
+          "children": [
+            {
+              "tag": "c:ingots/cobalt"
+            },
+            {
+              "tag": "c:plates/cobalt"
+            },
+            {
+              "tag": "c:gems/cobalt"
+            },
+            {
+              "tag": "c:dusts/cobalt"
+            }
+          ]
+        },
+        1
       ],
       "output": [
         "hbm:meteorite_sword_alloyed",

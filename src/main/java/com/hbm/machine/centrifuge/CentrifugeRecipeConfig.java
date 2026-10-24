@@ -3,8 +3,8 @@ package com.hbm.machine.centrifuge;
 import com.google.gson.*;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.material.MaterialDistributionConfig;
-import com.hbm.recipe.LegacyOreIngredient;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.recipe.generic.GenericRecipeConfigCodec;
+import com.hbm.registry.HbmItemTags;
 import com.mojang.logging.LogUtils;
 import com.mojang.serialization.JsonOps;
 import java.nio.file.*;
@@ -35,8 +35,6 @@ public final class CentrifugeRecipeConfig {
     private CentrifugeRecipeConfig() {}
     public static List<String> unresolved() { return List.copyOf(UNRESOLVED); }
     public static void register() {
-        HbmOreDictionary.registerName("crystalCertusQuartz");
-        HbmOreDictionary.registerName("oreCertusQuartz");
         try(var input=CentrifugeRecipeConfig.class.getResourceAsStream("/hbm/centrifuge-item-aliases.json")) {
             if(input!=null) { var values=JsonParser.parseReader(new java.io.InputStreamReader(input,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject(); values.entrySet().forEach(entry->ALIASES.put(entry.getKey(),entry.getValue().getAsString())); }
         } catch(java.io.IOException error) { throw new IllegalStateException(error); }
@@ -60,25 +58,25 @@ public final class CentrifugeRecipeConfig {
                 merged.values().removeIf(holder->holder.value().getType()==CentrifugeContent.TYPE.get());
                 JsonObject root; try(var reader=Files.newBufferedReader(active)) { root=JsonParser.parseReader(reader).getAsJsonObject(); }
                 int index=0; for(var value:root.getAsJsonArray("recipes")) {
-                    try { var row=value.getAsJsonObject(); var recipe=legacyRecipe(row,server.registryAccess()); additions.values().removeIf(holder->holder.value().exactInput()==recipe.exactInput()&&holder.value().input().equals(recipe.input())); var id=ResourceLocation.fromNamespaceAndPath("hbm","centrifuge/config/"+index); additions.put(id,new RecipeHolder<>(id,recipe)); }
+                    try { var row=value.getAsJsonObject(); var recipe=nativeRecipe(row,server.registryAccess()); additions.values().removeIf(holder->holder.value().exactInput()==recipe.exactInput()&&sameInput(holder.value().input(),recipe.input())); var id=ResourceLocation.fromNamespaceAndPath("hbm","centrifuge/config/"+index); additions.put(id,new RecipeHolder<>(id,recipe)); }
                     catch(Exception error) { UNRESOLVED.add("config row "+index+": "+error.getMessage()); } index++;
                 }
             } else {
                 addCertusDefault(merged,additions);
                 var defaults=merged.values().stream().filter(holder->holder.value() instanceof CentrifugeRecipe).map(holder->new RecipeHolder<>(holder.id(),(CentrifugeRecipe)holder.value())).toList();
-                writeTemplate(directory.resolve("_hbmCentrifuge.json"),defaults);
+                writeTemplate(directory.resolve("_hbmCentrifuge.json"),defaults,server.registryAccess());
             }
             int index=0;
             for(var data:IMC) {
                 try {
                     var outputs=new ArrayList<ItemStack>(); for(int i=1;i<=4;i++) { var stack=readImcStack(data.getCompound("output"+i),server.registryAccess()); if(stack.isEmpty()) throw new IllegalArgumentException("Output"+i+" is unregistered"); outputs.add(stack); }
                     ItemStack input=readImcStack(data.getCompound("input"),server.registryAccess());
-                    if(input.isEmpty()&&data.getString("oredict").isEmpty()) throw new IllegalArgumentException("Neither original input nor ore dictionary key is valid");
-                    Ingredient ingredient=input.isEmpty()?new LegacyOreIngredient(ResourceLocation.parse(HbmOreDictionary.registerName(data.getString("oredict")))).toVanilla():exact(input,server.registryAccess());
+                    if(input.isEmpty()&&data.getString("tag").isEmpty()) throw new IllegalArgumentException("Neither native input stack nor item tag is valid");
+                    Ingredient ingredient=input.isEmpty()?HbmItemTags.ingredient(data.getString("tag")):exact(input,server.registryAccess());
                     var recipe=new CentrifugeRecipe(ingredient,outputs,List.of(),!input.isEmpty());
                     // Legacy putAll overrides the same AStack key; remove a prior identical native ingredient.
-                    merged.values().removeIf(holder->holder.value() instanceof CentrifugeRecipe r&&r.input().equals(ingredient));
-                    additions.values().removeIf(holder->holder.value().input().equals(ingredient));
+                    merged.values().removeIf(holder->holder.value() instanceof CentrifugeRecipe r&&sameInput(r.input(),ingredient));
+                    additions.values().removeIf(holder->sameInput(holder.value().input(),ingredient));
                     var id=ResourceLocation.fromNamespaceAndPath("hbm","centrifuge/imc/"+index); additions.put(id,new RecipeHolder<>(id,recipe));
                 } catch(Exception error) { UNRESOLVED.add("IMC row "+index+": "+error.getMessage()); } index++;
             }
@@ -88,19 +86,20 @@ public final class CentrifugeRecipeConfig {
     }
     /** Source296: use the first real registered crystal, twice in each of four independent lanes. */
     private static void addCertusDefault(Map<ResourceLocation,RecipeHolder<?>> merged,Map<ResourceLocation,RecipeHolder<CentrifugeRecipe>> additions) {
-        ItemStack crystal=HbmOreDictionary.items("hbm:legacy_ore_dict/crystalcertusquartz").filter(stack->!stack.isEmpty()).findFirst().orElse(ItemStack.EMPTY);
+        ItemStack crystal=HbmItemTags.items("c:crystals/certus_quartz").filter(stack->!stack.isEmpty()).findFirst().orElse(ItemStack.EMPTY);
         if(crystal.isEmpty())return;
         crystal=crystal.copyWithCount(2);
-        var ingredient=new LegacyOreIngredient(ResourceLocation.parse("hbm:legacy_ore_dict/orecertusquartz")).toVanilla();
+        var ingredient=HbmItemTags.ingredient("c:ores/certus_quartz");
         var id=ResourceLocation.fromNamespaceAndPath("hbm","centrifuge/source_296");
         if(merged.containsKey(id))return; // A supplied native datapack recipe retains its real identity.
         var recipe=new CentrifugeRecipe(ingredient,List.of(crystal.copy(),crystal.copy(),crystal.copy(),crystal.copy()),List.of(),false);
         var holder=new RecipeHolder<>(id,recipe);additions.put(id,holder);merged.put(id,holder);
     }
-    private static CentrifugeRecipe legacyRecipe(JsonObject row,HolderLookup.Provider lookup)throws Exception {
-        JsonArray in=row.getAsJsonArray("input"); String kind=in.get(0).getAsString(); int metadata=in.size()>3?in.get(3).getAsInt():0;
+    private static CentrifugeRecipe nativeRecipe(JsonObject row,HolderLookup.Provider lookup)throws Exception {
+        JsonArray in=row.getAsJsonArray("input"); String kind=in.get(0).getAsString(); int metadata=!kind.equals("fluid_container")&&in.size()>3?in.get(3).getAsInt():0;
         Ingredient ingredient;
-        if(kind.equals("dict")) ingredient=new LegacyOreIngredient(ResourceLocation.parse(HbmOreDictionary.registerName(in.get(1).getAsString()))).toVanilla();
+        if(kind.equals("tag")) ingredient=HbmItemTags.ingredient(in.get(1).getAsString());
+        else if(kind.equals("fluid_container")||kind.equals("ingredient")) ingredient=GenericRecipeConfigCodec.readIngredient(in,ALIASES,lookup).ingredient();
         else if(kind.equals("item")) { ItemStack stack=legacyStack(in.get(1).getAsString(),metadata); if(stack.isEmpty()) throw new IllegalArgumentException("Unregistered input "+in.get(1)); ingredient=metadata==32767?Ingredient.of(stack.getItem()):exact(stack,lookup); }
         else if(kind.equals("nbt")) {
             // The original readAStack(nbt) constructor fixes metadata to0, even if a metadata field exists.
@@ -112,7 +111,7 @@ public final class CentrifugeRecipeConfig {
             if(stack.isEmpty()) throw new IllegalArgumentException("Unregistered output "+spec.get(0)); stack.setCount(spec.size()>1?spec.get(1).getAsInt():1);
             if(spec.size()>3) stack.set(DataComponents.CUSTOM_DATA,CustomData.of(TagParser.parseTag(spec.get(3).getAsString()))); output.add(stack);
         }
-        return new CentrifugeRecipe(ingredient,output,List.of(),kind.equals("item")&&metadata!=32767&&(in.size()<=2||in.get(2).getAsInt()==1));
+        return new CentrifugeRecipe(ingredient,output,List.of(),row.has("exact_input")?row.get("exact_input").getAsBoolean():kind.equals("item")&&metadata!=32767&&(in.size()<=2||in.get(2).getAsInt()==1));
     }
     private static ItemStack legacyStack(String old,int metadata) {
         ItemStack stack=MaterialDistributionConfig.legacyStack(ALIASES.getOrDefault(old,old),metadata);
@@ -132,16 +131,11 @@ public final class CentrifugeRecipeConfig {
     private static JsonArray jsonStack(ItemStack stack) {
         JsonArray value=new JsonArray(); value.add(BuiltInRegistries.ITEM.getKey(stack.getItem()).toString()); value.add(stack.getCount()); value.add(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue())); if(stack.has(DataComponents.CUSTOM_DATA)) value.add(stack.get(DataComponents.CUSTOM_DATA).copyTag().toString()); return value;
     }
-    private static void writeTemplate(Path path,List<RecipeHolder<CentrifugeRecipe>> recipes)throws java.io.IOException {
-        JsonObject root=new JsonObject(); root.addProperty("comment","Outputs are positional; the machine processes the first four. This original array grammar replaces defaults when renamed to hbmCentrifuge.json."); JsonArray rows=new JsonArray();
-        for(var holder:recipes) {
-            var recipe=holder.value(); var custom=recipe.input().getCustomIngredient();
-            if(custom instanceof LegacyOreIngredient ore) {
-                String raw=HbmOreDictionary.allNames().stream().filter(name->("hbm:legacy_ore_dict/"+name.toLowerCase(Locale.ROOT)).equals(ore.tag().toString())).findFirst().orElse(ore.tag().getPath().substring("legacy_ore_dict/".length()));
-                JsonArray input=new JsonArray(); input.add("dict"); input.add(raw); rows.add(row(input,recipe));
-            } else for(var stack:recipe.input().getItems()) { JsonArray input=new JsonArray(); input.add("item"); input.add(BuiltInRegistries.ITEM.getKey(stack.getItem()).toString()); input.add(1); input.add(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue())); rows.add(row(input,recipe)); }
-        }
-        root.add("recipes",rows); Files.writeString(path,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");
+    private static void writeTemplate(Path path,List<RecipeHolder<CentrifugeRecipe>> recipes,HolderLookup.Provider lookup)throws java.io.IOException {
+        JsonObject root=new JsonObject();root.addProperty("comment","输出按槽位排列，机器处理前四项。输入支持tag、item、nbt、fluid_container与ingredient；替换文件名为hbmCentrifuge.json。");JsonArray rows=new JsonArray();
+        for(var holder:recipes){var recipe=holder.value();rows.add(row(GenericRecipeConfigCodec.writeIngredient(recipe.input(),1,lookup),recipe));}
+        root.add("recipes",rows);Files.writeString(path,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");
     }
-    private static JsonObject row(JsonArray input,CentrifugeRecipe recipe) { JsonObject row=new JsonObject(); row.add("input",input); JsonArray output=new JsonArray(); recipe.outputs().forEach(stack->output.add(jsonStack(stack))); row.add("output",output); return row; }
+    private static boolean sameInput(Ingredient first,Ingredient second){var a=HbmItemTags.tag(first);var b=HbmItemTags.tag(second);return a.isPresent()||b.isPresent()?a.isPresent()&&b.isPresent()&&a.get().equals(b.get()):first.equals(second);}
+    private static JsonObject row(JsonArray input,CentrifugeRecipe recipe) { JsonObject row=new JsonObject(); row.add("input",input); row.addProperty("exact_input",recipe.exactInput()); JsonArray output=new JsonArray(); recipe.outputs().forEach(stack->output.add(jsonStack(stack))); row.add("output",output); return row; }
 }

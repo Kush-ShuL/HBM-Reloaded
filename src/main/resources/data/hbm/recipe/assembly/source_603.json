@@ -19,29 +19,25 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupleanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/plates/welded"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextuplecopper"
+        "tag": "hbm:plates/welded/copper"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+        "tag": "hbm:material_groups/bismoid_bronze/plates/cast"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredenseschrabidate"
+        "tag": "hbm:wires/dense/schrabidate"
       },
       "count": 64
     },
@@ -79,8 +75,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+        "tag": "hbm:material_groups/bismoid_bronze/plates/cast"
       },
       "count": 32
     },

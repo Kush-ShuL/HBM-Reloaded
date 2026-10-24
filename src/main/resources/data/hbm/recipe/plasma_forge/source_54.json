@@ -20,8 +20,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotdineutronium"
+        "tag": "c:ingots/dineutronium"
       },
       "count": 4
     },
@@ -36,8 +35,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+        "tag": "c:ingots/workers_alloy"
       },
       "count": 1
     }

@@ -23,15 +23,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextuplesteel"
+        "tag": "hbm:plates/welded/steel"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupletitanium"
+        "tag": "hbm:plates/welded/titanium"
       },
       "count": 2
     }

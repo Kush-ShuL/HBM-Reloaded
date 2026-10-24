@@ -16,7 +16,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
-/** Original hbmRecipes/hbmCrucibleSmelting.json array grammar and replacement semantics. */
+/** Native item/tag material distributions with replacement semantics. */
 public final class MaterialDistributionConfig {
     private static final List<String> UNBOUND=new ArrayList<>();
     private MaterialDistributionConfig() {}
@@ -34,7 +34,7 @@ public final class MaterialDistributionConfig {
                 List<MaterialStack> outputs=new ArrayList<>();
                 for(var output:row.getAsJsonArray("output")) { JsonArray pair=output.getAsJsonArray(); NtmMaterial material=HbmMaterials.byName(pair.get(0).getAsString()); if(material==null) throw new IllegalArgumentException("Unknown case-sensitive material "+pair.get(0)); outputs.add(new MaterialStack(material,pair.get(1).getAsInt())); }
                 String type=input.get(0).getAsString(),key=input.get(1).getAsString();
-                if(type.equals("dict")) HbmMaterials.registerOre(key,outputs);
+                if(type.equals("tag")) HbmMaterials.registerTag(key,outputs);
                 else if(type.equals("item")) { int meta=input.size()>3?input.get(3).getAsInt():0; ItemStack stack=legacyStack(key,meta); if(stack.isEmpty()) { UNBOUND.add(key+"@"+meta); continue; } HbmMaterials.registerEntry(stack,outputs); }
                 else { UNBOUND.add("Unsupported original MatDistribution comparable subclass: "+input); }
             }
@@ -59,9 +59,9 @@ public final class MaterialDistributionConfig {
         return stack;
     }
     private static void writeTemplate(Path path)throws java.io.IOException {
-        JsonObject root=new JsonObject(); root.addProperty("comment","One item at a time; amounts in quanta (72 per ingot). Material names are original case-sensitive OreDictionary suffixes. Prefix inference remains automatic; this file replaces fixed and ore overrides."); JsonArray recipes=new JsonArray();
+        JsonObject root=new JsonObject(); root.addProperty("comment","One item at a time; amounts in quanta (72 per ingot). Inputs use item IDs or native item tag IDs. Outputs use configured material names. This file replaces fixed and tag overrides; material-shape tag inference remains automatic."); JsonArray recipes=new JsonArray();
         HbmMaterials.stackEntries().forEach((key,outputs)->{ JsonArray input=new JsonArray(); input.add("item"); input.add(key.item().toString()); input.add(1); input.add(key.metadata()); recipes.add(recipe(input,outputs)); });
-        HbmMaterials.oreEntries().forEach((key,outputs)->{ JsonArray input=new JsonArray(); input.add("dict"); input.add(key); recipes.add(recipe(input,outputs)); });
+        HbmMaterials.tagEntries().forEach((key,outputs)->{ JsonArray input=new JsonArray(); input.add("tag"); input.add(key); recipes.add(recipe(input,outputs)); });
         root.add("recipes",recipes); Files.writeString(path,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n",StandardCharsets.UTF_8);
     }
     private static JsonObject recipe(JsonArray input,List<MaterialStack> outputs) { JsonObject row=new JsonObject(); row.add("input",input); JsonArray result=new JsonArray(); for(MaterialStack value:outputs) { JsonArray pair=new JsonArray(); pair.add(value.material.names().getFirst()); pair.add(value.amount); result.add(pair); } row.add("output",result); return row; }

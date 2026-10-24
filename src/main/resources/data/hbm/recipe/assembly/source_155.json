@@ -19,22 +19,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+        "tag": "hbm:wires/fine/mingrade"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+        "tag": "c:dusts/nether_quartz"
       },
       "count": 2
     }

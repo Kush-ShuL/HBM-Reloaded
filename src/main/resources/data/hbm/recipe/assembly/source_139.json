@@ -20,22 +20,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotrubber"
+        "tag": "c:ingots/rubber"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateiron"
+        "tag": "c:plates/iron"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefinecopper"
+        "tag": "hbm:wires/fine/copper"
       },
       "count": 8
     }

@@ -22,15 +22,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensecopper"
+        "tag": "hbm:wires/dense/copper"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensecopper"
+        "tag": "hbm:wires/dense/copper"
       },
       "count": 64
     },

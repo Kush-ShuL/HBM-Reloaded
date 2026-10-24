@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      "tag": "hbm:pipes/steel"
     },
     "count": 1
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "ntmpipe",
   "exact_left": [],
-  "order": 121000000
+  "order": 121000000,
+  "shape": "PIPE"
 }

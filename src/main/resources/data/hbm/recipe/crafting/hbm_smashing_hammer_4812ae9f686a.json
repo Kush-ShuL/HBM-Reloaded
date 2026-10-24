@@ -8,16 +8,13 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocksteel"
+      "tag": "c:storage_blocks/steel"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocktungsten"
+      "tag": "c:storage_blocks/tungsten"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     }
   },
   "result": {

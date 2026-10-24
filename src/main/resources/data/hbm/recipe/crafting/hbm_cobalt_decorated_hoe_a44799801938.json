@@ -15,12 +15,10 @@
   ],
   "key": {
     "X": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockcobalt"
+      "tag": "c:storage_blocks/cobalt"
     },
     "#": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stickwood"
+      "tag": "c:rods/wooden"
     }
   },
   "neoforge:conditions": [

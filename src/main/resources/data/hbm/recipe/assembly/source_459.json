@@ -22,15 +22,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 24
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotbismuth"
+        "tag": "c:ingots/bismuth"
       },
       "count": 24
     },

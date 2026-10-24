@@ -15,12 +15,10 @@
       "item": "minecraft:leather"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      "tag": "c:plates/weapon_steel"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     }
   }
 }

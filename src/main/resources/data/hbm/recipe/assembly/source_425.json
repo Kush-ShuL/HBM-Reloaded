@@ -19,22 +19,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shelltitanium"
+        "tag": "hbm:gun_parts/shells/titanium"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+        "tag": "hbm:pipes/dura_steel"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "count": 12
     },
@@ -49,8 +46,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensegold"
+        "tag": "hbm:wires/dense/gold"
       },
       "count": 12
     },
@@ -76,8 +72,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "count": 16
     },
@@ -92,8 +87,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensegold"
+        "tag": "hbm:wires/dense/gold"
       },
       "count": 16
     },

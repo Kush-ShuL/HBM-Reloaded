@@ -19,8 +19,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecopper"
+        "tag": "c:plates/copper"
       },
       "count": 2
     },
@@ -35,8 +34,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesaturnite"
+        "tag": "c:plates/saturnite"
       },
       "count": 1
     }

@@ -13,22 +13,19 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/logwood"
+        "tag": "minecraft:logs"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplecopper"
+        "tag": "hbm:plates/cast/copper"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotbrick"
+        "tag": "c:ingots/brick"
       },
       "count": 16
     }

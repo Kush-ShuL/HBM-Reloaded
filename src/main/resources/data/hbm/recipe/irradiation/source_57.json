@@ -2,14 +2,13 @@
   "type": "hbm:irradiation",
   "input": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockcoal"
+      "tag": "c:storage_blocks/coal"
     },
     "count": 1
   },
   "fusion_only": false,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/blockcoal",
+  "key_kind": "tag",
+  "source_key": "c:storage_blocks/coal",
   "order": 15,
   "solid_output": {
     "id": "hbm:oil_tar_coal",

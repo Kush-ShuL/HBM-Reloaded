@@ -19,29 +19,25 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/plates/cast"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotgraphite"
+        "tag": "c:ingots/graphite"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 4
     }
@@ -58,8 +54,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotgraphite"
+        "tag": "c:ingots/graphite"
       },
       "count": 64
     },

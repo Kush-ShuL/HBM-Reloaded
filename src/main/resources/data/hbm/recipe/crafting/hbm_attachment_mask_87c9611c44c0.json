@@ -11,16 +11,13 @@
       "item": "hbm:ducttape"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     },
     "F": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     }
   },
   "result": {

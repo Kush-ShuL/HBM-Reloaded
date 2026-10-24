@@ -13,29 +13,25 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plankwood"
+              "tag": "minecraft:planks"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 6
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 4
           },
@@ -78,22 +74,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 12
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 2
           },

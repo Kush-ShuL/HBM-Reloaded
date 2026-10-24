@@ -423,9 +423,9 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/hbm_plate_cast_145685a1e677",
-          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_plate_cast_145685a1e677.json",
-          "resource": "data/hbm/recipe/crafting/hbm_plate_cast_145685a1e677.json",
+          "id": "hbm:crafting/hbm_autogen_plate_cast_m2600_e9ab3fd8d795",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_autogen_plate_cast_m2600_e9ab3fd8d795.json",
+          "resource": "data/hbm/recipe/crafting/hbm_autogen_plate_cast_m2600_e9ab3fd8d795.json",
           "type": "minecraft:crafting_shaped",
           "ownerReport": "migration/source-crafting283.json",
           "status": "exact-native-source-binding-staged"
@@ -3302,11 +3302,8 @@
       ],
       "recipe": {
         "result": {
-          "id": "hbm:plate_cast",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2600
-          }
+          "id": "hbm:autogen/plate_cast/m2600",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -3317,18 +3314,16 @@
         ],
         "key": {
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/boltsteel"
+            "tag": "hbm:bolts/steel"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       },
-      "id": "hbm:crafting/hbm_plate_cast_145685a1e677",
-      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_plate_cast_145685a1e677.json",
-      "resource": "data/hbm/recipe/crafting/hbm_plate_cast_145685a1e677.json",
+      "id": "hbm:crafting/hbm_autogen_plate_cast_m2600_e9ab3fd8d795",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/hbm_autogen_plate_cast_m2600_e9ab3fd8d795.json",
+      "resource": "data/hbm/recipe/crafting/hbm_autogen_plate_cast_m2600_e9ab3fd8d795.json",
       "type": "minecraft:crafting_shaped",
       "ownerReport": "migration/source-crafting283.json",
       "status": "exact-native-source-binding-staged"
@@ -3362,28 +3357,22 @@
             "item": "hbm:powder_sawdust"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/treeleaves"
+            "tag": "minecraft:leaves"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/treeleaves"
+            "tag": "minecraft:leaves"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/treeleaves"
+            "tag": "minecraft:leaves"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/treeleaves"
+            "tag": "minecraft:leaves"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/treeleaves"
+            "tag": "minecraft:leaves"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/treeleaves"
+            "tag": "minecraft:leaves"
           }
         ]
       },
@@ -3421,12 +3410,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+            "tag": "hbm:wires/fine/mingrade"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         }
       },
@@ -3464,12 +3451,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+            "tag": "hbm:wires/fine/mingrade"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       },
@@ -3507,12 +3492,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinegold"
+            "tag": "hbm:wires/fine/gold"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         }
       },
@@ -3550,12 +3533,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinegold"
+            "tag": "hbm:wires/fine/gold"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       },
@@ -3593,12 +3574,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+            "tag": "hbm:wires/fine/magnetized_tungsten"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         }
       },
@@ -3636,12 +3615,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+            "tag": "hbm:wires/fine/magnetized_tungsten"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       },
@@ -3679,12 +3656,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinetungsten"
+            "tag": "hbm:wires/fine/tungsten"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         }
       },
@@ -3722,12 +3697,10 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinetungsten"
+            "tag": "hbm:wires/fine/tungsten"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       },
@@ -3765,8 +3738,7 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           },
           "C": {
             "item": "hbm:coil_copper"
@@ -3807,8 +3779,7 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "C": {
             "item": "hbm:coil_copper"
@@ -3849,8 +3820,7 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           },
           "C": {
             "item": "hbm:coil_gold"
@@ -3891,8 +3861,7 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "C": {
             "item": "hbm:coil_gold"
@@ -3931,16 +3900,13 @@
         ],
         "key": {
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockberyllium"
+            "tag": "c:storage_blocks/beryllium"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetripleiron"
+            "tag": "hbm:plates/cast/iron"
           },
           "T": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+            "tag": "hbm:pipes/dura_steel"
           }
         }
       },
@@ -3976,16 +3942,13 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustredstone"
+            "tag": "c:dusts/redstone"
           },
           "R": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+            "tag": "hbm:wires/fine/mingrade"
           }
         },
         "neoforge:conditions": [
@@ -4066,12 +4029,10 @@
         ],
         "key": {
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blocktungsten"
+            "tag": "c:storage_blocks/tungsten"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetriplecopper"
+            "tag": "hbm:plates/cast/copper"
           },
           "C": {
             "item": "hbm:crate_steel"
@@ -4110,12 +4071,10 @@
         ],
         "key": {
           "L": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platelead"
+            "tag": "c:plates/lead"
           },
           "A": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetitanium"
+            "tag": "c:plates/titanium"
           },
           "C": {
             "item": "hbm:crate_steel"
@@ -4157,16 +4116,10 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "C": {
-            "type": "neoforge:components",
-            "items": "hbm:circuit",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:circuit_chip"
           },
           "M": {
             "type": "neoforge:components",
@@ -4213,16 +4166,10 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+            "tag": "hbm:material_groups/resistant_alloy/ingots"
           },
           "C": {
-            "type": "neoforge:components",
-            "items": "hbm:circuit",
-            "components": {
-              "hbm:legacy_metadata": 9
-            },
-            "strict": false
+            "item": "hbm:circuit_advanced"
           },
           "M": {
             "type": "neoforge:components",
@@ -4266,8 +4213,7 @@
         ],
         "key": {
           "L": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotlead"
+            "tag": "c:ingots/lead"
           },
           "B": {
             "item": "minecraft:iron_bars"
@@ -4316,8 +4262,7 @@
             "item": "minecraft:brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stone"
+            "tag": "c:stones"
           }
         }
       },
@@ -4360,8 +4305,7 @@
             "item": "minecraft:nether_brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stone"
+            "tag": "c:stones"
           }
         }
       },
@@ -4404,8 +4348,7 @@
             "item": "minecraft:brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         }
       },
@@ -4448,8 +4391,7 @@
             "item": "minecraft:nether_brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         }
       },
@@ -4492,8 +4434,7 @@
             "item": "minecraft:brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       },
@@ -4536,8 +4477,7 @@
             "item": "minecraft:nether_brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       },
@@ -4580,8 +4520,7 @@
             "item": "minecraft:brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         }
       },
@@ -4624,8 +4563,7 @@
             "item": "minecraft:nether_brick"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         }
       },
@@ -4752,12 +4690,10 @@
             "item": "minecraft:brick"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotferrouranium"
+            "tag": "c:ingots/ferrouranium"
           }
         }
       },
@@ -4798,12 +4734,10 @@
             "item": "minecraft:nether_brick"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotferrouranium"
+            "tag": "c:ingots/ferrouranium"
           }
         }
       },
@@ -4965,8 +4899,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyewhite"
+            "tag": "c:dyes/white"
           }
         }
       },
@@ -5011,8 +4944,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeorange"
+            "tag": "c:dyes/orange"
           }
         }
       },
@@ -5057,8 +4989,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyemagenta"
+            "tag": "c:dyes/magenta"
           }
         }
       },
@@ -5103,8 +5034,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyelightblue"
+            "tag": "c:dyes/light_blue"
           }
         }
       },
@@ -5149,8 +5079,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeyellow"
+            "tag": "c:dyes/yellow"
           }
         }
       },
@@ -5195,8 +5124,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyelime"
+            "tag": "c:dyes/lime"
           }
         }
       },
@@ -5241,8 +5169,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepink"
+            "tag": "c:dyes/pink"
           }
         }
       },
@@ -5287,8 +5214,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyegray"
+            "tag": "c:dyes/gray"
           }
         }
       },
@@ -5333,8 +5259,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyelightgray"
+            "tag": "c:dyes/light_gray"
           }
         }
       },
@@ -5379,8 +5304,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyecyan"
+            "tag": "c:dyes/cyan"
           }
         }
       },
@@ -5425,8 +5349,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepurple"
+            "tag": "c:dyes/purple"
           }
         }
       },
@@ -5471,8 +5394,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblue"
+            "tag": "c:dyes/blue"
           }
         }
       },
@@ -5517,8 +5439,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyebrown"
+            "tag": "c:dyes/brown"
           }
         }
       },
@@ -5563,8 +5484,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyegreen"
+            "tag": "c:dyes/green"
           }
         }
       },
@@ -5609,8 +5529,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyered"
+            "tag": "c:dyes/red"
           }
         }
       },
@@ -5655,8 +5574,7 @@
             "item": "hbm:concrete_smooth"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblack"
+            "tag": "c:dyes/black"
           }
         }
       },
@@ -5706,8 +5624,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblack"
+            "tag": "c:dyes/black"
           }
         }
       },
@@ -5757,8 +5674,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyewhite"
+            "tag": "c:dyes/white"
           }
         }
       },
@@ -5808,8 +5724,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyered"
+            "tag": "c:dyes/red"
           }
         }
       },
@@ -5859,8 +5774,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyegreen"
+            "tag": "c:dyes/green"
           }
         }
       },
@@ -5910,8 +5824,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyelightgray"
+            "tag": "c:dyes/light_gray"
           }
         }
       },
@@ -5961,8 +5874,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblue"
+            "tag": "c:dyes/blue"
           }
         }
       },
@@ -6012,8 +5924,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepurple"
+            "tag": "c:dyes/purple"
           }
         }
       },
@@ -6063,8 +5974,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyecyan"
+            "tag": "c:dyes/cyan"
           }
         }
       },
@@ -6114,8 +6024,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepink"
+            "tag": "c:dyes/pink"
           }
         }
       },
@@ -6165,8 +6074,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyelime"
+            "tag": "c:dyes/lime"
           }
         }
       },
@@ -6216,8 +6124,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeyellow"
+            "tag": "c:dyes/yellow"
           }
         }
       },
@@ -6267,8 +6174,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyelightblue"
+            "tag": "c:dyes/light_blue"
           }
         }
       },
@@ -6318,8 +6224,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyemagenta"
+            "tag": "c:dyes/magenta"
           }
         }
       },
@@ -6369,8 +6274,7 @@
             "strict": false
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeorange"
+            "tag": "c:dyes/orange"
           }
         }
       },
@@ -6412,12 +6316,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyebrown"
+            "tag": "c:dyes/brown"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyegray"
+            "tag": "c:dyes/gray"
           }
         }
       },
@@ -6459,12 +6361,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyebrown"
+            "tag": "c:dyes/brown"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblack"
+            "tag": "c:dyes/black"
           }
         }
       },
@@ -6506,12 +6406,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblue"
+            "tag": "c:dyes/blue"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepurple"
+            "tag": "c:dyes/purple"
           }
         }
       },
@@ -6553,12 +6451,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepurple"
+            "tag": "c:dyes/purple"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepurple"
+            "tag": "c:dyes/purple"
           }
         }
       },
@@ -6600,12 +6496,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyepink"
+            "tag": "c:dyes/pink"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyered"
+            "tag": "c:dyes/red"
           }
         }
       },
@@ -6647,12 +6541,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeyellow"
+            "tag": "c:dyes/yellow"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblack"
+            "tag": "c:dyes/black"
           }
         }
       },
@@ -6694,12 +6586,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeyellow"
+            "tag": "c:dyes/yellow"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyegray"
+            "tag": "c:dyes/gray"
           }
         }
       },
@@ -6741,12 +6631,10 @@
             "item": "hbm:concrete_smooth"
           },
           "1": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeorange"
+            "tag": "c:dyes/orange"
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyebrown"
+            "tag": "c:dyes/brown"
           }
         }
       },

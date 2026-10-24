@@ -1,10 +1,10 @@
 {
   "order": [
-    "hbm:legacy_ore_dict/blocklithium"
+    "c:storage_blocks/lithium"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/blocklithium",
+      "tag": "c:storage_blocks/lithium",
       "raw": "blockLithium"
     }
   ],
@@ -16,7 +16,7 @@
         "line": 454
       },
       "expression": "LI.block(block_lithium)",
-      "tag": "hbm:legacy_ore_dict/blocklithium",
+      "tag": "c:storage_blocks/lithium",
       "members": [
         "hbm:block_lithium"
       ]

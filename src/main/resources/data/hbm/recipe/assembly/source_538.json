@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplelead"
+        "tag": "hbm:plates/cast/lead"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextuplezirconium"
+        "tag": "hbm:plates/welded/zirconium"
       },
       "count": 2
     }
@@ -44,8 +42,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextuplezirconium"
+        "tag": "hbm:plates/welded/zirconium"
       },
       "count": 2
     }

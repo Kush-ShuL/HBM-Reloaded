@@ -19,36 +19,31 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+        "tag": "hbm:plates/welded/tungsten"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/plates/cast"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecopper"
+        "tag": "c:plates/copper"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 8
     },
@@ -65,8 +60,7 @@
   "expensive_input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 32
     },

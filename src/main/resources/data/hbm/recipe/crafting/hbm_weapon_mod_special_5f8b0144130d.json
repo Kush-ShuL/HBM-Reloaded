@@ -15,12 +15,10 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrellightsteel"
+      "tag": "hbm:gun_parts/barrels/light/steel"
     }
   }
 }

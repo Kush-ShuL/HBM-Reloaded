@@ -3,8 +3,8 @@
   "recipes": [
     {
       "input": [
-        "dict",
-        "gemCoal",
+        "tag",
+        "c:gems/coal",
         1
       ],
       "output": [
@@ -14,8 +14,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustCoal",
+        "tag",
+        "c:dusts/coal",
         1
       ],
       "output": [
@@ -25,8 +25,8 @@
     },
     {
       "input": [
-        "dict",
-        "gemLignite",
+        "tag",
+        "c:gems/lignite",
         1
       ],
       "output": [
@@ -36,8 +36,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustLignite",
+        "tag",
+        "c:dusts/lignite",
         1
       ],
       "output": [
@@ -47,8 +47,8 @@
     },
     {
       "input": [
-        "dict",
-        "oiltar",
+        "tag",
+        "hbm:tars/crude_oil",
         1
       ],
       "output": [
@@ -58,8 +58,8 @@
     },
     {
       "input": [
-        "dict",
-        "cracktar",
+        "tag",
+        "hbm:tars/cracked_oil",
         1
       ],
       "output": [
@@ -69,8 +69,8 @@
     },
     {
       "input": [
-        "dict",
-        "coaltar",
+        "tag",
+        "hbm:tars/coal",
         1
       ],
       "output": [
@@ -80,8 +80,8 @@
     },
     {
       "input": [
-        "dict",
-        "logWood",
+        "tag",
+        "minecraft:logs",
         1
       ],
       "output": [
@@ -91,8 +91,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustSodium",
+        "tag",
+        "c:dusts/sodium",
         1
       ],
       "output": [
@@ -102,8 +102,8 @@
     },
     {
       "input": [
-        "dict",
-        "ingotLead",
+        "tag",
+        "c:ingots/lead",
         1
       ],
       "output": [
@@ -113,8 +113,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustLead",
+        "tag",
+        "c:dusts/lead",
         1
       ],
       "output": [
@@ -124,8 +124,8 @@
     },
     {
       "input": [
-        "dict",
-        "blockLead",
+        "tag",
+        "c:storage_blocks/lead",
         1
       ],
       "output": [

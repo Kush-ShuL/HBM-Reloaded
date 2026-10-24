@@ -2,7 +2,7 @@ package com.hbm.machine.rtg;
 
 import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.alloy.AlloyStackIngredient;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
@@ -22,7 +22,7 @@ import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 /** MineralRecipes225: actual first registered nickel ingot, never a fabricated HBM nickel. */
 public final class SourceRtgRecyclingRecipes {
     private static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath("hbm", "source_rtg_recycling/nickel");
-    private static final String TAG = "hbm:legacy_ore_dict/ingotnickel";
+    private static final String TAG = "c:ingots/nickel";
     private static final Map<RecipeManager, RecipeHolder<?>> INSTALLED = new WeakHashMap<>();
     private static boolean registered;
     private SourceRtgRecyclingRecipes() { }
@@ -44,10 +44,9 @@ public final class SourceRtgRecyclingRecipes {
         RecipeHolder<?> generated = null;
         if (!merged.containsKey(ID)) {
             // The optional native c:ingots/nickel tag supplies real external members
-            // through the existing dictionary. An absent tag cannot create a recipe.
-            var first = HbmOreDictionary.items(TAG).findFirst();
+            // through its actual bound native members. An absent tag cannot create a recipe.
+            var first = HbmItemTags.items(TAG).findFirst();
             if (first.isPresent()) {
-                HbmOreDictionary.registerName("ingotNickel");
                 ItemStack output = first.get().copyWithCount(2);
                 ItemStack pellet = new ItemStack(RtgContent.DEPLETED.get());
                 pellet.set(HbmHazards.LEGACY_METADATA.get(), 5); // Actual DepletedRTGMaterial.NICKEL ordinal.
@@ -56,8 +55,7 @@ public final class SourceRtgRecyclingRecipes {
                 generated = new RecipeHolder<>(ID, new ShapelessRecipe("", CraftingBookCategory.MISC, output, inputs));
                 merged.put(ID, generated);
             }
-            // Native reload can remove an optional tag after the raw name was
-            // registered. No candidate means no output recipe, never a fake ingot
+            // Native reload can remove an optional tag after an earlier reload. No candidate means no output recipe, never a fake ingot
             // or an original get(0) failure while loading the new datapack.
         }
         if (generated != null || previous != null) manager.replaceRecipes(merged.values());

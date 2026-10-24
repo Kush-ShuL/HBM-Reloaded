@@ -15,16 +15,13 @@
       "item": "hbm:hazmat_cloth_red"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platelead"
+      "tag": "c:plates/lead"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     }
   }
 }

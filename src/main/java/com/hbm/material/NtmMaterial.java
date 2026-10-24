@@ -41,6 +41,8 @@ public final class NtmMaterial {
     public NtmMaterial setConversion(NtmMaterial target,int required,int produced) { smeltsInto=target; convIn=required; convOut=produced; return this; }
     public String descriptionId() { return "hbmmat."+names.getFirst().toLowerCase(Locale.US); }
     public Component displayName() { return Component.translatable(descriptionId()); }
+    public ItemStack make(com.hbm.item.autogen.AutogenContent.Family family) { return make(family,1); }
+    public ItemStack make(com.hbm.item.autogen.AutogenContent.Family family,int count) { return family.stack(this,count); }
     public ItemStack make(Item item) { return make(item,1); }
-    public ItemStack make(Item item,int count) { ItemStack stack=new ItemStack(item,count); stack.set(HbmHazards.LEGACY_METADATA.get(),id); return stack; }
+    public ItemStack make(Item item,int count) { if(item instanceof com.hbm.item.autogen.AutogenItem autogen) return com.hbm.item.autogen.AutogenContent.item(autogen.spec().id()).stack(this,count); ItemStack stack=new ItemStack(item,count); stack.set(HbmHazards.LEGACY_METADATA.get(),id); return stack; }
 }

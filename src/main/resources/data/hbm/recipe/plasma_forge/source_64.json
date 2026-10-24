@@ -20,22 +20,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+        "tag": "hbm:plates/cast/steel"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetitanium"
+        "tag": "c:plates/titanium"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/boltsteel"
+        "tag": "hbm:bolts/steel"
       },
       "count": 16
     }

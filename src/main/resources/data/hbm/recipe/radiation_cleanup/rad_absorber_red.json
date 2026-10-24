@@ -8,12 +8,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottitanium"
+      "tag": "c:ingots/titanium"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcoal"
+      "tag": "c:dusts/coal"
     },
     "P": {
       "type": "neoforge:components",

@@ -19,36 +19,31 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+        "tag": "hbm:pipes/steel"
       },
       "count": 12
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotsteel"
+        "tag": "c:ingots/steel"
       },
       "count": 24
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecopper"
+        "tag": "c:plates/copper"
       },
       "count": 24
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotniobium"
+        "tag": "c:ingots/niobium"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotrubber"
+        "tag": "c:ingots/rubber"
       },
       "count": 12
     },
@@ -74,15 +69,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotniobium"
+        "tag": "c:ingots/niobium"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotrubber"
+        "tag": "c:ingots/rubber"
       },
       "count": 16
     },

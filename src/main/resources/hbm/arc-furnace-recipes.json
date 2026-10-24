@@ -2,8 +2,8 @@
   "recipes": [
     {
       "input": [
-        "dict",
-        "sand",
+        "tag",
+        "c:sands",
         1
       ],
       "solid": [
@@ -39,8 +39,8 @@
     },
     {
       "input": [
-        "dict",
-        "gemQuartz",
+        "tag",
+        "c:gems/quartz",
         1
       ],
       "solid": [
@@ -57,8 +57,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustQuartz",
+        "tag",
+        "c:dusts/quartz",
         1
       ],
       "solid": [
@@ -75,8 +75,8 @@
     },
     {
       "input": [
-        "dict",
-        "blockQuartz",
+        "tag",
+        "c:storage_blocks/quartz",
         1
       ],
       "solid": [
@@ -93,8 +93,8 @@
     },
     {
       "input": [
-        "dict",
-        "ingotFiberglass",
+        "tag",
+        "c:ingots/fiberglass",
         1
       ],
       "solid": [
@@ -111,8 +111,8 @@
     },
     {
       "input": [
-        "dict",
-        "blockFiberglass",
+        "tag",
+        "c:storage_blocks/fiberglass",
         1
       ],
       "solid": [
@@ -129,8 +129,8 @@
     },
     {
       "input": [
-        "dict",
-        "ingotAsbestos",
+        "tag",
+        "c:ingots/asbestos",
         1
       ],
       "solid": [
@@ -147,8 +147,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustAsbestos",
+        "tag",
+        "c:dusts/asbestos",
         1
       ],
       "solid": [
@@ -165,8 +165,8 @@
     },
     {
       "input": [
-        "dict",
-        "blockAsbestos",
+        "tag",
+        "c:storage_blocks/asbestos",
         1
       ],
       "solid": [
@@ -183,8 +183,8 @@
     },
     {
       "input": [
-        "dict",
-        "ingotIlmenite",
+        "tag",
+        "c:ingots/ilmenite",
         1
       ],
       "solid": [
@@ -218,8 +218,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustBorax",
+        "tag",
+        "c:dusts/borax",
         1
       ],
       "solid": [

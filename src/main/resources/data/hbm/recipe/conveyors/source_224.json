@@ -14,12 +14,10 @@
       }
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     }
   },
   "result": {

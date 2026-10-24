@@ -817,8 +817,8 @@
         2000
       ],
       "inputItem": [
-        "dict",
-        "dustTungsten",
+        "tag",
+        "c:dusts/tungsten",
         1
       ],
       "outputFluid": [
@@ -838,8 +838,8 @@
         500
       ],
       "inputItem": [
-        "dict",
-        "gemCoal",
+        "tag",
+        "c:gems/coal",
         1
       ],
       "outputFluid": [
@@ -854,8 +854,8 @@
         500
       ],
       "inputItem": [
-        "dict",
-        "dustCoal",
+        "tag",
+        "c:dusts/coal",
         1
       ],
       "outputFluid": [
@@ -870,8 +870,8 @@
         250
       ],
       "inputItem": [
-        "dict",
-        "gemanycoke",
+        "tag",
+        "c:gems/anycoke",
         1
       ],
       "outputFluid": [
@@ -904,8 +904,8 @@
         1000
       ],
       "inputItem": [
-        "dict",
-        "anyTar",
+        "tag",
+        "hbm:tars",
         4
       ],
       "outputItem": [
@@ -921,8 +921,8 @@
         500
       ],
       "inputItem": [
-        "dict",
-        "gemCoal",
+        "tag",
+        "c:gems/coal",
         1
       ],
       "outputFluid": [
@@ -937,8 +937,8 @@
         500
       ],
       "inputItem": [
-        "dict",
-        "dustCoal",
+        "tag",
+        "c:dusts/coal",
         1
       ],
       "outputFluid": [
@@ -953,24 +953,8 @@
         500
       ],
       "inputItem": [
-        "dict",
-        "gemCoal",
-        1
-      ],
-      "outputFluid": [
-        "COALGAS",
-        1000
-      ]
-    },
-    {
-      "duration": 50,
-      "inputFluid": [
-        "HEAVYOIL",
-        500
-      ],
-      "inputItem": [
-        "dict",
-        "dustCoal",
+        "tag",
+        "c:gems/coal",
         1
       ],
       "outputFluid": [
@@ -985,8 +969,24 @@
         500
       ],
       "inputItem": [
-        "dict",
-        "gemanycoke",
+        "tag",
+        "c:dusts/coal",
+        1
+      ],
+      "outputFluid": [
+        "COALGAS",
+        1000
+      ]
+    },
+    {
+      "duration": 50,
+      "inputFluid": [
+        "HEAVYOIL",
+        500
+      ],
+      "inputItem": [
+        "tag",
+        "c:gems/anycoke",
         1
       ],
       "outputFluid": [

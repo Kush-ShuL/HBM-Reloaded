@@ -15,15 +15,13 @@
   ],
   "key": {
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripledurasteel"
+      "tag": "hbm:plates/cast/dura_steel"
     },
     "P": {
       "item": "hbm:piston_selenium"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     }
   }
 }

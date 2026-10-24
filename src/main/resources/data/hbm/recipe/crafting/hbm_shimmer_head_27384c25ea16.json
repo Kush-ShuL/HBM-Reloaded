@@ -12,16 +12,13 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockworkersalloy"
+      "tag": "c:storage_blocks/workers_alloy"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocktungsten"
+      "tag": "c:storage_blocks/tungsten"
     }
   }
 }

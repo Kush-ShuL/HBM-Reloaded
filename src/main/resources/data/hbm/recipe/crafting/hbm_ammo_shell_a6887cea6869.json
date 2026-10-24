@@ -21,12 +21,10 @@
       "item": "hbm:cordite"
     },
     "H": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsteel"
+      "tag": "hbm:gun_parts/shells/steel"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcopper"
+      "tag": "c:ingots/copper"
     }
   }
 }

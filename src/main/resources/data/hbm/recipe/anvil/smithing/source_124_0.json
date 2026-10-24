@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockiron"
+      "tag": "c:storage_blocks/iron"
     },
     "count": 1
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "block",
   "exact_left": [],
-  "order": 124000000
+  "order": 124000000,
+  "shape": "BLOCK"
 }

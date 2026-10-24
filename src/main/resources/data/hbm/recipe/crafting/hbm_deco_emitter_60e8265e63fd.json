@@ -12,16 +12,13 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gemdiamond"
+      "tag": "c:gems/diamond"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockredstone"
+      "tag": "c:storage_blocks/redstone"
     }
   }
 }

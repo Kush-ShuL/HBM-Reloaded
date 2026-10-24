@@ -10594,7 +10594,6 @@
   "gui.hbm.pneumatic.match.exact": "Item and meta match",
   "gui.hbm.pneumatic.match.wildcard": "Item matches",
   "gui.hbm.pneumatic.match.bedrock": "Item and bedrock grade match",
-  "gui.hbm.pneumatic.match.dictionary": "Ore dict key matches: %s",
   "gui.hbm.pneumatic.shift": "Hold <%s> to display more info",
   "gui.hbm.pneumatic.redstone": "%s with Redstone",
   "gui.hbm.pneumatic.on": "ON",
@@ -12516,7 +12515,6 @@
   "item.hbm.ingot_metal_detector": "Detector",
   "hbm.key.duck": "Duck!",
   "message.hbm.duck.pressKey": "Press %s to Duck!",
-  "tooltip.hbm.ore_dictionary.title": "Ore Dict:",
   "tooltip.hbm.custom_nuke.add": "Adds %s to the custom nuke stage %s",
   "tooltip.hbm.custom_nuke.mult": "Adds multiplier %s to the custom nuke stage %s",
   "commands.hbm.radiation.cleared": "Cleared radiation data!",
@@ -13122,5 +13120,7 @@
   "manual.hbm.weapon.template_shotshell.title": "Template:Shotshells",
   "manual.hbm.weapon.template_shotshell.content": "§2[ §2Shotgun §2Shells §2]<br>[[Black Powder Ammunition]]<br>[[Buckshot]]<br>[[Magnum Buckshot]]<br>[[Shrapnel Buckshot]]<br>[[Flechettes]]<br>[[White Phosphorus Munitions]]<br>[[Slug]]<br>[[Depleted Uranium Bullet]]<br>[[High-Explosive Ammunition]]",
   "manual.hbm.weapon.wp.title": "White Phosphorus Munitions",
-  "manual.hbm.weapon.wp.content": "White phosphorus ignites easily and is very hard to extinguish, causing significant afterburn damage which cannot be permanently extinguished by water. Lingering fire caused by WP explosions lasts longer than by conventinal incendiary explosives.<br><br>Use of incendiary weapons against or near civilians is forbidden by the Geneva Conventions.<br><br>{{Template:Shotshells}}<br>{{Template:Explosives}}"
+  "manual.hbm.weapon.wp.content": "White phosphorus ignites easily and is very hard to extinguish, causing significant afterburn damage which cannot be permanently extinguished by water. Lingering fire caused by WP explosions lasts longer than by conventinal incendiary explosives.<br><br>Use of incendiary weapons against or near civilians is forbidden by the Geneva Conventions.<br><br>{{Template:Shotshells}}<br>{{Template:Explosives}}",
+  "tooltip.hbm.item_tags.title": "Item Tags:",
+  "gui.hbm.pneumatic.match.tag": "Item tag matches: %s"
 }

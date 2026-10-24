@@ -12,19 +12,16 @@
   ],
   "key": {
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinegold"
+      "tag": "hbm:wires/fine/gold"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcopper"
+      "tag": "c:ingots/copper"
     },
     "C": {
       "item": "hbm:circuit_analog"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     }
   }
 }

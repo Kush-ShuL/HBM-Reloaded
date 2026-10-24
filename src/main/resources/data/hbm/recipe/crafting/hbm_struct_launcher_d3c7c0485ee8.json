@@ -12,19 +12,16 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "S": {
       "item": "hbm:steel_scaffold"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      "tag": "hbm:pipes/steel"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/anyconcrete"
+      "tag": "hbm:concrete"
     }
   }
 }

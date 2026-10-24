@@ -13,22 +13,19 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+        "tag": "c:ingots/workers_alloy"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensegold"
+        "tag": "hbm:wires/dense/gold"
       },
       "count": 1
     }

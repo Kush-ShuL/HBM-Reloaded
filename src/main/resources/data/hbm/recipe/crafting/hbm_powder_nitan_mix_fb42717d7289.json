@@ -7,28 +7,22 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/duststrontium"
+      "tag": "c:dusts/strontium"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcobalt"
+      "tag": "c:dusts/cobalt"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustbromine"
+      "tag": "c:dusts/bromine"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dusttennessine"
+      "tag": "c:dusts/tennessine"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustniobium"
+      "tag": "c:dusts/niobium"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcerium"
+      "tag": "c:dusts/cerium"
     }
   ]
 }

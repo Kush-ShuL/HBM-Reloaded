@@ -19,22 +19,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupleanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/plates/welded"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+        "tag": "hbm:plates/cast/saturnite"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 8
     },
@@ -63,15 +60,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+        "tag": "hbm:plates/cast/saturnite"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 16
     },

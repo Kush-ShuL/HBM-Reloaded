@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_arsenic",
+    "hbm:ingot_bismuth",
+    {
+      "id": "#c:ingots/bismuth",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/arsenic",
+      "required": false
+    }
+  ]
+}

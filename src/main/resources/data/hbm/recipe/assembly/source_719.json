@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+        "tag": "c:plates/weapon_steel"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetitanium"
+        "tag": "c:plates/titanium"
       },
       "count": 16
     }

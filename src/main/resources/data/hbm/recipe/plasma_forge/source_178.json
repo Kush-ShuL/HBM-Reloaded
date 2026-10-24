@@ -23,22 +23,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+        "tag": "hbm:material_groups/bismoid_bronze/plates/cast"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+        "tag": "hbm:plates/cast/saturnite"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 16
     }
@@ -55,15 +52,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+        "tag": "hbm:plates/cast/saturnite"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 16
     }

@@ -37,15 +37,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetitanium"
+        "tag": "c:plates/titanium"
       },
       "count": 24
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 8
     }

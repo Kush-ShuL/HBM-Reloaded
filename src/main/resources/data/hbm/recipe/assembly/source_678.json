@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellsteel"
+        "tag": "hbm:gun_parts/shells/steel"
       },
       "count": 6
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+        "tag": "hbm:wires/fine/magnetized_tungsten"
       },
       "count": 12
     },
@@ -42,8 +40,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyegreen"
+        "tag": "c:dyes/green"
       },
       "count": 8
     }

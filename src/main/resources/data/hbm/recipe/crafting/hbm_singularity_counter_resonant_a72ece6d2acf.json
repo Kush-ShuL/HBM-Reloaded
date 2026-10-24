@@ -12,12 +12,10 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platecmbsteel"
+      "tag": "c:plates/cmb_steel"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotmagnetizedtungsten"
+      "tag": "c:ingots/magnetized_tungsten"
     },
     "S": {
       "item": "hbm:singularity"

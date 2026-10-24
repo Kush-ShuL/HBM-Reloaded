@@ -15,12 +15,10 @@
       "item": "hbm:plate_polymer"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotmingrade"
+      "tag": "c:ingots/mingrade"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+      "tag": "hbm:wires/fine/mingrade"
     }
   }
 }

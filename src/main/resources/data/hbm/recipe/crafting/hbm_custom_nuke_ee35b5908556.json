@@ -12,16 +12,13 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platecopper"
+      "tag": "c:plates/copper"
     },
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platelead"
+      "tag": "c:plates/lead"
     },
     "U": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingoturanium235"
+      "tag": "c:ingots/uranium_235"
     }
   }
 }

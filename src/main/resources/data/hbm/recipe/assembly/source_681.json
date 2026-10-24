@@ -28,8 +28,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shelltitanium"
+        "tag": "hbm:gun_parts/shells/titanium"
       },
       "count": 6
     },
@@ -62,8 +61,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyegray"
+        "tag": "c:dyes/gray"
       },
       "count": 8
     }

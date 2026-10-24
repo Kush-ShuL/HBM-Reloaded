@@ -15,16 +15,13 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     }
   }
 }

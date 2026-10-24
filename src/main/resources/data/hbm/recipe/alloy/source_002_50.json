@@ -1,27 +1,22 @@
 {
   "type": "hbm:alloy",
   "first": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/oreiron"
+    "tag": "c:ores/iron"
   },
   "second": {
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotcoal"
+        "tag": "c:ingots/coal"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecoal"
+        "tag": "c:plates/coal"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemcoal"
+        "tag": "c:gems/coal"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustcoal"
+        "tag": "c:dusts/coal"
       }
     ]
   },

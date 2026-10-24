@@ -8,19 +8,16 @@
   ],
   "key": {
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetitanium"
+      "tag": "c:plates/titanium"
     },
     "C": {
       "item": "hbm:circuit_chip"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotrubber"
+      "tag": "c:ingots/rubber"
     }
   },
   "result": {

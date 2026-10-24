@@ -8,15 +8,13 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plategold"
+      "tag": "c:plates/gold"
     },
     "C": {
       "item": "hbm:circuit_vacuum_tube"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     }
   },
   "result": {

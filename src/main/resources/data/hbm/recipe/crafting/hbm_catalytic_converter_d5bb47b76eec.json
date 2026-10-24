@@ -12,16 +12,13 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+      "tag": "hbm:material_groups/hard_plastic/ingots"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcobalt"
+      "tag": "c:dusts/cobalt"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanybismoid"
+      "tag": "hbm:material_groups/bismoid/ingots"
     }
   }
 }

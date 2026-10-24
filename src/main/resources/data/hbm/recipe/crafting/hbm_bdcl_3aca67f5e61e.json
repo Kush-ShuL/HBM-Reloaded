@@ -3,8 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/anytar"
+      "tag": "hbm:tars"
     },
     {
       "type": "hbm:source_fluid_container",
@@ -12,8 +11,7 @@
       "amount": 1000
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dyewhite"
+      "tag": "c:dyes/white"
     }
   ],
   "result": {

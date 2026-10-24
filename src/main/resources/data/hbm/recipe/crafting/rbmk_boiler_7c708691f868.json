@@ -8,12 +8,10 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "B": {
       "item": "hbm:tank_steel"

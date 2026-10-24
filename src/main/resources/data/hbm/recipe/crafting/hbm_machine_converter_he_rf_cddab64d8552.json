@@ -15,12 +15,10 @@
       "item": "hbm:circuit_capacitor"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustredstone"
+      "tag": "c:dusts/redstone"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     }
   }
 }

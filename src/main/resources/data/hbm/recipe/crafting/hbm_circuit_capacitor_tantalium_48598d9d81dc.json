@@ -15,12 +15,10 @@
       "item": "hbm:plate_polymer"
     },
     "N": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggettantalum"
+      "tag": "c:nuggets/tantalum"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinealuminum"
+      "tag": "hbm:wires/fine/aluminum"
     }
   }
 }

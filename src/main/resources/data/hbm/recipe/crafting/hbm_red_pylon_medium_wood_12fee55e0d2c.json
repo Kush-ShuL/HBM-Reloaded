@@ -15,15 +15,13 @@
       "item": "hbm:coil_copper"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plankwood"
+      "tag": "minecraft:planks"
     },
     "I": {
       "item": "hbm:plate_polymer"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/cobblestone"
+      "tag": "c:cobblestones"
     }
   }
 }

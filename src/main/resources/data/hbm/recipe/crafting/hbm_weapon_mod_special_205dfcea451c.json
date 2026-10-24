@@ -15,16 +15,13 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      "tag": "c:plates/weapon_steel"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+      "tag": "c:ingots/gun_metal"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensegold"
+      "tag": "hbm:wires/dense/gold"
     }
   }
 }

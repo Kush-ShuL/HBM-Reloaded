@@ -28,15 +28,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+        "tag": "c:plates/weapon_steel"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/billetplutonium239"
+        "tag": "hbm:billets/plutonium_239"
       },
       "count": 12
     },

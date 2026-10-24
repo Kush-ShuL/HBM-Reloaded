@@ -28,22 +28,19 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplelead"
+        "tag": "hbm:plates/cast/lead"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotboron"
+        "tag": "c:ingots/boron"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/bolttungsten"
+        "tag": "hbm:bolts/tungsten"
       },
       "count": 32
     }

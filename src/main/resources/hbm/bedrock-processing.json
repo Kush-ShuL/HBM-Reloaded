@@ -316,39 +316,259 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "ore_enriched",
-      "id": "hbm:ore_enriched",
       "kind": "item",
+      "symbol": "ore_enriched_iron",
+      "id": "hbm:ore_enriched_iron",
       "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 0,
+      "sourceEnum": "IRON",
+      "oreName": "Iron",
+      "color": 14860458,
+      "creativeTab": null,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2303
-      },
-      "legacyRegistryId": "hbm:item.ore_enriched",
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_copper",
+      "id": "hbm:ore_enriched_copper",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 1,
+      "sourceEnum": "COPPER",
+      "oreName": "Copper",
+      "color": 15506019,
       "creativeTab": null,
-      "metadataRange": [
-        0,
-        14
-      ],
-      "names": [
-        "iron",
-        "copper",
-        "borax",
-        "asbestos",
-        "niobium",
-        "titanium",
-        "tungsten",
-        "gold",
-        "uranium",
-        "thorium",
-        "chlorocalcite",
-        "fluorite",
-        "hematite",
-        "malachite",
-        "neodymium"
-      ],
-      "enumClass": "EnumBedrockOre",
-      "runtimeValidated": false
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_borax",
+      "id": "hbm:ore_enriched_borax",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 2,
+      "sourceEnum": "BORAX",
+      "oreName": "Borax",
+      "color": 14990964,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_asbestos",
+      "id": "hbm:ore_enriched_asbestos",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 3,
+      "sourceEnum": "ASBESTOS",
+      "oreName": "Asbestos",
+      "color": 12566457,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_niobium",
+      "id": "hbm:ore_enriched_niobium",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 4,
+      "sourceEnum": "NIOBIUM",
+      "oreName": "Niobium",
+      "color": 11491544,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_titanium",
+      "id": "hbm:ore_enriched_titanium",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 5,
+      "sourceEnum": "TITANIUM",
+      "oreName": "Titanium",
+      "color": 15921122,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_tungsten",
+      "id": "hbm:ore_enriched_tungsten",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 6,
+      "sourceEnum": "TUNGSTEN",
+      "oreName": "Tungsten",
+      "color": 2894140,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_gold",
+      "id": "hbm:ore_enriched_gold",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 7,
+      "sourceEnum": "GOLD",
+      "oreName": "Gold",
+      "color": 16373560,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_uranium",
+      "id": "hbm:ore_enriched_uranium",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 8,
+      "sourceEnum": "URANIUM",
+      "oreName": "Uranium",
+      "color": 8818050,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_thorium",
+      "id": "hbm:ore_enriched_thorium",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 9,
+      "sourceEnum": "THORIUM",
+      "oreName": "Thorium232",
+      "color": 8208413,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_chlorocalcite",
+      "id": "hbm:ore_enriched_chlorocalcite",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 10,
+      "sourceEnum": "CHLOROCALCITE",
+      "oreName": "Chlorocalcite",
+      "color": 13492278,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_fluorite",
+      "id": "hbm:ore_enriched_fluorite",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 11,
+      "sourceEnum": "FLUORITE",
+      "oreName": "Fluorite",
+      "color": 16184295,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_hematite",
+      "id": "hbm:ore_enriched_hematite",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 12,
+      "sourceEnum": "HEMATITE",
+      "oreName": "Hematite",
+      "color": 10713970,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_malachite",
+      "id": "hbm:ore_enriched_malachite",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 13,
+      "sourceEnum": "MALACHITE",
+      "oreName": "Malachite",
+      "color": 6730892,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "ore_enriched_neodymium",
+      "id": "hbm:ore_enriched_neodymium",
+      "originalClass": "ItemBedrockOre",
+      "sourceField": "ModItems.ore_enriched",
+      "sourceLegacyRegistryId": "hbm:item.ore_enriched",
+      "sourceOrdinal": 14,
+      "sourceEnum": "NEODYMIUM",
+      "oreName": "Neodymium",
+      "color": 9408351,
+      "creativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2303
+      }
     },
     {
       "symbol": "ore_byproduct",
@@ -812,6 +1032,7 @@
     }
   ],
   "modernVariants": 156,
-  "legacyVariants": 150,
-  "byproductVariants": 14
+  "legacyVariants": 135,
+  "byproductVariants": 14,
+  "enrichedItems": 15
 }

@@ -19,8 +19,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 4
     },
@@ -44,15 +43,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/boltdurasteel"
+        "tag": "hbm:bolts/dura_steel"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyewhite"
+        "tag": "c:dyes/white"
       },
       "count": 4
     },

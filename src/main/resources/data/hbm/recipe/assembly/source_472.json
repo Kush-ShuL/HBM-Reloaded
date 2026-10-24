@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellsteel"
+        "tag": "hbm:gun_parts/shells/steel"
       },
       "count": 4
     }
@@ -44,8 +42,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/anytar"
+        "tag": "hbm:tars"
       },
       "count": 16
     }

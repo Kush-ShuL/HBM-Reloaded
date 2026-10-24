@@ -22,15 +22,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipecopper"
+        "tag": "hbm:pipes/copper"
       },
       "count": 2
     },
@@ -68,8 +66,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipecopper"
+        "tag": "hbm:pipes/copper"
       },
       "count": 4
     },

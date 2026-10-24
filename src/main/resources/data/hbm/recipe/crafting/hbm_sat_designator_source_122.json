@@ -8,8 +8,7 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plategold"
+      "tag": "c:plates/gold"
     },
     "R": {
       "item": "minecraft:redstone"
@@ -21,8 +20,7 @@
       "item": "hbm:sat_chip"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgold"
+      "tag": "c:ingots/gold"
     }
   },
   "result": {

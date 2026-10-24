@@ -48,13 +48,7 @@ public final class HbmDeepslateOres {
             }
         } catch (java.io.IOException exception) { throw new IllegalStateException(exception); }
         BLOCKS.register(bus); ITEMS.register(bus); OreWorldgen.register(bus, container);
-        bus.addListener((net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event) -> event.enqueueWork(() ->
-                HbmOreDictionary.addProvider(stack -> stack.getItem() instanceof DeepslateOreItem deep
-                        ? HbmOreDictionary.tags(deep.originalStack(stack)) : stack.is(Blocks.DEEPSLATE_COPPER_ORE.asItem())
-                        ? HbmOreDictionary.tags(new ItemStack(Blocks.COPPER_ORE)) : List.of(),
-                    tag -> java.util.stream.Stream.concat(ALL.values().stream().map(holder -> new ItemStack(holder.get()))
-                        .filter(stack -> HbmOreDictionary.tags(((DeepslateOreItem) stack.getItem()).originalStack(stack)).contains(tag)),
-                        HbmOreDictionary.tags(new ItemStack(Blocks.COPPER_ORE)).contains(tag) ? java.util.stream.Stream.of(new ItemStack(Blocks.DEEPSLATE_COPPER_ORE)) : java.util.stream.Stream.empty()))));
+
     }
     public static Block block(String originalSymbol) {
         if (originalSymbol.equals("ore_copper")) return Blocks.DEEPSLATE_COPPER_ORE;

@@ -15,15 +15,13 @@
       "item": "hbm:circuit_capacitor"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "T": {
       "item": "hbm:coil_tungsten"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     }
   }
 }

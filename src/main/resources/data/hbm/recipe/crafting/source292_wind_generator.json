@@ -12,20 +12,16 @@
   ],
   "key": {
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripletitanium"
+      "tag": "hbm:plates/cast/titanium"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/alloyadvanced"
+      "tag": "c:alloys/advanced"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/battery"
+      "tag": "c:batteries"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     }
   },
   "neoforge:conditions": [

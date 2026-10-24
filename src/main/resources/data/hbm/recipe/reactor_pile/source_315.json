@@ -7,20 +7,16 @@
   ],
   "key": {
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platealuminum"
+      "tag": "c:plates/aluminum"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      "tag": "hbm:plates/cast/steel"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotboron"
+      "tag": "c:ingots/boron"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsteel"
+      "tag": "hbm:gun_parts/shells/steel"
     }
   },
   "result": {

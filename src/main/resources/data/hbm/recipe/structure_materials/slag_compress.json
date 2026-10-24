@@ -10,11 +10,8 @@
     "#": {
       "type": "hbm:alloy_legacy_stack",
       "stack": {
-        "id": "hbm:ingot_raw",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 41
-        }
+        "id": "hbm:autogen/ingot_raw/m41",
+        "count": 1
       }
     }
   },

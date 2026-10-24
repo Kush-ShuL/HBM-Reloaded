@@ -12,12 +12,10 @@
   ],
   "key": {
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcopper"
+      "tag": "c:ingots/copper"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/crystalcinnabar"
+      "tag": "c:crystals/cinnabar"
     },
     "X": {
       "item": "minecraft:compass"

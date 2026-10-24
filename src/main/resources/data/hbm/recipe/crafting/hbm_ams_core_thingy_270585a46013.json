@@ -12,12 +12,10 @@
   ],
   "key": {
     "N": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetgold"
+      "tag": "c:nuggets/gold"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgold"
+      "tag": "c:ingots/gold"
     },
     "S": {
       "type": "neoforge:components",

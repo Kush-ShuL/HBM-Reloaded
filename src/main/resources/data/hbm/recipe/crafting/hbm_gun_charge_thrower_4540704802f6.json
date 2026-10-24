@@ -12,20 +12,16 @@
   ],
   "key": {
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavysteel"
+      "tag": "hbm:gun_parts/barrels/heavy/steel"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripsteel"
+      "tag": "hbm:gun_parts/grips/steel"
     },
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     }
   }
 }

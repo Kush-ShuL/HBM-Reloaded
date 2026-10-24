@@ -86,20 +86,16 @@
         ],
         "key": {
           "A": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platealuminum"
+            "tag": "c:plates/aluminum"
           },
           "C": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetriplesteel"
+            "tag": "hbm:plates/cast/steel"
           },
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotboron"
+            "tag": "c:ingots/boron"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/shellsteel"
+            "tag": "hbm:gun_parts/shells/steel"
           }
         },
         "result": {
@@ -130,16 +126,13 @@
             }
           },
           "A": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platealuminum"
+            "tag": "c:plates/aluminum"
           },
           "C": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/shellcopper"
+            "tag": "hbm:gun_parts/shells/copper"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetriplesteel"
+            "tag": "hbm:plates/cast/steel"
           }
         },
         "result": {
@@ -166,12 +159,10 @@
         ],
         "key": {
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotboron"
+            "tag": "c:ingots/boron"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           }
         },
         "result": {
@@ -198,12 +189,10 @@
         ],
         "key": {
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+            "tag": "c:ingots/dura_steel"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -227,12 +216,10 @@
         ],
         "key": {
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "result": {
@@ -269,22 +256,19 @@
         "input_items": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plankwood"
+              "tag": "minecraft:planks"
             },
             "count": 1
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotgraphite"
+              "tag": "c:ingots/graphite"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/boltsteel"
+              "tag": "hbm:bolts/steel"
             },
             "count": 2
           }
@@ -292,22 +276,19 @@
         "expensive_input_items": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plankwood"
+              "tag": "minecraft:planks"
             },
             "count": 1
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotgraphite"
+              "tag": "c:ingots/graphite"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 1
           }

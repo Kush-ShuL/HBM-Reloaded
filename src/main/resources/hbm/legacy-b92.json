@@ -86,8 +86,7 @@
             "item": "hbm:plate_dineutronium"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "C": {
             "item": "hbm:circuit_bismoid"
@@ -123,12 +122,10 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "E": {
             "item": "hbm:powder_spark_mix"
@@ -175,8 +172,7 @@
             }
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinecopper"
+            "tag": "hbm:wires/fine/copper"
           }
         ]
       }

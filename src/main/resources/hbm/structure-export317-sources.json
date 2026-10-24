@@ -302,7 +302,7 @@
     ],
     "hbm:block_coke": [
       {
-        "id": "hbm:tile.block_coke",
+        "id": "hbm:block_coke_coal",
         "name": "tile.block_coke"
       }
     ],
@@ -3992,12 +3992,6 @@
         "name": "tile.ore_australium"
       }
     ],
-    "hbm:ore_basalt": [
-      {
-        "id": "hbm:tile.ore_basalt",
-        "name": "tile.ore_basalt"
-      }
-    ],
     "hbm:ore_bedrock": [
       {
         "id": "hbm:tile.ore_bedrock",
@@ -5526,12 +5520,6 @@
       {
         "id": "hbm:tile.stone_keyhole_meta",
         "name": "tile.stone_keyhole_meta"
-      }
-    ],
-    "hbm:stone_resource": [
-      {
-        "id": "hbm:tile.stone_resource",
-        "name": "tile.stone_resource"
       }
     ],
     "hbm:struct_icf_core": [
@@ -7654,6 +7642,72 @@
     "minecraft:yellow_wool": [
       {
         "id": "minecraft:wool"
+      }
+    ],
+    "hbm:ore_basalt_sulfur": [
+      {
+        "id": "hbm:tile.ore_basalt",
+        "name": "tile.ore_basalt"
+      }
+    ],
+    "hbm:ore_basalt_fluorite": [
+      {
+        "id": "hbm:tile.ore_basalt",
+        "name": "tile.ore_basalt"
+      }
+    ],
+    "hbm:ore_basalt_asbestos": [
+      {
+        "id": "hbm:tile.ore_basalt",
+        "name": "tile.ore_basalt"
+      }
+    ],
+    "hbm:ore_basalt_gem": [
+      {
+        "id": "hbm:tile.ore_basalt",
+        "name": "tile.ore_basalt"
+      }
+    ],
+    "hbm:ore_basalt_molysite": [
+      {
+        "id": "hbm:tile.ore_basalt",
+        "name": "tile.ore_basalt"
+      }
+    ],
+    "hbm:stone_resource_sulfur": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
+      }
+    ],
+    "hbm:stone_resource_asbestos": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
+      }
+    ],
+    "hbm:stone_resource_hematite": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
+      }
+    ],
+    "hbm:stone_resource_malachite": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
+      }
+    ],
+    "hbm:stone_resource_limestone": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
+      }
+    ],
+    "hbm:stone_resource_bauxite": [
+      {
+        "id": "hbm:tile.stone_resource",
+        "name": "tile.stone_resource"
       }
     ]
   }

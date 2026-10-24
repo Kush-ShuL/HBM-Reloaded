@@ -8,15 +8,13 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotberyllium"
+      "tag": "c:ingots/beryllium"
     },
     "G": {
       "item": "minecraft:iron_bars"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     },
     "A": {
       "type": "neoforge:components",

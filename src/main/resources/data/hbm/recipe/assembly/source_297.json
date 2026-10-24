@@ -19,22 +19,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplecopper"
+        "tag": "hbm:plates/cast/copper"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+        "tag": "hbm:pipes/steel"
       },
       "count": 4
     },
@@ -72,8 +69,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+        "tag": "hbm:pipes/steel"
       },
       "count": 4
     },

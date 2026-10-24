@@ -8,15 +8,13 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockgraphite"
+      "tag": "c:storage_blocks/graphite"
     },
     "R": {
       "item": "hbm:rbmk_rod_reasim"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/ingots"
     }
   },
   "result": {

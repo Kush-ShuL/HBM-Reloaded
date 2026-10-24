@@ -28,22 +28,19 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+        "tag": "hbm:pipes/dura_steel"
       },
       "count": 5
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripletungsten"
+        "tag": "hbm:plates/cast/tungsten"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesaturnite"
+        "tag": "c:plates/saturnite"
       },
       "count": 16
     }

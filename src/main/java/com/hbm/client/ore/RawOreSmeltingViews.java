@@ -25,7 +25,7 @@ public final class RawOreSmeltingViews {
         List<View> views = new ArrayList<>();
         for (var source : RawOreContent.sources()) {
             ItemStack original = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(source.originalItem())));
-            if (source.legacyMetadata() != 0 || original.getItem() instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
+            if (!(original.getItem() instanceof com.hbm.block.ore.ResourceOreItem) && (source.legacyMetadata() != 0 || original.getItem() instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi()))
                 original.set(HbmHazards.LEGACY_METADATA.get(), source.legacyMetadata());
             var input = new SingleRecipeInput(original);
             level.getRecipeManager().getRecipeFor(RecipeType.SMELTING, input, level).ifPresent(holder ->

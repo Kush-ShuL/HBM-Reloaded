@@ -14,16 +14,13 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockglass"
+      "tag": "c:glass_blocks"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcopper"
+      "tag": "c:ingots/copper"
     }
   }
 }

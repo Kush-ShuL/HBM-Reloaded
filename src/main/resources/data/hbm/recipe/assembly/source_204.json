@@ -19,29 +19,25 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+        "tag": "c:ingots/dura_steel"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+        "tag": "hbm:plates/cast/steel"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+        "tag": "hbm:wires/dense/mingrade"
       },
       "count": 4
     }

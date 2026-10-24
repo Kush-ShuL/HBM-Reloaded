@@ -22,15 +22,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredenseniobium"
+        "tag": "hbm:wires/dense/niobium"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensetitanium"
+        "tag": "hbm:wires/dense/titanium"
       },
       "count": 64
     }

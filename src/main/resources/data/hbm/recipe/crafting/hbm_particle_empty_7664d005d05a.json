@@ -12,15 +12,13 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplelead"
+      "tag": "hbm:plates/cast/lead"
     },
     "T": {
       "item": "hbm:coil_gold"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     }
   }
 }

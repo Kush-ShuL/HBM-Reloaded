@@ -12,16 +12,13 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockworkersalloy"
+      "tag": "c:storage_blocks/workers_alloy"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottungsten"
+      "tag": "c:ingots/tungsten"
     }
   }
 }

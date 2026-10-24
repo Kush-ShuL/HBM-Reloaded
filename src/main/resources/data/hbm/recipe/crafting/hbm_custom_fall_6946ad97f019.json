@@ -12,19 +12,16 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesaturnite"
+      "tag": "c:plates/saturnite"
     },
     "C": {
       "item": "hbm:circuit_advanced"
     },
     "H": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsteel"
+      "tag": "hbm:gun_parts/shells/steel"
     },
     "W": {
       "item": "hbm:coil_copper"

@@ -19,43 +19,37 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesteel"
+        "tag": "hbm:plates/cast/steel"
       },
       "count": 12
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecopper"
+        "tag": "c:plates/copper"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotniobium"
+        "tag": "c:ingots/niobium"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/ingots"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellsteel"
+        "tag": "hbm:gun_parts/shells/steel"
       },
       "count": 3
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+        "tag": "hbm:pipes/steel"
       },
       "count": 8
     },
@@ -93,22 +87,19 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotniobium"
+        "tag": "c:ingots/niobium"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/ingots"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+        "tag": "hbm:pipes/dura_steel"
       },
       "count": 16
     },

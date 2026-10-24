@@ -7,15 +7,13 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcopper"
+      "tag": "c:ingots/copper"
     },
     "count": 1
   },
   "right": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotaluminum"
+      "tag": "c:ingots/aluminum"
     },
     "count": 1
   },

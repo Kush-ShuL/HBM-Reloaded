@@ -4,7 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.hbm.hazard.HbmHazards;
 import com.mojang.serialization.JsonOps;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -77,9 +77,9 @@ public final class ShredderRecipes {
                 int metadata = matchMetadata(row.getAsJsonObject("input"), input);
                 put(recipes, ids, new ShredderRecipe(input.copyWithCount(1), metadata, result), ResourceLocation.parse(row.get("id").getAsString()));
             }
-            for (var rule : root.getAsJsonArray("oreDefaultLoops")) {
+            for (var rule : root.getAsJsonArray("tagDefaultLoops")) {
                 var parts = rule.getAsJsonArray(); ItemStack result = registered(parts.get(1).getAsString(), parts.get(2).getAsInt());
-                for (var input : ore(parts.get(0).getAsString())) putGenerated(recipes, ids, input, result, "wood_defaults");
+                for (var input : HbmItemTags.items(parts.get(0).getAsString()).toList()) putGenerated(recipes, ids, input, result, "wood_defaults");
             }
             List<ShredderRecipe> custom = ShredderConfig.read(lookup, root.getAsJsonObject("legacyAliases"));
             if (custom != null) {
@@ -97,21 +97,21 @@ public final class ShredderRecipes {
             ShredderRecipe recipe = holder.value(); Key key = new Key(recipe.input().getItem(), recipe.metadata());
             recipes.put(key, recipe); ids.put(key, holder.id());
         }
-        for (String name : HbmOreDictionary.allNames()) {
-            if (name.isEmpty() || name.contains("Any")) continue;
-            List<ItemStack> matches = ore(name); if (matches.isEmpty()) continue;
-            for (String prefix : List.of("ingot", "plate", "gem", "crystal", "ore")) if (name.startsWith(prefix) && name.length() > prefix.length()) {
-                ItemStack dust = preferredDust(name.substring(prefix.length()));
-                if (!dust.isEmpty() && !isScrap(dust)) { dust.setCount(prefix.equals("ore") ? 2 : 1); for (var input : matches) putGenerated(recipes, ids, input, dust, "ore_post"); }
+        for (String tag : HbmItemTags.allTags()) {
+            var location=ResourceLocation.parse(tag);
+            if(location.getNamespace().equals("hbm")&&location.getPath().startsWith("material_groups/"))continue;
+            String category=location.getNamespace()+":"+HbmItemTags.category(tag),material=HbmItemTags.materialName(tag);
+            List<ItemStack> matches=HbmItemTags.items(tag).toList();if(matches.isEmpty())continue;
+            if(List.of("c:ingots","c:plates","c:gems","c:crystals","c:ores").contains(category)) {
+                ItemStack dust=preferredDust(material);
+                if(!dust.isEmpty()&&!isScrap(dust)){dust.setCount(category.equals("c:ores")?2:1);for(var input:matches)putGenerated(recipes,ids,input,dust,"ore_post");}
             }
-            if (name.startsWith("block") && name.length() > 5) {
-                String suffix = name.substring(5); ItemStack dust = preferredDust(suffix);
-                if (!dust.isEmpty() && !isScrap(dust)) { dust.setCount(ore("ingot" + suffix).isEmpty() && ore("gem" + suffix).isEmpty() ? 4 : 9); for (var input : matches) putGenerated(recipes, ids, input, dust, "ore_post"); }
+            if(category.equals("c:storage_blocks")) {
+                ItemStack dust=preferredDust(material);
+                if(!dust.isEmpty()&&!isScrap(dust)){dust.setCount(HbmItemTags.items("c:ingots/"+material).findAny().isEmpty()&&HbmItemTags.items("c:gems/"+material).findAny().isEmpty()?4:9);for(var input:matches)putGenerated(recipes,ids,input,dust,"ore_post");}
             }
-            // The original length checks include an exact eight-letter dustTiny name.
-            ItemStack fallback = name.startsWith("dustTiny") && name.length() > 7 ? registered("hbm:dust_tiny", 1)
-                    : name.startsWith("dust") && name.length() > 3 ? registered("hbm:dust", 1) : ItemStack.EMPTY;
-            if (!fallback.isEmpty()) for (var input : matches) putGenerated(recipes, ids, input, fallback, "dust_post");
+            ItemStack fallback=category.equals("hbm:dusts/tiny")?registered("hbm:dust_tiny",1):category.equals("c:dusts")?registered("hbm:dust",1):ItemStack.EMPTY;
+            if(!fallback.isEmpty())for(var input:matches)putGenerated(recipes,ids,input,fallback,"dust_post");
         }
         Map<ResourceLocation, RecipeHolder<ShredderRecipe>> generated = new LinkedHashMap<>();
         Map<Key, ItemStack> results = new LinkedHashMap<>();
@@ -135,9 +135,8 @@ public final class ShredderRecipes {
         int metadata = ShredderRecipe.metadata(input);
         put(recipes, ids, new ShredderRecipe(input.copyWithCount(1), metadata, result.copy()), ResourceLocation.fromNamespaceAndPath("hbm", "shredder/" + phase + "/" + item + "/" + metadata));
     }
-    private static List<ItemStack> ore(String name) { return HbmOreDictionary.items("hbm:legacy_ore_dict/" + name.toLowerCase(Locale.ROOT)).toList(); }
     private static ItemStack preferredDust(String name) {
-        var matches = ore("dust" + name); if (matches.isEmpty()) return ItemStack.EMPTY;
+        var matches = HbmItemTags.items("c:dusts/" + name).toList(); if (matches.isEmpty()) return ItemStack.EMPTY;
         int best = Integer.MAX_VALUE; ItemStack chosen = matches.getFirst();
         List<? extends String> preferred = ShredderConfig.preferredOutputMods();
         for (ItemStack stack : matches) {

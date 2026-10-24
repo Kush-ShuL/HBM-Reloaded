@@ -15,19 +15,16 @@
   ],
   "key": {
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plankwood"
+      "tag": "minecraft:planks"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     },
     "C": {
       "item": "hbm:circuit_vacuum_tube"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotberyllium"
+      "tag": "c:ingots/beryllium"
     }
   }
 }

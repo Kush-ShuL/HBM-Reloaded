@@ -29,15 +29,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleferrouranium"
+        "tag": "hbm:plates/cast/ferrouranium"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/ingots"
       },
       "count": 4
     }

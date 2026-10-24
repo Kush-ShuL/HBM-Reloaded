@@ -12,8 +12,7 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plategold"
+      "tag": "c:plates/gold"
     },
     "C": {
       "type": "neoforge:components",
@@ -24,8 +23,7 @@
       "strict": false
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+      "tag": "hbm:wires/dense/mingrade"
     }
   }
 }

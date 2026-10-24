@@ -12,12 +12,10 @@
   ],
   "key": {
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetitanium"
+      "tag": "c:plates/titanium"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "S": {
       "item": "hbm:steel_scaffold"

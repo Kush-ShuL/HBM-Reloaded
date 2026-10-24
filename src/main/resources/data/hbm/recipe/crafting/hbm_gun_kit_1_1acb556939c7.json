@@ -10,8 +10,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     },
     {
       "type": "hbm:source_fluid_container",
@@ -19,8 +18,7 @@
       "amount": 1000
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     }
   ]
 }

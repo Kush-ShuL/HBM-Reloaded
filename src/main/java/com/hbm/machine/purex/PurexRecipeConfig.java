@@ -71,7 +71,7 @@ public final class PurexRecipeConfig {
         for(var error:UNRESOLVED)LogUtils.getLogger().warn("Unbound PUREX recipe: {}",error);
     }
     private static void addNaquadriaRecipes(JsonObject root){
-        var nuggets=com.hbm.registry.HbmOreDictionary.items(com.hbm.registry.HbmOreDictionary.registerName("nuggetNaquadria")).findFirst();
+        var nuggets=com.hbm.registry.HbmItemTags.items("c:nuggets/naquadria").findFirst();
         var conditional=root.getAsJsonArray("conditionalNaquadria");root.remove("conditionalNaquadria");if(nuggets.isEmpty()||conditional==null)return;
         for(var value:conditional){var row=value.getAsJsonObject().deepCopy();if(row.has("naquadriaOutputCount")){var item=nuggets.get().copyWithCount(row.remove("naquadriaOutputCount").getAsInt());var output=new JsonArray();output.add("single");output.add(GenericRecipeConfigCodec.writeStack(item));row.getAsJsonArray("outputItem").set(0,output);}root.getAsJsonArray("recipes").add(row);}
         var sorted=new JsonArray();java.util.stream.StreamSupport.stream(root.getAsJsonArray("recipes").spliterator(),false).sorted(java.util.Comparator.comparingInt(value->value.getAsJsonObject().get("sourceOrder").getAsInt())).forEach(sorted::add);root.add("recipes",sorted);

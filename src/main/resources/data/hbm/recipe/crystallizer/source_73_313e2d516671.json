@@ -6,8 +6,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/orecopper"
+        "tag": "c:ores/copper"
       },
       "count": 1
     }
@@ -32,7 +31,7 @@
     }
   ],
   "productivity": 0.05,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/orecopper",
+  "key_kind": "tag",
+  "source_key": "c:ores/copper",
   "order": 14
 }

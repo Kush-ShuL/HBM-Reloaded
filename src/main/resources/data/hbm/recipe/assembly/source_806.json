@@ -28,8 +28,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+        "tag": "hbm:material_groups/highexplosive/ingots"
       },
       "count": 2
     }

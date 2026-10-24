@@ -8,12 +8,10 @@
   ],
   "key": {
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platelead"
+      "tag": "c:plates/lead"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetitanium"
+      "tag": "c:plates/titanium"
     },
     "C": {
       "item": "hbm:crate_steel"

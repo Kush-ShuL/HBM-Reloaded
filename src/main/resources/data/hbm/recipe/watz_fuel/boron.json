@@ -8,12 +8,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotboron"
+      "tag": "c:ingots/boron"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgraphite"
+      "tag": "c:ingots/graphite"
     }
   },
   "result": {

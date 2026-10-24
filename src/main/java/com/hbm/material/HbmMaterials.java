@@ -8,7 +8,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.item.autogen.ScrapsItem;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.mojang.logging.LogUtils;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -41,7 +41,8 @@ public final class HbmMaterials {
     private static final List<MaterialShape> CUSTOM_SHAPES=new ArrayList<>();
     private static final List<MoldDefinition> MOLDS=new ArrayList<>();
     private static final Map<StackKey,List<MaterialStack>> STACK_ENTRIES=new HashMap<>();
-    private static final Map<String,List<MaterialStack>> ORE_ENTRIES=new HashMap<>();
+    private static final Map<String,List<MaterialStack>> TAG_ENTRIES=new HashMap<>();
+    private static final Map<String,MaterialStack> INFERRED_TAG_MATERIALS=new HashMap<>();
     private static JsonObject source;
     private static boolean initialized;
     private HbmMaterials() {}
@@ -67,6 +68,14 @@ public final class HbmMaterials {
         try { readCustomShapes(defaultFile(directory.resolve("hbmShapes.json"),source.getAsJsonObject("defaultCustomShapes"))); }
         catch(Exception error) { LOGGER.error("Could not read original HBM custom shapes",error); }
         initialized=true;
+        for(var shape:SHAPES.values()) {
+            if(shape.prefixes().isEmpty() || shape.symbol().equals("ANY")) continue;
+            for(var material:ORDERED) {
+                var smelts=material.smeltsInto().smeltingBehavior();
+                if(smelts==NtmMaterial.SmeltingBehavior.SMELTABLE || smelts==NtmMaterial.SmeltingBehavior.ADDITIVE)
+                    INFERRED_TAG_MATERIALS.putIfAbsent(HbmItemTags.material(shape.symbol(),material.names().getFirst()),new MaterialStack(material,shape.q(1)));
+            }
+        }
     }
     private static void addMaterial(NtmMaterial material) { ORDERED.add(material); BY_ID.put(material.id(),material); BY_SYMBOL.put(material.symbol(),material); material.names().forEach(name->BY_NAME.put(name,material)); }
     private static void addShape(MaterialShape shape,boolean custom) { SHAPES.put(shape.symbol(),shape); shape.prefixes().forEach(prefix->PREFIXES.put(prefix,shape)); if(custom) CUSTOM_SHAPES.add(shape); }
@@ -117,19 +126,22 @@ public final class HbmMaterials {
     public record MoldDefinition(MaterialShape shape,boolean large,int castAmount,String legacyName) {}
     public static int metadata(ItemStack stack) { return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue()); }
     public static void registerEntry(ItemStack stack,List<MaterialStack> materials) { if(!stack.isEmpty()&&!materials.isEmpty()) STACK_ENTRIES.put(StackKey.of(stack),List.copyOf(materials)); }
-    public static void registerOre(String rawKey,List<MaterialStack> materials) { if(!materials.isEmpty()) { HbmOreDictionary.registerName(rawKey); ORE_ENTRIES.put(rawKey,List.copyOf(materials)); } }
-    /** Source order: first ore match, then exact stack additions, then scraps. Count and NBT do not alter comparable-stack identity. */
+    public static void registerTag(String tag,List<MaterialStack> materials) {
+        if(!materials.isEmpty()) TAG_ENTRIES.put(HbmItemTags.key(tag).location().toString(),List.copyOf(materials));
+    }
+    private static MaterialStack infer(String tag) {
+        var value=INFERRED_TAG_MATERIALS.get(tag);
+        return value==null?null:value.copy();
+    }
+    /** Source order: first native tag match, then exact stack additions, then scraps. Count and NBT do not alter comparable-stack identity. */
     public static List<MaterialStack> getMaterialsFromItem(ItemStack stack) {
         initialize(); var result=new ArrayList<MaterialStack>(); if(stack.isEmpty()) return result;
         stack=com.hbm.ore.RawOreContent.processingStack(stack);
-        outer: for(String name:HbmOreDictionary.names(stack)) {
-            List<MaterialStack> explicit=ORE_ENTRIES.get(name);
+        for(String tag:HbmItemTags.tags(stack)) {
+            List<MaterialStack> explicit=TAG_ENTRIES.get(tag);
             if(explicit!=null) { explicit.forEach(value->result.add(value.copy())); break; }
-            for(var entry:PREFIXES.entrySet()) {
-                if(!name.startsWith(entry.getKey())) continue;
-                NtmMaterial material=BY_NAME.get(name.substring(entry.getKey().length()));
-                if(material!=null && (material.smeltsInto().smeltingBehavior()==NtmMaterial.SmeltingBehavior.SMELTABLE || material.smeltsInto().smeltingBehavior()==NtmMaterial.SmeltingBehavior.ADDITIVE)) { result.add(new MaterialStack(material,entry.getValue().q(1))); break outer; }
-            }
+            var inferred=infer(tag);
+            if(inferred!=null) { result.add(inferred); break; }
         }
         var specific=STACK_ENTRIES.get(StackKey.of(stack)); if(specific!=null) specific.forEach(value->result.add(value.copy()));
         if(stack.getItem() instanceof ScrapsItem) { MaterialStack scraps=ScrapsItem.getMaterials(stack); if(scraps!=null) result.add(scraps); }
@@ -147,10 +159,10 @@ public final class HbmMaterials {
     }
     /** Registry-dependent distributions run in common setup, after actual item registration. */
     public static void initializeDistributions() {
-        initialize(); STACK_ENTRIES.clear(); ORE_ENTRIES.clear();
+        initialize(); STACK_ENTRIES.clear(); TAG_ENTRIES.clear();
         for(JsonElement value:source.getAsJsonArray("distributions")) {
             JsonObject row=value.getAsJsonObject(); var outputs=readOutputs(row.getAsJsonArray("outputs"));
-            if(row.get("kind").getAsString().equals("ore")) row.getAsJsonArray("keys").forEach(key->registerOre(key.getAsString(),outputs));
+            if(row.get("kind").getAsString().equals("tag")) row.getAsJsonArray("keys").forEach(key->registerTag(key.getAsString(),outputs));
             else { JsonObject input=row.getAsJsonObject("input"); ResourceLocation id=ResourceLocation.parse(input.get("id").getAsString()); if(!BuiltInRegistries.ITEM.containsKey(id)) continue;
                 ItemStack stack=new ItemStack(BuiltInRegistries.ITEM.get(id));
                 if(input.has("components")) { JsonObject components=input.getAsJsonObject("components"); int meta=components.get(components.has("hbm:legacy_metadata")?"hbm:legacy_metadata":"minecraft:damage").getAsInt(); if(stack.isDamageableItem()) stack.setDamageValue(meta); else stack.set(HbmHazards.LEGACY_METADATA.get(),meta); }
@@ -162,17 +174,17 @@ public final class HbmMaterials {
     private static List<MaterialStack> readOutputs(JsonArray array) { var result=new ArrayList<MaterialStack>(); for(JsonElement value:array) { JsonObject row=value.getAsJsonObject(); NtmMaterial material=BY_ID.get(row.get("materialId").getAsInt()); if(material!=null) result.add(new MaterialStack(material,row.get("amount").getAsInt())); } return result; }
     /** Read-only source distribution enumeration for arc-furnace autogeneration; mutable quanta are detached. */
     public record StackDistribution(ResourceLocation item,int metadata,List<MaterialStack> materials) {}
-    public record OreDistribution(String ore,List<MaterialStack> materials) {}
+    public record TagDistribution(String tag,List<MaterialStack> materials) {}
     public static List<StackDistribution> stackDistributions() {
         initialize(); return STACK_ENTRIES.entrySet().stream().map(entry->new StackDistribution(
                 ResourceLocation.fromNamespaceAndPath(entry.getKey().item().getNamespace(),entry.getKey().item().getPath()),entry.getKey().metadata(),
                 entry.getValue().stream().map(MaterialStack::copy).toList())).toList();
     }
-    public static List<OreDistribution> oreDistributions() {
-        initialize(); return ORE_ENTRIES.entrySet().stream().map(entry->new OreDistribution(entry.getKey(),entry.getValue().stream().map(MaterialStack::copy).toList())).toList();
+    public static List<TagDistribution> tagDistributions() {
+        initialize(); return TAG_ENTRIES.entrySet().stream().map(entry->new TagDistribution(entry.getKey(),entry.getValue().stream().map(MaterialStack::copy).toList())).toList();
     }
-    static void clearDistributions() { STACK_ENTRIES.clear(); ORE_ENTRIES.clear(); }
+    static void clearDistributions() { STACK_ENTRIES.clear(); TAG_ENTRIES.clear(); }
     static Map<StackKey,List<MaterialStack>> stackEntries() { return STACK_ENTRIES; }
-    static Map<String,List<MaterialStack>> oreEntries() { return ORE_ENTRIES; }
+    static Map<String,List<MaterialStack>> tagEntries() { return TAG_ENTRIES; }
     static record StackKey(ResourceLocation item,int metadata) { static StackKey of(ItemStack stack) { return new StackKey(BuiltInRegistries.ITEM.getKey(stack.getItem()),HbmMaterials.metadata(stack)); } }
 }

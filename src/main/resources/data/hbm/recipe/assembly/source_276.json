@@ -19,29 +19,25 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/ingots"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensegold"
+        "tag": "hbm:wires/dense/gold"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipecopper"
+        "tag": "hbm:pipes/copper"
       },
       "count": 8
     },
@@ -67,8 +63,7 @@
   "expensive_input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/ingots"
       },
       "count": 16
     },
@@ -83,8 +78,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensegold"
+        "tag": "hbm:wires/dense/gold"
       },
       "count": 64
     },

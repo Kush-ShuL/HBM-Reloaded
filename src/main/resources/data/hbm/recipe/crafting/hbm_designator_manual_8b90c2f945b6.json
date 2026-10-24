@@ -12,12 +12,10 @@
   ],
   "key": {
     "#": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platelead"
+      "tag": "c:plates/lead"
     },
     "B": {
       "item": "hbm:circuit_advanced"

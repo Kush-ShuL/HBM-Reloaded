@@ -22,15 +22,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotsteel"
+        "tag": "c:ingots/steel"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       "count": 32
     },
@@ -45,8 +43,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+        "tag": "hbm:wires/fine/magnetized_tungsten"
       },
       "count": 24
     },
@@ -70,15 +67,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+        "tag": "c:ingots/starmetal"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyered"
+        "tag": "c:dyes/red"
       },
       "count": 1
     }
@@ -113,15 +108,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+        "tag": "c:ingots/starmetal"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyered"
+        "tag": "c:dyes/red"
       },
       "count": 1
     },

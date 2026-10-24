@@ -10,11 +10,8 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:plate_welded",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 2900
-            }
+            "id": "hbm:autogen/plate_welded/m2900",
+            "count": 1
           }
         }
       ]
@@ -23,8 +20,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplecopper"
+        "tag": "hbm:plates/cast/copper"
       },
       "count": 2
     }

@@ -11,27 +11,22 @@
       "item": "hbm:circuit_bismoid"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipecopper"
+      "tag": "hbm:pipes/copper"
     },
     "T": {
       "item": "hbm:coil_copper_torus"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripanyhardplastic"
+      "tag": "hbm:material_groups/hard_plastic/gun_parts/grips"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverlightsaturnite"
+      "tag": "hbm:gun_parts/receivers/light/saturnite"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+      "tag": "hbm:gun_parts/mechanisms/saturnite"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stockanyhardplastic"
+      "tag": "hbm:material_groups/hard_plastic/gun_parts/stocks"
     }
   },
   "result": {

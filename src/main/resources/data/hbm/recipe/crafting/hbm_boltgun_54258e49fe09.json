@@ -12,19 +12,16 @@
   ],
   "key": {
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+      "tag": "c:ingots/dura_steel"
     },
     "P": {
       "item": "hbm:part_generic_piston_pneumatic"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotrubber"
+      "tag": "c:ingots/rubber"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsteel"
+      "tag": "hbm:gun_parts/shells/steel"
     }
   }
 }

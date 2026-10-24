@@ -2,7 +2,7 @@ package com.hbm.machine.ashpit;
 import com.hbm.heat.AshReceiver;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.foundry.crucible.ThermalMachine;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.fuel.HbmFuels;
 import java.util.*;
 import net.minecraft.core.*;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -18,7 +18,7 @@ public final class AshpitBlockEntity extends ThermalMachine implements AshReceiv
  public final int[] ash=new int[5];public int playersUsing;public float doorAngle,previousDoorAngle;public boolean isFull;
  public AshpitBlockEntity(BlockPos pos,BlockState state){super(AshpitContent.ENTITY.get(),pos,state,5);}
  @Override protected String title(){return "container.ashpit";}@Override public AbstractContainerMenu createMenu(int id,Inventory inventory,Player player){return new AshpitMenu(id,inventory,this,worldPosition);}
- public static int ashFromFuel(ItemStack stack){for(String name:HbmOreDictionary.names(stack)){if(name.contains("Coke")||name.contains("Coal")||name.contains("Lignite"))return 1;if(name.startsWith("log")||name.contains("Wood")||name.contains("Sapling"))return 0;}return stack.is(Items.CHARCOAL)?0:2;}
+ public static int ashFromFuel(ItemStack stack){for(String name:HbmFuels.tags(stack)){if(HbmFuels.isCoalLikeTag(name))return 1;if(HbmFuels.isLogTag(name)||HbmFuels.isWoodTag(name)||HbmFuels.isSaplingTag(name))return 0;}return stack.is(Items.CHARCOAL)?0:2;}
  @Override public void addFuelAsh(ItemStack fuel,int sourceBurnTime){ash[ashFromFuel(fuel)]+=sourceBurnTime;setChanged();}
  /** ChimneyBase's compound long-to-int addition is intentionally retained. */
  public void addSmokeAsh(long fly,long soot){ash[3]+=fly;ash[4]+=soot;setChanged();}

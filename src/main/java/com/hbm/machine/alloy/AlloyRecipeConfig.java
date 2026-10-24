@@ -2,8 +2,8 @@ package com.hbm.machine.alloy;
 import com.google.gson.*;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.material.MaterialDistributionConfig;
-import com.hbm.recipe.LegacyOreIngredient;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.recipe.generic.GenericRecipeConfigCodec;
+import com.hbm.registry.HbmItemTags;
 import com.mojang.logging.LogUtils;
 import java.nio.file.*;
 import java.util.*;
@@ -23,7 +23,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.OnDatapackSyncEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 
-/** Source IMC is appended to defaults first; the user's legacy recipe file replaces that entire list. */
+/** Source IMC is appended to defaults first; the user's native recipe file replaces that entire list. */
 public final class AlloyRecipeConfig {
     private static final List<CompoundTag> IMC=new ArrayList<>();
     private static final Map<RecipeManager,Map<ResourceLocation,RecipeHolder<AlloyRecipe>>> INSTALLED=new WeakHashMap<>();
@@ -52,11 +52,11 @@ public final class AlloyRecipeConfig {
             if(Files.isRegularFile(active)) {
                 merged.values().removeIf(holder->holder.value().getType()==AlloyContent.TYPE.get());
                 JsonObject config; try(var reader=Files.newBufferedReader(active)) { config=JsonParser.parseReader(reader).getAsJsonObject(); }
-                int index=0; for(var value:config.getAsJsonArray("recipes")) { try { JsonObject row=value.getAsJsonObject(); var recipe=new AlloyRecipe(input(row.getAsJsonArray("input1")),input(row.getAsJsonArray("input2")),output(row.getAsJsonArray("output")),row.has("hidden")&&row.get("hidden").getAsBoolean(),index); put(additions,"config",index,recipe); } catch(Exception error) { UNRESOLVED.add("config row "+index+": "+error.getMessage()); } index++; }
+                int index=0; for(var value:config.getAsJsonArray("recipes")) { try { JsonObject row=value.getAsJsonObject(); var recipe=new AlloyRecipe(input(row.getAsJsonArray("input1"),server.registryAccess()),input(row.getAsJsonArray("input2"),server.registryAccess()),output(row.getAsJsonArray("output")),row.has("hidden")&&row.get("hidden").getAsBoolean(),index); put(additions,"config",index,recipe); } catch(Exception error) { UNRESOLVED.add("config row "+index+": "+error.getMessage()); } index++; }
             } else {
                 try(var template=AlloyRecipeConfig.class.getResourceAsStream("/hbm/alloy-recipe-template.json")) { if(template!=null) Files.copy(template,directory.resolve("_hbmBlastFurnaceLegacy.json"),StandardCopyOption.REPLACE_EXISTING); }
                 if(com.hbm.config.GeneralModes.lbsm("LBSM_recipeSimpleChemistry")){
-                    try(var resource=AlloyRecipeConfig.class.getResourceAsStream("/hbm/alloy-lbsm-recipe.json")){if(resource!=null){var row=JsonParser.parseReader(new java.io.InputStreamReader(resource,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject();put(additions,"lbsm",0,new AlloyRecipe(input(row.getAsJsonArray("input1")),input(row.getAsJsonArray("input2")),output(row.getAsJsonArray("output")),false,14));}}
+                    try(var resource=AlloyRecipeConfig.class.getResourceAsStream("/hbm/alloy-lbsm-recipe.json")){if(resource!=null){var row=JsonParser.parseReader(new java.io.InputStreamReader(resource,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject();put(additions,"lbsm",0,new AlloyRecipe(input(row.getAsJsonArray("input1"),server.registryAccess()),input(row.getAsJsonArray("input2"),server.registryAccess()),output(row.getAsJsonArray("output")),false,14));}}
                 }
                 int index=0; for(var tag:IMC) { try { ItemStack output=imcStack(tag.getCompound("output"),server.registryAccess()); if(output.isEmpty()) throw new IllegalArgumentException("Unregistered output"); put(additions,"imc",index,new AlloyRecipe(imcInput(tag,1,server.registryAccess()),imcInput(tag,2,server.registryAccess()),output,false,100000+index)); } catch(Exception error) { UNRESOLVED.add("IMC row "+index+": "+error.getMessage()); } index++; }
             }
@@ -65,13 +65,10 @@ public final class AlloyRecipeConfig {
         for(String error:UNRESOLVED) LogUtils.getLogger().warn("Unbound alloy recipe: {}",error);
     }
     private static void put(Map<ResourceLocation,RecipeHolder<AlloyRecipe>> target,String prefix,int index,AlloyRecipe recipe) { var id=ResourceLocation.fromNamespaceAndPath("hbm","alloy/"+prefix+"/"+index); target.put(id,new RecipeHolder<>(id,recipe)); }
-    private static Ingredient ore(String key) { return new LegacyOreIngredient(ResourceLocation.parse(HbmOreDictionary.registerName(key))).toVanilla(); }
-    private static Ingredient input(JsonArray value) {
-        String kind=value.get(0).getAsString(),name=value.get(1).getAsString();
-        if(kind.equals("dict")) return ore(name);
-        if(kind.equals("dictframe")) return net.neoforged.neoforge.common.crafting.CompoundIngredient.of(ore("ingot"+name),ore("plate"+name),ore("gem"+name),ore("dust"+name));
-        if(!kind.equals("item")) throw new IllegalArgumentException("Source alloy input accepts item,dict,dictframe; got "+kind);
-        ItemStack stack=legacyStack(name,value.size()>3?value.get(3).getAsInt():0); if(stack.isEmpty()) throw new IllegalArgumentException("Unregistered source input "+name); return new AlloyStackIngredient(stack).toVanilla();
+    private static Ingredient tag(String key) { return HbmItemTags.ingredient(key); }
+    private static Ingredient input(JsonArray value,HolderLookup.Provider lookup) {
+        // The thermal source consumes exactly one of each input, independent of an AStack count field.
+        return GenericRecipeConfigCodec.readIngredient(value,ALIASES,lookup).ingredient();
     }
     private static ItemStack output(JsonArray value)throws Exception {
         ItemStack stack=legacyStack(value.get(0).getAsString(),value.size()>2?value.get(2).getAsInt():0); if(stack.isEmpty()) throw new IllegalArgumentException("Unregistered source output "+value.get(0)); stack.setCount(value.size()>1?value.get(1).getAsInt():1);
@@ -84,9 +81,8 @@ public final class AlloyRecipeConfig {
     }
     private static Ingredient imcInput(CompoundTag tag,int index,HolderLookup.Provider lookup) {
         return switch(tag.getString("inputType"+index)) {
-            case "ore"->ore(tag.getString("input"+index));
+            case "tag"->tag(tag.getString("input"+index));
             case "itemstack"->{ ItemStack stack=imcStack(tag.getCompound("input"+index),lookup); if(stack.isEmpty()) throw new IllegalArgumentException("Unregistered input"+index); yield new AlloyStackIngredient(stack).toVanilla(); }
-            case "orelist"->throw new IllegalArgumentException("X5846 getRecipeStacks(List) branch was commented out; original IMC orelist does not match any input");
             default->throw new IllegalArgumentException("Unknown original IMC input type"+index);
         };
     }

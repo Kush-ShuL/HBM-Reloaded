@@ -23,22 +23,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupleanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/plates/welded"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensedineutronium"
+        "tag": "hbm:wires/dense/dineutronium"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredenseschrabidate"
+        "tag": "hbm:wires/dense/schrabidate"
       },
       "count": 4
     }
@@ -46,22 +43,19 @@
   "expensive_input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupleanyresistantalloy"
+        "tag": "hbm:material_groups/resistant_alloy/plates/welded"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensedineutronium"
+        "tag": "hbm:wires/dense/dineutronium"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredenseschrabidate"
+        "tag": "hbm:wires/dense/schrabidate"
       },
       "count": 4
     }

@@ -12,15 +12,13 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "D": {
       "item": "hbm:det_cord"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplasticexplosive"
+      "tag": "hbm:material_groups/plasticexplosive/ingots"
     }
   }
 }

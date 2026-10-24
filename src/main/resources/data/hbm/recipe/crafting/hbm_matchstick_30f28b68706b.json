@@ -11,12 +11,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+      "tag": "c:dusts/red_phosphorus"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stickwood"
+      "tag": "c:rods/wooden"
     }
   }
 }

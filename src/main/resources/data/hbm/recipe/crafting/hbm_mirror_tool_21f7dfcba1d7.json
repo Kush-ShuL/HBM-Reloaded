@@ -12,12 +12,10 @@
   ],
   "key": {
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotaluminum"
+      "tag": "c:ingots/aluminum"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     }
   }
 }

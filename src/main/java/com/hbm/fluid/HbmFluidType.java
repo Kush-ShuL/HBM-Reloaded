@@ -111,9 +111,6 @@ public final class HbmFluidType {
     public String getConditionalName() { return localizedOverride == null ? getUnlocalizedName() : localizedOverride; }
     public boolean hasLocalizedOverride() { return localizedOverride != null; }
     public Component displayName() { return localizedOverride == null ? Component.translatable(getUnlocalizedName()) : Component.literal(localizedOverride); }
-    public String getDict(int quantity, boolean enableFluidContainerCompat) {
-        return (enableFluidContainerCompat ? "container" : "ntmcontainer") + quantity + name.replace("_", "").toLowerCase(Locale.US);
-    }
     public HbmFluidType setTemp(int temperature) { this.temperature = temperature; return this; }
     public boolean isHot() { return temperature >= 100; }
     public boolean isCorrosive() { return hasTrait(FluidTraits.Corrosive.class); }

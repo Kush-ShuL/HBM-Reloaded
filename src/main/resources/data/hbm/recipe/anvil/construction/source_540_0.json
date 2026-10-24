@@ -3,15 +3,13 @@
   "inputs": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateiron"
+        "tag": "c:plates/iron"
       },
       "count": 6
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotniobium"
+        "tag": "c:ingots/niobium"
       },
       "count": 1
     },

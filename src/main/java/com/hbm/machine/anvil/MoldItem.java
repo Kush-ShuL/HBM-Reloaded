@@ -2,7 +2,7 @@ package com.hbm.machine.anvil;
 import com.google.gson.*;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.material.*;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import java.util.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,10 +16,9 @@ public final class MoldItem extends Item {
             if(!fixed.isEmpty()) { ItemStack value=fixed.get(material.symbol());return value==null?ItemStack.EMPTY:value.copy(); }
             if(blockOverride&&(material.symbol().equals("MAT_STONE")||material.symbol().equals("MAT_OBSIDIAN"))) return new ItemStack(material.symbol().equals("MAT_STONE")?net.minecraft.world.level.block.Blocks.STONE:net.minecraft.world.level.block.Blocks.OBSIDIAN);
             MaterialShape actual=HbmMaterials.shape(shape);if(actual==null)return ItemStack.EMPTY;
-            for(String name:material.names()) {
-                String tag="hbm:legacy_ore_dict/"+(actual.name()+name).toLowerCase(Locale.ROOT);List<ItemStack> matches=HbmOreDictionary.items(tag).toList();if(matches.isEmpty())continue;
-                ItemStack preferred=matches.stream().filter(stack->{var id=BuiltInRegistries.ITEM.getKey(stack.getItem());return id.getNamespace().equals("hbm")&&!id.toString().contains("fragment");}).findFirst().orElse(matches.getFirst());return preferred.copyWithCount(amount);
-            }return ItemStack.EMPTY;
+            List<ItemStack> matches=HbmItemTags.items(HbmItemTags.material(actual.symbol(),material.names().getFirst())).toList();
+            if(matches.isEmpty())return ItemStack.EMPTY;
+            ItemStack preferred=matches.stream().filter(stack->{var id=BuiltInRegistries.ITEM.getKey(stack.getItem());return id.getNamespace().equals("hbm")&&!id.toString().contains("fragment");}).findFirst().orElse(matches.getFirst());return preferred.copyWithCount(amount);
         }
         public int requiredUnits() { return shape.isEmpty()?cost:HbmMaterials.shape(shape).q(amount); }
         public Component title() {return Component.translatable("shape."+(shape.isEmpty()?name:HbmMaterials.shape(shape).name())).append(" x"+amount);}

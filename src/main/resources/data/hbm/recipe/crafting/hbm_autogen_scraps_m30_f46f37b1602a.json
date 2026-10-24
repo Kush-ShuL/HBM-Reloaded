@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:autogen/scraps/m30",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "amount": 72
+      }
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/coal"
+    }
+  ]
+}

@@ -1,104 +1,95 @@
 {
   "order": [
-    "hbm:legacy_ore_dict/orecoal",
-    "hbm:legacy_ore_dict/oreiron",
-    "hbm:legacy_ore_dict/oregold",
-    "hbm:legacy_ore_dict/orecopper",
-    "hbm:legacy_ore_dict/oreredstone",
-    "hbm:legacy_ore_dict/orelapis",
-    "hbm:legacy_ore_dict/orediamond",
-    "hbm:legacy_ore_dict/oreemerald",
-    "hbm:legacy_ore_dict/orequartz",
-    "hbm:legacy_ore_dict/orenetherquartz",
-    "hbm:legacy_ore_dict/blockcoal",
-    "hbm:legacy_ore_dict/ingotschraranium",
-    "hbm:legacy_ore_dict/schraranium"
+    "c:ores/coal",
+    "c:ores/iron",
+    "c:ores/gold",
+    "c:ores/copper",
+    "c:ores/redstone",
+    "c:ores/lapis",
+    "c:ores/diamond",
+    "c:ores/emerald",
+    "c:ores/quartz",
+    "hbm:ores_in_ground/nether/quartz",
+    "c:storage_blocks/coal",
+    "c:ingots/schraranium",
+    "hbm:materials/schraranium"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/orecoal",
+      "tag": "c:ores/coal",
       "raw": "oreCoal"
     },
     {
-      "tag": "hbm:legacy_ore_dict/oreiron",
+      "tag": "c:ores/iron",
       "raw": "oreIron"
     },
     {
-      "tag": "hbm:legacy_ore_dict/oregold",
+      "tag": "c:ores/gold",
       "raw": "oreGold"
     },
     {
-      "tag": "hbm:legacy_ore_dict/orecopper",
+      "tag": "c:ores/copper",
       "raw": "oreCopper"
     },
     {
-      "tag": "hbm:legacy_ore_dict/oreredstone",
+      "tag": "c:ores/redstone",
       "raw": "oreRedstone"
     },
     {
-      "tag": "hbm:legacy_ore_dict/orelapis",
+      "tag": "c:ores/lapis",
       "raw": "oreLapis"
     },
     {
-      "tag": "hbm:legacy_ore_dict/orediamond",
+      "tag": "c:ores/diamond",
       "raw": "oreDiamond"
     },
     {
-      "tag": "hbm:legacy_ore_dict/oreemerald",
+      "tag": "c:ores/emerald",
       "raw": "oreEmerald"
     },
     {
-      "tag": "hbm:legacy_ore_dict/orequartz",
+      "tag": "c:ores/quartz",
       "raw": "oreQuartz"
     },
     {
-      "tag": "hbm:legacy_ore_dict/orenetherquartz",
+      "tag": "hbm:ores_in_ground/nether/quartz",
       "raw": "oreNetherQuartz"
     },
     {
-      "tag": "hbm:legacy_ore_dict/blockcoal",
+      "tag": "c:storage_blocks/coal",
       "raw": "blockCoal"
     },
     {
-      "tag": "hbm:legacy_ore_dict/ingotschraranium",
+      "tag": "c:ingots/schraranium",
       "raw": "ingotSchraranium"
     },
     {
-      "tag": "hbm:legacy_ore_dict/schraranium",
+      "tag": "hbm:materials/schraranium",
       "raw": "Schraranium"
     }
   ],
   "memberships": [
     {
-      "tag": "hbm:legacy_ore_dict/oreiron",
+      "tag": "c:ores/iron",
       "members": [
         {
-          "id": "hbm:ore_enriched",
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:ore_enriched_iron"
         }
       ]
     },
     {
-      "tag": "hbm:legacy_ore_dict/orecopper",
+      "tag": "c:ores/copper",
       "members": [
         {
-          "id": "hbm:ore_enriched",
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:ore_enriched_copper"
         }
       ]
     },
     {
-      "tag": "hbm:legacy_ore_dict/oregold",
+      "tag": "c:ores/gold",
       "members": [
         {
-          "id": "hbm:ore_enriched",
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:ore_enriched_gold"
         }
       ]
     }

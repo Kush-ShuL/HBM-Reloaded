@@ -3,8 +3,8 @@ import com.google.gson.*;
 import com.hbm.fluid.*;
 import com.hbm.material.*;
 import com.hbm.recipe.generic.*;
-import com.hbm.recipe.LegacyOreIngredient;
-import com.hbm.registry.HbmOreDictionary;
+
+import com.hbm.registry.HbmItemTags;
 import com.mojang.logging.LogUtils;
 import java.nio.file.*;
 import java.util.*;
@@ -25,8 +25,8 @@ public final class ElectrolyserRecipes {
     public static List<ElectrolyserRecipe> all(RecipeManager manager){return CACHED.computeIfAbsent(manager,m->m.getAllRecipesFor(ElectrolyserContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(r->r.data().order())).toList());}
     public static ElectrolyserRecipe fluid(RecipeManager manager,HbmFluidType type){return all(manager).stream().filter(r->!r.metal()&&r.inputFluids().getFirst().type==type).findFirst().orElse(null);}
     public static ElectrolyserRecipe metal(RecipeManager manager,ItemStack input){if(input.isEmpty())return null;var canonical=com.hbm.ore.RawOreContent.processingStack(input);
-        for(var r:all(manager))if(r.metal()&&!(r.inputItems().getFirst().ingredient().getCustomIngredient() instanceof LegacyOreIngredient)&&!(r.inputItems().getFirst().ingredient().getCustomIngredient() instanceof com.hbm.machine.centrifuge.CentrifugeNbtIngredient)&&com.hbm.ore.OreRecipeInputs.test(r.inputItems().getFirst().ingredient(),canonical))return r;
-        for(var name:HbmOreDictionary.names(canonical))for(var r:all(manager))if(r.metal()&&r.inputItems().getFirst().ingredient().getCustomIngredient() instanceof LegacyOreIngredient ore&&ore.tag().toString().equals(HbmOreDictionary.registerName(name)))return r;
+        for(var r:all(manager))if(r.metal()&&HbmItemTags.tag(r.inputItems().getFirst().ingredient()).isEmpty()&&!(r.inputItems().getFirst().ingredient().getCustomIngredient() instanceof com.hbm.machine.centrifuge.CentrifugeNbtIngredient)&&com.hbm.ore.OreRecipeInputs.test(r.inputItems().getFirst().ingredient(),canonical))return r;
+        for(var tag:HbmItemTags.tags(canonical))for(var r:all(manager))if(r.metal()&&HbmItemTags.tag(r.inputItems().getFirst().ingredient()).filter(key->key.location().toString().equals(tag)).isPresent())return r;
         return null;
     }
     public static void reload(MinecraftServer server) { install(server); }

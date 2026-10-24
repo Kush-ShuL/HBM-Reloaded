@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "count": 1
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "plate",
   "exact_left": [],
-  "order": 101000000
+  "order": 101000000,
+  "shape": "PLATE"
 }

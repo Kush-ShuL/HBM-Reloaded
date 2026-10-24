@@ -8,12 +8,10 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipecopper"
+      "tag": "hbm:pipes/copper"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellcopper"
+      "tag": "hbm:gun_parts/shells/copper"
     },
     "R": {
       "item": "hbm:rbmk_blank"

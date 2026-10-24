@@ -7,16 +7,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotasbestos"
+      "tag": "c:ingots/asbestos"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/anytar"
+      "tag": "hbm:tars"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetpolonium210"
+      "tag": "c:nuggets/polonium_210"
     },
     {
       "item": "hbm:plant_item_tobacco"

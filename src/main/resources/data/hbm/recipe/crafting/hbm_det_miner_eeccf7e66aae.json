@@ -15,12 +15,10 @@
       "item": "minecraft:flint"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplasticexplosive"
+      "tag": "hbm:material_groups/plasticexplosive/ingots"
     }
   }
 }

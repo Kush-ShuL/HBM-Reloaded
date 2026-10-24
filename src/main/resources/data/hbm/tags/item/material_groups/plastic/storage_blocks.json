@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_bakelite",
+    "hbm:block_polymer",
+    {
+      "id": "#c:storage_blocks/polymer",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/bakelite",
+      "required": false
+    }
+  ]
+}

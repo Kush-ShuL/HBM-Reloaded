@@ -28,8 +28,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+        "tag": "c:plates/weapon_steel"
       },
       "count": 32
     },
@@ -62,8 +61,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+        "tag": "hbm:material_groups/highexplosive/ingots"
       },
       "count": 16
     },

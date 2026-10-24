@@ -1,11 +1,11 @@
 {
   "source": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java:339",
   "order": [
-    "hbm:legacy_ore_dict/gemnetherquartz"
+    "c:gems/nether_quartz"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/gemnetherquartz",
+      "tag": "c:gems/nether_quartz",
       "raw": "gemNetherQuartz"
     }
   ],
@@ -14,7 +14,7 @@
     {
       "expression": "NETHERQUARTZ.gem()",
       "raw": "gemNetherQuartz",
-      "tag": "hbm:legacy_ore_dict/gemnetherquartz",
+      "tag": "c:gems/nether_quartz",
       "members": [
         "minecraft:quartz"
       ]

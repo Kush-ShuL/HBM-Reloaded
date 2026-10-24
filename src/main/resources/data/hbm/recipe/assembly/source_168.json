@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellsteel"
+        "tag": "hbm:gun_parts/shells/steel"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplelead"
+        "tag": "hbm:plates/cast/lead"
       },
       "count": 4
     },
@@ -42,8 +40,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyebrown"
+        "tag": "c:dyes/brown"
       },
       "count": 3
     }

@@ -1,11 +1,11 @@
 {
   "source": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java:91-94",
   "order": [
-    "hbm:legacy_ore_dict/paneglass"
+    "c:glass_panes"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/paneglass",
+      "tag": "c:glass_panes",
       "raw": "paneGlass"
     }
   ],
@@ -14,7 +14,7 @@
     {
       "expression": "KEY_ANYPANE",
       "raw": "paneGlass",
-      "tag": "hbm:legacy_ore_dict/paneglass",
+      "tag": "c:glass_panes",
       "members": [
         "minecraft:glass_pane",
         "minecraft:white_stained_glass_pane",

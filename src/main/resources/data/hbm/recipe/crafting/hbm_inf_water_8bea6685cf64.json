@@ -17,12 +17,10 @@
       "amount": 1000
     },
     "2": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platealuminum"
+      "tag": "c:plates/aluminum"
     },
     "3": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gemdiamond"
+      "tag": "c:gems/diamond"
     }
   },
   "neoforge:conditions": [

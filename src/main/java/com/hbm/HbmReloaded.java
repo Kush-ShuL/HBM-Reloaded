@@ -17,7 +17,7 @@ import com.hbm.registry.HbmOres;
 import com.hbm.fluid.HbmFluids;
 import com.hbm.registry.HbmStairs;
 import com.hbm.registry.HbmStamps;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.hbm.item.fluid.FluidItemContent;
 import com.hbm.particle.LegacyParticles;
 import com.hbm.block.fluid.HbmWorldFluids;
@@ -58,7 +58,7 @@ public final class HbmReloaded {
         com.hbm.fluid.interop.FluidInterop.register(modBus);
         HbmHazards.register(modBus);
         LegacyParticles.register(modBus);
-        HbmOreDictionary.register(modBus);
+        HbmItemTags.register(modBus);
         HbmCreativeTabs.register(modBus);
         FluidItemContent.register(modBus, container);
         AutogenContent.register(modBus);

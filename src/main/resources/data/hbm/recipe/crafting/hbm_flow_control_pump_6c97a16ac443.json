@@ -12,12 +12,10 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsteel"
+      "tag": "hbm:gun_parts/shells/steel"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgraphite"
+      "tag": "c:ingots/graphite"
     },
     "M": {
       "item": "hbm:motor"

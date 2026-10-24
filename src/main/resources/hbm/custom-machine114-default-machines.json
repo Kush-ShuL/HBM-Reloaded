@@ -28,14 +28,14 @@
       "recipeParts": [
         "I",
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         "P",
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         "C",

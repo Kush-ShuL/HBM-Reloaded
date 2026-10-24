@@ -22,7 +22,7 @@ public final class AutogenClient {
     @SubscribeEvent public static void colors(RegisterColorHandlersEvent.Item event) { for(var holder:AutogenContent.all()) event.register((stack,layer)->holder.get().color(stack),holder.get()); }
     @SubscribeEvent public static void setup(FMLClientSetupEvent event) { event.enqueueWork(()->ScrapsItem.leftShiftHeld=()->InputConstants.isKeyDown(Minecraft.getInstance().getWindow().getWindow(),GLFW.GLFW_KEY_LEFT_SHIFT)); }
     @SubscribeEvent public static void models(ModelEvent.ModifyBakingResult event) {
-        var fallback=event.getModels().get(ModelResourceLocation.inventory(ResourceLocation.fromNamespaceAndPath("hbm","ingot_raw")));
+        var fallback=event.getModels().get(ModelResourceLocation.inventory(AutogenContent.all().getFirst().getId()));
         for(var holder:AutogenContent.all()) {
             var id=ModelResourceLocation.inventory(holder.getId());
             var original=event.getModels().getOrDefault(id,fallback);

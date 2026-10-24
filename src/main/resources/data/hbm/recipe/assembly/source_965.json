@@ -22,15 +22,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shelltitanium"
+        "tag": "hbm:gun_parts/shells/titanium"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotrubber"
+        "tag": "c:ingots/rubber"
       },
       "count": 64
     },

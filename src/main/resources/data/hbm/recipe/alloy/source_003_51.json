@@ -1,27 +1,22 @@
 {
   "type": "hbm:alloy",
   "first": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/oreiron"
+    "tag": "c:ores/iron"
   },
   "second": {
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotanycoke"
+        "tag": "hbm:material_groups/coke/ingots"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateanycoke"
+        "tag": "hbm:material_groups/coke/plates"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemanycoke"
+        "tag": "c:gems/coke"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustanycoke"
+        "tag": "hbm:material_groups/coke/dusts"
       }
     ]
   },

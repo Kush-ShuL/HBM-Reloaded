@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellaluminum"
+        "tag": "hbm:gun_parts/shells/aluminum"
       },
       "count": 3
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripledurasteel"
+        "tag": "hbm:plates/cast/dura_steel"
       },
       "count": 1
     },
@@ -42,8 +40,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+        "tag": "hbm:wires/fine/mingrade"
       },
       "count": 16
     }

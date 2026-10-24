@@ -5,6 +5,7 @@ import com.hbm.bobmazon.*;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.pedestal.PedestalReputation;
 import com.hbm.recipe.generic.GenericIngredient;
+import com.hbm.registry.HbmItemTags;
 import java.util.List;
 import net.minecraft.core.*;
 import net.minecraft.core.registries.*;
@@ -61,7 +62,7 @@ public final class OldLanternEntity extends BlockEntity implements IRepairable,c
     @Override public boolean isDamaged(){return isBroken;}
     @Override public boolean isMuffled(){return muffled;}
     @Override public void setMuffled(boolean value){muffled=value;setChanged();}
-    @Override public List<GenericIngredient> getRepairMaterials(){return List.of(new GenericIngredient(new com.hbm.recipe.LegacyOreIngredient(ResourceLocation.parse("hbm:legacy_ore_dict/platesteel")).toVanilla(),2),new GenericIngredient(new com.hbm.machine.alloy.AlloyStackIngredient(circuit(8,1)).toVanilla(),1));}
+    @Override public List<GenericIngredient> getRepairMaterials(){return List.of(new GenericIngredient(HbmItemTags.ingredient("c:plates/steel"),2),new GenericIngredient(new com.hbm.machine.alloy.AlloyStackIngredient(circuit(8,1)).toVanilla(),1));}
     @Override public void repair(Player player){isBroken=false;comTimer=400;reputation=PedestalReputation.get(player);setChanged();if(level!=null)level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),2);}
     @Override public void tryExtinguish(Level level,BlockPos pos,EnumExtinguishType type){}
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);tag.putBoolean("isBroken",isBroken);tag.putInt("comTimer",comTimer);tag.putInt("reputation",reputation);tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);}

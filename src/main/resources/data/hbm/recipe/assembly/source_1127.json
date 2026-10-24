@@ -33,22 +33,19 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplesaturnite"
+        "tag": "hbm:plates/cast/saturnite"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextuplecopper"
+        "tag": "hbm:plates/welded/copper"
       },
       "count": 12
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/alloyultimate"
+        "tag": "c:alloys/ultimate"
       },
       "count": 32
     },
@@ -74,10 +71,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:wire_dense",
-          "components": {
-            "hbm:legacy_metadata": 7900
-          }
+          "id": "hbm:autogen/wire_dense/m7900"
         }
       },
       "count": 32

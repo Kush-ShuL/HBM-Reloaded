@@ -15,12 +15,10 @@
   ],
   "key": {
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockredstone"
+      "tag": "c:storage_blocks/redstone"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stickwood"
+      "tag": "c:rods/wooden"
     }
   }
 }

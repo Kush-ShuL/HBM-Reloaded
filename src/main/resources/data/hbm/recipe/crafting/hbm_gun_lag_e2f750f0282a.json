@@ -11,20 +11,16 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrellightanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/gun_parts/barrels/light"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverlightanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/gun_parts/receivers/light"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripanyplastic"
+      "tag": "hbm:material_groups/plastic/gun_parts/grips"
     }
   }
 }

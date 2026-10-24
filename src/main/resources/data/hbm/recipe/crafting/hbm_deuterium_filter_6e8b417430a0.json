@@ -12,12 +12,10 @@
   ],
   "key": {
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/ingots"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustsulfur"
+      "tag": "c:dusts/sulfur"
     },
     "C": {
       "item": "hbm:catalyst_clay"

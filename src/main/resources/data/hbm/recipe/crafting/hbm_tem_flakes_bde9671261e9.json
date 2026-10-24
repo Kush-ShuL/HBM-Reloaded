@@ -10,20 +10,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgold"
+      "tag": "c:ingots/gold"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgold"
+      "tag": "c:ingots/gold"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetgold"
+      "tag": "c:nuggets/gold"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetgold"
+      "tag": "c:nuggets/gold"
     },
     {
       "item": "minecraft:paper"

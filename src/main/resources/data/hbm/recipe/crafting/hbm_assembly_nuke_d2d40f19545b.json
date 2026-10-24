@@ -12,16 +12,13 @@
   ],
   "key": {
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinegold"
+      "tag": "hbm:wires/fine/gold"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      "tag": "c:plates/weapon_steel"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellweaponsteel"
+      "tag": "hbm:gun_parts/shells/weapon_steel"
     },
     "E": {
       "item": "hbm:ball_tatb"

@@ -12,19 +12,16 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottungsten"
+      "tag": "c:ingots/tungsten"
     },
     "C": {
       "item": "hbm:padlock"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plankwood"
+      "tag": "minecraft:planks"
     }
   }
 }

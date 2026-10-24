@@ -14,20 +14,16 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrellightsaturnite"
+      "tag": "hbm:gun_parts/barrels/light/saturnite"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverlightsaturnite"
+      "tag": "hbm:gun_parts/receivers/light/saturnite"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+      "tag": "hbm:gun_parts/mechanisms/saturnite"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesaturnite"
+      "tag": "c:plates/saturnite"
     }
   }
 }

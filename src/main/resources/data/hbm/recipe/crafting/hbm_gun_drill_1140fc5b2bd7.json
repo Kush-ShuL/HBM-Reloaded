@@ -12,20 +12,16 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+      "tag": "c:ingots/gun_metal"
     },
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottitanium"
+      "tag": "c:ingots/titanium"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocksteel"
+      "tag": "c:storage_blocks/steel"
     },
     "P": {
       "item": "hbm:piston_selenium"

@@ -15,16 +15,13 @@
       "item": "hbm:circuit_advanced"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavyanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/gun_parts/barrels/heavy"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripanyplastic"
+      "tag": "hbm:material_groups/plastic/gun_parts/grips"
     }
   }
 }

@@ -4,7 +4,7 @@
     {
       "expression": "GRAPHITE.block()",
       "raw": "blockGraphite",
-      "tag": "hbm:legacy_ore_dict/blockgraphite",
+      "tag": "c:storage_blocks/graphite",
       "members": [
         "hbm:block_graphite"
       ]
@@ -12,23 +12,23 @@
     {
       "expression": "CARBON.block()",
       "raw": "blockCarbon",
-      "tag": "hbm:legacy_ore_dict/blockcarbon",
+      "tag": "c:storage_blocks/carbon",
       "members": [
         "hbm:block_graphite"
       ]
     }
   ],
   "order": [
-    "hbm:legacy_ore_dict/blockgraphite",
-    "hbm:legacy_ore_dict/blockcarbon"
+    "c:storage_blocks/graphite",
+    "c:storage_blocks/carbon"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/blockgraphite",
+      "tag": "c:storage_blocks/graphite",
       "raw": "blockGraphite"
     },
     {
-      "tag": "hbm:legacy_ore_dict/blockcarbon",
+      "tag": "c:storage_blocks/carbon",
       "raw": "blockCarbon"
     }
   ],

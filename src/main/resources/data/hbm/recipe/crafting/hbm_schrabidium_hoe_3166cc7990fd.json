@@ -15,15 +15,13 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+      "tag": "c:ingots/schrabidium"
     },
     "W": {
       "item": "hbm:desh_hoe"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     }
   },
   "neoforge:conditions": [

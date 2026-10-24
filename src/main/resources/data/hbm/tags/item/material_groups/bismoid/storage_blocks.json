@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_bismuth",
+    {
+      "id": "#c:storage_blocks/bismuth",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/arsenic",
+      "required": false
+    }
+  ]
+}

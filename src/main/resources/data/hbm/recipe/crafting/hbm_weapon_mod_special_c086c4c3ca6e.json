@@ -15,15 +15,13 @@
   ],
   "key": {
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpiperubber"
+      "tag": "hbm:pipes/rubber"
     },
     "C": {
       "item": "hbm:canister_empty"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     }
   }
 }

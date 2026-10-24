@@ -8,8 +8,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orecoal"
+            "tag": "c:ores/coal"
           },
           "count": 1
         }
@@ -34,8 +33,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orecoal",
+      "key_kind": "tag",
+      "source_key": "c:ores/coal",
       "order": 0
     },
     {
@@ -46,8 +45,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreiron"
+            "tag": "c:ores/iron"
           },
           "count": 1
         }
@@ -72,8 +70,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreiron",
+      "key_kind": "tag",
+      "source_key": "c:ores/iron",
       "order": 1
     },
     {
@@ -84,8 +82,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oregold"
+            "tag": "c:ores/gold"
           },
           "count": 1
         }
@@ -110,8 +107,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oregold",
+      "key_kind": "tag",
+      "source_key": "c:ores/gold",
       "order": 2
     },
     {
@@ -122,8 +119,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreredstone"
+            "tag": "c:ores/redstone"
           },
           "count": 1
         }
@@ -148,8 +144,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreredstone",
+      "key_kind": "tag",
+      "source_key": "c:ores/redstone",
       "order": 3
     },
     {
@@ -160,8 +156,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orelapis"
+            "tag": "c:ores/lapis"
           },
           "count": 1
         }
@@ -186,8 +181,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orelapis",
+      "key_kind": "tag",
+      "source_key": "c:ores/lapis",
       "order": 4
     },
     {
@@ -198,8 +193,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orediamond"
+            "tag": "c:ores/diamond"
           },
           "count": 1
         }
@@ -224,8 +218,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orediamond",
+      "key_kind": "tag",
+      "source_key": "c:ores/diamond",
       "order": 5
     },
     {
@@ -236,8 +230,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreuranium"
+            "tag": "c:ores/uranium"
           },
           "count": 1
         }
@@ -262,8 +255,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreuranium",
+      "key_kind": "tag",
+      "source_key": "c:ores/uranium",
       "order": 6
     },
     {
@@ -274,8 +267,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orethorium232"
+            "tag": "c:ores/thorium_232"
           },
           "count": 1
         }
@@ -300,8 +292,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orethorium232",
+      "key_kind": "tag",
+      "source_key": "c:ores/thorium_232",
       "order": 7
     },
     {
@@ -312,8 +304,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreth232"
+            "tag": "c:ores/thorium_232"
           },
           "count": 1
         }
@@ -338,8 +329,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreth232",
+      "key_kind": "tag",
+      "source_key": "c:ores/thorium_232",
       "order": 8
     },
     {
@@ -350,8 +341,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orethorium"
+            "tag": "c:ores/thorium_232"
           },
           "count": 1
         }
@@ -376,8 +366,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orethorium",
+      "key_kind": "tag",
+      "source_key": "c:ores/thorium_232",
       "order": 9
     },
     {
@@ -388,8 +378,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreplutonium"
+            "tag": "c:ores/plutonium"
           },
           "count": 1
         }
@@ -414,8 +403,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreplutonium",
+      "key_kind": "tag",
+      "source_key": "c:ores/plutonium",
       "order": 10
     },
     {
@@ -426,8 +415,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oretitanium"
+            "tag": "c:ores/titanium"
           },
           "count": 1
         }
@@ -452,8 +440,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oretitanium",
+      "key_kind": "tag",
+      "source_key": "c:ores/titanium",
       "order": 11
     },
     {
@@ -464,8 +452,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oresulfur"
+            "tag": "c:ores/sulfur"
           },
           "count": 1
         }
@@ -490,8 +477,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oresulfur",
+      "key_kind": "tag",
+      "source_key": "c:ores/sulfur",
       "order": 12
     },
     {
@@ -502,8 +489,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oresaltpeter"
+            "tag": "c:ores/saltpeter"
           },
           "count": 1
         }
@@ -528,8 +514,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oresaltpeter",
+      "key_kind": "tag",
+      "source_key": "c:ores/saltpeter",
       "order": 13
     },
     {
@@ -540,8 +526,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orecopper"
+            "tag": "c:ores/copper"
           },
           "count": 1
         }
@@ -566,8 +551,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orecopper",
+      "key_kind": "tag",
+      "source_key": "c:ores/copper",
       "order": 14
     },
     {
@@ -578,8 +563,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oretungsten"
+            "tag": "c:ores/tungsten"
           },
           "count": 1
         }
@@ -604,8 +588,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oretungsten",
+      "key_kind": "tag",
+      "source_key": "c:ores/tungsten",
       "order": 15
     },
     {
@@ -616,8 +600,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orealuminum"
+            "tag": "c:ores/aluminum"
           },
           "count": 1
         }
@@ -642,8 +625,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orealuminum",
+      "key_kind": "tag",
+      "source_key": "c:ores/aluminum",
       "order": 16
     },
     {
@@ -654,8 +637,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orefluorite"
+            "tag": "c:ores/fluorite"
           },
           "count": 1
         }
@@ -680,8 +662,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orefluorite",
+      "key_kind": "tag",
+      "source_key": "c:ores/fluorite",
       "order": 17
     },
     {
@@ -692,8 +674,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreberyllium"
+            "tag": "c:ores/beryllium"
           },
           "count": 1
         }
@@ -718,8 +699,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreberyllium",
+      "key_kind": "tag",
+      "source_key": "c:ores/beryllium",
       "order": 18
     },
     {
@@ -730,8 +711,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orelead"
+            "tag": "c:ores/lead"
           },
           "count": 1
         }
@@ -756,8 +736,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orelead",
+      "key_kind": "tag",
+      "source_key": "c:ores/lead",
       "order": 19
     },
     {
@@ -768,8 +748,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/oreschrabidium"
+            "tag": "c:ores/schrabidium"
           },
           "count": 1
         }
@@ -794,8 +773,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/oreschrabidium",
+      "key_kind": "tag",
+      "source_key": "c:ores/schrabidium",
       "order": 20
     },
     {
@@ -806,8 +785,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orelithium"
+            "tag": "c:ores/lithium"
           },
           "count": 1
         }
@@ -832,8 +810,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orelithium",
+      "key_kind": "tag",
+      "source_key": "c:ores/lithium",
       "order": 21
     },
     {
@@ -844,8 +822,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orecobalt"
+            "tag": "c:ores/cobalt"
           },
           "count": 1
         }
@@ -870,8 +847,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orecobalt",
+      "key_kind": "tag",
+      "source_key": "c:ores/cobalt",
       "order": 22
     },
     {
@@ -923,8 +900,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotmalachite"
+            "tag": "c:ingots/malachite"
           },
           "count": 1
         }
@@ -941,10 +917,9 @@
           "pool": [
             {
               "stack": {
-                "id": "hbm:scraps",
+                "id": "hbm:autogen/scraps/m2900",
                 "count": 1,
                 "components": {
-                  "hbm:legacy_metadata": 2900,
                   "minecraft:custom_data": {
                     "amount": 72
                   }
@@ -955,8 +930,8 @@
         }
       ],
       "productivity": 0.1,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/ingotmalachite",
+      "key_kind": "tag",
+      "source_key": "c:ingots/malachite",
       "order": 24
     },
     {
@@ -967,8 +942,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orerareearth"
+            "tag": "c:ores/rare_earth"
           },
           "count": 1
         }
@@ -993,8 +967,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orerareearth",
+      "key_kind": "tag",
+      "source_key": "c:ores/rare_earth",
       "order": 25
     },
     {
@@ -1005,8 +979,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/orecinnabar"
+            "tag": "c:ores/cinnabar"
           },
           "count": 1
         }
@@ -1031,8 +1004,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/orecinnabar",
+      "key_kind": "tag",
+      "source_key": "c:ores/cinnabar",
       "order": 26
     },
     {
@@ -1166,8 +1139,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschraranium"
+            "tag": "c:ingots/schraranium"
           },
           "count": 1
         }
@@ -1192,8 +1164,8 @@
         }
       ],
       "productivity": 0.05,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/ingotschraranium",
+      "key_kind": "tag",
+      "source_key": "c:ingots/schraranium",
       "order": 30
     },
     {
@@ -1204,8 +1176,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/sand"
+            "tag": "c:sands"
           },
           "count": 1
         }
@@ -1230,8 +1201,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/sand",
+      "key_kind": "tag",
+      "source_key": "c:sands",
       "order": 31
     },
     {
@@ -1242,8 +1213,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsilicon"
+            "tag": "c:ingots/silicon"
           },
           "count": 1
         }
@@ -1268,8 +1238,8 @@
         }
       ],
       "productivity": 0.1,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/ingotsilicon",
+      "key_kind": "tag",
+      "source_key": "c:ingots/silicon",
       "order": 32
     },
     {
@@ -1280,8 +1250,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockredstone"
+            "tag": "c:storage_blocks/redstone"
           },
           "count": 1
         }
@@ -1306,8 +1275,8 @@
         }
       ],
       "productivity": 0.25,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/blockredstone",
+      "key_kind": "tag",
+      "source_key": "c:storage_blocks/redstone",
       "order": 33
     },
     {
@@ -1318,8 +1287,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/crystalcinnabar"
+            "tag": "c:crystals/cinnabar"
           },
           "count": 1
         }
@@ -1344,8 +1312,8 @@
         }
       ],
       "productivity": 0.25,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/crystalcinnabar",
+      "key_kind": "tag",
+      "source_key": "c:crystals/cinnabar",
       "order": 34
     },
     {
@@ -1356,8 +1324,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustborax"
+            "tag": "c:dusts/borax"
           },
           "count": 1
         }
@@ -1382,8 +1349,8 @@
         }
       ],
       "productivity": 0.25,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustborax",
+      "key_kind": "tag",
+      "source_key": "c:dusts/borax",
       "order": 35
     },
     {
@@ -1394,8 +1361,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockcoal"
+            "tag": "c:storage_blocks/coal"
           },
           "count": 1
         }
@@ -1420,8 +1386,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/blockcoal",
+      "key_kind": "tag",
+      "source_key": "c:storage_blocks/coal",
       "order": 36
     },
     {
@@ -1842,8 +1808,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustdiamond"
+            "tag": "c:dusts/diamond"
           },
           "count": 1
         }
@@ -1868,8 +1833,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustdiamond",
+      "key_kind": "tag",
+      "source_key": "c:dusts/diamond",
       "order": 47
     },
     {
@@ -1880,8 +1845,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustemerald"
+            "tag": "c:dusts/emerald"
           },
           "count": 1
         }
@@ -1906,8 +1870,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustemerald",
+      "key_kind": "tag",
+      "source_key": "c:dusts/emerald",
       "order": 48
     },
     {
@@ -1918,8 +1882,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustlapis"
+            "tag": "c:dusts/lapis"
           },
           "count": 1
         }
@@ -1944,8 +1907,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustlapis",
+      "key_kind": "tag",
+      "source_key": "c:dusts/lapis",
       "order": 49
     },
     {
@@ -2079,8 +2042,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcadmium"
+            "tag": "c:dusts/cadmium"
           },
           "count": 1
         }
@@ -2105,8 +2067,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcadmium",
+      "key_kind": "tag",
+      "source_key": "c:dusts/cadmium",
       "order": 53
     },
     {
@@ -2117,8 +2079,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotlatex"
+            "tag": "c:ingots/latex"
           },
           "count": 1
         }
@@ -2143,8 +2104,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/ingotlatex",
+      "key_kind": "tag",
+      "source_key": "c:ingots/latex",
       "order": 54
     },
     {
@@ -17221,8 +17182,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           "count": 1
         }
@@ -17247,8 +17207,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcoal",
+      "key_kind": "tag",
+      "source_key": "c:dusts/coal",
       "order": 379
     },
     {
@@ -17259,8 +17219,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           "count": 1
         }
@@ -17285,8 +17244,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcoal",
+      "key_kind": "tag",
+      "source_key": "c:dusts/coal",
       "order": 380
     },
     {
@@ -17297,8 +17256,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           "count": 1
         }
@@ -17323,8 +17281,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcoal",
+      "key_kind": "tag",
+      "source_key": "c:dusts/coal",
       "order": 381
     },
     {
@@ -17335,8 +17293,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttitanium"
+            "tag": "c:dusts/titanium"
           },
           "count": 1
         }
@@ -17361,8 +17318,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dusttitanium",
+      "key_kind": "tag",
+      "source_key": "c:dusts/titanium",
       "order": 382
     },
     {
@@ -17373,8 +17330,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttitanium"
+            "tag": "c:dusts/titanium"
           },
           "count": 1
         }
@@ -17399,8 +17355,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dusttitanium",
+      "key_kind": "tag",
+      "source_key": "c:dusts/titanium",
       "order": 383
     },
     {
@@ -17411,8 +17367,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttitanium"
+            "tag": "c:dusts/titanium"
           },
           "count": 1
         }
@@ -17437,8 +17392,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dusttitanium",
+      "key_kind": "tag",
+      "source_key": "c:dusts/titanium",
       "order": 384
     },
     {
@@ -17449,8 +17404,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           "count": 1
         }
@@ -17475,8 +17429,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustiron",
+      "key_kind": "tag",
+      "source_key": "c:dusts/iron",
       "order": 385
     },
     {
@@ -17487,8 +17441,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           "count": 1
         }
@@ -17513,8 +17466,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustiron",
+      "key_kind": "tag",
+      "source_key": "c:dusts/iron",
       "order": 386
     },
     {
@@ -17525,8 +17478,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           "count": 1
         }
@@ -17551,8 +17503,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustiron",
+      "key_kind": "tag",
+      "source_key": "c:dusts/iron",
       "order": 387
     },
     {
@@ -17563,8 +17515,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           },
           "count": 1
         }
@@ -17589,8 +17540,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dusttungsten",
+      "key_kind": "tag",
+      "source_key": "c:dusts/tungsten",
       "order": 388
     },
     {
@@ -17601,8 +17552,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           },
           "count": 1
         }
@@ -17627,8 +17577,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dusttungsten",
+      "key_kind": "tag",
+      "source_key": "c:dusts/tungsten",
       "order": 389
     },
     {
@@ -17639,8 +17589,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           },
           "count": 1
         }
@@ -17665,8 +17614,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dusttungsten",
+      "key_kind": "tag",
+      "source_key": "c:dusts/tungsten",
       "order": 390
     },
     {
@@ -17677,8 +17626,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcopper"
+            "tag": "c:dusts/copper"
           },
           "count": 1
         }
@@ -17703,8 +17651,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcopper",
+      "key_kind": "tag",
+      "source_key": "c:dusts/copper",
       "order": 391
     },
     {
@@ -17715,8 +17663,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcopper"
+            "tag": "c:dusts/copper"
           },
           "count": 1
         }
@@ -17741,8 +17688,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcopper",
+      "key_kind": "tag",
+      "source_key": "c:dusts/copper",
       "order": 392
     },
     {
@@ -17753,8 +17700,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcopper"
+            "tag": "c:dusts/copper"
           },
           "count": 1
         }
@@ -17779,8 +17725,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcopper",
+      "key_kind": "tag",
+      "source_key": "c:dusts/copper",
       "order": 393
     },
     {
@@ -17791,8 +17737,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcobalt"
+            "tag": "c:dusts/cobalt"
           },
           "count": 1
         }
@@ -17817,8 +17762,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcobalt",
+      "key_kind": "tag",
+      "source_key": "c:dusts/cobalt",
       "order": 394
     },
     {
@@ -17829,8 +17774,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcobalt"
+            "tag": "c:dusts/cobalt"
           },
           "count": 1
         }
@@ -17855,8 +17799,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcobalt",
+      "key_kind": "tag",
+      "source_key": "c:dusts/cobalt",
       "order": 395
     },
     {
@@ -17867,8 +17811,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcobalt"
+            "tag": "c:dusts/cobalt"
           },
           "count": 1
         }
@@ -17893,8 +17836,8 @@
         }
       ],
       "productivity": 0.15,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustcobalt",
+      "key_kind": "tag",
+      "source_key": "c:dusts/cobalt",
       "order": 396
     },
     {
@@ -18110,8 +18053,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/sand"
+            "tag": "c:sands"
           },
           "count": 1
         }
@@ -18136,8 +18078,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/sand",
+      "key_kind": "tag",
+      "source_key": "c:sands",
       "order": 402
     },
     {
@@ -18192,8 +18134,7 @@
       "input_items": [
         {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+            "tag": "c:dusts/nether_quartz"
           },
           "count": 1
         }
@@ -18218,8 +18159,8 @@
         }
       ],
       "productivity": 0.0,
-      "key_kind": "dict",
-      "source_key": "hbm:legacy_ore_dict/dustnetherquartz",
+      "key_kind": "tag",
+      "source_key": "c:dusts/nether_quartz",
       "order": 404
     },
     {

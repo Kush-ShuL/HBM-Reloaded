@@ -12,15 +12,13 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustglowstone"
+      "tag": "c:dusts/glowstone"
     },
     "R": {
       "item": "minecraft:redstone_torch"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gemnetherquartz"
+      "tag": "c:gems/nether_quartz"
     }
   }
 }

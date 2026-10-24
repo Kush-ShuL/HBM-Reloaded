@@ -3,20 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcalcium"
+      "tag": "c:dusts/calcium"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustredphosphorus"
+      "tag": "c:dusts/red_phosphorus"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+      "tag": "c:dusts/saltpeter"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustsulfur"
+      "tag": "c:dusts/sulfur"
     }
   ],
   "result": {

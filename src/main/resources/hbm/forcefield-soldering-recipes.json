@@ -47,8 +47,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustglowstone"
+              "tag": "c:dusts/glowstone"
             },
             "count": 4
           }
@@ -105,8 +104,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustlithium"
+              "tag": "c:dusts/lithium"
             },
             "count": 4
           }

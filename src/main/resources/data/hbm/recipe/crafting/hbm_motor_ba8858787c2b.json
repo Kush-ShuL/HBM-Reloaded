@@ -12,15 +12,13 @@
   ],
   "key": {
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+      "tag": "hbm:wires/fine/mingrade"
     },
     "T": {
       "item": "hbm:coil_copper_torus"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "C": {
       "item": "hbm:coil_copper"

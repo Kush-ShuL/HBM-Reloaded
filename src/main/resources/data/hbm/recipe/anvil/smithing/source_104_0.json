@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+      "tag": "hbm:wires/fine/copper"
     },
     "count": 1
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "wireFine",
   "exact_left": [],
-  "order": 104000000
+  "order": 104000000,
+  "shape": "WIRE"
 }

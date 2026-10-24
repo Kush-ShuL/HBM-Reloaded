@@ -19,8 +19,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellaluminum"
+        "tag": "hbm:gun_parts/shells/aluminum"
       },
       "count": 16
     },
@@ -35,8 +34,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensegold"
+        "tag": "hbm:wires/dense/gold"
       },
       "count": 32
     },

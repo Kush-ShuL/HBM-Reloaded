@@ -12,12 +12,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotlead"
+      "tag": "c:ingots/lead"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocklead"
+      "tag": "c:storage_blocks/lead"
     }
   }
 }

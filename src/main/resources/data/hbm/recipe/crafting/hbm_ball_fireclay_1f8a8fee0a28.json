@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:ball_fireclay",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "hbm:stone_resource_limestone"
+    },
+    {
+      "tag": "c:sands"
+    }
+  ]
+}

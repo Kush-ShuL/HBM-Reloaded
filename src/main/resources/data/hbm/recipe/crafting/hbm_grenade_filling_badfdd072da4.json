@@ -18,12 +18,10 @@
       "item": "hbm:ball_tatb"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+      "tag": "c:plates/weapon_steel"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+      "tag": "c:nuggets/plutonium_239"
     }
   }
 }

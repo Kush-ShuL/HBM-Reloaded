@@ -2,14 +2,13 @@
   "type": "hbm:irradiation",
   "input": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustlithium"
+      "tag": "c:dusts/lithium"
     },
     "count": 1
   },
   "fusion_only": false,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/dustlithium",
+  "key_kind": "tag",
+  "source_key": "c:dusts/lithium",
   "order": 2,
   "fluid_output": {
     "type": "TRITIUM",

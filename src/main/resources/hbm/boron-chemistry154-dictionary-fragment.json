@@ -1,23 +1,23 @@
 {
   "source": "legacy/src/main/java/com/hbm/inventory/OreDictManager.java:103/532/533",
   "order": [
-    "hbm:legacy_ore_dict/ntmchemistryset"
+    "hbm:tools/chemistry_sets"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/ntmchemistryset",
+      "tag": "hbm:tools/chemistry_sets",
       "raw": "ntmchemistryset"
     }
   ],
   "memberships": [],
   "registrations": [
     {
-      "tag": "hbm:legacy_ore_dict/ntmchemistryset",
+      "tag": "hbm:tools/chemistry_sets",
       "item": "hbm:chemistry_set",
       "wildcardDamage": true
     },
     {
-      "tag": "hbm:legacy_ore_dict/ntmchemistryset",
+      "tag": "hbm:tools/chemistry_sets",
       "item": "hbm:chemistry_set_boron",
       "wildcardDamage": true
     }

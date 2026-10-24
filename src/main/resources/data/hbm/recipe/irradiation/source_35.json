@@ -2,14 +2,13 @@
   "type": "hbm:irradiation",
   "input": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocklithium"
+      "tag": "c:storage_blocks/lithium"
     },
     "count": 1
   },
   "fusion_only": false,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/blocklithium",
+  "key_kind": "tag",
+  "source_key": "c:storage_blocks/lithium",
   "order": 0,
   "fluid_output": {
     "type": "TRITIUM",

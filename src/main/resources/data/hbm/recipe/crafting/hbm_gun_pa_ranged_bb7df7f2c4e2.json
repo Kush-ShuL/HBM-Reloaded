@@ -15,12 +15,10 @@
       "item": "hbm:circuit_basic"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensegold"
+      "tag": "hbm:wires/dense/gold"
     }
   }
 }

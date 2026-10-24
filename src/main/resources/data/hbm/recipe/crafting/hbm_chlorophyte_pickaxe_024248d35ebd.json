@@ -18,15 +18,13 @@
       "item": "hbm:powder_chlorophyte"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotfiberglass"
+      "tag": "c:ingots/fiberglass"
     },
     "P": {
       "item": "hbm:volcanic_pickaxe"
     },
     "F": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/boltdurasteel"
+      "tag": "hbm:bolts/dura_steel"
     }
   }
 }

@@ -12,15 +12,13 @@
   ],
   "key": {
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+      "tag": "hbm:wires/fine/copper"
     },
     "R": {
       "item": "hbm:ring_starmetal"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     }
   }
 }

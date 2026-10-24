@@ -12,22 +12,19 @@
   ],
   "key": {
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinealuminum"
+      "tag": "hbm:wires/fine/aluminum"
     },
     "C": {
       "item": "hbm:circuit_basic"
     },
     "H": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellaluminum"
+      "tag": "hbm:gun_parts/shells/aluminum"
     },
     "F": {
       "item": "hbm:fins_quad_titanium"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dyewhite"
+      "tag": "c:dyes/white"
     }
   }
 }

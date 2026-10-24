@@ -7,12 +7,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcoal"
+      "tag": "c:dusts/coal"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustasbestos"
+      "tag": "c:dusts/asbestos"
     },
     {
       "item": "hbm:nugget_bismuth"

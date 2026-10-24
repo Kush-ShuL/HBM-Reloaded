@@ -31,8 +31,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotsteel"
+        "tag": "c:ingots/steel"
       },
       "count": 16
     },
@@ -56,15 +55,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+        "tag": "hbm:pipes/steel"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+        "tag": "hbm:gun_parts/mechanisms/gun_metal"
       },
       "count": 3
     },

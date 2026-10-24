@@ -2,8 +2,8 @@
   "recipes": [
     {
       "input": [
-        "dict",
-        "gemCoal",
+        "tag",
+        "c:gems/coal",
         1
       ],
       "output": [
@@ -18,8 +18,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustCoal",
+        "tag",
+        "c:dusts/coal",
         1
       ],
       "output": [
@@ -51,8 +51,8 @@
     },
     {
       "input": [
-        "dict",
-        "gemLignite",
+        "tag",
+        "c:gems/lignite",
         1
       ],
       "output": [
@@ -67,8 +67,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustLignite",
+        "tag",
+        "c:dusts/lignite",
         1
       ],
       "output": [
@@ -100,8 +100,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustChlorocalcite",
+        "tag",
+        "c:dusts/chlorocalcite",
         1
       ],
       "output": [
@@ -116,8 +116,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustMolysite",
+        "tag",
+        "c:dusts/molysite",
         1
       ],
       "output": [
@@ -132,8 +132,8 @@
     },
     {
       "input": [
-        "dict",
-        "crystalCinnabar",
+        "tag",
+        "c:crystals/cinnabar",
         1
       ],
       "output": [
@@ -165,8 +165,8 @@
     },
     {
       "input": [
-        "dict",
-        "gemSodalite",
+        "tag",
+        "c:gems/sodalite",
         1
       ],
       "output": [
@@ -198,8 +198,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustSodium",
+        "tag",
+        "c:dusts/sodium",
         1
       ],
       "fluid": [
@@ -209,8 +209,8 @@
     },
     {
       "input": [
-        "dict",
-        "dustLimestone",
+        "tag",
+        "c:dusts/limestone",
         1
       ],
       "output": [
@@ -225,8 +225,8 @@
     },
     {
       "input": [
-        "dict",
-        "logWood",
+        "tag",
+        "minecraft:logs",
         1
       ],
       "output": [
@@ -241,8 +241,8 @@
     },
     {
       "input": [
-        "dict",
-        "treeSapling",
+        "tag",
+        "minecraft:saplings",
         1
       ],
       "output": [

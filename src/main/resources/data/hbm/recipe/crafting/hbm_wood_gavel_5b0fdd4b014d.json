@@ -15,16 +15,13 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/slabwood"
+      "tag": "minecraft:wooden_slabs"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/logwood"
+      "tag": "minecraft:logs"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stickwood"
+      "tag": "c:rods/wooden"
     }
   }
 }

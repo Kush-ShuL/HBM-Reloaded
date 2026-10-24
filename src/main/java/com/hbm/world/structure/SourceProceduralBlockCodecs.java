@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public final class SourceProceduralBlockCodecs {
     public static BlockState resolve(String id,Block block,int metadata,int turns){
         int turn=turns&3;BlockState state=block.defaultBlockState();
+        if(block instanceof com.hbm.block.ore.ResourceOreBlock)return state; // The physical mineral identity has no metadata or rotation state.
         if(block instanceof com.hbm.compat.computercraft.cable.PaintableComputerCableBlock)return state.setValue(com.hbm.compat.computercraft.cable.PaintableComputerCableBlock.META,metadata); // Source plain BlockContainer/raw16; no invented rotation.
         if(block instanceof com.hbm.block.devtesters.EventTesterBlock)return state; // Source tester ignores all metadata/no transform.
         if(block instanceof com.hbm.block.devtesters.ObjTesterBlock)return state.setValue(com.hbm.block.devtesters.ObjTesterBlock.META,metadata); // Placement stores yaw but active renderer ignores it; source no rotation interface.
@@ -35,7 +36,7 @@ public final class SourceProceduralBlockCodecs {
         if(block instanceof com.hbm.machine.refueler.RefuelerBlock)return state.setValue(com.hbm.machine.refueler.RefuelerBlock.META,metadata); // Actual BlockContainer source has no INBTBlockTransformable.
         if(block instanceof com.hbm.machine.conveyorpartitioner.ConveyorPartitionerBlock)return state.setValue(com.hbm.machine.conveyorpartitioner.ConveyorPartitionerBlock.META,metadata); // Actual CranePartitioner ignores structure rotation, preserves raw16.
         if(block instanceof com.hbm.machine.conveyorrouter.CraneRouterBlock)return state; // Actual CraneRouter ignores all metadata and has no INBTBlockTransformable.
-        if(block instanceof com.hbm.block.cokestorage.CokeStorageBlock)return state.setValue(com.hbm.block.ore.LegacyOreBlock.LEGACY_META,metadata);
+        if(block instanceof com.hbm.block.cokestorage.CokeStorageBlock)return state;
         if(block instanceof com.hbm.block.masonry.AsphaltBlock)return state; // Source BlockSpeedy ignores all metadata/rotation.
         if(block instanceof com.hbm.armor.neutrinolens.PinkLogBlock log)return log.fromLegacy(metadata).rotate(rotation(turn));
         if(block instanceof com.hbm.world.glyphidhive.GlyphidSpawnerBlock)return state.setValue(com.hbm.world.glyphidhive.GlyphidSpawnerBlock.META,metadata);

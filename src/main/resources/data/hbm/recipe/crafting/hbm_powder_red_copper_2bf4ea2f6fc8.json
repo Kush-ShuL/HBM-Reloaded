@@ -7,12 +7,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustredstone"
+      "tag": "c:dusts/redstone"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcopper"
+      "tag": "c:dusts/copper"
     }
   ],
   "neoforge:conditions": [

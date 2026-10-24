@@ -15,16 +15,13 @@
       "item": "hbm:semtex"
     },
     "U": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockuranium238"
+      "tag": "c:storage_blocks/uranium_238"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottantalum"
+      "tag": "c:ingots/tantalum"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/billetplutonium239"
+      "tag": "hbm:billets/plutonium_239"
     }
   }
 }

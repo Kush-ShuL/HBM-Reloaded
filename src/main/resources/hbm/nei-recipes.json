@@ -273,8 +273,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platecopper",
+          "kind": "tag",
+          "tag": "c:plates/copper",
           "count": 2
         },
         {
@@ -285,8 +285,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesaturnite",
+          "kind": "tag",
+          "tag": "c:plates/saturnite",
           "count": 1
         }
       ],
@@ -311,18 +311,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotworkersalloy",
+          "kind": "tag",
+          "tag": "c:ingots/workers_alloy",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustanyplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plastic/dusts",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotdurasteel",
+          "kind": "tag",
+          "tag": "c:ingots/dura_steel",
           "count": 1
         }
       ],
@@ -354,13 +354,13 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/billeturanium238",
+          "kind": "tag",
+          "tag": "hbm:billets/uranium_238",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustniobium",
+          "kind": "tag",
+          "tag": "c:dusts/niobium",
           "count": 1
         }
       ],
@@ -385,8 +385,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlead",
+          "kind": "tag",
+          "tag": "c:dusts/lead",
           "count": 4
         },
         {
@@ -418,8 +418,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotasbestos",
+          "kind": "tag",
+          "tag": "c:ingots/asbestos",
           "count": 1
         },
         {
@@ -451,8 +451,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcoal",
+          "kind": "tag",
+          "tag": "c:dusts/coal",
           "count": 4
         },
         {
@@ -491,13 +491,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platedurasteel",
+          "kind": "tag",
+          "tag": "c:plates/dura_steel",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetitanium",
+          "kind": "tag",
+          "tag": "c:plates/titanium",
           "count": 4
         },
         {
@@ -529,23 +529,23 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplelead",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/lead",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotberyllium",
+          "kind": "tag",
+          "tag": "c:ingots/beryllium",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platedurasteel",
+          "kind": "tag",
+          "tag": "c:plates/dura_steel",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotasbestos",
+          "kind": "tag",
+          "tag": "c:ingots/asbestos",
           "count": 4
         }
       ],
@@ -570,18 +570,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wirefinemingrade",
+          "kind": "tag",
+          "tag": "hbm:wires/fine/mingrade",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustnetherquartz",
+          "kind": "tag",
+          "tag": "c:dusts/nether_quartz",
           "count": 2
         }
       ],
@@ -606,18 +606,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wirefinegold",
+          "kind": "tag",
+          "tag": "hbm:wires/fine/gold",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/billetsilicon",
+          "kind": "tag",
+          "tag": "hbm:billets/silicon",
           "count": 1
         }
       ],
@@ -642,13 +642,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplelead",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/lead",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platecopper",
+          "kind": "tag",
+          "tag": "c:plates/copper",
           "count": 4
         },
         {
@@ -680,13 +680,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platecopper",
+          "kind": "tag",
+          "tag": "c:plates/copper",
           "count": 3
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wirefinetungsten",
+          "kind": "tag",
+          "tag": "hbm:wires/fine/tungsten",
           "count": 4
         }
       ],
@@ -711,13 +711,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetripledurasteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/dura_steel",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetitanium",
+          "kind": "tag",
+          "tag": "c:plates/titanium",
           "count": 8
         }
       ],
@@ -742,18 +742,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetripledurasteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/dura_steel",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platecopper",
+          "kind": "tag",
+          "tag": "c:plates/copper",
           "count": 24
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wiredensegold",
+          "kind": "tag",
+          "tag": "hbm:wires/dense/gold",
           "count": 16
         },
         {
@@ -784,13 +784,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/shellsteel",
+          "kind": "tag",
+          "tag": "hbm:gun_parts/shells/steel",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplelead",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/lead",
           "count": 4
         },
         {
@@ -801,8 +801,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dyebrown",
+          "kind": "tag",
+          "tag": "c:dyes/brown",
           "count": 3
         }
       ],
@@ -827,8 +827,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlithium",
+          "kind": "tag",
+          "tag": "c:dusts/lithium",
           "count": 1
         }
       ],
@@ -853,8 +853,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustberyllium",
+          "kind": "tag",
+          "tag": "c:dusts/beryllium",
           "count": 1
         }
       ],
@@ -879,8 +879,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcoal",
+          "kind": "tag",
+          "tag": "c:dusts/coal",
           "count": 1
         }
       ],
@@ -905,8 +905,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcopper",
+          "kind": "tag",
+          "tag": "c:dusts/copper",
           "count": 1
         }
       ],
@@ -931,8 +931,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustplutonium",
+          "kind": "tag",
+          "tag": "c:dusts/plutonium",
           "count": 1
         }
       ],
@@ -957,13 +957,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/anyconcrete",
+          "kind": "tag",
+          "tag": "hbm:concrete",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platecmbsteel",
+          "kind": "tag",
+          "tag": "c:plates/cmb_steel",
           "count": 4
         }
       ],
@@ -988,8 +988,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotmagnetizedtungsten",
+          "kind": "tag",
+          "tag": "c:ingots/magnetized_tungsten",
           "count": 8
         },
         {
@@ -1028,18 +1028,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotdurasteel",
+          "kind": "tag",
+          "tag": "c:ingots/dura_steel",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplesteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/steel",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wiredensemingrade",
+          "kind": "tag",
+          "tag": "hbm:wires/dense/mingrade",
           "count": 1
         }
       ],
@@ -1064,13 +1064,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platecopper",
+          "kind": "tag",
+          "tag": "c:plates/copper",
           "count": 4
         },
         {
@@ -1102,13 +1102,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotsteel",
+          "kind": "tag",
+          "tag": "c:ingots/steel",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingottungsten",
+          "kind": "tag",
+          "tag": "c:ingots/tungsten",
           "count": 4
         }
       ],
@@ -1146,8 +1146,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 16
         }
       ],
@@ -1175,18 +1175,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotdurasteel",
+          "kind": "tag",
+          "tag": "c:ingots/dura_steel",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plastic/ingots",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingottitanium",
+          "kind": "tag",
+          "tag": "c:ingots/titanium",
           "count": 8
         }
       ],
@@ -1224,8 +1224,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 24
         }
       ],
@@ -1253,18 +1253,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotworkersalloy",
+          "kind": "tag",
+          "tag": "c:ingots/workers_alloy",
           "count": 16
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotrubber",
+          "kind": "tag",
+          "tag": "c:ingots/rubber",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotniobium",
+          "kind": "tag",
+          "tag": "c:ingots/niobium",
           "count": 4
         }
       ],
@@ -1302,8 +1302,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 32
         }
       ],
@@ -1331,18 +1331,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy",
+          "kind": "tag",
+          "tag": "hbm:material_groups/resistant_alloy/ingots",
           "count": 20
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotworkersalloy",
+          "kind": "tag",
+          "tag": "c:ingots/workers_alloy",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotrubber",
+          "kind": "tag",
+          "tag": "c:ingots/rubber",
           "count": 8
         }
       ],
@@ -1380,8 +1380,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 48
         }
       ],
@@ -1409,18 +1409,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotferrouranium",
+          "kind": "tag",
+          "tag": "c:ingots/ferrouranium",
           "count": 24
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyresistantalloy",
+          "kind": "tag",
+          "tag": "hbm:material_groups/resistant_alloy/ingots",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotbismuth",
+          "kind": "tag",
+          "tag": "c:ingots/bismuth",
           "count": 4
         }
       ],
@@ -1458,8 +1458,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 56
         }
       ],
@@ -1487,13 +1487,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wiredensegold",
+          "kind": "tag",
+          "tag": "hbm:wires/dense/gold",
           "count": 16
         }
       ],
@@ -1521,13 +1521,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plastic/ingots",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wiredenseniobium",
+          "kind": "tag",
+          "tag": "hbm:wires/dense/niobium",
           "count": 24
         }
       ],
@@ -1555,13 +1555,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhardplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/hard_plastic/ingots",
           "count": 16
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingottantalum",
+          "kind": "tag",
+          "tag": "c:ingots/tantalum",
           "count": 24
         }
       ],
@@ -1589,8 +1589,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplecopper",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/copper",
           "count": 4
         },
         {
@@ -1622,13 +1622,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplesaturnite",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/saturnite",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplecopper",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/copper",
           "count": 4
         }
       ],
@@ -1653,8 +1653,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplesteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/steel",
           "count": 2
         },
         {
@@ -1686,13 +1686,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplesteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/steel",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/plateweaponsteel",
+          "kind": "tag",
+          "tag": "c:plates/weapon_steel",
           "count": 16
         }
       ],
@@ -1717,13 +1717,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platelead",
+          "kind": "tag",
+          "tag": "c:plates/lead",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/anyconcrete",
+          "kind": "tag",
+          "tag": "hbm:concrete",
           "count": 4
         }
       ],
@@ -1748,18 +1748,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platelead",
+          "kind": "tag",
+          "tag": "c:plates/lead",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/anyconcrete",
+          "kind": "tag",
+          "tag": "hbm:concrete",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ntmpipesteel",
+          "kind": "tag",
+          "tag": "hbm:pipes/steel",
           "count": 4
         }
       ],
@@ -1784,8 +1784,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesextuplezirconium",
+          "kind": "tag",
+          "tag": "hbm:plates/welded/zirconium",
           "count": 1
         },
         {
@@ -1817,23 +1817,23 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplesteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/steel",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotzirconium",
+          "kind": "tag",
+          "tag": "c:ingots/zirconium",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotsaturnite",
+          "kind": "tag",
+          "tag": "c:ingots/saturnite",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhardplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/hard_plastic/ingots",
           "count": 4
         }
       ],
@@ -1858,18 +1858,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplesteel",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/steel",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetriplecopper",
+          "kind": "tag",
+          "tag": "hbm:plates/cast/copper",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotrubber",
+          "kind": "tag",
+          "tag": "c:ingots/rubber",
           "count": 2
         }
       ],
@@ -1894,13 +1894,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive",
+          "kind": "tag",
+          "tag": "hbm:material_groups/highexplosive/ingots",
           "count": 1
         }
       ],
@@ -1925,8 +1925,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggetlead",
+          "kind": "tag",
+          "tag": "c:nuggets/lead",
           "count": 6
         }
       ],
@@ -1951,8 +1951,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platealuminum",
+          "kind": "tag",
+          "tag": "c:plates/aluminum",
           "count": 8
         },
         {
@@ -1963,18 +1963,18 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesaturnite",
+          "kind": "tag",
+          "tag": "c:plates/saturnite",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive",
+          "kind": "tag",
+          "tag": "hbm:material_groups/highexplosive/ingots",
           "count": 20
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plastic/ingots",
           "count": 4
         }
       ],
@@ -1999,13 +1999,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platealuminum",
+          "kind": "tag",
+          "tag": "c:plates/aluminum",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyplasticexplosive",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plasticexplosive/ingots",
           "count": 4
         },
         {
@@ -2023,8 +2023,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotrubber",
+          "kind": "tag",
+          "tag": "c:ingots/rubber",
           "count": 2
         }
       ],
@@ -2049,8 +2049,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wirefinegold",
+          "kind": "tag",
+          "tag": "hbm:wires/fine/gold",
           "count": 24
         }
       ],
@@ -2075,13 +2075,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggetplutonium239",
+          "kind": "tag",
+          "tag": "c:nuggets/plutonium_239",
           "count": 7
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggeturanium238",
+          "kind": "tag",
+          "tag": "c:nuggets/uranium_238",
           "count": 3
         }
       ],
@@ -2113,8 +2113,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 4
         }
       ],
@@ -2139,8 +2139,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggeturanium235",
+          "kind": "tag",
+          "tag": "c:nuggets/uranium_235",
           "count": 18
         }
       ],
@@ -2165,8 +2165,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggeturanium235",
+          "kind": "tag",
+          "tag": "c:nuggets/uranium_235",
           "count": 9
         }
       ],
@@ -2198,18 +2198,18 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/plateiron",
+          "kind": "tag",
+          "tag": "c:plates/iron",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platealuminum",
+          "kind": "tag",
+          "tag": "c:plates/aluminum",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wirefinemingrade",
+          "kind": "tag",
+          "tag": "hbm:wires/fine/mingrade",
           "count": 4
         }
       ],
@@ -2234,13 +2234,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggetplutonium239",
+          "kind": "tag",
+          "tag": "c:nuggets/plutonium_239",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggetberyllium",
+          "kind": "tag",
+          "tag": "c:nuggets/beryllium",
           "count": 2
         }
       ],
@@ -2265,13 +2265,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggeturanium238",
+          "kind": "tag",
+          "tag": "c:nuggets/uranium_238",
           "count": 24
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platelead",
+          "kind": "tag",
+          "tag": "c:plates/lead",
           "count": 6
         }
       ],
@@ -2296,13 +2296,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/plateweaponsteel",
+          "kind": "tag",
+          "tag": "c:plates/weapon_steel",
           "count": 16
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetitanium",
+          "kind": "tag",
+          "tag": "c:plates/titanium",
           "count": 16
         },
         {
@@ -2333,8 +2333,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platedurasteel",
+          "kind": "tag",
+          "tag": "c:plates/dura_steel",
           "count": 8
         },
         {
@@ -2387,8 +2387,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustredphosphorus",
+          "kind": "tag",
+          "tag": "c:dusts/red_phosphorus",
           "count": 2
         }
       ],
@@ -2420,8 +2420,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustredphosphorus",
+          "kind": "tag",
+          "tag": "c:dusts/red_phosphorus",
           "count": 4
         }
       ],
@@ -2453,8 +2453,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustredphosphorus",
+          "kind": "tag",
+          "tag": "c:dusts/red_phosphorus",
           "count": 8
         }
       ],
@@ -2591,8 +2591,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive",
+          "kind": "tag",
+          "tag": "hbm:material_groups/highexplosive/ingots",
           "count": 2
         }
       ],
@@ -2624,8 +2624,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive",
+          "kind": "tag",
+          "tag": "hbm:material_groups/highexplosive/ingots",
           "count": 4
         }
       ],
@@ -2657,8 +2657,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive",
+          "kind": "tag",
+          "tag": "hbm:material_groups/highexplosive/ingots",
           "count": 8
         }
       ],
@@ -2683,23 +2683,23 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotdurasteel",
+          "kind": "tag",
+          "tag": "c:ingots/dura_steel",
           "count": 32
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotboron",
+          "kind": "tag",
+          "tag": "c:ingots/boron",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platelead",
+          "kind": "tag",
+          "tag": "c:plates/lead",
           "count": 16
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ntmpipesteel",
+          "kind": "tag",
+          "tag": "hbm:pipes/steel",
           "count": 4
         }
       ],
@@ -2724,13 +2724,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetitanium",
+          "kind": "tag",
+          "tag": "c:plates/titanium",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plastic/ingots",
           "count": 2
         }
       ],
@@ -2755,8 +2755,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemcoal",
+          "kind": "tag",
+          "tag": "c:gems/coal",
           "count": 1
         },
         {
@@ -2786,8 +2786,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemanycoke",
+          "kind": "tag",
+          "tag": "c:gems/coke",
           "count": 1
         },
         {
@@ -2922,8 +2922,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 1
         },
         {
@@ -2997,13 +2997,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotilmenite",
+          "kind": "tag",
+          "tag": "c:ingots/ilmenite",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemanycoke",
+          "kind": "tag",
+          "tag": "c:gems/coke",
           "count": 1
         },
         {
@@ -3184,8 +3184,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/anytar",
+          "kind": "tag",
+          "tag": "hbm:tars",
           "count": 1
         }
       ],
@@ -3216,13 +3216,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/anytar",
+          "kind": "tag",
+          "tag": "hbm:tars",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlead",
+          "kind": "tag",
+          "tag": "c:dusts/lead",
           "count": 1
         },
         {
@@ -3331,13 +3331,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platesteel",
+          "kind": "tag",
+          "tag": "c:plates/steel",
           "count": 4
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotlead",
+          "kind": "tag",
+          "tag": "c:ingots/lead",
           "count": 4
         },
         {
@@ -3371,18 +3371,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlithium",
+          "kind": "tag",
+          "tag": "c:dusts/lithium",
           "count": 12
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcobalt",
+          "kind": "tag",
+          "tag": "c:dusts/cobalt",
           "count": 8
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/plastic/ingots",
           "count": 4
         },
         {
@@ -3416,18 +3416,18 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsodium",
+          "kind": "tag",
+          "tag": "c:dusts/sodium",
           "count": 24
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustiron",
+          "kind": "tag",
+          "tag": "c:dusts/iron",
           "count": 24
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotanyhardplastic",
+          "kind": "tag",
+          "tag": "hbm:material_groups/hard_plastic/ingots",
           "count": 12
         }
       ],
@@ -3455,13 +3455,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustschrabidium",
+          "kind": "tag",
+          "tag": "c:dusts/schrabidium",
           "count": 24
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze",
+          "kind": "tag",
+          "tag": "hbm:material_groups/bismoid_bronze/plates/cast",
           "count": 8
         },
         {
@@ -3495,8 +3495,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/wiredensebscco",
+          "kind": "tag",
+          "tag": "hbm:wires/dense/bscco",
           "count": 24
         },
         {
@@ -3550,8 +3550,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 1
         },
         {
@@ -3607,8 +3607,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsulfur",
+          "kind": "tag",
+          "tag": "c:dusts/sulfur",
           "count": 1
         },
         {
@@ -3644,8 +3644,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsaltpeter",
+          "kind": "tag",
+          "tag": "c:dusts/saltpeter",
           "count": 1
         },
         {
@@ -3714,8 +3714,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustiron",
+          "kind": "tag",
+          "tag": "c:dusts/iron",
           "count": 1
         },
         {
@@ -3746,13 +3746,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcoltan",
+          "kind": "tag",
+          "tag": "c:dusts/coltan",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcoal",
+          "kind": "tag",
+          "tag": "c:dusts/coal",
           "count": 1
         },
         {
@@ -3816,8 +3816,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 1
         },
         {
@@ -3979,13 +3979,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/billeturanium",
+          "kind": "tag",
+          "tag": "hbm:billets/uranium",
           "count": 2
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsulfur",
+          "kind": "tag",
+          "tag": "c:dusts/sulfur",
           "count": 2
         },
         {
@@ -4023,8 +4023,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 4
         },
         {
@@ -4061,13 +4061,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustplutonium",
+          "kind": "tag",
+          "tag": "c:dusts/plutonium",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 3
         },
         {
@@ -4097,13 +4097,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustschrabidium",
+          "kind": "tag",
+          "tag": "c:dusts/schrabidium",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsulfur",
+          "kind": "tag",
+          "tag": "c:dusts/sulfur",
           "count": 2
         },
         {
@@ -4218,8 +4218,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 8
         },
         {
@@ -4256,8 +4256,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreiron",
+          "kind": "tag",
+          "tag": "c:ores/iron",
           "count": 1
         },
         {
@@ -4279,11 +4279,8 @@
         {
           "kind": "item",
           "stack": {
-            "id": "hbm:ingot_raw",
-            "count": 2,
-            "components": {
-              "hbm:legacy_metadata": 41
-            }
+            "id": "hbm:autogen/ingot_raw/m41",
+            "count": 2
           }
         }
       ],
@@ -4298,13 +4295,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotcopper",
+          "kind": "tag",
+          "tag": "c:ingots/copper",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustredstone",
+          "kind": "tag",
+          "tag": "c:dusts/redstone",
           "count": 1
         }
       ],
@@ -4328,13 +4325,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcopper",
+          "kind": "tag",
+          "tag": "c:dusts/copper",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustredstone",
+          "kind": "tag",
+          "tag": "c:dusts/redstone",
           "count": 1
         }
       ],
@@ -4358,13 +4355,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotcopper",
+          "kind": "tag",
+          "tag": "c:ingots/copper",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotredstone",
+          "kind": "tag",
+          "tag": "c:ingots/redstone",
           "count": 1
         }
       ],
@@ -4388,13 +4385,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcopper",
+          "kind": "tag",
+          "tag": "c:dusts/copper",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotredstone",
+          "kind": "tag",
+          "tag": "c:ingots/redstone",
           "count": 1
         }
       ],
@@ -4418,13 +4415,13 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecopper",
+          "kind": "tag",
+          "tag": "c:ores/copper",
           "count": 1
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustredstone",
+          "kind": "tag",
+          "tag": "c:dusts/redstone",
           "count": 6
         }
       ],
@@ -4439,11 +4436,8 @@
         {
           "kind": "item",
           "stack": {
-            "id": "hbm:ingot_raw",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 41
-            }
+            "id": "hbm:autogen/ingot_raw/m41",
+            "count": 1
           }
         }
       ],
@@ -4458,8 +4452,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotcobalt",
+          "kind": "tag",
+          "tag": "c:ingots/cobalt",
           "count": 1
         },
         {
@@ -4490,8 +4484,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotgold",
+          "kind": "tag",
+          "tag": "c:ingots/gold",
           "count": 1
         },
         {
@@ -4522,8 +4516,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustaluminum",
+          "kind": "tag",
+          "tag": "c:dusts/aluminum",
           "count": 1
         },
         {
@@ -4554,8 +4548,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlimestone",
+          "kind": "tag",
+          "tag": "c:dusts/limestone",
           "count": 1
         },
         {
@@ -4833,8 +4827,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orehematite",
+          "kind": "tag",
+          "tag": "c:ores/hematite",
           "count": 1
         },
         {
@@ -4900,8 +4894,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orebauxite",
+          "kind": "tag",
+          "tag": "c:ores/bauxite",
           "count": 1
         },
         {
@@ -4938,11 +4932,8 @@
             {
               "kind": "item",
               "stack": {
-                "id": "hbm:stone_resource",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 2
-                }
+                "id": "hbm:stone_resource_hematite",
+                "count": 1
               },
               "chance": 1,
               "weight": 25,
@@ -5014,8 +5005,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dyeblue",
+          "kind": "tag",
+          "tag": "c:dyes/blue",
           "count": 16
         }
       ],
@@ -5106,8 +5097,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecoal",
+          "kind": "tag",
+          "tag": "c:ores/coal",
           "count": 1
         }
       ],
@@ -5151,8 +5142,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orelignite",
+          "kind": "tag",
+          "tag": "c:ores/lignite",
           "count": 1
         }
       ],
@@ -5196,8 +5187,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreiron",
+          "kind": "tag",
+          "tag": "c:ores/iron",
           "count": 1
         }
       ],
@@ -5241,8 +5232,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oregold",
+          "kind": "tag",
+          "tag": "c:ores/gold",
           "count": 1
         }
       ],
@@ -5286,8 +5277,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orediamond",
+          "kind": "tag",
+          "tag": "c:ores/diamond",
           "count": 1
         }
       ],
@@ -5331,8 +5322,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreemerald",
+          "kind": "tag",
+          "tag": "c:ores/emerald",
           "count": 1
         }
       ],
@@ -5376,8 +5367,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oretitanium",
+          "kind": "tag",
+          "tag": "c:ores/titanium",
           "count": 1
         }
       ],
@@ -5421,8 +5412,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orenetherquartz",
+          "kind": "tag",
+          "tag": "hbm:ores_in_ground/nether/quartz",
           "count": 1
         }
       ],
@@ -5466,8 +5457,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oretungsten",
+          "kind": "tag",
+          "tag": "c:ores/tungsten",
           "count": 1
         }
       ],
@@ -5511,8 +5502,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecopper",
+          "kind": "tag",
+          "tag": "c:ores/copper",
           "count": 1
         }
       ],
@@ -5556,8 +5547,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orealuminum",
+          "kind": "tag",
+          "tag": "c:ores/aluminum",
           "count": 1
         }
       ],
@@ -5601,8 +5592,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orelead",
+          "kind": "tag",
+          "tag": "c:ores/lead",
           "count": 1
         }
       ],
@@ -5646,8 +5637,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreschrabidium",
+          "kind": "tag",
+          "tag": "c:ores/schrabidium",
           "count": 1
         }
       ],
@@ -5691,8 +5682,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orerareearth",
+          "kind": "tag",
+          "tag": "c:ores/rare_earth",
           "count": 1
         }
       ],
@@ -5736,8 +5727,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreplutonium",
+          "kind": "tag",
+          "tag": "c:ores/plutonium",
           "count": 1
         }
       ],
@@ -5781,8 +5772,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreuranium",
+          "kind": "tag",
+          "tag": "c:ores/uranium",
           "count": 1
         }
       ],
@@ -5826,8 +5817,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orethorium232",
+          "kind": "tag",
+          "tag": "c:ores/thorium_232",
           "count": 1
         }
       ],
@@ -5871,8 +5862,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreberyllium",
+          "kind": "tag",
+          "tag": "c:ores/beryllium",
           "count": 1
         }
       ],
@@ -5916,8 +5907,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orefluorite",
+          "kind": "tag",
+          "tag": "c:ores/fluorite",
           "count": 1
         }
       ],
@@ -5961,8 +5952,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreredstone",
+          "kind": "tag",
+          "tag": "c:ores/redstone",
           "count": 1
         }
       ],
@@ -6053,8 +6044,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orelapis",
+          "kind": "tag",
+          "tag": "c:ores/lapis",
           "count": 1
         }
       ],
@@ -6145,8 +6136,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecobalt",
+          "kind": "tag",
+          "tag": "c:ores/cobalt",
           "count": 1
         }
       ],
@@ -7546,8 +7537,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemcoal",
+          "kind": "tag",
+          "tag": "c:gems/coal",
           "count": 1
         }
       ],
@@ -7569,8 +7560,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcoal",
+          "kind": "tag",
+          "tag": "c:dusts/coal",
           "count": 1
         }
       ],
@@ -7592,8 +7583,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemlignite",
+          "kind": "tag",
+          "tag": "c:gems/lignite",
           "count": 1
         }
       ],
@@ -7615,8 +7606,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlignite",
+          "kind": "tag",
+          "tag": "c:dusts/lignite",
           "count": 1
         }
       ],
@@ -7638,8 +7629,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oiltar",
+          "kind": "tag",
+          "tag": "hbm:tars/crude_oil",
           "count": 1
         }
       ],
@@ -7661,8 +7652,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/cracktar",
+          "kind": "tag",
+          "tag": "hbm:tars/cracked_oil",
           "count": 1
         }
       ],
@@ -7684,8 +7675,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/coaltar",
+          "kind": "tag",
+          "tag": "hbm:tars/coal",
           "count": 1
         }
       ],
@@ -7707,8 +7698,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsodium",
+          "kind": "tag",
+          "tag": "c:dusts/sodium",
           "count": 1
         }
       ],
@@ -7730,8 +7721,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotlead",
+          "kind": "tag",
+          "tag": "c:ingots/lead",
           "count": 1
         }
       ],
@@ -7753,8 +7744,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlead",
+          "kind": "tag",
+          "tag": "c:dusts/lead",
           "count": 1
         }
       ],
@@ -7776,8 +7767,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/blocklead",
+          "kind": "tag",
+          "tag": "c:storage_blocks/lead",
           "count": 1
         }
       ],
@@ -8199,8 +8190,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemcoal",
+          "kind": "tag",
+          "tag": "c:gems/coal",
           "count": 1
         }
       ],
@@ -8229,8 +8220,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcoal",
+          "kind": "tag",
+          "tag": "c:dusts/coal",
           "count": 1
         }
       ],
@@ -8291,8 +8282,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemlignite",
+          "kind": "tag",
+          "tag": "c:gems/lignite",
           "count": 1
         }
       ],
@@ -8321,8 +8312,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlignite",
+          "kind": "tag",
+          "tag": "c:dusts/lignite",
           "count": 1
         }
       ],
@@ -8383,8 +8374,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustchlorocalcite",
+          "kind": "tag",
+          "tag": "c:dusts/chlorocalcite",
           "count": 1
         }
       ],
@@ -8413,8 +8404,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustmolysite",
+          "kind": "tag",
+          "tag": "c:dusts/molysite",
           "count": 1
         }
       ],
@@ -8443,8 +8434,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/crystalcinnabar",
+          "kind": "tag",
+          "tag": "c:crystals/cinnabar",
           "count": 1
         }
       ],
@@ -8505,8 +8496,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/gemsodalite",
+          "kind": "tag",
+          "tag": "c:gems/sodalite",
           "count": 1
         }
       ],
@@ -8567,8 +8558,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsodium",
+          "kind": "tag",
+          "tag": "c:dusts/sodium",
           "count": 1
         }
       ],
@@ -8590,8 +8581,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustlimestone",
+          "kind": "tag",
+          "tag": "c:dusts/limestone",
           "count": 1
         }
       ],
@@ -9596,11 +9587,8 @@
         {
           "kind": "item",
           "stack": {
-            "id": "hbm:stone_resource",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 4
-            }
+            "id": "hbm:stone_resource_limestone",
+            "count": 1
           }
         }
       ],
@@ -12252,23 +12240,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotiron",
+              "kind": "tag",
+              "tag": "c:ingots/iron",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/plateiron",
+              "kind": "tag",
+              "tag": "c:plates/iron",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemiron",
+              "kind": "tag",
+              "tag": "c:gems/iron",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustiron",
+              "kind": "tag",
+              "tag": "c:dusts/iron",
               "count": 1
             }
           ]
@@ -12277,23 +12265,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotcoal",
+              "kind": "tag",
+              "tag": "c:ingots/coal",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/platecoal",
+              "kind": "tag",
+              "tag": "c:plates/coal",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemcoal",
+              "kind": "tag",
+              "tag": "c:gems/coal",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustcoal",
+              "kind": "tag",
+              "tag": "c:dusts/coal",
               "count": 1
             }
           ]
@@ -12321,23 +12309,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotiron",
+              "kind": "tag",
+              "tag": "c:ingots/iron",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/plateiron",
+              "kind": "tag",
+              "tag": "c:plates/iron",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemiron",
+              "kind": "tag",
+              "tag": "c:gems/iron",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustiron",
+              "kind": "tag",
+              "tag": "c:dusts/iron",
               "count": 1
             }
           ]
@@ -12346,23 +12334,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotanycoke",
+              "kind": "tag",
+              "tag": "hbm:material_groups/coke/ingots",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/plateanycoke",
+              "kind": "tag",
+              "tag": "hbm:material_groups/coke/plates",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemanycoke",
+              "kind": "tag",
+              "tag": "c:gems/coke",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustanycoke",
+              "kind": "tag",
+              "tag": "hbm:material_groups/coke/dusts",
               "count": 1
             }
           ]
@@ -12387,31 +12375,31 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreiron",
+          "kind": "tag",
+          "tag": "c:ores/iron",
           "count": 1
         },
         {
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotcoal",
+              "kind": "tag",
+              "tag": "c:ingots/coal",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/platecoal",
+              "kind": "tag",
+              "tag": "c:plates/coal",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemcoal",
+              "kind": "tag",
+              "tag": "c:gems/coal",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustcoal",
+              "kind": "tag",
+              "tag": "c:dusts/coal",
               "count": 1
             }
           ]
@@ -12436,31 +12424,31 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreiron",
+          "kind": "tag",
+          "tag": "c:ores/iron",
           "count": 1
         },
         {
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotanycoke",
+              "kind": "tag",
+              "tag": "hbm:material_groups/coke/ingots",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/plateanycoke",
+              "kind": "tag",
+              "tag": "hbm:material_groups/coke/plates",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemanycoke",
+              "kind": "tag",
+              "tag": "c:gems/coke",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustanycoke",
+              "kind": "tag",
+              "tag": "hbm:material_groups/coke/dusts",
               "count": 1
             }
           ]
@@ -12485,8 +12473,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreiron",
+          "kind": "tag",
+          "tag": "c:ores/iron",
           "count": 1
         },
         {
@@ -12519,23 +12507,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotcopper",
+              "kind": "tag",
+              "tag": "c:ingots/copper",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/platecopper",
+              "kind": "tag",
+              "tag": "c:plates/copper",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemcopper",
+              "kind": "tag",
+              "tag": "c:gems/copper",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustcopper",
+              "kind": "tag",
+              "tag": "c:dusts/copper",
               "count": 1
             }
           ]
@@ -12544,23 +12532,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotredstone",
+              "kind": "tag",
+              "tag": "c:ingots/redstone",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/plateredstone",
+              "kind": "tag",
+              "tag": "c:plates/redstone",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemredstone",
+              "kind": "tag",
+              "tag": "c:gems/redstone",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustredstone",
+              "kind": "tag",
+              "tag": "c:dusts/redstone",
               "count": 1
             }
           ]
@@ -12596,8 +12584,8 @@
           }
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/slimeball",
+          "kind": "tag",
+          "tag": "c:slime_balls",
           "count": 1
         }
       ],
@@ -12623,30 +12611,30 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingottungsten",
+              "kind": "tag",
+              "tag": "c:ingots/tungsten",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/platetungsten",
+              "kind": "tag",
+              "tag": "c:plates/tungsten",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemtungsten",
+              "kind": "tag",
+              "tag": "c:gems/tungsten",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dusttungsten",
+              "kind": "tag",
+              "tag": "c:dusts/tungsten",
               "count": 1
             }
           ]
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggetschrabidium",
+          "kind": "tag",
+          "tag": "c:nuggets/schrabidium",
           "count": 1
         }
       ],
@@ -12672,30 +12660,30 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotsteel",
+              "kind": "tag",
+              "tag": "c:ingots/steel",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/platesteel",
+              "kind": "tag",
+              "tag": "c:plates/steel",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemsteel",
+              "kind": "tag",
+              "tag": "c:gems/steel",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/duststeel",
+              "kind": "tag",
+              "tag": "c:dusts/steel",
               "count": 1
             }
           ]
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/nuggettechnetium99",
+          "kind": "tag",
+          "tag": "c:nuggets/technetium_99",
           "count": 1
         }
       ],
@@ -12718,8 +12706,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/plategold",
+          "kind": "tag",
+          "tag": "c:plates/gold",
           "count": 1
         },
         {
@@ -12752,23 +12740,23 @@
           "kind": "alternatives",
           "alternatives": [
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/ingotcobalt",
+              "kind": "tag",
+              "tag": "c:ingots/cobalt",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/platecobalt",
+              "kind": "tag",
+              "tag": "c:plates/cobalt",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/gemcobalt",
+              "kind": "tag",
+              "tag": "c:gems/cobalt",
               "count": 1
             },
             {
-              "kind": "ore",
-              "tag": "hbm:legacy_ore_dict/dustcobalt",
+              "kind": "tag",
+              "tag": "c:dusts/cobalt",
               "count": 1
             }
           ]
@@ -12806,8 +12794,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsaltpeter",
+          "kind": "tag",
+          "tag": "c:dusts/saltpeter",
           "count": 1
         }
       ],
@@ -12943,8 +12931,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsulfur",
+          "kind": "tag",
+          "tag": "c:dusts/sulfur",
           "count": 1
         }
       ],
@@ -12973,8 +12961,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 1
         }
       ],
@@ -13103,8 +13091,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsulfur",
+          "kind": "tag",
+          "tag": "c:dusts/sulfur",
           "count": 1
         }
       ],
@@ -13359,8 +13347,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsulfur",
+          "kind": "tag",
+          "tag": "c:dusts/sulfur",
           "count": 1
         }
       ],
@@ -13389,8 +13377,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustsaltpeter",
+          "kind": "tag",
+          "tag": "c:dusts/saltpeter",
           "count": 1
         }
       ],
@@ -13736,8 +13724,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustthorium232",
+          "kind": "tag",
+          "tag": "c:dusts/thorium_232",
           "count": 1
         }
       ],
@@ -14063,8 +14051,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustchlorocalcite",
+          "kind": "tag",
+          "tag": "c:dusts/chlorocalcite",
           "count": 1
         }
       ],
@@ -14171,11 +14159,8 @@
         {
           "kind": "item",
           "stack": {
-            "id": "hbm:stone_resource",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 5
-            }
+            "id": "hbm:stone_resource_bauxite",
+            "count": 1
           }
         }
       ],
@@ -14236,8 +14221,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 3
         }
       ],
@@ -14304,8 +14289,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustfluorite",
+          "kind": "tag",
+          "tag": "c:dusts/fluorite",
           "count": 1
         }
       ],
@@ -14328,8 +14313,8 @@
     {
       "inputs": [
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/anytar",
+          "kind": "tag",
+          "tag": "hbm:tars",
           "count": 1
         }
       ],
@@ -14633,8 +14618,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecoal",
+          "kind": "tag",
+          "tag": "c:ores/coal",
           "count": 1
         }
       ],
@@ -14667,8 +14652,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreiron",
+          "kind": "tag",
+          "tag": "c:ores/iron",
           "count": 1
         }
       ],
@@ -14701,8 +14686,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oregold",
+          "kind": "tag",
+          "tag": "c:ores/gold",
           "count": 1
         }
       ],
@@ -14735,8 +14720,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreredstone",
+          "kind": "tag",
+          "tag": "c:ores/redstone",
           "count": 1
         }
       ],
@@ -14769,8 +14754,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orelapis",
+          "kind": "tag",
+          "tag": "c:ores/lapis",
           "count": 1
         }
       ],
@@ -14803,8 +14788,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orediamond",
+          "kind": "tag",
+          "tag": "c:ores/diamond",
           "count": 1
         }
       ],
@@ -14837,8 +14822,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreuranium",
+          "kind": "tag",
+          "tag": "c:ores/uranium",
           "count": 1
         }
       ],
@@ -14871,8 +14856,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreplutonium",
+          "kind": "tag",
+          "tag": "c:ores/plutonium",
           "count": 1
         }
       ],
@@ -14905,8 +14890,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oretitanium",
+          "kind": "tag",
+          "tag": "c:ores/titanium",
           "count": 1
         }
       ],
@@ -14939,8 +14924,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oresulfur",
+          "kind": "tag",
+          "tag": "c:ores/sulfur",
           "count": 1
         }
       ],
@@ -14973,8 +14958,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oresaltpeter",
+          "kind": "tag",
+          "tag": "c:ores/saltpeter",
           "count": 1
         }
       ],
@@ -15007,8 +14992,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecopper",
+          "kind": "tag",
+          "tag": "c:ores/copper",
           "count": 1
         }
       ],
@@ -15041,8 +15026,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oretungsten",
+          "kind": "tag",
+          "tag": "c:ores/tungsten",
           "count": 1
         }
       ],
@@ -15075,8 +15060,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orealuminum",
+          "kind": "tag",
+          "tag": "c:ores/aluminum",
           "count": 1
         }
       ],
@@ -15109,8 +15094,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orefluorite",
+          "kind": "tag",
+          "tag": "c:ores/fluorite",
           "count": 1
         }
       ],
@@ -15143,8 +15128,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreberyllium",
+          "kind": "tag",
+          "tag": "c:ores/beryllium",
           "count": 1
         }
       ],
@@ -15177,8 +15162,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orelead",
+          "kind": "tag",
+          "tag": "c:ores/lead",
           "count": 1
         }
       ],
@@ -15211,8 +15196,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/oreschrabidium",
+          "kind": "tag",
+          "tag": "c:ores/schrabidium",
           "count": 1
         }
       ],
@@ -15245,8 +15230,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orelithium",
+          "kind": "tag",
+          "tag": "c:ores/lithium",
           "count": 1
         }
       ],
@@ -15279,8 +15264,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecobalt",
+          "kind": "tag",
+          "tag": "c:ores/cobalt",
           "count": 1
         }
       ],
@@ -15313,8 +15298,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orerareearth",
+          "kind": "tag",
+          "tag": "c:ores/rare_earth",
           "count": 1
         }
       ],
@@ -15347,8 +15332,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/orecinnabar",
+          "kind": "tag",
+          "tag": "c:ores/cinnabar",
           "count": 1
         }
       ],
@@ -15489,8 +15474,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotschraranium",
+          "kind": "tag",
+          "tag": "c:ingots/schraranium",
           "count": 1
         }
       ],
@@ -15523,8 +15508,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotsilicon",
+          "kind": "tag",
+          "tag": "c:ingots/silicon",
           "count": 1
         }
       ],
@@ -15557,8 +15542,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/blockredstone",
+          "kind": "tag",
+          "tag": "c:storage_blocks/redstone",
           "count": 1
         }
       ],
@@ -15591,8 +15576,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/crystalcinnabar",
+          "kind": "tag",
+          "tag": "c:crystals/cinnabar",
           "count": 1
         }
       ],
@@ -15625,8 +15610,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustborax",
+          "kind": "tag",
+          "tag": "c:dusts/borax",
           "count": 1
         }
       ],
@@ -15971,8 +15956,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustdiamond",
+          "kind": "tag",
+          "tag": "c:dusts/diamond",
           "count": 1
         }
       ],
@@ -16002,8 +15987,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustemerald",
+          "kind": "tag",
+          "tag": "c:dusts/emerald",
           "count": 1
         }
       ],
@@ -16099,8 +16084,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustcadmium",
+          "kind": "tag",
+          "tag": "c:dusts/cadmium",
           "count": 1
         }
       ],
@@ -16130,8 +16115,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/ingotlatex",
+          "kind": "tag",
+          "tag": "c:ingots/latex",
           "count": 1
         }
       ],
@@ -16398,8 +16383,8 @@
           "pressure": 0
         },
         {
-          "kind": "ore",
-          "tag": "hbm:legacy_ore_dict/dustnetherquartz",
+          "kind": "tag",
+          "tag": "c:dusts/nether_quartz",
           "count": 1
         }
       ],

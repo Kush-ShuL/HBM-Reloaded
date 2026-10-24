@@ -15,13 +15,13 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           2
         ],
         [
-          "dict",
-          "wireDenseMingrade",
+          "tag",
+          "hbm:wires/dense/mingrade",
           2
         ]
       ]
@@ -41,18 +41,18 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateAluminum",
+          "tag",
+          "c:plates/aluminum",
           4
         ],
         [
-          "dict",
-          "ingotFiberglass",
+          "tag",
+          "c:ingots/fiberglass",
           4
         ],
         [
-          "dict",
-          "ingotAnyHardPlastic",
+          "tag",
+          "hbm:material_groups/hard_plastic/ingots",
           1
         ]
       ]
@@ -72,18 +72,18 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTitanium",
+          "tag",
+          "c:plates/titanium",
           2
         ],
         [
-          "dict",
-          "ingotFiberglass",
+          "tag",
+          "c:ingots/fiberglass",
           4
         ],
         [
-          "dict",
-          "ingotAnyHardPlastic",
+          "tag",
+          "hbm:material_groups/hard_plastic/ingots",
           1
         ]
       ]
@@ -103,22 +103,22 @@
       },
       "inputs": [
         [
-          "dict",
-          "ingotTungstenCarbide",
+          "tag",
+          "c:ingots/tungsten_carbide",
           2
         ],
         [
-          "dict",
-          "plateDuraSteel",
+          "tag",
+          "c:plates/dura_steel",
           1
         ]
       ]
     },
     {
       "output": [
-        "hbm:wire_dense",
+        "hbm:autogen/wire_dense/m2900",
         1,
-        2900
+        0
       ],
       "duration": 100,
       "consumption": 10000,
@@ -129,17 +129,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "wireFineCopper",
+          "tag",
+          "hbm:wires/fine/copper",
           8
         ]
       ]
     },
     {
       "output": [
-        "hbm:wire_dense",
+        "hbm:autogen/wire_dense/m31",
         1,
-        31
+        0
       ],
       "duration": 100,
       "consumption": 10000,
@@ -150,17 +150,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "wireFineMingrade",
+          "tag",
+          "hbm:wires/fine/mingrade",
           8
         ]
       ]
     },
     {
       "output": [
-        "hbm:wire_dense",
+        "hbm:autogen/wire_dense/m7900",
         1,
-        7900
+        0
       ],
       "duration": 100,
       "consumption": 10000,
@@ -171,17 +171,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "wireFineGold",
+          "tag",
+          "hbm:wires/fine/gold",
           8
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m2600",
         1,
-        2600
+        0
       ],
       "duration": 100,
       "consumption": 100,
@@ -192,17 +192,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleIron",
+          "tag",
+          "hbm:plates/cast/iron",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m30",
         1,
-        30
+        0
       ],
       "duration": 100,
       "consumption": 500,
@@ -213,17 +213,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleSteel",
+          "tag",
+          "hbm:plates/cast/steel",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m2900",
         1,
-        2900
+        0
       ],
       "duration": 200,
       "consumption": 1000,
@@ -234,17 +234,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleCopper",
+          "tag",
+          "hbm:plates/cast/copper",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m2200",
         1,
-        2200
+        0
       ],
       "duration": 600,
       "consumption": 50000,
@@ -255,17 +255,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleTitanium",
+          "tag",
+          "hbm:plates/cast/titanium",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m4000",
         1,
-        4000
+        0
       ],
       "duration": 600,
       "consumption": 10000,
@@ -276,17 +276,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleZirconium",
+          "tag",
+          "hbm:plates/cast/zirconium",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m1300",
         1,
-        1300
+        0
       ],
       "duration": 300,
       "consumption": 10000,
@@ -297,17 +297,17 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleAluminum",
+          "tag",
+          "hbm:plates/cast/aluminum",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m36",
         1,
-        36
+        0
       ],
       "duration": 1200,
       "consumption": 1000000,
@@ -323,17 +323,17 @@
       ],
       "inputs": [
         [
-          "dict",
-          "plateTripleTcAlloy",
+          "tag",
+          "hbm:plates/cast/tc_alloy",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m43",
         1,
-        43
+        0
       ],
       "duration": 1200,
       "consumption": 1000000,
@@ -349,17 +349,17 @@
       ],
       "inputs": [
         [
-          "dict",
-          "plateTripleCdAlloy",
+          "tag",
+          "hbm:plates/cast/cd_alloy",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m7400",
         1,
-        7400
+        0
       ],
       "duration": 1200,
       "consumption": 250000,
@@ -375,17 +375,17 @@
       ],
       "inputs": [
         [
-          "dict",
-          "plateTripleTungsten",
+          "tag",
+          "hbm:plates/cast/tungsten",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m39",
         1,
-        39
+        0
       ],
       "duration": 1200,
       "consumption": 10000000,
@@ -401,17 +401,17 @@
       ],
       "inputs": [
         [
-          "dict",
-          "plateTripleCMBSteel",
+          "tag",
+          "hbm:plates/cast/cmb_steel",
           2
         ]
       ]
     },
     {
       "output": [
-        "hbm:plate_welded",
+        "hbm:autogen/plate_welded/m7699",
         1,
-        7699
+        0
       ],
       "duration": 6000,
       "consumption": 50000000,
@@ -427,8 +427,8 @@
       ],
       "inputs": [
         [
-          "dict",
-          "plateTripleOsmiridium",
+          "tag",
+          "hbm:plates/cast/osmiridium",
           2
         ]
       ]
@@ -448,18 +448,18 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           4
         ],
         [
-          "dict",
-          "wireFineAluminum",
+          "tag",
+          "hbm:wires/fine/aluminum",
           4
         ],
         [
-          "dict",
-          "plateCopper",
+          "tag",
+          "c:plates/copper",
           4
         ]
       ]
@@ -479,8 +479,8 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           8
         ],
         [
@@ -490,8 +490,8 @@
           0
         ],
         [
-          "dict",
-          "ingotGraphite",
+          "tag",
+          "c:ingots/graphite",
           8
         ]
       ]
@@ -511,8 +511,8 @@
       },
       "inputs": [
         [
-          "dict",
-          "ingotDuraSteel",
+          "tag",
+          "c:ingots/dura_steel",
           10
         ],
         [
@@ -522,8 +522,8 @@
           0
         ],
         [
-          "dict",
-          "ingotTungstenCarbide",
+          "tag",
+          "c:ingots/tungsten_carbide",
           12
         ]
       ]
@@ -543,13 +543,13 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateAluminum",
+          "tag",
+          "c:plates/aluminum",
           6
         ],
         [
-          "dict",
-          "plateCopper",
+          "tag",
+          "c:plates/copper",
           4
         ],
         [
@@ -575,13 +575,13 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateTripleAluminum",
+          "tag",
+          "hbm:plates/cast/aluminum",
           4
         ],
         [
-          "dict",
-          "plateTitanium",
+          "tag",
+          "c:plates/titanium",
           8
         ],
         [
@@ -607,13 +607,13 @@
       },
       "inputs": [
         [
-          "dict",
-          "plateSextupleAluminum",
+          "tag",
+          "hbm:plates/welded/aluminum",
           8
         ],
         [
-          "dict",
-          "plateSaturnite",
+          "tag",
+          "c:plates/saturnite",
           12
         ],
         [
@@ -639,8 +639,8 @@
       },
       "inputs": [
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           3
         ],
         [
@@ -808,8 +808,8 @@
       },
       "inputs": [
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         [

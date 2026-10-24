@@ -12,19 +12,16 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plategunmetal"
+      "tag": "c:plates/gun_metal"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsteel"
+      "tag": "c:ingots/steel"
     },
     "C": {
       "item": "minecraft:crafting_table"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blocksteel"
+      "tag": "c:storage_blocks/steel"
     }
   }
 }

@@ -2,7 +2,7 @@ package com.hbm.item.food;
 
 import com.hbm.fluid.FluidContainerConfig;
 import com.hbm.fluid.HbmFluids;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.recipe.SourceFluidContainerIngredient;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -19,7 +19,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
-/** Preserve source potion metadata and getDict(quantity)'s live native container naming. */
+/** Match potion state and current fluid-container contents directly. */
 public final class FoodIngredients {
     private static final DeferredRegister<IngredientType<?>> TYPES=DeferredRegister.create(NeoForgeRegistries.Keys.INGREDIENT_TYPES,"hbm");
     private static final DeferredHolder<IngredientType<?>,IngredientType<SourceWater>> WATER=TYPES.register("source_water_potion",()->new IngredientType<>(SourceWater.CODEC));
@@ -34,9 +34,9 @@ public final class FoodIngredients {
     }
     public record NativeFluid(String fluid,int amount) implements ICustomIngredient {
         public static final MapCodec<NativeFluid> CODEC=RecordCodecBuilder.mapCodec(builder->builder.group(Codec.STRING.fieldOf("fluid").forGetter(NativeFluid::fluid),Codec.intRange(1,Integer.MAX_VALUE).fieldOf("amount").forGetter(NativeFluid::amount)).apply(builder,NativeFluid::new));
-        private String sourceTag(){return "hbm:legacy_ore_dict/"+HbmFluids.fromName(fluid).getDict(amount,FluidContainerConfig.CONTAINER_COMPAT.get());}
-        @Override public boolean test(ItemStack stack){return !stack.isEmpty()&&HbmOreDictionary.tags(stack).contains(sourceTag());}
-        @Override public Stream<ItemStack> getItems(){return HbmOreDictionary.items(sourceTag());}
+        private SourceFluidContainerIngredient containers(){return new SourceFluidContainerIngredient(fluid,amount);}
+        @Override public boolean test(ItemStack stack){return containers().test(stack);}
+        @Override public Stream<ItemStack> getItems(){return containers().getItems();}
         @Override public boolean isSimple(){return false;}
         @Override public IngredientType<?> getType(){return FLUID.get();}
     }

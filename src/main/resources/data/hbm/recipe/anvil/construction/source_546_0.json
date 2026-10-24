@@ -3,22 +3,19 @@
   "inputs": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+        "tag": "c:plates/weapon_steel"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+        "tag": "c:ingots/starmetal"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+        "tag": "hbm:wires/fine/magnetized_tungsten"
       },
       "count": 8
     }

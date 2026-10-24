@@ -2,7 +2,7 @@ package com.hbm.client.hazard;
 
 import com.hbm.hazard.HazardContext;
 import com.hbm.client.config.ClientTooltipConfig;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.hbm.hazard.HbmHazards;
 import java.util.List;
 import net.minecraft.ChatFormatting;
@@ -20,15 +20,15 @@ public final class HazardTooltips {
         var player=event.getEntity();
         HazardContext.withLookup(player==null?null:player.level().registryAccess(),()->{
             append(event.getItemStack(),event.getToolTip());
-            appendOreDictionary(event.getItemStack(),event.getFlags().isAdvanced(),event.getToolTip());
+            appendItemTags(event.getItemStack(),event.getFlags().isAdvanced(),event.getToolTip());
             appendCustomNuke(event.getItemStack(),event.getToolTip());return null;
         });
     }
-    private static void appendOreDictionary(ItemStack stack, boolean advanced, List<Component> text) {
-        if (!advanced || !ClientTooltipConfig.oreDictionaryEnabled()) return;
-        var names = HbmOreDictionary.names(stack);
+    private static void appendItemTags(ItemStack stack, boolean advanced, List<Component> text) {
+        if (!advanced || !ClientTooltipConfig.itemTagsEnabled()) return;
+        var names = HbmItemTags.tags(stack);
         if (names.isEmpty()) return;
-        text.add(Component.translatable("tooltip.hbm.ore_dictionary.title").withStyle(ChatFormatting.BLUE));
+        text.add(Component.translatable("tooltip.hbm.item_tags.title").withStyle(ChatFormatting.BLUE));
         for (String name : names) text.add(Component.literal(" -" + name).withStyle(ChatFormatting.AQUA));
     }
 

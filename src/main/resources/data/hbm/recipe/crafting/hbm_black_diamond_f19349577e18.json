@@ -12,15 +12,13 @@
   ],
   "key": {
     "N": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetgold198"
+      "tag": "c:nuggets/gold_198"
     },
     "I": {
       "item": "hbm:ink"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gemvolcanic"
+      "tag": "c:gems/volcanic"
     }
   }
 }

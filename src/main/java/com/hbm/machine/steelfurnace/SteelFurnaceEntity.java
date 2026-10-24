@@ -5,7 +5,7 @@ import com.hbm.machine.electricfurnace.ElectricFurnaceBlockEntity;
 import com.hbm.machine.foundry.crucible.ThermalMachine;
 import com.hbm.ore.*;
 import com.hbm.pollution.*;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.fuel.HbmFuels;
 import java.util.*;
 import java.util.function.Consumer;
 import net.minecraft.core.*;
@@ -58,7 +58,7 @@ public final class SteelFurnaceEntity extends ThermalMachine {
         if(level.getBlockEntity(worldPosition.below()) instanceof HeatSource source){int diff=source.getHeatStored()-heat;if(diff==0)return;if(diff>0){diff=(int)Math.ceil(diff*.05D);source.useUpHeat(diff);heat+=diff;if(heat>MAX_HEAT)heat=MAX_HEAT;return;}}
         heat=Math.max(heat-Math.max(heat/1000,1),0);
     }
-    private void addBonus(ItemStack stack,int index){for(String name:HbmOreDictionary.names(RawOreContent.processingStack(stack))){if(name.startsWith("ore")){bonus[index]+=25;return;}if(name.startsWith("log")||name.equals("anyTar")){bonus[index]+=50;return;}}}
+    private void addBonus(ItemStack stack,int index){for(String name:HbmFuels.tags(RawOreContent.processingStack(stack))){if(HbmFuels.isOreTag(name)){bonus[index]+=25;return;}if(HbmFuels.isLogTag(name)||name.equals("hbm:tars")){bonus[index]+=50;return;}}}
     public static void tick(Level level,BlockPos pos,BlockState state,SteelFurnaceEntity machine){
         if(level.isClientSide){CLIENT_TICK.accept(machine);return;}
         machine.pullHeat();machine.wasOn=false;int burn=(machine.heat-MAX_HEAT/3)/10;

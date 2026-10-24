@@ -3,7 +3,7 @@ package com.hbm.fuel;
 import com.google.gson.Gson;
 import com.hbm.HbmReloaded;
 import com.hbm.hazard.HbmHazards;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -59,10 +59,20 @@ public final class HbmFuels {
         return SPEC.rules().stream().anyMatch(rule -> rule.legacySymbol().equals("ModItems." + originalSymbol) && rule.item().equals(item));
     }
 
-    /** HbmOreDictionary retains original registration order, including subtypes. */
-    static List<String> oreNames(ItemStack stack) {
-        return HbmOreDictionary.tags(stack).stream().map(SPEC.oreNames()::get).filter(java.util.Objects::nonNull).toList();
+    /** Current native tags, sorted by the sole shared source-selection priority. */
+    public static List<String> tags(ItemStack stack) { return HbmItemTags.tags(stack); }
+    public static boolean materialIs(String tag, String material) {
+        String name=HbmItemTags.materialName(tag);
+        return java.util.Arrays.asList(name.split("_")).contains(material);
     }
+    public static boolean isCoalLikeTag(String tag) { return materialIs(tag,"coke") || materialIs(tag,"coal") || materialIs(tag,"lignite"); }
+    public static boolean isLogTag(String tag) { return tag.equals("minecraft:logs") || HbmItemTags.category(tag).equals("logs") || tag.equals("hbm:pink_wood/logs"); }
+    public static boolean isWoodTag(String tag) {
+        String name=HbmItemTags.materialName(tag);
+        return tag.equals("minecraft:planks") || name.startsWith("wooden_") || materialIs(tag,"wood") || materialIs(tag,"wooden");
+    }
+    public static boolean isSaplingTag(String tag) { return tag.equals("minecraft:saplings"); }
+    public static boolean isOreTag(String tag) { return tag.equals("c:ores") || tag.startsWith("c:ores/") || tag.startsWith("hbm:ores_in_ground/"); }
 
     private static int metadata(ItemStack stack) {
         return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), stack.getDamageValue());
@@ -77,7 +87,7 @@ public final class HbmFuels {
         }
     }
 
-    private record Spec(List<Rule> rules, Map<String, String> oreNames) {}
+    private record Spec(List<Rule> rules) {}
     private record Rule(String item, Integer metadata, int burnTime, int priority, String legacySymbol) {}
     private record CacheKey(Item item, int metadata) {}
 }

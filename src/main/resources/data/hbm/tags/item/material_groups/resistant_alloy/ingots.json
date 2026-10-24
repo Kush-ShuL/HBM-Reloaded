@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_cdalloy",
+    "hbm:ingot_tcalloy",
+    {
+      "id": "#c:ingots/tc_alloy",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/cd_alloy",
+      "required": false
+    }
+  ]
+}

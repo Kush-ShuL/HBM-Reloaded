@@ -15,12 +15,10 @@
       "item": "hbm:inf_water"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+      "tag": "hbm:pipes/steel"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsteel"
+      "tag": "hbm:gun_parts/shells/steel"
     }
   },
   "neoforge:conditions": [

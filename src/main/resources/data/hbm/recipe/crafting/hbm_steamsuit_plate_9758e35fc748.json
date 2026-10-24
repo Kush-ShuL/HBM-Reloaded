@@ -15,12 +15,10 @@
   ],
   "key": {
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      "tag": "c:ingots/workers_alloy"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platecopper"
+      "tag": "c:plates/copper"
     },
     "X": {
       "type": "neoforge:components",

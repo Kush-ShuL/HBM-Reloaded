@@ -12,16 +12,13 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockberyllium"
+      "tag": "c:storage_blocks/beryllium"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripleiron"
+      "tag": "hbm:plates/cast/iron"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+      "tag": "hbm:pipes/dura_steel"
     }
   }
 }

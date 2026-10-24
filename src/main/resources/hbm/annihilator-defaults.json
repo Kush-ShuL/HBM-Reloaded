@@ -2,8 +2,8 @@
   "mode528": [
     {
       "key": {
-        "type": "dict",
-        "dict": "ingotSteel"
+        "type": "tag",
+        "tag": "c:ingots/steel"
       },
       "milestones": [
         {
@@ -15,8 +15,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "billetSilicon"
+        "type": "tag",
+        "tag": "hbm:billets/silicon"
       },
       "milestones": [
         {
@@ -28,8 +28,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "nuggetBismuth"
+        "type": "tag",
+        "tag": "c:nuggets/bismuth"
       },
       "milestones": [
         {
@@ -54,8 +54,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "billetUranium"
+        "type": "tag",
+        "tag": "hbm:billets/uranium"
       },
       "milestones": [
         {
@@ -67,8 +67,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "ingotAnyPlastic"
+        "type": "tag",
+        "tag": "hbm:material_groups/plastic/ingots"
       },
       "milestones": [
         {
@@ -80,8 +80,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "ingotRubber"
+        "type": "tag",
+        "tag": "c:ingots/rubber"
       },
       "milestones": [
         {
@@ -93,8 +93,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "ingotFerrouranium"
+        "type": "tag",
+        "tag": "c:ingots/ferrouranium"
       },
       "milestones": [
         {
@@ -106,8 +106,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "dustStrontium"
+        "type": "tag",
+        "tag": "c:dusts/strontium"
       },
       "milestones": [
         {
@@ -119,8 +119,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "ingotAnyHardPlastic"
+        "type": "tag",
+        "tag": "hbm:material_groups/hard_plastic/ingots"
       },
       "milestones": [
         {
@@ -132,8 +132,8 @@
     },
     {
       "key": {
-        "type": "dict",
-        "dict": "ingotAnyResistantAlloy"
+        "type": "tag",
+        "tag": "hbm:material_groups/resistant_alloy/ingots"
       },
       "milestones": [
         {

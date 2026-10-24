@@ -14,16 +14,13 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/boltsteel"
+      "tag": "hbm:bolts/steel"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stickwood"
+      "tag": "c:rods/wooden"
     },
     "H": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platedurasteel"
+      "tag": "c:plates/dura_steel"
     }
   }
 }

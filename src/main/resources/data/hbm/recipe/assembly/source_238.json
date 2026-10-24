@@ -19,8 +19,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextuplesteel"
+        "tag": "hbm:plates/welded/steel"
       },
       "count": 4
     },
@@ -44,15 +43,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/boltsteel"
+        "tag": "hbm:bolts/steel"
       },
       "count": 16
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dyegreen"
+        "tag": "c:dyes/green"
       },
       "count": 4
     }

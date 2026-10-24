@@ -37,7 +37,7 @@ public final class ScrapsCraftingRecipe extends CustomRecipe {
         return result;
     }
 
-    @Override public ItemStack getResultItem(HolderLookup.Provider lookup) { return new ItemStack(AutogenContent.item("scraps")); }
+    @Override public ItemStack getResultItem(HolderLookup.Provider lookup) { return AutogenContent.item("scraps").stack(com.hbm.material.HbmMaterials.byId(0),1); }
     @Override public boolean canCraftInDimensions(int width, int height) { return width * height >= 1; }
     @Override public RecipeSerializer<?> getSerializer() { return AutogenContent.SCRAPS_SPLIT.get(); }
 }

@@ -11,15 +11,13 @@
       "item": "hbm:motor_desh"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripleanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/plates/cast"
     },
     "C": {
       "item": "hbm:circuit_bismoid"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmpipedurasteel"
+      "tag": "hbm:pipes/dura_steel"
     }
   },
   "result": {

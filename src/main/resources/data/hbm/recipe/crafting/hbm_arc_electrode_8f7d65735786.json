@@ -15,12 +15,10 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      "tag": "c:ingots/workers_alloy"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottitanium"
+      "tag": "c:ingots/titanium"
     }
   }
 }

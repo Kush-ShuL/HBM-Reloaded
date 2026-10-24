@@ -800,19 +800,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ingot_raw",
-                "components": {
-                  "hbm:legacy_metadata": 41
-                },
-                "strict": false
+                "item": "hbm:autogen/ingot_raw/m41"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_block_coke_1b187b52ec0a",
-          "resource": "data/hbm/recipe/crafting/hbm_block_coke_1b187b52ec0a.json",
+          "id": "hbm:crafting/hbm_block_coke_coal_75d01f82ae64",
+          "resource": "data/hbm/recipe/crafting/hbm_block_coke_coal_75d01f82ae64.json",
           "status": "existing-real-native-resource",
           "variant": 22,
           "variantContext": {
@@ -842,17 +837,14 @@
               }
             },
             "result": {
-              "id": "hbm:block_coke",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:block_coke_coal",
+              "count": 1
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_block_coke_f948e53a576d",
-          "resource": "data/hbm/recipe/crafting/hbm_block_coke_f948e53a576d.json",
+          "id": "hbm:crafting/hbm_block_coke_lignite_bdf8fc4ed277",
+          "resource": "data/hbm/recipe/crafting/hbm_block_coke_lignite_bdf8fc4ed277.json",
           "status": "existing-real-native-resource",
           "variant": 23,
           "variantContext": {
@@ -882,17 +874,14 @@
               }
             },
             "result": {
-              "id": "hbm:block_coke",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:block_coke_lignite",
+              "count": 1
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_block_coke_6e31b4dd0cb8",
-          "resource": "data/hbm/recipe/crafting/hbm_block_coke_6e31b4dd0cb8.json",
+          "id": "hbm:crafting/hbm_block_coke_petroleum_827c67c53114",
+          "resource": "data/hbm/recipe/crafting/hbm_block_coke_petroleum_827c67c53114.json",
           "status": "existing-real-native-resource",
           "variant": 24,
           "variantContext": {
@@ -922,11 +911,8 @@
               }
             },
             "result": {
-              "id": "hbm:block_coke",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:block_coke_petroleum",
+              "count": 1
             }
           }
         },
@@ -4126,8 +4112,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetstrontium90"
+                "tag": "c:nuggets/strontium_90"
               }
             }
           }
@@ -4164,8 +4149,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinystrontium90"
+                "tag": "c:nuggets/strontium_90"
               }
             }
           }
@@ -4202,8 +4186,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetsr90"
+                "tag": "c:nuggets/sr_90"
               }
             }
           }
@@ -4240,8 +4223,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinysr90"
+                "tag": "c:nuggets/sr_90"
               }
             }
           }
@@ -4278,8 +4260,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium"
+                "tag": "c:nuggets/uranium"
               }
             }
           }
@@ -4316,8 +4297,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyuranium"
+                "tag": "c:nuggets/uranium"
               }
             }
           }
@@ -4354,8 +4334,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium233"
+                "tag": "c:nuggets/uranium_233"
               }
             }
           }
@@ -4392,8 +4371,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyuranium233"
+                "tag": "c:nuggets/uranium_233"
               }
             }
           }
@@ -4430,8 +4408,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetu233"
+                "tag": "c:nuggets/uranium_233"
               }
             }
           }
@@ -4468,8 +4445,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu233"
+                "tag": "c:nuggets/uranium_233"
               }
             }
           }
@@ -4506,8 +4482,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium235"
+                "tag": "c:nuggets/uranium_235"
               }
             }
           }
@@ -4544,8 +4519,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyuranium235"
+                "tag": "c:nuggets/uranium_235"
               }
             }
           }
@@ -4582,8 +4556,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetu235"
+                "tag": "c:nuggets/uranium_235"
               }
             }
           }
@@ -4620,8 +4593,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu235"
+                "tag": "c:nuggets/uranium_235"
               }
             }
           }
@@ -4658,8 +4630,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               }
             }
           }
@@ -4696,8 +4667,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyuranium238"
+                "tag": "c:nuggets/uranium_238"
               }
             }
           }
@@ -4734,8 +4704,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetu238"
+                "tag": "c:nuggets/uranium_238"
               }
             }
           }
@@ -4772,8 +4741,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu238"
+                "tag": "c:nuggets/uranium_238"
               }
             }
           }
@@ -4810,8 +4778,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+                "tag": "c:nuggets/thorium_232"
               }
             }
           }
@@ -4848,8 +4815,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinythorium232"
+                "tag": "c:nuggets/thorium_232"
               }
             }
           }
@@ -4886,8 +4852,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetth232"
+                "tag": "c:nuggets/thorium_232"
               }
             }
           }
@@ -4924,8 +4889,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyth232"
+                "tag": "c:nuggets/thorium_232"
               }
             }
           }
@@ -4962,8 +4926,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium"
+                "tag": "c:nuggets/thorium_232"
               }
             }
           }
@@ -5000,8 +4963,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinythorium"
+                "tag": "c:nuggets/thorium_232"
               }
             }
           }
@@ -5038,8 +5000,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetplutonium"
+                "tag": "c:nuggets/plutonium"
               }
             }
           }
@@ -5076,8 +5037,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyplutonium"
+                "tag": "c:nuggets/plutonium"
               }
             }
           }
@@ -5114,8 +5074,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetplutonium238"
+                "tag": "c:nuggets/plutonium_238"
               }
             }
           }
@@ -5152,8 +5111,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyplutonium238"
+                "tag": "c:nuggets/plutonium_238"
               }
             }
           }
@@ -5190,8 +5148,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpu238"
+                "tag": "c:nuggets/plutonium_238"
               }
             }
           }
@@ -5228,8 +5185,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypu238"
+                "tag": "c:nuggets/plutonium_238"
               }
             }
           }
@@ -5266,8 +5222,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+                "tag": "c:nuggets/plutonium_239"
               }
             }
           }
@@ -5304,8 +5259,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyplutonium239"
+                "tag": "c:nuggets/plutonium_239"
               }
             }
           }
@@ -5342,8 +5296,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpu239"
+                "tag": "c:nuggets/plutonium_239"
               }
             }
           }
@@ -5380,8 +5333,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypu239"
+                "tag": "c:nuggets/plutonium_239"
               }
             }
           }
@@ -5418,8 +5370,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetplutonium240"
+                "tag": "c:nuggets/plutonium_240"
               }
             }
           }
@@ -5456,8 +5407,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyplutonium240"
+                "tag": "c:nuggets/plutonium_240"
               }
             }
           }
@@ -5494,8 +5444,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpu240"
+                "tag": "c:nuggets/plutonium_240"
               }
             }
           }
@@ -5532,8 +5481,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypu240"
+                "tag": "c:nuggets/plutonium_240"
               }
             }
           }
@@ -5570,8 +5518,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetplutonium241"
+                "tag": "c:nuggets/plutonium_241"
               }
             }
           }
@@ -5608,8 +5555,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyplutonium241"
+                "tag": "c:nuggets/plutonium_241"
               }
             }
           }
@@ -5646,8 +5592,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpu241"
+                "tag": "c:nuggets/plutonium_241"
               }
             }
           }
@@ -5684,8 +5629,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypu241"
+                "tag": "c:nuggets/plutonium_241"
               }
             }
           }
@@ -5722,8 +5666,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetamericium241"
+                "tag": "c:nuggets/americium_241"
               }
             }
           }
@@ -5760,8 +5703,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyamericium241"
+                "tag": "c:nuggets/americium_241"
               }
             }
           }
@@ -5798,8 +5740,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetam241"
+                "tag": "c:nuggets/americium_241"
               }
             }
           }
@@ -5836,8 +5777,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyam241"
+                "tag": "c:nuggets/americium_241"
               }
             }
           }
@@ -5874,8 +5814,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetamericium242"
+                "tag": "c:nuggets/americium_242"
               }
             }
           }
@@ -5912,8 +5851,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyamericium242"
+                "tag": "c:nuggets/americium_242"
               }
             }
           }
@@ -5950,8 +5888,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetam242"
+                "tag": "c:nuggets/americium_242"
               }
             }
           }
@@ -5988,8 +5925,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyam242"
+                "tag": "c:nuggets/americium_242"
               }
             }
           }
@@ -6026,8 +5962,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetneptunium237"
+                "tag": "c:nuggets/neptunium_237"
               }
             }
           }
@@ -6064,8 +5999,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyneptunium237"
+                "tag": "c:nuggets/neptunium_237"
               }
             }
           }
@@ -6102,8 +6036,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetnp237"
+                "tag": "c:nuggets/neptunium_237"
               }
             }
           }
@@ -6140,8 +6073,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinynp237"
+                "tag": "c:nuggets/neptunium_237"
               }
             }
           }
@@ -6178,8 +6110,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetneptunium"
+                "tag": "c:nuggets/neptunium_237"
               }
             }
           }
@@ -6216,8 +6147,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyneptunium"
+                "tag": "c:nuggets/neptunium_237"
               }
             }
           }
@@ -6254,8 +6184,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpolonium210"
+                "tag": "c:nuggets/polonium_210"
               }
             }
           }
@@ -6292,8 +6221,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypolonium210"
+                "tag": "c:nuggets/polonium_210"
               }
             }
           }
@@ -6330,8 +6258,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpo210"
+                "tag": "c:nuggets/polonium_210"
               }
             }
           }
@@ -6368,8 +6295,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypo210"
+                "tag": "c:nuggets/polonium_210"
               }
             }
           }
@@ -6406,8 +6332,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpolonium"
+                "tag": "c:nuggets/polonium_210"
               }
             }
           }
@@ -6444,8 +6369,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypolonium"
+                "tag": "c:nuggets/polonium_210"
               }
             }
           }
@@ -6482,8 +6406,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+                "tag": "c:nuggets/technetium_99"
               }
             }
           }
@@ -6520,8 +6443,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinytechnetium99"
+                "tag": "c:nuggets/technetium_99"
               }
             }
           }
@@ -6558,8 +6480,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggettc99"
+                "tag": "c:nuggets/technetium_99"
               }
             }
           }
@@ -6596,8 +6517,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinytc99"
+                "tag": "c:nuggets/technetium_99"
               }
             }
           }
@@ -6634,8 +6554,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetgold198"
+                "tag": "c:nuggets/gold_198"
               }
             }
           }
@@ -6672,8 +6591,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinygold198"
+                "tag": "c:nuggets/gold_198"
               }
             }
           }
@@ -6710,8 +6628,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetau198"
+                "tag": "c:nuggets/gold_198"
               }
             }
           }
@@ -6748,8 +6665,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyau198"
+                "tag": "c:nuggets/gold_198"
               }
             }
           }
@@ -6786,8 +6702,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetlead209"
+                "tag": "c:nuggets/lead_209"
               }
             }
           }
@@ -6824,8 +6739,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinylead209"
+                "tag": "c:nuggets/lead_209"
               }
             }
           }
@@ -6862,8 +6776,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetpb209"
+                "tag": "c:nuggets/lead_209"
               }
             }
           }
@@ -6900,8 +6813,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinypb209"
+                "tag": "c:nuggets/lead_209"
               }
             }
           }
@@ -6938,8 +6850,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetradium226"
+                "tag": "c:nuggets/radium_226"
               }
             }
           }
@@ -6976,8 +6887,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyradium226"
+                "tag": "c:nuggets/radium_226"
               }
             }
           }
@@ -7014,8 +6924,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetra226"
+                "tag": "c:nuggets/radium_226"
               }
             }
           }
@@ -7052,8 +6961,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyra226"
+                "tag": "c:nuggets/radium_226"
               }
             }
           }
@@ -7090,8 +6998,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetactinium227"
+                "tag": "c:nuggets/actinium_227"
               }
             }
           }
@@ -7128,8 +7035,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyactinium227"
+                "tag": "c:nuggets/actinium_227"
               }
             }
           }
@@ -7166,8 +7072,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetac227"
+                "tag": "c:nuggets/actinium_227"
               }
             }
           }
@@ -7204,8 +7109,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyac227"
+                "tag": "c:nuggets/actinium_227"
               }
             }
           }
@@ -7242,8 +7146,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+                "tag": "c:nuggets/schrabidium"
               }
             }
           }
@@ -7280,8 +7183,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetsolinium"
+                "tag": "c:nuggets/solinium"
               }
             }
           }
@@ -7318,8 +7220,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetghiorsium336"
+                "tag": "c:nuggets/ghiorsium_336"
               }
             }
           }
@@ -7356,8 +7257,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyghiorsium336"
+                "tag": "c:nuggets/ghiorsium_336"
               }
             }
           }
@@ -7394,8 +7294,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetgh336"
+                "tag": "c:nuggets/ghiorsium_336"
               }
             }
           }
@@ -7432,8 +7331,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinygh336"
+                "tag": "c:nuggets/ghiorsium_336"
               }
             }
           }
@@ -7470,8 +7368,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetaustralium"
+                "tag": "c:nuggets/australium"
               }
             }
           }
@@ -7508,8 +7405,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetberyllium"
+                "tag": "c:nuggets/beryllium"
               }
             }
           }
@@ -7546,8 +7442,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetzirconium"
+                "tag": "c:nuggets/zirconium"
               }
             }
           }
@@ -7584,8 +7479,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetsilicon"
+                "tag": "c:nuggets/silicon"
               }
             }
           }
@@ -13522,10 +13416,9 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:scraps",
+              "id": "hbm:autogen/scraps/m31",
               "count": 1,
               "components": {
-                "hbm:legacy_metadata": 31,
                 "minecraft:custom_data": {
                   "amount": 144
                 }
@@ -13535,12 +13428,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcopper"
+                "tag": "c:dusts/copper"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustredstone"
+                "tag": "c:dusts/redstone"
               }
             ]
           }
@@ -13562,10 +13453,9 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:scraps",
+              "id": "hbm:autogen/scraps/m38",
               "count": 1,
               "components": {
-                "hbm:legacy_metadata": 38,
                 "minecraft:custom_data": {
                   "amount": 72
                 }
@@ -13575,12 +13465,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dusttungsten"
+                "tag": "c:dusts/tungsten"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+                "tag": "c:nuggets/schrabidium"
               }
             ]
           }
@@ -13602,10 +13490,9 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:scraps",
+              "id": "hbm:autogen/scraps/m36",
               "count": 1,
               "components": {
-                "hbm:legacy_metadata": 36,
                 "minecraft:custom_data": {
                   "amount": 72
                 }
@@ -13615,12 +13502,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/duststeel"
+                "tag": "c:dusts/steel"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+                "tag": "c:nuggets/technetium_99"
               }
             ]
           }
@@ -13642,10 +13527,9 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:scraps",
+              "id": "hbm:autogen/scraps/m30",
               "count": 1,
               "components": {
-                "hbm:legacy_metadata": 30,
                 "minecraft:custom_data": {
                   "amount": 72
                 }
@@ -13655,12 +13539,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               }
             ]
           }
@@ -13682,10 +13564,9 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:scraps",
+              "id": "hbm:autogen/scraps/m30",
               "count": 1,
               "components": {
-                "hbm:legacy_metadata": 30,
                 "minecraft:custom_data": {
                   "amount": 288
                 }
@@ -13695,36 +13576,28 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               }
             ]
           }
@@ -13753,12 +13626,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustredstone"
+                "tag": "c:dusts/redstone"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcopper"
+                "tag": "c:dusts/copper"
               }
             ],
             "neoforge:conditions": [
@@ -13793,12 +13664,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/duststeel"
+                "tag": "c:dusts/steel"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dusttungsten"
+                "tag": "c:dusts/tungsten"
               }
             ],
             "neoforge:conditions": [
@@ -13833,12 +13702,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/duststeel"
+                "tag": "c:dusts/steel"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcobalt"
+                "tag": "c:dusts/cobalt"
               }
             ],
             "neoforge:conditions": [
@@ -13873,20 +13740,16 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dusttungsten"
+                "tag": "c:dusts/tungsten"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dusttungsten"
+                "tag": "c:dusts/tungsten"
               }
             ],
             "neoforge:conditions": [
@@ -13921,20 +13784,16 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustiron"
+                "tag": "c:dusts/iron"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcobalt"
+                "tag": "c:dusts/cobalt"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcobalt"
+                "tag": "c:dusts/cobalt"
               }
             ],
             "neoforge:conditions": [
@@ -14013,8 +13872,7 @@
                 "item": "hbm:chemical_dye_black"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14043,8 +13901,7 @@
                 "item": "hbm:chemical_dye_red"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14073,8 +13930,7 @@
                 "item": "hbm:chemical_dye_green"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14103,8 +13959,7 @@
                 "item": "hbm:chemical_dye_brown"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14133,8 +13988,7 @@
                 "item": "hbm:chemical_dye_blue"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14163,8 +14017,7 @@
                 "item": "hbm:chemical_dye_purple"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14193,8 +14046,7 @@
                 "item": "hbm:chemical_dye_cyan"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14223,8 +14075,7 @@
                 "item": "hbm:chemical_dye_light_gray"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14253,8 +14104,7 @@
                 "item": "hbm:chemical_dye_gray"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14283,8 +14133,7 @@
                 "item": "hbm:chemical_dye_pink"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14313,8 +14162,7 @@
                 "item": "hbm:chemical_dye_lime"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14343,8 +14191,7 @@
                 "item": "hbm:chemical_dye_yellow"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14373,8 +14220,7 @@
                 "item": "hbm:chemical_dye_light_blue"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14403,8 +14249,7 @@
                 "item": "hbm:chemical_dye_magenta"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14433,8 +14278,7 @@
                 "item": "hbm:chemical_dye_orange"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -14463,8 +14307,7 @@
                 "item": "hbm:chemical_dye_white"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/anytar"
+                "tag": "hbm:tars"
               },
               {
                 "item": "minecraft:paper"
@@ -15366,8 +15209,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               }
             ]
           }
@@ -15404,8 +15246,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               }
             ]
           }
@@ -15442,8 +15283,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               }
             ]
           }
@@ -15480,8 +15320,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               }
             ]
           }
@@ -15518,8 +15357,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               }
             ]
           }
@@ -15556,8 +15394,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               }
             ]
           }
@@ -15594,8 +15431,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               }
             ]
           }
@@ -15632,8 +15468,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               }
             ]
           }
@@ -15670,8 +15505,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               }
             ]
           }
@@ -15708,8 +15542,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               }
             ]
           }
@@ -15746,8 +15579,7 @@
                 "item": "hbm:rod_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               }
             ]
           }
@@ -15793,12 +15625,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               }
             ]
           }
@@ -15835,12 +15665,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               }
             ]
           }
@@ -15877,12 +15705,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               }
             ]
           }
@@ -15919,12 +15745,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               }
             ]
           }
@@ -15961,12 +15785,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               }
             ]
           }
@@ -16003,12 +15825,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               }
             ]
           }
@@ -16045,12 +15865,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               }
             ]
           }
@@ -16087,12 +15905,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               }
             ]
           }
@@ -16129,12 +15945,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               }
             ]
           }
@@ -16171,12 +15985,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               }
             ]
           }
@@ -16213,12 +16025,10 @@
                 "item": "hbm:rod_dual_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               }
             ]
           }
@@ -16264,20 +16074,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt"
+                "tag": "hbm:billets/cobalt"
               }
             ]
           }
@@ -16314,20 +16120,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetcobalt60"
+                "tag": "hbm:billets/cobalt_60"
               }
             ]
           }
@@ -16364,20 +16166,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetradium226"
+                "tag": "hbm:billets/radium_226"
               }
             ]
           }
@@ -16414,20 +16212,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetactinium227"
+                "tag": "hbm:billets/actinium_227"
               }
             ]
           }
@@ -16464,20 +16258,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               }
             ]
           }
@@ -16514,20 +16304,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               }
             ]
           }
@@ -16564,20 +16350,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               }
             ]
           }
@@ -16614,20 +16396,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium238"
+                "tag": "hbm:billets/uranium_238"
               }
             ]
           }
@@ -16664,20 +16442,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium238"
+                "tag": "hbm:billets/plutonium_238"
               }
             ]
           }
@@ -16714,20 +16488,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               }
             ]
           }
@@ -16764,20 +16534,16 @@
                 "item": "hbm:rod_quad_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               }
             ]
           }
@@ -18034,36 +17800,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               }
             ]
           }
@@ -18096,36 +17854,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               }
             ]
           }
@@ -18158,36 +17908,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               }
             ]
           }
@@ -18220,36 +17962,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+                "tag": "hbm:billets/plutonium_rg"
               }
             ]
           }
@@ -18282,36 +18016,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium239"
+                "tag": "hbm:billets/plutonium_239"
               }
             ]
           }
@@ -18344,36 +18070,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetplutonium241"
+                "tag": "hbm:billets/plutonium_241"
               }
             ]
           }
@@ -18406,36 +18124,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+                "tag": "hbm:billets/americium_rg"
               }
             ]
           }
@@ -18468,36 +18178,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium241"
+                "tag": "hbm:billets/americium_241"
               }
             ]
           }
@@ -18530,36 +18232,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetamericium242"
+                "tag": "hbm:billets/americium_242"
               }
             ]
           }
@@ -18592,36 +18286,28 @@
                 "item": "hbm:rbmk_fuel_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetneptunium237"
+                "tag": "hbm:billets/neptunium_237"
               }
             ]
           }
@@ -19599,12 +19285,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ingot_raw",
-            "components": {
-              "hbm:legacy_metadata": 41
-            },
-            "strict": false
+            "item": "hbm:autogen/ingot_raw/m41"
           }
         }
       }
@@ -19618,8 +19299,8 @@
         "new ItemStack(Item.getItemFromBlock(ModBlocks.block_coke), 1, 0)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.coke, 1, 0) }"
       ],
-      "id": "hbm:crafting/hbm_block_coke_1b187b52ec0a",
-      "resource": "data/hbm/recipe/crafting/hbm_block_coke_1b187b52ec0a.json",
+      "id": "hbm:crafting/hbm_block_coke_coal_75d01f82ae64",
+      "resource": "data/hbm/recipe/crafting/hbm_block_coke_coal_75d01f82ae64.json",
       "status": "existing-real-native-resource",
       "variant": 22,
       "variantContext": {
@@ -19649,11 +19330,8 @@
           }
         },
         "result": {
-          "id": "hbm:block_coke",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:block_coke_coal",
+          "count": 1
         }
       }
     },
@@ -19666,8 +19344,8 @@
         "new ItemStack(Item.getItemFromBlock(ModBlocks.block_coke), 1, 1)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.coke, 1, 1) }"
       ],
-      "id": "hbm:crafting/hbm_block_coke_f948e53a576d",
-      "resource": "data/hbm/recipe/crafting/hbm_block_coke_f948e53a576d.json",
+      "id": "hbm:crafting/hbm_block_coke_lignite_bdf8fc4ed277",
+      "resource": "data/hbm/recipe/crafting/hbm_block_coke_lignite_bdf8fc4ed277.json",
       "status": "existing-real-native-resource",
       "variant": 23,
       "variantContext": {
@@ -19697,11 +19375,8 @@
           }
         },
         "result": {
-          "id": "hbm:block_coke",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:block_coke_lignite",
+          "count": 1
         }
       }
     },
@@ -19714,8 +19389,8 @@
         "new ItemStack(Item.getItemFromBlock(ModBlocks.block_coke), 1, 2)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.coke, 1, 2) }"
       ],
-      "id": "hbm:crafting/hbm_block_coke_6e31b4dd0cb8",
-      "resource": "data/hbm/recipe/crafting/hbm_block_coke_6e31b4dd0cb8.json",
+      "id": "hbm:crafting/hbm_block_coke_petroleum_827c67c53114",
+      "resource": "data/hbm/recipe/crafting/hbm_block_coke_petroleum_827c67c53114.json",
       "status": "existing-real-native-resource",
       "variant": 24,
       "variantContext": {
@@ -19745,11 +19420,8 @@
           }
         },
         "result": {
-          "id": "hbm:block_coke",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:block_coke_petroleum",
+          "count": 1
         }
       }
     },
@@ -23572,8 +23244,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetstrontium90"
+            "tag": "c:nuggets/strontium_90"
           }
         }
       }
@@ -23618,8 +23289,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinystrontium90"
+            "tag": "c:nuggets/strontium_90"
           }
         }
       }
@@ -23664,8 +23334,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetsr90"
+            "tag": "c:nuggets/sr_90"
           }
         }
       }
@@ -23710,8 +23379,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinysr90"
+            "tag": "c:nuggets/sr_90"
           }
         }
       }
@@ -23756,8 +23424,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium"
+            "tag": "c:nuggets/uranium"
           }
         }
       }
@@ -23802,8 +23469,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyuranium"
+            "tag": "c:nuggets/uranium"
           }
         }
       }
@@ -23848,8 +23514,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium233"
+            "tag": "c:nuggets/uranium_233"
           }
         }
       }
@@ -23894,8 +23559,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyuranium233"
+            "tag": "c:nuggets/uranium_233"
           }
         }
       }
@@ -23940,8 +23604,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetu233"
+            "tag": "c:nuggets/uranium_233"
           }
         }
       }
@@ -23986,8 +23649,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu233"
+            "tag": "c:nuggets/uranium_233"
           }
         }
       }
@@ -24032,8 +23694,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium235"
+            "tag": "c:nuggets/uranium_235"
           }
         }
       }
@@ -24078,8 +23739,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyuranium235"
+            "tag": "c:nuggets/uranium_235"
           }
         }
       }
@@ -24124,8 +23784,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetu235"
+            "tag": "c:nuggets/uranium_235"
           }
         }
       }
@@ -24170,8 +23829,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu235"
+            "tag": "c:nuggets/uranium_235"
           }
         }
       }
@@ -24216,8 +23874,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           }
         }
       }
@@ -24262,8 +23919,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyuranium238"
+            "tag": "c:nuggets/uranium_238"
           }
         }
       }
@@ -24308,8 +23964,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetu238"
+            "tag": "c:nuggets/uranium_238"
           }
         }
       }
@@ -24354,8 +24009,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu238"
+            "tag": "c:nuggets/uranium_238"
           }
         }
       }
@@ -24400,8 +24054,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+            "tag": "c:nuggets/thorium_232"
           }
         }
       }
@@ -24446,8 +24099,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinythorium232"
+            "tag": "c:nuggets/thorium_232"
           }
         }
       }
@@ -24492,8 +24144,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetth232"
+            "tag": "c:nuggets/thorium_232"
           }
         }
       }
@@ -24538,8 +24189,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyth232"
+            "tag": "c:nuggets/thorium_232"
           }
         }
       }
@@ -24584,8 +24234,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium"
+            "tag": "c:nuggets/thorium_232"
           }
         }
       }
@@ -24630,8 +24279,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinythorium"
+            "tag": "c:nuggets/thorium_232"
           }
         }
       }
@@ -24676,8 +24324,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetplutonium"
+            "tag": "c:nuggets/plutonium"
           }
         }
       }
@@ -24722,8 +24369,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyplutonium"
+            "tag": "c:nuggets/plutonium"
           }
         }
       }
@@ -24768,8 +24414,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetplutonium238"
+            "tag": "c:nuggets/plutonium_238"
           }
         }
       }
@@ -24814,8 +24459,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyplutonium238"
+            "tag": "c:nuggets/plutonium_238"
           }
         }
       }
@@ -24860,8 +24504,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpu238"
+            "tag": "c:nuggets/plutonium_238"
           }
         }
       }
@@ -24906,8 +24549,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypu238"
+            "tag": "c:nuggets/plutonium_238"
           }
         }
       }
@@ -24952,8 +24594,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetplutonium239"
+            "tag": "c:nuggets/plutonium_239"
           }
         }
       }
@@ -24998,8 +24639,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyplutonium239"
+            "tag": "c:nuggets/plutonium_239"
           }
         }
       }
@@ -25044,8 +24684,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpu239"
+            "tag": "c:nuggets/plutonium_239"
           }
         }
       }
@@ -25090,8 +24729,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypu239"
+            "tag": "c:nuggets/plutonium_239"
           }
         }
       }
@@ -25136,8 +24774,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetplutonium240"
+            "tag": "c:nuggets/plutonium_240"
           }
         }
       }
@@ -25182,8 +24819,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyplutonium240"
+            "tag": "c:nuggets/plutonium_240"
           }
         }
       }
@@ -25228,8 +24864,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpu240"
+            "tag": "c:nuggets/plutonium_240"
           }
         }
       }
@@ -25274,8 +24909,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypu240"
+            "tag": "c:nuggets/plutonium_240"
           }
         }
       }
@@ -25320,8 +24954,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetplutonium241"
+            "tag": "c:nuggets/plutonium_241"
           }
         }
       }
@@ -25366,8 +24999,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyplutonium241"
+            "tag": "c:nuggets/plutonium_241"
           }
         }
       }
@@ -25412,8 +25044,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpu241"
+            "tag": "c:nuggets/plutonium_241"
           }
         }
       }
@@ -25458,8 +25089,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypu241"
+            "tag": "c:nuggets/plutonium_241"
           }
         }
       }
@@ -25504,8 +25134,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetamericium241"
+            "tag": "c:nuggets/americium_241"
           }
         }
       }
@@ -25550,8 +25179,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyamericium241"
+            "tag": "c:nuggets/americium_241"
           }
         }
       }
@@ -25596,8 +25224,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetam241"
+            "tag": "c:nuggets/americium_241"
           }
         }
       }
@@ -25642,8 +25269,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyam241"
+            "tag": "c:nuggets/americium_241"
           }
         }
       }
@@ -25688,8 +25314,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetamericium242"
+            "tag": "c:nuggets/americium_242"
           }
         }
       }
@@ -25734,8 +25359,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyamericium242"
+            "tag": "c:nuggets/americium_242"
           }
         }
       }
@@ -25780,8 +25404,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetam242"
+            "tag": "c:nuggets/americium_242"
           }
         }
       }
@@ -25826,8 +25449,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyam242"
+            "tag": "c:nuggets/americium_242"
           }
         }
       }
@@ -25872,8 +25494,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetneptunium237"
+            "tag": "c:nuggets/neptunium_237"
           }
         }
       }
@@ -25918,8 +25539,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyneptunium237"
+            "tag": "c:nuggets/neptunium_237"
           }
         }
       }
@@ -25964,8 +25584,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetnp237"
+            "tag": "c:nuggets/neptunium_237"
           }
         }
       }
@@ -26010,8 +25629,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinynp237"
+            "tag": "c:nuggets/neptunium_237"
           }
         }
       }
@@ -26056,8 +25674,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetneptunium"
+            "tag": "c:nuggets/neptunium_237"
           }
         }
       }
@@ -26102,8 +25719,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyneptunium"
+            "tag": "c:nuggets/neptunium_237"
           }
         }
       }
@@ -26148,8 +25764,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpolonium210"
+            "tag": "c:nuggets/polonium_210"
           }
         }
       }
@@ -26194,8 +25809,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypolonium210"
+            "tag": "c:nuggets/polonium_210"
           }
         }
       }
@@ -26240,8 +25854,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpo210"
+            "tag": "c:nuggets/polonium_210"
           }
         }
       }
@@ -26286,8 +25899,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypo210"
+            "tag": "c:nuggets/polonium_210"
           }
         }
       }
@@ -26332,8 +25944,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpolonium"
+            "tag": "c:nuggets/polonium_210"
           }
         }
       }
@@ -26378,8 +25989,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypolonium"
+            "tag": "c:nuggets/polonium_210"
           }
         }
       }
@@ -26424,8 +26034,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+            "tag": "c:nuggets/technetium_99"
           }
         }
       }
@@ -26470,8 +26079,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinytechnetium99"
+            "tag": "c:nuggets/technetium_99"
           }
         }
       }
@@ -26516,8 +26124,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggettc99"
+            "tag": "c:nuggets/technetium_99"
           }
         }
       }
@@ -26562,8 +26169,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinytc99"
+            "tag": "c:nuggets/technetium_99"
           }
         }
       }
@@ -26608,8 +26214,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetgold198"
+            "tag": "c:nuggets/gold_198"
           }
         }
       }
@@ -26654,8 +26259,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinygold198"
+            "tag": "c:nuggets/gold_198"
           }
         }
       }
@@ -26700,8 +26304,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetau198"
+            "tag": "c:nuggets/gold_198"
           }
         }
       }
@@ -26746,8 +26349,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyau198"
+            "tag": "c:nuggets/gold_198"
           }
         }
       }
@@ -26792,8 +26394,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetlead209"
+            "tag": "c:nuggets/lead_209"
           }
         }
       }
@@ -26838,8 +26439,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinylead209"
+            "tag": "c:nuggets/lead_209"
           }
         }
       }
@@ -26884,8 +26484,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetpb209"
+            "tag": "c:nuggets/lead_209"
           }
         }
       }
@@ -26930,8 +26529,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinypb209"
+            "tag": "c:nuggets/lead_209"
           }
         }
       }
@@ -26976,8 +26574,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetradium226"
+            "tag": "c:nuggets/radium_226"
           }
         }
       }
@@ -27022,8 +26619,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyradium226"
+            "tag": "c:nuggets/radium_226"
           }
         }
       }
@@ -27068,8 +26664,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetra226"
+            "tag": "c:nuggets/radium_226"
           }
         }
       }
@@ -27114,8 +26709,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyra226"
+            "tag": "c:nuggets/radium_226"
           }
         }
       }
@@ -27160,8 +26754,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetactinium227"
+            "tag": "c:nuggets/actinium_227"
           }
         }
       }
@@ -27206,8 +26799,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyactinium227"
+            "tag": "c:nuggets/actinium_227"
           }
         }
       }
@@ -27252,8 +26844,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetac227"
+            "tag": "c:nuggets/actinium_227"
           }
         }
       }
@@ -27298,8 +26889,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyac227"
+            "tag": "c:nuggets/actinium_227"
           }
         }
       }
@@ -27344,8 +26934,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+            "tag": "c:nuggets/schrabidium"
           }
         }
       }
@@ -27390,8 +26979,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetsolinium"
+            "tag": "c:nuggets/solinium"
           }
         }
       }
@@ -27436,8 +27024,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetghiorsium336"
+            "tag": "c:nuggets/ghiorsium_336"
           }
         }
       }
@@ -27482,8 +27069,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyghiorsium336"
+            "tag": "c:nuggets/ghiorsium_336"
           }
         }
       }
@@ -27528,8 +27114,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetgh336"
+            "tag": "c:nuggets/ghiorsium_336"
           }
         }
       }
@@ -27574,8 +27159,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinygh336"
+            "tag": "c:nuggets/ghiorsium_336"
           }
         }
       }
@@ -27620,8 +27204,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetaustralium"
+            "tag": "c:nuggets/australium"
           }
         }
       }
@@ -27666,8 +27249,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetberyllium"
+            "tag": "c:nuggets/beryllium"
           }
         }
       }
@@ -27712,8 +27294,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetzirconium"
+            "tag": "c:nuggets/zirconium"
           }
         }
       }
@@ -27758,8 +27339,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetsilicon"
+            "tag": "c:nuggets/silicon"
           }
         }
       }
@@ -34977,10 +34557,9 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:scraps",
+          "id": "hbm:autogen/scraps/m31",
           "count": 1,
           "components": {
-            "hbm:legacy_metadata": 31,
             "minecraft:custom_data": {
               "amount": 144
             }
@@ -34990,12 +34569,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcopper"
+            "tag": "c:dusts/copper"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustredstone"
+            "tag": "c:dusts/redstone"
           }
         ]
       }
@@ -35016,10 +34593,9 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:scraps",
+          "id": "hbm:autogen/scraps/m38",
           "count": 1,
           "components": {
-            "hbm:legacy_metadata": 38,
             "minecraft:custom_data": {
               "amount": 72
             }
@@ -35029,12 +34605,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+            "tag": "c:nuggets/schrabidium"
           }
         ]
       }
@@ -35055,10 +34629,9 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:scraps",
+          "id": "hbm:autogen/scraps/m36",
           "count": 1,
           "components": {
-            "hbm:legacy_metadata": 36,
             "minecraft:custom_data": {
               "amount": 72
             }
@@ -35068,12 +34641,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/duststeel"
+            "tag": "c:dusts/steel"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+            "tag": "c:nuggets/technetium_99"
           }
         ]
       }
@@ -35094,10 +34665,9 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:scraps",
+          "id": "hbm:autogen/scraps/m30",
           "count": 1,
           "components": {
-            "hbm:legacy_metadata": 30,
             "minecraft:custom_data": {
               "amount": 72
             }
@@ -35107,12 +34677,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           }
         ]
       }
@@ -35133,10 +34701,9 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:scraps",
+          "id": "hbm:autogen/scraps/m30",
           "count": 1,
           "components": {
-            "hbm:legacy_metadata": 30,
             "minecraft:custom_data": {
               "amount": 288
             }
@@ -35146,36 +34713,28 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           }
         ]
       }
@@ -35203,12 +34762,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustredstone"
+            "tag": "c:dusts/redstone"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcopper"
+            "tag": "c:dusts/copper"
           }
         ],
         "neoforge:conditions": [
@@ -35242,12 +34799,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/duststeel"
+            "tag": "c:dusts/steel"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           }
         ],
         "neoforge:conditions": [
@@ -35281,12 +34836,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/duststeel"
+            "tag": "c:dusts/steel"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcobalt"
+            "tag": "c:dusts/cobalt"
           }
         ],
         "neoforge:conditions": [
@@ -35320,20 +34873,16 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           }
         ],
         "neoforge:conditions": [
@@ -35367,20 +34916,16 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustiron"
+            "tag": "c:dusts/iron"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcobalt"
+            "tag": "c:dusts/cobalt"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcobalt"
+            "tag": "c:dusts/cobalt"
           }
         ],
         "neoforge:conditions": [
@@ -35457,8 +35002,7 @@
             "item": "hbm:chemical_dye_black"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35495,8 +35039,7 @@
             "item": "hbm:chemical_dye_red"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35533,8 +35076,7 @@
             "item": "hbm:chemical_dye_green"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35571,8 +35113,7 @@
             "item": "hbm:chemical_dye_brown"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35609,8 +35150,7 @@
             "item": "hbm:chemical_dye_blue"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35647,8 +35187,7 @@
             "item": "hbm:chemical_dye_purple"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35685,8 +35224,7 @@
             "item": "hbm:chemical_dye_cyan"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35723,8 +35261,7 @@
             "item": "hbm:chemical_dye_light_gray"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35761,8 +35298,7 @@
             "item": "hbm:chemical_dye_gray"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35799,8 +35335,7 @@
             "item": "hbm:chemical_dye_pink"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35837,8 +35372,7 @@
             "item": "hbm:chemical_dye_lime"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35875,8 +35409,7 @@
             "item": "hbm:chemical_dye_yellow"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35913,8 +35446,7 @@
             "item": "hbm:chemical_dye_light_blue"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35951,8 +35483,7 @@
             "item": "hbm:chemical_dye_magenta"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -35989,8 +35520,7 @@
             "item": "hbm:chemical_dye_orange"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -36027,8 +35557,7 @@
             "item": "hbm:chemical_dye_white"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           {
             "item": "minecraft:paper"
@@ -36899,8 +36428,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           }
         ]
       }
@@ -36945,8 +36473,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           }
         ]
       }
@@ -36991,8 +36518,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           }
         ]
       }
@@ -37037,8 +36563,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           }
         ]
       }
@@ -37083,8 +36608,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           }
         ]
       }
@@ -37129,8 +36653,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           }
         ]
       }
@@ -37175,8 +36698,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           }
         ]
       }
@@ -37221,8 +36743,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           }
         ]
       }
@@ -37267,8 +36788,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           }
         ]
       }
@@ -37313,8 +36833,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           }
         ]
       }
@@ -37359,8 +36878,7 @@
             "item": "hbm:rod_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           }
         ]
       }
@@ -37405,12 +36923,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           }
         ]
       }
@@ -37455,12 +36971,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           }
         ]
       }
@@ -37505,12 +37019,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           }
         ]
       }
@@ -37555,12 +37067,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           }
         ]
       }
@@ -37605,12 +37115,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           }
         ]
       }
@@ -37655,12 +37163,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           }
         ]
       }
@@ -37705,12 +37211,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           }
         ]
       }
@@ -37755,12 +37259,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           }
         ]
       }
@@ -37805,12 +37307,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           }
         ]
       }
@@ -37855,12 +37355,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           }
         ]
       }
@@ -37905,12 +37403,10 @@
             "item": "hbm:rod_dual_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           }
         ]
       }
@@ -37955,20 +37451,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt"
+            "tag": "hbm:billets/cobalt"
           }
         ]
       }
@@ -38013,20 +37505,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetcobalt60"
+            "tag": "hbm:billets/cobalt_60"
           }
         ]
       }
@@ -38071,20 +37559,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetradium226"
+            "tag": "hbm:billets/radium_226"
           }
         ]
       }
@@ -38129,20 +37613,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetactinium227"
+            "tag": "hbm:billets/actinium_227"
           }
         ]
       }
@@ -38187,20 +37667,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           }
         ]
       }
@@ -38245,20 +37721,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           }
         ]
       }
@@ -38303,20 +37775,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           }
         ]
       }
@@ -38361,20 +37829,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium238"
+            "tag": "hbm:billets/uranium_238"
           }
         ]
       }
@@ -38419,20 +37883,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium238"
+            "tag": "hbm:billets/plutonium_238"
           }
         ]
       }
@@ -38477,20 +37937,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           }
         ]
       }
@@ -38535,20 +37991,16 @@
             "item": "hbm:rod_quad_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           }
         ]
       }
@@ -40041,36 +39493,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           }
         ]
       }
@@ -40111,36 +39555,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           }
         ]
       }
@@ -40181,36 +39617,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           }
         ]
       }
@@ -40251,36 +39679,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+            "tag": "hbm:billets/plutonium_rg"
           }
         ]
       }
@@ -40321,36 +39741,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium239"
+            "tag": "hbm:billets/plutonium_239"
           }
         ]
       }
@@ -40391,36 +39803,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetplutonium241"
+            "tag": "hbm:billets/plutonium_241"
           }
         ]
       }
@@ -40461,36 +39865,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericiumrg"
+            "tag": "hbm:billets/americium_rg"
           }
         ]
       }
@@ -40531,36 +39927,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium241"
+            "tag": "hbm:billets/americium_241"
           }
         ]
       }
@@ -40601,36 +39989,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetamericium242"
+            "tag": "hbm:billets/americium_242"
           }
         ]
       }
@@ -40671,36 +40051,28 @@
             "item": "hbm:rbmk_fuel_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetneptunium237"
+            "tag": "hbm:billets/neptunium_237"
           }
         ]
       }
@@ -41510,19 +40882,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ingot_raw",
-                "components": {
-                  "hbm:legacy_metadata": 41
-                },
-                "strict": false
+                "item": "hbm:autogen/ingot_raw/m41"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_block_coke_1b187b52ec0a",
-          "resource": "data/hbm/recipe/crafting/hbm_block_coke_1b187b52ec0a.json",
+          "id": "hbm:crafting/hbm_block_coke_coal_75d01f82ae64",
+          "resource": "data/hbm/recipe/crafting/hbm_block_coke_coal_75d01f82ae64.json",
           "status": "existing-real-native-resource",
           "variant": 22,
           "variantContext": {
@@ -41552,17 +40919,14 @@
               }
             },
             "result": {
-              "id": "hbm:block_coke",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:block_coke_coal",
+              "count": 1
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_block_coke_f948e53a576d",
-          "resource": "data/hbm/recipe/crafting/hbm_block_coke_f948e53a576d.json",
+          "id": "hbm:crafting/hbm_block_coke_lignite_bdf8fc4ed277",
+          "resource": "data/hbm/recipe/crafting/hbm_block_coke_lignite_bdf8fc4ed277.json",
           "status": "existing-real-native-resource",
           "variant": 23,
           "variantContext": {
@@ -41592,17 +40956,14 @@
               }
             },
             "result": {
-              "id": "hbm:block_coke",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:block_coke_lignite",
+              "count": 1
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_block_coke_6e31b4dd0cb8",
-          "resource": "data/hbm/recipe/crafting/hbm_block_coke_6e31b4dd0cb8.json",
+          "id": "hbm:crafting/hbm_block_coke_petroleum_827c67c53114",
+          "resource": "data/hbm/recipe/crafting/hbm_block_coke_petroleum_827c67c53114.json",
           "status": "existing-real-native-resource",
           "variant": 24,
           "variantContext": {
@@ -41632,11 +40993,8 @@
               }
             },
             "result": {
-              "id": "hbm:block_coke",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:block_coke_petroleum",
+              "count": 1
             }
           }
         },
@@ -44791,7 +44149,7 @@
       "runtimeBinding": {
         "java": "src/main/java/com/hbm/item/autogen/SourceMaterialCraftingRecipes.java",
         "source": "OreDictManager654..670",
-        "entry": "HbmMaterials.ordered actual configured material/autogen flags -> HbmOreDictionary first native members -> native RecipeManager startup/reload",
+        "entry": "HbmMaterials.ordered actual configured material/autogen flags -> HbmItemTags first native tag members -> native RecipeManager startup/reload",
         "nativeIds": "hbm:source_material_crafting/fragments/<actual material id>, nugget_compress/<id>, nugget_decompress/<id>",
         "priority": "dust > gem > crystal > ingot > billet(6fragments) > ore > actual source nothing",
         "semantics": "Actual first member and its components/count copied; all runtime/custom configured materials, exact source material matching; no builtin-only baked choices. Original source naked-name/autogen rules and both nugget directions retained."
@@ -44812,7 +44170,7 @@
       "runtimeBinding": {
         "java": "src/main/java/com/hbm/item/autogen/SourceMaterialCraftingRecipes.java",
         "source": "OreDictManager654..670",
-        "entry": "HbmMaterials.ordered actual configured material/autogen flags -> HbmOreDictionary first native members -> native RecipeManager startup/reload",
+        "entry": "HbmMaterials.ordered actual configured material/autogen flags -> HbmItemTags first native tag members -> native RecipeManager startup/reload",
         "nativeIds": "hbm:source_material_crafting/fragments/<actual material id>, nugget_compress/<id>, nugget_decompress/<id>",
         "priority": "dust > gem > crystal > ingot > billet(6fragments) > ore > actual source nothing",
         "semantics": "Actual first member and its components/count copied; all runtime/custom configured materials, exact source material matching; no builtin-only baked choices. Original source naked-name/autogen rules and both nugget directions retained."

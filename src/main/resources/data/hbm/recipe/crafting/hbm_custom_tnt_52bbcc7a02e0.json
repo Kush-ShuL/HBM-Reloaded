@@ -12,16 +12,13 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platecopper"
+      "tag": "c:plates/copper"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyhighexplosive"
+      "tag": "hbm:material_groups/highexplosive/ingots"
     }
   }
 }

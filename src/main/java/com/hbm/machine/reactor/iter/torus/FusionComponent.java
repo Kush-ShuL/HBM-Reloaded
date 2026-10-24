@@ -1,7 +1,7 @@
 package com.hbm.machine.reactor.iter.torus;
 import com.hbm.api.tool.ToolableBlock;
 import com.hbm.hazard.HbmHazards;
-import com.hbm.recipe.LegacyOreIngredient;
+
 import com.mojang.serialization.MapCodec;
 import java.util.*;
 import net.minecraft.core.*;
@@ -17,7 +17,7 @@ import net.minecraft.world.level.storage.loot.LootParams;
 /** Real BlockFusionComponent four materialvariants and source TORCH+one cast-steelplate welding. */
 public final class FusionComponent extends Block implements ToolableBlock {
     public static final IntegerProperty META=IntegerProperty.create("legacy_meta",0,15);
-    private static final LegacyOreIngredient PLATE=new LegacyOreIngredient(ResourceLocation.parse("hbm:legacy_ore_dict/platetriplesteel"));
+    private static final net.minecraft.world.item.crafting.Ingredient PLATE=net.minecraft.world.item.crafting.Ingredient.of(com.hbm.registry.HbmItemTags.key("hbm:plates/cast/steel"));
     public FusionComponent(){super(Properties.of().strength(5,18).sound(SoundType.STONE).requiresCorrectToolForDrops());registerDefaultState(stateDefinition.any().setValue(META,0));}
     @Override protected MapCodec<? extends FusionComponent> codec(){return MapCodec.unit(this);}@Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(META);}
     @Override public BlockState getStateForPlacement(BlockPlaceContext context){return defaultBlockState().setValue(META,Math.floorMod(context.getItemInHand().getOrDefault(HbmHazards.LEGACY_METADATA.get(),0),16));}

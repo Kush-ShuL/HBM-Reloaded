@@ -4,26 +4,21 @@
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotsteel"
+        "tag": "c:ingots/steel"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesteel"
+        "tag": "c:plates/steel"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemsteel"
+        "tag": "c:gems/steel"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/duststeel"
+        "tag": "c:dusts/steel"
       }
     ]
   },
   "second": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+    "tag": "c:nuggets/technetium_99"
   },
   "result": {
     "id": "hbm:ingot_tcalloy",

@@ -41,7 +41,7 @@ public final class OreCaveFeature extends Feature<NoneFeatureConfiguration> {
     private static int profile(WorldGenLevel level,RandomSource random,int chunkX,int chunkZ,OreCaves.Profile profile,int translation,int minimum,int maximum,boolean deep){
         var control=com.hbm.config.WorldgenControls.rule(!deep?"ore_caves":"deep_ore_caves",profile.name());if(!control.enabled())return 0;
         double threshold=control.decimal("threshold",profile.threshold()),scale=control.decimal("horizontalScale",.01D);int center=control.integer("centerY",profile.centerY()+translation),multiplier=control.integer("rangeMultiplier",profile.rangeMult()),maxRange=control.integer("maxRange",profile.maxRange());
-        var noise=noise(level.getSeed(),profile);var ore=HbmContent.block("stone_resource").defaultBlockState().setValue(LegacyOreBlock.LEGACY_META,profile.metadata());
+        var noise=noise(level.getSeed(),profile);var ore=com.hbm.registry.HbmOres.resourceBlock("stone_resource",profile.metadata()).defaultBlockState();
         var fluid=profile.fluid()==null?null:HbmWorldFluids.block(profile.fluid()).defaultBlockState();int changed=0;
         for(int x=chunkX+8;x<chunkX+24;x++)for(int z=chunkZ+8;z<chunkZ+24;z++){
             double n=noise.sample(x*scale,z*scale);if(!(n>threshold))continue;

@@ -82,7 +82,7 @@ public final class OreRecipeInputs {
 
     private static ItemStack original(RawOreContent.Source source, int count) {
         ItemStack stack = new ItemStack(item(source.originalItem()), count);
-        if (source.legacyMetadata() != 0 || stack.getItem() instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
+        if (!(stack.getItem() instanceof com.hbm.block.ore.ResourceOreItem) && (source.legacyMetadata() != 0 || stack.getItem() instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi()))
             stack.set(HbmHazards.LEGACY_METADATA.get(), source.legacyMetadata());
         return stack;
     }

@@ -3,9 +3,9 @@ import com.google.gson.*;
 import com.hbm.fluid.*;
 import com.hbm.machine.electricfurnace.ElectricFurnaceBlockEntity;
 import com.hbm.ore.RawOreContent;
-import com.hbm.recipe.LegacyOreIngredient;
+
 import com.hbm.recipe.generic.*;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.mojang.logging.LogUtils;
 import java.nio.file.*;
 import java.util.*;
@@ -31,14 +31,14 @@ public final class CombinationFurnaceRecipes {
     public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
     public static CombinationFurnaceRecipe find(RecipeManager manager,ItemStack stack){
         if(stack.isEmpty())return null;var canonical=RawOreContent.processingStack(stack);var values=recipes(manager);
-        for(int i=values.size()-1;i>=0;i--){var recipe=values.get(i);if(!recipe.dictionary()&&recipe.matchesItem(canonical))return recipe;}
-        for(String raw:HbmOreDictionary.names(canonical))for(int i=values.size()-1;i>=0;i--){var recipe=values.get(i);if(recipe.input().ingredient().getCustomIngredient() instanceof LegacyOreIngredient ore&&ore.tag().toString().equals("hbm:legacy_ore_dict/"+raw.toLowerCase(Locale.ROOT)))return recipe;}
+        for(int i=values.size()-1;i>=0;i--){var recipe=values.get(i);if(!recipe.tagged()&&recipe.matchesItem(canonical))return recipe;}
+        for(String tag:HbmItemTags.tags(canonical))for(int i=values.size()-1;i>=0;i--){var recipe=values.get(i);if(HbmItemTags.tag(recipe.input().ingredient()).filter(key->key.location().toString().equals(tag)).isPresent())return recipe;}
         return null;
     }
     private static boolean sameKey(CombinationFurnaceRecipe first,CombinationFurnaceRecipe second){
-        var a=first.input().ingredient().getCustomIngredient();var b=second.input().ingredient().getCustomIngredient();
-        if(a instanceof LegacyOreIngredient left)return b instanceof LegacyOreIngredient right&&left.tag().equals(right.tag());
-        if(b instanceof LegacyOreIngredient)return false;var left=first.input().ingredient().getItems();var right=second.input().ingredient().getItems();return left.length==1&&right.length==1&&ElectricFurnaceBlockEntity.sameLegacyItem(left[0],right[0]);
+        var a=HbmItemTags.tag(first.input().ingredient());var b=HbmItemTags.tag(second.input().ingredient());
+        if(a.isPresent())return a.equals(b);
+        if(b.isPresent())return false;var left=first.input().ingredient().getItems();var right=second.input().ingredient().getItems();return left.length==1&&right.length==1&&ElectricFurnaceBlockEntity.sameLegacyItem(left[0],right[0]);
     }
     public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
@@ -52,7 +52,7 @@ public final class CombinationFurnaceRecipes {
                 try{var recipe=read(value.getAsJsonObject(),order);added.values().removeIf(old->sameKey((CombinationFurnaceRecipe)old.value(),recipe));var id=ResourceLocation.parse("hbm:combination/"+(custom?"config/":"default/")+order);added.put(id,new RecipeHolder<>(id,recipe));}
                 catch(Exception error){UNRESOLVED.add("row "+order+": "+error.getMessage());}order++;
             }
-            if(!custom)template(dir.resolve("_hbmCombination.json"),added.values().stream().map(value->(CombinationFurnaceRecipe)value.value()).toList());
+            if(!custom)template(dir.resolve("_hbmCombination.json"),added.values().stream().map(value->(CombinationFurnaceRecipe)value.value()).toList(),server.registryAccess());
         }catch(Exception error){LogUtils.getLogger().error("Cannot load actual CombinationRecipes replacement",error);}
         added.forEach(merged::put);manager.replaceRecipes(merged.values());INSTALLED.put(manager,added);if(!UNRESOLVED.isEmpty())LogUtils.getLogger().error("Actual combination furnace recipes unresolved: {}",UNRESOLVED);
     }
@@ -65,6 +65,6 @@ public final class CombinationFurnaceRecipes {
         var fluids=new ArrayList<FluidStack>();if(row.has("fluid")){var fluid=row.getAsJsonArray("fluid");String name=fluid.get(0).getAsString();var type=HbmFluids.fromName(name);if(type==HbmFluids.NONE&&!name.equals("NONE"))throw new IllegalArgumentException("Unregistered original fluid "+name);fluids.add(new FluidStack(type,fluid.get(1).getAsInt(),fluid.size()>2?fluid.get(2).getAsInt():0));}
         return new CombinationFurnaceRecipe(new GenericRecipeData("combination.source."+order,0,0,List.of(input),List.of(),output.isEmpty()?List.of():List.of(new GenericOutput(output)),fluids,List.of(),"",ItemStack.EMPTY,false,"",order));
     }
-    private static void template(Path file,List<CombinationFurnaceRecipe> values)throws Exception{var root=new JsonObject();var rows=new JsonArray();for(var recipe:values){var row=new JsonObject();row.add("input",GenericRecipeConfigCodec.write(recipe.data()).getAsJsonArray("inputItem").get(0));if(!recipe.solid().isEmpty())row.add("output",GenericRecipeConfigCodec.writeStack(recipe.solid()));if(recipe.fluid()!=null){var fluid=recipe.fluid();var spec=new JsonArray();spec.add(fluid.type.getName());spec.add(fluid.fill);if(fluid.pressure!=0)spec.add(fluid.pressure);row.add("fluid",spec);}rows.add(row);}root.add("recipes",rows);Files.writeString(file,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}
+    private static void template(Path file,List<CombinationFurnaceRecipe> values,net.minecraft.core.HolderLookup.Provider lookup)throws Exception{var root=new JsonObject();var rows=new JsonArray();for(var recipe:values){var row=new JsonObject();row.add("input",GenericRecipeConfigCodec.write(recipe.data(),lookup).getAsJsonArray("inputItem").get(0));if(!recipe.solid().isEmpty())row.add("output",GenericRecipeConfigCodec.writeStack(recipe.solid()));if(recipe.fluid()!=null){var fluid=recipe.fluid();var spec=new JsonArray();spec.add(fluid.type.getName());spec.add(fluid.fill);if(fluid.pressure!=0)spec.add(fluid.pressure);row.add("fluid",spec);}rows.add(row);}root.add("recipes",rows);Files.writeString(file,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}
     private CombinationFurnaceRecipes(){}
 }

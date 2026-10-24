@@ -15,20 +15,16 @@
       "item": "hbm:coil_copper"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavyanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/gun_parts/barrels/heavy"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverheavyanyresistantalloy"
+      "tag": "hbm:material_groups/resistant_alloy/gun_parts/receivers/heavy"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripanyplastic"
+      "tag": "hbm:material_groups/plastic/gun_parts/grips"
     },
     "E": {
       "item": "hbm:circuit_advanced"

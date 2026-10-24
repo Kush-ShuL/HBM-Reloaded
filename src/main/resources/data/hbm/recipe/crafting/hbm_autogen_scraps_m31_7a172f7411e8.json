@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:autogen/scraps/m31",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "amount": 144
+      }
+    }
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/copper"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    }
+  ]
+}

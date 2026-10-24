@@ -3,8 +3,8 @@
   "entries": [
     {
       "kind": "block",
-      "symbol": "block_coke",
-      "id": "hbm:block_coke",
+      "symbol": "block_coke_coal",
+      "id": "hbm:block_coke_coal",
       "legacyRegistryId": "hbm:tile.block_coke",
       "originalClass": "BlockCoke",
       "source": {
@@ -25,21 +25,71 @@
         }
       ],
       "creativeTab": "block",
-      "metadataRange": [
-        0,
-        2
-      ],
-      "names": [
-        "coal",
-        "lignite",
-        "petroleum"
-      ],
       "enumClass": "EnumCokeType",
-      "stateMetadataRange": [
-        0,
-        15
+      "hasBlockEntity": false,
+      "sourceOrdinal": 0,
+      "sourceField": "ModBlocks.block_coke",
+      "sourceEnum": "COAL"
+    },
+    {
+      "kind": "block",
+      "symbol": "block_coke_lignite",
+      "id": "hbm:block_coke_lignite",
+      "legacyRegistryId": "hbm:tile.block_coke",
+      "originalClass": "BlockCoke",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1409
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2546
+          },
+          "expression": "register(block_coke)",
+          "arguments": [
+            "block_coke"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
       ],
-      "hasBlockEntity": false
+      "creativeTab": "block",
+      "enumClass": "EnumCokeType",
+      "hasBlockEntity": false,
+      "sourceOrdinal": 1,
+      "sourceField": "ModBlocks.block_coke",
+      "sourceEnum": "LIGNITE"
+    },
+    {
+      "kind": "block",
+      "symbol": "block_coke_petroleum",
+      "id": "hbm:block_coke_petroleum",
+      "legacyRegistryId": "hbm:tile.block_coke",
+      "originalClass": "BlockCoke",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+        "line": 1409
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/blocks/ModBlocks.java",
+            "line": 2546
+          },
+          "expression": "register(block_coke)",
+          "arguments": [
+            "block_coke"
+          ],
+          "itemBlockClass": "ItemBlockBase"
+        }
+      ],
+      "creativeTab": "block",
+      "enumClass": "EnumCokeType",
+      "hasBlockEntity": false,
+      "sourceOrdinal": 2,
+      "sourceField": "ModBlocks.block_coke",
+      "sourceEnum": "PETROLEUM"
     }
   ]
 }

@@ -1,7 +1,6 @@
 package com.hbm.block.fluid;
 
 import java.util.function.Supplier;
-import com.hbm.block.ore.LegacyOreBlock;
 import com.hbm.exposure.HbmExposure;
 import com.hbm.registry.HbmContent;
 import net.minecraft.core.BlockPos;
@@ -31,7 +30,7 @@ public final class VolcanicFluidBlock extends LegacyClassicFluidBlock {
         if (id.startsWith("minecraft:") && java.util.Set.of("oak_log", "spruce_log", "birch_log", "jungle_log", "acacia_log", "dark_oak_log", "oak_wood", "spruce_wood", "birch_wood", "jungle_wood", "acacia_wood", "dark_oak_wood").contains(id.substring(10))) return HbmWorldFluids.block("waste_log");
         if (id.startsWith("minecraft:") && java.util.Set.of("oak_planks", "spruce_planks", "birch_planks", "jungle_planks", "acacia_planks", "dark_oak_planks").contains(id.substring(10))) return HbmWorldFluids.block("waste_planks");
         if (id.startsWith("minecraft:") && java.util.Set.of("oak_leaves", "spruce_leaves", "birch_leaves", "jungle_leaves", "acacia_leaves", "dark_oak_leaves").contains(id.substring(10))) return Blocks.FIRE;
-        if (block == Blocks.DIAMOND_ORE) return HbmContent.block(radioactive ? "ore_sellafield_radgem" : "ore_basalt");
+        if (block == Blocks.DIAMOND_ORE) return radioactive ? HbmContent.block("ore_sellafield_radgem") : com.hbm.registry.HbmOres.resourceBlock("ore_basalt", 3);
         if (radioactive && (block == HbmContent.block("ore_uranium") || block == HbmContent.block("ore_gneiss_uranium")))
             return HbmContent.block(world.level().random.nextInt(5) == 0 ? "ore_sellafield_schrabidium" : "ore_sellafield_uranium_scorched");
         return null;
@@ -39,7 +38,7 @@ public final class VolcanicFluidBlock extends LegacyClassicFluidBlock {
     @Override protected void neighborReaction(LegacyFluidWorld world, BlockPos pos) {
         for (Direction direction : Direction.values()) {
             BlockPos target = pos.relative(direction); Block product = reaction(world, target);
-            if (product != null) world.setBlock(target.getX(), target.getY(), target.getZ(), product, product == HbmContent.block("ore_basalt") ? 3 : 0, 3);
+            if (product != null) world.setBlock(target.getX(), target.getY(), target.getZ(), product, 0, 3);
         }
     }
     @Override public void updateTick(LegacyFluidWorld world, int x, int y, int z, RandomSource random) {
@@ -63,13 +62,14 @@ public final class VolcanicFluidBlock extends LegacyClassicFluidBlock {
         if (radioactive) product = roll < 2 ? HbmContent.block("ore_sellafield_diamond") : roll == 2 ? HbmContent.block("ore_sellafield_emerald")
                 : roll < 20 && gem ? HbmContent.block("ore_sellafield_radgem") : basalt();
         else {
-            product = HbmContent.block("ore_basalt");
+            product = null; // Select the fixed source mineral after the unchanged roll gates.
             if (roll < 2) metadata = 0;
             else if (roll == 2) metadata = 1;
             else if (roll == 3) metadata = 2;
             else if (roll == 4) metadata = 4;
             else if (roll < 15 && gem) metadata = 3;
             else product = basalt();
+            if (product == null) product = com.hbm.registry.HbmOres.resourceBlock("ore_basalt", metadata);
         }
         world.setBlock(x, y, z, product, metadata, 3);
     }

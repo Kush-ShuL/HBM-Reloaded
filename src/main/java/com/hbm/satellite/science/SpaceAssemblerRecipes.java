@@ -81,7 +81,7 @@ public final class SpaceAssemblerRecipes {
                     additions.put(id,new RecipeHolder<>(id,recipe));
                 }catch(Exception error){UNRESOLVED.add("row "+index+": "+error.getMessage());}
             }
-            if(!custom){var template=new JsonObject();var rows=new JsonArray();for(var holder:additions.values())rows.add(GenericRecipeConfigCodec.write(((SpaceAssemblerRecipe)holder.value()).data()));template.add("recipes",rows);Files.writeString(directory.resolve("_hbmSpaceAssembler.json"),new GsonBuilder().setPrettyPrinting().create().toJson(template)+"\n");}
+            if(!custom){var template=new JsonObject();var rows=new JsonArray();for(var holder:additions.values())rows.add(GenericRecipeConfigCodec.write(((SpaceAssemblerRecipe)holder.value()).data(),server.registryAccess()));template.add("recipes",rows);Files.writeString(directory.resolve("_hbmSpaceAssembler.json"),new GsonBuilder().setPrettyPrinting().create().toJson(template)+"\n");}
         }catch(Exception error){LogUtils.getLogger().error("Cannot load actual source space assembly recipes",error);UNRESOLVED.add(error.toString());}
         additions.forEach(merged::put);manager.replaceRecipes(merged.values());INSTALLED.put(manager,additions);SNAPSHOTS.remove(manager);loaded=snapshot(manager);
         Blueprints.registerRecipes(ResourceLocation.parse("hbm:space_assembler"),loaded.ordered);

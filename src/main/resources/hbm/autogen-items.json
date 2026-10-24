@@ -281,6 +281,12 @@
   "customShapeTemplate": {
     "descriptionId": "item.<original_shape_name>.name",
     "texture": "<original_shape_name>",
-    "registration": "one actual ItemAutogen per source custom shape; metadata remains material ID"
+    "registration": "one physical item per configured shape/material pair; source autogen enablement controls creative and tag eligibility"
+  },
+  "physicalRegistration": {
+    "identity": "autogen/<family>/m<stable material ID>; custom/<shape-id> and scraps under autogen/",
+    "domain": "all configured material x actual family pairs",
+    "membership": "source enabled shape and source smeltable gate only",
+    "resources": "GeneratedMaterialResources native pack before first reload"
   }
 }

@@ -2,8 +2,8 @@
   "recipes": [
     {
       "input": [
-        "dict",
-        "ingotUranium",
+        "tag",
+        "c:ingots/uranium",
         1
       ],
       "produced": 900,
@@ -103,8 +103,8 @@
     },
     {
       "input": [
-        "dict",
-        "ingotPlutonium",
+        "tag",
+        "c:ingots/plutonium",
         1
       ],
       "produced": 900,
@@ -15559,16 +15559,6 @@
       ]
     ]
   ],
-  "dictTranslations": [
-    [
-      "dustUranium",
-      "ingotUranium"
-    ],
-    [
-      "dustPlutonium",
-      "ingotPlutonium"
-    ]
-  ],
   "tinyWasteTranslations": [
     [
       "hbm:nuclear_waste_short_tiny",
@@ -15585,6 +15575,16 @@
     [
       "hbm:nuclear_waste_long_depleted_tiny",
       "hbm:nuclear_waste_long_depleted"
+    ]
+  ],
+  "tagTranslations": [
+    [
+      "c:dusts/uranium",
+      "c:ingots/uranium"
+    ],
+    [
+      "c:dusts/plutonium",
+      "c:ingots/plutonium"
     ]
   ]
 }

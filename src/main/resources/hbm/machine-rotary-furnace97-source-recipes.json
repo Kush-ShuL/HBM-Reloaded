@@ -3,13 +3,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "ingotIron",
+          "tag",
+          "c:ingots/iron",
           1
         ],
         [
-          "dict",
-          "gemCoal",
+          "tag",
+          "c:gems/coal",
           1
         ]
       ],
@@ -23,13 +23,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "ingotIron",
+          "tag",
+          "c:ingots/iron",
           1
         ],
         [
-          "dict",
-          "gemAnyCoke",
+          "tag",
+          "c:gems/coke",
           1
         ]
       ],
@@ -43,13 +43,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "bedrockorefragmentIron",
+          "tag",
+          "hbm:bedrock_ore_fragments/iron",
           9
         ],
         [
-          "dict",
-          "gemCoal",
+          "tag",
+          "c:gems/coal",
           1
         ]
       ],
@@ -63,13 +63,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "bedrockorefragmentIron",
+          "tag",
+          "hbm:bedrock_ore_fragments/iron",
           9
         ],
         [
-          "dict",
-          "gemAnyCoke",
+          "tag",
+          "c:gems/coke",
           1
         ]
       ],
@@ -83,13 +83,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "bedrockorefragmentIron",
+          "tag",
+          "hbm:bedrock_ore_fragments/iron",
           9
         ],
         [
-          "dict",
-          "gemAnyCoke",
+          "tag",
+          "c:gems/coke",
           1
         ],
         [
@@ -130,13 +130,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           3
         ],
         [
-          "dict",
-          "ingotAluminum",
+          "tag",
+          "c:ingots/aluminum",
           1
         ]
       ],
@@ -150,8 +150,8 @@
     {
       "inputs": [
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         [
@@ -176,13 +176,13 @@
     {
       "inputs": [
         [
-          "dict",
-          "dustDuraSteel",
+          "tag",
+          "c:dusts/dura_steel",
           4
         ],
         [
-          "dict",
-          "dustCopper",
+          "tag",
+          "c:dusts/copper",
           1
         ]
       ],
@@ -201,18 +201,18 @@
     {
       "inputs": [
         [
-          "dict",
-          "dustDuraSteel",
+          "tag",
+          "c:dusts/dura_steel",
           4
         ],
         [
-          "dict",
-          "dustCopper",
+          "tag",
+          "c:dusts/copper",
           1
         ],
         [
-          "dict",
-          "dustBorax",
+          "tag",
+          "c:dusts/borax",
           1
         ]
       ],

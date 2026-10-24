@@ -12,28 +12,22 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesaturnite"
+      "tag": "c:plates/saturnite"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavysaturnite"
+      "tag": "hbm:gun_parts/barrels/heavy/saturnite"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellsaturnite"
+      "tag": "hbm:gun_parts/shells/saturnite"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverheavysaturnite"
+      "tag": "hbm:gun_parts/receivers/heavy/saturnite"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripanyhardplastic"
+      "tag": "hbm:material_groups/hard_plastic/gun_parts/grips"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismsaturnite"
+      "tag": "hbm:gun_parts/mechanisms/saturnite"
     }
   }
 }

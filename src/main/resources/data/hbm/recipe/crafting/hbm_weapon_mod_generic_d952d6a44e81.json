@@ -10,20 +10,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      "tag": "hbm:plates/cast/steel"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      "tag": "hbm:plates/cast/steel"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      "tag": "hbm:plates/cast/steel"
     },
     {
       "item": "hbm:ducttape"

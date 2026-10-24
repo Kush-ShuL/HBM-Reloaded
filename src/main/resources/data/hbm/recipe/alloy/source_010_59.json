@@ -4,20 +4,16 @@
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+        "tag": "c:ingots/saturnite"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesaturnite"
+        "tag": "c:plates/saturnite"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemsaturnite"
+        "tag": "c:gems/saturnite"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustsaturnite"
+        "tag": "c:dusts/saturnite"
       }
     ]
   },

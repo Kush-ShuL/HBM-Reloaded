@@ -4,20 +4,16 @@
     "type": "neoforge:compound",
     "children": [
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotcobalt"
+        "tag": "c:ingots/cobalt"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platecobalt"
+        "tag": "c:plates/cobalt"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gemcobalt"
+        "tag": "c:gems/cobalt"
       },
       {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustcobalt"
+        "tag": "c:dusts/cobalt"
       }
     ]
   },

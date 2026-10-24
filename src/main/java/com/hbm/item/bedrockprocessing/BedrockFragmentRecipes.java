@@ -3,7 +3,7 @@ package com.hbm.item.bedrockprocessing;
 import com.hbm.item.autogen.AutogenContent;
 import com.hbm.machine.alloy.AlloyStackIngredient;
 import com.hbm.material.HbmMaterials;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import java.util.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -27,11 +27,11 @@ public final class BedrockFragmentRecipes {
         for(var holder:manager.getOrderedRecipes())if(old.get(holder.id())!=holder)merged.put(holder.id(),holder);
         var installed=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();var fragment=AutogenContent.item("bedrock_ore_fragment");var shape=HbmMaterials.shape("FRAGMENT");
         for(var material:HbmMaterials.ordered())if(material.autogen().contains(shape)){
-            int alias=0;for(String name:material.names()){
+            int alias=0;for(int materialAlias=0;materialAlias<material.names().size();materialAlias++){
                 ItemStack output=ItemStack.EMPTY;boolean billet=false;
-                for(String prefix:List.of("dust","gem","crystal","ingot","billet","ore")){
-                    var first=HbmOreDictionary.items(HbmOreDictionary.registerName(prefix+name)).findFirst();
-                    if(first.isPresent()){output=first.get().copy();billet=prefix.equals("billet");break;}
+                for(String prefix:List.of("DUST","GEM","CRYSTAL","INGOT","BILLET","ORE")){
+                    var first=HbmItemTags.items(HbmItemTags.material(prefix,material.names().getFirst())).findFirst();
+                    if(first.isPresent()){output=first.get().copy();billet=prefix.equals("BILLET");break;}
                 }
                 if(output.isEmpty())output=new ItemStack(BuiltInRegistries.ITEM.get(BedrockProcessingContent.id("nothing")));
                 if(output.isEmpty())throw new IllegalStateException("Original fragment fallback item is missing");

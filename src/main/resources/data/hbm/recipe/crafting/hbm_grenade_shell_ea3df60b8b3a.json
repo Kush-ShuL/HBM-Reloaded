@@ -18,12 +18,10 @@
       "item": "hbm:circuit_basic"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/shellweaponsteel"
+      "tag": "hbm:gun_parts/shells/weapon_steel"
     }
   }
 }

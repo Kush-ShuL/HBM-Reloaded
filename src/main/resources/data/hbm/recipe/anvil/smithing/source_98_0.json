@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetgold"
+      "tag": "c:nuggets/gold"
     },
     "count": 1
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "nugget",
   "exact_left": [],
-  "order": 98000000
+  "order": 98000000,
+  "shape": "NUGGET"
 }

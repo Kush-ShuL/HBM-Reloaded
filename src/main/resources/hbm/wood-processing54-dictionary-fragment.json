@@ -1,16 +1,16 @@
 {
   "source": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java#L59",
   "order": [
-    "hbm:legacy_ore_dict/plankwood",
-    "hbm:legacy_ore_dict/treesapling"
+    "minecraft:planks",
+    "minecraft:saplings"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/plankwood",
+      "tag": "minecraft:planks",
       "raw": "plankWood"
     },
     {
-      "tag": "hbm:legacy_ore_dict/treesapling",
+      "tag": "minecraft:saplings",
       "raw": "treeSapling"
     }
   ],
@@ -18,7 +18,7 @@
   "registrations": [
     {
       "raw": "plankWood",
-      "tag": "hbm:legacy_ore_dict/plankwood",
+      "tag": "minecraft:planks",
       "members": [
         "minecraft:oak_planks",
         "minecraft:spruce_planks",
@@ -32,7 +32,7 @@
     },
     {
       "raw": "treeSapling",
-      "tag": "hbm:legacy_ore_dict/treesapling",
+      "tag": "minecraft:saplings",
       "members": [
         "minecraft:oak_sapling",
         "minecraft:spruce_sapling",

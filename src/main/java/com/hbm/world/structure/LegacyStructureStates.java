@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.state.properties.*;
 public final class LegacyStructureStates {
     public static BlockState resolve(String source,int metadata,int turns){
         String actualName=source.replace("hbm:tile.","hbm:");
+        if(actualName.equals("hbm:block_coke"))return com.hbm.block.cokestorage.CokeStorageContent.block(Math.floorMod(metadata,3)).defaultBlockState(); // Decode original source templates before native lookup.
+        if(actualName.equals("hbm:ore_basalt")||actualName.equals("hbm:stone_resource"))return com.hbm.registry.HbmOres.resourceBlock(actualName.substring(4),metadata).defaultBlockState(); // Original source-template decoder only.
         var actualId=ResourceLocation.parse(actualName);
         if(BuiltInRegistries.BLOCK.containsKey(actualId)){
             Block actual=BuiltInRegistries.BLOCK.get(actualId);

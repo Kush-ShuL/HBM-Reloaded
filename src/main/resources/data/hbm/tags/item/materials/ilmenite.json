@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:ingots/ilmenite",
+      "required": false
+    },
+    "hbm:chunk_ore_ilmenite"
+  ]
+}

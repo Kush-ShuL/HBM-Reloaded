@@ -7,12 +7,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcalcium"
+      "tag": "c:dusts/calcium"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/sand"
+      "tag": "c:sands"
     }
   ]
 }

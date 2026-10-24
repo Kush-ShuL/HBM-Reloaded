@@ -15,12 +15,10 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gempetcoke"
+      "tag": "c:gems/pet_coke"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/anytar"
+      "tag": "hbm:tars"
     }
   }
 }

@@ -34,6 +34,7 @@ public final class HbmOres {
     private static final DeferredRegister<BlockEntityType<?>> ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, "hbm");
     public static DeferredHolder<BlockEntityType<?>, BlockEntityType<BedrockOreEntity>> BEDROCK_ENTITY;
     public static DeferredHolder<BlockEntityType<?>, BlockEntityType<FissureBlockEntity>> FISSURE_ENTITY;
+    private static final java.util.Map<String,java.util.function.Supplier<ResourceOreBlock>> RESOURCES = new java.util.LinkedHashMap<>();
     private static final List<DeferredItem<? extends Item>> ALL = new ArrayList<>();
     public static final DeferredItem<Item> ALEXANDRITE = ITEMS.register("gem_alexandrite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<DrillbitItem> DRILLBIT = ITEMS.register("drillbit", DrillbitItem::new);
@@ -47,10 +48,13 @@ public final class HbmOres {
                 if (spec.originalClass().equals("BlockFalling")) {
                     var block = BLOCKS.register(spec.id(), () -> new OilSandBlock(spec));
                     ALL.add(ITEMS.registerSimpleBlockItem(spec.id(), block));
+                } else if (spec.originalClass().equals("BlockOreBasalt") || spec.originalClass().equals("BlockResourceStone")) {
+                    var block = BLOCKS.register(spec.id(), () -> new ResourceOreBlock(spec));
+                    RESOURCES.put(spec.id(), block);
+                    ALL.add(ITEMS.register(spec.id(), () -> new com.hbm.block.ore.ResourceOreItem(block.get())));
                 } else {
                     var block = BLOCKS.register(spec.id(), () -> switch (spec.originalClass()) {
                         case "BlockOutgas", "BlockNetherCoal" -> new OutgassingOreBlock(spec);
-                        case "BlockOreBasalt", "BlockResourceStone" -> new ResourceOreBlock(spec);
                         case "BlockBedrockOreTE" -> new BedrockOreBlock(spec);
                         case "BlockFissure" -> new FissureBlock(spec);
                         default -> new LegacyOreBlock(spec);
@@ -62,6 +66,14 @@ public final class HbmOres {
             }
         } catch (java.io.IOException exception) { throw new IllegalStateException("Cannot load original ore definitions", exception); }
         BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus);
+    }
+
+    /** Source generation and volcanic reactions choose a fixed mineral before placement. */
+    public static ResourceOreBlock resourceBlock(String sourceFamily, int ordinal) {
+        String id=ResourceOreBlock.sourceId(sourceFamily,ordinal);
+        var block=RESOURCES.get(id);
+        if(block==null)throw new IllegalStateException("Resource ore is not registered: "+id);
+        return block.get();
     }
 
     public static List<DeferredItem<? extends Item>> allItems() { return List.copyOf(ALL); }

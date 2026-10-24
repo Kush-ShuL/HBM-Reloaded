@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_pc",
+    "hbm:ingot_pvc",
+    {
+      "id": "#c:ingots/polycarbonate",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/pvc",
+      "required": false
+    }
+  ]
+}

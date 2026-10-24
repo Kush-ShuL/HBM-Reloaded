@@ -12,15 +12,13 @@
   ],
   "key": {
     "E": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggeteuphemium"
+      "tag": "c:nuggets/euphemium"
     },
     "S": {
       "item": "hbm:cell_anti_schrabidium"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockschrabidium"
+      "tag": "c:storage_blocks/schrabidium"
     }
   }
 }

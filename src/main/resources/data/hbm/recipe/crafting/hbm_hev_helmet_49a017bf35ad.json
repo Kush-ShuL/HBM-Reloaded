@@ -22,8 +22,7 @@
       "strict": false
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     },
     "F": {
       "item": "hbm:gas_mask_filter"

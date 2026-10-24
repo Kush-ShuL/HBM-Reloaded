@@ -12,12 +12,10 @@
   ],
   "key": {
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+      "tag": "hbm:wires/fine/mingrade"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotiron"
+      "tag": "c:ingots/iron"
     }
   }
 }

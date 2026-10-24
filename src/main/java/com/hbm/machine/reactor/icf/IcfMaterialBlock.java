@@ -2,7 +2,7 @@ package com.hbm.machine.reactor.icf;
 
 import com.hbm.api.tool.ToolableBlock;
 import com.hbm.hazard.HbmHazards;
-import com.hbm.recipe.LegacyOreIngredient;
+
 import com.mojang.serialization.MapCodec;
 import java.util.List;
 import net.minecraft.core.*;
@@ -31,14 +31,14 @@ public final class IcfMaterialBlock extends Block implements ToolableBlock {
     public ItemStack stack(int meta,int count){var stack=new ItemStack(this,count);stack.set(HbmHazards.LEGACY_METADATA.get(),subtype(meta));return stack;}
     @Override protected List<ItemStack> getDrops(BlockState state,LootParams.Builder context){return List.of(stack(state.getValue(META),1));}
     @Override public ItemStack getCloneItemStack(LevelReader level,BlockPos pos,BlockState state){return stack(state.getValue(META),1);}
-    public record Requirement(LegacyOreIngredient ingredient,int count) {
-        public Requirement(String tag,int count){this(new LegacyOreIngredient(ResourceLocation.parse("hbm:legacy_ore_dict/"+tag)),count);}
+    public record Requirement(net.minecraft.world.item.crafting.Ingredient ingredient,int count) {
+        public Requirement(String tag,int count){this(net.minecraft.world.item.crafting.Ingredient.of(com.hbm.registry.HbmItemTags.key(tag)),count);}
     }
     public List<Requirement> requirements(BlockState state,ToolType tool) {
         if(laser)return List.of();
         int meta=state.getValue(META);
-        if(meta==1&&tool==ToolType.TORCH)return List.of(new Requirement("platetripleanybismoidbronze",1));
-        if(meta==3&&tool==ToolType.BOLT)return List.of(new Requirement("platetriplesteel",1),new Requirement("boltdurasteel",4));
+        if(meta==1&&tool==ToolType.TORCH)return List.of(new Requirement("hbm:material_groups/bismoid_bronze/plates/cast",1));
+        if(meta==3&&tool==ToolType.BOLT)return List.of(new Requirement("hbm:plates/cast/steel",1),new Requirement("hbm:bolts/dura_steel",4));
         return List.of();
     }
     @Override public boolean onScrew(Level level,Player player,BlockPos pos,Direction side,float x,float y,float z,ToolType tool) {

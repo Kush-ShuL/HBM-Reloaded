@@ -1,12 +1,12 @@
 {
   "source": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.7.10/src/main/java/net/minecraftforge/oredict/OreDictionary.java#L61",
   "order": [
-    "hbm:legacy_ore_dict/slabwood"
+    "minecraft:wooden_slabs"
   ],
   "names": [
     {
       "raw": "slabWood",
-      "tag": "hbm:legacy_ore_dict/slabwood"
+      "tag": "minecraft:wooden_slabs"
     }
   ],
   "memberships": [],
@@ -14,7 +14,7 @@
     {
       "expression": "KEY_SLAB",
       "raw": "slabWood",
-      "tag": "hbm:legacy_ore_dict/slabwood",
+      "tag": "minecraft:wooden_slabs",
       "members": [
         "minecraft:oak_slab",
         "minecraft:spruce_slab",

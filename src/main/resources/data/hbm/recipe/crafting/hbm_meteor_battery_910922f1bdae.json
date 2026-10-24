@@ -15,12 +15,10 @@
       "item": "hbm:meteor_polished"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockstarmetal"
+      "tag": "c:storage_blocks/starmetal"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefineschrabidium"
+      "tag": "hbm:wires/fine/schrabidium"
     }
   }
 }

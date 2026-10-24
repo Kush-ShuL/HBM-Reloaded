@@ -12,19 +12,16 @@
   ],
   "key": {
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plategold"
+      "tag": "c:plates/gold"
     },
     "K": {
       "item": "hbm:key"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustworkersalloy"
+      "tag": "c:dusts/workers_alloy"
     },
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ntmscrewdriver"
+      "tag": "hbm:tools/screwdrivers"
     }
   }
 }

@@ -13,8 +13,8 @@
           0
         ],
         [
-          "dict",
-          "billetZirconium",
+          "tag",
+          "hbm:billets/zirconium",
           3
         ]
       ],
@@ -48,8 +48,8 @@
       "power": 1000,
       "inputItem": [
         [
-          "dict",
-          "billetGold198",
+          "tag",
+          "hbm:billets/gold_198",
           1
         ],
         [
@@ -84,8 +84,8 @@
       "power": 1000,
       "inputItem": [
         [
-          "dict",
-          "billetLead209",
+          "tag",
+          "hbm:billets/lead_209",
           1
         ],
         [
@@ -2245,8 +2245,8 @@
       ],
       "inputItem": [
         [
-          "dict",
-          "nuggetThorium232",
+          "tag",
+          "c:nuggets/thorium_232",
           2
         ]
       ],

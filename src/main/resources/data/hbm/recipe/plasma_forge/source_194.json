@@ -32,15 +32,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetriplecmbsteel"
+        "tag": "hbm:plates/cast/cmb_steel"
       },
       "count": 1
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+        "tag": "hbm:plates/welded/tungsten"
       },
       "count": 2
     }
@@ -66,8 +64,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+        "tag": "hbm:plates/welded/tungsten"
       },
       "count": 2
     }

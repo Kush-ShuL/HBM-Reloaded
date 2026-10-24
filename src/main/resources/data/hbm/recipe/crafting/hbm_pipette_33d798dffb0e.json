@@ -12,12 +12,10 @@
   ],
   "key": {
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+      "tag": "hbm:material_groups/rubber/ingots"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockglasscolorless"
+      "tag": "c:glass_blocks/colorless"
     }
   }
 }

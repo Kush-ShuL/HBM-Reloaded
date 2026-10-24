@@ -60,15 +60,13 @@
         "input_items": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanyrubber"
+              "tag": "hbm:material_groups/rubber/ingots"
             },
             "count": 4
           },
@@ -157,8 +155,7 @@
         ],
         "key": {
           "C": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platecopper"
+            "tag": "c:plates/copper"
           },
           "P": {
             "item": "hbm:machine_epress"

@@ -23,15 +23,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+        "tag": "hbm:plates/welded/tungsten"
       },
       "count": 4
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensemagnetizedtungsten"
+        "tag": "hbm:wires/dense/magnetized_tungsten"
       },
       "count": 16
     }
@@ -39,15 +37,13 @@
   "expensive_input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platesextupletungsten"
+        "tag": "hbm:plates/welded/tungsten"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensemagnetizedtungsten"
+        "tag": "hbm:wires/dense/magnetized_tungsten"
       },
       "count": 16
     }

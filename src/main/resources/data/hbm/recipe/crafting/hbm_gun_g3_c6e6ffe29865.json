@@ -11,28 +11,22 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrellightweaponsteel"
+      "tag": "hbm:gun_parts/barrels/light/weapon_steel"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverlightweaponsteel"
+      "tag": "hbm:gun_parts/receivers/light/weapon_steel"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripwood"
+      "tag": "hbm:gun_parts/grips/wood"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/griprubber"
+      "tag": "hbm:gun_parts/grips/rubber"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stockwood"
+      "tag": "hbm:gun_parts/stocks/wood"
     }
   }
 }

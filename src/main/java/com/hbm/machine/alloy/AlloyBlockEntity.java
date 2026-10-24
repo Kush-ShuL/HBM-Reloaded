@@ -82,11 +82,11 @@ public final class AlloyBlockEntity extends BlockEntity implements WorldlyContai
         if(item==Items.COAL||item==Items.CHARCOAL) return 200;
         if(item==Items.COAL_BLOCK) return 2000; if(item==Items.LAVA_BUCKET) return 12800; if(item==Items.BLAZE_ROD) return 1000; if(item==Items.BLAZE_POWDER) return 300;
         String path=BuiltInRegistries.ITEM.getKey(item).getNamespace().equals("hbm")?BuiltInRegistries.ITEM.getKey(item).getPath():"";
-        return switch(path) { case "block_coke"->4000; case "lignite","powder_lignite"->150; case "powder_coal","briquette_coal","briquette_lignite","briquette_wood"->200; case "coke_coal","coke_lignite","coke_petroleum","solid_fuel"->400; default->0; };
+        return switch(path) { case "block_coke_coal","block_coke_lignite","block_coke_petroleum"->4000; case "lignite","powder_lignite"->150; case "powder_coal","briquette_coal","briquette_lignite","briquette_wood"->200; case "coke_coal","coke_lignite","coke_petroleum","solid_fuel"->400; default->0; };
     }
     public static List<ItemStack> fuels() {
         var result=new ArrayList<ItemStack>(); for(Item item:List.of(Items.COAL,Items.CHARCOAL,Items.COAL_BLOCK,Items.LAVA_BUCKET,Items.BLAZE_ROD,Items.BLAZE_POWDER)) result.add(new ItemStack(item));
-        for(String symbol:List.of("block_coke","lignite","powder_lignite","powder_coal","briquette_coal","briquette_lignite","briquette_wood","coke_coal","coke_lignite","coke_petroleum","solid_fuel")) { Item item=BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("hbm",symbol)); if(item!=Items.AIR) result.add(new ItemStack(item)); } return result;
+        for(String symbol:List.of("block_coke_coal","lignite","powder_lignite","powder_coal","briquette_coal","briquette_lignite","briquette_wood","coke_coal","coke_lignite","coke_petroleum","solid_fuel")) { Item item=BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("hbm",symbol)); if(item!=Items.AIR) result.add(new ItemStack(item)); } return result;
     }
     @Override public long energyStored() { return 0; } @Override public long energyCapacity() { return 0; }
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup) { super.saveAdditional(tag,lookup); ContainerHelper.saveAllItems(tag,inventory,lookup); tag.putInt("powerTime",fuel); tag.putShort("cookTime",(short)progress); tag.putByteArray("modes",new byte[]{(byte)sideFuel,(byte)sideUpper,(byte)sideLower}); if(customName!=null) tag.putString("CustomName",Component.Serializer.toJson(customName,lookup)); }

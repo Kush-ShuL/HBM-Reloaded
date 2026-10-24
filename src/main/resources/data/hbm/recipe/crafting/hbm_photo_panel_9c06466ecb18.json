@@ -12,15 +12,13 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/paneglass"
+      "tag": "c:glass_panes"
     },
     "I": {
       "item": "hbm:plate_polymer"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/billetsilicon"
+      "tag": "hbm:billets/silicon"
     },
     "C": {
       "item": "hbm:circuit_pcb"

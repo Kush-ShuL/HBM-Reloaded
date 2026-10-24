@@ -15,12 +15,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanybismoidbronze"
+      "tag": "hbm:material_groups/bismoid_bronze/ingots"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetripleanybismoidbronze"
+      "tag": "hbm:material_groups/bismoid_bronze/plates/cast"
     }
   }
 }

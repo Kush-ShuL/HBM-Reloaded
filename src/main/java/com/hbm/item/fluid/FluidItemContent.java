@@ -44,7 +44,6 @@ public final class FluidItemContent {
         bus.addListener((FMLCommonSetupEvent event) -> event.enqueueWork(() -> {
             FluidTank.noDualUnload.add(INFINITE.get());
             FluidContainerRegistry.rebuild();
-            com.hbm.registry.HbmOreDictionary.addProvider(FluidContainerRegistry::oreTags, FluidContainerRegistry::oreStacks);
             HbmFluids.additionalListeners.add(FluidContainerRegistry::rebuild);
         }));
         bus.addListener(FluidIdentifierItem::registerPayload);

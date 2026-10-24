@@ -1,8 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/oreredstone"
+    "tag": "c:ores/redstone"
   },
   "exact_input": false,
   "results": [

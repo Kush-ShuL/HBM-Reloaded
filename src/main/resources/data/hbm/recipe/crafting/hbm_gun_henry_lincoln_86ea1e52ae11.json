@@ -12,12 +12,10 @@
   ],
   "key": {
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismweaponsteel"
+      "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplegold"
+      "tag": "hbm:plates/cast/gold"
     },
     "G": {
       "item": "hbm:gun_henry"

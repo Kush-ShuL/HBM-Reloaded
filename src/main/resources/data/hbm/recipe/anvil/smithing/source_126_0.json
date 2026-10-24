@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+      "tag": "hbm:wires/dense/mingrade"
     },
     "count": 9
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "wireDense",
   "exact_left": [],
-  "order": 126000000
+  "order": 126000000,
+  "shape": "DENSEWIRE"
 }

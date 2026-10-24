@@ -15,12 +15,10 @@
       "item": "hbm:circuit_advanced"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesaturnite"
+      "tag": "c:plates/saturnite"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+      "tag": "c:ingots/workers_alloy"
     },
     "J": {
       "type": "neoforge:components",
@@ -31,8 +29,7 @@
       "strict": false
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplecopper"
+      "tag": "hbm:plates/cast/copper"
     }
   }
 }

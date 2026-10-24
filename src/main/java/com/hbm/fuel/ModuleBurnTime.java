@@ -114,14 +114,14 @@ public class ModuleBurnTime {
 
 		if(HbmFuels.matches(stack, "rocket_fuel"))						return mod[modRocket];
 
-		List<String> names = HbmFuels.oreNames(stack);
+		List<String> names = HbmFuels.tags(stack);
 
 		for(String name : names) {
-			if(name.contains("Coke"))		return mod[modCoke];
-			if(name.contains("Coal"))		return mod[modCoal];
-			if(name.contains("Lignite"))	return mod[modLignite];
-			if(name.startsWith("log"))		return mod[modLog];
-			if(name.contains("Wood"))		return mod[modWood];
+			if(HbmFuels.materialIs(name,"coke"))		return mod[modCoke];
+			if(HbmFuels.materialIs(name,"coal"))		return mod[modCoal];
+			if(HbmFuels.materialIs(name,"lignite"))	return mod[modLignite];
+			if(HbmFuels.isLogTag(name))		return mod[modLog];
+			if(HbmFuels.isWoodTag(name))		return mod[modWood];
 		}
 
 		return def;

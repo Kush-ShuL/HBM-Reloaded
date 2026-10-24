@@ -12,19 +12,16 @@
   ],
   "key": {
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefineschrabidium"
+      "tag": "hbm:wires/fine/schrabidium"
     },
     "C": {
       "item": "hbm:circuit_advanced"
     },
     "E": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+      "tag": "c:ingots/euphemium"
     }
   }
 }

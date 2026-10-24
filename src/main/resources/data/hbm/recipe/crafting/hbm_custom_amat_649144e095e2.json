@@ -12,12 +12,10 @@
   ],
   "key": {
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platecopper"
+      "tag": "c:plates/copper"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platealuminum"
+      "tag": "c:plates/aluminum"
     },
     "M": {
       "item": "hbm:cell_antimatter"

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_bakelite",
+    "hbm:powder_polymer",
+    {
+      "id": "#c:dusts/polymer",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/bakelite",
+      "required": false
+    }
+  ]
+}

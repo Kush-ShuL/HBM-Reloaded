@@ -2,7 +2,6 @@ package com.hbm.client.autogen;
 
 import com.hbm.item.autogen.AutogenItem;
 import com.hbm.item.autogen.ScrapsItem;
-import com.hbm.material.HbmMaterials;
 import com.hbm.material.NtmMaterial;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -22,7 +21,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.model.BakedModelWrapper;
 
-/** Runtime material selection supports config IDs as well as the source built-in IDs. */
+/** Physical material identity; only the genuine scraps liquid state chooses a runtime variant. */
 public final class AutogenBakedModel extends BakedModelWrapper<BakedModel> {
     private final AutogenItem item;
     private final Function<Material,TextureAtlasSprite> sprites;
@@ -35,7 +34,7 @@ public final class AutogenBakedModel extends BakedModelWrapper<BakedModel> {
     public AutogenBakedModel(BakedModel base,AutogenItem item,Function<Material,TextureAtlasSprite> sprites) { super(base); this.item=item; this.sprites=sprites; }
     @Override public ItemOverrides getOverrides() { return overrides; }
     private BakedModel bake(Variant variant) {
-        NtmMaterial material=HbmMaterials.byId(variant.materialId()); ResourceLocation texture=AutogenSprites.texture(item.spec().texture());
+        NtmMaterial material=item.material(); ResourceLocation texture=AutogenSprites.texture(item.spec().texture());
         if(material!=null) {
             if(variant.liquid() && material.smeltingBehavior()==NtmMaterial.SmeltingBehavior.SMELTABLE) texture=AutogenSprites.texture("scraps_liquid");
             else if(variant.liquid() && material.smeltingBehavior()==NtmMaterial.SmeltingBehavior.ADDITIVE) texture=AutogenSprites.texture("scraps_additive");

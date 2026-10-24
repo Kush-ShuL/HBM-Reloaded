@@ -27,7 +27,7 @@ public final class LegacyOreDepositsFeature extends Feature<NoneFeatureConfigura
         boolean deep=OreDeposits.DEEP.get()&&OreWorldgen.DEEP.get();
         int low=level.getMinBuildHeight()+OreWorldgen.DEEP_BOTTOM_OFFSET.get(),high=Math.min(-1,Math.min(level.getMaxBuildHeight()-1,OreWorldgen.DEEP_TOP.get()));
         for(var field:fields(level.getSeed(),mask)){
-            var output=HbmContent.block("stone_resource").defaultBlockState().setValue(LegacyOreBlock.LEGACY_META,field.profile.metadata());
+            var output=com.hbm.registry.HbmOres.resourceBlock("stone_resource",field.profile.metadata()).defaultBlockState();
             if(com.hbm.config.WorldgenControls.feature("layer_deposits"))changed+=placeBand(level,chunkX,chunkZ,field,output,Math.max(6,level.getMinBuildHeight()),Math.min(64,level.getMaxBuildHeight()-1),1D,false);
             if(com.hbm.config.WorldgenControls.feature("deep_layer_deposits")&&deep&&low<=high)changed+=placeBand(level,chunkX,chunkZ,field,output,low,high,OreDeposits.DEEP_THRESHOLD_MULTIPLIER.get(),true);
         }

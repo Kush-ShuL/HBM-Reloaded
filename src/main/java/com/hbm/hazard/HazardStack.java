@@ -2,7 +2,7 @@ package com.hbm.hazard;
 
 import java.util.List;
 import java.util.OptionalDouble;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.hbm.block.ore.DeepslateOreItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -29,6 +29,6 @@ public record HazardStack(String item, int metadata, int count,
         }
         return new HazardStack(BuiltInRegistries.ITEM.getKey(identity.getItem()).toString(),
                 identity.getOrDefault(HbmHazards.LEGACY_METADATA.get(), identity.getDamageValue()), stack.getCount(),
-                HbmOreDictionary.tags(identity), extra, stack);
+                HbmItemTags.tags(identity), extra, stack);
     }
 }

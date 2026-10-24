@@ -7,16 +7,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustglowstone"
+      "tag": "c:dusts/glowstone"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustdiamond"
+      "tag": "c:dusts/diamond"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustmagnetizedtungsten"
+      "tag": "c:dusts/magnetized_tungsten"
     }
   ]
 }

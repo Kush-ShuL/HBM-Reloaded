@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:block_cdalloy",
+    "hbm:block_tcalloy",
+    {
+      "id": "#c:storage_blocks/tc_alloy",
+      "required": false
+    },
+    {
+      "id": "#c:storage_blocks/cd_alloy",
+      "required": false
+    }
+  ]
+}

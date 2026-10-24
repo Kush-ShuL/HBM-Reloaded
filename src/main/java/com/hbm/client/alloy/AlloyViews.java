@@ -15,7 +15,7 @@ final class AlloyViews {
         return all.stream().filter(recipe->hidden.stream().noneMatch(stack->AlloyBlockEntity.sameLegacy(stack,recipe.result()))).toList();
     }
     static boolean visible(AlloyRecipe recipe) { return recipes().contains(recipe); }
-    static List<ItemStack> fuels() { return AlloyBlockEntity.fuels().stream().filter(stack->stack.getItem()!=Items.CHARCOAL&&!net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath().equals("block_coke")).toList(); }
+    static List<ItemStack> fuels() { return AlloyBlockEntity.fuels().stream().filter(stack->stack.getItem()!=Items.CHARCOAL&&!com.hbm.block.cokestorage.CokeStorageContent.isCoke(stack)).toList(); }
     static void draw(GuiGraphics graphics,int x,int y) {
         graphics.blit(TEXTURE,x,y,5,11,166,65,256,256);
         // X5846 NEI cycle duration48 and480 ticks, at the original pixel coordinates.

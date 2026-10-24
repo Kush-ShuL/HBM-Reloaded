@@ -12,12 +12,10 @@
   ],
   "key": {
     "E": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingoteuphemium"
+      "tag": "c:ingots/euphemium"
     },
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dyeblue"
+      "tag": "c:dyes/blue"
     },
     "W": {
       "item": "minecraft:clock"

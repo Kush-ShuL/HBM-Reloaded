@@ -64,7 +64,7 @@ public final class IndustrialFluidTankBlockEntity extends BarrelBlockEntity impl
         else if(type.hasTrait("gaseous")||type.hasTrait("gaseous_art")){if(server.getGameTime()%5==0){LegacyFluidEffects.tower(server,x+.5,y+1,z+.5,new LegacyFluidEffects.Tower(1,1,5,100+server.random.nextInt(20)).color(type.getColor()));type.release(server,worldPosition,tank,amount*5,FluidTraits.Release.SPILL);}}
     }
     @Override public boolean isDamaged(){return hasExploded;}
-    @Override public List<GenericIngredient> getRepairMaterials(){return List.of(new GenericIngredient(Ingredient.of(TagKey.create(Registries.ITEM,ResourceLocation.parse("hbm:legacy_ore_dict/platesteel"))),6));}
+    @Override public List<GenericIngredient> getRepairMaterials(){return List.of(new GenericIngredient(Ingredient.of(TagKey.create(Registries.ITEM,ResourceLocation.parse("c:plates/steel"))),6));}
     @Override public void repair(Player player){hasExploded=false;setChanged();}
     @Override public void tryExtinguish(Level level,BlockPos pos,EnumExtinguishType type){if(!hasExploded||!onFire)return;if(type==EnumExtinguishType.WATER){if(tank.getTankType().hasTrait("liquid")){level.explode(null,worldPosition.getX()+.5,worldPosition.getY()+1.5,worldPosition.getZ()+.5,5,true,Level.ExplosionInteraction.BLOCK);}else{onFire=false;setChanged();return;}}if(type==EnumExtinguishType.FOAM||type==EnumExtinguishType.CO2){onFire=false;setChanged();}}
     @Override protected void saveState(CompoundTag tag){super.saveState(tag);tag.putBoolean("exploded",hasExploded);tag.putBoolean("onFire",onFire);}

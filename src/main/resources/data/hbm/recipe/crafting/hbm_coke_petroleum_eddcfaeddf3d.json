@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "hbm:block_coke_petroleum"
+    }
+  },
+  "result": {
+    "id": "hbm:coke_petroleum",
+    "count": 9
+  }
+}

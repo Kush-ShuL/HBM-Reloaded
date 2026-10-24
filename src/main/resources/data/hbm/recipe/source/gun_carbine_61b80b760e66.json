@@ -7,24 +7,19 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrellightworkersalloy"
+      "tag": "hbm:gun_parts/barrels/light/workers_alloy"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverlightworkersalloy"
+      "tag": "hbm:gun_parts/receivers/light/workers_alloy"
     },
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripwood"
+      "tag": "hbm:gun_parts/grips/wood"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stockwood"
+      "tag": "hbm:gun_parts/stocks/wood"
     }
   },
   "result": {

@@ -2,7 +2,7 @@ package com.hbm.machine.reactor.watz;
 
 import com.hbm.api.tool.ToolableBlock;
 import com.hbm.hazard.HbmHazards;
-import com.hbm.recipe.LegacyOreIngredient;
+
 import com.mojang.serialization.MapCodec;
 import java.util.*;
 import net.minecraft.core.*;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.storage.loot.LootParams;
 /** Original BlockToolConversion's actual BOLT+four boltDuraSteel transaction, including creative consumption. */
 public final class WatzCasing extends Block implements ToolableBlock {
     public static final IntegerProperty META=IntegerProperty.create("legacy_meta",0,15);
-    private static final LegacyOreIngredient BOLTS=new LegacyOreIngredient(ResourceLocation.parse("hbm:legacy_ore_dict/boltdurasteel"));
+    private static final net.minecraft.world.item.crafting.Ingredient BOLTS=net.minecraft.world.item.crafting.Ingredient.of(com.hbm.registry.HbmItemTags.key("hbm:bolts/dura_steel"));
     public WatzCasing(){super(Properties.of().strength(5,6).sound(SoundType.STONE).requiresCorrectToolForDrops());registerDefaultState(stateDefinition.any().setValue(META,0));}
     @Override protected MapCodec<? extends WatzCasing> codec(){return MapCodec.unit(this);}
     @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(META);}

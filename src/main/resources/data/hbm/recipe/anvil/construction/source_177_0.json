@@ -23,15 +23,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotiron"
+        "tag": "c:ingots/iron"
       },
       "count": 8
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotcopper"
+        "tag": "c:ingots/copper"
       },
       "count": 8
     }

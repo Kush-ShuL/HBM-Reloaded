@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/nuggetsolinium"
+        "tag": "c:nuggets/solinium"
       },
       "count": 9
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/nuggeteuphemium"
+        "tag": "c:nuggets/euphemium"
       },
       "count": 1
     }

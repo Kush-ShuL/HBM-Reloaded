@@ -15,15 +15,13 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingoturanium238"
+      "tag": "c:ingots/uranium_238"
     },
     "G": {
       "item": "hbm:cordite"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcopper"
+      "tag": "c:ingots/copper"
     }
   }
 }

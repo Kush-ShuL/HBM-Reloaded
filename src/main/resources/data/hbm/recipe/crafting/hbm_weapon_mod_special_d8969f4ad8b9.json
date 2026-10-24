@@ -15,16 +15,13 @@
   ],
   "key": {
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotrubber"
+      "tag": "c:ingots/rubber"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredensegold"
+      "tag": "hbm:wires/dense/gold"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockniobium"
+      "tag": "c:storage_blocks/niobium"
     }
   }
 }

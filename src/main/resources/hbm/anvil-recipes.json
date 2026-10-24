@@ -26,8 +26,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "count": 10
         },
@@ -61,8 +60,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "count": 10
         },
@@ -96,8 +94,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "count": 10
         },
@@ -131,8 +128,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "count": 10
         },
@@ -166,8 +162,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+            "tag": "c:ingots/saturnite"
           },
           "count": 10
         },
@@ -201,8 +196,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+            "tag": "c:ingots/saturnite"
           },
           "count": 10
         },
@@ -312,8 +306,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotbismuthbronze"
+            "tag": "c:ingots/bismuth_bronze"
           },
           "count": 10
         },
@@ -347,8 +340,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotbismuthbronze"
+            "tag": "c:ingots/bismuth_bronze"
           },
           "count": 10
         },
@@ -382,8 +374,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotarsenicbronze"
+            "tag": "c:ingots/arsenic_bronze"
           },
           "count": 10
         },
@@ -417,8 +408,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotarsenicbronze"
+            "tag": "c:ingots/arsenic_bronze"
           },
           "count": 10
         },
@@ -452,8 +442,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidate"
+            "tag": "c:ingots/schrabidate"
           },
           "count": 10
         },
@@ -487,8 +476,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidate"
+            "tag": "c:ingots/schrabidate"
           },
           "count": 10
         },
@@ -522,8 +510,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotdineutronium"
+            "tag": "c:ingots/dineutronium"
           },
           "count": 10
         },
@@ -557,8 +544,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotdineutronium"
+            "tag": "c:ingots/dineutronium"
           },
           "count": 10
         },
@@ -592,8 +578,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotosmiridium"
+            "tag": "c:ingots/osmiridium"
           },
           "count": 10
         },
@@ -627,8 +612,7 @@
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotosmiridium"
+            "tag": "c:ingots/osmiridium"
           },
           "count": 10
         },
@@ -1298,15 +1282,13 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcopper"
+            "tag": "c:ingots/copper"
           },
           "count": 1
         },
         "right": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotaluminum"
+            "tag": "c:ingots/aluminum"
           },
           "count": 1
         },
@@ -1333,8 +1315,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetgold"
+            "tag": "c:nuggets/gold"
           },
           "count": 1
         },
@@ -1349,9 +1330,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "nugget",
         "exact_left": [],
-        "order": 98000000
+        "order": 98000000,
+        "shape": "NUGGET"
       }
     },
     {
@@ -1373,8 +1354,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           "count": 1
         },
@@ -1389,9 +1369,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "billet",
         "exact_left": [],
-        "order": 99000000
+        "order": 99000000,
+        "shape": "BILLET"
       }
     },
     {
@@ -1413,8 +1393,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           },
           "count": 1
         },
@@ -1429,9 +1408,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "ingot",
         "exact_left": [],
-        "order": 100000000
+        "order": 100000000,
+        "shape": "INGOT"
       }
     },
     {
@@ -1453,8 +1432,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           },
           "count": 1
         },
@@ -1469,9 +1447,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "plate",
         "exact_left": [],
-        "order": 101000000
+        "order": 101000000,
+        "shape": "PLATE"
       }
     },
     {
@@ -1493,8 +1471,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetripleiron"
+            "tag": "hbm:plates/cast/iron"
           },
           "count": 1
         },
@@ -1509,9 +1486,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "plateTriple",
         "exact_left": [],
-        "order": 102000000
+        "order": 102000000,
+        "shape": "CASTPLATE"
       }
     },
     {
@@ -1533,8 +1510,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetripleiron"
+            "tag": "hbm:plates/cast/iron"
           },
           "count": 3
         },
@@ -1549,9 +1525,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "plateTriple",
         "exact_left": [],
-        "order": 103000000
+        "order": 103000000,
+        "shape": "CASTPLATE"
       }
     },
     {
@@ -1573,8 +1549,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinecopper"
+            "tag": "hbm:wires/fine/copper"
           },
           "count": 1
         },
@@ -1589,9 +1564,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "wireFine",
         "exact_left": [],
-        "order": 104000000
+        "order": 104000000,
+        "shape": "WIRE"
       }
     },
     {
@@ -1632,7 +1607,6 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "",
         "exact_left": [
           {
             "id": "hbm:blade_titanium",
@@ -1643,7 +1617,8 @@
             "count": 1
           }
         ],
-        "order": 105000000
+        "order": 105000000,
+        "shape": ""
       }
     },
     {
@@ -1684,7 +1659,6 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "",
         "exact_left": [
           {
             "id": "hbm:blades_steel",
@@ -1695,7 +1669,8 @@
             "count": 1
           }
         ],
-        "order": 109000000
+        "order": 109000000,
+        "shape": ""
       }
     },
     {
@@ -1739,7 +1714,6 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "",
         "exact_left": [
           {
             "id": "hbm:stamp_stone_flat",
@@ -1777,7 +1751,8 @@
             }
           }
         ],
-        "order": 113000000
+        "order": 113000000,
+        "shape": ""
       }
     },
     {
@@ -1799,8 +1774,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/shellsteel"
+            "tag": "hbm:gun_parts/shells/steel"
           },
           "count": 1
         },
@@ -1815,9 +1789,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "shell",
         "exact_left": [],
-        "order": 120000000
+        "order": 120000000,
+        "shape": "SHELL"
       }
     },
     {
@@ -1839,8 +1813,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+            "tag": "hbm:pipes/steel"
           },
           "count": 1
         },
@@ -1855,9 +1828,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "ntmpipe",
         "exact_left": [],
-        "order": 121000000
+        "order": 121000000,
+        "shape": "PIPE"
       }
     },
     {
@@ -1879,8 +1852,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           },
           "count": 9
         },
@@ -1895,9 +1867,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "ingot",
         "exact_left": [],
-        "order": 122000000
+        "order": 122000000,
+        "shape": "INGOT"
       }
     },
     {
@@ -1919,8 +1891,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           },
           "count": 9
         },
@@ -1935,9 +1906,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "plate",
         "exact_left": [],
-        "order": 123000000
+        "order": 123000000,
+        "shape": "PLATE"
       }
     },
     {
@@ -1959,8 +1930,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockiron"
+            "tag": "c:storage_blocks/iron"
           },
           "count": 1
         },
@@ -1975,9 +1945,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "block",
         "exact_left": [],
-        "order": 124000000
+        "order": 124000000,
+        "shape": "BLOCK"
       }
     },
     {
@@ -1999,8 +1969,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+            "tag": "hbm:wires/dense/mingrade"
           },
           "count": 1
         },
@@ -2015,9 +1984,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "wireDense",
         "exact_left": [],
-        "order": 125000000
+        "order": 125000000,
+        "shape": "DENSEWIRE"
       }
     },
     {
@@ -2039,8 +2008,7 @@
         },
         "left": {
           "ingredient": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wiredensemingrade"
+            "tag": "hbm:wires/dense/mingrade"
           },
           "count": 9
         },
@@ -2055,9 +2023,9 @@
           "count": 1
         },
         "kind": "mold",
-        "prefix": "wireDense",
         "exact_left": [],
-        "order": 126000000
+        "order": 126000000,
+        "shape": "DENSEWIRE"
       }
     },
     {
@@ -2145,8 +2113,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 1
           }
@@ -2178,8 +2145,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotgold"
+              "tag": "c:ingots/gold"
             },
             "count": 1
           }
@@ -2211,8 +2177,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingottitanium"
+              "tag": "c:ingots/titanium"
             },
             "count": 1
           }
@@ -2244,8 +2209,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotaluminum"
+              "tag": "c:ingots/aluminum"
             },
             "count": 1
           }
@@ -2277,8 +2241,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 1
           }
@@ -2310,8 +2273,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotlead"
+              "tag": "c:ingots/lead"
             },
             "count": 1
           }
@@ -2343,8 +2305,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 1
           }
@@ -2376,8 +2337,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+              "tag": "c:ingots/gun_metal"
             },
             "count": 1
           }
@@ -2409,8 +2369,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+              "tag": "c:ingots/weapon_steel"
             },
             "count": 1
           }
@@ -2442,8 +2401,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+              "tag": "c:ingots/saturnite"
             },
             "count": 1
           }
@@ -2475,8 +2433,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+              "tag": "c:ingots/dura_steel"
             },
             "count": 1
           }
@@ -2508,8 +2465,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+              "tag": "c:ingots/schrabidium"
             },
             "count": 1
           }
@@ -2541,8 +2497,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+              "tag": "c:ingots/cmb_steel"
             },
             "count": 1
           }
@@ -2574,8 +2529,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcoal"
+              "tag": "c:dusts/coal"
             },
             "count": 1
           }
@@ -2607,8 +2561,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+              "tag": "c:dusts/nether_quartz"
             },
             "count": 1
           }
@@ -2640,8 +2593,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustlapis"
+              "tag": "c:dusts/lapis"
             },
             "count": 1
           }
@@ -2673,8 +2625,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustdiamond"
+              "tag": "c:dusts/diamond"
             },
             "count": 1
           }
@@ -2706,8 +2657,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustemerald"
+              "tag": "c:dusts/emerald"
             },
             "count": 1
           }
@@ -2759,15 +2709,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           }
@@ -2799,8 +2747,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           }
@@ -2835,8 +2782,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotaluminum"
+              "tag": "c:ingots/aluminum"
             },
             "count": 1
           }
@@ -2868,8 +2814,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotberyllium"
+              "tag": "c:ingots/beryllium"
             },
             "count": 1
           }
@@ -2901,8 +2846,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotlead"
+              "tag": "c:ingots/lead"
             },
             "count": 1
           }
@@ -2934,8 +2878,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotmingrade"
+              "tag": "c:ingots/mingrade"
             },
             "count": 1
           }
@@ -2967,8 +2910,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 1
           }
@@ -3000,8 +2942,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingottitanium"
+              "tag": "c:ingots/titanium"
             },
             "count": 1
           }
@@ -3033,8 +2974,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingottungsten"
+              "tag": "c:ingots/tungsten"
             },
             "count": 1
           }
@@ -3138,8 +3078,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 2
           },
@@ -3201,22 +3140,19 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+              "tag": "hbm:material_groups/plastic/ingots"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+              "tag": "c:ingots/workers_alloy"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/wiredensegold"
+              "tag": "hbm:wires/dense/gold"
             },
             "count": 1
           }
@@ -3268,8 +3204,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 8
           }
@@ -3301,15 +3236,13 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 4
           },
@@ -3350,15 +3283,13 @@
         "expensive_inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 4
           },
@@ -3397,29 +3328,25 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/cobblestone"
+              "tag": "c:cobblestones"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plankwood"
+              "tag": "minecraft:planks"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ntmpipelead"
+              "tag": "hbm:pipes/lead"
             },
             "count": 2
           }
@@ -3461,15 +3388,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ntmpipelead"
+              "tag": "hbm:pipes/lead"
             },
             "count": 4
           },
@@ -3531,15 +3456,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           }
@@ -3581,15 +3504,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           }
@@ -3631,15 +3552,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 4
           }
@@ -3681,22 +3600,19 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+              "tag": "hbm:pipes/steel"
             },
             "count": 3
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingottitanium"
+              "tag": "c:ingots/titanium"
             },
             "count": 12
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           }
@@ -3728,22 +3644,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+              "tag": "hbm:material_groups/plastic/ingots"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 8
           },
@@ -3795,29 +3708,25 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotrubber"
+              "tag": "c:ingots/rubber"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+              "tag": "hbm:pipes/steel"
             },
             "count": 3
           }
@@ -3849,22 +3758,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plankwood"
+              "tag": "minecraft:planks"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 6
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           },
@@ -3922,22 +3828,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotberyllium"
+              "tag": "c:ingots/beryllium"
             },
             "count": 6
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 4
           },
@@ -4005,15 +3908,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 12
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/shellsteel"
+              "tag": "hbm:gun_parts/shells/steel"
             },
             "count": 2
           },
@@ -4068,29 +3969,25 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plankwood"
+              "tag": "minecraft:planks"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 6
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 4
           },
@@ -4142,15 +4039,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 8
           }
@@ -4182,15 +4077,13 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 16
           },
@@ -4232,8 +4125,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platetriplesteel"
+              "tag": "hbm:plates/cast/steel"
             },
             "count": 2
           },
@@ -4249,8 +4141,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/bolttungsten"
+              "tag": "hbm:bolts/tungsten"
             },
             "count": 4
           },
@@ -4292,15 +4183,13 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platetriplesteel"
+              "tag": "hbm:plates/cast/steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingottungsten"
+              "tag": "c:ingots/tungsten"
             },
             "count": 8
           },
@@ -4355,22 +4244,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platetriplesteel"
+              "tag": "hbm:plates/cast/steel"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+              "tag": "hbm:material_groups/plastic/ingots"
             },
             "count": 4
           }
@@ -4402,22 +4288,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 12
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             "count": 2
           },
@@ -4502,8 +4385,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+              "tag": "hbm:pipes/steel"
             },
             "count": 8
           }
@@ -4545,15 +4427,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/shellsteel"
+              "tag": "hbm:gun_parts/shells/steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platetriplecopper"
+              "tag": "hbm:plates/cast/copper"
             },
             "count": 6
           },
@@ -4605,15 +4485,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/shellsteel"
+              "tag": "hbm:gun_parts/shells/steel"
             },
             "count": 5
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+              "tag": "hbm:pipes/steel"
             },
             "count": 12
           },
@@ -4676,8 +4554,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/anyconcrete"
+              "tag": "hbm:concrete"
             },
             "count": 2
           },
@@ -4742,15 +4619,13 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/anyconcrete"
+              "tag": "hbm:concrete"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 8
           },
@@ -4802,8 +4677,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 4
           },
@@ -4855,15 +4729,13 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             "count": 16
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/anyconcrete"
+              "tag": "hbm:concrete"
             },
             "count": 64
           },
@@ -4925,8 +4797,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platelead"
+              "tag": "c:plates/lead"
             },
             "count": 2
           },
@@ -4978,8 +4849,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platelead"
+              "tag": "c:plates/lead"
             },
             "count": 2
           },
@@ -5021,22 +4891,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+              "tag": "c:ingots/workers_alloy"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustanyplastic"
+              "tag": "hbm:material_groups/plastic/dusts"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+              "tag": "c:ingots/dura_steel"
             },
             "count": 1
           }
@@ -5078,15 +4945,13 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/billeturanium238"
+              "tag": "hbm:billets/uranium_238"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustniobium"
+              "tag": "c:dusts/niobium"
             },
             "count": 1
           }
@@ -5118,22 +4983,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platetitanium"
+              "tag": "c:plates/titanium"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 1
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/boltsteel"
+              "tag": "hbm:bolts/steel"
             },
             "count": 4
           }
@@ -5165,15 +5027,13 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 6
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotniobium"
+              "tag": "c:ingots/niobium"
             },
             "count": 1
           },
@@ -5215,8 +5075,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platedurasteel"
+              "tag": "c:plates/dura_steel"
             },
             "count": 4
           },
@@ -5232,8 +5091,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/wirefinetungsten"
+              "tag": "hbm:wires/fine/tungsten"
             },
             "count": 8
           }
@@ -5265,22 +5123,19 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+              "tag": "c:plates/weapon_steel"
             },
             "count": 4
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+              "tag": "c:ingots/starmetal"
             },
             "count": 1
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/wirefinemagnetizedtungsten"
+              "tag": "hbm:wires/fine/magnetized_tungsten"
             },
             "count": 8
           }
@@ -5325,8 +5180,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+              "tag": "c:ingots/workers_alloy"
             },
             "count": 1
           },
@@ -5434,22 +5288,19 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanyhardplastic"
+              "tag": "hbm:material_groups/hard_plastic/ingots"
             },
             "count": 8
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesextuplealuminum"
+              "tag": "hbm:plates/welded/aluminum"
             },
             "count": 2
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/billetplutonium239"
+              "tag": "hbm:billets/plutonium_239"
             },
             "count": 3
           }
@@ -5481,8 +5332,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           }
@@ -5517,8 +5367,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           }
@@ -5553,8 +5402,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           }
@@ -5589,8 +5437,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           }
@@ -5625,8 +5472,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           }
@@ -5661,8 +5507,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 1
           }
@@ -5697,8 +5542,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 1
           }
@@ -5733,8 +5577,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 1
           }
@@ -5769,8 +5612,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 1
           }
@@ -5805,8 +5647,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             "count": 1
           }
@@ -5841,8 +5682,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platealuminum"
+              "tag": "c:plates/aluminum"
             },
             "count": 1
           }
@@ -5877,8 +5717,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platealuminum"
+              "tag": "c:plates/aluminum"
             },
             "count": 1
           }
@@ -5913,8 +5752,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platealuminum"
+              "tag": "c:plates/aluminum"
             },
             "count": 1
           }
@@ -5949,8 +5787,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platealuminum"
+              "tag": "c:plates/aluminum"
             },
             "count": 1
           }
@@ -5985,8 +5822,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platealuminum"
+              "tag": "c:plates/aluminum"
             },
             "count": 1
           }
@@ -6606,8 +6442,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           },
@@ -6652,8 +6487,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           },
@@ -6698,8 +6532,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           },
@@ -6744,8 +6577,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           },
@@ -6790,8 +6622,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             "count": 1
           },
@@ -7066,8 +6897,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotmingrade"
+              "tag": "c:ingots/mingrade"
             },
             "count": 1
           },
@@ -7112,8 +6942,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotmingrade"
+              "tag": "c:ingots/mingrade"
             },
             "count": 1
           },
@@ -7158,8 +6987,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotmingrade"
+              "tag": "c:ingots/mingrade"
             },
             "count": 1
           },
@@ -7204,8 +7032,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotmingrade"
+              "tag": "c:ingots/mingrade"
             },
             "count": 1
           },
@@ -7250,8 +7077,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotmingrade"
+              "tag": "c:ingots/mingrade"
             },
             "count": 1
           },
@@ -8277,8 +8103,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+              "tag": "c:ingots/gun_metal"
             },
             "count": 2
           }
@@ -8326,8 +8151,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+              "tag": "c:ingots/gun_metal"
             },
             "count": 2
           }
@@ -8372,8 +8196,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+              "tag": "c:ingots/weapon_steel"
             },
             "count": 4
           }
@@ -8415,8 +8238,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+              "tag": "c:ingots/weapon_steel"
             },
             "count": 4
           }
@@ -8458,8 +8280,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 2
           }
@@ -8504,8 +8325,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             "count": 2
           }
@@ -8550,8 +8370,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -8596,8 +8415,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -8642,8 +8460,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -8688,8 +8505,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -8734,8 +8550,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -8780,8 +8595,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -8826,8 +8640,7 @@
           },
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             "count": 4
           }
@@ -9746,11 +9559,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:plate_welded",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 36
-              }
+              "id": "hbm:autogen/plate_welded/m36",
+              "count": 4
             },
             "chance": 1.0
           },
@@ -9806,11 +9616,8 @@
           },
           {
             "stack": {
-              "id": "hbm:wire_fine",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/wire_fine/m2900",
+              "count": 4
             },
             "chance": 1.0
           },
@@ -9894,21 +9701,15 @@
           },
           {
             "stack": {
-              "id": "hbm:wire_fine",
-              "count": 2,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/wire_fine/m2900",
+              "count": 2
             },
             "chance": 1.0
           },
           {
             "stack": {
-              "id": "hbm:wire_fine",
-              "count": 2,
-              "components": {
-                "hbm:legacy_metadata": 7900
-              }
+              "id": "hbm:autogen/wire_fine/m7900",
+              "count": 2
             },
             "chance": 0.25
           },
@@ -10189,11 +9990,8 @@
           },
           {
             "stack": {
-              "id": "hbm:wire_fine",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/wire_fine/m2900",
+              "count": 1
             },
             "chance": 1.0
           },
@@ -10363,11 +10161,8 @@
           },
           {
             "stack": {
-              "id": "hbm:wire_fine",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 31
-              }
+              "id": "hbm:autogen/wire_fine/m31",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -10528,8 +10323,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/billetzirconium"
+              "tag": "hbm:billets/zirconium"
             },
             "count": 3
           }
@@ -10564,8 +10358,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/billeturanium"
+              "tag": "hbm:billets/uranium"
             },
             "count": 3
           }
@@ -10905,11 +10698,8 @@
           },
           {
             "stack": {
-              "id": "hbm:shell",
-              "count": 2,
-              "components": {
-                "hbm:legacy_metadata": 30
-              }
+              "id": "hbm:autogen/shell/m30",
+              "count": 2
             },
             "chance": 1.0
           }
@@ -11101,11 +10891,8 @@
           },
           {
             "stack": {
-              "id": "hbm:shell",
-              "count": 2,
-              "components": {
-                "hbm:legacy_metadata": 30
-              }
+              "id": "hbm:autogen/shell/m30",
+              "count": 2
             },
             "chance": 1.0
           }
@@ -11199,21 +10986,15 @@
           },
           {
             "stack": {
-              "id": "hbm:pipe",
-              "count": 6,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/pipe/m2900",
+              "count": 6
             },
             "chance": 1.0
           },
           {
             "stack": {
-              "id": "hbm:shell",
-              "count": 2,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/shell/m2900",
+              "count": 2
             },
             "chance": 1.0
           }
@@ -11486,21 +11267,15 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:pipe",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 30
-              }
+              "id": "hbm:autogen/pipe/m30",
+              "count": 4
             },
             "chance": 1.0
           },
           {
             "stack": {
-              "id": "hbm:pipe",
-              "count": 2,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/pipe/m2900",
+              "count": 2
             },
             "chance": 1.0
           },
@@ -11542,21 +11317,15 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:pipe",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 30
-              }
+              "id": "hbm:autogen/pipe/m30",
+              "count": 4
             },
             "chance": 1.0
           },
           {
             "stack": {
-              "id": "hbm:pipe",
-              "count": 4,
-              "components": {
-                "hbm:legacy_metadata": 2900
-              }
+              "id": "hbm:autogen/pipe/m2900",
+              "count": 4
             },
             "chance": 1.0
           },

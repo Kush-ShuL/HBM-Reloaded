@@ -12,12 +12,10 @@
   ],
   "key": {
     "Z": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinezirconium"
+      "tag": "hbm:wires/fine/zirconium"
     },
     "L": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinelead"
+      "tag": "hbm:wires/fine/lead"
     }
   }
 }

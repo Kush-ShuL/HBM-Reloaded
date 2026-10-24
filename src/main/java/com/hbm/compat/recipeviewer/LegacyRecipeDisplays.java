@@ -6,7 +6,7 @@ import com.hbm.fluid.HbmFluids;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.item.fluid.FluidIconItem;
 import com.hbm.item.fluid.FluidItemContent;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.mojang.logging.LogUtils;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
 /** Common source-backed display graph shared by both viewers; does not install executable recipes. */
+@net.neoforged.fml.common.EventBusSubscriber(modid="hbm")
 public final class LegacyRecipeDisplays {
     public record Slot(List<ItemStack> alternatives,Map<String,List<Component>> annotations) {
         public Slot { alternatives=List.copyOf(alternatives); annotations=Map.copyOf(annotations); }
@@ -49,8 +50,11 @@ public final class LegacyRecipeDisplays {
                         display.outputs.stream().map(Slot::alternatives).toList())).toList();
     }
     public static List<String> unresolved() { load(); return List.copyOf(UNRESOLVED); }
+    @net.neoforged.bus.api.SubscribeEvent
+    public static synchronized void tagsUpdated(net.neoforged.neoforge.event.TagsUpdatedEvent event) { if(event.shouldUpdateStaticData())loaded=false; }
     private static synchronized void load() {
         if(loaded) return; loaded=true;
+        CATEGORIES.clear();DISPLAYS.clear();UNRESOLVED.clear();
         try(var input=LegacyRecipeDisplays.class.getResourceAsStream("/hbm/nei-recipes.json")) {
             if(input==null) throw new IllegalStateException("Missing original NEI display data");
             JsonObject root=JsonParser.parseReader(new InputStreamReader(input,StandardCharsets.UTF_8)).getAsJsonObject();
@@ -103,9 +107,9 @@ public final class LegacyRecipeDisplays {
                 }
                 stacks.add(stack);
             }
-            case "ore" -> {
+            case "tag" -> {
                 int count=row.has("count")?row.get("count").getAsInt():1;
-                HbmOreDictionary.items(row.get("tag").getAsString()).forEach(stack->stacks.add(stack.copyWithCount(count)));
+                HbmItemTags.items(row.get("tag").getAsString()).forEach(stack->stacks.add(stack.copyWithCount(count)));
             }
             case "fluid" -> stacks.add(FluidIconItem.make(HbmFluids.fromName(row.get("type").getAsString()),row.get("amount").getAsInt(),row.has("pressure")?row.get("pressure").getAsInt():0));
             case "alternatives" -> { for(var value:row.getAsJsonArray("alternatives")) stacks.addAll(decode(value.getAsJsonObject(),input)); }
@@ -125,9 +129,8 @@ public final class LegacyRecipeDisplays {
     }
     private record Key(String item,int metadata) {}
     private static Key key(ItemStack stack) { return new Key(BuiltInRegistries.ITEM.getKey(stack.getItem()).toString(),stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue())); }
-    private static List<ItemStack> ore(String name) { return HbmOreDictionary.items("hbm:legacy_ore_dict/"+name.toLowerCase(Locale.ROOT)).toList(); }
     private static ItemStack preferredDust(String name) {
-        var matches=ore("dust"+name); if(matches.isEmpty()) return ItemStack.EMPTY;
+        var matches=HbmItemTags.items("c:dusts/"+name).toList(); if(matches.isEmpty()) return ItemStack.EMPTY;
         return matches.stream().filter(stack->BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace().equals("hbm")).findFirst().orElse(matches.getFirst()).copy();
     }
     private static void shredderPost() {
@@ -135,22 +138,24 @@ public final class LegacyRecipeDisplays {
         for(var recipe:DISPLAYS) if(recipe.category.equals("shredder")) for(var stack:recipe.inputs.getFirst().alternatives) used.add(key(stack));
         int[] index={0};
         // These source registerDefaults ore loops run before general registerPost inference.
-        for(var rule:List.of(new String[]{"logWood","hbm:powder_sawdust","4"},new String[]{"plankWood","hbm:powder_sawdust","1"},new String[]{"treeSapling","minecraft:stick","1"},new String[]{"dustLapis","hbm:powder_cobalt_tiny","1"})) {
-            ItemStack result=registered(rule[1],Integer.parseInt(rule[2])); if(!result.isEmpty()) for(var input:ore(rule[0])) shred(used,index,input,result);
+        for(var rule:List.of(new String[]{"minecraft:logs","hbm:powder_sawdust","4"},new String[]{"minecraft:planks","hbm:powder_sawdust","1"},new String[]{"minecraft:saplings","minecraft:stick","1"},new String[]{"c:dusts/lapis","hbm:powder_cobalt_tiny","1"})) {
+            ItemStack result=registered(rule[1],Integer.parseInt(rule[2])); if(!result.isEmpty()) for(var input:HbmItemTags.items(rule[0]).toList()) shred(used,index,input,result);
         }
-        for(String name:HbmOreDictionary.allNames()) {
-            if(name.isEmpty()||name.contains("Any")) continue;
-            var matches=ore(name); if(matches.isEmpty()) continue;
-            for(String prefix:List.of("ingot","plate","gem","crystal","ore")) if(name.startsWith(prefix)&&name.length()>prefix.length()) {
-                ItemStack dust=preferredDust(name.substring(prefix.length()));
-                if(!dust.isEmpty()&&!BuiltInRegistries.ITEM.getKey(dust.getItem()).toString().equals("hbm:scrap")) { dust.setCount(prefix.equals("ore")?2:1); for(var input:matches) shred(used,index,input,dust); }
+        for(String tag:HbmItemTags.allTags()) {
+            var location=ResourceLocation.parse(tag);
+            if(location.getNamespace().equals("hbm")&&location.getPath().startsWith("material_groups/"))continue;
+            String category=location.getNamespace()+":"+HbmItemTags.category(tag),material=HbmItemTags.materialName(tag);
+            var matches=HbmItemTags.items(tag).toList();if(matches.isEmpty())continue;
+            if(List.of("c:ingots","c:plates","c:gems","c:crystals","c:ores").contains(category)) {
+                ItemStack dust=preferredDust(material);
+                if(!dust.isEmpty()&&!BuiltInRegistries.ITEM.getKey(dust.getItem()).toString().equals("hbm:scrap")){dust.setCount(category.equals("c:ores")?2:1);for(var input:matches)shred(used,index,input,dust);}
             }
-            if(name.startsWith("block")&&name.length()>5) {
-                String suffix=name.substring(5); ItemStack dust=preferredDust(suffix);
-                if(!dust.isEmpty()&&!BuiltInRegistries.ITEM.getKey(dust.getItem()).toString().equals("hbm:scrap")) { dust.setCount(ore("ingot"+suffix).isEmpty()&&ore("gem"+suffix).isEmpty()?4:9); for(var input:matches) shred(used,index,input,dust); }
+            if(category.equals("c:storage_blocks")) {
+                ItemStack dust=preferredDust(material);
+                if(!dust.isEmpty()&&!BuiltInRegistries.ITEM.getKey(dust.getItem()).toString().equals("hbm:scrap")){dust.setCount(HbmItemTags.items("c:ingots/"+material).findAny().isEmpty()&&HbmItemTags.items("c:gems/"+material).findAny().isEmpty()?4:9);for(var input:matches)shred(used,index,input,dust);}
             }
-            ItemStack fallback=name.startsWith("dustTiny")&&name.length()>8?registered("hbm:dust_tiny",1):name.startsWith("dust")&&name.length()>4?registered("hbm:dust",1):ItemStack.EMPTY;
-            if(!fallback.isEmpty()) for(var input:matches) shred(used,index,input,fallback);
+            ItemStack fallback=category.equals("hbm:dusts/tiny")?registered("hbm:dust_tiny",1):category.equals("c:dusts")?registered("hbm:dust",1):ItemStack.EMPTY;
+            if(!fallback.isEmpty())for(var input:matches)shred(used,index,input,fallback);
         }
     }
     private static void shred(Set<Key> used,int[] index,ItemStack input,ItemStack result) {

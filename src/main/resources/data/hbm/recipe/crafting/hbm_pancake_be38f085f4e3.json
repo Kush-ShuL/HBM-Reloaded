@@ -7,27 +7,22 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustredstone"
+      "tag": "c:dusts/redstone"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustdiamond"
+      "tag": "c:dusts/diamond"
     },
     {
       "item": "minecraft:wheat"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/boltsteel"
+      "tag": "hbm:bolts/steel"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+      "tag": "hbm:wires/fine/copper"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platesteel"
+      "tag": "c:plates/steel"
     }
   ]
 }

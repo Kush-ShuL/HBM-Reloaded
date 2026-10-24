@@ -110,18 +110,6 @@ public final class FluidContainerRegistry {
     public static void registerContainer(Container container) {
         allContainers.add(container); BY_TYPE.computeIfAbsent(container.type(), ignored -> new ArrayList<>()).add(container);
     }
-    /** Original registration order and exact full-stack subtype membership. */
-    public static List<String> oreTags(ItemStack stack) {
-        var result = new java.util.LinkedHashSet<String>();
-        for (var value : allContainers) if (sameItem(value.fullContainer(), stack)) {
-            result.add("hbm:legacy_ore_dict/" + value.type().getDict(value.content(), containerCompat()).toLowerCase(java.util.Locale.US));
-        }
-        return List.copyOf(result);
-    }
-    public static java.util.stream.Stream<ItemStack> oreStacks(String tag) {
-        return allContainers.stream().filter(value -> tag.equals("hbm:legacy_ore_dict/" + value.type().getDict(value.content(), containerCompat()).toLowerCase(java.util.Locale.US)))
-                .map(value -> value.fullContainer().copy());
-    }
     public static List<Container> getContainers(HbmFluidType type) { return BY_TYPE.get(type); }
     public static Container getContainer(HbmFluidType type, ItemStack empty) {
         for (var value : BY_TYPE.getOrDefault(type, List.of())) if (!value.emptyContainer().isEmpty() && sameItem(value.emptyContainer(), empty)) return value;

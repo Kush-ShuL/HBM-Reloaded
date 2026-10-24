@@ -15,8 +15,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+          "tag": "c:dusts/nether_quartz"
         },
         "stamp": "flat",
         "result": {
@@ -39,8 +38,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/dustlapis"
+          "tag": "c:dusts/lapis"
         },
         "stamp": "flat",
         "result": {
@@ -63,8 +61,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/dustdiamond"
+          "tag": "c:dusts/diamond"
         },
         "stamp": "flat",
         "result": {
@@ -87,8 +84,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/dustemerald"
+          "tag": "c:dusts/emerald"
         },
         "stamp": "flat",
         "result": {
@@ -134,8 +130,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/gemanycoke"
+          "tag": "c:gems/coke"
         },
         "stamp": "flat",
         "result": {
@@ -204,8 +199,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/dustcoal"
+          "tag": "c:dusts/coal"
         },
         "stamp": "flat",
         "result": {
@@ -228,8 +222,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/dustlignite"
+          "tag": "c:dusts/lignite"
         },
         "stamp": "flat",
         "result": {
@@ -275,8 +268,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotiron"
+          "tag": "c:ingots/iron"
         },
         "stamp": "plate",
         "result": {
@@ -299,8 +291,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotgold"
+          "tag": "c:ingots/gold"
         },
         "stamp": "plate",
         "result": {
@@ -323,8 +314,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingottitanium"
+          "tag": "c:ingots/titanium"
         },
         "stamp": "plate",
         "result": {
@@ -347,8 +337,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotaluminum"
+          "tag": "c:ingots/aluminum"
         },
         "stamp": "plate",
         "result": {
@@ -371,8 +360,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotsteel"
+          "tag": "c:ingots/steel"
         },
         "stamp": "plate",
         "result": {
@@ -395,8 +383,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotlead"
+          "tag": "c:ingots/lead"
         },
         "stamp": "plate",
         "result": {
@@ -419,8 +406,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotcopper"
+          "tag": "c:ingots/copper"
         },
         "stamp": "plate",
         "result": {
@@ -443,8 +429,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+          "tag": "c:ingots/schrabidium"
         },
         "stamp": "plate",
         "result": {
@@ -467,8 +452,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+          "tag": "c:ingots/cmb_steel"
         },
         "stamp": "plate",
         "result": {
@@ -491,8 +475,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotgunmetal"
+          "tag": "c:ingots/gun_metal"
         },
         "stamp": "plate",
         "result": {
@@ -515,8 +498,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotweaponsteel"
+          "tag": "c:ingots/weapon_steel"
         },
         "stamp": "plate",
         "result": {
@@ -539,8 +521,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+          "tag": "c:ingots/saturnite"
         },
         "stamp": "plate",
         "result": {
@@ -563,8 +544,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+          "tag": "c:ingots/dura_steel"
         },
         "stamp": "plate",
         "result": {
@@ -587,8 +567,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/plategunmetal"
+          "tag": "c:plates/gun_metal"
         },
         "stamp": "c9",
         "result": {
@@ -611,8 +590,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/plategunmetal"
+          "tag": "c:plates/gun_metal"
         },
         "stamp": "c50",
         "result": {
@@ -635,8 +613,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+          "tag": "c:plates/weapon_steel"
         },
         "stamp": "c9",
         "result": {
@@ -659,8 +636,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/plateweaponsteel"
+          "tag": "c:plates/weapon_steel"
         },
         "stamp": "c50",
         "result": {
@@ -686,11 +662,11 @@
         "materialOrder": "HbmMaterials.ordered(), including source custom hbmMats/hbmShapes configs",
         "conditions": [
           "material.autogen contains original WIRE shape",
-          "original case-sensitive OreDictionary name MaterialShapes.INGOT.make(material) exists"
+          "the native material ingot tag is defined"
         ],
-        "input": "metadata-aware LegacyOreIngredient for first-alias INGOT ore name; no guessed material membership",
+        "input": "vanilla tag ingredient for the material ingot tag; membership comes from the native tag registry",
         "output": {
-          "id": "hbm:wire_fine",
+          "id": "hbm:autogen/wire_fine/m0",
           "count": 8,
           "legacyMetadata": "<material.id>"
         },
@@ -714,8 +690,7 @@
       "recipe": {
         "type": "hbm:press",
         "input": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/billetsilicon"
+          "tag": "hbm:billets/silicon"
         },
         "stamp": "circuit",
         "result": {

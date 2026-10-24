@@ -25,8 +25,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgold"
+                "tag": "c:ingots/gold"
               }
             },
             "neoforge:conditions": [
@@ -63,8 +62,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotaluminum"
+                "tag": "c:ingots/aluminum"
               }
             },
             "neoforge:conditions": [
@@ -101,8 +99,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               }
             },
             "neoforge:conditions": [
@@ -139,8 +136,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcopper"
+                "tag": "c:ingots/copper"
               }
             },
             "neoforge:conditions": [
@@ -177,8 +173,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotlead"
+                "tag": "c:ingots/lead"
               }
             },
             "neoforge:conditions": [
@@ -215,8 +210,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               }
             },
             "neoforge:conditions": [
@@ -253,8 +247,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               }
             },
             "neoforge:conditions": [
@@ -291,8 +284,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+                "tag": "c:ingots/saturnite"
               }
             },
             "neoforge:conditions": [
@@ -329,8 +321,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               }
             },
             "neoforge:conditions": [
@@ -367,8 +358,7 @@
             ],
             "key": {
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottungsten"
+                "tag": "c:ingots/tungsten"
               }
             },
             "neoforge:conditions": [
@@ -412,8 +402,7 @@
                 "item": "hbm:egg_balefire_shard"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgold"
+                "tag": "c:ingots/gold"
               },
               "A": {
                 "item": "minecraft:book"
@@ -872,8 +861,7 @@
                 "strict": false
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockglass"
+                "tag": "c:glass_blocks"
               }
             }
           }
@@ -913,8 +901,7 @@
                 "strict": false
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockglass"
+                "tag": "c:glass_blocks"
               }
             }
           }
@@ -954,8 +941,7 @@
                 "strict": false
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockglass"
+                "tag": "c:glass_blocks"
               }
             }
           }
@@ -995,8 +981,7 @@
                 "strict": false
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockglass"
+                "tag": "c:glass_blocks"
               }
             }
           }
@@ -1045,8 +1030,7 @@
                 "strict": false
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plateiron"
+                "tag": "c:plates/iron"
               }
             }
           }
@@ -1086,8 +1070,7 @@
                 "strict": false
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plateiron"
+                "tag": "c:plates/iron"
               }
             }
           }
@@ -1127,8 +1110,7 @@
                 "strict": false
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plateiron"
+                "tag": "c:plates/iron"
               }
             }
           }
@@ -1168,8 +1150,7 @@
                 "strict": false
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plateiron"
+                "tag": "c:plates/iron"
               }
             }
           }
@@ -1204,20 +1185,16 @@
             ],
             "key": {
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/platetriplegold"
+                "tag": "hbm:plates/cast/gold"
               },
               "A": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/alloyultimate"
+                "tag": "c:alloys/ultimate"
               },
               "E": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/battery"
+                "tag": "c:batteries"
               },
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotrefinedobsidian"
+                "tag": "c:ingots/refined_obsidian"
               }
             },
             "neoforge:conditions": [
@@ -1270,20 +1247,16 @@
             ],
             "key": {
               "T": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/platetripletitanium"
+                "tag": "hbm:plates/cast/titanium"
               },
               "A": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/alloyadvanced"
+                "tag": "c:alloys/advanced"
               },
               "B": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/battery"
+                "tag": "c:batteries"
               },
               "C": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             },
             "neoforge:conditions": [
@@ -1555,12 +1528,10 @@
                 "item": "hbm:circuit_advanced"
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/platesaturnite"
+                "tag": "c:plates/saturnite"
               },
               "D": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+                "tag": "c:ingots/workers_alloy"
               },
               "J": {
                 "type": "neoforge:components",
@@ -1571,8 +1542,7 @@
                 "strict": false
               },
               "A": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/platetriplecopper"
+                "tag": "hbm:plates/cast/copper"
               }
             }
           }
@@ -1688,8 +1658,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               }
             }
           }
@@ -1725,8 +1694,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               }
             }
           }
@@ -1762,8 +1730,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               }
             }
           }
@@ -1798,8 +1765,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               }
             }
           }
@@ -1834,8 +1800,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               }
             }
           }
@@ -1871,8 +1836,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               }
             }
           }
@@ -1908,8 +1872,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               }
             }
           }
@@ -1944,8 +1907,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               }
             }
           }
@@ -1980,8 +1942,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               }
             }
           }
@@ -2017,8 +1978,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               }
             }
           }
@@ -2054,8 +2014,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               }
             }
           }
@@ -2090,8 +2049,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               }
             }
           }
@@ -2221,8 +2179,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               }
             },
             "neoforge:conditions": [
@@ -2261,8 +2218,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               }
             },
             "neoforge:conditions": [
@@ -2301,8 +2257,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               }
             },
             "neoforge:conditions": [
@@ -2340,8 +2295,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               }
             },
             "neoforge:conditions": [
@@ -2379,8 +2333,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               }
             },
             "neoforge:conditions": [
@@ -2419,8 +2372,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               }
             },
             "neoforge:conditions": [
@@ -2459,8 +2411,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               }
             },
             "neoforge:conditions": [
@@ -2498,8 +2449,7 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               }
             },
             "neoforge:conditions": [
@@ -2535,8 +2485,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/paneglass"
+                "tag": "c:glass_panes"
               },
               {
                 "item": "minecraft:cocoa_beans"
@@ -2577,8 +2526,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
                 "item": "minecraft:milk_bucket"
@@ -2628,8 +2576,7 @@
                 "item": "hbm:cell_empty"
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plateiron"
+                "tag": "c:plates/iron"
               }
             }
           }
@@ -2752,8 +2699,7 @@
                 "item": "hbm:rod_empty"
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plateiron"
+                "tag": "c:plates/iron"
               }
             }
           }
@@ -2783,16 +2729,13 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustasbestos"
+                "tag": "c:dusts/asbestos"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetgold"
+                "tag": "c:nuggets/gold"
               }
             ],
             "neoforge:conditions": [
@@ -2828,16 +2771,13 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+                "tag": "c:dusts/saltpeter"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+                "tag": "c:dusts/nether_quartz"
               }
             ],
             "neoforge:conditions": [
@@ -2873,12 +2813,10 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustasbestos"
+                "tag": "c:dusts/asbestos"
               },
               {
                 "item": "hbm:nugget_bismuth"
@@ -2917,16 +2855,13 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustcoal"
+                "tag": "c:dusts/coal"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+                "tag": "c:dusts/saltpeter"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustbromine"
+                "tag": "c:dusts/bromine"
               }
             ],
             "neoforge:conditions": [
@@ -3002,8 +2937,7 @@
                 "item": "hbm:armor_polish"
               },
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dyeblack"
+                "tag": "c:dyes/black"
               }
             }
           }
@@ -3073,28 +3007,22 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium233"
+                "tag": "c:nuggets/uranium_233"
               }
             ]
           }
@@ -3124,28 +3052,22 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyth232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyth232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyth232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyth232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyth232"
+                "tag": "c:nuggets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu233"
+                "tag": "c:nuggets/uranium_233"
               }
             ]
           }
@@ -3175,28 +3097,22 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium235"
+                "tag": "c:nuggets/uranium_235"
               }
             ]
           }
@@ -3226,28 +3142,22 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/tinyu235"
+                "tag": "c:nuggets/uranium_235"
               }
             ]
           }
@@ -3283,20 +3193,16 @@
                 "item": "hbm:nugget_pu_mix"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+                "tag": "c:nuggets/uranium_238"
               }
             ]
           }
@@ -3328,8 +3234,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgold"
+            "tag": "c:ingots/gold"
           }
         },
         "neoforge:conditions": [
@@ -3362,8 +3267,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotaluminum"
+            "tag": "c:ingots/aluminum"
           }
         },
         "neoforge:conditions": [
@@ -3396,8 +3300,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         },
         "neoforge:conditions": [
@@ -3430,8 +3333,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcopper"
+            "tag": "c:ingots/copper"
           }
         },
         "neoforge:conditions": [
@@ -3464,8 +3366,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotlead"
+            "tag": "c:ingots/lead"
           }
         },
         "neoforge:conditions": [
@@ -3498,8 +3399,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         },
         "neoforge:conditions": [
@@ -3532,8 +3432,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           }
         },
         "neoforge:conditions": [
@@ -3566,8 +3465,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+            "tag": "c:ingots/saturnite"
           }
         },
         "neoforge:conditions": [
@@ -3600,8 +3498,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           }
         },
         "neoforge:conditions": [
@@ -3634,8 +3531,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottungsten"
+            "tag": "c:ingots/tungsten"
           }
         },
         "neoforge:conditions": [
@@ -3675,8 +3571,7 @@
             "item": "hbm:egg_balefire_shard"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgold"
+            "tag": "c:ingots/gold"
           },
           "A": {
             "item": "minecraft:book"
@@ -4170,8 +4065,7 @@
             "strict": false
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockglass"
+            "tag": "c:glass_blocks"
           }
         }
       }
@@ -4225,8 +4119,7 @@
             "strict": false
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockglass"
+            "tag": "c:glass_blocks"
           }
         }
       }
@@ -4280,8 +4173,7 @@
             "strict": false
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockglass"
+            "tag": "c:glass_blocks"
           }
         }
       }
@@ -4335,8 +4227,7 @@
             "strict": false
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockglass"
+            "tag": "c:glass_blocks"
           }
         }
       }
@@ -4390,8 +4281,7 @@
             "strict": false
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       }
@@ -4445,8 +4335,7 @@
             "strict": false
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       }
@@ -4500,8 +4389,7 @@
             "strict": false
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       }
@@ -4555,8 +4443,7 @@
             "strict": false
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       }
@@ -4600,20 +4487,16 @@
         ],
         "key": {
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetriplegold"
+            "tag": "hbm:plates/cast/gold"
           },
           "A": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/alloyultimate"
+            "tag": "c:alloys/ultimate"
           },
           "E": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/battery"
+            "tag": "c:batteries"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotrefinedobsidian"
+            "tag": "c:ingots/refined_obsidian"
           }
         },
         "neoforge:conditions": [
@@ -4675,20 +4558,16 @@
         ],
         "key": {
           "T": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetripletitanium"
+            "tag": "hbm:plates/cast/titanium"
           },
           "A": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/alloyadvanced"
+            "tag": "c:alloys/advanced"
           },
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/battery"
+            "tag": "c:batteries"
           },
           "C": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "neoforge:conditions": [
@@ -4923,12 +4802,10 @@
             "item": "hbm:circuit_advanced"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesaturnite"
+            "tag": "c:plates/saturnite"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "J": {
             "type": "neoforge:components",
@@ -4939,8 +4816,7 @@
             "strict": false
           },
           "A": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetriplecopper"
+            "tag": "hbm:plates/cast/copper"
           }
         }
       }
@@ -5053,8 +4929,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       }
@@ -5098,8 +4973,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       }
@@ -5143,8 +5017,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       }
@@ -5187,8 +5060,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         }
       }
@@ -5231,8 +5103,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         }
       }
@@ -5276,8 +5147,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         }
       }
@@ -5321,8 +5191,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         }
       }
@@ -5365,8 +5234,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           }
         }
       }
@@ -5409,8 +5277,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           }
         }
       }
@@ -5454,8 +5321,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           }
         }
       }
@@ -5499,8 +5365,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           }
         }
       }
@@ -5543,8 +5408,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           }
         }
       }
@@ -5706,8 +5570,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           }
         },
         "neoforge:conditions": [
@@ -5754,8 +5617,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           }
         },
         "neoforge:conditions": [
@@ -5802,8 +5664,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           }
         },
         "neoforge:conditions": [
@@ -5849,8 +5710,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           }
         },
         "neoforge:conditions": [
@@ -5896,8 +5756,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           }
         },
         "neoforge:conditions": [
@@ -5944,8 +5803,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           }
         },
         "neoforge:conditions": [
@@ -5992,8 +5850,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           }
         },
         "neoforge:conditions": [
@@ -6039,8 +5896,7 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           }
         },
         "neoforge:conditions": [
@@ -6075,8 +5931,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/paneglass"
+            "tag": "c:glass_panes"
           },
           {
             "item": "minecraft:cocoa_beans"
@@ -6116,8 +5971,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
             "item": "minecraft:milk_bucket"
@@ -6166,8 +6020,7 @@
             "item": "hbm:cell_empty"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       }
@@ -6287,8 +6140,7 @@
             "item": "hbm:rod_empty"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plateiron"
+            "tag": "c:plates/iron"
           }
         }
       }
@@ -6317,16 +6169,13 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustasbestos"
+            "tag": "c:dusts/asbestos"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetgold"
+            "tag": "c:nuggets/gold"
           }
         ],
         "neoforge:conditions": [
@@ -6361,16 +6210,13 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+            "tag": "c:dusts/saltpeter"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+            "tag": "c:dusts/nether_quartz"
           }
         ],
         "neoforge:conditions": [
@@ -6405,12 +6251,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustasbestos"
+            "tag": "c:dusts/asbestos"
           },
           {
             "item": "hbm:nugget_bismuth"
@@ -6448,16 +6292,13 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcoal"
+            "tag": "c:dusts/coal"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+            "tag": "c:dusts/saltpeter"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustbromine"
+            "tag": "c:dusts/bromine"
           }
         ],
         "neoforge:conditions": [
@@ -6532,8 +6373,7 @@
             "item": "hbm:armor_polish"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblack"
+            "tag": "c:dyes/black"
           }
         }
       }
@@ -6601,28 +6441,22 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggetthorium232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium233"
+            "tag": "c:nuggets/uranium_233"
           }
         ]
       }
@@ -6651,28 +6485,22 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyth232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyth232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyth232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyth232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyth232"
+            "tag": "c:nuggets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu233"
+            "tag": "c:nuggets/uranium_233"
           }
         ]
       }
@@ -6701,28 +6529,22 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium235"
+            "tag": "c:nuggets/uranium_235"
           }
         ]
       }
@@ -6751,28 +6573,22 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/tinyu235"
+            "tag": "c:nuggets/uranium_235"
           }
         ]
       }
@@ -6807,20 +6623,16 @@
             "item": "hbm:nugget_pu_mix"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/nuggeturanium238"
+            "tag": "c:nuggets/uranium_238"
           }
         ]
       }

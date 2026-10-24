@@ -19,15 +19,13 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/shellweaponsteel"
+        "tag": "hbm:gun_parts/shells/weapon_steel"
       },
       "count": 32
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/billetplutoniumrg"
+        "tag": "hbm:billets/plutonium_rg"
       },
       "count": 32
     },
@@ -45,8 +43,7 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/gememerald"
+        "tag": "c:gems/emerald"
       },
       "count": 32
     },

@@ -20,29 +20,25 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleschrabidate"
+        "tag": "hbm:plates/cast/schrabidate"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleschrabidate"
+        "tag": "hbm:plates/cast/schrabidate"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 64
     },
@@ -125,15 +121,13 @@
   "expensive_input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/platetripleschrabidate"
+        "tag": "hbm:plates/cast/schrabidate"
       },
       "count": 64
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/wiredensebscco"
+        "tag": "hbm:wires/dense/bscco"
       },
       "count": 64
     },

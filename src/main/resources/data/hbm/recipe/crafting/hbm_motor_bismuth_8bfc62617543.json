@@ -12,20 +12,16 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/nuggetbismuth"
+      "tag": "c:nuggets/bismuth"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wiredenseneodymium"
+      "tag": "hbm:wires/dense/neodymium"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplesteel"
+      "tag": "hbm:plates/cast/steel"
     },
     "D": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotdurasteel"
+      "tag": "c:ingots/dura_steel"
     }
   }
 }

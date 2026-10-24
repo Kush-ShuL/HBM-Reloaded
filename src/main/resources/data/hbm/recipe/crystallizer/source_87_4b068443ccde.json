@@ -6,8 +6,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/orecinnabar"
+        "tag": "c:ores/cinnabar"
       },
       "count": 1
     }
@@ -32,7 +31,7 @@
     }
   ],
   "productivity": 0.05,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/orecinnabar",
+  "key_kind": "tag",
+  "source_key": "c:ores/cinnabar",
   "order": 26
 }

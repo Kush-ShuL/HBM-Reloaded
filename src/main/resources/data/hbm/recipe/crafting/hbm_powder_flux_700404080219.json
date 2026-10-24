@@ -7,12 +7,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustlimestone"
+      "tag": "c:dusts/limestone"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/sand"
+      "tag": "c:sands"
     }
   ]
 }

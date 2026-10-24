@@ -7,12 +7,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/duststeel"
+      "tag": "c:dusts/steel"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dusttungsten"
+      "tag": "c:dusts/tungsten"
     }
   ],
   "neoforge:conditions": [

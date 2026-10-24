@@ -12,20 +12,16 @@
   ],
   "key": {
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/platetriplegold"
+      "tag": "hbm:plates/cast/gold"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/alloyultimate"
+      "tag": "c:alloys/ultimate"
     },
     "E": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/battery"
+      "tag": "c:batteries"
     },
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotrefinedobsidian"
+      "tag": "c:ingots/refined_obsidian"
     }
   },
   "neoforge:conditions": [

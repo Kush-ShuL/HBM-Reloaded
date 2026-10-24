@@ -7,20 +7,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustiron"
+      "tag": "c:dusts/iron"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcopper"
+      "tag": "c:dusts/copper"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustlithium"
+      "tag": "c:dusts/lithium"
     },
     {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustnetherquartz"
+      "tag": "c:dusts/nether_quartz"
     }
   ]
 }

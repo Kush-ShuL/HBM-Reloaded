@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:powder_tcalloy",
+    {
+      "id": "#c:dusts/tc_alloy",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cd_alloy",
+      "required": false
+    }
+  ]
+}

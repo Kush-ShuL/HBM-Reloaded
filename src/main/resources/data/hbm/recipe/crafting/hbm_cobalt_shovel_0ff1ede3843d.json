@@ -12,12 +12,10 @@
   ],
   "key": {
     "X": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotcobalt"
+      "tag": "c:ingots/cobalt"
     },
     "#": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/stickwood"
+      "tag": "c:rods/wooden"
     }
   }
 }

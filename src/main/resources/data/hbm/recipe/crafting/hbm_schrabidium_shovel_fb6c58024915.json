@@ -15,15 +15,13 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockschrabidium"
+      "tag": "c:storage_blocks/schrabidium"
     },
     "W": {
       "item": "hbm:desh_shovel"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+      "tag": "hbm:material_groups/plastic/ingots"
     }
   },
   "neoforge:conditions": [

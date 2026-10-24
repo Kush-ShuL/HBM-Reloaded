@@ -15,12 +15,10 @@
       "item": "hbm:plate_polymer"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustredstone"
+      "tag": "c:dusts/redstone"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+      "tag": "hbm:wires/fine/mingrade"
     },
     "T": {
       "item": "hbm:coil_tungsten"

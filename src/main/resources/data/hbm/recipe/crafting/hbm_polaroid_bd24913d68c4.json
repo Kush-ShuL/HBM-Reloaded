@@ -12,20 +12,16 @@
   ],
   "key": {
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustlapis"
+      "tag": "c:dusts/lapis"
     },
     "C": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustcoal"
+      "tag": "c:dusts/coal"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustmingrade"
+      "tag": "c:dusts/mingrade"
     },
     "Y": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustgold"
+      "tag": "c:dusts/gold"
     },
     "P": {
       "item": "minecraft:paper"

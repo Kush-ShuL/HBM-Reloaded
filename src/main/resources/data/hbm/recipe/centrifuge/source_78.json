@@ -1,8 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/orediamond"
+    "tag": "c:ores/diamond"
   },
   "exact_input": false,
   "results": [

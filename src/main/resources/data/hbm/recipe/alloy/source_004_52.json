@@ -1,8 +1,7 @@
 {
   "type": "hbm:alloy",
   "first": {
-    "type": "hbm:legacy_ore_dict",
-    "tag": "hbm:legacy_ore_dict/oreiron"
+    "tag": "c:ores/iron"
   },
   "second": {
     "type": "hbm:alloy_legacy_stack",

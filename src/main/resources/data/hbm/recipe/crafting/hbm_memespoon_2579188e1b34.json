@@ -18,8 +18,7 @@
       "item": "hbm:powder_yellowcake"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockthorium232"
+      "tag": "c:storage_blocks/thorium_232"
     },
     "P": {
       "item": "hbm:photo_panel"
@@ -31,8 +30,7 @@
       "item": "hbm:plate_polymer"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotaustralium"
+      "tag": "c:ingots/australium"
     }
   }
 }

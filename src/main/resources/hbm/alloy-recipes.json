@@ -16,20 +16,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemiron"
+              "tag": "c:gems/iron"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustiron"
+              "tag": "c:dusts/iron"
             }
           ]
         },
@@ -37,20 +33,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcoal"
+              "tag": "c:ingots/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecoal"
+              "tag": "c:plates/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemcoal"
+              "tag": "c:gems/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcoal"
+              "tag": "c:dusts/coal"
             }
           ]
         },
@@ -77,20 +69,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotiron"
+              "tag": "c:ingots/iron"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateiron"
+              "tag": "c:plates/iron"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemiron"
+              "tag": "c:gems/iron"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustiron"
+              "tag": "c:dusts/iron"
             }
           ]
         },
@@ -98,20 +86,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanycoke"
+              "tag": "hbm:material_groups/coke/ingots"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateanycoke"
+              "tag": "hbm:material_groups/coke/plates"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemanycoke"
+              "tag": "c:gems/coke"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustanycoke"
+              "tag": "hbm:material_groups/coke/dusts"
             }
           ]
         },
@@ -135,27 +119,22 @@
       "recipe": {
         "type": "hbm:alloy",
         "first": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/oreiron"
+          "tag": "c:ores/iron"
         },
         "second": {
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcoal"
+              "tag": "c:ingots/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecoal"
+              "tag": "c:plates/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemcoal"
+              "tag": "c:gems/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcoal"
+              "tag": "c:dusts/coal"
             }
           ]
         },
@@ -179,27 +158,22 @@
       "recipe": {
         "type": "hbm:alloy",
         "first": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/oreiron"
+          "tag": "c:ores/iron"
         },
         "second": {
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotanycoke"
+              "tag": "hbm:material_groups/coke/ingots"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateanycoke"
+              "tag": "hbm:material_groups/coke/plates"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemanycoke"
+              "tag": "c:gems/coke"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustanycoke"
+              "tag": "hbm:material_groups/coke/dusts"
             }
           ]
         },
@@ -223,8 +197,7 @@
       "recipe": {
         "type": "hbm:alloy",
         "first": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/oreiron"
+          "tag": "c:ores/iron"
         },
         "second": {
           "type": "hbm:alloy_legacy_stack",
@@ -256,20 +229,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcopper"
+              "tag": "c:ingots/copper"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecopper"
+              "tag": "c:plates/copper"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemcopper"
+              "tag": "c:gems/copper"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcopper"
+              "tag": "c:dusts/copper"
             }
           ]
         },
@@ -277,20 +246,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotredstone"
+              "tag": "c:ingots/redstone"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/plateredstone"
+              "tag": "c:plates/redstone"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemredstone"
+              "tag": "c:gems/redstone"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustredstone"
+              "tag": "c:dusts/redstone"
             }
           ]
         },
@@ -325,8 +290,7 @@
           }
         },
         "second": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/slimeball"
+          "tag": "c:slime_balls"
         },
         "result": {
           "id": "hbm:canister_napalm",
@@ -351,26 +315,21 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingottungsten"
+              "tag": "c:ingots/tungsten"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platetungsten"
+              "tag": "c:plates/tungsten"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemtungsten"
+              "tag": "c:gems/tungsten"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dusttungsten"
+              "tag": "c:dusts/tungsten"
             }
           ]
         },
         "second": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/nuggetschrabidium"
+          "tag": "c:nuggets/schrabidium"
         },
         "result": {
           "id": "hbm:ingot_magnetized_tungsten",
@@ -395,26 +354,21 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsteel"
+              "tag": "c:ingots/steel"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesteel"
+              "tag": "c:plates/steel"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemsteel"
+              "tag": "c:gems/steel"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/duststeel"
+              "tag": "c:dusts/steel"
             }
           ]
         },
         "second": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/nuggettechnetium99"
+          "tag": "c:nuggets/technetium_99"
         },
         "result": {
           "id": "hbm:ingot_tcalloy",
@@ -436,8 +390,7 @@
       "recipe": {
         "type": "hbm:alloy",
         "first": {
-          "type": "hbm:legacy_ore_dict",
-          "tag": "hbm:legacy_ore_dict/plategold"
+          "tag": "c:plates/gold"
         },
         "second": {
           "type": "hbm:alloy_legacy_stack",
@@ -469,20 +422,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+              "tag": "c:ingots/saturnite"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platesaturnite"
+              "tag": "c:plates/saturnite"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemsaturnite"
+              "tag": "c:gems/saturnite"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustsaturnite"
+              "tag": "c:dusts/saturnite"
             }
           ]
         },
@@ -516,20 +465,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcobalt"
+              "tag": "c:ingots/cobalt"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecobalt"
+              "tag": "c:plates/cobalt"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemcobalt"
+              "tag": "c:gems/cobalt"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcobalt"
+              "tag": "c:dusts/cobalt"
             }
           ]
         },
@@ -570,20 +515,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcobalt"
+              "tag": "c:ingots/cobalt"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecobalt"
+              "tag": "c:plates/cobalt"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemcobalt"
+              "tag": "c:gems/cobalt"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcobalt"
+              "tag": "c:dusts/cobalt"
             }
           ]
         },
@@ -621,20 +562,16 @@
           "type": "neoforge:compound",
           "children": [
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/ingotcoal"
+              "tag": "c:ingots/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/platecoal"
+              "tag": "c:plates/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/gemcoal"
+              "tag": "c:gems/coal"
             },
             {
-              "type": "hbm:legacy_ore_dict",
-              "tag": "hbm:legacy_ore_dict/dustcoal"
+              "tag": "c:dusts/coal"
             }
           ]
         },

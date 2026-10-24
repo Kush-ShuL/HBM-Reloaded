@@ -3,8 +3,8 @@
   "inputs": [
     {
       "ingredient": {
-        "kind": "ore",
-        "tag": "hbm:legacy_ore_dict/platetriplesteel",
+        "kind": "tag",
+        "tag": "hbm:plates/cast/steel",
         "count": 1
       },
       "count": 2
@@ -17,8 +17,8 @@
     },
     {
       "ingredient": {
-        "kind": "ore",
-        "tag": "hbm:legacy_ore_dict/bolttungsten",
+        "kind": "tag",
+        "tag": "hbm:bolts/tungsten",
         "count": 1
       },
       "count": 4

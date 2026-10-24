@@ -8,12 +8,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotnaquadahenriched"
+      "tag": "c:ingots/naquadah_enriched"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotgraphite"
+      "tag": "c:ingots/graphite"
     }
   },
   "result": {
@@ -25,8 +23,8 @@
   },
   "neoforge:conditions": [
     {
-      "type": "hbm:watz_ore_name",
-      "name": "ingotNaquadahEnriched"
+      "type": "hbm:item_tag_exists",
+      "tag": "c:ingots/naquadah_enriched"
     }
   ]
 }

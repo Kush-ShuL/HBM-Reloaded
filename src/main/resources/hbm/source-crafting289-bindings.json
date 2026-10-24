@@ -1000,12 +1000,10 @@
             "item": "minecraft:book"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblack"
+            "tag": "c:dyes/black"
           },
           "L": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyeblue"
+            "tag": "c:dyes/blue"
           }
         }
       },
@@ -1038,12 +1036,10 @@
             "item": "minecraft:spider_eye"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustredstone"
+            "tag": "c:dusts/redstone"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/gemnetherquartz"
+            "tag": "c:gems/nether_quartz"
           }
         ]
       },
@@ -1078,12 +1074,10 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustlapis"
+            "tag": "c:dusts/lapis"
           }
         }
       },
@@ -1118,12 +1112,10 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustmingrade"
+            "tag": "c:dusts/mingrade"
           }
         }
       },
@@ -1158,12 +1150,10 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustcmbsteel"
+            "tag": "c:dusts/cmb_steel"
           }
         }
       },
@@ -1201,8 +1191,7 @@
             "item": "hbm:particle_strange"
           },
           "T": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dusttungsten"
+            "tag": "c:dusts/tungsten"
           },
           "H": {
             "item": "hbm:crystal_horn"
@@ -1243,8 +1232,7 @@
             "item": "hbm:cell_uf6"
           },
           "T": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustaluminum"
+            "tag": "c:dusts/aluminum"
           },
           "H": {
             "item": "hbm:crystal_charred"
@@ -1282,8 +1270,7 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ntmpipeiron"
+            "tag": "hbm:pipes/iron"
           },
           "S": {
             "item": "hbm:plate_polymer"
@@ -1326,12 +1313,10 @@
             "amount": 1000
           },
           "2": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platealuminum"
+            "tag": "c:plates/aluminum"
           },
           "3": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/gemdiamond"
+            "tag": "c:gems/diamond"
           }
         },
         "neoforge:conditions": [
@@ -1375,12 +1360,10 @@
             "item": "hbm:inf_water"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ntmpipesteel"
+            "tag": "hbm:pipes/steel"
           },
           "T": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/shellsteel"
+            "tag": "hbm:gun_parts/shells/steel"
           }
         },
         "neoforge:conditions": [
@@ -1421,15 +1404,13 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "S": {
             "item": "hbm:ring_starmetal"
           },
           "L": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platedurasteel"
+            "tag": "c:plates/dura_steel"
           }
         }
       },
@@ -1550,8 +1531,7 @@
             "item": "hbm:flame_pony"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           }
         }
       },
@@ -1665,8 +1645,7 @@
             "item": "hbm:circuit_basic"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           }
         }
       },
@@ -1823,16 +1802,13 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           },
           "D": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/gemdiamond"
+            "tag": "c:gems/diamond"
           },
           "R": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockredstone"
+            "tag": "c:storage_blocks/redstone"
           }
         }
       },
@@ -1870,8 +1846,7 @@
             "item": "minecraft:string"
           },
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/slimeball"
+            "tag": "c:slime_balls"
           },
           "P": {
             "item": "minecraft:paper"
@@ -1912,8 +1887,7 @@
             "item": "minecraft:string"
           },
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/anytar"
+            "tag": "hbm:tars"
           },
           "P": {
             "item": "minecraft:paper"
@@ -1952,8 +1926,7 @@
             "item": "hbm:plant_item_rope"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/slimeball"
+            "tag": "c:slime_balls"
           }
         }
       },
@@ -1988,8 +1961,7 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platetitanium"
+            "tag": "c:plates/titanium"
           },
           "H": {
             "item": "hbm:part_generic_piston_hydraulic"
@@ -2257,8 +2229,7 @@
             "item": "hbm:ingot_firebrick"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "S": {
             "type": "neoforge:compound",
@@ -2365,8 +2336,7 @@
             "item": "minecraft:tnt"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustsaltpeter"
+            "tag": "c:dusts/saltpeter"
           }
         ],
         "neoforge:conditions": [
@@ -2415,8 +2385,7 @@
             "strict": false
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustredstone"
+            "tag": "c:dusts/redstone"
           },
           {
             "item": "hbm:canister_empty"
@@ -2807,8 +2776,7 @@
         ],
         "key": {
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         },
         "neoforge:conditions": [

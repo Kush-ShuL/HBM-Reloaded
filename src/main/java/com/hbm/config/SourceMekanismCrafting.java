@@ -1,6 +1,5 @@
 package com.hbm.config;
 
-import com.hbm.registry.HbmOreDictionary;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Set;
@@ -26,10 +25,6 @@ public final class SourceMekanismCrafting {
     public static void register() {
         if (registered) return;
         registered = true;
-        if (ModList.get().isLoaded("mekanism")) {
-            // The fourth original name, alloyUltimate, is already registered by GeneralModes.
-            for (String name : new String[] {"battery", "alloyAdvanced", "ingotRefinedObsidian"}) HbmOreDictionary.registerName(name);
-        }
         NeoForge.EVENT_BUS.addListener(SourceMekanismCrafting::starting);
         NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, SourceMekanismCrafting::sync);
     }

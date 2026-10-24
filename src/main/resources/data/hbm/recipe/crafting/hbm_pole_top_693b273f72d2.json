@@ -12,16 +12,13 @@
   ],
   "key": {
     "T": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottungsten"
+      "tag": "c:ingots/tungsten"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotberyllium"
+      "tag": "c:ingots/beryllium"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotmingrade"
+      "tag": "c:ingots/mingrade"
     }
   }
 }

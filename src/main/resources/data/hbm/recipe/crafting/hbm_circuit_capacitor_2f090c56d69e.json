@@ -14,12 +14,10 @@
       "item": "hbm:plate_polymer"
     },
     "A": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/dustaluminum"
+      "tag": "c:dusts/aluminum"
     },
     "W": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/wirefinecopper"
+      "tag": "hbm:wires/fine/copper"
     }
   }
 }

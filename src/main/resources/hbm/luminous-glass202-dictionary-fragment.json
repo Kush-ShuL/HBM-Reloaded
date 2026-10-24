@@ -1,25 +1,25 @@
 {
   "order": [
-    "hbm:legacy_ore_dict/blockglass",
-    "hbm:legacy_ore_dict/blockglassyellow",
-    "hbm:legacy_ore_dict/blockglasslime",
-    "hbm:legacy_ore_dict/blockglassred"
+    "c:glass_blocks",
+    "c:glass_blocks/yellow",
+    "c:glass_blocks/lime",
+    "c:glass_blocks/red"
   ],
   "names": [
     {
-      "tag": "hbm:legacy_ore_dict/blockglass",
+      "tag": "c:glass_blocks",
       "raw": "blockGlass"
     },
     {
-      "tag": "hbm:legacy_ore_dict/blockglassyellow",
+      "tag": "c:glass_blocks/yellow",
       "raw": "blockGlassYellow"
     },
     {
-      "tag": "hbm:legacy_ore_dict/blockglasslime",
+      "tag": "c:glass_blocks/lime",
       "raw": "blockGlassLime"
     },
     {
-      "tag": "hbm:legacy_ore_dict/blockglassred",
+      "tag": "c:glass_blocks/red",
       "raw": "blockGlassRed"
     }
   ],
@@ -27,7 +27,7 @@
   "registrations": [
     {
       "raw": "blockGlass",
-      "tag": "hbm:legacy_ore_dict/blockglass",
+      "tag": "c:glass_blocks",
       "members": [
         "hbm:glass_uranium",
         "hbm:glass_trinitite",
@@ -44,7 +44,7 @@
     },
     {
       "raw": "blockGlassYellow",
-      "tag": "hbm:legacy_ore_dict/blockglassyellow",
+      "tag": "c:glass_blocks/yellow",
       "members": [
         "hbm:glass_uranium"
       ],
@@ -57,7 +57,7 @@
     },
     {
       "raw": "blockGlassLime",
-      "tag": "hbm:legacy_ore_dict/blockglasslime",
+      "tag": "c:glass_blocks/lime",
       "members": [
         "hbm:glass_trinitite"
       ],
@@ -70,7 +70,7 @@
     },
     {
       "raw": "blockGlassRed",
-      "tag": "hbm:legacy_ore_dict/blockglassred",
+      "tag": "c:glass_blocks/red",
       "members": [
         "hbm:glass_polonium"
       ],

@@ -10,8 +10,7 @@
   },
   "left": {
     "ingredient": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/billeturanium"
+      "tag": "hbm:billets/uranium"
     },
     "count": 1
   },
@@ -26,7 +25,7 @@
     "count": 1
   },
   "kind": "mold",
-  "prefix": "billet",
   "exact_left": [],
-  "order": 99000000
+  "order": 99000000,
+  "shape": "BILLET"
 }

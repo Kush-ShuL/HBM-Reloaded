@@ -6,8 +6,7 @@
   "input_items": [
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustlapis"
+        "tag": "c:dusts/lapis"
       },
       "count": 1
     }
@@ -32,7 +31,7 @@
     }
   ],
   "productivity": 0.0,
-  "key_kind": "dict",
-  "source_key": "hbm:legacy_ore_dict/dustlapis",
+  "key_kind": "tag",
+  "source_key": "c:dusts/lapis",
   "order": 49
 }

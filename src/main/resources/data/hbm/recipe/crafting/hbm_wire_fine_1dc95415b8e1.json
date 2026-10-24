@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:wire_fine",
-    "count": 24,
-    "components": {
-      "hbm:legacy_metadata": 7400
-    }
+    "id": "hbm:autogen/wire_fine/m7400",
+    "count": 24
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -13,8 +10,7 @@
   ],
   "key": {
     "#": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingottungsten"
+      "tag": "c:ingots/tungsten"
     }
   },
   "neoforge:conditions": [

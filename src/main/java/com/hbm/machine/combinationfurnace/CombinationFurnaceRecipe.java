@@ -1,7 +1,7 @@
 package com.hbm.machine.combinationfurnace;
 import com.hbm.fluid.FluidStack;
 import com.hbm.ore.RawOreContent;
-import com.hbm.recipe.LegacyOreIngredient;
+
 import com.hbm.recipe.generic.*;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.*;
@@ -15,8 +15,8 @@ public record CombinationFurnaceRecipe(GenericRecipeData data) implements Recipe
     public GenericIngredient input(){return inputItems().getFirst();}
     public ItemStack solid(){return outputItems().isEmpty()?ItemStack.EMPTY:outputItems().getFirst().pool().getFirst().stack().copy();}
     public FluidStack fluid(){return outputFluids().isEmpty()?null:outputFluids().getFirst();}
-    public boolean dictionary(){return input().ingredient().getCustomIngredient() instanceof LegacyOreIngredient;}
-    public boolean matchesItem(ItemStack stack){ItemStack canonical=RawOreContent.processingStack(stack);if(dictionary())return input().matches(canonical,true);for(ItemStack key:input().ingredient().getItems())if(com.hbm.machine.electricfurnace.ElectricFurnaceBlockEntity.sameLegacyItem(key,canonical))return true;return false;}
+    public boolean tagged(){return com.hbm.registry.HbmItemTags.tag(input().ingredient()).isPresent();}
+    public boolean matchesItem(ItemStack stack){ItemStack canonical=RawOreContent.processingStack(stack);if(tagged())return input().matches(canonical,true);for(ItemStack key:input().ingredient().getItems())if(com.hbm.machine.electricfurnace.ElectricFurnaceBlockEntity.sameLegacyItem(key,canonical))return true;return false;}
     public static final MapCodec<CombinationFurnaceRecipe> CODEC=GenericRecipeData.MAP_CODEC.xmap(CombinationFurnaceRecipe::new,CombinationFurnaceRecipe::data);
     @Override public boolean matches(RecipeInput input,Level level){return input.size()>0&&matchesItem(input.getItem(0));}
     @Override public ItemStack assemble(RecipeInput input,HolderLookup.Provider lookup){return solid();}

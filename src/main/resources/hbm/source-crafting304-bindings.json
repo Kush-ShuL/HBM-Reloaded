@@ -1385,12 +1385,10 @@
                 "item": "hbm:rod_zirnox_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium"
+                "tag": "hbm:billets/uranium"
               }
             ],
             "result": {
@@ -1427,12 +1425,10 @@
                 "item": "hbm:rod_zirnox_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billetthorium232"
+                "tag": "hbm:billets/thorium_232"
               }
             ],
             "result": {
@@ -1469,12 +1465,10 @@
                 "item": "hbm:rod_zirnox_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium233"
+                "tag": "hbm:billets/uranium_233"
               }
             ],
             "result": {
@@ -1511,12 +1505,10 @@
                 "item": "hbm:rod_zirnox_empty"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/billeturanium235"
+                "tag": "hbm:billets/uranium_235"
               }
             ],
             "result": {
@@ -1565,12 +1557,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1610,12 +1600,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotneptunium237"
+                "tag": "c:ingots/neptunium_237"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1655,12 +1643,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotlead"
+                "tag": "c:ingots/lead"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1700,12 +1686,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotboron"
+                "tag": "c:ingots/boron"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1745,12 +1729,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingoturanium238"
+                "tag": "c:ingots/uranium_238"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1790,12 +1772,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotnaquadahenriched"
+                "tag": "c:ingots/naquadah_enriched"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1807,8 +1787,8 @@
             },
             "neoforge:conditions": [
               {
-                "type": "hbm:watz_ore_name",
-                "name": "ingotNaquadahEnriched"
+                "type": "hbm:item_tag_exists",
+                "tag": "c:ingots/naquadah_enriched"
               }
             ]
           }
@@ -1841,12 +1821,10 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotnaquadria"
+                "tag": "c:ingots/naquadria"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1858,8 +1836,8 @@
             },
             "neoforge:conditions": [
               {
-                "type": "hbm:watz_ore_name",
-                "name": "ingotNaquadria"
+                "type": "hbm:item_tag_exists",
+                "tag": "c:ingots/naquadria"
               }
             ]
           }
@@ -1904,8 +1882,7 @@
                 "item": "hbm:ingot_hes"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1948,8 +1925,7 @@
                 "item": "hbm:ingot_schrabidium_fuel"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -1992,8 +1968,7 @@
                 "item": "hbm:ingot_les"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -2036,8 +2011,7 @@
                 "item": "hbm:ingot_uranium_fuel"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -2080,8 +2054,7 @@
                 "item": "hbm:ingot_pu_mix"
               },
               "G": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotgraphite"
+                "tag": "c:ingots/graphite"
               }
             },
             "result": {
@@ -2127,12 +2100,10 @@
             ],
             "key": {
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               },
               "R": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/boltdurasteel"
+                "tag": "hbm:bolts/dura_steel"
               },
               "B": {
                 "type": "neoforge:components",
@@ -2174,8 +2145,7 @@
             ],
             "key": {
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "L": {
                 "item": "minecraft:leather"
@@ -2221,8 +2191,7 @@
                 "item": "hbm:circuit_advanced"
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             ]
           }
@@ -2256,16 +2225,13 @@
             ],
             "key": {
               "W": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+                "tag": "hbm:wires/fine/mingrade"
               },
               "R": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dustredstone"
+                "tag": "c:dusts/redstone"
               },
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotiron"
+                "tag": "c:ingots/iron"
               },
               "B": {
                 "type": "neoforge:components",
@@ -2308,10 +2274,10 @@
             ],
             "key": {
               "C": {
-                "tag": "hbm:legacy_ore_dict/platecopper"
+                "tag": "c:plates/copper"
               },
               "I": {
-                "tag": "hbm:legacy_ore_dict/ingotiron"
+                "tag": "c:ingots/iron"
               }
             },
             "result": {
@@ -2355,10 +2321,10 @@
             ],
             "key": {
               "S": {
-                "tag": "hbm:legacy_ore_dict/platesteel"
+                "tag": "c:plates/steel"
               },
               "P": {
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               },
               "T": {
                 "item": "hbm:tank_steel"
@@ -2406,12 +2372,10 @@
             ],
             "key": {
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/slabwood"
+                "tag": "minecraft:wooden_slabs"
               },
               "W": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/plankwood"
+                "tag": "minecraft:planks"
               }
             },
             "result": {
@@ -2456,12 +2420,10 @@
             ],
             "key": {
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/platesteel"
+                "tag": "c:plates/steel"
               },
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               }
             },
             "result": {
@@ -2515,8 +2477,7 @@
                 }
               },
               {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/dyered"
+                "tag": "c:dyes/red"
               }
             ],
             "result": {
@@ -2562,8 +2523,7 @@
             ],
             "key": {
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "B": {
                 "item": "hbm:blades_steel"
@@ -2621,8 +2581,7 @@
             ],
             "key": {
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "B": {
                 "item": "hbm:blades_steel"
@@ -3007,8 +2966,7 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "S": {
                 "item": "hbm:ring_starmetal"
@@ -3059,8 +3017,7 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "S": {
                 "item": "hbm:ring_starmetal"
@@ -3111,8 +3068,7 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "S": {
                 "item": "hbm:ring_starmetal"
@@ -3163,8 +3119,7 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "B": {
                 "item": "hbm:cobalt_decorated_shovel"
@@ -3212,15 +3167,13 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockschrabidium"
+                "tag": "c:storage_blocks/schrabidium"
               },
               "W": {
                 "item": "hbm:desh_sword"
               },
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             },
             "neoforge:conditions": [
@@ -3266,15 +3219,13 @@
                 "item": "hbm:blades_desh"
               },
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockschrabidium"
+                "tag": "c:storage_blocks/schrabidium"
               },
               "W": {
                 "item": "hbm:desh_pickaxe"
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             },
             "neoforge:conditions": [
@@ -3320,15 +3271,13 @@
                 "item": "hbm:blades_desh"
               },
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockschrabidium"
+                "tag": "c:storage_blocks/schrabidium"
               },
               "W": {
                 "item": "hbm:desh_axe"
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             },
             "neoforge:conditions": [
@@ -3371,15 +3320,13 @@
             ],
             "key": {
               "B": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockschrabidium"
+                "tag": "c:storage_blocks/schrabidium"
               },
               "W": {
                 "item": "hbm:desh_shovel"
               },
               "P": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             },
             "neoforge:conditions": [
@@ -3422,15 +3369,13 @@
             ],
             "key": {
               "I": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "W": {
                 "item": "hbm:desh_hoe"
               },
               "S": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+                "tag": "hbm:material_groups/plastic/ingots"
               }
             },
             "neoforge:conditions": [
@@ -3476,12 +3421,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -3516,12 +3459,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -3556,12 +3497,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -3596,12 +3535,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -3636,12 +3573,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotsteel"
+                "tag": "c:ingots/steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -3680,12 +3615,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -3720,12 +3653,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -3760,12 +3691,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -3800,12 +3729,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -3840,12 +3767,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingottitanium"
+                "tag": "c:ingots/titanium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -3876,12 +3801,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcobalt"
+                "tag": "c:ingots/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -3923,12 +3846,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcobalt"
+                "tag": "c:ingots/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -3967,12 +3888,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcobalt"
+                "tag": "c:ingots/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4011,12 +3930,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcobalt"
+                "tag": "c:ingots/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4054,12 +3971,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcobalt"
+                "tag": "c:ingots/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4098,12 +4013,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4134,12 +4047,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -4177,12 +4088,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -4220,12 +4129,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -4263,12 +4170,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+                "tag": "c:ingots/cmb_steel"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "result": {
@@ -4311,12 +4216,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+                "tag": "c:ingots/workers_alloy"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4354,12 +4257,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+                "tag": "c:ingots/workers_alloy"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4397,12 +4298,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+                "tag": "c:ingots/workers_alloy"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4440,12 +4339,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+                "tag": "c:ingots/workers_alloy"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4483,12 +4380,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+                "tag": "c:ingots/workers_alloy"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             }
           }
@@ -4527,12 +4422,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockcobalt"
+                "tag": "c:storage_blocks/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4577,12 +4470,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockcobalt"
+                "tag": "c:storage_blocks/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4627,12 +4518,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockcobalt"
+                "tag": "c:storage_blocks/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4677,12 +4566,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockcobalt"
+                "tag": "c:storage_blocks/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4726,12 +4613,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/blockcobalt"
+                "tag": "c:storage_blocks/cobalt"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4776,12 +4661,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4826,12 +4709,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4876,12 +4757,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4926,12 +4805,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -4975,12 +4852,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+                "tag": "c:ingots/starmetal"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -5025,12 +4900,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -5074,12 +4947,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -5123,12 +4994,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -5172,12 +5041,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -5221,12 +5088,10 @@
             ],
             "key": {
               "X": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+                "tag": "c:ingots/schrabidium"
               },
               "#": {
-                "type": "hbm:legacy_ore_dict",
-                "tag": "hbm:legacy_ore_dict/stickwood"
+                "tag": "c:rods/wooden"
               }
             },
             "neoforge:conditions": [
@@ -6817,12 +6682,10 @@
             "item": "hbm:rod_zirnox_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium"
+            "tag": "hbm:billets/uranium"
           }
         ],
         "result": {
@@ -6867,12 +6730,10 @@
             "item": "hbm:rod_zirnox_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billetthorium232"
+            "tag": "hbm:billets/thorium_232"
           }
         ],
         "result": {
@@ -6917,12 +6778,10 @@
             "item": "hbm:rod_zirnox_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium233"
+            "tag": "hbm:billets/uranium_233"
           }
         ],
         "result": {
@@ -6967,12 +6826,10 @@
             "item": "hbm:rod_zirnox_empty"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/billeturanium235"
+            "tag": "hbm:billets/uranium_235"
           }
         ],
         "result": {
@@ -7017,12 +6874,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7067,12 +6922,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotneptunium237"
+            "tag": "c:ingots/neptunium_237"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7117,12 +6970,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotlead"
+            "tag": "c:ingots/lead"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7167,12 +7018,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotboron"
+            "tag": "c:ingots/boron"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7217,12 +7066,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingoturanium238"
+            "tag": "c:ingots/uranium_238"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7267,12 +7114,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotnaquadahenriched"
+            "tag": "c:ingots/naquadah_enriched"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7284,8 +7129,8 @@
         },
         "neoforge:conditions": [
           {
-            "type": "hbm:watz_ore_name",
-            "name": "ingotNaquadahEnriched"
+            "type": "hbm:item_tag_exists",
+            "tag": "c:ingots/naquadah_enriched"
           }
         ]
       }
@@ -7323,12 +7168,10 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotnaquadria"
+            "tag": "c:ingots/naquadria"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7340,8 +7183,8 @@
         },
         "neoforge:conditions": [
           {
-            "type": "hbm:watz_ore_name",
-            "name": "ingotNaquadria"
+            "type": "hbm:item_tag_exists",
+            "tag": "c:ingots/naquadria"
           }
         ]
       }
@@ -7382,8 +7225,7 @@
             "item": "hbm:ingot_hes"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7431,8 +7273,7 @@
             "item": "hbm:ingot_schrabidium_fuel"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7480,8 +7321,7 @@
             "item": "hbm:ingot_les"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7529,8 +7369,7 @@
             "item": "hbm:ingot_uranium_fuel"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7578,8 +7417,7 @@
             "item": "hbm:ingot_pu_mix"
           },
           "G": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotgraphite"
+            "tag": "c:ingots/graphite"
           }
         },
         "result": {
@@ -7624,12 +7462,10 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           },
           "R": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/boltdurasteel"
+            "tag": "hbm:bolts/dura_steel"
           },
           "B": {
             "type": "neoforge:components",
@@ -7670,8 +7506,7 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "L": {
             "item": "minecraft:leather"
@@ -7716,8 +7551,7 @@
             "item": "hbm:circuit_advanced"
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         ]
       }
@@ -7750,16 +7584,13 @@
         ],
         "key": {
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/wirefinemingrade"
+            "tag": "hbm:wires/fine/mingrade"
           },
           "R": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dustredstone"
+            "tag": "c:dusts/redstone"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           },
           "B": {
             "type": "neoforge:components",
@@ -7801,10 +7632,10 @@
         ],
         "key": {
           "C": {
-            "tag": "hbm:legacy_ore_dict/platecopper"
+            "tag": "c:plates/copper"
           },
           "I": {
-            "tag": "hbm:legacy_ore_dict/ingotiron"
+            "tag": "c:ingots/iron"
           }
         },
         "result": {
@@ -7847,10 +7678,10 @@
         ],
         "key": {
           "S": {
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "P": {
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           },
           "T": {
             "item": "hbm:tank_steel"
@@ -7894,12 +7725,10 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/slabwood"
+            "tag": "minecraft:wooden_slabs"
           },
           "W": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/plankwood"
+            "tag": "minecraft:planks"
           }
         },
         "result": {
@@ -7940,12 +7769,10 @@
         ],
         "key": {
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/platesteel"
+            "tag": "c:plates/steel"
           },
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           }
         },
         "result": {
@@ -7995,8 +7822,7 @@
             }
           },
           {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/dyered"
+            "tag": "c:dyes/red"
           }
         ],
         "result": {
@@ -8038,8 +7864,7 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "B": {
             "item": "hbm:blades_steel"
@@ -8102,8 +7927,7 @@
         ],
         "key": {
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "B": {
             "item": "hbm:blades_steel"
@@ -8499,8 +8323,7 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "S": {
             "item": "hbm:ring_starmetal"
@@ -8550,8 +8373,7 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "S": {
             "item": "hbm:ring_starmetal"
@@ -8601,8 +8423,7 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "S": {
             "item": "hbm:ring_starmetal"
@@ -8652,8 +8473,7 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "B": {
             "item": "hbm:cobalt_decorated_shovel"
@@ -8700,15 +8520,13 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockschrabidium"
+            "tag": "c:storage_blocks/schrabidium"
           },
           "W": {
             "item": "hbm:desh_sword"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "neoforge:conditions": [
@@ -8753,15 +8571,13 @@
             "item": "hbm:blades_desh"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockschrabidium"
+            "tag": "c:storage_blocks/schrabidium"
           },
           "W": {
             "item": "hbm:desh_pickaxe"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "neoforge:conditions": [
@@ -8806,15 +8622,13 @@
             "item": "hbm:blades_desh"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockschrabidium"
+            "tag": "c:storage_blocks/schrabidium"
           },
           "W": {
             "item": "hbm:desh_axe"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "neoforge:conditions": [
@@ -8856,15 +8670,13 @@
         ],
         "key": {
           "B": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockschrabidium"
+            "tag": "c:storage_blocks/schrabidium"
           },
           "W": {
             "item": "hbm:desh_shovel"
           },
           "P": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "neoforge:conditions": [
@@ -8906,15 +8718,13 @@
         ],
         "key": {
           "I": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "W": {
             "item": "hbm:desh_hoe"
           },
           "S": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotanyplastic"
+            "tag": "hbm:material_groups/plastic/ingots"
           }
         },
         "neoforge:conditions": [
@@ -8959,12 +8769,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9007,12 +8815,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9055,12 +8861,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9103,12 +8907,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9151,12 +8953,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotsteel"
+            "tag": "c:ingots/steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9203,12 +9003,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9251,12 +9049,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9299,12 +9095,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9347,12 +9141,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9395,12 +9187,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingottitanium"
+            "tag": "c:ingots/titanium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9439,12 +9229,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            "tag": "c:ingots/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9494,12 +9282,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            "tag": "c:ingots/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9546,12 +9332,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            "tag": "c:ingots/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9598,12 +9382,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            "tag": "c:ingots/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9649,12 +9431,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcobalt"
+            "tag": "c:ingots/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9701,12 +9481,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -9745,12 +9523,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9796,12 +9572,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9847,12 +9621,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9898,12 +9670,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotcmbsteel"
+            "tag": "c:ingots/cmb_steel"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "result": {
@@ -9954,12 +9724,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -10005,12 +9773,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -10056,12 +9822,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -10107,12 +9871,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -10158,12 +9920,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotworkersalloy"
+            "tag": "c:ingots/workers_alloy"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         }
       }
@@ -10210,12 +9970,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockcobalt"
+            "tag": "c:storage_blocks/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10268,12 +10026,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockcobalt"
+            "tag": "c:storage_blocks/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10326,12 +10082,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockcobalt"
+            "tag": "c:storage_blocks/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10384,12 +10138,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockcobalt"
+            "tag": "c:storage_blocks/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10441,12 +10193,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/blockcobalt"
+            "tag": "c:storage_blocks/cobalt"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10499,12 +10249,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10557,12 +10305,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10615,12 +10361,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10673,12 +10417,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10730,12 +10472,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+            "tag": "c:ingots/starmetal"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10788,12 +10528,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10845,12 +10583,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10902,12 +10638,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -10959,12 +10693,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [
@@ -11016,12 +10748,10 @@
         ],
         "key": {
           "X": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/ingotschrabidium"
+            "tag": "c:ingots/schrabidium"
           },
           "#": {
-            "type": "hbm:legacy_ore_dict",
-            "tag": "hbm:legacy_ore_dict/stickwood"
+            "tag": "c:rods/wooden"
           }
         },
         "neoforge:conditions": [

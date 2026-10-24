@@ -6,8 +6,25 @@
     0
   ],
   "input2": [
-    "dictframe",
-    "Coal"
+    "ingredient",
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "tag": "c:ingots/coal"
+        },
+        {
+          "tag": "c:plates/coal"
+        },
+        {
+          "tag": "c:gems/coal"
+        },
+        {
+          "tag": "c:dusts/coal"
+        }
+      ]
+    },
+    1
   ],
   "output": [
     "hbm:canister_full",

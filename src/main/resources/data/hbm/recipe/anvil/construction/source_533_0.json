@@ -13,15 +13,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/billeturanium238"
+        "tag": "hbm:billets/uranium_238"
       },
       "count": 2
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustniobium"
+        "tag": "c:dusts/niobium"
       },
       "count": 1
     }

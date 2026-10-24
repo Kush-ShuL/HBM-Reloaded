@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "hbm:ingot_arsenic_bronze",
+    "hbm:ingot_bismuth_bronze",
+    {
+      "id": "#c:ingots/bismuth_bronze",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/arsenic_bronze",
+      "required": false
+    }
+  ]
+}

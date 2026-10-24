@@ -12,12 +12,10 @@
   ],
   "key": {
     "I": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotsaturnite"
+      "tag": "c:ingots/saturnite"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+      "tag": "c:ingots/starmetal"
     },
     "C": {
       "item": "hbm:chlorine_pinwheel"

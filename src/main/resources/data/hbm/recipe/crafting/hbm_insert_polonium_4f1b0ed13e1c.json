@@ -18,12 +18,10 @@
       "item": "hbm:ducttape"
     },
     "P": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/plateiron"
+      "tag": "c:plates/iron"
     },
     "S": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/blockpolonium210"
+      "tag": "c:storage_blocks/polonium_210"
     }
   }
 }

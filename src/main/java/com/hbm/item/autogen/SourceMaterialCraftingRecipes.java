@@ -2,7 +2,7 @@ package com.hbm.item.autogen;
 
 import com.hbm.material.HbmMaterials;
 import com.hbm.material.MaterialDistributionConfig;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import com.hbm.machine.alloy.AlloyStackIngredient;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -52,14 +52,14 @@ public final class SourceMaterialCraftingRecipes {
                 int rows = 3;
                 // Literal original fallback priority. Never select a static default material/item.
                 for (String shape : new String[] {"DUST", "GEM", "CRYSTAL", "INGOT", "BILLET", "ORE"}) {
-                    output = first(HbmMaterials.shape(shape).name() + name);
+                    output = first(shape, name);
                     if (!output.isEmpty()) { if (shape.equals("BILLET")) rows = 2; break; }
                 }
                 if (output.isEmpty()) output = MaterialDistributionConfig.legacyStack("hbm:nothing", 0);
                 add(merged, generated, "fragments/" + material.id(), fragment, output, rows);
             }
             if (material.autogen().contains(nuggetShape)) {
-                ItemStack ingot = first(HbmMaterials.shape("INGOT").name() + name);
+                ItemStack ingot = first("INGOT", name);
                 if (!ingot.isEmpty()) {
                     ItemStack nugget = material.make(AutogenContent.item("nugget_raw"));
                     add(merged, generated, "nugget_compress/" + material.id(), nugget, ingot, 3);
@@ -70,8 +70,8 @@ public final class SourceMaterialCraftingRecipes {
         if (!generated.isEmpty() || !previous.isEmpty()) manager.replaceRecipes(merged.values());
         INSTALLED.put(manager, generated);
     }
-    private static ItemStack first(String raw) {
-        return HbmOreDictionary.items("hbm:legacy_ore_dict/" + raw.toLowerCase(java.util.Locale.ROOT)).findFirst().map(ItemStack::copy).orElse(ItemStack.EMPTY);
+    private static ItemStack first(String shape, String material) {
+        return HbmItemTags.items(HbmItemTags.material(shape, material)).findFirst().map(ItemStack::copy).orElse(ItemStack.EMPTY);
     }
     private static void add(Map<ResourceLocation, RecipeHolder<?>> merged, Map<ResourceLocation, RecipeHolder<?>> generated,
                             String path, ItemStack input, ItemStack output, int rows) {

@@ -10,8 +10,8 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           2
         ],
         null,
@@ -42,15 +42,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -73,15 +73,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -103,20 +103,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -139,15 +139,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -170,15 +170,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null,
@@ -201,8 +201,8 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           2
         ],
         null,
@@ -233,15 +233,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -264,15 +264,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -294,20 +294,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -330,15 +330,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -361,15 +361,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null,
@@ -392,15 +392,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -423,15 +423,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -453,20 +453,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -489,15 +489,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -520,15 +520,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -551,15 +551,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -581,20 +581,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -617,15 +617,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -648,15 +648,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -679,15 +679,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -709,20 +709,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -745,15 +745,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -776,15 +776,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotUranium238",
+          "tag",
+          "c:ingots/uranium_238",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -807,15 +807,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -838,15 +838,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -868,20 +868,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -904,15 +904,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           4
         ],
         null,
@@ -935,15 +935,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -966,15 +966,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -996,20 +996,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -1032,15 +1032,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           4
         ],
         null,
@@ -1063,15 +1063,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotUranium238",
+          "tag",
+          "c:ingots/uranium_238",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           4
         ],
         null,
@@ -1093,20 +1093,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         [
-          "dict",
-          "ingotFerrouranium",
+          "tag",
+          "c:ingots/ferrouranium",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           4
         ],
         null,
@@ -1129,15 +1129,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null,
@@ -1160,15 +1160,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null,
@@ -1190,20 +1190,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null,
@@ -1226,15 +1226,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWeaponSteel",
+          "tag",
+          "c:ingots/weapon_steel",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           6
         ],
         null,
@@ -1257,15 +1257,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotUranium238",
+          "tag",
+          "c:ingots/uranium_238",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           6
         ],
         null,
@@ -1287,20 +1287,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         [
-          "dict",
-          "ingotFerrouranium",
+          "tag",
+          "c:ingots/ferrouranium",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           6
         ],
         null,
@@ -1323,8 +1323,8 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetLead",
+          "tag",
+          "c:nuggets/lead",
           6
         ],
         null,
@@ -1355,8 +1355,8 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetLead",
+          "tag",
+          "c:nuggets/lead",
           8
         ],
         null,
@@ -1387,8 +1387,8 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
@@ -1419,15 +1419,15 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetLead",
+          "tag",
+          "c:nuggets/lead",
           6
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1450,15 +1450,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1481,15 +1481,15 @@
       "input": [
         null,
         [
-          "dict",
-          "boltLead",
+          "tag",
+          "hbm:bolts/lead",
           12
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1512,15 +1512,15 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetLead",
+          "tag",
+          "c:nuggets/lead",
           8
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1543,15 +1543,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1574,15 +1574,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotWhitePhosphorus",
+          "tag",
+          "c:ingots/white_phosphorus",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1605,15 +1605,15 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetLead",
+          "tag",
+          "c:nuggets/lead",
           8
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -1635,20 +1635,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         [
-          "dict",
-          "nuggetLead",
+          "tag",
+          "c:nuggets/lead",
           8
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -1671,15 +1671,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotUranium238",
+          "tag",
+          "c:ingots/uranium_238",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -1702,15 +1702,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotLead",
+          "tag",
+          "c:ingots/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -1732,20 +1732,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         [
-          "dict",
-          "ingotFerrouranium",
+          "tag",
+          "c:ingots/ferrouranium",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           2
         ],
         null,
@@ -1768,15 +1768,15 @@
       "input": [
         null,
         [
-          "dict",
-          "dustRedPhosphorus",
+          "tag",
+          "c:dusts/red_phosphorus",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1807,8 +1807,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1830,20 +1830,20 @@
       ],
       "input": [
         [
-          "dict",
-          "plateCopper",
+          "tag",
+          "c:plates/copper",
           1
         ],
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1866,15 +1866,15 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           2
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1896,8 +1896,9 @@
       ],
       "input": [
         [
-          "dict",
-          "ntmcontainer1000diesel",
+          "fluid_container",
+          "DIESEL",
+          1000,
           1
         ],
         [
@@ -1909,8 +1910,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1932,20 +1933,20 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotWhitePhosphorus",
+          "tag",
+          "c:ingots/white_phosphorus",
           1
         ],
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null,
@@ -1984,8 +1985,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null
@@ -2032,13 +2033,13 @@
       ],
       "input": [
         [
-          "dict",
-          "plateCopper",
+          "tag",
+          "c:plates/copper",
           1
         ],
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
@@ -2052,8 +2053,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null
@@ -2067,13 +2068,13 @@
       ],
       "input": [
         [
-          "dict",
-          "plateCopper",
+          "tag",
+          "c:plates/copper",
           1
         ],
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
@@ -2104,8 +2105,8 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           2
         ],
         null,
@@ -2119,8 +2120,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null
@@ -2135,8 +2136,8 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           2
         ],
         null,
@@ -2166,8 +2167,9 @@
       ],
       "input": [
         [
-          "dict",
-          "ntmcontainer1000diesel",
+          "fluid_container",
+          "DIESEL",
+          1000,
           1
         ],
         [
@@ -2187,8 +2189,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null
@@ -2202,8 +2204,9 @@
       ],
       "input": [
         [
-          "dict",
-          "ntmcontainer1000diesel",
+          "fluid_container",
+          "DIESEL",
+          1000,
           1
         ],
         [
@@ -2239,13 +2242,13 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotWhitePhosphorus",
+          "tag",
+          "c:ingots/white_phosphorus",
           1
         ],
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
@@ -2259,8 +2262,8 @@
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           3
         ],
         null
@@ -2274,13 +2277,13 @@
       ],
       "input": [
         [
-          "dict",
-          "ingotWhitePhosphorus",
+          "tag",
+          "c:ingots/white_phosphorus",
           1
         ],
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           1
         ],
         null,
@@ -2311,22 +2314,23 @@
       "input": [
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ntmcontainer1000diesel",
+          "fluid_container",
+          "DIESEL",
+          1000,
           1
         ],
         null,
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null
@@ -2341,8 +2345,8 @@
       "input": [
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null,
@@ -2356,8 +2360,8 @@
         null,
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null
@@ -2372,22 +2376,23 @@
       "input": [
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ntmcontainer1000gas",
+          "fluid_container",
+          "GAS",
+          1000,
           1
         ],
         null,
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null
@@ -2402,22 +2407,23 @@
       "input": [
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ntmcontainer1000balefire",
+          "fluid_container",
+          "BALEFIRE",
+          1000,
           1
         ],
         null,
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           1
         ],
         null
@@ -2432,22 +2438,22 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "billetSilicon",
+          "tag",
+          "hbm:billets/silicon",
           4
         ],
         null,
         null,
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         null
@@ -2462,22 +2468,22 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "billetSilicon",
+          "tag",
+          "hbm:billets/silicon",
           6
         ],
         null,
         null,
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         null
@@ -2492,22 +2498,22 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ingotNiobium",
+          "tag",
+          "c:ingots/niobium",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ingotAnyPlastic",
+          "tag",
+          "hbm:material_groups/plastic/ingots",
           1
         ],
         null
@@ -2522,22 +2528,22 @@
       "input": [
         null,
         [
-          "dict",
-          "plateLead",
+          "tag",
+          "c:plates/lead",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ingotUranium238",
+          "tag",
+          "c:ingots/uranium_238",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "plateLead",
+          "tag",
+          "c:plates/lead",
           1
         ],
         null
@@ -2555,8 +2561,8 @@
         null,
         null,
         [
-          "dict",
-          "ingotTungsten",
+          "tag",
+          "c:ingots/tungsten",
           1
         ],
         null,
@@ -2577,8 +2583,8 @@
         null,
         null,
         [
-          "dict",
-          "ingotFerrouranium",
+          "tag",
+          "c:ingots/ferrouranium",
           1
         ],
         null,
@@ -2596,8 +2602,8 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetPlutonium239",
+          "tag",
+          "c:nuggets/plutonium_239",
           1
         ],
         null,
@@ -2623,8 +2629,8 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetPlutonium239",
+          "tag",
+          "c:nuggets/plutonium_239",
           2
         ],
         null,
@@ -2650,8 +2656,8 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetPlutonium239",
+          "tag",
+          "c:nuggets/plutonium_239",
           4
         ],
         null,
@@ -2677,8 +2683,8 @@
       "input": [
         null,
         [
-          "dict",
-          "nuggetPlutonium239",
+          "tag",
+          "c:nuggets/plutonium_239",
           2
         ],
         null,
@@ -2692,8 +2698,8 @@
         null,
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           4
         ],
         null
@@ -2708,8 +2714,8 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           8
         ],
         null,
@@ -2723,8 +2729,8 @@
         null,
         null,
         [
-          "dict",
-          "plateSteel",
+          "tag",
+          "c:plates/steel",
           4
         ],
         null
@@ -2767,22 +2773,22 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "ntmpipeSteel",
+          "tag",
+          "hbm:pipes/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null
@@ -2797,22 +2803,22 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotAnyHighexplosive",
+          "tag",
+          "hbm:material_groups/highexplosive/ingots",
           4
         ],
         null,
         null,
         [
-          "dict",
-          "ntmpipeSteel",
+          "tag",
+          "hbm:pipes/steel",
           1
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           1
         ],
         null
@@ -2827,64 +2833,26 @@
       "input": [
         null,
         [
-          "dict",
-          "ingotSteel",
+          "tag",
+          "c:ingots/steel",
           5
         ],
         null,
         null,
         [
-          "dict",
-          "dustAnySmokeless",
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
           5
         ],
         null,
         null,
         [
-          "dict",
-          "plateGunMetal",
+          "tag",
+          "c:plates/gun_metal",
           5
         ],
         null
       ]
-    }
-  ],
-  "dynamicFluidInputs": [
-    {
-      "recipe": 59,
-      "slot": 0,
-      "fluid": "DIESEL",
-      "amount": 1000
-    },
-    {
-      "recipe": 67,
-      "slot": 0,
-      "fluid": "DIESEL",
-      "amount": 1000
-    },
-    {
-      "recipe": 68,
-      "slot": 0,
-      "fluid": "DIESEL",
-      "amount": 1000
-    },
-    {
-      "recipe": 71,
-      "slot": 4,
-      "fluid": "DIESEL",
-      "amount": 1000
-    },
-    {
-      "recipe": 73,
-      "slot": 4,
-      "fluid": "GAS",
-      "amount": 1000
-    },
-    {
-      "recipe": 74,
-      "slot": 4,
-      "fluid": "BALEFIRE",
-      "amount": 1000
     }
   ]
 }

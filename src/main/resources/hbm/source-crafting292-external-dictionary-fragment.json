@@ -6,7 +6,7 @@
     {
       "source": "Mekanism1.7.10 registerOreDict",
       "raw": "alloyUltimate",
-      "tag": "hbm:legacy_ore_dict/alloyultimate",
+      "tag": "c:alloys/ultimate",
       "members": [
         "mekanism:alloy_atomic"
       ],
@@ -16,7 +16,7 @@
     {
       "source": "Mekanism1.7.10 registerOreDict",
       "raw": "battery",
-      "tag": "hbm:legacy_ore_dict/battery",
+      "tag": "c:batteries",
       "members": [
         "mekanism:energy_tablet"
       ],
@@ -26,7 +26,7 @@
     {
       "source": "Mekanism1.7.10 registerOreDict",
       "raw": "alloyAdvanced",
-      "tag": "hbm:legacy_ore_dict/alloyadvanced",
+      "tag": "c:alloys/advanced",
       "members": [
         "mekanism:alloy_infused"
       ],
@@ -36,7 +36,7 @@
     {
       "source": "Mekanism1.7.10 registerOreDict",
       "raw": "ingotRefinedObsidian",
-      "tag": "hbm:legacy_ore_dict/ingotrefinedobsidian",
+      "tag": "c:ingots/refined_obsidian",
       "members": [
         "mekanism:ingot_refined_obsidian"
       ],

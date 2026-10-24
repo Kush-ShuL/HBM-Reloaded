@@ -5,8 +5,8 @@ import com.hbm.item.autogen.AutogenContent;
 import com.hbm.material.HbmMaterials;
 import com.hbm.material.MaterialShape;
 import com.hbm.material.NtmMaterial;
-import com.hbm.recipe.LegacyOreIngredient;
-import com.hbm.registry.HbmOreDictionary;
+
+import com.hbm.registry.HbmItemTags;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
@@ -43,16 +43,16 @@ public final class PressWireRecipes {
         for(RecipeHolder<?> holder:manager.getOrderedRecipes()) if(previous.get(holder.id())!=holder) merged.put(holder.id(),holder);
         Map<ResourceLocation,RecipeHolder<PressRecipe>> generated=new LinkedHashMap<>();
         MaterialShape wire=HbmMaterials.shape("WIRE"),ingot=HbmMaterials.shape("INGOT");
-        Set<String> registeredOreNames=Set.copyOf(HbmOreDictionary.allNames());
+        Set<String> registeredTags=Set.copyOf(HbmItemTags.allTags());
         for(NtmMaterial material:HbmMaterials.ordered()) {
             // Preserve the exact first material alias used by MaterialShapes.INGOT.make(mat),
-            // the original case-sensitive name-existence condition, and original material order.
-            String rawInput=ingot.make(material);
-            if(!material.autogen().contains(wire) || !registeredOreNames.contains(rawInput)) continue;
+            // the actual native tag-existence condition, and original material order.
+            String inputTag=HbmItemTags.material(ingot.symbol(),material.names().getFirst());
+            if(!material.autogen().contains(wire) || !registeredTags.contains(inputTag)) continue;
             ResourceLocation id=ResourceLocation.fromNamespaceAndPath("hbm","press/generated_wire/"+material.id());
             // Native datapacks may explicitly replace a generated recipe by its stable material-ID path.
             if(merged.containsKey(id)) continue;
-            var ingredient=new LegacyOreIngredient(ResourceLocation.fromNamespaceAndPath("hbm","legacy_ore_dict/"+rawInput.toLowerCase(java.util.Locale.ROOT))).toVanilla();
+            var ingredient=net.minecraft.world.item.crafting.Ingredient.of(HbmItemTags.key(inputTag));
             var recipe=new RecipeHolder<>(id,new PressRecipe(ingredient,StampType.WIRE,material.make(AutogenContent.item("wire_fine"),8)));
             generated.put(id,recipe); merged.put(id,recipe);
         }

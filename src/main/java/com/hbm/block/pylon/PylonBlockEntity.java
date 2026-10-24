@@ -5,7 +5,7 @@ import com.hbm.energy.HbmEnergy;
 import com.hbm.energy.NodeConnection;
 import com.hbm.energy.PowerNode;
 import com.hbm.multiblock.DummyableBlock;
-import com.hbm.registry.HbmOreDictionary;
+import com.hbm.registry.HbmItemTags;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -78,7 +78,7 @@ public final class PylonBlockEntity extends BlockEntity implements EnergyConduct
     public static int dyeColor(ItemStack stack) {
         if(stack.isEmpty()) return 0;
         int value=0;
-        for(String name:HbmOreDictionary.names(stack)) if(name.length()>3&&name.startsWith("dye")) { value=DYES.getOrDefault(name.substring(3).toLowerCase(java.util.Locale.US),0); if(value!=0) break; }
+        for(String tag:HbmItemTags.tags(stack)) if(HbmItemTags.category(tag).equals("dyes")) { value=DYES.getOrDefault(HbmItemTags.materialName(tag).replace("_",""),0); if(value!=0) break; }
         if(value==0&&stack.getItem() instanceof DyeItem dye) value=DYES.getOrDefault(dye.getDyeColor().getName().replace("_",""),0);
         return value;
     }

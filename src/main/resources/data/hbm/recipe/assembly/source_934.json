@@ -28,15 +28,13 @@
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/dustanysmokeless"
+        "tag": "hbm:material_groups/smokeless/dusts"
       },
       "count": 6
     },
     {
       "ingredient": {
-        "type": "hbm:legacy_ore_dict",
-        "tag": "hbm:legacy_ore_dict/ingotstarmetal"
+        "tag": "c:ingots/starmetal"
       },
       "count": 3
     }

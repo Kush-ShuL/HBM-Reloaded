@@ -66,7 +66,7 @@ public final class RawOreContent {
 
     private static void index(Source source, boolean canonical) {
         SOURCE_KEYS.put(source.key(), source);
-        for (String block : source.blockItems()) BLOCK_SOURCES.put(key(block, source.legacyMetadata()), source);
+        for (String block : source.blockItems()) BLOCK_SOURCES.put(key(block, com.hbm.block.ore.ResourceOreBlock.familyOf(block) != null ? 0 : source.legacyMetadata()), source);
         if (source.rawItem() != null) {
             if (canonical) RAW_SOURCES.put(source.rawItem(), source);
             else RAW_SOURCES.putIfAbsent(source.rawItem(), source);

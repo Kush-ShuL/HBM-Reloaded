@@ -7,13 +7,13 @@
       "duration": 800,
       "inputItem": [
         [
-          "dict",
-          "ingotIron",
+          "tag",
+          "c:ingots/iron",
           2
         ],
         [
-          "dict",
-          "sand",
+          "tag",
+          "c:sands",
           1
         ]
       ],
@@ -29,9 +29,9 @@
         [
           "single",
           [
-            "hbm:ingot_raw",
+            "hbm:autogen/ingot_raw/m41",
             1,
-            41
+            0
           ]
         ]
       ]
@@ -43,13 +43,13 @@
       "duration": 800,
       "inputItem": [
         [
-          "dict",
-          "dustIron",
+          "tag",
+          "c:dusts/iron",
           2
         ],
         [
-          "dict",
-          "sand",
+          "tag",
+          "c:sands",
           1
         ]
       ],
@@ -65,9 +65,9 @@
         [
           "single",
           [
-            "hbm:ingot_raw",
+            "hbm:autogen/ingot_raw/m41",
             1,
-            41
+            0
           ]
         ]
       ]
@@ -79,13 +79,13 @@
       "duration": 800,
       "inputItem": [
         [
-          "dict",
-          "oreIron",
+          "tag",
+          "c:ores/iron",
           1
         ],
         [
-          "dict",
-          "sand",
+          "tag",
+          "c:sands",
           1
         ]
       ],
@@ -101,9 +101,9 @@
         [
           "single",
           [
-            "hbm:ingot_raw",
+            "hbm:autogen/ingot_raw/m41",
             2,
-            41
+            0
           ]
         ]
       ]
@@ -115,8 +115,8 @@
       "duration": 1200,
       "inputItem": [
         [
-          "dict",
-          "oreIron",
+          "tag",
+          "c:ores/iron",
           1
         ],
         [
@@ -138,9 +138,9 @@
         [
           "single",
           [
-            "hbm:ingot_raw",
+            "hbm:autogen/ingot_raw/m41",
             2,
-            41
+            0
           ]
         ]
       ]
@@ -152,13 +152,13 @@
       "duration": 400,
       "inputItem": [
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         [
-          "dict",
-          "dustRedstone",
+          "tag",
+          "c:dusts/redstone",
           1
         ]
       ],
@@ -180,13 +180,13 @@
       "duration": 400,
       "inputItem": [
         [
-          "dict",
-          "dustCopper",
+          "tag",
+          "c:dusts/copper",
           1
         ],
         [
-          "dict",
-          "dustRedstone",
+          "tag",
+          "c:dusts/redstone",
           1
         ]
       ],
@@ -208,13 +208,13 @@
       "duration": 400,
       "inputItem": [
         [
-          "dict",
-          "ingotCopper",
+          "tag",
+          "c:ingots/copper",
           1
         ],
         [
-          "dict",
-          "ingotRedstone",
+          "tag",
+          "c:ingots/redstone",
           1
         ]
       ],
@@ -236,13 +236,13 @@
       "duration": 400,
       "inputItem": [
         [
-          "dict",
-          "dustCopper",
+          "tag",
+          "c:dusts/copper",
           1
         ],
         [
-          "dict",
-          "ingotRedstone",
+          "tag",
+          "c:ingots/redstone",
           1
         ]
       ],
@@ -264,13 +264,13 @@
       "duration": 1200,
       "inputItem": [
         [
-          "dict",
-          "oreCopper",
+          "tag",
+          "c:ores/copper",
           1
         ],
         [
-          "dict",
-          "dustRedstone",
+          "tag",
+          "c:dusts/redstone",
           6
         ]
       ],
@@ -286,9 +286,9 @@
         [
           "single",
           [
-            "hbm:ingot_raw",
+            "hbm:autogen/ingot_raw/m41",
             1,
-            41
+            0
           ]
         ]
       ]
@@ -300,8 +300,8 @@
       "duration": 1200,
       "inputItem": [
         [
-          "dict",
-          "ingotCobalt",
+          "tag",
+          "c:ingots/cobalt",
           1
         ],
         [
@@ -329,8 +329,8 @@
       "duration": 600,
       "inputItem": [
         [
-          "dict",
-          "ingotCobalt",
+          "tag",
+          "c:ingots/cobalt",
           1
         ],
         [
@@ -358,8 +358,8 @@
       "duration": 600,
       "inputItem": [
         [
-          "dict",
-          "ingotSaturnite",
+          "tag",
+          "c:ingots/saturnite",
           1
         ],
         [
@@ -387,8 +387,8 @@
       "duration": 600,
       "inputItem": [
         [
-          "dict",
-          "ingotGold",
+          "tag",
+          "c:ingots/gold",
           1
         ],
         [
@@ -416,8 +416,8 @@
       "duration": 800,
       "inputItem": [
         [
-          "dict",
-          "dustAluminum",
+          "tag",
+          "c:dusts/aluminum",
           1
         ],
         [
@@ -445,8 +445,8 @@
       "duration": 800,
       "inputItem": [
         [
-          "dict",
-          "dustLimestone",
+          "tag",
+          "c:dusts/limestone",
           1
         ],
         [

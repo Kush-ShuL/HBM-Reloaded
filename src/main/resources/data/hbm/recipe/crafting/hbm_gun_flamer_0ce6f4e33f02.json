@@ -12,20 +12,16 @@
   ],
   "key": {
     "M": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gunmechanismgunmetal"
+      "tag": "hbm:gun_parts/mechanisms/gun_metal"
     },
     "G": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/gripdurasteel"
+      "tag": "hbm:gun_parts/grips/dura_steel"
     },
     "B": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/barrelheavydurasteel"
+      "tag": "hbm:gun_parts/barrels/heavy/dura_steel"
     },
     "R": {
-      "type": "hbm:legacy_ore_dict",
-      "tag": "hbm:legacy_ore_dict/receiverheavydurasteel"
+      "tag": "hbm:gun_parts/receivers/heavy/dura_steel"
     }
   }
 }
