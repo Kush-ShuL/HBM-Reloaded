@@ -1,6 +1,5 @@
 package com.hbm.world.meteor;
 
-import com.hbm.config.WorldgenControls;
 import java.util.*;
 import net.minecraft.util.RandomSource;
 import net.neoforged.fml.ModContainer;
@@ -28,12 +27,12 @@ public final class MeteorConfig {
   for(String name:List.of("IRON","COPPER","ALUMINIUM","RAREEARTH","COBALT"))ORES.add(b.defineInRange(name.equals("RAREEARTH")?"rareEarth":name.toLowerCase(Locale.ROOT),1,0,1024));b.pop().push("shapeWeights");
   for(String name:List.of("large","medium","small"))SHAPES.add(b.defineInRange(name,1,0,1024));b.pop();
   b.push("worldGeneration");
-  WORLDGEN_ENABLED=b.comment("在新生成区块中生成原版已落地、部分埋藏的陨石；与天降陨石独立。").define("enabled",true);
-  WORLDGEN_CHANCE=b.comment("每个新区块生成概率的分母。原版实际配置默认 200，即 1/200；0 关闭。").defineInRange("chanceDenominator",200,0,10_000_000);
-  WORLDGEN_OTHER_DIMENSIONS=b.comment("沿用原版 enableOresInModdedDimensions 默认 true：也允许主世界之外的普通维度，始终排除下界和末地。").define("allowOtherDimensions",true);
+  WORLDGEN_ENABLED=b.comment("在新生成区块中生成已落地、部分埋藏的陨石；与天降陨石独立。").define("enabled",true);
+  WORLDGEN_CHANCE=b.comment("每个新区块生成概率的分母。默认 200，即 1/200；0 关闭。").defineInRange("chanceDenominator",200,0,10_000_000);
+  WORLDGEN_OTHER_DIMENSIONS=b.comment("也允许在主世界之外的普通维度生成埋藏陨石，默认开启；始终排除下界和末地。").define("allowOtherDimensions",true);
   b.pop();SPEC=b.build();
  }
- public static boolean enabled(){return WorldgenControls.ores()&&ENABLED.get();}
+ public static boolean enabled(){return ENABLED.get();}
  public static boolean special(int value){var flag=CASES.get(value);return flag!=null&&flag.get();}
  public static int oreWeight(int metadata){return ORES.get(metadata).get();}
  public static int shape(RandomSource random){int total=SHAPES.stream().mapToInt(value->value.get()).sum();if(total==0)return-1;int roll=random.nextInt(total);for(int i=0;i<SHAPES.size();i++)if((roll-=SHAPES.get(i).get())<0)return i;throw new IllegalStateException("Invalid meteor shape weights");}
