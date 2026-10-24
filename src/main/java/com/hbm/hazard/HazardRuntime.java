@@ -35,7 +35,7 @@ public final class HazardRuntime {
     private static HazardSettings settings=HazardSettings.DEFAULT;
     private static boolean registered;
     private HazardRuntime(){}
-    public static HazardSettings settings(){var value=settings;return new HazardSettings(value.hot(),value.blinding(),value.hydroactive(),value.explosive(),com.hbm.config.GeneralModes.mode528(),com.hbm.config.GeneralModes.lbsm(),com.hbm.config.GeneralModes.flag("LBSM_safeCrates"),com.hbm.config.GeneralModes.flag("LBSM_safeMEDrives"),value.droppedItemTickRate(),value.offhand());}
+    public static HazardSettings settings(){var value=settings;return new HazardSettings(value.hot(),value.blinding(),value.hydroactive(),value.explosive(),com.hbm.config.GeneralModes.mode528(),com.hbm.config.GeneralModes.lbsm(),com.hbm.config.GeneralModes.flag("LBSM_safeCrates"),com.hbm.config.GeneralModes.flag("LBSM_safeMEDrives"),Math.max(1,com.hbm.config.SourceServerConfig.ITEM_HAZARD_DROP_TICKRATE.get()),value.offhand());}
     public static void configure(HazardSettings settings){HazardRuntime.settings=Objects.requireNonNull(settings);}
     public static void addArmorModProvider(ArmorMods provider){ARMOR_MODS.add(Objects.requireNonNull(provider));}
     public static void removeArmorModProvider(ArmorMods provider){ARMOR_MODS.remove(provider);}
@@ -76,7 +76,7 @@ public final class HazardRuntime {
         });
     }
     private static void worldEnd(LevelTickEvent.Post event){
-        if(!(event.getLevel() instanceof ServerLevel level)||level.getGameTime()%settings.droppedItemTickRate()!=0)return;
+        if(!(event.getLevel() instanceof ServerLevel level)||level.getGameTime()%Math.max(1,com.hbm.config.SourceServerConfig.ITEM_HAZARD_DROP_TICKRATE.get())!=0)return;
         List<ItemEntity> items=new ArrayList<>();
         for(Entity entity:level.getAllEntities())if(entity instanceof ItemEntity item)items.add(item);
         HazardContext.withLookup(level.registryAccess(),()->{for(ItemEntity item:items)updateDroppedItem(item);return null;});
