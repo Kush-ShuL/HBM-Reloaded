@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "plant_item_tobacco",
+      "id": "hbm:plant_item_tobacco",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.plant_item",
+      "sourceLegacyRegistryId": "hbm:item.plant_item",
+      "sourceOrdinal": 0,
+      "sourceEnum": "TOBACCO",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2554
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "plant_item_rope",
+      "id": "hbm:plant_item_rope",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.plant_item",
+      "sourceLegacyRegistryId": "hbm:item.plant_item",
+      "sourceOrdinal": 1,
+      "sourceEnum": "ROPE",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2554
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "plant_item_mustardwillow",
+      "id": "hbm:plant_item_mustardwillow",
+      "originalClass": "ItemEnumMulti",
+      "sourceField": "ModItems.plant_item",
+      "sourceLegacyRegistryId": "hbm:item.plant_item",
+      "sourceOrdinal": 2,
+      "sourceEnum": "MUSTARDWILLOW",
+      "creativeTab": "parts",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2554
+      }
+    }
+  ],
+  "sourceCreativeTab": "parts",
+  "sourceOrder": [
+    0,
+    1,
+    2
+  ],
+  "registeredBy": "OilBotanyContent existing lifecycle",
+  "sourceHiddenInViewers": false
+}

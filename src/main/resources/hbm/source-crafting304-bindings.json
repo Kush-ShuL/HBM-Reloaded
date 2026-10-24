@@ -2155,8 +2155,8 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/minecraft_saddle_7725488aa966",
-          "resource": "data/hbm/recipe/crafting/minecraft_saddle_7725488aa966.json",
+          "id": "hbm:crafting/minecraft_saddle_91bfe8d91cc9",
+          "resource": "data/hbm/recipe/crafting/minecraft_saddle_91bfe8d91cc9.json",
           "status": "exact-native-source-binding-staged",
           "variant": 0,
           "variantContext": {},
@@ -2181,12 +2181,7 @@
                 "item": "minecraft:leather"
               },
               "R": {
-                "type": "neoforge:components",
-                "items": "hbm:plant_item",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:plant_item_rope"
               }
             }
           }
@@ -7656,8 +7651,8 @@
         "new ItemStack(Items.saddle, 1)",
         "new Object[] { \"LLL\", \"LRL\", \" S \", 'S', STEEL.ingot(), 'L', Items.leather, 'R', DictFrame.fromOne(ModItems.plant_item, EnumPlantType.ROPE) }"
       ],
-      "id": "hbm:crafting/minecraft_saddle_7725488aa966",
-      "resource": "data/hbm/recipe/crafting/minecraft_saddle_7725488aa966.json",
+      "id": "hbm:crafting/minecraft_saddle_91bfe8d91cc9",
+      "resource": "data/hbm/recipe/crafting/minecraft_saddle_91bfe8d91cc9.json",
       "status": "exact-native-source-binding-staged",
       "variant": 0,
       "variantContext": {},
@@ -7682,12 +7677,7 @@
             "item": "minecraft:leather"
           },
           "R": {
-            "type": "neoforge:components",
-            "items": "hbm:plant_item",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:plant_item_rope"
           }
         }
       }

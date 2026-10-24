@@ -500,9 +500,9 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:crafting/minecraft_lead_698128d6a754",
-          "resource": "data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
-          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
+          "id": "hbm:crafting/minecraft_lead_d3efeacd293b",
+          "resource": "data/hbm/recipe/crafting/minecraft_lead_d3efeacd293b.json",
+          "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_lead_d3efeacd293b.json",
           "type": "minecraft:crafting_shaped",
           "ownerReport": "migration/source-crafting289.json",
           "status": "exact-native-source-binding-staged"
@@ -1949,12 +1949,7 @@
         ],
         "key": {
           "R": {
-            "type": "neoforge:components",
-            "items": "hbm:plant_item",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:plant_item_rope"
           },
           "S": {
             "type": "hbm:legacy_ore_dict",
@@ -1962,9 +1957,9 @@
           }
         }
       },
-      "id": "hbm:crafting/minecraft_lead_698128d6a754",
-      "resource": "data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
-      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_lead_698128d6a754.json",
+      "id": "hbm:crafting/minecraft_lead_d3efeacd293b",
+      "resource": "data/hbm/recipe/crafting/minecraft_lead_d3efeacd293b.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/crafting/minecraft_lead_d3efeacd293b.json",
       "type": "minecraft:crafting_shaped",
       "ownerReport": "migration/source-crafting289.json",
       "status": "exact-native-source-binding-staged"

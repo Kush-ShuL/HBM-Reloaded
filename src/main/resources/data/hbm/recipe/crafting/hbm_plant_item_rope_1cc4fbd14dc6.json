@@ -1,24 +1,21 @@
 {
   "result": {
-    "id": "hbm:rail_wood",
-    "count": 16
+    "id": "hbm:plant_item_rope",
+    "count": 4
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "S S",
-    "SRS",
-    "S S"
+    "W",
+    "W",
+    "W"
   ],
   "key": {
-    "S": {
-      "item": "minecraft:stick"
-    },
-    "R": {
+    "W": {
       "type": "neoforge:components",
-      "items": "hbm:plant_item",
+      "items": "hbm:plant_flower",
       "components": {
-        "hbm:legacy_metadata": 1
+        "hbm:legacy_metadata": 3
       },
       "strict": false
     }

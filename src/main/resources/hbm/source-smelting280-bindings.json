@@ -167,14 +167,14 @@
       "status": "exact-native-source-binding-staged"
     },
     {
-      "id": "hbm:smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0",
+      "id": "hbm:smelting/hbm_plant_flower_to_hbm_plant_item_tobacco_in_1",
       "source": {
         "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
         "line": 120
       },
       "variant": 0,
-      "resource": "data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
-      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
+      "resource": "data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_tobacco_in_1.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_tobacco_in_1.json",
       "recipe": {
         "type": "minecraft:smelting",
         "category": "misc",
@@ -187,11 +187,8 @@
           "strict": false
         },
         "result": {
-          "id": "hbm:plant_item",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:plant_item_tobacco",
+          "count": 1
         },
         "experience": 0.1,
         "cookingtime": 200
@@ -405,9 +402,9 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0",
-          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
-          "resource": "data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_in_1_out_0.json",
+          "id": "hbm:smelting/hbm_plant_flower_to_hbm_plant_item_tobacco_in_1",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_tobacco_in_1.json",
+          "resource": "data/hbm/recipe/smelting/hbm_plant_flower_to_hbm_plant_item_tobacco_in_1.json",
           "type": "minecraft:smelting",
           "ownerReport": "migration/source-smelting280.json",
           "status": "exact-native-source-binding-staged"

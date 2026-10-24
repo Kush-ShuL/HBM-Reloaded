@@ -8,11 +8,8 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:plant_item",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:plant_item_mustardwillow",
+          "count": 1
         }
       },
       "count": 10
@@ -39,6 +36,6 @@
   ],
   "productivity": 0.0,
   "key_kind": "item",
-  "source_key": "hbm:plant_item",
+  "source_key": "hbm:plant_item_mustardwillow",
   "order": 44
 }

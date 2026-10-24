@@ -10,12 +10,7 @@
   ],
   "key": {
     "R": {
-      "type": "neoforge:components",
-      "items": "hbm:plant_item",
-      "components": {
-        "hbm:legacy_metadata": 1
-      },
-      "strict": false
+      "item": "hbm:plant_item_rope"
     },
     "S": {
       "type": "hbm:legacy_ore_dict",

@@ -158,25 +158,6 @@
       "enumClass": "EnumLegendaryType"
     },
     {
-      "id": "plant_item",
-      "symbol": "plant_item",
-      "tab": "parts",
-      "stackSize": 64,
-      "multiName": true,
-      "multiTexture": true,
-      "names": [
-        "tobacco",
-        "rope",
-        "mustardwillow"
-      ],
-      "order": [
-        0,
-        1,
-        2
-      ],
-      "enumClass": "EnumPlantType"
-    },
-    {
       "id": "pwr_fuel_depleted",
       "symbol": "pwr_fuel_depleted",
       "tab": "control",

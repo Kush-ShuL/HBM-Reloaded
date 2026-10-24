@@ -4,7 +4,7 @@ public class CanneryWillow extends CanneryBase {
 
 	@Override
 	public ItemStack getIcon() {
-		return JarSymbols.item("hbm:plant_item",1,2);
+		return JarSymbols.item("hbm:plant_item_mustardwillow",1,0);
 	}
 
 	@Override
@@ -105,7 +105,7 @@ public class CanneryWillow extends CanneryBase {
 		scene1.add(new ActionRemoveActor(0));
 		
 		scene1.add(new ActionWait(20));
-		scene1.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 10, -25, new Object[][] {{"=", JarSymbols.item("hbm:plant_flower",1,4), "x1 + ", JarSymbols.item("hbm:plant_item",1,2), "x3-6"}}, 0)
+		scene1.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 10, -25, new Object[][] {{"=", JarSymbols.item("hbm:plant_flower",1,4), "x1 + ", JarSymbols.item("hbm:plant_item_mustardwillow",1,0), "x3-6"}}, 0)
 				.setColors(colorCopper).setOrientation(Orientation.LEFT)));
 		scene1.add(new ActionSetBlock(2, 3, 2, JarSymbols.block("minecraft:air")));
 		scene1.add(new ActionSetBlock(2, 2, 2, JarSymbols.block("hbm:plant_flower"), 4));
