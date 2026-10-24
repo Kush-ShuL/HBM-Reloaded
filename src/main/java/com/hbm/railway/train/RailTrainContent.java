@@ -13,7 +13,8 @@ public final class RailTrainContent {
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
     private static final DeferredRegister<EntityType<?>> ENTITIES=DeferredRegister.create(Registries.ENTITY_TYPE,"hbm");
     private static final DeferredRegister<MenuType<?>> MENUS=DeferredRegister.create(Registries.MENU,"hbm");
-    public static final DeferredItem<SourceTrainItem> TRAIN=ITEMS.register("train",SourceTrainItem::new);
+    public static final DeferredItem<SourceTrainItem> TRAIN_CARGO_TRAM=ITEMS.register("train_cargo_tram",()->new SourceTrainItem(SourceTrainItem.Kind.CARGO_TRAM));
+    public static final DeferredItem<SourceTrainItem> TRAIN_CARGO_TRAM_TRAILER=ITEMS.register("train_cargo_tram_trailer",()->new SourceTrainItem(SourceTrainItem.Kind.CARGO_TRAM_TRAILER));
     public static final DeferredItem<Item> COUPLING_TOOL=ITEMS.register("coupling_tool",()->new Item(new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<EntityType<?>,EntityType<TrainCargoTram>> TRAM=ENTITIES.register("entity_ntm_cargo_tram",()->EntityType.Builder.<TrainCargoTram>of(TrainCargoTram::new,MobCategory.MISC).sized(5F,2F).clientTrackingRange(16).updateInterval(1).setShouldReceiveVelocityUpdates(false).build("hbm:entity_ntm_cargo_tram"));
     public static final DeferredHolder<EntityType<?>,EntityType<TrainCargoTramTrailer>> TRAILER=ENTITIES.register("entity_ntm_cargo_tram_trailer",()->EntityType.Builder.<TrainCargoTramTrailer>of(TrainCargoTramTrailer::new,MobCategory.MISC).sized(5F,2F).clientTrackingRange(16).updateInterval(1).setShouldReceiveVelocityUpdates(false).build("hbm:entity_ntm_cargo_tram_trailer"));
@@ -24,6 +25,6 @@ public final class RailTrainContent {
     public static ResourceLocation id(String path){return ResourceLocation.fromNamespaceAndPath("hbm",path);}
     public static void register(IEventBus bus){ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);}
     public static List<ItemStack> creativeStacks(String tab){return tab.equals("consumable")?List.of(new ItemStack(COUPLING_TOOL.get())):List.of();}
-    public static List<ItemStack> indexedItems(){return List.of(SourceTrainItem.stack(0),SourceTrainItem.stack(1),new ItemStack(COUPLING_TOOL.get()));}
+    public static List<ItemStack> indexedItems(){return List.of(new ItemStack(TRAIN_CARGO_TRAM.get()),new ItemStack(TRAIN_CARGO_TRAM_TRAILER.get()),new ItemStack(COUPLING_TOOL.get()));}
     private RailTrainContent(){}
 }

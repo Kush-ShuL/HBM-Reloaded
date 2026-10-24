@@ -3,19 +3,33 @@
   "entries": [
     {
       "kind": "item",
-      "symbol": "train",
-      "id": "hbm:train",
-      "legacyRegistryId": "hbm:item.train",
+      "symbol": "train_cargo_tram",
+      "id": "hbm:train_cargo_tram",
+      "sourceField": "ModItems.train",
+      "sourceLegacyRegistryId": "hbm:item.train",
+      "sourceOrdinal": 0,
       "originalClass": "ItemTrain",
+      "creativeTab": "none",
+      "stackSize": 1,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2953
-      },
-      "metadataValues": [
-        0,
-        1
-      ],
-      "creativeTab": "none"
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "train_cargo_tram_trailer",
+      "id": "hbm:train_cargo_tram_trailer",
+      "sourceField": "ModItems.train",
+      "sourceLegacyRegistryId": "hbm:item.train",
+      "sourceOrdinal": 1,
+      "originalClass": "ItemTrain",
+      "creativeTab": "none",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2953
+      }
     },
     {
       "kind": "item",
@@ -59,10 +73,8 @@
       "slots": 45
     }
   ],
-  "metadata": {
-    "train": {
-      "0": "CARGO_TRAM",
-      "1": "CARGO_TRAM_TRAILER"
-    }
+  "fixedTrainItems": {
+    "cargo_tram": "hbm:train_cargo_tram",
+    "cargo_tram_trailer": "hbm:train_cargo_tram_trailer"
   }
 }
