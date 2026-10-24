@@ -2905,6 +2905,30 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:ingot_starmetal",
+      "sourceFamily": "ModItems.ingot_starmetal",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_starmetal_astra",
+      "sourceFamily": "ModItems.ingot_starmetal",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_starmetal_orion",
+      "sourceFamily": "ModItems.ingot_starmetal",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_starmetal_ursa",
+      "sourceFamily": "ModItems.ingot_starmetal",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:item_expensive_bronze_tubes",
       "sourceFamily": "ModItems.item_expensive",
       "sourceMetadata": 6,
@@ -4621,6 +4645,42 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:pellet_rtg_depleted_bismuth",
+      "sourceFamily": "ModItems.pellet_rtg_depleted",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:pellet_rtg_depleted_lead",
+      "sourceFamily": "ModItems.pellet_rtg_depleted",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:pellet_rtg_depleted_mercury",
+      "sourceFamily": "ModItems.pellet_rtg_depleted",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:pellet_rtg_depleted_neptunium",
+      "sourceFamily": "ModItems.pellet_rtg_depleted",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:pellet_rtg_depleted_nickel",
+      "sourceFamily": "ModItems.pellet_rtg_depleted",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:pellet_rtg_depleted_zirconium",
+      "sourceFamily": "ModItems.pellet_rtg_depleted",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:plant_item_mustardwillow",
       "sourceFamily": "ModItems.plant_item",
       "sourceMetadata": 2,
@@ -5185,6 +5245,54 @@
       "sourceMetadata": 0,
       "hasSubtypes": true,
       "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stamp_book_printing1",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 0,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing2",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 1,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing3",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 2,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing4",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 3,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing5",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 4,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing6",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 5,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing7",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 6,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:stamp_book_printing8",
+      "sourceFamily": "ModItems.stamp_book",
+      "sourceMetadata": 7,
+      "hasSubtypes": false
     },
     {
       "id": "hbm:stone_resource_asbestos",

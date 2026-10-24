@@ -6,7 +6,6 @@ import mezz.jei.api.*;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
-import mezz.jei.api.ingredients.subtypes.*;
 import mezz.jei.api.recipe.*;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.registration.*;
@@ -20,13 +19,7 @@ import net.minecraft.world.item.ItemStack;
 public final class BlackBookJeiPlugin implements IModPlugin {
     public static final RecipeType<MagicBookRecipe> TYPE = RecipeType.create("hbm", "book_of_boxcars", MagicBookRecipe.class);
     @Override public ResourceLocation getPluginUid() { return ResourceLocation.fromNamespaceAndPath("hbm", "black_book_jei"); }
-    @Override public void registerItemSubtypes(ISubtypeRegistration registration) {
-        registration.registerSubtypeInterpreter(MeteorBookContent.STAMP.get(), new ISubtypeInterpreter<ItemStack>() {
-            @Override public Object getSubtypeData(ItemStack stack, UidContext context) { return PrintingStampItem.metadata(stack); }
-            @Override public String getLegacyStringSubtypeInfo(ItemStack stack, UidContext context) { return Integer.toString(PrintingStampItem.metadata(stack)); }
-        });
-    }
-    @Override public void registerExtraIngredients(IExtraIngredientRegistration registration) { registration.addExtraIngredients(VanillaTypes.ITEM_STACK, MeteorBookContent.STAMP.get().variants()); }
+    @Override public void registerExtraIngredients(IExtraIngredientRegistration registration) { registration.addExtraIngredients(VanillaTypes.ITEM_STACK, MeteorBookContent.printingStamps()); }
     @Override public void onRuntimeAvailable(mezz.jei.api.runtime.IJeiRuntime runtime) {
         // Original NEIConfig only exposes the Black Book itself for polaroid ID 11; recipes still exist.
         if (com.hbm.LegacyStartup.polaroidId != 11) runtime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, java.util.List.of(new ItemStack(MeteorBookContent.BOOK.get())));

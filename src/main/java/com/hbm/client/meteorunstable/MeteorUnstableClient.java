@@ -14,7 +14,6 @@ public final class MeteorUnstableClient {
         event.enqueueWork(() -> {
             var property = ResourceLocation.fromNamespaceAndPath("hbm", "meteor_variant");
             ItemProperties.register(MeteorUnstableContent.METASTABLE.get(), property, (stack, level, owner, seed) -> MetastableIngotItem.icon(stack) / 4F);
-            ItemProperties.register(MeteorUnstableContent.STARMETAL.get(), property, (stack, level, owner, seed) -> StarmetalIngotItem.icon(stack) / 4F);
         });
     }
 }

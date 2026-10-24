@@ -1,6 +1,5 @@
 package com.hbm.machine.rtg;
 
-import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.alloy.AlloyStackIngredient;
 import com.hbm.registry.HbmItemTags;
 import java.util.LinkedHashMap;
@@ -48,8 +47,7 @@ public final class SourceRtgRecyclingRecipes {
             var first = HbmItemTags.items(TAG).findFirst();
             if (first.isPresent()) {
                 ItemStack output = first.get().copyWithCount(2);
-                ItemStack pellet = new ItemStack(RtgContent.DEPLETED.get());
-                pellet.set(HbmHazards.LEGACY_METADATA.get(), 5); // Actual DepletedRTGMaterial.NICKEL ordinal.
+                ItemStack pellet = RtgContent.depleted(5);
                 NonNullList<Ingredient> inputs = NonNullList.create();
                 inputs.add(new AlloyStackIngredient(pellet).toVanilla());
                 generated = new RecipeHolder<>(ID, new ShapelessRecipe("", CraftingBookCategory.MISC, output, inputs));

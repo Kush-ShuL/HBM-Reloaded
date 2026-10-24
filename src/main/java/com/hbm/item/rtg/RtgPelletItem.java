@@ -34,7 +34,7 @@ public final class RtgPelletItem extends Item implements HazardItemState {
     @Override public Component getName(ItemStack stack){return Component.translatable("item."+name+".name");}
     public int heat(){return (short)(RtgConfig.decays()?decayingHeat:normalHeat);}
     public long maximumLife(){return maximumLife;}
-    public ItemStack decayItem(){return RtgContent.DEPLETED.get().stack(decayMaterial);}
+    public ItemStack decayItem(){return RtgContent.depleted(decayMaterial);}
     public long life(ItemStack stack){
         var existing=stack.get(DataComponents.CUSTOM_DATA);
         if(existing!=null)return existing.copyTag().getLong("PELLET_DEPLETION");

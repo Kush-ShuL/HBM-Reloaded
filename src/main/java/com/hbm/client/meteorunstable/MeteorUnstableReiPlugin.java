@@ -15,6 +15,6 @@ public final class MeteorUnstableReiPlugin implements REIClientPlugin {
         MeteorUnstableContent.starmetalVariants().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
     }
     @Override public void registerItemComparators(ItemComparatorRegistry registration) {
-        registration.register((context, stack) -> stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0), MeteorUnstableContent.METASTABLE.get(), MeteorUnstableContent.STARMETAL.get());
+        registration.register((context, stack) -> stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0), MeteorUnstableContent.METASTABLE.get());
     }
 }

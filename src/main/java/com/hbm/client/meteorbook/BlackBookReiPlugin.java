@@ -14,7 +14,6 @@ import me.shedaniel.rei.api.client.registry.transfer.simple.SimpleTransferHandle
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
-import me.shedaniel.rei.api.common.entry.comparison.ItemComparatorRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
 import net.minecraft.network.chat.Component;
@@ -23,9 +22,8 @@ import net.minecraft.world.item.crafting.RecipeHolder;
 @REIPluginClient
 public final class BlackBookReiPlugin implements REIClientPlugin {
     public static final CategoryIdentifier<Display> TYPE = CategoryIdentifier.of("hbm", "book_of_boxcars");
-    @Override public void registerItemComparators(ItemComparatorRegistry registration) { registration.register((context, stack) -> PrintingStampItem.metadata(stack), MeteorBookContent.STAMP.get()); }
     @Override public void registerEntries(EntryRegistry registration) {
-        MeteorBookContent.STAMP.get().variants().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
+        MeteorBookContent.printingStamps().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
         if (com.hbm.LegacyStartup.polaroidId != 11) registration.removeEntry(EntryStacks.of(MeteorBookContent.BOOK.get()));
     }
     @Override public void registerCategories(CategoryRegistry registration) { registration.add(new Category()); registration.addWorkstations(TYPE, EntryStacks.of(MeteorBookContent.BOOK.get())); }

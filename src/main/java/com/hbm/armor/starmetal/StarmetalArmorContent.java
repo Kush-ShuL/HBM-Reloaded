@@ -22,7 +22,7 @@ public final class StarmetalArmorContent {
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
     private static final DeferredRegister<ArmorMaterial> MATERIALS=DeferredRegister.create(Registries.ARMOR_MATERIAL,"hbm");
     private static ArmorMaterial material(Map<ArmorItem.Type,Integer> defense,int enchant,String repair,String texture){return new ArmorMaterial(defense,enchant,
-        BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY),()->Ingredient.of(HbmContent.item(repair)),List.of(new ArmorMaterial.Layer(id(texture))),0,0);}
+        BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY),()->"ingot_starmetal".equals(repair)?Ingredient.of(com.hbm.item.meteorunstable.MeteorUnstableContent.starmetalVariants().toArray(net.minecraft.world.item.ItemStack[]::new)):Ingredient.of(HbmContent.item(repair)),List.of(new ArmorMaterial.Layer(id(texture))),0,0);}
     public static final DeferredHolder<ArmorMaterial,ArmorMaterial> STARMETAL=MATERIALS.register("starmetal",()->material(Map.of(ArmorItem.Type.HELMET,3,ArmorItem.Type.CHESTPLATE,8,ArmorItem.Type.LEGGINGS,6,ArmorItem.Type.BOOTS,3),100,"ingot_starmetal","starmetal"));
     public static final DeferredHolder<ArmorMaterial,ArmorMaterial> ZIRCONIUM=MATERIALS.register("zirconium",()->material(Map.of(ArmorItem.Type.HELMET,2,ArmorItem.Type.CHESTPLATE,5,ArmorItem.Type.LEGGINGS,3,ArmorItem.Type.BOOTS,1),1000,"ingot_zirconium","zirconium"));
     public static final DeferredItem<StarmetalArmorItem> HELMET=ITEMS.register("starmetal_helmet",()->new StarmetalArmorItem(STARMETAL,ArmorItem.Type.HELMET,150,"starmetal_helmet","starmetal_1"));

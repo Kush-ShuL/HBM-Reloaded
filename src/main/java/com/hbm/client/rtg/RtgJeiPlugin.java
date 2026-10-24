@@ -22,10 +22,6 @@ public final class RtgJeiPlugin implements IModPlugin {
     @Override public void registerRecipes(IRecipeRegistration event){event.addRecipes(TYPE,RtgViews.recipes());}
     @Override public void registerRecipeCatalysts(IRecipeCatalystRegistration event){event.addRecipeCatalysts(TYPE,RtgContent.ITEM.get());}
     @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,RtgContent.creativeStacks("control"));}
-    @Override public void registerItemSubtypes(ISubtypeRegistration event){event.registerSubtypeInterpreter(RtgContent.DEPLETED.get(),new mezz.jei.api.ingredients.subtypes.ISubtypeInterpreter<ItemStack>(){
-        @Override public Object getSubtypeData(ItemStack stack,mezz.jei.api.ingredients.subtypes.UidContext context){return RtgContent.DEPLETED.get().ordinal(stack);}
-        @Override public String getLegacyStringSubtypeInfo(ItemStack stack,mezz.jei.api.ingredients.subtypes.UidContext context){return getSubtypeData(stack,context).toString();}
-    });}
     private static final class Category implements IRecipeCategory<RtgViews.Decay>{
         final IDrawable background,icon;Category(IGuiHelper helper){background=helper.createBlankDrawable(166,65);icon=helper.createDrawableItemStack(new ItemStack(RtgContent.ITEM.get()));}
         @Override public RecipeType<RtgViews.Decay> getRecipeType(){return TYPE;}

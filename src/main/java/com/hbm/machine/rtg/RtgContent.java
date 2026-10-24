@@ -23,7 +23,10 @@ public final class RtgContent {
     public static final DeferredItem<BlockItem> ITEM=ITEMS.registerSimpleBlockItem(BLOCK);
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<RtgBlockEntity>> ENTITY=ENTITIES.register("machine_rtg",()->BlockEntityType.Builder.of(RtgBlockEntity::new,BLOCK.get()).build(null));
     public static final DeferredHolder<MenuType<?>,MenuType<RtgMenu>> MENU=MENUS.register("machine_rtg",()->new MenuType<>(RtgMenu::new,FeatureFlags.DEFAULT_FLAGS));
-    public static final DeferredItem<DepletedRtgPelletItem> DEPLETED=ITEMS.register("pellet_rtg_depleted",DepletedRtgPelletItem::new);
+    public static final List<DeferredItem<DepletedRtgPelletItem>> DEPLETED=registerDepleted();
+    private static List<DeferredItem<DepletedRtgPelletItem>> registerDepleted(){var items=new ArrayList<DeferredItem<DepletedRtgPelletItem>>();for(String material:List.of("bismuth","mercury","neptunium","lead","zirconium","nickel"))items.add(ITEMS.register("pellet_rtg_depleted_"+material,()->new DepletedRtgPelletItem(material)));return List.copyOf(items);}
+    /** Source fuel descriptors select their fixed decay output; no saved-stack metadata is read. */
+    public static ItemStack depleted(int material){return new ItemStack(DEPLETED.get(material).get());}
     public static final List<DeferredItem<RtgPelletItem>> PELLETS=List.of(
         pellet("pellet_rtg_radium",3,3,3,16F,480000000),pellet("pellet_rtg_weak",5,5,3,1F,480000000),
         pellet("pellet_rtg",10,10,3,87.7F,4800000),pellet("pellet_rtg_strontium",15,15,4,29F,4800000),
@@ -36,6 +39,6 @@ public final class RtgContent {
     private static DeferredItem<RtgPelletItem> pellet(String name,int heat,int decayingHeat,int depleted,float halfLife,int unit){return ITEMS.register(name,()->new RtgPelletItem(name,heat,decayingHeat,depleted,halfLife,unit));}
     public static void register(IEventBus bus,ModContainer container){RtgConfig.register(container);SourceRtgRecyclingRecipes.register();BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);bus.addListener(RtgContent::capabilities);}
     private static void capabilities(RegisterCapabilitiesEvent event){event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ENTITY.get(),(machine,side)->side==null?new InvWrapper(machine):new SidedInvWrapper(machine,side));}
-    public static List<ItemStack> creativeStacks(String tab){var result=new ArrayList<ItemStack>();if(tab.equals("machine"))result.add(new ItemStack(ITEM.get()));if(tab.equals("consumable")){result.add(new ItemStack(LEAD_CRATE_ITEM.get()));result.add(new ItemStack(METAL_CRATE_ITEM.get()));}if(tab.equals("control")){result.addAll(DEPLETED.get().creativeStacks());for(var pellet:PELLETS)result.add(new ItemStack(pellet.get()));}return List.copyOf(result);}
+    public static List<ItemStack> creativeStacks(String tab){var result=new ArrayList<ItemStack>();if(tab.equals("machine"))result.add(new ItemStack(ITEM.get()));if(tab.equals("consumable")){result.add(new ItemStack(LEAD_CRATE_ITEM.get()));result.add(new ItemStack(METAL_CRATE_ITEM.get()));}if(tab.equals("control")){for(var material:DEPLETED)result.add(new ItemStack(material.get()));for(var pellet:PELLETS)result.add(new ItemStack(pellet.get()));}return List.copyOf(result);}
     private RtgContent(){}
 }

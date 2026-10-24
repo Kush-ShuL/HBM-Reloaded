@@ -12,7 +12,6 @@ import me.shedaniel.rei.api.client.registry.display.*;
 import me.shedaniel.rei.api.client.registry.entry.EntryRegistry;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
-import me.shedaniel.rei.api.common.entry.comparison.ItemComparatorRegistry;
 import me.shedaniel.rei.api.common.util.*;
 import me.shedaniel.rei.forge.REIPluginClient;
 import net.minecraft.network.chat.Component;
@@ -20,7 +19,6 @@ import net.minecraft.network.chat.Component;
 @REIPluginClient
 public final class RtgReiPlugin implements REIClientPlugin {
     private static final CategoryIdentifier<Display> TYPE=CategoryIdentifier.of("hbm","rtg");
-    @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->RtgContent.DEPLETED.get().ordinal(stack),RtgContent.DEPLETED.get());}
     @Override public void registerEntries(EntryRegistry event){for(var stack:RtgContent.creativeStacks("control"))event.addEntry(EntryStacks.of(stack));}
     @Override public void registerCategories(CategoryRegistry event){event.add(new Category());event.addWorkstations(TYPE,EntryStacks.of(RtgContent.ITEM.get()));}
     @Override public void registerDisplays(DisplayRegistry event){for(var recipe:RtgViews.recipes())event.add(new Display(recipe));}

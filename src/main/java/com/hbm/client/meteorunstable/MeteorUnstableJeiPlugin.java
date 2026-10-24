@@ -19,6 +19,5 @@ public final class MeteorUnstableJeiPlugin implements IModPlugin {
             @Override public String getLegacyStringSubtypeInfo(ItemStack stack, UidContext context) { return Integer.toString(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0)); }
         };
         registration.registerSubtypeInterpreter(MeteorUnstableContent.METASTABLE.get(), interpreter);
-        registration.registerSubtypeInterpreter(MeteorUnstableContent.STARMETAL.get(), interpreter);
     }
 }

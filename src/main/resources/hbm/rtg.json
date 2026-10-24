@@ -10,23 +10,105 @@
     },
     {
       "kind": "item",
-      "symbol": "pellet_rtg_depleted",
-      "id": "hbm:pellet_rtg_depleted",
+      "symbol": "pellet_rtg_depleted_bismuth",
+      "id": "hbm:pellet_rtg_depleted_bismuth",
       "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
       "creativeTab": "control",
-      "metadataRange": [
-        0,
-        5
-      ],
-      "names": [
-        "bismuth",
-        "mercury",
-        "neptunium",
-        "lead",
-        "zirconium",
-        "nickel"
-      ],
-      "enumClass": "DepletedRTGMaterial"
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_mercury",
+      "id": "hbm:pellet_rtg_depleted_mercury",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_neptunium",
+      "id": "hbm:pellet_rtg_depleted_neptunium",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_lead",
+      "id": "hbm:pellet_rtg_depleted_lead",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_zirconium",
+      "id": "hbm:pellet_rtg_depleted_zirconium",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_nickel",
+      "id": "hbm:pellet_rtg_depleted_nickel",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
     },
     {
       "kind": "item",
@@ -131,23 +213,105 @@
   "items": [
     {
       "kind": "item",
-      "symbol": "pellet_rtg_depleted",
-      "id": "hbm:pellet_rtg_depleted",
+      "symbol": "pellet_rtg_depleted_bismuth",
+      "id": "hbm:pellet_rtg_depleted_bismuth",
       "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
       "creativeTab": "control",
-      "metadataRange": [
-        0,
-        5
-      ],
-      "names": [
-        "bismuth",
-        "mercury",
-        "neptunium",
-        "lead",
-        "zirconium",
-        "nickel"
-      ],
-      "enumClass": "DepletedRTGMaterial"
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_mercury",
+      "id": "hbm:pellet_rtg_depleted_mercury",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_neptunium",
+      "id": "hbm:pellet_rtg_depleted_neptunium",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_lead",
+      "id": "hbm:pellet_rtg_depleted_lead",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_zirconium",
+      "id": "hbm:pellet_rtg_depleted_zirconium",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pellet_rtg_depleted_nickel",
+      "id": "hbm:pellet_rtg_depleted_nickel",
+      "originalClass": "ItemRTGPelletDepleted",
+      "sourceField": "ModItems.pellet_rtg_depleted",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pellet_rtg_depleted",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainder": "hbm:plate_iron",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2645
+      }
     }
   ]
 }

@@ -10972,7 +10972,7 @@
         "id": "hbm:source_rtg_recycling/nickel",
         "sourceCondition": "OreDictionary.doesOreNameExist(\"ingotNickel\")",
         "output": "HbmItemTags.items(c:ingots/nickel).findFirst().copyWithCount(2)",
-        "sourceInput": "DepletedRTGMaterial.NICKEL ordinal5",
+        "sourceInput": "hbm:pellet_rtg_depleted_nickel",
         "nativeType": "minecraft:crafting_shapeless",
         "semantics": "Only actual registered nickname/members create a recipe. Real optional c:ingots/nickel supplies modern external counterparts, never a fake nickel ID. First source dictionary candidate/order/components retained; startup/reload native manager install, ordinary sync unchanged; explicit datapack holder takes priority."
       }
