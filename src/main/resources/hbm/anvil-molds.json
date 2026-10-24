@@ -1,6 +1,5 @@
 [
   {
-    "id": 0,
     "size": 0,
     "name": "nugget",
     "source": {
@@ -9,10 +8,11 @@
     },
     "shape": "NUGGET",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 0,
+    "itemId": "hbm:mold/nugget"
   },
   {
-    "id": 1,
     "size": 0,
     "name": "billet",
     "source": {
@@ -21,10 +21,11 @@
     },
     "shape": "BILLET",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 1,
+    "itemId": "hbm:mold/billet"
   },
   {
-    "id": 2,
     "size": 0,
     "name": "ingot",
     "source": {
@@ -33,10 +34,11 @@
     },
     "shape": "INGOT",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 2,
+    "itemId": "hbm:mold/ingot"
   },
   {
-    "id": 3,
     "size": 0,
     "name": "plate",
     "source": {
@@ -45,10 +47,11 @@
     },
     "shape": "PLATE",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 3,
+    "itemId": "hbm:mold/plate"
   },
   {
-    "id": 4,
     "size": 0,
     "name": "wire",
     "source": {
@@ -57,10 +60,11 @@
     },
     "shape": "WIRE",
     "amount": 8,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 4,
+    "itemId": "hbm:mold/wire"
   },
   {
-    "id": 19,
     "size": 0,
     "name": "plate_cast",
     "source": {
@@ -69,10 +73,11 @@
     },
     "shape": "CASTPLATE",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 19,
+    "itemId": "hbm:mold/plate_cast"
   },
   {
-    "id": 20,
     "size": 0,
     "name": "wire_dense",
     "source": {
@@ -81,10 +86,11 @@
     },
     "shape": "DENSEWIRE",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 20,
+    "itemId": "hbm:mold/wire_dense"
   },
   {
-    "id": 5,
     "size": 0,
     "name": "blade",
     "source": {
@@ -101,10 +107,11 @@
         "id": "hbm:blade_tungsten",
         "count": 1
       }
-    }
+    },
+    "sourceOrdinal": 5,
+    "itemId": "hbm:mold/blade"
   },
   {
-    "id": 6,
     "size": 0,
     "name": "blades",
     "source": {
@@ -121,10 +128,11 @@
         "id": "hbm:blades_titanium",
         "count": 1
       }
-    }
+    },
+    "sourceOrdinal": 6,
+    "itemId": "hbm:mold/blades"
   },
   {
-    "id": 7,
     "size": 0,
     "name": "stamp",
     "source": {
@@ -168,10 +176,11 @@
           "minecraft:damage": 0
         }
       }
-    }
+    },
+    "sourceOrdinal": 7,
+    "itemId": "hbm:mold/stamp"
   },
   {
-    "id": 8,
     "size": 0,
     "name": "shell",
     "source": {
@@ -180,10 +189,11 @@
     },
     "shape": "SHELL",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 8,
+    "itemId": "hbm:mold/shell"
   },
   {
-    "id": 9,
     "size": 0,
     "name": "pipe",
     "source": {
@@ -192,10 +202,11 @@
     },
     "shape": "PIPE",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 9,
+    "itemId": "hbm:mold/pipe"
   },
   {
-    "id": 10,
     "size": 1,
     "name": "ingots",
     "source": {
@@ -204,10 +215,11 @@
     },
     "shape": "INGOT",
     "amount": 9,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 10,
+    "itemId": "hbm:mold/ingots"
   },
   {
-    "id": 11,
     "size": 1,
     "name": "plates",
     "source": {
@@ -216,10 +228,11 @@
     },
     "shape": "PLATE",
     "amount": 9,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 11,
+    "itemId": "hbm:mold/plates"
   },
   {
-    "id": 13,
     "size": 1,
     "name": "plates_cast",
     "source": {
@@ -228,10 +241,11 @@
     },
     "shape": "CASTPLATE",
     "amount": 3,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 13,
+    "itemId": "hbm:mold/plates_cast"
   },
   {
-    "id": 21,
     "size": 1,
     "name": "wires_dense",
     "source": {
@@ -240,10 +254,11 @@
     },
     "shape": "DENSEWIRE",
     "amount": 9,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 21,
+    "itemId": "hbm:mold/wires_dense"
   },
   {
-    "id": 12,
     "size": 1,
     "name": "block",
     "source": {
@@ -252,10 +267,11 @@
     },
     "shape": "BLOCK",
     "amount": 1,
-    "blockOverride": true
+    "blockOverride": true,
+    "sourceOrdinal": 12,
+    "itemId": "hbm:mold/block"
   },
   {
-    "id": 16,
     "size": 0,
     "name": "c9",
     "source": {
@@ -272,10 +288,11 @@
         "id": "hbm:casing_small_steel",
         "count": 1
       }
-    }
+    },
+    "sourceOrdinal": 16,
+    "itemId": "hbm:mold/c9"
   },
   {
-    "id": 17,
     "size": 0,
     "name": "c50",
     "source": {
@@ -292,10 +309,11 @@
         "id": "hbm:casing_large_steel",
         "count": 1
       }
-    }
+    },
+    "sourceOrdinal": 17,
+    "itemId": "hbm:mold/c50"
   },
   {
-    "id": 22,
     "size": 0,
     "name": "barrel_light",
     "source": {
@@ -304,10 +322,11 @@
     },
     "shape": "LIGHTBARREL",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 22,
+    "itemId": "hbm:mold/barrel_light"
   },
   {
-    "id": 23,
     "size": 0,
     "name": "barrel_heavy",
     "source": {
@@ -316,10 +335,11 @@
     },
     "shape": "HEAVYBARREL",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 23,
+    "itemId": "hbm:mold/barrel_heavy"
   },
   {
-    "id": 24,
     "size": 0,
     "name": "receiver_light",
     "source": {
@@ -328,10 +348,11 @@
     },
     "shape": "LIGHTRECEIVER",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 24,
+    "itemId": "hbm:mold/receiver_light"
   },
   {
-    "id": 25,
     "size": 0,
     "name": "receiver_heavy",
     "source": {
@@ -340,10 +361,11 @@
     },
     "shape": "HEAVYRECEIVER",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 25,
+    "itemId": "hbm:mold/receiver_heavy"
   },
   {
-    "id": 26,
     "size": 0,
     "name": "mechanism",
     "source": {
@@ -352,10 +374,11 @@
     },
     "shape": "MECHANISM",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 26,
+    "itemId": "hbm:mold/mechanism"
   },
   {
-    "id": 27,
     "size": 0,
     "name": "stock",
     "source": {
@@ -364,10 +387,11 @@
     },
     "shape": "STOCK",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 27,
+    "itemId": "hbm:mold/stock"
   },
   {
-    "id": 28,
     "size": 0,
     "name": "grip",
     "source": {
@@ -376,6 +400,8 @@
     },
     "shape": "GRIP",
     "amount": 1,
-    "blockOverride": false
+    "blockOverride": false,
+    "sourceOrdinal": 28,
+    "itemId": "hbm:mold/grip"
   }
 ]

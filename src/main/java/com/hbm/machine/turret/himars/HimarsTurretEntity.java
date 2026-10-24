@@ -29,8 +29,8 @@ public final class HimarsTurretEntity extends ArtilleryTurretBase {
  @Override public Vec3 horizontalOffset(){return switch(getBlockState().getValue(DummyableBlock.LEGACY_META)-10){case 2->new Vec3(1,0,1);case 4->new Vec3(1,0,0);case 5->new Vec3(0,0,1);default->Vec3.ZERO;};}
  @Override public void turnTowards(Vec3 position){var delta=position.subtract(turretPosition());turnTowardsAngle(Math.PI/4,-Math.atan2(delta.x,delta.z));}
  public boolean hasAmmo(){return typeLoaded>=0&&ammo>0;}public int queuedTargets(){return targetQueue.size();}
- private int spareRocket(){for(int slot=1;slot<10;slot++)if(slots.get(slot).is(HimarsTurretContent.AMMO.get()))return HimarsAmmoItem.rawMetadata(slots.get(slot));return -1;}
- private void consumePod(int type){for(int slot=1;slot<10;slot++)if(slots.get(slot).is(HimarsTurretContent.AMMO.get())&&HimarsAmmoItem.rawMetadata(slots.get(slot))==type){removeItem(slot,1);return;}}
+ private int spareRocket(){for(int slot=1;slot<10;slot++)if(slots.get(slot).getItem() instanceof HimarsAmmoItem)return HimarsAmmoItem.type(slots.get(slot));return -1;}
+ private void consumePod(int type){for(int slot=1;slot<10;slot++)if(slots.get(slot).getItem() instanceof HimarsAmmoItem&&HimarsAmmoItem.type(slots.get(slot))==type){removeItem(slot,1);return;}}
  @Override public void tickServer(ServerLevel server){
   connect(server);
   if(mode==MODE_MANUAL){if(!targetQueue.isEmpty())tPos=targetQueue.getFirst();}else targetQueue.clear();

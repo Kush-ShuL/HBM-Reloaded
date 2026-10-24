@@ -1307,11 +1307,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:mold/nugget",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1346,11 +1343,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:mold/billet",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1385,11 +1379,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:mold/ingot",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1424,11 +1415,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:mold/plate",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1463,11 +1451,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 19
-          }
+          "id": "hbm:mold/plate_cast",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1502,11 +1487,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 13
-          }
+          "id": "hbm:mold/plates_cast",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1541,11 +1523,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:mold/wire",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1580,11 +1559,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:mold/blade",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1632,11 +1608,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:mold/blades",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1684,11 +1657,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:mold/stamp",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1766,11 +1736,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:mold/shell",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1805,11 +1772,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:mold/pipe",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1844,11 +1808,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:mold/ingots",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1883,11 +1844,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:mold/plates",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1922,11 +1880,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:mold/block",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -1961,11 +1916,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 20
-          }
+          "id": "hbm:mold/wire_dense",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -2000,11 +1952,8 @@
         "type": "hbm:anvil_smithing",
         "tier": 1,
         "result": {
-          "id": "hbm:mold",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 21
-          }
+          "id": "hbm:mold/wires_dense",
+          "count": 1
         },
         "left": {
           "ingredient": {
@@ -8288,11 +8237,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 16
-              }
+              "id": "hbm:mold/c9",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8333,11 +8279,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 17
-              }
+              "id": "hbm:mold/c50",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8378,11 +8321,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 22
-              }
+              "id": "hbm:mold/barrel_light",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8423,11 +8363,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 23
-              }
+              "id": "hbm:mold/barrel_heavy",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8468,11 +8405,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 24
-              }
+              "id": "hbm:mold/receiver_light",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8513,11 +8447,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 25
-              }
+              "id": "hbm:mold/receiver_heavy",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8558,11 +8489,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 26
-              }
+              "id": "hbm:mold/mechanism",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8603,11 +8531,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 27
-              }
+              "id": "hbm:mold/stock",
+              "count": 1
             },
             "chance": 1.0
           }
@@ -8648,11 +8573,8 @@
         "outputs": [
           {
             "stack": {
-              "id": "hbm:mold",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 28
-              }
+              "id": "hbm:mold/grip",
+              "count": 1
             },
             "chance": 1.0
           }

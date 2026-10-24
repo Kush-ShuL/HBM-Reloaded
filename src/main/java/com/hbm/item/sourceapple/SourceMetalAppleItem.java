@@ -1,10 +1,8 @@
 package com.hbm.item.sourceapple;
 
 import com.hbm.damage.HbmDamageSources;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.item.medicine.MedicineEffects;
 import net.minecraft.core.Holder;
-import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -38,33 +36,28 @@ public final class SourceMetalAppleItem extends Item {
     }
 
     private final Kind kind;
-    public SourceMetalAppleItem(Kind kind) {
-        super(properties(kind));
+    private final int variant;
+    public SourceMetalAppleItem(Kind kind) { this(kind, 0); }
+    public SourceMetalAppleItem(Kind kind, int variant) {
+        super(properties(kind, variant));
         this.kind = kind;
+        this.variant = variant;
     }
 
-    private static Properties properties(Kind kind) {
-        var properties = new Properties().component(HbmHazards.LEGACY_METADATA.get(), 0)
+    private static Properties properties(Kind kind, int variant) {
+        if (variant < 0 || variant > 2 || kind == Kind.EUPHEMIUM && variant != 0) throw new IllegalArgumentException("Not an actual fixed source apple variant: " + variant);
+        var properties = new Properties()
                 .food(new FoodProperties.Builder().nutrition(kind.nutrition)
                 .saturationModifier(kind.saturation).alwaysEdible().build());
         if (kind == Kind.EUPHEMIUM) return properties.stacksTo(1).rarity(Rarity.EPIC);
-        return properties.rarity(Rarity.UNCOMMON);
+        return properties.rarity(switch (variant) { case 0 -> Rarity.UNCOMMON; case 1 -> Rarity.RARE; default -> Rarity.EPIC; });
     }
 
-    public static int metadata(ItemStack stack) {
-        // These are raw source ItemDamage branches, not ItemEnumMulti modulo ordinals.
-        return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0);
-    }
-
-    public ItemStack stack(int metadata) {
-        var stack = new ItemStack(this);
-        if (kind != Kind.EUPHEMIUM) stack.set(HbmHazards.LEGACY_METADATA.get(), metadata);
-        return stack;
-    }
+    public int sourceVariant() { return variant; }
 
     public Rarity sourceRarity(ItemStack stack) {
         if (kind == Kind.EUPHEMIUM) return Rarity.EPIC;
-        return switch (metadata(stack)) {
+        return switch (variant) {
             case 0 -> Rarity.UNCOMMON;
             case 1 -> Rarity.RARE;
             case 2 -> Rarity.EPIC;
@@ -72,14 +65,13 @@ public final class SourceMetalAppleItem extends Item {
         };
     }
 
-    @Override public Component getName(ItemStack stack) { return Component.translatable("item." + kind.id + ".name"); }
-    @Override public boolean isFoil(ItemStack stack) { return kind == Kind.EUPHEMIUM || metadata(stack) == 2; }
+    @Override public boolean isFoil(ItemStack stack) { return kind == Kind.EUPHEMIUM || variant == 2; }
     @Override public UseAnim getUseAnimation(ItemStack stack) { return UseAnim.EAT; }
     @Override public int getUseDuration(ItemStack stack, LivingEntity consumer) { return 32; }
 
     @Override public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity consumer) {
         if (!(consumer instanceof Player player)) return stack;
-        int metadata = metadata(stack);
+        int metadata = variant;
         // Source ItemFood.onEaten consumes even in creative. Capture subtype before native EMPTY loses identity.
         stack.shrink(1);
         player.getFoodData().eat(kind.nutrition, kind.saturation);

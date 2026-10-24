@@ -28,7 +28,7 @@ public final class StrandCasterEntity extends ThermalMachine implements FoundryA
  public StrandCasterEntity(BlockPos pos,BlockState state){super(StrandCasterContent.ENTITY.get(),pos,state,7);}
  @Override protected String title(){return "container.machineStrandCaster";}
  @Override public AbstractContainerMenu createMenu(int id,Inventory inventory,Player player){return new StrandCasterMenu(id,inventory,this,worldPosition);}
- public MoldItem.Mold mold(){return slots.getFirst().getItem() instanceof MoldItem item?item.mold(slots.getFirst()):null;}
+ public MoldItem.Mold mold(){return slots.getFirst().getItem() instanceof MoldItem item?item.mold():null;}
  public int capacity(){var mold=mold();return mold==null?50000:mold.requiredUnits()*10;}
  public int waterRequired(){var mold=mold();return mold==null?50:mold.requiredUnits()*5;}
  public int limit(){var mold=mold();return mold==null?capacity():mold.requiredUnits()*9;}

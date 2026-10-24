@@ -26,7 +26,7 @@ public final class FoundryBlockEntity extends BlockEntity implements FoundryAcce
     public Kind kind(){return ((FoundryBlock)getBlockState().getBlock()).kind;}
     public Direction facing(){return getBlockState().getValue(FoundryBlock.FACING);}
     public int capacity(){return switch(kind()){case CHANNEL->HbmMaterials.shape("INGOT").q(2);case TANK->HbmMaterials.shape("BLOCK").q(4);case SLAG->HbmMaterials.shape("BLOCK").q(16);case MOLD,BASIN->{var mold=mold();yield mold==null?0:mold.requiredUnits();}default->0;};}
-    public com.hbm.machine.anvil.MoldItem.Mold mold(){var mold=slots.getFirst().getItem() instanceof com.hbm.machine.anvil.MoldItem item?item.mold(slots.getFirst()):null;return mold!=null&&mold.size()==(kind()==Kind.BASIN?1:0)?mold:null;}
+    public com.hbm.machine.anvil.MoldItem.Mold mold(){var mold=slots.getFirst().getItem() instanceof com.hbm.machine.anvil.MoldItem item?item.mold():null;return mold!=null&&mold.size()==(kind()==Kind.BASIN?1:0)?mold:null;}
     public boolean closed(){return invertRedstone^(level!=null&&level.hasNeighborSignal(worldPosition));}
     public long revision(){return revision;}
     public void changed(){setChanged();revision++;if(level!=null)level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),2);}

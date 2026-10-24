@@ -255,8 +255,8 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "mold",
-      "id": "hbm:mold",
+      "symbol": "mold/nugget",
+      "id": "hbm:mold/nugget",
       "kind": "item",
       "module": "anvil",
       "originalClass": "ItemMold",
@@ -265,12 +265,644 @@
         "line": 2764
       },
       "tab": "control",
-      "metadataRange": [
-        0,
-        28
-      ],
       "status": "implemented_module_pending_runtime_acceptance",
-      "runtimeValidated": false
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "NUGGET",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 46
+      }
+    },
+    {
+      "symbol": "mold/billet",
+      "id": "hbm:mold/billet",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "BILLET",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 47
+      }
+    },
+    {
+      "symbol": "mold/ingot",
+      "id": "hbm:mold/ingot",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "INGOT",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 48
+      }
+    },
+    {
+      "symbol": "mold/plate",
+      "id": "hbm:mold/plate",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "PLATE",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 49
+      }
+    },
+    {
+      "symbol": "mold/wire",
+      "id": "hbm:mold/wire",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "WIRE",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 50
+      }
+    },
+    {
+      "symbol": "mold/plate_cast",
+      "id": "hbm:mold/plate_cast",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 19,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "CASTPLATE",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 52
+      }
+    },
+    {
+      "symbol": "mold/wire_dense",
+      "id": "hbm:mold/wire_dense",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 20,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "DENSEWIRE",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 53
+      }
+    },
+    {
+      "symbol": "mold/blade",
+      "id": "hbm:mold/blade",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 55
+      }
+    },
+    {
+      "symbol": "mold/blades",
+      "id": "hbm:mold/blades",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 59
+      }
+    },
+    {
+      "symbol": "mold/stamp",
+      "id": "hbm:mold/stamp",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 63
+      }
+    },
+    {
+      "symbol": "mold/shell",
+      "id": "hbm:mold/shell",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 8,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "SHELL",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 70
+      }
+    },
+    {
+      "symbol": "mold/pipe",
+      "id": "hbm:mold/pipe",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 9,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "PIPE",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 71
+      }
+    },
+    {
+      "symbol": "mold/ingots",
+      "id": "hbm:mold/ingots",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 10,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "INGOT",
+      "sourceSize": 1,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 73
+      }
+    },
+    {
+      "symbol": "mold/plates",
+      "id": "hbm:mold/plates",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 11,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "PLATE",
+      "sourceSize": 1,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 74
+      }
+    },
+    {
+      "symbol": "mold/plates_cast",
+      "id": "hbm:mold/plates_cast",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 13,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "CASTPLATE",
+      "sourceSize": 1,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 75
+      }
+    },
+    {
+      "symbol": "mold/wires_dense",
+      "id": "hbm:mold/wires_dense",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 21,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "DENSEWIRE",
+      "sourceSize": 1,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 76
+      }
+    },
+    {
+      "symbol": "mold/block",
+      "id": "hbm:mold/block",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 12,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "BLOCK",
+      "sourceSize": 1,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 77
+      }
+    },
+    {
+      "symbol": "mold/c9",
+      "id": "hbm:mold/c9",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 16,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 79
+      }
+    },
+    {
+      "symbol": "mold/c50",
+      "id": "hbm:mold/c50",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 17,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 82
+      }
+    },
+    {
+      "symbol": "mold/barrel_light",
+      "id": "hbm:mold/barrel_light",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 22,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "LIGHTBARREL",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 86
+      }
+    },
+    {
+      "symbol": "mold/barrel_heavy",
+      "id": "hbm:mold/barrel_heavy",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 23,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "HEAVYBARREL",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 87
+      }
+    },
+    {
+      "symbol": "mold/receiver_light",
+      "id": "hbm:mold/receiver_light",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 24,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "LIGHTRECEIVER",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 88
+      }
+    },
+    {
+      "symbol": "mold/receiver_heavy",
+      "id": "hbm:mold/receiver_heavy",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 25,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "HEAVYRECEIVER",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 89
+      }
+    },
+    {
+      "symbol": "mold/mechanism",
+      "id": "hbm:mold/mechanism",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 26,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "MECHANISM",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 90
+      }
+    },
+    {
+      "symbol": "mold/stock",
+      "id": "hbm:mold/stock",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 27,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "STOCK",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 91
+      }
+    },
+    {
+      "symbol": "mold/grip",
+      "id": "hbm:mold/grip",
+      "kind": "item",
+      "module": "anvil",
+      "originalClass": "ItemMold",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2764
+      },
+      "tab": "control",
+      "status": "implemented_module_pending_runtime_acceptance",
+      "runtimeValidated": false,
+      "sourceField": "ModItems.mold",
+      "sourceOrdinal": 28,
+      "sourceHasSubtypes": true,
+      "creativeTab": "control",
+      "stackSize": 64,
+      "shape": "GRIP",
+      "sourceSize": 0,
+      "definitionSource": {
+        "file": "legacy/src/main/java/com/hbm/items/machine/ItemMold.java",
+        "line": 92
+      }
     }
   ]
 }

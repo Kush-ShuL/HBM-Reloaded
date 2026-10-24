@@ -40,16 +40,16 @@ public class CanneryFoundryChannel extends CanneryBase {
 		scene0.add(new ActionSetBlock(3, 1, 2, JarSymbols.block("minecraft:brick_block")));
 		scene0.add(new ActionSetBlock(3, 1, 3, JarSymbols.block("minecraft:brick_block")));
 
-		scene0.add(new ActionSetTile(3, 1, 1, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold",0,12); }}));
+		scene0.add(new ActionSetTile(3, 1, 1, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); }}));
 		scene0.add(new ActionCreateActor(1, new ActorTileEntity(new JarMachineActors.Foundry(), new CompoundTag() {{ putInt("x", 3); putInt("y", 1); putInt("z", 1); }})));
 		scene0.add(new ActionSetBlock(3, 1, 1, JarSymbols.block("hbm:foundry_basin")));
-		scene0.add(new ActionSetTile(2, 1, 1, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold",0,2); }}));
+		scene0.add(new ActionSetTile(2, 1, 1, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold/ingot",0,0); }}));
 		scene0.add(new ActionCreateActor(2, new ActorTileEntity(new JarMachineActors.Foundry(), new CompoundTag() {{ putInt("x", 2); putInt("y", 1); putInt("z", 1); }})));
 		scene0.add(new ActionSetBlock(2, 1, 1, JarSymbols.block("hbm:foundry_mold")));
 		
 		scene0.add(new ActionWait(5));
 		scene0.add(new ActionSetBlock(3, 2, 3, JarSymbols.block("minecraft:brick_block")));
-		scene0.add(new ActionSetTile(1, 2, 2, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold",0,2); }}));
+		scene0.add(new ActionSetTile(1, 2, 2, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold/ingot",0,0); }}));
 		scene0.add(new ActionCreateActor(3, new ActorTileEntity(new JarMachineActors.Foundry(), new CompoundTag() {{ putInt("x", 1); putInt("y", 2); putInt("z", 2); }})));
 		scene0.add(new ActionSetBlock(1, 2, 2, JarSymbols.block("hbm:foundry_mold")));
 		scene0.add(new ActionSetTile(2, 2, 2, new JarTiles.Channel()));
@@ -91,7 +91,7 @@ public class CanneryFoundryChannel extends CanneryBase {
 		
 		for(int i = 0; i < 60; i++) {
 			final int j = i;
-			scene0.add(new ActionSetTile(3, 1, 1, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold",0,12); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("BLOCK").q(j, 60); }}));
+			scene0.add(new ActionSetTile(3, 1, 1, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("BLOCK").q(j, 60); }}));
 			scene0.add(new ActionWait(1));
 		}
 		
@@ -110,8 +110,8 @@ public class CanneryFoundryChannel extends CanneryBase {
 		
 		for(int i = 0; i < 60; i++) {
 			final int j = i;
-			scene1.add(new ActionSetTile(2, 1, 1, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold",0,2); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(j, 60); }}));
-			scene1.add(new ActionSetTile(1, 2, 2, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold",0,2); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(j, 60); }}));
+			scene1.add(new ActionSetTile(2, 1, 1, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold/ingot",0,0); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(j, 60); }}));
+			scene1.add(new ActionSetTile(1, 2, 2, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold/ingot",0,0); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(j, 60); }}));
 			scene1.add(new ActionWait(1));
 		}
 		

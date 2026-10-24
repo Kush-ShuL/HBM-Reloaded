@@ -13,6 +13,54 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:ammo_himars_single",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_single_tb",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_standard",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_standard_he",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_standard_lava",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_standard_mini_nuke",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_standard_tb",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_himars_standard_wp",
+      "sourceFamily": "ModItems.ammo_himars",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:ammo_secret_bmg50_black",
       "sourceFamily": "ModItems.ammo_secret",
       "sourceMetadata": 6,
@@ -628,6 +676,42 @@
       "id": "hbm:ammo_standard_tau_uranium",
       "sourceFamily": "ModItems.ammo_standard",
       "sourceMetadata": 70,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:apple_lead_block",
+      "sourceFamily": "ModItems.apple_lead",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:apple_lead_ingot",
+      "sourceFamily": "ModItems.apple_lead",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:apple_lead_nugget",
+      "sourceFamily": "ModItems.apple_lead",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:apple_schrabidium_block",
+      "sourceFamily": "ModItems.apple_schrabidium",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:apple_schrabidium_ingot",
+      "sourceFamily": "ModItems.apple_schrabidium",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:apple_schrabidium_nugget",
+      "sourceFamily": "ModItems.apple_schrabidium",
+      "sourceMetadata": 0,
       "hasSubtypes": true
     },
     {
@@ -1702,6 +1786,162 @@
       "id": "hbm:item_secret_selenium_steel",
       "sourceFamily": "ModItems.item_secret",
       "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/barrel_heavy",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 23,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/barrel_light",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 22,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/billet",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/blade",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/blades",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/block",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/c50",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/c9",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/grip",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 28,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/ingot",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/ingots",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/mechanism",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 26,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/nugget",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/pipe",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/plate",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/plate_cast",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/plates",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/plates_cast",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/receiver_heavy",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 25,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/receiver_light",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 24,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/shell",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/stamp",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/stock",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 27,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/wire",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/wire_dense",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:mold/wires_dense",
+      "sourceFamily": "ModItems.mold",
+      "sourceMetadata": 21,
       "hasSubtypes": true
     },
     {

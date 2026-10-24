@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:apple_lead",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 0
-    }
+    "id": "hbm:apple_schrabidium_nugget",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -15,7 +12,7 @@
   ],
   "key": {
     "S": {
-      "tag": "c:nuggets/lead"
+      "tag": "c:nuggets/schrabidium"
     },
     "A": {
       "item": "minecraft:apple"

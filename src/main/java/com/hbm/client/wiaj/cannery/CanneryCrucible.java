@@ -141,25 +141,25 @@ public class CanneryCrucible extends CanneryBase {
 		scene2.add(new ActionCreateActor(3, new ActorTileEntity(new JarMachineActors.Foundry(), new CompoundTag() {{ putInt("x", 0); putInt("y", 1); putInt("z", 2); }})));
 		scene2.add(new ActionSetBlock(0, 1, 2, JarSymbols.block("hbm:foundry_basin")));
 		
-		scene2.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 42, 25, new Object[][] {{JarSymbols.item("hbm:mold",1,12)}}, 0)
+		scene2.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 42, 25, new Object[][] {{JarSymbols.item("hbm:mold/block",1,0)}}, 0)
 				.setColors(colorCopper).setOrientation(Orientation.BOTTOM)));
 		scene2.add(new ActionWait(20));
 		scene2.add(new ActionRemoveActor(0));
-		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold",0,12); }}));
+		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); }}));
 		
 		scene2.add(new ActionWait(20));
 		
 		for(int i = 0; i < 60; i++) {
 			final int j = i;
 			scene2.add(new ActionSetTile(2, 2, 2, new JarTiles.Crucible() {{ meta = 14; recipeStack.add(new MaterialStack(HbmMaterials.bySymbol("MAT_GOLD"), HbmMaterials.shape("BLOCK").q((60 - j), 60) * 16)); }}));
-			scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold",0,12); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("BLOCK").q(j + 1, 60); }}));
+			scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("BLOCK").q(j + 1, 60); }}));
 			scene2.add(new ActionWait(1));
 		}
 		
 		scene2.add(new ActionWait(40));
-		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold",0,12); slots[1] = JarSymbols.item("minecraft:gold_block",1,0); }}));
+		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); slots[1] = JarSymbols.item("minecraft:gold_block",1,0); }}));
 		scene2.add(new ActionWait(20));
-		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold",0,12); }}));
+		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); }}));
 		scene2.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 42, 25, new Object[][] {{JarSymbols.item("minecraft:gold_block",1,0)}}, 0)
 				.setColors(colorCopper).setOrientation(Orientation.BOTTOM)));
 		scene2.add(new ActionWait(20));

@@ -22,7 +22,10 @@ public final class HimarsTurretContent {
  private static final DeferredRegister<MenuType<?>> MENUS=DeferredRegister.create(Registries.MENU,"hbm");
  public static final DeferredBlock<HimarsTurretBlock> BLOCK=BLOCKS.register("turret_himars",HimarsTurretBlock::new);
  public static final DeferredItem<BlockItem> ITEM=ITEMS.register("turret_himars",()->new BlockItem(BLOCK.get(),new Item.Properties()));
- public static final DeferredItem<HimarsAmmoItem> AMMO=ITEMS.register("ammo_himars",HimarsAmmoItem::new);
+ private static final List<DeferredItem<HimarsAmmoItem>> AMMO_ITEMS=registerAmmo();
+ private static List<DeferredItem<HimarsAmmoItem>> registerAmmo(){var items=new ArrayList<DeferredItem<HimarsAmmoItem>>(Collections.nCopies(HimarsRocketTypes.TYPES.length,null));for(int type:new int[]{0,2,3,4,7,6,1,5})items.set(type,ITEMS.register("ammo_himars_"+HimarsRocketTypes.type(type).name(),()->new HimarsAmmoItem(type)));return List.copyOf(items);}
+ public static HimarsAmmoItem ammo(int type){return AMMO_ITEMS.get(type).get();}
+ public static List<HimarsAmmoItem> ammoItems(){return AMMO_ITEMS.stream().map(holder->holder.get()).toList();}
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<HimarsTurretEntity>> ENTITY=BLOCK_ENTITIES.register("turret_himars",()->BlockEntityType.Builder.of(HimarsTurretEntity::new,BLOCK.get()).build(null));
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<HimarsTurretProxy>> PROXY=BLOCK_ENTITIES.register("turret_himars_proxy",()->BlockEntityType.Builder.of(HimarsTurretProxy::new,BLOCK.get()).build(null));
  public static final DeferredHolder<MenuType<?>,MenuType<HimarsTurretMenu>> MENU=MENUS.register("turret_himars",()->IMenuTypeExtension.create((id,inventory,buffer)->new HimarsTurretMenu(id,inventory,buffer.readBlockPos())));

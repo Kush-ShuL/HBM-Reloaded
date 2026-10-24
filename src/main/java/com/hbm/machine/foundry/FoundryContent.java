@@ -12,7 +12,6 @@ public final class FoundryContent {
     private static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks("hbm");private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");private static final DeferredRegister<BlockEntityType<?>> ENTITIES=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,"hbm");
     public static final Map<Kind,DeferredBlock<FoundryBlock>> BLOCK_MAP=new LinkedHashMap<>();public static final Map<Kind,DeferredItem<BlockItem>> ITEM_MAP=new LinkedHashMap<>();
     static{for(Kind kind:Kind.values()){var block=BLOCKS.register(kind.id(),()->new FoundryBlock(kind));BLOCK_MAP.put(kind,block);if(kind!=Kind.SLAG)ITEM_MAP.put(kind,ITEMS.registerSimpleBlockItem(kind.id(),block));}}
-    public static final DeferredItem<com.hbm.machine.anvil.MoldItem> MOLD=com.hbm.machine.anvil.AnvilContent.MOLD;
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FoundryBlockEntity>> ENTITY=ENTITIES.register("foundry",()->BlockEntityType.Builder.of(FoundryBlockEntity::new,BLOCK_MAP.values().stream().map(DeferredBlock::get).toArray(FoundryBlock[]::new)).build(null));
     public static FoundryBlock block(Kind kind){return BLOCK_MAP.get(kind).get();}
     public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);bus.addListener(FoundryContent::capabilities);bus.addListener(FoundryStreamPacket::register);}

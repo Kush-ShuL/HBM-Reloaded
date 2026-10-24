@@ -81,6 +81,7 @@ public final class SourcePatternItems {
     private static Identity identity(ItemStack stack){
         var id=BuiltInRegistries.ITEM.getKey(stack.getItem());
         if(stack.getItem() instanceof com.hbm.item.autogen.AutogenItem autogen)return new Identity("hbm:autogen/"+autogen.spec().id(),autogen.materialId(stack),true);
+        if(stack.getItem() instanceof com.hbm.machine.anvil.MoldItem mold)return new Identity("ModItems.mold",mold.sourceOrdinal(),true);
         if(id.getNamespace().equals("hbm")){var fixed=FixedSourceTable.identity(stack);if(fixed!=null)return fixed;}
         if(id.equals(ResourceLocation.withDefaultNamespace("potion"))||id.equals(ResourceLocation.withDefaultNamespace("splash_potion"))){
             String potion=stack.getOrDefault(DataComponents.POTION_CONTENTS,PotionContents.EMPTY).potion().map(holder->holder.unwrapKey().map(key->key.location().toString()).orElse("")).orElse("");

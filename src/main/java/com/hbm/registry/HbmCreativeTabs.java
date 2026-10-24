@@ -71,7 +71,7 @@ public final class HbmCreativeTabs {
     }
 
     public static void sort(List<ItemStack> stacks) {
-        stacks.sort(Comparator.comparingInt(stack -> ITEM_ORDER.getOrDefault(stack.getItem() instanceof com.hbm.item.autogen.AutogenItem item ? com.hbm.item.autogen.AutogenContent.orderAnchor(item) : BuiltInRegistries.ITEM.getKey(stack.getItem()), Integer.MAX_VALUE)));
+        stacks.sort(Comparator.comparingInt(stack -> ITEM_ORDER.getOrDefault(stack.getItem() instanceof com.hbm.item.autogen.AutogenItem item ? com.hbm.item.autogen.AutogenContent.orderAnchor(item) : stack.getItem() instanceof com.hbm.machine.anvil.MoldItem ? com.hbm.machine.anvil.MoldContent.orderAnchor() : BuiltInRegistries.ITEM.getKey(stack.getItem()), Integer.MAX_VALUE)));
     }
 
     private record Spec(List<String> registrationOrder, Map<String, String> icons, Map<String, IconSpec> iconModels, List<Replacement> vanillaReplacements) {}
