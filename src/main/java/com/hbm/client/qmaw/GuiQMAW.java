@@ -60,9 +60,9 @@ public final class GuiQMAW extends Screen {
 		}
 		return formatting;
 	}
-	/** Native lang lookup for the locales migrated so far; keep other existing JSON locales intact. */
+	/** All existing manual locales use native lang; unmigrated resource pages retain literal fallback. */
 	private static String localized(QuickManualAndWiki page, Map<String,String> literals, String field, String locale) {
-		if(page.languageKey != null && (EN_US.equals(locale) || "zh_cn".equals(locale))) {
+		if(page.languageKey != null) {
 			String key = page.languageKey + "." + field;
 			var language = net.minecraft.locale.Language.getInstance();
 			if(language.has(key)) return language.getOrDefault(key);
