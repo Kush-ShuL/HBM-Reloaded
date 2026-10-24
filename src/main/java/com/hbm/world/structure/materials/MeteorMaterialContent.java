@@ -5,6 +5,7 @@ import com.hbm.block.ore.LegacyOreItem;
 import com.hbm.block.ore.OreSpec;
 import java.util.List;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -23,7 +24,14 @@ public final class MeteorMaterialContent {
     public static final DeferredItem<LegacyOreItem> COBBLE_ITEM=ITEMS.register("block_meteor_cobble",()->new LegacyOreItem(COBBLE.get()));
     public static final DeferredItem<BlockItem> DIRT_ITEM=ITEMS.registerSimpleBlockItem("ntm_dirt",DIRT);
     public static final DeferredBlock<ColoredConcreteBlock> COLORED=BLOCKS.register("concrete_colored",ColoredConcreteBlock::new);
-    public static final DeferredItem<ColoredConcreteItem> COLORED_ITEM=ITEMS.register("concrete_colored",()->new ColoredConcreteItem(COLORED.get()));
+    public static final List<DeferredItem<ColoredConcreteItem>> COLORED_ITEMS=coloredItems();
+    private static List<DeferredItem<ColoredConcreteItem>> coloredItems(){
+        var items=new java.util.ArrayList<DeferredItem<ColoredConcreteItem>>();
+        for(var color:DyeColor.values())items.add(ITEMS.register("concrete_colored_"+color.getName(),()->new ColoredConcreteItem(COLORED.get(),color)));
+        return List.copyOf(items);
+    }
+    public static ColoredConcreteItem coloredItem(int metadata){return COLORED_ITEMS.get(metadata&15).get();}
+    public static List<ItemStack> coloredStacks(){return COLORED_ITEMS.stream().map(holder->new ItemStack(holder.get())).toList();}
     private static OreSpec spec(String name,String drop){
         //1.7 setResistance360 writes1080 to the field and returns216 to explosion callers.
         return new OreSpec(name,"BlockOre","rock","stone",15,216,0,true,true,drop,null,0,1,0,"NONE",0,List.of(),"COMMON",true,0,false,false);
@@ -31,7 +39,7 @@ public final class MeteorMaterialContent {
     public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);}
     public static List<ItemStack> creativeStacks(String tab){
         if(!tab.equals("block"))return List.of();
-        var stacks=new java.util.ArrayList<ItemStack>();stacks.add(new ItemStack(METEOR_ITEM.get()));stacks.add(new ItemStack(COBBLE_ITEM.get()));stacks.addAll(COLORED_ITEM.get().creativeStacks());return stacks;
+        var stacks=new java.util.ArrayList<ItemStack>();stacks.add(new ItemStack(METEOR_ITEM.get()));stacks.add(new ItemStack(COBBLE_ITEM.get()));stacks.addAll(coloredStacks());return stacks;
     }
     private MeteorMaterialContent(){}
 }

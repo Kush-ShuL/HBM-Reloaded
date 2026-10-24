@@ -7,7 +7,6 @@ import com.hbm.explosion.vanillant.standard.BlockAllocatorStandard;
 import com.hbm.explosion.vanillant.standard.BlockProcessorStandard;
 import com.hbm.explosion.vanillant.standard.EntityProcessorCross;
 import com.hbm.explosion.vanillant.standard.PlayerProcessorStandard;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.interfaces.IBomb;
 import com.hbm.registry.HbmContent;
 import com.hbm.registry.HbmSounds;
@@ -72,6 +71,6 @@ public final class NuclearDudBlock extends BaseEntityBlock implements IBomb {
  }
  public static void spawnMush(Level level,int x,int y,int z,boolean balefire){level.playSound(null,x+.5D,y+.5D,z+.5D,HbmSounds.get("weapon.mukeExplosion"),SoundSource.BLOCKS,15F,1F);NuclearMukeEffects.send(level,x+.5D,y+.5D,z+.5D,"muke",balefire);}
  @Override protected List<ItemStack> getDrops(BlockState state,LootParams.Builder builder){return List.of(stack(state));}
- private ItemStack stack(BlockState state){var stack=new ItemStack(this);stack.set(HbmHazards.LEGACY_METADATA.get(),state.getValue(META));return stack;}
+ private ItemStack stack(BlockState state){return NuclearSpecialContent.dudStack(type(state));}
  @Override public ItemStack getCloneItemStack(LevelReader world,BlockPos pos,BlockState state){return stack(state);}
 }
