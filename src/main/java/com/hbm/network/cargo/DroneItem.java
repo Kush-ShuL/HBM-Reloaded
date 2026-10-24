@@ -1,15 +1,58 @@
 package com.hbm.network.cargo;
-import com.hbm.item.EnumMultiItem;
-import com.hbm.hazard.HbmHazards;
+
+import com.hbm.item.BasicBlockItem;
+import com.hbm.item.TooltipHints;
 import java.util.List;
 import net.minecraft.core.Direction;
+import net.minecraft.locale.Language;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
-/** All five original identities; REQUEST is dock-consumed, and source ground use consumes without spawning. */
-public final class DroneItem extends EnumMultiItem {
- public DroneItem(){super("drone",64,true,List.of("patrol","patrol_chunkloading","patrol_express","patrol_express_chunkloading","request"),List.of(0,1,2,3,4));}
- public ItemStack stack(int meta){var stack=new ItemStack(this);stack.set(HbmHazards.LEGACY_METADATA.get(),meta);return stack;}
- @Override public InteractionResult useOn(UseOnContext context){if(context.getClickedFace()!=Direction.UP)return InteractionResult.PASS;var level=context.getLevel();if(level.isClientSide)return InteractionResult.SUCCESS;var stack=context.getItemInHand();int meta=stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0);if(meta<4){var drone=CargoDroneContent.PATROL_ENTITY.get().create(level);if(drone!=null){if(meta%2==1)drone.setChunkLoading();if(meta>1)drone.setExpress(true);var pos=context.getClickedPos();drone.setPos(pos.getX()+.5,pos.getY()+1,pos.getZ()+.5);level.addFreshEntity(drone);}}stack.shrink(1);return InteractionResult.PASS;}
- @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<net.minecraft.network.chat.Component> lines,TooltipFlag flag){if(com.hbm.item.BasicBlockItem.leftShiftHeld.getAsBoolean()){for(String line:net.minecraft.locale.Language.getInstance().getOrDefault("item.drone."+List.of("patrol","patrol_chunkloading","patrol_express","patrol_express_chunkloading","request").get(ordinal(stack))+".desc").split("\\$"))lines.add(net.minecraft.network.chat.Component.literal("\u00a7e"+line));}else lines.add(com.hbm.item.TooltipHints.moreInfo());}
+
+/** Five fixed source identities. Drone cargo, targets and runtime loading remain entity state. */
+public final class DroneItem extends Item {
+    public enum Kind {
+        PATROL("patrol",false,false),
+        PATROL_CHUNKLOADING("patrol_chunkloading",true,false),
+        PATROL_EXPRESS("patrol_express",false,true),
+        PATROL_EXPRESS_CHUNKLOADING("patrol_express_chunkloading",true,true),
+        REQUEST("request",false,false);
+        public final String suffix;
+        public final boolean chunkLoading,express;
+        Kind(String suffix,boolean chunkLoading,boolean express){this.suffix=suffix;this.chunkLoading=chunkLoading;this.express=express;}
+        public String id(){return "drone_"+suffix;}
+        public static Kind patrol(boolean express,boolean chunkLoading){return express?(chunkLoading?PATROL_EXPRESS_CHUNKLOADING:PATROL_EXPRESS):(chunkLoading?PATROL_CHUNKLOADING:PATROL);}
+    }
+
+    private final Kind kind;
+    public DroneItem(Kind kind){super(new Properties().stacksTo(64));this.kind=java.util.Objects.requireNonNull(kind);}
+    public Kind kind(){return kind;}
+
+    @Override public InteractionResult useOn(UseOnContext context){
+        if(context.getClickedFace()!=Direction.UP)return InteractionResult.PASS;
+        var level=context.getLevel();
+        if(level.isClientSide)return InteractionResult.SUCCESS;
+        if(kind!=Kind.REQUEST){
+            var drone=CargoDroneContent.PATROL_ENTITY.get().create(level);
+            if(drone!=null){
+                if(kind.chunkLoading)drone.setChunkLoading();
+                if(kind.express)drone.setExpress(true);
+                var pos=context.getClickedPos();
+                drone.setPos(pos.getX()+.5,pos.getY()+1,pos.getZ()+.5);
+                level.addFreshEntity(drone);
+            }
+        }
+        // The source REQUEST item is dock-consumed; ground use still consumes without spawning.
+        context.getItemInHand().shrink(1);
+        return InteractionResult.PASS;
+    }
+
+    @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<Component> lines,TooltipFlag flag){
+        if(BasicBlockItem.leftShiftHeld.getAsBoolean()){
+            for(String line:Language.getInstance().getOrDefault("item.drone."+kind.suffix+".desc").split("\\$"))lines.add(Component.literal("\u00a7e"+line));
+        }else lines.add(TooltipHints.moreInfo());
+    }
 }

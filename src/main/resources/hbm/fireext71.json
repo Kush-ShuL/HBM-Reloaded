@@ -18,31 +18,54 @@
     },
     {
       "kind": "item",
-      "symbol": "ammo_fireext",
-      "id": "hbm:ammo_fireext",
-      "legacyRegistryId": "hbm:item.ammo_fireext",
+      "id": "hbm:ammo_fireext_water",
+      "symbol": "ammo_fireext_water",
       "originalClass": "ItemAmmo",
+      "sourceClass": "com.hbm.items.weapon.ItemAmmo",
+      "sourceField": "ModItems.ammo_fireext",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.ammo_fireext",
       "creativeTab": "weapon",
+      "maxStackSize": 64,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3584
-      },
+      }
+    },
+    {
+      "kind": "item",
+      "id": "hbm:ammo_fireext_foam",
+      "symbol": "ammo_fireext_foam",
+      "originalClass": "ItemAmmo",
+      "sourceClass": "com.hbm.items.weapon.ItemAmmo",
+      "sourceField": "ModItems.ammo_fireext",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.ammo_fireext",
+      "creativeTab": "weapon",
       "maxStackSize": 64,
-      "metadataRange": [
-        0,
-        2
-      ],
-      "names": [
-        "water",
-        "foam",
-        "sand"
-      ],
-      "enumClass": "AmmoFireExt",
-      "sourceInternalNames": [
-        "ammo_fireext",
-        "ammo_fireext_foam",
-        "ammo_fireext_sand"
-      ]
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3584
+      }
+    },
+    {
+      "kind": "item",
+      "id": "hbm:ammo_fireext_sand",
+      "symbol": "ammo_fireext_sand",
+      "originalClass": "ItemAmmo",
+      "sourceClass": "com.hbm.items.weapon.ItemAmmo",
+      "sourceField": "ModItems.ammo_fireext",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.ammo_fireext",
+      "creativeTab": "weapon",
+      "maxStackSize": 64,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3584
+      }
     },
     {
       "kind": "block",

@@ -1,29 +1,26 @@
 {
   "result": {
-    "id": "hbm:ammo_fireext",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 1
-    }
+    "id": "hbm:ammo_fireext_sand",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " N ",
+    "NNN",
     "NFN",
-    " N "
+    "NNN"
   ],
   "key": {
     "N": {
-      "tag": "c:dusts/saltpeter"
-    },
-    "F": {
       "type": "neoforge:components",
-      "items": "hbm:ammo_fireext",
+      "items": "hbm:sand_mix",
       "components": {
         "hbm:legacy_metadata": 0
       },
       "strict": false
+    },
+    "F": {
+      "item": "hbm:ammo_fireext_water"
     }
   }
 }

@@ -13,6 +13,24 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:ammo_fireext_foam",
+      "sourceFamily": "ModItems.ammo_fireext",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_fireext_sand",
+      "sourceFamily": "ModItems.ammo_fireext",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_fireext_water",
+      "sourceFamily": "ModItems.ammo_fireext",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:ammo_himars_single",
       "sourceFamily": "ModItems.ammo_himars",
       "sourceMetadata": 1,
@@ -106,6 +124,36 @@
       "id": "hbm:ammo_secret_p35_800_bl",
       "sourceFamily": "ModItems.ammo_secret",
       "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_shell",
+      "sourceFamily": "ModItems.ammo_shell",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_shell_apfsds_du",
+      "sourceFamily": "ModItems.ammo_shell",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_shell_apfsds_t",
+      "sourceFamily": "ModItems.ammo_shell",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_shell_explosive",
+      "sourceFamily": "ModItems.ammo_shell",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_shell_w9",
+      "sourceFamily": "ModItems.ammo_shell",
+      "sourceMetadata": 4,
       "hasSubtypes": true
     },
     {
@@ -2719,6 +2767,36 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:drone_patrol",
+      "sourceFamily": "ModItems.drone",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:drone_patrol_chunkloading",
+      "sourceFamily": "ModItems.drone",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:drone_patrol_express",
+      "sourceFamily": "ModItems.drone",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:drone_patrol_express_chunkloading",
+      "sourceFamily": "ModItems.drone",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:drone_request",
+      "sourceFamily": "ModItems.drone",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:flask_infusion_shield",
       "sourceFamily": "ModItems.flask_infusion",
       "sourceMetadata": 0,
@@ -4678,6 +4756,30 @@
       "id": "hbm:pellet_rtg_depleted_zirconium",
       "sourceFamily": "ModItems.pellet_rtg_depleted",
       "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:piston_set_desh",
+      "sourceFamily": "ModItems.piston_set",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:piston_set_dura",
+      "sourceFamily": "ModItems.piston_set",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:piston_set_starmetal",
+      "sourceFamily": "ModItems.piston_set",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:piston_set_steel",
+      "sourceFamily": "ModItems.piston_set",
+      "sourceMetadata": 0,
       "hasSubtypes": true
     },
     {

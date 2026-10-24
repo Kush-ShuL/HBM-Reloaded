@@ -1,12 +1,16 @@
 package com.hbm.weapon.sedna.gun.fireext;
-import com.hbm.item.EnumMultiItem;
+import com.hbm.item.FlatSourceItem;
 import java.util.List;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-/** ItemAmmo(AmmoFireExt): exact three metadata values/names/icons; source all three trait sets are empty. */
-public final class FireExtAmmoItem extends EnumMultiItem {
+/** One fixed ItemAmmo(AmmoFireExt) identity; all three source trait sets are empty. */
+public final class FireExtAmmoItem extends Item implements FlatSourceItem {
  public static final List<String> NAMES=List.of("ammo_fireext","ammo_fireext_foam","ammo_fireext_sand");
- public FireExtAmmoItem(){super("ammo_fireext",64,true,NAMES,List.of(0,1,2));}
- @Override public String getDescriptionId(ItemStack stack){return "item.hbm."+NAMES.get(ordinal(stack));}
+ private final int type;
+ public FireExtAmmoItem(int type){super(new Properties().stacksTo(64));if(type<0||type>=NAMES.size())throw new IllegalArgumentException("Unknown extinguisher ammunition "+type);this.type=type;}
+ public int type(){return type;}
+ @Override public String getDescriptionId(){return "item.hbm."+NAMES.get(type);}
+ @Override public String getDescriptionId(ItemStack stack){return getDescriptionId();}
  @Override public Component getName(ItemStack stack){return Component.translatable(getDescriptionId(stack));}
 }

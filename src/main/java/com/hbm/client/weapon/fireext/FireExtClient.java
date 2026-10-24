@@ -23,7 +23,7 @@ public final class FireExtClient {
   @Override public BlockEntityWithoutLevelRenderer getCustomRenderer(){return renderer;}
   @Override public HumanoidModel.ArmPose getArmPose(LivingEntity entity,InteractionHand hand,ItemStack stack){return GunHandPoses.pose(entity,hand,stack);}
  },FireExtContent.GUN.get());}
- @SubscribeEvent public static void setup(FMLClientSetupEvent event){event.enqueueWork(()->{FireExtBullets.CLIENT_DUST=FireExtDust::spawn;net.minecraft.client.renderer.item.ItemProperties.register(FireExtContent.AMMO.get(),net.minecraft.resources.ResourceLocation.parse("hbm:legacy_metadata"),(stack,level,entity,seed)->FireExtContent.AMMO.get().ordinal(stack));FireExtContent.GUN.get().getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY,SourceGunHudComponents.HUD_COMPONENT_AMMO);});}
+ @SubscribeEvent public static void setup(FMLClientSetupEvent event){event.enqueueWork(()->{FireExtBullets.CLIENT_DUST=FireExtDust::spawn;FireExtContent.GUN.get().getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY,SourceGunHudComponents.HUD_COMPONENT_AMMO);});}
  @SubscribeEvent public static void models(ModelEvent.ModifyBakingResult event){event.getModels().replaceAll((id,model)->id.getVariant().equals("inventory")&&id.id().equals(FireExtContent.GUN.getId())?new Model(model):model);}
  private static final class Model extends BakedModelWrapper<BakedModel>{
   Model(BakedModel original){super(original);}

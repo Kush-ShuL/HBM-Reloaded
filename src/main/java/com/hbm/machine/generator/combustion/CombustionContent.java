@@ -17,12 +17,13 @@ public final class CombustionContent {
     private static final DeferredRegister<MenuType<?>> MENUS=DeferredRegister.create(Registries.MENU,"hbm");
     public static final DeferredBlock<CombustionBlock> BLOCK=BLOCKS.register("machine_combustion_engine",CombustionBlock::new);
     public static final DeferredItem<BlockItem> ITEM=ITEMS.registerSimpleBlockItem(BLOCK);
-    public static final DeferredItem<PistonSetItem> PISTONS=ITEMS.register("piston_set",PistonSetItem::new);
+    public static final List<DeferredItem<PistonSetItem>> PISTONS=registerPistons();
+    private static List<DeferredItem<PistonSetItem>> registerPistons(){var result=new ArrayList<DeferredItem<PistonSetItem>>();for(int i=0;i<PistonSetItem.NAMES.size();i++){int type=i;result.add(ITEMS.register("piston_set_"+PistonSetItem.NAMES.get(i),()->new PistonSetItem(type)));}return List.copyOf(result);}
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<CombustionBlockEntity>> ENTITY=ENTITIES.register("combustion_engine",()->BlockEntityType.Builder.of(CombustionBlockEntity::new,BLOCK.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<CombustionPort>> PORT=ENTITIES.register("combustion_engine_port",()->BlockEntityType.Builder.of(CombustionPort::new,BLOCK.get()).build(null));
     public static final DeferredHolder<MenuType<?>,MenuType<CombustionMenu>> MENU=MENUS.register("combustion_engine",()->new MenuType<>((IContainerFactory<CombustionMenu>)CombustionMenu::new,FeatureFlags.DEFAULT_FLAGS));
     public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);bus.addListener(CombustionControl::register);}
-    public static List<ItemStack> pistonStacks(){var result=new ArrayList<ItemStack>();for(int i=0;i<4;i++){var stack=new ItemStack(PISTONS.get());stack.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),i);result.add(stack);}return result;}
+    public static List<ItemStack> pistonStacks(){return PISTONS.stream().map(item->new ItemStack(item.get())).toList();}
     public static List<ItemStack> creativeStacks(String tab){return tab.equals("machine")?List.of(new ItemStack(ITEM.get())):tab.equals("control")?pistonStacks():List.of();}
     private CombustionContent(){}
 }

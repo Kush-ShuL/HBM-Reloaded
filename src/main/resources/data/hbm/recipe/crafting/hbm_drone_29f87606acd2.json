@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:drone",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 4
-    }
+    "id": "hbm:drone_request",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -17,12 +14,7 @@
       "item": "hbm:circuit_chip"
     },
     "D": {
-      "type": "neoforge:components",
-      "items": "hbm:drone",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:drone_patrol"
     }
   }
 }

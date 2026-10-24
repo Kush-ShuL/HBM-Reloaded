@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:ammo_shell",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 4
-    }
+    "id": "hbm:ammo_shell_w9",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -21,12 +18,7 @@
       "item": "hbm:neutron_reflector"
     },
     "S": {
-      "type": "neoforge:components",
-      "items": "hbm:ammo_shell",
-      "components": {
-        "hbm:legacy_metadata": 1
-      },
-      "strict": false
+      "item": "hbm:ammo_shell_explosive"
     }
   }
 }

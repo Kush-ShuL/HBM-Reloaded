@@ -21,7 +21,7 @@ import net.minecraft.world.phys.*;
 public final class FireExtBullets {
  /** Client-only particle constructor is installed by the real client subscriber; common never loads Minecraft classes. */
  public static BiConsumer<EntityBulletBaseMK4,Integer> CLIENT_DUST=(bullet,mode)->{};
- private static GunAmmo ammo(int metadata){return new GunAmmo(FireExtContent.AMMO,1,metadata);}
+ private static GunAmmo ammo(int type){return new GunAmmo(()->FireExtContent.ammo(type),1,0);}
  private static BulletConfig base(String id,int metadata,float spread){return new BulletConfig("hbm:tool/"+id).setItem(ammo(metadata)).setReloadCount(300).setLife(100).setVel(.75F).setGrav(.04D).setSpread(spread)
   .setOnEntityHit((bullet,hit)->{if(hit instanceof EntityHitResult entity)entity.getEntity().clearFire();});}
  public static final BulletConfig WATER=base("fext_water",0,.025F).setOnUpdate(entity->{var bullet=(EntityBulletBaseMK4)entity;
