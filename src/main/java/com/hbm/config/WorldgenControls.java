@@ -125,6 +125,10 @@ public final class WorldgenControls {
         rule(builder,"pink_trees","pink_log","chance_height");
         rule(builder,"reeds","river","chance_height");
         rule(builder,"reeds","beach","chance_height");
+        rule(builder,"wild_flowers","foxglove","chance_height");
+        rule(builder,"wild_flowers","nightshade","chance_height");
+        rule(builder,"wild_flowers","tobacco","chance_height");
+        rule(builder,"wild_flowers","weed","chance_height");
         rule(builder,"oil_terrain","oil_bubbles","chance_height");
         rule(builder,"oil_terrain","bedrock_oil","chance_height");
         rule(builder,"oil_terrain","oil_sand","chance_height");
