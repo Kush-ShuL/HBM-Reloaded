@@ -20,6 +20,7 @@ public final class TemplateSourceStateProcessor extends StructureProcessor {
         var marker=original.nbt().getCompound(SOURCE);int turns=switch(settings.getRotation()){case NONE->0;case CLOCKWISE_90->1;case CLOCKWISE_180->2;case COUNTERCLOCKWISE_90->3;};
         var alternatives=marker.getList("rotations",Tag.TAG_COMPOUND);
         BlockState desired=alternatives.size()==4?TemplateStateMappings.parse(alternatives.getCompound(turns)):TemplateStateMappings.resolve(marker.getString("name"),marker.getInt("meta"),turns);
+        if(marker.getString("name").equals("minecraft:air")&&desired.is(Blocks.AIR)&&com.hbm.config.SourceServerConfig.STRUCTURE_DEBUG.get())desired=com.hbm.item.constructionwand.ConstructionWandContent.AIR_MARKER.get().defaultBlockState();
         // No mirrored generation existed in X5846. Compensating any native mirror still preserves the exact source state decision.
         Rotation inverse=switch(settings.getRotation()){case NONE->Rotation.NONE;case CLOCKWISE_90->Rotation.COUNTERCLOCKWISE_90;case CLOCKWISE_180->Rotation.CLOCKWISE_180;case COUNTERCLOCKWISE_90->Rotation.CLOCKWISE_90;};
         BlockState beforeNative=desired.rotate(inverse).mirror(settings.getMirror());

@@ -25,6 +25,10 @@ public abstract class MeteorPoolElementMixin implements MeteorTemplateAccess {
     private void hbm$actualNeighbourShapes(Rotation rotation,BoundingBox bounds,LiquidSettings liquids,boolean keepJigsaws,CallbackInfoReturnable<StructurePlaceSettings> cir){
         //Legacy stair/fence metadata computed its join geometry while rendering the world;
         //modern blocks store those joins, so let vanilla's final neighbour pass derive them.
-        if(template.left().filter(key->key.getNamespace().equals("hbm")&&key.getPath().startsWith("meteor/")).isPresent())cir.getReturnValue().setKnownShape(false);
+        if(template.left().filter(key->key.getNamespace().equals("hbm")&&key.getPath().startsWith("meteor/")).isPresent()){
+            var settings=cir.getReturnValue();settings.setKnownShape(false);
+            // Same native result as keepJigsaws=true, only for these actual HBM source templates.
+            if(com.hbm.config.SourceServerConfig.STRUCTURE_DEBUG.get())settings.getProcessors().remove(net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor.INSTANCE);
+        }
     }
 }
