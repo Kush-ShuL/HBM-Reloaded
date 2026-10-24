@@ -7,8 +7,9 @@ import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 /** Exact1.7 EntitySmokeFX + vanillaExt(noClip=true,overrideAge=50), using the sole shared ordered particle renderer. */
-public final class FlareSmokeParticle extends Particle {
-    private final float shade,sourceScale;
+public class FlareSmokeParticle extends Particle {
+    private final float shade;
+    protected float sourceScale;
     public FlareSmokeParticle(ClientLevel level,double x,double y,double z){super(level,x,y,z);double mx=(float)(Math.random()*2-1)*.4F,my=(float)(Math.random()*2-1)*.4F,mz=(float)(Math.random()*2-1)*.4F;float magnitude=(float)(Math.random()+Math.random()+1)*.15F,length=(float)Math.sqrt(mx*mx+my*my+mz*mz);xd=mx/length*magnitude*.4000000059604645*.10000000149011612;yd=(my/length*magnitude*.4000000059604645+.10000000149011612)*.10000000149011612;zd=mz/length*magnitude*.4000000059604645*.10000000149011612;shade=(float)(Math.random()*.30000001192092896);sourceScale=(random.nextFloat()*.5F+.5F)*2*.75F;lifetime=50;hasPhysics=false;}
     @Override public void tick(){xo=x;yo=y;zo=z;if(age++>=lifetime)remove();yd+=.004;move(xd,yd,zd);if(y==yo){xd*=1.1;zd*=1.1;}xd*=.9599999785423279;yd*=.9599999785423279;zd*=.9599999785423279;}
     @Override public ParticleRenderType getRenderType(){return MukeRenderTypes.ORDERED;}

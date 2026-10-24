@@ -62,6 +62,13 @@ public final class SmallExplosionEffects {
         dust.setLifetime(10+mc.level.random.nextInt(20));dust.setColor(.8F,.8F,.8F);
         mc.particleEngine.add(dust);
     }
+    /** ClientProxy vanillaExt/colordust: source white-wool dust, then RGB, then the world's lifetime draw. */
+    public static void sourceColorDust(double x,double y,double z,double vx,double vy,double vz,float r,float g,float b){
+        var mc=Minecraft.getInstance();if(mc.level==null)return;
+        var dust=new Dust(mc.level,x,y,z,vx,vy+.2D,vz,Blocks.WHITE_WOOL.defaultBlockState(),false,0);
+        dust.setColor(r,g,b);dust.setLifetime(10+mc.level.random.nextInt(20));
+        mc.particleEngine.add(dust);
+    }
     private static final class Cloud extends SingleQuadParticle {
         private final float hue,spin;
         Cloud(ClientLevel world,double x,double y,double z,float scale,float speed){

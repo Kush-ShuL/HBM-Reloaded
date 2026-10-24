@@ -40,9 +40,11 @@ public final class GasClientEffects {
                     var head=BuiltInRegistries.ITEM.getKey(player.getItemBySlot(EquipmentSlot.HEAD).getItem());
                     boolean glasses=head.getNamespace().equals("hbm")&&head.getPath().equals("ashglasses");
                     if(glasses||HbmExposure.seesGas(player)){
-                        float jitter=random.nextFloat()*.1F;
-                        Minecraft.getInstance().particleEngine.add(new GasCloud(client,pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5,
-                                kind.red()+jitter,kind.green()+jitter,kind.blue()+jitter,sprites));
+                        var cloud=new GasCloud(client,pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5,
+                                kind.red(),kind.green(),kind.blue(),sprites);
+                        float jitter=client.random.nextFloat()*.1F;
+                        cloud.setColor(kind.red()+jitter,kind.green()+jitter,kind.blue()+jitter);
+                        Minecraft.getInstance().particleEngine.add(cloud);
                     }
                 }
                 boolean dust=kind==GasKind.RADON_DENSE||kind==GasKind.MELTDOWN||kind==GasKind.ASBESTOS&&level.random.nextInt(5)==0;
@@ -51,10 +53,35 @@ public final class GasClientEffects {
             });
         });
     }
+    /** Source EntityCloudFX (bks): its cached scale is multiplied by .1 in EntityFX rendering. */
     private static final class GasCloud extends PlayerCloudParticle{
+        private final SpriteSet sourceSprites;
         GasCloud(ClientLevel level,double x,double y,double z,float r,float g,float b,SpriteSet sprites){
             super(level,x,y,z,0,0,0,sprites);
-            quadSize=7.5F;setColor(r,g,b);setParticleSpeed(0,0,0);
+            sourceSprites=sprites;
+            quadSize=.75F;setColor(r,g,b);setParticleSpeed(0,0,0);hasPhysics=true;
+            // EntityFX starts on texture 0; the first actual cloud update chooses the aging frame.
+            setSprite(sprites.get(7,7));
+            setBoundingBox(getBoundingBox().move(0,-.1D,0));
         }
+        @Override public void tick(){
+            xo=x;yo=y;zo=z;
+            if(age++>=lifetime)remove();
+            setSprite(sourceSprites.get(Math.min(7,age*8/lifetime),7));
+            move(xd,yd,zd);
+            xd*=.9599999785423279D;yd*=.9599999785423279D;zd*=.9599999785423279D;
+            var player=level.getNearestPlayer(x,y,z,2,false);
+            if(player!=null){
+                double floor=player.getBoundingBox().minY;
+                if(y>floor){y+=(floor-y)*.2D;yd+=(player.getDeltaMovement().y-yd)*.2D;setPos(x,y,z);setBoundingBox(getBoundingBox().move(0,-.1D,0));}
+            }
+            if(onGround){xd*=.699999988079071D;zd*=.699999988079071D;}
+        }
+        @Override public void move(double dx,double dy,double dz){
+            var allowed=net.minecraft.world.entity.Entity.collideBoundingBox(null,new net.minecraft.world.phys.Vec3(dx,dy,dz),getBoundingBox(),level,java.util.List.of());
+            setBoundingBox(getBoundingBox().move(allowed));setLocationFromBoundingbox();onGround=dy!=allowed.y&&dy<0;
+            if(dx!=allowed.x)xd=0;if(dy!=allowed.y)yd=0;if(dz!=allowed.z)zd=0;
+        }
+        @Override protected void setLocationFromBoundingbox(){super.setLocationFromBoundingbox();y+=.1D;}
     }
 }
