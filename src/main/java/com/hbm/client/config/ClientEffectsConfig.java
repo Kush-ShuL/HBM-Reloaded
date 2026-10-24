@@ -14,6 +14,8 @@ public final class ClientEffectsConfig {
     private static final ModConfigSpec.BooleanValue NUCLEAR_HUD_FLASH;
     // 小型和大型冷却塔工作时，是否生成蒸汽云粒子；默认开启。
     private static final ModConfigSpec.BooleanValue COOLING_TOWER_STEAM_PARTICLES;
+    // 每次绘制单台太阳能锅炉时，最多显示的定日镜光束数量；默认250。
+    private static final ModConfigSpec.IntValue SOLAR_BOILER_MAX_HELIOSTAT_BEAMS;
 
     static {
         var builder = new ModConfigSpec.Builder();
@@ -29,6 +31,10 @@ public final class ClientEffectsConfig {
                 "冷却塔工作时生成蒸汽云粒子。默认true；同时控制小型和大型冷却塔。",
                 "只控制新生成的蒸汽云粒子；不改变冷凝效率、流体容量或装置状态。")
                 .define(java.util.List.of("coolingTower", "steamParticlesEnabled"), true);
+        SOLAR_BOILER_MAX_HELIOSTAT_BEAMS = builder.comment(
+                "每次绘制单台太阳能锅炉时，最多显示的定日镜光束数量。默认250；0或负数不绘制光束；范围-2147483648至2147483647。",
+                "光束仍需开启精美画质。只限制可见光束，不改变定日镜数量、对准目标、太阳能热量或锅炉处理。")
+                .defineInRange(java.util.List.of("solarBoiler", "maxHeliostatBeams"), 250, Integer.MIN_VALUE, Integer.MAX_VALUE);
         SPEC = builder.build();
     }
 
@@ -41,6 +47,8 @@ public final class ClientEffectsConfig {
     public static boolean nuclearHudFlashEnabled() { return !SPEC.isLoaded() || NUCLEAR_HUD_FLASH.get(); }
 
     public static boolean coolingTowerSteamParticlesEnabled() { return !SPEC.isLoaded() || COOLING_TOWER_STEAM_PARTICLES.get(); }
+
+    public static int solarBoilerHeliostatBeamLimit() { return SPEC.isLoaded() ? SOLAR_BOILER_MAX_HELIOSTAT_BEAMS.get() : 250; }
 
     private ClientEffectsConfig() {}
 }
