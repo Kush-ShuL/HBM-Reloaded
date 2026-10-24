@@ -13,6 +13,7 @@ import com.hbm.machine.generator.stirling.StirlingConfig;
 import com.hbm.machine.generator.diesel.DieselConfig;
 import com.hbm.machine.turbine.IndustrialTurbineConfig;
 import com.hbm.machine.groundwater.GroundwaterPumpSettings;
+import com.hbm.machine.oilextraction.OilDrillConfig;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
@@ -52,6 +53,7 @@ public final class RotaryFurnaceConfig {
         DieselConfig.define(builder);
         IndustrialTurbineConfig.define(builder);
         GroundwaterPumpSettings.define(builder);
+        OilDrillConfig.define(builder);
         SPEC=builder.build();
     }
 
@@ -93,6 +95,7 @@ public final class RotaryFurnaceConfig {
         DieselConfig.apply();
         IndustrialTurbineConfig.apply();
         GroundwaterPumpSettings.apply();
+        OilDrillConfig.apply();
     }
     private static ModuleBurnTime defaults(){return new ModuleBurnTime().setCokeTimeMod(1.25).setRocketTimeMod(1.5).setSolidTimeMod(1.5).setBalefireTimeMod(1.5).setSolidHeatMod(1.5).setRocketHeatMod(3).setBalefireHeatMod(10);}
     private RotaryFurnaceConfig(){}
