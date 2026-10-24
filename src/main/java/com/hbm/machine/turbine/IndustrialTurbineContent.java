@@ -4,7 +4,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.registries.*;
 public final class IndustrialTurbineContent {
     private static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks("hbm");
@@ -15,7 +14,7 @@ public final class IndustrialTurbineContent {
     public static final List<DeferredItem<ExpensiveComponentItem>> EXPENSIVE_PARTS=ExpensiveComponentItem.register(ITEMS);
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<IndustrialTurbineBlockEntity>> ENTITY=ENTITIES.register("machine_industrial_turbine",()->BlockEntityType.Builder.of(IndustrialTurbineBlockEntity::new,BLOCK.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<IndustrialTurbineProxy>> PROXY=ENTITIES.register("machine_industrial_turbine_proxy",()->BlockEntityType.Builder.of(IndustrialTurbineProxy::new,BLOCK.get()).build(null));
-    public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);bus.addListener((FMLCommonSetupEvent event)->event.enqueueWork(IndustrialTurbineConfig::load));}
+    public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);}
     public static List<ItemStack> creativeStacks(String tab){return tab.equals("machine")?List.of(new ItemStack(ITEM.get())):tab.equals("parts")?ExpensiveComponentItem.creativeStacks():List.of();}
     private IndustrialTurbineContent(){}
 }
