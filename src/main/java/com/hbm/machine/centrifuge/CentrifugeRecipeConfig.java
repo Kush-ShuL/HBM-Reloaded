@@ -46,6 +46,7 @@ public final class CentrifugeRecipeConfig {
     static void imc(InterModProcessEvent event) { event.enqueueWork(()->InterModComms.getMessages("hbm","centrifuge"::equals).forEach(message->{ Object data=message.messageSupplier().get(); if(data instanceof CompoundTag tag) IMC.add(tag.copy()); else LogUtils.getLogger().error("Centrifuge IMC from {} requires original compound payload",message.senderModId()); })); }
     private static void starting(ServerAboutToStartEvent event) { install(event.getServer()); }
     private static void sync(OnDatapackSyncEvent event) { if(event.getPlayer()==null||!INSTALLED.containsKey(event.getPlayerList().getServer().getRecipeManager())) install(event.getPlayerList().getServer()); }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server) {
         var manager=server.getRecipeManager(); var previous=INSTALLED.getOrDefault(manager,Map.of());
         Map<ResourceLocation,RecipeHolder<?>> merged=new LinkedHashMap<>();

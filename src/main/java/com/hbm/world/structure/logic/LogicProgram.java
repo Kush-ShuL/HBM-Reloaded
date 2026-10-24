@@ -73,7 +73,9 @@ public final class LogicProgram {
     public static List<String> getConditionNames() { return new ArrayList<>(conditions.keySet()); }
     public static List<String> getInteractionNames() { return new ArrayList<>(interactions.keySet()); }
 
-    static {
+    static { initialize(); }
+    public static void initialize() {
+        actions.clear(); conditions.clear(); interactions.clear();
         action("FODDER_WAVE", LogicProgram::fodder, dependencies(new String[0], new String[]{"block_steel"}, MobUtil.slotPoolAdv));
         action("POWER_LOCK", LogicProgram::powerLock, READY);
         action("COLLAPSE_ROOF_RAD_5", tile -> collapse(tile, 4), READY);

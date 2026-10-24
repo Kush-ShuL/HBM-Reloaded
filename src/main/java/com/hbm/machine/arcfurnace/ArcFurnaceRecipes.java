@@ -33,6 +33,7 @@ public final class ArcFurnaceRecipes {
   var cache=(liquid?LIQUID:SOLID).computeIfAbsent(manager,key->new HashMap<>());var key=Key.of(input);if(cache.containsKey(key))return cache.get(key);
   ArcFurnaceRecipe result=null;for(var recipe:all(manager))if(recipe.inMode(liquid)&&com.hbm.ore.OreRecipeInputs.test(recipe.input(),input)){result=recipe;break;}cache.put(key,result);return result;
  }
+    public static void reload(MinecraftServer server) { install(server); }
  private static void install(MinecraftServer server){
   var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
   var recipes=new ArrayList<ArcFurnaceRecipe>();var occupiedSolid=new HashSet<Key>();var occupiedLiquid=new HashSet<Key>();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmArcFurnace.json");

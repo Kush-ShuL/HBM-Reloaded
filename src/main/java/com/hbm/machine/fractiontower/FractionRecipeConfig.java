@@ -28,6 +28,7 @@ public final class FractionRecipeConfig {
     public static List<FractionRecipe> recipes(RecipeManager manager){return manager.getAllRecipesFor(FractionContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(r->r.data().order())).toList();}
     public static FractionRecipe find(RecipeManager manager,HbmFluidType type){return INDEX.computeIfAbsent(manager,key->{var index=new IdentityHashMap<HbmFluidType,FractionRecipe>();for(var recipe:recipes(key))index.putIfAbsent(recipe.data().inputFluids().getFirst().type,recipe);return index;}).get(type);}
     public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();INDEX.remove(manager);var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
         var additions=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmFractions.json");

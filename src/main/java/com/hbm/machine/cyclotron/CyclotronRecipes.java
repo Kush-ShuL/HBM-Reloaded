@@ -40,6 +40,7 @@ public final class CyclotronRecipes {
   int first=itemHash(particle.get(0).getAsString(),meta(particle,2),count(particle,1));String kind=target.get(0).getAsString();int second=kind.equals("dict")?31*(31+target.get(1).getAsString().hashCode())+count(target,2):itemHash(target.get(1).getAsString(),meta(target,3),count(target,2));
   return new CyclotronRecipe(data,particleKey(particle)+"|"+targetKey(target),27644437*(27644437+first)+second);
  }
+    public static void reload(MinecraftServer server) { install(server); }
  private static void install(MinecraftServer server){
   var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
   var added=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();var directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes");var active=directory.resolve("hbmCyclotron.json");

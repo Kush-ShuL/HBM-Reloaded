@@ -38,6 +38,7 @@ public final class SolderingRecipes {
         var data=new GenericRecipeData("soldering."+order,row.get("duration").getAsInt(),row.get("consumption").getAsLong(),inputs,fluids,outputs,List.of(),List.of(),"",output.copy(),false,"",order);
         return new SolderingRecipe(data,topping.size(),pcb.size());
     }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
         var additions=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmSoldering.json");

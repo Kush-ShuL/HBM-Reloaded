@@ -23,6 +23,7 @@ public final class PedestalRecipeConfig {
     public static void register(){NeoForge.EVENT_BUS.addListener((ServerAboutToStartEvent event)->install(event.getServer()));NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST,(OnDatapackSyncEvent event)->{var server=event.getPlayerList().getServer();if(event.getPlayer()==null||!INSTALLED.containsKey(server.getRecipeManager()))install(server);});}
     public static List<PedestalRecipe> recipes(RecipeManager manager){return manager.getAllRecipesFor(PedestalContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(PedestalRecipe::order)).toList();}
     public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();
         for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);

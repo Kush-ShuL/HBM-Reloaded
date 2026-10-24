@@ -26,6 +26,7 @@ public final class BlastFurnaceRecipes {
     }
     public static List<BlastFurnaceRecipe> recipes(RecipeManager manager){return manager.getAllRecipesFor(BlastFurnaceContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(recipe->recipe.data().order())).toList();}
     public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
         var additions=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmBlastFurnace.json");

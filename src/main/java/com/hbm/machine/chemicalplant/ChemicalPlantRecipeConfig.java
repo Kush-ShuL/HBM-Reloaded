@@ -34,6 +34,7 @@ public final class ChemicalPlantRecipeConfig {
     private static boolean bool(JsonObject root,String key,boolean fallback){return root.has(key)?root.get(key).getAsBoolean():fallback;}
     public static List<ChemicalPlantRecipe> recipes(RecipeManager manager){return manager.getAllRecipesFor(ChemicalPlantContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(recipe->recipe.data().order())).toList();}
     public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){loadMode();
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();
         for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);

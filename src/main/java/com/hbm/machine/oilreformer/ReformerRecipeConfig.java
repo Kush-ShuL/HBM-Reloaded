@@ -27,6 +27,7 @@ public final class ReformerRecipeConfig {
     public static List<ReformerRecipe> recipes(RecipeManager manager){return manager.getAllRecipesFor(ReformerContent.TYPE.get()).stream().map(RecipeHolder::value).sorted(Comparator.comparingInt(r->r.data().order())).toList();}
     public static ReformerRecipe find(RecipeManager manager,HbmFluidType type){return recipes(manager).stream().filter(r->r.data().inputFluids().getFirst().type==type).findFirst().orElse(null);}
     public static List<String> unresolved(){return List.copyOf(UNRESOLVED);}
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
         var additions=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmReforming.json");

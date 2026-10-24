@@ -41,6 +41,7 @@ public final class AlloyRecipeConfig {
     private static void imc(InterModProcessEvent event) { event.enqueueWork(()->InterModComms.getMessages("hbm","blastfurnace"::equals).forEach(message->{ if(message.messageSupplier().get() instanceof CompoundTag tag) IMC.add(tag.copy()); else LogUtils.getLogger().error("Original blastfurnace IMC requires compound payload from {}",message.senderModId()); })); }
     private static void starting(ServerAboutToStartEvent event) { install(event.getServer()); }
     private static void sync(OnDatapackSyncEvent event) { if(event.getPlayer()==null||!INSTALLED.containsKey(event.getPlayerList().getServer().getRecipeManager())) install(event.getPlayerList().getServer()); }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server) {
         RecipeManager manager=server.getRecipeManager(); var previous=INSTALLED.getOrDefault(manager,Map.of()); var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();
         for(var holder:manager.getOrderedRecipes()) if(previous.get(holder.id())!=holder) merged.put(holder.id(),holder);

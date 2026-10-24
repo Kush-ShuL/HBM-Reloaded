@@ -51,6 +51,7 @@ public final class SolidificationRecipes {
         var recipe=new JsonObject();var input=new JsonArray();String name=event.get("automatic").getAsString();
         input.add(name);input.add(fuelAmount(fluid(name),event.get("tuPerSolidFuel").getAsLong()));recipe.add("input",input);recipe.add("output",event.get("output").deepCopy());return recipe;
     }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();
         for(var recipe:manager.getOrderedRecipes())if(previous.get(recipe.id())!=recipe)merged.put(recipe.id(),recipe);

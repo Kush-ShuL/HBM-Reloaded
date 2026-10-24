@@ -53,6 +53,7 @@ public final class SpaceAssemblerRecipes {
         for(var recipe:ordered)if(names.putIfAbsent(recipe.name(),recipe)!=null)throw new IllegalStateException("Duplicate original space assembly name: "+recipe.name());
         return new Snapshot(ordered,Collections.unmodifiableMap(names));
     }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();
         for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);

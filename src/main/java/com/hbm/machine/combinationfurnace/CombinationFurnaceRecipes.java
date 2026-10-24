@@ -40,6 +40,7 @@ public final class CombinationFurnaceRecipes {
         if(a instanceof LegacyOreIngredient left)return b instanceof LegacyOreIngredient right&&left.tag().equals(right.tag());
         if(b instanceof LegacyOreIngredient)return false;var left=first.input().ingredient().getItems();var right=second.input().ingredient().getItems();return left.length==1&&right.length==1&&ElectricFurnaceBlockEntity.sameLegacyItem(left[0],right[0]);
     }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var recipe:manager.getOrderedRecipes())if(previous.get(recipe.id())!=recipe)merged.put(recipe.id(),recipe);
         var added=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path dir=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),file=dir.resolve("hbmCombination.json");boolean custom=Files.isRegularFile(file);

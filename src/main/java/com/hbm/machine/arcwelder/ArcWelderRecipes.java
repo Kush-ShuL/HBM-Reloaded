@@ -36,6 +36,7 @@ public final class ArcWelderRecipes {
         var output=GenericRecipeConfigCodec.readStack(row.getAsJsonArray("output"),ALIASES);var outputs=List.of(new GenericOutput(List.of(new GenericOutput.Chance(output,1,0)),false));
         return new ArcWelderRecipe(new GenericRecipeData("arcwelder."+order,row.get("duration").getAsInt(),row.get("consumption").getAsLong(),inputs,fluids,outputs,List.of(),List.of(),"",output.copy(),false,"",order));
     }
+    public static void reload(MinecraftServer server) { install(server); }
     private static void install(MinecraftServer server){
         var manager=server.getRecipeManager();var previous=INSTALLED.getOrDefault(manager,Map.of());var merged=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();for(var holder:manager.getOrderedRecipes())if(previous.get(holder.id())!=holder)merged.put(holder.id(),holder);
         var additions=new LinkedHashMap<ResourceLocation,RecipeHolder<?>>();UNRESOLVED.clear();Path directory=FMLPaths.CONFIGDIR.get().resolve("hbmRecipes"),active=directory.resolve("hbmArcWelder.json");

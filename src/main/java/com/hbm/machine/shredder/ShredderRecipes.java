@@ -60,6 +60,7 @@ public final class ShredderRecipes {
         }
         return registered("hbm:scrap", 1);
     }
+    public static void reload(net.minecraft.server.MinecraftServer server) { install(server.getRecipeManager(), server.registryAccess()); }
     private static void install(RecipeManager manager, HolderLookup.Provider lookup) {
         Installed previous = INSTALLED.get(manager);
         Map<ResourceLocation, RecipeHolder<?>> merged = new LinkedHashMap<>();
