@@ -1,12 +1,27 @@
 package com.hbm.machine.generator.leviathan;
-import com.google.gson.*;
-import com.mojang.logging.LogUtils;
-import java.nio.file.*;
-import net.neoforged.fml.loading.FMLPaths;
-/** Actual original steamturbineLeviathan section, preserving independent1e9 tank sizes and.85 efficiency. */
+
+import net.neoforged.neoforge.common.ModConfigSpec;
+
+/** Actual Leviathan inlet/outlet initialization and turbine conversion efficiency. */
 public final class LeviathanConfig {
-    public static int inputTankSize=1000000000,outputTankSize=1000000000;
-    public static double efficiency=.85D;
-    public static void load(){Path path=FMLPaths.CONFIGDIR.get().resolve("hbmConfig/hbmMachines.json");try{Files.createDirectories(path.getParent());JsonObject root=new JsonObject();if(Files.isRegularFile(path))try(var reader=Files.newBufferedReader(path)){root=JsonParser.parseReader(reader).getAsJsonObject();}String section="steamturbineLeviathan";var values=root.has(section)?root.getAsJsonObject(section):new JsonObject();if(values.has("I:inputTankSize"))inputTankSize=values.get("I:inputTankSize").getAsInt();if(values.has("I:outputTankSize"))outputTankSize=values.get("I:outputTankSize").getAsInt();if(values.has("D:efficiency"))efficiency=values.get("D:efficiency").getAsDouble();values.addProperty("INFO","leviathan steam turbine consumes all availible steam per tick");values.addProperty("I:inputTankSize",inputTankSize);values.addProperty("I:outputTankSize",outputTankSize);values.addProperty("D:efficiency",efficiency);root.add(section,values);Files.writeString(path,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}catch(Exception error){LogUtils.getLogger().error("Cannot load original industrial steam turbine settings",error);}}
+    private static ModConfigSpec.IntValue inputCapacityOption,outputCapacityOption;
+    private static ModConfigSpec.DoubleValue efficiencyOption;
+    public static volatile int inputTankSize=1000000000,outputTankSize=1000000000;
+    public static volatile double efficiency=.85D;
+
+    public static void define(ModConfigSpec.Builder builder){
+        builder.comment("利维坦汽轮机的流体槽初始容量与转化效率设置；每刻取用全部可转化流体，仍受出口剩余空间限制。").push("leviathan");
+        inputCapacityOption=builder.comment("新建机器的蒸汽入口槽容量；单位：mB；范围：1～2147483647；已保存槽容量保留，换档不缩放容量，重载不重建槽。").defineInRange("inputCapacity",1000000000,1,Integer.MAX_VALUE);
+        outputCapacityOption=builder.comment("新建机器的冷却产物出口槽容量；单位：mB；范围：1～2147483647；已保存槽容量保留，换档不缩放容量，重载不重建槽。").defineInRange("outputCapacity",1000000000,1,Integer.MAX_VALUE);
+        efficiencyOption=builder.comment("流体自身的汽轮机冷却效率再乘此倍率；单位：倍；范围：非负有限数；0不转化流体、不产生本刻电量。").defineInRange("efficiency",.85D,0D,Double.MAX_VALUE);
+        builder.pop();
+    }
+
+    public static void apply(){
+        inputTankSize=inputCapacityOption.get();
+        outputTankSize=outputCapacityOption.get();
+        efficiency=efficiencyOption.get();
+    }
+
     private LeviathanConfig(){}
 }
