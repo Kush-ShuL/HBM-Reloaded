@@ -284,6 +284,8 @@ public final class HbmReloaded {
         com.hbm.worldgen.reeds.ReedsWorldgen.register(modBus);
         com.hbm.worldgen.flowers.WildFlowersWorldgen.register(modBus);
         com.hbm.worldgen.gas.GasBubbleWorldgen.register(modBus);
+        com.hbm.worldgen.alexandrite.AlexandriteWorldgen.register(modBus);
+        com.hbm.worldgen.limestone.LimestoneWorldgen.register(modBus);
         com.hbm.armor.nightvision.NightVisionContent.register(modBus);
         com.hbm.armor.gassensor.GasSensorContent.register(modBus);
         com.hbm.armor.gasmaskmods.GasmaskAttachmentsContent.register(modBus);

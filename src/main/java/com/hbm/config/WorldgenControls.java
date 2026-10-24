@@ -14,9 +14,9 @@ public final class WorldgenControls {
     private static final Map<String,Rule> RULES=new LinkedHashMap<>();
     static {
         var builder=new ModConfigSpec.Builder();
-        ORES=builder.comment("Master switch for every HBM mineral/geological feature. Existing per-module settings still apply.").define("oresEnabled",true);
+        ORES=builder.comment("启用 HBM 的矿物与地质生成，各模块的独立设置仍然生效。").define("oresEnabled",true);
         MODDED_DIMENSIONS=builder.comment("允许在其他模组维度执行 HBM 的地表生成入口。默认开启；主世界、下界和末地仍按各自生成规则处理。").define("moddedDimensionsEnabled",true);
-        STRUCTURES=builder.comment("Master switch for HBM natural buildings and hidden red rooms. Affects new generation only.").define("structuresEnabled",true);
+        STRUCTURES=builder.comment("启用 HBM 自然建筑与隐藏红房间，仅影响新生成的区域。").define("structuresEnabled",true);
         builder.comment("-1 表示沿用对应生成模块的设置；高度参数用 -2049 表示沿用。高度均为绝对 Y 坐标，正高度与深层分支可分别设置。").push("features");
         rule(builder,"overworld_ores","ore_uranium","vein");
         rule(builder,"overworld_ores","ore_thorium","vein");
@@ -131,6 +131,8 @@ public final class WorldgenControls {
         rule(builder,"wild_flowers","weed","chance_height");
         rule(builder,"gas_bubbles","flammable","chance_vein");
         rule(builder,"gas_bubbles","explosive","chance_vein");
+        rule(builder,"alexandrite","ore_alexandrite","chance_vein");
+        rule(builder,"limestone","stone_resource_limestone","vein");
         rule(builder,"oil_terrain","oil_bubbles","chance_height");
         rule(builder,"oil_terrain","bedrock_oil","chance_height");
         rule(builder,"oil_terrain","oil_sand","chance_height");
