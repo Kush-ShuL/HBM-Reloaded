@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hbm:block/cm_terminal_side",
+    "up": "hbm:block/cm_terminal_side",
+    "north": "hbm:block/cm_terminal_side",
+    "south": "hbm:block/cm_terminal_side",
+    "west": "hbm:block/cm_terminal_side",
+    "east": "hbm:block/cm_terminal_side",
+    "particle": "hbm:block/cm_terminal_side"
+  }
+}
