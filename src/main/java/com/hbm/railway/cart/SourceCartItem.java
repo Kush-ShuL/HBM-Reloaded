@@ -1,6 +1,6 @@
 package com.hbm.railway.cart;
-import com.hbm.hazard.HbmHazards;
-import com.hbm.machine.storage.CrateStackData;
+import java.util.Locale;
+import java.util.Objects;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.dispenser.*;
 import net.minecraft.world.InteractionResult;
@@ -11,11 +11,15 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.phys.AABB;
 /** The actual five-kind/four-base ItemModMinecart and source click/dispenser coordinates. */
 public final class SourceCartItem extends Item {
-    public SourceCartItem(){super(new Properties().stacksTo(4));}
-    public static SourceCartKind kind(ItemStack stack){return SourceCartKind.safe(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0));}
-    public static SourceCartKind.Base base(ItemStack stack){return SourceCartKind.Base.safe(CrateStackData.data(stack).getInt("cartBase"));}
-    public static ItemStack stack(SourceCartKind.Base base,SourceCartKind kind){var stack=new ItemStack(SourceCartContent.CART.get());stack.set(HbmHazards.LEGACY_METADATA.get(),kind.ordinal());var tag=new net.minecraft.nbt.CompoundTag();tag.putInt("cartBase",base.ordinal());CrateStackData.data(stack,tag);return stack;}
-    @Override public String getDescriptionId(ItemStack stack){return "item.cart."+kind(stack).key()+".name";}
+    private final SourceCartKind kind;
+    private final SourceCartKind.Base base;
+    public SourceCartItem(SourceCartKind kind,SourceCartKind.Base base){super(new Properties().stacksTo(4));this.kind=Objects.requireNonNull(kind);this.base=Objects.requireNonNull(base);}
+    public SourceCartKind kind(){return kind;}
+    public SourceCartKind.Base base(){return base;}
+    public static SourceCartKind kind(ItemStack stack){return ((SourceCartItem)stack.getItem()).kind;}
+    public static SourceCartKind.Base base(ItemStack stack){return ((SourceCartItem)stack.getItem()).base;}
+    public static ItemStack stack(SourceCartKind.Base base,SourceCartKind kind){return new ItemStack(SourceCartContent.cartItem(base,kind));}
+    @Override public String getDescriptionId(){return "item.hbm.cart_"+kind.key()+"_"+base.name().toLowerCase(Locale.ROOT);}
     public static SourceCartEntity create(Level level,double x,double y,double z,ItemStack stack){
         SourceCartEntity entity=switch(kind(stack)){
             case EMPTY->new SourceEmptyCart(SourceCartContent.EMPTY.get(),level);

@@ -4,7 +4,9 @@ import com.google.gson.Gson;
 import com.mojang.serialization.MapCodec;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
+import java.util.*;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.component.BlockItemStateProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -22,7 +24,22 @@ public final class OreCaves {
     private static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks("hbm");
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
     public static final DeferredBlock<CaveFormationBlock> STALAGMITE=BLOCKS.register("stalagmite",()->new CaveFormationBlock(false)),STALACTITE=BLOCKS.register("stalactite",()->new CaveFormationBlock(true));
-    public static final DeferredItem<CaveFormationItem> STALAGMITE_ITEM=ITEMS.register("stalagmite",()->new CaveFormationItem(STALAGMITE.get(),"stalagmite")),STALACTITE_ITEM=ITEMS.register("stalactite",()->new CaveFormationItem(STALACTITE.get(),"stalactite"));
+    private static final Map<String,List<DeferredItem<CaveFormationItem>>> FORMATION_ITEMS=new LinkedHashMap<>();
+    static {
+        for(String name:List.of("stalagmite","stalactite")){
+            var block=name.equals("stalagmite")?STALAGMITE:STALACTITE;var items=new ArrayList<DeferredItem<CaveFormationItem>>();
+            for(int i=0;i<CaveFormationBlock.VARIANTS.size();i++){int variant=i;items.add(ITEMS.register(name+"_"+CaveFormationBlock.VARIANTS.get(i),()->new CaveFormationItem(block.get(),name,variant)));}
+            FORMATION_ITEMS.put(name,List.copyOf(items));
+        }
+    }
+    public static ItemStack stack(CaveFormationBlock block,int metadata){
+        if(metadata<0||metadata>15)throw new IllegalArgumentException("Unknown cave formation state "+metadata);
+        String name;if(block==STALAGMITE.get())name="stalagmite";else if(block==STALACTITE.get())name="stalactite";else throw new IllegalArgumentException("Unknown cave formation block");
+        var stack=new ItemStack(FORMATION_ITEMS.get(name).get(metadata%CaveFormationBlock.VARIANTS.size()).get());
+        // 七个固定物品身份之外只记录真实的方块状态，不再借组件保存材质类型。
+        if(metadata>=CaveFormationBlock.VARIANTS.size())stack.set(DataComponents.BLOCK_STATE,new BlockItemStateProperties(Map.of("legacy_meta",Integer.toString(metadata))));
+        return stack;
+    }
     public record Profile(String name,String legacyOreName,int metadata,double threshold,int rangeMult,int centerY,int maxRange,String fluid){}
     private record Definitions(List<Profile> profiles){}
     public static final List<Profile> PROFILES=profiles();
@@ -37,7 +54,7 @@ public final class OreCaves {
     private static List<Profile> profiles(){try(var stream=OreCaves.class.getResourceAsStream("/hbm/ore-caves.json")){if(stream==null)throw new IllegalStateException("Missing ore-caves.json; run tools/port_ore_caves.py");return List.copyOf(new Gson().fromJson(new InputStreamReader(stream,StandardCharsets.UTF_8),Definitions.class).profiles());}catch(java.io.IOException failure){throw new IllegalStateException(failure);}}
     public static boolean enabled(Profile profile){return switch(profile.name()){case "sulfur"->SULFUR.get();case "asbestos"->ASBESTOS.get();default->throw new IllegalArgumentException(profile.name());};}
     public static void register(IEventBus bus,ModContainer container){FEATURES.register("legacy_ore_caves",OreCaveFeature::new);MODIFIERS.register("ore_cave_features",()->OreCaveBiomeModifier.CODEC);FEATURES.register(bus);MODIFIERS.register(bus);BLOCKS.register(bus);ITEMS.register(bus);container.registerConfig(ModConfig.Type.COMMON,SPEC,"hbm-ore-caves-common.toml");}
-    public static List<ItemStack> indexedItems(){return java.util.stream.Stream.concat(STALAGMITE_ITEM.get().creativeStacks().stream(),STALACTITE_ITEM.get().creativeStacks().stream()).toList();}
+    public static List<ItemStack> indexedItems(){return FORMATION_ITEMS.values().stream().flatMap(List::stream).map(holder->new ItemStack(holder.get())).toList();}
     public static List<ItemStack> creativeStacks(String tab){return tab.equals("block")?indexedItems():List.of();}
     private OreCaves(){}
 }

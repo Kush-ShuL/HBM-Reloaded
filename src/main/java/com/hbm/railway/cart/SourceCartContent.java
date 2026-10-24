@@ -18,7 +18,13 @@ public final class SourceCartContent {
     private static final DeferredRegister<EntityType<?>> ENTITIES=DeferredRegister.create(Registries.ENTITY_TYPE,"hbm");
     private static final DeferredRegister<MenuType<?>> MENUS=DeferredRegister.create(Registries.MENU,"hbm");
     private static final DeferredRegister<RecipeSerializer<?>> RECIPES=DeferredRegister.create(Registries.RECIPE_SERIALIZER,"hbm");
-    public static final DeferredItem<SourceCartItem> CART=ITEMS.register("cart",SourceCartItem::new);
+    private static final List<DeferredItem<SourceCartItem>> CARTS=cartItems();
+    private static List<DeferredItem<SourceCartItem>> cartItems(){
+        var items=new ArrayList<DeferredItem<SourceCartItem>>();
+        for(var kind:SourceCartKind.values())for(var base:SourceCartKind.Base.values())items.add(ITEMS.register("cart_"+kind.key()+"_"+base.name().toLowerCase(Locale.ROOT),()->new SourceCartItem(kind,base)));
+        return List.copyOf(items);
+    }
+    public static SourceCartItem cartItem(SourceCartKind.Base base,SourceCartKind kind){return CARTS.get(kind.ordinal()*SourceCartKind.Base.values().length+base.ordinal()).get();}
     public static final DeferredHolder<EntityType<?>,EntityType<SourceEmptyCart>> EMPTY=ENTITIES.register("entity_ntm_cart_ore",()->cart(SourceEmptyCart::new,"entity_ntm_cart_ore"));
     public static final DeferredHolder<EntityType<?>,EntityType<SourceCrateCart>> CRATE=ENTITIES.register("entity_ntm_cart_crate",()->cart(SourceCrateCart::new,"entity_ntm_cart_crate"));
     public static final DeferredHolder<EntityType<?>,EntityType<SourceDestroyerCart>> DESTROYER=ENTITIES.register("entity_ntm_cart_destroyer",()->cart(SourceDestroyerCart::new,"entity_ntm_cart_destroyer"));
@@ -29,10 +35,10 @@ public final class SourceCartContent {
     public static final DeferredHolder<MenuType<?>,MenuType<DestroyerCartMenu>> DESTROYER_MENU=MENUS.register("source_destroyer_cart",()->new MenuType<>((IContainerFactory<DestroyerCartMenu>)DestroyerCartMenu::new,FeatureFlags.DEFAULT_FLAGS));
     public static final DeferredHolder<RecipeSerializer<?>,SourceCartShapedRecipe.Serializer> COPY_RECIPE=RECIPES.register("source_cart_shaped",SourceCartShapedRecipe.Serializer::new);
     public static ResourceLocation id(String path){return ResourceLocation.fromNamespaceAndPath("hbm",path);}
-    public static List<ItemStack> indexedItems(){var list=new ArrayList<ItemStack>();for(var kind:SourceCartKind.values())for(var base:SourceCartKind.Base.values())if(kind.supports(base))list.add(SourceCartItem.stack(base,kind));return list;}
+    public static List<ItemStack> indexedItems(){return CARTS.stream().map(holder->new ItemStack(holder.get())).toList();}
     public static List<ItemStack> creativeStacks(String tab){return List.of();}
-    private static void creative(BuildCreativeModeTabContentsEvent event){if(event.getTabKey().equals(CreativeModeTabs.TOOLS_AND_UTILITIES))indexedItems().forEach(event::accept);}
-    private static void common(FMLCommonSetupEvent event){event.enqueueWork(()->DispenserBlock.registerBehavior(CART.get(),new SourceCartItem.Dispense()));}
+    private static void creative(BuildCreativeModeTabContentsEvent event){if(event.getTabKey().equals(CreativeModeTabs.TOOLS_AND_UTILITIES))indexedItems().stream().filter(stack->SourceCartItem.kind(stack).supports(SourceCartItem.base(stack))).forEach(event::accept);}
+    private static void common(FMLCommonSetupEvent event){event.enqueueWork(()->CARTS.forEach(item->DispenserBlock.registerBehavior(item.get(),new SourceCartItem.Dispense())));}
     public static void register(IEventBus bus){ITEMS.register(bus);ENTITIES.register(bus);MENUS.register(bus);RECIPES.register(bus);bus.addListener(SourceCartContent::common);bus.addListener(SourceCartContent::creative);}
     private SourceCartContent(){}
 }

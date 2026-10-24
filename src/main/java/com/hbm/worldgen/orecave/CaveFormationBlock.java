@@ -1,6 +1,5 @@
 package com.hbm.worldgen.orecave;
 
-import com.hbm.hazard.HbmHazards;
 import com.hbm.registry.HbmContent;
 import com.mojang.serialization.MapCodec;
 import java.util.List;
@@ -40,5 +39,5 @@ public final class CaveFormationBlock extends Block {
         Item item=switch(state.getValue(LEGACY_META)){case 0->HbmContent.item("sulfur");case 1->HbmContent.item("powder_asbestos");case 2->HbmContent.item("powder_ice");case 3->Items.SNOWBALL;default->null;};
         if(item==null)return List.of();Float radius=context.getOptionalParameter(LootContextParams.EXPLOSION_RADIUS);return radius!=null&&context.getLevel().random.nextFloat()>1F/radius?List.of():List.of(new ItemStack(item));
     }
-    @Override public ItemStack getCloneItemStack(LevelReader level,BlockPos pos,BlockState state){var stack=new ItemStack(this);stack.set(HbmHazards.LEGACY_METADATA.get(),state.getValue(LEGACY_META));return stack;}
+    @Override public ItemStack getCloneItemStack(LevelReader level,BlockPos pos,BlockState state){return OreCaves.stack(this,state.getValue(LEGACY_META));}
 }

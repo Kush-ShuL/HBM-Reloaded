@@ -1,0 +1,21 @@
+{
+  "type": "hbm:source_cart_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:gunpowder"
+    },
+    "C": {
+      "tag": "hbm:source_carts/empty"
+    }
+  },
+  "result": {
+    "id": "hbm:cart_powder_painted",
+    "count": 1
+  }
+}

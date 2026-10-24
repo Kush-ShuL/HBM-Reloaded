@@ -1,15 +1,12 @@
 package com.hbm.client.glyphidhive;
 import com.hbm.world.glyphidhive.*;
 import java.util.List;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.*;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.*;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.BakedModelWrapper;
@@ -20,8 +17,7 @@ final class GlyphidHiveMaterialModel extends BakedModelWrapper<BakedModel> {
     private static final ModelProperty<Integer> ICON=new ModelProperty<>();
     private final BakedModel[][] cubes;
     private final int metadata;
-    private final boolean inventory;
-    GlyphidHiveMaterialModel(BakedModel original,BakedModel[][] cubes,int metadata,boolean inventory){super(original);this.cubes=cubes;this.metadata=metadata;this.inventory=inventory;}
+    GlyphidHiveMaterialModel(BakedModel original,BakedModel[][] cubes,int metadata){super(original);this.cubes=cubes;this.metadata=metadata;}
     static int coordinateIcon(BlockPos pos){
         // The X multiplication is deliberately int-overflowing BEFORE the long cast, as in source.
         long value=(long)(pos.getX()*3129871)^(long)pos.getY()*116129781L^(long)pos.getZ();
@@ -32,9 +28,4 @@ final class GlyphidHiveMaterialModel extends BakedModelWrapper<BakedModel> {
     @Override public List<BakedQuad> getQuads(BlockState state,Direction side,RandomSource random){return cube(metadata%2).getQuads(state,side,random);}
     @Override public List<BakedQuad> getQuads(BlockState state,Direction side,RandomSource random,ModelData data,RenderType layer){var icon=data.get(ICON);return cube(icon==null?metadata%2:icon).getQuads(state,side,random,data,layer);}
     @Override public TextureAtlasSprite getParticleIcon(ModelData data){var icon=data.get(ICON);return cube(icon==null?metadata%2:icon).getParticleIcon(data);}
-    @Override public ItemOverrides getOverrides(){
-        if(!inventory)return super.getOverrides();
-        return new ItemOverrides(){@Override public BakedModel resolve(BakedModel original,ItemStack stack,ClientLevel level,LivingEntity entity,int seed){return cubeForItem(stack);}};
-    }
-    private BakedModel cubeForItem(ItemStack stack){int meta=GlyphidHiveMaterialItem.metadata(stack);return cubes[GlyphidHiveMaterialBlock.family(meta)][meta%2];}
 }

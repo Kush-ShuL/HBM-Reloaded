@@ -1,5 +1,4 @@
 package com.hbm.world.glyphidhive;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.registry.HbmSounds;
 import com.mojang.serialization.MapCodec;
 import java.util.List;
@@ -27,7 +26,7 @@ public final class GlyphidHiveMaterialBlock extends Block {
     public GlyphidHiveMaterialBlock(){super(Properties.of().mapColor(MapColor.PLANT).strength(.5F).sound(FLESH));registerDefaultState(stateDefinition.any().setValue(META,0));}
     @Override protected MapCodec<? extends Block> codec(){return CODEC;}
     @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(META);}
-    @Override public BlockState getStateForPlacement(BlockPlaceContext context){return defaultBlockState().setValue(META,context.getItemInHand().getOrDefault(HbmHazards.LEGACY_METADATA.get(),0)&15);}
+    @Override public BlockState getStateForPlacement(BlockPlaceContext context){return defaultBlockState().setValue(META,context.getItemInHand().getItem() instanceof GlyphidHiveMaterialItem item?item.kind().stateValue():0);}
     @Override protected List<ItemStack> getDrops(BlockState state,LootParams.Builder builder){return List.of();}
     public static int family(int metadata){return metadata==1?1:metadata==2?2:0;}
 }

@@ -1,0 +1,2388 @@
+{
+  "entries": [
+    {
+      "id": "hbm:ammo_container_makeshift",
+      "sourceFamily": "ModItems.ammo_container",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_container_standard",
+      "sourceFamily": "ModItems.ammo_container",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_bmg50_black",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_bmg50_equestrian",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_folly_nuke",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_folly_sm",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_g12_equestrian",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_m44_equestrian",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_p35_800",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_secret_p35_800_bl",
+      "sourceFamily": "ModItems.ammo_secret",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_b75",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 38,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_b75_exp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 40,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_b75_inc",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 39,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 36,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_du",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 37,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 34,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_he",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 83,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 35,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_sm",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 94,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_bmg50_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 33,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_capacitor",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 67,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_capacitor_ir",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 69,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_capacitor_overcharge",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 68,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_coil_ferrouranium",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 72,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_coil_tungsten",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 71,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_ct_hook",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 90,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_ct_mortar",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 91,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_ct_mortar_charge",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 92,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_flame_balefire",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 66,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_flame_diesel",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 63,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_flame_gas",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 64,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_flame_napalm",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 65,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g10",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 78,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g10_du",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 80,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g10_explosive",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 84,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g10_shrapnel",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 79,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g10_slug",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 81,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 44,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_bp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 41,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_bp_magnum",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 42,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_bp_slug",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 43,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_explosive",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 48,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_flechette",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 46,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_magnum",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 47,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_phosphorus",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 49,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g12_slug",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 45,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g26_flare",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 50,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g26_flare_supply",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 51,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g26_flare_weapon",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 52,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g40_demo",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 55,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g40_he",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 53,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g40_heat",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 54,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g40_inc",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 56,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_g40_phosphorus",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 57,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m357_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m357_bp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m357_express",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m357_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m357_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m357_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m44_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m44_bp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m44_express",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m44_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m44_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_m44_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_nuke_balefire",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 93,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_nuke_demo",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 74,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_nuke_high",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 75,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_nuke_hive",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 77,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_nuke_standard",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 73,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_nuke_tots",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 76,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p22_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p22_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p22_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 18,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p22_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p45_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 88,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p45_du",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 89,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p45_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 86,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p45_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 87,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p45_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 85,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p9_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 23,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p9_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 21,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p9_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 22,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_p9_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r556_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 27,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r556_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 25,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r556_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 26,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r556_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 24,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r762_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 31,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r762_du",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 32,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r762_fmj",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 29,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r762_he",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 82,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r762_jhp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 30,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_r762_sp",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 28,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_rocket_demo",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 60,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_rocket_he",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 58,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_rocket_heat",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 59,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_rocket_inc",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 61,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_rocket_phosphorus",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 62,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_stone",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_stone_ap",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_stone_iron",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_stone_shot",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ammo_standard_tau_uranium",
+      "sourceFamily": "ModItems.ammo_standard",
+      "sourceMetadata": 70,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:block_coke_coal",
+      "sourceFamily": "ModBlocks.block_coke",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:block_coke_lignite",
+      "sourceFamily": "ModBlocks.block_coke",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:block_coke_petroleum",
+      "sourceFamily": "ModBlocks.block_coke",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:book_guide_hadron",
+      "sourceFamily": "ModItems.book_guide",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:book_guide_rbmk",
+      "sourceFamily": "ModItems.book_guide",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:book_guide_starter",
+      "sourceFamily": "ModItems.book_guide",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:book_guide_test",
+      "sourceFamily": "ModItems.book_guide",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:briquette_coal",
+      "sourceFamily": "ModItems.briquette",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:briquette_lignite",
+      "sourceFamily": "ModItems.briquette",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:briquette_wood",
+      "sourceFamily": "ModItems.briquette",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:cart_crate_painted",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 1,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_crate_steel",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 1,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_crate_vanilla",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 1,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_crate_wood",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 1,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_destroyer_painted",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 2,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_destroyer_steel",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 2,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_destroyer_vanilla",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 2,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_destroyer_wood",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 2,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_empty_painted",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 0,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_empty_steel",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 0,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_empty_vanilla",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 0,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_empty_wood",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 0,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_powder_painted",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 3,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_powder_steel",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 3,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_powder_vanilla",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 3,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_powder_wood",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 3,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_semtex_painted",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 4,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_semtex_steel",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 4,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_semtex_vanilla",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 4,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:cart_semtex_wood",
+      "sourceFamily": "ModItems.cart",
+      "sourceMetadata": 4,
+      "hasSubtypes": false
+    },
+    {
+      "id": "hbm:casing_buckshot",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:casing_buckshot_advanced",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:casing_large",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:casing_large_steel",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:casing_shotshell",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:casing_small",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:casing_small_steel",
+      "sourceFamily": "ModItems.casing",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_black",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_blue",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_brown",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_cyan",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_gray",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_green",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_light_blue",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_light_gray",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_lime",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_magenta",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_orange",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_pink",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_purple",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_red",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_white",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chemical_dye_yellow",
+      "sourceFamily": "ModItems.chemical_dye",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chunk_ore_cryolite",
+      "sourceFamily": "ModItems.chunk_ore",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chunk_ore_ilmenite",
+      "sourceFamily": "ModItems.chunk_ore",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chunk_ore_malachite",
+      "sourceFamily": "ModItems.chunk_ore",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chunk_ore_moonstone",
+      "sourceFamily": "ModItems.chunk_ore",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:chunk_ore_rare",
+      "sourceFamily": "ModItems.chunk_ore",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_advanced",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_analog",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_atomic_clock",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 18,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_basic",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_bismoid",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_capacitor",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_capacitor_board",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_capacitor_tantalium",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_chip",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_chip_bismoid",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_chip_quantum",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_controller",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_controller_advanced",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_controller_chassis",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_controller_quantum",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_crystal",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_numitron",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_pcb",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_quantum",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_silicon",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_board_blank",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_board_converter",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_board_transistor",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_bios",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_bus",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_chipset",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_cmos",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_io",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_north",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_bridge_south",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_card_board",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 21,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_card_processor",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 22,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_cpu_cache",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_cpu_clock",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_cpu_ext",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_cpu_logic",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_cpu_register",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_cpu_socket",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_mem_16k_a",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_mem_16k_b",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 18,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_mem_16k_c",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_mem_16k_d",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_star_piece_mem_socket",
+      "sourceFamily": "ModItems.circuit_star_piece",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:circuit_vacuum_tube",
+      "sourceFamily": "ModItems.circuit",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:coke_coal",
+      "sourceFamily": "ModItems.coke",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:coke_lignite",
+      "sourceFamily": "ModItems.coke",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:coke_petroleum",
+      "sourceFamily": "ModItems.coke",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_black",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_blue",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_brown",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_cyan",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_gray",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_green",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_light_blue",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_light_gray",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_lime",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_magenta",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_orange",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_pink",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_purple",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_red",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_white",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:concrete_colored_yellow",
+      "sourceFamily": "ModBlocks.concrete_colored",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:conveyor_wand_double",
+      "sourceFamily": "ModItems.conveyor_wand",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:conveyor_wand_express",
+      "sourceFamily": "ModItems.conveyor_wand",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:conveyor_wand_regular",
+      "sourceFamily": "ModItems.conveyor_wand",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:conveyor_wand_triple",
+      "sourceFamily": "ModItems.conveyor_wand",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crashed_bomb_balefire",
+      "sourceFamily": "ModBlocks.crashed_balefire",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crashed_bomb_conventional",
+      "sourceFamily": "ModBlocks.crashed_balefire",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crashed_bomb_nuke",
+      "sourceFamily": "ModBlocks.crashed_balefire",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crashed_bomb_salted",
+      "sourceFamily": "ModBlocks.crashed_balefire",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_black",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_blue",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_brown",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_cyan",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_gray",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_green",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_light_blue",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_light_gray",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_lime",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_magenta",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_orange",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_pink",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_purple",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_red",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_white",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:crayon_yellow",
+      "sourceFamily": "ModItems.crayon",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:glyphid_base_infested",
+      "sourceFamily": "ModBlocks.glyphid_base",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:glyphid_base_radioactive",
+      "sourceFamily": "ModBlocks.glyphid_base",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:glyphid_base_standard",
+      "sourceFamily": "ModBlocks.glyphid_base",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_bar",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_beacon",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_casing",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_clockwork",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_counter",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_detector",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_ingot",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_key",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ingot_metal_scrap",
+      "sourceFamily": "ModItems.ingot_metal",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_bronze_tubes",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_circuit",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_cmb_tubes",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_computer",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_degenerate_matter",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_ferro_plating",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_gold_dust",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_heavy_frame",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_lead_plating",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_plastic",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_expensive_steel_plating",
+      "sourceFamily": "ModItems.item_expensive",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_secret_aberrator",
+      "sourceFamily": "ModItems.item_secret",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_secret_canister",
+      "sourceFamily": "ModItems.item_secret",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_secret_controller",
+      "sourceFamily": "ModItems.item_secret",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_secret_folly",
+      "sourceFamily": "ModItems.item_secret",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:item_secret_selenium_steel",
+      "sourceFamily": "ModItems.item_secret",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:oil_tar_coal",
+      "sourceFamily": "ModItems.oil_tar",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:oil_tar_crack",
+      "sourceFamily": "ModItems.oil_tar",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:oil_tar_crude",
+      "sourceFamily": "ModItems.oil_tar",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:oil_tar_paraffin",
+      "sourceFamily": "ModItems.oil_tar",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:oil_tar_wax",
+      "sourceFamily": "ModItems.oil_tar",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:oil_tar_wood",
+      "sourceFamily": "ModItems.oil_tar",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_basalt_asbestos",
+      "sourceFamily": "ModBlocks.ore_basalt",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_basalt_fluorite",
+      "sourceFamily": "ModBlocks.ore_basalt",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_basalt_gem",
+      "sourceFamily": "ModBlocks.ore_basalt",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_basalt_molysite",
+      "sourceFamily": "ModBlocks.ore_basalt",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_basalt_sulfur",
+      "sourceFamily": "ModBlocks.ore_basalt",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_asbestos",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_borax",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_chlorocalcite",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_copper",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_fluorite",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_gold",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_hematite",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_iron",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_malachite",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_neodymium",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_niobium",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_thorium",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_titanium",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_tungsten",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_enriched_uranium",
+      "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page1",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page2",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page3",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page4",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page5",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page6",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page7",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:page_of_page8",
+      "sourceFamily": "ModItems.page_of_",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_alclad",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_glass_polarized",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_hde",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_lde",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_piston_electric",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_piston_hydraulic",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:part_generic_piston_pneumatic",
+      "sourceFamily": "ModItems.part_generic",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plant_item_mustardwillow",
+      "sourceFamily": "ModItems.plant_item",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plant_item_rope",
+      "sourceFamily": "ModItems.plant_item",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plant_item_tobacco",
+      "sourceFamily": "ModItems.plant_item",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:powder_ash_coal",
+      "sourceFamily": "ModItems.powder_ash",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:powder_ash_fly",
+      "sourceFamily": "ModItems.powder_ash",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:powder_ash_fullerene",
+      "sourceFamily": "ModItems.powder_ash",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:powder_ash_misc",
+      "sourceFamily": "ModItems.powder_ash",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:powder_ash_soot",
+      "sourceFamily": "ModItems.powder_ash",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:powder_ash_wood",
+      "sourceFamily": "ModItems.powder_ash",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_death_ray",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_detector",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_miner_astro",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_miner_lunar",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_precision_laser",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_radar",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_ray_scan",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_relay",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_scanner",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_science",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_science_assembler",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_science_sensor",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_spy",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:satellite_xenium_resonator",
+      "sourceFamily": "ModItems.satellite",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_board_blank",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_board_converter",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_board_transistor",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_bios",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_bus",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_chipset",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_cmos",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_io",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_north",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_bridge_south",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_card_board",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 21,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_card_processor",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 22,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_cpu_cache",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_cpu_clock",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_cpu_ext",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_cpu_logic",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_cpu_register",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_cpu_socket",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_mem_16k_a",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_mem_16k_b",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 18,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_mem_16k_c",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_mem_16k_d",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:scrap_plastic_mem_socket",
+      "sourceFamily": "ModItems.scrap_plastic",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:stalactite_asbestos",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalactite_glyphid1",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalactite_glyphid2",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalactite_glyphid3",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalactite_ice",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalactite_snow",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalactite_sulfur",
+      "sourceFamily": "ModBlocks.stalactite",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_asbestos",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_glyphid1",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 4,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_glyphid2",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 5,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_glyphid3",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 6,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_ice",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_snow",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 3,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stalagmite_sulfur",
+      "sourceFamily": "ModBlocks.stalagmite",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:stone_resource_asbestos",
+      "sourceFamily": "ModBlocks.stone_resource",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:stone_resource_bauxite",
+      "sourceFamily": "ModBlocks.stone_resource",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:stone_resource_hematite",
+      "sourceFamily": "ModBlocks.stone_resource",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:stone_resource_limestone",
+      "sourceFamily": "ModBlocks.stone_resource",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:stone_resource_malachite",
+      "sourceFamily": "ModBlocks.stone_resource",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:stone_resource_sulfur",
+      "sourceFamily": "ModBlocks.stone_resource",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:train_cargo_tram",
+      "sourceFamily": "ModItems.train",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:train_cargo_tram_trailer",
+      "sourceFamily": "ModItems.train",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_bmg50",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_m357",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_m44",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_p22",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_p45",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_p9",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_r556",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:weapon_mod_caliber_r762",
+      "sourceFamily": "ModItems.weapon_mod_caliber",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    }
+  ]
+}

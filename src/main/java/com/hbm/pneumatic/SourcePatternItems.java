@@ -15,11 +15,42 @@ import net.minecraft.util.datafix.DataFixers;
 import net.minecraft.util.datafix.fixes.References;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.component.BlockItemStateProperties;
 
 /** Original Item identity/metadata after vanilla flattening; explicit source tuples, never tag or material equivalence. */
 public final class SourcePatternItems {
     private record Identity(String sourceItem,Object metadata,boolean hasSubtypes) {}
     private record PotionMetadata(boolean splash,String potion) {}
+    private record FixedVariant(Identity identity,String metadataProperty) {}
+    /** Source comparison semantics only: these tokens never register or decode an old item stack. */
+    private static final class FixedSourceTable {
+        private static final Map<Item,FixedVariant> ITEMS=load();
+        private static Map<Item,FixedVariant> load(){
+            var result=new IdentityHashMap<Item,FixedVariant>();
+            try(var input=SourcePatternItems.class.getResourceAsStream("/hbm/pattern-fixed-identities.json")){
+                if(input==null)throw new IllegalStateException("Missing fixed source pattern identities");
+                var root=JsonParser.parseReader(new InputStreamReader(input,StandardCharsets.UTF_8)).getAsJsonObject();
+                for(var value:root.getAsJsonArray("entries")){
+                    var row=value.getAsJsonObject();var id=ResourceLocation.parse(row.get("id").getAsString());
+                    if(!BuiltInRegistries.ITEM.containsKey(id))throw new IllegalStateException("Unregistered fixed pattern item "+id);
+                    var identity=new Identity(row.get("sourceFamily").getAsString(),row.get("sourceMetadata").getAsInt(),row.get("hasSubtypes").getAsBoolean());
+                    var variant=new FixedVariant(identity,row.has("metadataProperty")?row.get("metadataProperty").getAsString():null);
+                    var previous=result.put(BuiltInRegistries.ITEM.get(id),variant);
+                    if(previous!=null&&!previous.equals(variant))throw new IllegalStateException("Conflicting fixed pattern identity "+id);
+                }
+                return Collections.unmodifiableMap(result);
+            }catch(IOException error){throw new IllegalStateException("Unable to load fixed source pattern identities",error);}
+        }
+        private static Identity identity(ItemStack stack){
+            var variant=ITEMS.get(stack.getItem());if(variant==null)return null;
+            var identity=variant.identity();
+            if(variant.metadataProperty()!=null){
+                var raw=stack.getOrDefault(DataComponents.BLOCK_STATE,BlockItemStateProperties.EMPTY).properties().get(variant.metadataProperty());
+                if(raw!=null)try{return new Identity(identity.sourceItem(),Integer.parseInt(raw),identity.hasSubtypes());}catch(NumberFormatException ignored){}
+            }
+            return identity;
+        }
+    }
     private static final class SourceTable {
         private static final Map<Item,Identity> ITEMS=load();
         private static Map<Item,Identity> load(){
@@ -49,14 +80,15 @@ public final class SourcePatternItems {
     }
     private static Identity identity(ItemStack stack){
         var id=BuiltInRegistries.ITEM.getKey(stack.getItem());
-        if(stack.getItem() instanceof com.hbm.item.autogen.AutogenItem)return new Identity(id.toString(),com.hbm.material.HbmMaterials.metadata(stack),true);
+        if(stack.getItem() instanceof com.hbm.item.autogen.AutogenItem autogen)return new Identity("hbm:autogen/"+autogen.spec().id(),autogen.materialId(stack),true);
+        if(id.getNamespace().equals("hbm")){var fixed=FixedSourceTable.identity(stack);if(fixed!=null)return fixed;}
         if(id.equals(ResourceLocation.withDefaultNamespace("potion"))||id.equals(ResourceLocation.withDefaultNamespace("splash_potion"))){
             String potion=stack.getOrDefault(DataComponents.POTION_CONTENTS,PotionContents.EMPTY).potion().map(holder->holder.unwrapKey().map(key->key.location().toString()).orElse("")).orElse("");
             return new Identity("minecraft:potion",new PotionMetadata(id.getPath().equals("splash_potion"),potion),true);
         }
         if(id.equals(ResourceLocation.withDefaultNamespace("filled_map")))return new Identity("minecraft:filled_map",stack.get(DataComponents.MAP_ID),true);
         var mapped=id.getNamespace().equals("minecraft")?SourceTable.ITEMS.get(stack.getItem()):null;if(mapped!=null)return mapped;
-        // HBM source providers retain one real Item plus the actual legacy_metadata component. Do not rewrite or infer their families.
+        // Remaining dynamic providers keep their actual state; unrelated items are never joined by tags or appearance.
         return new Identity(id.toString(),stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue()),stack.getItem() instanceof com.hbm.item.EnumMultiItem||stack.has(HbmHazards.LEGACY_METADATA.get()));
     }
     public static boolean sameItem(ItemStack first,ItemStack second){return identity(first).sourceItem.equals(identity(second).sourceItem);}

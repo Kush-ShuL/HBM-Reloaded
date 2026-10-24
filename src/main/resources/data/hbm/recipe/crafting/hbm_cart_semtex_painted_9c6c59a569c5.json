@@ -1,0 +1,20 @@
+{
+  "type": "hbm:source_cart_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "C"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:semtex"
+    },
+    "C": {
+      "tag": "hbm:source_carts/empty"
+    }
+  },
+  "result": {
+    "id": "hbm:cart_semtex_painted",
+    "count": 1
+  }
+}

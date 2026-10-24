@@ -27,7 +27,7 @@ public abstract class SourceCartEntity extends AbstractMinecart implements Legac
     @Override public boolean canCollideWith(Entity other){return !isPassengerOfSameVehicle(other);}
     public ItemStack getCartItem(){return SourceCartItem.stack(getBase(),kind);}
     @Override public ItemStack getPickResult(){return getCartItem();}
-    @Override protected Item getDropItem(){return SourceCartContent.CART.get();}
+    @Override protected Item getDropItem(){return getCartItem().getItem();}
     /** Official1.7.10 xl.a(DamageSource,float): named carts still drop when creative destroys them. */
     @Override public boolean hurt(DamageSource source,float amount){
         if(level().isClientSide||isRemoved())return true;if(isInvulnerableTo(source))return false;

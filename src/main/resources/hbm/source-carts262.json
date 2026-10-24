@@ -3,129 +3,363 @@
   "entries": [
     {
       "kind": "item",
-      "symbol": "cart",
-      "id": "hbm:cart",
-      "legacyRegistryId": "hbm:item.cart",
+      "symbol": "cart_empty_vanilla",
+      "id": "hbm:cart_empty_vanilla",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 0,
+      "sourceBaseOrdinal": 0,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2952
-      },
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_empty_wood",
+      "id": "hbm:cart_empty_wood",
       "originalClass": "ItemModMinecart",
-      "metadataValues": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "metadataNames": [
-        "empty",
-        "crate",
-        "destroyer",
-        "powder",
-        "semtex"
-      ],
-      "sourceCartBaseNBT": "cartBase",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 0,
+      "sourceBaseOrdinal": 1,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
       "sourceCreativeTab": "transport",
       "modernCreativeTab": "minecraft:tools_and_utilities",
-      "sourceVariants": [
-        {
-          "kind": "empty",
-          "metadata": 0,
-          "base": "wood",
-          "nbt": {
-            "cartBase": 1
-          }
-        },
-        {
-          "kind": "empty",
-          "metadata": 0,
-          "base": "steel",
-          "nbt": {
-            "cartBase": 2
-          }
-        },
-        {
-          "kind": "empty",
-          "metadata": 0,
-          "base": "painted",
-          "nbt": {
-            "cartBase": 3
-          }
-        },
-        {
-          "kind": "crate",
-          "metadata": 1,
-          "base": "vanilla",
-          "nbt": {
-            "cartBase": 0
-          }
-        },
-        {
-          "kind": "destroyer",
-          "metadata": 2,
-          "base": "steel",
-          "nbt": {
-            "cartBase": 2
-          }
-        },
-        {
-          "kind": "destroyer",
-          "metadata": 2,
-          "base": "painted",
-          "nbt": {
-            "cartBase": 3
-          }
-        },
-        {
-          "kind": "powder",
-          "metadata": 3,
-          "base": "wood",
-          "nbt": {
-            "cartBase": 1
-          }
-        },
-        {
-          "kind": "powder",
-          "metadata": 3,
-          "base": "steel",
-          "nbt": {
-            "cartBase": 2
-          }
-        },
-        {
-          "kind": "powder",
-          "metadata": 3,
-          "base": "painted",
-          "nbt": {
-            "cartBase": 3
-          }
-        },
-        {
-          "kind": "semtex",
-          "metadata": 4,
-          "base": "wood",
-          "nbt": {
-            "cartBase": 1
-          }
-        },
-        {
-          "kind": "semtex",
-          "metadata": 4,
-          "base": "steel",
-          "nbt": {
-            "cartBase": 2
-          }
-        },
-        {
-          "kind": "semtex",
-          "metadata": 4,
-          "base": "painted",
-          "nbt": {
-            "cartBase": 3
-          }
-        }
-      ]
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_empty_steel",
+      "id": "hbm:cart_empty_steel",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 0,
+      "sourceBaseOrdinal": 2,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_empty_painted",
+      "id": "hbm:cart_empty_painted",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 0,
+      "sourceBaseOrdinal": 3,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_crate_vanilla",
+      "id": "hbm:cart_crate_vanilla",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 1,
+      "sourceBaseOrdinal": 0,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_crate_wood",
+      "id": "hbm:cart_crate_wood",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 1,
+      "sourceBaseOrdinal": 1,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_crate_steel",
+      "id": "hbm:cart_crate_steel",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 1,
+      "sourceBaseOrdinal": 2,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_crate_painted",
+      "id": "hbm:cart_crate_painted",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 1,
+      "sourceBaseOrdinal": 3,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_destroyer_vanilla",
+      "id": "hbm:cart_destroyer_vanilla",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 2,
+      "sourceBaseOrdinal": 0,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_destroyer_wood",
+      "id": "hbm:cart_destroyer_wood",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 2,
+      "sourceBaseOrdinal": 1,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_destroyer_steel",
+      "id": "hbm:cart_destroyer_steel",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 2,
+      "sourceBaseOrdinal": 2,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_destroyer_painted",
+      "id": "hbm:cart_destroyer_painted",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 2,
+      "sourceBaseOrdinal": 3,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_powder_vanilla",
+      "id": "hbm:cart_powder_vanilla",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 3,
+      "sourceBaseOrdinal": 0,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_powder_wood",
+      "id": "hbm:cart_powder_wood",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 3,
+      "sourceBaseOrdinal": 1,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_powder_steel",
+      "id": "hbm:cart_powder_steel",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 3,
+      "sourceBaseOrdinal": 2,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_powder_painted",
+      "id": "hbm:cart_powder_painted",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 3,
+      "sourceBaseOrdinal": 3,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_semtex_vanilla",
+      "id": "hbm:cart_semtex_vanilla",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 4,
+      "sourceBaseOrdinal": 0,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": false,
+      "sourceCreativeTab": null,
+      "modernCreativeTab": null,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_semtex_wood",
+      "id": "hbm:cart_semtex_wood",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 4,
+      "sourceBaseOrdinal": 1,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_semtex_steel",
+      "id": "hbm:cart_semtex_steel",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 4,
+      "sourceBaseOrdinal": 2,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "cart_semtex_painted",
+      "id": "hbm:cart_semtex_painted",
+      "originalClass": "ItemModMinecart",
+      "sourceField": "ModItems.cart",
+      "sourceLegacyRegistryId": "hbm:item.cart",
+      "sourceOrdinal": 4,
+      "sourceBaseOrdinal": 3,
+      "sourceHasSubtypes": false,
+      "sourceCreativeVisible": true,
+      "sourceCreativeTab": "transport",
+      "modernCreativeTab": "minecraft:tools_and_utilities",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2952
+      }
     }
   ],
   "entities": [
@@ -197,6 +431,28 @@
     "Items/Slot entity inventory",
     "slotN crate item payload",
     "base entity data",
-    "cartBase item data"
+    "fixed20item IDs; cartBase remains source evidence only"
+  ],
+  "fixedItemIds": [
+    "hbm:cart_empty_vanilla",
+    "hbm:cart_empty_wood",
+    "hbm:cart_empty_steel",
+    "hbm:cart_empty_painted",
+    "hbm:cart_crate_vanilla",
+    "hbm:cart_crate_wood",
+    "hbm:cart_crate_steel",
+    "hbm:cart_crate_painted",
+    "hbm:cart_destroyer_vanilla",
+    "hbm:cart_destroyer_wood",
+    "hbm:cart_destroyer_steel",
+    "hbm:cart_destroyer_painted",
+    "hbm:cart_powder_vanilla",
+    "hbm:cart_powder_wood",
+    "hbm:cart_powder_steel",
+    "hbm:cart_powder_painted",
+    "hbm:cart_semtex_vanilla",
+    "hbm:cart_semtex_wood",
+    "hbm:cart_semtex_steel",
+    "hbm:cart_semtex_painted"
   ]
 }
