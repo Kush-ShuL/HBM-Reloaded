@@ -31,7 +31,7 @@ public final class ConserveCrateBlock extends Block {
         var result=new ArrayList<ItemStack>();int count=5+level.random.nextInt(4);
         for(int i=0;i<count;i++){
             int choice=level.random.nextInt(36);
-            if(choice<27)result.add(ConserveContent.CONSERVE.get().stack(ConserveFoodType.values()[choice]));
+            if(choice<27)result.add(ConserveContent.stack(ConserveFoodType.values()[choice]));
             else result.add(new ItemStack(HbmContent.item(choice<35?CANS.get(choice-27):"pudding")));
         }
         return result;

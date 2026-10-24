@@ -715,6 +715,942 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:bedrock_ore/base/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_roasted/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_roasted/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 21,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_roasted/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_roasted/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_roasted/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_roasted/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 18,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_washed/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 35,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_washed/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 37,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_washed/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 33,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_washed/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 32,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_washed/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 36,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/base_washed/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 34,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/crumbs/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 211,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/crumbs/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 213,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/crumbs/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 209,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/crumbs/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 208,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/crumbs/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 212,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/crumbs/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 210,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 51,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 53,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 49,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 48,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 52,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 50,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_first/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 179,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_first/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 181,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_first/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 177,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_first/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 176,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_first/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 180,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_first/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 178,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_norad/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 163,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_norad/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 165,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_norad/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 161,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_norad/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 160,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_norad/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 164,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_norad/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 162,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosolvent/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 131,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosolvent/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 133,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosolvent/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 129,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosolvent/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 128,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosolvent/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 132,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosolvent/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 130,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosulfuric/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 99,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosulfuric/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 101,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosulfuric/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 97,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosulfuric/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 96,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosulfuric/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 100,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_nosulfuric/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 98,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_rad/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 147,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_rad/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 149,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_rad/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 145,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_rad/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 144,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_rad/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 148,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_rad/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 146,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_roasted/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 67,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_roasted/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 69,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_roasted/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 65,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_roasted/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 64,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_roasted/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 68,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_roasted/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 66,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_second/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 195,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_second/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 197,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_second/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 193,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_second/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 192,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_second/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 196,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_second/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 194,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_solvent/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 115,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_solvent/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 117,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_solvent/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 113,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_solvent/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 112,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_solvent/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 116,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_solvent/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 114,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_sulfuric/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 83,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_sulfuric/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 85,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_sulfuric/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 81,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_sulfuric/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 80,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_sulfuric/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 84,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/primary_sulfuric/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 82,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_arc/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 387,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_arc/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 389,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_arc/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 385,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_arc/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 384,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_arc/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 388,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_arc/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 386,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_byproduct/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 355,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_byproduct/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 357,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_byproduct/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 353,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_byproduct/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 352,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_byproduct/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 356,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_byproduct/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 354,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_roasted/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 371,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_roasted/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 373,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_roasted/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 369,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_roasted/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 368,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_roasted/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 372,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_roasted/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 370,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_washed/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 403,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_washed/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 405,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_washed/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 401,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_washed/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 400,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_washed/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 404,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/rad_washed/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 402,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_arc/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 323,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_arc/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 325,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_arc/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 321,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_arc/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 320,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_arc/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 324,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_arc/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 322,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_byproduct/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 291,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_byproduct/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 293,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_byproduct/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 289,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_byproduct/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 288,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_byproduct/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 292,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_byproduct/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 290,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_roasted/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 307,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_roasted/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 309,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_roasted/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 305,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_roasted/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 304,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_roasted/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 308,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_roasted/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 306,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_washed/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 339,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_washed/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 341,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_washed/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 337,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_washed/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 336,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_washed/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 340,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/solvent_washed/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 338,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_arc/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 259,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_arc/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 261,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_arc/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 257,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_arc/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 256,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_arc/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 260,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_arc/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 258,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 227,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 229,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 225,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 224,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 228,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 226,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_roasted/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 243,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_roasted/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 245,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_roasted/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 241,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_roasted/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 240,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_roasted/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 244,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_roasted/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 242,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_washed/actinide",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 275,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_washed/crystalline",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 277,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_washed/heavy_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 273,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_washed/light_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 272,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_washed/non_metal",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 276,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:bedrock_ore/sulfuric_washed/rare_earth",
+      "sourceFamily": "ModItems.bedrock_ore",
+      "sourceMetadata": 274,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:block_coke_coal",
       "sourceFamily": "ModBlocks.block_coke",
       "sourceMetadata": 0,
@@ -790,6 +1726,168 @@
       "id": "hbm:briquette_wood",
       "sourceFamily": "ModItems.briquette",
       "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_asbestos",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_ass",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_bark",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 26,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_beef",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_bhole",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_cheese",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_chinese",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_diesel",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 23,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_fist",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 19,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_fried",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 21,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_hotdogs",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_kerosene",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 24,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_leftovers",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_milk",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_mystery",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_napalm",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 22,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_oil",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 18,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_pashtet",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_pizza",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_recursion",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 25,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_slime",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_spam",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 20,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_stew",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_tomato",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_tube",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_tuna",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:canned_yogurt",
+      "sourceFamily": "ModItems.canned_conserve",
+      "sourceMetadata": 15,
       "hasSubtypes": true
     },
     {
@@ -2119,6 +3217,450 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:ore_bedrock_asbestos",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_borax",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_chlorocalcite",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_copper",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_fluorite",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_gold",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_hematite",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_iron",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_malachite",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_neodymium",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_niobium",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_thorium",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_titanium",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_tungsten",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_bedrock_uranium",
+      "sourceFamily": "ModItems.ore_bedrock",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_aluminium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_bismuth",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_calcium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_copper",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_iron",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_lead",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_lithium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_polonium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_radium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_silicon",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_sulfur",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_technetium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_titanium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_byproduct_uranium",
+      "sourceFamily": "ModItems.ore_byproduct",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_asbestos",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_borax",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_chlorocalcite",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_copper",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_fluorite",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_gold",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_hematite",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_iron",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_malachite",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_neodymium",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_niobium",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_thorium",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_titanium",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_tungsten",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_centrifuged_uranium",
+      "sourceFamily": "ModItems.ore_centrifuged",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_asbestos",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_borax",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_chlorocalcite",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_copper",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_fluorite",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_gold",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_hematite",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_iron",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_malachite",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_neodymium",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_niobium",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_thorium",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_titanium",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_tungsten",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_cleaned_uranium",
+      "sourceFamily": "ModItems.ore_cleaned",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_asbestos",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_borax",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_chlorocalcite",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_copper",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_fluorite",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_gold",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_hematite",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_iron",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_malachite",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_neodymium",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_niobium",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_thorium",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_titanium",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_tungsten",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_deepcleaned_uranium",
+      "sourceFamily": "ModItems.ore_deepcleaned",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:ore_enriched_asbestos",
       "sourceFamily": "ModItems.ore_enriched",
       "sourceMetadata": 3,
@@ -2205,6 +3747,456 @@
     {
       "id": "hbm:ore_enriched_uranium",
       "sourceFamily": "ModItems.ore_enriched",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_asbestos",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_borax",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_chlorocalcite",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_copper",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_fluorite",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_gold",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_hematite",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_iron",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_malachite",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_neodymium",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_niobium",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_thorium",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_titanium",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_tungsten",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrated_uranium",
+      "sourceFamily": "ModItems.ore_nitrated",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_asbestos",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_borax",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_chlorocalcite",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_copper",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_fluorite",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_gold",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_hematite",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_iron",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_malachite",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_neodymium",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_niobium",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_thorium",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_titanium",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_tungsten",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_nitrocrystalline_uranium",
+      "sourceFamily": "ModItems.ore_nitrocrystalline",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_asbestos",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_borax",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_chlorocalcite",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_copper",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_fluorite",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_gold",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_hematite",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_iron",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_malachite",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_neodymium",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_niobium",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_thorium",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_titanium",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_tungsten",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_purified_uranium",
+      "sourceFamily": "ModItems.ore_purified",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_asbestos",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_borax",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_chlorocalcite",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_copper",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_fluorite",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_gold",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_hematite",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_iron",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_malachite",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_neodymium",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_niobium",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_thorium",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_titanium",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_tungsten",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_seared_uranium",
+      "sourceFamily": "ModItems.ore_seared",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_asbestos",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_borax",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_chlorocalcite",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_copper",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_fluorite",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_gold",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_hematite",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_iron",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_malachite",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_neodymium",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_niobium",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_thorium",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_titanium",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_tungsten",
+      "sourceFamily": "ModItems.ore_separated",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:ore_separated_uranium",
+      "sourceFamily": "ModItems.ore_separated",
       "sourceMetadata": 8,
       "hasSubtypes": true
     },

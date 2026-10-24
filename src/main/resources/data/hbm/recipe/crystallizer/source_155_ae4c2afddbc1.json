@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.155.183",
+  "duration": 200,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:bedrock_ore/primary/rare_earth",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "SOLVENT",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:bedrock_ore/primary_solvent/rare_earth",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:bedrock_ore/primary/rare_earth",
+  "order": 183
+}

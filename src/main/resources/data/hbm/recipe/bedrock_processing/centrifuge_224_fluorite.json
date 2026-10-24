@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:legacy/ore_bedrock",
-    "components": {
-      "hbm:legacy_metadata": 11
-    },
-    "strict": false
+    "item": "hbm:ore_bedrock_fluorite"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 11
-      }
+      "id": "hbm:ore_centrifuged_fluorite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 11
-      }
+      "id": "hbm:ore_centrifuged_fluorite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 11
-      }
+      "id": "hbm:ore_centrifuged_fluorite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 11
-      }
+      "id": "hbm:ore_centrifuged_fluorite",
+      "count": 1
     }
   ]
 }

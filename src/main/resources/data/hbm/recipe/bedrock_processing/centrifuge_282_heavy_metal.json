@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 177
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary_first/heavy_metal"
   },
   "exact_input": true,
   "results": [
@@ -23,11 +18,8 @@
       "count": 9
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 209
-      }
+      "id": "hbm:bedrock_ore/crumbs/heavy_metal",
+      "count": 1
     }
   ]
 }

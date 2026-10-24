@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 400
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/rad_washed/light_metal"
   },
   "exact_input": true,
   "results": [
@@ -23,11 +18,8 @@
       "count": 6
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 208
-      }
+      "id": "hbm:bedrock_ore/crumbs/light_metal",
+      "count": 1
     }
   ]
 }

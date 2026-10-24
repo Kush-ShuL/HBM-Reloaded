@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_cleaned",
-    "components": {
-      "hbm:legacy_metadata": 8
-    },
-    "strict": false
+    "item": "hbm:ore_cleaned_uranium"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 8
-      }
+      "id": "hbm:ore_separated_uranium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 8
-      }
+      "id": "hbm:ore_separated_uranium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 8
-      }
+      "id": "hbm:ore_separated_uranium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 8
-      }
+      "id": "hbm:ore_separated_uranium",
+      "count": 1
     }
   ]
 }

@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_nitrated",
-    "components": {
-      "hbm:legacy_metadata": 13
-    },
-    "strict": false
+    "item": "hbm:ore_nitrated_malachite"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 13
-      }
+      "id": "hbm:ore_nitrocrystalline_malachite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 13
-      }
+      "id": "hbm:ore_nitrocrystalline_malachite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 7
-      }
+      "id": "hbm:ore_byproduct_sulfur",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 7
-      }
+      "id": "hbm:ore_byproduct_sulfur",
+      "count": 1
     }
   ]
 }

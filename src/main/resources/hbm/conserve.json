@@ -168,112 +168,85 @@
     "randomRange": 4,
     "equalWeightContents": [
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 0
+        "item": "hbm:canned_beef"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 1
+        "item": "hbm:canned_tuna"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 2
+        "item": "hbm:canned_mystery"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 3
+        "item": "hbm:canned_pashtet"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 4
+        "item": "hbm:canned_cheese"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 5
+        "item": "hbm:canned_slime"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 6
+        "item": "hbm:canned_milk"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 7
+        "item": "hbm:canned_ass"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 8
+        "item": "hbm:canned_pizza"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 9
+        "item": "hbm:canned_tube"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 10
+        "item": "hbm:canned_tomato"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 11
+        "item": "hbm:canned_asbestos"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 12
+        "item": "hbm:canned_bhole"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 13
+        "item": "hbm:canned_hotdogs"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 14
+        "item": "hbm:canned_leftovers"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 15
+        "item": "hbm:canned_yogurt"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 16
+        "item": "hbm:canned_stew"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 17
+        "item": "hbm:canned_chinese"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 18
+        "item": "hbm:canned_oil"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 19
+        "item": "hbm:canned_fist"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 20
+        "item": "hbm:canned_spam"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 21
+        "item": "hbm:canned_fried"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 22
+        "item": "hbm:canned_napalm"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 23
+        "item": "hbm:canned_diesel"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 24
+        "item": "hbm:canned_kerosene"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 25
+        "item": "hbm:canned_recursion"
       },
       {
-        "item": "hbm:canned_conserve",
-        "metadata": 26
+        "item": "hbm:canned_bark"
       },
       {
         "item": "hbm:can_smart"
@@ -303,5 +276,547 @@
         "item": "hbm:pudding"
       }
     ]
-  }
+  },
+  "entries": [
+    {
+      "kind": "item",
+      "symbol": "canned_beef",
+      "id": "hbm:canned_beef",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 8,
+      "saturation": 0.75,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_tuna",
+      "id": "hbm:canned_tuna",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 4,
+      "saturation": 0.75,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_mystery",
+      "id": "hbm:canned_mystery",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 0.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_pashtet",
+      "id": "hbm:canned_pashtet",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 4,
+      "saturation": 0.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_cheese",
+      "id": "hbm:canned_cheese",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 3,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_slime",
+      "id": "hbm:canned_slime",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 15,
+      "saturation": 5.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_milk",
+      "id": "hbm:canned_milk",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 5,
+      "saturation": 0.25,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_ass",
+      "id": "hbm:canned_ass",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 0.75,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_pizza",
+      "id": "hbm:canned_pizza",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 8,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 8,
+      "saturation": 75.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_tube",
+      "id": "hbm:canned_tube",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 9,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 2,
+      "saturation": 0.25,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_tomato",
+      "id": "hbm:canned_tomato",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 10,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 4,
+      "saturation": 0.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_asbestos",
+      "id": "hbm:canned_asbestos",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 11,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 7,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_bhole",
+      "id": "hbm:canned_bhole",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 12,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 10,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_hotdogs",
+      "id": "hbm:canned_hotdogs",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 13,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 5,
+      "saturation": 0.75,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_leftovers",
+      "id": "hbm:canned_leftovers",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 14,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 1,
+      "saturation": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_yogurt",
+      "id": "hbm:canned_yogurt",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 15,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 3,
+      "saturation": 0.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_stew",
+      "id": "hbm:canned_stew",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 16,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 5,
+      "saturation": 0.5,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_chinese",
+      "id": "hbm:canned_chinese",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 17,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 0.1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_oil",
+      "id": "hbm:canned_oil",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 18,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 3,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_fist",
+      "id": "hbm:canned_fist",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 19,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 0.75,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_spam",
+      "id": "hbm:canned_spam",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 20,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 8,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_fried",
+      "id": "hbm:canned_fried",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 21,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 10,
+      "saturation": 0.75,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_napalm",
+      "id": "hbm:canned_napalm",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 22,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_diesel",
+      "id": "hbm:canned_diesel",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 23,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_kerosene",
+      "id": "hbm:canned_kerosene",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 24,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 6,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_recursion",
+      "id": "hbm:canned_recursion",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 25,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 1,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "canned_bark",
+      "id": "hbm:canned_bark",
+      "module": "conserve",
+      "originalClass": "ItemConserve",
+      "sourceClass": "com.hbm.items.food.ItemConserve",
+      "sourceField": "ModItems.canned_conserve",
+      "sourceLegacyRegistryId": "hbm:item.canned_conserve",
+      "sourceOrdinal": 26,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "stackSize": 64,
+      "foodLevel": 2,
+      "saturation": 1.0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2948
+      }
+    }
+  ]
 }

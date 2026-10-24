@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.152.171",
+  "duration": 200,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:bedrock_ore/primary/rare_earth",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "SULFURIC_ACID",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:bedrock_ore/primary_sulfuric/rare_earth",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:bedrock_ore/primary/rare_earth",
+  "order": 171
+}

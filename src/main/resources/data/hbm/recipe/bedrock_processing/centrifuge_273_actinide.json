@@ -1,28 +1,17 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 83
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary_sulfuric/actinide"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 99
-      }
+      "id": "hbm:bedrock_ore/primary_nosulfuric/actinide",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 227
-      }
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/actinide",
+      "count": 2
     }
   ]
 }

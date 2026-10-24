@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 148
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary_rad/non_metal"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 164
-      }
+      "id": "hbm:bedrock_ore/primary_norad/non_metal",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 228
-      }
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/non_metal",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 292
-      }
+      "id": "hbm:bedrock_ore/solvent_byproduct/non_metal",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 356
-      }
+      "id": "hbm:bedrock_ore/rad_byproduct/non_metal",
+      "count": 2
     }
   ]
 }

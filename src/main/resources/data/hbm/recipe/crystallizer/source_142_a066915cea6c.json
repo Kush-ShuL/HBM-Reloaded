@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.142.131",
+  "duration": 200,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:ore_nitrocrystalline_niobium",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "SOLVENT",
+      "amount": 500,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:ore_deepcleaned_niobium",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:ore_nitrocrystalline_niobium",
+  "order": 131
+}

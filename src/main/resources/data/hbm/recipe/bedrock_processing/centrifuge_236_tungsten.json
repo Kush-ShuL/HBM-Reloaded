@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_purified",
-    "components": {
-      "hbm:legacy_metadata": 6
-    },
-    "strict": false
+    "item": "hbm:ore_purified_tungsten"
   },
   "exact_input": true,
   "results": [

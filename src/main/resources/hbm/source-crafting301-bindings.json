@@ -3504,8 +3504,8 @@
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_iron_e0dd4611e0ad",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_iron_e0dd4611e0ad.json",
+          "id": "hbm:crafting/hbm_powder_iron_3fddd2a8d91f",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_iron_3fddd2a8d91f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 90,
           "variantContext": {
@@ -3533,19 +3533,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_iron"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_copper_187796d072fd",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_copper_187796d072fd.json",
+          "id": "hbm:crafting/hbm_powder_copper_f2766a38befc",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_copper_f2766a38befc.json",
           "status": "exact-native-source-binding-staged",
           "variant": 91,
           "variantContext": {
@@ -3573,19 +3568,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_copper"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_lithium_6fd3723ba6a8",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_lithium_6fd3723ba6a8.json",
+          "id": "hbm:crafting/hbm_powder_lithium_69539fd28c0e",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_lithium_69539fd28c0e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 92,
           "variantContext": {
@@ -3613,19 +3603,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_lithium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nugget_silicon_fc842f6a8b59",
-          "resource": "data/hbm/recipe/crafting/hbm_nugget_silicon_fc842f6a8b59.json",
+          "id": "hbm:crafting/hbm_nugget_silicon_c7b0d1b439a1",
+          "resource": "data/hbm/recipe/crafting/hbm_nugget_silicon_c7b0d1b439a1.json",
           "status": "exact-native-source-binding-staged",
           "variant": 93,
           "variantContext": {
@@ -3653,19 +3638,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_silicon"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_lead_a67f72b671e4",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_lead_a67f72b671e4.json",
+          "id": "hbm:crafting/hbm_powder_lead_63509cf657c7",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_lead_63509cf657c7.json",
           "status": "exact-native-source-binding-staged",
           "variant": 94,
           "variantContext": {
@@ -3693,19 +3673,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_lead"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_titanium_d02166392821",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_titanium_d02166392821.json",
+          "id": "hbm:crafting/hbm_powder_titanium_86226195a0e9",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_titanium_86226195a0e9.json",
           "status": "exact-native-source-binding-staged",
           "variant": 95,
           "variantContext": {
@@ -3733,19 +3708,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_titanium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_aluminium_08eb0bea668a",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_aluminium_08eb0bea668a.json",
+          "id": "hbm:crafting/hbm_powder_aluminium_0651a345f7d5",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_aluminium_0651a345f7d5.json",
           "status": "exact-native-source-binding-staged",
           "variant": 96,
           "variantContext": {
@@ -3773,19 +3743,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_aluminium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_sulfur_a228cfcace6f",
-          "resource": "data/hbm/recipe/crafting/hbm_sulfur_a228cfcace6f.json",
+          "id": "hbm:crafting/hbm_sulfur_4d5914858f59",
+          "resource": "data/hbm/recipe/crafting/hbm_sulfur_4d5914858f59.json",
           "status": "exact-native-source-binding-staged",
           "variant": 97,
           "variantContext": {
@@ -3813,19 +3778,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_sulfur"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_calcium_4a194300d592",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_calcium_4a194300d592.json",
+          "id": "hbm:crafting/hbm_powder_calcium_d4ac703d0a13",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_calcium_d4ac703d0a13.json",
           "status": "exact-native-source-binding-staged",
           "variant": 98,
           "variantContext": {
@@ -3853,19 +3813,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 8
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_calcium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_bismuth_aceada76e1bd",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_bismuth_aceada76e1bd.json",
+          "id": "hbm:crafting/hbm_powder_bismuth_a01e837fe0d3",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_bismuth_a01e837fe0d3.json",
           "status": "exact-native-source-binding-staged",
           "variant": 99,
           "variantContext": {
@@ -3893,19 +3848,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 9
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_bismuth"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_ra226_fee293ec89d9",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_ra226_fee293ec89d9.json",
+          "id": "hbm:crafting/hbm_powder_ra226_ca9cb424229f",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_ra226_ca9cb424229f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 100,
           "variantContext": {
@@ -3933,19 +3883,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 10
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_radium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_billet_technetium_df7ee3d9094a",
-          "resource": "data/hbm/recipe/crafting/hbm_billet_technetium_df7ee3d9094a.json",
+          "id": "hbm:crafting/hbm_billet_technetium_4e41288b8d86",
+          "resource": "data/hbm/recipe/crafting/hbm_billet_technetium_4e41288b8d86.json",
           "status": "exact-native-source-binding-staged",
           "variant": 101,
           "variantContext": {
@@ -3973,19 +3918,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 11
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_technetium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_billet_polonium_f0c6855f1fa2",
-          "resource": "data/hbm/recipe/crafting/hbm_billet_polonium_f0c6855f1fa2.json",
+          "id": "hbm:crafting/hbm_billet_polonium_43e68321f822",
+          "resource": "data/hbm/recipe/crafting/hbm_billet_polonium_43e68321f822.json",
           "status": "exact-native-source-binding-staged",
           "variant": 102,
           "variantContext": {
@@ -4013,19 +3953,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 12
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_polonium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_uranium_a85d1f73eeaf",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_uranium_a85d1f73eeaf.json",
+          "id": "hbm:crafting/hbm_powder_uranium_2d07c4077489",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_uranium_2d07c4077489.json",
           "status": "exact-native-source-binding-staged",
           "variant": 103,
           "variantContext": {
@@ -4053,12 +3988,7 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 13
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_uranium"
               }
             }
           }
@@ -22541,8 +22471,8 @@
         "new ItemStack(ModItems.powder_iron)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_IRON) }"
       ],
-      "id": "hbm:crafting/hbm_powder_iron_e0dd4611e0ad",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_iron_e0dd4611e0ad.json",
+      "id": "hbm:crafting/hbm_powder_iron_3fddd2a8d91f",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_iron_3fddd2a8d91f.json",
       "status": "exact-native-source-binding-staged",
       "variant": 90,
       "variantContext": {
@@ -22570,12 +22500,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_iron"
           }
         }
       }
@@ -22589,8 +22514,8 @@
         "new ItemStack(ModItems.powder_copper)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_COPPER) }"
       ],
-      "id": "hbm:crafting/hbm_powder_copper_187796d072fd",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_copper_187796d072fd.json",
+      "id": "hbm:crafting/hbm_powder_copper_f2766a38befc",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_copper_f2766a38befc.json",
       "status": "exact-native-source-binding-staged",
       "variant": 91,
       "variantContext": {
@@ -22618,12 +22543,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_copper"
           }
         }
       }
@@ -22637,8 +22557,8 @@
         "new ItemStack(ModItems.powder_lithium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_LITHIUM) }"
       ],
-      "id": "hbm:crafting/hbm_powder_lithium_6fd3723ba6a8",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_lithium_6fd3723ba6a8.json",
+      "id": "hbm:crafting/hbm_powder_lithium_69539fd28c0e",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_lithium_69539fd28c0e.json",
       "status": "exact-native-source-binding-staged",
       "variant": 92,
       "variantContext": {
@@ -22666,12 +22586,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_lithium"
           }
         }
       }
@@ -22685,8 +22600,8 @@
         "new ItemStack(ModItems.nugget_silicon, 3)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_SILICON) }"
       ],
-      "id": "hbm:crafting/hbm_nugget_silicon_fc842f6a8b59",
-      "resource": "data/hbm/recipe/crafting/hbm_nugget_silicon_fc842f6a8b59.json",
+      "id": "hbm:crafting/hbm_nugget_silicon_c7b0d1b439a1",
+      "resource": "data/hbm/recipe/crafting/hbm_nugget_silicon_c7b0d1b439a1.json",
       "status": "exact-native-source-binding-staged",
       "variant": 93,
       "variantContext": {
@@ -22714,12 +22629,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_silicon"
           }
         }
       }
@@ -22733,8 +22643,8 @@
         "new ItemStack(ModItems.powder_lead)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_LEAD) }"
       ],
-      "id": "hbm:crafting/hbm_powder_lead_a67f72b671e4",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_lead_a67f72b671e4.json",
+      "id": "hbm:crafting/hbm_powder_lead_63509cf657c7",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_lead_63509cf657c7.json",
       "status": "exact-native-source-binding-staged",
       "variant": 94,
       "variantContext": {
@@ -22762,12 +22672,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_lead"
           }
         }
       }
@@ -22781,8 +22686,8 @@
         "new ItemStack(ModItems.powder_titanium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_TITANIUM) }"
       ],
-      "id": "hbm:crafting/hbm_powder_titanium_d02166392821",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_titanium_d02166392821.json",
+      "id": "hbm:crafting/hbm_powder_titanium_86226195a0e9",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_titanium_86226195a0e9.json",
       "status": "exact-native-source-binding-staged",
       "variant": 95,
       "variantContext": {
@@ -22810,12 +22715,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_titanium"
           }
         }
       }
@@ -22829,8 +22729,8 @@
         "new ItemStack(ModItems.powder_aluminium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_ALUMINIUM) }"
       ],
-      "id": "hbm:crafting/hbm_powder_aluminium_08eb0bea668a",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_aluminium_08eb0bea668a.json",
+      "id": "hbm:crafting/hbm_powder_aluminium_0651a345f7d5",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_aluminium_0651a345f7d5.json",
       "status": "exact-native-source-binding-staged",
       "variant": 96,
       "variantContext": {
@@ -22858,12 +22758,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_aluminium"
           }
         }
       }
@@ -22877,8 +22772,8 @@
         "new ItemStack(ModItems.sulfur)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_SULFUR) }"
       ],
-      "id": "hbm:crafting/hbm_sulfur_a228cfcace6f",
-      "resource": "data/hbm/recipe/crafting/hbm_sulfur_a228cfcace6f.json",
+      "id": "hbm:crafting/hbm_sulfur_4d5914858f59",
+      "resource": "data/hbm/recipe/crafting/hbm_sulfur_4d5914858f59.json",
       "status": "exact-native-source-binding-staged",
       "variant": 97,
       "variantContext": {
@@ -22906,12 +22801,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_sulfur"
           }
         }
       }
@@ -22925,8 +22815,8 @@
         "new ItemStack(ModItems.powder_calcium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_CALCIUM) }"
       ],
-      "id": "hbm:crafting/hbm_powder_calcium_4a194300d592",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_calcium_4a194300d592.json",
+      "id": "hbm:crafting/hbm_powder_calcium_d4ac703d0a13",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_calcium_d4ac703d0a13.json",
       "status": "exact-native-source-binding-staged",
       "variant": 98,
       "variantContext": {
@@ -22954,12 +22844,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 8
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_calcium"
           }
         }
       }
@@ -22973,8 +22858,8 @@
         "new ItemStack(ModItems.powder_bismuth)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_BISMUTH) }"
       ],
-      "id": "hbm:crafting/hbm_powder_bismuth_aceada76e1bd",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_bismuth_aceada76e1bd.json",
+      "id": "hbm:crafting/hbm_powder_bismuth_a01e837fe0d3",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_bismuth_a01e837fe0d3.json",
       "status": "exact-native-source-binding-staged",
       "variant": 99,
       "variantContext": {
@@ -23002,12 +22887,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 9
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_bismuth"
           }
         }
       }
@@ -23021,8 +22901,8 @@
         "new ItemStack(ModItems.powder_ra226)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_RADIUM) }"
       ],
-      "id": "hbm:crafting/hbm_powder_ra226_fee293ec89d9",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_ra226_fee293ec89d9.json",
+      "id": "hbm:crafting/hbm_powder_ra226_ca9cb424229f",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_ra226_ca9cb424229f.json",
       "status": "exact-native-source-binding-staged",
       "variant": 100,
       "variantContext": {
@@ -23050,12 +22930,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 10
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_radium"
           }
         }
       }
@@ -23069,8 +22944,8 @@
         "new ItemStack(ModItems.billet_technetium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_TECHNETIUM) }"
       ],
-      "id": "hbm:crafting/hbm_billet_technetium_df7ee3d9094a",
-      "resource": "data/hbm/recipe/crafting/hbm_billet_technetium_df7ee3d9094a.json",
+      "id": "hbm:crafting/hbm_billet_technetium_4e41288b8d86",
+      "resource": "data/hbm/recipe/crafting/hbm_billet_technetium_4e41288b8d86.json",
       "status": "exact-native-source-binding-staged",
       "variant": 101,
       "variantContext": {
@@ -23098,12 +22973,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 11
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_technetium"
           }
         }
       }
@@ -23117,8 +22987,8 @@
         "new ItemStack(ModItems.billet_polonium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_POLONIUM) }"
       ],
-      "id": "hbm:crafting/hbm_billet_polonium_f0c6855f1fa2",
-      "resource": "data/hbm/recipe/crafting/hbm_billet_polonium_f0c6855f1fa2.json",
+      "id": "hbm:crafting/hbm_billet_polonium_43e68321f822",
+      "resource": "data/hbm/recipe/crafting/hbm_billet_polonium_43e68321f822.json",
       "status": "exact-native-source-binding-staged",
       "variant": 102,
       "variantContext": {
@@ -23146,12 +23016,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 12
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_polonium"
           }
         }
       }
@@ -23165,8 +23030,8 @@
         "new ItemStack(ModItems.powder_uranium)",
         "new Object[] { \"###\", \"###\", \"###\", '#', DictFrame.fromOne(ModItems.ore_byproduct, EnumByproduct.B_URANIUM) }"
       ],
-      "id": "hbm:crafting/hbm_powder_uranium_a85d1f73eeaf",
-      "resource": "data/hbm/recipe/crafting/hbm_powder_uranium_a85d1f73eeaf.json",
+      "id": "hbm:crafting/hbm_powder_uranium_2d07c4077489",
+      "resource": "data/hbm/recipe/crafting/hbm_powder_uranium_2d07c4077489.json",
       "status": "exact-native-source-binding-staged",
       "variant": 103,
       "variantContext": {
@@ -23194,12 +23059,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:ore_byproduct",
-            "components": {
-              "hbm:legacy_metadata": 13
-            },
-            "strict": false
+            "item": "hbm:ore_byproduct_uranium"
           }
         }
       }
@@ -43586,8 +43446,8 @@
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_iron_e0dd4611e0ad",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_iron_e0dd4611e0ad.json",
+          "id": "hbm:crafting/hbm_powder_iron_3fddd2a8d91f",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_iron_3fddd2a8d91f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 90,
           "variantContext": {
@@ -43615,19 +43475,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_iron"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_copper_187796d072fd",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_copper_187796d072fd.json",
+          "id": "hbm:crafting/hbm_powder_copper_f2766a38befc",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_copper_f2766a38befc.json",
           "status": "exact-native-source-binding-staged",
           "variant": 91,
           "variantContext": {
@@ -43655,19 +43510,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_copper"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_lithium_6fd3723ba6a8",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_lithium_6fd3723ba6a8.json",
+          "id": "hbm:crafting/hbm_powder_lithium_69539fd28c0e",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_lithium_69539fd28c0e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 92,
           "variantContext": {
@@ -43695,19 +43545,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_lithium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nugget_silicon_fc842f6a8b59",
-          "resource": "data/hbm/recipe/crafting/hbm_nugget_silicon_fc842f6a8b59.json",
+          "id": "hbm:crafting/hbm_nugget_silicon_c7b0d1b439a1",
+          "resource": "data/hbm/recipe/crafting/hbm_nugget_silicon_c7b0d1b439a1.json",
           "status": "exact-native-source-binding-staged",
           "variant": 93,
           "variantContext": {
@@ -43735,19 +43580,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_silicon"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_lead_a67f72b671e4",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_lead_a67f72b671e4.json",
+          "id": "hbm:crafting/hbm_powder_lead_63509cf657c7",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_lead_63509cf657c7.json",
           "status": "exact-native-source-binding-staged",
           "variant": 94,
           "variantContext": {
@@ -43775,19 +43615,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_lead"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_titanium_d02166392821",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_titanium_d02166392821.json",
+          "id": "hbm:crafting/hbm_powder_titanium_86226195a0e9",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_titanium_86226195a0e9.json",
           "status": "exact-native-source-binding-staged",
           "variant": 95,
           "variantContext": {
@@ -43815,19 +43650,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_titanium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_aluminium_08eb0bea668a",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_aluminium_08eb0bea668a.json",
+          "id": "hbm:crafting/hbm_powder_aluminium_0651a345f7d5",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_aluminium_0651a345f7d5.json",
           "status": "exact-native-source-binding-staged",
           "variant": 96,
           "variantContext": {
@@ -43855,19 +43685,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_aluminium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_sulfur_a228cfcace6f",
-          "resource": "data/hbm/recipe/crafting/hbm_sulfur_a228cfcace6f.json",
+          "id": "hbm:crafting/hbm_sulfur_4d5914858f59",
+          "resource": "data/hbm/recipe/crafting/hbm_sulfur_4d5914858f59.json",
           "status": "exact-native-source-binding-staged",
           "variant": 97,
           "variantContext": {
@@ -43895,19 +43720,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_sulfur"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_calcium_4a194300d592",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_calcium_4a194300d592.json",
+          "id": "hbm:crafting/hbm_powder_calcium_d4ac703d0a13",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_calcium_d4ac703d0a13.json",
           "status": "exact-native-source-binding-staged",
           "variant": 98,
           "variantContext": {
@@ -43935,19 +43755,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 8
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_calcium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_bismuth_aceada76e1bd",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_bismuth_aceada76e1bd.json",
+          "id": "hbm:crafting/hbm_powder_bismuth_a01e837fe0d3",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_bismuth_a01e837fe0d3.json",
           "status": "exact-native-source-binding-staged",
           "variant": 99,
           "variantContext": {
@@ -43975,19 +43790,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 9
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_bismuth"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_ra226_fee293ec89d9",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_ra226_fee293ec89d9.json",
+          "id": "hbm:crafting/hbm_powder_ra226_ca9cb424229f",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_ra226_ca9cb424229f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 100,
           "variantContext": {
@@ -44015,19 +43825,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 10
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_radium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_billet_technetium_df7ee3d9094a",
-          "resource": "data/hbm/recipe/crafting/hbm_billet_technetium_df7ee3d9094a.json",
+          "id": "hbm:crafting/hbm_billet_technetium_4e41288b8d86",
+          "resource": "data/hbm/recipe/crafting/hbm_billet_technetium_4e41288b8d86.json",
           "status": "exact-native-source-binding-staged",
           "variant": 101,
           "variantContext": {
@@ -44055,19 +43860,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 11
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_technetium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_billet_polonium_f0c6855f1fa2",
-          "resource": "data/hbm/recipe/crafting/hbm_billet_polonium_f0c6855f1fa2.json",
+          "id": "hbm:crafting/hbm_billet_polonium_43e68321f822",
+          "resource": "data/hbm/recipe/crafting/hbm_billet_polonium_43e68321f822.json",
           "status": "exact-native-source-binding-staged",
           "variant": 102,
           "variantContext": {
@@ -44095,19 +43895,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 12
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_polonium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_powder_uranium_a85d1f73eeaf",
-          "resource": "data/hbm/recipe/crafting/hbm_powder_uranium_a85d1f73eeaf.json",
+          "id": "hbm:crafting/hbm_powder_uranium_2d07c4077489",
+          "resource": "data/hbm/recipe/crafting/hbm_powder_uranium_2d07c4077489.json",
           "status": "exact-native-source-binding-staged",
           "variant": 103,
           "variantContext": {
@@ -44135,12 +43930,7 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:ore_byproduct",
-                "components": {
-                  "hbm:legacy_metadata": 13
-                },
-                "strict": false
+                "item": "hbm:ore_byproduct_uranium"
               }
             }
           }

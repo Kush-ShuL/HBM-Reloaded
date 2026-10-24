@@ -237,87 +237,87 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_byproduct/light_metal",
         1,
-        224
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/light_metal",
         2,
-        256
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_roasted/light_metal",
         1,
-        240
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/light_metal",
         4,
-        256
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_byproduct/light_metal",
         1,
-        288
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/light_metal",
         2,
-        320
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_roasted/light_metal",
         1,
-        304
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/light_metal",
         4,
-        320
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_byproduct/light_metal",
         1,
-        352
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/light_metal",
         2,
-        384
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_roasted/light_metal",
         1,
-        368
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/light_metal",
         4,
-        384
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/light_metal",
         1,
-        176
+        0
       ],
       "fluid": [
         [
@@ -333,9 +333,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/light_metal",
         1,
-        192
+        0
       ],
       "fluid": [
         [
@@ -351,9 +351,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/light_metal",
         1,
-        208
+        0
       ],
       "fluid": [
         [
@@ -369,17 +369,17 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_washed/light_metal",
         1,
-        272
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_washed/light_metal",
         1,
-        336
+        0
       ],
       "fluid": [
         [
@@ -395,9 +395,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_washed/light_metal",
         1,
-        400
+        0
       ],
       "fluid": [
         [
@@ -413,87 +413,87 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_byproduct/heavy_metal",
         1,
-        225
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/heavy_metal",
         2,
-        257
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_roasted/heavy_metal",
         1,
-        241
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/heavy_metal",
         4,
-        257
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_byproduct/heavy_metal",
         1,
-        289
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/heavy_metal",
         2,
-        321
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_roasted/heavy_metal",
         1,
-        305
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/heavy_metal",
         4,
-        321
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_byproduct/heavy_metal",
         1,
-        353
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/heavy_metal",
         2,
-        385
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_roasted/heavy_metal",
         1,
-        369
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/heavy_metal",
         4,
-        385
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/heavy_metal",
         1,
-        177
+        0
       ],
       "fluid": [
         [
@@ -509,9 +509,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/heavy_metal",
         1,
-        193
+        0
       ],
       "fluid": [
         [
@@ -527,9 +527,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/heavy_metal",
         1,
-        209
+        0
       ],
       "fluid": [
         [
@@ -545,9 +545,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_washed/heavy_metal",
         1,
-        273
+        0
       ],
       "fluid": [
         [
@@ -567,9 +567,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_washed/heavy_metal",
         1,
-        337
+        0
       ],
       "fluid": [
         [
@@ -589,9 +589,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_washed/heavy_metal",
         1,
-        401
+        0
       ],
       "fluid": [
         [
@@ -611,87 +611,87 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_byproduct/rare_earth",
         1,
-        226
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/rare_earth",
         2,
-        258
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_roasted/rare_earth",
         1,
-        242
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/rare_earth",
         4,
-        258
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_byproduct/rare_earth",
         1,
-        290
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/rare_earth",
         2,
-        322
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_roasted/rare_earth",
         1,
-        306
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/rare_earth",
         4,
-        322
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_byproduct/rare_earth",
         1,
-        354
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/rare_earth",
         2,
-        386
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_roasted/rare_earth",
         1,
-        370
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/rare_earth",
         4,
-        386
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/rare_earth",
         1,
-        178
+        0
       ],
       "fluid": [
         [
@@ -703,9 +703,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/rare_earth",
         1,
-        194
+        0
       ],
       "fluid": [
         [
@@ -717,9 +717,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/rare_earth",
         1,
-        210
+        0
       ],
       "fluid": [
         [
@@ -731,9 +731,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_washed/rare_earth",
         1,
-        274
+        0
       ],
       "fluid": [
         [
@@ -753,9 +753,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_washed/rare_earth",
         1,
-        338
+        0
       ],
       "fluid": [
         [
@@ -775,9 +775,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_washed/rare_earth",
         1,
-        402
+        0
       ],
       "fluid": [
         [
@@ -797,87 +797,87 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_byproduct/actinide",
         1,
-        227
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/actinide",
         2,
-        259
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_roasted/actinide",
         1,
-        243
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/actinide",
         4,
-        259
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_byproduct/actinide",
         1,
-        291
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/actinide",
         2,
-        323
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_roasted/actinide",
         1,
-        307
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/actinide",
         4,
-        323
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_byproduct/actinide",
         1,
-        355
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/actinide",
         2,
-        387
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_roasted/actinide",
         1,
-        371
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/actinide",
         4,
-        387
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/actinide",
         1,
-        179
+        0
       ],
       "fluid": [
         [
@@ -893,9 +893,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/actinide",
         1,
-        195
+        0
       ],
       "fluid": [
         [
@@ -911,9 +911,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/actinide",
         1,
-        211
+        0
       ],
       "fluid": [
         [
@@ -929,9 +929,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_washed/actinide",
         1,
-        275
+        0
       ],
       "fluid": [
         [
@@ -951,9 +951,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_washed/actinide",
         1,
-        339
+        0
       ],
       "fluid": [
         [
@@ -973,9 +973,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_washed/actinide",
         1,
-        403
+        0
       ],
       "fluid": [
         [
@@ -995,127 +995,127 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_byproduct/non_metal",
         1,
-        228
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/non_metal",
         2,
-        260
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_roasted/non_metal",
         1,
-        244
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/non_metal",
         4,
-        260
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_byproduct/non_metal",
         1,
-        292
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/non_metal",
         2,
-        324
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_roasted/non_metal",
         1,
-        308
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/non_metal",
         4,
-        324
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_byproduct/non_metal",
         1,
-        356
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/non_metal",
         2,
-        388
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_roasted/non_metal",
         1,
-        372
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/non_metal",
         4,
-        388
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/non_metal",
         1,
-        180
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/non_metal",
         1,
-        196
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/non_metal",
         1,
-        212
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_washed/non_metal",
         1,
-        276
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_washed/non_metal",
         1,
-        340
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_washed/non_metal",
         1,
-        404
+        0
       ],
       "fluid": [
         [
@@ -1131,87 +1131,87 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_byproduct/crystalline",
         1,
-        229
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/crystalline",
         2,
-        261
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_roasted/crystalline",
         1,
-        245
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_arc/crystalline",
         4,
-        261
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_byproduct/crystalline",
         1,
-        293
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/crystalline",
         2,
-        325
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_roasted/crystalline",
         1,
-        309
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_arc/crystalline",
         4,
-        325
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_byproduct/crystalline",
         1,
-        357
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/crystalline",
         2,
-        389
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_roasted/crystalline",
         1,
-        373
+        0
       ],
       "solid": [
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_arc/crystalline",
         4,
-        389
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/crystalline",
         1,
-        181
+        0
       ],
       "fluid": [
         [
@@ -1223,9 +1223,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/crystalline",
         1,
-        197
+        0
       ],
       "fluid": [
         [
@@ -1237,9 +1237,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/crystalline",
         1,
-        213
+        0
       ],
       "fluid": [
         [
@@ -1251,9 +1251,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/sulfuric_washed/crystalline",
         1,
-        277
+        0
       ],
       "fluid": [
         [
@@ -1265,9 +1265,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/solvent_washed/crystalline",
         1,
-        341
+        0
       ],
       "fluid": [
         [
@@ -1279,9 +1279,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/rad_washed/crystalline",
         1,
-        405
+        0
       ],
       "fluid": [
         [

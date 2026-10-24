@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.149.157",
+  "duration": 100,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:bedrock_ore/base/light_metal",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "WATER",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:bedrock_ore/base_washed/light_metal",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:bedrock_ore/base/light_metal",
+  "order": 157
+}

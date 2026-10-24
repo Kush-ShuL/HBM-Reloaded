@@ -1,28 +1,17 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 80
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary_sulfuric/light_metal"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 96
-      }
+      "id": "hbm:bedrock_ore/primary_nosulfuric/light_metal",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 224
-      }
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/light_metal",
+      "count": 2
     }
   ]
 }

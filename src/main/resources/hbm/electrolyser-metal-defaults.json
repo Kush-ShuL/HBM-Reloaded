@@ -475,16 +475,16 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/light_metal",
         1,
-        176
+        0
       ],
       "duration": 20,
       "byproducts": [
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/light_metal",
           1,
-          208
+          0
         ]
       ],
       "output1": [
@@ -499,16 +499,16 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/light_metal",
         1,
-        192
+        0
       ],
       "duration": 20,
       "byproducts": [
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/light_metal",
           1,
-          208
+          0
         ]
       ],
       "output1": [
@@ -523,9 +523,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/light_metal",
         1,
-        208
+        0
       ],
       "duration": 20,
       "byproducts": [],
@@ -541,16 +541,16 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/heavy_metal",
         1,
-        177
+        0
       ],
       "duration": 20,
       "byproducts": [
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/heavy_metal",
           1,
-          209
+          0
         ]
       ],
       "output1": [
@@ -565,16 +565,16 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/heavy_metal",
         1,
-        193
+        0
       ],
       "duration": 20,
       "byproducts": [
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/heavy_metal",
           1,
-          209
+          0
         ]
       ],
       "output1": [
@@ -589,9 +589,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/heavy_metal",
         1,
-        209
+        0
       ],
       "duration": 20,
       "byproducts": [],
@@ -607,9 +607,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/rare_earth",
         1,
-        178
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -619,9 +619,9 @@
           0
         ],
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/rare_earth",
           1,
-          210
+          0
         ]
       ],
       "output1": [
@@ -632,9 +632,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/rare_earth",
         1,
-        194
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -644,9 +644,9 @@
           0
         ],
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/rare_earth",
           1,
-          210
+          0
         ]
       ],
       "output1": [
@@ -657,9 +657,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/rare_earth",
         1,
-        210
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -677,16 +677,16 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/actinide",
         1,
-        179
+        0
       ],
       "duration": 20,
       "byproducts": [
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/actinide",
           1,
-          211
+          0
         ]
       ],
       "output1": [
@@ -701,16 +701,16 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/actinide",
         1,
-        195
+        0
       ],
       "duration": 20,
       "byproducts": [
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/actinide",
           1,
-          211
+          0
         ]
       ],
       "output1": [
@@ -725,9 +725,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/actinide",
         1,
-        211
+        0
       ],
       "duration": 20,
       "byproducts": [],
@@ -743,9 +743,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/non_metal",
         1,
-        180
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -760,9 +760,9 @@
           0
         ],
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/non_metal",
           1,
-          212
+          0
         ]
       ],
       "output1": [
@@ -773,9 +773,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/non_metal",
         1,
-        196
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -790,9 +790,9 @@
           0
         ],
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/non_metal",
           1,
-          212
+          0
         ]
       ],
       "output1": [
@@ -803,9 +803,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/non_metal",
         1,
-        212
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -828,9 +828,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_first/crystalline",
         1,
-        181
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -840,9 +840,9 @@
           0
         ],
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/crystalline",
           1,
-          213
+          0
         ]
       ],
       "output1": [
@@ -853,9 +853,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/primary_second/crystalline",
         1,
-        197
+        0
       ],
       "duration": 20,
       "byproducts": [
@@ -865,9 +865,9 @@
           0
         ],
         [
-          "hbm:bedrock_ore",
+          "hbm:bedrock_ore/crumbs/crystalline",
           1,
-          213
+          0
         ]
       ],
       "output1": [
@@ -878,9 +878,9 @@
     {
       "input": [
         "item",
-        "hbm:bedrock_ore",
+        "hbm:bedrock_ore/crumbs/crystalline",
         1,
-        213
+        0
       ],
       "duration": 20,
       "byproducts": [

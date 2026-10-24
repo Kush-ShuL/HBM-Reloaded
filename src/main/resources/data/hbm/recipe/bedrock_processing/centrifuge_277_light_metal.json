@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 48
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary/light_metal"
   },
   "exact_input": true,
   "results": [

@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 131
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary_nosolvent/actinide"
   },
   "exact_input": true,
   "results": [
@@ -19,11 +14,8 @@
       "count": 4
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 211
-      }
+      "id": "hbm:bedrock_ore/crumbs/actinide",
+      "count": 1
     }
   ]
 }

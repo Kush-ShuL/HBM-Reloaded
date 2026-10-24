@@ -2,12 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "ingredient": {
-    "type": "neoforge:components",
-    "items": "hbm:legacy/ore_bedrock",
-    "components": {
-      "hbm:legacy_metadata": 13
-    },
-    "strict": false
+    "item": "hbm:ore_bedrock_malachite"
   },
   "result": {
     "id": "minecraft:cobblestone",

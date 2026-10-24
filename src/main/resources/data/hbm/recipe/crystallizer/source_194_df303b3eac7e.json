@@ -1,0 +1,41 @@
+{
+  "type": "hbm:crystallizer",
+  "name": "crystallizer.source.194.354",
+  "duration": 200,
+  "power": 1000,
+  "input_items": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:bedrock_ore/primary_solvent/crystalline",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "input_fluids": [
+    {
+      "type": "CHLORINE",
+      "amount": 250,
+      "pressure": 0
+    }
+  ],
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:bedrock_ore/primary_second/crystalline",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "productivity": 0.0,
+  "key_kind": "item",
+  "source_key": "hbm:bedrock_ore/primary_solvent/crystalline",
+  "order": 354
+}

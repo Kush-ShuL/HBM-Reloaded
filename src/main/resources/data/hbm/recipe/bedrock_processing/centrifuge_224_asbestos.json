@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:legacy/ore_bedrock",
-    "components": {
-      "hbm:legacy_metadata": 3
-    },
-    "strict": false
+    "item": "hbm:ore_bedrock_asbestos"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 3
-      }
+      "id": "hbm:ore_centrifuged_asbestos",
+      "count": 1
     },
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 3
-      }
+      "id": "hbm:ore_centrifuged_asbestos",
+      "count": 1
     },
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 3
-      }
+      "id": "hbm:ore_centrifuged_asbestos",
+      "count": 1
     },
     {
-      "id": "hbm:ore_centrifuged",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 3
-      }
+      "id": "hbm:ore_centrifuged_asbestos",
+      "count": 1
     }
   ]
 }

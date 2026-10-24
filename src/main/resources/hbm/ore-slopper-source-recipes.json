@@ -23,43 +23,37 @@
   "powerPerTick": 200,
   "outputs": [
     {
-      "item": "hbm:bedrock_ore",
-      "metadata": 0,
+      "item": "hbm:bedrock_ore/base/light_metal",
       "grade": "BASE",
       "type": "LIGHT_METAL",
       "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
     },
     {
-      "item": "hbm:bedrock_ore",
-      "metadata": 1,
+      "item": "hbm:bedrock_ore/base/heavy_metal",
       "grade": "BASE",
       "type": "HEAVY_METAL",
       "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
     },
     {
-      "item": "hbm:bedrock_ore",
-      "metadata": 2,
+      "item": "hbm:bedrock_ore/base/rare_earth",
       "grade": "BASE",
       "type": "RARE_EARTH",
       "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
     },
     {
-      "item": "hbm:bedrock_ore",
-      "metadata": 3,
+      "item": "hbm:bedrock_ore/base/actinide",
       "grade": "BASE",
       "type": "ACTINIDE",
       "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
     },
     {
-      "item": "hbm:bedrock_ore",
-      "metadata": 4,
+      "item": "hbm:bedrock_ore/base/non_metal",
       "grade": "BASE",
       "type": "NON_METAL",
       "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"
     },
     {
-      "item": "hbm:bedrock_ore",
-      "metadata": 5,
+      "item": "hbm:bedrock_ore/base/crystalline",
       "grade": "BASE",
       "type": "CRYSTALLINE",
       "amount": "sourceNBT[type.suffix] * (1D + effectTier * 0.1D)"

@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_cleaned",
-    "components": {
-      "hbm:legacy_metadata": 10
-    },
-    "strict": false
+    "item": "hbm:ore_cleaned_chlorocalcite"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 10
-      }
+      "id": "hbm:ore_separated_chlorocalcite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 10
-      }
+      "id": "hbm:ore_separated_chlorocalcite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 10
-      }
+      "id": "hbm:ore_separated_chlorocalcite",
+      "count": 1
     },
     {
-      "id": "hbm:ore_separated",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 10
-      }
+      "id": "hbm:ore_separated_chlorocalcite",
+      "count": 1
     }
   ]
 }

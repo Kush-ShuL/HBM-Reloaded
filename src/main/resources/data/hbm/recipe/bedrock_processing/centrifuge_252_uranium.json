@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_deepcleaned",
-    "components": {
-      "hbm:legacy_metadata": 8
-    },
-    "strict": false
+    "item": "hbm:ore_deepcleaned_uranium"
   },
   "exact_input": true,
   "results": [
@@ -19,18 +14,12 @@
       "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 10
-      }
+      "id": "hbm:ore_byproduct_radium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 10
-      }
+      "id": "hbm:ore_byproduct_radium",
+      "count": 1
     }
   ]
 }

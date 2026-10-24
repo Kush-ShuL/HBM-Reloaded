@@ -1,35 +1,21 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:bedrock_ore",
-    "components": {
-      "hbm:legacy_metadata": 114
-    },
-    "strict": false
+    "item": "hbm:bedrock_ore/primary_solvent/rare_earth"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 130
-      }
+      "id": "hbm:bedrock_ore/primary_nosolvent/rare_earth",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 226
-      }
+      "id": "hbm:bedrock_ore/sulfuric_byproduct/rare_earth",
+      "count": 2
     },
     {
-      "id": "hbm:bedrock_ore",
-      "count": 2,
-      "components": {
-        "hbm:legacy_metadata": 290
-      }
+      "id": "hbm:bedrock_ore/solvent_byproduct/rare_earth",
+      "count": 2
     }
   ]
 }

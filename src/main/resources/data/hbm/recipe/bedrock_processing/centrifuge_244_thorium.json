@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_nitrated",
-    "components": {
-      "hbm:legacy_metadata": 9
-    },
-    "strict": false
+    "item": "hbm:ore_nitrated_thorium"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 9
-      }
+      "id": "hbm:ore_nitrocrystalline_thorium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 9
-      }
+      "id": "hbm:ore_nitrocrystalline_thorium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 3
-      }
+      "id": "hbm:ore_byproduct_silicon",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 3
-      }
+      "id": "hbm:ore_byproduct_silicon",
+      "count": 1
     }
   ]
 }

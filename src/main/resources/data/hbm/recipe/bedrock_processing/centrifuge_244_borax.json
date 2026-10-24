@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_nitrated",
-    "components": {
-      "hbm:legacy_metadata": 2
-    },
-    "strict": false
+    "item": "hbm:ore_nitrated_borax"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 2
-      }
+      "id": "hbm:ore_nitrocrystalline_borax",
+      "count": 1
     },
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 2
-      }
+      "id": "hbm:ore_nitrocrystalline_borax",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 2
-      }
+      "id": "hbm:ore_byproduct_lithium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 2
-      }
+      "id": "hbm:ore_byproduct_lithium",
+      "count": 1
     }
   ]
 }

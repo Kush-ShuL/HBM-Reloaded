@@ -1,42 +1,25 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_nitrated",
-    "components": {
-      "hbm:legacy_metadata": 8
-    },
-    "strict": false
+    "item": "hbm:ore_nitrated_uranium"
   },
   "exact_input": true,
   "results": [
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 8
-      }
+      "id": "hbm:ore_nitrocrystalline_uranium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_nitrocrystalline",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 8
-      }
+      "id": "hbm:ore_nitrocrystalline_uranium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 4
-      }
+      "id": "hbm:ore_byproduct_lead",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 4
-      }
+      "id": "hbm:ore_byproduct_lead",
+      "count": 1
     }
   ]
 }

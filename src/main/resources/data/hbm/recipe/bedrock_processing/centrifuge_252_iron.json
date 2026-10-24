@@ -1,12 +1,7 @@
 {
   "type": "hbm:centrifuge",
   "input": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_deepcleaned",
-    "components": {
-      "hbm:legacy_metadata": 0
-    },
-    "strict": false
+    "item": "hbm:ore_deepcleaned_iron"
   },
   "exact_input": true,
   "results": [
@@ -19,18 +14,12 @@
       "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 5
-      }
+      "id": "hbm:ore_byproduct_titanium",
+      "count": 1
     },
     {
-      "id": "hbm:ore_byproduct",
-      "count": 1,
-      "components": {
-        "hbm:legacy_metadata": 5
-      }
+      "id": "hbm:ore_byproduct_titanium",
+      "count": 1
     }
   ]
 }
