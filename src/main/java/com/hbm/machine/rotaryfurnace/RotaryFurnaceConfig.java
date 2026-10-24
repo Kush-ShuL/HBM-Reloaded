@@ -19,6 +19,7 @@ import com.hbm.machine.reactor.iter.mhdt.MhdtConfig;
 import com.hbm.machine.forcefield.ForceFieldConfig;
 import com.hbm.machine.reactor.icf.IcfConfig;
 import com.hbm.machine.centrifuge.CentrifugeConfig;
+import com.hbm.machine.radar.RadarConfig;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
@@ -64,6 +65,7 @@ public final class RotaryFurnaceConfig {
         ForceFieldConfig.define(builder);
         IcfConfig.define(builder);
         CentrifugeConfig.define(builder);
+        RadarConfig.define(builder);
         SPEC=builder.build();
     }
 
@@ -111,6 +113,7 @@ public final class RotaryFurnaceConfig {
         ForceFieldConfig.apply();
         IcfConfig.apply();
         CentrifugeConfig.apply();
+        RadarConfig.apply();
     }
     private static ModuleBurnTime defaults(){return new ModuleBurnTime().setCokeTimeMod(1.25).setRocketTimeMod(1.5).setSolidTimeMod(1.5).setBalefireTimeMod(1.5).setSolidHeatMod(1.5).setRocketHeatMod(3).setBalefireHeatMod(10);}
     private RotaryFurnaceConfig(){}
