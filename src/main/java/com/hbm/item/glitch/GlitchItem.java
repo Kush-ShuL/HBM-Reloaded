@@ -44,7 +44,7 @@ public final class GlitchItem extends Item implements HbmBattery {
                 case 4 -> player.hurt(HbmDamageSources.source(level, HbmDamageSources.blackhole), 1000);
                 // Source BlockMeteoriteTreasure does not override getItemDropped: these are block items, not its getDrops loot pool.
                 case 5, 6, 7 -> { int count = choice == 5 ? 1 : choice == 6 ? 3 : 10; for (int i = 0; i < count; i++) give(player, "block_meteor_treasure", 1); }
-                case 8 -> { give(player, "ammo_container", 10); message(player, choice); }
+                case 8 -> { player.getInventory().add(new ItemStack(com.hbm.world.structure.loot.StructureLootContent.AMMO_STANDARD.get(), 10)); message(player, choice); }
                 case 9 -> give(player, "nuke_advanced_kit", 1);
                 case 10 -> give(player, "nuke_starter_kit", 1);
                 case 11 -> { var boxcar = new EntityBoxcar(level); boxcar.setPos(player.getX(), player.getY() + 50, player.getZ()); level.addFreshEntity(boxcar); }
