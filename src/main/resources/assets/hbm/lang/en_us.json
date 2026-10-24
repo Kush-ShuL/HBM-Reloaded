@@ -12525,5 +12525,10 @@
   "item.hbm.item_secret_controller": "Proprietary Control Unit",
   "item.hbm.item_secret_selenium_steel": "Selenium Steel",
   "item.hbm.item_secret_aberrator": "Aberrator Part",
-  "item.hbm.item_secret_folly": "Folly Part"
+  "item.hbm.item_secret_folly": "Folly Part",
+  "commands.hbm.chunk_diagnostic.loaded": "Chunk currently loaded.",
+  "commands.hbm.chunk_diagnostic.no_data": "No saved chunk data at %s, %s.",
+  "commands.hbm.chunk_diagnostic.missing_list": "Block entity tag list missing.",
+  "commands.hbm.chunk_diagnostic.empty_list": "Block entity tag list empty.",
+  "commands.hbm.chunk_diagnostic.read_failed": "Could not read chunk data: %s"
 }

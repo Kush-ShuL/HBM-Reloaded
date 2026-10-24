@@ -12525,5 +12525,10 @@
   "item.hbm.item_secret_controller": "专用控制单元",
   "item.hbm.item_secret_selenium_steel": "硒钢",
   "item.hbm.item_secret_aberrator": "畸变部件",
-  "item.hbm.item_secret_folly": "“愚蠢”部件"
+  "item.hbm.item_secret_folly": "“愚蠢”部件",
+  "commands.hbm.chunk_diagnostic.loaded": "区块当前已加载。",
+  "commands.hbm.chunk_diagnostic.no_data": "区块 %s，%s 没有已保存的数据。",
+  "commands.hbm.chunk_diagnostic.missing_list": "缺少方块实体标签列表。",
+  "commands.hbm.chunk_diagnostic.empty_list": "方块实体标签列表为空。",
+  "commands.hbm.chunk_diagnostic.read_failed": "无法读取区块数据：%s"
 }
