@@ -34,8 +34,8 @@ public final class ConventionalContent {
     public static final BooleanSupplier DEAD_EXPLOSIVE_ENABLED,EXTENDED_LOGGING;
     static {
         var config = new ModConfigSpec.Builder();
-        DEAD_EXPLOSIVE_ENABLED = config.comment("掉落型自爆引爆器是否触发自身爆炸；关闭后掉落物品仍被消耗。").define("dropDead", true);
-        EXTENDED_LOGGING=config.comment("记录扩展诊断日志，默认关闭。").define("enableExtendedLogging",false);
+        DEAD_EXPLOSIVE_ENABLED = config.comment("掉落型自爆引爆器是否触发自身爆炸；关闭后掉落物品仍被消耗。").define(java.util.List.of("droppedItems","selfDestructExplosionsEnabled"), true);
+        EXTENDED_LOGGING=config.comment("记录扩展诊断日志，默认关闭。").define(java.util.List.of("diagnostics","extendedLoggingEnabled"),false);
         CONFIG = config.build();
         BY_ID.put("charge_dynamite",ITEMS.register("charge_dynamite",()->new BlockItem(CHARGE_DYNAMITE.get(),new Item.Properties())));
         BY_ID.put("charge_c4",ITEMS.register("charge_c4",()->new BlockItem(CHARGE_C4.get(),new Item.Properties())));
