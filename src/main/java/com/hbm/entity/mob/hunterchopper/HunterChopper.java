@@ -44,7 +44,7 @@ public final class HunterChopper extends FlyingMob implements Enemy {
  @Override public boolean hurt(DamageSource source,float amount){if(!(source.is(HbmDamageSources.shrapnel)||source.is(HbmDamageSources.nuclearBlast)||source.is(HbmDamageSources.blackhole)||source.is(net.minecraft.tags.DamageTypeTags.IS_EXPLOSION)||HbmDamageSources.getIsTau(source)||HbmDamageSources.getIsSubatomic(source)))amount*=.1F;
   // The old EntityDamageSource/Indirect inheritance rejects any entity-attributed source, even after the scale exceptions.
   if(isInvulnerableTo(source)||oldEntityDamageSource(source)||getHealth()<=.1F)return false;
-  if(amount>=getHealth()){initDeath();entityData.set(DYING,true);setHealth(.1F);return false;}
+  if(amount>=getHealth()){beginCrash();return false;}
   if(random.nextInt(15)==0&&!level().isClientSide&&!dying){blast(5);dropDamageItem();}
   for(int j=0;j<3;j++){double x=random.nextDouble()/20*random.nextInt(2)==0?-1:1,y=random.nextDouble()/20*random.nextInt(2)==0?-1:1,z=random.nextDouble()/20*random.nextInt(2)==0?-1:1;for(int i=0;i<8;i++)if(level().isClientSide)level().addParticle(ParticleTypes.FIREWORK,getX(),getY(),getZ(),x*i*.25,y*i*.25,z*i*.25);}
   return super.hurt(source,amount);
@@ -53,6 +53,10 @@ public final class HunterChopper extends FlyingMob implements Enemy {
   * Modern vanilla explosion sources additionally store nonliving direct entities: that is not old EntityDamageSource. */
  private static boolean oldEntityDamageSource(DamageSource source){if(source.is(DamageTypes.EXPLOSION)||source.is(DamageTypes.PLAYER_EXPLOSION)){var direct=source.getDirectEntity();return direct instanceof LivingEntity||direct instanceof PrimedTnt tnt&&tnt.getOwner()!=null;}return source.getDirectEntity()!=null||source.getEntity()!=null;}
  private void blast(float strength){level().explode(this,getX(),getY(),getZ(),strength,false,Level.ExplosionInteraction.BLOCK);}
+ // SEDNA sets lethal health directly after its hurt(0) probe; use the same crash and final drops.
+ @Override public void die(DamageSource source){if(!level().isClientSide&&!isRemoved())beginCrash();}
+ // Further lethal hits must keep the crash AI alive without replaying the initial explosion.
+ private void beginCrash(){if(!dying)initDeath();entityData.set(DYING,true);setHealth(.1F);}
  private void initDeath(){blast(10);if(!dying)sound("entity.chopperDamage",10,1);dying=true;}
  private void drop(String name,int amount){var id=ResourceLocation.fromNamespaceAndPath("hbm",name);if(!BuiltInRegistries.ITEM.containsKey(id))throw new IllegalStateException("Missing real HunterChopper drop "+id);spawnAtLocation(new ItemStack(BuiltInRegistries.ITEM.get(id),amount));}
  private void dropDamageItem(){if(random.nextInt(10)<6)drop("combine_scrap",1);else drop("plate_combine_steel",1);}

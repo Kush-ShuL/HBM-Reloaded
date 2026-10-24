@@ -21,7 +21,8 @@ final class FollyVisuals {
         pose.mulPose(Axis.YP.rotationDegrees(180-bullet.getYRot()));pose.mulPose(Axis.XP.rotationDegrees(-bullet.getXRot()-90));
         float scale=(float)((1-age)*25+2.5);pose.scale(scale,1,scale);
         int color=((int)(0x20*age)<<16)|((int)(0x20*age)<<8)|(int)(0x20*age);
-        EnergyBeams.solid(pose,context.buffers(),bullet.beamLength,color,color,bullet.tickCount/3,(int)(bullet.beamLength/2+1),0,8,.0625F);
+        // Zero additive radiance must not leave an invisible occluder at the end of the existing fade.
+        if(color!=0)EnergyBeams.solidWithDepth(pose,context.buffers(),bullet.beamLength,color,color,bullet.tickCount/3,(int)(bullet.beamLength/2+1),0,8,.0625F);
         pose.popPose();
     }
     static void nuke(EntityBulletBaseMK4 bullet,float partial){

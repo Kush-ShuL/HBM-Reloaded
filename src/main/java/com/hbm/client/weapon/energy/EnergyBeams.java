@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.*;
 import com.mojang.math.Axis;
 import java.util.Random;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.util.Mth;
 /** Source LegoClient Energy callbacks with complete BeamPronter RANDOM/SOLID geometry. */
 public final class EnergyBeams {
@@ -23,10 +24,17 @@ public final class EnergyBeams {
         solid(pose,c.buffers(),beam.beamLength,color,color,beam.tickCount/3,(int)(beam.beamLength/2+1),0F,4,.025F);pose.popPose();
     }
     public static void solid(PoseStack pose,MultiBufferSource buffers,double length,int outer,int inner,int seed,int segments,float size,int layers,float thickness){
+        solid(pose,buffers,length,outer,inner,seed,segments,size,layers,thickness,EnergyRenderTypes.BEAM);
+    }
+    /** Explicit solid volume; the source flare and other energy beams keep their colour-only materials. */
+    public static void solidWithDepth(PoseStack pose,MultiBufferSource buffers,double length,int outer,int inner,int seed,int segments,float size,int layers,float thickness){
+        solid(pose,buffers,length,outer,inner,seed,segments,size,layers,thickness,EnergyRenderTypes.SOLID_BEAM);
+    }
+    private static void solid(PoseStack pose,MultiBufferSource buffers,double length,int outer,int inner,int seed,int segments,float size,int layers,float thickness,RenderType material){
         // Skeleton is (0,length,0), so the source BeamPronter's own180Y and
         // 90deg skeleton yaw are retained even for the degenerate xz vector.
         pose.pushPose();pose.mulPose(Axis.YP.rotationDegrees(180));float yaw=(float)(Math.atan2(0D,0D)*180F/Math.PI),pitch=(float)(Math.atan2(length,0F)*180F/Math.PI);pose.mulPose(Axis.YP.rotationDegrees(yaw));pose.mulPose(Axis.XP.rotationDegrees(pitch-90));
-        var out=buffers.getBuffer(EnergyRenderTypes.BEAM);var random=new Random(seed);double lastX=0,lastY=0,lastZ=0,step=length/segments;
+        var out=buffers.getBuffer(material);var random=new Random(seed);double lastX=0,lastY=0,lastZ=0,step=length/segments;
         for(int i=0;i<=segments;i++){double x=size,z=0;for(int turn=0;turn<2;turn++){float angle=(float)Math.PI*2*random.nextFloat();double next=x*Mth.cos(angle)+z*Mth.sin(angle);z=z*Mth.cos(angle)-x*Mth.sin(angle);x=next;}double y=step*i;
             if(i>0)for(int layer=1;layer<=layers;layer++){float inter=(float)(layer-1)/(layers-1);int r=(int)(((outer>>16)&255)+(((inner>>16)&255)-((outer>>16)&255))*inter),g=(int)(((outer>>8)&255)+(((inner>>8)&255)-((outer>>8)&255))*inter),b=(int)((outer&255)+((inner&255)-(outer&255))*inter),color=0xff000000|r<<16|g<<8|b;float radius=thickness/layers*layer;
                 quad(out,pose,color,lastX+radius,lastY,lastZ+radius,lastX+radius,lastY,lastZ-radius,x+radius,y,z-radius,x+radius,y,z+radius);
