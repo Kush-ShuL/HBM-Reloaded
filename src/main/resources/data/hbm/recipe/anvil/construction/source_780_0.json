@@ -3,14 +3,7 @@
   "inputs": [
     {
       "ingredient": {
-        "type": "hbm:alloy_legacy_stack",
-        "stack": {
-          "id": "hbm:deco_toaster",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
-        }
+        "item": "hbm:deco_toaster_steel"
       },
       "count": 1
     }

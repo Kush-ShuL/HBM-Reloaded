@@ -1,9 +1,9 @@
 package com.hbm.block.woodfixtures46;
 
-import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.fluidtank.LegacyFauxLadder;
 import com.mojang.serialization.MapCodec;
 import java.util.List;
+import java.util.ArrayList;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
@@ -36,7 +36,7 @@ public final class WoodStructureBlock extends Block {
     @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) { builder.add(META); }
     public BlockState fromLegacy(int metadata) { return defaultBlockState().setValue(META, metadata & 15); }
     public static int type(int metadata) { return Math.abs(metadata % 3); }
-    @Override public BlockState getStateForPlacement(BlockPlaceContext context) { return fromLegacy(context.getItemInHand().getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0)); }
+    @Override public BlockState getStateForPlacement(BlockPlaceContext context) { return context.getItemInHand().getItem() instanceof WoodStructureItem item ? fromLegacy(item.type()) : defaultBlockState(); }
     @Override protected VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return switch (type(state.getValue(META))) { case 0 -> ROOF; case 1 -> Shapes.block(); default -> CEILING; };
     }
@@ -51,8 +51,11 @@ public final class WoodStructureBlock extends Block {
         if (type(state.getValue(META)) == 1 && entity instanceof Player player) LegacyFauxLadder.mark(player);
     }
     @Override protected List<ItemStack> getDrops(BlockState state, LootParams.Builder params) {
-        var drops = super.getDrops(state, params);
-        for (var stack : drops) if (stack.is(asItem())) stack.set(HbmHazards.LEGACY_METADATA.get(), type(state.getValue(META)));
+        var drops = new ArrayList<>(super.getDrops(state, params));
+        for(int i=0;i<drops.size();i++){
+            var stack=drops.get(i);if(!(stack.getItem() instanceof WoodStructureItem))continue;
+            var typed=WoodStructureItem.stack(type(state.getValue(META)));typed.setCount(stack.getCount());typed.applyComponents(stack.getComponentsPatch());drops.set(i,typed);
+        }
         return drops;
     }
     @Override public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state) { return WoodStructureItem.stack(type(state.getValue(META))); }

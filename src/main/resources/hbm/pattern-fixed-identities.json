@@ -649,6 +649,24 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:blueprint_folder_alt",
+      "sourceFamily": "ModItems.blueprint_folder",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:blueprint_folder_discover",
+      "sourceFamily": "ModItems.blueprint_folder",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:blueprint_folder_secret",
+      "sourceFamily": "ModItems.blueprint_folder",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:book_guide_hadron",
       "sourceFamily": "ModItems.book_guide",
       "sourceMetadata": 2,
@@ -1498,6 +1516,24 @@
       "id": "hbm:crayon_yellow",
       "sourceFamily": "ModItems.crayon",
       "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:deco_toaster_iron",
+      "sourceFamily": "ModBlocks.deco_toaster",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:deco_toaster_steel",
+      "sourceFamily": "ModBlocks.deco_toaster",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:deco_toaster_wood",
+      "sourceFamily": "ModBlocks.deco_toaster",
+      "sourceMetadata": 2,
       "hasSubtypes": true
     },
     {
@@ -2383,6 +2419,27 @@
       "sourceFamily": "ModItems.weapon_mod_caliber",
       "sourceMetadata": 6,
       "hasSubtypes": true
+    },
+    {
+      "id": "hbm:wood_structure_ceiling",
+      "sourceFamily": "ModBlocks.wood_structure",
+      "sourceMetadata": 2,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:wood_structure_roof",
+      "sourceFamily": "ModBlocks.wood_structure",
+      "sourceMetadata": 0,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
+    },
+    {
+      "id": "hbm:wood_structure_scaffold",
+      "sourceFamily": "ModBlocks.wood_structure",
+      "sourceMetadata": 1,
+      "hasSubtypes": true,
+      "metadataProperty": "legacy_meta"
     }
   ]
 }

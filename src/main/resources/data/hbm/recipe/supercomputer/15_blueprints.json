@@ -26,11 +26,8 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:blueprint_folder",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 0
-            }
+            "id": "hbm:blueprint_folder_alt",
+            "count": 1
           },
           "weight": 20
         },

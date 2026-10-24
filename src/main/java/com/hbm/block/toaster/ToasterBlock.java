@@ -1,6 +1,5 @@
 package com.hbm.block.toaster;
 
-import com.hbm.hazard.HbmHazards;
 import com.mojang.serialization.MapCodec;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -36,8 +35,8 @@ public final class ToasterBlock extends Block {
     public static int transformMeta(int metadata, int clockwiseTurns) { return (metadata + (clockwiseTurns & 3)) % 4 | metadata / 4 * 4; }
     @Override public BlockState getStateForPlacement(BlockPlaceContext context) {
         int yaw = Mth.floor(context.getRotation() * 4F / 360F + .5D) & 3;
-        int metadata = context.getItemInHand().getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0);
-        return fromLegacy(metadata * 4 + yaw); // One final write, preserving the original item damage input.
+        int type = context.getItemInHand().getItem() instanceof ToasterItem item ? item.kind().type() : 0;
+        return fromLegacy(type * 4 + yaw);
     }
     @Override protected VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) { return state.getValue(META) % 2 == 0 ? EVEN : ODD; }
     @Override protected VoxelShape getCollisionShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) { return getShape(state, world, pos, context); }
@@ -46,10 +45,9 @@ public final class ToasterBlock extends Block {
     @Override protected int getLightBlock(BlockState state, BlockGetter world, BlockPos pos) { return 0; }
     @Override protected boolean propagatesSkylightDown(BlockState state, BlockGetter world, BlockPos pos) { return true; }
     @Override protected List<ItemStack> getDrops(BlockState state, LootParams.Builder context) {
-        var drops = super.getDrops(state, context);
-        for (var stack : drops) if (stack.is(asItem())) stack.set(HbmHazards.LEGACY_METADATA.get(), damageDropped(state.getValue(META)));
-        return drops;
+        return super.getDrops(state, context).stream().map(stack -> stack.is(asItem())
+                ? stack.transmuteCopy(ToasterContent.item(damageDropped(state.getValue(META)))) : stack).toList();
     }
-    @Override public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state) { return ToasterItem.stack(damageDropped(state.getValue(META))); }
+    @Override public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state) { return new ItemStack(ToasterContent.item(damageDropped(state.getValue(META)))); }
     // Native template processor applies literal INBTBlockTransformable metadata before native placement.
 }

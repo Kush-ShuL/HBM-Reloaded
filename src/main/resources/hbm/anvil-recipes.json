@@ -9739,14 +9739,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:alloy_legacy_stack",
-              "stack": {
-                "id": "hbm:deco_toaster",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 0
-                }
-              }
+              "item": "hbm:deco_toaster_iron"
             },
             "count": 1
           }
@@ -9806,14 +9799,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:alloy_legacy_stack",
-              "stack": {
-                "id": "hbm:deco_toaster",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 1
-                }
-              }
+              "item": "hbm:deco_toaster_steel"
             },
             "count": 1
           }
@@ -9883,14 +9869,7 @@
         "inputs": [
           {
             "ingredient": {
-              "type": "hbm:alloy_legacy_stack",
-              "stack": {
-                "id": "hbm:deco_toaster",
-                "count": 1,
-                "components": {
-                  "hbm:legacy_metadata": 2
-                }
-              }
+              "item": "hbm:deco_toaster_wood"
             },
             "count": 1
           }

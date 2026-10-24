@@ -1,18 +1,21 @@
 package com.hbm.recipe.generic;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 public final class BlueprintFolderItem extends Item {
-    public BlueprintFolderItem(){super(new Properties().stacksTo(1).component(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),0));}
-    @Override public Component getName(ItemStack stack){return Component.translatable("item.blueprint_folder.name");}
+    public enum Kind {
+        ALT(Blueprints.ALT),DISCOVER(Blueprints.DISCOVER),SECRET(Blueprints.SECRET);
+        private final String prefix;
+        Kind(String prefix){this.prefix=prefix;}
+    }
+    private final Kind kind;
+    public BlueprintFolderItem(Kind kind){super(new Properties().stacksTo(1));this.kind=java.util.Objects.requireNonNull(kind);}
+    public Kind kind(){return kind;}
     @Override public InteractionResultHolder<ItemStack> use(Level level,Player player,InteractionHand hand){
         var stack=player.getItemInHand(hand);
         if(level.isClientSide)return InteractionResultHolder.pass(stack);
-        int meta=Blueprints.metadata(stack);
-        String prefix=meta==0?Blueprints.ALT:meta==1?Blueprints.DISCOVER:meta==2?Blueprints.SECRET:null;
-        if(prefix==null)return InteractionResultHolder.pass(stack);
+        String prefix=kind.prefix;
         var pools=Blueprints.pools().keySet().stream().filter(pool->pool.startsWith(prefix)).toList();
         if(pools.isEmpty())return InteractionResultHolder.pass(stack);
         var blueprint=Blueprints.make(pools.get(player.getRandom().nextInt(pools.size())));

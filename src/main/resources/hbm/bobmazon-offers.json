@@ -203,7 +203,7 @@
       "index": 6,
       "product": {
         "stack": {
-          "id": "hbm:blueprint_folder",
+          "id": "hbm:blueprint_folder_alt",
           "count": 1
         }
       },
@@ -237,11 +237,8 @@
       "index": 7,
       "product": {
         "stack": {
-          "id": "hbm:blueprint_folder",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:blueprint_folder_discover",
+          "count": 1
         }
       },
       "requirement": "OIL",

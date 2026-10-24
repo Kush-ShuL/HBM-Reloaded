@@ -15,7 +15,13 @@ public final class WoodFixturesContent {
     public static final DeferredBlock<WoodBarrierBlock> BARRIER = BLOCKS.register("wood_barrier", WoodBarrierBlock::new);
     public static final DeferredBlock<WoodStructureBlock> STRUCTURE = BLOCKS.register("wood_structure", WoodStructureBlock::new);
     public static final DeferredItem<BlockItem> BARRIER_ITEM = ITEMS.registerSimpleBlockItem(BARRIER);
-    public static final DeferredItem<WoodStructureItem> STRUCTURE_ITEM = ITEMS.register("wood_structure", () -> new WoodStructureItem(STRUCTURE.get()));
+    private static final List<DeferredItem<WoodStructureItem>> STRUCTURE_ITEMS=structureItems();
+    private static List<DeferredItem<WoodStructureItem>> structureItems(){
+        var result=new java.util.ArrayList<DeferredItem<WoodStructureItem>>();String[] names={"roof","scaffold","ceiling"};
+        for(int i=0;i<names.length;i++){int type=i;result.add(ITEMS.register("wood_structure_"+names[i],()->new WoodStructureItem(STRUCTURE.get(),type)));}
+        return List.copyOf(result);
+    }
+    public static WoodStructureItem structureItem(int type){return STRUCTURE_ITEMS.get(WoodStructureBlock.type(type)).get();}
 
     public static void register(IEventBus bus) { BLOCKS.register(bus); ITEMS.register(bus); }
     public static List<ItemStack> creativeStacks(String tab) {

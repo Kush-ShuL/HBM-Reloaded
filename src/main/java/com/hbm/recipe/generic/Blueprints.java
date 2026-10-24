@@ -13,7 +13,11 @@ public final class Blueprints {
     public static final String ALT="alt.",DISCOVER="discover.",SECRET="secret.",FIVE_TWO_EIGHT="528.";
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
     public static final DeferredItem<BlueprintItem> ITEM=ITEMS.register("blueprints",BlueprintItem::new);
-    public static final DeferredItem<BlueprintFolderItem> FOLDER=ITEMS.register("blueprint_folder",BlueprintFolderItem::new);
+    public static final DeferredItem<BlueprintFolderItem> FOLDER_ALT=ITEMS.register("blueprint_folder_alt",()->new BlueprintFolderItem(BlueprintFolderItem.Kind.ALT));
+    public static final DeferredItem<BlueprintFolderItem> FOLDER_DISCOVER=ITEMS.register("blueprint_folder_discover",()->new BlueprintFolderItem(BlueprintFolderItem.Kind.DISCOVER));
+    public static final DeferredItem<BlueprintFolderItem> FOLDER_SECRET=ITEMS.register("blueprint_folder_secret",()->new BlueprintFolderItem(BlueprintFolderItem.Kind.SECRET));
+    /** Default booklet icon used by machine recipe selectors. */
+    public static final DeferredItem<BlueprintFolderItem> FOLDER=FOLDER_ALT;
     private static final Map<ResourceLocation,List<? extends GenericMachineRecipe>> SETS=new LinkedHashMap<>();
     private static final Map<String,List<String>> DEFAULT_POOLS=new LinkedHashMap<>();
     private static final Map<String,String> OWNERS=new LinkedHashMap<>();private static final Map<ResourceLocation,String> SOURCES=new LinkedHashMap<>();
@@ -29,6 +33,6 @@ public final class Blueprints {
     public static String pool(ItemStack stack){if(stack.isEmpty()||stack.getItem()!=ITEM.get()||!stack.has(DataComponents.CUSTOM_DATA))return null;var tag=stack.get(DataComponents.CUSTOM_DATA).copyTag();return tag.contains("pool")?tag.getString("pool"):null;}
     public static ItemStack make(String pool){var stack=new ItemStack(ITEM.get());CustomData.update(DataComponents.CUSTOM_DATA,stack,tag->tag.putString("pool",pool));return stack;}
     public static int metadata(ItemStack stack){return stack.getOrDefault(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue());}
-    public static List<ItemStack> creativeStacks(){var stacks=new ArrayList<ItemStack>();pools().keySet().stream().filter(pool->!pool.startsWith(SECRET)).map(Blueprints::make).forEach(stacks::add);for(int i=0;i<2;i++){var stack=new ItemStack(FOLDER.get());stack.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),i);stacks.add(stack);}return stacks;}
+    public static List<ItemStack> creativeStacks(){var stacks=new ArrayList<ItemStack>();pools().keySet().stream().filter(pool->!pool.startsWith(SECRET)).map(Blueprints::make).forEach(stacks::add);stacks.add(new ItemStack(FOLDER_ALT.get()));stacks.add(new ItemStack(FOLDER_DISCOVER.get()));return stacks;}
     public static int textureKind(ItemStack stack){String pool=pool(stack);return pool==null?0:pool.startsWith(DISCOVER)?1:pool.startsWith(SECRET)?2:pool.startsWith(FIVE_TWO_EIGHT)?3:0;}
 }

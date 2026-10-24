@@ -20,8 +20,8 @@ import net.minecraft.network.chat.Component;
 @REIPluginClient
 public final class AssemblerReiPlugin implements REIClientPlugin {
     static final CategoryIdentifier<Display> TYPE=CategoryIdentifier.of("hbm","assembly");
-    @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->{String pool=Blueprints.pool(stack);return pool==null?0:com.google.common.hash.Hashing.murmur3_128().hashUnencodedChars(pool).asLong();},Blueprints.ITEM.get());event.register((context,stack)->Blueprints.metadata(stack),Blueprints.FOLDER.get());}
-    @Override public void registerEntries(EntryRegistry event){Blueprints.creativeStacks().forEach(stack->event.addEntry(EntryStacks.of(stack)));}
+    @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->{String pool=Blueprints.pool(stack);return pool==null?0:com.google.common.hash.Hashing.murmur3_128().hashUnencodedChars(pool).asLong();},Blueprints.ITEM.get());}
+    @Override public void registerEntries(EntryRegistry event){Blueprints.creativeStacks().forEach(stack->event.addEntry(EntryStacks.of(stack)));event.removeEntry(EntryStacks.of(Blueprints.FOLDER_SECRET.get()));}
     @Override public void registerCategories(CategoryRegistry event){event.add(new Category());event.addWorkstations(TYPE,EntryStacks.of(AssemblerContent.ITEM.get()));}
     @Override public void registerDisplays(DisplayRegistry event){for(var recipe:AssemblerRecipeConfig.recipes(event.getRecipeManager()))if(AssemblerViews.visible(recipe))event.add(new Display(recipe));}
     static final class Display extends BasicDisplay{final AssemblerRecipe recipe;Display(AssemblerRecipe recipe){super(AssemblerViews.inputs(recipe).stream().map(stacks->EntryIngredient.of(stacks.stream().map(EntryStacks::of).toList())).toList(),AssemblerViews.outputs(recipe).stream().map(stacks->EntryIngredient.of(stacks.stream().map(EntryStacks::of).toList())).toList());this.recipe=recipe;}@Override public CategoryIdentifier<Display> getCategoryIdentifier(){return TYPE;}}

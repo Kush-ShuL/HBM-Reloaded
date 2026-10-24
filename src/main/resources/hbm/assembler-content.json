@@ -27,17 +27,61 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "blueprint_folder",
-      "id": "hbm:blueprint_folder",
       "kind": "item",
+      "symbol": "blueprint_folder_alt",
+      "id": "hbm:blueprint_folder_alt",
       "module": "blueprints",
       "originalClass": "ItemBlueprintFolder",
+      "sourceClass": "com.hbm.items.machine.ItemBlueprintFolder",
+      "sourceField": "ModItems.blueprint_folder",
+      "sourceLegacyRegistryId": "hbm:item.blueprint_folder",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceCreativeVisible": true,
+      "creativeTab": "template",
+      "stackSize": 1,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3863
-      },
-      "status": "implemented_pending_target_compile",
-      "runtimeValidated": false
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "blueprint_folder_discover",
+      "id": "hbm:blueprint_folder_discover",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprintFolder",
+      "sourceClass": "com.hbm.items.machine.ItemBlueprintFolder",
+      "sourceField": "ModItems.blueprint_folder",
+      "sourceLegacyRegistryId": "hbm:item.blueprint_folder",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceCreativeVisible": true,
+      "creativeTab": "template",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3863
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "blueprint_folder_secret",
+      "id": "hbm:blueprint_folder_secret",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprintFolder",
+      "sourceClass": "com.hbm.items.machine.ItemBlueprintFolder",
+      "sourceField": "ModItems.blueprint_folder",
+      "sourceLegacyRegistryId": "hbm:item.blueprint_folder",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceCreativeVisible": false,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3863
+      }
     }
   ],
   "block": {
@@ -68,17 +112,61 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "blueprint_folder",
-      "id": "hbm:blueprint_folder",
       "kind": "item",
+      "symbol": "blueprint_folder_alt",
+      "id": "hbm:blueprint_folder_alt",
       "module": "blueprints",
       "originalClass": "ItemBlueprintFolder",
+      "sourceClass": "com.hbm.items.machine.ItemBlueprintFolder",
+      "sourceField": "ModItems.blueprint_folder",
+      "sourceLegacyRegistryId": "hbm:item.blueprint_folder",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceCreativeVisible": true,
+      "creativeTab": "template",
+      "stackSize": 1,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3863
-      },
-      "status": "implemented_pending_target_compile",
-      "runtimeValidated": false
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "blueprint_folder_discover",
+      "id": "hbm:blueprint_folder_discover",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprintFolder",
+      "sourceClass": "com.hbm.items.machine.ItemBlueprintFolder",
+      "sourceField": "ModItems.blueprint_folder",
+      "sourceLegacyRegistryId": "hbm:item.blueprint_folder",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceCreativeVisible": true,
+      "creativeTab": "template",
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3863
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "blueprint_folder_secret",
+      "id": "hbm:blueprint_folder_secret",
+      "module": "blueprints",
+      "originalClass": "ItemBlueprintFolder",
+      "sourceClass": "com.hbm.items.machine.ItemBlueprintFolder",
+      "sourceField": "ModItems.blueprint_folder",
+      "sourceLegacyRegistryId": "hbm:item.blueprint_folder",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceCreativeVisible": false,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3863
+      }
     }
   ]
 }

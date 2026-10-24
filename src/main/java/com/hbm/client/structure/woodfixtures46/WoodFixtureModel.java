@@ -2,13 +2,11 @@ package com.hbm.client.structure.woodfixtures46;
 
 import com.hbm.block.woodfixtures46.WoodBarrierBlock;
 import com.hbm.block.woodfixtures46.WoodStructureBlock;
-import com.hbm.block.woodfixtures46.WoodStructureItem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.block.model.ItemOverrides;
@@ -20,7 +18,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockAndTintGetter;
@@ -40,13 +37,12 @@ final class WoodFixtureModel extends BakedModelWrapper<BakedModel> {
     private final int itemType;
     private final TextureAtlasSprite sprite;
     private final Map<Key, List<BakedQuad>> cache = new ConcurrentHashMap<>();
-    private WoodFixtureModel[] itemVariants;
 
     WoodFixtureModel(BakedModel original, boolean barrier, boolean inventory, Function<Material, TextureAtlasSprite> sprites) {
-        this(original, barrier, inventory, 0, sprites.apply(new Material(TextureAtlas.LOCATION_BLOCKS, ResourceLocation.parse("hbm:block/wood_barrier"))));
-        if (inventory && !barrier) {
-            itemVariants = new WoodFixtureModel[]{this, new WoodFixtureModel(original, false, true, 1, sprite), new WoodFixtureModel(original, false, true, 2, sprite)};
-        }
+        this(original,barrier,inventory,0,sprites);
+    }
+    WoodFixtureModel(BakedModel original, boolean barrier, boolean inventory, int itemType, Function<Material,TextureAtlasSprite> sprites) {
+        this(original,barrier,inventory,itemType,sprites.apply(new Material(TextureAtlas.LOCATION_BLOCKS,ResourceLocation.parse("hbm:block/wood_barrier"))));
     }
     private WoodFixtureModel(BakedModel original, boolean barrier, boolean inventory, int itemType, TextureAtlasSprite sprite) {
         super(original); this.barrier = barrier; this.inventory = inventory; this.itemType = itemType; this.sprite = sprite;
@@ -56,12 +52,7 @@ final class WoodFixtureModel extends BakedModelWrapper<BakedModel> {
     @Override public boolean useAmbientOcclusion() { return !inventory; }
     @Override public TriState useAmbientOcclusion(BlockState state, ModelData data, RenderType layer) { return inventory ? TriState.FALSE : TriState.TRUE; }
     @Override public TextureAtlasSprite getParticleIcon() { return sprite; }
-    @Override public ItemOverrides getOverrides() {
-        if (itemVariants == null) return ItemOverrides.EMPTY;
-        return new ItemOverrides() {
-            @Override public BakedModel resolve(BakedModel original, ItemStack stack, ClientLevel world, LivingEntity entity, int seed) { return itemVariants[WoodStructureItem.type(stack)]; }
-        };
-    }
+    @Override public ItemOverrides getOverrides() { return ItemOverrides.EMPTY; }
     @Override public BakedModel applyTransform(ItemDisplayContext context, PoseStack poses, boolean left) {
         int hand = context == ItemDisplayContext.THIRD_PERSON_LEFT_HAND || context == ItemDisplayContext.FIRST_PERSON_LEFT_HAND ? -1 : 1;
         if (context.firstPerson()) {

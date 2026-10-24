@@ -1,7 +1,6 @@
 package com.hbm.client.structure.toaster;
 
 import com.hbm.block.toaster.ToasterBlock;
-import com.hbm.block.toaster.ToasterItem;
 import com.hbm.bomb.nuclear.LegacyVector;
 import com.hbm.client.model.LegacyObjModels;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -9,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.block.model.ItemOverrides;
@@ -20,7 +18,6 @@ import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
@@ -34,12 +31,9 @@ final class ToasterModel extends BakedModelWrapper<BakedModel> {
     private static final String[] TEXTURES = {"toaster_iron", "toaster_steel", "toaster_wood"};
     private final TextureAtlasSprite sprite;
     private final List<BakedQuad> quads;
-    private ToasterModel[] itemVariants;
 
-    static ToasterModel inventory(BakedModel original, Function<Material, TextureAtlasSprite> textures) {
-        var variants = new ToasterModel[3];
-        for (int i = 0; i < variants.length; i++) variants[i] = new ToasterModel(original, true, i * 4, textures);
-        variants[0].itemVariants = variants; return variants[0];
+    static ToasterModel inventory(BakedModel original, int type, Function<Material, TextureAtlasSprite> textures) {
+        return new ToasterModel(original, true, type * 4, textures);
     }
     ToasterModel(BakedModel original, boolean inventory, int metadata, Function<Material, TextureAtlasSprite> textures) {
         super(original);
@@ -69,12 +63,7 @@ final class ToasterModel extends BakedModelWrapper<BakedModel> {
         }
         quads = List.copyOf(output);
     }
-    @Override public ItemOverrides getOverrides() {
-        if (itemVariants == null) return ItemOverrides.EMPTY;
-        return new ItemOverrides() {
-            @Override public BakedModel resolve(BakedModel original, ItemStack stack, ClientLevel world, LivingEntity entity, int seed) { return itemVariants[ToasterItem.variant(stack)]; }
-        };
-    }
+    @Override public ItemOverrides getOverrides() { return ItemOverrides.EMPTY; }
     @Override public boolean useAmbientOcclusion() { return false; }
     @Override public TriState useAmbientOcclusion(BlockState state, ModelData data, RenderType type) { return TriState.FALSE; }
     @Override public boolean isGui3d() { return true; }
