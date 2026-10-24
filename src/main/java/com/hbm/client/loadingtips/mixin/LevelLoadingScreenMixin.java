@@ -21,7 +21,7 @@ public abstract class LevelLoadingScreenMixin extends Screen {
 
     @WrapOperation(method="render",at=@At(value="INVOKE",
         target="Lnet/minecraft/client/gui/screens/Screen;render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V"))
-    private void hbm$background(Screen screen,GuiGraphics graphics,int mouseX,int mouseY,float partialTick,
+    private void hbm$background(LevelLoadingScreen screen,GuiGraphics graphics,int mouseX,int mouseY,float partialTick,
             Operation<Void> original) {
         if(LoadingTipsConfig.enabled())LoadingTipsRenderer.background(graphics,width,height);
         else original.call(screen,graphics,mouseX,mouseY,partialTick);
