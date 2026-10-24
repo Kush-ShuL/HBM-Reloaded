@@ -13633,5 +13633,7 @@
   "commands.hbm.packet_dispatch.packet_total": "Amount total: %s",
   "commands.hbm.packet_dispatch.packet_remaining": "Amount remaining: %s",
   "commands.hbm.packet_dispatch.packet_percentage": "% Remaining to process: %s%%",
-  "commands.hbm.packet_dispatch.waited": "Time spent waiting on thread(s) last tick: %sms"
+  "commands.hbm.packet_dispatch.waited": "Time spent waiting on thread(s) last tick: %sms",
+  "gui.hbm.loading_screen.tip": "Tip of the day: %s",
+  "gui.hbm.loading_screen.fallback": "Explore! There's tons of free stuff to find."
 }

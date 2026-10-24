@@ -13633,5 +13633,7 @@
   "commands.hbm.packet_dispatch.packet_total": "本刻准备的任务总数：%s",
   "commands.hbm.packet_dispatch.packet_remaining": "排队中的任务数：%s",
   "commands.hbm.packet_dispatch.packet_percentage": "剩余待处理：%s%%",
-  "commands.hbm.packet_dispatch.waited": "上一刻记录的线程等待时间：%s ms"
+  "commands.hbm.packet_dispatch.waited": "上一刻记录的线程等待时间：%s ms",
+  "gui.hbm.loading_screen.tip": "每日提示：%s",
+  "gui.hbm.loading_screen.fallback": "去探索吧！有大量免费的物资等你发现。"
 }

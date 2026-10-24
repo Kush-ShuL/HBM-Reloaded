@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.client.loadingtips.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ProgressScreenMixin",
+    "LevelLoadingScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
