@@ -16,6 +16,8 @@ import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChestBlock;
+import net.minecraft.world.level.block.FenceBlock;
+import com.hbm.block.meteordeco.MetalFenceBlock;
 import net.minecraft.world.level.block.StainedGlassPaneBlock;
 import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,8 +34,8 @@ import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
-/** Completes only new chests/panes authored by an actual HBM StructureStart.
- * No inventory is read or moved, and no old/unmarked chest or pane is changed. */
+/** Completes only new chests/panes/fences authored by an actual HBM StructureStart.
+ * No inventory is read or moved, and no old/unmarked chest, pane or fence is changed. */
 @EventBusSubscriber(modid="hbm")
 public final class StructureChestPairs {
     private static final String ORIGIN="hbm:structure_chest_origin125", PENDING="hbm:structure_chest_pending125";
@@ -43,13 +45,14 @@ public final class StructureChestPairs {
 
     private static final class Work {
         final LinkedHashSet<BlockPos> positions=new LinkedHashSet<>();
-        final LinkedHashSet<BlockPos> fullChunkPanes=new LinkedHashSet<>();
+        // 已为 FULL 的结构写入沿同一个就绪队列补齐玻璃板与栅栏连接。
+        final LinkedHashSet<BlockPos> fullChunkConnections=new LinkedHashSet<>();
         final LinkedHashSet<Long> loadedChunks=new LinkedHashSet<>();
     }
     private static final class Written {
         final boolean existed;
         boolean chest;
-        boolean pane;
+        boolean connection;
         Written(boolean existed){this.existed=existed;}
     }
 
@@ -63,16 +66,16 @@ public final class StructureChestPairs {
     }
 
     /** Called after the real native chunk write, using its real returned previous state.
-     * This adds no read or allocation to non-chest writes outside an active HBM scope. */
+     * This adds no read or allocation to unrelated writes outside an active HBM scope. */
     public static void wrote(Object caller,BlockPos position,BlockState previous,BlockState next) {
         var scope=CURRENT.get();
         if(scope==null||previous==null||!scope.clip.isInside(position)
                 ||caller!=scope.level&&caller!=scope.level.getLevel())return;
         var existing=scope.writes.get(position);
         if(existing==null&&!trackedWrite(previous,next))return;
-        if(existing==null){existing=new Written(chest(previous)||pane(previous));scope.writes.put(position.immutable(),existing);}
+        if(existing==null){existing=new Written(chest(previous)||connection(previous));scope.writes.put(position.immutable(),existing);}
         existing.chest=chest(next);
-        existing.pane=pane(next);
+        existing.connection=connection(next);
     }
 
     public static final class Scope implements AutoCloseable {
@@ -85,11 +88,11 @@ public final class StructureChestPairs {
         private Scope(WorldGenLevel level,BoundingBox clip,String origin,Scope prior){this.level=level;this.clip=clip;this.origin=origin;this.prior=prior;}
         public void complete() {
             var positions=new ArrayList<BlockPos>();
-            var fullChunkPanes=new ArrayList<BlockPos>();
+            var fullChunkConnections=new ArrayList<BlockPos>();
             for(var entry:writes.entrySet()) {
                 if(entry.getValue().existed)continue;
                 var pos=entry.getKey();
-                if(entry.getValue().pane&&pane(level.getBlockState(pos))) {
+                if(entry.getValue().connection&&connection(level.getBlockState(pos))) {
                     var chunk=level.getChunk(pos);
                     if(chunk instanceof ImposterProtoChunk wrapper)chunk=wrapper.getWrapped();
                     if(chunk instanceof ProtoChunk)chunk.markPosForPostprocessing(pos);
@@ -98,7 +101,7 @@ public final class StructureChestPairs {
                         // offsets, plus our existing ready-only local queue for immediate completion.
                         chunk.addPackedPostProcess(ProtoChunk.packOffsetCoordinates(pos),chunk.getSectionIndex(pos.getY()));
                         chunk.setUnsaved(true);
-                        fullChunkPanes.add(pos);
+                        fullChunkConnections.add(pos);
                     }
                     continue;
                 }
@@ -111,9 +114,9 @@ public final class StructureChestPairs {
                 tile.setChanged();
                 positions.add(pos);
             }
-            if(!positions.isEmpty()||!fullChunkPanes.isEmpty())level.getLevel().getServer().execute(()->{
+            if(!positions.isEmpty()||!fullChunkConnections.isEmpty())level.getLevel().getServer().execute(()->{
                 var work=WORK.computeIfAbsent(level.getLevel(),ignored->new Work());
-                work.positions.addAll(positions);work.fullChunkPanes.addAll(fullChunkPanes);
+                work.positions.addAll(positions);work.fullChunkConnections.addAll(fullChunkConnections);
             });
         }
         @Override public void close(){if(!closed){closed=true;if(prior==null)CURRENT.remove();else CURRENT.set(prior);}}
@@ -121,8 +124,10 @@ public final class StructureChestPairs {
 
     private static boolean chest(BlockState state){return state.is(Blocks.CHEST)||state.is(Blocks.TRAPPED_CHEST);}
     private static boolean pane(BlockState state){return state.is(Blocks.GLASS_PANE)||state.getBlock() instanceof StainedGlassPaneBlock;}
+    /** 原生 FenceBlock 保留木/下界砖/真实子类自己的连接判定；金属围栏走其既有 updateShape。 */
+    private static boolean connection(BlockState state){return pane(state)||state.getBlock() instanceof FenceBlock||state.getBlock() instanceof MetalFenceBlock;}
     /** Cheap prefilter keeps unrelated terrain/block writes out of the ThreadLocal capture path. */
-    public static boolean trackedWrite(BlockState previous,BlockState next){return previous!=null&&(chest(previous)||chest(next)||pane(previous)||pane(next));}
+    public static boolean trackedWrite(BlockState previous,BlockState next){return previous!=null&&(chest(previous)||chest(next)||connection(previous)||connection(next));}
 
     /** Chunk Load can fire before FULL; defer all reads until a later server tick. Only
      * this loaded chunk's pending new-generation markers are considered, never old data migration. */
@@ -138,7 +143,7 @@ public final class StructureChestPairs {
             var work=WORK.get(level);if(work==null)return;
             work.loadedChunks.remove(chunk.toLong());
             work.positions.removeIf(pos->pos.getX()>>4==chunk.x&&pos.getZ()>>4==chunk.z);
-            work.fullChunkPanes.removeIf(pos->pos.getX()>>4==chunk.x&&pos.getZ()>>4==chunk.z);
+            work.fullChunkConnections.removeIf(pos->pos.getX()>>4==chunk.x&&pos.getZ()>>4==chunk.z);
         });
     }
     @SubscribeEvent public static void tick(ServerTickEvent.Post event) {
@@ -157,12 +162,12 @@ public final class StructureChestPairs {
                 var iterator=work.positions.iterator();var pos=iterator.next();iterator.remove();
                 if(!finish(level,pos))work.positions.add(pos);
             }
-            for(int i=0,n=Math.min(64,work.fullChunkPanes.size());i<n;i++) {
-                var iterator=work.fullChunkPanes.iterator();var pos=iterator.next();iterator.remove();
+            for(int i=0,n=Math.min(64,work.fullChunkConnections.size());i<n;i++) {
+                var iterator=work.fullChunkConnections.iterator();var pos=iterator.next();iterator.remove();
                 var chunks=ready(level,pos);
-                if(chunks==null){work.fullChunkPanes.add(pos);continue;}
+                if(chunks==null){work.fullChunkConnections.add(pos);continue;}
                 var state=state(chunks,pos);
-                if(pane(state))write(level,pos,Block.updateFromNeighbourShapes(state,level,pos));
+                if(connection(state))write(level,pos,Block.updateFromNeighbourShapes(state,level,pos));
             }
         }
     }

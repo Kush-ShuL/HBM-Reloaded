@@ -39,6 +39,6 @@ public final class ShredderScreen extends LegacyContainerScreen<ShredderMenu> {
     @Override public void render(GuiGraphics graphics, int mouseX, int mouseY, float partial) {
         super.render(graphics, mouseX, mouseY, partial);
         if (legacyInfoHovered(mouseX, mouseY, 8, 18, 16, 88)) graphics.renderTooltip(font, Component.literal(BatteryItem.shortNumber(menu.power()) + "/" + BatteryItem.shortNumber(ShredderBlockEntity.CAPACITY) + "HE"), mouseX, mouseY);
-        if (bladeError() && legacyInfoHovered(mouseX, mouseY, -16, 36, 16, 16)) graphics.renderTooltip(font, Component.literal("Error: Shredder blades are broken or missing!"), leftPos - 8, topPos + 52);
+        if (bladeError() && legacyInfoHovered(mouseX, mouseY, -16, 36, 16, 16)) graphics.renderTooltip(font, Component.translatable("gui.hbm.shredder.blades_broken_or_missing"), leftPos - 8, topPos + 52);
     }
 }
