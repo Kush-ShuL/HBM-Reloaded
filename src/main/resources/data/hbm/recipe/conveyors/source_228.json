@@ -8,19 +8,13 @@
     "D": {
       "type": "hbm:alloy_legacy_stack",
       "stack": {
-        "id": "hbm:conveyor_wand",
-        "components": {
-          "hbm:legacy_metadata": 2
-        }
+        "id": "hbm:conveyor_wand_double"
       }
     },
     "C": {
       "type": "hbm:alloy_legacy_stack",
       "stack": {
-        "id": "hbm:conveyor_wand",
-        "components": {
-          "hbm:legacy_metadata": 0
-        }
+        "id": "hbm:conveyor_wand_regular"
       }
     },
     "P": {
@@ -28,10 +22,7 @@
     }
   },
   "result": {
-    "id": "hbm:conveyor_wand",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 3
-    }
+    "id": "hbm:conveyor_wand_triple",
+    "count": 1
   }
 }

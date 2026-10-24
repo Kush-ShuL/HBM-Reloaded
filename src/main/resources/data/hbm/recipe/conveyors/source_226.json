@@ -10,10 +10,7 @@
     "C": {
       "type": "hbm:alloy_legacy_stack",
       "stack": {
-        "id": "hbm:conveyor_wand",
-        "components": {
-          "hbm:legacy_metadata": 0
-        }
+        "id": "hbm:conveyor_wand_regular"
       }
     },
     "L": {
@@ -23,10 +20,7 @@
     }
   },
   "result": {
-    "id": "hbm:conveyor_wand",
-    "count": 8,
-    "components": {
-      "hbm:legacy_metadata": 1
-    }
+    "id": "hbm:conveyor_wand_express",
+    "count": 8
   }
 }

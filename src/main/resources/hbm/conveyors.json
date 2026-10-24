@@ -73,22 +73,63 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "conveyor_wand",
-      "id": "hbm:conveyor_wand",
+      "symbol": "conveyor_wand_regular",
+      "id": "hbm:conveyor_wand_regular",
       "kind": "item",
       "originalClass": "ItemConveyorWand",
       "creativeTab": "machine",
-      "metadataRange": [
-        0,
-        3
-      ],
-      "names": [
-        "regular",
-        "express",
-        "double",
-        "triple"
-      ],
-      "enumClass": "ConveyorType",
+      "stackSize": 64,
+      "sourceOrdinal": 0,
+      "sourceField": "ModItems.conveyor_wand",
+      "sourceLegacyRegistryId": "hbm:item.conveyor_wand",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4391
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_wand_express",
+      "id": "hbm:conveyor_wand_express",
+      "kind": "item",
+      "originalClass": "ItemConveyorWand",
+      "creativeTab": "machine",
+      "stackSize": 64,
+      "sourceOrdinal": 1,
+      "sourceField": "ModItems.conveyor_wand",
+      "sourceLegacyRegistryId": "hbm:item.conveyor_wand",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4391
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_wand_double",
+      "id": "hbm:conveyor_wand_double",
+      "kind": "item",
+      "originalClass": "ItemConveyorWand",
+      "creativeTab": "machine",
+      "stackSize": 64,
+      "sourceOrdinal": 2,
+      "sourceField": "ModItems.conveyor_wand",
+      "sourceLegacyRegistryId": "hbm:item.conveyor_wand",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4391
+      },
+      "runtimeValidated": false
+    },
+    {
+      "symbol": "conveyor_wand_triple",
+      "id": "hbm:conveyor_wand_triple",
+      "kind": "item",
+      "originalClass": "ItemConveyorWand",
+      "creativeTab": "machine",
+      "stackSize": 64,
+      "sourceOrdinal": 3,
+      "sourceField": "ModItems.conveyor_wand",
+      "sourceLegacyRegistryId": "hbm:item.conveyor_wand",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 4391

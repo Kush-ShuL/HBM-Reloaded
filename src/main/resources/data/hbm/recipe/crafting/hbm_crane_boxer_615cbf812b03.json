@@ -18,12 +18,7 @@
       "item": "hbm:part_generic_piston_pneumatic"
     },
     "C": {
-      "type": "neoforge:components",
-      "items": "hbm:conveyor_wand",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:conveyor_wand_regular"
     }
   }
 }

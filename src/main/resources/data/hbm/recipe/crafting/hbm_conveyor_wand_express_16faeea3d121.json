@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:conveyor_wand",
-    "count": 8,
-    "components": {
-      "hbm:legacy_metadata": 1
-    }
+    "id": "hbm:conveyor_wand_express",
+    "count": 8
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -15,12 +12,7 @@
   ],
   "key": {
     "C": {
-      "type": "neoforge:components",
-      "items": "hbm:conveyor_wand",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:conveyor_wand_regular"
     },
     "L": {
       "type": "hbm:source_fluid_container",

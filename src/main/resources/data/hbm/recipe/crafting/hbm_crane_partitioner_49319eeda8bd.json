@@ -14,12 +14,7 @@
       "item": "hbm:circuit_chip"
     },
     "B": {
-      "type": "neoforge:components",
-      "items": "hbm:conveyor_wand",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:conveyor_wand_regular"
     },
     "C": {
       "item": "hbm:crate_steel"

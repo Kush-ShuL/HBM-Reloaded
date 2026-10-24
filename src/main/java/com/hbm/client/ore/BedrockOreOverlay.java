@@ -20,7 +20,7 @@ import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 public final class BedrockOreOverlay {
     // The complete original held Item ILookOverlay family, including ItemStructureTool subclasses.
     // Original held tools take precedence even when that tool's own printHook elects to draw nothing.
-    private static final Set<String> HELD_LOOK_OVERLAY=Set.of("hbm:conveyor_wand","hbm:structure_custommachine","hbm:structure_pattern","hbm:structure_randomized","hbm:structure_randomly","hbm:structure_single","hbm:structure_solid");
+    private static final Set<String> HELD_LOOK_OVERLAY=Set.of("hbm:conveyor_wand_regular","hbm:conveyor_wand_express","hbm:conveyor_wand_double","hbm:conveyor_wand_triple","hbm:structure_custommachine","hbm:structure_pattern","hbm:structure_randomized","hbm:structure_randomly","hbm:structure_single","hbm:structure_solid");
     @SubscribeEvent public static void render(RenderGuiLayerEvent.Pre event) {
         if(!VanillaGuiLayers.CROSSHAIR.equals(event.getName()))return;
         var client=Minecraft.getInstance();

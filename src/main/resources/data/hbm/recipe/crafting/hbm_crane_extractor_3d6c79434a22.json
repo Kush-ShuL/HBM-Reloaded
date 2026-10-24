@@ -1,13 +1,13 @@
 {
   "result": {
-    "id": "hbm:crane_grabber",
+    "id": "hbm:crane_extractor",
     "count": 2
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "C C",
-    "P P",
+    "CCC",
+    "CPC",
     "CBC"
   ],
   "key": {
@@ -15,12 +15,7 @@
       "tag": "c:ingots/iron"
     },
     "B": {
-      "type": "neoforge:components",
-      "items": "hbm:conveyor_wand",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:conveyor_wand_regular"
     },
     "P": {
       "item": "hbm:part_generic_piston_pneumatic"

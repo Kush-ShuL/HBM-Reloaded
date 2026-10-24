@@ -1,7 +1,7 @@
 {
   "result": {
     "id": "hbm:crane_inserter",
-    "count": 2
+    "count": 4
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -12,15 +12,10 @@
   ],
   "key": {
     "C": {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/steel"
     },
     "B": {
-      "type": "neoforge:components",
-      "items": "hbm:conveyor_wand",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:conveyor_wand_regular"
     }
   }
 }

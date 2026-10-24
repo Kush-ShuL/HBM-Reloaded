@@ -1,6 +1,5 @@
 package com.hbm.conveyor.belt;
 
-import com.hbm.hazard.HbmHazards;
 import java.util.*;
 import java.util.function.*;
 import net.minecraft.ChatFormatting;
@@ -22,10 +21,11 @@ import net.minecraft.world.level.Level;
 public final class ConveyorWandItem extends Item {
  public enum Type{REGULAR,EXPRESS,DOUBLE,TRIPLE}
  public static BooleanSupplier LEFT_SHIFT=()->false;public static BiConsumer<ItemStack,Player> CLIENT_TICK=(stack,player)->{};public static Runnable CLEAR_PREVIEW=()->{};
- public ConveyorWandItem(){super(new Properties().component(HbmHazards.LEGACY_METADATA.get(),0));}
- public static Type type(ItemStack stack){return stack==null||stack.isEmpty()?Type.REGULAR:Type.values()[stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0)];}
- public static ItemStack make(int metadata,int count){var stack=new ItemStack(ConveyorContent.WAND.get(),count);stack.set(HbmHazards.LEGACY_METADATA.get(),metadata);return stack;}
- @Override public Component getName(ItemStack stack){return Component.translatable("item.conveyor_wand."+type(stack).name().toLowerCase(Locale.US)+".name");}
+ private final Type type;
+ public ConveyorWandItem(Type type){super(new Properties());this.type=Objects.requireNonNull(type);}
+ public static Type type(ItemStack stack){if(stack==null||stack.isEmpty())return Type.REGULAR;if(!(stack.getItem() instanceof ConveyorWandItem item))throw new IllegalArgumentException("Not a conveyor constructor");return item.type;}
+ public static ItemStack make(Type type,int count){return new ItemStack(ConveyorContent.wand(type),count);}
+ @Override public Component getName(ItemStack stack){return Component.translatable("item.hbm.conveyor_wand_"+type.name().toLowerCase(Locale.ROOT));}
  @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<Component> text,TooltipFlag flag){if(LEFT_SHIFT.getAsBoolean()){for(String line:Component.translatable("item.conveyor_wand.desc").getString().split("\\$",-1))text.add(Component.literal(line).withStyle(ChatFormatting.YELLOW));if(type(stack)==Type.REGULAR)text.add(Component.translatable("item.conveyor_wand.vertical.desc").withStyle(ChatFormatting.AQUA));}else text.add(Component.translatable("gui.hbm.conveyor.shift",Component.literal("LSHIFT").withStyle(ChatFormatting.YELLOW,ChatFormatting.ITALIC)).withStyle(ChatFormatting.DARK_GRAY,ChatFormatting.ITALIC));}
  private static CompoundTag data(ItemStack stack){return stack.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag();}
  @Override public InteractionResult useOn(UseOnContext context){var player=context.getPlayer();if(player==null)return InteractionResult.PASS;var world=context.getLevel();var stack=context.getItemInHand();BlockPos clicked=context.getClickedPos();Direction side=context.getClickedFace();Type type=type(stack);
