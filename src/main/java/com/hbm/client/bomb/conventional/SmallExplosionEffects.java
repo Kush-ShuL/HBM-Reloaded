@@ -55,6 +55,13 @@ public final class SmallExplosionEffects {
         var mc=Minecraft.getInstance();if(mc.level==null)return;var random=mc.level.random;
         for(int i=0;i<count;i++){double vx=random.nextGaussian()*motion,vy=random.nextGaussian()*motion,vz=random.nextGaussian()*motion;mc.particleEngine.add(new Dust(mc.level,x,y,z,vx,vy+.2D,vz,state,false,50+random.nextInt(50)));}
     }
+    /** ClientProxy vanillaExt/blockdust: constructor first, then the world's lifetime draw and explicit gray. */
+    public static void sourceBlockDust(double x,double y,double z,double vx,double vy,double vz,BlockState state){
+        var mc=Minecraft.getInstance();if(mc.level==null)return;
+        var dust=new Dust(mc.level,x,y,z,vx,vy+.2D,vz,state,false,0);
+        dust.setLifetime(10+mc.level.random.nextInt(20));dust.setColor(.8F,.8F,.8F);
+        mc.particleEngine.add(dust);
+    }
     private static final class Cloud extends SingleQuadParticle {
         private final float hue,spin;
         Cloud(ClientLevel world,double x,double y,double z,float scale,float speed){

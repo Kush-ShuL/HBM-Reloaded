@@ -1,7 +1,6 @@
 package com.hbm.machine.radiationcleanup;
 
 import com.hbm.exposure.*;
-import com.hbm.particle.LegacyParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
@@ -11,6 +10,7 @@ import net.minecraft.world.phys.AABB;
 
 /** Original TileEntityDecon. The source has no inventory/HE/private fluid or GUI and no custom saved fields. */
 public final class DeconBlockEntity extends BlockEntity {
+    public static java.util.function.BiConsumer<Level,BlockPos> CLIENT_PARTICLE=(level,pos)->{};
     public DeconBlockEntity(BlockPos pos,BlockState state){super(RadiationCleanupContent.DECON_ENTITY.get(),pos,state);}
     public static void tick(Level level,BlockPos pos,BlockState state,DeconBlockEntity machine){
         if(!level.isClientSide){
@@ -20,10 +20,6 @@ public final class DeconBlockEntity extends BlockEntity {
                 living.removeEffect(ExposureEffects.RADIATION);
                 HbmExposure.clearContamination(living);
             }
-        }else{
-            // Original vanillaExt townAura uses the already-real old EntityAuraFX provider, once per client BE tick.
-            var random=level.random;
-            level.addParticle(LegacyParticles.AURA.get(),pos.getX()+.125+random.nextDouble()*.75,pos.getY()+1.1,pos.getZ()+.125+random.nextDouble()*.75,0,.04,0);
-        }
+        }else CLIENT_PARTICLE.accept(level,pos);
     }
 }
