@@ -23,6 +23,10 @@ public final class ClientEffectsConfig {
     // 配方浏览器是否隐藏秘密物品及相关通用机器配方；默认开启。
     private static final ModConfigSpec.BooleanValue RECIPE_VIEWER_HIDE_SECRETS;
 
+    // 主世界轨道舱的文字列表；空列表隐藏舱体和文字。
+    private static final java.util.List<String> DEFAULT_ORBITAL_MODULE_MESSAGES=java.util.List.of("At the first flicker of green light you RUN");
+    private static final ModConfigSpec.ConfigValue<java.util.List<? extends String>> ORBITAL_MODULE_MESSAGES;
+
     // 是否显示准星所指方块和工具的实时观察提示；默认开启。
     private static final ModConfigSpec.BooleanValue LOOK_OVERLAY;
     // 是否额外显示所指方块的真实注册ID和状态属性；默认关闭，受观察提示总开关控制。
@@ -59,6 +63,11 @@ public final class ClientEffectsConfig {
                 "更改后重载配方浏览器或重启客户端，以重新索引条目和配方。只控制展示，不改变实际合成或处理。",
                 "泥板配方仍需单独显式允许；其他独立隐藏规则、蓝图册图标和创造栏规则不由此开关解除。")
                 .define(java.util.List.of("recipeViewer", "hideSecretsEnabled"), true);
+        ORBITAL_MODULE_MESSAGES = builder.comment(
+                "主世界(0,500,0)的轨道舱文字列表。玩家距离该位置小于300格时显示舱体及紫色文字环。",
+                "每次客户端启动按固定随机种子从列表中选取一句；清空列表后舱体和文字均不显示。",
+                "单条空字符串只隐藏当次文字，仍显示舱体。仅为本地视觉场景，不生成方块、实体或碰撞。")
+                .defineListAllowEmpty(java.util.List.of("worldScenes", "orbitalModuleMessages"), DEFAULT_ORBITAL_MODULE_MESSAGES, value -> value instanceof String);
         LOOK_OVERLAY = builder.comment(
                 "显示准星所指方块和工具的实时观察提示，包括 RBMK 诊断、机器、管道和结构工具。默认true。",
                 "只控制观察提示；不改变机器状态、Jade 提示、计时通知、工具能力图标或世界中的结构预览。")
@@ -87,6 +96,8 @@ public final class ClientEffectsConfig {
     public static boolean modeBadgesEnabled() { return !SPEC.isLoaded() || MODE_BADGES.get(); }
 
     public static boolean recipeViewerHideSecretsEnabled() { return !SPEC.isLoaded() || RECIPE_VIEWER_HIDE_SECRETS.get(); }
+
+    public static java.util.List<String> orbitalModuleMessages() { return SPEC.isLoaded()?java.util.List.copyOf(ORBITAL_MODULE_MESSAGES.get()):DEFAULT_ORBITAL_MODULE_MESSAGES; }
 
     public static boolean lookOverlayEnabled() { return !SPEC.isLoaded() || LOOK_OVERLAY.get(); }
 

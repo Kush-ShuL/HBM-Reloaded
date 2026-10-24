@@ -32,6 +32,8 @@ public final class WorldEffectsForward {
     public static void beginWorld(){collecting=GunShaderCompat.shaderPackInUse();}
     public static void shadows(boolean value){shadows=value;}
     public static boolean sourcePass(){return replaying;}
+    /** Read the existing Iris shadow lifecycle; world-only scenes must not submit a shadow duplicate. */
+    public static boolean shadowPass(){return shadows;}
     public static boolean pack(){return GunShaderCompat.shaderPackInUse();}
     /** Return true only when the original draw+flush was retained; otherwise draw normally. */
     public static boolean acceptsSourceDraw(){return collecting&&!replaying&&!shadows&&pack();}
