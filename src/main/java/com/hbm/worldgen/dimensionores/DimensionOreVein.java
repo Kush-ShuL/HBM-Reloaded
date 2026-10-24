@@ -7,6 +7,13 @@ import net.minecraft.world.level.block.state.BlockState;
 /** The original minable geometry, numeric order and random draws; explicit source netherrack/end-stone host. */
 public final class DimensionOreVein {
     public static int place(WorldGenLevel level,RandomSource random,int x,int y,int z,int size,BlockState ore,net.minecraft.world.level.block.Block host){
+        return placeCore(level,random,x,y,z,size,ore,host,false);
+    }
+    /** Same geometry and draws, with reads/writes limited to already-ready native neighbour chunks. */
+    public static int placeReady(WorldGenLevel level,RandomSource random,int x,int y,int z,int size,BlockState ore,net.minecraft.world.level.block.Block host){
+        return placeCore(level,random,x,y,z,size,ore,host,true);
+    }
+    private static int placeCore(WorldGenLevel level,RandomSource random,int x,int y,int z,int size,BlockState ore,net.minecraft.world.level.block.Block host,boolean readyOnly){
         float angle=random.nextFloat()*(float)Math.PI;
         double x1=x+8+Mth.sin(angle)*size/8F,x2=x+8-Mth.sin(angle)*size/8F;
         double z1=z+8+Mth.cos(angle)*size/8F,z2=z+8-Mth.cos(angle)*size/8F;
@@ -20,12 +27,27 @@ public final class DimensionOreVein {
                 for(int by=minY;by<=maxY;by++){double dy=(by+.5D-centerY)/(height/2D);if(dx*dx+dy*dy>=1D)continue;
                     for(int bz=minZ;bz<=maxZ;bz++){double dz=(bz+.5D-centerZ)/(width/2D);if(dx*dx+dy*dy+dz*dz>=1D)continue;
                         if(by<level.getMinBuildHeight()||by>=level.getMaxBuildHeight())continue;pos.set(bx,by,bz);
-                        if(!level.ensureCanWrite(pos))throw new IllegalStateException("Source dimension ore vein outside generation region at "+pos);
-                        if(level.getBlockState(pos).is(host)){level.setBlock(pos,ore,2);changed++;}
+                        BlockState previous;
+                        if(readyOnly){
+                            previous=readyState(level,x>>4,z>>4,pos);
+                            if(previous==null||!level.ensureCanWrite(pos))continue;
+                        }else{
+                            if(!level.ensureCanWrite(pos))throw new IllegalStateException("Source dimension ore vein outside generation region at "+pos);
+                            previous=level.getBlockState(pos);
+                        }
+                        if(previous.is(host)){level.setBlock(pos,ore,2);changed++;}
                     }
                 }
             }
         }return changed;
+    }
+    private static BlockState readyState(WorldGenLevel level,int ownerX,int ownerZ,BlockPos pos){
+        int chunkX=pos.getX()>>4,chunkZ=pos.getZ()>>4;
+        if(Math.abs(chunkX-ownerX)>1||Math.abs(chunkZ-ownerZ)>1||!level.hasChunk(chunkX,chunkZ))return null;
+        var chunk=level instanceof net.minecraft.server.level.WorldGenRegion
+                ?level.getChunk(chunkX,chunkZ,net.minecraft.world.level.chunk.status.ChunkStatus.CARVERS,false)
+                :level.getLevel().getChunkSource().getChunkNow(chunkX,chunkZ);
+        return chunk==null?null:chunk.getBlockState(pos);
     }
  private DimensionOreVein(){}
 }

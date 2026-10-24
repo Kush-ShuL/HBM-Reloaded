@@ -129,6 +129,8 @@ public final class WorldgenControls {
         rule(builder,"wild_flowers","nightshade","chance_height");
         rule(builder,"wild_flowers","tobacco","chance_height");
         rule(builder,"wild_flowers","weed","chance_height");
+        rule(builder,"gas_bubbles","flammable","chance_vein");
+        rule(builder,"gas_bubbles","explosive","chance_vein");
         rule(builder,"oil_terrain","oil_bubbles","chance_height");
         rule(builder,"oil_terrain","bedrock_oil","chance_height");
         rule(builder,"oil_terrain","oil_sand","chance_height");
@@ -156,6 +158,7 @@ public final class WorldgenControls {
             enabled=b.define("enabled",true);
             switch(kind){
                 case "vein"->{integer(b,"count",-1,-1,10000);integer(b,"size",-1,-1,64);heights(b);}
+                case "chance_vein"->{integer(b,"chanceDenominator",-1,-1,1000000);integer(b,"count",-1,-1,10000);integer(b,"size",-1,-1,64);heights(b);}
                 case "deposit"->{integer(b,"chanceDenominator",-1,-1,1000000);integer(b,"size",-1,-1,32);heights(b);decimal(b,"fill",-1,-1,1);}
                 case "layer"->{heights(b);decimal(b,"threshold",-1,-1,1000000);decimal(b,"horizontalScale",-1,-1,100);decimal(b,"verticalScale",-1,-1,100);}
                 case "cave"->{integer(b,"centerY",-2049,-2049,2048);integer(b,"rangeMultiplier",-1,-1,128);integer(b,"maxRange",-1,-1,128);decimal(b,"threshold",-1,-1,1000000);decimal(b,"horizontalScale",-1,-1,100);}

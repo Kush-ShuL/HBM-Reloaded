@@ -283,6 +283,7 @@ public final class HbmReloaded {
         com.hbm.worldgen.pinktree.PinkTrees.register(modBus);
         com.hbm.worldgen.reeds.ReedsWorldgen.register(modBus);
         com.hbm.worldgen.flowers.WildFlowersWorldgen.register(modBus);
+        com.hbm.worldgen.gas.GasBubbleWorldgen.register(modBus);
         com.hbm.armor.nightvision.NightVisionContent.register(modBus);
         com.hbm.armor.gassensor.GasSensorContent.register(modBus);
         com.hbm.armor.gasmaskmods.GasmaskAttachmentsContent.register(modBus);
