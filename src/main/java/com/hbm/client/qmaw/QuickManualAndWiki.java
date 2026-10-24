@@ -7,6 +7,8 @@ import net.minecraft.world.item.ItemStack;
 public class QuickManualAndWiki {
 	
 	public String name;
+	/** Resource identity for the native standard language keys; not another content store. */
+	public String languageKey;
 	public ItemStack icon;
 
 	/** Removes this manual from the calculator search feature */

@@ -26,7 +26,7 @@ public final class QMAWLoader implements ResourceManagerReloadListener {
  private static ItemStack stack(JsonArray json){try{return GenericRecipeConfigCodec.readStack(json,aliases);}catch(IllegalArgumentException error){return ItemStack.EMPTY;}}
  private static void language(JsonObject data,Map<String,String> target){data.entrySet().forEach(entry->target.put(entry.getKey().toLowerCase(Locale.ROOT),entry.getValue().getAsString()));}
  public static void registerJson(String file,JsonObject json){
-  var page=new QuickManualAndWiki(json.get("name").getAsString());if(json.has("icon"))page.icon=stack(json.getAsJsonArray("icon"));language(json.getAsJsonObject("title"),page.title);language(json.getAsJsonObject("content"),page.contents);
+  var page=new QuickManualAndWiki(json.get("name").getAsString());var source=net.minecraft.resources.ResourceLocation.parse(file);String path=source.getPath();page.languageKey="manual."+source.getNamespace()+"."+path.substring("manual/".length(),path.length()-".json".length()).replace('/','.');if(json.has("icon"))page.icon=stack(json.getAsJsonArray("icon"));language(json.getAsJsonObject("title"),page.title);language(json.getAsJsonObject("content"),page.contents);
   for(var element:json.getAsJsonArray("trigger")){var array=element.getAsJsonArray();var trigger=stack(array);if(trigger.isEmpty()){LogUtils.getLogger().debug("Original manual {} references pending trigger {}",file,array);continue;}int meta=array.size()>2?array.get(2).getAsInt():0;triggers.put(new Trigger(trigger.getItem(),meta==32767?-1:metadata(trigger)),page);}
   if(json.has("noindex")&&json.get("noindex").getAsBoolean())page.noIndex();if(!page.contents.isEmpty())qmaw.put(page.name,page);
  }

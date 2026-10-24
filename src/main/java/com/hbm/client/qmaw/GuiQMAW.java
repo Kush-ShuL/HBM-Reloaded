@@ -60,6 +60,16 @@ public final class GuiQMAW extends Screen {
 		}
 		return formatting;
 	}
+	/** Native lang lookup for the locales migrated so far; keep other existing JSON locales intact. */
+	private static String localized(QuickManualAndWiki page, Map<String,String> literals, String field, String locale) {
+		if(page.languageKey != null && (EN_US.equals(locale) || "zh_cn".equals(locale))) {
+			String key = page.languageKey + "." + field;
+			var language = net.minecraft.locale.Language.getInstance();
+			if(language.has(key)) return language.getOrDefault(key);
+		}
+		String value = literals.get(locale);
+		return value != null ? value : literals.get(EN_US);
+	}
 	protected String compose(String contents) {
 		var lang = Minecraft.getInstance().getLanguageManager();
 		String langCode = lang.getSelected();
@@ -76,8 +86,8 @@ public final class GuiQMAW extends Screen {
 			String substitute = composeTag;
 			
 			if(qmaw != null) {
-				if(qmaw.contents.containsKey(langCode)) substitute = qmaw.contents.get(langCode);
-				else if(qmaw.contents.containsKey(EN_US)) substitute = qmaw.contents.get(EN_US);
+				String localized = localized(qmaw, qmaw.contents, "content", langCode);
+				if(localized != null) substitute = localized;
 			}
 			
 			contents = contents.replace("{{" + composeTag + "}}", substitute);
@@ -89,14 +99,12 @@ public final class GuiQMAW extends Screen {
 	protected void parseQMAW(QuickManualAndWiki qmaw) {
 		var lang = Minecraft.getInstance().getLanguageManager();
 
-		this.title = qmaw.title.get(lang.getSelected());
-		if(title == null) this.title = qmaw.title.get(EN_US);
+		this.title = localized(qmaw, qmaw.title, "title", lang.getSelected());
 		if(title == null) this.title = "Missing Localization!";
 
 		this.icon = qmaw.icon;
 
-		String toParse = qmaw.contents.get(lang.getSelected());
-		if(toParse == null) toParse = qmaw.contents.get(EN_US);
+		String toParse = localized(qmaw, qmaw.contents, "content", lang.getSelected());
 		if(toParse == null) toParse = "Missing Localization!";
 		
 		toParse = compose(toParse);
