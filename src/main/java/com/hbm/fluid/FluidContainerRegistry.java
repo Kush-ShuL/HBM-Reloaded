@@ -99,6 +99,11 @@ public final class FluidContainerRegistry {
         remoteContainerCompat = containerCompat;
     }
 
+    /** 按完整注册顺序筛选当前流体与容量，保留同一物品的多个真实容器身份。 */
+    public static java.util.stream.Stream<Container> matchingContainers(HbmFluidType type, int amount) {
+        return allContainers.stream().filter(container -> container.type() == type && container.content() == amount);
+    }
+
     private static void dynamic(net.minecraft.world.item.Item full, String empty, HbmFluidType type, int amount) {
         registerContainer(new Container(FluidItemContent.stack(full, type), new ItemStack(com.hbm.registry.HbmContent.item(empty)), type, amount));
     }
