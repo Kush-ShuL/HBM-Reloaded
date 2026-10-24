@@ -36,7 +36,13 @@ public final class RecipeViewerVisibility {
     }
 
     public static boolean visible(List<String> pools, List<List<ItemStack>> inputs, List<List<ItemStack>> outputs) {
+        return visible(pools, inputs, outputs, true);
+    }
+
+    /** Per-category source exclusions share the same existing display preference. */
+    public static boolean visible(List<String> pools, List<List<ItemStack>> inputs, List<List<ItemStack>> outputs, boolean sourceVisible) {
         if (!hideSecretsEnabled()) return true;
+        if (!sourceVisible) return false;
         if (pools.stream().anyMatch(pool -> pool.startsWith(Blueprints.SECRET))) return false;
         for (var alternatives : inputs) for (var stack : alternatives) if (RecipeExclusions.ITEMS.contains(stack.getItem())) return false;
         for (var possibilities : outputs) for (var stack : possibilities) if (RecipeExclusions.ITEMS.contains(stack.getItem())) return false;

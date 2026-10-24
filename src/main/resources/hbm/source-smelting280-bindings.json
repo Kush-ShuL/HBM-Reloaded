@@ -268,19 +268,19 @@
       "status": "exact-native-source-binding-staged"
     },
     {
-      "id": "hbm:smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767",
+      "id": "hbm:smelting/hbm_source_parts_plastic_scrap_to_hbm_ingot_polymer",
       "source": {
         "file": "legacy/src/main/java/com/hbm/crafting/SmeltingRecipes.java",
         "line": 173
       },
       "variant": 0,
-      "resource": "data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
-      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
+      "resource": "data/hbm/recipe/smelting/hbm_source_parts_plastic_scrap_to_hbm_ingot_polymer.json",
+      "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_source_parts_plastic_scrap_to_hbm_ingot_polymer.json",
       "recipe": {
         "type": "minecraft:smelting",
         "category": "misc",
         "ingredient": {
-          "item": "hbm:scrap_plastic"
+          "tag": "hbm:source_parts/plastic_scrap"
         },
         "result": {
           "id": "hbm:ingot_polymer",
@@ -470,9 +470,9 @@
       },
       "nativeBindings": [
         {
-          "id": "hbm:smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767",
-          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
-          "resource": "data/hbm/recipe/smelting/hbm_scrap_plastic_to_hbm_ingot_polymer_in_32767.json",
+          "id": "hbm:smelting/hbm_source_parts_plastic_scrap_to_hbm_ingot_polymer",
+          "sourceResource": "src/main/resources/data/hbm/recipe/smelting/hbm_source_parts_plastic_scrap_to_hbm_ingot_polymer.json",
+          "resource": "data/hbm/recipe/smelting/hbm_source_parts_plastic_scrap_to_hbm_ingot_polymer.json",
           "type": "minecraft:smelting",
           "ownerReport": "migration/source-smelting280.json",
           "status": "exact-native-source-binding-staged"

@@ -2321,11 +2321,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:scrap_plastic_board_blank",
+              "count": 1
             }
           },
           "count": 1
@@ -2352,7 +2349,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_board_blank",
       "order": 59
     },
     {
@@ -2365,11 +2362,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:scrap_plastic_board_transistor",
+              "count": 1
             }
           },
           "count": 1
@@ -2396,7 +2390,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_board_transistor",
       "order": 60
     },
     {
@@ -2409,11 +2403,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:scrap_plastic_board_converter",
+              "count": 1
             }
           },
           "count": 1
@@ -2440,7 +2431,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_board_converter",
       "order": 61
     },
     {
@@ -2453,11 +2444,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:scrap_plastic_bridge_north",
+              "count": 1
             }
           },
           "count": 1
@@ -2484,7 +2472,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_north",
       "order": 62
     },
     {
@@ -2497,11 +2485,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:scrap_plastic_bridge_south",
+              "count": 1
             }
           },
           "count": 1
@@ -2528,7 +2513,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_south",
       "order": 63
     },
     {
@@ -2541,11 +2526,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:scrap_plastic_bridge_io",
+              "count": 1
             }
           },
           "count": 1
@@ -2572,7 +2554,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_io",
       "order": 64
     },
     {
@@ -2585,11 +2567,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:scrap_plastic_bridge_bus",
+              "count": 1
             }
           },
           "count": 1
@@ -2616,7 +2595,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_bus",
       "order": 65
     },
     {
@@ -2629,11 +2608,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:scrap_plastic_bridge_chipset",
+              "count": 1
             }
           },
           "count": 1
@@ -2660,7 +2636,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_chipset",
       "order": 66
     },
     {
@@ -2673,11 +2649,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 8
-              }
+              "id": "hbm:scrap_plastic_bridge_cmos",
+              "count": 1
             }
           },
           "count": 1
@@ -2704,7 +2677,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_cmos",
       "order": 67
     },
     {
@@ -2717,11 +2690,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 9
-              }
+              "id": "hbm:scrap_plastic_bridge_bios",
+              "count": 1
             }
           },
           "count": 1
@@ -2748,7 +2718,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_bridge_bios",
       "order": 68
     },
     {
@@ -2761,11 +2731,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 10
-              }
+              "id": "hbm:scrap_plastic_cpu_register",
+              "count": 1
             }
           },
           "count": 1
@@ -2792,7 +2759,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_cpu_register",
       "order": 69
     },
     {
@@ -2805,11 +2772,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 11
-              }
+              "id": "hbm:scrap_plastic_cpu_clock",
+              "count": 1
             }
           },
           "count": 1
@@ -2836,7 +2800,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_cpu_clock",
       "order": 70
     },
     {
@@ -2849,11 +2813,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 12
-              }
+              "id": "hbm:scrap_plastic_cpu_logic",
+              "count": 1
             }
           },
           "count": 1
@@ -2880,7 +2841,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_cpu_logic",
       "order": 71
     },
     {
@@ -2893,11 +2854,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 13
-              }
+              "id": "hbm:scrap_plastic_cpu_cache",
+              "count": 1
             }
           },
           "count": 1
@@ -2924,7 +2882,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_cpu_cache",
       "order": 72
     },
     {
@@ -2937,11 +2895,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 14
-              }
+              "id": "hbm:scrap_plastic_cpu_ext",
+              "count": 1
             }
           },
           "count": 1
@@ -2968,7 +2923,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_cpu_ext",
       "order": 73
     },
     {
@@ -2981,11 +2936,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 15
-              }
+              "id": "hbm:scrap_plastic_cpu_socket",
+              "count": 1
             }
           },
           "count": 1
@@ -3012,7 +2964,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_cpu_socket",
       "order": 74
     },
     {
@@ -3025,11 +2977,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 16
-              }
+              "id": "hbm:scrap_plastic_mem_socket",
+              "count": 1
             }
           },
           "count": 1
@@ -3056,7 +3005,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_mem_socket",
       "order": 75
     },
     {
@@ -3069,11 +3018,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 17
-              }
+              "id": "hbm:scrap_plastic_mem_16k_a",
+              "count": 1
             }
           },
           "count": 1
@@ -3100,7 +3046,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_mem_16k_a",
       "order": 76
     },
     {
@@ -3113,11 +3059,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 18
-              }
+              "id": "hbm:scrap_plastic_mem_16k_b",
+              "count": 1
             }
           },
           "count": 1
@@ -3144,7 +3087,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_mem_16k_b",
       "order": 77
     },
     {
@@ -3157,11 +3100,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 19
-              }
+              "id": "hbm:scrap_plastic_mem_16k_c",
+              "count": 1
             }
           },
           "count": 1
@@ -3188,7 +3128,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_mem_16k_c",
       "order": 78
     },
     {
@@ -3201,11 +3141,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 20
-              }
+              "id": "hbm:scrap_plastic_mem_16k_d",
+              "count": 1
             }
           },
           "count": 1
@@ -3232,7 +3169,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_mem_16k_d",
       "order": 79
     },
     {
@@ -3245,11 +3182,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 21
-              }
+              "id": "hbm:scrap_plastic_card_board",
+              "count": 1
             }
           },
           "count": 1
@@ -3276,7 +3210,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_card_board",
       "order": 80
     },
     {
@@ -3289,11 +3223,8 @@
           "ingredient": {
             "type": "hbm:alloy_legacy_stack",
             "stack": {
-              "id": "hbm:scrap_plastic",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 22
-              }
+              "id": "hbm:scrap_plastic_card_processor",
+              "count": 1
             }
           },
           "count": 1
@@ -3320,7 +3251,7 @@
       ],
       "productivity": 0.0,
       "key_kind": "item",
-      "source_key": "hbm:scrap_plastic",
+      "source_key": "hbm:scrap_plastic_card_processor",
       "order": 81
     },
     {

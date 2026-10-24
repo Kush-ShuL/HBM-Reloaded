@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "tag": "hbm:source_parts/plastic_scrap"
+  },
+  "result": {
+    "id": "hbm:ingot_polymer",
+    "count": 1
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}
