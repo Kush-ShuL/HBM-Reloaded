@@ -38,7 +38,7 @@ public final class GeneralModes {
         flag(builder.comment("添加HBM原版的数字采矿机装配配方；需要同时安装Mekanism。").translation("config.hbm.general.mekanism_recipes"),"mekanismRecipeChangesEnabled",true);
         flag(builder,"1.44_enableMachineGravity",false);
         flag(builder,"1.37_enableGuideBook",true);
-        flag(builder.comment("允许结构编辑工具将导出内容追加写入 hbmConfig/structureOutput.txt。").translation("config.hbm.structure_export.debug"),"debugModeEnabled",false);
+        flag(builder.comment("调试模式：允许结构编辑工具将导出代码追加写入 hbmConfig/structureOutput.txt，并启用仅原作者UUID可使用的聊天调试工具。默认关闭。").translation("config.hbm.structure_export.debug"),"debugModeEnabled",false);
         flag(builder,"enable528Mode",false);
         for(String key:List.of("X528_forceReasimBoilers","X528_enableColtanDeposit","X528_enableBosniaSimulator","X528_enable528NetherBurn","X528_enable528PressurizedRecipes","X528_enable528ExplosiveEnergistics","X528_enable528MachineGravity"))flag(builder,key,true);
         flag(builder,"X528_enableColtanSpawning",false);
@@ -65,7 +65,7 @@ public final class GeneralModes {
         case "mekanismRecipeChangesEnabled" -> java.util.List.of("recipes","mekanismIntegrationEnabled");
         case "1.44_enableMachineGravity" -> java.util.List.of("machines","gravityEnabled");
         case "1.37_enableGuideBook" -> java.util.List.of("items","guideBookEnabled");
-        case "debugModeEnabled" -> java.util.List.of("structureAuthoring","codeExportEnabled");
+        case "debugModeEnabled" -> java.util.List.of("debugging","enabled");
         case "enable528Mode" -> java.util.List.of("mode528","enabled");
         case "X528_forceReasimBoilers" -> java.util.List.of("mode528","realisticBoilersEnabled");
         case "X528_enableColtanDeposit" -> java.util.List.of("mode528","coltanDepositsEnabled");
