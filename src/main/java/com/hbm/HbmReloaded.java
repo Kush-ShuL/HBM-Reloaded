@@ -207,7 +207,6 @@ public final class HbmReloaded {
         com.hbm.machine.bigasstank.BigAssTankContent.register(modBus);
         com.hbm.item.boltgun.EngineeringBoltgunContent.register(modBus);
         com.hbm.machine.reactor.watz.fuel.WatzFuelContent.register(modBus);
-        com.hbm.machine.reactor.rbmk.fuel.ParticleConfig.register(container);
         com.hbm.machine.reactor.rbmk.fuel.RbmkFuelContent.register(modBus);
         com.hbm.machine.plasmaforge.PlasmaForgeContent.register(modBus);
         com.hbm.config.GeneralModes.register(modBus,container);
