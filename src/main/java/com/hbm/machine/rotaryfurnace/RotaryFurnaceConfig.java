@@ -15,6 +15,7 @@ import com.hbm.machine.turbine.IndustrialTurbineConfig;
 import com.hbm.machine.groundwater.GroundwaterPumpSettings;
 import com.hbm.machine.oilextraction.OilDrillConfig;
 import com.hbm.machine.oilfracking.FrackingConfig;
+import com.hbm.machine.reactor.iter.mhdt.MhdtConfig;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
@@ -56,6 +57,7 @@ public final class RotaryFurnaceConfig {
         GroundwaterPumpSettings.define(builder);
         OilDrillConfig.define(builder);
         FrackingConfig.define(builder);
+        MhdtConfig.define(builder);
         SPEC=builder.build();
     }
 
@@ -99,6 +101,7 @@ public final class RotaryFurnaceConfig {
         GroundwaterPumpSettings.apply();
         OilDrillConfig.apply();
         FrackingConfig.apply();
+        MhdtConfig.apply();
     }
     private static ModuleBurnTime defaults(){return new ModuleBurnTime().setCokeTimeMod(1.25).setRocketTimeMod(1.5).setSolidTimeMod(1.5).setBalefireTimeMod(1.5).setSolidHeatMod(1.5).setRocketHeatMod(3).setBalefireHeatMod(10);}
     private RotaryFurnaceConfig(){}
