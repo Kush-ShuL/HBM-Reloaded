@@ -1,3 +1,8 @@
 {
-  "commands.hbm.reload.busy": "正在重新載入 NTM 配方，請等待本輪完成。"
+  "commands.hbm.reload.busy": "正在重新載入 NTM 配方，請等待本輪完成。",
+  "hbm.grenades.assembly": "手榴彈組裝",
+  "item.hbm.nuclear_kit.warn_inventory": "開啟前請清空物品欄！",
+  "item.hbm.nuclear_kit.warn_armor": "開啟後將換上防化服，原護甲會掉落。",
+  "commands.hbm.reload.complete": "重新載入完成 :)",
+  "commands.hbm.reload.failed": "載入時發生錯誤，詳情請查看日誌。"
 }

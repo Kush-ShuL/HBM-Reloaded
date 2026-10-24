@@ -12534,5 +12534,10 @@
   "disconnect.hbm.fluid_sync.invalid_ack": "Invalid HBM fluid definition acknowledgement",
   "disconnect.hbm.fluid_sync.timeout": "HBM fluid definition synchronization timed out",
   "disconnect.hbm.fluid_sync.apply_failed": "Cannot apply server HBM fluid definitions and containers",
-  "commands.hbm.reload.busy": "An NTM reload is already in progress."
+  "commands.hbm.reload.busy": "An NTM reload is already in progress.",
+  "entity.hbm.cyber_tau_bullet": "Tau Projectile",
+  "commands.hbm.reload.complete": "Reload complete :)",
+  "commands.hbm.reload.failed": "An error has occoured during loading, consult the log for details.",
+  "commands.hbm.network_reap.cleared": "Nodespace cleared :)",
+  "commands.hbm.network_reap.failed": "An error has occoured during network reap, consult the log for details."
 }

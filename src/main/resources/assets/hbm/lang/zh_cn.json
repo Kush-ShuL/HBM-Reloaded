@@ -12534,5 +12534,10 @@
   "disconnect.hbm.fluid_sync.invalid_ack": "HBM 流体定义同步确认无效",
   "disconnect.hbm.fluid_sync.timeout": "HBM 流体定义同步超时",
   "disconnect.hbm.fluid_sync.apply_failed": "无法应用服务器的 HBM 流体定义与容器表",
-  "commands.hbm.reload.busy": "正在重载 NTM 配方，请等待本轮完成。"
+  "commands.hbm.reload.busy": "正在重载 NTM 配方，请等待本轮完成。",
+  "entity.hbm.cyber_tau_bullet": "Tau 弹丸",
+  "commands.hbm.reload.complete": "重载完成 :)",
+  "commands.hbm.reload.failed": "加载时发生错误，详情请查看日志。",
+  "commands.hbm.network_reap.cleared": "节点空间已清空 :)",
+  "commands.hbm.network_reap.failed": "网络清理时发生错误，详情请查看日志。"
 }

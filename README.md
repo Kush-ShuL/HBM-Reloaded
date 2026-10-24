@@ -28,6 +28,10 @@ Linux 使用 `./gradlew`。配方查看器可选 `jei`、`rei` 或 `none`，通�
 
 静态物品变体逐步使用独立注册 ID，不提供旧存档或旧配置字段迁移。电脑集成使用 CC: Tweaked。HE 与流体默认使用 HBM 私有系统，外部互通按转换器和配置控制。
 
+## 翻译
+
+翻译集中维护在 `src/main/resources/assets/hbm/lang/`：简体中文为 `zh_cn.json`，英文为 `en_us.json`，其他语言使用对应的小写语言代码。直接编辑这些标准 JSON；资源目录不再保留分模块翻译片段或旧 `.lang` 文件。
+
 ## 许可证与致谢
 
 本项目沿用上游的 **GNU Lesser General Public License version 3（LGPL-3.0）**，参见[上游许可证说明](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT#license)。完整许可文本保留于 [LICENSE](LICENSE)（GNU GPL v3 基础条款）及 [LICENSE.LESSER](LICENSE.LESSER)（GNU LGPL v3 补充条款），分发时一并提供。原作者及其他贡献者的版权与署名保留。

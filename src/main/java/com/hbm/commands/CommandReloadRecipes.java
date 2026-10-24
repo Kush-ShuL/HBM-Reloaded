@@ -67,7 +67,7 @@ public final class CommandReloadRecipes {
                 player.connection.send(recipes);
                 player.getRecipeBook().sendInitialRecipeBook(player);
             }
-            source.sendSystemMessage(Component.literal("Reload complete :)").withStyle(ChatFormatting.YELLOW));
+            source.sendSystemMessage(Component.translatable("commands.hbm.reload.complete").withStyle(ChatFormatting.YELLOW));
         }catch(Exception error){reportAsyncFailure(source,error);}
         finally{RELOADING.remove(server);}
     }
@@ -78,7 +78,7 @@ public final class CommandReloadRecipes {
     }
     private static void reportFailure(CommandSourceStack source,Throwable error){
         source.sendSystemMessage(Component.literal("----------------------------------").withStyle(ChatFormatting.GRAY));
-        source.sendSystemMessage(Component.literal("An error has occoured during loading, consult the log for details.").withStyle(ChatFormatting.RED));
+        source.sendSystemMessage(Component.translatable("commands.hbm.reload.failed").withStyle(ChatFormatting.RED));
         source.sendSystemMessage(Component.literal(String.valueOf(error.getLocalizedMessage())).withStyle(ChatFormatting.RED));
         source.sendSystemMessage(Component.literal(error.getStackTrace()[0].toString()).withStyle(ChatFormatting.RED));
         source.sendSystemMessage(Component.literal("----------------------------------").withStyle(ChatFormatting.GRAY));
