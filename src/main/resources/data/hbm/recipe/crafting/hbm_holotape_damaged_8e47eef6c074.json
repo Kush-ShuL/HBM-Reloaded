@@ -7,12 +7,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "neoforge:components",
-      "items": "hbm:holotape_image",
-      "components": {
-        "hbm:legacy_metadata": 1
-      },
-      "strict": false
+      "item": "hbm:holotape_image_holo_restored"
     },
     {
       "item": "hbm:upgrade_muffler"

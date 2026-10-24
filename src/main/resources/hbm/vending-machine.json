@@ -11,22 +11,43 @@
       },
       "originalClass": "BlockVendingMachine",
       "creativeTab": "block",
-      "metadataRange": [
-        0,
-        1
-      ],
-      "names": [
-        "soda",
-        "snacks"
-      ],
       "worldMetadataRange": [
         0,
         15
       ],
-      "itemMetadata": [
-        0,
-        1
+      "hasItem": false,
+      "fixedItemIds": [
+        "hbm:vending_machine_soda",
+        "hbm:vending_machine_snacks"
       ]
+    },
+    {
+      "kind": "item",
+      "symbol": "vending_machine_soda",
+      "id": "hbm:vending_machine_soda",
+      "blockId": "hbm:vending_machine",
+      "originalClass": "ItemBlockBase",
+      "sourceClass": "com.hbm.items.block.ItemBlockBase",
+      "sourceField": "ModBlocks.vending_machine",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:tile.vending_machine",
+      "creativeTab": "block",
+      "maxStackSize": 64
+    },
+    {
+      "kind": "item",
+      "symbol": "vending_machine_snacks",
+      "id": "hbm:vending_machine_snacks",
+      "blockId": "hbm:vending_machine",
+      "originalClass": "ItemBlockBase",
+      "sourceClass": "com.hbm.items.block.ItemBlockBase",
+      "sourceField": "ModBlocks.vending_machine",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:tile.vending_machine",
+      "creativeTab": "block",
+      "maxStackSize": 64
     }
   ]
 }

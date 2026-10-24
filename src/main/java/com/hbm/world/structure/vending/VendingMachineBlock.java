@@ -32,7 +32,7 @@ public final class VendingMachineBlock extends DummyableBlock {
     public int variant(BlockGetter level,BlockPos core){var above=level.getBlockState(core.above());return above.hasProperty(LEGACY_META)&&above.getValue(LEGACY_META)>=6?1:0;}
     @Override public void setPlacedBy(Level level,BlockPos pos,BlockState state,LivingEntity placer,ItemStack stack){
         super.setPlacedBy(level,pos,state,placer,stack);
-        if(!level.isClientSide&&VendingMachineItem.metadata(stack)%2==1){var above=pos.above();var top=level.getBlockState(above);if(top.is(this)&&top.getValue(LEGACY_META)<=5)safely(()->level.setBlock(above,top.setValue(LEGACY_META,top.getValue(LEGACY_META)+6),UPDATE_ALL));}
+        if(!level.isClientSide&&VendingMachineItem.variant(stack)==1){var above=pos.above();var top=level.getBlockState(above);if(top.is(this)&&top.getValue(LEGACY_META)<=5)safely(()->level.setBlock(above,top.setValue(LEGACY_META,top.getValue(LEGACY_META)+6),UPDATE_ALL));}
     }
     @Override protected ItemInteractionResult useItemOn(ItemStack stack,BlockState state,Level level,BlockPos pos,Player player,InteractionHand hand,BlockHitResult hit){
         if(!BuiltInRegistries.ITEM.getKey(stack.getItem()).equals(VendingMachineContent.id("coin_token")))return super.useItemOn(stack,state,level,pos,player,hand,hit);

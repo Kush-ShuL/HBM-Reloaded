@@ -1,12 +1,17 @@
 package com.hbm.world.structure.vending;
-import com.hbm.hazard.HbmHazards;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.*;
+
+import java.util.Map;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-/** IBlockMulti's two item damages, distinct from the directional/proxy world metadata. */
+
+/** Two fixed source items share the directional/proxy world block. */
 public final class VendingMachineItem extends BlockItem {
-    public VendingMachineItem(Block block){super(block,new Properties().component(HbmHazards.LEGACY_METADATA.get(),0));}
-    public static int metadata(ItemStack stack){return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0);}
-    public static ItemStack stack(int metadata){var stack=new ItemStack(VendingMachineContent.ITEM.get());stack.set(HbmHazards.LEGACY_METADATA.get(),metadata);return stack;}
-    @Override public Component getName(ItemStack stack){return Component.translatable("tile.vending_machine.name");}
+    private final int variant;
+    public VendingMachineItem(Block block,int variant){super(block,new Properties());if(variant<0||variant>1)throw new IllegalArgumentException("Unknown vending item "+variant);this.variant=variant;}
+    public static int variant(ItemStack stack){if(!(stack.getItem() instanceof VendingMachineItem item))throw new IllegalArgumentException("Not a vending machine item");return item.variant;}
+    public static ItemStack stack(int variant){return new ItemStack(VendingMachineContent.item(variant));}
+    @Override public void registerBlocks(Map<Block,Item> mapping,Item item){if(variant==0)mapping.put(getBlock(),item);}
+    @Override public String getDescriptionId(){return "item.hbm.vending_machine_"+(variant==0?"soda":"snacks");}
 }

@@ -271,11 +271,8 @@
       "index": 8,
       "product": {
         "stack": {
-          "id": "hbm:vending_machine",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:vending_machine_soda",
+          "count": 1
         }
       },
       "requirement": "CHEMICS",
@@ -308,11 +305,8 @@
       "index": 9,
       "product": {
         "stack": {
-          "id": "hbm:vending_machine",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:vending_machine_snacks",
+          "count": 1
         }
       },
       "requirement": "CHEMICS",

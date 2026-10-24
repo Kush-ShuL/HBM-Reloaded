@@ -5394,11 +5394,10 @@
     },
     {
       "selector": {
-        "kind": "stack",
-        "id": "hbm:holotape_image",
+        "kind": "item",
+        "id": "hbm:holotape_image_holo_restored",
         "legacySymbol": "ModItems.holotape_image",
-        "legacyRegistryId": "hbm:item.holotape_image",
-        "metadata": 1
+        "legacyRegistryId": "hbm:item.holotape_image"
       },
       "data": {
         "entries": [
@@ -5417,7 +5416,7 @@
         "line": 511
       },
       "expression": "HazardSystem.register(DictFrame.fromOne(ModItems.holotape_image, EnumHoloImage.HOLO_RESTORED), makeData(DIGAMMA, 1F))",
-      "binding": "unbound_item_not_registered",
+      "binding": "registered",
       "status": "numeric_definition_ported"
     },
     {
@@ -31627,7 +31626,7 @@
     "hbm:item.hev_legs": "hbm:hev_legs",
     "hbm:item.hev_plate": "hbm:hev_plate",
     "hbm:item.holotape_damaged": "hbm:holotape_damaged",
-    "hbm:item.holotape_image": "hbm:holotape_image",
+    "hbm:item.holotape_image": "hbm:holotape_image_holo_digamma",
     "hbm:item.horseshoe_magnet": "hbm:horseshoe_magnet",
     "hbm:item.icf_pellet": "hbm:icf_pellet",
     "hbm:item.icf_pellet_depleted": "hbm:icf_pellet_depleted",
@@ -33684,7 +33683,7 @@
     "hbm:tile.turret_sentry_damaged": "hbm:turret_sentry_damaged",
     "hbm:tile.turret_tauon": "hbm:turret_tauon",
     "hbm:tile.vault_door": "hbm:vault_door",
-    "hbm:tile.vending_machine": "hbm:vending_machine",
+    "hbm:tile.vending_machine": "hbm:vending_machine_soda",
     "hbm:tile.vent_chlorine": "hbm:vent_chlorine",
     "hbm:tile.vent_chlorine_seal": "hbm:vent_chlorine_seal",
     "hbm:tile.vent_cloud": "hbm:vent_cloud",

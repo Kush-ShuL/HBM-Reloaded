@@ -1639,6 +1639,114 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:holotape_image_holo_challenge",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 17,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_digamma",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_f3_iv",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 9,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_f3_rc",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 8,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_f3_wm",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 10,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_fe_corridor",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_fe_hall",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_fe_server",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_feh_boat",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_feh_dome",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_feh_lsc",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_nv_bm",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 13,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_nv_crater",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 11,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_nv_divide",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 12,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_o_1",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 14,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_o_2",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 15,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_o_3",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 16,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:holotape_image_holo_restored",
+      "sourceFamily": "ModItems.holotape_image",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:ingot_metal_bar",
       "sourceFamily": "ModItems.ingot_metal",
       "sourceMetadata": 7,
@@ -2772,6 +2880,18 @@
       "id": "hbm:upgrade_stack_3",
       "sourceFamily": "ModItems.upgrade_stack",
       "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:vending_machine_snacks",
+      "sourceFamily": "ModBlocks.vending_machine",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:vending_machine_soda",
+      "sourceFamily": "ModBlocks.vending_machine",
+      "sourceMetadata": 0,
       "hasSubtypes": true
     },
     {

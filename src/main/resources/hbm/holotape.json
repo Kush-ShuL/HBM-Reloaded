@@ -14,40 +14,327 @@
     },
     {
       "kind": "item",
-      "symbol": "holotape_image",
-      "id": "hbm:holotape_image",
+      "symbol": "holotape_image_holo_digamma",
+      "id": "hbm:holotape_image_holo_digamma",
+      "module": "holotape",
       "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
       "creativeTab": null,
-      "metadataRange": [
-        0,
-        17
-      ],
-      "names": [
-        "holo_digamma",
-        "holo_restored",
-        "holo_fe_hall",
-        "holo_fe_corridor",
-        "holo_fe_server",
-        "holo_feh_dome",
-        "holo_feh_boat",
-        "holo_feh_lsc",
-        "holo_f3_rc",
-        "holo_f3_iv",
-        "holo_f3_wm",
-        "holo_nv_crater",
-        "holo_nv_divide",
-        "holo_nv_bm",
-        "holo_o_1",
-        "holo_o_2",
-        "holo_o_3",
-        "holo_challenge"
-      ],
-      "enumClass": "EnumHoloImage",
+      "stackSize": 1,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 4337
-      },
-      "stackSize": 1
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_restored",
+      "id": "hbm:holotape_image_holo_restored",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_fe_hall",
+      "id": "hbm:holotape_image_holo_fe_hall",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_fe_corridor",
+      "id": "hbm:holotape_image_holo_fe_corridor",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_fe_server",
+      "id": "hbm:holotape_image_holo_fe_server",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_feh_dome",
+      "id": "hbm:holotape_image_holo_feh_dome",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_feh_boat",
+      "id": "hbm:holotape_image_holo_feh_boat",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_feh_lsc",
+      "id": "hbm:holotape_image_holo_feh_lsc",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_f3_rc",
+      "id": "hbm:holotape_image_holo_f3_rc",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 8,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_f3_iv",
+      "id": "hbm:holotape_image_holo_f3_iv",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 9,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_f3_wm",
+      "id": "hbm:holotape_image_holo_f3_wm",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 10,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_nv_crater",
+      "id": "hbm:holotape_image_holo_nv_crater",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 11,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_nv_divide",
+      "id": "hbm:holotape_image_holo_nv_divide",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 12,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_nv_bm",
+      "id": "hbm:holotape_image_holo_nv_bm",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 13,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_o_1",
+      "id": "hbm:holotape_image_holo_o_1",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 14,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_o_2",
+      "id": "hbm:holotape_image_holo_o_2",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 15,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_o_3",
+      "id": "hbm:holotape_image_holo_o_3",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 16,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "holotape_image_holo_challenge",
+      "id": "hbm:holotape_image_holo_challenge",
+      "module": "holotape",
+      "originalClass": "ItemHolotapeImage",
+      "sourceClass": "com.hbm.items.special.ItemHolotapeImage",
+      "sourceField": "ModItems.holotape_image",
+      "sourceLegacyRegistryId": "hbm:item.holotape_image",
+      "sourceOrdinal": 17,
+      "sourceHasSubtypes": true,
+      "creativeTab": null,
+      "stackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 4337
+      }
     }
   ],
   "sourceImages": [
@@ -180,8 +467,8 @@
   ],
   "sourceRecipes": [
     "hbm:crafting/hbm_polaroid_bd24913d68c4",
-    "hbm:crafting/hbm_holotape_image_e699877696d0",
-    "hbm:crafting/hbm_holotape_damaged_f23b521dd531"
+    "hbm:crafting/hbm_holotape_image_holo_restored_eb78e9b78b83",
+    "hbm:crafting/hbm_holotape_damaged_8e47eef6c074"
   ],
   "pendingManufacturing": []
 }
