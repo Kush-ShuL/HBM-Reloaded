@@ -20,5 +20,8 @@
   "commands.hbm.server.help.set": "修改變數值並儲存對應設定檔。",
   "commands.hbm.server.placeholder.command": "<子指令>",
   "commands.hbm.server.placeholder.name": "<變數路徑>",
-  "commands.hbm.server.placeholder.name_value": "<變數路徑> <值>"
+  "commands.hbm.server.placeholder.name_value": "<變數路徑> <值>",
+  "commands.hbm.locate.usage": "/ntmlocate structure <名稱> - 定位附近具有此名稱的結構。",
+  "commands.hbm.locate.busy": "正在定位 NTM 自然建築，請等待本輪完成。",
+  "commands.hbm.locate.failed": "結構定位失敗或生成設定已變更，請重新執行指令。"
 }
