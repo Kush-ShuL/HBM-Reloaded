@@ -33,7 +33,7 @@ public final class HbmEnergy {
     }
 
     public static PowerNodespace nodespace(ServerLevel level) {
-        return WORLDS.computeIfAbsent(level, ignored -> new PowerNodespace());
+        return WORLDS.computeIfAbsent(level, ignored -> new PowerNodespace(level));
     }
 
     private static void registerCapabilities(RegisterCapabilitiesEvent event) {

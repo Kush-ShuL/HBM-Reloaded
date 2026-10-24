@@ -64,11 +64,13 @@ public final class PowerNode implements PowerLink {
     public void addProvider(EnergyProvider provider) {
         boolean added = providers.add(Objects.requireNonNull(provider));
         if (added || network != null && !network.isProvider(provider)) changed();
+        if (owner != null) owner.debugPorts(this, false);
     }
     public void removeProvider(EnergyProvider provider) { if (providers.remove(provider)) changed(); }
     public void addReceiver(EnergyReceiver receiver) {
         boolean added = receivers.add(Objects.requireNonNull(receiver));
         if (added || network != null && !network.isSubscribed(receiver)) changed();
+        if (owner != null) owner.debugPorts(this, true);
     }
     public void removeReceiver(EnergyReceiver receiver) { if (receivers.remove(receiver)) changed(); }
 

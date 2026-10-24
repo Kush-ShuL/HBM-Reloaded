@@ -31,16 +31,20 @@ public final class FluidPorts {
                 node = new FluidNode(positions).setConnections(Arrays.stream(connections).filter(connection -> owner.canConnect(type, connection.direction())).toArray(NodeConnection[]::new));
                 space.createNode(node); nodes.put(type, node);
             }
+            boolean providing = owner instanceof FluidProvider && (!(owner instanceof StandardFluidSender sender) || Arrays.stream(sender.getSendingTanks()).anyMatch(tank -> tank.getTankType() == type));
+            boolean receiving = owner instanceof FluidReceiver && (!(owner instanceof StandardFluidReceiver standard) || Arrays.stream(standard.getReceivingTanks()).anyMatch(tank -> tank.getTankType() == type));
             if (node.hasValidNet()) {
                 if (owner instanceof FluidProvider provider) {
-                    if (!(owner instanceof StandardFluidSender sender) || Arrays.stream(sender.getSendingTanks()).anyMatch(tank -> tank.getTankType() == type)) node.addProvider(provider);
+                    if (providing) node.addProvider(provider);
                     else node.removeProvider(provider);
                 }
                 if (owner instanceof FluidReceiver receiver) {
-                    if (!(owner instanceof StandardFluidReceiver standard) || Arrays.stream(standard.getReceivingTanks()).anyMatch(tank -> tank.getTankType() == type)) node.addReceiver(receiver);
+                    if (receiving) node.addReceiver(receiver);
                     else node.removeReceiver(receiver);
                 }
             }
+            if (providing) com.hbm.network.debug.NetworkPortDebug.emit(level,node.connections(),false,true,type.getColor());
+            if (receiving) com.hbm.network.debug.NetworkPortDebug.emit(level,node.connections(),true,true,type.getColor());
         }
     }
     public void remove(ServerLevel level) { nodes.forEach((type, node) -> FluidNetworks.nodespace(level, type).destroyNode(node)); nodes.clear(); }

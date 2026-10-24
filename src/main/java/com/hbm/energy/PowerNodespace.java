@@ -18,6 +18,13 @@ public final class PowerNodespace {
     private final Set<PowerNetwork> networks = new LinkedHashSet<>();
     private boolean dirty;
 
+    private final net.minecraft.server.level.ServerLevel debugLevel;
+    public PowerNodespace() { this.debugLevel = null; }
+    PowerNodespace(net.minecraft.server.level.ServerLevel level) { this.debugLevel = java.util.Objects.requireNonNull(level); }
+    void debugPorts(PowerNode node, boolean receive) {
+        if (debugLevel != null) com.hbm.network.debug.NetworkPortDebug.emit(debugLevel,node.connections(),receive,false,0xffffff);
+    }
+
     public PowerNode getNode(BlockPos position) { return positions.get(position); }
     public Set<PowerNode> nodes() { return Collections.unmodifiableSet(nodes); }
     public Set<PowerNetwork> networks() { return Collections.unmodifiableSet(networks); }
