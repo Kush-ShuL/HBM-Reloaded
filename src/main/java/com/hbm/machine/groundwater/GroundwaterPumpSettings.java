@@ -1,27 +1,26 @@
 package com.hbm.machine.groundwater;
 
-import com.google.gson.*;
-import java.nio.file.Files;
-import net.neoforged.fml.loading.FMLPaths;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
-/** Original IConfigurableMachine waterpump section, not an independent recipe or fluid system. */
+/** Actual groundwater-pump altitude, ground scan and water-yield settings. */
 public final class GroundwaterPumpSettings {
     public record Values(int groundHeight,int groundDepth,int steamSpeed,int electricSpeed){}
+    private static ModConfigSpec.IntValue maxHeightOption,groundDepthOption,steamWaterOption,electricWaterOption;
     private static volatile Values values=new Values(70,4,1000,10000);
     public static Values values(){return values;}
-    /** Called on the existing common-setup main-thread queue, before real machine construction. */
-    public static void load(){
-        var path=FMLPaths.CONFIGDIR.get().resolve("hbmConfig/hbmMachines.json");
-        try{
-            var root=Files.isRegularFile(path)?JsonParser.parseString(Files.readString(path)).getAsJsonObject():new JsonObject();
-            var row=root.has("waterpump")?root.getAsJsonObject("waterpump"):new JsonObject();
-            boolean changed=!root.has("waterpump");
-            var names=new String[]{"I:groundHeight","I:groundDepth","I:steamSpeed","I:electricSpeed"};
-            var defaults=new int[]{70,4,1000,10000};var actual=new int[4];
-            for(int i=0;i<names.length;i++){if(!row.has(names[i])){row.addProperty(names[i],defaults[i]);changed=true;}actual[i]=row.get(names[i]).getAsInt();}
-            values=new Values(actual[0],actual[1],actual[2],actual[3]);
-            if(changed){root.add("waterpump",row);Files.createDirectories(path.getParent());Files.writeString(path,new GsonBuilder().setPrettyPrinting().create().toJson(root)+"\n");}
-        }catch(Exception error){throw new IllegalStateException("Cannot read original waterpump settings from "+path,error);}
+
+    public static void define(ModConfigSpec.Builder builder){
+        builder.comment("蒸汽和电力地下水泵的运行高度、地基检测与产水设置；机器仍要求所在维度具有天光。").push("groundwaterPumps");
+        maxHeightOption=builder.comment("泵核心的Y坐标小于或等于此值时才可运行；单位：方块高度；范围：-2147483648～2147483647，允许负Y。").defineInRange("maxHeight",70,Integer.MIN_VALUE,Integer.MAX_VALUE);
+        groundDepthOption=builder.comment("向核心下方检测的地基层数，每层检测3×3方块，首层须为完整方块且有效土壤至少占一半；单位：层；范围：0～2147483647；0跳过地基方块扫描，仍要求维度具有天光。").defineInRange("groundDepth",4,0,Integer.MAX_VALUE);
+        steamWaterOption=builder.comment("蒸汽泵每次成功运行的产水量；单位：mB/t；范围：0～21474836；新建水槽容量为此值的100倍，重载不重建已有槽；0产水为0，已有槽未满时仍可能消耗蒸汽。").defineInRange("steamWaterPerTick",1000,0,Integer.MAX_VALUE/100);
+        electricWaterOption=builder.comment("电力泵每次成功运行的产水量；单位：mB/t；范围：0～21474836；新建水槽容量为此值的100倍，重载不重建已有槽；0产水为0，已有槽未满时仍可能消耗电力。").defineInRange("electricWaterPerTick",10000,0,Integer.MAX_VALUE/100);
+        builder.pop();
     }
+
+    public static void apply(){
+        values=new Values(maxHeightOption.get(),groundDepthOption.get(),steamWaterOption.get(),electricWaterOption.get());
+    }
+
     private GroundwaterPumpSettings(){}
 }
