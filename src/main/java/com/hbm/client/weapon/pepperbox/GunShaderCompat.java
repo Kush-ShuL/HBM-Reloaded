@@ -6,6 +6,8 @@ import it.unimi.dsi.fastutil.objects.Object2IntFunction;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.client.renderer.ShaderInstance;
 import net.minecraft.world.item.ItemStack;
 import org.joml.Matrix4f;
 
@@ -64,6 +66,53 @@ public final class GunShaderCompat {
             iris.writeItem.invoke(iris.captured,material);
             return ()->{try{iris.writeItem.invoke(iris.captured,previous);}catch(ReflectiveOperationException failure){warn(failure);}};
         } catch(ReflectiveOperationException failure) { warn(failure);return EMPTY; }
+    }
+    private record IrisModels(Method manager,Method pipeline,Class<?> pipelineType,Method active,
+                              Method shaderMap,Method shader,Object brightHand,Object brightEntity,
+                              java.lang.reflect.Field shadow) {}
+    private static final class OptionalModels { private static final IrisModels VALUE=loadModels(); }
+    private static IrisModels loadModels() {
+        try {
+            var pipelineType=Class.forName("net.irisshaders.iris.pipeline.ShaderRenderingPipeline");
+            var key=Class.forName("net.irisshaders.iris.pipeline.programs.ShaderKey");
+            return new IrisModels(Class.forName("net.irisshaders.iris.Iris").getMethod("getPipelineManager"),
+                    Class.forName("net.irisshaders.iris.pipeline.PipelineManager").getMethod("getPipelineNullable"),
+                    pipelineType,pipelineType.getMethod("shouldOverrideShaders"),pipelineType.getMethod("getShaderMap"),
+                    Class.forName("net.irisshaders.iris.pipeline.programs.ShaderMap").getMethod("getShader",key),
+                    key.getField("HAND_CUTOUT_BRIGHT").get(null),key.getField("ENTITIES_EYES_TRANS").get(null),
+                    Class.forName("net.irisshaders.iris.shadows.ShadowRenderer").getField("ACTIVE"));
+        } catch(ClassNotFoundException absent) { return null; }
+        catch(ReflectiveOperationException|LinkageError unavailable) { warn(unavailable);return null; }
+    }
+    /** 实际光影实体手持阶段：普通部件受光，原全亮部件使用同一原生 Hand 程序的全亮变体。 */
+    public static ShaderInstance modelShader(boolean fullbright,float cutoff) {
+        // 本组两件物品的源主体阈值均为0.1；不把 NI4NI 的独立 alpha>0 分支偷换成0.1。
+        if(cutoff!=.1F || !shaderPackInUse())return null;
+        var iris=OptionalModels.VALUE;if(iris==null)return null;
+        try {
+            // 只缓存反射契约；每次读取当前 pipeline/map，光影切换或重载后不持有已关闭的 shader。
+            // Shadow 原生 getter 本身优先判断 ShadowRenderer.ACTIVE，不依赖实体阶段 active 判断。
+            if(iris.shadow.getBoolean(null))return GameRenderer.getRendertypeEntityCutoutNoCullShader();
+            var pipeline=iris.pipeline.invoke(iris.manager.invoke(null));
+            if(!iris.pipelineType.isInstance(pipeline) || !(boolean)iris.active.invoke(pipeline))return null;
+            // 阴影阶段只需真实裁剪与深度；交给现有原生 getter 选择当前 shadow 程序。
+            if(!fullbright)return GameRenderer.getRendertypeEntityCutoutNoCullShader();
+            if(handState()!=IRIS_SOLID)return null;
+            var value=iris.shader.invoke(iris.shaderMap.invoke(pipeline),iris.brightHand);
+            return value instanceof ShaderInstance shader?shader:null;
+        } catch(ReflectiveOperationException|LinkageError unavailable) { warn(unavailable);return null; }
+    }
+    /** 世界/第三人称全亮部件；只有真正实体阶段使用，GUI、手部和 shadow 均不进入此 draw。 */
+    public static ShaderInstance unlitWorldModelShader(float cutoff) {
+        if(cutoff!=.1F || !shaderPackInUse() || handState()!=VANILLA)return null;
+        var iris=OptionalModels.VALUE;if(iris==null)return null;
+        try {
+            if(iris.shadow.getBoolean(null))return null;
+            var pipeline=iris.pipeline.invoke(iris.manager.invoke(null));
+            if(!iris.pipelineType.isInstance(pipeline) || !(boolean)iris.active.invoke(pipeline))return null;
+            var value=iris.shader.invoke(iris.shaderMap.invoke(pipeline),iris.brightEntity);
+            return value instanceof ShaderInstance shader?shader:null;
+        } catch(ReflectiveOperationException|LinkageError unavailable) { warn(unavailable);return null; }
     }
     private GunShaderCompat() {}
 }
