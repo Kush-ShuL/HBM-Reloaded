@@ -1,0 +1,17 @@
+{
+  "parent": "hbm:block/cm_engine_standard",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/cm_engine_desh"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:block/cm_engine_bismuth"
+    }
+  ]
+}

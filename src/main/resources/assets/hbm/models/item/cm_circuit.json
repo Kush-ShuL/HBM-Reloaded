@@ -1,0 +1,29 @@
+{
+  "parent": "hbm:block/cm_circuit_aluminium",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/cm_circuit_copper"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:block/cm_circuit_red_copper"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:block/cm_circuit_gold"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 4
+      },
+      "model": "hbm:block/cm_circuit_schrabidium"
+    }
+  ]
+}

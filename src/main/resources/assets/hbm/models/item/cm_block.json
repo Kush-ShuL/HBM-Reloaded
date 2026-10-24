@@ -1,0 +1,23 @@
+{
+  "parent": "hbm:block/cm_block_steel",
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 1
+      },
+      "model": "hbm:block/cm_block_alloy"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 2
+      },
+      "model": "hbm:block/cm_block_desh"
+    },
+    {
+      "predicate": {
+        "hbm:legacy_metadata": 3
+      },
+      "model": "hbm:block/cm_block_tcalloy"
+    }
+  ]
+}

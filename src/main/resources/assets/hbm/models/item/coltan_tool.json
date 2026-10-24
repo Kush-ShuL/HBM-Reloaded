@@ -1,0 +1,200 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hbm:item/diagnostic133/coltass_00"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.0
+      },
+      "model": "hbm:item/diagnostic133/coltass_00"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.03125
+      },
+      "model": "hbm:item/diagnostic133/coltass_01"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.0625
+      },
+      "model": "hbm:item/diagnostic133/coltass_02"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.09375
+      },
+      "model": "hbm:item/diagnostic133/coltass_03"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.125
+      },
+      "model": "hbm:item/diagnostic133/coltass_04"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.15625
+      },
+      "model": "hbm:item/diagnostic133/coltass_05"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.1875
+      },
+      "model": "hbm:item/diagnostic133/coltass_06"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.21875
+      },
+      "model": "hbm:item/diagnostic133/coltass_07"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.25
+      },
+      "model": "hbm:item/diagnostic133/coltass_08"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.28125
+      },
+      "model": "hbm:item/diagnostic133/coltass_09"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.3125
+      },
+      "model": "hbm:item/diagnostic133/coltass_10"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.34375
+      },
+      "model": "hbm:item/diagnostic133/coltass_11"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.375
+      },
+      "model": "hbm:item/diagnostic133/coltass_12"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.40625
+      },
+      "model": "hbm:item/diagnostic133/coltass_13"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.4375
+      },
+      "model": "hbm:item/diagnostic133/coltass_14"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.46875
+      },
+      "model": "hbm:item/diagnostic133/coltass_15"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.5
+      },
+      "model": "hbm:item/diagnostic133/coltass_16"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.53125
+      },
+      "model": "hbm:item/diagnostic133/coltass_17"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.5625
+      },
+      "model": "hbm:item/diagnostic133/coltass_18"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.59375
+      },
+      "model": "hbm:item/diagnostic133/coltass_19"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.625
+      },
+      "model": "hbm:item/diagnostic133/coltass_20"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.65625
+      },
+      "model": "hbm:item/diagnostic133/coltass_21"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.6875
+      },
+      "model": "hbm:item/diagnostic133/coltass_22"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.71875
+      },
+      "model": "hbm:item/diagnostic133/coltass_23"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.75
+      },
+      "model": "hbm:item/diagnostic133/coltass_24"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.78125
+      },
+      "model": "hbm:item/diagnostic133/coltass_25"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.8125
+      },
+      "model": "hbm:item/diagnostic133/coltass_26"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.84375
+      },
+      "model": "hbm:item/diagnostic133/coltass_27"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.875
+      },
+      "model": "hbm:item/diagnostic133/coltass_28"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.90625
+      },
+      "model": "hbm:item/diagnostic133/coltass_29"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.9375
+      },
+      "model": "hbm:item/diagnostic133/coltass_30"
+    },
+    {
+      "predicate": {
+        "hbm:coltan_frame": 0.96875
+      },
+      "model": "hbm:item/diagnostic133/coltass_31"
+    }
+  ]
+}
