@@ -1,0 +1,34 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "tag": "c:plates/steel"
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:plate_polymer",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:siren_track_blast_door",
+        "count": 1
+      },
+      "chance": 1.0
+    }
+  ],
+  "tier_lower": 2,
+  "tier_upper": -1,
+  "overlay": "CONSTRUCTION",
+  "order": 631000003
+}
