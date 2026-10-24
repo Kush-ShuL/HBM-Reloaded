@@ -23,5 +23,7 @@
   "commands.hbm.server.placeholder.name_value": "<變數路徑> <值>",
   "commands.hbm.locate.usage": "/ntmlocate structure <名稱> - 定位附近具有此名稱的結構。",
   "commands.hbm.locate.busy": "正在定位 NTM 自然建築，請等待本輪完成。",
-  "commands.hbm.locate.failed": "結構定位失敗或生成設定已變更，請重新執行指令。"
+  "commands.hbm.locate.failed": "結構定位失敗或生成設定已變更，請重新執行指令。",
+  "commands.hbm.wiki_render.usage": "- 為指定物品類型（如 ItemGunBaseNT）匯出截圖，僅供開發者與 Wiki 編輯使用。",
+  "screen.hbm.wiki_render": "Wiki 物品圖片匯出"
 }
