@@ -24,7 +24,7 @@ public final class ConverterContent {
     public static final DeferredItem<BlockItem> RF_TO_HE_ITEM=ITEMS.register("machine_converter_rf_he",()->new BlockItem(RF_TO_HE.get(),new Item.Properties()));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<ConverterBlockEntity>> ENTITY=ENTITIES.register("energy_converter",()->BlockEntityType.Builder.<ConverterBlockEntity>of((pos,state)->((ConverterBlock)state.getBlock()).heToRf?new HeToRfConverter(pos,state):new RfToHeConverter(pos,state),HE_TO_RF.get(),RF_TO_HE.get()).build(null));
     private ConverterContent(){}
-    public static void register(IEventBus bus){ConverterConfig.load();BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);bus.addListener(ConverterContent::capabilities);}
+    public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);bus.addListener(ConverterContent::capabilities);}
     private static void capabilities(RegisterCapabilitiesEvent event){event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK,ENTITY.get(),(converter,side)->converter.isLoaded()?converter.forgeEnergy():null);}
     public static List<ItemStack> creativeStacks(String tab){return tab.equals("machine")?List.of(new ItemStack(HE_TO_RF_ITEM.get()),new ItemStack(RF_TO_HE_ITEM.get())):List.of();}
 }
