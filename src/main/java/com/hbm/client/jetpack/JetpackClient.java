@@ -38,10 +38,15 @@ public final class JetpackClient {
     public static final class Keys {
         private static net.minecraft.client.player.LocalPlayer previous;
         private static boolean jump, toggle;
+        private static void reset() {
+            if (previous != null) JetpackNetwork.clearKeys(previous);
+            previous = null; jump = toggle = false;
+        }
+        @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut event) { reset(); }
         @SubscribeEvent public static void tick(ClientTickEvent.Post event) {
             var mc = Minecraft.getInstance();
-            if (mc.player == null || mc.level == null) { previous = null; jump = toggle = false; return; }
-            if (previous != mc.player) { previous = mc.player; jump = toggle = false; }
+            if (mc.player == null || mc.level == null) { reset(); return; }
+            if (previous != mc.player) { reset(); previous = mc.player; }
             boolean nextJump = mc.screen == null && mc.options.keyJump.isDown(), nextToggle = mc.screen == null && TOGGLE.isDown();
             if (nextJump != jump || nextToggle != toggle) {
                 jump = nextJump; toggle = nextToggle; JetpackNetwork.localKeys(mc.player, jump, toggle);
