@@ -34,9 +34,15 @@ public final class MobSpawnEquipment {
         if (registered) return;
         registered = true;
         MobEquipmentConfig.register(container);
-        NeoForge.EVENT_BUS.addListener(MobSpawnEquipment::spawn);
+        NeoForge.EVENT_BUS.addListener(MobSpawnEquipment::check);
+        NeoForge.EVENT_BUS.addListener(MobSpawnEquipment::finalized);
+        NeoForge.EVENT_BUS.addListener(MobSpawnEquipment::despawn);
         NeoForge.EVENT_BUS.addListener(MobSpawnEquipment::joined);
     }
+
+    private static void check(MobSpawnEvent.PositionCheck event) { spawn(event); }
+    private static void finalized(FinalizeSpawnEvent event) { spawn(event); }
+    private static void despawn(MobDespawnEvent event) { spawn(event); }
 
     private static void spawn(MobSpawnEvent event) {
         Mob entity = event.getEntity();
