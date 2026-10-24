@@ -11,7 +11,7 @@ public final class MasonryContent {
     public static final List<String> CONCRETE_MATERIALS=List.of("concrete_smooth","concrete","concrete_asbestos","ducrete_smooth","ducrete","asphalt");
     public static final List<String> BRICK_MATERIALS=List.of("brick_concrete","brick_concrete_mossy","brick_concrete_cracked","brick_concrete_broken","brick_ducrete");
     public static final List<String> REINFORCED_MATERIALS=List.of("reinforced_stone","reinforced_brick","brick_obsidian","brick_light","brick_compound","brick_asbestos","brick_fire");
-    public static final DeferredBlock<AsphaltBlock> ASPHALT=BLOCKS.register("asphalt",AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT=BLOCKS.register("asphalt",()->new AsphaltBlock());
     public static final DeferredItem<BlockItem> ASPHALT_ITEM=ITEMS.register("asphalt",()->new BlockItem(ASPHALT.get(),new Item.Properties()) {
         @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<net.minecraft.network.chat.Component> lines,TooltipFlag flag) { lines.add(net.minecraft.network.chat.Component.translatable("tooltip.hbm.asphalt.speed").withStyle(net.minecraft.ChatFormatting.BLUE)); }
     });

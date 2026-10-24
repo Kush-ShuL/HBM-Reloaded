@@ -29,7 +29,7 @@ public final class SoyuzCapsulesContent {
     public static final DeferredBlock<SoyuzCapsuleBlock> CAPSULE = BLOCKS.register("soyuz_capsule", SoyuzCapsuleBlock::new);
     public static final DeferredItem<BlockItem> ITEM = ITEMS.register("soyuz_capsule", () -> new BlockItem(CAPSULE.get(), new Item.Properties()));
     public static final DeferredItem<SoyuzItem> SOYUZ = ITEMS.register("missile_soyuz", SoyuzItem::new);
-    public static final DeferredItem<GlassRecordItem> GLASS_RECORD = ITEMS.register("record_glass", GlassRecordItem::new);
+    public static final DeferredItem<GlassRecordItem> GLASS_RECORD = ITEMS.register("record_glass", ()->new GlassRecordItem());
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SoyuzCapsuleBlockEntity>> BLOCK_ENTITY = TILES.register("soyuz_capsule", () ->
             BlockEntityType.Builder.of(SoyuzCapsuleBlockEntity::new, CAPSULE.get()).build(null));
     public static final DeferredHolder<MenuType<?>, MenuType<SoyuzCapsuleMenu>> MENU = MENUS.register("soyuz_capsule", () ->

@@ -12,7 +12,7 @@ public final class DrainContent {
  private static final DeferredRegister<BlockEntityType<?>> ENTITIES=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,"hbm");
  public static final DeferredBlock<DrainBlock> BLOCK=BLOCKS.register("machine_drain",DrainBlock::new);
  public static final DeferredItem<BlockItem> ITEM=ITEMS.registerSimpleBlockItem("machine_drain",BLOCK);
- public static final DeferredBlock<OilSpillBlock> OIL=BLOCKS.register("oil_spill",OilSpillBlock::new);
+ public static final DeferredBlock<OilSpillBlock> OIL=BLOCKS.register("oil_spill",()->new OilSpillBlock());
  public static final DeferredItem<BlockItem> OIL_ITEM=ITEMS.registerSimpleBlockItem("oil_spill",OIL);
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<DrainEntity>> ENTITY=ENTITIES.register("machine_drain",()->BlockEntityType.Builder.of(DrainEntity::new,BLOCK.get()).build(null));
  public static void register(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);}

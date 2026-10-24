@@ -13,17 +13,15 @@ import me.shedaniel.rei.api.client.registry.screen.ScreenRegistry;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.*;
-import me.shedaniel.rei.api.common.entry.comparison.ItemComparatorRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
 import net.minecraft.network.chat.Component;
 
-/** Same real source data and formula drawing as JEI, with all 21 exact circuit metadata variants. */
+/** Same real source data and formula drawing as JEI, with all 21 fixed circuit items. */
 @REIPluginClient
 public final class ProgrammableNuclearReiPlugin implements REIClientPlugin {
  private static final CategoryIdentifier<Display> TYPE=CategoryIdentifier.of("hbm","nuclear_payload");
- @Override public void registerItemComparators(ItemComparatorRegistry registry){registry.register((context,stack)->ProgrammableNuclearContent.CIRCUIT.get().ordinal(stack),ProgrammableNuclearContent.CIRCUIT.get());}
- @Override public void registerEntries(EntryRegistry registry){ProgrammableNuclearContent.CIRCUIT.get().creativeStacks().forEach(stack->registry.addEntry(EntryStacks.of(stack)));}
+ @Override public void registerEntries(EntryRegistry registry){SourceCircuitItem.creativeStacks().forEach(stack->registry.addEntry(EntryStacks.of(stack)));}
  @Override public void registerCategories(CategoryRegistry registry){registry.add(new DisplayCategory<Display>(){
   public CategoryIdentifier<Display> getCategoryIdentifier(){return TYPE;}public Component getTitle(){return Component.translatable("gui.hbm.nuclear_payload");}public Renderer getIcon(){return EntryStacks.of(ProgrammableNuclearContent.CUSTOM_ITEM.get());}public int getDisplayHeight(){return 84;}public int getDisplayWidth(Display display){return 176;}
   public List<Widget> setupDisplay(Display display,Rectangle bounds){var widgets=new ArrayList<Widget>();for(int i=0;i<display.getInputEntries().size();i++)widgets.add(Widgets.createSlot(new Point(bounds.x,bounds.y+i*20)).entries(display.getInputEntries().get(i)).disableBackground().markInput());widgets.add(Widgets.createSlot(new Point(bounds.x+158,bounds.y)).entry(EntryStacks.of(display.data.bomb())).disableBackground());widgets.add(Widgets.createDrawableWidget((graphics,x,y,partial)->NuclearPayloadDrawing.draw(graphics,display.data,bounds.x,bounds.y)));return widgets;}
