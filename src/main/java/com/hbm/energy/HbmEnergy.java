@@ -72,4 +72,12 @@ public final class HbmEnergy {
         WORLDS.values().forEach(PowerNodespace::clear);
         WORLDS.clear();
     }
+    /** Invalidate all existing graphs for this server without creating a world or a node. */
+    public static void clearServer(net.minecraft.server.MinecraftServer server){
+        WORLDS.entrySet().removeIf(entry->{
+            if(entry.getKey().getServer()!=server)return false;
+            entry.getValue().clear();
+            return true;
+        });
+    }
 }

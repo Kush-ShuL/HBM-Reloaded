@@ -34,4 +34,5 @@ public final class RebarBlockEntity extends BlockEntity implements FluidReceiver
  @Override public CompoundTag getUpdateTag(HolderLookup.Provider lookup){var tag=new CompoundTag();tag.putInt("progress",progress);return tag;}@Override public void handleUpdateTag(CompoundTag tag,HolderLookup.Provider lookup){progress=tag.getInt("progress");}
  @Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}@Override public void onDataPacket(net.minecraft.network.Connection connection,ClientboundBlockEntityDataPacket packet,HolderLookup.Provider lookup){handleUpdateTag(packet.getTag(),lookup);}
  @Override public long energyStored(){return 0;}@Override public long energyCapacity(){return 0;}@Override public List<TankView> tanks(){return List.of(new TankView(HbmFluids.fromName("CONCRETE"),progress,1000));}@Override public List<ProgressView> progressBars(){return List.of(new ProgressView("gui.hbm.rebar.curing",progress,1000,0xa0a0a0));}
+ void expireNetworkNode(){nodeReady=false;}
 }

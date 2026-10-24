@@ -14,4 +14,12 @@ public final class PlasmaNetworks {
     @SubscribeEvent public static void unload(LevelEvent.Unload event){if(event.getLevel() instanceof ServerLevel level){var space=WORLDS.remove(level);if(space!=null)space.clear();}}
     @SubscribeEvent public static void stop(ServerStoppedEvent event){WORLDS.values().forEach(PlasmaNodespace::clear);WORLDS.clear();}
     private PlasmaNetworks(){}
+    /** Invalidate all existing graphs for this server without creating a world or a node. */
+    public static void clearServer(net.minecraft.server.MinecraftServer server){
+        WORLDS.entrySet().removeIf(entry->{
+            if(entry.getKey().getServer()!=server)return false;
+            entry.getValue().clear();
+            return true;
+        });
+    }
 }

@@ -20,7 +20,7 @@ import net.minecraft.world.phys.*;
 /** X5846 FoundryBase/Channel/Tank/Casting/Outlet/Slagtap state and tick rules. */
 public final class FoundryBlockEntity extends BlockEntity implements FoundryAcceptor,WorldlyContainer,ICopiable,MachineView {
     public NtmMaterial type,filter;public int amount,nextUpdate,lastFlow,cooloff=100;public boolean invertFilter,invertRedstone;
-    NtmMaterial nodeType;boolean nodeReady;public final NonNullList<ItemStack> slots=NonNullList.withSize(2,ItemStack.EMPTY);
+    NtmMaterial nodeType;boolean nodeReady;Object nodeEpoch;public final NonNullList<ItemStack> slots=NonNullList.withSize(2,ItemStack.EMPTY);
     private NtmMaterial lastType,lastFilter;private int lastAmount=-1;private boolean lastClosed;private long revision;
     public FoundryBlockEntity(BlockPos pos,BlockState state){super(FoundryContent.ENTITY.get(),pos,state);}
     public Kind kind(){return ((FoundryBlock)getBlockState().getBlock()).kind;}
@@ -37,11 +37,11 @@ public final class FoundryBlockEntity extends BlockEntity implements FoundryAcce
     }
     private List<Direction> shuffled(){var sides=new ArrayList<>(Arrays.asList(FoundryNetwork.HORIZONTAL));Collections.shuffle(sides);return sides;}
     private void tickChannel(){
-        if(!nodeReady){nodeReady=true;nodeType=type;}
+        if(!FoundryNetwork.ready(this))FoundryNetwork.initialize(this);
         if(nodeType!=null&&amount==0)nodeType=null;if(type==null&&amount!=0)amount=0;nextUpdate--;
         if(nextUpdate<=0&&amount>0&&type!=null){boolean operated=false;nextUpdate=5;List<Direction> sides=shuffled();if(lastFlow>0){Direction last=Direction.from3DDataValue(lastFlow);sides.remove(last);sides.add(last);}
             for(Direction side:sides){var target=level.getBlockEntity(worldPosition.relative(side));if(target instanceof FoundryAcceptor acceptor&&!(target instanceof FoundryBlockEntity foundry&&foundry.kind()==Kind.CHANNEL)&&acceptor.canAcceptPartialFlow(side.getOpposite(),new MaterialStack(type,amount))){MaterialStack left=acceptor.flow(side.getOpposite(),new MaterialStack(type,amount));if(left==null){type=null;amount=0;nodeType=null;}else amount=left.amount;operated=true;break;}}
-            if(!operated)for(Direction side:sides){var target=level.getBlockEntity(worldPosition.relative(side));if(target instanceof FoundryBlockEntity other&&other.kind()==Kind.CHANNEL&&(other.type==null||other.type==type||other.amount==0)){other.type=type;other.nodeReady=true;other.nodeType=type;other.lastFlow=side.getOpposite().get3DDataValue();if(level.random.nextInt(5)==0||amount==1){int previous=amount;amount=other.amount;other.amount=previous;}else{int difference=amount-other.amount;if(difference>0){difference/=2;amount-=difference;other.amount+=difference;}}other.setChanged();}}
+            if(!operated)for(Direction side:sides){var target=level.getBlockEntity(worldPosition.relative(side));if(target instanceof FoundryBlockEntity other&&other.kind()==Kind.CHANNEL&&(other.type==null||other.type==type||other.amount==0)){other.type=type;FoundryNetwork.initialize(other);other.lastFlow=side.getOpposite().get3DDataValue();if(level.random.nextInt(5)==0||amount==1){int previous=amount;amount=other.amount;other.amount=previous;}else{int difference=amount-other.amount;if(difference>0){difference/=2;amount-=difference;other.amount+=difference;}}other.setChanged();}}
         }
         if(amount==0){lastFlow=0;nextUpdate=5;}
     }
@@ -70,7 +70,7 @@ public final class FoundryBlockEntity extends BlockEntity implements FoundryAcce
         return standardCheck(stack);
     }
     @Override public MaterialStack flow(Direction side,MaterialStack stack){if(kind()==Kind.TANK||kind()==Kind.BASIN||kind()==Kind.SLAG)return stack;if(kind().outlet())return pourOutlet(side,stack);if(kind()==Kind.CHANNEL)nodeType=stack.material;return standardAdd(stack);}
-    @Override public boolean canAcceptPartialPour(Vec3 hit,Direction side,MaterialStack stack){if(kind().outlet()||kind()==Kind.SLAG||side!=Direction.UP)return false;if(kind()==Kind.CHANNEL&&(!nodeReady||!FoundryNetwork.accepts(level,worldPosition,stack.material)))return false;return standardCheck(stack);}
+    @Override public boolean canAcceptPartialPour(Vec3 hit,Direction side,MaterialStack stack){if(kind().outlet()||kind()==Kind.SLAG||side!=Direction.UP)return false;if(kind()==Kind.CHANNEL&&(!FoundryNetwork.ready(this)||!FoundryNetwork.accepts(level,worldPosition,stack.material)))return false;return standardCheck(stack);}
     @Override public MaterialStack pour(Vec3 hit,Direction side,MaterialStack stack){if(kind().outlet()||kind()==Kind.SLAG)return stack;if(kind()==Kind.CHANNEL)nodeType=stack.material;return standardAdd(stack);}
     private Vec3 outletStart(){return Vec3.atLowerCornerOf(worldPosition).add(.5,-.125,.5);}
     private Vec3 outletEnd(){return Vec3.atLowerCornerOf(worldPosition).add(.5,.125-(kind()==Kind.SLAGTAP?15:4),.5);}

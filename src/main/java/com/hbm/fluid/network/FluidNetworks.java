@@ -44,4 +44,13 @@ public final class FluidNetworks {
     }
     private static void unload(LevelEvent.Unload event) { if (event.getLevel() instanceof ServerLevel level) { var types = WORLDS.remove(level); if (types != null) types.values().forEach(FluidNodespace::clear); } }
     private static void stopped(ServerStoppedEvent event) { WORLDS.values().forEach(types -> types.values().forEach(FluidNodespace::clear)); WORLDS.clear(); }
+    /** Invalidate all existing graphs for this server without creating a world or a node. */
+    public static void clearServer(net.minecraft.server.MinecraftServer server){
+        WORLDS.entrySet().removeIf(entry->{
+            if(entry.getKey().getServer()!=server)return false;
+            entry.getValue().values().forEach(FluidNodespace::clear);
+            entry.getValue().clear();
+            return true;
+        });
+    }
 }

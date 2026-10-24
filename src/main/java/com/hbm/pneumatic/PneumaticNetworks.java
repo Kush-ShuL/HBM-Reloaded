@@ -25,4 +25,15 @@ public final class PneumaticNetworks {
  @SubscribeEvent public static void unload(LevelEvent.Unload event){if(event.getLevel().isClientSide())return;var space=WORLDS.remove(event.getLevel());if(space==null)return;for(var network:space.networks)network.destroy();for(var node:space.nodes.values()){node.expired=true;node.network=null;}}
  private static void rebuild(Space space){for(var network:space.networks)network.destroy();space.networks.clear();var remaining=new LinkedHashSet<>(space.nodes.values());var queue=new ArrayDeque<PneumaticNode>();while(!remaining.isEmpty()){var first=remaining.iterator().next();remaining.remove(first);queue.add(first);var network=new PneumaticNetwork();space.networks.add(network);while(!queue.isEmpty()){var node=queue.removeFirst();node.network=network;network.nodes.add(node);for(var side:Direction.values()){if((node.mask&(1<<side.get3DDataValue()))==0)continue;var next=space.nodes.get(node.position().relative(side));if(next!=null&&(next.mask&(1<<side.getOpposite().get3DDataValue()))!=0&&remaining.remove(next))queue.addLast(next);}for(var pos:node.remote){var next=space.nodes.get(pos);if(next!=null&&next.remote.contains(node.position())&&remaining.remove(next))queue.addLast(next);}}}space.dirty=false;}
  private PneumaticNetworks(){}
+ /** Expire the original pneumatic graph/cache handles; actual inventories remain on their owners. */
+ public static void clearServer(net.minecraft.server.MinecraftServer server){
+  WORLDS.entrySet().removeIf(entry->{
+   if(!(entry.getKey() instanceof net.minecraft.server.level.ServerLevel level)||level.getServer()!=server)return false;
+   var space=entry.getValue();
+   for(var network:space.networks)network.destroy();
+   for(var node:space.nodes.values()){node.expired=true;node.network=null;}
+   space.nodes.clear();space.networks.clear();space.dirty=false;
+   return true;
+  });
+ }
 }
