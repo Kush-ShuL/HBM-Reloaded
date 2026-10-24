@@ -12539,5 +12539,21 @@
   "commands.hbm.reload.complete": "重载完成 :)",
   "commands.hbm.reload.failed": "加载时发生错误，详情请查看日志。",
   "commands.hbm.network_reap.cleared": "节点空间已清空 :)",
-  "commands.hbm.network_reap.failed": "网络清理时发生错误，详情请查看日志。"
+  "commands.hbm.network_reap.failed": "网络清理时发生错误，详情请查看日志。",
+  "commands.hbm.server.title": "服务器变量：",
+  "commands.hbm.server.loaded": "已从配置文件读取变量。",
+  "commands.hbm.server.updated": "变量值已更新。",
+  "commands.hbm.server.missing": "变量名不存在。",
+  "commands.hbm.server.parse_failed": "解析 %s 类型时出错：%s",
+  "commands.hbm.server.access_failed": "无法读取服务器变量：%s",
+  "commands.hbm.server.reload_failed": "无法重载服务器变量：%s",
+  "commands.hbm.server.fixed_damage_note": "此变量可读取与保存；当前突击步枪使用固定伤害，不参与伤害计算。",
+  "commands.hbm.server.help.help": "显示 /ntmserver 子命令用法。",
+  "commands.hbm.server.help.list": "显示全部服务器变量名和当前值。",
+  "commands.hbm.server.help.reload": "从对应配置文件读取服务器变量。",
+  "commands.hbm.server.help.get": "显示指定现代变量路径的值。",
+  "commands.hbm.server.help.set": "修改变量值并保存对应配置文件。",
+  "commands.hbm.server.placeholder.command": "<子命令>",
+  "commands.hbm.server.placeholder.name": "<变量路径>",
+  "commands.hbm.server.placeholder.name_value": "<变量路径> <值>"
 }

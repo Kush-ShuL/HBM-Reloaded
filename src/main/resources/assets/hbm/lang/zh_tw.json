@@ -4,5 +4,21 @@
   "item.hbm.nuclear_kit.warn_inventory": "開啟前請清空物品欄！",
   "item.hbm.nuclear_kit.warn_armor": "開啟後將換上防化服，原護甲會掉落。",
   "commands.hbm.reload.complete": "重新載入完成 :)",
-  "commands.hbm.reload.failed": "載入時發生錯誤，詳情請查看日誌。"
+  "commands.hbm.reload.failed": "載入時發生錯誤，詳情請查看日誌。",
+  "commands.hbm.server.title": "伺服器變數：",
+  "commands.hbm.server.loaded": "已從設定檔讀取變數。",
+  "commands.hbm.server.updated": "變數值已更新。",
+  "commands.hbm.server.missing": "變數名稱不存在。",
+  "commands.hbm.server.parse_failed": "解析 %s 類型時發生錯誤：%s",
+  "commands.hbm.server.access_failed": "無法讀取伺服器變數：%s",
+  "commands.hbm.server.reload_failed": "無法重新載入伺服器變數：%s",
+  "commands.hbm.server.fixed_damage_note": "此變數可讀取與儲存；目前突擊步槍使用固定傷害，不參與傷害計算。",
+  "commands.hbm.server.help.help": "顯示 /ntmserver 子指令用法。",
+  "commands.hbm.server.help.list": "顯示全部伺服器變數名稱與目前值。",
+  "commands.hbm.server.help.reload": "從對應設定檔讀取伺服器變數。",
+  "commands.hbm.server.help.get": "顯示指定現代變數路徑的值。",
+  "commands.hbm.server.help.set": "修改變數值並儲存對應設定檔。",
+  "commands.hbm.server.placeholder.command": "<子指令>",
+  "commands.hbm.server.placeholder.name": "<變數路徑>",
+  "commands.hbm.server.placeholder.name_value": "<變數路徑> <值>"
 }

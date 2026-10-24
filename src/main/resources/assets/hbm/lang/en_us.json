@@ -12539,5 +12539,21 @@
   "commands.hbm.reload.complete": "Reload complete :)",
   "commands.hbm.reload.failed": "An error has occoured during loading, consult the log for details.",
   "commands.hbm.network_reap.cleared": "Nodespace cleared :)",
-  "commands.hbm.network_reap.failed": "An error has occoured during network reap, consult the log for details."
+  "commands.hbm.network_reap.failed": "An error has occoured during network reap, consult the log for details.",
+  "commands.hbm.server.title": "SERVER VARIABLES:",
+  "commands.hbm.server.loaded": "Variables loaded from config files.",
+  "commands.hbm.server.updated": "Value updated.",
+  "commands.hbm.server.missing": "Key does not exist.",
+  "commands.hbm.server.parse_failed": "Error parsing type for %s: %s",
+  "commands.hbm.server.access_failed": "Cannot read server variables: %s",
+  "commands.hbm.server.reload_failed": "Cannot reload server variables: %s",
+  "commands.hbm.server.fixed_damage_note": "This variable can be read and saved; the assault rifle currently uses fixed damage and does not read it.",
+  "commands.hbm.server.help.help": "Shows usage for /ntmserver subcommands.",
+  "commands.hbm.server.help.list": "Shows all server variable names and values.",
+  "commands.hbm.server.help.reload": "Reads server variables from their config files.",
+  "commands.hbm.server.help.get": "Shows the value for the specified modern variable path.",
+  "commands.hbm.server.help.set": "Sets a variable value and saves its config file.",
+  "commands.hbm.server.placeholder.command": "<command>",
+  "commands.hbm.server.placeholder.name": "<name>",
+  "commands.hbm.server.placeholder.name_value": "<name> <value>"
 }
