@@ -13,14 +13,12 @@ import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.event.entity.living.MobSpawnEvent;
 import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.server.ServerStoppingEvent;
-import net.neoforged.neoforge.event.tick.LevelTickEvent;
 
 /** Source always-enabled digamma haunting branch, no extra radiation/timer/config backend. */
 public final class GhostEncounters {
     private static final Map<ServerLevel,List<Spawn>> PENDING=new IdentityHashMap<>();
-    public static void register(){NeoForge.EVENT_BUS.addListener(GhostEncounters::tick);NeoForge.EVENT_BUS.addListener(GhostEncounters::unload);NeoForge.EVENT_BUS.addListener(GhostEncounters::stop);}
-    private static void tick(LevelTickEvent.Post event){
-        if(!(event.getLevel() instanceof ServerLevel world))return;
+    public static void register(){NeoForge.EVENT_BUS.addListener(GhostEncounters::unload);NeoForge.EVENT_BUS.addListener(GhostEncounters::stop);}
+    public static void update(ServerLevel world){
         var jobs=PENDING.get(world);if(jobs!=null){for(var iterator=jobs.iterator();iterator.hasNext();){var job=iterator.next();try{if(job.advance(world)){job.close();iterator.remove();}}catch(RuntimeException|Error failure){job.close();iterator.remove();throw failure;}}if(jobs.isEmpty())PENDING.remove(world);}
         if(world.getGameTime()%20!=0)return;
         if(world.random.nextInt(5)!=0||world.players().isEmpty()||!world.dimensionType().natural())return;

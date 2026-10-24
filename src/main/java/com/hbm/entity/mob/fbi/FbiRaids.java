@@ -9,12 +9,10 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.event.entity.living.MobSpawnEvent;
-import net.neoforged.neoforge.event.tick.LevelTickEvent;
 /** Actual BossSpawnHandler raid branch, including surprising expired/absent mark eligibility. */
 public final class FbiRaids {
-    public static void register(){NeoForge.EVENT_BUS.addListener(FbiRaids::tick);}
-    private static void tick(LevelTickEvent.Post event){
-        if(!(event.getLevel() instanceof ServerLevel world)||!FbiConfig.ENABLED.get()||world.getGameTime()%FbiConfig.DELAY.get()!=0)return;
+    public static void update(ServerLevel world){
+        if(!FbiConfig.ENABLED.get()||world.getGameTime()%FbiConfig.DELAY.get()!=0)return;
         // Preserve source nextInt consumption before surface/player checks.
         if(world.random.nextInt(FbiConfig.CHANCE.get())!=0||world.players().isEmpty()||!world.dimensionType().natural())return;
         var player=world.players().get(world.random.nextInt(world.players().size()));

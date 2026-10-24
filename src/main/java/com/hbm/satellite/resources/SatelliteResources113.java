@@ -24,7 +24,7 @@ public final class SatelliteResources113 {
     public static final DeferredItem<DeferredSpawnEggItem> AGENT_EGG=ITEMS.register("fbi_spawn_egg",()->new DeferredSpawnEggItem(AGENT,0x008000,0x404040,new Item.Properties())),DRONE_EGG=ITEMS.register("fbi_drone_spawn_egg",()->new DeferredSpawnEggItem(DRONE,0x008000,0x404040,new Item.Properties()));
     public static void register(IEventBus bus,ModContainer container){
         SatelliteRegistry.bind(6,SatelliteMiner.class,SatelliteMiner::new);SatelliteRegistry.bind(7,SatelliteLunarMiner.class,SatelliteLunarMiner::new);SatelliteRegistry.bind(8,SatelliteHorizons.class,SatelliteHorizons::new);
-        FbiConfig.register(container);FbiRaids.register();PaaContent.register(bus);ImpactTerrainContent.register(bus);ENTITIES.register(bus);ITEMS.register(bus);
+        FbiConfig.register(container);PaaContent.register(bus);ImpactTerrainContent.register(bus);ENTITIES.register(bus);ITEMS.register(bus);
         bus.addListener((EntityAttributeCreationEvent event)->{event.put(AGENT.get(),EntityFBI.attributes().build());event.put(DRONE.get(),EntityFBIDrone.attributes().build());});
         bus.addListener((BuildCreativeModeTabContentsEvent event)->{if(event.getTabKey()==CreativeModeTabs.SPAWN_EGGS){event.accept(AGENT_EGG.get());event.accept(DRONE_EGG.get());}});
     }

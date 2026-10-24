@@ -101,6 +101,13 @@ public final class MobSpawnEquipment {
     }
 
     private static void joined(EntityJoinLevelEvent event) {
+        var parts = event.getEntity().getParts();
+        if (parts != null) for (var part : parts) if (part == null) {
+            com.hbm.HbmReloaded.LOGGER.error("Prevented spawning of multipart entity {} due to parts being null!",
+                    event.getEntity().getClass().getCanonicalName());
+            event.setCanceled(true);
+            return;
+        }
         if (event.getLevel().isClientSide || !(event.getEntity() instanceof Mob entity)) return;
         if (entity.getMainHandItem().getItem() instanceof ItemGunBaseNT) MobUtil.addFireTask(entity);
     }

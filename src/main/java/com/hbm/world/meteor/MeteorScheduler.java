@@ -9,16 +9,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStoppedEvent;
-import net.neoforged.neoforge.event.tick.LevelTickEvent;
+import net.minecraft.server.level.ServerLevel;
 
 /** Original global shower counter and per-world START tick random sequence. */
 public final class MeteorScheduler {
  private static final Random RANDOM=new Random();
  private static final EquipmentSlot[] ARMOR={EquipmentSlot.FEET,EquipmentSlot.LEGS,EquipmentSlot.CHEST,EquipmentSlot.HEAD};
  private static int shower;
- public static void register(){NeoForge.EVENT_BUS.addListener(MeteorScheduler::tick);NeoForge.EVENT_BUS.addListener((ServerStoppedEvent event)->shower=0);}
- private static void tick(LevelTickEvent.Pre event){
-  var level=event.getLevel();if(level.isClientSide||!MeteorConfig.enabled())return;
+ public static void register(){NeoForge.EVENT_BUS.addListener((ServerStoppedEvent event)->shower=0);}
+ public static void update(ServerLevel level){
+  if(!MeteorConfig.enabled())return;
   int chance=shower>0?MeteorConfig.SHOWER_CHANCE.get():MeteorConfig.STRIKE_CHANCE.get();
   if(chance>0&&RANDOM.nextInt(chance)==0&&!level.players().isEmpty()){
    var player=level.players().get(RANDOM.nextInt(level.players().size()));

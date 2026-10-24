@@ -1,4 +1,6 @@
 package com.hbm.weapon.crucible;
+import com.hbm.bomb.conventional.grenade.UniversalGrenadeItem;
+import com.hbm.weapon.sedna.gun.ItemGunBaseNT;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -12,7 +14,13 @@ import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 /** Source IEquipReceiver item-change boundary and ItemStack-sensitive active charge attributes. */
 @EventBusSubscriber(modid="hbm")
 public final class CrucibleRuntime {
- @SubscribeEvent public static void equip(LivingEquipmentChangeEvent event){if(event.getSlot()==EquipmentSlot.MAINHAND&&event.getEntity() instanceof ServerPlayer player&&event.getTo().getItem() instanceof CrucibleItem&&!event.getFrom().is(event.getTo().getItem()))CrucibleItem.equip(player,event.getTo());}
+ @SubscribeEvent public static void equip(LivingEquipmentChangeEvent event){
+  if(event.getSlot()!=EquipmentSlot.MAINHAND||!(event.getEntity() instanceof ServerPlayer player)||event.getFrom().is(event.getTo().getItem()))return;
+  var stack=event.getTo();
+  if(stack.getItem() instanceof CrucibleItem)CrucibleItem.equip(player,stack);
+  else if(stack.getItem() instanceof ItemGunBaseNT gun)gun.onEquip(player,stack);
+  else if(stack.getItem() instanceof UniversalGrenadeItem grenade)grenade.equip(player,stack);
+ }
  @SubscribeEvent public static void attributes(ItemAttributeModifierEvent event){
   var stack=event.getItemStack();if(!(stack.getItem() instanceof CrucibleItem))return;
   // Original explicit AttributeModifiers stack NBT overrides an item's own map. Respect its modern component equivalent too.

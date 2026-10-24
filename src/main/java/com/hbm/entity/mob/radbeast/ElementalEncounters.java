@@ -18,14 +18,12 @@ import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.event.entity.living.MobSpawnEvent;
 import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.server.ServerStoppingEvent;
-import net.neoforged.neoforge.event.tick.LevelTickEvent;
 
 /** Only BossSpawnHandler's actual elemental branch. Existing reactor marks/config and radiation remain sole owners. */
 public final class ElementalEncounters {
     private static final Map<ServerLevel,List<Encounter>> PENDING=new IdentityHashMap<>();
-    public static void register(){NeoForge.EVENT_BUS.addListener(ElementalEncounters::tick);NeoForge.EVENT_BUS.addListener(ElementalEncounters::unload);NeoForge.EVENT_BUS.addListener(ElementalEncounters::stop);}
-    private static void tick(LevelTickEvent.Post event){
-        if(!(event.getLevel() instanceof ServerLevel world))return;
+    public static void register(){NeoForge.EVENT_BUS.addListener(ElementalEncounters::unload);NeoForge.EVENT_BUS.addListener(ElementalEncounters::stop);}
+    public static void update(ServerLevel world){
         var pending=PENDING.get(world);
         if(pending!=null){for(var iterator=pending.iterator();iterator.hasNext();){var job=iterator.next();try{if(job.advance(world)){job.close();iterator.remove();}}catch(RuntimeException|Error failure){job.close();iterator.remove();throw failure;}}if(pending.isEmpty())PENDING.remove(world);}
         if(!ReactorConfig.ELEMENTALS.get()||world.getGameTime()%ReactorConfig.ELEMENTAL_DELAY.get()!=0)return;
