@@ -20,6 +20,8 @@ public final class ClientEffectsConfig {
     private static final ModConfigSpec.BooleanValue CUSTOM_MAIN_MENU_SPLASHES;
     // HUD左上角是否显示满足完整规则的模式徽章；默认开启。
     private static final ModConfigSpec.BooleanValue MODE_BADGES;
+    // 配方浏览器是否隐藏秘密物品及相关通用机器配方；默认开启。
+    private static final ModConfigSpec.BooleanValue RECIPE_VIEWER_HIDE_SECRETS;
 
     static {
         var builder = new ModConfigSpec.Builder();
@@ -47,6 +49,11 @@ public final class ClientEffectsConfig {
                 "在 HUD 左上角显示模式徽章。默认true；仅显示服务器确认满足完整模式规则的徽章。",
                 "只控制徽章显示；不改变模式、配方或生物行为。按F1隐藏 HUD 时也隐藏徽章。")
                 .define(java.util.List.of("hud", "modeBadgesEnabled"), true);
+        RECIPE_VIEWER_HIDE_SECRETS = builder.comment(
+                "在 JEI/REI 中隐藏秘密武器、秘密弹药、秘密材料，以及秘密配方池或含隐藏原料/产物的通用机器配方。默认true。",
+                "更改后重载配方浏览器或重启客户端，以重新索引条目和配方。只控制展示，不改变实际合成或处理。",
+                "泥板配方仍需单独显式允许；其他独立隐藏规则、蓝图册图标和创造栏规则不由此开关解除。")
+                .define(java.util.List.of("recipeViewer", "hideSecretsEnabled"), true);
         SPEC = builder.build();
     }
 
@@ -65,6 +72,8 @@ public final class ClientEffectsConfig {
     public static boolean mainMenuCustomSplashesEnabled() { return !SPEC.isLoaded() || CUSTOM_MAIN_MENU_SPLASHES.get(); }
 
     public static boolean modeBadgesEnabled() { return !SPEC.isLoaded() || MODE_BADGES.get(); }
+
+    public static boolean recipeViewerHideSecretsEnabled() { return !SPEC.isLoaded() || RECIPE_VIEWER_HIDE_SECRETS.get(); }
 
     private ClientEffectsConfig() {}
 }

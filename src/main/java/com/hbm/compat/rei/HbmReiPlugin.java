@@ -38,6 +38,7 @@ public final class HbmReiPlugin implements REIClientPlugin {
     }
     @Override public void registerEntries(EntryRegistry registration) {
         com.hbm.item.fluid.FluidIconItem.recipeViewerStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
+        com.hbm.compat.recipeviewer.RecipeViewerVisibility.secretStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
         com.hbm.bomb.nuclear.NuclearContent.BREEDING_RODS.values().stream().flatMap(holder -> holder.get().creativeStacks().stream()).forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
         java.util.stream.Stream.concat(
                 com.hbm.registry.HbmEnumItems.tabNames().stream().flatMap(tab -> com.hbm.registry.HbmEnumItems.creativeStacks(tab).stream()),
@@ -53,6 +54,14 @@ public final class HbmReiPlugin implements REIClientPlugin {
         registration.removeEntry(EntryStacks.of(com.hbm.item.fluid.FluidItemContent.ICON.get()));
         registration.removeEntry(EntryStacks.of(BatteryContent.MEMORY.get().emptyStack()));
         registration.removeEntry(EntryStacks.of(BatteryContent.MEMORY.get().fullStack()));
+    }
+    @Override public void registerBasicEntryFiltering(me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule<?> rule) {
+        rule.hide(() -> {
+            if (!com.hbm.compat.recipeviewer.RecipeViewerVisibility.hideSecretsEnabled()) return java.util.List.of();
+            return EntryRegistry.getInstance().getEntryStacks()
+                    .filter(entry -> entry.getValue() instanceof net.minecraft.world.item.ItemStack stack
+                            && com.hbm.compat.recipeviewer.RecipeViewerVisibility.secretEntry(stack)).toList();
+        });
     }
     @Override public void registerScreens(ScreenRegistry registration) {
         registration.registerContainerClickArea(new Rectangle(43, 36, 28, 12), ElectricFurnaceScreen.class, SMELTING);

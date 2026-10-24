@@ -21,7 +21,7 @@ public final class ScienceAssemblerViews {
     static LegacyRecipeDisplays.Display drawing(SpaceAssemblerRecipe recipe){return new LegacyRecipeDisplays.Display(ResourceLocation.parse("hbm:space_assembler"),"space_assembly",inputs(recipe).stream().map(LegacyRecipeDisplays.Slot::new).toList(),outputs(recipe).stream().map(LegacyRecipeDisplays.Slot::new).toList(),recipe.duration(),null,List.of());}
     static void draw(GuiGraphics graphics,SpaceAssemblerRecipe recipe,int x,int y){var category=category();var display=drawing(recipe);LegacyDisplayDrawing.background(graphics,category,display,x,y);if(recipe.isPooled())graphics.blit(category.texture(),x+74,y+7,77,87,18,50,256,256);LegacyDisplayDrawing.extras(graphics,category,display,x,y);}
     static List<ItemStack> blueprints(SpaceAssemblerRecipe recipe){return recipe.pools().stream().map(Blueprints::make).toList();}
-    static boolean visible(SpaceAssemblerRecipe recipe){return recipe.pools().stream().noneMatch(pool->pool.startsWith(Blueprints.SECRET));}
+    static boolean visible(SpaceAssemblerRecipe recipe){return com.hbm.compat.recipeviewer.RecipeViewerVisibility.visible(recipe.pools(),inputs(recipe),outputs(recipe));}
     static List<Component> outputTooltip(SpaceAssemblerRecipe recipe,int lane,ItemStack stack){
         var output=recipe.outputItems().get(lane);var lines=new ArrayList<Component>();
         for(var choice:output.pool())if(choice.stack().getItem()==stack.getItem()&&Blueprints.metadata(choice.stack())==Blueprints.metadata(stack)){

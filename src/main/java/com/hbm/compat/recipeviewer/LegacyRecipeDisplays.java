@@ -40,7 +40,14 @@ public final class LegacyRecipeDisplays {
                 .filter(category->!category.id.equals("super_computer")||!BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm","supercomputer")))
                 .filter(category->DISPLAYS.stream().anyMatch(display->display.category.equals(category.id))).toList();
     }
-    public static List<Display> recipes(String category) { load(); return DISPLAYS.stream().filter(display->display.category.equals(category)).toList(); }
+    public static List<Display> recipes(String category) {
+        load();
+        boolean generic = CATEGORIES.stream().anyMatch(value -> value.id.equals(category) && value.layout.equals("generic"));
+        return DISPLAYS.stream().filter(display -> display.category.equals(category))
+                .filter(display -> !generic || RecipeViewerVisibility.visible(List.of(),
+                        display.inputs.stream().map(Slot::alternatives).toList(),
+                        display.outputs.stream().map(Slot::alternatives).toList())).toList();
+    }
     public static List<String> unresolved() { load(); return List.copyOf(UNRESOLVED); }
     private static synchronized void load() {
         if(loaded) return; loaded=true;

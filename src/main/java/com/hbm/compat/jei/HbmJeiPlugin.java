@@ -55,6 +55,7 @@ public final class HbmJeiPlugin implements IModPlugin {
                 BatteryContent.enumItems().stream().flatMap(item -> item.creativeStacks().stream())).toList();
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, variants);
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.item.fluid.FluidIconItem.recipeViewerStacks());
+        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.compat.recipeviewer.RecipeViewerVisibility.secretStacks());
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.bomb.nuclear.NuclearContent.BREEDING_RODS.values().stream().flatMap(holder -> holder.get().creativeStacks().stream()).toList());
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.registry.HbmOres.allItems().stream().map(holder -> holder.get())
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
@@ -67,6 +68,12 @@ public final class HbmJeiPlugin implements IModPlugin {
                 new ItemStack(ElectricFurnaceContent.ON_ITEM.get()),
                 new ItemStack(com.hbm.item.fluid.FluidItemContent.ICON.get()),
                 BatteryContent.MEMORY.get().emptyStack(), BatteryContent.MEMORY.get().fullStack()));
+        if (com.hbm.compat.recipeviewer.RecipeViewerVisibility.hideSecretsEnabled()) {
+            var manager = runtime.getIngredientManager();
+            var secrets = manager.getAllIngredients(VanillaTypes.ITEM_STACK).stream()
+                    .filter(com.hbm.compat.recipeviewer.RecipeViewerVisibility::secretEntry).toList();
+            if (!secrets.isEmpty()) manager.removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, secrets);
+        }
     }
     @Override public void registerGuiHandlers(IGuiHandlerRegistration registration) {
         registration.addRecipeClickArea(ElectricFurnaceScreen.class, 43, 36, 28, 12, RecipeTypes.SMELTING);
