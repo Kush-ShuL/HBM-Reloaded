@@ -1784,11 +1784,8 @@
       "index": 17,
       "product": {
         "stack": {
-          "id": "hbm:ammo_container",
-          "count": 16,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:ammo_container_standard",
+          "count": 16
         }
       },
       "requirement": "STEEL",

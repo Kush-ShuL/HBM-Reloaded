@@ -19,7 +19,8 @@ public final class StructureLootContent {
     public static final DeferredItem<net.minecraft.world.item.BlockItem> SUPPLY_ITEM=ITEMS.registerSimpleBlockItem("crate_supply",SUPPLY);
     public static final DeferredBlock<FallingSupplyCrateBlock> CRATE=BLOCKS.register("crate",FallingSupplyCrateBlock::new);
     public static final DeferredItem<net.minecraft.world.item.BlockItem> CRATE_ITEM=ITEMS.registerSimpleBlockItem("crate",CRATE);
-    public static final DeferredItem<AmmoContainerItem> AMMO=ITEMS.register("ammo_container",AmmoContainerItem::new);
+    public static final DeferredItem<AmmoContainerItem> AMMO_STANDARD=ITEMS.register("ammo_container_standard",()->new AmmoContainerItem(AmmoContainerItem.Kind.STANDARD));
+    public static final DeferredItem<AmmoContainerItem> AMMO_MAKESHIFT=ITEMS.register("ammo_container_makeshift",()->new AmmoContainerItem(AmmoContainerItem.Kind.MAKESHIFT));
     public static final DeferredBlock<LootPileBlock> PILE=BLOCKS.register("deco_loot",LootPileBlock::new);
     public static final DeferredItem<MorningGloryItem> MORNING=ITEMS.register("morning_glory",MorningGloryItem::new);
     private static final DeferredRegister<net.minecraft.world.item.crafting.RecipeSerializer<?>> RECIPES=DeferredRegister.create(Registries.RECIPE_SERIALIZER,"hbm");
@@ -31,6 +32,6 @@ public final class StructureLootContent {
     private static final DeferredRegister<net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType<?>> PROCESSORS=DeferredRegister.create(Registries.STRUCTURE_PROCESSOR,"hbm");
     public static final DeferredHolder<net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType<?>,net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType<StructureLootProcessor>> PROCESSOR=PROCESSORS.register("legacy_structure_loot",()->()->StructureLootProcessor.CODEC);
     public static void register(IEventBus bus){ENTRIES.register(bus);BLOCKS.register(bus);ITEMS.register(bus);ENTITIES.register(bus);RECIPES.register(bus);PROCESSORS.register(bus);LegacyStructureLoot.register();MorningGloryItem.register();MkuStructureLoot.register();}
-    public static java.util.List<net.minecraft.world.item.ItemStack> creativeStacks(String tab){if(tab.equals("consumable"))return java.util.List.of(new net.minecraft.world.item.ItemStack(MORNING.get()),new net.minecraft.world.item.ItemStack(CRATE_ITEM.get()));if(tab.equals("missile"))return java.util.List.of(new net.minecraft.world.item.ItemStack(SUPPLY_ITEM.get()));if(tab.equals("weapon")){var normal=new net.minecraft.world.item.ItemStack(AMMO.get());var cheap=normal.copy();cheap.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),1);return java.util.List.of(normal,cheap);}return java.util.List.of();}
+    public static java.util.List<net.minecraft.world.item.ItemStack> creativeStacks(String tab){if(tab.equals("consumable"))return java.util.List.of(new net.minecraft.world.item.ItemStack(MORNING.get()),new net.minecraft.world.item.ItemStack(CRATE_ITEM.get()));if(tab.equals("missile"))return java.util.List.of(new net.minecraft.world.item.ItemStack(SUPPLY_ITEM.get()));if(tab.equals("weapon"))return java.util.List.of(new net.minecraft.world.item.ItemStack(AMMO_STANDARD.get()),new net.minecraft.world.item.ItemStack(AMMO_MAKESHIFT.get()));return java.util.List.of();}
     private StructureLootContent(){}
 }

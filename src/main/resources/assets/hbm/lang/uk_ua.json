@@ -11614,5 +11614,9 @@
   "manual.hbm.material.uranium.title": "Уран",
   "manual.hbm.material.uranium.content": "Природний уран, слабо радіоактивний. Сам по собі не дуже ділиться, його можна збагачувати, перетворюючи на [[гексафторид урану|Uranium Hexafluoride]] та оброблюючи в [[газових центрифугах|Gas Centrifuge]]. [[ЦИРНОКС|ZIRNOX]], [[РБМК|RBMK]] та [[Чиказька дровітня|Chigago Pile]] можуть використовувати природний уран як паливо без збагачення.<br><br>Див. також:<br>[[Уран-233|Uranium-233]]<br>[[Уран-235|Uranium-235]]<br>[[Уран-238|Uranium-238]]",
   "manual.hbm.material.weaponsteel.title": "Збройова сталь",
-  "manual.hbm.material.weaponsteel.content": "Високочиста версія [[сталі|Steel]] виготовлена в [[роторній печі|Rotary Furnace]]. Потребує [[коксовий газ|Coker Gas]], тому і [[коксову установку|Coker Unit]]. Використовується в багатьох видах мідгеймової зброї, модифікаціях зброї та ракетних боєголовках."
+  "manual.hbm.material.weaponsteel.content": "Високочиста версія [[сталі|Steel]] виготовлена в [[роторній печі|Rotary Furnace]]. Потребує [[коксовий газ|Coker Gas]], тому і [[коксову установку|Coker Unit]]. Використовується в багатьох видах мідгеймової зброї, модифікаціях зброї та ракетних боєголовках.",
+  "item.hbm.ammo_container_standard": "Ammo Container",
+  "item.hbm.ammo_container_standard.desc": "Gives ammo for up to three held weapons",
+  "item.hbm.ammo_container_makeshift": "Ammo Container",
+  "item.hbm.ammo_container_makeshift.desc": "Gives ammo for up to three held weapons$Does not include mini nukes and other high-tier ammo types"
 }
