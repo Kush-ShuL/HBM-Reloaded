@@ -1,6 +1,5 @@
 package com.hbm.client.bomb.conventional.grenade;
 import com.hbm.bomb.conventional.grenade.*;
-import com.hbm.item.EnumMultiItem;
 import mezz.jei.api.*;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -26,7 +25,7 @@ public final class GrenadeJeiPlugin implements IModPlugin{
  @Override public void registerRecipeCatalysts(IRecipeCatalystRegistration event){event.addRecipeCatalysts(TYPE,Items.CRAFTING_TABLE);}
  @Override public void registerRecipeTransferHandlers(IRecipeTransferRegistration event){event.addRecipeTransferHandler(CraftingMenu.class,MenuType.CRAFTING,TYPE,1,9,10,36);event.addRecipeTransferHandler(InventoryMenu.class,null,TYPE,1,4,9,36);}
  @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(VanillaTypes.ITEM_STACK,GrenadeContent.creativeStacks().stream().skip(1).toList());}
- @Override public void registerItemSubtypes(ISubtypeRegistration event){event.registerSubtypeInterpreter(GrenadeContent.UNIVERSAL.get(),new ISubtypeInterpreter<ItemStack>(){@Override public Object getSubtypeData(ItemStack stack,UidContext context){return GrenadeRecipes.key(stack);}@Override public String getLegacyStringSubtypeInfo(ItemStack stack,UidContext context){return Long.toString(GrenadeRecipes.key(stack));}});for(var item:GrenadeContent.components())event.registerSubtypeInterpreter(item,new ISubtypeInterpreter<ItemStack>(){@Override public Object getSubtypeData(ItemStack stack,UidContext context){return((EnumMultiItem)item).ordinal(stack);}@Override public String getLegacyStringSubtypeInfo(ItemStack stack,UidContext context){return getSubtypeData(stack,context).toString();}});}
+ @Override public void registerItemSubtypes(ISubtypeRegistration event){event.registerSubtypeInterpreter(GrenadeContent.UNIVERSAL.get(),new ISubtypeInterpreter<ItemStack>(){@Override public Object getSubtypeData(ItemStack stack,UidContext context){return GrenadeRecipes.key(stack);}@Override public String getLegacyStringSubtypeInfo(ItemStack stack,UidContext context){return Long.toString(GrenadeRecipes.key(stack));}});}
  private static final class Category implements IRecipeCategory<GrenadeRecipes.Assembly>{
   final IDrawable background,icon;Category(IGuiHelper helper){background=helper.createBlankDrawable(166,65);icon=helper.createDrawableItemStack(new ItemStack(Items.CRAFTING_TABLE));}
   @Override public RecipeType<GrenadeRecipes.Assembly> getRecipeType(){return TYPE;}@Override public Component getTitle(){return Component.translatable("hbm.grenades.assembly");}@Override public IDrawable getBackground(){return background;}@Override public IDrawable getIcon(){return icon;}

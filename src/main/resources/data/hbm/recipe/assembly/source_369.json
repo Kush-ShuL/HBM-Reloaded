@@ -9,11 +9,8 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:drillbit",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 2
-            }
+            "id": "hbm:drillbit_hss",
+            "count": 1
           }
         }
       ]

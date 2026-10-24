@@ -9,10 +9,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:drive_disk_orbitdata"
         }
       },
       "count": 1
@@ -23,21 +20,15 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:drive",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 9
-            }
+            "id": "hbm:drive_disk_orbitdata_processed",
+            "count": 1
           },
           "weight": 75
         },
         {
           "stack": {
-            "id": "hbm:drive",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 3
-            }
+            "id": "hbm:drive_disk_broken",
+            "count": 1
           },
           "weight": 25
         }

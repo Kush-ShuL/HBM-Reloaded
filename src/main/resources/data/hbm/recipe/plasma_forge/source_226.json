@@ -31,10 +31,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:battery_pack",
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:battery_pack_battery_quantum"
         }
       },
       "count": 1
@@ -129,10 +126,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:battery_pack",
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:battery_pack_battery_quantum"
         }
       },
       "count": 1

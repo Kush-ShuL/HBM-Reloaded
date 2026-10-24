@@ -77,33 +77,24 @@
         },
         {
           "stack": {
-            "id": "hbm:grenade_shell",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 0
-            }
+            "id": "hbm:grenade_shell_frag",
+            "count": 1
           },
           "chance": 1,
           "weight": 5
         },
         {
           "stack": {
-            "id": "hbm:grenade_shell",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 1
-            }
+            "id": "hbm:grenade_shell_stick",
+            "count": 1
           },
           "chance": 1,
           "weight": 5
         },
         {
           "stack": {
-            "id": "hbm:grenade_fuze",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 0
-            }
+            "id": "hbm:grenade_fuze_s3",
+            "count": 1
           },
           "chance": 1,
           "weight": 10

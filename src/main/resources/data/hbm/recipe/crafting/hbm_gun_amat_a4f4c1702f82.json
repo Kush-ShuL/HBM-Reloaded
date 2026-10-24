@@ -24,12 +24,7 @@
       "tag": "hbm:gun_parts/mechanisms/weapon_steel"
     },
     "C": {
-      "type": "neoforge:components",
-      "items": "hbm:weapon_mod_special",
-      "components": {
-        "hbm:legacy_metadata": 1
-      },
-      "strict": false
+      "item": "hbm:weapon_mod_special_scope"
     },
     "S": {
       "tag": "hbm:gun_parts/stocks/wood"

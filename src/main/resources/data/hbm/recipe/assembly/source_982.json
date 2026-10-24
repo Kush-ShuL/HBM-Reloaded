@@ -57,10 +57,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:drive_disk_flightdata_processed"
         }
       },
       "count": 1

@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:grenade_filling_laser",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "KWK"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_atomic_clock"
+    },
+    "K": {
+      "item": "hbm:crystal_redstone"
+    },
+    "W": {
+      "tag": "c:plates/weapon_steel"
+    }
+  }
+}

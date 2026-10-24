@@ -3,421 +3,421 @@
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_lithium",
         1,
         0
       ],
       "flux": 200,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_tritium",
         1,
-        1
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_lithium",
         1,
         0
       ],
       "flux": 400,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_tritium",
         1,
-        1
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_lithium",
         1,
         0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_tritium",
         1,
-        1
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_co",
         1,
-        2
+        0
       ],
       "flux": 100,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_co60",
         1,
-        3
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_co",
         1,
-        2
+        0
       ],
       "flux": 200,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_co60",
         1,
-        3
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_co",
         1,
-        2
+        0
       ],
       "flux": 300,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_co60",
         1,
-        3
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_ra226",
         1,
-        15
+        0
       ],
       "flux": 300,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_ac227",
         1,
-        16
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_ra226",
         1,
-        15
+        0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_ac227",
         1,
-        16
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_ra226",
         1,
-        15
+        0
       ],
       "flux": 900,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_ac227",
         1,
-        16
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_th232",
         1,
-        4
+        0
       ],
       "flux": 500,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_thf",
         1,
-        5
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_th232",
         1,
-        4
+        0
       ],
       "flux": 1000,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_thf",
         1,
-        5
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_th232",
         1,
-        4
+        0
       ],
       "flux": 1500,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_thf",
         1,
-        5
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_u235",
         1,
-        6
+        0
       ],
       "flux": 300,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_np237",
         1,
-        7
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_u235",
         1,
-        6
+        0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_np237",
         1,
-        7
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_u235",
         1,
-        6
+        0
       ],
       "flux": 900,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_np237",
         1,
-        7
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_np237",
         1,
-        7
+        0
       ],
       "flux": 200,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_pu238",
         1,
-        9
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_np237",
         1,
-        7
+        0
       ],
       "flux": 400,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_pu238",
         1,
-        9
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_np237",
         1,
-        7
+        0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_pu238",
         1,
-        9
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_pu238",
         1,
-        9
+        0
       ],
       "flux": 1000,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_pu239",
         1,
-        10
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_pu238",
         1,
-        9
+        0
       ],
       "flux": 2000,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_pu239",
         1,
-        10
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_pu238",
         1,
-        9
+        0
       ],
       "flux": 3000,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_pu239",
         1,
-        10
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_u238",
         1,
-        8
+        0
       ],
       "flux": 300,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_rgp",
         1,
-        11
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_u238",
         1,
-        8
+        0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_rgp",
         1,
-        11
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_u238",
         1,
-        8
+        0
       ],
       "flux": 900,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_rgp",
         1,
-        11
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_uranium",
         1,
-        14
+        0
       ],
       "flux": 200,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_rgp",
         1,
-        11
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_uranium",
         1,
-        14
+        0
       ],
       "flux": 400,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_rgp",
         1,
-        11
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_uranium",
         1,
-        14
+        0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_rgp",
         1,
-        11
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod",
+        "hbm:rod_rgp",
         1,
-        11
+        0
       ],
       "flux": 200,
       "output": [
-        "hbm:item.rod",
+        "hbm:rod_waste",
         1,
-        12
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_rgp",
         1,
-        11
+        0
       ],
       "flux": 400,
       "output": [
-        "hbm:item.rod_dual",
+        "hbm:rod_dual_waste",
         1,
-        12
+        0
       ]
     },
     {
       "input": [
         "item",
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_rgp",
         1,
-        11
+        0
       ],
       "flux": 600,
       "output": [
-        "hbm:item.rod_quad",
+        "hbm:rod_quad_waste",
         1,
-        12
+        0
       ]
     },
     {

@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:weapon_mod_special_engine_electric",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DSD",
+    "PPP",
+    "DSD"
+  ],
+  "key": {
+    "D": {
+      "tag": "hbm:material_groups/plastic/ingots"
+    },
+    "P": {
+      "tag": "hbm:wires/dense/gold"
+    },
+    "S": {
+      "item": "hbm:battery_pack_capacitor_gold"
+    }
+  }
+}

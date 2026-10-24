@@ -2,43 +2,67 @@
   "entries": [
     {
       "kind": "item",
-      "symbol": "circuit_star_component",
-      "id": "hbm:circuit_star_component",
-      "legacyRegistryId": "hbm:item.circuit_star_component",
+      "symbol": "circuit_star_component_chipset",
+      "id": "hbm:circuit_star_component_chipset",
       "originalClass": "ItemCircuitStarComponent",
+      "sourceField": "ModItems.circuit_star_component",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_component",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2637
       },
-      "registrationSource": [
-        {
-          "source": {
-            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
-            "line": 5021
-          },
-          "expression": "GameRegistry.registerItem(circuit_star_component, circuit_star_component.getUnlocalizedName())",
-          "arguments": [
-            "circuit_star_component",
-            "circuit_star_component.getUnlocalizedName()"
-          ]
-        }
-      ],
-      "registeredBy": "com.hbm.item.starcomponents.StarComponentsContent",
       "creativeTab": null,
-      "metadataRange": [
-        0,
-        3
-      ],
-      "names": [
-        "chipset",
-        "cpu",
-        "ram",
-        "card"
-      ],
-      "enumClass": "CircuitComponentType",
-      "stackSize": 64,
-      "multiName": true,
-      "multiTexture": true
+      "maxStackSize": 64
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_component_cpu",
+      "id": "hbm:circuit_star_component_cpu",
+      "originalClass": "ItemCircuitStarComponent",
+      "sourceField": "ModItems.circuit_star_component",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_component",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2637
+      },
+      "creativeTab": null,
+      "maxStackSize": 64
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_component_ram",
+      "id": "hbm:circuit_star_component_ram",
+      "originalClass": "ItemCircuitStarComponent",
+      "sourceField": "ModItems.circuit_star_component",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_component",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2637
+      },
+      "creativeTab": null,
+      "maxStackSize": 64
+    },
+    {
+      "kind": "item",
+      "symbol": "circuit_star_component_card",
+      "id": "hbm:circuit_star_component_card",
+      "originalClass": "ItemCircuitStarComponent",
+      "sourceField": "ModItems.circuit_star_component",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.circuit_star_component",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2637
+      },
+      "creativeTab": null,
+      "maxStackSize": 64
     }
   ]
 }

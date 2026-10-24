@@ -1,5 +1,4 @@
 package com.hbm.machine.reactor.zirnox.client;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.reactor.zirnox.*;
 import java.util.*;
 import me.shedaniel.math.*;
@@ -17,8 +16,7 @@ import net.minecraft.network.chat.Component;
 @REIPluginClient
 public final class ZirnoxReiPlugin implements REIClientPlugin {
     static final CategoryIdentifier<Display> TYPE=CategoryIdentifier.of("hbm","zirnox");
-    @Override public void registerItemComparators(me.shedaniel.rei.api.common.entry.comparison.ItemComparatorRegistry event){event.register((context,stack)->stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0),ZirnoxContent.ROD.get());}
-    @Override public void registerEntries(me.shedaniel.rei.api.client.registry.entry.EntryRegistry event){for(var stack:ZirnoxContent.ROD.get().creativeStacks())event.addEntry(EntryStacks.of(stack));}
+    @Override public void registerEntries(me.shedaniel.rei.api.client.registry.entry.EntryRegistry event){for(var stack:ZirnoxContent.rodStacks())event.addEntry(EntryStacks.of(stack));}
     @Override public void registerCategories(CategoryRegistry event){event.add(new Category());event.addWorkstations(TYPE,EntryStacks.of(ZirnoxContent.ITEM.get()));}
     @Override public void registerDisplays(DisplayRegistry event){for(var recipe:ZirnoxFuelRecipes.all())event.add(new Display(recipe));}
     private static final class Display extends BasicDisplay {

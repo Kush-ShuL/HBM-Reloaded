@@ -1,0 +1,30 @@
+{
+  "result": {
+    "id": "hbm:struct_launcher_core",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SCS",
+    "SIS",
+    "BEB"
+  ],
+  "key": {
+    "S": {
+      "item": "hbm:steel_scaffold"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "B": {
+      "item": "hbm:struct_launcher"
+    },
+    "E": {
+      "item": "hbm:battery_pack_battery_lead"
+    }
+  }
+}

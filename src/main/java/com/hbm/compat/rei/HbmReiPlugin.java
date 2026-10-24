@@ -22,9 +22,8 @@ import me.shedaniel.rei.forge.REIPluginClient;
 public final class HbmReiPlugin implements REIClientPlugin {
     private static final CategoryIdentifier<Display> SMELTING = CategoryIdentifier.of("minecraft", "plugins/smelting");
     @Override public void registerItemComparators(ItemComparatorRegistry registration) {
-        registration.registerComponents(BatteryContent.CUBE_POWER.get(), BatteryContent.POTATO.get(), BatteryContent.MEMORY.get(), BatteryContent.PACK.get(), BatteryContent.SELF_CHARGING.get());
-        com.hbm.registry.HbmEnumItems.all().forEach(holder -> registration.registerComponents(holder.get()));
-        com.hbm.bomb.nuclear.NuclearContent.BREEDING_RODS.values().forEach(holder -> registration.register((context, stack) -> holder.get().ordinal(stack), holder.get()));
+        for(var pack:BatteryContent.packItems())registration.register((context,stack)->pack.getCharge(stack),pack);
+        registration.registerComponents(BatteryContent.CUBE_POWER.get(), BatteryContent.POTATO.get(), BatteryContent.MEMORY.get());
         com.hbm.registry.HbmOres.allItems().stream().map(holder -> holder.get())
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
                 .map(item -> (com.hbm.block.ore.LegacyOreItem) item)
@@ -37,12 +36,14 @@ public final class HbmReiPlugin implements REIClientPlugin {
         registration.addWorkstations(SMELTING, EntryStacks.of(ElectricFurnaceContent.ITEM.get()));
     }
     @Override public void registerEntries(EntryRegistry registration) {
+        BatteryContent.packCreativeStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
+        BatteryContent.selfChargingStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
+        com.hbm.registry.HbmOres.drillbitStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
         com.hbm.item.fluid.FluidIconItem.recipeViewerStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
+        com.hbm.registry.HbmOres.meteorStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
         com.hbm.compat.recipeviewer.RecipeViewerVisibility.secretStacks().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
-        com.hbm.bomb.nuclear.NuclearContent.BREEDING_RODS.values().stream().flatMap(holder -> holder.get().creativeStacks().stream()).forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
-        java.util.stream.Stream.concat(
-                com.hbm.registry.HbmEnumItems.tabNames().stream().flatMap(tab -> com.hbm.registry.HbmEnumItems.creativeStacks(tab).stream()),
-                BatteryContent.enumItems().stream().flatMap(item -> item.creativeStacks().stream()))
+        com.hbm.bomb.nuclear.NuclearContent.breedingRodStacks().stream().forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
+        com.hbm.registry.HbmEnumItems.tabNames().stream().flatMap(tab -> com.hbm.registry.HbmEnumItems.creativeStacks(tab).stream())
                 .forEach(stack -> registration.addEntry(EntryStacks.of(stack)));
         com.hbm.registry.HbmOres.allItems().stream().map(holder -> holder.get())
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())

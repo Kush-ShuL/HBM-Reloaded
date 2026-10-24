@@ -5,37 +5,204 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "hbm:ore_meteor",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "hbm:ore_meteor"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "hbm:ore_meteor_iron"
         }
       ],
       "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "0"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "5"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "10"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "15"
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:ore_meteor_copper"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "1"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "6"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "11"
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:ore_meteor_aluminium"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "2"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "7"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "12"
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:ore_meteor_rareearth"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "3"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "8"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "13"
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hbm:ore_meteor_cobalt"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "4"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "9"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hbm:ore_meteor",
+              "properties": {
+                "legacy_meta": "14"
+              }
+            }
+          ]
+        },
         {
           "condition": "minecraft:survives_explosion"
         }

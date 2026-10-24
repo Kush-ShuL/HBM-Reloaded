@@ -66,7 +66,7 @@ public final class RawOreContent {
 
     private static void index(Source source, boolean canonical) {
         SOURCE_KEYS.put(source.key(), source);
-        for (String block : source.blockItems()) BLOCK_SOURCES.put(key(block, com.hbm.block.ore.ResourceOreBlock.familyOf(block) != null ? 0 : source.legacyMetadata()), source);
+        for (String block : source.blockItems()) BLOCK_SOURCES.put(key(block, com.hbm.block.ore.ResourceOreBlock.familyOf(block) != null || source.sourceSymbol().equals("ore_meteor") ? 0 : source.legacyMetadata()), source);
         if (source.rawItem() != null) {
             if (canonical) RAW_SOURCES.put(source.rawItem(), source);
             else RAW_SOURCES.putIfAbsent(source.rawItem(), source);
@@ -153,7 +153,7 @@ public final class RawOreContent {
     public static List<ItemStack> minedDrops(BlockState state, LootParams.Builder context, ItemStack tool) {
         if (!(state.getBlock() instanceof LegacyOreBlock ore)) return null;
         int metadata = ore.spec().multi() ? ore.spec().ordinal(state.getValue(LegacyOreBlock.LEGACY_META)) : 0;
-        Source source = BLOCK_SOURCES.get(key(BuiltInRegistries.ITEM.getKey(state.getBlock().asItem()).toString(), metadata));
+        Source source = ore.spec().id().equals("ore_meteor") ? SOURCE_KEYS.get(key("ore_meteor", metadata)) : BLOCK_SOURCES.get(key(BuiltInRegistries.ITEM.getKey(state.getBlock().asItem()).toString(), metadata));
         if (source == null || source.rawItem() == null && !source.sourceSymbol().equals("ore_meteor")) return null;
         MeteorDrop meteor = source.rawItem() == null ? CONTENT.meteorDrops().stream()
                 .filter(drop -> drop.legacyMetadata() == source.legacyMetadata()).findFirst()

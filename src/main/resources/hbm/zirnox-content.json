@@ -49,80 +49,191 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "rod_zirnox",
-      "id": "hbm:rod_zirnox",
       "kind": "item",
+      "symbol": "rod_zirnox_natural_uranium_fuel",
+      "id": "hbm:rod_zirnox_natural_uranium_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2972
-      },
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_uranium_fuel",
+      "id": "hbm:rod_zirnox_uranium_fuel",
       "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
       "creativeTab": "control",
-      "runtimeValidated": false,
-      "metadataRange": [
-        0,
-        10
-      ],
-      "names": [
-        "natural_uranium_fuel",
-        "uranium_fuel",
-        "th232",
-        "thorium_fuel",
-        "mox_fuel",
-        "plutonium_fuel",
-        "u233_fuel",
-        "u235_fuel",
-        "les_fuel",
-        "lithium",
-        "zfb_mox"
-      ],
-      "enumClass": "EnumZirnoxType",
-      "variants": [
-        {
-          "metadata": 0,
-          "name": "natural_uranium_fuel"
-        },
-        {
-          "metadata": 1,
-          "name": "uranium_fuel"
-        },
-        {
-          "metadata": 2,
-          "name": "th232"
-        },
-        {
-          "metadata": 3,
-          "name": "thorium_fuel"
-        },
-        {
-          "metadata": 4,
-          "name": "mox_fuel"
-        },
-        {
-          "metadata": 5,
-          "name": "plutonium_fuel"
-        },
-        {
-          "metadata": 6,
-          "name": "u233_fuel"
-        },
-        {
-          "metadata": 7,
-          "name": "u235_fuel"
-        },
-        {
-          "metadata": 8,
-          "name": "les_fuel"
-        },
-        {
-          "metadata": 9,
-          "name": "lithium"
-        },
-        {
-          "metadata": 10,
-          "name": "zfb_mox"
-        }
-      ]
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_th232",
+      "id": "hbm:rod_zirnox_th232",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_thorium_fuel",
+      "id": "hbm:rod_zirnox_thorium_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_mox_fuel",
+      "id": "hbm:rod_zirnox_mox_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_plutonium_fuel",
+      "id": "hbm:rod_zirnox_plutonium_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_u233_fuel",
+      "id": "hbm:rod_zirnox_u233_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_u235_fuel",
+      "id": "hbm:rod_zirnox_u235_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_les_fuel",
+      "id": "hbm:rod_zirnox_les_fuel",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 8,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_lithium",
+      "id": "hbm:rod_zirnox_lithium",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 9,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_zirnox_zfb_mox",
+      "id": "hbm:rod_zirnox_zfb_mox",
+      "originalClass": "ItemZirnoxRod",
+      "sourceClass": "com.hbm.items.machine.ItemZirnoxRod",
+      "sourceField": "ModItems.rod_zirnox",
+      "sourceOrdinal": 10,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_zirnox",
+      "creativeTab": "control",
+      "maxStackSize": 1,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2972
+      }
     }
   ]
 }

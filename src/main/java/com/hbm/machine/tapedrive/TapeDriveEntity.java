@@ -1,7 +1,7 @@
 package com.hbm.machine.tapedrive;
 
-import com.hbm.hazard.HbmHazards;
-import com.hbm.registry.HbmContent;
+import com.hbm.machine.reactor.iter.torus.DriveItem;
+import com.hbm.machine.reactor.iter.torus.TorusContent;
 import com.hbm.machine.foundry.crucible.ThermalMachine;
 import com.hbm.satellite.*;
 import com.hbm.satellite.link.*;
@@ -25,9 +25,9 @@ public final class TapeDriveEntity extends ThermalMachine {
     public TapeDriveEntity(BlockPos pos,BlockState state){super(TapeDriveContent.ENTITY.get(),pos,state,12);}
     @Override public boolean isValidBlockState(BlockState state){return getType().isValid(state);}
     @Override protected String title(){return "container.machineTapeDrive";}
-    public static boolean isDrive(ItemStack stack){return !stack.isEmpty()&&stack.is(HbmContent.item("drive"));}
-    /** Source automation/color branches compare raw damage, unlike its safe enum lookup during writing. */
-    public static int rawMetadata(ItemStack stack){return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue());}
+    public static boolean isDrive(ItemStack stack){return stack.getItem() instanceof DriveItem;}
+    /** Source drive ordinal now comes from the physical item, never an editable stack component. */
+    public static int rawMetadata(ItemStack stack){return stack.getItem() instanceof DriveItem drive?drive.type().ordinal():stack.getDamageValue();}
     @Override public int getMaxStackSize(){return 1;}
     @Override public boolean canPlaceItem(int slot,ItemStack stack){return isDrive(stack);}
     @Override public int[] getSlotsForFace(Direction side){return new int[]{0,1,2,3,4,5,6,7,8,9,10,11};}
@@ -50,11 +50,10 @@ public final class TapeDriveEntity extends ThermalMachine {
         if(satellite==null||!satellite.hasData(server))return;
         for(int slot=0;slot<12;slot++){
             ItemStack stack=slots.get(slot);if(!isDrive(stack))continue;
-            SatelliteDriveType output=satellite.getOutputData(SatelliteDriveType.safe(rawMetadata(stack)));
+            SatelliteDriveType output=satellite.getOutputData(((DriveItem)stack.getItem()).type());
             if(output==null)continue;
             satellite.consumeData();
-            ItemStack written=new ItemStack(HbmContent.item("drive"),1);
-            written.set(HbmHazards.LEGACY_METADATA.get(),output.ordinal());
+            ItemStack written=TorusContent.driveStack(output);
             slots.set(slot,written);data.setDirty();setChanged();break;
         }
     }

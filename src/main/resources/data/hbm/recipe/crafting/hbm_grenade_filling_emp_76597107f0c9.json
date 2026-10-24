@@ -1,0 +1,23 @@
+{
+  "result": {
+    "id": "hbm:grenade_filling_emp",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "KWK"
+  ],
+  "key": {
+    "C": {
+      "item": "hbm:circuit_basic"
+    },
+    "K": {
+      "item": "hbm:coil_gold"
+    },
+    "W": {
+      "tag": "c:plates/weapon_steel"
+    }
+  }
+}

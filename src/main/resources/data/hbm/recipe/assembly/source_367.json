@@ -9,11 +9,8 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:drillbit",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 1
-            }
+            "id": "hbm:drillbit_steel_diamond",
+            "count": 1
           }
         }
       ]
@@ -24,10 +21,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drillbit",
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:drillbit_steel"
         }
       },
       "count": 1

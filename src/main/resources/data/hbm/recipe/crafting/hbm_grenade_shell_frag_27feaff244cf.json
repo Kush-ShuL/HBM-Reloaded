@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:grenade_shell_frag",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B",
+    "P",
+    "S"
+  ],
+  "key": {
+    "B": {
+      "tag": "hbm:bolts/steel"
+    },
+    "P": {
+      "tag": "c:plates/aluminum"
+    },
+    "S": {
+      "tag": "hbm:gun_parts/shells/steel"
+    }
+  }
+}

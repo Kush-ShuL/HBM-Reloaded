@@ -28,16 +28,13 @@ public final class HbmJeiPlugin implements IModPlugin {
         registration.addRecipeCatalysts(RecipeTypes.SMELTING, ElectricFurnaceContent.ITEM.get());
     }
     @Override public void registerItemSubtypes(ISubtypeRegistration registration) {
-        com.hbm.registry.HbmEnumItems.all().forEach(holder -> subtype(registration, holder.get(), HbmJeiPlugin::metadata));
-        com.hbm.bomb.nuclear.NuclearContent.BREEDING_RODS.values().forEach(holder -> subtype(registration, holder.get(), HbmJeiPlugin::metadata));
         com.hbm.registry.HbmOres.allItems().stream().map(holder -> holder.get())
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
                 .map(item -> (com.hbm.block.ore.LegacyOreItem) item).forEach(item -> subtype(registration, item, item::ordinal));
         for (var battery : List.of(BatteryContent.CUBE_POWER.get(), BatteryContent.POTATO.get(), BatteryContent.MEMORY.get())) {
             subtype(registration, battery, battery::getCharge);
         }
-        subtype(registration, BatteryContent.PACK.get(), stack -> List.of(metadata(stack), BatteryContent.PACK.get().getCharge(stack)));
-        subtype(registration, BatteryContent.SELF_CHARGING.get(), HbmJeiPlugin::metadata);
+        for(var pack:BatteryContent.packItems())subtype(registration,pack,stack->pack.getCharge(stack));
         com.hbm.item.fluid.FluidItemContent.subtypedItems().forEach(item -> subtype(registration, item, stack -> com.hbm.item.fluid.FluidItemContent.type(stack).getID()));
         com.hbm.block.pipe.PipeContent.subtypeItems().forEach(item -> subtype(registration, item, HbmJeiPlugin::metadata));
         subtype(registration, com.hbm.block.pipe.PipeContent.TYPED_ITEM.get(), stack -> com.hbm.item.fluid.FluidItemContent.type(stack).getID());
@@ -50,13 +47,15 @@ public final class HbmJeiPlugin implements IModPlugin {
         });
     }
     @Override public void registerExtraIngredients(mezz.jei.api.registration.IExtraIngredientRegistration registration) {
-        var variants = java.util.stream.Stream.concat(
-                com.hbm.registry.HbmEnumItems.tabNames().stream().flatMap(tab -> com.hbm.registry.HbmEnumItems.creativeStacks(tab).stream()),
-                BatteryContent.enumItems().stream().flatMap(item -> item.creativeStacks().stream())).toList();
+        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, BatteryContent.selfChargingStacks());
+        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, BatteryContent.packCreativeStacks());
+        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.registry.HbmOres.drillbitStacks());
+        var variants = com.hbm.registry.HbmEnumItems.tabNames().stream().flatMap(tab -> com.hbm.registry.HbmEnumItems.creativeStacks(tab).stream()).toList();
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, variants);
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.item.fluid.FluidIconItem.recipeViewerStacks());
+        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.registry.HbmOres.meteorStacks());
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.compat.recipeviewer.RecipeViewerVisibility.secretStacks());
-        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.bomb.nuclear.NuclearContent.BREEDING_RODS.values().stream().flatMap(holder -> holder.get().creativeStacks().stream()).toList());
+        registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.bomb.nuclear.NuclearContent.breedingRodStacks());
         registration.addExtraIngredients(VanillaTypes.ITEM_STACK, com.hbm.registry.HbmOres.allItems().stream().map(holder -> holder.get())
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
                 .flatMap(item -> ((com.hbm.block.ore.LegacyOreItem) item).creativeStacks().stream()).toList());

@@ -1,7 +1,7 @@
 package com.hbm.registry;
 
 import com.google.gson.Gson;
-import com.hbm.item.EnumMultiItem;
+import com.hbm.item.FixedEnumItem;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -15,8 +15,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class HbmEnumItems {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems("hbm");
-    private static final Map<String, List<DeferredItem<EnumMultiItem>>> TABS = new LinkedHashMap<>();
-    private static final List<DeferredItem<EnumMultiItem>> ALL = new ArrayList<>();
+    private static final Map<String, List<DeferredItem<FixedEnumItem>>> TABS = new LinkedHashMap<>();
+    private static final Map<String, List<DeferredItem<FixedEnumItem>>> FAMILIES = new LinkedHashMap<>();
+    private static final List<DeferredItem<FixedEnumItem>> ALL = new ArrayList<>();
 
     private HbmEnumItems() {}
 
@@ -26,9 +27,23 @@ public final class HbmEnumItems {
             var content = new Gson().fromJson(new InputStreamReader(stream, StandardCharsets.UTF_8), Content.class);
             for (Spec spec : content.items()) {
                 if (spec.id().equals("ammo_standard") || spec.id().equals("ammo_secret") || spec.id().equals("casing") || spec.id().equals("chunk_ore") || spec.id().equals("coke") || spec.id().equals("briquette") || spec.id().equals("powder_ash") || spec.id().equals("oil_tar") || spec.id().equals("weapon_mod_caliber") || spec.id().equals("ingot_metal") || spec.id().equals("item_secret") || spec.id().equals("plant_item") || spec.id().equals("circuit_star_piece") || spec.id().equals("page_of_")) continue; // Source descriptors are not registered physical items.
-                var item = ITEMS.register(spec.id(), () -> new EnumMultiItem(spec.id(), spec.stackSize(), spec.multiName(), spec.names(), spec.order()));
-                ALL.add(item);
-                if (spec.tab() != null) TABS.computeIfAbsent(spec.tab(), ignored -> new ArrayList<>()).add(item);
+                // PWR's three material forms are registered by the actual reactor fuel owner.
+                if (spec.id().equals("pwr_fuel_hot") || spec.id().equals("pwr_fuel_depleted")) continue;
+                var family = new ArrayList<DeferredItem<FixedEnumItem>>();
+                for (int ordinal = 0; ordinal < spec.names().size(); ordinal++) {
+                    int sourceOrdinal = ordinal;
+                    String variant = spec.names().get(ordinal);
+                    var item = ITEMS.register(spec.id() + "_" + variant,
+                            () -> new FixedEnumItem(spec.id(), variant, sourceOrdinal, spec.stackSize(), spec.multiName()));
+                    family.add(item);
+                    ALL.add(item);
+                }
+                FAMILIES.put(spec.id(), List.copyOf(family));
+                if (spec.tab() != null) {
+                    for (int ordinal : spec.order()) {
+                        TABS.computeIfAbsent(spec.tab(), ignored -> new ArrayList<>()).add(family.get(ordinal));
+                    }
+                }
             }
         } catch (java.io.IOException error) {
             throw new IllegalStateException("Cannot load X5846 enum item definitions", error);
@@ -63,7 +78,16 @@ public final class HbmEnumItems {
         return stacks;
     }
 
-    public static List<DeferredItem<EnumMultiItem>> all() {
+    /** Called by source factories using their original enum constants; no old registry ID is exposed. */
+    public static FixedEnumItem variant(String family, int sourceOrdinal) {
+        return FAMILIES.get(family).get(sourceOrdinal).get();
+    }
+
+    public static ItemStack stack(String family, int sourceOrdinal) {
+        return new ItemStack(variant(family, sourceOrdinal));
+    }
+
+    public static List<DeferredItem<FixedEnumItem>> all() {
         return List.copyOf(ALL);
     }
 

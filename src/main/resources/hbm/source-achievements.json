@@ -85,11 +85,8 @@
       "pending": [],
       "parent": null,
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 0
-        }
+        "id": "hbm:achievement_icon_gofish",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -140,11 +137,8 @@
       "pending": [],
       "parent": null,
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 9
-        }
+        "id": "hbm:achievement_icon_questionmark",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -300,11 +294,8 @@
       "pending": [],
       "parent": null,
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 1
-        }
+        "id": "hbm:achievement_icon_acid",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -330,11 +321,8 @@
       "pending": [],
       "parent": "slimeball",
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 2
-        }
+        "id": "hbm:achievement_icon_balls",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -422,11 +410,8 @@
       "pending": [],
       "parent": null,
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 9
-        }
+        "id": "hbm:achievement_icon_questionmark",
+        "count": 1
       },
       "criterion": "squash",
       "available": true,
@@ -744,11 +729,8 @@
       "pending": [],
       "parent": null,
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 3
-        }
+        "id": "hbm:achievement_icon_digammasee",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -774,11 +756,8 @@
       "pending": [],
       "parent": "digammasee",
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 4
-        }
+        "id": "hbm:achievement_icon_digammafeel",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -804,11 +783,8 @@
       "pending": [],
       "parent": "digammafeel",
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 5
-        }
+        "id": "hbm:achievement_icon_digammaknow",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -834,11 +810,8 @@
       "pending": [],
       "parent": "digammaknow",
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 6
-        }
+        "id": "hbm:achievement_icon_digammakauaimoho",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -864,11 +837,8 @@
       "pending": [],
       "parent": "digammakauaimoho",
       "icon": {
-        "id": "hbm:achievement_icon",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 7
-        }
+        "id": "hbm:achievement_icon_digammaupontop",
+        "count": 1
       },
       "criterion": "source",
       "available": true,
@@ -1344,7 +1314,7 @@
       "translation": "achievement.watz",
       "x": 14,
       "y": 3,
-      "iconExpression": "ModItems.watz_pellet",
+      "iconExpression": "hbm:watz_pellet_schrabidium",
       "special": false,
       "hidden": false,
       "source": "legacy/src/main/java/com/hbm/main/MainRegistry.java:433",
@@ -1352,11 +1322,8 @@
       "pending": [],
       "parent": "schrab",
       "icon": {
-        "id": "hbm:watz_pellet",
-        "count": 1,
-        "components": {
-          "hbm:legacy_metadata": 0
-        }
+        "id": "hbm:watz_pellet_schrabidium",
+        "count": 1
       },
       "criterion": "source",
       "available": true,

@@ -21,7 +21,7 @@ public final class PepperboxContent {
         new XWeaponModManager.WeaponModDefinition(mod("weapon_mod_generic",1)).addMod(PEPPERBOX.get(),new WeaponModGenericDurability(101));
         new XWeaponModManager.WeaponModDefinition(mod("weapon_mod_special",6)).addMod(PEPPERBOX.get(),new WeaponModChoke(210));
     });}
-    private static ItemStack mod(String name,int metadata){var stack=new ItemStack(HbmContent.item(name));stack.set(HbmHazards.LEGACY_METADATA.get(),metadata);return stack;}
+    private static ItemStack mod(String name,int metadata){return com.hbm.registry.HbmEnumItems.stack(name,metadata);}
     public static List<ItemStack> creativeStacks(String tab){return tab.equals("weapon")?List.of(new ItemStack(PEPPERBOX.get())):List.of();}
     private PepperboxContent(){}
 }

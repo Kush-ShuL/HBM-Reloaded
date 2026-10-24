@@ -9,11 +9,8 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:fusion_component",
-            "count": 4,
-            "components": {
-              "hbm:legacy_metadata": 2
-            }
+            "id": "hbm:fusion_component_blanket",
+            "count": 4
           }
         }
       ]

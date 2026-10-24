@@ -58,6 +58,7 @@ public class LegacyOreBlock extends Block {
         var enchantments = context.getLevel().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
         int silk = EnchantmentHelper.getItemEnchantmentLevel(enchantments.getOrThrow(Enchantments.SILK_TOUCH), tool);
         if (silk > 0 && !spec.id().equals("ore_oil")) {
+            if(spec.id().equals("ore_meteor"))return List.of(com.hbm.registry.HbmOres.meteorStack(state.getValue(LEGACY_META)));
             ItemStack stack = new ItemStack(this);
             // createStackedBlock retains raw world metadata when ItemBlock has subtypes.
             if (spec.multi()) stack.set(HbmHazards.LEGACY_METADATA.get(), state.getValue(LEGACY_META));
@@ -101,6 +102,7 @@ public class LegacyOreBlock extends Block {
     }
 
     protected ItemStack blockStack(BlockState state) {
+        if(spec.id().equals("ore_meteor"))return com.hbm.registry.HbmOres.meteorStack(spec.ordinal(state.getValue(LEGACY_META)));
         ItemStack stack = new ItemStack(this);
         if (spec.multi()) stack.set(HbmHazards.LEGACY_METADATA.get(), spec.ordinal(state.getValue(LEGACY_META)));
         return stack;

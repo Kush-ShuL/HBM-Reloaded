@@ -36,8 +36,11 @@ public final class HbmOres {
     public static DeferredHolder<BlockEntityType<?>, BlockEntityType<FissureBlockEntity>> FISSURE_ENTITY;
     private static final java.util.Map<String,java.util.function.Supplier<ResourceOreBlock>> RESOURCES = new java.util.LinkedHashMap<>();
     private static final List<DeferredItem<? extends Item>> ALL = new ArrayList<>();
+    private static final List<DeferredItem<com.hbm.block.ore.MeteorOreItem>> METEOR_ITEMS=new ArrayList<>();
     public static final DeferredItem<Item> ALEXANDRITE = ITEMS.register("gem_alexandrite", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<DrillbitItem> DRILLBIT = ITEMS.register("drillbit", DrillbitItem::new);
+    public static final List<DeferredItem<DrillbitItem>> DRILLBITS = registerDrillbits();
+    private static List<DeferredItem<DrillbitItem>> registerDrillbits() {var result=new ArrayList<DeferredItem<DrillbitItem>>();for(int i=0;i<DrillbitItem.NAMES.size();i++){int type=i;result.add(ITEMS.register("drillbit_"+DrillbitItem.NAMES.get(i),()->new DrillbitItem(type)));}return List.copyOf(result);}
+    public static List<ItemStack> drillbitStacks() {return DRILLBITS.stream().map(item->new ItemStack(item.get())).toList();}
     private HbmOres() { }
 
     public static void register(IEventBus bus) {
@@ -59,7 +62,8 @@ public final class HbmOres {
                         case "BlockFissure" -> new FissureBlock(spec);
                         default -> new LegacyOreBlock(spec);
                     });
-                    ALL.add(ITEMS.register(spec.id(), () -> new LegacyOreItem(block.get())));
+                    if(spec.id().equals("ore_meteor")){for(int i=0;i<spec.variants().size();i++){int mineral=i;var item=ITEMS.register("ore_meteor_"+spec.variants().get(i),()->new com.hbm.block.ore.MeteorOreItem(block.get(),mineral));METEOR_ITEMS.add(item);ALL.add(item);}}
+                    else ALL.add(ITEMS.register(spec.id(), () -> new LegacyOreItem(block.get())));
                     if (spec.originalClass().equals("BlockBedrockOreTE")) BEDROCK_ENTITY = ENTITIES.register("ore_bedrock", () -> BlockEntityType.Builder.of(BedrockOreEntity::new, block.get()).build(null));
                     if (spec.originalClass().equals("BlockFissure")) FISSURE_ENTITY = ENTITIES.register("ore_volcano", () -> BlockEntityType.Builder.of(FissureBlockEntity::new, block.get()).build(null));
                 }
@@ -76,10 +80,14 @@ public final class HbmOres {
         return block.get();
     }
 
+    /** World state is retained independently from the five item mineral identities. */
+    public static ItemStack meteorStack(int metadata){if(metadata<0||metadata>15)throw new IllegalArgumentException("Unknown meteor world state "+metadata);var stack=new ItemStack(METEOR_ITEMS.get(metadata%5).get());if(metadata>=5)stack.set(net.minecraft.core.component.DataComponents.BLOCK_STATE,new net.minecraft.world.item.component.BlockItemStateProperties(java.util.Map.of("legacy_meta",Integer.toString(metadata))));return stack;}
+    public static List<ItemStack> meteorStacks(){return METEOR_ITEMS.stream().map(item->new ItemStack(item.get())).toList();}
+
     public static List<DeferredItem<? extends Item>> allItems() { return List.copyOf(ALL); }
     public static List<ItemStack> creativeStacks(String tab) {
         if (tab.equals("parts")) return List.of(new ItemStack(ALEXANDRITE.get()));
-        if (tab.equals("control")) return DRILLBIT.get().creativeStacks();
+        if (tab.equals("control")) return drillbitStacks();
         if (!tab.equals("block")) return List.of();
         return ALL.stream().filter(holder -> !(holder.get() instanceof LegacyOreItem item) || !item.spec().id().equals("ore_bedrock"))
                 .flatMap(holder -> holder.get() instanceof LegacyOreItem item

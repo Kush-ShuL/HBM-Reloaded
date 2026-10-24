@@ -42,10 +42,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:drive_flash_particlesim"
         }
       },
       "count": 4
@@ -95,10 +92,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:drive_flash_particlesim"
         }
       },
       "count": 16

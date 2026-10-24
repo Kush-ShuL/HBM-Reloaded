@@ -1,5 +1,4 @@
 package com.hbm.machine.reactor.zirnox.client;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.reactor.zirnox.*;
 import mezz.jei.api.*;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -17,8 +16,7 @@ import net.minecraft.world.item.ItemStack;
 public final class ZirnoxJeiPlugin implements IModPlugin {
     static final RecipeType<ZirnoxFuelRecipes> TYPE=RecipeType.create("hbm","zirnox",ZirnoxFuelRecipes.class);
     @Override public ResourceLocation getPluginUid(){return ZirnoxRenderer.id("zirnox_jei");}
-    @Override public void registerItemSubtypes(ISubtypeRegistration event){event.registerSubtypeInterpreter(ZirnoxContent.ROD.get(),new mezz.jei.api.ingredients.subtypes.ISubtypeInterpreter<ItemStack>(){@Override public Object getSubtypeData(ItemStack stack,mezz.jei.api.ingredients.subtypes.UidContext context){return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0);}@Override public String getLegacyStringSubtypeInfo(ItemStack stack,mezz.jei.api.ingredients.subtypes.UidContext context){return getSubtypeData(stack,context).toString();}});}
-    @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,ZirnoxContent.ROD.get().creativeStacks());}
+    @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,ZirnoxContent.rodStacks());}
     @Override public void registerCategories(IRecipeCategoryRegistration event){event.addRecipeCategories(new Category(event.getJeiHelpers().getGuiHelper()));}
     @Override public void registerRecipes(IRecipeRegistration event){event.addRecipes(TYPE,ZirnoxFuelRecipes.all());}
     @Override public void registerRecipeCatalysts(IRecipeCatalystRegistration event){event.addRecipeCatalysts(TYPE,ZirnoxContent.ITEM.get());}

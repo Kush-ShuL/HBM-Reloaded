@@ -1,373 +1,973 @@
 {
   "items": [
     {
-      "symbol": "rod",
-      "id": "hbm:rod",
       "kind": "item",
+      "symbol": "rod_lithium",
+      "id": "hbm:rod_lithium",
       "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 0,
+      "sourceConstant": "LITHIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2964
-      },
-      "metadataRange": [
-        0,
-        16
-      ],
-      "variants": [
-        {
-          "metadata": 0,
-          "name": "lithium",
-          "sourceEnum": "BreedingRodType.LITHIUM"
-        },
-        {
-          "metadata": 1,
-          "name": "tritium",
-          "sourceEnum": "BreedingRodType.TRITIUM"
-        },
-        {
-          "metadata": 2,
-          "name": "co",
-          "sourceEnum": "BreedingRodType.CO"
-        },
-        {
-          "metadata": 3,
-          "name": "co60",
-          "sourceEnum": "BreedingRodType.CO60"
-        },
-        {
-          "metadata": 4,
-          "name": "th232",
-          "sourceEnum": "BreedingRodType.TH232"
-        },
-        {
-          "metadata": 5,
-          "name": "thf",
-          "sourceEnum": "BreedingRodType.THF"
-        },
-        {
-          "metadata": 6,
-          "name": "u235",
-          "sourceEnum": "BreedingRodType.U235"
-        },
-        {
-          "metadata": 7,
-          "name": "np237",
-          "sourceEnum": "BreedingRodType.NP237"
-        },
-        {
-          "metadata": 8,
-          "name": "u238",
-          "sourceEnum": "BreedingRodType.U238"
-        },
-        {
-          "metadata": 9,
-          "name": "pu238",
-          "sourceEnum": "BreedingRodType.PU238"
-        },
-        {
-          "metadata": 10,
-          "name": "pu239",
-          "sourceEnum": "BreedingRodType.PU239"
-        },
-        {
-          "metadata": 11,
-          "name": "rgp",
-          "sourceEnum": "BreedingRodType.RGP"
-        },
-        {
-          "metadata": 12,
-          "name": "waste",
-          "sourceEnum": "BreedingRodType.WASTE"
-        },
-        {
-          "metadata": 13,
-          "name": "lead",
-          "sourceEnum": "BreedingRodType.LEAD"
-        },
-        {
-          "metadata": 14,
-          "name": "uranium",
-          "sourceEnum": "BreedingRodType.URANIUM"
-        },
-        {
-          "metadata": 15,
-          "name": "ra226",
-          "sourceEnum": "BreedingRodType.RA226"
-        },
-        {
-          "metadata": 16,
-          "name": "ac227",
-          "sourceEnum": "BreedingRodType.AC227"
-        }
-      ],
-      "names": [
-        "lithium",
-        "tritium",
-        "co",
-        "co60",
-        "th232",
-        "thf",
-        "u235",
-        "np237",
-        "u238",
-        "pu238",
-        "pu239",
-        "rgp",
-        "waste",
-        "lead",
-        "uranium",
-        "ra226",
-        "ac227"
-      ],
-      "enumClass": "BreedingRodType",
-      "creativeTab": "control",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "rod_dual",
-      "id": "hbm:rod_dual",
       "kind": "item",
+      "symbol": "rod_tritium",
+      "id": "hbm:rod_tritium",
       "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 1,
+      "sourceConstant": "TRITIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_co",
+      "id": "hbm:rod_co",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 2,
+      "sourceConstant": "CO",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_co60",
+      "id": "hbm:rod_co60",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 3,
+      "sourceConstant": "CO60",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_th232",
+      "id": "hbm:rod_th232",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 4,
+      "sourceConstant": "TH232",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_thf",
+      "id": "hbm:rod_thf",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 5,
+      "sourceConstant": "THF",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_u235",
+      "id": "hbm:rod_u235",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 6,
+      "sourceConstant": "U235",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_np237",
+      "id": "hbm:rod_np237",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 7,
+      "sourceConstant": "NP237",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_u238",
+      "id": "hbm:rod_u238",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 8,
+      "sourceConstant": "U238",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_pu238",
+      "id": "hbm:rod_pu238",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 9,
+      "sourceConstant": "PU238",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_pu239",
+      "id": "hbm:rod_pu239",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 10,
+      "sourceConstant": "PU239",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_rgp",
+      "id": "hbm:rod_rgp",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 11,
+      "sourceConstant": "RGP",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_waste",
+      "id": "hbm:rod_waste",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 12,
+      "sourceConstant": "WASTE",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_lead",
+      "id": "hbm:rod_lead",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 13,
+      "sourceConstant": "LEAD",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_uranium",
+      "id": "hbm:rod_uranium",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 14,
+      "sourceConstant": "URANIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_ra226",
+      "id": "hbm:rod_ra226",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 15,
+      "sourceConstant": "RA226",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_ac227",
+      "id": "hbm:rod_ac227",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod",
+      "sourceOrdinal": 16,
+      "sourceConstant": "AC227",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2964
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_lithium",
+      "id": "hbm:rod_dual_lithium",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 0,
+      "sourceConstant": "LITHIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2966
-      },
-      "metadataRange": [
-        0,
-        16
-      ],
-      "variants": [
-        {
-          "metadata": 0,
-          "name": "lithium",
-          "sourceEnum": "BreedingRodType.LITHIUM"
-        },
-        {
-          "metadata": 1,
-          "name": "tritium",
-          "sourceEnum": "BreedingRodType.TRITIUM"
-        },
-        {
-          "metadata": 2,
-          "name": "co",
-          "sourceEnum": "BreedingRodType.CO"
-        },
-        {
-          "metadata": 3,
-          "name": "co60",
-          "sourceEnum": "BreedingRodType.CO60"
-        },
-        {
-          "metadata": 4,
-          "name": "th232",
-          "sourceEnum": "BreedingRodType.TH232"
-        },
-        {
-          "metadata": 5,
-          "name": "thf",
-          "sourceEnum": "BreedingRodType.THF"
-        },
-        {
-          "metadata": 6,
-          "name": "u235",
-          "sourceEnum": "BreedingRodType.U235"
-        },
-        {
-          "metadata": 7,
-          "name": "np237",
-          "sourceEnum": "BreedingRodType.NP237"
-        },
-        {
-          "metadata": 8,
-          "name": "u238",
-          "sourceEnum": "BreedingRodType.U238"
-        },
-        {
-          "metadata": 9,
-          "name": "pu238",
-          "sourceEnum": "BreedingRodType.PU238"
-        },
-        {
-          "metadata": 10,
-          "name": "pu239",
-          "sourceEnum": "BreedingRodType.PU239"
-        },
-        {
-          "metadata": 11,
-          "name": "rgp",
-          "sourceEnum": "BreedingRodType.RGP"
-        },
-        {
-          "metadata": 12,
-          "name": "waste",
-          "sourceEnum": "BreedingRodType.WASTE"
-        },
-        {
-          "metadata": 13,
-          "name": "lead",
-          "sourceEnum": "BreedingRodType.LEAD"
-        },
-        {
-          "metadata": 14,
-          "name": "uranium",
-          "sourceEnum": "BreedingRodType.URANIUM"
-        },
-        {
-          "metadata": 15,
-          "name": "ra226",
-          "sourceEnum": "BreedingRodType.RA226"
-        },
-        {
-          "metadata": 16,
-          "name": "ac227",
-          "sourceEnum": "BreedingRodType.AC227"
-        }
-      ],
-      "names": [
-        "lithium",
-        "tritium",
-        "co",
-        "co60",
-        "th232",
-        "thf",
-        "u235",
-        "np237",
-        "u238",
-        "pu238",
-        "pu239",
-        "rgp",
-        "waste",
-        "lead",
-        "uranium",
-        "ra226",
-        "ac227"
-      ],
-      "enumClass": "BreedingRodType",
-      "creativeTab": "control",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "rod_quad",
-      "id": "hbm:rod_quad",
       "kind": "item",
+      "symbol": "rod_dual_tritium",
+      "id": "hbm:rod_dual_tritium",
       "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 1,
+      "sourceConstant": "TRITIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_co",
+      "id": "hbm:rod_dual_co",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 2,
+      "sourceConstant": "CO",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_co60",
+      "id": "hbm:rod_dual_co60",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 3,
+      "sourceConstant": "CO60",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_th232",
+      "id": "hbm:rod_dual_th232",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 4,
+      "sourceConstant": "TH232",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_thf",
+      "id": "hbm:rod_dual_thf",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 5,
+      "sourceConstant": "THF",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_u235",
+      "id": "hbm:rod_dual_u235",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 6,
+      "sourceConstant": "U235",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_np237",
+      "id": "hbm:rod_dual_np237",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 7,
+      "sourceConstant": "NP237",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_u238",
+      "id": "hbm:rod_dual_u238",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 8,
+      "sourceConstant": "U238",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_pu238",
+      "id": "hbm:rod_dual_pu238",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 9,
+      "sourceConstant": "PU238",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_pu239",
+      "id": "hbm:rod_dual_pu239",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 10,
+      "sourceConstant": "PU239",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_rgp",
+      "id": "hbm:rod_dual_rgp",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 11,
+      "sourceConstant": "RGP",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_waste",
+      "id": "hbm:rod_dual_waste",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 12,
+      "sourceConstant": "WASTE",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_lead",
+      "id": "hbm:rod_dual_lead",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 13,
+      "sourceConstant": "LEAD",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_uranium",
+      "id": "hbm:rod_dual_uranium",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 14,
+      "sourceConstant": "URANIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_ra226",
+      "id": "hbm:rod_dual_ra226",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 15,
+      "sourceConstant": "RA226",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_dual_ac227",
+      "id": "hbm:rod_dual_ac227",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_dual",
+      "sourceOrdinal": 16,
+      "sourceConstant": "AC227",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_dual",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_dual_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2966
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_lithium",
+      "id": "hbm:rod_quad_lithium",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 0,
+      "sourceConstant": "LITHIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 2968
-      },
-      "metadataRange": [
-        0,
-        16
-      ],
-      "variants": [
-        {
-          "metadata": 0,
-          "name": "lithium",
-          "sourceEnum": "BreedingRodType.LITHIUM"
-        },
-        {
-          "metadata": 1,
-          "name": "tritium",
-          "sourceEnum": "BreedingRodType.TRITIUM"
-        },
-        {
-          "metadata": 2,
-          "name": "co",
-          "sourceEnum": "BreedingRodType.CO"
-        },
-        {
-          "metadata": 3,
-          "name": "co60",
-          "sourceEnum": "BreedingRodType.CO60"
-        },
-        {
-          "metadata": 4,
-          "name": "th232",
-          "sourceEnum": "BreedingRodType.TH232"
-        },
-        {
-          "metadata": 5,
-          "name": "thf",
-          "sourceEnum": "BreedingRodType.THF"
-        },
-        {
-          "metadata": 6,
-          "name": "u235",
-          "sourceEnum": "BreedingRodType.U235"
-        },
-        {
-          "metadata": 7,
-          "name": "np237",
-          "sourceEnum": "BreedingRodType.NP237"
-        },
-        {
-          "metadata": 8,
-          "name": "u238",
-          "sourceEnum": "BreedingRodType.U238"
-        },
-        {
-          "metadata": 9,
-          "name": "pu238",
-          "sourceEnum": "BreedingRodType.PU238"
-        },
-        {
-          "metadata": 10,
-          "name": "pu239",
-          "sourceEnum": "BreedingRodType.PU239"
-        },
-        {
-          "metadata": 11,
-          "name": "rgp",
-          "sourceEnum": "BreedingRodType.RGP"
-        },
-        {
-          "metadata": 12,
-          "name": "waste",
-          "sourceEnum": "BreedingRodType.WASTE"
-        },
-        {
-          "metadata": 13,
-          "name": "lead",
-          "sourceEnum": "BreedingRodType.LEAD"
-        },
-        {
-          "metadata": 14,
-          "name": "uranium",
-          "sourceEnum": "BreedingRodType.URANIUM"
-        },
-        {
-          "metadata": 15,
-          "name": "ra226",
-          "sourceEnum": "BreedingRodType.RA226"
-        },
-        {
-          "metadata": 16,
-          "name": "ac227",
-          "sourceEnum": "BreedingRodType.AC227"
-        }
-      ],
-      "names": [
-        "lithium",
-        "tritium",
-        "co",
-        "co60",
-        "th232",
-        "thf",
-        "u235",
-        "np237",
-        "u238",
-        "pu238",
-        "pu239",
-        "rgp",
-        "waste",
-        "lead",
-        "uranium",
-        "ra226",
-        "ac227"
-      ],
-      "enumClass": "BreedingRodType",
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_tritium",
+      "id": "hbm:rod_quad_tritium",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 1,
+      "sourceConstant": "TRITIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
       "creativeTab": "control",
-      "runtimeValidated": false
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_co",
+      "id": "hbm:rod_quad_co",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 2,
+      "sourceConstant": "CO",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_co60",
+      "id": "hbm:rod_quad_co60",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 3,
+      "sourceConstant": "CO60",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_th232",
+      "id": "hbm:rod_quad_th232",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 4,
+      "sourceConstant": "TH232",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_thf",
+      "id": "hbm:rod_quad_thf",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 5,
+      "sourceConstant": "THF",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_u235",
+      "id": "hbm:rod_quad_u235",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 6,
+      "sourceConstant": "U235",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_np237",
+      "id": "hbm:rod_quad_np237",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 7,
+      "sourceConstant": "NP237",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_u238",
+      "id": "hbm:rod_quad_u238",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 8,
+      "sourceConstant": "U238",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_pu238",
+      "id": "hbm:rod_quad_pu238",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 9,
+      "sourceConstant": "PU238",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_pu239",
+      "id": "hbm:rod_quad_pu239",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 10,
+      "sourceConstant": "PU239",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_rgp",
+      "id": "hbm:rod_quad_rgp",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 11,
+      "sourceConstant": "RGP",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_waste",
+      "id": "hbm:rod_quad_waste",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 12,
+      "sourceConstant": "WASTE",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_lead",
+      "id": "hbm:rod_quad_lead",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 13,
+      "sourceConstant": "LEAD",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_uranium",
+      "id": "hbm:rod_quad_uranium",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 14,
+      "sourceConstant": "URANIUM",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_ra226",
+      "id": "hbm:rod_quad_ra226",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 15,
+      "sourceConstant": "RA226",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "rod_quad_ac227",
+      "id": "hbm:rod_quad_ac227",
+      "originalClass": "ItemBreedingRod",
+      "sourceClass": "com.hbm.items.machine.ItemBreedingRod",
+      "sourceField": "ModItems.rod_quad",
+      "sourceOrdinal": 16,
+      "sourceConstant": "AC227",
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.rod_quad",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "craftingRemainingItem": "hbm:rod_quad_empty",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 2968
+      }
     }
   ]
 }

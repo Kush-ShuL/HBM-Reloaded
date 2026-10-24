@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "hbm:battery_sc_pu238",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hbm:battery_sc_empty"
+    },
+    {
+      "tag": "hbm:billets/plutonium_238"
+    },
+    {
+      "tag": "hbm:billets/plutonium_238"
+    }
+  ]
+}

@@ -9,11 +9,8 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:drive",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 1
-            }
+            "id": "hbm:drive_disk_empty",
+            "count": 1
           }
         }
       ]

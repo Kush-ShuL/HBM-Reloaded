@@ -1,13 +1,9 @@
 package com.hbm.item.battery;
 
 import com.hbm.HbmReloaded;
-import com.hbm.hazard.HbmHazards;
-import com.hbm.item.EnumMultiItem;
+import net.minecraft.world.item.Item;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
-import java.util.stream.IntStream;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
@@ -18,7 +14,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 
 /** X5846 ItemBatteryPack: declaration-order metadata, initially empty, native long HE. */
-public final class BatteryPackItem extends EnumMultiItem implements HbmBattery {
+public final class BatteryPackItem extends Item implements HbmBattery {
     public enum EnumBatteryPack {
         BATTERY_REDSTONE("battery_redstone", 100L, false),
         BATTERY_LEAD("battery_lead", 1_000L, false),
@@ -47,14 +43,15 @@ public final class BatteryPackItem extends EnumMultiItem implements HbmBattery {
             this.capacity = capacity; this.chargeRate = chargeRate; this.dischargeRate = dischargeRate;
         }
         public boolean isCapacitor() { return ordinal() > BATTERY_QUANTUM.ordinal(); }
-        public ItemStack stack() { return BatteryContent.PACK.get().stack(this); }
+        public ItemStack stack() { return BatteryContent.pack(this); }
     }
 
-    public BatteryPackItem() {
-        super("battery_pack", 1, true, Arrays.stream(EnumBatteryPack.values()).map(value -> value.name().toLowerCase(Locale.US)).toList(), IntStream.range(0, EnumBatteryPack.values().length).boxed().toList());
-    }
-    public EnumBatteryPack variant(ItemStack stack) { return EnumBatteryPack.values()[ordinal(stack)]; }
-    public ItemStack stack(EnumBatteryPack variant) { ItemStack stack = new ItemStack(this); stack.set(HbmHazards.LEGACY_METADATA.get(), variant.ordinal()); return stack; }
+    private final EnumBatteryPack type;
+    public BatteryPackItem(EnumBatteryPack type) {super(new Properties().stacksTo(1));this.type=java.util.Objects.requireNonNull(type);}
+    public EnumBatteryPack type() {return type;}
+    public EnumBatteryPack variant(ItemStack stack) {return type;}
+    @Override public String getDescriptionId(ItemStack stack) {return "item.hbm.battery_pack_"+type.name().toLowerCase(java.util.Locale.ROOT);}
+    @Override public Component getName(ItemStack stack) {return Component.translatable("item.battery_pack."+type.name().toLowerCase(java.util.Locale.ROOT)+".name");}
     private long rawCharge(ItemStack stack) { return stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getLong("charge"); }
     @Override public void chargeBattery(ItemStack stack, long amount) { setCharge(stack, rawCharge(stack) + amount); }
     @Override public void setCharge(ItemStack stack, long amount) {
@@ -79,14 +76,7 @@ public final class BatteryPackItem extends EnumMultiItem implements HbmBattery {
         CompoundTag data = new CompoundTag(); data.putLong("charge", charge);
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(data)); return stack;
     }
-    @Override public List<ItemStack> creativeStacks() {
-        List<ItemStack> result = new ArrayList<>();
-        for (EnumBatteryPack variant : EnumBatteryPack.values()) {
-            result.add(makeEmptyBattery(stack(variant)));
-            result.add(makeFullBattery(stack(variant)));
-        }
-        return result;
-    }
+    public List<ItemStack> creativeStacks() {return List.of(makeEmptyBattery(new ItemStack(this)),makeFullBattery(new ItemStack(this)));}
     @Override public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         long capacity = getMaxCharge(stack), chargeRate = getChargeRate(stack), dischargeRate = getDischargeRate(stack);
         // The source tooltip shows full charge before an untagged pack is initialized; retain that behavior.

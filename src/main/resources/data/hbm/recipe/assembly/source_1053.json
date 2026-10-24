@@ -33,10 +33,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:battery_pack",
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:battery_pack_capacitor_bismuth"
         }
       },
       "count": 1

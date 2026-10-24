@@ -1291,7 +1291,7 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_meu",
           1,
           0
         ]
@@ -1354,9 +1354,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_heu233",
           1,
-          1
+          0
         ]
       ],
       "inputFluid": [
@@ -1417,9 +1417,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_heu235",
           1,
-          2
+          0
         ]
       ],
       "inputFluid": [
@@ -1480,9 +1480,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_men",
           1,
-          3
+          0
         ]
       ],
       "inputFluid": [
@@ -1543,9 +1543,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_hen237",
           1,
-          4
+          0
         ]
       ],
       "inputFluid": [
@@ -1606,9 +1606,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_mox",
           1,
-          5
+          0
         ]
       ],
       "inputFluid": [
@@ -1669,9 +1669,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_mep",
           1,
-          6
+          0
         ]
       ],
       "inputFluid": [
@@ -1732,9 +1732,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_hep239",
           1,
-          7
+          0
         ]
       ],
       "inputFluid": [
@@ -1795,9 +1795,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_hep241",
           1,
-          8
+          0
         ]
       ],
       "inputFluid": [
@@ -1858,9 +1858,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_mea",
           1,
-          9
+          0
         ]
       ],
       "inputFluid": [
@@ -1921,9 +1921,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_hea242",
           1,
-          10
+          0
         ]
       ],
       "inputFluid": [
@@ -1984,9 +1984,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_hes326",
           1,
-          11
+          0
         ]
       ],
       "inputFluid": [
@@ -2047,9 +2047,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_hes327",
           1,
-          12
+          0
         ]
       ],
       "inputFluid": [
@@ -2110,9 +2110,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_bfb_am_mix",
           1,
-          13
+          0
         ]
       ],
       "inputFluid": [
@@ -2173,9 +2173,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_bfb_pu241",
           1,
-          14
+          0
         ]
       ],
       "inputFluid": [
@@ -2288,7 +2288,7 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_schrabidium",
           1,
           0
         ]
@@ -2350,9 +2350,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_hes",
           1,
-          1
+          0
         ]
       ],
       "inputFluid": [
@@ -2412,9 +2412,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_mes",
           1,
-          2
+          0
         ]
       ],
       "inputFluid": [
@@ -2474,9 +2474,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_les",
           1,
-          3
+          0
         ]
       ],
       "inputFluid": [
@@ -2536,9 +2536,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_hen",
           1,
-          4
+          0
         ]
       ],
       "inputFluid": [
@@ -2598,9 +2598,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_meu",
           1,
-          5
+          0
         ]
       ],
       "inputFluid": [
@@ -2660,9 +2660,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_mep",
           1,
-          6
+          0
         ]
       ],
       "inputFluid": [
@@ -2722,9 +2722,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_lead",
           1,
-          7
+          0
         ]
       ],
       "inputFluid": [
@@ -2784,9 +2784,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_boron",
           1,
-          8
+          0
         ]
       ],
       "inputFluid": [
@@ -2846,9 +2846,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_du",
           1,
-          9
+          0
         ]
       ],
       "inputFluid": [
@@ -3158,9 +3158,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_mep",
           1,
-          6
+          0
         ]
       ],
       "inputFluid": [
@@ -3213,9 +3213,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:pwr_fuel_depleted",
+          "hbm:pwr_fuel_depleted_men",
           1,
-          3
+          0
         ]
       ],
       "inputFluid": [
@@ -3270,9 +3270,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_nqd",
           1,
-          10
+          0
         ]
       ],
       "inputFluid": [
@@ -3330,9 +3330,9 @@
       "inputItem": [
         [
           "item",
-          "hbm:watz_pellet_depleted",
+          "hbm:watz_pellet_depleted_nqr",
           1,
-          11
+          0
         ]
       ],
       "inputFluid": [

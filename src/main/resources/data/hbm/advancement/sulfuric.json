@@ -2,10 +2,7 @@
   "parent": "hbm:slimeball",
   "display": {
     "icon": {
-      "id": "hbm:achievement_icon",
-      "components": {
-        "hbm:legacy_metadata": 2
-      }
+      "id": "hbm:achievement_icon_balls"
     },
     "title": {
       "translate": "achievement.sulfuric"

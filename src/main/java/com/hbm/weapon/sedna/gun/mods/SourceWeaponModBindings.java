@@ -11,7 +11,7 @@ import net.minecraft.world.item.ItemStack;
 public final class SourceWeaponModBindings {
     private SourceWeaponModBindings(){}
     public static XWeaponModManager.WeaponModDefinition definition(String item,int metadata){
-        var stack=new ItemStack(HbmContent.item(item));stack.set(HbmHazards.LEGACY_METADATA.get(),metadata);
+        var stack=com.hbm.registry.HbmEnumItems.stack(item,metadata);
         return definition(stack);
     }
     private static XWeaponModManager.WeaponModDefinition definition(ItemStack stack){

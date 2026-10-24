@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:armor_battery_mk2",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PWP",
+    "PCP",
+    "PWP"
+  ],
+  "key": {
+    "P": {
+      "tag": "hbm:material_groups/plastic/ingots"
+    },
+    "C": {
+      "item": "hbm:battery_pack_capacitor_niobium"
+    },
+    "W": {
+      "tag": "hbm:wires/dense/mingrade"
+    }
+  }
+}

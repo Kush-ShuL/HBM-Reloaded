@@ -12,12 +12,7 @@
   ],
   "key": {
     "D": {
-      "type": "neoforge:components",
-      "items": "hbm:weapon_mod_special",
-      "components": {
-        "hbm:legacy_metadata": 1
-      },
-      "strict": false
+      "item": "hbm:weapon_mod_special_scope"
     },
     "B": {
       "tag": "hbm:gun_parts/barrels/light/saturnite"

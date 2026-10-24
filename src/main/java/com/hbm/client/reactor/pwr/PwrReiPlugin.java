@@ -12,7 +12,6 @@ import me.shedaniel.rei.api.client.registry.display.*;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
-import me.shedaniel.rei.api.common.entry.comparison.ItemComparatorRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
 import net.minecraft.network.chat.Component;
@@ -20,7 +19,7 @@ import net.minecraft.network.chat.Component;
 @REIPluginClient
 public final class PwrReiPlugin implements REIClientPlugin {
     static final CategoryIdentifier<Display> TYPE=CategoryIdentifier.of("hbm","pwr_fission");
-    @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->PwrFuelType.from(PwrFuelItem.metadata(stack)).ordinal(),PwrContent.FUEL.get());}
+    @Override public void registerEntries(me.shedaniel.rei.api.client.registry.entry.EntryRegistry event){for(var stack:PwrContent.allFuelStacks())event.addEntry(EntryStacks.of(stack));}
     @Override public void registerCategories(CategoryRegistry event){event.add(new Category());event.addWorkstations(TYPE,EntryStacks.of(PwrContent.CONTROLLER_ITEM.get()));}
     @Override public void registerDisplays(DisplayRegistry event){for(var recipe:PwrFuelCycles.recipes())event.add(new Display(recipe));}
     static final class Display extends BasicDisplay{final PwrFuelCycles recipe;Display(PwrFuelCycles recipe){super(List.of(EntryIngredient.of(EntryStacks.of(recipe.input()))),List.of(EntryIngredient.of(EntryStacks.of(recipe.output()))));this.recipe=recipe;}@Override public CategoryIdentifier<Display> getCategoryIdentifier(){return TYPE;}}

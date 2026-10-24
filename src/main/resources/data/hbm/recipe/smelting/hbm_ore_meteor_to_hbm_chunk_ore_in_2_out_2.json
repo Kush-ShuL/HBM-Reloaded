@@ -2,12 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "ingredient": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_meteor",
-    "components": {
-      "hbm:legacy_metadata": 2
-    },
-    "strict": false
+    "item": "hbm:ore_meteor_aluminium"
   },
   "result": {
     "id": "hbm:chunk_ore_cryolite",

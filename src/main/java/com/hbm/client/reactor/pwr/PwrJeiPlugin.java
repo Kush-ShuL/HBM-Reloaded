@@ -7,7 +7,6 @@ import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.helpers.IGuiHelper;
-import mezz.jei.api.ingredients.subtypes.*;
 import mezz.jei.api.recipe.*;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.registration.*;
@@ -23,7 +22,7 @@ public final class PwrJeiPlugin implements IModPlugin {
     @Override public void registerCategories(IRecipeCategoryRegistration event){event.addRecipeCategories(new Category(event.getJeiHelpers().getGuiHelper()));}
     @Override public void registerRecipes(IRecipeRegistration event){event.addRecipes(TYPE,PwrFuelCycles.recipes());}
     @Override public void registerRecipeCatalysts(IRecipeCatalystRegistration event){event.addRecipeCatalysts(TYPE,PwrContent.CONTROLLER_ITEM.get());}
-    @Override public void registerItemSubtypes(ISubtypeRegistration event){event.registerSubtypeInterpreter(PwrContent.FUEL.get(),new ISubtypeInterpreter<ItemStack>(){@Override public Object getSubtypeData(ItemStack stack,UidContext context){return PwrFuelType.from(PwrFuelItem.metadata(stack));}@Override public String getLegacyStringSubtypeInfo(ItemStack stack,UidContext context){return PwrFuelType.from(PwrFuelItem.metadata(stack)).serializedName();}});}
+    @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,PwrContent.allFuelStacks());}
     private static final class Category implements IRecipeCategory<PwrFuelCycles>{
         private final IDrawable background,icon;Category(IGuiHelper helper){background=helper.createBlankDrawable(166,65);icon=helper.createDrawableItemStack(new ItemStack(PwrContent.CONTROLLER_ITEM.get()));}
         @Override public RecipeType<PwrFuelCycles> getRecipeType(){return TYPE;}@Override public Component getTitle(){return Component.translatable("container.pwrController");}@Override public IDrawable getBackground(){return background;}@Override public IDrawable getIcon(){return icon;}

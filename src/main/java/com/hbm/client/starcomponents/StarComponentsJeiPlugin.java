@@ -4,6 +4,5 @@ import com.hbm.item.starcomponents.StarComponentsContent;import mezz.jei.api.*;i
 @JeiPlugin
 public final class StarComponentsJeiPlugin implements IModPlugin {
  @Override public ResourceLocation getPluginUid(){return ResourceLocation.parse("hbm:star_components305_jei");}
- @Override public void registerItemSubtypes(ISubtypeRegistration event){event.registerSubtypeInterpreter(StarComponentsContent.ITEM.get(),new ISubtypeInterpreter<ItemStack>(){public Object getSubtypeData(ItemStack stack,UidContext context){return StarComponentsContent.ITEM.get().ordinal(stack);}public String getLegacyStringSubtypeInfo(ItemStack stack,UidContext context){return getSubtypeData(stack,context).toString();}});}
- @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(VanillaTypes.ITEM_STACK,StarComponentsContent.ITEM.get().creativeStacks());}
+ @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(VanillaTypes.ITEM_STACK,StarComponentsContent.indexedItems());}
 }

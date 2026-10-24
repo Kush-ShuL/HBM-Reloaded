@@ -2,12 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "ingredient": {
-    "type": "neoforge:components",
-    "items": "hbm:ore_meteor",
-    "components": {
-      "hbm:legacy_metadata": 4
-    },
-    "strict": false
+    "item": "hbm:ore_meteor_cobalt"
   },
   "result": {
     "id": "hbm:ingot_cobalt",

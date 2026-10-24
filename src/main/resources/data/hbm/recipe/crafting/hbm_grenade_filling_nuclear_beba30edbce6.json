@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:grenade_filling_nuclear",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "CPC",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "hbm:ball_tatb"
+    },
+    "C": {
+      "tag": "c:plates/weapon_steel"
+    },
+    "P": {
+      "tag": "c:nuggets/plutonium_239"
+    }
+  }
+}

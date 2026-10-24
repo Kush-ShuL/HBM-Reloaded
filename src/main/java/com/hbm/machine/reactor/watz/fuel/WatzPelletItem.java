@@ -1,9 +1,7 @@
 package com.hbm.machine.reactor.watz.fuel;
 
-import com.hbm.hazard.HbmHazards;
-import com.hbm.item.EnumMultiItem;
+import com.hbm.item.FlatSourceItem;
 import java.util.*;
-import java.util.stream.IntStream;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
@@ -15,12 +13,15 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 
 /** Real ItemWatzPellet lazy source yield NBT, crafted reset, depletion bar and actual fuel-function descriptions. */
-public final class WatzPelletItem extends EnumMultiItem {
+public final class WatzPelletItem extends Item implements FlatSourceItem {
     public static final List<String> NAMES=Arrays.stream(WatzFuelType.values()).map(WatzFuelType::serialized).toList();
     private final boolean depleted;
-    public WatzPelletItem(boolean depleted){super(depleted?"watz_pellet_depleted":"watz_pellet",16,true,NAMES,IntStream.range(0,NAMES.size()).boxed().toList());this.depleted=depleted;}
-    public static int metadata(ItemStack stack){return Math.abs(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),0)%WatzFuelType.values().length);}
-    public static WatzFuelType type(ItemStack stack){return WatzFuelType.fromMeta(metadata(stack));}
+    private final WatzFuelType type;
+    public WatzPelletItem(boolean depleted,WatzFuelType type){super(new Properties().stacksTo(16));this.depleted=depleted;this.type=Objects.requireNonNull(type);}
+    @Override public String getDescriptionId(){return "item.hbm."+(depleted?"watz_pellet_depleted_":"watz_pellet_")+type.serialized();}
+    public static boolean fresh(ItemStack stack){return stack.getItem() instanceof WatzPelletItem item&&!item.depleted;}
+    public static boolean depleted(ItemStack stack){return stack.getItem() instanceof WatzPelletItem item&&item.depleted;}
+    public static WatzFuelType type(ItemStack stack){if(!(stack.getItem() instanceof WatzPelletItem item))throw new IllegalArgumentException("Not a Watz fuel pellet");return item.type;}
     private static void defaults(ItemStack stack){var data=new CompoundTag();data.putDouble("yield",type(stack).yield);stack.set(DataComponents.CUSTOM_DATA,CustomData.of(data));}
     public static double getDouble(ItemStack stack,String key){if(!stack.has(DataComponents.CUSTOM_DATA))defaults(stack);return stack.get(DataComponents.CUSTOM_DATA).copyTag().getDouble(key);}
     public static void setDouble(ItemStack stack,String key,double value){if(!stack.has(DataComponents.CUSTOM_DATA))defaults(stack);var data=stack.get(DataComponents.CUSTOM_DATA).copyTag();data.putDouble(key,value);stack.set(DataComponents.CUSTOM_DATA,CustomData.of(data));}

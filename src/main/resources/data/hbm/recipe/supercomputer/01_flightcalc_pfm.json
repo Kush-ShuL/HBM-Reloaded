@@ -9,10 +9,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:drive_flash_empty"
         }
       },
       "count": 1
@@ -23,21 +20,15 @@
       "pool": [
         {
           "stack": {
-            "id": "hbm:drive",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 4
-            }
+            "id": "hbm:drive_flash_flightsim",
+            "count": 1
           },
           "weight": 50
         },
         {
           "stack": {
-            "id": "hbm:drive",
-            "count": 1,
-            "components": {
-              "hbm:legacy_metadata": 2
-            }
+            "id": "hbm:drive_flash_broken",
+            "count": 1
           },
           "weight": 50
         }

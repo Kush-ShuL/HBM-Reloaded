@@ -49,38 +49,289 @@
       "runtimeValidated": false
     },
     {
-      "symbol": "pwr_fuel",
-      "id": "hbm:pwr_fuel",
       "kind": "item",
-      "creativeTab": "control",
+      "symbol": "pwr_fuel_meu",
+      "id": "hbm:pwr_fuel_meu",
+      "module": "reactor-pwr",
       "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3020
-      },
-      "metadataRange": [
-        0,
-        14
-      ],
-      "names": [
-        "meu",
-        "heu233",
-        "heu235",
-        "men",
-        "hen237",
-        "mox",
-        "mep",
-        "hep239",
-        "hep241",
-        "mea",
-        "hea242",
-        "hes326",
-        "hes327",
-        "bfb_am_mix",
-        "bfb_pu241"
-      ],
-      "enumClass": "EnumPWRFuel",
-      "runtimeValidated": false
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_heu233",
+      "id": "hbm:pwr_fuel_heu233",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_heu235",
+      "id": "hbm:pwr_fuel_heu235",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_men",
+      "id": "hbm:pwr_fuel_men",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_hen237",
+      "id": "hbm:pwr_fuel_hen237",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_mox",
+      "id": "hbm:pwr_fuel_mox",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_mep",
+      "id": "hbm:pwr_fuel_mep",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_hep239",
+      "id": "hbm:pwr_fuel_hep239",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_hep241",
+      "id": "hbm:pwr_fuel_hep241",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 8,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_mea",
+      "id": "hbm:pwr_fuel_mea",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 9,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_hea242",
+      "id": "hbm:pwr_fuel_hea242",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 10,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_hes326",
+      "id": "hbm:pwr_fuel_hes326",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 11,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_hes327",
+      "id": "hbm:pwr_fuel_hes327",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 12,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_bfb_am_mix",
+      "id": "hbm:pwr_fuel_bfb_am_mix",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 13,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "pwr_fuel_bfb_pu241",
+      "id": "hbm:pwr_fuel_bfb_pu241",
+      "module": "reactor-pwr",
+      "originalClass": "ItemPWRFuel",
+      "sourceClass": "com.hbm.items.machine.ItemPWRFuel",
+      "sourceField": "ModItems.pwr_fuel",
+      "sourceOrdinal": 14,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.pwr_fuel",
+      "creativeTab": "control",
+      "maxStackSize": 64,
+      "maxDamage": 0,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3020
+      }
     }
   ],
   "reusedBlocks": [
@@ -93,8 +344,36 @@
     "hbm:pwr_port"
   ],
   "reusedItems": [
-    "hbm:pwr_fuel_hot",
-    "hbm:pwr_fuel_depleted"
+    "hbm:pwr_fuel_hot_meu",
+    "hbm:pwr_fuel_hot_heu233",
+    "hbm:pwr_fuel_hot_heu235",
+    "hbm:pwr_fuel_hot_men",
+    "hbm:pwr_fuel_hot_hen237",
+    "hbm:pwr_fuel_hot_mox",
+    "hbm:pwr_fuel_hot_mep",
+    "hbm:pwr_fuel_hot_hep239",
+    "hbm:pwr_fuel_hot_hep241",
+    "hbm:pwr_fuel_hot_mea",
+    "hbm:pwr_fuel_hot_hea242",
+    "hbm:pwr_fuel_hot_hes326",
+    "hbm:pwr_fuel_hot_hes327",
+    "hbm:pwr_fuel_hot_bfb_am_mix",
+    "hbm:pwr_fuel_hot_bfb_pu241",
+    "hbm:pwr_fuel_depleted_meu",
+    "hbm:pwr_fuel_depleted_heu233",
+    "hbm:pwr_fuel_depleted_heu235",
+    "hbm:pwr_fuel_depleted_men",
+    "hbm:pwr_fuel_depleted_hen237",
+    "hbm:pwr_fuel_depleted_mox",
+    "hbm:pwr_fuel_depleted_mep",
+    "hbm:pwr_fuel_depleted_hep239",
+    "hbm:pwr_fuel_depleted_hep241",
+    "hbm:pwr_fuel_depleted_mea",
+    "hbm:pwr_fuel_depleted_hea242",
+    "hbm:pwr_fuel_depleted_hes326",
+    "hbm:pwr_fuel_depleted_hes327",
+    "hbm:pwr_fuel_depleted_bfb_am_mix",
+    "hbm:pwr_fuel_depleted_bfb_pu241"
   ],
   "fuelVariants": 15,
   "sourceFuelRecipeCount": 15,

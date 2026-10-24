@@ -14188,11 +14188,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:rod_thf",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14224,11 +14221,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 11
-              }
+              "id": "hbm:rod_rgp",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14260,11 +14254,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 12
-              }
+              "id": "hbm:rod_waste",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14305,11 +14296,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:rod_dual_thf",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14344,11 +14332,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 11
-              }
+              "id": "hbm:rod_dual_rgp",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14383,11 +14368,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 12
-              }
+              "id": "hbm:rod_dual_waste",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14431,11 +14413,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:rod_quad_thf",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14476,11 +14455,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 11
-              }
+              "id": "hbm:rod_quad_rgp",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14521,11 +14497,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 12
-              }
+              "id": "hbm:rod_quad_waste",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14582,12 +14555,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:rod_thf"
               }
             ]
           }
@@ -14617,12 +14585,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 11
-                },
-                "strict": false
+                "item": "hbm:rod_rgp"
               }
             ]
           }
@@ -14652,12 +14615,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 12
-                },
-                "strict": false
+                "item": "hbm:rod_waste"
               }
             ]
           }
@@ -14696,12 +14654,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:rod_dual_thf"
               }
             ]
           }
@@ -14731,12 +14684,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 11
-                },
-                "strict": false
+                "item": "hbm:rod_dual_rgp"
               }
             ]
           }
@@ -14766,12 +14714,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 12
-                },
-                "strict": false
+                "item": "hbm:rod_dual_waste"
               }
             ]
           }
@@ -14810,12 +14753,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:rod_quad_thf"
               }
             ]
           }
@@ -14845,12 +14783,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 11
-                },
-                "strict": false
+                "item": "hbm:rod_quad_rgp"
               }
             ]
           }
@@ -14880,12 +14813,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 12
-                },
-                "strict": false
+                "item": "hbm:rod_quad_waste"
               }
             ]
           }
@@ -14918,11 +14846,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:rod_co",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14955,11 +14880,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:rod_co60",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -14992,11 +14914,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 15
-              }
+              "id": "hbm:rod_ra226",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15029,11 +14948,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 16
-              }
+              "id": "hbm:rod_ac227",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15066,11 +14982,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:rod_th232",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15103,11 +15016,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:rod_u235",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15140,11 +15050,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:rod_np237",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15177,11 +15084,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 8
-              }
+              "id": "hbm:rod_u238",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15214,11 +15118,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 9
-              }
+              "id": "hbm:rod_pu238",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15251,11 +15152,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 10
-              }
+              "id": "hbm:rod_pu239",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15288,11 +15186,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 14
-              }
+              "id": "hbm:rod_uranium",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15334,11 +15229,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:rod_dual_co",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15374,11 +15266,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:rod_dual_co60",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15414,11 +15303,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 15
-              }
+              "id": "hbm:rod_dual_ra226",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15454,11 +15340,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 16
-              }
+              "id": "hbm:rod_dual_ac227",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15494,11 +15377,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:rod_dual_th232",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15534,11 +15414,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:rod_dual_u235",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15574,11 +15451,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:rod_dual_np237",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15614,11 +15488,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 8
-              }
+              "id": "hbm:rod_dual_u238",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15654,11 +15525,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 9
-              }
+              "id": "hbm:rod_dual_pu238",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15694,11 +15562,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 10
-              }
+              "id": "hbm:rod_dual_pu239",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15734,11 +15599,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_dual",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 14
-              }
+              "id": "hbm:rod_dual_uranium",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15783,11 +15645,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:rod_quad_co",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15829,11 +15688,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:rod_quad_co60",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15875,11 +15731,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 15
-              }
+              "id": "hbm:rod_quad_ra226",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15921,11 +15774,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 16
-              }
+              "id": "hbm:rod_quad_ac227",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -15967,11 +15817,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:rod_quad_th232",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16013,11 +15860,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:rod_quad_u235",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16059,11 +15903,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:rod_quad_np237",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16105,11 +15946,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 8
-              }
+              "id": "hbm:rod_quad_u238",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16151,11 +15989,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 9
-              }
+              "id": "hbm:rod_quad_pu238",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16197,11 +16032,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 10
-              }
+              "id": "hbm:rod_quad_pu239",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16243,11 +16075,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:rod_quad",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 14
-              }
+              "id": "hbm:rod_quad_uranium",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -16305,12 +16134,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:rod_co"
               }
             ]
           }
@@ -16341,12 +16165,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:rod_co60"
               }
             ]
           }
@@ -16377,12 +16196,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 15
-                },
-                "strict": false
+                "item": "hbm:rod_ra226"
               }
             ]
           }
@@ -16413,12 +16227,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 16
-                },
-                "strict": false
+                "item": "hbm:rod_ac227"
               }
             ]
           }
@@ -16449,12 +16258,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:rod_th232"
               }
             ]
           }
@@ -16485,12 +16289,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:rod_u235"
               }
             ]
           }
@@ -16521,12 +16320,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:rod_np237"
               }
             ]
           }
@@ -16557,12 +16351,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 8
-                },
-                "strict": false
+                "item": "hbm:rod_u238"
               }
             ]
           }
@@ -16593,12 +16382,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 9
-                },
-                "strict": false
+                "item": "hbm:rod_pu238"
               }
             ]
           }
@@ -16629,12 +16413,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 10
-                },
-                "strict": false
+                "item": "hbm:rod_pu239"
               }
             ]
           }
@@ -16665,12 +16444,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod",
-                "components": {
-                  "hbm:legacy_metadata": 14
-                },
-                "strict": false
+                "item": "hbm:rod_uranium"
               }
             ]
           }
@@ -16710,12 +16484,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:rod_dual_co"
               }
             ]
           }
@@ -16746,12 +16515,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:rod_dual_co60"
               }
             ]
           }
@@ -16782,12 +16546,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 15
-                },
-                "strict": false
+                "item": "hbm:rod_dual_ra226"
               }
             ]
           }
@@ -16818,12 +16577,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 16
-                },
-                "strict": false
+                "item": "hbm:rod_dual_ac227"
               }
             ]
           }
@@ -16854,12 +16608,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:rod_dual_th232"
               }
             ]
           }
@@ -16890,12 +16639,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:rod_dual_u235"
               }
             ]
           }
@@ -16926,12 +16670,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:rod_dual_np237"
               }
             ]
           }
@@ -16962,12 +16701,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 8
-                },
-                "strict": false
+                "item": "hbm:rod_dual_u238"
               }
             ]
           }
@@ -16998,12 +16732,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 9
-                },
-                "strict": false
+                "item": "hbm:rod_dual_pu238"
               }
             ]
           }
@@ -17034,12 +16763,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 10
-                },
-                "strict": false
+                "item": "hbm:rod_dual_pu239"
               }
             ]
           }
@@ -17070,12 +16794,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_dual",
-                "components": {
-                  "hbm:legacy_metadata": 14
-                },
-                "strict": false
+                "item": "hbm:rod_dual_uranium"
               }
             ]
           }
@@ -17115,12 +16834,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:rod_quad_co"
               }
             ]
           }
@@ -17151,12 +16865,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:rod_quad_co60"
               }
             ]
           }
@@ -17187,12 +16896,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 15
-                },
-                "strict": false
+                "item": "hbm:rod_quad_ra226"
               }
             ]
           }
@@ -17223,12 +16927,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 16
-                },
-                "strict": false
+                "item": "hbm:rod_quad_ac227"
               }
             ]
           }
@@ -17259,12 +16958,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:rod_quad_th232"
               }
             ]
           }
@@ -17295,12 +16989,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:rod_quad_u235"
               }
             ]
           }
@@ -17331,12 +17020,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:rod_quad_np237"
               }
             ]
           }
@@ -17367,12 +17051,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 8
-                },
-                "strict": false
+                "item": "hbm:rod_quad_u238"
               }
             ]
           }
@@ -17403,12 +17082,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 9
-                },
-                "strict": false
+                "item": "hbm:rod_quad_pu238"
               }
             ]
           }
@@ -17439,12 +17113,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 10
-                },
-                "strict": false
+                "item": "hbm:rod_quad_pu239"
               }
             ]
           }
@@ -17475,12 +17144,7 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:rod_quad",
-                "components": {
-                  "hbm:legacy_metadata": 14
-                },
-                "strict": false
+                "item": "hbm:rod_quad_uranium"
               }
             ]
           }
@@ -35039,11 +34703,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:rod_thf",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35083,11 +34744,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:rod_rgp",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35127,11 +34785,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:rod_waste",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35171,11 +34826,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:rod_dual_thf",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35218,11 +34870,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:rod_dual_rgp",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35265,11 +34914,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:rod_dual_waste",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35312,11 +34958,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:rod_quad_thf",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35365,11 +35008,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 11
-          }
+          "id": "hbm:rod_quad_rgp",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35418,11 +35058,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 12
-          }
+          "id": "hbm:rod_quad_waste",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35478,12 +35115,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:rod_thf"
           }
         ]
       }
@@ -35521,12 +35153,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 11
-            },
-            "strict": false
+            "item": "hbm:rod_rgp"
           }
         ]
       }
@@ -35564,12 +35191,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 12
-            },
-            "strict": false
+            "item": "hbm:rod_waste"
           }
         ]
       }
@@ -35607,12 +35229,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:rod_dual_thf"
           }
         ]
       }
@@ -35650,12 +35267,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 11
-            },
-            "strict": false
+            "item": "hbm:rod_dual_rgp"
           }
         ]
       }
@@ -35693,12 +35305,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 12
-            },
-            "strict": false
+            "item": "hbm:rod_dual_waste"
           }
         ]
       }
@@ -35736,12 +35343,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:rod_quad_thf"
           }
         ]
       }
@@ -35779,12 +35381,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 11
-            },
-            "strict": false
+            "item": "hbm:rod_quad_rgp"
           }
         ]
       }
@@ -35822,12 +35419,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 12
-            },
-            "strict": false
+            "item": "hbm:rod_quad_waste"
           }
         ]
       }
@@ -35859,11 +35451,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:rod_co",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35904,11 +35493,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:rod_co60",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35949,11 +35535,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 15
-          }
+          "id": "hbm:rod_ra226",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -35994,11 +35577,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 16
-          }
+          "id": "hbm:rod_ac227",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36039,11 +35619,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:rod_th232",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36084,11 +35661,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:rod_u235",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36129,11 +35703,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:rod_np237",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36174,11 +35745,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:rod_u238",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36219,11 +35787,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:rod_pu238",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36264,11 +35829,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:rod_pu239",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36309,11 +35871,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 14
-          }
+          "id": "hbm:rod_uranium",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36354,11 +35913,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:rod_dual_co",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36402,11 +35958,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:rod_dual_co60",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36450,11 +36003,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 15
-          }
+          "id": "hbm:rod_dual_ra226",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36498,11 +36048,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 16
-          }
+          "id": "hbm:rod_dual_ac227",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36546,11 +36093,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:rod_dual_th232",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36594,11 +36138,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:rod_dual_u235",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36642,11 +36183,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:rod_dual_np237",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36690,11 +36228,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:rod_dual_u238",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36738,11 +36273,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:rod_dual_pu238",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36786,11 +36318,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:rod_dual_pu239",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36834,11 +36363,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_dual",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 14
-          }
+          "id": "hbm:rod_dual_uranium",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36882,11 +36408,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:rod_quad_co",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36936,11 +36459,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:rod_quad_co60",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -36990,11 +36510,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 15
-          }
+          "id": "hbm:rod_quad_ra226",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37044,11 +36561,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 16
-          }
+          "id": "hbm:rod_quad_ac227",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37098,11 +36612,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:rod_quad_th232",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37152,11 +36663,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:rod_quad_u235",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37206,11 +36714,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:rod_quad_np237",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37260,11 +36765,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 8
-          }
+          "id": "hbm:rod_quad_u238",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37314,11 +36816,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:rod_quad_pu238",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37368,11 +36867,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 10
-          }
+          "id": "hbm:rod_quad_pu239",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37422,11 +36918,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:rod_quad",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 14
-          }
+          "id": "hbm:rod_quad_uranium",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -37483,12 +36976,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:rod_co"
           }
         ]
       }
@@ -37527,12 +37015,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:rod_co60"
           }
         ]
       }
@@ -37571,12 +37054,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 15
-            },
-            "strict": false
+            "item": "hbm:rod_ra226"
           }
         ]
       }
@@ -37615,12 +37093,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 16
-            },
-            "strict": false
+            "item": "hbm:rod_ac227"
           }
         ]
       }
@@ -37659,12 +37132,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:rod_th232"
           }
         ]
       }
@@ -37703,12 +37171,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:rod_u235"
           }
         ]
       }
@@ -37747,12 +37210,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:rod_np237"
           }
         ]
       }
@@ -37791,12 +37249,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 8
-            },
-            "strict": false
+            "item": "hbm:rod_u238"
           }
         ]
       }
@@ -37835,12 +37288,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 9
-            },
-            "strict": false
+            "item": "hbm:rod_pu238"
           }
         ]
       }
@@ -37879,12 +37327,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 10
-            },
-            "strict": false
+            "item": "hbm:rod_pu239"
           }
         ]
       }
@@ -37923,12 +37366,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod",
-            "components": {
-              "hbm:legacy_metadata": 14
-            },
-            "strict": false
+            "item": "hbm:rod_uranium"
           }
         ]
       }
@@ -37967,12 +37405,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:rod_dual_co"
           }
         ]
       }
@@ -38011,12 +37444,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:rod_dual_co60"
           }
         ]
       }
@@ -38055,12 +37483,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 15
-            },
-            "strict": false
+            "item": "hbm:rod_dual_ra226"
           }
         ]
       }
@@ -38099,12 +37522,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 16
-            },
-            "strict": false
+            "item": "hbm:rod_dual_ac227"
           }
         ]
       }
@@ -38143,12 +37561,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:rod_dual_th232"
           }
         ]
       }
@@ -38187,12 +37600,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:rod_dual_u235"
           }
         ]
       }
@@ -38231,12 +37639,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:rod_dual_np237"
           }
         ]
       }
@@ -38275,12 +37678,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 8
-            },
-            "strict": false
+            "item": "hbm:rod_dual_u238"
           }
         ]
       }
@@ -38319,12 +37717,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 9
-            },
-            "strict": false
+            "item": "hbm:rod_dual_pu238"
           }
         ]
       }
@@ -38363,12 +37756,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 10
-            },
-            "strict": false
+            "item": "hbm:rod_dual_pu239"
           }
         ]
       }
@@ -38407,12 +37795,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_dual",
-            "components": {
-              "hbm:legacy_metadata": 14
-            },
-            "strict": false
+            "item": "hbm:rod_dual_uranium"
           }
         ]
       }
@@ -38451,12 +37834,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:rod_quad_co"
           }
         ]
       }
@@ -38495,12 +37873,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:rod_quad_co60"
           }
         ]
       }
@@ -38539,12 +37912,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 15
-            },
-            "strict": false
+            "item": "hbm:rod_quad_ra226"
           }
         ]
       }
@@ -38583,12 +37951,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 16
-            },
-            "strict": false
+            "item": "hbm:rod_quad_ac227"
           }
         ]
       }
@@ -38627,12 +37990,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:rod_quad_th232"
           }
         ]
       }
@@ -38671,12 +38029,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:rod_quad_u235"
           }
         ]
       }
@@ -38715,12 +38068,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:rod_quad_np237"
           }
         ]
       }
@@ -38759,12 +38107,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 8
-            },
-            "strict": false
+            "item": "hbm:rod_quad_u238"
           }
         ]
       }
@@ -38803,12 +38146,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 9
-            },
-            "strict": false
+            "item": "hbm:rod_quad_pu238"
           }
         ]
       }
@@ -38847,12 +38185,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 10
-            },
-            "strict": false
+            "item": "hbm:rod_quad_pu239"
           }
         ]
       }
@@ -38891,12 +38224,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:rod_quad",
-            "components": {
-              "hbm:legacy_metadata": 14
-            },
-            "strict": false
+            "item": "hbm:rod_quad_uranium"
           }
         ]
       }

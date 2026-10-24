@@ -7,36 +7,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "type": "neoforge:components",
-      "items": "hbm:circuit_star_component",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:circuit_star_component_chipset"
     },
     {
-      "type": "neoforge:components",
-      "items": "hbm:circuit_star_component",
-      "components": {
-        "hbm:legacy_metadata": 1
-      },
-      "strict": false
+      "item": "hbm:circuit_star_component_cpu"
     },
     {
-      "type": "neoforge:components",
-      "items": "hbm:circuit_star_component",
-      "components": {
-        "hbm:legacy_metadata": 2
-      },
-      "strict": false
+      "item": "hbm:circuit_star_component_ram"
     },
     {
-      "type": "neoforge:components",
-      "items": "hbm:circuit_star_component",
-      "components": {
-        "hbm:legacy_metadata": 3
-      },
-      "strict": false
+      "item": "hbm:circuit_star_component_card"
     },
     {
       "item": "hbm:circuit_star_piece_board_transistor"

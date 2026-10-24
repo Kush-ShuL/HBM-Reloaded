@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:grenade_fuze_impact",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C",
+    "S",
+    "F"
+  ],
+  "key": {
+    "C": {
+      "tag": "hbm:material_groups/smokeless/dusts"
+    },
+    "S": {
+      "tag": "hbm:bolts/steel"
+    },
+    "F": {
+      "item": "hbm:safety_fuse"
+    }
+  }
+}

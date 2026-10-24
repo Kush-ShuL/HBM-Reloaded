@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:armor_battery_mk3",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PWP",
+    "PCP",
+    "PWP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/gold"
+    },
+    "C": {
+      "item": "hbm:battery_pack_capacitor_tantalum"
+    },
+    "W": {
+      "tag": "hbm:wires/dense/mingrade"
+    }
+  }
+}

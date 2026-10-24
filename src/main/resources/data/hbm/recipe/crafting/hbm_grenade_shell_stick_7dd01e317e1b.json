@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:grenade_shell_stick",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "B",
+    "W"
+  ],
+  "key": {
+    "B": {
+      "tag": "hbm:bolts/steel"
+    },
+    "S": {
+      "tag": "hbm:gun_parts/shells/steel"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  }
+}

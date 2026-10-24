@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "hbm:grenade_fuze_s15",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    " F ",
+    "FFF"
+  ],
+  "key": {
+    "S": {
+      "tag": "hbm:bolts/steel"
+    },
+    "F": {
+      "item": "hbm:safety_fuse"
+    }
+  }
+}

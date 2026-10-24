@@ -90,7 +90,7 @@ public final class SourcePatternItems {
         if(id.equals(ResourceLocation.withDefaultNamespace("filled_map")))return new Identity("minecraft:filled_map",stack.get(DataComponents.MAP_ID),true);
         var mapped=id.getNamespace().equals("minecraft")?SourceTable.ITEMS.get(stack.getItem()):null;if(mapped!=null)return mapped;
         // Remaining dynamic providers keep their actual state; unrelated items are never joined by tags or appearance.
-        return new Identity(id.toString(),stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue()),stack.getItem() instanceof com.hbm.item.EnumMultiItem||stack.has(HbmHazards.LEGACY_METADATA.get()));
+        return new Identity(id.toString(),stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue()),stack.has(HbmHazards.LEGACY_METADATA.get()));
     }
     public static boolean sameItem(ItemStack first,ItemStack second){return identity(first).sourceItem.equals(identity(second).sourceItem);}
     public static boolean sameExact(ItemStack first,ItemStack second){var a=identity(first);var b=identity(second);return a.sourceItem.equals(b.sourceItem)&&Objects.equals(a.metadata,b.metadata);}

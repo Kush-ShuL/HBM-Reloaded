@@ -1,0 +1,24 @@
+{
+  "result": {
+    "id": "hbm:battery_pack_battery_redstone",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "PRP",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:plates/iron"
+    },
+    "R": {
+      "tag": "c:storage_blocks/redstone"
+    },
+    "P": {
+      "item": "hbm:plate_polymer"
+    }
+  }
+}

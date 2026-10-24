@@ -128,12 +128,12 @@ if(this.amountLoaded <= 0) this.tanks[0].setType(2, slots);
 				//only perform fission if the area has been loaded for 40 ticks or more
 				if(this.unloadDelay <= 0) {
 
-					if((typeLoaded == -1 || amountLoaded <= 0) && !slots[0].isEmpty() && slots[0].getItem() == PwrContent.FUEL.get()) {
+					if((typeLoaded == -1 || amountLoaded <= 0) && !slots[0].isEmpty() && PwrFuelItem.isFresh(slots[0])) {
 						typeLoaded = PwrFuelItem.metadata(slots[0]);
 						amountLoaded++;
 						removeItem(0, 1);
 						setChanged();
-					} else if(!slots[0].isEmpty() && slots[0].getItem() == PwrContent.FUEL.get() && PwrFuelItem.metadata(slots[0]) == typeLoaded && amountLoaded < rodCount){
+					} else if(!slots[0].isEmpty() && PwrFuelItem.isFresh(slots[0]) && PwrFuelItem.metadata(slots[0]) == typeLoaded && amountLoaded < rodCount){
 						amountLoaded++;
 						removeItem(0, 1);
 						setChanged();
@@ -277,7 +277,7 @@ public double getXOverE(double x, double d) {
     @Override public void setRemoved(){disconnect();if(level!=null&&level.isClientSide)CLIENT_REMOVED.accept(this);super.setRemoved();}
     private void meltDown(ServerLevel server){server.destroyBlock(worldPosition,false);double x=0,y=0,z=0;var corium=PwrContent.block("corium_block").defaultBlockState().setValue(com.hbm.block.fluid.LegacyFluidBlock.LEVEL,5);for(var pos:rods){if(server.getBlockEntity(pos) instanceof PwrAssemblyBlockEntity part)part.restore();server.setBlock(pos,corium,3);x+=pos.getX()+.5;y+=pos.getY()+.5;z+=pos.getZ()+.5;}x/=rods.size();y/=rods.size();z/=rods.size();server.explode(null,x,y,z,15F,true,Level.ExplosionInteraction.BLOCK);}
     public void setLevel(double value){rodTarget=Mth.clamp(value,0,100);setChanged();}
-    @Override public boolean canPlaceItem(int slot,ItemStack stack){return slot==0&&stack.is(PwrContent.FUEL.get());}
+    @Override public boolean canPlaceItem(int slot,ItemStack stack){return slot==0&&PwrFuelItem.isFresh(stack);}
     @Override public int[] getSlotsForFace(Direction side){return new int[]{0,1};}
     @Override public boolean canTakeItemThroughFace(int slot,ItemStack stack,Direction side){return slot==1;}
     @Override public FluidTank[] getAllTanks(){return tanks;}@Override public FluidTank[] getReceivingTanks(){return new FluidTank[]{tanks[0]};}@Override public FluidTank[] getSendingTanks(){return new FluidTank[]{tanks[1]};}

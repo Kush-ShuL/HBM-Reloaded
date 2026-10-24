@@ -36,10 +36,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:battery_pack",
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:battery_pack_capacitor_tantalum"
         }
       },
       "count": 1

@@ -19,5 +19,4 @@ public enum WatzFuelType {
     public final double yield=500000000;public final int colorLight,colorDark;public final double passive,heatEmission,mudContent;public final WatzFunction burnFunc,heatDiv,absorbFunc;
     WatzFuelType(int light,int dark,double passive,double heat,double mud,WatzFunction burn,WatzFunction thermal,WatzFunction absorb){colorLight=light;colorDark=dark;this.passive=passive;heatEmission=heat;mudContent=mud/2;burnFunc=burn;heatDiv=thermal;absorbFunc=absorb;}
     public String serialized(){return name().toLowerCase(Locale.US);}
-    public static WatzFuelType fromMeta(int meta){return values()[Math.abs(meta%values().length)];}
 }

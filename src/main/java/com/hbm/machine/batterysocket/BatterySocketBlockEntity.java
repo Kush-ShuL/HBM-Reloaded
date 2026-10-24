@@ -12,7 +12,6 @@ import com.hbm.energy.HbmEnergy;
 import com.hbm.energy.NodeConnection;
 import com.hbm.energy.PowerNode;
 import com.hbm.hazard.HbmHazards;
-import com.hbm.item.EnumMultiItem;
 import com.hbm.item.battery.HbmBattery;
 import com.hbm.item.battery.SelfChargingBatteryItem;
 import com.hbm.multiblock.DummyableBlock;
@@ -156,7 +155,7 @@ public final class BatterySocketBlockEntity extends BlockEntity implements World
     private static ConnectionPriority priority(int value) { return value>=0&&value<ConnectionPriority.values().length?ConnectionPriority.values()[value]:ConnectionPriority.LOWEST; }
     @Override public String computerType() { return "ntm_energy_storage"; }
     @Override public String[] computerMethods() { return new String[]{"getEnergyInfo","getPackInfo","getModeInfo","setModeLow","setModeHigh","setPriority","getInfo"}; }
-    private String packName() { ItemStack stack=slots.getFirst();if(stack.isEmpty()||!(stack.getItem() instanceof HbmBattery)) return "";return stack.getDescriptionId().replace("item.hbm.","item."); }
+    private String packName() { ItemStack stack=slots.getFirst();if(stack.isEmpty()||!(stack.getItem() instanceof HbmBattery)) return "";if(stack.getItem() instanceof com.hbm.item.battery.BatteryPackItem pack)return "item.battery_pack."+pack.type().name().toLowerCase(java.util.Locale.ROOT);if(stack.getItem() instanceof SelfChargingBatteryItem sc)return "item.battery_sc."+sc.variant(stack).name().toLowerCase(java.util.Locale.ROOT);return stack.getDescriptionId().replace("item.hbm.","item."); }
     private Object[] packInfo() { ItemStack stack=slots.getFirst();return stack.getItem() instanceof HbmBattery battery?new Object[]{packName(),battery.getChargeRate(stack),battery.getDischargeRate(stack)}:new Object[]{"",0,0}; }
     @Override public Object[] callComputer(String method,ComputerArguments arguments) throws ComputerException {
         return switch(method) {

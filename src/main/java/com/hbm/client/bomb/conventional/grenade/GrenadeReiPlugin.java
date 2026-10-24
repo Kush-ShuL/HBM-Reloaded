@@ -1,6 +1,5 @@
 package com.hbm.client.bomb.conventional.grenade;
 import com.hbm.bomb.conventional.grenade.*;
-import com.hbm.item.EnumMultiItem;
 import java.util.*;
 import me.shedaniel.math.*;
 import me.shedaniel.rei.api.client.gui.Renderer;
@@ -24,7 +23,7 @@ public final class GrenadeReiPlugin implements REIClientPlugin{
  @Override public void registerCategories(CategoryRegistry event){event.add(new Category());event.addWorkstations(TYPE,EntryStacks.of(Items.CRAFTING_TABLE));}
  @Override public void registerDisplays(DisplayRegistry event){for(var recipe:GrenadeRecipes.all())event.add(new Display(recipe));}
  @Override public void registerEntries(EntryRegistry event){GrenadeContent.creativeStacks().stream().skip(1).forEach(stack->event.addEntry(EntryStacks.of(stack)));}
- @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->GrenadeRecipes.key(stack),GrenadeContent.UNIVERSAL.get());for(var item:GrenadeContent.components())event.register((context,stack)->((EnumMultiItem)item).ordinal(stack),item);}
+ @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->GrenadeRecipes.key(stack),GrenadeContent.UNIVERSAL.get());}
  static final class Display extends BasicDisplay{
   final GrenadeRecipes.Assembly recipe;Display(GrenadeRecipes.Assembly recipe){super(recipe.inputs().stream().map(stack->EntryIngredient.of(EntryStacks.of(stack))).toList(),List.of(EntryIngredient.of(EntryStacks.of(recipe.output()))));this.recipe=recipe;}
   @Override public CategoryIdentifier<Display> getCategoryIdentifier(){return TYPE;}

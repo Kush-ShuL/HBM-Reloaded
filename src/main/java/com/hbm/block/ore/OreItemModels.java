@@ -1,7 +1,5 @@
 package com.hbm.block.ore;
 
-import com.hbm.registry.HbmOres;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -17,12 +15,6 @@ public final class OreItemModels {
     @SubscribeEvent public static void setup(FMLClientSetupEvent event) {
         NeoForge.EVENT_BUS.addListener(AlexandriteSprites::tick);
         NeoForge.EVENT_BUS.addListener(AlexandriteSprites::frame);
-        event.enqueueWork(() -> {
-            ItemProperties.register(HbmOres.DRILLBIT.get(), ResourceLocation.fromNamespaceAndPath("hbm", "legacy_metadata"), (stack, level, entity, seed) -> HbmOres.DRILLBIT.get().ordinal(stack));
-            HbmOres.allItems().forEach(holder -> {
-            if (holder.get() instanceof LegacyOreItem item && item.spec().multi())
-                ItemProperties.register(item, ResourceLocation.fromNamespaceAndPath("hbm", "legacy_metadata"), (stack, level, entity, seed) -> item.ordinal(stack));
-            });
-        });
+
     }
 }

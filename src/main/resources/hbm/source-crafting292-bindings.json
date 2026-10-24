@@ -434,11 +434,8 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:circuit_star_component",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:circuit_star_component_chipset",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -485,11 +482,8 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:circuit_star_component",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:circuit_star_component_cpu",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -533,11 +527,8 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:circuit_star_component",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:circuit_star_component_ram",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -578,11 +569,8 @@
           "variantContext": {},
           "recipe": {
             "result": {
-              "id": "hbm:circuit_star_component",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:circuit_star_component_card",
+              "count": 1
             },
             "type": "minecraft:crafting_shapeless",
             "category": "misc",
@@ -621,36 +609,16 @@
             "category": "misc",
             "ingredients": [
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_component",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:circuit_star_component_chipset"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_component",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:circuit_star_component_cpu"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_component",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:circuit_star_component_ram"
               },
               {
-                "type": "neoforge:components",
-                "items": "hbm:circuit_star_component",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:circuit_star_component_card"
               },
               {
                 "item": "hbm:circuit_star_piece_board_transistor"
@@ -3602,11 +3570,8 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:circuit_star_component",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:circuit_star_component_chipset",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -3652,11 +3617,8 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:circuit_star_component",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:circuit_star_component_cpu",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -3699,11 +3661,8 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:circuit_star_component",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:circuit_star_component_ram",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -3743,11 +3702,8 @@
       "variantContext": {},
       "recipe": {
         "result": {
-          "id": "hbm:circuit_star_component",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:circuit_star_component_card",
+          "count": 1
         },
         "type": "minecraft:crafting_shapeless",
         "category": "misc",
@@ -3785,36 +3741,16 @@
         "category": "misc",
         "ingredients": [
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_component",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:circuit_star_component_chipset"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_component",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:circuit_star_component_cpu"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_component",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:circuit_star_component_ram"
           },
           {
-            "type": "neoforge:components",
-            "items": "hbm:circuit_star_component",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:circuit_star_component_card"
           },
           {
             "item": "hbm:circuit_star_piece_board_transistor"

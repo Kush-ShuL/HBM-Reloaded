@@ -76,7 +76,7 @@ public final class CommandWikiRender {
         for (Item item : BuiltInRegistries.ITEM) {
             var id = BuiltInRegistries.ITEM.getKey(item);
             if (!id.getNamespace().equals("hbm") || item == HbmCreativeTabs.UI_ICON.get()
-                    || id.getPath().equals("achievement_icon")) continue;
+                    || item instanceof com.hbm.item.FixedEnumItem fixed && fixed.family().equals("achievement_icon")) continue;
             if (!item.getClass().getSimpleName().equalsIgnoreCase(type)
                     && (!(item instanceof BlockItem blockItem)
                     || !blockItem.getBlock().getClass().getSimpleName().equalsIgnoreCase(type))) continue;

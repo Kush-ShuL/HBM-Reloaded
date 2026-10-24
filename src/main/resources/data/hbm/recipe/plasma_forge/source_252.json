@@ -109,10 +109,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:drive_disk_orbitdata_processed"
         }
       },
       "count": 16
@@ -216,10 +213,7 @@
       "ingredient": {
         "type": "hbm:alloy_legacy_stack",
         "stack": {
-          "id": "hbm:drive",
-          "components": {
-            "hbm:legacy_metadata": 9
-          }
+          "id": "hbm:drive_disk_orbitdata_processed"
         }
       },
       "count": 64
