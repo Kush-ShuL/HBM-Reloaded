@@ -131,7 +131,7 @@ public final class GeneralModes {
         @Override public Type<? extends CustomPacketPayload> type(){return TYPE;}
     }
     public static void register(IEventBus bus,ModContainer container){SourceMekanismCrafting.register();if(net.neoforged.fml.ModList.get().isLoaded("mekanism"))com.hbm.registry.HbmOreDictionary.registerName("alloyUltimate");CONDITIONS.register(bus);container.registerConfig(ModConfig.Type.COMMON,SPEC,"hbm-general-common.toml");bus.addListener(GeneralModes::payloads);NeoForge.EVENT_BUS.addListener((ServerAboutToStartEvent event)->clearRemote());NeoForge.EVENT_BUS.addListener(GeneralModes::synchronize);}
-    private static void payloads(RegisterPayloadHandlersEvent event){event.registrar("1").playToClient(Snapshot.TYPE,Snapshot.CODEC,(packet,context)->context.enqueueWork(()->remote=packet));}
+    private static void payloads(RegisterPayloadHandlersEvent event){event.registrar("2").playToClient(Snapshot.TYPE,Snapshot.CODEC,(packet,context)->context.enqueueWork(()->remote=packet));}
     private static void synchronize(OnDatapackSyncEvent event){var snapshot=local(event.getPlayerList().getServer());if(event.getPlayer()!=null)PacketDistributor.sendToPlayer(event.getPlayer(),snapshot);else for(var player:event.getPlayerList().getPlayers())PacketDistributor.sendToPlayer(player,snapshot);}
     /** 精密装配配方装载完成后，经同一个模式包同步最新的真实徽章状态。 */
     public static void synchronizeCurrentState(net.minecraft.server.MinecraftServer server){
