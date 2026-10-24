@@ -16,6 +16,8 @@ public final class ClientEffectsConfig {
     private static final ModConfigSpec.BooleanValue COOLING_TOWER_STEAM_PARTICLES;
     // 每次绘制单台太阳能锅炉时，最多显示的定日镜光束数量；默认250。
     private static final ModConfigSpec.IntValue SOLAR_BOILER_MAX_HELIOSTAT_BEAMS;
+    // 打开主菜单时，是否小概率换成本模组的随机标语；默认开启。
+    private static final ModConfigSpec.BooleanValue CUSTOM_MAIN_MENU_SPLASHES;
 
     static {
         var builder = new ModConfigSpec.Builder();
@@ -35,6 +37,10 @@ public final class ClientEffectsConfig {
                 "每次绘制单台太阳能锅炉时，最多显示的定日镜光束数量。默认250；0或负数不绘制光束；范围-2147483648至2147483647。",
                 "光束仍需开启精美画质。只限制可见光束，不改变定日镜数量、对准目标、太阳能热量或锅炉处理。")
                 .defineInRange(java.util.List.of("solarBoiler", "maxHeliostatBeams"), 250, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        CUSTOM_MAIN_MENU_SPLASHES = builder.comment(
+                "打开主菜单时，小概率换成本模组的随机标语。默认true；关闭后不再进行新的替换。",
+                "已替换的当前主菜单对象保留现有文字；不改变 Minecraft 自身隐藏标语的选项。")
+                .define(java.util.List.of("mainMenu", "customSplashesEnabled"), true);
         SPEC = builder.build();
     }
 
@@ -49,6 +55,8 @@ public final class ClientEffectsConfig {
     public static boolean coolingTowerSteamParticlesEnabled() { return !SPEC.isLoaded() || COOLING_TOWER_STEAM_PARTICLES.get(); }
 
     public static int solarBoilerHeliostatBeamLimit() { return SPEC.isLoaded() ? SOLAR_BOILER_MAX_HELIOSTAT_BEAMS.get() : 250; }
+
+    public static boolean mainMenuCustomSplashesEnabled() { return !SPEC.isLoaded() || CUSTOM_MAIN_MENU_SPLASHES.get(); }
 
     private ClientEffectsConfig() {}
 }
