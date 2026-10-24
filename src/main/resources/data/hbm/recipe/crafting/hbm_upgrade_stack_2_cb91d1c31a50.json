@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:upgrade_stack",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 1
-    }
+    "id": "hbm:upgrade_stack_2",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -21,12 +18,7 @@
       "item": "hbm:part_generic_piston_hydraulic"
     },
     "U": {
-      "type": "neoforge:components",
-      "items": "hbm:upgrade_stack",
-      "components": {
-        "hbm:legacy_metadata": 0
-      },
-      "strict": false
+      "item": "hbm:upgrade_stack_1"
     }
   }
 }

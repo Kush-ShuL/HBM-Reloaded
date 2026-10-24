@@ -1,10 +1,7 @@
 {
   "result": {
-    "id": "hbm:upgrade_ejector",
-    "count": 1,
-    "components": {
-      "hbm:legacy_metadata": 0
-    }
+    "id": "hbm:upgrade_stack_3",
+    "count": 1
   },
   "type": "minecraft:crafting_shaped",
   "category": "misc",
@@ -15,13 +12,13 @@
   ],
   "key": {
     "C": {
-      "item": "hbm:plate_copper"
+      "item": "hbm:circuit_chip"
     },
     "P": {
-      "item": "hbm:motor"
+      "item": "hbm:part_generic_piston_electric"
     },
     "U": {
-      "item": "hbm:upgrade_template"
+      "item": "hbm:upgrade_stack_2"
     }
   }
 }

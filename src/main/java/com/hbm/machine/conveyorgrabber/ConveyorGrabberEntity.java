@@ -29,10 +29,10 @@ public final class ConveyorGrabberEntity extends CraneBaseEntity implements Cran
     @Override public boolean canPlaceItem(int slot,ItemStack stack){return false;}
     @Override protected void serverTick(ServerLevel world){
         int delay=20;
-        if(slots[10].is(ConveyorPackagingContent.EJECTOR.get()))delay=switch(CraneMetaUpgradeItem.metadata(slots[10])){case 0->10;case 1->5;case 2->2;default->20;};
+        if(CraneMetaUpgradeItem.isEjector(slots[10]))delay=switch(CraneMetaUpgradeItem.level(slots[10])){case 0->10;case 1->5;case 2->2;default->20;};
         if(world.getGameTime()>=lastGrabbedTick+delay&&!world.hasNeighborSignal(worldPosition)){
             int amount=1;
-            if(slots[9].is(ConveyorPackagingContent.STACK.get()))amount=switch(CraneMetaUpgradeItem.metadata(slots[9])){case 0->4;case 1->16;case 2->64;default->1;};
+            if(CraneMetaUpgradeItem.isStack(slots[9]))amount=switch(CraneMetaUpgradeItem.level(slots[9])){case 0->4;case 1->16;case 2->64;default->1;};
             var input=getInputSide();var output=getOutputSide();var target=relative(worldPosition,output);var block=world.getBlockState(target).getBlock();
             if(block instanceof IConveyorBelt belt){
                 for(var item:world.getEntitiesOfClass(MovingItem.class,inputBox(world,input))){

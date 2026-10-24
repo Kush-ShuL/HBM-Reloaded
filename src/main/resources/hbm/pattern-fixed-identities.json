@@ -2739,6 +2739,42 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:upgrade_ejector_1",
+      "sourceFamily": "ModItems.upgrade_ejector",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:upgrade_ejector_2",
+      "sourceFamily": "ModItems.upgrade_ejector",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:upgrade_ejector_3",
+      "sourceFamily": "ModItems.upgrade_ejector",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:upgrade_stack_1",
+      "sourceFamily": "ModItems.upgrade_stack",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:upgrade_stack_2",
+      "sourceFamily": "ModItems.upgrade_stack",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:upgrade_stack_3",
+      "sourceFamily": "ModItems.upgrade_stack",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:weapon_mod_caliber_bmg50",
       "sourceFamily": "ModItems.weapon_mod_caliber",
       "sourceMetadata": 7,

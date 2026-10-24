@@ -1,7 +1,7 @@
 package com.hbm.machine.conveyorextraction;
 
 import com.hbm.conveyor.crane.CraneBaseEntity;
-import com.hbm.machine.conveyorpackaging.ConveyorPackagingContent;
+import com.hbm.machine.conveyorpackaging.CraneMetaUpgradeItem;
 import com.hbm.machine.precisionassembler.PrecisionUpgrades;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -29,7 +29,7 @@ public final class CraneExtractionMenu extends AbstractContainerMenu {
     @Override public ItemStack quickMoveStack(Player player,int index){
         if(index<0||index>=slots.size()||extractor&&index<9)return ItemStack.EMPTY;var slot=slots.get(index);if(!slot.hasItem())return ItemStack.EMPTY;var current=slot.getItem();var before=current.copy();
         if(index<size){if(!moveItemStackTo(current,size,slots.size(),true))return ItemStack.EMPTY;}
-        else if(extractor){int start=current.is(ConveyorPackagingContent.STACK.get())?18:current.is(ConveyorPackagingContent.EJECTOR.get())?19:9;int end=start==18?19:start==19?20:size;if(!moveItemStackTo(current,start,end,false))return ItemStack.EMPTY;return ItemStack.EMPTY;}
+        else if(extractor){int start=CraneMetaUpgradeItem.isStack(current)?18:CraneMetaUpgradeItem.isEjector(current)?19:9;int end=start==18?19:start==19?20:size;if(!moveItemStackTo(current,start,end,false))return ItemStack.EMPTY;return ItemStack.EMPTY;}
         else if(!moveItemStackTo(current,0,size,false))return ItemStack.EMPTY;
         if(current.isEmpty())slot.set(ItemStack.EMPTY);else slot.setChanged();slot.onTake(player,current);return before;
     }

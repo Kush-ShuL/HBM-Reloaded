@@ -1,6 +1,6 @@
 package com.hbm.machine.conveyorgrabber;
 
-import com.hbm.machine.conveyorpackaging.ConveyorPackagingContent;
+import com.hbm.machine.conveyorpackaging.CraneMetaUpgradeItem;
 import com.hbm.machine.precisionassembler.PrecisionUpgrades;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -32,7 +32,7 @@ public final class ConveyorGrabberMenu extends AbstractContainerMenu {
         if(index<9||index>=slots.size())return ItemStack.EMPTY;var slot=slots.get(index);if(!slot.hasItem())return ItemStack.EMPTY;
         var current=slot.getItem();var before=current.copy();
         if(index<11){if(!moveItemStackTo(current,11,slots.size(),true))return ItemStack.EMPTY;}
-        else{if(before.is(ConveyorPackagingContent.STACK.get())){if(!moveItemStackTo(current,9,10,false))return ItemStack.EMPTY;}else if(before.is(ConveyorPackagingContent.EJECTOR.get())){if(!moveItemStackTo(current,10,11,false))return ItemStack.EMPTY;}return ItemStack.EMPTY;}
+        else{if(CraneMetaUpgradeItem.isStack(before)){if(!moveItemStackTo(current,9,10,false))return ItemStack.EMPTY;}else if(CraneMetaUpgradeItem.isEjector(before)){if(!moveItemStackTo(current,10,11,false))return ItemStack.EMPTY;}return ItemStack.EMPTY;}
         if(current.isEmpty())slot.set(ItemStack.EMPTY);else slot.setChanged();slot.onTake(player,current);return before;
     }
     @Override public boolean canDragTo(Slot slot){return slot.container!=grabber||slot.getContainerSlot()>=9;}

@@ -93,8 +93,8 @@
     },
     {
       "kind": "item",
-      "symbol": "upgrade_stack",
-      "id": "hbm:upgrade_stack",
+      "symbol": "upgrade_stack_1",
+      "id": "hbm:upgrade_stack_1",
       "legacyRegistryId": "hbm:item.upgrade_stack",
       "originalClass": "ItemMetaUpgrade",
       "source": {
@@ -115,30 +115,85 @@
         }
       ],
       "creativeTab": "control",
-      "legacyMetadata": [
-        0,
-        1,
-        2
-      ],
-      "metadataRange": [
-        0,
-        2
-      ],
-      "readyMetadata": [
-        0,
-        1,
-        2
-      ],
-      "names": [
-        "1",
-        "2",
-        "3"
-      ]
+      "sourceClass": "com.hbm.items.machine.ItemMetaUpgrade",
+      "sourceField": "ModItems.upgrade_stack",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.upgrade_stack",
+      "maxStackSize": 1,
+      "upgradeType": "SPECIAL",
+      "upgradeTier": 0
     },
     {
       "kind": "item",
-      "symbol": "upgrade_ejector",
-      "id": "hbm:upgrade_ejector",
+      "symbol": "upgrade_stack_2",
+      "id": "hbm:upgrade_stack_2",
+      "legacyRegistryId": "hbm:item.upgrade_stack",
+      "originalClass": "ItemMetaUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3764
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5232
+          },
+          "expression": "GameRegistry.registerItem(upgrade_stack, upgrade_stack.getUnlocalizedName())",
+          "arguments": [
+            "upgrade_stack",
+            "upgrade_stack.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "control",
+      "sourceClass": "com.hbm.items.machine.ItemMetaUpgrade",
+      "sourceField": "ModItems.upgrade_stack",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.upgrade_stack",
+      "maxStackSize": 1,
+      "upgradeType": "SPECIAL",
+      "upgradeTier": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_stack_3",
+      "id": "hbm:upgrade_stack_3",
+      "legacyRegistryId": "hbm:item.upgrade_stack",
+      "originalClass": "ItemMetaUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3764
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5232
+          },
+          "expression": "GameRegistry.registerItem(upgrade_stack, upgrade_stack.getUnlocalizedName())",
+          "arguments": [
+            "upgrade_stack",
+            "upgrade_stack.getUnlocalizedName()"
+          ]
+        }
+      ],
+      "creativeTab": "control",
+      "sourceClass": "com.hbm.items.machine.ItemMetaUpgrade",
+      "sourceField": "ModItems.upgrade_stack",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.upgrade_stack",
+      "maxStackSize": 1,
+      "upgradeType": "SPECIAL",
+      "upgradeTier": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_ejector_1",
+      "id": "hbm:upgrade_ejector_1",
       "legacyRegistryId": "hbm:item.upgrade_ejector",
       "originalClass": "ItemMetaUpgrade",
       "source": {
@@ -159,25 +214,80 @@
         }
       ],
       "creativeTab": "control",
-      "legacyMetadata": [
-        0,
-        1,
-        2
+      "sourceClass": "com.hbm.items.machine.ItemMetaUpgrade",
+      "sourceField": "ModItems.upgrade_ejector",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.upgrade_ejector",
+      "maxStackSize": 1,
+      "upgradeType": "SPECIAL",
+      "upgradeTier": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_ejector_2",
+      "id": "hbm:upgrade_ejector_2",
+      "legacyRegistryId": "hbm:item.upgrade_ejector",
+      "originalClass": "ItemMetaUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3765
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5233
+          },
+          "expression": "GameRegistry.registerItem(upgrade_ejector, upgrade_ejector.getUnlocalizedName())",
+          "arguments": [
+            "upgrade_ejector",
+            "upgrade_ejector.getUnlocalizedName()"
+          ]
+        }
       ],
-      "metadataRange": [
-        0,
-        2
+      "creativeTab": "control",
+      "sourceClass": "com.hbm.items.machine.ItemMetaUpgrade",
+      "sourceField": "ModItems.upgrade_ejector",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.upgrade_ejector",
+      "maxStackSize": 1,
+      "upgradeType": "SPECIAL",
+      "upgradeTier": 0
+    },
+    {
+      "kind": "item",
+      "symbol": "upgrade_ejector_3",
+      "id": "hbm:upgrade_ejector_3",
+      "legacyRegistryId": "hbm:item.upgrade_ejector",
+      "originalClass": "ItemMetaUpgrade",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3765
+      },
+      "registration": [
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+            "line": 5233
+          },
+          "expression": "GameRegistry.registerItem(upgrade_ejector, upgrade_ejector.getUnlocalizedName())",
+          "arguments": [
+            "upgrade_ejector",
+            "upgrade_ejector.getUnlocalizedName()"
+          ]
+        }
       ],
-      "readyMetadata": [
-        0,
-        1,
-        2
-      ],
-      "names": [
-        "1",
-        "2",
-        "3"
-      ]
+      "creativeTab": "control",
+      "sourceClass": "com.hbm.items.machine.ItemMetaUpgrade",
+      "sourceField": "ModItems.upgrade_ejector",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.upgrade_ejector",
+      "maxStackSize": 1,
+      "upgradeType": "SPECIAL",
+      "upgradeTier": 0
     }
   ]
 }
