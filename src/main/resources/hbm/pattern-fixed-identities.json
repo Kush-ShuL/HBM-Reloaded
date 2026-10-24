@@ -2719,6 +2719,12 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:flask_infusion_shield",
+      "sourceFamily": "ModItems.flask_infusion",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:glyphid_base_infested",
       "sourceFamily": "ModBlocks.glyphid_base",
       "sourceMetadata": 1,
@@ -2995,6 +3001,18 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:marshmallow",
+      "sourceFamily": "ModItems.marshmallow",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:marshmallow_roasted",
+      "sourceFamily": "ModItems.marshmallow",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:mold/barrel_heavy",
       "sourceFamily": "ModItems.mold",
       "sourceMetadata": 23,
@@ -3148,6 +3166,318 @@
       "id": "hbm:mold/wires_dense",
       "sourceFamily": "ModItems.mold",
       "sourceMetadata": 21,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_thorium",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_tiny_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_tiny_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_tiny_thorium",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_tiny_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_tiny_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_depleted_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_long_depleted",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_long",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_long",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_thorium",
+      "sourceFamily": "ModItems.nuclear_waste_long",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_tiny_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_long_tiny",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_tiny_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_long_tiny",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_tiny_thorium",
+      "sourceFamily": "ModItems.nuclear_waste_long_tiny",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_tiny_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_long_tiny",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_tiny_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_long_tiny",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_long",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_long_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_long",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_americium242",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_americium242",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_plutonium239",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_plutonium240",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_plutonium241",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_americium242",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium239",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium240",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium241",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_tiny_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_depleted_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_short_depleted",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_plutonium239",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_plutonium240",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_plutonium241",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_americium242",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 6,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_neptunium",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_plutonium239",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_plutonium240",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_plutonium241",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_schrabidium",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 7,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_tiny_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_short_tiny",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_uranium233",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:nuclear_waste_short_uranium235",
+      "sourceFamily": "ModItems.nuclear_waste_short",
+      "sourceMetadata": 0,
       "hasSubtypes": true
     },
     {
@@ -4309,6 +4639,36 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:plushie_derg",
+      "sourceFamily": "ModBlocks.plushie",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plushie_hundun",
+      "sourceFamily": "ModBlocks.plushie",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plushie_none",
+      "sourceFamily": "ModBlocks.plushie",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plushie_numbernine",
+      "sourceFamily": "ModBlocks.plushie",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:plushie_yomi",
+      "sourceFamily": "ModBlocks.plushie",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:powder_ash_coal",
       "sourceFamily": "ModItems.powder_ash",
       "sourceMetadata": 1,
@@ -4693,6 +5053,42 @@
       "hasSubtypes": true
     },
     {
+      "id": "hbm:snowglobe_lucky38",
+      "sourceFamily": "ModBlocks.snowglobe",
+      "sourceMetadata": 3,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:snowglobe_none",
+      "sourceFamily": "ModBlocks.snowglobe",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:snowglobe_prydwen",
+      "sourceFamily": "ModBlocks.snowglobe",
+      "sourceMetadata": 5,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:snowglobe_rivetcity",
+      "sourceFamily": "ModBlocks.snowglobe",
+      "sourceMetadata": 1,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:snowglobe_sierramadre",
+      "sourceFamily": "ModBlocks.snowglobe",
+      "sourceMetadata": 4,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:snowglobe_tenpennytower",
+      "sourceFamily": "ModBlocks.snowglobe",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
       "id": "hbm:stalactite_asbestos",
       "sourceFamily": "ModBlocks.stalactite",
       "sourceMetadata": 1,
@@ -4824,6 +5220,24 @@
       "id": "hbm:stone_resource_sulfur",
       "sourceFamily": "ModBlocks.stone_resource",
       "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:tem_flakes_discount",
+      "sourceFamily": "ModItems.tem_flakes",
+      "sourceMetadata": 0,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:tem_flakes_expensive",
+      "sourceFamily": "ModItems.tem_flakes",
+      "sourceMetadata": 2,
+      "hasSubtypes": true
+    },
+    {
+      "id": "hbm:tem_flakes_regular",
+      "sourceFamily": "ModItems.tem_flakes",
+      "sourceMetadata": 1,
       "hasSubtypes": true
     },
     {

@@ -2,286 +2,260 @@
   "source": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
   "fuels": [
     {
-      "input": "nuclear_waste_short",
-      "metadata": 0,
+      "input": "hbm:nuclear_waste_short_uranium235",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_uranium235",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 1,
+      "input": "hbm:nuclear_waste_short_uranium233",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_uranium233",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 2,
+      "input": "hbm:nuclear_waste_short_neptunium",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_neptunium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 3,
+      "input": "hbm:nuclear_waste_short_plutonium239",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_plutonium239",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 4,
+      "input": "hbm:nuclear_waste_short_plutonium240",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_plutonium240",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 5,
+      "input": "hbm:nuclear_waste_short_plutonium241",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_plutonium241",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 6,
+      "input": "hbm:nuclear_waste_short_americium242",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_americium242",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short",
-      "metadata": 7,
+      "input": "hbm:nuclear_waste_short_schrabidium",
       "production": 1500,
       "duration": 36000,
-      "output": "nuclear_waste_short_depleted",
+      "output": "hbm:nuclear_waste_short_depleted_schrabidium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 244
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 0,
+      "input": "hbm:nuclear_waste_short_tiny_uranium235",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_uranium235",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 1,
+      "input": "hbm:nuclear_waste_short_tiny_uranium233",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_uranium233",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 2,
+      "input": "hbm:nuclear_waste_short_tiny_neptunium",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_neptunium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 3,
+      "input": "hbm:nuclear_waste_short_tiny_plutonium239",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_plutonium239",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 4,
+      "input": "hbm:nuclear_waste_short_tiny_plutonium240",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_plutonium240",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 5,
+      "input": "hbm:nuclear_waste_short_tiny_plutonium241",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_plutonium241",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 6,
+      "input": "hbm:nuclear_waste_short_tiny_americium242",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_americium242",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_short_tiny",
-      "metadata": 7,
+      "input": "hbm:nuclear_waste_short_tiny_schrabidium",
       "production": 150,
       "duration": 3600,
-      "output": "nuclear_waste_short_depleted_tiny",
+      "output": "hbm:nuclear_waste_short_depleted_tiny_schrabidium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 245
       }
     },
     {
-      "input": "nuclear_waste_long",
-      "metadata": 0,
+      "input": "hbm:nuclear_waste_long_uranium235",
       "production": 500,
       "duration": 144000,
-      "output": "nuclear_waste_long_depleted",
+      "output": "hbm:nuclear_waste_long_depleted_uranium235",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 248
       }
     },
     {
-      "input": "nuclear_waste_long",
-      "metadata": 1,
+      "input": "hbm:nuclear_waste_long_uranium233",
       "production": 500,
       "duration": 144000,
-      "output": "nuclear_waste_long_depleted",
+      "output": "hbm:nuclear_waste_long_depleted_uranium233",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 248
       }
     },
     {
-      "input": "nuclear_waste_long",
-      "metadata": 2,
+      "input": "hbm:nuclear_waste_long_neptunium",
       "production": 500,
       "duration": 144000,
-      "output": "nuclear_waste_long_depleted",
+      "output": "hbm:nuclear_waste_long_depleted_neptunium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 248
       }
     },
     {
-      "input": "nuclear_waste_long",
-      "metadata": 3,
+      "input": "hbm:nuclear_waste_long_thorium",
       "production": 500,
       "duration": 144000,
-      "output": "nuclear_waste_long_depleted",
+      "output": "hbm:nuclear_waste_long_depleted_thorium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 248
       }
     },
     {
-      "input": "nuclear_waste_long",
-      "metadata": 4,
+      "input": "hbm:nuclear_waste_long_schrabidium",
       "production": 500,
       "duration": 144000,
-      "output": "nuclear_waste_long_depleted",
+      "output": "hbm:nuclear_waste_long_depleted_schrabidium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 248
       }
     },
     {
-      "input": "nuclear_waste_long_tiny",
-      "metadata": 0,
+      "input": "hbm:nuclear_waste_long_tiny_uranium235",
       "production": 50,
       "duration": 14400,
-      "output": "nuclear_waste_long_depleted_tiny",
+      "output": "hbm:nuclear_waste_long_depleted_tiny_uranium235",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 249
       }
     },
     {
-      "input": "nuclear_waste_long_tiny",
-      "metadata": 1,
+      "input": "hbm:nuclear_waste_long_tiny_uranium233",
       "production": 50,
       "duration": 14400,
-      "output": "nuclear_waste_long_depleted_tiny",
+      "output": "hbm:nuclear_waste_long_depleted_tiny_uranium233",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 249
       }
     },
     {
-      "input": "nuclear_waste_long_tiny",
-      "metadata": 2,
+      "input": "hbm:nuclear_waste_long_tiny_neptunium",
       "production": 50,
       "duration": 14400,
-      "output": "nuclear_waste_long_depleted_tiny",
+      "output": "hbm:nuclear_waste_long_depleted_tiny_neptunium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 249
       }
     },
     {
-      "input": "nuclear_waste_long_tiny",
-      "metadata": 3,
+      "input": "hbm:nuclear_waste_long_tiny_thorium",
       "production": 50,
       "duration": 14400,
-      "output": "nuclear_waste_long_depleted_tiny",
+      "output": "hbm:nuclear_waste_long_depleted_tiny_thorium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 249
       }
     },
     {
-      "input": "nuclear_waste_long_tiny",
-      "metadata": 4,
+      "input": "hbm:nuclear_waste_long_tiny_schrabidium",
       "production": 50,
       "duration": 14400,
-      "output": "nuclear_waste_long_depleted_tiny",
+      "output": "hbm:nuclear_waste_long_depleted_tiny_schrabidium",
       "source": {
         "file": "legacy/src/main/java/com/hbm/tileentity/machine/TileEntityMachineRadGen.java",
         "line": 249

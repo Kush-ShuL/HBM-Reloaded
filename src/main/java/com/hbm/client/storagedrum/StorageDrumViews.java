@@ -17,7 +17,7 @@ final class StorageDrumViews {
         for (int family : new int[]{2, 1}) {
             var rules = StorageDrumDecay.RULES.stream().filter(rule -> rule.isotopeFamily() == family).toList();
             for (int meta = 0; meta < rules.getFirst().variants(); meta++) for (var rule : rules) {
-                result.add(new Row(StorageDrumDecay.stack(rule.input(), meta), StorageDrumDecay.stack(rule.output(), meta)));
+                result.add(new Row(rule.inputStack(meta), rule.outputStack(meta)));
             }
         }
         return List.copyOf(result);

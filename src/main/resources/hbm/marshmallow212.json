@@ -4,38 +4,35 @@
       "kind": "item",
       "symbol": "marshmallow",
       "id": "hbm:marshmallow",
-      "legacyRegistryId": "hbm:item.marshmallow",
+      "sourceField": "ModItems.marshmallow",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.marshmallow",
       "originalClass": "ItemMarshmallow",
+      "maxStackSize": 1,
+      "full3D": true,
+      "creativeTab": "consumable",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3636
-      },
-      "registrationSource": [
-        {
-          "source": {
-            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
-            "line": 6002
-          },
-          "expression": "GameRegistry.registerItem(marshmallow, marshmallow.getUnlocalizedName())",
-          "arguments": [
-            "marshmallow",
-            "marshmallow.getUnlocalizedName()"
-          ]
-        }
-      ],
-      "registeredBy": "com.hbm.item.marshmallow.MarshmallowContent",
-      "creativeTab": "consumable",
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "marshmallow_roasted",
+      "id": "hbm:marshmallow_roasted",
+      "sourceField": "ModItems.marshmallow",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "sourceLegacyRegistryId": "hbm:item.marshmallow",
+      "originalClass": "ItemMarshmallow",
       "maxStackSize": 1,
-      "sourceMetadata": [
-        0,
-        1
-      ],
-      "metadataRange": [
-        0,
-        1
-      ],
       "full3D": true,
-      "food": null
+      "creativeTab": "consumable",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3636
+      }
     },
     {
       "kind": "item",

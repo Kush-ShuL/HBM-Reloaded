@@ -1,0 +1,22 @@
+{
+  "result": {
+    "id": "hbm:plushie_yomi",
+    "count": 1
+  },
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LCR"
+  ],
+  "key": {
+    "L": {
+      "tag": "c:crops/carrot"
+    },
+    "C": {
+      "item": "hbm:rag"
+    },
+    "R": {
+      "item": "hbm:circuit_vacuum_tube"
+    }
+  }
+}

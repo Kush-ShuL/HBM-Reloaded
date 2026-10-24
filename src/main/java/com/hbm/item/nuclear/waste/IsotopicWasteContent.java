@@ -1,41 +1,29 @@
 package com.hbm.item.nuclear.waste;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-/** Eight actual source registrations; existing generic/vitrified waste and RBMK pellets stay canonical. */
+/** The eight actual source forms, each registered once per fixed isotope. */
 public final class IsotopicWasteContent {
-    private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems("hbm");
-    public static final DeferredItem<LongLivedWasteItem> LONG = ITEMS.register("nuclear_waste_long", LongLivedWasteItem::new);
-    public static final DeferredItem<LongLivedWasteItem> LONG_TINY = ITEMS.register("nuclear_waste_long_tiny", LongLivedWasteItem::new);
-    public static final DeferredItem<ShortLivedWasteItem> SHORT = ITEMS.register("nuclear_waste_short", ShortLivedWasteItem::new);
-    public static final DeferredItem<ShortLivedWasteItem> SHORT_TINY = ITEMS.register("nuclear_waste_short_tiny", ShortLivedWasteItem::new);
-    public static final DeferredItem<LongLivedWasteItem> LONG_DEPLETED = ITEMS.register("nuclear_waste_long_depleted", LongLivedWasteItem::new);
-    public static final DeferredItem<LongLivedWasteItem> LONG_DEPLETED_TINY = ITEMS.register("nuclear_waste_long_depleted_tiny", LongLivedWasteItem::new);
-    public static final DeferredItem<ShortLivedWasteItem> SHORT_DEPLETED = ITEMS.register("nuclear_waste_short_depleted", ShortLivedWasteItem::new);
-    public static final DeferredItem<ShortLivedWasteItem> SHORT_DEPLETED_TINY = ITEMS.register("nuclear_waste_short_depleted_tiny", ShortLivedWasteItem::new);
-    public static final List<DeferredItem<LongLivedWasteItem>> LONG_ITEMS = List.of(LONG, LONG_TINY, LONG_DEPLETED, LONG_DEPLETED_TINY);
-    public static final List<DeferredItem<ShortLivedWasteItem>> SHORT_ITEMS = List.of(SHORT, SHORT_TINY, SHORT_DEPLETED, SHORT_DEPLETED_TINY);
-
-    public static void register(IEventBus bus) { ITEMS.register(bus); }
-
-    public static List<ItemStack> allStacks() {
-        var result = new ArrayList<ItemStack>();
-        LONG.get().creativeStacks().forEach(result::add);
-        LONG_TINY.get().creativeStacks().forEach(result::add);
-        SHORT.get().creativeStacks().forEach(result::add);
-        SHORT_TINY.get().creativeStacks().forEach(result::add);
-        LONG_DEPLETED.get().creativeStacks().forEach(result::add);
-        LONG_DEPLETED_TINY.get().creativeStacks().forEach(result::add);
-        SHORT_DEPLETED.get().creativeStacks().forEach(result::add);
-        SHORT_DEPLETED_TINY.get().creativeStacks().forEach(result::add);
-        return List.copyOf(result);
+    private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
+    private static final Map<SourceWasteIsotopes.Form,List<DeferredItem<Item>>> FIXED=registerItems();
+    private static Map<SourceWasteIsotopes.Form,List<DeferredItem<Item>>> registerItems(){
+        var result=new EnumMap<SourceWasteIsotopes.Form,List<DeferredItem<Item>>>(SourceWasteIsotopes.Form.class);
+        for(var form:SourceWasteIsotopes.Form.values()){
+            var isotopes=new ArrayList<DeferredItem<Item>>();
+            for(int i=0;i<form.variants();i++){int ordinal=i;String isotope=(form.longLived()?SourceWasteIsotopes.LongLived.values()[i].name():SourceWasteIsotopes.ShortLived.values()[i].name()).toLowerCase(Locale.ROOT);isotopes.add(ITEMS.register(form.symbol()+"_"+isotope,()->form.longLived()?new LongLivedWasteItem(form,SourceWasteIsotopes.LongLived.values()[ordinal]):new ShortLivedWasteItem(form,SourceWasteIsotopes.ShortLived.values()[ordinal])));}
+            result.put(form,List.copyOf(isotopes));
+        }
+        return Collections.unmodifiableMap(result);
     }
-
-    public static List<ItemStack> creativeStacks(String tab) { return "parts".equals(tab) ? allStacks() : List.of(); }
-    private IsotopicWasteContent() {}
+    public static Item item(SourceWasteIsotopes.Form form,int isotope){return FIXED.get(form).get(isotope).get();}
+    public static ItemStack stack(SourceWasteIsotopes.Form form,int isotope){return new ItemStack(item(form,isotope));}
+    public static void register(IEventBus bus){ITEMS.register(bus);}
+    public static List<ItemStack> allStacks(){var result=new ArrayList<ItemStack>();for(var form:SourceWasteIsotopes.Form.values())for(int i=0;i<form.variants();i++)result.add(stack(form,i));return List.copyOf(result);}
+    public static List<ItemStack> creativeStacks(String tab){return "parts".equals(tab)?allStacks():List.of();}
+    private IsotopicWasteContent(){}
 }

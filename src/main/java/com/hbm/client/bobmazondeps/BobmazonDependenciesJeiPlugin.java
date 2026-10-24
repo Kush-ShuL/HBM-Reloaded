@@ -7,4 +7,5 @@ import net.minecraft.resources.ResourceLocation;
 @JeiPlugin public final class BobmazonDependenciesJeiPlugin implements IModPlugin {
  @Override public ResourceLocation getPluginUid(){return ResourceLocation.parse("hbm:bobmazon_dependencies73");}
  @Override public void registerExtraIngredients(IExtraIngredientRegistration event){event.addExtraIngredients(VanillaTypes.ITEM_STACK,BobmazonDependenciesContent.visibleTrinkets());}
+ @Override public void onRuntimeAvailable(mezz.jei.api.runtime.IJeiRuntime runtime){runtime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK,BobmazonDependenciesContent.hiddenTrinkets());}
 }

@@ -2,13 +2,5 @@
   "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "hbm:item/marshmallow"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "hbm:marshmallow_roasted": 1
-      },
-      "model": "hbm:item/marshmallow_roasted"
-    }
-  ]
+  }
 }

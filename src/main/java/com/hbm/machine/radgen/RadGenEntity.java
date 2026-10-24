@@ -67,7 +67,7 @@ public final class RadGenEntity extends BlockEntity implements WorldlyContainer,
             progress[i] = 0;
             maxProgress[i] = fuel.duration();
             production[i] = fuel.production();
-            processing[i] = RadGenFuels.stack(fuel.input(), RadGenFuels.metadata(slots[i]));
+            processing[i] = fuel.inputStack();
             removeItem(i, 1);
             setChanged();
         }

@@ -1,216 +1,888 @@
 {
   "registered": [
     {
-      "symbol": "nuclear_waste_long",
-      "id": "hbm:nuclear_waste_long",
       "kind": "item",
+      "symbol": "nuclear_waste_long_uranium235",
+      "id": "hbm:nuclear_waste_long_uranium235",
       "creativeTab": "parts",
       "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3341
-      },
-      "metadataRange": [
-        0,
-        4
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "thorium",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteLong.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_long_tiny",
-      "id": "hbm:nuclear_waste_long_tiny",
       "kind": "item",
+      "symbol": "nuclear_waste_long_uranium233",
+      "id": "hbm:nuclear_waste_long_uranium233",
       "creativeTab": "parts",
       "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3341
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_neptunium",
+      "id": "hbm:nuclear_waste_long_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3341
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_thorium",
+      "id": "hbm:nuclear_waste_long_thorium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3341
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_schrabidium",
+      "id": "hbm:nuclear_waste_long_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3341
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_tiny_uranium235",
+      "id": "hbm:nuclear_waste_long_tiny_uranium235",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_tiny",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_tiny",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3342
-      },
-      "metadataRange": [
-        0,
-        4
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "thorium",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteLong.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_short",
-      "id": "hbm:nuclear_waste_short",
       "kind": "item",
+      "symbol": "nuclear_waste_long_tiny_uranium233",
+      "id": "hbm:nuclear_waste_long_tiny_uranium233",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_tiny",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3342
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_tiny_neptunium",
+      "id": "hbm:nuclear_waste_long_tiny_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_tiny",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3342
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_tiny_thorium",
+      "id": "hbm:nuclear_waste_long_tiny_thorium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_tiny",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3342
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_tiny_schrabidium",
+      "id": "hbm:nuclear_waste_long_tiny_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_tiny",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3342
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_uranium235",
+      "id": "hbm:nuclear_waste_short_uranium235",
       "creativeTab": "parts",
       "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3343
-      },
-      "metadataRange": [
-        0,
-        7
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "plutonium239",
-        "plutonium240",
-        "plutonium241",
-        "americium242",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteShort.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_short_tiny",
-      "id": "hbm:nuclear_waste_short_tiny",
       "kind": "item",
+      "symbol": "nuclear_waste_short_uranium233",
+      "id": "hbm:nuclear_waste_short_uranium233",
       "creativeTab": "parts",
       "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_neptunium",
+      "id": "hbm:nuclear_waste_short_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_plutonium239",
+      "id": "hbm:nuclear_waste_short_plutonium239",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_plutonium240",
+      "id": "hbm:nuclear_waste_short_plutonium240",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_plutonium241",
+      "id": "hbm:nuclear_waste_short_plutonium241",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_americium242",
+      "id": "hbm:nuclear_waste_short_americium242",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_schrabidium",
+      "id": "hbm:nuclear_waste_short_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3343
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_uranium235",
+      "id": "hbm:nuclear_waste_short_tiny_uranium235",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3344
-      },
-      "metadataRange": [
-        0,
-        7
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "plutonium239",
-        "plutonium240",
-        "plutonium241",
-        "americium242",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteShort.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_long_depleted",
-      "id": "hbm:nuclear_waste_long_depleted",
       "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_uranium233",
+      "id": "hbm:nuclear_waste_short_tiny_uranium233",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_neptunium",
+      "id": "hbm:nuclear_waste_short_tiny_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_plutonium239",
+      "id": "hbm:nuclear_waste_short_tiny_plutonium239",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_plutonium240",
+      "id": "hbm:nuclear_waste_short_tiny_plutonium240",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_plutonium241",
+      "id": "hbm:nuclear_waste_short_tiny_plutonium241",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_americium242",
+      "id": "hbm:nuclear_waste_short_tiny_americium242",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_tiny_schrabidium",
+      "id": "hbm:nuclear_waste_short_tiny_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_tiny",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3344
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_uranium235",
+      "id": "hbm:nuclear_waste_long_depleted_uranium235",
       "creativeTab": "parts",
       "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3345
-      },
-      "metadataRange": [
-        0,
-        4
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "thorium",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteLong.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_long_depleted_tiny",
-      "id": "hbm:nuclear_waste_long_depleted_tiny",
       "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_uranium233",
+      "id": "hbm:nuclear_waste_long_depleted_uranium233",
       "creativeTab": "parts",
       "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3345
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_neptunium",
+      "id": "hbm:nuclear_waste_long_depleted_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3345
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_thorium",
+      "id": "hbm:nuclear_waste_long_depleted_thorium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3345
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_schrabidium",
+      "id": "hbm:nuclear_waste_long_depleted_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3345
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_tiny_uranium235",
+      "id": "hbm:nuclear_waste_long_depleted_tiny_uranium235",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3346
-      },
-      "metadataRange": [
-        0,
-        4
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "thorium",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteLong.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_short_depleted",
-      "id": "hbm:nuclear_waste_short_depleted",
       "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_tiny_uranium233",
+      "id": "hbm:nuclear_waste_long_depleted_tiny_uranium233",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3346
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_tiny_neptunium",
+      "id": "hbm:nuclear_waste_long_depleted_tiny_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3346
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_tiny_thorium",
+      "id": "hbm:nuclear_waste_long_depleted_tiny_thorium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3346
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_long_depleted_tiny_schrabidium",
+      "id": "hbm:nuclear_waste_long_depleted_tiny_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteLong",
+      "sourceClass": "com.hbm.items.special.ItemWasteLong",
+      "sourceField": "ModItems.nuclear_waste_long_depleted_tiny",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3346
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_uranium235",
+      "id": "hbm:nuclear_waste_short_depleted_uranium235",
       "creativeTab": "parts",
       "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3347
-      },
-      "metadataRange": [
-        0,
-        7
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "plutonium239",
-        "plutonium240",
-        "plutonium241",
-        "americium242",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteShort.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
     },
     {
-      "symbol": "nuclear_waste_short_depleted_tiny",
-      "id": "hbm:nuclear_waste_short_depleted_tiny",
       "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_uranium233",
+      "id": "hbm:nuclear_waste_short_depleted_uranium233",
       "creativeTab": "parts",
       "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_neptunium",
+      "id": "hbm:nuclear_waste_short_depleted_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_plutonium239",
+      "id": "hbm:nuclear_waste_short_depleted_plutonium239",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_plutonium240",
+      "id": "hbm:nuclear_waste_short_depleted_plutonium240",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_plutonium241",
+      "id": "hbm:nuclear_waste_short_depleted_plutonium241",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_americium242",
+      "id": "hbm:nuclear_waste_short_depleted_americium242",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_schrabidium",
+      "id": "hbm:nuclear_waste_short_depleted_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3347
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_uranium235",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_uranium235",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
       "source": {
         "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
         "line": 3348
-      },
-      "metadataRange": [
-        0,
-        7
-      ],
-      "names": [
-        "uranium235",
-        "uranium233",
-        "neptunium",
-        "plutonium239",
-        "plutonium240",
-        "plutonium241",
-        "americium242",
-        "schrabidium"
-      ],
-      "enumClass": "ItemWasteShort.WasteClass",
-      "status": "source-port-staged-target-pending",
-      "runtimeValidated": false
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_uranium233",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_uranium233",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_neptunium",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_neptunium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_plutonium239",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium239",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 3,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_plutonium240",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium240",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 4,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_plutonium241",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium241",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 5,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_americium242",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_americium242",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 6,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "nuclear_waste_short_depleted_tiny_schrabidium",
+      "id": "hbm:nuclear_waste_short_depleted_tiny_schrabidium",
+      "creativeTab": "parts",
+      "originalClass": "ItemWasteShort",
+      "sourceClass": "com.hbm.items.special.ItemWasteShort",
+      "sourceField": "ModItems.nuclear_waste_short_depleted_tiny",
+      "sourceOrdinal": 7,
+      "sourceHasSubtypes": true,
+      "maxStackSize": 64,
+      "sourceLegacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny",
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3348
+      }
     }
   ]
 }

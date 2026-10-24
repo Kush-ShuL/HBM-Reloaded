@@ -1546,7 +1546,7 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_long",
+        "id": "hbm:nuclear_waste_long_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_long",
         "legacyRegistryId": "hbm:item.nuclear_waste_long"
       },
@@ -1573,7 +1573,115 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_long_tiny",
+        "id": "hbm:nuclear_waste_long_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_long",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 197
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long, makeData(RADIATION, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_long",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 197
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long, makeData(RADIATION, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_thorium",
+        "legacySymbol": "ModItems.nuclear_waste_long",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 197
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long, makeData(RADIATION, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_long",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 197
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long, makeData(RADIATION, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_tiny_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_long_tiny",
         "legacyRegistryId": "hbm:item.nuclear_waste_long_tiny"
       },
@@ -1600,7 +1708,115 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_short",
+        "id": "hbm:nuclear_waste_long_tiny_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_long_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 198
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_tiny, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_tiny_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_long_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 198
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_tiny, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_tiny_thorium",
+        "legacySymbol": "ModItems.nuclear_waste_long_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 198
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_tiny, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_tiny_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_long_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 198
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_tiny, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_short",
         "legacyRegistryId": "hbm:item.nuclear_waste_short"
       },
@@ -1633,7 +1849,238 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_short_tiny",
+        "id": "hbm:nuclear_waste_short_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_plutonium239",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_plutonium240",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_plutonium241",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_americium242",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_short",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 30.0,
+            "expression": "30F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 199
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short, makeData().addEntry(RADIATION, 30F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_short_tiny",
         "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
       },
@@ -1666,7 +2113,238 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_long_depleted",
+        "id": "hbm:nuclear_waste_short_tiny_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_plutonium239",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_plutonium240",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_plutonium241",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_americium242",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_tiny_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_short_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          },
+          {
+            "type": "HOT",
+            "value": 5.0,
+            "expression": "5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 200
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_tiny, makeData().addEntry(RADIATION, 3F).addEntry(HOT, 5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_long_depleted",
         "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted"
       },
@@ -1693,7 +2371,115 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_long_depleted_tiny",
+        "id": "hbm:nuclear_waste_long_depleted_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 201
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 201
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_thorium",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 201
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.5,
+            "expression": "0.5F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 201
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted, makeData(RADIATION, 0.5F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_tiny_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_long_depleted_tiny",
         "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny"
       },
@@ -1720,7 +2506,115 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_short_depleted",
+        "id": "hbm:nuclear_waste_long_depleted_tiny_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.05000000074505806,
+            "expression": "0.05F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 202
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted_tiny, makeData(RADIATION, 0.05F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_tiny_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.05000000074505806,
+            "expression": "0.05F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 202
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted_tiny, makeData(RADIATION, 0.05F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_tiny_thorium",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.05000000074505806,
+            "expression": "0.05F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 202
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted_tiny, makeData(RADIATION, 0.05F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_long_depleted_tiny_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_long_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_long_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.05000000074505806,
+            "expression": "0.05F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 202
+      },
+      "expression": "HazardSystem.register(nuclear_waste_long_depleted_tiny, makeData(RADIATION, 0.05F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_uranium235",
         "legacySymbol": "ModItems.nuclear_waste_short_depleted",
         "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
       },
@@ -1747,7 +2641,385 @@
     {
       "selector": {
         "kind": "item",
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
+        "id": "hbm:nuclear_waste_short_depleted_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_plutonium239",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_plutonium240",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_plutonium241",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_americium242",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_schrabidium",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 3.0,
+            "expression": "3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 203
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted, makeData(RADIATION, 3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_uranium235",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_uranium233",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_neptunium",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium239",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium240",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium241",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_americium242",
+        "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
+        "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
+      },
+      "data": {
+        "entries": [
+          {
+            "type": "RADIATION",
+            "value": 0.30000001192092896,
+            "expression": "0.3F",
+            "modifiers": []
+          }
+        ],
+        "doesOverride": false,
+        "mutex": 0
+      },
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/hazard/HazardRegistry.java",
+        "line": 204
+      },
+      "expression": "HazardSystem.register(nuclear_waste_short_depleted_tiny, makeData(RADIATION, 0.3F))",
+      "binding": "unbound_item_not_registered",
+      "status": "numeric_definition_ported"
+    },
+    {
+      "selector": {
+        "kind": "item",
+        "id": "hbm:nuclear_waste_short_depleted_tiny_schrabidium",
         "legacySymbol": "ModItems.nuclear_waste_short_depleted_tiny",
         "legacyRegistryId": "hbm:item.nuclear_waste_short_depleted_tiny"
       },
@@ -31442,7 +32714,7 @@
     "hbm:item.flame_opinion": "hbm:flame_opinion",
     "hbm:item.flame_politics": "hbm:flame_politics",
     "hbm:item.flame_pony": "hbm:flame_pony",
-    "hbm:item.flask_infusion": "hbm:flask_infusion",
+    "hbm:item.flask_infusion": "hbm:flask_infusion_shield",
     "hbm:item.fleija_core": "hbm:fleija_core",
     "hbm:item.fleija_igniter": "hbm:fleija_igniter",
     "hbm:item.fleija_kit": "hbm:fleija_kit",
@@ -31790,7 +33062,6 @@
     "hbm:item.man_core": "hbm:man_core",
     "hbm:item.man_igniter": "hbm:man_igniter",
     "hbm:item.man_kit": "hbm:man_kit",
-    "hbm:item.marshmallow": "hbm:marshmallow",
     "hbm:item.mask_of_infamy": "hbm:mask_of_infamy",
     "hbm:item.mask_piss": "hbm:mask_piss",
     "hbm:item.mask_rag": "hbm:mask_rag",
@@ -32005,14 +33276,14 @@
     "hbm:item.no9": "hbm:no9",
     "hbm:item.nothing": "hbm:nothing",
     "hbm:item.nuclear_waste": "hbm:nuclear_waste",
-    "hbm:item.nuclear_waste_long": "hbm:nuclear_waste_long",
-    "hbm:item.nuclear_waste_long_depleted": "hbm:nuclear_waste_long_depleted",
-    "hbm:item.nuclear_waste_long_depleted_tiny": "hbm:nuclear_waste_long_depleted_tiny",
-    "hbm:item.nuclear_waste_long_tiny": "hbm:nuclear_waste_long_tiny",
-    "hbm:item.nuclear_waste_short": "hbm:nuclear_waste_short",
-    "hbm:item.nuclear_waste_short_depleted": "hbm:nuclear_waste_short_depleted",
-    "hbm:item.nuclear_waste_short_depleted_tiny": "hbm:nuclear_waste_short_depleted_tiny",
-    "hbm:item.nuclear_waste_short_tiny": "hbm:nuclear_waste_short_tiny",
+    "hbm:item.nuclear_waste_long": "hbm:nuclear_waste_long_uranium235",
+    "hbm:item.nuclear_waste_long_depleted": "hbm:nuclear_waste_long_depleted_uranium235",
+    "hbm:item.nuclear_waste_long_depleted_tiny": "hbm:nuclear_waste_long_depleted_tiny_uranium235",
+    "hbm:item.nuclear_waste_long_tiny": "hbm:nuclear_waste_long_tiny_uranium235",
+    "hbm:item.nuclear_waste_short": "hbm:nuclear_waste_short_uranium235",
+    "hbm:item.nuclear_waste_short_depleted": "hbm:nuclear_waste_short_depleted_uranium235",
+    "hbm:item.nuclear_waste_short_depleted_tiny": "hbm:nuclear_waste_short_depleted_tiny_uranium235",
+    "hbm:item.nuclear_waste_short_tiny": "hbm:nuclear_waste_short_tiny_uranium235",
     "hbm:item.nuclear_waste_tiny": "hbm:nuclear_waste_tiny",
     "hbm:item.nuclear_waste_vitrified": "hbm:nuclear_waste_vitrified",
     "hbm:item.nuclear_waste_vitrified_tiny": "hbm:nuclear_waste_vitrified_tiny",
@@ -32612,7 +33883,7 @@
     "hbm:item.taurun_helmet": "hbm:taurun_helmet",
     "hbm:item.taurun_legs": "hbm:taurun_legs",
     "hbm:item.taurun_plate": "hbm:taurun_plate",
-    "hbm:item.tem_flakes": "hbm:tem_flakes",
+    "hbm:item.tem_flakes": "hbm:tem_flakes_discount",
     "hbm:item.template_folder": "hbm:template_folder",
     "hbm:item.thermo_element": "hbm:thermo_element",
     "hbm:item.thruster_large": "hbm:thruster_large",
@@ -33451,7 +34722,7 @@
     "hbm:tile.plant_flower": "hbm:plant_flower",
     "hbm:tile.plant_tall": "hbm:plant_tall",
     "hbm:tile.platemetal": "hbm:platemetal",
-    "hbm:tile.plushie": "hbm:plushie",
+    "hbm:tile.plushie": "hbm:plushie_none",
     "hbm:tile.pneumatic_storage_access": "hbm:pneumatic_storage_access",
     "hbm:tile.pneumatic_storage_clutter": "hbm:pneumatic_storage_clutter",
     "hbm:tile.pneumatic_storage_exporter": "hbm:pneumatic_storage_exporter",
@@ -33599,7 +34870,7 @@
     "hbm:tile.slag": "hbm:slag",
     "hbm:tile.sliding_blast_door": "hbm:sliding_blast_door",
     "hbm:tile.sliding_seal_door": "hbm:sliding_seal_door",
-    "hbm:tile.snowglobe": "hbm:snowglobe",
+    "hbm:tile.snowglobe": "hbm:snowglobe_none",
     "hbm:tile.solar_mirror": "hbm:solar_mirror",
     "hbm:tile.soyuz_capsule": "hbm:soyuz_capsule",
     "hbm:tile.soyuz_launcher": "hbm:soyuz_launcher",

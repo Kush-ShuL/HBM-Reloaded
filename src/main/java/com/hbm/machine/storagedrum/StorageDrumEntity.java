@@ -12,6 +12,7 @@ import com.hbm.hazard.HbmHazards;
 import com.hbm.multiblock.MuffledMachine;
 import com.hbm.multiblock.NamedMultiblock;
 import com.hbm.registry.HbmContent;
+import com.hbm.item.nuclear.waste.SourceWasteIsotopes;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -184,13 +185,13 @@ public final class StorageDrumEntity extends BlockEntity implements WorldlyConta
     @Override public void clearContent() { Arrays.fill(slots, ItemStack.EMPTY); setChanged(); }
     @Override public boolean stillValid(Player player) { return level != null && level.getBlockEntity(worldPosition) == this && worldPosition.distToCenterSqr(player.position()) <= 144; }
     @Override public boolean canPlaceItem(int slot, ItemStack stack) {
-        return stack.is(HbmContent.item("nuclear_waste_long")) || stack.is(HbmContent.item("nuclear_waste_long_tiny"))
-            || stack.is(HbmContent.item("nuclear_waste_short")) || stack.is(HbmContent.item("nuclear_waste_short_tiny")) || stack.is(HbmContent.item("ingot_au198"));
+        return SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.LONG) || SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.LONG_TINY)
+            || SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.SHORT) || SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.SHORT_TINY) || stack.is(HbmContent.item("ingot_au198"));
     }
     @Override public int[] getSlotsForFace(Direction side) { return SLOTS; }
     @Override public boolean canPlaceItemThroughFace(int slot, ItemStack stack, Direction side) { return canPlaceItem(slot, stack); }
     @Override public boolean canTakeItemThroughFace(int slot, ItemStack stack, Direction side) {
-        return stack.is(HbmContent.item("nuclear_waste_long_depleted")) || stack.is(HbmContent.item("nuclear_waste_long_depleted_tiny"))
-            || stack.is(HbmContent.item("nuclear_waste_short_depleted")) || stack.is(HbmContent.item("nuclear_waste_short_depleted_tiny")) || stack.is(HbmContent.item("ingot_mercury"));
+        return SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.LONG_DEPLETED) || SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.LONG_DEPLETED_TINY)
+            || SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.SHORT_DEPLETED) || SourceWasteIsotopes.is(stack,SourceWasteIsotopes.Form.SHORT_DEPLETED_TINY) || stack.is(HbmContent.item("ingot_mercury"));
     }
 }

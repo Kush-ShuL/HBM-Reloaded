@@ -3022,8 +3022,8 @@
   "hbm:quartz_plutonium": "hbm:quartz_plutonium",
   "spider_milk": "hbm:spider_milk",
   "hbm:spider_milk": "hbm:spider_milk",
-  "flask_infusion": "hbm:flask_infusion",
-  "hbm:flask_infusion": "hbm:flask_infusion",
+  "flask_infusion": "hbm:flask_infusion_shield",
+  "hbm:flask_infusion": "hbm:flask_infusion_shield",
   "machine_excavator": "hbm:machine_excavator",
   "hbm:machine_excavator": "hbm:machine_excavator",
   "barricade": "hbm:barricade",
@@ -3776,8 +3776,8 @@
   "hbm:item.sat_gerald": "hbm:sat_gerald",
   "hbm:item.sat_laser": "hbm:sat_laser",
   "hbm:tile.foam_layer": "hbm:foam_layer",
-  "hbm:tile.plushie": "hbm:plushie",
+  "hbm:tile.plushie": "hbm:plushie_none",
   "hbm:tile.sand_boron_layer": "hbm:sand_boron_layer",
-  "hbm:tile.snowglobe": "hbm:snowglobe",
+  "hbm:tile.snowglobe": "hbm:snowglobe_none",
   "hbm:tile.soyuz_capsule": "hbm:soyuz_capsule"
 }

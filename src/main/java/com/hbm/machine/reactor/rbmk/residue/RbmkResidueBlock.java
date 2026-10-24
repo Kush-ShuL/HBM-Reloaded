@@ -3,7 +3,6 @@ package com.hbm.machine.reactor.rbmk.residue;
 import com.hbm.block.gas.GasContent;
 import com.hbm.block.gas.GasKind;
 import com.hbm.exposure.HbmExposure;
-import com.hbm.hazard.HbmHazards;
 import com.hbm.machine.arcfurnace.ArcSandBlock;
 import com.hbm.machine.reactor.rbmk.failure.RbmkFailureEffects;
 import com.mojang.serialization.MapCodec;
@@ -101,9 +100,9 @@ public final class RbmkResidueBlock extends Block {
             if (length < 5) living.hurt(level.damageSources().inFire(), 100);
             if (living instanceof Player player && length < 10) {
                 var held = player.getMainHandItem();
-                if (BuiltInRegistries.ITEM.getKey(held.getItem()).toString().equals("hbm:marshmallow")
-                        && held.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0) != 1 && player.getRandom().nextInt(100) == 0)
-                    held.set(HbmHazards.LEGACY_METADATA.get(), 1);
+                if (held.is(com.hbm.item.marshmallow.MarshmallowContent.MARSHMALLOW.get()) && player.getRandom().nextInt(100) == 0)
+                    player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,
+                            held.transmuteCopy(com.hbm.item.marshmallow.MarshmallowContent.ROASTED.get()));
             }
         }
     }

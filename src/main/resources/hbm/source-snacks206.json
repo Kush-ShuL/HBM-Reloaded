@@ -41,44 +41,72 @@
     },
     {
       "kind": "item",
-      "symbol": "tem_flakes",
-      "id": "hbm:tem_flakes",
-      "legacyRegistryId": "hbm:item.tem_flakes",
+      "symbol": "tem_flakes_discount",
+      "id": "hbm:tem_flakes_discount",
+      "module": "source-snacks206",
       "originalClass": "ItemTemFlakes",
-      "source": {
-        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
-        "line": 3616
-      },
-      "registrationSource": [
-        {
-          "source": {
-            "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
-            "line": 5986
-          },
-          "expression": "GameRegistry.registerItem(tem_flakes, tem_flakes.getUnlocalizedName())",
-          "arguments": [
-            "tem_flakes",
-            "tem_flakes.getUnlocalizedName()"
-          ]
-        }
-      ],
-      "registeredBy": "com.hbm.item.sourcesnacks.SourceSnacksContent",
+      "sourceClass": "com.hbm.items.food.ItemTemFlakes",
+      "sourceField": "ModItems.tem_flakes",
+      "sourceLegacyRegistryId": "hbm:item.tem_flakes",
+      "sourceOrdinal": 0,
+      "sourceHasSubtypes": true,
       "creativeTab": "consumable",
       "maxStackSize": 64,
-      "sourceMetadata": [
-        0,
-        1,
-        2
-      ],
-      "metadataRange": [
-        0,
-        2
-      ],
       "nutrition": 0,
       "saturationModifier": 0,
       "alwaysEdible": true,
       "wolfFood": false,
-      "full3D": false
+      "full3D": false,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3616
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "tem_flakes_regular",
+      "id": "hbm:tem_flakes_regular",
+      "module": "source-snacks206",
+      "originalClass": "ItemTemFlakes",
+      "sourceClass": "com.hbm.items.food.ItemTemFlakes",
+      "sourceField": "ModItems.tem_flakes",
+      "sourceLegacyRegistryId": "hbm:item.tem_flakes",
+      "sourceOrdinal": 1,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 0,
+      "saturationModifier": 0,
+      "alwaysEdible": true,
+      "wolfFood": false,
+      "full3D": false,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3616
+      }
+    },
+    {
+      "kind": "item",
+      "symbol": "tem_flakes_expensive",
+      "id": "hbm:tem_flakes_expensive",
+      "module": "source-snacks206",
+      "originalClass": "ItemTemFlakes",
+      "sourceClass": "com.hbm.items.food.ItemTemFlakes",
+      "sourceField": "ModItems.tem_flakes",
+      "sourceLegacyRegistryId": "hbm:item.tem_flakes",
+      "sourceOrdinal": 2,
+      "sourceHasSubtypes": true,
+      "creativeTab": "consumable",
+      "maxStackSize": 64,
+      "nutrition": 0,
+      "saturationModifier": 0,
+      "alwaysEdible": true,
+      "wolfFood": false,
+      "full3D": false,
+      "source": {
+        "file": "legacy/src/main/java/com/hbm/items/ModItems.java",
+        "line": 3616
+      }
     }
   ]
 }

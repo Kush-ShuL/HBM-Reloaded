@@ -5,5 +5,5 @@ import me.shedaniel.rei.api.client.registry.entry.EntryRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
 @REIPluginClient public final class BobmazonDependenciesReiPlugin implements REIClientPlugin {
- @Override public void registerEntries(EntryRegistry registry){for(var stack:BobmazonDependenciesContent.visibleTrinkets())registry.addEntry(EntryStacks.of(stack));}
+ @Override public void registerEntries(EntryRegistry registry){for(var stack:BobmazonDependenciesContent.visibleTrinkets())registry.addEntry(EntryStacks.of(stack));for(var stack:BobmazonDependenciesContent.hiddenTrinkets())registry.removeEntry(EntryStacks.of(stack));}
 }

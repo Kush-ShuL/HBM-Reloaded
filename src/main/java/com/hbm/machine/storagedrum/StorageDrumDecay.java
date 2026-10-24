@@ -3,6 +3,7 @@ package com.hbm.machine.storagedrum;
 import com.hbm.config.GeneralModes;
 import com.hbm.hazard.HbmHazards;
 import com.hbm.item.nuclear.waste.SourceWasteIsotopes;
+import com.hbm.item.nuclear.waste.IsotopicWasteContent;
 import com.hbm.registry.HbmContent;
 import java.util.List;
 import net.minecraft.util.RandomSource;
@@ -10,17 +11,22 @@ import net.minecraft.world.item.ItemStack;
 
 /** The real drum's per-slot RNG branches, also consumed by its original NEI row adapter. No independent ticker. */
 public final class StorageDrumDecay {
-    public record Rule(String input, String output, boolean longLived, int divisor, int isotopeFamily) {
+    public record Rule(SourceWasteIsotopes.Form inputForm,SourceWasteIsotopes.Form outputForm,String input,String output,boolean longLived,int divisor,int isotopeFamily) {
+        public Rule(SourceWasteIsotopes.Form input,SourceWasteIsotopes.Form output,boolean longLived,int divisor,int isotopeFamily){this(input,output,null,null,longLived,divisor,isotopeFamily);}
+        public Rule(String input,String output,boolean longLived,int divisor,int isotopeFamily){this(null,null,input,output,longLived,divisor,isotopeFamily);}
+        public boolean matches(ItemStack stack){return inputForm!=null?SourceWasteIsotopes.is(stack,inputForm):stack.is(HbmContent.item(input));}
+        public ItemStack inputStack(int isotope){return inputForm!=null?IsotopicWasteContent.stack(inputForm,isotope):stack(input,isotope);}
+        public ItemStack outputStack(int isotope){return outputForm!=null?IsotopicWasteContent.stack(outputForm,isotope):stack(output,isotope);}
         public int chance() { return (longLived ? longChance() : shortChance()) / divisor; }
         public int variants() { return isotopeFamily == 1 ? 5 : isotopeFamily == 2 ? 8 : 1; }
     }
     public record Result(ItemStack stack, int liquid, int gas) {}
 
     public static final List<Rule> RULES = List.of(
-        new Rule("nuclear_waste_long", "nuclear_waste_long_depleted", true, 1, 1),
-        new Rule("nuclear_waste_long_tiny", "nuclear_waste_long_depleted_tiny", true, 10, 1),
-        new Rule("nuclear_waste_short", "nuclear_waste_short_depleted", false, 1, 2),
-        new Rule("nuclear_waste_short_tiny", "nuclear_waste_short_depleted_tiny", false, 10, 2),
+        new Rule(SourceWasteIsotopes.Form.LONG, SourceWasteIsotopes.Form.LONG_DEPLETED, true, 1, 1),
+        new Rule(SourceWasteIsotopes.Form.LONG_TINY, SourceWasteIsotopes.Form.LONG_DEPLETED_TINY, true, 10, 1),
+        new Rule(SourceWasteIsotopes.Form.SHORT, SourceWasteIsotopes.Form.SHORT_DEPLETED, false, 1, 2),
+        new Rule(SourceWasteIsotopes.Form.SHORT_TINY, SourceWasteIsotopes.Form.SHORT_DEPLETED_TINY, false, 10, 2),
         new Rule("ingot_au198", "ingot_mercury", false, 20, 0),
         new Rule("nugget_au198", "nugget_mercury", false, 100, 0),
         new Rule("ingot_pb209", "ingot_bismuth", false, 10, 0),
@@ -40,7 +46,7 @@ public final class StorageDrumDecay {
     }
 
     public static int metadata(ItemStack stack) {
-        return stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), stack.getDamageValue());
+        return SourceWasteIsotopes.form(stack)!=null?SourceWasteIsotopes.isotope(stack):stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), stack.getDamageValue());
     }
 
     public static ItemStack stack(String symbol, int meta) {
@@ -50,9 +56,8 @@ public final class StorageDrumDecay {
     }
 
     public static Result decay(ItemStack original, RandomSource random) {
-        var item = original.getItem();
         for (var rule : RULES) {
-            if (item != HbmContent.item(rule.input())) continue;
+            if (!rule.matches(original)) continue;
             // Preserve short-circuit RNG: exactly one nextInt only for an eligible original identity.
             if (random.nextInt(rule.chance()) != 0) return null;
             int meta = metadata(original), liquid = 0, gas = 0;
@@ -66,8 +71,8 @@ public final class StorageDrumDecay {
                 liquid = isotope.liquid / rule.divisor();
                 gas = isotope.gas / rule.divisor();
             }
-            // Source discards input tags/count and constructs one output with the original unrectified metadata.
-            return new Result(stack(rule.output(), meta), liquid, gas);
+            // Source discards input tags/count and constructs one output with the same original isotope identity.
+            return new Result(rule.outputStack(meta), liquid, gas);
         }
         return null;
     }

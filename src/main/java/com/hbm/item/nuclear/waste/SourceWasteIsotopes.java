@@ -1,11 +1,7 @@
 package com.hbm.item.nuclear.waste;
 
-import com.hbm.hazard.HbmHazards;
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 /** Original ItemWasteLong/Short enum order and per-item recovery amounts, not decay timers. */
@@ -45,26 +41,26 @@ public final class SourceWasteIsotopes {
         }
     }
 
-    public static int longMetadata(ItemStack stack) {
-        return Math.abs(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0)) % LongLived.values().length;
+    public enum Form {
+        LONG("nuclear_waste_long",true),
+        LONG_TINY("nuclear_waste_long_tiny",true),
+        SHORT("nuclear_waste_short",false),
+        SHORT_TINY("nuclear_waste_short_tiny",false),
+        LONG_DEPLETED("nuclear_waste_long_depleted",true),
+        LONG_DEPLETED_TINY("nuclear_waste_long_depleted_tiny",true),
+        SHORT_DEPLETED("nuclear_waste_short_depleted",false),
+        SHORT_DEPLETED_TINY("nuclear_waste_short_depleted_tiny",false);
+        private final String symbol;private final boolean longLived;
+        Form(String symbol,boolean longLived){this.symbol=symbol;this.longLived=longLived;}
+        public String symbol(){return symbol;}public boolean longLived(){return longLived;}
+        public int variants(){return longLived?LongLived.values().length:ShortLived.values().length;}
     }
-
-    public static int shortMetadata(ItemStack stack) {
-        return Math.abs(stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(), 0)) % ShortLived.values().length;
-    }
+    public static Form form(ItemStack stack){return stack.getItem() instanceof LongLivedWasteItem item?item.form():stack.getItem() instanceof ShortLivedWasteItem item?item.form():null;}
+    public static boolean is(ItemStack stack,Form form){return form(stack)==form;}
+    public static int isotope(ItemStack stack){if(stack.getItem() instanceof LongLivedWasteItem item)return item.isotope().ordinal();if(stack.getItem() instanceof ShortLivedWasteItem item)return item.isotope().ordinal();throw new IllegalArgumentException("Not an isotopic waste item");}
 
     public static Component tooltip(String isotope) {
         return Component.translatable("tooltip.hbm.nuclear_waste.isotope." + isotope).withStyle(ChatFormatting.ITALIC);
-    }
-
-    public static List<ItemStack> stacks(Item item, int variants) {
-        var result = new ArrayList<ItemStack>(variants);
-        for (int meta = 0; meta < variants; meta++) {
-            var stack = new ItemStack(item);
-            stack.set(HbmHazards.LEGACY_METADATA.get(), meta);
-            result.add(stack);
-        }
-        return List.copyOf(result);
     }
 
     private SourceWasteIsotopes() {}

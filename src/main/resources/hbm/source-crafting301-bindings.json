@@ -2081,8 +2081,8 @@
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_edac9aa7d332",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_edac9aa7d332.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_uranium235_2b25adc3b58e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_uranium235_2b25adc3b58e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 57,
           "variantContext": {
@@ -2100,11 +2100,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_long_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2115,19 +2112,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_516643df886a",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_516643df886a.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_uranium233_3b013e087c84",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_uranium233_3b013e087c84.json",
           "status": "exact-native-source-binding-staged",
           "variant": 58,
           "variantContext": {
@@ -2145,11 +2137,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_long_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2160,19 +2149,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_41e54786f248",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_41e54786f248.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_neptunium_5a9a1dafc7a3",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_neptunium_5a9a1dafc7a3.json",
           "status": "exact-native-source-binding-staged",
           "variant": 59,
           "variantContext": {
@@ -2190,11 +2174,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_long_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2205,19 +2186,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_e8b2f1e2c21f",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_e8b2f1e2c21f.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_thorium_136d852cb15e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_thorium_136d852cb15e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 60,
           "variantContext": {
@@ -2235,11 +2211,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_long_thorium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2250,19 +2223,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_thorium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_025f37c33cf6",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_025f37c33cf6.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_schrabidium_48b38d58808e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_schrabidium_48b38d58808e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 61,
           "variantContext": {
@@ -2280,11 +2248,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_long_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2295,19 +2260,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_schrabidium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_32c514d33a17",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_32c514d33a17.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_uranium235_b7dd3ea5993c",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_uranium235_b7dd3ea5993c.json",
           "status": "exact-native-source-binding-staged",
           "variant": 62,
           "variantContext": {
@@ -2325,11 +2285,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_long_depleted_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2340,19 +2297,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_fadb409a4b2f",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_fadb409a4b2f.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_uranium233_a472d7dc55a3",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_uranium233_a472d7dc55a3.json",
           "status": "exact-native-source-binding-staged",
           "variant": 63,
           "variantContext": {
@@ -2370,11 +2322,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_long_depleted_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2385,19 +2334,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_ed33561d3e1a",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_ed33561d3e1a.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_neptunium_23fe21dd4a04",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_neptunium_23fe21dd4a04.json",
           "status": "exact-native-source-binding-staged",
           "variant": 64,
           "variantContext": {
@@ -2415,11 +2359,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_long_depleted_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2430,19 +2371,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_2cdd8555b8bb",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_2cdd8555b8bb.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_thorium_9540342aa905",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_thorium_9540342aa905.json",
           "status": "exact-native-source-binding-staged",
           "variant": 65,
           "variantContext": {
@@ -2460,11 +2396,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_long_depleted_thorium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2475,19 +2408,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_thorium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_7377d5fce34b",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_7377d5fce34b.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_schrabidium_b11ee34022d6",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_schrabidium_b11ee34022d6.json",
           "status": "exact-native-source-binding-staged",
           "variant": 66,
           "variantContext": {
@@ -2505,11 +2433,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_long_depleted_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2520,19 +2445,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_schrabidium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_6a26aff23ca4",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_6a26aff23ca4.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_uranium235_4c3f2ef0b30e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_uranium235_4c3f2ef0b30e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 67,
           "variantContext": {
@@ -2550,11 +2470,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_short_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2565,19 +2482,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_827c5d4089cc",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_827c5d4089cc.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_uranium233_3a417d339f9c",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_uranium233_3a417d339f9c.json",
           "status": "exact-native-source-binding-staged",
           "variant": 68,
           "variantContext": {
@@ -2595,11 +2507,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_short_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2610,19 +2519,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_429ca9185003",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_429ca9185003.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_neptunium_1b75e1951429",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_neptunium_1b75e1951429.json",
           "status": "exact-native-source-binding-staged",
           "variant": 69,
           "variantContext": {
@@ -2640,11 +2544,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_short_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2655,19 +2556,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_d1884aba9c7d",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_d1884aba9c7d.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium239_2a62f8fa3f01",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium239_2a62f8fa3f01.json",
           "status": "exact-native-source-binding-staged",
           "variant": 70,
           "variantContext": {
@@ -2685,11 +2581,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_short_plutonium239",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2700,19 +2593,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_plutonium239"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_ed95d2223d3b",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_ed95d2223d3b.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium240_10c9690ee03f",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium240_10c9690ee03f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 71,
           "variantContext": {
@@ -2730,11 +2618,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_short_plutonium240",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2745,19 +2630,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_plutonium240"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_456bd37be59b",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_456bd37be59b.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium241_3529fa3f2dc2",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium241_3529fa3f2dc2.json",
           "status": "exact-native-source-binding-staged",
           "variant": 72,
           "variantContext": {
@@ -2775,11 +2655,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:nuclear_waste_short_plutonium241",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2790,19 +2667,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_plutonium241"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_f1327835da06",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_f1327835da06.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_americium242_8bd53baffee0",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_americium242_8bd53baffee0.json",
           "status": "exact-native-source-binding-staged",
           "variant": 73,
           "variantContext": {
@@ -2820,11 +2692,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:nuclear_waste_short_americium242",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2835,19 +2704,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_americium242"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_a7abe6acf6aa",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_a7abe6acf6aa.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_schrabidium_9372b87addf6",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_schrabidium_9372b87addf6.json",
           "status": "exact-native-source-binding-staged",
           "variant": 74,
           "variantContext": {
@@ -2865,11 +2729,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:nuclear_waste_short_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2880,19 +2741,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_schrabidium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_bc50c6cf260e",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_bc50c6cf260e.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_uranium235_be5edf20da9e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_uranium235_be5edf20da9e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 75,
           "variantContext": {
@@ -2910,11 +2766,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_short_depleted_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2925,19 +2778,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_ae69ab500211",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_ae69ab500211.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_uranium233_4939b7185187",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_uranium233_4939b7185187.json",
           "status": "exact-native-source-binding-staged",
           "variant": 76,
           "variantContext": {
@@ -2955,11 +2803,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_short_depleted_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -2970,19 +2815,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_6eeb2d004a3d",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_6eeb2d004a3d.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_neptunium_7356234ed79c",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_neptunium_7356234ed79c.json",
           "status": "exact-native-source-binding-staged",
           "variant": 77,
           "variantContext": {
@@ -3000,11 +2840,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_short_depleted_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -3015,19 +2852,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_0c37caf9368f",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_0c37caf9368f.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium239_951d2514eead",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium239_951d2514eead.json",
           "status": "exact-native-source-binding-staged",
           "variant": 78,
           "variantContext": {
@@ -3045,11 +2877,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_short_depleted_plutonium239",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -3060,19 +2889,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium239"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_7c25cd7a86e7",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_7c25cd7a86e7.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium240_1959644c04e0",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium240_1959644c04e0.json",
           "status": "exact-native-source-binding-staged",
           "variant": 79,
           "variantContext": {
@@ -3090,11 +2914,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_short_depleted_plutonium240",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -3105,19 +2926,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium240"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_9f457f900d7a",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_9f457f900d7a.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium241_0980f4eb23e5",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium241_0980f4eb23e5.json",
           "status": "exact-native-source-binding-staged",
           "variant": 80,
           "variantContext": {
@@ -3135,11 +2951,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:nuclear_waste_short_depleted_plutonium241",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -3150,19 +2963,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium241"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_65f6dd29d1d2",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_65f6dd29d1d2.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_americium242_b4effaf5282f",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_americium242_b4effaf5282f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 81,
           "variantContext": {
@@ -3180,11 +2988,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:nuclear_waste_short_depleted_americium242",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -3195,19 +3000,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_americium242"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_a7269624d0bd",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_a7269624d0bd.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_schrabidium_792307927350",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_schrabidium_792307927350.json",
           "status": "exact-native-source-binding-staged",
           "variant": 82,
           "variantContext": {
@@ -3225,11 +3025,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:nuclear_waste_short_depleted_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -3240,12 +3037,7 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_schrabidium"
               }
             }
           }
@@ -20784,8 +20576,8 @@
         "new ItemStack(ModItems.nuclear_waste_long, 1, 0)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_tiny, 1, 0) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_edac9aa7d332",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_edac9aa7d332.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_uranium235_2b25adc3b58e",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_uranium235_2b25adc3b58e.json",
       "status": "exact-native-source-binding-staged",
       "variant": 57,
       "variantContext": {
@@ -20803,11 +20595,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:nuclear_waste_long_uranium235",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -20818,12 +20607,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_tiny",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_tiny_uranium235"
           }
         }
       }
@@ -20837,8 +20621,8 @@
         "new ItemStack(ModItems.nuclear_waste_long, 1, 1)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_tiny, 1, 1) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_516643df886a",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_516643df886a.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_uranium233_3b013e087c84",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_uranium233_3b013e087c84.json",
       "status": "exact-native-source-binding-staged",
       "variant": 58,
       "variantContext": {
@@ -20856,11 +20640,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:nuclear_waste_long_uranium233",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -20871,12 +20652,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_tiny",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_tiny_uranium233"
           }
         }
       }
@@ -20890,8 +20666,8 @@
         "new ItemStack(ModItems.nuclear_waste_long, 1, 2)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_tiny, 1, 2) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_41e54786f248",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_41e54786f248.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_neptunium_5a9a1dafc7a3",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_neptunium_5a9a1dafc7a3.json",
       "status": "exact-native-source-binding-staged",
       "variant": 59,
       "variantContext": {
@@ -20909,11 +20685,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:nuclear_waste_long_neptunium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -20924,12 +20697,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_tiny",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_tiny_neptunium"
           }
         }
       }
@@ -20943,8 +20711,8 @@
         "new ItemStack(ModItems.nuclear_waste_long, 1, 3)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_tiny, 1, 3) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_e8b2f1e2c21f",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_e8b2f1e2c21f.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_thorium_136d852cb15e",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_thorium_136d852cb15e.json",
       "status": "exact-native-source-binding-staged",
       "variant": 60,
       "variantContext": {
@@ -20962,11 +20730,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:nuclear_waste_long_thorium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -20977,12 +20742,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_tiny",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_tiny_thorium"
           }
         }
       }
@@ -20996,8 +20756,8 @@
         "new ItemStack(ModItems.nuclear_waste_long, 1, 4)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_tiny, 1, 4) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_025f37c33cf6",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_025f37c33cf6.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_schrabidium_48b38d58808e",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_schrabidium_48b38d58808e.json",
       "status": "exact-native-source-binding-staged",
       "variant": 61,
       "variantContext": {
@@ -21015,11 +20775,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:nuclear_waste_long_schrabidium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21030,12 +20787,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_tiny",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_tiny_schrabidium"
           }
         }
       }
@@ -21049,8 +20801,8 @@
         "new ItemStack(ModItems.nuclear_waste_long_depleted, 1, 0)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_depleted_tiny, 1, 0) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_32c514d33a17",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_32c514d33a17.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_uranium235_b7dd3ea5993c",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_uranium235_b7dd3ea5993c.json",
       "status": "exact-native-source-binding-staged",
       "variant": 62,
       "variantContext": {
@@ -21068,11 +20820,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:nuclear_waste_long_depleted_uranium235",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21083,12 +20832,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_depleted_tiny_uranium235"
           }
         }
       }
@@ -21102,8 +20846,8 @@
         "new ItemStack(ModItems.nuclear_waste_long_depleted, 1, 1)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_depleted_tiny, 1, 1) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_fadb409a4b2f",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_fadb409a4b2f.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_uranium233_a472d7dc55a3",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_uranium233_a472d7dc55a3.json",
       "status": "exact-native-source-binding-staged",
       "variant": 63,
       "variantContext": {
@@ -21121,11 +20865,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:nuclear_waste_long_depleted_uranium233",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21136,12 +20877,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_depleted_tiny_uranium233"
           }
         }
       }
@@ -21155,8 +20891,8 @@
         "new ItemStack(ModItems.nuclear_waste_long_depleted, 1, 2)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_depleted_tiny, 1, 2) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_ed33561d3e1a",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_ed33561d3e1a.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_neptunium_23fe21dd4a04",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_neptunium_23fe21dd4a04.json",
       "status": "exact-native-source-binding-staged",
       "variant": 64,
       "variantContext": {
@@ -21174,11 +20910,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:nuclear_waste_long_depleted_neptunium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21189,12 +20922,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_depleted_tiny_neptunium"
           }
         }
       }
@@ -21208,8 +20936,8 @@
         "new ItemStack(ModItems.nuclear_waste_long_depleted, 1, 3)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_depleted_tiny, 1, 3) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_2cdd8555b8bb",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_2cdd8555b8bb.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_thorium_9540342aa905",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_thorium_9540342aa905.json",
       "status": "exact-native-source-binding-staged",
       "variant": 65,
       "variantContext": {
@@ -21227,11 +20955,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:nuclear_waste_long_depleted_thorium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21242,12 +20967,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_depleted_tiny_thorium"
           }
         }
       }
@@ -21261,8 +20981,8 @@
         "new ItemStack(ModItems.nuclear_waste_long_depleted, 1, 4)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_long_depleted_tiny, 1, 4) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_7377d5fce34b",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_7377d5fce34b.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_schrabidium_b11ee34022d6",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_schrabidium_b11ee34022d6.json",
       "status": "exact-native-source-binding-staged",
       "variant": 66,
       "variantContext": {
@@ -21280,11 +21000,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_long_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:nuclear_waste_long_depleted_schrabidium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21295,12 +21012,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_long_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_long_depleted_tiny_schrabidium"
           }
         }
       }
@@ -21314,8 +21026,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 0)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 0) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_6a26aff23ca4",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_6a26aff23ca4.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_uranium235_4c3f2ef0b30e",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_uranium235_4c3f2ef0b30e.json",
       "status": "exact-native-source-binding-staged",
       "variant": 67,
       "variantContext": {
@@ -21333,11 +21045,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:nuclear_waste_short_uranium235",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21348,12 +21057,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_uranium235"
           }
         }
       }
@@ -21367,8 +21071,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 1)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 1) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_827c5d4089cc",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_827c5d4089cc.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_uranium233_3a417d339f9c",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_uranium233_3a417d339f9c.json",
       "status": "exact-native-source-binding-staged",
       "variant": 68,
       "variantContext": {
@@ -21386,11 +21090,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:nuclear_waste_short_uranium233",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21401,12 +21102,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_uranium233"
           }
         }
       }
@@ -21420,8 +21116,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 2)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 2) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_429ca9185003",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_429ca9185003.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_neptunium_1b75e1951429",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_neptunium_1b75e1951429.json",
       "status": "exact-native-source-binding-staged",
       "variant": 69,
       "variantContext": {
@@ -21439,11 +21135,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:nuclear_waste_short_neptunium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21454,12 +21147,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_neptunium"
           }
         }
       }
@@ -21473,8 +21161,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 3)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 3) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_d1884aba9c7d",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_d1884aba9c7d.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium239_2a62f8fa3f01",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium239_2a62f8fa3f01.json",
       "status": "exact-native-source-binding-staged",
       "variant": 70,
       "variantContext": {
@@ -21492,11 +21180,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:nuclear_waste_short_plutonium239",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21507,12 +21192,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_plutonium239"
           }
         }
       }
@@ -21526,8 +21206,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 4)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 4) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_ed95d2223d3b",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_ed95d2223d3b.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium240_10c9690ee03f",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium240_10c9690ee03f.json",
       "status": "exact-native-source-binding-staged",
       "variant": 71,
       "variantContext": {
@@ -21545,11 +21225,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:nuclear_waste_short_plutonium240",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21560,12 +21237,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_plutonium240"
           }
         }
       }
@@ -21579,8 +21251,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 5)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 5) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_456bd37be59b",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_456bd37be59b.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium241_3529fa3f2dc2",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium241_3529fa3f2dc2.json",
       "status": "exact-native-source-binding-staged",
       "variant": 72,
       "variantContext": {
@@ -21598,11 +21270,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:nuclear_waste_short_plutonium241",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21613,12 +21282,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_plutonium241"
           }
         }
       }
@@ -21632,8 +21296,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 6)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 6) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_f1327835da06",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_f1327835da06.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_americium242_8bd53baffee0",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_americium242_8bd53baffee0.json",
       "status": "exact-native-source-binding-staged",
       "variant": 73,
       "variantContext": {
@@ -21651,11 +21315,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:nuclear_waste_short_americium242",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21666,12 +21327,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_americium242"
           }
         }
       }
@@ -21685,8 +21341,8 @@
         "new ItemStack(ModItems.nuclear_waste_short, 1, 7)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_tiny, 1, 7) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_a7abe6acf6aa",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_a7abe6acf6aa.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_schrabidium_9372b87addf6",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_schrabidium_9372b87addf6.json",
       "status": "exact-native-source-binding-staged",
       "variant": 74,
       "variantContext": {
@@ -21704,11 +21360,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:nuclear_waste_short_schrabidium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21719,12 +21372,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_tiny",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_tiny_schrabidium"
           }
         }
       }
@@ -21738,8 +21386,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 0)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 0) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_bc50c6cf260e",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_bc50c6cf260e.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_uranium235_be5edf20da9e",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_uranium235_be5edf20da9e.json",
       "status": "exact-native-source-binding-staged",
       "variant": 75,
       "variantContext": {
@@ -21757,11 +21405,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 0
-          }
+          "id": "hbm:nuclear_waste_short_depleted_uranium235",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21772,12 +21417,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 0
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_uranium235"
           }
         }
       }
@@ -21791,8 +21431,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 1)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 1) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_ae69ab500211",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_ae69ab500211.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_uranium233_4939b7185187",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_uranium233_4939b7185187.json",
       "status": "exact-native-source-binding-staged",
       "variant": 76,
       "variantContext": {
@@ -21810,11 +21450,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 1
-          }
+          "id": "hbm:nuclear_waste_short_depleted_uranium233",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21825,12 +21462,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 1
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_uranium233"
           }
         }
       }
@@ -21844,8 +21476,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 2)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 2) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_6eeb2d004a3d",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_6eeb2d004a3d.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_neptunium_7356234ed79c",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_neptunium_7356234ed79c.json",
       "status": "exact-native-source-binding-staged",
       "variant": 77,
       "variantContext": {
@@ -21863,11 +21495,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 2
-          }
+          "id": "hbm:nuclear_waste_short_depleted_neptunium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21878,12 +21507,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 2
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_neptunium"
           }
         }
       }
@@ -21897,8 +21521,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 3)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 3) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_0c37caf9368f",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_0c37caf9368f.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium239_951d2514eead",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium239_951d2514eead.json",
       "status": "exact-native-source-binding-staged",
       "variant": 78,
       "variantContext": {
@@ -21916,11 +21540,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 3
-          }
+          "id": "hbm:nuclear_waste_short_depleted_plutonium239",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21931,12 +21552,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 3
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium239"
           }
         }
       }
@@ -21950,8 +21566,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 4)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 4) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_7c25cd7a86e7",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_7c25cd7a86e7.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium240_1959644c04e0",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium240_1959644c04e0.json",
       "status": "exact-native-source-binding-staged",
       "variant": 79,
       "variantContext": {
@@ -21969,11 +21585,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 4
-          }
+          "id": "hbm:nuclear_waste_short_depleted_plutonium240",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -21984,12 +21597,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 4
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium240"
           }
         }
       }
@@ -22003,8 +21611,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 5)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 5) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_9f457f900d7a",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_9f457f900d7a.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium241_0980f4eb23e5",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium241_0980f4eb23e5.json",
       "status": "exact-native-source-binding-staged",
       "variant": 80,
       "variantContext": {
@@ -22022,11 +21630,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 5
-          }
+          "id": "hbm:nuclear_waste_short_depleted_plutonium241",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -22037,12 +21642,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 5
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium241"
           }
         }
       }
@@ -22056,8 +21656,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 6)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 6) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_65f6dd29d1d2",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_65f6dd29d1d2.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_americium242_b4effaf5282f",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_americium242_b4effaf5282f.json",
       "status": "exact-native-source-binding-staged",
       "variant": 81,
       "variantContext": {
@@ -22075,11 +21675,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 6
-          }
+          "id": "hbm:nuclear_waste_short_depleted_americium242",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -22090,12 +21687,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 6
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_americium242"
           }
         }
       }
@@ -22109,8 +21701,8 @@
         "new ItemStack(ModItems.nuclear_waste_short_depleted, 1, 7)",
         "new Object[] { \"###\", \"###\", \"###\", '#', new ItemStack(ModItems.nuclear_waste_short_depleted_tiny, 1, 7) }"
       ],
-      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_a7269624d0bd",
-      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_a7269624d0bd.json",
+      "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_schrabidium_792307927350",
+      "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_schrabidium_792307927350.json",
       "status": "exact-native-source-binding-staged",
       "variant": 82,
       "variantContext": {
@@ -22128,11 +21720,8 @@
       },
       "recipe": {
         "result": {
-          "id": "hbm:nuclear_waste_short_depleted",
-          "count": 1,
-          "components": {
-            "hbm:legacy_metadata": 7
-          }
+          "id": "hbm:nuclear_waste_short_depleted_schrabidium",
+          "count": 1
         },
         "type": "minecraft:crafting_shaped",
         "category": "misc",
@@ -22143,12 +21732,7 @@
         ],
         "key": {
           "#": {
-            "type": "neoforge:components",
-            "items": "hbm:nuclear_waste_short_depleted_tiny",
-            "components": {
-              "hbm:legacy_metadata": 7
-            },
-            "strict": false
+            "item": "hbm:nuclear_waste_short_depleted_tiny_schrabidium"
           }
         }
       }
@@ -42023,8 +41607,8 @@
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_edac9aa7d332",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_edac9aa7d332.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_uranium235_2b25adc3b58e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_uranium235_2b25adc3b58e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 57,
           "variantContext": {
@@ -42042,11 +41626,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_long_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42057,19 +41638,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_516643df886a",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_516643df886a.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_uranium233_3b013e087c84",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_uranium233_3b013e087c84.json",
           "status": "exact-native-source-binding-staged",
           "variant": 58,
           "variantContext": {
@@ -42087,11 +41663,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_long_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42102,19 +41675,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_41e54786f248",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_41e54786f248.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_neptunium_5a9a1dafc7a3",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_neptunium_5a9a1dafc7a3.json",
           "status": "exact-native-source-binding-staged",
           "variant": 59,
           "variantContext": {
@@ -42132,11 +41700,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_long_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42147,19 +41712,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_e8b2f1e2c21f",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_e8b2f1e2c21f.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_thorium_136d852cb15e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_thorium_136d852cb15e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 60,
           "variantContext": {
@@ -42177,11 +41737,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_long_thorium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42192,19 +41749,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_thorium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_025f37c33cf6",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_025f37c33cf6.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_schrabidium_48b38d58808e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_schrabidium_48b38d58808e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 61,
           "variantContext": {
@@ -42222,11 +41774,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_long_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42237,19 +41786,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_tiny_schrabidium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_32c514d33a17",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_32c514d33a17.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_uranium235_b7dd3ea5993c",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_uranium235_b7dd3ea5993c.json",
           "status": "exact-native-source-binding-staged",
           "variant": 62,
           "variantContext": {
@@ -42267,11 +41811,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_long_depleted_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42282,19 +41823,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_fadb409a4b2f",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_fadb409a4b2f.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_uranium233_a472d7dc55a3",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_uranium233_a472d7dc55a3.json",
           "status": "exact-native-source-binding-staged",
           "variant": 63,
           "variantContext": {
@@ -42312,11 +41848,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_long_depleted_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42327,19 +41860,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_ed33561d3e1a",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_ed33561d3e1a.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_neptunium_23fe21dd4a04",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_neptunium_23fe21dd4a04.json",
           "status": "exact-native-source-binding-staged",
           "variant": 64,
           "variantContext": {
@@ -42357,11 +41885,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_long_depleted_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42372,19 +41897,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_2cdd8555b8bb",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_2cdd8555b8bb.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_thorium_9540342aa905",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_thorium_9540342aa905.json",
           "status": "exact-native-source-binding-staged",
           "variant": 65,
           "variantContext": {
@@ -42402,11 +41922,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_long_depleted_thorium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42417,19 +41934,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_thorium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_7377d5fce34b",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_7377d5fce34b.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_long_depleted_schrabidium_b11ee34022d6",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_long_depleted_schrabidium_b11ee34022d6.json",
           "status": "exact-native-source-binding-staged",
           "variant": 66,
           "variantContext": {
@@ -42447,11 +41959,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_long_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_long_depleted_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42462,19 +41971,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_long_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_long_depleted_tiny_schrabidium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_6a26aff23ca4",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_6a26aff23ca4.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_uranium235_4c3f2ef0b30e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_uranium235_4c3f2ef0b30e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 67,
           "variantContext": {
@@ -42492,11 +41996,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_short_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42507,19 +42008,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_827c5d4089cc",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_827c5d4089cc.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_uranium233_3a417d339f9c",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_uranium233_3a417d339f9c.json",
           "status": "exact-native-source-binding-staged",
           "variant": 68,
           "variantContext": {
@@ -42537,11 +42033,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_short_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42552,19 +42045,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_429ca9185003",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_429ca9185003.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_neptunium_1b75e1951429",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_neptunium_1b75e1951429.json",
           "status": "exact-native-source-binding-staged",
           "variant": 69,
           "variantContext": {
@@ -42582,11 +42070,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_short_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42597,19 +42082,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_d1884aba9c7d",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_d1884aba9c7d.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium239_2a62f8fa3f01",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium239_2a62f8fa3f01.json",
           "status": "exact-native-source-binding-staged",
           "variant": 70,
           "variantContext": {
@@ -42627,11 +42107,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_short_plutonium239",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42642,19 +42119,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_plutonium239"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_ed95d2223d3b",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_ed95d2223d3b.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium240_10c9690ee03f",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium240_10c9690ee03f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 71,
           "variantContext": {
@@ -42672,11 +42144,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_short_plutonium240",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42687,19 +42156,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_plutonium240"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_456bd37be59b",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_456bd37be59b.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_plutonium241_3529fa3f2dc2",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_plutonium241_3529fa3f2dc2.json",
           "status": "exact-native-source-binding-staged",
           "variant": 72,
           "variantContext": {
@@ -42717,11 +42181,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:nuclear_waste_short_plutonium241",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42732,19 +42193,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_plutonium241"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_f1327835da06",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_f1327835da06.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_americium242_8bd53baffee0",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_americium242_8bd53baffee0.json",
           "status": "exact-native-source-binding-staged",
           "variant": 73,
           "variantContext": {
@@ -42762,11 +42218,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:nuclear_waste_short_americium242",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42777,19 +42230,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_americium242"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_a7abe6acf6aa",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_a7abe6acf6aa.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_schrabidium_9372b87addf6",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_schrabidium_9372b87addf6.json",
           "status": "exact-native-source-binding-staged",
           "variant": 74,
           "variantContext": {
@@ -42807,11 +42255,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:nuclear_waste_short_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42822,19 +42267,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_tiny_schrabidium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_bc50c6cf260e",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_bc50c6cf260e.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_uranium235_be5edf20da9e",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_uranium235_be5edf20da9e.json",
           "status": "exact-native-source-binding-staged",
           "variant": 75,
           "variantContext": {
@@ -42852,11 +42292,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 0
-              }
+              "id": "hbm:nuclear_waste_short_depleted_uranium235",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42867,19 +42304,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 0
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_uranium235"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_ae69ab500211",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_ae69ab500211.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_uranium233_4939b7185187",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_uranium233_4939b7185187.json",
           "status": "exact-native-source-binding-staged",
           "variant": 76,
           "variantContext": {
@@ -42897,11 +42329,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 1
-              }
+              "id": "hbm:nuclear_waste_short_depleted_uranium233",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42912,19 +42341,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 1
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_uranium233"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_6eeb2d004a3d",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_6eeb2d004a3d.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_neptunium_7356234ed79c",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_neptunium_7356234ed79c.json",
           "status": "exact-native-source-binding-staged",
           "variant": 77,
           "variantContext": {
@@ -42942,11 +42366,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 2
-              }
+              "id": "hbm:nuclear_waste_short_depleted_neptunium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -42957,19 +42378,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 2
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_neptunium"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_0c37caf9368f",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_0c37caf9368f.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium239_951d2514eead",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium239_951d2514eead.json",
           "status": "exact-native-source-binding-staged",
           "variant": 78,
           "variantContext": {
@@ -42987,11 +42403,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 3
-              }
+              "id": "hbm:nuclear_waste_short_depleted_plutonium239",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -43002,19 +42415,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 3
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium239"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_7c25cd7a86e7",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_7c25cd7a86e7.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium240_1959644c04e0",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium240_1959644c04e0.json",
           "status": "exact-native-source-binding-staged",
           "variant": 79,
           "variantContext": {
@@ -43032,11 +42440,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 4
-              }
+              "id": "hbm:nuclear_waste_short_depleted_plutonium240",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -43047,19 +42452,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 4
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium240"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_9f457f900d7a",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_9f457f900d7a.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_plutonium241_0980f4eb23e5",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_plutonium241_0980f4eb23e5.json",
           "status": "exact-native-source-binding-staged",
           "variant": 80,
           "variantContext": {
@@ -43077,11 +42477,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 5
-              }
+              "id": "hbm:nuclear_waste_short_depleted_plutonium241",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -43092,19 +42489,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 5
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_plutonium241"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_65f6dd29d1d2",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_65f6dd29d1d2.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_americium242_b4effaf5282f",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_americium242_b4effaf5282f.json",
           "status": "exact-native-source-binding-staged",
           "variant": 81,
           "variantContext": {
@@ -43122,11 +42514,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 6
-              }
+              "id": "hbm:nuclear_waste_short_depleted_americium242",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -43137,19 +42526,14 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 6
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_americium242"
               }
             }
           }
         },
         {
-          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_a7269624d0bd",
-          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_a7269624d0bd.json",
+          "id": "hbm:crafting/hbm_nuclear_waste_short_depleted_schrabidium_792307927350",
+          "resource": "data/hbm/recipe/crafting/hbm_nuclear_waste_short_depleted_schrabidium_792307927350.json",
           "status": "exact-native-source-binding-staged",
           "variant": 82,
           "variantContext": {
@@ -43167,11 +42551,8 @@
           },
           "recipe": {
             "result": {
-              "id": "hbm:nuclear_waste_short_depleted",
-              "count": 1,
-              "components": {
-                "hbm:legacy_metadata": 7
-              }
+              "id": "hbm:nuclear_waste_short_depleted_schrabidium",
+              "count": 1
             },
             "type": "minecraft:crafting_shaped",
             "category": "misc",
@@ -43182,12 +42563,7 @@
             ],
             "key": {
               "#": {
-                "type": "neoforge:components",
-                "items": "hbm:nuclear_waste_short_depleted_tiny",
-                "components": {
-                  "hbm:legacy_metadata": 7
-                },
-                "strict": false
+                "item": "hbm:nuclear_waste_short_depleted_tiny_schrabidium"
               }
             }
           }

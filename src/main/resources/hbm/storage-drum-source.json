@@ -193,262 +193,210 @@
   "viewerRows": [
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_short_uranium235"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_short_depleted_uranium235"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_short_tiny_uranium235"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_short_depleted_tiny_uranium235"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_short_uranium233"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_short_depleted_uranium233"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_short_tiny_uranium233"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_short_depleted_tiny_uranium233"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_short_neptunium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_short_depleted_neptunium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_short_tiny_neptunium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_short_depleted_tiny_neptunium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_short_plutonium239"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_short_depleted_plutonium239"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_short_tiny_plutonium239"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium239"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_short_plutonium240"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_short_depleted_plutonium240"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_short_tiny_plutonium240"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium240"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 5
+        "id": "hbm:nuclear_waste_short_plutonium241"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 5
+        "id": "hbm:nuclear_waste_short_depleted_plutonium241"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 5
+        "id": "hbm:nuclear_waste_short_tiny_plutonium241"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 5
+        "id": "hbm:nuclear_waste_short_depleted_tiny_plutonium241"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 6
+        "id": "hbm:nuclear_waste_short_americium242"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 6
+        "id": "hbm:nuclear_waste_short_depleted_americium242"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 6
+        "id": "hbm:nuclear_waste_short_tiny_americium242"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 6
+        "id": "hbm:nuclear_waste_short_depleted_tiny_americium242"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short",
-        "metadata": 7
+        "id": "hbm:nuclear_waste_short_schrabidium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted",
-        "metadata": 7
+        "id": "hbm:nuclear_waste_short_depleted_schrabidium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_short_tiny",
-        "metadata": 7
+        "id": "hbm:nuclear_waste_short_tiny_schrabidium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_short_depleted_tiny",
-        "metadata": 7
+        "id": "hbm:nuclear_waste_short_depleted_tiny_schrabidium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_long_uranium235"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_long_depleted_uranium235"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long_tiny",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_long_tiny_uranium235"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted_tiny",
-        "metadata": 0
+        "id": "hbm:nuclear_waste_long_depleted_tiny_uranium235"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_long_uranium233"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_long_depleted_uranium233"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long_tiny",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_long_tiny_uranium233"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted_tiny",
-        "metadata": 1
+        "id": "hbm:nuclear_waste_long_depleted_tiny_uranium233"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_long_neptunium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_long_depleted_neptunium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long_tiny",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_long_tiny_neptunium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted_tiny",
-        "metadata": 2
+        "id": "hbm:nuclear_waste_long_depleted_tiny_neptunium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_long_thorium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_long_depleted_thorium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long_tiny",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_long_tiny_thorium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted_tiny",
-        "metadata": 3
+        "id": "hbm:nuclear_waste_long_depleted_tiny_thorium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_long_schrabidium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_long_depleted_schrabidium"
       }
     },
     {
       "input": {
-        "id": "hbm:nuclear_waste_long_tiny",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_long_tiny_schrabidium"
       },
       "output": {
-        "id": "hbm:nuclear_waste_long_depleted_tiny",
-        "metadata": 4
+        "id": "hbm:nuclear_waste_long_depleted_tiny_schrabidium"
       }
     }
   ],
