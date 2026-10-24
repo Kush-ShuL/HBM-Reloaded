@@ -100,7 +100,7 @@ public final class NuclearTerrain {
   @Override public void stepOn(Level level,BlockPos pos,BlockState state,Entity entity){if(mycelium)radiation(entity,600,3,true);}
   @Override public void animateTick(BlockState state,Level level,BlockPos pos,RandomSource random){if(mycelium)level.addParticle(LegacyParticles.AURA.get(),pos.getX()+random.nextFloat(),pos.getY()+1.1F,pos.getZ()+random.nextFloat(),0,0,0);}
   @Override protected void randomTick(BlockState state,ServerLevel level,BlockPos pos,RandomSource random){
-   if(mycelium&&NuclearConfig.MYCELIUM.get())for(int x=-1;x<2;x++)for(int y=-1;y<2;y++)for(int z=-1;z<2;z++){var at=pos.offset(x,y,z);var base=level.getBlockState(at);if(!level.getBlockState(at.above()).isSolidRender(level,at.above())&&(base.is(Blocks.DIRT)||base.is(Blocks.GRASS_BLOCK)||base.is(Blocks.MYCELIUM)||base.is(EARTH.get())))level.setBlock(at,MYCELIUM.get().defaultBlockState(),3);}
+   if(mycelium&&NuclearConfig.MYCELIUM.get())for(int x=-1;x<2;x++)for(int y=-1;y<2;y++)for(int z=-1;z<2;z++){var at=pos.offset(x,y,z);var base=level.getBlockState(at);if(!level.getBlockState(at.above()).isSolidRender(level,at.above())&&(base.is(Blocks.DIRT)||base.is(Blocks.COARSE_DIRT)||base.is(Blocks.PODZOL)||base.is(Blocks.GRASS_BLOCK)||base.is(Blocks.MYCELIUM)||base.is(EARTH.get())))level.setBlock(at,MYCELIUM.get().defaultBlockState(),3);}
    var above=pos.above();var top=level.getBlockState(above);
    if(NuclearConfig.CLEANUP_DEAD_DIRT.get()||(level.getMaxLocalRawBrightness(above)<4&&top.getLightBlock(level,above)>2))level.setBlock(pos,Blocks.DIRT.defaultBlockState(),3);
    if(top.getBlock() instanceof MushroomBlock)level.setBlock(above,MUSH.get().defaultBlockState(),3);
