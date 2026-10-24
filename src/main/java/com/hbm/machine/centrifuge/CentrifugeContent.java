@@ -40,7 +40,7 @@ public final class CentrifugeContent {
     static { for(int i=1;i<=3;i++) { int tier=i; OVERDRIVE.add(ITEMS.register("upgrade_overdrive_"+i,()->new OverdriveUpgradeItem(tier))); } }
     private CentrifugeContent() {}
     public static void register(IEventBus bus) {
-        CentrifugeConfig.load(); BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus); TYPES.register(bus); SERIALIZERS.register(bus); INGREDIENTS.register(bus);
+        BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus); TYPES.register(bus); SERIALIZERS.register(bus); INGREDIENTS.register(bus);
         bus.addListener(CentrifugeContent::capabilities); CentrifugeRecipeConfig.register(); bus.addListener(CentrifugeRecipeConfig::imc);
     }
     private static void capabilities(RegisterCapabilitiesEvent event) { event.registerBlockEntity(Capabilities.ItemHandler.BLOCK,ENTITY.get(),(machine,side)->side==null?new InvWrapper(machine):new SidedInvWrapper(machine,side)); }
