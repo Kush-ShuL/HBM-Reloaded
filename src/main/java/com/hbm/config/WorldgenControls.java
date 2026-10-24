@@ -9,12 +9,13 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 /** Optional final overrides over the original module configurations; defaults consume no extra random draws. */
 public final class WorldgenControls {
     public static final ModConfigSpec SPEC;
-    private static final ModConfigSpec.BooleanValue ORES,STRUCTURES,OIL_SURFACE_INDICATORS;
+    private static final ModConfigSpec.BooleanValue ORES,STRUCTURES,OIL_SURFACE_INDICATORS,MODDED_DIMENSIONS;
     private static final Map<String,ModConfigSpec.BooleanValue> FEATURES=new LinkedHashMap<>();
     private static final Map<String,Rule> RULES=new LinkedHashMap<>();
     static {
         var builder=new ModConfigSpec.Builder();
         ORES=builder.comment("Master switch for every HBM mineral/geological feature. Existing per-module settings still apply.").define("oresEnabled",true);
+        MODDED_DIMENSIONS=builder.comment("允许在其他模组维度执行 HBM 的地表生成入口。默认开启；主世界、下界和末地仍按各自生成规则处理。").define("moddedDimensionsEnabled",true);
         STRUCTURES=builder.comment("Master switch for HBM natural buildings and hidden red rooms. Affects new generation only.").define("structuresEnabled",true);
         builder.comment("-1 表示沿用对应生成模块的设置；高度参数用 -2049 表示沿用。高度均为绝对 Y 坐标，正高度与深层分支可分别设置。").push("features");
         rule(builder,"overworld_ores","ore_uranium","vein");
@@ -122,6 +123,8 @@ public final class WorldgenControls {
         rule(builder,"radiation_hotspots","sellafield_crater","chance_height");
         rule(builder,"natural_events","blueprint_chest","grid");
         rule(builder,"pink_trees","pink_log","chance_height");
+        rule(builder,"reeds","river","chance_height");
+        rule(builder,"reeds","beach","chance_height");
         rule(builder,"oil_terrain","oil_bubbles","chance_height");
         rule(builder,"oil_terrain","bedrock_oil","chance_height");
         rule(builder,"oil_terrain","oil_sand","chance_height");
@@ -135,6 +138,7 @@ public final class WorldgenControls {
         builder.push(feature).push(name);RULES.put(feature+"/"+name,new Rule(builder,kind));builder.pop().pop();
     }
     public static boolean ores(){return ORES.get();}
+    public static boolean moddedDimensions(){return MODDED_DIMENSIONS.get();}
     public static boolean structures(){return STRUCTURES.get();}
     public static boolean oilSurfaceIndicators(){return OIL_SURFACE_INDICATORS.get();}
     public static boolean feature(String name){var value=FEATURES.get(name);if(value==null)throw new IllegalArgumentException("Unknown HBM generation feature "+name);return value.get();}
