@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.entity.grenade.waste.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WastePearlEntityIdMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

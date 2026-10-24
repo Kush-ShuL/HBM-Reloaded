@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hbm.environment.impact.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ImpactGenerationMixin",
+    "ImpactFeatureMixin",
+    "ImpactSurfaceMixin",
+    "ImpactPopulationMixin",
+    "ImpactVillageMixin",
+    "ImpactDaytimeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
