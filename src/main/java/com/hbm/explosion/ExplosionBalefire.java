@@ -8,7 +8,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.levelgen.Heightmap;
 
 public class ExplosionBalefire
 {
@@ -104,7 +103,7 @@ public class ExplosionBalefire
 			int pX = posX + x;
 			int pZ = posZ + z;
 			
-			int y  = worldObj.getHeight(Heightmap.Types.MOTION_BLOCKING,pX,pZ);
+			int y  = com.hbm.world.SourceWorldHeight.get(worldObj,pX,pZ);
 			int maxdepth = (int) (10 + radius * 0.25);
 			int depth = (int) ((maxdepth * dist / radius) + (Math.sin(dist * 0.15 + 2) * 2));//
 			

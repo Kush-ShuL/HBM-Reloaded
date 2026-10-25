@@ -14,7 +14,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Mth;
 
@@ -86,7 +85,7 @@ public class NuclearTorex extends Entity implements com.hbm.entity.LegacyTrackin
 		}
 	}
 	
-    private int groundTarget(){return Math.max(level().getHeight(Heightmap.Types.MOTION_BLOCKING,Mth.floor(getX()),Mth.floor(getZ()))-3,level().getMinBuildHeight()+1);}
+    private int groundTarget(){return Math.max(com.hbm.world.SourceWorldHeight.get(level(),Mth.floor(getX()),Mth.floor(getZ()))-3,level().getMinBuildHeight()+1);}
     private void clientTick(boolean feedback){double s=1.5,cs=1.5;int maxAge=getMaxAge();
 			
 			if(tickCount == 1) this.setScale((float) s);
@@ -137,7 +136,7 @@ public class NuclearTorex extends Entity implements com.hbm.entity.LegacyTrackin
 					LegacyVector vec = LegacyVector.createVectorHelper((tickCount * 1.5 + random.nextDouble()) * 1.5, 0, 0);
 					float rot = (float) (Math.PI * 2 * random.nextDouble());
 					vec.rotateAroundY(rot);
-					this.addCloudlet(new Cloudlet(vec.xCoord + getX(), level().getHeight(Heightmap.Types.MOTION_BLOCKING,(int) (vec.xCoord + getX()) + 1, (int) (vec.zCoord + getZ())), vec.zCoord + getZ(), rot, 0, shockLife, TorexType.SHOCK)
+					this.addCloudlet(new Cloudlet(vec.xCoord + getX(), com.hbm.world.SourceWorldHeight.get(level(),(int) (vec.xCoord + getX()) + 1, (int) (vec.zCoord + getZ())), vec.zCoord + getZ(), rot, 0, shockLife, TorexType.SHOCK)
 							.setScale(7F, 2F)
 							.setMotion(tickCount > 15 ? 0.75 : 0));
 				}

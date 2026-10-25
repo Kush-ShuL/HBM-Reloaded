@@ -14,7 +14,6 @@ import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.SugarCaneBlock;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -101,7 +100,7 @@ public final class PollutionSystem {
             for (int index = 0; index < 5; index++) {
                 int x = (cell.x() << 6) + level.random.nextInt(64), z = (cell.z() << 6) + level.random.nextInt(64);
                 if (level.getChunkSource().getChunkNow(x >> 4, z >> 4)==null) continue;
-                int y = level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z) - level.random.nextInt(3) + 1;
+                int y = com.hbm.world.SourceWorldHeight.get(level, x, z) - level.random.nextInt(3) + 1;
                 BlockPos position = new BlockPos(x, y, z);
                 var state = level.getBlockState(position);
                 var material=com.hbm.block.fluid.LegacyMaterials.of(state);

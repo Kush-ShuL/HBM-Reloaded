@@ -4,7 +4,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.EventHooks;
@@ -21,6 +20,6 @@ public final class FbiRaids {
         for(int i=0;i<FbiConfig.AMOUNT.get();i++)spawn(world,player,vector,false);
         for(int i=0;i<FbiConfig.DRONES.get();i++)spawn(world,player,vector,true);
     }
-    private static void spawn(ServerLevel world,Player player,Vec3 vector,boolean drone){double x=player.getX()+vector.x+world.random.nextGaussian()*5,z=player.getZ()+vector.z+world.random.nextGaussian()*5;double y=world.getHeight(Heightmap.Types.MOTION_BLOCKING,(int)x,(int)z);Mob mob=drone?com.hbm.satellite.resources.SatelliteResources113.DRONE.get().create(world):com.hbm.satellite.resources.SatelliteResources113.AGENT.get().create(world);mob.moveTo((float)x,(float)y+(drone?10:0),(float)z,world.random.nextFloat()*360,0);var check=new MobSpawnEvent.PositionCheck(mob,world,MobSpawnType.EVENT,null);NeoForge.EVENT_BUS.post(check);if(check.getResult()!=MobSpawnEvent.PositionCheck.Result.FAIL){world.addFreshEntity(mob);EventHooks.finalizeMobSpawn(mob,world,world.getCurrentDifficultyAt(mob.blockPosition()),MobSpawnType.EVENT,null);}}
+    private static void spawn(ServerLevel world,Player player,Vec3 vector,boolean drone){double x=player.getX()+vector.x+world.random.nextGaussian()*5,z=player.getZ()+vector.z+world.random.nextGaussian()*5;double y=com.hbm.world.SourceWorldHeight.get(world,(int)x,(int)z);Mob mob=drone?com.hbm.satellite.resources.SatelliteResources113.DRONE.get().create(world):com.hbm.satellite.resources.SatelliteResources113.AGENT.get().create(world);mob.moveTo((float)x,(float)y+(drone?10:0),(float)z,world.random.nextFloat()*360,0);var check=new MobSpawnEvent.PositionCheck(mob,world,MobSpawnType.EVENT,null);NeoForge.EVENT_BUS.post(check);if(check.getResult()!=MobSpawnEvent.PositionCheck.Result.FAIL){world.addFreshEntity(mob);EventHooks.finalizeMobSpawn(mob,world,world.getCurrentDifficultyAt(mob.blockPosition()),MobSpawnType.EVENT,null);}}
     private FbiRaids(){}
 }

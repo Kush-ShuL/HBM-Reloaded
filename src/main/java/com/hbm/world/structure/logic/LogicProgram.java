@@ -40,7 +40,6 @@ import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.levelgen.Heightmap;
 
 /** All and only the source enabled 16/8/3 program table entries; no dead action or fake dependency is registered. */
 public final class LogicProgram {
@@ -139,7 +138,7 @@ public final class LogicProgram {
         var world = tile.server(); var p = tile.getBlockPos(); double vx = 5, vz = 0;
         double angle = 36D / 180D * Math.PI, cos = Math.cos(angle), sin = Math.sin(angle);
         for (int i = 0; i < 10; i++) {
-            var mob = new Zombie(world); mob.moveTo(p.getX() + .5 + vx, world.getHeight(Heightmap.Types.MOTION_BLOCKING, p.getX(), p.getZ()), p.getZ() + .5 + vz, i * 36F, 0);
+            var mob = new Zombie(world); mob.moveTo(p.getX() + .5 + vx, com.hbm.world.SourceWorldHeight.get(world, p.getX(), p.getZ()), p.getZ() + .5 + vz, i * 36F, 0);
             MobUtil.assignItemsToEntity(mob, MobUtil.slotPoolAdv, new Random()); world.addFreshEntity(mob);
             double nextX = vx * cos + vz * sin; vz = vz * cos - vx * sin; vx = nextX;
         }
@@ -190,7 +189,7 @@ public final class LogicProgram {
                     var mob = UndeadSoldierContent.SOLDIER.get().create(world);
                     if (mob == null) throw new IllegalStateException("Actual UndeadSoldier factory returned null");
                     for (int j = 0; j < 7; j++) {
-                        mob.moveTo(p.getX() + .5 + vx, world.getHeight(Heightmap.Types.MOTION_BLOCKING, (int) (p.getX() + .5 + vx), (int) (p.getZ() + .5 + vz)), p.getZ() + .5 + vz, i * 36F, 0);
+                        mob.moveTo(p.getX() + .5 + vx, com.hbm.world.SourceWorldHeight.get(world, (int) (p.getX() + .5 + vx), (int) (p.getZ() + .5 + vz)), p.getZ() + .5 + vz, i * 36F, 0);
                         if (mob.sourceCanSpawnHere()) {
                             mob.finalizeSpawn(world, world.getCurrentDifficultyAt(mob.blockPosition()), net.minecraft.world.entity.MobSpawnType.SPAWNER, null);
                             if (tile.player != null) mob.setTarget(tile.player);
@@ -223,7 +222,7 @@ public final class LogicProgram {
         var world = tile.server(); var p = tile.getBlockPos(); world.setBlock(p, LogicWorld.block("crate_steel", 0), 3);
         var bolt = EntityType.LIGHTNING_BOLT.create(world);
         if (bolt == null) throw new IllegalStateException("Native lightning factory returned null");
-        bolt.moveTo(p.getX(), world.getHeight(Heightmap.Types.MOTION_BLOCKING, p.getX(), p.getZ()) + 2, p.getZ()); world.addFreshEntity(bolt);
+        bolt.moveTo(p.getX(), com.hbm.world.SourceWorldHeight.get(world, p.getX(), p.getZ()) + 2, p.getZ()); world.addFreshEntity(bolt);
         ((Container) world.getBlockEntity(p)).setItem(15, LogicWorld.stack("gun_bolter"));
     }
     private static void missile(LogicRuntime tile) {

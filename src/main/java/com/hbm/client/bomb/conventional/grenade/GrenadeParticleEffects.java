@@ -15,7 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.*;
 
 /** Original ParticleHaze and official 1.7.10 EntityFlameFX/EntityLavaFX, using the untouched old particle sheet. */
@@ -47,7 +46,7 @@ public final class GrenadeParticleEffects {
  }
  private static final class Haze extends Particle{
   Haze(ClientLevel level,double x,double y,double z){super(level,x,y,z);random.nextFloat();random.nextFloat();random.nextFloat();lifetime=600+random.nextInt(100);}
-  @Override public void tick(){xo=x;yo=y;zo=z;if(++age>=lifetime)remove();xd*=(double).96F;yd*=(double).96F;zd*=(double).96F;if(onGround){xd*=(double).7F;zd*=(double).7F;}int px=Mth.floor(x)+random.nextInt(15)-7,pz=Mth.floor(z)+random.nextInt(15)-7,py=level.getHeight(Heightmap.Types.MOTION_BLOCKING,px,pz);Minecraft.getInstance().particleEngine.add(new OldLava(level,px+random.nextDouble(),py+.1,pz+random.nextDouble()));}
+  @Override public void tick(){xo=x;yo=y;zo=z;if(++age>=lifetime)remove();xd*=(double).96F;yd*=(double).96F;zd*=(double).96F;if(onGround){xd*=(double).7F;zd*=(double).7F;}int px=Mth.floor(x)+random.nextInt(15)-7,pz=Mth.floor(z)+random.nextInt(15)-7,py=com.hbm.world.SourceWorldHeight.get(level,px,pz);Minecraft.getInstance().particleEngine.add(new OldLava(level,px+random.nextDouble(),py+.1,pz+random.nextDouble()));}
   @Override public void render(VertexConsumer out,Camera camera,float partial){if(MukeRenderTypes.defer(this,partial))return;out=MukeRenderTypes.begin(HAZE);float alpha=(float)Math.sin(age*Math.PI/400F)*.25F*.1F;var eye=camera.getPosition();var random=new Random(50);float tx=0,ty=0,tz=0;float yaw=camera.getYRot()*(float)Math.PI/180F,pitch=camera.getXRot()*(float)Math.PI/180F,sx=Mth.cos(yaw),sz=Mth.sin(yaw),dx=-sz*Mth.sin(pitch),dz=sx*Mth.sin(pitch),sy=Mth.cos(pitch);
    for(int i=0;i<25;i++){tx+=(float)(random.nextGaussian()*2.5);ty+=(float)(random.nextGaussian()*.15);tz+=(float)(random.nextGaussian()*2.5);double size=(random.nextDouble()*.25+.75)*10;float px=(float)(Mth.lerp(partial,xo,x)-eye.x+random.nextGaussian()*.5)+tx,py=(float)(Mth.lerp(partial,yo,y)-eye.y+random.nextGaussian()*.5)+ty,pz=(float)(Mth.lerp(partial,zo,z)-eye.z+random.nextGaussian()*.5)+tz;
     vertex(out,px-(float)((sx+dx)*size),py-(float)(sy*size),pz-(float)((sz+dz)*size),1,1,alpha);vertex(out,px+(float)((-sx+dx)*size),py+(float)(sy*size),pz+(float)((-sz+dz)*size),1,0,alpha);vertex(out,px+(float)((sx+dx)*size),py+(float)(sy*size),pz+(float)((sz+dz)*size),0,0,alpha);vertex(out,px+(float)((sx-dx)*size),py-(float)(sy*size),pz+(float)((sz-dz)*size),0,1,alpha);}}
