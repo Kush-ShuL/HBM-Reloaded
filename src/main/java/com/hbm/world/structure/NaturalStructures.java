@@ -43,7 +43,7 @@ public final class NaturalStructures {
         builder.push("weights");for(var spawn:SPAWNS)WEIGHTS.put(spawn.name(),builder.defineInRange(spawn.weightKey(),spawn.weight(),0,1000000));builder.pop();CONFIG=builder.build();
     }
     private static Definitions definitions(){try(var input=NaturalStructures.class.getResourceAsStream("/hbm/natural-structures.json")){if(input==null)throw new IllegalStateException("Run port_natural_structures.py");return new Gson().fromJson(new InputStreamReader(input,StandardCharsets.UTF_8),Definitions.class);}catch(java.io.IOException error){throw new IllegalStateException(error);}}
-    public static void register(IEventBus bus,ModContainer container){TYPES.register(bus);PIECES.register(bus);container.registerConfig(ModConfig.Type.COMMON,CONFIG,"hbm-natural-structures-common.toml");}
+    public static void register(IEventBus bus,ModContainer container){TYPES.register(bus);PIECES.register(bus);StructureChestPairs.register(bus);container.registerConfig(ModConfig.Type.COMMON,CONFIG,"hbm-natural-structures-common.toml");}
     public static boolean enabled(){return com.hbm.config.WorldgenControls.structures()&&ENABLED.get();}
     public static double lootAmountFactor(){return LOOT_AMOUNT.get();}
     public static BiomeProfile profile(net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> biome){return biome.unwrapKey().map(key->BIOMES.get(key.location().toString())).orElse(null);}

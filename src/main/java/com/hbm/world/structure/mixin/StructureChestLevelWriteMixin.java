@@ -16,7 +16,7 @@ public abstract class StructureChestLevelWriteMixin {
             at=@At(value="INVOKE",target="Lnet/minecraft/world/level/chunk/LevelChunk;setBlockState(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)Lnet/minecraft/world/level/block/state/BlockState;"))
     private BlockState hbm$captureNewChest(LevelChunk chunk,BlockPos pos,BlockState next,boolean moving,Operation<BlockState> original) {
         var previous=original.call(chunk,pos,next,moving);
-        if(StructureChestPairs.trackedWrite(previous,next))StructureChestPairs.wrote(this,pos,previous,next);
+        if(StructureChestPairs.trackedWrite(previous,next))StructureChestPairs.wrote(this,chunk,pos,previous,next);
         return previous;
     }
 }

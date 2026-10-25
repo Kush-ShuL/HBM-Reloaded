@@ -10,6 +10,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.WorldGenLevel;
@@ -23,11 +25,17 @@ import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.ChestType;
 import net.minecraft.world.level.chunk.LevelChunk;
+import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.ImposterProtoChunk;
 import net.minecraft.world.level.chunk.ProtoChunk;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import net.minecraft.world.level.levelgen.structure.StructureStart;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.attachment.AttachmentType;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.level.ChunkEvent;
 import net.neoforged.neoforge.event.level.LevelEvent;
@@ -39,9 +47,13 @@ import net.neoforged.neoforge.event.tick.ServerTickEvent;
 @EventBusSubscriber(modid="hbm")
 public final class StructureChestPairs {
     private static final String ORIGIN="hbm:structure_chest_origin125", PENDING="hbm:structure_chest_pending125";
+    private static final DeferredRegister<AttachmentType<?>> ATTACHMENTS=DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES,"hbm");
+    private static final DeferredHolder<AttachmentType<?>,AttachmentType<CompoundTag>> CONNECTIONS=ATTACHMENTS.register("new_structure_connections",()->AttachmentType.builder(()->new CompoundTag()).serialize(CompoundTag.CODEC).build());
     private static final ThreadLocal<Scope> CURRENT=new ThreadLocal<>();
     private static final Map<ServerLevel,Work> WORK=new ConcurrentHashMap<>();
     private static final Direction[] SIDES={Direction.NORTH,Direction.SOUTH,Direction.WEST,Direction.EAST};
+
+    public static void register(IEventBus bus){ATTACHMENTS.register(bus);}
 
     private static final class Work {
         final LinkedHashSet<BlockPos> positions=new LinkedHashSet<>();
@@ -65,15 +77,20 @@ public final class StructureChestPairs {
         return scope;
     }
 
-    /** Called after the real native chunk write, using its real returned previous state.
-     * This adds no read or allocation to unrelated writes outside an active HBM scope. */
-    public static void wrote(Object caller,BlockPos position,BlockState previous,BlockState next) {
+    /** Capture the real write and its actual chunk, without requesting any neighbor chunk. */
+    public static void wrote(Object caller,ChunkAccess chunk,BlockPos position,BlockState previous,BlockState next) {
         var scope=CURRENT.get();
-        if(scope==null||previous==null||!scope.clip.isInside(position)
-                ||caller!=scope.level&&caller!=scope.level.getLevel())return;
+        boolean active=scope!=null&&scope.clip.isInside(position)
+                &&(caller==scope.level||caller==scope.level.getLevel());
+        boolean newborn=active&&connection(previous)&&owned(chunk,position,previous,scope.origin);
+        if(previous.getBlock()!=next.getBlock()&&connection(previous))forget(chunk,position);
+        if(!active)return;
+        if(position.getX()==scope.clip.minX()||position.getX()==scope.clip.maxX()
+                ||position.getZ()==scope.clip.minZ()||position.getZ()==scope.clip.maxZ())
+            scope.borderWrites.add(position.immutable());
         var existing=scope.writes.get(position);
-        if(existing==null&&!trackedWrite(previous,next))return;
-        if(existing==null){existing=new Written(chest(previous)||connection(previous));scope.writes.put(position.immutable(),existing);}
+        if(existing==null&&!chest(previous)&&!chest(next)&&!connection(previous)&&!connection(next))return;
+        if(existing==null){existing=new Written((chest(previous)||connection(previous))&&!newborn);scope.writes.put(position.immutable(),existing);}
         existing.chest=chest(next);
         existing.connection=connection(next);
     }
@@ -84,23 +101,24 @@ public final class StructureChestPairs {
         private final String origin;
         private final Scope prior;
         private final Map<BlockPos,Written> writes=new LinkedHashMap<>();
+        private final LinkedHashSet<BlockPos> borderWrites=new LinkedHashSet<>();
         private boolean closed;
         private Scope(WorldGenLevel level,BoundingBox clip,String origin,Scope prior){this.level=level;this.clip=clip;this.origin=origin;this.prior=prior;}
         public void complete() {
             var positions=new ArrayList<BlockPos>();
             var fullChunkConnections=new ArrayList<BlockPos>();
+            var ownership=new LinkedHashMap<ChunkAccess,List<BlockPos>>();
             for(var entry:writes.entrySet()) {
                 if(entry.getValue().existed)continue;
                 var pos=entry.getKey();
                 if(entry.getValue().connection&&connection(level.getBlockState(pos))) {
                     var chunk=level.getChunk(pos);
                     if(chunk instanceof ImposterProtoChunk wrapper)chunk=wrapper.getWrapped();
+                    ownership.computeIfAbsent(chunk,ignored->new ArrayList<>()).add(pos);
                     if(chunk instanceof ProtoChunk)chunk.markPosForPostprocessing(pos);
                     else {
-                        // Already-FULL direct structure placement uses the same native persistent
-                        // offsets, plus our existing ready-only local queue for immediate completion.
-                        chunk.addPackedPostProcess(ProtoChunk.packOffsetCoordinates(pos),chunk.getSectionIndex(pos.getY()));
-                        chunk.setUnsaved(true);
+                        // FULL chunks no longer consume native generation offsets. Persist only
+                        // our newly authored ownership and use the existing ready-only queue.
                         fullChunkConnections.add(pos);
                     }
                     continue;
@@ -114,9 +132,16 @@ public final class StructureChestPairs {
                 tile.setChanged();
                 positions.add(pos);
             }
-            if(!positions.isEmpty()||!fullChunkConnections.isEmpty())level.getLevel().getServer().execute(()->{
+            ownership.forEach((chunk,ownedPositions)->remember(chunk,ownedPositions,origin));
+            if(!positions.isEmpty()||!fullChunkConnections.isEmpty()||!borderWrites.isEmpty())level.getLevel().getServer().execute(()->{
                 var work=WORK.computeIfAbsent(level.getLevel(),ignored->new Work());
                 work.positions.addAll(positions);work.fullChunkConnections.addAll(fullChunkConnections);
+                // A later clip may replace air with a wall (or clear a wall). Revisit only
+                // same-start newborn neighbors; unmarked pre-existing fences are excluded.
+                for(var changed:borderWrites) {
+                    enqueueOwned(level.getLevel(),work,changed,origin);
+                    for(var side:SIDES)enqueueOwned(level.getLevel(),work,changed.relative(side),origin);
+                }
             });
         }
         @Override public void close(){if(!closed){closed=true;if(prior==null)CURRENT.remove();else CURRENT.set(prior);}}
@@ -126,8 +151,45 @@ public final class StructureChestPairs {
     private static boolean pane(BlockState state){return state.is(Blocks.GLASS_PANE)||state.getBlock() instanceof StainedGlassPaneBlock;}
     /** 原生 FenceBlock 保留木/下界砖/真实子类自己的连接判定；金属围栏走其既有 updateShape。 */
     private static boolean connection(BlockState state){return pane(state)||state.getBlock() instanceof FenceBlock||state.getBlock() instanceof MetalFenceBlock;}
-    /** Cheap prefilter keeps unrelated terrain/block writes out of the ThreadLocal capture path. */
-    public static boolean trackedWrite(BlockState previous,BlockState next){return previous!=null&&(chest(previous)||chest(next)||connection(previous)||connection(next));}
+    /** All changed border neighbors matter during placement; normal writes only invalidate
+     * ownership when replacing a connective block. No attachment is allocated on reads. */
+    public static boolean trackedWrite(BlockState previous,BlockState next){return previous!=null&&previous!=next&&(CURRENT.get()!=null||previous.getBlock()!=next.getBlock()&&connection(previous));}
+
+    private static ChunkAccess actual(ChunkAccess chunk){return chunk instanceof ImposterProtoChunk wrapper?wrapper.getWrapped():chunk;}
+    private static boolean owned(ChunkAccess chunk,BlockPos pos,BlockState state,String origin) {
+        var data=actual(chunk).getExistingDataOrNull(CONNECTIONS);
+        if(data==null)return false;
+        var marker=data.getCompound(Long.toString(pos.asLong()));
+        return (!marker.getString("origin").isEmpty())&&(origin==null||origin.equals(marker.getString("origin")))
+                &&BuiltInRegistries.BLOCK.getKey(state.getBlock()).toString().equals(marker.getString("block"));
+    }
+    private static void remember(ChunkAccess chunk,List<BlockPos> positions,String origin) {
+        chunk=actual(chunk);
+        synchronized(chunk) {
+            var previous=chunk.getExistingDataOrNull(CONNECTIONS);
+            var data=previous==null?new CompoundTag():previous.copy();
+            for(var pos:positions) {
+                var marker=new CompoundTag();marker.putString("origin",origin);
+                marker.putString("block",BuiltInRegistries.BLOCK.getKey(chunk.getBlockState(pos).getBlock()).toString());
+                data.put(Long.toString(pos.asLong()),marker);
+            }
+            chunk.setData(CONNECTIONS,data);
+        }
+    }
+    private static void forget(ChunkAccess chunk,BlockPos pos) {
+        chunk=actual(chunk);
+        synchronized(chunk) {
+            var previous=chunk.getExistingDataOrNull(CONNECTIONS);
+            var key=Long.toString(pos.asLong());
+            if(previous==null||!previous.contains(key))return;
+            var data=previous.copy();data.remove(key);
+            if(data.isEmpty())chunk.removeData(CONNECTIONS);else chunk.setData(CONNECTIONS,data);
+        }
+    }
+    private static void enqueueOwned(ServerLevel level,Work work,BlockPos pos,String origin) {
+        var chunk=level.getChunkSource().getChunkNow(pos.getX()>>4,pos.getZ()>>4);
+        if(chunk!=null&&owned(chunk,pos,chunk.getBlockState(pos),origin))work.fullChunkConnections.add(pos.immutable());
+    }
 
     /** Chunk Load can fire before FULL; defer all reads until a later server tick. Only
      * this loaded chunk's pending new-generation markers are considered, never old data migration. */
@@ -157,6 +219,11 @@ public final class StructureChestPairs {
                 for(var tile:chunk.getBlockEntities().values())
                     if(tile instanceof ChestBlockEntity&&tile.getPersistentData().getBoolean(PENDING))
                         work.positions.add(tile.getBlockPos().immutable());
+                var connections=chunk.getExistingDataOrNull(CONNECTIONS);
+                if(connections!=null)for(var keyString:connections.getAllKeys()) {
+                    var pos=BlockPos.of(Long.parseLong(keyString));
+                    if(owned(chunk,pos,chunk.getBlockState(pos),null))work.fullChunkConnections.add(pos);
+                }
             }
             for(int i=0,n=Math.min(64,work.positions.size());i<n;i++) {
                 var iterator=work.positions.iterator();var pos=iterator.next();iterator.remove();
@@ -167,7 +234,8 @@ public final class StructureChestPairs {
                 var chunks=ready(level,pos);
                 if(chunks==null){work.fullChunkConnections.add(pos);continue;}
                 var state=state(chunks,pos);
-                if(connection(state))write(level,pos,Block.updateFromNeighbourShapes(state,level,pos));
+                var chunk=chunks.get(ChunkPos.asLong(pos.getX()>>4,pos.getZ()>>4));
+                if(connection(state)&&owned(chunk,pos,state,null))write(level,pos,Block.updateFromNeighbourShapes(state,level,pos));
             }
         }
     }
