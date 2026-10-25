@@ -94,9 +94,9 @@ public final class LegacyWoodGeometry {
         face(out, Direction.NORTH, inventory, dy, sprite, new double[][]{{x,Y,z,northLeft,1-Y},{X,Y,z,northRight,1-Y},{X,y,z,northRight,1-y},{x,y,z,northLeft,1-y}});
         face(out, Direction.SOUTH, inventory, dy, sprite, new double[][]{{x,Y,Z,x,1-Y},{x,y,Z,x,1-y},{X,y,Z,X,1-y},{X,Y,Z,X,1-Y}});
         face(out, Direction.WEST, inventory, dy, sprite, new double[][]{{x,Y,Z,Z,1-Y},{x,Y,z,z,1-Y},{x,y,z,z,1-y},{x,y,Z,Z,1-y}});
-        // Keep RenderBlocksNT's actual east vertex/UV assignment, including the different upper-pair assignment.
+        // RenderBlocksNT projects each east vertex from Z, with the same U at its upper and lower corners.
         double e0 = inventory ? z : 1-Z, e1 = inventory ? Z : 1-z;
-        double e2 = inventory ? Z : 1-Z, e3 = inventory ? z : 1-z;
+        double e2 = inventory ? Z : 1-z, e3 = inventory ? z : 1-Z;
         face(out, Direction.EAST, inventory, dy, sprite, new double[][]{{X,y,Z,e0,1-y},{X,y,z,e1,1-y},{X,Y,z,e2,1-Y},{X,Y,Z,e3,1-Y}});
     }
     private static void face(List<BakedQuad> result, Direction normal, boolean inventory, double dy, TextureAtlasSprite sprite, double[][] vertices) {
