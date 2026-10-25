@@ -40,7 +40,7 @@ public final class ExplosionNukeGeneric {
   net.minecraft.world.damagesource.DamageSource source=null;
   for(Entity entity:world.getEntities((Entity)null,new AABB(x,y,z,x,y,z).inflate(radius))){
    double dist=(double)(float)Math.sqrt(entity.distanceToSqr(x,y,z));
-   if(dist>radius||entity instanceof Ocelot||entity instanceof ExplosionKnockbackExempt||entity instanceof ExplosionNuclearExempt||entity instanceof ServerPlayer player&&player.isCreative())continue;
+   if(dist>radius||entity instanceof Ocelot||entity instanceof net.minecraft.world.entity.animal.Cat||entity instanceof ExplosionKnockbackExempt||entity instanceof ExplosionNuclearExempt||entity instanceof ServerPlayer player&&player.isCreative())continue;
    if(visibility==null)visibility=new BlastWorld(world);
    if(isBlastObstructed(visibility,origin,new Vec3(entity.getX(),entity.getEyeY(),entity.getZ())))continue;
    boolean knockback=true;float amount=(float)(maxDamage*(radius-dist)/radius);

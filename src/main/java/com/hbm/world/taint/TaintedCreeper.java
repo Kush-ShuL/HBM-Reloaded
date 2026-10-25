@@ -9,9 +9,13 @@ import net.minecraft.world.level.*;
 
 /** Original15HP/.35speed/regeneration and non-terrain explosion with distinct charged spread rules. */
 public final class TaintedCreeper extends Creeper {
+ private boolean sourceDied;
  public TaintedCreeper(EntityType<? extends TaintedCreeper> type,Level level){super(type,level);}
  public static AttributeSupplier.Builder attributes(){return Creeper.createAttributes().add(Attributes.MAX_HEALTH,15).add(Attributes.MOVEMENT_SPEED,.35);}
  @Override public void tick(){super.tick();if(isAlive()&&getHealth()<getMaxHealth()&&tickCount%10==0)heal(1);}
+ /** Native charged-creeper heads did not exist in the source death branch. */
+ @Override protected void dropCustomDeathLoot(net.minecraft.server.level.ServerLevel level,net.minecraft.world.damagesource.DamageSource source,boolean recentlyHit){}
+ @Override public void die(net.minecraft.world.damagesource.DamageSource source){if(sourceDied)return;sourceDied=true;super.die(source);com.hbm.entity.mob.sourcecreepers.SourceCreeper.dropSourceSkeletonRecord(this,source);}
  public void sourceExplosion(){
   if(level().isClientSide)return;var level=level();boolean griefing=level.getGameRules().getBoolean(GameRules.RULE_MOBGRIEFING);
   level.explode(this,getX(),getY(),getZ(),5,false,Level.ExplosionInteraction.NONE);

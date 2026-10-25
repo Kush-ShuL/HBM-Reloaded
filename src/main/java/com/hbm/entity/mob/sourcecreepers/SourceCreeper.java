@@ -24,6 +24,8 @@ public abstract class SourceCreeper extends Creeper {
  protected final void sourceFewItems(Item item,int looting){int count=random.nextInt(3);if(looting>0)count+=random.nextInt(looting+1);for(int i=0;i<count;i++)spawnAtLocation(item);}
  /** Native modern charged-creeper skull drop did not exist in1.7; source disc is instead the exact12-record choice in Creeper.onDeath. */
  @Override protected void dropCustomDeathLoot(ServerLevel level,DamageSource source,boolean recentlyHit){}
- @Override public void die(DamageSource source){if(sourceDied)return;sourceDied=true;super.die(source);if(!level().isClientSide&&source.getEntity()instanceof AbstractSkeleton)spawnAtLocation(RECORDS[random.nextInt(RECORDS.length)]);}
+ @Override public void die(DamageSource source){if(sourceDied)return;sourceDied=true;super.die(source);dropSourceSkeletonRecord(this,source);}
+ /** Shared original Creeper.onDeath branch, including its exact twelve records. */
+ public static void dropSourceSkeletonRecord(Creeper entity,DamageSource source){if(!entity.level().isClientSide&&source.getEntity()instanceof AbstractSkeleton)entity.spawnAtLocation(RECORDS[entity.getRandom().nextInt(RECORDS.length)]);}
  private static final Item[] RECORDS={Items.MUSIC_DISC_13,Items.MUSIC_DISC_CAT,Items.MUSIC_DISC_BLOCKS,Items.MUSIC_DISC_CHIRP,Items.MUSIC_DISC_FAR,Items.MUSIC_DISC_MALL,Items.MUSIC_DISC_MELLOHI,Items.MUSIC_DISC_STAL,Items.MUSIC_DISC_STRAD,Items.MUSIC_DISC_WARD,Items.MUSIC_DISC_11,Items.MUSIC_DISC_WAIT};
 }
