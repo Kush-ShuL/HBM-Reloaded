@@ -562,6 +562,7 @@ public final class HbmContent {
                         stacks.addAll(CentrifugeContent.controlItems());
                     }
                     HbmCreativeTabs.sort(stacks);
+                    if (tab.equals("missile")) stacks.addAll(com.hbm.missile.custom.CustomMissileContent.creativePresets());
                     stacks.forEach(output::accept);
                 });
         int index = HbmCreativeTabs.ORDER.indexOf(tab);

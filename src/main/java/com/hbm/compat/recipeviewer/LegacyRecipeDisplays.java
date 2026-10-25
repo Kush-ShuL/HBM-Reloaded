@@ -35,7 +35,8 @@ public final class LegacyRecipeDisplays {
     public static synchronized List<Category> categories() {
         load();
         // Actual machine ports own their native categories; do not display their processing twice.
-        return CATEGORIES.stream().filter(category->!(Set.of("shredder","centrifuge","alloy","assembly","chemical","crystallizer","soldering","precision_assembly","solidification","rockmill","combination").contains(category.id)&&BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm",category.id))))
+        return CATEGORIES.stream().filter(category->!(Set.of("shredder","centrifuge","alloy","assembly","chemical","crystallizer","soldering","precision_assembly","solidification","rockmill","combination","blast_furnace").contains(category.id)&&BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm",category.id))))
+                .filter(category->!category.id.equals("mixer")||!BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm","oil_mixer")))
                 .filter(category->!category.id.equals("liquefaction")||!BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm","oil_liquefaction")))
                 .filter(category->!category.id.equals("space_assembly")||!BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm","space_assembler")))
                 .filter(category->!category.id.equals("super_computer")||!BuiltInRegistries.RECIPE_TYPE.containsKey(ResourceLocation.fromNamespaceAndPath("hbm","supercomputer")))

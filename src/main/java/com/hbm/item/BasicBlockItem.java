@@ -6,6 +6,7 @@ import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.Block;
 
@@ -16,9 +17,17 @@ public final class BasicBlockItem extends BlockItem {
     private final String id;
 
     public BasicBlockItem(Block block, Properties properties, String sourceClass, String id) {
-        super(block, properties);
+        super(block, sourceProperties(properties, id));
         this.sourceClass = sourceClass;
         this.id = id;
+    }
+
+    private static Properties sourceProperties(Properties properties, String id) {
+        return switch (id) {
+            case "gravel_diamond" -> properties.rarity(Rarity.RARE);
+            case "block_euphemium", "block_euphemium_cluster" -> properties.rarity(Rarity.EPIC);
+            default -> properties;
+        };
     }
 
     @Override
@@ -34,6 +43,19 @@ public final class BasicBlockItem extends BlockItem {
             } else {
                 lines.add(TooltipHints.moreInfo());
             }
+        }
+        // The source ItemBlockLore and ItemPrototypeBlock wrappers belong to these actual items.
+        if (id.equals("meteor_battery")) {
+            lines.add(Component.translatable("tooltip.hbm.block.meteor_battery.tesla"));
+        } else if (id.equals("gravel_diamond")) {
+            for (int line = 0; line < 16; line++) {
+                lines.add(line == 2 || line == 7 || line == 14 ? Component.empty()
+                        : Component.translatable("tooltip.hbm.block.gravel_diamond." + line));
+            }
+        } else if (id.equals("nuke_prototype")) {
+            lines.add(Component.translatable("tooltip.hbm.block.nuke_prototype.regret"));
+            lines.add(Component.empty());
+            lines.add(Component.translatable("tooltip.hbm.block.nuke_prototype.monster"));
         }
     }
 }

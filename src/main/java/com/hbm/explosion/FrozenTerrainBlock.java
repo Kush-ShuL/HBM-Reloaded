@@ -25,7 +25,7 @@ public final class FrozenTerrainBlock extends LegacyOreBlock {
                 "minecraft:snowball",null,0,log?2:1,log?3:0,grass||log?"NONE":"ORE",log?1:0,List.of(),"COMMON",false,0,false,false);
     }
     @Override public void stepOn(Level level,BlockPos pos,BlockState state,Entity entity) {
-        if((spec.id().equals("frozen_grass")||spec.id().equals("frozen_dirt"))&&entity instanceof LivingEntity living)
+        if(spec.id().equals("frozen_grass")&&entity instanceof LivingEntity living)
             living.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,2*60*20,2));
     }
 }

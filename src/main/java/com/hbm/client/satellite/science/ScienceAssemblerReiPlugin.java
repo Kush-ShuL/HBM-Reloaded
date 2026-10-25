@@ -38,8 +38,8 @@ public final class ScienceAssemblerReiPlugin implements REIClientPlugin {
             var ip=LegacyRecipeDisplays.inputCoordinates(category,display.getInputEntries().size());var op=LegacyRecipeDisplays.outputCoordinates(category,drawing);
             for(int i=0;i<display.getInputEntries().size();i++)widgets.add(Widgets.createSlot(new Point(bounds.x+ip[i][0],bounds.y+ip[i][1])).entries(display.getInputEntries().get(i)).disableBackground().markInput());
             for(int i=0;i<display.getOutputEntries().size();i++){int lane=i;var entries=display.getOutputEntries().get(i).map(entry->{var copy=entry.copy();copy.tooltipProcessor((stack,tooltip)->{ScienceAssemblerViews.outputTooltip(recipe,lane,(net.minecraft.world.item.ItemStack)stack.getValue()).forEach(tooltip::add);return tooltip;});return copy;});widgets.add(Widgets.createSlot(new Point(bounds.x+op[i][0],bounds.y+op[i][1])).entries(entries).disableBackground().markOutput());}
-            if(recipe.isPooled())widgets.add(Widgets.createSlot(new Point(bounds.x+75,bounds.y+10)).entries(ScienceAssemblerViews.blueprints(recipe).stream().map(EntryStacks::of).toList()).disableBackground());
-            widgets.add(Widgets.createSlot(new Point(bounds.x+75,bounds.y+(recipe.isPooled()?38:31))).entry(EntryStacks.of(ScienceAssemblerViews.machine())).disableBackground());
+            
+            widgets.add(Widgets.createSlot(new Point(bounds.x+75,bounds.y+(31))).entry(EntryStacks.of(ScienceAssemblerViews.machine())).disableBackground());
             return widgets;
         }
     }

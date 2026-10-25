@@ -35,8 +35,8 @@ public final class ScienceAssemblerJeiPlugin implements IModPlugin {
             var ip=LegacyRecipeDisplays.inputCoordinates(category,inputs.size());var op=LegacyRecipeDisplays.outputCoordinates(category,display);
             for(int i=0;i<inputs.size();i++)builder.addSlot(RecipeIngredientRole.INPUT,ip[i][0],ip[i][1]).addItemStacks(inputs.get(i));
             for(int i=0;i<outputs.size();i++){int lane=i;builder.addSlot(RecipeIngredientRole.OUTPUT,op[i][0],op[i][1]).addItemStacks(outputs.get(i)).addTooltipCallback((slot,tooltip)->slot.getDisplayedItemStack().ifPresent(stack->tooltip.addAll(ScienceAssemblerViews.outputTooltip(recipe,lane,stack))));}
-            if(recipe.isPooled())builder.addSlot(RecipeIngredientRole.CATALYST,75,10).addItemStacks(ScienceAssemblerViews.blueprints(recipe));
-            builder.addSlot(RecipeIngredientRole.CATALYST,75,recipe.isPooled()?38:31).addItemStacks(List.of(ScienceAssemblerViews.machine()));
+            
+            builder.addSlot(RecipeIngredientRole.CATALYST,75,31).addItemStacks(List.of(ScienceAssemblerViews.machine()));
         }
         @Override public void draw(SpaceAssemblerRecipe recipe,IRecipeSlotsView slots,GuiGraphics graphics,double x,double y){ScienceAssemblerViews.draw(graphics,recipe,0,0);}
     }

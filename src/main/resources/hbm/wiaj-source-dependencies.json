@@ -77,16 +77,13 @@
   },
   "CanneryWillow": {
     "source": "legacy/src/main/java/com/hbm/wiaj/cannery/CanneryWillow.java",
-    "ready": false,
+    "ready": true,
     "symbols": [
       "ModBlocks.dirt_oily",
       "ModBlocks.plant_flower",
       "ModBlocks.plant_tall",
       "ModItems.plant_item"
     ],
-    "pendingActualGameContent": [
-      "ModBlocks.plant_flower",
-      "ModBlocks.plant_tall"
-    ]
+    "pendingActualGameContent": []
   }
 }

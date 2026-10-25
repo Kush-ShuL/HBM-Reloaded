@@ -1,6 +1,9 @@
 package com.hbm.missile.custom;
 
 import java.util.*;
+import net.minecraft.ChatFormatting;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.*;
@@ -23,6 +26,27 @@ public final class CustomMissileContent {
         if (!tab.equals("missile")) return List.of();
         var result = new ArrayList<ItemStack>(); for (var item : PARTS.values()) result.add(new ItemStack(item.get()));
         for (var item : List.of(LOOT_10, LOOT_15, LOOT_MISC)) result.add(new ItemStack(item.get())); return result;
+    }
+    /** Source MissileTab appends these after the ordinary registered items have been ordered. */
+    public static List<ItemStack> creativePresets() {
+        return List.of(
+                preset("Lil Bub", ChatFormatting.DARK_PURPLE, "mp_chip_3", "mp_warhead_10_he", "mp_fuselage_10_kerosene", "mp_stability_10_flat", "mp_thruster_10_kerosene"),
+                preset("Long Boy", ChatFormatting.DARK_PURPLE, "mp_chip_3", "mp_warhead_10_incendiary", "mp_fuselage_10_long_solid", "mp_stability_10_space", "mp_thruster_10_solid"),
+                preset("Uncle Kim", ChatFormatting.DARK_PURPLE, "mp_chip_3", "mp_warhead_10_nuclear", "mp_fuselage_10_15_kerosene", "mp_stability_15_flat", "mp_thruster_15_kerosene"),
+                preset("Trotty's Toy Rocket", ChatFormatting.GREEN, "mp_chip_3", "mp_warhead_10_nuclear_large", "mp_fuselage_10_15_balefire", "mp_stability_15_flat", "mp_thruster_15_balefire_large"),
+                preset("Stealthy Shark", ChatFormatting.DARK_PURPLE, "mp_chip_3", "mp_warhead_15_nuclear_shark", "mp_fuselage_15_kerosene_camo", "mp_stability_15_thin", "mp_thruster_15_kerosene_triple"),
+                preset("Polite Lad", ChatFormatting.DARK_PURPLE, "mp_chip_3", "mp_warhead_15_he", "mp_fuselage_15_kerosene_polite", "mp_stability_15_thin", "mp_thruster_15_kerosene_dual"),
+                preset("NERV's Leftover Missile", ChatFormatting.DARK_PURPLE, "mp_chip_3", "mp_warhead_15_n2", "mp_fuselage_15_solid_desh", "mp_stability_15_thin", "mp_thruster_15_solid_hexdecuple"),
+                preset("Auntie Blackjack", ChatFormatting.RED, "mp_chip_5", "mp_warhead_15_boxcar", "mp_fuselage_15_kerosene_blackjack", "mp_stability_15_thin", "mp_thruster_15_kerosene"),
+                preset("Hightower Missile", ChatFormatting.GREEN, "mp_chip_4", "mp_warhead_15_balefire", "mp_fuselage_15_20_kerosene_magnusson", null, "mp_thruster_20_kerosene"));
+    }
+    private static ItemStack preset(String name, ChatFormatting color, String chip, String warhead, String fuselage, String fins, String thruster) {
+        var stack = CustomMissileItem.build(part(chip), part(warhead), part(fuselage), part(fins), part(thruster));
+        stack.set(DataComponents.CUSTOM_NAME, Component.literal(name).withStyle(color));
+        return stack;
+    }
+    private static ItemStack part(String symbol) {
+        return symbol == null ? ItemStack.EMPTY : new ItemStack(PARTS.get(symbol).get());
     }
     public static List<CustomMissilePartItem> loot(String group) {
         var result = new ArrayList<CustomMissilePartItem>();
