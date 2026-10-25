@@ -7,7 +7,10 @@
     "StructureManagerAccess",
     "StructurePlacementAccess",
     "NaturalStructureDimensionMixin",
-    "NativeSourceOrderMixin"
+    "NativeSourceOrderMixin",
+    "StructureChestStartMixin",
+    "StructureChestLevelWriteMixin",
+    "StructureChestRegionWriteMixin"
   ],
   "injectors": {
     "defaultRequire": 1
