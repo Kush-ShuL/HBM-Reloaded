@@ -1,6 +1,6 @@
 -- PWRangler, adapted from the actual X5846 program for CC:Tweaked.
 -- Uses the existing HBM PWR peripheral; no replacement reactor or OC emulation.
--- Usage: disk/PWRangler [reactor peripheral name] [monitor peripheral name]
+-- Usage: disk/pwrangler [reactor peripheral name] [monitor peripheral name]
 local args = {...}
 local reactorName = args[1]
 if not reactorName then
