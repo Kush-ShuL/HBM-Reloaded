@@ -31,7 +31,8 @@ public final class EnergyBeams {
     }
     /** Explicit solid volume; the source flare and generic lightning beams keep their colour-only materials. */
     public static void solidWithDepth(PoseStack pose,MultiBufferSource buffers,double length,int outer,int inner,int seed,int segments,float size,int layers,float thickness){
-        solid(pose,buffers,length,outer,inner,seed,segments,size,layers,thickness,EnergyRenderTypes.SOLID_BEAM);
+        if(!GunForwardEffects.captureWorldGeometry(EnergyRenderTypes.SOLID_BEAM,immediate->solid(pose,immediate,length,outer,inner,seed,segments,size,layers,thickness,EnergyRenderTypes.SOLID_BEAM)))
+            solid(pose,buffers,length,outer,inner,seed,segments,size,layers,thickness,EnergyRenderTypes.SOLID_BEAM);
     }
     private static void solid(PoseStack pose,MultiBufferSource buffers,double length,int outer,int inner,int seed,int segments,float size,int layers,float thickness,RenderType material){
         // Skeleton is (0,length,0), so the source BeamPronter's own180Y and

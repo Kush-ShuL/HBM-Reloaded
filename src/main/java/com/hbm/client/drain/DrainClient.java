@@ -1,10 +1,15 @@
 package com.hbm.client.drain;
 import com.hbm.client.particle.*;
+import com.hbm.client.bomb.nuclear.NuclearTransparencyLayers;
+import com.hbm.client.render.WorldEffectsDepth;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.hbm.machine.drain.*;
 import com.hbm.multiblock.DummyableBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.client.renderer.ShaderInstance;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,6 +20,9 @@ import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
 public final class DrainClient {
+ private static ShaderInstance smokeShader;
+ static ShaderInstance smokeShader(){NuclearTransparencyLayers.setupShader(smokeShader);return WorldEffectsDepth.shader(smokeShader);}
+ @SubscribeEvent public static void shaders(RegisterShadersEvent event)throws java.io.IOException{DrainSmokeParticle.resetFrame();event.registerShader(new ShaderInstance(event.getResourceProvider(),ResourceLocation.fromNamespaceAndPath("hbm","drain_smoke"),DefaultVertexFormat.PARTICLE),shader->smokeShader=shader);}
  @SubscribeEvent public static void setup(FMLClientSetupEvent event){event.enqueueWork(()->DrainEntity.CLIENT_TICK=DrainClient::particles);}
  @SubscribeEvent public static void renderer(EntityRenderersEvent.RegisterRenderers event){event.registerBlockEntityRenderer(DrainContent.ENTITY.get(),DrainRenderer::new);}
  @SubscribeEvent public static void items(RegisterClientExtensionsEvent event){event.registerItem(new IClientItemExtensions(){private DrainItemRenderer renderer;@Override public BlockEntityWithoutLevelRenderer getCustomRenderer(){return renderer==null?(renderer=new DrainItemRenderer()):renderer;}},DrainContent.ITEM.get());}

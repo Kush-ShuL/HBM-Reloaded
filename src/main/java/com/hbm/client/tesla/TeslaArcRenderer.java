@@ -1,10 +1,12 @@
 package com.hbm.client.tesla;
 import com.mojang.blaze3d.vertex.*;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.hbm.client.weapon.forward.GunForwardEffects;
 import org.lwjgl.opengl.GL11;
 import com.mojang.math.Axis;
 import java.util.Random;
 import net.minecraft.client.renderer.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
 /** Exact BeamPronter RANDOM/SOLID: two 0x404040 additive layers, .125 jitter, .03125 thickness. */
@@ -20,10 +22,13 @@ public final class TeslaArcRenderer extends RenderType {
         }
         @Override public void clearRenderState(){RenderSystem.depthMask(previousDepthWrite);GL11.glDepthMask(previousDepthWrite);}
     };
-    private static final RenderType CRAB_ARC=com.hbm.client.render.WorldEffectMeshes.register(create("hbm_crab_depth_arc",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,1536,false,false,CompositeState.builder().setShaderState(RENDERTYPE_LIGHTNING_SHADER).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(NO_CULL).setDepthTestState(LEQUAL_DEPTH_TEST).setWriteMaskState(CRAB_DEPTH).createCompositeState(false)),"CyberCrab/DepthArc");
+    private static final RenderType CRAB_ARC=GunForwardEffects.worldOccluder(GunForwardEffects.additive(create("hbm_crab_depth_arc",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,1536,false,false,CompositeState.builder().setShaderState(RENDERTYPE_LIGHTNING_SHADER).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(NO_CULL).setDepthTestState(LEQUAL_DEPTH_TEST).setWriteMaskState(CRAB_DEPTH).createCompositeState(false)),ResourceLocation.withDefaultNamespace("textures/misc/white.png"),true,false,true));
     public static void beam(Vec3 skeleton,PoseStack poses,MultiBufferSource buffers,int start,int segments){beam(skeleton,poses,buffers,start,segments,ARC);}
     /** Only the user's Cyber/Tesla-crab arc gains depth; geometry and the sole world queue are shared. */
-    public static void beamWithDepth(Vec3 skeleton,PoseStack poses,MultiBufferSource buffers,int start,int segments){beam(skeleton,poses,buffers,start,segments,CRAB_ARC);}
+    public static void beamWithDepth(Vec3 skeleton,PoseStack poses,MultiBufferSource buffers,int start,int segments){
+        if(!GunForwardEffects.captureWorldGeometry(CRAB_ARC,immediate->beam(skeleton,poses,immediate,start,segments,CRAB_ARC)))
+            beam(skeleton,poses,buffers,start,segments,CRAB_ARC);
+    }
     private static void beam(Vec3 skeleton,PoseStack poses,MultiBufferSource buffers,int start,int segments,RenderType material){
         if(segments<=0)return;
         poses.pushPose();float yaw=(float)(Math.atan2(skeleton.x,skeleton.z)*180F/Math.PI),horizontal=(float)Math.sqrt(skeleton.x*skeleton.x+skeleton.z*skeleton.z),pitch=(float)(Math.atan2(skeleton.y,horizontal)*180F/Math.PI);

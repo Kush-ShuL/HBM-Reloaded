@@ -16,10 +16,12 @@ uniform float Effect;
 uniform int CapturedFogShape;
 out float sourceFogDistance;
 out vec4 vertexColour;
+out float sourceAlpha;
 out vec2 textureCoord;
 void main() {
     gl_Position = CapturedMVP * vec4(Position, 1.0);
     vertexColour = Color * CapturedColour;
+    sourceAlpha = Color.a;
     // Preserve the real source normal/brightness240 and the source hand's
     // configured light directions, rather than making the whole gun fullbright.
     if (Effect > 0.5 && Effect < 1.5) {

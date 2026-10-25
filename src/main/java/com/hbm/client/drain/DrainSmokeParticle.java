@@ -3,11 +3,16 @@ package com.hbm.client.drain;
 import com.hbm.client.bomb.nuclear.MukeRenderTypes;
 import com.hbm.client.bomb.nuclear.NuclearTransparencyLayers;
 import com.hbm.client.particle.LegacyCoolingTowerParticle;
+import com.hbm.client.render.WorldEffectsDepth;
+import com.hbm.client.render.WorldEffectsForward;
+import com.hbm.client.render.mixin.SmokeParticleEngineAccess;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import net.minecraft.client.Camera;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.ParticleRenderType;
 import net.minecraft.client.renderer.ShaderInstance;
@@ -22,6 +27,7 @@ public final class DrainSmokeParticle extends LegacyCoolingTowerParticle {
     private static final Tesselator TESSELLATOR=new Tesselator(4096);
     private static final ArrayList<Draw> PENDING=new ArrayList<>();
     private static boolean queued;
+    static {WorldEffectsDepth.registerWorldGeometry(DrainSmokeParticle::hasLiveSmoke,DrainSmokeParticle::drawEarlyDepth);}
     private record Draw(DrainSmokeParticle particle,Camera camera,float partial,double distance){}
     public DrainSmokeParticle(ClientLevel level,double x,double y,double z){super(level,x,y,z);}
     @Override public ParticleRenderType getRenderType(){return MukeRenderTypes.ORDERED;}
@@ -33,17 +39,42 @@ public final class DrainSmokeParticle extends LegacyCoolingTowerParticle {
     }
     static void resetFrame(){PENDING.clear();queued=false;}
     private void sourceBillboard(VertexConsumer out,Camera camera,float partial){billboard(out,camera,partial,particleScale,0,1,0,1);}
+    private static java.util.Queue<Particle> admittedSmoke(){return ((SmokeParticleEngineAccess)Minecraft.getInstance().particleEngine).hbm$smokeParticles().get(MukeRenderTypes.ORDERED);}
+    private static boolean hasLiveSmoke(){
+        if(Minecraft.getInstance().level==null)return false;
+        var particles=admittedSmoke();if(particles==null)return false;
+        for(var particle:particles)if(particle instanceof DrainSmokeParticle)return true;
+        return false;
+    }
+    /** Stream the admitted particles directly, not the later local sorted batch or a previous frame. */
+    private static void drawEarlyDepth(){
+        var mc=Minecraft.getInstance();var particles=admittedSmoke();if(particles==null)return;
+        var camera=mc.gameRenderer.getMainCamera();var frustum=mc.levelRenderer.getFrustum();
+        float partial=mc.getTimer().getGameTimeDeltaPartialTick(false);
+        BufferBuilder vertices=null;
+        try(var previous=new WorldEffectsForward.State()){
+            mc.gameRenderer.lightTexture().turnOnLightLayer();
+            RenderSystem.setShader(DrainClient::smokeShader);RenderSystem.setShaderTexture(0,TEXTURE);RenderSystem.setShaderColor(1,1,1,1);
+            RenderSystem.enableDepthTest();GL11.glEnable(GL11.GL_DEPTH_TEST);
+            RenderSystem.depthFunc(GL11.GL_LEQUAL);GL11.glDepthFunc(GL11.GL_LEQUAL);
+            RenderSystem.depthMask(true);GL11.glDepthMask(true);RenderSystem.disableCull();
+            RenderSystem.colorMask(false,false,false,false);
+            vertices=TESSELLATOR.begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.PARTICLE);
+            for(var particle:particles)if(particle instanceof DrainSmokeParticle smoke&&(frustum==null||frustum.isVisible(particle.getRenderBoundingBox(partial))))smoke.sourceBillboard(vertices,camera,partial);
+            var mesh=vertices.build();vertices=null;if(mesh!=null)BufferUploader.drawWithShader(mesh);
+        }finally{if(vertices!=null){var mesh=vertices.build();if(mesh!=null)mesh.close();}}
+    }
     private static void drawPending(){
         if(PENDING.isEmpty())return;
         PENDING.sort(Comparator.comparingDouble(Draw::distance).reversed());
         State previous=State.capture();BufferBuilder vertices=null;
-        try{
-            // Existing tower shader retains lit/fogged source pixels and the original >1/255 alpha test.
-            RenderSystem.setShader(DrainSmokeParticle::sourceShader);RenderSystem.setShaderTexture(0,TEXTURE);RenderSystem.setShaderColor(1,1,1,1);
+        try(var cutoff=WorldEffectsDepth.colour()){
+            // Drain retains original tower pixels/cutoff, with independent Iris scene-depth samplers.
+            RenderSystem.setShader(DrainClient::smokeShader);RenderSystem.setShaderTexture(0,TEXTURE);RenderSystem.setShaderColor(1,1,1,1);
             RenderSystem.enableBlend();
             if(NuclearTransparencyLayers.active())RenderSystem.blendFuncSeparate(GL11.GL_SRC_ALPHA,GL11.GL_ONE_MINUS_SRC_ALPHA,GL11.GL_ONE,GL11.GL_ONE_MINUS_SRC_ALPHA);
             else RenderSystem.defaultBlendFunc();
-            RenderSystem.enableDepthTest();RenderSystem.depthFunc(GL11.GL_LEQUAL);RenderSystem.depthMask(true);RenderSystem.disableCull();
+            RenderSystem.enableDepthTest();RenderSystem.depthFunc(GL11.GL_LEQUAL);RenderSystem.depthMask(!cutoff.active());GL11.glDepthMask(!cutoff.active());RenderSystem.disableCull();
             vertices=TESSELLATOR.begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.PARTICLE);
             for(var draw:PENDING)draw.particle().sourceBillboard(vertices,draw.camera(),draw.partial());
             var mesh=vertices.build();vertices=null;if(mesh!=null)BufferUploader.drawWithShader(mesh);
@@ -58,8 +89,8 @@ public final class DrainSmokeParticle extends LegacyCoolingTowerParticle {
                          ShaderInstance shader,int texture,float[] color){
         static State capture(){return new State(GL11.glGetBoolean(GL11.GL_DEPTH_WRITEMASK),GL11.glIsEnabled(GL11.GL_DEPTH_TEST),GL11.glIsEnabled(GL11.GL_BLEND),GL11.glIsEnabled(GL11.GL_CULL_FACE),GL11.glGetInteger(GL11.GL_DEPTH_FUNC),GL11.glGetInteger(GL14.GL_BLEND_SRC_RGB),GL11.glGetInteger(GL14.GL_BLEND_DST_RGB),GL11.glGetInteger(GL14.GL_BLEND_SRC_ALPHA),GL11.glGetInteger(GL14.GL_BLEND_DST_ALPHA),RenderSystem.getShader(),RenderSystem.getShaderTexture(0),RenderSystem.getShaderColor().clone());}
         void restore(){
-            RenderSystem.depthMask(depthWrite);RenderSystem.depthFunc(depthFunction);
-            if(depthTest)RenderSystem.enableDepthTest();else RenderSystem.disableDepthTest();
+            RenderSystem.depthMask(depthWrite);GL11.glDepthMask(depthWrite);RenderSystem.depthFunc(depthFunction);GL11.glDepthFunc(depthFunction);
+            if(depthTest){RenderSystem.enableDepthTest();GL11.glEnable(GL11.GL_DEPTH_TEST);}else{RenderSystem.disableDepthTest();GL11.glDisable(GL11.GL_DEPTH_TEST);}
             RenderSystem.blendFuncSeparate(sourceRgb,targetRgb,sourceAlpha,targetAlpha);
             if(blend)RenderSystem.enableBlend();else RenderSystem.disableBlend();
             if(cull)RenderSystem.enableCull();else RenderSystem.disableCull();

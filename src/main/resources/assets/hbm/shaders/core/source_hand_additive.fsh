@@ -11,11 +11,15 @@ uniform sampler2D Sampler8;
 uniform float HbmSmokeCutoff;
 in float sourceFogDistance;
 in vec4 vertexColour;
+in float sourceAlpha;
 in vec2 textureCoord;
 out vec4 fragColor;
 void main() {
     vec4 colour = texture(Sampler0, textureCoord) * vertexColour;
-    if (colour.a < AlphaCutoff) discard;
+    // Negative mode is native position_color's exact pre-modulator zero-alpha rule.
+    if (AlphaCutoff < 0.0) {
+        if (sourceAlpha == 0.0) discard;
+    } else if (colour.a < AlphaCutoff) discard;
     if (Effect > 2.5 && Effect < 3.5) colour *= linear_fog_fade(sourceFogDistance, CapturedFogStart, CapturedFogEnd);
     // A/S/B are independent current-frame snapshots, never a sampled draw attachment.
     // Keep every original additive layer while preserving genuinely nearer water.

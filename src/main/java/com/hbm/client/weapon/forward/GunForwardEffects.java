@@ -52,17 +52,24 @@ public final class GunForwardEffects extends RenderType {
             VertexFormat.Mode.TRIANGLES, 4096, false, false, ()->{}, ()->{}); }
 
     private static final ResourceLocation WHITE=ResourceLocation.withDefaultNamespace("textures/misc/white.png");
-    private record Additive(ResourceLocation texture,boolean depthWrite,boolean lit,boolean fog,boolean worldOccluder) {}
+    private record Additive(ResourceLocation texture,boolean depthWrite,boolean lit,boolean fog,boolean worldOccluder,boolean zeroAlphaDiscard) {}
     private static final Map<RenderType,Additive> ADDITIVE=new IdentityHashMap<>();
     /** Registration belongs to each actual source material definition, never to a gun-name whitelist. */
     public static RenderType additive(RenderType type,ResourceLocation texture,boolean depthWrite,boolean lit,boolean fog) {
-        ADDITIVE.put(type,new Additive(texture,depthWrite,lit,fog,false));return type;
+        ADDITIVE.put(type,new Additive(texture,depthWrite,lit,fog,false,false));return type;
+    }
+    /** Native position_color discards exactly unmodulated vertex alpha zero. */
+    public static RenderType zeroAlphaDiscard(RenderType type) {
+        var material=ADDITIVE.get(type);
+        if(material==null)throw new IllegalArgumentException("Alpha discard requires a registered source additive material");
+        ADDITIVE.put(type,new Additive(material.texture(),material.depthWrite(),material.lit(),material.fog(),material.worldOccluder(),true));
+        return type;
     }
     /** Only actual world-volume materials opt in; hand materials never supply world depth. */
     public static RenderType worldOccluder(RenderType type) {
         var material=ADDITIVE.get(type);
         if(material==null)throw new IllegalArgumentException("World occluder must be a registered source additive material");
-        ADDITIVE.put(type,new Additive(material.texture(),material.depthWrite(),material.lit(),material.fog(),true));
+        ADDITIVE.put(type,new Additive(material.texture(),material.depthWrite(),material.lit(),material.fog(),true,material.zeroAlphaDiscard()));
         if(!worldGeometryRegistered) {
             WorldEffectsDepth.registerWorldGeometry(GunForwardEffects::hasWorldOccluders,GunForwardEffects::drawWorldOccluders);
             worldGeometryRegistered=true;
@@ -135,7 +142,7 @@ public final class GunForwardEffects extends RenderType {
         batch.worldOccluder=material!=null && material.worldOccluder();
         batch.writeColour=state==null || state.hbm$writeMask()==COLOR_DEPTH_WRITE;
         batch.cull=state!=null && state.hbm$cull()!=NO_CULL;
-        batch.cutoff=material!=null || state!=null && (state.hbm$shader()==RENDERTYPE_ENTITY_SOLID_SHADER
+        batch.cutoff=material!=null?(material.zeroAlphaDiscard()?-1F:0F):state!=null && (state.hbm$shader()==RENDERTYPE_ENTITY_SOLID_SHADER
                 || state.hbm$shader()==RENDERTYPE_SOLID_SHADER)?0F:.1F;
         batch.texture=material==null?WHITE:material.texture();
         batch.shaderEffect=material==null?0F:material.lit()?1F:material.fog()?3F:4F;
