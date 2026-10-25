@@ -20,6 +20,8 @@ import net.neoforged.neoforge.client.event.RenderPlayerEvent;
 /** Original amplified-invisibility player suppression and the named-player two-unit billboard. */
 @EventBusSubscriber(modid = "hbm", value = Dist.CLIENT)
 public final class SourcePlayerRenderEvents {
+    private static final net.minecraft.client.renderer.MultiBufferSource.BufferSource BILLBOARD_BUFFERS =
+            net.minecraft.client.renderer.MultiBufferSource.immediate(new com.mojang.blaze3d.vertex.ByteBufferBuilder(256));
     // Cancel before ordinary model-part snapshots, which require a matching RenderPlayerEvent.Post.
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void beforePlayer(RenderPlayerEvent.Pre event) {
@@ -37,7 +39,8 @@ public final class SourcePlayerRenderEvents {
             pose.translate(0, .75, 0);
             pose.mulPose(Axis.YP.rotationDegrees(-local.getYRot()));
             pose.mulPose(Axis.XP.rotationDegrees(local.getXRot()));
-            var vertices = event.getMultiBufferSource().getBuffer(BillboardMaterial.TYPE);
+            // Flush this owned quad before Iris beginTranslucents, so its real opaque plane supplies early depth.
+            var vertices = BILLBOARD_BUFFERS.getBuffer(BillboardMaterial.TYPE);
             var matrix = pose.last();
             vertices.addVertex(matrix.pose(), -1, 1, 0).setColor(-1).setUv(0, 0)
                     .setOverlay(OverlayTexture.NO_OVERLAY).setLight(LightTexture.FULL_BRIGHT).setNormal(matrix, 0, 0, 1);
@@ -47,6 +50,7 @@ public final class SourcePlayerRenderEvents {
                     .setOverlay(OverlayTexture.NO_OVERLAY).setLight(LightTexture.FULL_BRIGHT).setNormal(matrix, 0, 0, 1);
             vertices.addVertex(matrix.pose(), -1, -1, 0).setColor(-1).setUv(0, 1)
                     .setOverlay(OverlayTexture.NO_OVERLAY).setLight(LightTexture.FULL_BRIGHT).setNormal(matrix, 0, 0, 1);
+            BILLBOARD_BUFFERS.endBatch(BillboardMaterial.TYPE);
         } finally {
             pose.popPose();
         }
@@ -54,13 +58,13 @@ public final class SourcePlayerRenderEvents {
 
     private static final class BillboardMaterial extends RenderType {
         private BillboardMaterial() { super("unused", DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 256, false, false, () -> {}, () -> {}); }
-        private static final RenderType TYPE = WorldEffectMeshes.register(create("hbm_source_player_billboard",
+        private static final RenderType TYPE = WorldEffectMeshes.occluder(WorldEffectMeshes.<RenderType>register(create("hbm_source_player_billboard",
                 DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 256, false, false,
                 CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_EMISSIVE_SHADER)
                         .setTextureState(new TextureStateShard(ResourceLocation.parse("hbm:textures/particle/fart.png"), false, false))
                         .setTransparencyState(NO_TRANSPARENCY).setCullState(NO_CULL)
-                        .setDepthTestState(LEQUAL_DEPTH_TEST).setWriteMaskState(COLOR_DEPTH_WRITE)
-                        .createCompositeState(false)), "OriginalPlayerBillboard");
+                        .setDepthTestState(LEQUAL_DEPTH_TEST).setWriteMaskState(com.hbm.client.render.SourceDepthWrite.MASK)
+                        .createCompositeState(false)), "OriginalPlayerBillboard"));
     }
 
     private SourcePlayerRenderEvents() {}

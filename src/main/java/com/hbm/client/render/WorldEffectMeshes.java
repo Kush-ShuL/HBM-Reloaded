@@ -11,15 +11,25 @@ import org.lwjgl.system.MemoryUtil;
 /** Finite source-VFX material adapter to the sole168 queue. Never capture ordinary models or171 gun types. */
 public final class WorldEffectMeshes {
     private static final Map<RenderType,String> MATERIALS=new IdentityHashMap<>();
+    private static final java.util.Set<RenderType> OPAQUE_OCCLUDERS=java.util.Collections.newSetFromMap(new IdentityHashMap<>());
     private WorldEffectMeshes(){}
     /** Registration occurs at the actual owned material definition, not through inferred names/formats. */
     public static <T extends RenderType>T register(T type,String source){MATERIALS.put(type,source);return type;}
+    /** Only genuine opaque bodies supply early coverage; additive outer shells keep their original order. */
+    public static <T extends RenderType>T occluder(T type){
+        if(!MATERIALS.containsKey(type))throw new IllegalArgumentException("Unregistered source mesh material");
+        OPAQUE_OCCLUDERS.add(type);return type;
+    }
     public static boolean capture(RenderType type,MeshData submitted){
-        if(!MATERIALS.containsKey(type)||!WorldEffectsForward.acceptsSourceDraw()||submitted.drawState().vertexCount()==0)return false;
+        if(!MATERIALS.containsKey(type)||WorldEffectsDepth.earlyDepthPass()||!WorldEffectsForward.acceptsSourceDraw()||submitted.drawState().vertexCount()==0)return false;
         Copy copy=null;boolean retained=false;
         try{
             copy=new Copy(submitted);var ready=copy;
-            retained=WorldEffectsForward.defer(()->type.draw(ready.mesh),ready::close);
+            retained=WorldEffectsForward.defer(()->type.draw(ready.mesh),ready::close,
+                    OPAQUE_OCCLUDERS.contains(type)?()->{
+                        // Native drawing closes MeshData: retain the colour mesh and draw an exact temporary copy.
+                        try(var depth=new Copy(ready.mesh)){type.draw(depth.mesh);}
+                    }:null);
             if(retained)submitted.close();
             return retained;
         }catch(RuntimeException|Error failure){submitted.close();throw failure;}

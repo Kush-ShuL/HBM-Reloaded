@@ -40,9 +40,15 @@ public final class WorldEffectsForward {
     public static boolean defer(Runnable draw){return defer(draw,()->{});}
     /** Optional owned-resource cleanup also runs for interrupted frames; there is still one world queue. */
     public static boolean defer(Runnable draw,Runnable cleanup){
-        if(!acceptsSourceDraw())return false;
-        PENDING.add(new Draw(draw,new Context(),cleanup));return true;
+        return defer(draw,cleanup,null);
     }
+    /** A depth-only action shares the same retained draw and lifetime, never another effect queue. */
+    public static boolean defer(Runnable draw,Runnable cleanup,Runnable depth){
+        if(!acceptsSourceDraw())return false;
+        PENDING.add(new Draw(draw,new Context(),cleanup,depth));return true;
+    }
+    static boolean hasDepthDraws(){return PENDING.stream().anyMatch(draw->draw.depth!=null);}
+    static void renderDepth(){for(var draw:PENDING)if(draw.depth!=null){draw.context.apply();draw.depth.run();}}
 
     /** Iris finalizeLevelRendering RETURN: isRenderingWorld=false and finalPass has returned main. */
     public static void finishWorld(){
@@ -81,7 +87,7 @@ public final class WorldEffectsForward {
         if(cleanupFailure instanceof RuntimeException thrown)throw thrown;
         if(cleanupFailure instanceof Error thrown)throw thrown;
     }
-    private record Draw(Runnable action,Context context,Runnable cleanup){}
+    private record Draw(Runnable action,Context context,Runnable cleanup,Runnable depth){}
     /** Capture at submission, not after Iris has installed hand/GUI projection or fog. */
     static final class Context {
         final Matrix4f projection=new Matrix4f(RenderSystem.getProjectionMatrix());

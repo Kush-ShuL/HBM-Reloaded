@@ -15,7 +15,7 @@ import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
 public final class NuclearCloudRenderer {
  private static final ResourceLocation MODEL=ResourceLocation.parse("hbm:models/sphere_new.obj");
- private static final RenderType OPAQUE=SphereType.layer(false,false),DOUBLE_SIDED=SphereType.layer(false,true),ADDITIVE=SphereType.layer(true,false);
+ private static final RenderType OPAQUE=com.hbm.client.render.WorldEffectMeshes.occluder(SphereType.layer(false,false)),DOUBLE_SIDED=com.hbm.client.render.WorldEffectMeshes.occluder(SphereType.layer(false,true)),ADDITIVE=SphereType.layer(true,false);
  private static final MultiBufferSource.BufferSource BUFFERS=MultiBufferSource.immediate(new ByteBufferBuilder(262144));
  @SubscribeEvent public static void render(RenderLevelStageEvent event){
   if(event.getStage()!=RenderLevelStageEvent.Stage.AFTER_BLOCK_ENTITIES)return;var mc=Minecraft.getInstance();if(mc.level==null)return;var eye=event.getCamera().getPosition();float partial=event.getPartialTick().getGameTimeDeltaPartialTick(false);WavefrontMesh mesh=null;
@@ -37,7 +37,7 @@ public final class NuclearCloudRenderer {
  }
  private static final class SphereType extends RenderType {
   private SphereType(String n,VertexFormat f,VertexFormat.Mode m,int size,boolean crumble,boolean sorted,Runnable setup,Runnable clear){super(n,f,m,size,crumble,sorted,setup,clear);}
-  static RenderType layer(boolean additive,boolean noCull){return com.hbm.client.render.WorldEffectMeshes.register(create("hbm_nuclear_sphere_"+additive+"_"+noCull,DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,262144,false,false,CompositeState.builder().setShaderState(new ShaderStateShard(GameRenderer::getRendertypeLightningShader)).setTransparencyState(additive?LIGHTNING_TRANSPARENCY:NO_TRANSPARENCY).setCullState(noCull?NO_CULL:CULL).setDepthTestState(LEQUAL_DEPTH_TEST).setWriteMaskState(COLOR_DEPTH_WRITE).createCompositeState(false)),"FLEIJA+Solinium/Core+Shell");}
+  static RenderType layer(boolean additive,boolean noCull){return com.hbm.client.render.WorldEffectMeshes.register(create("hbm_nuclear_sphere_"+additive+"_"+noCull,DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.QUADS,262144,false,false,CompositeState.builder().setShaderState(new ShaderStateShard(GameRenderer::getRendertypeLightningShader)).setTransparencyState(additive?LIGHTNING_TRANSPARENCY:NO_TRANSPARENCY).setCullState(noCull?NO_CULL:CULL).setDepthTestState(LEQUAL_DEPTH_TEST).setWriteMaskState(com.hbm.client.render.SourceDepthWrite.MASK).createCompositeState(false)),"FLEIJA+Solinium/Core+Shell");}
  }
  private NuclearCloudRenderer(){}
 }

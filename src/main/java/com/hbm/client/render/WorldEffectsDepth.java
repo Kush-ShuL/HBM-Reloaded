@@ -57,9 +57,9 @@ public final class WorldEffectsDepth {
         if(attempted||context==null||!WorldEffectsForward.acceptsSourceDraw())return;
         attempted=true;var mc=Minecraft.getInstance();
         if(mc.level==null||mc.level!=level)return;
-        boolean smoke=MukeRenderTypes.hasDepthSmoke(),torex=NuclearTorexRenderer.hasDepthClouds();
+        boolean smoke=MukeRenderTypes.hasDepthSmoke(),torex=NuclearTorexRenderer.hasDepthClouds(),meshes=WorldEffectsForward.hasDepthDraws();
         boolean extra=false;for(var contributor:CONTRIBUTORS)extra|=contributor.hasGeometry.getAsBoolean();
-        if(!smoke&&!torex&&!extra)return;
+        if(!smoke&&!torex&&!meshes&&!extra)return;
         try(var saved=new WorldEffectsForward.State()){
             var main=mc.getMainRenderTarget();targets(main,saved);before.copyDepthFrom(main);
             main.bindWrite(true);context.apply();
@@ -73,6 +73,7 @@ public final class WorldEffectsDepth {
             try{
                 if(smoke)MukeRenderTypes.renderEarlyDepth(camera,frustum,partial);
                 if(torex)NuclearTorexRenderer.renderEarlyDepth(camera,partial,pose);
+                if(meshes)WorldEffectsForward.renderDepth();
                 for(var contributor:CONTRIBUTORS)if(contributor.hasGeometry.getAsBoolean()){
                     // Every actual owner starts from the same main depth-only state.
                     main.bindWrite(true);context.apply();
