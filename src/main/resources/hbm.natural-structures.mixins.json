@@ -11,7 +11,14 @@
     "StructureChestStartMixin",
     "StructureChestLevelWriteMixin",
     "StructureChestRegionWriteMixin",
-    "ForcedStructureStartsMixin"
+    "ForcedStructureStartsMixin",
+    "SourceDecorationStatusMixin",
+    "SourceDecorationPyramidMixin",
+    "FreshSourceChunkMixin",
+    "SourceStructureMetadataMixin",
+    "SourceStructureSerializationMixin",
+    "SourceStructureLocateMixin",
+    "SourceStructurePlaceMixin"
   ],
   "injectors": {
     "defaultRequire": 1

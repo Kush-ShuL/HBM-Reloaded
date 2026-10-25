@@ -122,6 +122,7 @@ public final class HbmReloaded {
         com.hbm.machine.tesla.TeslaContent.register(modBus);
         com.hbm.machine.transformer.TransformerContent.register(modBus);
         com.hbm.world.structure.NaturalStructures.register(modBus, container);
+        com.hbm.world.structure.SourceDecorationOwnership.register(modBus);
         com.hbm.world.structure.materials.MeteorMaterialContent.register(modBus);
         com.hbm.entity.mob.crab.CyberCrabContent.register(modBus);
         com.hbm.entity.projectile.legacy.LegacyBulletContent.register(modBus);
