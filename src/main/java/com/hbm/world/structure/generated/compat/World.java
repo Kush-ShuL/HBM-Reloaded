@@ -49,7 +49,7 @@ public final class World implements AutoCloseable {
     public int getSeaLevel(){return context!=null?context.chunkGenerator().getSeaLevel():level().getSeaLevel();}
     public int getHeightValue(int x,int z){
         int minimum=level!=null?level.getMinBuildHeight():context.heightAccessor().getMinBuildHeight();
-        int y=level!=null?level.getHeight(Heightmap.Types.WORLD_SURFACE_WG,x,z)-1:context.chunkGenerator().getFirstFreeHeight(x,z,Heightmap.Types.WORLD_SURFACE_WG,context.heightAccessor(),context.randomState())-1;
+        int y=level!=null?level.getHeight(Heightmap.Types.WORLD_SURFACE,x,z)-1:context.chunkGenerator().getFirstFreeHeight(x,z,Heightmap.Types.WORLD_SURFACE_WG,context.heightAccessor(),context.randomState())-1;
         y=Math.max(y,highestTouched.getOrDefault(BlockPos.asLong(x,0,z),y));
         for(;y>=minimum;y--){var state=stateAt(x,y,z);if(level!=null?state.getLightBlock(level,new BlockPos(x,y,z))>0:!state.isAir())return y+1;}
         return minimum;
