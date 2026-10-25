@@ -149,6 +149,7 @@ public class CanneryCrucible extends CanneryBase {
 		
 		scene2.add(new ActionWait(20));
 		
+		scene2.add(JarTiles.foundryFlow(4, .625, 2, 2.5, net.minecraft.core.Direction.WEST, 1, .625, .625, HbmMaterials.bySymbol("MAT_GOLD"), 60, 1));
 		for(int i = 0; i < 60; i++) {
 			final int j = i;
 			scene2.add(new ActionSetTile(2, 2, 2, new JarTiles.Crucible() {{ meta = 14; recipeStack.add(new MaterialStack(HbmMaterials.bySymbol("MAT_GOLD"), HbmMaterials.shape("BLOCK").q((60 - j), 60) * 16)); }}));
@@ -157,6 +158,7 @@ public class CanneryCrucible extends CanneryBase {
 		}
 		
 		scene2.add(new ActionWait(40));
+		scene2.add(new ActionRemoveActor(4));
 		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); slots[1] = JarSymbols.item("minecraft:gold_block",1,0); }}));
 		scene2.add(new ActionWait(20));
 		scene2.add(new ActionSetTile(0, 1, 2, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); }}));

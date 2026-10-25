@@ -10,6 +10,16 @@ import net.minecraft.world.level.block.state.BlockState;
 
 /** Exact local tutorial-only faux tile state. It is never registered, saved or inserted in the game world. */
 public final class JarTiles {
+ /** Starts a local source foundry stream when this action is replayed, never in the real Level. */
+ public static com.hbm.client.wiaj.actions.IJarAction foundryFlow(int actorId,double x,double y,double z,net.minecraft.core.Direction direction,double length,double base,double offset,NtmMaterial material,int duration,int period){
+  return new com.hbm.client.wiaj.actions.IJarAction(){
+   @Override public int getDuration(){return 0;}
+   @Override public void act(WorldInAJar world,JarScene scene){
+    var data=new net.minecraft.nbt.CompoundTag();data.putDouble("x",x);data.putDouble("y",y);data.putDouble("z",z);data.putInt("color",material.moltenColor());data.putInt("dir",direction.get3DDataValue());data.putDouble("len",length);data.putDouble("base",base);data.putDouble("off",offset);data.putInt("started",scene.script.ticksElapsed);data.putInt("duration",duration);data.putInt("period",period);
+    scene.script.actors.put(actorId,new com.hbm.client.wiaj.actors.ActorTileEntity(new com.hbm.client.wiaj.actors.JarMachineActors.FoundryFlow(),data));
+   }
+  };
+ }
  public static class Crucible {public int meta;public final List<MaterialStack> recipeStack=new ArrayList<>(),wasteStack=new ArrayList<>();}
  public static class Foundry {
   public final FoundryContent.Kind kind;public NtmMaterial type;public int amount;public final ItemStack[] slots={ItemStack.EMPTY,ItemStack.EMPTY};private FoundryBlockEntity renderTile;

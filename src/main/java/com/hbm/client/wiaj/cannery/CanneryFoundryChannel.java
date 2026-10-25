@@ -81,6 +81,7 @@ public class CanneryFoundryChannel extends CanneryBase {
 		scene0.add(new ActionRemoveActor(0));
 		scene0.add(new ActionWait(10));
 		scene0.add(new ActionSetTile(3, 2, 2, new JarTiles.Channel() {{ type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(1); }}));
+		scene0.add(JarTiles.foundryFlow(10, 3.5, 3.125, 2.625, net.minecraft.core.Direction.NORTH, 1, 0, .375, HbmMaterials.bySymbol("MAT_GOLD"), 10, 5));
 		
 		scene0.add(new ActionWait(10));
 		scene0.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 0, -25, new Object[][] {{JarSymbols.text("cannery.foundryChannel.2")}}, 200)
@@ -89,6 +90,8 @@ public class CanneryFoundryChannel extends CanneryBase {
 		scene0.add(new ActionWait(60));
 		scene0.add(new ActionRemoveActor(0));
 		
+		scene0.add(JarTiles.foundryFlow(10, 3.5, 3.125, 2.625, net.minecraft.core.Direction.NORTH, 1, 0, .375, HbmMaterials.bySymbol("MAT_GOLD"), 60, 5));
+		scene0.add(JarTiles.foundryFlow(11, 3.5, 2.125, 1.625, net.minecraft.core.Direction.NORTH, 1, 0, .375, HbmMaterials.bySymbol("MAT_GOLD"), 60, 5));
 		for(int i = 0; i < 60; i++) {
 			final int j = i;
 			scene0.add(new ActionSetTile(3, 1, 1, new JarTiles.Basin() {{ slots[0] = JarSymbols.item("hbm:mold/block",0,0); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("BLOCK").q(j, 60); }}));
@@ -103,11 +106,15 @@ public class CanneryFoundryChannel extends CanneryBase {
 		
 		scene1.add(new ActionWait(60));
 		scene1.add(new ActionRemoveActor(0));
+		scene1.add(new ActionRemoveActor(10));
+		scene1.add(new ActionRemoveActor(11));
 
 		scene1.add(new ActionWait(10));
 		scene1.add(new ActionSetTile(2, 2, 2, new JarTiles.Channel() {{ type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(1); }}));
 		scene1.add(new ActionWait(10));
 		
+		scene1.add(JarTiles.foundryFlow(10, 3.5, 3.125, 2.625, net.minecraft.core.Direction.NORTH, 1, 0, .375, HbmMaterials.bySymbol("MAT_GOLD"), 60, 5));
+		scene1.add(JarTiles.foundryFlow(12, 2.5, 2.125, 1.625, net.minecraft.core.Direction.NORTH, 1, 0, .375, HbmMaterials.bySymbol("MAT_GOLD"), 60, 5));
 		for(int i = 0; i < 60; i++) {
 			final int j = i;
 			scene1.add(new ActionSetTile(2, 1, 1, new JarTiles.Mold() {{ slots[0] = JarSymbols.item("hbm:mold/ingot",0,0); type = HbmMaterials.bySymbol("MAT_GOLD"); amount = HbmMaterials.shape("INGOT").q(j, 60); }}));
@@ -118,6 +125,8 @@ public class CanneryFoundryChannel extends CanneryBase {
 		scene1.add(new ActionWait(2));
 		scene1.add(new ActionSetTile(3, 3, 3, new JarTiles.Tank()));
 		scene1.add(new ActionWait(20));
+		scene1.add(new ActionRemoveActor(10));
+		scene1.add(new ActionRemoveActor(12));
 		
 		scene1.add(new ActionCreateActor(0, new ActorFancyPanel(LegacyFonts.get(), 0, -25, new Object[][] {{JarSymbols.text("cannery.foundryChannel.4")}}, 200)
 				.setColors(colorCopper).setOrientation(Orientation.LEFT)));
