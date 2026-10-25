@@ -29,6 +29,7 @@ public class NativePipeBlockEntity extends BlockEntity implements FluidUser,com.
     private final FluidNode[] exhaustNodes = new FluidNode[3];
     private final List<BlockPos> connected = new ArrayList<>();
     private BlockState paint;
+    private boolean chunkUnloaded;
     public NativePipeBlockEntity(BlockPos pos, BlockState state) { this(PipeContent.ENTITY.get(), pos, state); }
     protected NativePipeBlockEntity(net.minecraft.world.level.block.entity.BlockEntityType<?> type, BlockPos pos, BlockState state) { super(type, pos, state); }
     public PipeKind kind() { return ((NativePipeBlock) getBlockState().getBlock()).kind(); }
@@ -125,8 +126,17 @@ public class NativePipeBlockEntity extends BlockEntity implements FluidUser,com.
             removeNodes();
         }
     }
-    @Override public void setRemoved() { removeNodes(); super.setRemoved(); }
-    @Override public void onChunkUnloaded() { removeNodes(); super.onChunkUnloaded(); }
+    @Override public void onLoad() {
+        super.onLoad(); chunkUnloaded = false;
+        // Adopt retained topology before a newly loaded pipe can be broken or retyped.
+        if (level instanceof ServerLevel server) {
+            if (kind().exhaust()) for (int i = 0; i < SMOKES.length; i++) exhaustNodes[i] = FluidNetworks.nodespace(server, SMOKES[i]).getNode(worldPosition);
+            else node = FluidNetworks.nodespace(server, type).getNode(worldPosition);
+            updateState();
+        }
+    }
+    @Override public void setRemoved() { if (!chunkUnloaded) removeNodes(); super.setRemoved(); }
+    @Override public void onChunkUnloaded() { chunkUnloaded = true; super.onChunkUnloaded(); }
     @Override protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
         super.saveAdditional(tag, registries); tag.putInt("type", type.getID());
         if (paint != null) tag.put("paint", NbtUtils.writeBlockState(paint));

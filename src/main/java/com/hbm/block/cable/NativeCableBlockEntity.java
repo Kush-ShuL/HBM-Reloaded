@@ -21,11 +21,12 @@ import net.neoforged.neoforge.client.model.data.ModelData;
 
 public class NativeCableBlockEntity extends BlockEntity implements EnergyConductor {
     protected PowerNode node;
+    private boolean chunkUnloaded;
     private BlockState paint;
     public NativeCableBlockEntity(BlockPos pos, BlockState state) { this(CableContent.ENTITY.get(), pos, state); }
     protected NativeCableBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) { super(type, pos, state); }
     @Override public PowerNode energyNode() { return node; }
-    @Override public boolean isLoaded() { return level != null && !isRemoved(); }
+    @Override public boolean isLoaded() { return level != null && !isRemoved() && !chunkUnloaded; }
     @Override public boolean canConnect(Direction side) { return side != null; }
     public boolean shouldConduct() { return !getBlockState().hasProperty(SwitchedCableBlock.ENABLED) || getBlockState().getValue(SwitchedCableBlock.ENABLED); }
 
@@ -34,11 +35,15 @@ public class NativeCableBlockEntity extends BlockEntity implements EnergyConduct
         if (level.getGameTime() % 20 == 0) cable.refreshConnections();
     }
     public void updateConductingState() {
-        if (!(level instanceof ServerLevel server) || isRemoved()) return;
+        if (!(level instanceof ServerLevel server) || isRemoved() || chunkUnloaded) return;
         if (!shouldConduct()) { disconnect(); return; }
         if (node == null || node.isExpired()) {
-            node = new PowerNode(worldPosition);
-            HbmEnergy.nodespace(server).createNode(node);
+            var space = HbmEnergy.nodespace(server);
+            node = space.getNode(worldPosition);
+            if (node == null || node.isExpired()) {
+                node = new PowerNode(worldPosition);
+                space.createNode(node);
+            }
         }
     }
     public void disconnect() {
@@ -46,16 +51,16 @@ public class NativeCableBlockEntity extends BlockEntity implements EnergyConduct
         node = null;
     }
     public void refreshConnections() {
-        if (level == null || level.isClientSide || isRemoved()) return;
+        if (level == null || level.isClientSide || isRemoved() || chunkUnloaded) return;
         BlockState state = getBlockState();
         if (state.getBlock() instanceof NativeCableBlock block) {
             BlockState refreshed = block.refreshConnections(state, level, worldPosition);
             if (refreshed != state) level.setBlock(worldPosition, refreshed, Block.UPDATE_ALL);
         }
     }
-    @Override public void onLoad() { super.onLoad(); updateConductingState(); refreshConnections(); }
-    @Override public void onChunkUnloaded() { disconnect(); super.onChunkUnloaded(); }
-    @Override public void setRemoved() { disconnect(); super.setRemoved(); }
+    @Override public void onLoad() { super.onLoad(); chunkUnloaded = false; updateConductingState(); refreshConnections(); }
+    @Override public void onChunkUnloaded() { chunkUnloaded = true; super.onChunkUnloaded(); }
+    @Override public void setRemoved() { if (!chunkUnloaded) disconnect(); super.setRemoved(); }
 
     public BlockState paint() { return paint; }
     public void setPaint(BlockState paint) {

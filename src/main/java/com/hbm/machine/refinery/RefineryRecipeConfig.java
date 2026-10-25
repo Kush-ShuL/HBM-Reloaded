@@ -38,6 +38,7 @@ public final class RefineryRecipeConfig {
             int order=0;for(var value:root.getAsJsonArray("recipes")){try{var row=value.getAsJsonObject();var input=fluid(row.get("input").getAsString());var outputs=new ArrayList<FluidStack>();for(int i=0;i<4;i++){var array=row.getAsJsonArray("output"+i);outputs.add(new FluidStack(fluid(array.get(0).getAsString()),Math.multiplyExact(array.get(1).getAsInt(),10),array.size()>2?array.get(2).getAsInt():0));}
                 ItemStack solid=row.has("solid")&&!row.get("solid").isJsonNull()?GenericRecipeConfigCodec.readStack(row.getAsJsonArray("solid"),ALIASES):ItemStack.EMPTY;
                 var data=new GenericRecipeData("refinery."+input.getName(),10,5,List.of(),List.of(new FluidStack(input,1000)),solid.isEmpty()?List.of():List.of(new GenericOutput(solid)),outputs,List.of(),"",ItemStack.EMPTY,false,"",order);
+                additions.values().removeIf(holder->holder.value() instanceof RefineryRecipe previousRecipe&&previousRecipe.inputFluids().getFirst().type==input);
                 var id=ResourceLocation.fromNamespaceAndPath("hbm","refinery/"+(Files.isRegularFile(active)?"config/":"default/")+order);additions.put(id,new RecipeHolder<>(id,new RefineryRecipe(data)));
             }catch(Exception error){UNRESOLVED.add("row "+order+": "+error.getMessage());}order++;}
         }catch(Exception error){LogUtils.getLogger().error("Cannot load original refinery recipes",error);}

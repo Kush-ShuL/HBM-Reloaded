@@ -59,6 +59,7 @@ public final class AlloyRecipeConfig {
                     try(var resource=AlloyRecipeConfig.class.getResourceAsStream("/hbm/alloy-lbsm-recipe.json")){if(resource!=null){var row=JsonParser.parseReader(new java.io.InputStreamReader(resource,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject();put(additions,"lbsm",0,new AlloyRecipe(input(row.getAsJsonArray("input1"),server.registryAccess()),input(row.getAsJsonArray("input2"),server.registryAccess()),output(row.getAsJsonArray("output")),false,14));}}
                 }
                 int index=0; for(var tag:IMC) { try { ItemStack output=imcStack(tag.getCompound("output"),server.registryAccess()); if(output.isEmpty()) throw new IllegalArgumentException("Unregistered output"); put(additions,"imc",index,new AlloyRecipe(imcInput(tag,1,server.registryAccess()),imcInput(tag,2,server.registryAccess()),output,false,100000+index)); } catch(Exception error) { UNRESOLVED.add("IMC row "+index+": "+error.getMessage()); } index++; }
+                IMC.clear();
             }
         } catch(Exception error) { LogUtils.getLogger().error("Cannot load original blast-furnace recipe configuration",error); }
         additions.forEach(merged::put); if(!additions.isEmpty()||!previous.isEmpty()||Files.isRegularFile(active)) manager.replaceRecipes(merged.values()); INSTALLED.put(manager,additions);

@@ -32,11 +32,19 @@ public final class ComputerArguments {
     }
 
     public int checkInteger(int index) {
-        double value = checkDouble(index);
-        if (value != Math.rint(value) || value < Integer.MIN_VALUE || value > Integer.MAX_VALUE) {
-            throw argumentError(index, "integer");
+        if (get(index) instanceof Number value) {
+            // Original OC integers truncate fractions and saturate floating/long overflow.
+            if (value instanceof Double || value instanceof Float) {
+                double number = value.doubleValue();
+                if (Double.isNaN(number)) throw argumentError(index, "integer");
+                return (int) number;
+            }
+            if (value instanceof Long) {
+                return (int) Math.max(Integer.MIN_VALUE, Math.min(Integer.MAX_VALUE, value.longValue()));
+            }
+            return value.intValue();
         }
-        return (int) value;
+        throw argumentError(index, "integer");
     }
 
     public long checkLong(int index) {

@@ -16,12 +16,14 @@ import java.util.Set;
  */
 public final class PowerNetwork {
     private static final BigInteger LONG_MAX = BigInteger.valueOf(Long.MAX_VALUE);
+    private static final BigInteger LONG_MIN = BigInteger.valueOf(Long.MIN_VALUE);
+    // Both source networks inherited the same NodeNet random for remainder compensation.
+    private static final java.util.Random SOURCE_RANDOM = com.hbm.fluid.network.FluidNetMK2.rand;
     private final Set<EnergyProvider> providers = new LinkedHashSet<>();
     private final Set<EnergyReceiver> receivers = new LinkedHashSet<>();
     private final Set<PowerLink> nodes = new LinkedHashSet<>();
     private BigInteger transferred = BigInteger.ZERO;
     private boolean valid = true;
-    private int remainderCursor;
 
     public void addProvider(EnergyProvider provider) { requireValid(); providers.add(Objects.requireNonNull(provider)); }
     public void removeProvider(EnergyProvider provider) { providers.remove(provider); }
@@ -39,7 +41,7 @@ public final class PowerNetwork {
     public BigInteger getTransferredExact() { return transferred; }
 
     /** A long telemetry view saturates; stored and transferred HE never saturate. */
-    public long getEnergyTracker() { return transferred.min(LONG_MAX).longValueExact(); }
+    public long getEnergyTracker() { return transferred.max(LONG_MIN).min(LONG_MAX).longValueExact(); }
 
     void addNode(PowerLink node) {
         requireValid();
@@ -61,73 +63,65 @@ public final class PowerNetwork {
         requireValid();
         providers.removeIf(provider -> !provider.isLoaded());
         receivers.removeIf(receiver -> !receiver.isLoaded());
+        if (providers.isEmpty() || receivers.isEmpty()) return;
         List<Offer<EnergyProvider>> sources = new ArrayList<>();
         BigInteger available = BigInteger.ZERO;
+        BigInteger powerBefore = BigInteger.ZERO;
         for (EnergyProvider provider : providers) {
-            BigInteger offer = provider.getPowerExact().min(provider.getProviderSpeedExact()).max(BigInteger.ZERO);
+            BigInteger stored = provider.getPowerExact();
+            BigInteger offer = stored.min(provider.getProviderSpeedExact()).max(BigInteger.ZERO);
             if (offer.signum() > 0) {
                 sources.add(new Offer<>(provider, offer));
                 available = available.add(offer);
+                powerBefore = powerBefore.add(stored);
             }
         }
-        if (sources.isEmpty()) return;
         var demands = new EnumMap<ConnectionPriority, List<Offer<EnergyReceiver>>>(ConnectionPriority.class);
         for (ConnectionPriority priority : ConnectionPriority.values()) demands.put(priority, new ArrayList<>());
+        BigInteger totalDemand = BigInteger.ZERO;
         for (EnergyReceiver receiver : receivers) {
             BigInteger stored = receiver.getPowerExact();
             BigInteger capacity = receiver.getMaxPowerExact();
             if (capacity.signum() < 0 || capacity.compareTo(stored) < 0) throw new IllegalStateException("Invalid receiver HE storage");
-            // Original machines can pay their last running tick from a positive
-            // balance smaller than the tick cost (e.g. shredder: 1 - 5 = -4).
-            // Repay that deficit as well, without integer narrowing or wrapping.
+            // Repay original machines' final-tick deficits without narrowing their HE.
             BigInteger demand = capacity.subtract(stored).min(receiver.getReceiverSpeedExact().max(BigInteger.ZERO));
-            if (demand.signum() > 0) demands.get(receiver.getPriority()).add(new Offer<>(receiver, demand));
+            if (demand.signum() > 0) {
+                demands.get(receiver.getPriority()).add(new Offer<>(receiver, demand));
+                totalDemand = totalDemand.add(demand);
+            }
         }
+        BigInteger toTransfer = available.min(totalDemand);
         BigInteger consumed = BigInteger.ZERO;
         var priorities = ConnectionPriority.values();
-        for (int i = priorities.length - 1; i >= 0 && available.signum() > 0; i--) {
+        for (int i = priorities.length - 1; i >= 0; i--) {
             var targets = demands.get(priorities[i]);
-            BigInteger totalDemand = sum(targets);
-            if (totalDemand.signum() == 0) continue;
-            BigInteger[] shares = allocate(available.min(totalDemand), targets, totalDemand);
-            BigInteger groupConsumed = BigInteger.ZERO;
-            for (int j = 0; j < targets.size(); j++) {
-                BigInteger sent = shares[j];
-                if (sent.signum() == 0) continue;
-                BigInteger rejected = targets.get(j).participant().transferPowerExact(sent);
+            BigInteger priorityDemand = sum(targets);
+            for (var target : targets) {
+                // Source receivers get proportional floors, without a remainder round.
+                BigInteger sent = toTransfer.max(BigInteger.ZERO).multiply(target.amount()).divide(priorityDemand).min(target.amount());
+                BigInteger rejected = target.participant().transferPowerExact(sent);
                 if (rejected.signum() < 0 || rejected.compareTo(sent) > 0) throw new IllegalStateException("Receiver returned invalid rejected HE");
-                groupConsumed = groupConsumed.add(sent.subtract(rejected));
+                consumed = consumed.add(sent.subtract(rejected));
             }
-            available = available.subtract(groupConsumed);
-            consumed = consumed.add(groupConsumed);
+            // This is the source cumulative subtraction, including empty priorities.
+            toTransfer = toTransfer.subtract(consumed);
         }
-        if (consumed.signum() > 0) {
-            BigInteger[] debits = allocate(consumed, sources, sum(sources));
-            for (int i = 0; i < sources.size(); i++) {
-                if (debits[i].signum() > 0) sources.get(i).participant().usePowerExact(debits[i]);
-            }
-            transferred = transferred.add(consumed);
+        BigInteger leftover = consumed;
+        for (var source : sources) {
+            BigInteger debit = consumed.multiply(source.amount()).divide(available);
+            source.participant().usePowerExact(debit);
+            leftover = leftover.subtract(debit);
         }
-        remainderCursor = remainderCursor == Integer.MAX_VALUE ? 0 : remainderCursor + 1;
-    }
-
-    private <T> BigInteger[] allocate(BigInteger budget, List<Offer<T>> entries, BigInteger total) {
-        BigInteger[] shares = new BigInteger[entries.size()];
-        BigInteger used = BigInteger.ZERO;
-        for (int i = 0; i < entries.size(); i++) {
-            shares[i] = budget.multiply(entries.get(i).amount()).divide(total);
-            used = used.add(shares[i]);
+        for (int attempts = 100; attempts > 0 && leftover.signum() > 0 && !sources.isEmpty(); attempts--) {
+            var provider = sources.get(SOURCE_RANDOM.nextInt(sources.size())).participant();
+            BigInteger debit = leftover.min(provider.getPowerExact().max(BigInteger.ZERO));
+            provider.usePowerExact(debit);
+            leftover = leftover.subtract(debit);
         }
-        int remainder = budget.subtract(used).intValueExact();
-        for (int j = 0; j < entries.size() && remainder > 0; j++) {
-            int i = (int) (((long) remainderCursor + j) % entries.size());
-            if (shares[i].compareTo(entries.get(i).amount()) < 0) {
-                shares[i] = shares[i].add(BigInteger.ONE);
-                remainder--;
-            }
-        }
-        if (remainder != 0) throw new IllegalStateException("Unallocated proportional HE remainder");
-        return shares;
+        BigInteger powerAfter = BigInteger.ZERO;
+        for (var provider : providers) powerAfter = powerAfter.add(provider.getPowerExact().max(BigInteger.ZERO));
+        // Source tracker observes provider balances, rather than assuming all debit calls succeeded.
+        transferred = transferred.add(powerBefore.subtract(powerAfter));
     }
 
     private static <T> BigInteger sum(List<Offer<T>> entries) {

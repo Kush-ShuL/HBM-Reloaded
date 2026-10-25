@@ -80,6 +80,7 @@ public final class CentrifugeRecipeConfig {
                     var id=ResourceLocation.fromNamespaceAndPath("hbm","centrifuge/imc/"+index); additions.put(id,new RecipeHolder<>(id,recipe));
                 } catch(Exception error) { UNRESOLVED.add("IMC row "+index+": "+error.getMessage()); } index++;
             }
+            IMC.clear();
         } catch(Exception error) { LogUtils.getLogger().error("Cannot load original centrifuge recipe configuration",error); }
         additions.forEach(merged::put); if(!additions.isEmpty()||!previous.isEmpty()||Files.isRegularFile(active)) manager.replaceRecipes(merged.values()); INSTALLED.put(manager,additions);
         for(String error:UNRESOLVED) LogUtils.getLogger().warn("Unbound centrifuge recipe: {}",error);
