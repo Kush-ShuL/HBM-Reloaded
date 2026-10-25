@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "computercraft"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "computercraft:disks"
+    },
+    {
+      "item": "hbm:pwr_casing"
+    }
+  ],
+  "result": {
+    "id": "hbm:pwrangler_disk",
+    "count": 1
+  }
+}
