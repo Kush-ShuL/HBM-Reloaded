@@ -11,7 +11,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.phys.AABB;
 
 /** Exact ParticleRocketFlame: ten stable subpuffs,300..349life,source spread/fade/colors/full block light. */
-public final class LegacyRocketFlameParticle extends Particle {
+public final class LegacyRocketFlameParticle extends Particle implements SourceSmokeGeometry {
     // Modern particles are not Entities. This stable particle id replaces only the old shape-seeding entity id.
     private static final AtomicInteger NEXT_ID=new AtomicInteger();
     private final Puff[] puffs=new Puff[10];
@@ -26,7 +26,11 @@ public final class LegacyRocketFlameParticle extends Particle {
     @Override public void tick(){xo=x;yo=y;zo=z;age++;if(age==lifetime)remove();xd*=.91D;yd*=.91D;zd*=.91D;move(xd,yd,zd);}
     @Override public void render(VertexConsumer unused,Camera camera,float partial){
         if(MukeRenderTypes.defer(this,partial))return;
-        var vertices=MukeRenderTypes.begin(MukeRenderTypes.ROCKET_FLAME);var eye=camera.getPosition();
+        emitSmokeGeometry(MukeRenderTypes.begin(smokeMaterial()),camera,partial);
+    }
+    @Override public ParticleRenderType smokeMaterial(){return MukeRenderTypes.ROCKET_FLAME;}
+    @Override public void emitSmokeGeometry(VertexConsumer vertices,Camera camera,float partial){
+        var eye=camera.getPosition();
         float fraction=(float)age/lifetime;
         float dark=1-Math.min((float)age/(lifetime*.25F),1);
         float alpha=(float)Math.pow(1-Math.min(fraction,1),.5)*.75F;

@@ -28,7 +28,7 @@ public final class WorldEffectsForward {
     private WorldEffectsForward(){}
 
     /** Native frame entry also drops references left by an interrupted preceding render. */
-    public static void beginFrame(){try{clearPending(null);}finally{collecting=false;replaying=false;shadows=false;}}
+    public static void beginFrame(){try{clearPending(null);}finally{collecting=false;replaying=false;shadows=false;WorldEffectsDepth.resetFrame();}}
     public static void beginWorld(){collecting=GunShaderCompat.shaderPackInUse();}
     public static void shadows(boolean value){shadows=value;}
     public static boolean sourcePass(){return replaying;}
@@ -83,7 +83,7 @@ public final class WorldEffectsForward {
     }
     private record Draw(Runnable action,Context context,Runnable cleanup){}
     /** Capture at submission, not after Iris has installed hand/GUI projection or fog. */
-    private static final class Context {
+    static final class Context {
         final Matrix4f projection=new Matrix4f(RenderSystem.getProjectionMatrix());
         final Matrix4f modelView=new Matrix4f(RenderSystem.getModelViewMatrix());
         final VertexSorting sorting=RenderSystem.getVertexSorting();
@@ -103,7 +103,7 @@ public final class WorldEffectsForward {
     }
 
     /** Restore actual GL state and RenderSystem's cached values, including indexed MRT state. */
-    private static final class State implements AutoCloseable {
+    public static final class State implements AutoCloseable {
         final Context context=new Context();
         final ShaderInstance shader=RenderSystem.getShader();
         final int draw=GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING),read=GL11.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING);
@@ -117,7 +117,7 @@ public final class WorldEffectsForward {
         final boolean indexed=GL.getCapabilities().OpenGL40||GL.getCapabilities().GL_ARB_draw_buffers_blend;
         final int[] src,dst,srcAlpha,dstAlpha,equation,equationAlpha;
         final boolean[] blend;final boolean[][] colour;
-        State(){
+        public State(){
             GL11.glGetIntegerv(GL11.GL_VIEWPORT,viewport);GL11.glGetIntegerv(GL11.GL_SCISSOR_BOX,scissorBox);
             GL11.glGetDoublev(GL11.GL_DEPTH_RANGE,depthRange);
             for(int i=0;i<textures.length;i++){RenderSystem.activeTexture(GL13.GL_TEXTURE0+i);textures[i]=GL11.glGetInteger(GL11.GL_TEXTURE_BINDING_2D);}
@@ -137,6 +137,9 @@ public final class WorldEffectsForward {
             }
         }
         int factor(int key,int index){return indexed?GL30.glGetIntegeri(key,index):GL11.glGetInteger(key);}
+        /** A texture destroyed inside this scope must not be rebound by restoration. */
+        void forgetTexture(int texture){for(int i=0;i<textures.length;i++){if(textures[i]==texture)textures[i]=0;if(context.textures[i]==texture)context.textures[i]=0;}}
+
         @Override public void close(){
             context.apply();RenderSystem.setShader(()->shader);
             BufferUploader.invalidate();GlStateManager._glBindVertexArray(vao);GlStateManager._glBindBuffer(GL15.GL_ARRAY_BUFFER,array);
@@ -144,8 +147,8 @@ public final class WorldEffectsForward {
             GlStateManager._glBindFramebuffer(GL30.GL_DRAW_FRAMEBUFFER,draw);GlStateManager._glBindFramebuffer(GL30.GL_READ_FRAMEBUFFER,read);
             RenderSystem.viewport(viewport[0],viewport[1],viewport[2],viewport[3]);
             if(scissor)RenderSystem.enableScissor(scissorBox[0],scissorBox[1],scissorBox[2],scissorBox[3]);else RenderSystem.disableScissor();
-            if(depth)RenderSystem.enableDepthTest();else RenderSystem.disableDepthTest();
-            RenderSystem.depthFunc(depthFunction);RenderSystem.depthMask(mask);GL11.glDepthRange(depthRange[0],depthRange[1]);
+            if(depth){RenderSystem.enableDepthTest();GL11.glEnable(GL11.GL_DEPTH_TEST);}else{RenderSystem.disableDepthTest();GL11.glDisable(GL11.GL_DEPTH_TEST);}
+            RenderSystem.depthFunc(depthFunction);GL11.glDepthFunc(depthFunction);RenderSystem.depthMask(mask);GL11.glDepthMask(mask);GL11.glDepthRange(depthRange[0],depthRange[1]);
             if(cull)RenderSystem.enableCull();else RenderSystem.disableCull();
             toggle(GL11.GL_STENCIL_TEST,stencil);toggle(GL11.GL_POLYGON_OFFSET_FILL,offset);toggle(GL30.GL_FRAMEBUFFER_SRGB,srgb);
             if(blend[0])RenderSystem.enableBlend();else RenderSystem.disableBlend();
@@ -166,6 +169,6 @@ public final class WorldEffectsForward {
     }
     @EventBusSubscriber(modid="hbm",value=Dist.CLIENT)
     public static final class Lifecycle {
-        @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut event){beginFrame();}
+        @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut event){beginFrame();WorldEffectsDepth.release();}
     }
 }

@@ -5,6 +5,7 @@ import com.hbm.client.weapon.forward.mixin.ForwardCompositeTypeAccess;
 import com.hbm.client.weapon.forward.mixin.ForwardTextureAccess;
 import com.hbm.client.weapon.forward.mixin.ForwardLightTextureAccess;
 import com.hbm.client.render.WorldEffectsForward;
+import com.hbm.client.render.WorldEffectsDepth;
 import com.hbm.client.weapon.pepperbox.GunFirstPersonRenderer;
 import com.hbm.client.weapon.pepperbox.GunShaderCompat;
 import com.hbm.weapon.sedna.gun.ItemGunBaseNT;
@@ -20,8 +21,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IdentityHashMap;
 import java.util.Map;
+import java.util.function.Consumer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderStateShard;
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ShaderInstance;
 import net.minecraft.client.renderer.texture.OverlayTexture;
@@ -49,12 +52,24 @@ public final class GunForwardEffects extends RenderType {
             VertexFormat.Mode.TRIANGLES, 4096, false, false, ()->{}, ()->{}); }
 
     private static final ResourceLocation WHITE=ResourceLocation.withDefaultNamespace("textures/misc/white.png");
-    private record Additive(ResourceLocation texture,boolean depthWrite,boolean lit,boolean fog) {}
+    private record Additive(ResourceLocation texture,boolean depthWrite,boolean lit,boolean fog,boolean worldOccluder) {}
     private static final Map<RenderType,Additive> ADDITIVE=new IdentityHashMap<>();
     /** Registration belongs to each actual source material definition, never to a gun-name whitelist. */
     public static RenderType additive(RenderType type,ResourceLocation texture,boolean depthWrite,boolean lit,boolean fog) {
-        ADDITIVE.put(type,new Additive(texture,depthWrite,lit,fog));return type;
+        ADDITIVE.put(type,new Additive(texture,depthWrite,lit,fog,false));return type;
     }
+    /** Only actual world-volume materials opt in; hand materials never supply world depth. */
+    public static RenderType worldOccluder(RenderType type) {
+        var material=ADDITIVE.get(type);
+        if(material==null)throw new IllegalArgumentException("World occluder must be a registered source additive material");
+        ADDITIVE.put(type,new Additive(material.texture(),material.depthWrite(),material.lit(),material.fog(),true));
+        if(!worldGeometryRegistered) {
+            WorldEffectsDepth.registerWorldGeometry(GunForwardEffects::hasWorldOccluders,GunForwardEffects::drawWorldOccluders);
+            worldGeometryRegistered=true;
+        }
+        return type;
+    }
+    private static boolean worldGeometryRegistered;
     private static final ArrayList<Batch> BATCHES=new ArrayList<>(),WORLD_BATCHES=new ArrayList<>();
     private static ShaderInstance shader;
     private static RenderTarget target;
@@ -117,6 +132,7 @@ public final class GunForwardEffects extends RenderType {
     private static boolean copy(Batch batch,Additive material,ForwardCompositeStateAccess state,MeshData mesh) {
         batch.effect=material!=null;
         batch.depthWrite=material==null || material.depthWrite();
+        batch.worldOccluder=material!=null && material.worldOccluder();
         batch.writeColour=state==null || state.hbm$writeMask()==COLOR_DEPTH_WRITE;
         batch.cull=state!=null && state.hbm$cull()!=NO_CULL;
         batch.cutoff=material!=null || state!=null && (state.hbm$shader()==RENDERTYPE_ENTITY_SOLID_SHADER
@@ -153,14 +169,49 @@ public final class GunForwardEffects extends RenderType {
         mesh.close();return true;
     }
 
-    private static void drawWorld(Batch batch) {
+    /**
+     * Iris may retain additive entity batches until after beginTranslucents.
+     * Flush this actual source volume to our existing capture now, without
+     * flushing its shared world buffers or collecting a second effect queue.
+     */
+    public static boolean captureWorldGeometry(RenderType type,Consumer<MultiBufferSource> emit) {
+        var material=ADDITIVE.get(type);
+        if(material==null || !material.worldOccluder() || shader==null || collecting
+                || !WorldEffectsForward.acceptsSourceDraw()
+                || GunShaderCompat.handState()!=GunShaderCompat.VANILLA)return false;
+        try(var immediateMemory=new ByteBufferBuilder(type.bufferSize())) {
+            var buffers=MultiBufferSource.immediate(immediateMemory);
+            emit.accept(buffers);
+            buffers.endBatch();
+        }
+        return true;
+    }
+
+    private static boolean hasWorldOccluders() {
+        for(int i=0;i<worldCount;i++)if(WORLD_BATCHES.get(i).worldOccluder)return true;
+        return false;
+    }
+
+    private static void drawWorldOccluders() {
         if(memory==null)memory=new ByteBufferBuilder(65536);
         try(var saved=new State()) {
             RenderSystem.enableDepthTest();GL11.glEnable(GL11.GL_DEPTH_TEST);
             RenderSystem.depthFunc(GL11.GL_LEQUAL);GL11.glDepthFunc(GL11.GL_LEQUAL);
+            for(int i=0;i<worldCount;i++) {
+                var batch=WORLD_BATCHES.get(i);
+                if(batch.worldOccluder)draw(batch,true,false);
+            }
+        }
+    }
+
+    private static void drawWorld(Batch batch) {
+        if(memory==null)memory=new ByteBufferBuilder(65536);
+        try(var saved=new State();var colour=batch.worldOccluder?WorldEffectsDepth.colour():null) {
+            RenderSystem.enableDepthTest();GL11.glEnable(GL11.GL_DEPTH_TEST);
+            RenderSystem.depthFunc(GL11.GL_LEQUAL);GL11.glDepthFunc(GL11.GL_LEQUAL);
             GL20.glBlendEquationSeparate(GL14.GL_FUNC_ADD,GL14.GL_FUNC_ADD);
             // The common168 callback retains the actual world depth. No hand target/clear/blit.
-            draw(batch);
+            draw(batch,false,colour!=null && colour.active());
         }
     }
 
@@ -226,11 +277,21 @@ public final class GunForwardEffects extends RenderType {
     }
 
     private static void draw(Batch batch) {
-        RenderSystem.depthMask(batch.depthWrite);GL11.glDepthMask(batch.depthWrite);
+        draw(batch,false,false);
+    }
+
+    private static void draw(Batch batch,boolean depthOnly,boolean resolvedColour) {
+        boolean depthWrite=depthOnly || batch.depthWrite&&!resolvedColour;
+        RenderSystem.depthMask(depthWrite);GL11.glDepthMask(depthWrite);
         if(batch.cull) { RenderSystem.enableCull();GL11.glEnable(GL11.GL_CULL_FACE); }
         else { RenderSystem.disableCull();GL11.glDisable(GL11.GL_CULL_FACE); }
-        colourMask(batch.writeColour,batch.writeColour,batch.writeColour,batch.writeColour);
-        blend(batch.effect,GL11.GL_SRC_ALPHA,GL11.GL_ONE,GL11.GL_SRC_ALPHA,GL11.GL_ONE);
+        boolean writeColour=batch.writeColour&&!depthOnly;
+        colourMask(writeColour,writeColour,writeColour,writeColour);
+        blend(batch.effect&&!depthOnly,GL11.GL_SRC_ALPHA,GL11.GL_ONE,GL11.GL_SRC_ALPHA,GL11.GL_ONE);
+        WorldEffectsDepth.shader(shader);
+        // This owner calls ShaderInstance.apply directly, rather than the native
+        // drawWithShader sampler bridge. Bind the helper's independent copies explicitly.
+        if(resolvedColour)for(int i=6;i<=8;i++)shader.setSampler("Sampler"+i,RenderSystem.getShaderTexture(i));
         shader.safeGetUniform("CapturedMVP").set(batch.mvp);
         shader.safeGetUniform("CapturedColour").set(batch.modulator[0],batch.modulator[1],batch.modulator[2],batch.modulator[3]);
         shader.safeGetUniform("AlphaCutoff").set(batch.cutoff);
@@ -297,7 +358,7 @@ public final class GunForwardEffects extends RenderType {
         final float[] modulator=new float[4],lights=new float[6];
         float[] data=new float[0];
         ResourceLocation texture;
-        boolean effect,depthWrite,writeColour,cull;
+        boolean effect,depthWrite,writeColour,cull,worldOccluder;
         float cutoff,shaderEffect,fogStart,fogEnd;
         int fogShape;
         int vertices;
@@ -346,7 +407,7 @@ public final class GunForwardEffects extends RenderType {
         final int draw=GL11.glGetInteger(GL30.GL_DRAW_FRAMEBUFFER_BINDING),read=GL11.glGetInteger(GL30.GL_READ_FRAMEBUFFER_BINDING);
         final int program=GL11.glGetInteger(GL20.GL_CURRENT_PROGRAM),vao=GL11.glGetInteger(GL30.GL_VERTEX_ARRAY_BINDING),array=GL11.glGetInteger(GL15.GL_ARRAY_BUFFER_BINDING);
         final int active=GL11.glGetInteger(GL13.GL_ACTIVE_TEXTURE);
-        final int[] textures=new int[2];
+        final int[] textures=new int[9];
         final int[] viewport=new int[4],scissorBox=new int[4];
         final float[] clearColour=new float[4];
         final double clearDepth=GL11.glGetDouble(GL11.GL_DEPTH_CLEAR_VALUE);

@@ -7,6 +7,15 @@
     },
     {
       "name": "SourceLightmap"
+    },
+    {
+      "name": "Sampler6"
+    },
+    {
+      "name": "Sampler7"
+    },
+    {
+      "name": "Sampler8"
     }
   ],
   "attributes": [
@@ -107,6 +116,14 @@
     {
       "name": "CapturedFogShape",
       "type": "int",
+      "count": 1,
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "HbmSmokeCutoff",
+      "type": "float",
       "count": 1,
       "values": [
         0

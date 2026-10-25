@@ -1,5 +1,6 @@
 package com.hbm.client.weapon.energy;
 import com.hbm.client.weapon.SednaBeamRenderContext;
+import com.hbm.client.weapon.forward.GunForwardEffects;
 import com.hbm.entity.projectile.EntityBulletBeamBase;
 import com.mojang.blaze3d.vertex.*;
 import com.mojang.math.Axis;
@@ -21,7 +22,9 @@ public final class EnergyBeams {
     public static void laser(EntityBulletBeamBase beam,float partial,int r,int g,int b){var c=SednaBeamRenderContext.current();var pose=c.poses();pose.pushPose();
         pose.mulPose(Axis.YP.rotationDegrees(180-beam.getYRot()));pose.mulPose(Axis.XP.rotationDegrees(-beam.getXRot()-90));double age=Mth.clamp(1D-((double)beam.tickCount-2+partial)/beam.getBulletConfig().expires,0,1);pose.scale((float)(age/2+.5),1,(float)(age/2+.5));
         int color=((int)(r*age)<<16)|((int)(g*age)<<8)|(int)(b*age);
-        solid(pose,c.buffers(),beam.beamLength,color,color,beam.tickCount/3,(int)(beam.beamLength/2+1),0F,4,.025F,EnergyRenderTypes.LASER_BEAM);pose.popPose();
+        if(!GunForwardEffects.captureWorldGeometry(EnergyRenderTypes.LASER_BEAM,buffers->solid(pose,buffers,beam.beamLength,color,color,beam.tickCount/3,(int)(beam.beamLength/2+1),0F,4,.025F,EnergyRenderTypes.LASER_BEAM)))
+            solid(pose,c.buffers(),beam.beamLength,color,color,beam.tickCount/3,(int)(beam.beamLength/2+1),0F,4,.025F,EnergyRenderTypes.LASER_BEAM);
+        pose.popPose();
     }
     public static void solid(PoseStack pose,MultiBufferSource buffers,double length,int outer,int inner,int seed,int segments,float size,int layers,float thickness){
         solid(pose,buffers,length,outer,inner,seed,segments,size,layers,thickness,EnergyRenderTypes.BEAM);

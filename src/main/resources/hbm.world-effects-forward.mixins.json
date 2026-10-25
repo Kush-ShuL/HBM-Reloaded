@@ -3,6 +3,12 @@
   "minVersion": "0.8",
   "package": "com.hbm.client.render.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": ["WorldEffectsFrameMixin", "WorldEffectsIrisMixin"],
-  "injectors": {"defaultRequire": 1}
+  "client": [
+    "WorldEffectsFrameMixin",
+    "WorldEffectsIrisMixin",
+    "SmokeParticleEngineAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

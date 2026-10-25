@@ -2,6 +2,7 @@ package com.hbm.client.bomb.nuclear;
 
 import com.hbm.bomb.nuclear.NuclearTorex;
 import com.hbm.client.render.WorldEffectsForward;
+import com.hbm.client.render.WorldEffectsDepth;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.ByteBufferBuilder;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -33,7 +34,8 @@ public final class NuclearTorexRenderer extends EntityRenderer<NuclearTorex> {
     private static final RenderType CLOUD_MAIN=TorexRenderTypes.cloud(CLOUD,false,false),FLASH_MAIN=TorexRenderTypes.cloud(FLASH,true,false);
     private static final RenderType CLOUD_PARTICLES=TorexRenderTypes.cloud(CLOUD,false,true),FLASH_PARTICLES=TorexRenderTypes.cloud(FLASH,true,true);
     private static final RenderType CLOUD_DEPTH=TorexRenderTypes.depth(CLOUD),FLASH_DEPTH=TorexRenderTypes.depth(FLASH);
-        private static final MultiBufferSource.BufferSource BUFFERS=MultiBufferSource.immediate(new ByteBufferBuilder(262144));
+    private static final RenderType CLOUD_EARLY_DEPTH=TorexRenderTypes.depth(CLOUD,false);
+    private static final MultiBufferSource.BufferSource BUFFERS=MultiBufferSource.immediate(new ByteBufferBuilder(262144));
     private static final ArrayList<NuclearTorex> CLOUDS=new ArrayList<>();
     private static final Comparator<Billboard> BACK_TO_FRONT=(a,b)->Double.compare(b.distance,a.distance);
     private static Billboard[] billboards=new Billboard[1024];
@@ -58,20 +60,7 @@ public final class NuclearTorexRenderer extends EntityRenderer<NuclearTorex> {
             double scale=cloud.getScale(),greying=cloud.getGreying();
             for(var part:cloud.cloudlets){
                 float alpha=part.getAlpha();if(alpha<=0)continue;
-                double x=Mth.lerp(partial,part.prevPosX,part.posX)-cloud.getX();
-                double y=Mth.lerp(partial,part.prevPosY,part.posY)-cloud.getY();
-                double z=Mth.lerp(partial,part.prevPosZ,part.posZ)-cloud.getZ();
-                if(part.type!=NuclearTorex.TorexType.SHOCK){x*=scale;y*=scale;z*=scale;}
-                x+=cloud.getX()-eye.x;y+=cloud.getY()-eye.y;z+=cloud.getZ()-eye.z;
-                var quad=next();quad.x=(float)x;quad.y=(float)y;quad.z=(float)z;quad.distance=x*x+y*y+z*z;
-                quad.scale=part.getScale();quad.alpha=alpha;
-                if(part.type==NuclearTorex.TorexType.CONDENSATION){quad.r=quad.g=quad.b=.9F;}
-                else{
-                    double brightness=.75F*part.colorMod*(greying+(part.type==NuclearTorex.TorexType.RING?1:0));
-                    quad.r=(float)(Mth.lerp(partial,part.prevColor.xCoord,part.color.xCoord)*brightness);
-                    quad.g=(float)(Mth.lerp(partial,part.prevColor.yCoord,part.color.yCoord)*brightness);
-                    quad.b=(float)(Mth.lerp(partial,part.prevColor.zCoord,part.color.zCoord)*brightness);
-                }
+                populate(next(),cloud,part,partial,eye,scale,greying,alpha);
             }
             renderFeedback(cloud);
         }
@@ -79,7 +68,8 @@ public final class NuclearTorexRenderer extends EntityRenderer<NuclearTorex> {
         // Actual interpolated, scaled positions matter here: the shockwave intentionally is unscaled.
         Arrays.sort(billboards,0,count,BACK_TO_FRONT);
         var pose=event.getPoseStack();pose.pushPose();boolean deferred=false;
-        try{
+        try(var cutoff=WorldEffectsDepth.colour()){
+            WorldEffectsDepth.shader(MukeClient.additiveShader);
             var matrix=pose.last().pose();var basis=new Basis(camera);
             boolean fabulous=Minecraft.useShaderTransparency()&&!WorldEffectsForward.pack();
             var type=fabulous?CLOUD_PARTICLES:CLOUD_MAIN;
@@ -104,6 +94,44 @@ public final class NuclearTorexRenderer extends EntityRenderer<NuclearTorex> {
             if(!WorldEffectsForward.pack()&&Minecraft.useShaderTransparency()&&event.getLevelRenderer().getWeatherTarget()!=null)event.getLevelRenderer().getWeatherTarget().bindWrite(false);
             RenderSystem.depthMask(!WorldEffectsForward.pack()&&Minecraft.useShaderTransparency());
         }
+    }
+    public static boolean hasDepthClouds(){
+        var level=Minecraft.getInstance().level;if(level==null)return false;
+        for(var entity:level.entitiesForRendering())if(entity instanceof NuclearTorex cloud&&!cloud.isRemoved()&&cloud.visualReady())for(var part:cloud.cloudlets)if(part.getAlpha()>0)return true;
+        return false;
+    }
+    /** Stream actual current cloudlets, without the late lists/sort, feedback, simulation or additive flashes. */
+    public static void renderEarlyDepth(net.minecraft.client.Camera camera,float partial,Matrix4f matrix){
+        var level=Minecraft.getInstance().level;if(level==null)return;
+        var eye=camera.getPosition();var basis=new Basis(camera);var quad=new Billboard();VertexConsumer out=null;
+        WorldEffectsDepth.shader(MukeClient.additiveShader);
+        try{
+            for(var entity:level.entitiesForRendering())if(entity instanceof NuclearTorex cloud&&!cloud.isRemoved()&&cloud.visualReady()){
+                double scale=cloud.getScale(),greying=cloud.getGreying();
+                for(var part:cloud.cloudlets){
+                    float alpha=part.getAlpha();if(alpha<=0)continue;
+                    if(out==null)out=BUFFERS.getBuffer(CLOUD_EARLY_DEPTH);
+                    populate(quad,cloud,part,partial,eye,scale,greying,alpha);
+                    billboard(out,matrix,basis,quad.x,quad.y,quad.z,quad.scale,quad.r,quad.g,quad.b,quad.alpha);
+                }
+            }
+        }finally{if(out!=null)BUFFERS.endBatch(CLOUD_EARLY_DEPTH);}
+    }
+    private static void populate(Billboard quad,NuclearTorex cloud,NuclearTorex.Cloudlet part,float partial,net.minecraft.world.phys.Vec3 eye,double scale,double greying,float alpha){
+                double x=Mth.lerp(partial,part.prevPosX,part.posX)-cloud.getX();
+                double y=Mth.lerp(partial,part.prevPosY,part.posY)-cloud.getY();
+                double z=Mth.lerp(partial,part.prevPosZ,part.posZ)-cloud.getZ();
+                if(part.type!=NuclearTorex.TorexType.SHOCK){x*=scale;y*=scale;z*=scale;}
+                x+=cloud.getX()-eye.x;y+=cloud.getY()-eye.y;z+=cloud.getZ()-eye.z;
+                quad.x=(float)x;quad.y=(float)y;quad.z=(float)z;quad.distance=x*x+y*y+z*z;
+                quad.scale=part.getScale();quad.alpha=alpha;
+                if(part.type==NuclearTorex.TorexType.CONDENSATION){quad.r=quad.g=quad.b=.9F;}
+                else{
+                    double brightness=.75F*part.colorMod*(greying+(part.type==NuclearTorex.TorexType.RING?1:0));
+                    quad.r=(float)(Mth.lerp(partial,part.prevColor.xCoord,part.color.xCoord)*brightness);
+                    quad.g=(float)(Mth.lerp(partial,part.prevColor.yCoord,part.color.yCoord)*brightness);
+                    quad.b=(float)(Mth.lerp(partial,part.prevColor.zCoord,part.color.zCoord)*brightness);
+                }
     }
     private static void flashes(RenderType type,Matrix4f matrix,Basis basis,float partial,net.minecraft.world.phys.Vec3 eye){
         VertexConsumer out=null;
