@@ -66,6 +66,8 @@ public final class LegacyObjModels implements PreparableReloadListener {
         // Resource packs have already selected each winning resource. This phase uses no renderer or GL state.
         Map<ResourceLocation, WavefrontMesh> loaded = new ConcurrentHashMap<>();
         for (var location : resources.listResources("models", key -> key.getNamespace().equals("hbm")
+                // X5846 contains this unused, malformed source asset; keep it available only on demand.
+                && !key.getPath().equals("models/weapons/.obj")
                 && (key.getPath().endsWith(".obj") || key.getPath().endsWith(".hmf"))).keySet()) {
             try {
                 loaded.put(location, load(resources, location));
