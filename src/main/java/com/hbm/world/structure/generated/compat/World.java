@@ -15,6 +15,7 @@ public final class World implements AutoCloseable {
     private final Map<BlockPos,net.minecraft.world.level.block.state.BlockState> plannedStates=new HashMap<>();
     private final Map<BlockPos,Block> placedSources=new HashMap<>();
     private final Map<Long,Integer> highestTouched=new HashMap<>();
+    private final Map<Long,net.minecraft.world.level.NoiseColumn> terrainColumns=new HashMap<>();
     private final Map<BlockPos,BlockEntity> plannedTiles=new HashMap<>();
     private final List<PlannedWrite> plannedWrites=new ArrayList<>();private final List<PlannedAttachment> plannedAttachments=new ArrayList<>();private final ArrayDeque<Runnable> deferred=new ArrayDeque<>();
     public record PlannedWrite(BlockPos position,net.minecraft.world.level.block.state.BlockState state,int flags){}
@@ -27,8 +28,17 @@ public final class World implements AutoCloseable {
     public void planAttachment(String kind,BlockPos pos,net.minecraft.nbt.CompoundTag data){if(context==null)throw new IllegalStateException("Not planning");plannedAttachments.add(new PlannedAttachment(kind,pos.immutable(),data.copy()));}
     public void defer(Runnable job){if(context==null)throw new IllegalStateException("Deferred source room jobs require native planning");deferred.add(job);}
     public void finishDeferred(){while(!deferred.isEmpty())deferred.remove().run();}
-    @Override public void close(){if(PLANNING.get()==this)PLANNING.remove();}
-    public net.minecraft.world.level.block.state.BlockState stateAt(int x,int y,int z){var position=new BlockPos(x,y,z);var planned=plannedStates.get(position);if(planned!=null)return planned;if(context==null)return level().getBlockState(position);return context.chunkGenerator().getBaseColumn(x,z,context.heightAccessor(),context.randomState()).getBlock(y);}
+    @Override public void close(){if(PLANNING.get()==this)PLANNING.remove();terrainColumns.clear();}
+    public net.minecraft.world.level.block.state.BlockState stateAt(int x,int y,int z){var position=new BlockPos(x,y,z);var planned=plannedStates.get(position);if(planned!=null)return planned;if(context==null)return level().getBlockState(position);return terrainColumn(x,z).getBlock(y);}
+    /** Generator terrain is immutable for one plan; live and planned writes remain separate. */
+    private net.minecraft.world.level.NoiseColumn terrainColumn(int x,int z){
+        return terrainColumns.computeIfAbsent(net.minecraft.world.level.ChunkPos.asLong(x,z),unused->{
+            var generator=context!=null?context.chunkGenerator():level().getLevel().getChunkSource().getGenerator();
+            var randomState=context!=null?context.randomState():level().getLevel().getChunkSource().randomState();
+            net.minecraft.world.level.LevelHeightAccessor height=context!=null?context.heightAccessor():level();
+            return generator.getBaseColumn(x,z,height,randomState);
+        });
+    }
     public final Random rand;public final Provider provider=new Provider();
     public World(Structure.GenerationContext context,Random random){this.context=context;this.rand=random;level=null;clip=null;}
     public World(WorldGenLevel level,StructureBoundingBox clip,Random random){this.level=level;this.clip=clip;this.rand=random;context=null;}
@@ -41,11 +51,9 @@ public final class World implements AutoCloseable {
     /** Immutable generator terrain only: no placed structure/heightmap or chunk load.
      * Used for the Silo reference pad before any of its clipped pieces are built. */
     public int getTerrainTopSolidOrLiquidBlock(int x,int z){
-        var generator=context!=null?context.chunkGenerator():level().getLevel().getChunkSource().getGenerator();
-        var randomState=context!=null?context.randomState():level().getLevel().getChunkSource().randomState();
         net.minecraft.world.level.LevelHeightAccessor height=context!=null?context.heightAccessor():level();
         int y=height.getMaxBuildHeight()-1;
-        var column=generator.getBaseColumn(x,z,height,randomState);
+        var column=terrainColumn(x,z);
         for(;y>=height.getMinBuildHeight();y--){var state=column.getBlock(y);if(state.blocksMotion()&&!state.is(BlockTags.LEAVES))return y+1;}
         return height.getMinBuildHeight();
     }
