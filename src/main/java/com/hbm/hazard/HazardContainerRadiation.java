@@ -9,7 +9,8 @@ import net.minecraft.world.item.ItemStack;
 
 /** NBT -> source container -> external-storage transformer order is registered by HbmHazards. */
 public final class HazardContainerRadiation implements HazardTransformer {
-    @FunctionalInterface public interface ExternalInventory { Optional<List<ItemStack>> contents(ItemStack storage); }
+    public record StoredStack(ItemStack stack,long amount) {}
+    @FunctionalInterface public interface ExternalInventory { Optional<List<StoredStack>> contents(ItemStack storage); }
     private static final List<ExternalInventory> EXTERNAL=new CopyOnWriteArrayList<>();
     private static final ThreadLocal<Integer> DEPTH=ThreadLocal.withInitial(()->0);
     private final HazardRegistry registry;
@@ -35,7 +36,11 @@ public final class HazardContainerRadiation implements HazardTransformer {
             if(external){
                 for(var provider:EXTERNAL){
                     var contents=provider.contents(stack.original());
-                    if(contents.isPresent()){radiation=sum(contents.get());found=true;break;}
+                    if(contents.isPresent()){
+                        for(var held:contents.get())if(!held.stack().isEmpty()&&held.amount()>0)
+                            radiation+=radiation(held.stack())*held.amount();
+                        found=true;break;
+                    }
                 }
             }else{
                 String kind=profile.get("kind").getAsString();
@@ -52,11 +57,14 @@ public final class HazardContainerRadiation implements HazardTransformer {
         float result=0;
         for(ItemStack held:stacks){
             if(held.isEmpty())continue;
-            var level=registry.evaluate(held.copy()).firstLevel(HazardType.RADIATION);
-            if(level.isEmpty())throw new HazardStateUnavailable("Nested inventory has unresolved radiation state");
-            result+=(float)level.getAsDouble()*held.getCount();
+            result+=radiation(held)*held.getCount();
         }
         return result;
+    }
+    private float radiation(ItemStack stack){
+        var level=registry.evaluate(stack.copy()).firstLevel(HazardType.RADIATION);
+        if(level.isEmpty())throw new HazardStateUnavailable("Nested inventory has unresolved radiation state");
+        return (float)level.getAsDouble();
     }
     private static HazardEntry unresolved(String reason){return new HazardEntry(HazardType.RADIATION,0,List.of(),List.of(reason));}
     public static double squirt(double value){return Math.sqrt(value+1D/((value+2D)*(value+2D)))-1D/(value+2D);}
