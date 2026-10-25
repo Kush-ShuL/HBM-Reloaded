@@ -26,20 +26,33 @@ public final class LegacyClientConfig {
             geigerHorizontal = integer(geiger, "horizontalOffset");
             geigerVertical = integer(geiger, "verticalOffset");
             // Write this config's current schema only; obsolete fields are not imported or retained.
-            JsonObject values = new JsonObject();
-            var writtenHud = new JsonObject();
-            var writtenGeiger = new JsonObject();
-            writtenGeiger.addProperty("horizontalOffset", geigerHorizontal);
-            writtenGeiger.addProperty("verticalOffset", geigerVertical);
-            writtenHud.add("geiger", writtenGeiger);
-            values.add("hud", writtenHud);
-            Files.createDirectories(file.getParent());
-            Files.writeString(file, new GsonBuilder().setPrettyPrinting().create().toJson(values) + "\n");
+            save(geigerHorizontal, geigerVertical);
         } catch (Exception error) {
             HbmReloaded.LOGGER.error("Cannot read original Geiger HUD client settings", error);
             geigerHorizontal = geigerVertical = 0;
         }
         loaded = true;
+    }
+
+    public static synchronized void setGeigerOffset(boolean horizontal, int value) throws java.io.IOException {
+        if (!loaded) reload();
+        int x = horizontal ? value : geigerHorizontal, y = horizontal ? geigerVertical : value;
+        save(x, y);
+        geigerHorizontal = x;
+        geigerVertical = y;
+    }
+
+    private static void save(int horizontal, int vertical) throws java.io.IOException {
+        var file = FMLPaths.CONFIGDIR.get().resolve("hbmConfig/hbmClient.json");
+        var values = new JsonObject();
+        var hud = new JsonObject();
+        var geiger = new JsonObject();
+        geiger.addProperty("horizontalOffset", horizontal);
+        geiger.addProperty("verticalOffset", vertical);
+        hud.add("geiger", geiger);
+        values.add("hud", hud);
+        Files.createDirectories(file.getParent());
+        Files.writeString(file, new GsonBuilder().setPrettyPrinting().create().toJson(values) + "\n");
     }
 
     private static JsonObject object(JsonObject values,String name) {

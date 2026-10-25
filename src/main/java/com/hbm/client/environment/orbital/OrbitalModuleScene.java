@@ -42,7 +42,7 @@ public final class OrbitalModuleScene {
         if(event.getStage()!=RenderLevelStageEvent.Stage.AFTER_WEATHER||WorldEffectsForward.shadowPass())return;
         var minecraft=Minecraft.getInstance();
         if(minecraft.level==null||minecraft.player==null||!minecraft.level.dimension().equals(Level.OVERWORLD))return;
-        var messages=ClientEffectsConfig.orbitalModuleMessages();
+        var messages=OrbitalMessageSource.messages();
         if(messages.isEmpty())return;
         float partial=event.getPartialTick().getGameTimeDeltaPartialTick(false);
         if(minecraft.player.getPosition(partial).distanceToSqr(ANCHOR)>=RANGE_SQUARED)return;

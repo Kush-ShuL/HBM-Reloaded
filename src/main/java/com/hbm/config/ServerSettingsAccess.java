@@ -193,18 +193,24 @@ public final class ServerSettingsAccess {
 
     /** Run the actual per-file FML reload chain, without registering another file watcher. */
     public static void reload() throws ReflectiveOperationException {
+        var files = new LinkedHashSet<String>();
+        VALUES.values().forEach(binding -> files.add(binding.fileName()));
+        var configs = new ArrayList<ModConfig>();
+        for (String fileName : files) configs.add(config(fileName));
+        reloadNativeConfigs(configs);
+    }
+
+    /** Shared native reload entry for explicit server and client commands; no additional watcher. */
+    public static void reloadNativeConfigs(java.util.Collection<ModConfig> configs) throws ReflectiveOperationException {
         Class<?> watcher = Class.forName("net.neoforged.fml.config.ConfigWatcher", false, ConfigTracker.class.getClassLoader());
         if (!watcher.getModule().isOpen(watcher.getPackageName(), ServerSettingsAccess.class.getModule()))
             throw new IllegalStateException("FML config package is not open for the per-file reload entry point.");
         Constructor<?> constructor = watcher.getDeclaredConstructor(ModConfig.class, Path.class, ClassLoader.class);
         if (!constructor.trySetAccessible())
             throw new IllegalStateException("FML per-file reload entry point is inaccessible.");
-        var files = new LinkedHashSet<String>();
-        VALUES.values().forEach(binding -> files.add(binding.fileName()));
         var reloads = new ArrayList<Runnable>();
         ClassLoader contextLoader = Thread.currentThread().getContextClassLoader();
-        for (String fileName : files) {
-            var config = config(fileName);
+        for (var config : configs) {
             reloads.add((Runnable) constructor.newInstance(config, config.getFullPath(), contextLoader));
         }
         for (Runnable reload : reloads) reload.run();

@@ -26,6 +26,7 @@ public final class ClientEffectsConfig {
     // 主世界轨道舱的文字列表；空列表隐藏舱体和文字。
     private static final java.util.List<String> DEFAULT_ORBITAL_MODULE_MESSAGES=java.util.List.of("At the first flicker of green light you RUN");
     private static final ModConfigSpec.ConfigValue<java.util.List<? extends String>> ORBITAL_MODULE_MESSAGES;
+    private static final ModConfigSpec.BooleanValue REMOTE_ORBITAL_MESSAGES;
 
     // 是否显示准星所指方块和工具的实时观察提示；默认开启。
     private static final ModConfigSpec.BooleanValue LOOK_OVERLAY;
@@ -68,6 +69,10 @@ public final class ClientEffectsConfig {
                 "每次客户端启动按固定随机种子从列表中选取一句；清空列表后舱体和文字均不显示。",
                 "单条空字符串只隐藏当次文字，仍显示舱体。仅为本地视觉场景，不生成方块、实体或碰撞。")
                 .defineListAllowEmpty(java.util.List.of("worldScenes", "orbitalModuleMessages"), DEFAULT_ORBITAL_MODULE_MESSAGES, value -> value instanceof String);
+        REMOTE_ORBITAL_MESSAGES = builder.comment(
+                "客户端启动时异步读取一次原作者公开的轨道舱文案。默认true；更改后重启客户端读取。",
+                "关闭或获取失败时使用本地文案列表；本地列表为空时仍隐藏整个轨道舱场景。")
+                .define(java.util.List.of("worldScenes", "remoteOrbitalMessagesEnabled"), true);
         LOOK_OVERLAY = builder.comment(
                 "显示准星所指方块和工具的实时观察提示，包括 RBMK 诊断、机器、管道和结构工具。默认true。",
                 "只控制观察提示；不改变机器状态、Jade 提示、计时通知、工具能力图标或世界中的结构预览。")
@@ -98,6 +103,7 @@ public final class ClientEffectsConfig {
     public static boolean recipeViewerHideSecretsEnabled() { return !SPEC.isLoaded() || RECIPE_VIEWER_HIDE_SECRETS.get(); }
 
     public static java.util.List<String> orbitalModuleMessages() { return SPEC.isLoaded()?java.util.List.copyOf(ORBITAL_MODULE_MESSAGES.get()):DEFAULT_ORBITAL_MODULE_MESSAGES; }
+    public static boolean remoteOrbitalMessagesEnabled() { return !SPEC.isLoaded() || REMOTE_ORBITAL_MESSAGES.get(); }
 
     public static boolean lookOverlayEnabled() { return !SPEC.isLoaded() || LOOK_OVERLAY.get(); }
 

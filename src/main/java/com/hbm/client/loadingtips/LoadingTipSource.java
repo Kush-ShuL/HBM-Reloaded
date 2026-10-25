@@ -35,9 +35,18 @@ public final class LoadingTipSource {
     }
 
     private static void readTips() {
+        try {
+            tips=readFeed(TIP_FEED);
+        } catch(IOException|RuntimeException exception) {
+            LogUtils.getLogger().debug("Could not read loading tips; using the built-in tip",exception);
+        }
+    }
+
+    /** The two original public text feeds share transport, without blocking any render or world-loading caller. */
+    public static List<String> readFeed(URI feed) throws IOException {
         HttpURLConnection connection=null;
         try {
-            connection=(HttpURLConnection)TIP_FEED.toURL().openConnection();
+            connection=(HttpURLConnection)feed.toURL().openConnection();
             connection.setRequestMethod("GET");
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
@@ -46,9 +55,7 @@ public final class LoadingTipSource {
                 String line;
                 while((line=reader.readLine())!=null)lines.add(line);
             }
-            tips=List.copyOf(lines);
-        } catch(IOException|RuntimeException exception) {
-            LogUtils.getLogger().debug("Could not read loading tips; using the built-in tip",exception);
+            return List.copyOf(lines);
         } finally {
             if(connection!=null)connection.disconnect();
         }
