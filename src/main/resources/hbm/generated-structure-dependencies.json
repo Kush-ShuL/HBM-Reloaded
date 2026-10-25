@@ -936,5 +936,37 @@
     "pools": [],
     "attachments": [],
     "extras": []
+  },
+  "old:OldLantern": {
+    "blocks": [
+      "hbm:lantern_behemoth",
+      "hbm:deco_loot"
+    ],
+    "items": [
+      "hbm:book_lore",
+      "hbm:circuit_basic",
+      "hbm:circuit_advanced",
+      "hbm:coin_token",
+      "hbm:gem_alexandrite",
+      "hbm:kit_custom"
+    ],
+    "pools": [],
+    "attachments": [],
+    "extras": []
+  },
+  "old:GlyphidHive": {
+    "blocks": [
+      "hbm:glyphid_base",
+      "hbm:glyphid_spawner",
+      "hbm:deco_loot",
+      "minecraft:skeleton_skull"
+    ],
+    "items": [],
+    "pools": [
+      "POOL_PILE_BONES",
+      "POOL_PILE_HIVE"
+    ],
+    "attachments": [],
+    "extras": []
   }
 }
