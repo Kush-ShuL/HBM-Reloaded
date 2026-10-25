@@ -14,7 +14,7 @@ public final class LegacyGeneratedStructure extends Structure {
     public static final MapCodec<LegacyGeneratedStructure> CODEC=simpleCodec(LegacyGeneratedStructure::new);
     public LegacyGeneratedStructure(StructureSettings settings){super(settings);}
     @Override protected Optional<GenerationStub> findGenerationPoint(GenerationContext context){
-        if(!NaturalStructures.enabled())return Optional.empty();
+        if(!NaturalStructures.oldBuildingsEnabled())return Optional.empty();
         var random=new WorldgenRandom(new LegacyRandomSource(0));
         // Modern per-chunk structure seed, with Java's original48-bit RNG.
         // Individual source branches keep their own order and conditional draws.

@@ -10,7 +10,8 @@
     "NativeSourceOrderMixin",
     "StructureChestStartMixin",
     "StructureChestLevelWriteMixin",
-    "StructureChestRegionWriteMixin"
+    "StructureChestRegionWriteMixin",
+    "ForcedStructureStartsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

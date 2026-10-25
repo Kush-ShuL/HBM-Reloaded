@@ -14,6 +14,7 @@ public final class SourceRadiationConfig {
     public static final String FILE_NAME = "hbm-radiation-server.toml";
     public static final ModConfigSpec SPEC;
     private static final ModConfigSpec.BooleanValue CHUNK_ENABLED, TERRAIN_ENABLED, EXPOSURE_ENABLED;
+    private static final ModConfigSpec.BooleanValue HOT_ENABLED, BLINDING_ENABLED, HYDROACTIVE_ENABLED, EXPLOSIVE_ENABLED;
     private static final ModConfigSpec.IntValue FOG_THRESHOLD, FOG_CHANCE;
     private static final ModConfigSpec.DoubleValue NETHER_RATE;
     private static final ModConfigSpec.EnumValue<RadiationAlgorithm> ALGORITHM;
@@ -45,6 +46,16 @@ public final class SourceRadiationConfig {
         NETHER_RATE = builder.comment("高温维度的最低环境辐射率。默认0.1；单位RAD/秒；范围0至3.4028234663852886E38；0禁用该最低值。仍受现有免疫、防护及出生保护规则约束。")
                 .defineInRange("netherRateRadPerSecond", 0.1D, 0D, (double) Float.MAX_VALUE);
         builder.pop();
+        builder.comment("物品危害；这些开关同时作用于持有、携带和掉落物，只关闭对应效果，不修改危害数值或辐射、疾病设置。").push("hazards");
+        HOT_ENABLED = builder.comment("启用高温物品的灼烧危害。")
+                .translation("config.hbm.hazards.hot.enabled").define("hotEnabled", true);
+        BLINDING_ENABLED = builder.comment("启用强光物品的致盲危害。")
+                .translation("config.hbm.hazards.blinding.enabled").define("blindingEnabled", true);
+        HYDROACTIVE_ENABLED = builder.comment("启用遇水反应物品的危害。")
+                .translation("config.hbm.hazards.hydroactive.enabled").define("hydroactiveEnabled", true);
+        EXPLOSIVE_ENABLED = builder.comment("启用易爆物品的危害。")
+                .translation("config.hbm.hazards.explosive.enabled").define("explosiveEnabled", true);
+        builder.pop();
         SPEC = builder.build();
     }
 
@@ -64,14 +75,16 @@ public final class SourceRadiationConfig {
         if (event.getConfig().getSpec() != SPEC || event.getConfig().getType() != ModConfig.Type.SERVER) return;
         // Capture only values actually loaded by this spec, never unrelated client defaults.
         var values = new Values(ALGORITHM.get(), CHUNK_ENABLED.get(), TERRAIN_ENABLED.get(), FOG_THRESHOLD.get(),
-                FOG_CHANCE.get(), EXPOSURE_ENABLED.get(), NETHER_RATE.get().floatValue());
+                FOG_CHANCE.get(), EXPOSURE_ENABLED.get(), NETHER_RATE.get().floatValue(),
+                HOT_ENABLED.get(), BLINDING_ENABLED.get(), HYDROACTIVE_ENABLED.get(), EXPLOSIVE_ENABLED.get());
         var server = ServerLifecycleHooks.getCurrentServer();
         if (server != null && !server.isSameThread()) server.execute(() -> apply(values));
         else apply(values);
     }
 
     private record Values(RadiationAlgorithm algorithm, boolean chunkEnabled, boolean terrainEnabled, int fogThreshold,
-                          int fogChance, boolean exposureEnabled, float netherRate) {}
+                          int fogChance, boolean exposureEnabled, float netherRate, boolean hotEnabled, boolean blindingEnabled,
+                          boolean hydroactiveEnabled, boolean explosiveEnabled) {}
 
     private static void apply(Values values) {
         HbmRadiation.configureAlgorithm(values.algorithm);
@@ -87,6 +100,10 @@ public final class SourceRadiationConfig {
         var exposure = HbmExposure.settings();
         HbmExposure.configure(new ExposureSettings(values.exposureEnabled, exposure.asbestos(),
                 exposure.coalDust(), values.netherRate));
+        var hazards = com.hbm.hazard.HazardRuntime.settings();
+        com.hbm.hazard.HazardRuntime.configure(new com.hbm.hazard.HazardSettings(values.hotEnabled,
+                values.blindingEnabled, values.hydroactiveEnabled, values.explosiveEnabled, hazards.mode528(),
+                hazards.lbsm(), hazards.safeCrates(), hazards.safeMEDrives(), hazards.droppedItemTickRate(), hazards.offhand()));
     }
 
     private SourceRadiationConfig() {}

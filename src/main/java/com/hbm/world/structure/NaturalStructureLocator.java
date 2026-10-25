@@ -75,7 +75,7 @@ public final class NaturalStructureLocator {
     /** Capture and every search slice use the server thread, serial with native resource replacement. */
     public static Optional<Search> capture(ServerLevel level) {
         if (!level.getServer().isSameThread()) throw new IllegalStateException("Structure locate capture requires the server thread");
-        if (level.dimension() != Level.OVERWORLD || !level.structureManager().shouldGenerateStructures() || !NaturalStructures.enabled())
+        if (level.dimension() != Level.OVERWORLD || !NaturalStructures.weightedStructuresEnabled(level.structureManager().shouldGenerateStructures()))
             return Optional.empty();
         var registries = level.registryAccess();
         var holder = registries.registryOrThrow(Registries.STRUCTURE).getHolder(STRUCTURE);
@@ -122,7 +122,7 @@ public final class NaturalStructureLocator {
 
         private List<Integer> currentSettings() {
             var values = new java.util.ArrayList<Integer>();
-            values.add(NaturalStructures.enabled() ? 1 : 0);
+            values.add(NaturalStructures.weightedStructuresEnabled() ? 1 : 0);
             values.add(placement.spacing()); values.add(placement.separation());
             NaturalStructures.SPAWNS.forEach(spawn -> values.add(NaturalStructures.weight(spawn)));
             return List.copyOf(values);

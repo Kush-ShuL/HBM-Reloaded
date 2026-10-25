@@ -16,7 +16,7 @@ public final class LegacyNaturalStructure extends Structure {
     private static final Set<String> MISSING=ConcurrentHashMap.newKeySet();
     public LegacyNaturalStructure(StructureSettings settings){super(settings);}
     @Override protected Optional<GenerationStub> findGenerationPoint(GenerationContext context){
-        if(!NaturalStructures.enabled())return Optional.empty();var chunk=context.chunkPos();int x=chunk.getMinBlockX(),z=chunk.getMinBlockZ();
+        if(!NaturalStructures.weightedStructuresEnabled())return Optional.empty();var chunk=context.chunkPos();int x=chunk.getMinBlockX(),z=chunk.getMinBlockZ();
         var biome=StructureSurfaceBiomes.sample(context,x+8,z+8);
         var set=context.registryAccess().registryOrThrow(Registries.STRUCTURE_SET).get(ResourceLocation.fromNamespaceAndPath("hbm","legacy_natural_structures"));
         if(set==null||!(set.placement() instanceof RandomSpreadStructurePlacement spread))return Optional.empty();
