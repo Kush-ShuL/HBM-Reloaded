@@ -2,15 +2,13 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "computercraft"
+      "modid": "opencomputers"
     }
   ],
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "computercraft:disks"
-    },
+    { "tag": "opencomputers:floppy" },
     {
       "item": "hbm:pwr_casing"
     }

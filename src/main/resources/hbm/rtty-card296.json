@@ -26,11 +26,10 @@
       "registeredBy": "com.hbm.item.rttycard.RttyCardContent",
       "creativeTab": "machine",
       "maxStackSize": 1,
-      "optionalMod": "computercraft",
+      "optionalMod": "opencomputers",
       "sourceModGate": "OpenComputers",
       "nativeHosts": [
-        "Pocket upgrade",
-        "Turtle peripheral upgrade"
+        "OC Tier 2 card slot"
       ],
       "notAPlainItem": true
     }

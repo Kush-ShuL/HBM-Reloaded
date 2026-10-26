@@ -3,11 +3,11 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "computercraft"
+      "modid": "opencomputers"
     }
   ],
   "data": {
-    "name": "soldering.rtty_card296_cc",
+    "name": "soldering.rtty_card",
     "duration": 100,
     "power": 1000,
     "input_items": [

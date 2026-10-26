@@ -34,11 +34,14 @@
 | --- | --- |
 | **JEI 或 REI** | 查看机器配方、加工流程与流体获取方式 |
 | **Jade** | 查看方块、机器和实体信息 |
-| **CC: Tweaked** | 通过电脑与外设控制机器，使用 PWRangler 控制程序 |
+| **CC: Tweaked** | 通过电脑与外设控制机器 |
+| **OpenComputer-Reloaded** | 通过组件网络控制机器，使用 RTTY 卡、可染色电脑线与 PWRangler 磁盘；对接 API **8.0.0-alpha.1** |
 | **Sodium / Iris** | 渲染优化与光影支持 |
 | **Applied Energistics 2** | 专用仓储接入与存储单元内容辐射 |
 
 可选模组需要另行安装与 Minecraft 1.21.1 / NeoForge 对应的版本。
+
+OpenComputer 集成与 CC: Tweaked 可以同时使用；RTTY 卡和 PWRangler 磁盘仅供 OC 使用。需要安装 [OpenComputer-Reloaded](https://github.com/Kush-ShuL/OpenComputer-Reloaded) 的完整主模组；API 包只供编译使用，无需放入 `mods`。本项目通过 JitPack 固定引用 `api-8.0.0-alpha.1`，不内嵌 API。
 
 HBM 的 **HE 能量与流体默认使用独立系统**。外部能量互通通过有损转换器实现；外部流体互通需要在配置中显式开启。世界生成、机器参数、核爆和矿物产率等也可通过配置调整。
 

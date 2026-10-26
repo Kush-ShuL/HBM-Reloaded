@@ -23,8 +23,17 @@
   },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "computercraft"
+      "type": "neoforge:or",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "computercraft"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "opencomputers"
+        }
+      ]
     }
   ]
 }

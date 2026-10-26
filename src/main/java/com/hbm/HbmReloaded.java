@@ -622,7 +622,8 @@ public final class HbmReloaded {
         com.hbm.satellite.legacychips.LegacySatelliteChipsContent.register(modBus);
         PollutionSystem.register(container);
         com.hbm.item.rttycard.RttyCardContent.register(modBus);
-        com.hbm.compat.computercraft.media.PwranglerMedia.register(modBus);
+        com.hbm.compat.opencomputers.media.PwranglerMedia.register(modBus);
+        com.hbm.compat.opencomputers.HbmOpenComputers.register(modBus);
         com.hbm.armor.dns.DnsArmorContent.register(modBus);
         com.hbm.machine.refueler.RefuelerContent.register(modBus);
         com.hbm.item.glitch.GlitchContent.register(modBus);

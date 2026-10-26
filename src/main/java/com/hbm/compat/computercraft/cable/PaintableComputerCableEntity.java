@@ -18,7 +18,10 @@ public final class PaintableComputerCableEntity extends BlockEntity implements I
     public static final ModelProperty<BlockState> PAINT=new ModelProperty<>();
     public static final ModelProperty<Integer> COLOR=new ModelProperty<>();
     static Function<PaintableComputerCableEntity,PaintableCableNetwork> NETWORK_FACTORY=ignored->null;
+    static Function<PaintableComputerCableEntity,PaintableCableNetwork> OC_NETWORK_FACTORY=ignored->null;
     private PaintableCableNetwork network;
+    private PaintableCableNetwork ocNetwork;
+    private CompoundTag ocNode = new CompoundTag();
     private boolean muffled,tilted;
     private BlockState paint;private int paintMeta;private SourceCableColors color=SourceCableColors.LIGHTGRAY;
     public PaintableComputerCableEntity(BlockPos position,BlockState state){super(PaintableComputerCableContent.ENTITY.get(),position,state);}
@@ -27,20 +30,21 @@ public final class PaintableComputerCableEntity extends BlockEntity implements I
     @Override public boolean isMuffled(){return muffled;}
     @Override public void setMuffled(boolean value){muffled=value;changed();}
     PaintableCableNetwork network(){if(network==null&&!isRemoved()&&level instanceof ServerLevel)network=NETWORK_FACTORY.apply(this);return network;}
-    public static void tick(Level level,BlockPos position,BlockState state,PaintableComputerCableEntity cable){if(level.isClientSide||cable.isRemoved())return;var connection=cable.network();if(connection!=null)connection.tick();}
-    public void connectionsChanged(){if(network!=null)network.changed();if(level!=null&&!level.isClientSide)invalidateCapabilities();}
+    PaintableCableNetwork ocNetwork(){if(ocNetwork==null&&!isRemoved()&&level instanceof ServerLevel){ocNetwork=OC_NETWORK_FACTORY.apply(this);if(ocNetwork!=null)ocNetwork.load(ocNode.copy());}return ocNetwork;}
+    public static void tick(Level level,BlockPos position,BlockState state,PaintableComputerCableEntity cable){if(level.isClientSide||cable.isRemoved())return;var connection=cable.network();if(connection!=null)connection.tick();var oc=cable.ocNetwork();if(oc!=null)oc.tick();}
+    public void connectionsChanged(){if(network!=null)network.changed();if(ocNetwork!=null)ocNetwork.changed();if(level!=null&&!level.isClientSide)invalidateCapabilities();}
     public void setColor(SourceCableColors color){if(this.color!=color){this.color=color;connectionsChanged();}changed();}
     public void setPaint(BlockState paint,int sourceMetadata){this.paint=paint;paintMeta=sourceMetadata;changed();}
     private void changed(){setChanged();requestModelDataUpdate();if(level!=null)level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),Block.UPDATE_CLIENTS);}
     @Override public CompoundTag getSettings(Level level,BlockPos pos){var tag=new CompoundTag();if(paint!=null){tag.put("paintblock",NbtUtils.writeBlockState(paint));tag.putInt("paintmeta",paintMeta);}return tag;}
     @Override public void pasteSettings(CompoundTag tag,int index,Level level,Player player,BlockPos pos){if(tag.contains("paintblock",Tag.TAG_COMPOUND)){paint=NbtUtils.readBlockState(level.holderLookup(Registries.BLOCK),tag.getCompound("paintblock"));paintMeta=tag.getInt("paintmeta");setColor(SourceCableColors.fromInt(tag.getInt("dyeColor")));}}
-    @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);if(paint!=null)tag.put("block",NbtUtils.writeBlockState(paint));tag.putInt("meta",paintMeta);tag.putInt("dyeColor",color.rgb);}
-    @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);muffled=tag.getBoolean("muffled");tilted=tag.getBoolean("tilted");paint=tag.contains("block",Tag.TAG_COMPOUND)?NbtUtils.readBlockState(lookup.lookupOrThrow(Registries.BLOCK),tag.getCompound("block")):null;paintMeta=tag.getInt("meta");color=SourceCableColors.fromInt(tag.getInt("dyeColor"));requestModelDataUpdate();connectionsChanged();}
+    @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.saveAdditional(tag,lookup);tag.putBoolean("muffled",muffled);tag.putBoolean("tilted",tilted);if(paint!=null)tag.put("block",NbtUtils.writeBlockState(paint));tag.putInt("meta",paintMeta);tag.putInt("dyeColor",color.rgb);if(ocNetwork!=null){ocNode=new CompoundTag();ocNetwork.save(ocNode);}if(!ocNode.isEmpty())tag.put("oc:node",ocNode.copy());}
+    @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider lookup){super.loadAdditional(tag,lookup);muffled=tag.getBoolean("muffled");tilted=tag.getBoolean("tilted");paint=tag.contains("block",Tag.TAG_COMPOUND)?NbtUtils.readBlockState(lookup.lookupOrThrow(Registries.BLOCK),tag.getCompound("block")):null;paintMeta=tag.getInt("meta");color=SourceCableColors.fromInt(tag.getInt("dyeColor"));ocNode=tag.getCompound("oc:node").copy();if(ocNetwork!=null)ocNetwork.load(ocNode.copy());requestModelDataUpdate();connectionsChanged();}
     @Override public ModelData getModelData(){var builder=ModelData.builder().with(COLOR,color.rgb);if(paint!=null)builder.with(PAINT,paint);return builder.build();}
     @Override public CompoundTag getUpdateTag(HolderLookup.Provider lookup){return saveWithoutMetadata(lookup);}
     @Override public ClientboundBlockEntityDataPacket getUpdatePacket(){return ClientboundBlockEntityDataPacket.create(this);}
     @Override public void onDataPacket(Connection connection,ClientboundBlockEntityDataPacket packet,HolderLookup.Provider lookup){super.onDataPacket(connection,packet,lookup);requestModelDataUpdate();if(level!=null)level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),Block.UPDATE_CLIENTS);}
-    private void closeNetwork(){if(network!=null){network.close();network=null;}}
+    private void closeNetwork(){if(network!=null){network.close();network=null;}if(ocNetwork!=null){ocNode=new CompoundTag();ocNetwork.save(ocNode);ocNetwork.close();ocNetwork=null;}}
     @Override public void onChunkUnloaded(){closeNetwork();super.onChunkUnloaded();}
     @Override public void setRemoved(){closeNetwork();super.setRemoved();}
     @Override public void onLoad(){super.onLoad();connectionsChanged();}

@@ -18,6 +18,7 @@ repositories {
     maven { name = 'Shedaniel'; url = 'https://maven.shedaniel.me'; content { includeGroupByRegex 'me\\.shedaniel.*'; includeGroup 'dev.architectury' } }
     maven { name = 'Modrinth'; url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
     maven { name = 'CC-Tweaked'; url = 'https://maven.squiddev.cc'; content { includeGroup 'cc.tweaked' } }
+    maven { name = 'JitPack'; url = 'https://jitpack.io'; content { includeModule 'com.github.Kush-ShuL', 'OpenComputer-Reloaded' } }
 }
 
 neoForge {
@@ -47,6 +48,7 @@ dependencies {
     compileOnly "maven.modrinth:jade:${jade_version}"
     compileOnly "cc.tweaked:cc-tweaked-${minecraft_version}-core-api:${cc_tweaked_version}"
     compileOnly "cc.tweaked:cc-tweaked-${minecraft_version}-forge-api:${cc_tweaked_version}"
+    compileOnly "com.github.Kush-ShuL:OpenComputer-Reloaded:${opencomputers_api_version}"
     if (recipe_viewer == 'jei') {
         localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
     } else if (recipe_viewer == 'rei') {
