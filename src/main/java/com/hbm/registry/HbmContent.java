@@ -570,7 +570,7 @@ public final class HbmContent {
         // Keep the original HBM order after vanilla's ten ordinary tabs (page2).
         if (index > 0) builder.withTabsBefore(ResourceLocation.fromNamespaceAndPath("hbm", HbmCreativeTabs.ORDER.get(index - 1)));
         else if (index == 0) builder.withTabsBefore(net.minecraft.world.item.CreativeModeTabs.SPAWN_EGGS);
-        if (tab.equals("template")) builder.withSearchBar().backgroundTexture(ResourceLocation.fromNamespaceAndPath("hbm", "textures/gui/creative/tab_item_search.png"));
+        if (tab.equals("template")) builder.withSearchBar();
         if (tab.equals("nuke")) builder.backgroundTexture(ResourceLocation.withDefaultNamespace("textures/gui/container/creative_inventory/tab_nuke.png"));
         return builder.build();
     }
