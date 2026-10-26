@@ -1,6 +1,7 @@
 package com.hbm.client.satellite.resources;
 
 import com.hbm.client.bomb.nuclear.MukeRenderTypes;
+import com.hbm.client.render.WorldEffectsForward;
 import com.hbm.satellite.resources.EntityCloudTom;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
@@ -17,11 +18,13 @@ public final class TomCloudRenderer extends EntityRenderer<EntityCloudTom> {
     public TomCloudRenderer(EntityRendererProvider.Context context){super(context);}
     @Override public ResourceLocation getTextureLocation(EntityCloudTom entity){return TEXTURE;}
     @Override public void render(EntityCloudTom cloud,float yaw,float partial,PoseStack poses,MultiBufferSource buffers,int light){
+        if(WorldEffectsForward.shadowPass())return;
         var matrix=new org.joml.Matrix4f(poses.last().pose());double scale=cloud.age+partial;var player=Minecraft.getInstance().player;float movement=-(player==null?partial:player.tickCount+partial)*.005F*10;
         MukeRenderTypes.deferDraw(()->{
             var out=MukeRenderTypes.begin(MATERIAL);float angle=(float)Math.toRadians(360D/16);
             for(int i=0;i<16;i++)for(int j=0;j<5;j++){
-                double mod=1-j*.025,height=20+j*10,offset=1D/j; // Source j0 intentionally has infinite V; do not invent another UV or remove a source layer.
+                // Keep all five source shells; zero is the finite integer-period phase for source j0's 1/0 V.
+                double mod=1-j*.025,height=20+j*10,offset=j==0?0:1D/j;
                 double x0=scale*Mth.cos(angle*i),z0=-scale*Mth.sin(angle*i);
                 vertex(out,matrix,x0*mod,height,z0*mod,0,1+offset+movement,0);
                 vertex(out,matrix,x0*mod,-20,z0*mod,0,offset+movement,255);

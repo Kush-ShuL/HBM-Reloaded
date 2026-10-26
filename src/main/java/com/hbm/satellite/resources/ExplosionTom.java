@@ -129,12 +129,12 @@ public class ExplosionTom {
 			double Z = Math.pow((this.posZ - pZ), 2);
 			double distance = (float)Math.sqrt(X + Z); // Distance calculations used for crater rim stuff
 
-			int y = 256;
+			int y = worldObj.getMaxBuildHeight() - 1;
 
 			double cA = (terrain - Math.pow(Math.E, -Math.pow(Math.sqrt(x * x + z * z), 2) / 40000) * 13) + worldObj.random.nextInt(2); // Basic crater bowl shape
 			double cB = cA + Math.pow(Math.E, -Math.pow(Math.sqrt(x * x + z * z) - 200, 2) / 400) * 13 ;// Crater peak ring
 			int craterFloor = (int) (cB + Math.pow(Math.E, -Math.pow(Math.sqrt(x * x + z * z) - 500, 2) / 2000) * 37); // Crater rim
-			for(int i = 256; i > 0; i--) {
+			for(int i = y; i >= worldObj.getMinBuildHeight(); i--) {
 				if(i == craterFloor || !state(pX, i, pZ).is(Blocks.AIR)) {
 					y = i;
 					break;
@@ -148,18 +148,17 @@ public class ExplosionTom {
             }
             int y=columnY,craterFloor=columnFloor,threshold=columnThreshold;
             double distance=columnDistance;
-			while(y > threshold) {
+			while(y >= worldObj.getMinBuildHeight()) {
                 if(System.nanoTime()>=deadline){columnY=y;return false;}
 
-				if(y == 0) break;
-				
-				if(y <= craterFloor) {
-
-					if(worldObj.random.nextInt(200) == 0) {
-						set(pX,y,pZ,osmiridium);
-					} else {
-						set(pX,y,pZ,tektite);
-					}
+				// The source threshold still defines the replacement lens. Modern
+				// worlds can have empty strata beneath it: support the crater down to
+				// the real build floor without replacing deep stone, ores or bedrock.
+				// This runs after the original upper column and its random draws.
+				if(y <= threshold || y == worldObj.getMinBuildHeight()) {
+					if(state(pX,y,pZ).isAir())placeSubstrate(pX,y,pZ);
+				} else if(y <= craterFloor) {
+					placeSubstrate(pX,y,pZ);
 
 				} else {
 					if(y > terrain + 1) {
@@ -222,6 +221,9 @@ public class ExplosionTom {
     }
     private void remove(int x,int y,int z){
         if(!state(x,y,z).is(Blocks.AIR))worldObj.setBlock(new BlockPos(x,y,z),Blocks.AIR.defaultBlockState(),net.minecraft.world.level.block.Block.UPDATE_ALL);
+    }
+    private void placeSubstrate(int x,int y,int z){
+        set(x,y,z,worldObj.random.nextInt(200)==0?osmiridium:tektite);
     }
     private static boolean water(BlockState state){return state.getFluidState().is(FluidTags.WATER);}
 }

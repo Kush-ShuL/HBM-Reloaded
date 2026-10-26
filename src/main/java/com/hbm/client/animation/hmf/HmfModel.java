@@ -27,6 +27,12 @@ public record HmfModel(WavefrontMesh mesh) {
         render(poses, vertices, light, overlay, argb, AnimationClock.get_ms(), face -> true);
     }
 
+    /** Allows an emitter to retain millisecond precision until its periodic UV offset is computed. */
+    public void renderAllWithScroll(PoseStack poses, VertexConsumer vertices, int light, int overlay, int argb, float offset) {
+        LegacyObjRenderer.renderAll(mesh, poses, new ScrolledVertices(vertices, offset),
+                light, overlay, argb, LegacyObjRenderer.Convention.FORGE);
+    }
+
     public void renderOnly(PoseStack poses, VertexConsumer vertices, int light, int overlay, int argb, String... groups) {
         render(poses, vertices, light, overlay, argb, AnimationClock.get_ms(),
                 face -> Arrays.stream(groups).anyMatch(group -> face.legacyPart().equalsIgnoreCase(group)));

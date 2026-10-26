@@ -20,7 +20,7 @@ public final class EntityTom extends Entity implements LegacyTrackingRange {
         if(tickCount%100==0)level().playSound(null,getX(),getY(),getZ(),HbmSounds.get("alarm.chime"),SoundSource.NEUTRAL,10000,1);
         setDeltaMovement(getDeltaMovement().x,-.5,getDeltaMovement().z);
         // Source casts to int, not floor, including negative X/Z.
-        if(!level().getBlockState(new BlockPos((int)getX(),(int)getY(),(int)getZ())).is(Blocks.AIR)||getY()<10){
+        if(!level().getBlockState(new BlockPos((int)getX(),(int)getY(),(int)getZ())).isAir()||getY()<level().getMinBuildHeight()+10){
             if(!level().isClientSide){var blast=new EntityTomBlast(level());blast.setPos(position());blast.destructionRange=600;level().addFreshEntity(blast);var cloud=new EntityCloudTom(level(),500);cloud.setPos(position());level().addFreshEntity(cloud);}discard();
         }
     }
