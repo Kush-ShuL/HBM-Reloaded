@@ -11,7 +11,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class LegacyShopProducts74 {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems("hbm");
     private static final List<java.util.function.Supplier<? extends net.minecraft.world.item.Item>> KITS = new ArrayList<>();
-    public static final String[] KIT_NAMES = {"nuke_starter_kit", "nuke_advanced_kit", "nuke_commercially_kit", "nuke_electric_kit", "missile_kit", "euphemium_kit", "hazmat_kit", "hazmat_red_kit", "hazmat_grey_kit"};
+    // Hazmat kits are owned by SurvivalLootContent; shop offers resolve those existing item IDs.
+    public static final String[] KIT_NAMES = {"nuke_starter_kit", "nuke_advanced_kit", "nuke_commercially_kit", "nuke_electric_kit", "missile_kit", "euphemium_kit"};
     static {
         for (String symbol : KIT_NAMES) KITS.add(ITEMS.register(symbol, () -> new NuclearStarterKit(symbol)));
     }
