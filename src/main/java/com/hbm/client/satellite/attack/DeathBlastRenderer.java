@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.entity.*;
 import net.minecraft.resources.ResourceLocation;
 /** Source60tick shrinking sphere plus8 cumulative additive shells and the green/magenta250high beam. */
 public final class DeathBlastRenderer extends EntityRenderer<DeathBlastEntity> {
- private static final ResourceLocation SPHERE=ResourceLocation.parse("hbm:models/satellite/attack112/sphere.obj");
+ private static final ResourceLocation SPHERE=ResourceLocation.parse("hbm:models/sphere.obj");
  public DeathBlastRenderer(EntityRendererProvider.Context context){super(context);}
  @Override public void render(DeathBlastEntity entity,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){
   AttackBeamGeometry.render(pose,buffers,0xff00ff00,0xffff00ff);
