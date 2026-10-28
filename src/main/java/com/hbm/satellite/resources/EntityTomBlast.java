@@ -25,12 +25,15 @@ public final class EntityTomBlast extends NuclearChunkloadingEntity implements c
     private static final Set<EntityTomBlast> ACTIVE=Collections.newSetFromMap(new IdentityHashMap<>());
     private int batchRemaining;
     private boolean batchComplete;
+    private int startupWorkTicks;
     public int age,destructionRange,speed=1;public boolean did;public ExplosionTom exp;
     public EntityTomBlast(EntityType<?> type,Level level){super(type,level);}
     public EntityTomBlast(Level level){this(SatelliteResources113.BLAST.get(),level);}
     @Override protected void defineSynchedData(SynchedEntityData.Builder data){}
     @Override public void tick(){
         super.tick();if(!(level() instanceof ServerLevel world))return;
+        int startupDuration=NuclearConfig.TOM_STARTUP_TICKS.get();
+        boolean terrainWorked=false;
         try{
             loadChunk(net.minecraft.util.Mth.floor(getX()/16D),net.minecraft.util.Mth.floor(getZ()/16D));ACTIVE.add(this);
             if(!did){com.hbm.logging.SourceActionLog.info("[NUKE] Initialized TOM explosion at {} / {} / {} with strength {}!",getX(),getY(),getZ(),destructionRange);exp=new ExplosionTom((int)getX(),(int)getY(),(int)getZ(),world,destructionRange);did=true;}
@@ -41,14 +44,26 @@ public final class EntityTomBlast extends NuclearChunkloadingEntity implements c
                         NuclearConfig.TOM_MIN_COLUMNS.get(),(long)speed+NuclearConfig.TOM_ACCELERATION.get()));
                 batchRemaining=speed;batchComplete=false;
             }
-            long deadline=Math.min(NuclearTickBudget.deadline(world,this),
-                    System.nanoTime()+NuclearConfig.TOM_TICK_BUDGET.get()*1_000_000L);
-            while(batchRemaining>0){
+            double startup=startupDuration==0?1:Math.min(1,(double)startupWorkTicks/startupDuration);
+            double ramp=startup*startup;
+            int fullBudget=NuclearConfig.TOM_TICK_BUDGET.get();
+            int initialBudget=Math.min(fullBudget,NuclearConfig.TOM_STARTUP_BUDGET.get());
+            long budgetNanos=(long)((initialBudget+(fullBudget-initialBudget)*ramp)*1_000_000L);
+            int initialColumns=Math.min(NuclearConfig.TOM_MIN_COLUMNS.get(),NuclearConfig.TOM_MAX_COLUMNS.get());
+            int columnLimit=startup==1?Integer.MAX_VALUE:1+(int)((initialColumns-1)*ramp);
+            long deadline=Math.min(NuclearTickBudget.deadline(world,this),System.nanoTime()+budgetNanos);
+            int processedColumns=0;
+            // Keep the original batch (including its damage/sounds) intact while
+            // spreading the first terrain work over several real server ticks.
+            while(batchRemaining>0&&processedColumns<columnLimit){
+                if(System.nanoTime()>=deadline)return;
                 boolean complete=exp.updateUntil(deadline);
+                if(!exp.waitingForChunks())terrainWorked=true;
                 if(exp.waitingForChunks()||exp.yielded())return;
-                batchRemaining--;
+                batchRemaining--;processedColumns++;
                 if(complete){batchComplete=true;var data=TomSaveData.forWorld(world);data.impact=true;data.fire=1F;data.setDirty();}
             }
+            if(batchRemaining>0)return;
             boolean complete=batchComplete;batchRemaining=0;batchComplete=false;
             // Keep all original remaining source calls after its first complete result;
             // removal/lease close is deferred only until that same batch has ended.
@@ -57,6 +72,7 @@ public final class EntityTomBlast extends NuclearChunkloadingEntity implements c
             if(!complete){world.playSound(null,getX(),getY(),getZ(),SoundEvents.LIGHTNING_BOLT_THUNDER,SoundSource.NEUTRAL,10000,.8F+random.nextFloat()*.2F);ExplosionNukeGeneric.dealDamage(world,getX(),getY(),getZ(),destructionRange*2);}
             age++;
         }catch(RuntimeException|Error failure){releaseChunks();clearChunkLoader();throw failure;}
+        finally{if(terrainWorked&&startupWorkTicks<startupDuration)startupWorkTicks++;}
     }
     @Override public int legacyTrackingRange(){return 1000;}
     private void releaseChunks(){
@@ -70,6 +86,7 @@ public final class EntityTomBlast extends NuclearChunkloadingEntity implements c
     @Override protected void addAdditionalSaveData(CompoundTag tag){
         saveTicket(tag);tag.putInt("age",age);tag.putInt("destructionRange",destructionRange);tag.putInt("speed",speed);tag.putBoolean("did",did);if(exp!=null)exp.saveToNbt(tag,"exp_");
         tag.putInt("hbm_tom_batchRemaining",batchRemaining);tag.putBoolean("hbm_tom_batchComplete",batchComplete);
+        tag.putInt("hbm_tom_startupWorkTicks",startupWorkTicks);
     }
     @Override protected void readAdditionalSaveData(CompoundTag tag){
         if(exp!=null)exp.close();
@@ -83,5 +100,6 @@ public final class EntityTomBlast extends NuclearChunkloadingEntity implements c
         }
         batchRemaining=hasCursor?tag.getInt("hbm_tom_batchRemaining"):0;
         batchComplete=hasCursor&&tag.getBoolean("hbm_tom_batchComplete");
+        startupWorkTicks=tag.getInt("hbm_tom_startupWorkTicks");
     }
 }

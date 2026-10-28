@@ -12,6 +12,7 @@ public final class NuclearConfig {
  public static final ModConfigSpec SPEC;
  public static final Map<String,ModConfigSpec.IntValue> RADII=new LinkedHashMap<>();
  public static final ModConfigSpec.IntValue TICK_BUDGET,FALLOUT_DELAY,FALLOUT_RANGE,BLAST_SPEED,EXPLOSION_LIFESPAN,TOM_MIN_COLUMNS,TOM_ACCELERATION,TOM_MAX_COLUMNS,TOM_TICK_BUDGET,TOM_RESIDENT_CHUNKS;
+ public static final ModConfigSpec.IntValue TOM_STARTUP_TICKS,TOM_STARTUP_BUDGET;
  public static final ModConfigSpec.BooleanValue CHUNKLOADING,CRATER_BIOMES,MYCELIUM,CLEANUP_DEAD_DIRT,DROP_CELL,DROP_SINGULARITY,DROP_CRYSTAL;
  public static final ModConfigSpec.DoubleValue CRATER_RADIATION,CRATER_INNER_RADIATION,CRATER_OUTER_RADIATION,CRATER_WATER_MULTIPLIER;
  static {
@@ -84,6 +85,10 @@ public final class NuclearConfig {
   TOM_MAX_COLUMNS=config.defineInRange("processing.tom.maximumColumnsPerBatch",4096,1,1048576);
   config.comment("单位：毫秒／游戏刻。TOM建筑机器人地形工作的自身CPU上限。默认35。","同时参与原共享核爆预算，二者取较小时间片；在逐Y层边界让出，不等待整列结束。");
   TOM_TICK_BUDGET=config.defineInRange("processing.tom.terrainBudgetMilliseconds",35,1,1000);
+  config.comment("建筑机器人触地后缓慢起步的工作刻数，默认40（正常20 TPS下约2秒）。","每刻先只处理1列，再逐步放开列数和时间预算；等待区块期间不消耗起步时间。0为关闭。");
+  TOM_STARTUP_TICKS=config.defineInRange("processing.tom.startupDurationTicks",40,0,1200);
+  config.comment("缓慢起步时的初始地形处理预算，单位：毫秒／游戏刻，默认2。","随后逐步恢复到terrainBudgetMilliseconds；始终受共享核爆预算限制。");
+  TOM_STARTUP_BUDGET=config.defineInRange("processing.tom.startupBudgetMilliseconds",2,1,1000);
   config.comment("TOM每个建筑机器人保留的工作区块上限，默认1024。覆盖半径600外围螺旋的工作集，避免64区块缓存反复保存重读。","仍按实际列请求并检查全部邻区FULL就绪；不扩大爆破范围、不增加并发生成，不启动远程随机刻。");
   TOM_RESIDENT_CHUNKS=config.defineInRange("processing.tom.residentChunks",1024,64,4096);
   SPEC=config.build();
