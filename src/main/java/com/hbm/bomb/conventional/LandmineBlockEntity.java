@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.player.Player;
@@ -24,7 +25,7 @@ public final class LandmineBlockEntity extends BlockEntity {
         if(!(state.getBlock() instanceof LandmineBlock block))return;
         double range=block.range(),height=block.height();if(mine.waitingForPlayer){range=25;height=25;}else if(!mine.primed){range*=2;height*=2;}
         if(!level.getBlockState(pos.above()).isAir())return;
-        var entities=level.getEntities((Entity)null,new AABB(pos.getX()-range,pos.getY()-height,pos.getZ()-range,pos.getX()+range+1,pos.getY()+height,pos.getZ()+range+1),entity->true);
+        var entities=level.getEntities((Entity)null,new AABB(pos.getX()-range,pos.getY()-height,pos.getZ()-range,pos.getX()+range+1,pos.getY()+height,pos.getZ()+range+1),EntitySelector.NO_SPECTATORS);
         for(var entity:entities){
             var category=entity.getType().getCategory();if(category==MobCategory.WATER_CREATURE||category==MobCategory.WATER_AMBIENT||category==MobCategory.UNDERGROUND_WATER_CREATURE||category==MobCategory.AXOLOTLS||category==MobCategory.AMBIENT)continue;
             if(mine.waitingForPlayer){if(entity instanceof Player){mine.waitingForPlayer=false;mine.setChanged();return;}}
