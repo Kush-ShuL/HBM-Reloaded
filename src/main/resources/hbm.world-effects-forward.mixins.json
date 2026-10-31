@@ -6,6 +6,7 @@
   "client": [
     "WorldEffectsFrameMixin",
     "WorldEffectsIrisMixin",
+    "ObjMachineCullingMixin",
     "SmokeParticleEngineAccess"
   ],
   "injectors": {

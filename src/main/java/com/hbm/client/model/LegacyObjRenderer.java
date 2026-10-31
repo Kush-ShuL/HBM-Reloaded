@@ -6,6 +6,7 @@ import java.util.EnumMap;
 import java.util.IdentityHashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import org.joml.Vector3f;
 import java.util.function.Predicate;
 
@@ -48,18 +49,18 @@ public final class LegacyObjRenderer {
         }
     }
 
-    private static final Map<WavefrontMesh, EnumMap<Convention, Prepared>> PREPARED = new IdentityHashMap<>();
+    private static final Map<WavefrontMesh, Geometry> PREPARED = new IdentityHashMap<>();
     public static synchronized void clear() { PREPARED.clear(); }
     /** A reload prepares private immutable model data without changing the currently displayed resource generation. */
     static final class ReloadCache {
-        private final Map<WavefrontMesh, EnumMap<Convention, Prepared>> meshes = new IdentityHashMap<>();
+        private final Map<WavefrontMesh, Geometry> meshes = new IdentityHashMap<>();
     }
     static ReloadCache prepareReload(Iterable<WavefrontMesh> meshes) {
         ReloadCache cache = new ReloadCache();
         for (WavefrontMesh mesh : meshes) {
-            EnumMap<Convention, Prepared> conventions = new EnumMap<>(Convention.class);
-            for (Convention convention : Convention.values()) conventions.put(convention, new Prepared(mesh, convention));
-            cache.meshes.put(mesh, conventions);
+            Geometry geometry = new Geometry(mesh);
+            for (Convention convention : Convention.values()) geometry.conventions.put(convention, new Prepared(geometry, convention));
+            cache.meshes.put(mesh, geometry);
         }
         return cache;
     }
@@ -68,19 +69,72 @@ public final class LegacyObjRenderer {
         PREPARED.putAll(cache.meshes);
     }
     private static synchronized Prepared prepare(WavefrontMesh mesh, Convention convention) {
-        return PREPARED.computeIfAbsent(mesh, ignored -> new EnumMap<>(Convention.class))
-                .computeIfAbsent(convention, ignored -> new Prepared(mesh, convention));
+        Geometry geometry = PREPARED.computeIfAbsent(mesh, Geometry::new);
+        return geometry.conventions.computeIfAbsent(convention, ignored -> new Prepared(geometry, convention));
     }
+
+    /** Face order and part membership are independent of the draw's pose and UV convention. */
+    private static final class Geometry {
+        final WavefrontMesh mesh;
+        final int[] starts, triangleStarts, allFaces;
+        final Position[] positions;
+        final Map<String, int[]> parts = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+        final ArrayList<Selection> selections = new ArrayList<>();
+        final EnumMap<Convention, Prepared> conventions = new EnumMap<>(Convention.class);
+
+        Geometry(WavefrontMesh mesh) {
+            this.mesh = mesh;
+            int count = mesh.faces().size();
+            starts = new int[count + 1];
+            triangleStarts = new int[count + 1];
+            allFaces = new int[count];
+            Map<String, ArrayList<Integer>> grouped = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+            int triangle = 0;
+            for (int f = 0; f < count; f++) {
+                Face face = mesh.faces().get(f);
+                allFaces[f] = f;
+                starts[f + 1] = starts[f] + face.corners().size();
+                grouped.computeIfAbsent(face.legacyPart(), ignored -> new ArrayList<>()).add(f);
+                while (triangle < mesh.triangles().size() && mesh.triangles().get(triangle).face() == f) triangle++;
+                triangleStarts[f + 1] = triangle;
+            }
+            positions = new Position[starts[count]];
+            for (int f = 0; f < count; f++) {
+                var corners = mesh.faces().get(f).corners();
+                for (int c = 0; c < corners.size(); c++) positions[starts[f] + c] = mesh.positions().get(corners.get(c).position());
+            }
+            grouped.forEach((part, faces) -> parts.put(part, faces.stream().mapToInt(Integer::intValue).toArray()));
+        }
+
+        synchronized int[] select(String[] names, boolean exclude) {
+            if (!exclude && names.length == 1) {
+                int[] found = parts.get(names[0]);
+                return found == null ? NO_FACES : found;
+            }
+            for (Selection selection : selections) {
+                if (selection.exclude == exclude && Arrays.equals(selection.names, names)) return selection.faces;
+            }
+            int[] faces = Arrays.stream(allFaces)
+                    .filter(f -> containsPart(mesh.faces().get(f), names) != exclude).toArray();
+            selections.add(new Selection(names.clone(), exclude, faces));
+            return faces;
+        }
+    }
+
+    private static final int[] NO_FACES = new int[0];
+    private record Selection(String[] names, boolean exclude, int[] faces) { }
 
     /** Only immutable source data is cached; pose/light/colour still come from each draw. */
     private static final class Prepared {
+        final Geometry geometry;
         final int[] starts, normalIds;
         final float[] uv;
         final Normal[] normals;
         final ThreadLocal<Normals> draws;
-        Prepared(WavefrontMesh mesh, Convention convention) {
-            starts = new int[mesh.faces().size() + 1];
-            for (int f = 0; f < mesh.faces().size(); f++) starts[f + 1] = starts[f] + mesh.faces().get(f).corners().size();
+        Prepared(Geometry geometry, Convention convention) {
+            this.geometry = geometry;
+            WavefrontMesh mesh = geometry.mesh;
+            starts = geometry.starts;
             normalIds = new int[starts[starts.length - 1]];
             uv = new float[normalIds.length * 2];
             var ids = new LinkedHashMap<Normal, Integer>();
@@ -162,23 +216,36 @@ public final class LegacyObjRenderer {
         Prepared prepared = prepare(mesh, convention);
         Normals normals = prepared.draws.get(); long draw = normals.begin();
         boolean reflected = (REFLECTIONS.get() & 1) != 0;
-        int triangleCursor = 0;
+        PoseStack.Pose pose = poses.last();
         for (int faceIndex = 0; faceIndex < mesh.faces().size(); faceIndex++) {
             Face face = mesh.faces().get(faceIndex);
-            int firstTriangle = triangleCursor;
-            while (triangleCursor < mesh.triangles().size() && mesh.triangles().get(triangleCursor).face() == faceIndex) triangleCursor++;
             if (!selected.test(face)) continue;
-            if (face.corners().size() == 4) {
-                // Keep the original 0--2 diagonal while restoring front-face winding.
-                for (int index = 0; index < 4; index++) {
-                    int corner = reflected && index != 0 ? 4 - index : index;
-                    emit(mesh, face, corner, prepared.starts[faceIndex] + corner, poses.last(), consumer, packedLight, packedOverlay, argb, prepared, normals, draw);
-                }
-            } else {
-                for (int index = firstTriangle; index < triangleCursor; index++) {
-                    Triangle triangle = mesh.triangles().get(index);
-                    emitTriangle(mesh, face, triangle, poses.last(), consumer, packedLight, packedOverlay, argb, prepared, normals, draw, true, reflected);
-                }
+            renderFace(prepared, faceIndex, pose, consumer, packedLight, packedOverlay, argb, normals, draw, reflected);
+        }
+    }
+
+    private static void renderFaces(Prepared prepared, int[] faces, PoseStack poses, VertexConsumer consumer,
+                                    int light, int overlay, int argb) {
+        Normals normals = prepared.draws.get();
+        long draw = normals.begin();
+        boolean reflected = (REFLECTIONS.get() & 1) != 0;
+        PoseStack.Pose pose = poses.last();
+        for (int face : faces) renderFace(prepared, face, pose, consumer, light, overlay, argb, normals, draw, reflected);
+    }
+
+    private static void renderFace(Prepared prepared, int faceIndex, PoseStack.Pose pose, VertexConsumer consumer,
+                                   int light, int overlay, int argb, Normals normals, long draw, boolean reflected) {
+        Geometry geometry = prepared.geometry;
+        Face face = geometry.mesh.faces().get(faceIndex);
+        if (face.corners().size() == 4) {
+            // Keep the original 0--2 diagonal while restoring front-face winding.
+            for (int index = 0; index < 4; index++) {
+                int corner = reflected && index != 0 ? 4 - index : index;
+                emit(prepared.starts[faceIndex] + corner, pose, consumer, light, overlay, argb, prepared, normals, draw);
+            }
+        } else {
+            for (int index = geometry.triangleStarts[faceIndex]; index < geometry.triangleStarts[faceIndex + 1]; index++) {
+                emitTriangle(geometry.mesh.triangles().get(index), pose, consumer, light, overlay, argb, prepared, normals, draw, true, reflected);
             }
         }
     }
@@ -190,27 +257,29 @@ public final class LegacyObjRenderer {
         Prepared prepared = prepare(mesh, convention);
         Normals normals = prepared.draws.get(); long draw = normals.begin();
         boolean reflected = (REFLECTIONS.get() & 1) != 0;
+        PoseStack.Pose pose = poses.last();
         for (Triangle triangle : mesh.triangles()) {
             Face face = mesh.faces().get(triangle.face());
-            if (selected.test(face)) emitTriangle(mesh, face, triangle, poses.last(), consumer, packedLight, packedOverlay, argb, prepared, normals, draw, false, reflected);
+            if (selected.test(face)) emitTriangle(triangle, pose, consumer, packedLight, packedOverlay, argb, prepared, normals, draw, false, reflected);
         }
     }
 
     public static void renderAll(WavefrontMesh mesh, PoseStack poses, VertexConsumer consumer,
                                  int light, int overlay, int argb, Convention convention) {
-        render(mesh, poses, consumer, light, overlay, argb, convention, face -> true);
+        Prepared prepared = prepare(mesh, convention);
+        renderFaces(prepared, prepared.geometry.allFaces, poses, consumer, light, overlay, argb);
     }
 
     public static void renderOnly(WavefrontMesh mesh, PoseStack poses, VertexConsumer consumer,
                                   int light, int overlay, int argb, Convention convention, String... parts) {
-        render(mesh, poses, consumer, light, overlay, argb, convention,
-                face -> containsPart(face, parts));
+        Prepared prepared = prepare(mesh, convention);
+        renderFaces(prepared, prepared.geometry.select(parts, false), poses, consumer, light, overlay, argb);
     }
 
     public static void renderAllExcept(WavefrontMesh mesh, PoseStack poses, VertexConsumer consumer,
                                        int light, int overlay, int argb, Convention convention, String... parts) {
-        render(mesh, poses, consumer, light, overlay, argb, convention,
-                face -> !containsPart(face, parts));
+        Prepared prepared = prepare(mesh, convention);
+        renderFaces(prepared, prepared.geometry.select(parts, true), poses, consumer, light, overlay, argb);
     }
 
     private static boolean containsPart(Face face, String[] parts) {
@@ -218,16 +287,16 @@ public final class LegacyObjRenderer {
         return false;
     }
 
-    private static void emitTriangle(WavefrontMesh mesh, Face face, Triangle triangle, PoseStack.Pose pose,
+    private static void emitTriangle(Triangle triangle, PoseStack.Pose pose,
                                      VertexConsumer consumer, int light, int overlay, int argb,
                                      Prepared prepared, Normals normals, long draw, boolean quadBuffer, boolean reflected) {
         int start = prepared.starts[triangle.face()];
         int second = reflected ? triangle.third() : triangle.second();
         int third = reflected ? triangle.second() : triangle.third();
-        emit(mesh, face, triangle.first(), start + triangle.first(), pose, consumer, light, overlay, argb, prepared, normals, draw);
-        emit(mesh, face, second, start + second, pose, consumer, light, overlay, argb, prepared, normals, draw);
-        emit(mesh, face, third, start + third, pose, consumer, light, overlay, argb, prepared, normals, draw);
-        if (quadBuffer) emit(mesh, face, third, start + third, pose, consumer, light, overlay, argb, prepared, normals, draw);
+        emit(start + triangle.first(), pose, consumer, light, overlay, argb, prepared, normals, draw);
+        emit(start + second, pose, consumer, light, overlay, argb, prepared, normals, draw);
+        emit(start + third, pose, consumer, light, overlay, argb, prepared, normals, draw);
+        if (quadBuffer) emit(start + third, pose, consumer, light, overlay, argb, prepared, normals, draw);
     }
 
     private static float[] averageUv(WavefrontMesh mesh, Face face, Convention convention) {
@@ -243,14 +312,14 @@ public final class LegacyObjRenderer {
         return count == 0 ? new float[] {0, 0} : new float[] {u / count, v / count};
     }
 
-    private static void emit(WavefrontMesh mesh, Face face, int cornerIndex, int vertex, PoseStack.Pose pose,
+    private static void emit(int vertex, PoseStack.Pose pose,
                              VertexConsumer consumer, int light, int overlay, int argb,
                              Prepared prepared, Normals normals, long draw) {
-        Position position = mesh.positions().get(face.corners().get(cornerIndex).position());
+        Position position = prepared.geometry.positions[vertex];
         int n = normals.transformed(prepared, vertex, pose, draw);
         float nx = normals.values[n], ny = normals.values[n + 1], nz = normals.values[n + 2];
-        consumer.addVertex(pose, position.x(), position.y(), position.z())
-                .setColor(argb).setUv(prepared.uv[vertex * 2], prepared.uv[vertex * 2 + 1]).setOverlay(overlay).setLight(light)
-                .setNormal(nx, ny, nz);
+        Vector3f transformed = pose.pose().transformPosition(position.x(), position.y(), position.z(), normals.temporary);
+        consumer.addVertex(transformed.x, transformed.y, transformed.z, argb,
+                prepared.uv[vertex * 2], prepared.uv[vertex * 2 + 1], overlay, light, nx, ny, nz);
     }
 }

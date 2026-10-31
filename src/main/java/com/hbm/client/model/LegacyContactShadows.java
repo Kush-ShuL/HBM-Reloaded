@@ -33,26 +33,56 @@ public final class LegacyContactShadows {
     private record Support(BlockPos pos,BlockState state) { }
     private static final IdentityHashMap<WavefrontMesh,Map<Matrix4f,List<Triangle>>> MESHES=new IdentityHashMap<>();
     private static final WeakHashMap<BlockEntity,Projection> PROJECTIONS=new WeakHashMap<>();
-    private record Projection(WavefrontMesh mesh,Matrix4f transform,List<Support> supports,List<Patch> patches) { }
+    private static final class Projection {
+        final WavefrontMesh mesh;
+        final Matrix4f transform;
+        final List<Support> supports;
+        final float[] positions;
+        final int[] alphas;
+        long checkedTick;
+
+        Projection(WavefrontMesh mesh,Matrix4f transform,List<Support> supports,List<Patch> patches,long tick) {
+            this.mesh=mesh;
+            this.transform=new Matrix4f(transform);
+            this.supports=supports;
+            positions=new float[patches.size()*12];
+            alphas=new int[patches.size()*4];
+            checkedTick=tick;
+            int vertex=0;
+            for(Patch patch:patches)for(int corner=0;corner<4;corner++) {
+                Point point=corner==0?patch.a():corner==1?patch.c():patch.b();
+                positions[vertex*3]=point.x();
+                positions[vertex*3+1]=patch.height()+.002F;
+                positions[vertex*3+2]=point.z();
+                alphas[vertex++]=Mth.clamp(Math.round(112*patch.weight()*(1-Math.max(0,point.y()-patch.height())/GAP)),0,112);
+            }
+        }
+    }
     private LegacyContactShadows() { }
     public static void clear(){MESHES.clear();PROJECTIONS.clear();}
 
     public static void render(BlockEntity machine,WavefrontMesh mesh,Matrix4f transform,PoseStack poses,MultiBufferSource buffers) {
         var level=machine.getLevel();if(level==null)return;
         Projection projection=PROJECTIONS.get(machine);
-        if(projection==null||projection.mesh()!=mesh||!projection.transform().equals(transform)
-                ||projection.supports().stream().anyMatch(s->level.getBlockState(s.pos())!=s.state())) {
+        boolean rebuild=projection==null||projection.mesh!=mesh||!projection.transform.equals(transform);
+        long tick=level.getGameTime();
+        // Main and shader passes share this projection; supporting blocks need one check per tick.
+        if(!rebuild&&projection.checkedTick!=tick) {
+            projection.checkedTick=tick;
+            for(Support support:projection.supports)if(level.getBlockState(support.pos())!=support.state()) {
+                rebuild=true;
+                break;
+            }
+        }
+        if(rebuild) {
             projection=project(machine,mesh,transform);PROJECTIONS.put(machine,projection);
         }
-        if(projection.patches().isEmpty())return;
+        if(projection.alphas.length==0)return;
         var vertices=buffers.getBuffer(RenderType.entityShadow(SHADOW));var pose=poses.last();
-        for(Patch patch:projection.patches()) {
-            for(int i=0;i<4;i++) {
-                Point point=i==0?patch.a():i==1?patch.c():patch.b();
-                int alpha=Mth.clamp(Math.round(112*patch.weight()*(1-Math.max(0,point.y()-patch.height())/GAP)),0,112);
-                vertices.addVertex(pose,point.x(),patch.height()+.002F,point.z()).setColor(255,255,255,alpha)
-                        .setUv(.5F,.5F).setOverlay(OverlayTexture.NO_OVERLAY).setLight(LightTexture.FULL_BRIGHT).setNormal(pose,0,1,0);
-            }
+        for(int i=0;i<projection.alphas.length;i++) {
+            vertices.addVertex(pose,projection.positions[i*3],projection.positions[i*3+1],projection.positions[i*3+2])
+                    .setColor(255,255,255,projection.alphas[i]).setUv(.5F,.5F)
+                    .setOverlay(OverlayTexture.NO_OVERLAY).setLight(LightTexture.FULL_BRIGHT).setNormal(pose,0,1,0);
         }
     }
 
@@ -69,6 +99,7 @@ public final class LegacyContactShadows {
         });
         var level=machine.getLevel();var origin=machine.getBlockPos();
         Map<BlockPos,BlockState> supports=new LinkedHashMap<>();var patches=new ArrayList<Patch>();
+        Map<BlockPos,List<AABB>> collisionBoxes=new HashMap<>();
         for(Triangle source:triangles)for(Sample sample:PENUMBRA) {
             Triangle triangle=new Triangle(offset(source.a(),sample),offset(source.b(),sample),offset(source.c(),sample));
             float minY=Math.min(triangle.a().y(),Math.min(triangle.b().y(),triangle.c().y()));
@@ -77,9 +108,9 @@ public final class LegacyContactShadows {
             int minZ=Mth.floor(Math.min(triangle.a().z(),Math.min(triangle.b().z(),triangle.c().z()))),maxZ=Mth.floor(Math.max(triangle.a().z(),Math.max(triangle.b().z(),triangle.c().z())));
             int firstY=Mth.floor(maxY+.001F),lastY=Mth.floor(minY-GAP)-1;
             for(int x=minX;x<=maxX;x++)for(int z=minZ;z<=maxZ;z++)for(int y=firstY;y>=lastY;y--) {
-                BlockPos pos=origin.offset(x,y,z);BlockState state=level.getBlockState(pos);supports.put(pos,state);
+                BlockPos pos=origin.offset(x,y,z);BlockState state=supports.computeIfAbsent(pos,level::getBlockState);
                 if(state.getBlock() instanceof DummyableBlock||state.isAir())continue;
-                for(AABB box:state.getCollisionShape(level,pos).toAabbs()) {
+                for(AABB box:collisionBoxes.computeIfAbsent(pos,key->state.getCollisionShape(level,key).toAabbs())) {
                     float top=(float)(y+box.maxY);
                     if(top>maxY+.001F||minY-top>GAP)continue;
                     List<Point> polygon=new ArrayList<>(List.of(triangle.a(),triangle.b(),triangle.c()));
@@ -90,7 +121,7 @@ public final class LegacyContactShadows {
                 }
             }
         }
-        return new Projection(mesh,new Matrix4f(transform),supports.entrySet().stream().map(e->new Support(e.getKey(),e.getValue())).toList(),List.copyOf(patches));
+        return new Projection(mesh,transform,supports.entrySet().stream().map(e->new Support(e.getKey(),e.getValue())).toList(),patches,level.getGameTime());
     }
     private static Point offset(Point point,Sample sample){return new Point(point.x()+sample.x(),point.y(),point.z()+sample.z());}
     private static Point point(WavefrontMesh mesh,int index,Matrix4f transform) {
