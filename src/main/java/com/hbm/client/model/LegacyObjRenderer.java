@@ -76,9 +76,10 @@ public final class LegacyObjRenderer {
     /** Face order and part membership are independent of the draw's pose and UV convention. */
     private static final class Geometry {
         final WavefrontMesh mesh;
-        final int[] starts, triangleStarts, allFaces;
+        final int[] starts, triangleStarts, allFaces, positionIds;
         final Position[] positions;
         final Map<String, int[]> parts = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+        final Map<int[], Stream> streams = new IdentityHashMap<>();
         final ArrayList<Selection> selections = new ArrayList<>();
         final EnumMap<Convention, Prepared> conventions = new EnumMap<>(Convention.class);
 
@@ -98,12 +99,21 @@ public final class LegacyObjRenderer {
                 while (triangle < mesh.triangles().size() && mesh.triangles().get(triangle).face() == f) triangle++;
                 triangleStarts[f + 1] = triangle;
             }
-            positions = new Position[starts[count]];
+            positions = mesh.positions().toArray(Position[]::new);
+            positionIds = new int[starts[count]];
             for (int f = 0; f < count; f++) {
                 var corners = mesh.faces().get(f).corners();
-                for (int c = 0; c < corners.size(); c++) positions[starts[f] + c] = mesh.positions().get(corners.get(c).position());
+                for (int c = 0; c < corners.size(); c++) positionIds[starts[f] + c] = corners.get(c).position();
             }
             grouped.forEach((part, faces) -> parts.put(part, faces.stream().mapToInt(Integer::intValue).toArray()));
+            stream(allFaces);
+            parts.values().forEach(this::stream);
+        }
+
+        synchronized Stream stream(int[] faces) {
+            Stream stream = streams.get(faces);
+            if (stream == null) { stream = new Stream(this, faces); streams.put(faces, stream); }
+            return stream;
         }
 
         synchronized int[] select(String[] names, boolean exclude) {
@@ -124,6 +134,37 @@ public final class LegacyObjRenderer {
     private static final int[] NO_FACES = new int[0];
     private record Selection(String[] names, boolean exclude, int[] faces) { }
 
+    /** The original quad order and mirrored winding, prepared once per part selection. */
+    private static final class Stream {
+        final int[] corners, reflected, positions;
+        Stream(Geometry geometry, int[] faces) {
+            var forward = new ArrayList<Integer>();
+            var reverse = new ArrayList<Integer>();
+            var used = new java.util.BitSet(geometry.positions.length);
+            for (int face : faces) {
+                int start = geometry.starts[face];
+                if (geometry.starts[face + 1] - start == 4) {
+                    for (int i = 0; i < 4; i++) {
+                        forward.add(start + i);
+                        reverse.add(start + (i == 0 ? 0 : 4 - i));
+                    }
+                } else {
+                    for (int i = geometry.triangleStarts[face]; i < geometry.triangleStarts[face + 1]; i++) {
+                        Triangle triangle = geometry.mesh.triangles().get(i);
+                        forward.add(start + triangle.first()); forward.add(start + triangle.second());
+                        forward.add(start + triangle.third()); forward.add(start + triangle.third());
+                        reverse.add(start + triangle.first()); reverse.add(start + triangle.third());
+                        reverse.add(start + triangle.second()); reverse.add(start + triangle.second());
+                    }
+                }
+            }
+            corners = forward.stream().mapToInt(Integer::intValue).toArray();
+            reflected = reverse.stream().mapToInt(Integer::intValue).toArray();
+            for (int corner : corners) used.set(geometry.positionIds[corner]);
+            positions = used.stream().toArray();
+        }
+    }
+
     /** Only immutable source data is cached; pose/light/colour still come from each draw. */
     private static final class Prepared {
         final Geometry geometry;
@@ -131,6 +172,8 @@ public final class LegacyObjRenderer {
         final float[] uv;
         final Normal[] normals;
         final ThreadLocal<Normals> draws;
+        final Map<Stream, int[]> streamNormals = new IdentityHashMap<>();
+        final ThreadLocal<Frames> frames;
         Prepared(Geometry geometry, Convention convention) {
             this.geometry = geometry;
             WavefrontMesh mesh = geometry.mesh;
@@ -160,6 +203,18 @@ public final class LegacyObjRenderer {
             }
             normals = values.toArray(Normal[]::new);
             draws = ThreadLocal.withInitial(() -> new Normals(normals.length));
+            frames = ThreadLocal.withInitial(() -> new Frames(geometry.positions.length, normals.length));
+            synchronized (geometry) { geometry.streams.values().forEach(this::normalSelection); }
+        }
+        synchronized int[] normalSelection(Stream stream) {
+            int[] selection = streamNormals.get(stream);
+            if (selection == null) {
+                var used = new java.util.BitSet(normals.length);
+                for (int corner : stream.corners) used.set(normalIds[corner]);
+                selection = used.stream().toArray();
+                streamNormals.put(stream, selection);
+            }
+            return selection;
         }
     }
 
@@ -182,6 +237,24 @@ public final class LegacyObjRenderer {
             }
             return index;
         }
+    }
+
+    private static final class Frame {
+        final float[] positions, normals;
+        final Vector3f temporary = new Vector3f();
+        Frame(int positions, int normals) { this.positions = new float[positions * 3]; this.normals = new float[normals * 3]; }
+    }
+    /** Nested consumer callbacks borrow a separate frame, leaving their caller's eager transforms intact. */
+    private static final class Frames {
+        final int positions, normals;
+        final ArrayList<Frame> frames = new ArrayList<>();
+        int depth;
+        Frames(int positions, int normals) { this.positions = positions; this.normals = normals; }
+        Frame begin() {
+            if (depth == frames.size()) frames.add(new Frame(positions, normals));
+            return frames.get(depth++);
+        }
+        void end() { depth--; }
     }
 
 
@@ -226,11 +299,33 @@ public final class LegacyObjRenderer {
 
     private static void renderFaces(Prepared prepared, int[] faces, PoseStack poses, VertexConsumer consumer,
                                     int light, int overlay, int argb) {
-        Normals normals = prepared.draws.get();
-        long draw = normals.begin();
-        boolean reflected = (REFLECTIONS.get() & 1) != 0;
+        Geometry geometry = prepared.geometry;
+        Stream stream = geometry.stream(faces);
+        int[] normalSelection = prepared.normalSelection(stream);
+        int[] corners = (REFLECTIONS.get() & 1) != 0 ? stream.reflected : stream.corners;
         PoseStack.Pose pose = poses.last();
-        for (int face : faces) renderFace(prepared, face, pose, consumer, light, overlay, argb, normals, draw, reflected);
+        Frames frames = prepared.frames.get();
+        Frame frame = frames.begin();
+        try {
+            for (int id : stream.positions) {
+                Position position = geometry.positions[id];
+                pose.pose().transformPosition(position.x(), position.y(), position.z(), frame.temporary);
+                int p = id * 3;
+                frame.positions[p] = frame.temporary.x; frame.positions[p + 1] = frame.temporary.y; frame.positions[p + 2] = frame.temporary.z;
+            }
+            for (int id : normalSelection) {
+                Normal normal = prepared.normals[id];
+                pose.transformNormal(normal.x(), normal.y(), normal.z(), frame.temporary);
+                int n = id * 3;
+                frame.normals[n] = frame.temporary.x; frame.normals[n + 1] = frame.temporary.y; frame.normals[n + 2] = frame.temporary.z;
+            }
+            for (int corner : corners) {
+                int p = geometry.positionIds[corner] * 3, n = prepared.normalIds[corner] * 3;
+                consumer.addVertex(frame.positions[p], frame.positions[p + 1], frame.positions[p + 2], argb,
+                        prepared.uv[corner * 2], prepared.uv[corner * 2 + 1], overlay, light,
+                        frame.normals[n], frame.normals[n + 1], frame.normals[n + 2]);
+            }
+        } finally { frames.end(); }
     }
 
     private static void renderFace(Prepared prepared, int faceIndex, PoseStack.Pose pose, VertexConsumer consumer,
@@ -315,9 +410,9 @@ public final class LegacyObjRenderer {
     private static void emit(int vertex, PoseStack.Pose pose,
                              VertexConsumer consumer, int light, int overlay, int argb,
                              Prepared prepared, Normals normals, long draw) {
-        Position position = prepared.geometry.positions[vertex];
         int n = normals.transformed(prepared, vertex, pose, draw);
         float nx = normals.values[n], ny = normals.values[n + 1], nz = normals.values[n + 2];
+        Position position = prepared.geometry.positions[prepared.geometry.positionIds[vertex]];
         Vector3f transformed = pose.pose().transformPosition(position.x(), position.y(), position.z(), normals.temporary);
         consumer.addVertex(transformed.x, transformed.y, transformed.z, argb,
                 prepared.uv[vertex * 2], prepared.uv[vertex * 2 + 1], overlay, light, nx, ny, nz);
