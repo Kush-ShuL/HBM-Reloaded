@@ -307,6 +307,27 @@
         9
       ],
       "enumClass": "EnumModTest"
+    },
+    {
+      "id": "bacteria",
+      "symbol": "bacteria",
+      "tab": "parts",
+      "stackSize": 64,
+      "multiName": true,
+      "multiTexture": true,
+      "names": [
+        "agar",
+        "anthrax_inert",
+        "anthrax_dead",
+        "anthrax_mutated"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "enumClass": "ItemEnums.EnumBacteriaType"
     }
   ]
 }

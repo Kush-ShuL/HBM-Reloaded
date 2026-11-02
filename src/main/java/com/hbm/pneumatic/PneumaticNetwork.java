@@ -18,6 +18,7 @@ public final class PneumaticNetwork {
  public void destroy(){if(!valid)return;valid=false;receivers.clear();for(var cache:accessors)cache.dissolveCache();accessors.clear();storages.clear();for(var node:nodes)if(node.network==this)node.network=null;nodes.clear();}
  public void addReceiver(Container inventory,Direction pipeDir,PneumaticEndpoint endpoint){receivers.put(inventory,new Receiver(pipeDir,System.currentTimeMillis(),endpoint));}
  public void addStackCache(StackCache cache){if(accessors.add(cache))for(var storage:storages)storage.onNewCacheHasJoined(cache,this);}
+ public void addStorage(ISlotMonitorProvider storage){if(storages.add(storage))for(var cache:accessors)storage.onNewCacheHasJoined(cache,this);}
  private static boolean bad(Container inventory){if(inventory instanceof BlockEntity tile)return tile.isRemoved()||tile.getLevel()==null||!tile.getLevel().hasChunkAt(tile.getBlockPos())||tile.getLevel().getBlockEntity(tile.getBlockPos())!=tile;return false;}
  public void update(){long now=System.currentTimeMillis();receivers.entrySet().removeIf(e->now-e.getValue().timestamp>1000||bad(e.getKey()));accessors.removeIf(cache->cache.hasExpired);}
  public static int getRangeFromPressure(int pressure){return switch(pressure){case 1->10;case 2->25;case 3->100;case 4->250;case 5->1000;default->0;};}

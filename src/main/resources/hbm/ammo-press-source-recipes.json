@@ -2236,6 +2236,38 @@
     },
     {
       "output": [
+        "hbm:ammo_standard_rocket_micro",
+        9,
+        0
+      ],
+      "input": [
+        null,
+        [
+          "item",
+          "hbm:ball_dynamite",
+          1,
+          0
+        ],
+        null,
+        null,
+        [
+          "item",
+          "hbm:casing_large",
+          1,
+          0
+        ],
+        null,
+        null,
+        [
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
+          2
+        ],
+        null
+      ]
+    },
+    {
+      "output": [
         "hbm:ammo_standard_rocket_phosphorus",
         2,
         0

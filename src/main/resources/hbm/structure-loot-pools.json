@@ -3796,39 +3796,68 @@
             "line": 72
           },
           "arguments": [
-            "ModItems.pile_rod_uranium",
-            "0",
-            "2",
-            "5",
+            "ModItems.pile_rod",
+            "EnumPileRod.NU.ordinal()",
+            "1",
+            "1",
             "3"
           ],
           "stack": {
-            "id": "hbm:pile_rod_uranium",
-            "count": 1
+            "id": "hbm:pile_rod",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 3
+            }
           },
-          "minimum": 2,
-          "maximum": 5,
+          "minimum": 1,
+          "maximum": 1,
           "weight": 3
         },
         {
           "source": {
             "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsComponent.java",
-            "line": 73
+            "line": 72
           },
           "arguments": [
-            "ModItems.pile_rod_source",
-            "0",
+            "ModItems.pile_rod",
+            "EnumPileRod.RA226BE.ordinal()",
             "1",
-            "2",
+            "1",
             "2"
           ],
           "stack": {
-            "id": "hbm:pile_rod_source",
-            "count": 1
+            "id": "hbm:pile_rod",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 0
+            }
           },
           "minimum": 1,
-          "maximum": 2,
+          "maximum": 1,
           "weight": 2
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsComponent.java",
+            "line": 72
+          },
+          "arguments": [
+            "ModItems.pile_rod",
+            "EnumPileRod.WASTE.ordinal()",
+            "1",
+            "1",
+            "5"
+          ],
+          "stack": {
+            "id": "hbm:pile_rod",
+            "count": 1,
+            "components": {
+              "hbm:legacy_metadata": 6
+            }
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 5
         },
         {
           "source": {
@@ -11319,6 +11348,26 @@
           ],
           "stack": {
             "id": "hbm:gun_panzerschreck",
+            "count": 1
+          },
+          "minimum": 1,
+          "maximum": 1,
+          "weight": 20
+        },
+        {
+          "source": {
+            "file": "legacy/src/main/java/com/hbm/itempool/ItemPoolsC130.java",
+            "line": 42
+          },
+          "arguments": [
+            "ModItems.gun_fliegerfaust",
+            "0",
+            "1",
+            "1",
+            "20"
+          ],
+          "stack": {
+            "id": "hbm:gun_fliegerfaust",
             "count": 1
           },
           "minimum": 1,

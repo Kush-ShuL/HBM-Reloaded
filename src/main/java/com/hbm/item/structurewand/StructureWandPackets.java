@@ -37,7 +37,7 @@ public final class StructureWandPackets {
     public static void register(RegisterPayloadHandlersEvent event){var registrar=event.registrar("1");registrar.playToClient(Open.TYPE,Open.CODEC,(packet,context)->context.enqueueWork(()->CLIENT_OPEN.accept(packet)));registrar.playToServer(Control.TYPE,Control.CODEC,(packet,context)->context.enqueueWork(()->{
         if(!(context.player() instanceof ServerPlayer actor))return;var session=SESSIONS.get(actor);if(session==null||!session.token.equals(packet.token)||!session.dimension.equals(actor.serverLevel().dimension().location())||!session.pos.equals(packet.position)||actor.distanceToSqr(packet.position.getCenter())>64)return;
         if(actor.serverLevel().getChunkSource().getChunkNow(packet.position.getX()>>4,packet.position.getZ()>>4)==null)return;
-        if(!(actor.serverLevel().getBlockEntity(packet.position) instanceof StructureAuthoringEntity tile))return;SESSIONS.remove(actor);tile.readSettings(packet.settings);tile.setChanged();
+        if(!(actor.serverLevel().getBlockEntity(packet.position) instanceof StructureAuthoringEntity tile))return;SESSIONS.remove(actor);tile.receiveSettings(packet.settings);tile.setChanged();
         if(packet.save)StructureAuthoringJobs.save(actor.serverLevel(),actor.getUUID(),tile);
         if(packet.load)StructureAuthoringJobs.load(actor.serverLevel(),actor.getUUID(),tile);
     }));}

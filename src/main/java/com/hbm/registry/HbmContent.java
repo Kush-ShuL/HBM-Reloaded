@@ -120,6 +120,7 @@ public final class HbmContent {
                     items.forEach(item -> stacks.add(new ItemStack(item.get())));
                     stacks.addAll(HbmCreativeTabs.vanillaReplacements(tab));
                     stacks.addAll(HbmEnumItems.creativeStacks(tab));
+                    stacks.addAll(com.hbm.block.swamp.SwampDirtContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.sedna.ammo.FlatAmmoContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.sedna.gun.PepperboxContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.specialvehicle.VehicleContent.creativeStacks(tab));
@@ -331,6 +332,7 @@ public final class HbmContent {
                     stacks.addAll(com.hbm.block.weaponcrate.WeaponCrateContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.block.toaster.ToasterContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.sedna.gun.stinger.StingerContent.creativeStacks(tab));
+                    stacks.addAll(com.hbm.weapon.sedna.gun.fliegerfaust.FliegerfaustContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.block.hevbattery.HevBatteryContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.armor.t51.T51Content.creativeStacks(tab));
                     stacks.addAll(com.hbm.block.woodfixtures46.WoodFixturesContent.creativeStacks(tab));

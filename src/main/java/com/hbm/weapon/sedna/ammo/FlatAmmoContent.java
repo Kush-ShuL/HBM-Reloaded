@@ -11,7 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-/**103 separate registry items; neither old family is registered, aliased, datafixed or accepted as a saved stack. */
+/** Separate registry items; neither old family is registered, aliased, datafixed or accepted as a saved stack. */
 public final class FlatAmmoContent {
     private record Family(String id,int stackSize,String tab,List<String> names,List<Integer> order){}
     private record Document(List<Family> families){}

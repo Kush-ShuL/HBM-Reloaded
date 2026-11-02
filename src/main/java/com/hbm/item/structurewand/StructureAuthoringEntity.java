@@ -19,6 +19,13 @@ public final class StructureAuthoringEntity extends BlockEntity {
     public StructureAuthoringEntity(BlockPos pos,BlockState state){super(StructureWandContent.ENTITY.get(),pos,state);}
     public CompoundTag settings(){var tag=new CompoundTag();tag.putString("name",name);tag.putInt("sizeX",sizeX);tag.putInt("sizeY",sizeY);tag.putInt("sizeZ",sizeZ);StructureBlacklist.write(tag,blacklist);return tag;}
     public void readSettings(CompoundTag tag){name=tag.getString("name");sizeX=tag.getInt("sizeX");sizeY=tag.getInt("sizeY");sizeZ=tag.getInt("sizeZ");blacklist=StructureBlacklist.read(tag);}
+    /** GUI controls only edit these fields; blacklist changes come from server-side block interactions. */
+    public void receiveSettings(CompoundTag tag){
+        name=tag.getString("name");
+        if(tag.contains("sizeX"))sizeX=tag.getInt("sizeX");
+        if(tag.contains("sizeY"))sizeY=tag.getInt("sizeY");
+        if(tag.contains("sizeZ"))sizeZ=tag.getInt("sizeZ");
+    }
     public void toggleBlock(Block block,ItemStack held){
         var state=block.defaultBlockState();var property=block.getStateDefinition().getProperty("legacy_meta");
         // Still-unflattened source blocks expose their actual property; authoring itself stores native states only.

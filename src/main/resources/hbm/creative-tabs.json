@@ -4904,6 +4904,7 @@
     "hbm:gun_fatman",
     "hbm:gun_lasrifle",
     "hbm:gun_stinger",
+    "hbm:gun_fliegerfaust",
     "hbm:gun_coilgun",
     "hbm:gun_hangman",
     "hbm:gun_mas36",
@@ -4995,6 +4996,7 @@
     "hbm:ammo_standard_rocket_demo",
     "hbm:ammo_standard_rocket_inc",
     "hbm:ammo_standard_rocket_phosphorus",
+    "hbm:ammo_standard_rocket_micro",
     "hbm:ammo_standard_flame_diesel",
     "hbm:ammo_standard_flame_gas",
     "hbm:ammo_standard_flame_napalm",
@@ -5811,7 +5813,13 @@
     "hbm:template_folder",
     "hbm:nothing",
     "hbm:broken_item",
-    "hbm:rtty_card"
+    "hbm:rtty_card",
+    "hbm:briquette_peat",
+    "hbm:dirt_swamp",
+    "hbm:bacteria_agar",
+    "hbm:bacteria_anthrax_inert",
+    "hbm:bacteria_anthrax_dead",
+    "hbm:bacteria_anthrax_mutated"
   ],
   "icons": {
     "block": "hbm:ore_uranium",

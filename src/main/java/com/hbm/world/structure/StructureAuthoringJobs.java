@@ -21,6 +21,7 @@ import net.neoforged.neoforge.event.tick.LevelTickEvent;
 
 /** Only the three real authoring actions. Cold continuation retains source cell order; the sole FULL/halo backend owns tickets. */
 public final class StructureAuthoringJobs extends SavedData {
+    public static final int MAX_SAVE_VOLUME=8*1024*1024;
     private static final Factory<StructureAuthoringJobs> FACTORY=new Factory<>(StructureAuthoringJobs::new,StructureAuthoringJobs::read);
     private static final Map<ServerLevel,StructureAuthoringJobs> OPEN=new WeakHashMap<>();
     private final ArrayDeque<Work> pending=new ArrayDeque<>();private boolean executing;
@@ -89,6 +90,8 @@ public final class StructureAuthoringJobs extends SavedData {
     public static void save(ServerLevel level,UUID player,StructureAuthoringEntity tile){
         if(tile.name.isEmpty()){message(level,player,"message.hbm.structure_wand.invalid_save_name",true);return;}
         if(tile.sizeX<=0||tile.sizeY<=0||tile.sizeZ<=0){message(level,player,"message.hbm.structure_wand.invalid_size",true);return;}
+        if((long)tile.sizeX*tile.sizeY>MAX_SAVE_VOLUME/tile.sizeZ){message(level,player,"message.hbm.structure_wand.selection_too_large",true,MAX_SAVE_VOLUME);return;}
+        try{StructureAuthoringFiles.file(tile.name);}catch(IOException|IllegalArgumentException error){message(level,player,"message.hbm.structure_wand.invalid_save_name",true);return;}
         submit(level,new Work(Action.SAVE,player,tile.getBlockPos(),tile.sizeX,tile.sizeY,tile.sizeZ,tile.name,tile.blacklist,false,StructureAuthoringFiles.blank(tile.sizeX,tile.sizeY,tile.sizeZ)));
     }
     public static void load(ServerLevel level,UUID player,StructureAuthoringEntity tile){

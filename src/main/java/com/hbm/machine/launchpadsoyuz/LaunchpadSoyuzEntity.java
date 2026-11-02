@@ -1,6 +1,7 @@
 package com.hbm.machine.launchpadsoyuz;
 
 import api.hbm.item.IDesignatorItem;
+import api.hbm.redstoneoverradio.*;
 import com.hbm.energy.*;
 import com.hbm.entity.rocket.EntityRocketSoyuz;
 import com.hbm.fluid.*;
@@ -27,7 +28,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 
 /** Independent actual TileEntityLaunchpadSoyuz sequencer, twenty XR segments,27slots and twelve real native Combo ports. */
-public final class LaunchpadSoyuzEntity extends ThermalMachine implements EnergyReceiver,SidedEnergyConnector,StandardFluidReceiver {
+public final class LaunchpadSoyuzEntity extends ThermalMachine implements EnergyReceiver,SidedEnergyConnector,StandardFluidReceiver,IRORValueProvider,IRORInteractive {
     public static final long MAX_POWER=1_000_000,CONSUMPTION=10_000;
     public static final int INDEX_STRUT1=0,INDEX_STRUT2=1,INDEX_STRUT3=2,INDEX_STRUT4=3,INDEX_STRUT5=4,INDEX_CARRIAGE=5,INDEX_ROTOR=6,INDEX_TILT=7;
     public static final int FUEL_DURATION=300,COUNTDOWN_DURATION=600;
@@ -39,6 +40,7 @@ public final class LaunchpadSoyuzEntity extends ThermalMachine implements Energy
     public SoyuzStatus soyuzStatus=SoyuzStatus.ABSENT;
     public ComponentStatus strutStatus=ComponentStatus.RETRACT,carriageStatus=ComponentStatus.RETRACT,rotorStatus=ComponentStatus.RETRACT;
     private int turnProgress;
+    private Integer targetX,targetZ;
     private final Map<BlockPos,PowerNode> powerPorts=new LinkedHashMap<>();private FluidPorts fluidPorts;
     private List<LaunchpadSoyuzLayout.Port> boundPorts=List.of();
     public static Consumer<LaunchpadSoyuzEntity> CLIENT_TICK=machine->{},CLIENT_REMOVE=machine->{};
@@ -260,9 +262,15 @@ public final class LaunchpadSoyuzEntity extends ThermalMachine implements Energy
     public void setTarget(int index,boolean deploy,int duration){target[index]=deploy?1F:0F;speed[index]=1F/duration;}
     public void move(){for(int i=0;i<positions.length;i++){prevPositions[i]=positions[i];if(Math.abs(positions[i]-target[i])<=speed[i])positions[i]=target[i];else if(positions[i]<target[i])positions[i]+=speed[i];else positions[i]-=speed[i];}}
     public float getInterpPos(int index,float partial){return prevPositions[index]+(positions[index]-prevPositions[index])*partial;}
+    private boolean confirmTarget(){
+        if(!slots.get(1).isEmpty()){
+            var data=CrateStackData.data(slots.get(1));targetX=data.getInt("xCoord");targetZ=data.getInt("zCoord");return true;
+        }
+        return targetX!=null&&targetZ!=null;
+    }
     public boolean canLaunch(){
         if(loadedType<0||!hasAllFuel()||power<CONSUMPTION)return false;
-        if(cargoMode){if(slots.get(1).isEmpty())return false;for(int i=9;i<27;i++)if(!slots.get(i).isEmpty())return true;return false;}
+        if(cargoMode){if(confirmTarget())for(int i=9;i<27;i++)if(!slots.get(i).isEmpty())return true;return false;}
         return orbital()!=1&&!slots.get(2).isEmpty();
     }
     public Vec3 enginePosition(){var dir=DummyableBlock.facing(getBlockState());var rot=dir.getClockWise();return new Vec3(worldPosition.getX()+.5-dir.getStepX()*4-rot.getStepX()*4,worldPosition.getY()+4,worldPosition.getZ()+.5-dir.getStepZ()*4-rot.getStepZ()*4);}
@@ -270,7 +278,7 @@ public final class LaunchpadSoyuzEntity extends ThermalMachine implements Energy
         if(!(level instanceof ServerLevel server))return;var center=enginePosition();var rocket=new EntityRocketSoyuz(level);rocket.setSkin(loadedType);rocket.mode=cargoMode?1:0;rocket.moveTo(center.x,center.y,center.z,0,0);server.addFreshEntity(rocket);
         tanks[0].setFill(tanks[0].getFill()-100_000);tanks[1].setFill(tanks[1].getFill()-100_000);
         if(!cargoMode){rocket.setSat(slots.get(2));if(orbital()==2)slots.set(3,ItemStack.EMPTY);slots.set(2,ItemStack.EMPTY);}
-        else{var payload=new ArrayList<ItemStack>();for(int i=9;i<27;i++){payload.add(slots.get(i));slots.set(i,ItemStack.EMPTY);}var data=CrateStackData.data(slots.get(1));rocket.targetX=data.getInt("xCoord");rocket.targetZ=data.getInt("zCoord");rocket.setPayload(payload);}
+        else{var payload=new ArrayList<ItemStack>();for(int i=9;i<27;i++){payload.add(slots.get(i));slots.set(i,ItemStack.EMPTY);}rocket.targetX=targetX;rocket.targetZ=targetZ;targetX=targetZ=null;rocket.setPayload(payload);}
         slots.set(0,ItemStack.EMPTY);setChanged();
     }
     public int orbital(){if(cargoMode)return 0;if(needsOrbiter(slots.get(2)))return slots.get(3).is(HbmContent.item("missile_soyuz_lander"))?2:1;return 0;}
@@ -285,7 +293,36 @@ public final class LaunchpadSoyuzEntity extends ThermalMachine implements Energy
         if(slot>8){if(!cargoMode)return false;for(int i=0;i<=3;i++)if(canPlaceItem(i,stack))return false;return true;}return true;
     }
     @Override public int[] getSlotsForFace(Direction side){return new int[]{0,2,3,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26};}
-    public void receiveControl(Player player,CompoundTag data){if(!stillValid(player))return;if(data.contains("cargo")){cargoMode=data.getBoolean("cargo");setChanged();}if(data.contains("launch")&&soyuzStatus==SoyuzStatus.READY&&canLaunch()){soyuzStatus=SoyuzStatus.LAUNCHING;countdown=COUNTDOWN_DURATION;setChanged();}}
+    public void receiveControl(Player player,CompoundTag data){if(!stillValid(player))return;if(data.contains("cargo")){cargoMode=data.getBoolean("cargo");setChanged();}if(data.contains("launch"))launch();}
+    private void launch(){if(soyuzStatus==SoyuzStatus.READY&&canLaunch()){soyuzStatus=SoyuzStatus.LAUNCHING;countdown=COUNTDOWN_DURATION;setChanged();}}
+    @Override public String[] getFunctionInfo(){
+        return new String[]{PREFIX_VALUE+"state",PREFIX_VALUE+"countdown",PREFIX_VALUE+"power",PREFIX_VALUE+"fuel",
+                PREFIX_VALUE+"oxidizer",PREFIX_VALUE+"canlaunch",PREFIX_VALUE+"cargomode",PREFIX_FUNCTION+"launch",
+                PREFIX_FUNCTION+"launch"+NAME_SEPARATOR+"x"+PARAM_SEPARATOR+"z",
+                PREFIX_FUNCTION+"setcargomode"+NAME_SEPARATOR+"on/off"};
+    }
+    @Override public String provideRORValue(String name){
+        return switch(name){
+            case PREFIX_VALUE+"state"->soyuzStatus.toString();
+            case PREFIX_VALUE+"countdown"->Integer.toString(countdown);
+            case PREFIX_VALUE+"power"->Long.toString(power);
+            case PREFIX_VALUE+"fuel"->Integer.toString(tanks[0].getFill());
+            case PREFIX_VALUE+"oxidizer"->Integer.toString(tanks[1].getFill());
+            case PREFIX_VALUE+"canlaunch"->canLaunch()?"1":"0";
+            case PREFIX_VALUE+"cargomode"->cargoMode?"1":"0";
+            default->null;
+        };
+    }
+    @Override public String runRORFunction(String name,String[] params){
+        if((PREFIX_FUNCTION+"launch").equals(name)){
+            switch(params.length){
+                case 0->launch();
+                case 2->{targetX=IRORInteractive.parseInt(params[0]);targetZ=IRORInteractive.parseInt(params[1]);launch();}
+                default->{ }
+            }
+        }else if((PREFIX_FUNCTION+"setcargomode").equals(name)&&params.length==1){cargoMode=IRORInteractive.parseBool(params[0]);setChanged();}
+        return null;
+    }
     @Override protected void saveMachine(CompoundTag tag){
         tag.putLong("power",power);tanks[0].writeToNBT(tag,"tank0");tanks[1].writeToNBT(tag,"tank1");
         for(int i=0;i<8;i++){tag.putFloat("p"+i,positions[i]);tag.putFloat("s"+i,speed[i]);tag.putFloat("t"+i,target[i]);}

@@ -125,6 +125,7 @@ public final class PistolAmmo {
     public static final GunAmmo CT_MORTAR_CHARGE=GunAmmo.standard(92);
     public static final GunAmmo NUKE_BALEFIRE=GunAmmo.standard(93);
     public static final GunAmmo BMG50_SM=GunAmmo.standard(94);
+    public static final GunAmmo ROCKET_MICRO=GunAmmo.standard(95);
     public static final GunAmmo FOLLY_SM=GunAmmo.secret(0);
     public static final GunAmmo FOLLY_NUKE=GunAmmo.secret(1);
     public static final GunAmmo M44_EQUESTRIAN=GunAmmo.secret(2);

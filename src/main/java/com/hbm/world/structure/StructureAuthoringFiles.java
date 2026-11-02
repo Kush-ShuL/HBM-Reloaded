@@ -18,7 +18,17 @@ import net.neoforged.fml.loading.FMLPaths;
 /** Exact save-area selection, encoded by the target's real StructureTemplate schema and complete native BE/component NBT. */
 public final class StructureAuthoringFiles {
     public static Path directory(){return FMLPaths.GAMEDIR.get().resolve("structures");}
-    private static Path file(String name){var root=directory().toAbsolutePath().normalize();var path=root.resolve(name+".nbt").normalize();if(!root.equals(path.getParent()))throw new IllegalArgumentException("Structure name must be a file name");return path;}
+    static Path file(String name)throws IOException{
+        Files.createDirectories(directory());
+        var root=directory().toRealPath();
+        var path=root.resolve(name+".nbt").normalize();
+        if(!root.equals(path.getParent()))throw new IllegalArgumentException("Structure name must be a file name");
+        if(Files.exists(path,LinkOption.NOFOLLOW_LINKS)){
+            path=path.toRealPath();
+            if(!root.equals(path.getParent()))throw new IllegalArgumentException("Structure name must be a file name");
+        }
+        return path;
+    }
     public static List<String> names(){try{Files.createDirectories(directory());var files=directory().toFile().listFiles(file->file.isFile()&&file.getName().endsWith(".nbt"));if(files==null)return List.of();return Arrays.stream(files).map(File::getName).toList();}catch(IOException error){throw new UncheckedIOException(error);}}
     static ListTag ints(int... values){var list=new ListTag();for(int value:values)list.add(IntTag.valueOf(value));return list;}
     static CompoundTag blank(int x,int y,int z){var tag=new CompoundTag();tag.putInt("hbm_authoring_format",332);tag.put("size",ints(x,y,z));tag.put("palette",new ListTag());tag.put("blocks",new ListTag());tag.put("entities",new ListTag());return NbtUtils.addCurrentDataVersion(tag);}
@@ -32,7 +42,7 @@ public final class StructureAuthoringFiles {
         template.getList("blocks",Tag.TAG_COMPOUND).add(row);
     }
     static Map<net.minecraft.world.level.block.state.BlockState,Integer> palette(CompoundTag tag){var result=new HashMap<net.minecraft.world.level.block.state.BlockState,Integer>();var rows=tag.getList("palette",Tag.TAG_COMPOUND);for(int i=0;i<rows.size();i++)result.put(TemplateStateMappings.parse(rows.getCompound(i)),i);return result;}
-    static Path write(String name,CompoundTag tag)throws IOException{Files.createDirectories(directory());var path=file(name);try(var stream=Files.newOutputStream(path)){NbtIo.writeCompressed(tag,stream);}return path;}
+    static Path write(String name,CompoundTag tag)throws IOException{var path=file(name);try(var stream=Files.newOutputStream(path)){NbtIo.writeCompressed(tag,stream);}return path;}
     static CompoundTag read(String name)throws IOException{
         var path=file(name);try(var stream=Files.newInputStream(path)){var tag=NbtIo.readCompressed(stream,NbtAccounter.unlimitedHeap());validate(tag);return tag;}
     }

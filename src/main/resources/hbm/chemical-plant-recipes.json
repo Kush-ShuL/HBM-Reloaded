@@ -2496,6 +2496,186 @@
         ]
       },
       {
+        "name": "chem.agar",
+        "duration": 100,
+        "power": 250,
+        "inputFluid": [
+          [
+            "SALIENT",
+            1000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:powder_sawdust",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_agar",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.growinertanthrax",
+        "duration": 600,
+        "power": 500,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_inert",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_inert",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.growmutatedanthrax",
+        "duration": 600,
+        "power": 500,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_mutated",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_mutated",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.mutateanthrax",
+        "duration": 600,
+        "power": 2000,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_inert",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ],
+          [
+            "tag",
+            "c:nuggets/cobalt_60",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "multi",
+            [
+              [
+                "hbm:bacteria_anthrax_mutated",
+                1,
+                0
+              ],
+              1.0,
+              1
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_dead",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_inert",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:nuclear_waste_tiny",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
         "name": "chem.osmiridiumdeath",
         "duration": 240,
         "power": 1000,
@@ -5018,6 +5198,186 @@
             "DHC",
             500,
             0
+          ]
+        ]
+      },
+      {
+        "name": "chem.agar",
+        "duration": 100,
+        "power": 250,
+        "inputFluid": [
+          [
+            "SALIENT",
+            1000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:powder_sawdust",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_agar",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.growinertanthrax",
+        "duration": 600,
+        "power": 500,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_inert",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_inert",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.growmutatedanthrax",
+        "duration": 600,
+        "power": 500,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_mutated",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_mutated",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.mutateanthrax",
+        "duration": 600,
+        "power": 2000,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_inert",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ],
+          [
+            "tag",
+            "c:nuggets/cobalt_60",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "multi",
+            [
+              [
+                "hbm:bacteria_anthrax_mutated",
+                1,
+                0
+              ],
+              1.0,
+              1
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_dead",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_inert",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:nuclear_waste_tiny",
+              1,
+              0
+            ]
           ]
         ]
       },
@@ -7554,6 +7914,186 @@
             "DHC",
             500,
             0
+          ]
+        ]
+      },
+      {
+        "name": "chem.agar",
+        "duration": 100,
+        "power": 250,
+        "inputFluid": [
+          [
+            "SALIENT",
+            1000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "minecraft:sugar",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:powder_sawdust",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_agar",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.growinertanthrax",
+        "duration": 600,
+        "power": 500,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_inert",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_inert",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.growmutatedanthrax",
+        "duration": 600,
+        "power": 500,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_mutated",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_mutated",
+              2,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "chem.mutateanthrax",
+        "duration": 600,
+        "power": 2000,
+        "named": true,
+        "inputFluid": [
+          [
+            "WATER",
+            4000,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_inert",
+            1,
+            0
+          ],
+          [
+            "item",
+            "hbm:bacteria_agar",
+            1,
+            0
+          ],
+          [
+            "tag",
+            "c:nuggets/cobalt_60",
+            1
+          ]
+        ],
+        "outputItem": [
+          [
+            "multi",
+            [
+              [
+                "hbm:bacteria_anthrax_mutated",
+                1,
+                0
+              ],
+              1.0,
+              1
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_dead",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:bacteria_anthrax_inert",
+              1,
+              0
+            ]
+          ],
+          [
+            "single",
+            [
+              "hbm:nuclear_waste_tiny",
+              1,
+              0
+            ]
           ]
         ]
       },

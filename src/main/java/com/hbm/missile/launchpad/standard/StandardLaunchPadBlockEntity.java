@@ -1,7 +1,7 @@
 package com.hbm.missile.launchpad.standard;
 import api.hbm.item.IDesignatorItem;import com.hbm.api.computer.*;import com.hbm.api.machine.IFluidCopiable;import com.hbm.energy.*;import com.hbm.entity.missile.*;import com.hbm.fluid.*;import com.hbm.fluid.network.*;import com.hbm.interfaces.IBomb.BombReturnCode;import com.hbm.item.battery.*;import com.hbm.item.missile.MissileItem;import com.hbm.machine.foundry.crucible.ThermalMachine;import com.hbm.missile.completion.MissileContent;import com.hbm.multiblock.DummyableBlock;import com.hbm.radar.IRadarCommandReceiver;import com.hbm.registry.HbmSounds;import java.util.*;import java.util.function.Consumer;import net.minecraft.core.*;import net.minecraft.nbt.CompoundTag;import net.minecraft.server.level.ServerLevel;import net.minecraft.sounds.SoundSource;import net.minecraft.util.Mth;import net.minecraft.world.entity.Entity;import net.minecraft.world.entity.player.*;import net.minecraft.world.inventory.AbstractContainerMenu;import net.minecraft.world.item.ItemStack;import net.minecraft.world.level.Level;import net.minecraft.world.level.block.state.BlockState;import net.minecraft.world.phys.*;
 /** Complete source normal pad: reload delay, native four-corner ports, two fuels and seven OC callbacks moved to CC. */
-public class StandardLaunchPadBlockEntity extends ThermalMachine implements EnergyReceiver,SidedEnergyConnector,StandardFluidReceiver,IFluidCopiable,ComputerControl,IRadarCommandReceiver {
+public class StandardLaunchPadBlockEntity extends ThermalMachine implements EnergyReceiver,SidedEnergyConnector,StandardFluidReceiver,IFluidCopiable,ComputerControl,IRadarCommandReceiver,api.hbm.redstoneoverradio.IRORValueProvider,api.hbm.redstoneoverradio.IRORInteractive {
  public static final long MAX_POWER=100000;public static final int MISSING=0,LOADING=1,READY=2;public long power;public int delay,state,prevRedstonePower,redstonePower;public boolean muffled,tilted;public ItemStack toRender=ItemStack.EMPTY;public final FluidTank[] tanks={new FluidTank(HbmFluids.NONE,24000),new FluidTank(HbmFluids.NONE,24000)};public final Set<BlockPos> activatedBlocks=new HashSet<>(4);private final Map<BlockPos,PowerNode> nodes=new LinkedHashMap<>();private final Map<BlockPos,FluidPorts> fluidPorts=new LinkedHashMap<>();
  public static Consumer<Smoke> smoke=s->{};public record Smoke(Level level,double x,double y,double z,double mx,double my,double mz){}
  public StandardLaunchPadBlockEntity(BlockPos pos,BlockState state){this(StandardLaunchPadContent.ENTITY.get(),pos,state);}
@@ -18,6 +18,31 @@ public class StandardLaunchPadBlockEntity extends ThermalMachine implements Ener
  public Entity instantiateMissile(int targetX,int targetZ){var kind=MissileContent.kind(slots.get(0));if(kind==null)return null;var entity=kind.launch.create(level,worldPosition.getX()+.5F,worldPosition.getY()+(float)getLaunchOffset(),worldPosition.getZ()+.5F,targetX,targetZ);if(entity instanceof EntityMissileBaseNT missile){com.hbm.logging.SourceActionLog.info("[MISSILE] Tried to launch missile at {} / {} / {} to {} / {}!",worldPosition.getX(),worldPosition.getY(),worldPosition.getZ(),worldPosition.getX(),worldPosition.getZ());missile.setRotation((byte)DummyableBlock.facing(getBlockState()).get3DDataValue());}return entity;}
  protected void finalizeLaunch(Entity entity){if(entity instanceof EntityMissileBaseNT missile)missile.trackingRange=500;if(entity instanceof EntityMissileAntiBallistic missile)missile.trackingRange=500;level.addFreshEntity(entity);level.playSound(null,worldPosition.getX()+.5,worldPosition.getY(),worldPosition.getZ()+.5,HbmSounds.get("weapon.missileTakeOff"),SoundSource.BLOCKS,2F,1F);power-=75000;if(slots.get(0).getItem() instanceof MissileItem item){tanks[0].setFill(tanks[0].getFill()-item.fuelCap);tanks[1].setFill(tanks[1].getFill()-item.fuelCap);}removeItem(0,1);onLaunch();setChanged();}
  protected boolean isReadyForLaunch(){return delay<=0;}protected double getLaunchOffset(){return 1;}protected void onLaunch(){delay=100;}
+ @Override public String[] getFunctionInfo(){
+  return new String[]{PREFIX_VALUE+"state",PREFIX_VALUE+"power",PREFIX_VALUE+"fuel",PREFIX_VALUE+"oxidizer",
+   PREFIX_VALUE+"canlaunch",PREFIX_FUNCTION+"launch",PREFIX_FUNCTION+"launch"+NAME_SEPARATOR+"entity",
+   PREFIX_FUNCTION+"launch"+NAME_SEPARATOR+"x"+PARAM_SEPARATOR+"z"};
+ }
+ @Override public String provideRORValue(String name){
+  return switch(name){
+   case PREFIX_VALUE+"state"->Integer.toString(state);
+   case PREFIX_VALUE+"power"->Long.toString(power);
+   case PREFIX_VALUE+"fuel"->Integer.toString(tanks[0].getFill());
+   case PREFIX_VALUE+"oxidizer"->Integer.toString(tanks[1].getFill());
+   case PREFIX_VALUE+"canlaunch"->canLaunch()?"1":"0";
+   default->null;
+  };
+ }
+ @Override public String runRORFunction(String name,String[] params){
+  if(!(PREFIX_FUNCTION+"launch").equals(name))return null;
+  switch(params.length){
+   case 0->launchFromDesignator();
+   case 1->{var target=level.getEntity(api.hbm.redstoneoverradio.IRORInteractive.parseInt(params[0]));if(target!=null&&target.isAlive())launchToEntity(target);}
+   case 2->launchToCoordinate(api.hbm.redstoneoverradio.IRORInteractive.parseInt(params[0]),api.hbm.redstoneoverradio.IRORInteractive.parseInt(params[1]));
+   default->{ }
+  }
+  return null;
+ }
  public BombReturnCode launchFromDesignator(){if(!canLaunch())return BombReturnCode.ERROR_MISSING_COMPONENT;boolean needs=MissileContent.kind(slots.get(0))!=MissileContent.Kind.ANTI_BALLISTIC;int tx=worldPosition.getX(),tz=worldPosition.getZ();if(slots.get(1).getItem() instanceof IDesignatorItem designator){if(needs){if(!designator.isReady(level,slots.get(1),tx,worldPosition.getY(),tz))return BombReturnCode.ERROR_MISSING_COMPONENT;var target=designator.getCoords(level,slots.get(1),tx,worldPosition.getY(),tz);tx=Mth.floor(target.x);tz=Mth.floor(target.z);}}else if(needs)return BombReturnCode.ERROR_MISSING_COMPONENT;return launchToCoordinate(tx,tz);}
  public BombReturnCode launchToCoordinate(int x,int z){if(!canLaunch())return BombReturnCode.ERROR_MISSING_COMPONENT;var entity=instantiateMissile(x,z);if(entity==null)return BombReturnCode.ERROR_MISSING_COMPONENT;finalizeLaunch(entity);return BombReturnCode.LAUNCHED;}public BombReturnCode launchToEntity(Entity target){if(!canLaunch())return BombReturnCode.ERROR_MISSING_COMPONENT;var entity=instantiateMissile(Mth.floor(target.getX()),Mth.floor(target.getZ()));if(entity==null)return BombReturnCode.ERROR_MISSING_COMPONENT;if(entity instanceof EntityMissileAntiBallistic abm)abm.tracking=target;finalizeLaunch(entity);return BombReturnCode.LAUNCHED;}
  @Override public boolean sendCommandPosition(int x,int y,int z){return launchToCoordinate(x,z)==BombReturnCode.LAUNCHED;}@Override public boolean sendCommandEntity(Entity target){return launchToEntity(target)==BombReturnCode.LAUNCHED;}public void updateRedstonePower(BlockPos part){boolean powered=level.hasNeighborSignal(part),contained=activatedBlocks.contains(part);if(!contained&&powered){activatedBlocks.add(part.immutable());if(redstonePower==-1)redstonePower=0;redstonePower++;}else if(contained&&!powered){activatedBlocks.remove(part);redstonePower--;if(redstonePower==0)redstonePower=-1;}setChanged();}

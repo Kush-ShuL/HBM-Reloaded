@@ -39,7 +39,7 @@ public final class StructureAuthoringScreen extends LegacyScreen {
     }
     private static void dimension(net.minecraft.nbt.CompoundTag tag,String key,EditBox field){try{tag.putInt(key,Integer.parseInt(field.getValue()));}catch(NumberFormatException ignored){}}
     private void commit(){
-        if(sent||name==null)return;sent=true;var tag=opened.settings().copy();tag.putString("name",name.getValue());
+        if(sent||name==null)return;sent=true;var tag=new net.minecraft.nbt.CompoundTag();tag.putString("name",name.getValue());
         if(!opened.loading()){dimension(tag,"sizeX",sizeX);dimension(tag,"sizeY",sizeY);dimension(tag,"sizeZ",sizeZ);}
         PacketDistributor.sendToServer(new StructureWandPackets.Control(opened.position(),opened.token(),tag,perform&&!opened.loading(),perform&&opened.loading()));
     }

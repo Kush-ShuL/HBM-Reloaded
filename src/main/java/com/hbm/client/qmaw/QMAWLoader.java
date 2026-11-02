@@ -5,6 +5,7 @@ import com.hbm.hazard.HbmHazards;
 import com.hbm.recipe.generic.GenericRecipeConfigCodec;
 import com.mojang.logging.LogUtils;
 import java.util.*;
+import net.minecraft.client.Minecraft;
 import net.minecraft.server.packs.resources.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -13,14 +14,17 @@ import net.minecraft.world.item.ItemStack;
 public final class QMAWLoader implements ResourceManagerReloadListener {
  public static final QMAWLoader INSTANCE=new QMAWLoader();
  public static final Map<String,QuickManualAndWiki> qmaw=new HashMap<>();
+ public static final List<QuickManualAndWiki> sortedPages=new ArrayList<>();
+ public static final Comparator<QuickManualAndWiki> COMPARATOR=Comparator.comparing(page->page.getTitle(Minecraft.getInstance().getLanguageManager()));
  private record Trigger(Item item,int metadata){}
  private static final Map<Trigger,QuickManualAndWiki> triggers=new HashMap<>();
  private static Map<String,String> aliases=Map.of();
  @Override public void onResourceManagerReload(ResourceManager resources){
-  qmaw.clear();triggers.clear();var resolved=new HashMap<String,String>();
+  qmaw.clear();triggers.clear();sortedPages.clear();var resolved=new HashMap<String,String>();
   for(var resource:resources.getResourceStack(net.minecraft.resources.ResourceLocation.parse("hbm:compat/manual-item-aliases.json")))try(var reader=resource.openAsReader()){var json=JsonParser.parseReader(reader).getAsJsonObject();json.entrySet().forEach(entry->resolved.put(entry.getKey(),entry.getValue().getAsString()));}catch(Exception error){LogUtils.getLogger().error("Cannot read original manual item aliases",error);}
   aliases=Map.copyOf(resolved);
   for(var entry:resources.listResourceStacks("manual",path->path.getNamespace().equals("hbm")&&path.getPath().endsWith(".json")).entrySet())for(var resource:entry.getValue())try(var reader=resource.openAsReader()){registerJson(entry.getKey().toString(),JsonParser.parseReader(reader).getAsJsonObject());}catch(Exception error){LogUtils.getLogger().error("Cannot read original manual {}",entry.getKey(),error);}
+  for(var page:qmaw.values())if(!page.noIndex)sortedPages.add(page);sortedPages.sort(COMPARATOR);
   LogUtils.getLogger().info("[QMAW] Loaded {} original manual entries",qmaw.size());
  }
  private static ItemStack stack(JsonArray json){try{return GenericRecipeConfigCodec.readStack(json,aliases);}catch(IllegalArgumentException error){return ItemStack.EMPTY;}}

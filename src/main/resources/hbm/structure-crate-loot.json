@@ -183,6 +183,17 @@
           "id": "hbm:gun_panzerschreck",
           "count": 1
         }
+      },
+      {
+        "expression": "ModItems.gun_fliegerfaust",
+        "weight": 2,
+        "source": {
+          "file": "HbmMods/Hbm-s-Nuclear-Tech-GIT@aaa093aa/src/main/java/com/hbm/blocks/generic/BlockCrate.java"
+        },
+        "stack": {
+          "id": "hbm:gun_fliegerfaust",
+          "count": 1
+        }
       }
     ],
     "ready": true

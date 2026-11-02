@@ -64,6 +64,7 @@ public final class HbmReloaded {
         FluidItemContent.register(modBus, container);
         AutogenContent.register(modBus);
         HbmEnumItems.register(modBus);
+        com.hbm.block.swamp.SwampDirtContent.register(modBus);
         com.hbm.weapon.sedna.ammo.FlatAmmoContent.register(modBus);
         HbmOres.register(modBus);
         HbmFallingBlocks.register(modBus);
@@ -440,6 +441,7 @@ public final class HbmReloaded {
         com.hbm.block.weaponcrate.WeaponCrateContent.register(modBus);
         com.hbm.block.toaster.ToasterContent.register(modBus);
         com.hbm.weapon.sedna.gun.stinger.StingerContent.register(modBus,container);
+        com.hbm.weapon.sedna.gun.fliegerfaust.FliegerfaustContent.register(modBus,container);
         com.hbm.block.hevbattery.HevBatteryContent.register(modBus);
         com.hbm.armor.t51.T51Content.register(modBus);
         com.hbm.block.woodfixtures46.WoodFixturesContent.register(modBus);

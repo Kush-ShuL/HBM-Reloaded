@@ -627,6 +627,185 @@
       "order": 8
     },
     {
+      "name": "rock.swamp",
+      "duration": 100,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "hbm:dirt_swamp",
+          1,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "hbm:briquette_peat",
+              4,
+              0
+            ],
+            1.0,
+            150
+          ],
+          [
+            [
+              "minecraft:dirt",
+              1,
+              0
+            ],
+            1.0,
+            49
+          ],
+          [
+            [
+              "hbm:bacteria_anthrax_inert",
+              1,
+              0
+            ],
+            1.0,
+            1
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "order": 9
+    },
+    {
+      "name": "rock.sculkgrass",
+      "duration": 200,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "sift:sculk_grass_block",
+          1,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:dirt",
+              1,
+              0
+            ],
+            1.0,
+            50
+          ],
+          [
+            [
+              "hbm:powder_lead",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:powder_asbestos",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "requiredMod": "sift",
+      "requiredItem": "sift:sculk_grass_block",
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "SLOP",
+          250,
+          0
+        ]
+      ],
+      "order": 10
+    },
+    {
+      "name": "rock.lightsculkgrass",
+      "duration": 200,
+      "power": 25,
+      "nameWrapper": "rock.crushing",
+      "inputItem": [
+        [
+          "item",
+          "sift:light_sculk_grass_block",
+          1,
+          0
+        ]
+      ],
+      "outputItem": [
+        [
+          "multi",
+          [
+            [
+              "minecraft:dirt",
+              1,
+              0
+            ],
+            1.0,
+            50
+          ],
+          [
+            [
+              "hbm:scrap_nuclear",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ],
+          [
+            [
+              "hbm:scrap_oil",
+              1,
+              0
+            ],
+            1.0,
+            25
+          ]
+        ]
+      ],
+      "sourceIconToFirstIngredient": true,
+      "autoSwitchGroup": "autoswitch.crushing",
+      "requiredMod": "sift",
+      "requiredItem": "sift:light_sculk_grass_block",
+      "inputFluid": [
+        [
+          "WATER",
+          250,
+          0
+        ]
+      ],
+      "outputFluid": [
+        [
+          "SLOP",
+          250,
+          0
+        ]
+      ],
+      "order": 11
+    },
+    {
       "name": "rock.clay",
       "duration": 200,
       "power": 25,
@@ -654,7 +833,7 @@
           ]
         ]
       ],
-      "order": 9
+      "order": 12
     },
     {
       "name": "rock.colloid",
@@ -677,7 +856,7 @@
           ]
         ]
       ],
-      "order": 10
+      "order": 13
     }
   ]
 }

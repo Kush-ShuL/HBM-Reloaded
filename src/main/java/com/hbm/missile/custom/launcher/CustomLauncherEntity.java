@@ -1,6 +1,7 @@
 package com.hbm.missile.custom.launcher;
 
 import api.hbm.item.IDesignatorItem;
+import api.hbm.redstoneoverradio.*;
 import com.hbm.api.machine.MachineView;
 import com.hbm.bomb.nuclear.LegacyVector;
 import com.hbm.energy.*;
@@ -34,7 +35,8 @@ import static com.hbm.missile.custom.CustomMissileParts.*;
 
 /** Source CompactLauncher/LaunchTable common execution, with two real subclasses for their actual OC difference. */
 public abstract class CustomLauncherEntity extends BlockEntity implements WorldlyContainer, MenuProvider, NamedMultiblock,
-        EnergyReceiver, SidedEnergyConnector, StandardFluidReceiver, IRadarCommandReceiver, MachineView, MuffledMachine {
+        EnergyReceiver, SidedEnergyConnector, StandardFluidReceiver, IRadarCommandReceiver, MachineView, MuffledMachine,
+        IRORValueProvider, IRORInteractive {
     public static final long MAX_POWER = 100000;
     protected final ItemStack[] slots = new ItemStack[8];
     public final boolean large;
@@ -89,7 +91,7 @@ public abstract class CustomLauncherEntity extends BlockEntity implements Worldl
     public boolean isMissileValid() { var m = missile(); return m != null && m.fuselage() != null && m.fuselage().definition.top() == (large ? padSize : PartSize.SIZE_10); }
     public boolean hasDesignator() { return slots[1].getItem() instanceof IDesignatorItem target && target.isReady(level, slots[1], worldPosition.getX(), worldPosition.getY(), worldPosition.getZ()); }
     public boolean hasFuel() { return solidState() != 0 && liquidState() != 0 && oxidizerState() != 0; }
-    public boolean canLaunch() { return power >= MAX_POWER * .75 && isMissileValid() && (large || hasDesignator()) && hasFuel(); }
+    public boolean canLaunch() { return power >= MAX_POWER * .75 && isMissileValid() && hasFuel(); }
     private Definition fuselage() { var missile = missile(); return missile == null || missile.fuselage() == null ? null : missile.fuselage().definition; }
     public int solidState() { var f = fuselage(); return f == null || !f.enumName(0).equals("SOLID") ? -1 : solid >= f.number(1) ? 1 : 0; }
     public int liquidState() { var f = fuselage(); return f == null || f.enumName(0).equals("SOLID") ? -1 : tanks[0].getFill() >= f.number(1) ? 1 : 0; }
@@ -129,8 +131,35 @@ public abstract class CustomLauncherEntity extends BlockEntity implements Worldl
     }
     @Override public boolean sendCommandPosition(int x, int y, int z) { if (!canLaunch()) return false; launchTo(x, z); return true; }
     @Override public boolean sendCommandEntity(Entity target) {
-        // Actual source sends floor(target.posX) for BOTH coordinates; do not silently substitute the modern Z value.
-        return sendCommandPosition(Mth.floor(target.getX()), worldPosition.getY(), Mth.floor(target.getX()));
+        return sendCommandPosition(Mth.floor(target.getX()), worldPosition.getY(), Mth.floor(target.getZ()));
+    }
+    @Override public String[] getFunctionInfo() {
+        return new String[]{PREFIX_VALUE + "power", PREFIX_VALUE + "solid", PREFIX_VALUE + "fuel", PREFIX_VALUE + "oxidizer",
+                PREFIX_VALUE + "canlaunch", PREFIX_FUNCTION + "launch", PREFIX_FUNCTION + "launch" + NAME_SEPARATOR + "entity",
+                PREFIX_FUNCTION + "launch" + NAME_SEPARATOR + "x" + PARAM_SEPARATOR + "z"};
+    }
+    @Override public String provideRORValue(String name) {
+        return switch (name) {
+            case PREFIX_VALUE + "power" -> Long.toString(power);
+            case PREFIX_VALUE + "solid" -> Integer.toString(solid);
+            case PREFIX_VALUE + "fuel" -> Integer.toString(tanks[0].getFill());
+            case PREFIX_VALUE + "oxidizer" -> Integer.toString(tanks[1].getFill());
+            case PREFIX_VALUE + "canlaunch" -> canLaunch() ? "1" : "0";
+            default -> null;
+        };
+    }
+    @Override public String runRORFunction(String name, String[] params) {
+        if (!(PREFIX_FUNCTION + "launch").equals(name) || !canLaunch()) return null;
+        switch (params.length) {
+            case 0 -> launchFromDesignator();
+            case 1 -> {
+                Entity target = level.getEntity(IRORInteractive.parseInt(params[0]));
+                if (target != null && target.isAlive()) launchTo(Mth.floor(target.getX()), Mth.floor(target.getZ()));
+            }
+            case 2 -> launchTo(IRORInteractive.parseInt(params[0]), IRORInteractive.parseInt(params[1]));
+            default -> { }
+        }
+        return null;
     }
     protected List<Port> ports() {
         var result = new ArrayList<Port>(); int radius = large ? 4 : 1;

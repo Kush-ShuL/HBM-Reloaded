@@ -19,6 +19,7 @@ public final class FluidPorts {
     public FluidPorts(BlockPos origin) { this(new BlockPos[]{origin.immutable()}, Arrays.stream(Direction.values()).map(direction -> new NodeConnection(origin.relative(direction), direction)).toArray(NodeConnection[]::new)); }
     public FluidPorts(BlockPos[] positions, NodeConnection[] connections) { this.positions = positions.clone(); this.connections = connections.clone(); }
     public void update(ServerLevel level, FluidUser owner) {
+        if (positions.length == 0 || connections.length == 0 || owner == null) return;
         var active = java.util.Collections.newSetFromMap(new IdentityHashMap<HbmFluidType, Boolean>());
         if (owner instanceof StandardFluidSender sender) for (var tank : sender.getSendingTanks()) { if (tank.getTankType() != HbmFluids.NONE) active.add(tank.getTankType()); }
         if (owner instanceof StandardFluidReceiver receiver) for (var tank : receiver.getReceivingTanks()) { if (tank.getTankType() != HbmFluids.NONE) active.add(tank.getTankType()); }

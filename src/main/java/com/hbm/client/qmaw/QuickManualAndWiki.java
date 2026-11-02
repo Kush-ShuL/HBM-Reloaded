@@ -1,10 +1,13 @@
 package com.hbm.client.qmaw;
 
 import java.util.HashMap;
+import java.util.Map;
 
+import net.minecraft.client.resources.language.LanguageManager;
 import net.minecraft.world.item.ItemStack;
 
 public class QuickManualAndWiki {
+	public static final String EN_US = "en_us";
 	
 	public String name;
 	/** Resource identity for the native standard language keys; not another content store. */
@@ -39,5 +42,21 @@ public class QuickManualAndWiki {
 	public QuickManualAndWiki noIndex() {
 		this.noIndex = true;
 		return this;
+	}
+
+	/** Search, indexes and the page itself use the same standard-language-first title. */
+	public String getTitle(LanguageManager language) {
+		String value = localized(title, "title", language.getSelected());
+		return value == null ? "Missing Localization!" : value;
+	}
+
+	String localized(Map<String, String> literals, String field, String locale) {
+		if(languageKey != null) {
+			String key = languageKey + "." + field;
+			var language = net.minecraft.locale.Language.getInstance();
+			if(language.has(key)) return language.getOrDefault(key);
+		}
+		String value = literals.get(locale);
+		return value != null ? value : literals.get(EN_US);
 	}
 }

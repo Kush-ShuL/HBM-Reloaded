@@ -60,16 +60,6 @@ public final class GuiQMAW extends Screen {
 		}
 		return formatting;
 	}
-	/** All existing manual locales use native lang; unmigrated resource pages retain literal fallback. */
-	private static String localized(QuickManualAndWiki page, Map<String,String> literals, String field, String locale) {
-		if(page.languageKey != null) {
-			String key = page.languageKey + "." + field;
-			var language = net.minecraft.locale.Language.getInstance();
-			if(language.has(key)) return language.getOrDefault(key);
-		}
-		String value = literals.get(locale);
-		return value != null ? value : literals.get(EN_US);
-	}
 	protected String compose(String contents) {
 		var lang = Minecraft.getInstance().getLanguageManager();
 		String langCode = lang.getSelected();
@@ -86,7 +76,7 @@ public final class GuiQMAW extends Screen {
 			String substitute = composeTag;
 			
 			if(qmaw != null) {
-				String localized = localized(qmaw, qmaw.contents, "content", langCode);
+				String localized = qmaw.localized(qmaw.contents, "content", langCode);
 				if(localized != null) substitute = localized;
 			}
 			
@@ -99,12 +89,11 @@ public final class GuiQMAW extends Screen {
 	protected void parseQMAW(QuickManualAndWiki qmaw) {
 		var lang = Minecraft.getInstance().getLanguageManager();
 
-		this.title = localized(qmaw, qmaw.title, "title", lang.getSelected());
-		if(title == null) this.title = "Missing Localization!";
+		this.title = qmaw.getTitle(lang);
 
 		this.icon = qmaw.icon;
 
-		String toParse = localized(qmaw, qmaw.contents, "content", lang.getSelected());
+		String toParse = qmaw.localized(qmaw.contents, "content", lang.getSelected());
 		if(toParse == null) toParse = "Missing Localization!";
 		
 		toParse = compose(toParse);

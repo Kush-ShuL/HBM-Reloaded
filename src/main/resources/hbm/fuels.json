@@ -206,38 +206,45 @@
       "legacySymbol": "ModItems.briquette"
     },
     {
+      "item": "hbm:briquette_peat",
+      "metadata": 0,
+      "burnTime": 1200,
+      "priority": 26,
+      "legacySymbol": "ModItems.briquette"
+    },
+    {
       "item": "hbm:powder_ash_wood",
       "metadata": 0,
       "burnTime": 100,
-      "priority": 26,
+      "priority": 27,
       "legacySymbol": "ModItems.powder_ash"
     },
     {
       "item": "hbm:powder_ash_coal",
       "metadata": 0,
       "burnTime": 200,
-      "priority": 27,
+      "priority": 28,
       "legacySymbol": "ModItems.powder_ash"
     },
     {
       "item": "hbm:powder_ash_misc",
       "metadata": 0,
       "burnTime": 100,
-      "priority": 28,
+      "priority": 29,
       "legacySymbol": "ModItems.powder_ash"
     },
     {
       "item": "hbm:powder_ash_fly",
       "metadata": 0,
       "burnTime": 200,
-      "priority": 29,
+      "priority": 30,
       "legacySymbol": "ModItems.powder_ash"
     },
     {
       "item": "hbm:powder_ash_soot",
       "metadata": 0,
       "burnTime": 100,
-      "priority": 30,
+      "priority": 31,
       "legacySymbol": "ModItems.powder_ash"
     }
   ]

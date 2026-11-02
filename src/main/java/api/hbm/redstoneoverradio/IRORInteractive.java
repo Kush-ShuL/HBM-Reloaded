@@ -55,4 +55,12 @@ public interface IRORInteractive extends IRORInfo {
 		if(result < min || result > max) throw new RORFunctionException(EX_FORMAT);
 		return result;
 	}
+
+	public static boolean parseBool(String val) {
+		return switch (val.toLowerCase(Locale.ROOT)) {
+			case "1", "true", "on" -> true;
+			case "0", "false", "off" -> false;
+			default -> throw new RORFunctionException(EX_FORMAT);
+		};
+	}
 }

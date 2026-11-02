@@ -1,5 +1,6 @@
 package com.hbm.machine.lambda;
 
+import api.hbm.redstoneoverradio.*;
 import com.hbm.energy.*;
 import com.hbm.entity.rocket.EntityRocketLambda;
 import com.hbm.fluid.*;
@@ -24,7 +25,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
 /** Original five-component sequencer and seven-slot satellite carrier; source consumes 10kHE on every powered tick. */
-public final class LambdaEntity extends ThermalMachine implements EnergyReceiver,SidedEnergyConnector,StandardFluidReceiver {
+public final class LambdaEntity extends ThermalMachine implements EnergyReceiver,SidedEnergyConnector,StandardFluidReceiver,IRORValueProvider,IRORInteractive {
     public static final long MAX_POWER=1_000_000,CONSUMPTION=10_000;
     public static final int DOORS=0,ERECTOR=1,ROTOR=2,CLAMPS=3,PISTONS=4,COUNTDOWN_DURATION=200;
     public final FluidTank[] tanks={new FluidTank(HbmFluids.GASOLINE_LEADED,64_000),new FluidTank(HbmFluids.PEROXIDE,64_000)};
@@ -77,6 +78,27 @@ public final class LambdaEntity extends ThermalMachine implements EnergyReceiver
     public static boolean needsOrbiter(ItemStack stack){return !stack.isEmpty()&&(stack.is(HbmContent.item("sat_gerald"))||stack.getOrDefault(HbmHazards.LEGACY_METADATA.get(),stack.getDamageValue())==SatelliteKind.MINER_LUNAR.ordinal());}
     public boolean hasJetFuel(){return tanks[0].getFill()>=24_000;}public boolean hasOxidizer(){return tanks[1].getFill()>=24_000;}public boolean hasAllFuel(){return hasJetFuel()&&hasOxidizer();}
     public boolean canLaunch(){return hasRocketLoaded()&&hasAllFuel()&&power>=CONSUMPTION&&!slots.get(1).isEmpty()&&canPlaceItem(1,slots.get(1))&&!needsOrbiter(slots.get(1));}
+    @Override public String[] getFunctionInfo(){
+        return new String[]{PREFIX_VALUE+"countdown",PREFIX_VALUE+"power",PREFIX_VALUE+"fuel",PREFIX_VALUE+"oxidizer",
+                PREFIX_VALUE+"isauto",PREFIX_VALUE+"canlaunch",PREFIX_FUNCTION+"launch",
+                PREFIX_FUNCTION+"setauto"+NAME_SEPARATOR+"on/off"};
+    }
+    @Override public String provideRORValue(String name){
+        return switch(name){
+            case PREFIX_VALUE+"countdown"->Integer.toString(countdown);
+            case PREFIX_VALUE+"power"->Long.toString(power);
+            case PREFIX_VALUE+"fuel"->Integer.toString(tanks[0].getFill());
+            case PREFIX_VALUE+"oxidizer"->Integer.toString(tanks[1].getFill());
+            case PREFIX_VALUE+"isauto"->autolaunch?"1":"0";
+            case PREFIX_VALUE+"canlaunch"->canLaunch()?"1":"0";
+            default->null;
+        };
+    }
+    @Override public String runRORFunction(String name,String[] params){
+        if((PREFIX_FUNCTION+"setauto").equals(name)&&params.length==1){autolaunch=IRORInteractive.parseBool(params[0]);setChanged();}
+        else if((PREFIX_FUNCTION+"launch").equals(name)&&canLaunch()){countdown=COUNTDOWN_DURATION;setChanged();}
+        return null;
+    }
     private boolean fluidContainer(ItemStack stack,FluidTank tank){return stack.is(FluidItemContent.INFINITE.get())||FluidContainerRegistry.getFluidContent(stack,tank.getTankType())>0||stack.getItem() instanceof FillableItem fillable&&fillable.providesFluid(tank.getTankType(),stack);}
     @Override public boolean canPlaceItem(int slot,ItemStack stack){return switch(slot){case 0->stack.is(HbmContent.item("missile_lambda"));case 1->stack.getItem() instanceof SatelliteFrequency&&!needsOrbiter(stack);case 2->fluidContainer(stack,tanks[0]);case 4->fluidContainer(stack,tanks[1]);case 3,5->false;case 6->stack.getItem() instanceof HbmBattery||stack.getItem() instanceof CreativeBatteryItem;default->true;};}
     @Override public int[] getSlotsForFace(Direction side){return new int[]{0,1};}

@@ -6,7 +6,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 public final class FlatBriquetteContent {
     private static final DeferredRegister.Items ITEMS=DeferredRegister.createItems("hbm");
-    public static final List<String> NAMES=List.of("coal","lignite","wood");
+    public static final List<String> NAMES=List.of("coal","lignite","wood","peat");
     public static final List<DeferredItem<FlatBriquetteItem>> BRIQUETTES=NAMES.stream().map(name->ITEMS.register("briquette_"+name,FlatBriquetteItem::new)).toList();
     public static void register(IEventBus bus){ITEMS.register(bus);}
     public static ItemStack stack(int sourceOrdinal,int count){return new ItemStack(BRIQUETTES.get(sourceOrdinal).get(),count);}

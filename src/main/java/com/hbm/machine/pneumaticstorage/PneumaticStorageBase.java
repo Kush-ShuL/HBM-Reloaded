@@ -22,7 +22,7 @@ public abstract class PneumaticStorageBase extends PneumaticInventory implements
     @Override protected void updateServer(ServerLevel server){
         if(fluidPorts==null)fluidPorts=new FluidPorts(worldPosition);fluidPorts.update(server,this);
         boolean available=isAvailable();if(available!=wasAvailable){wasAvailable=available;for(var monitor:monitors)monitor.availabilityHasChanged();}
-        node=PneumaticNetworks.connect(this);if(node!=null&&node.isValid()&&node.network()!=null)node.network().storages.add(this);
+        node=PneumaticNetworks.connect(this);if(node!=null&&node.isValid()&&node.network()!=null)node.network().addStorage(this);
         if(compair.getFill()>0){int consumption=compair.getFill()*9/compair.getMaxFill()+1;compair.setFill(Math.max(0,compair.getFill()-consumption));setChanged();}
         updateMonitors();synchronize(server);
     }

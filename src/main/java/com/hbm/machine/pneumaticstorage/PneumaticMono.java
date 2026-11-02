@@ -11,6 +11,7 @@ public final class PneumaticMono extends PneumaticStorageBase {
     public static final int CAPACITY=100000;
     public final int[] amounts=new int[3];
     public PneumaticMono(BlockPos pos,BlockState state){super(PneumaticKind.MONO,pos,state);}
+    @Override public void setItem(int index,ItemStack stack){if(level!=null&&!level.isClientSide&&amounts[index]>0)return;super.setItem(index,stack);}
     @Override public long getAmountAt(int index){return amounts[index];}
     @Override public boolean allowTypeSetting(){return false;}
     @Override public long useUpItem(int index,long amount){if(amounts[index]<=0)return amount;int remove=(int)Math.min(amount,amounts[index]);amounts[index]-=remove;setChanged();return amount-remove;}
