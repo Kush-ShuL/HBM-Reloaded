@@ -241,8 +241,12 @@ public final class LegacyObjRenderer {
 
     private static final class Frame {
         final float[] positions, normals;
+        final int[] packedNormals;
         final Vector3f temporary = new Vector3f();
-        Frame(int positions, int normals) { this.positions = new float[positions * 3]; this.normals = new float[normals * 3]; }
+        Frame(int positions, int normals) {
+            this.positions = new float[positions * 3]; this.normals = new float[normals * 3];
+            packedNormals = new int[normals];
+        }
     }
     /** Nested consumer callbacks borrow a separate frame, leaving their caller's eager transforms intact. */
     private static final class Frames {
@@ -319,6 +323,9 @@ public final class LegacyObjRenderer {
                 int n = id * 3;
                 frame.normals[n] = frame.temporary.x; frame.normals[n + 1] = frame.temporary.y; frame.normals[n + 2] = frame.temporary.z;
             }
+            if (LegacyObjBulkWriter.render(consumer, corners, geometry.positionIds, prepared.normalIds,
+                    frame.positions, frame.normals, prepared.uv, normalSelection, frame.packedNormals,
+                    argb, overlay, light)) return;
             for (int corner : corners) {
                 int p = geometry.positionIds[corner] * 3, n = prepared.normalIds[corner] * 3;
                 consumer.addVertex(frame.positions[p], frame.positions[p + 1], frame.positions[p + 2], argb,
