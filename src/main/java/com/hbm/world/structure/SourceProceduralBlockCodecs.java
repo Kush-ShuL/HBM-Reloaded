@@ -10,6 +10,7 @@ public final class SourceProceduralBlockCodecs {
     public static BlockState resolve(String id,Block block,int metadata,int turns){
         int turn=turns&3;BlockState state=block.defaultBlockState();
         if(block instanceof com.hbm.block.ore.ResourceOreBlock)return state; // The physical mineral identity has no metadata or rotation state.
+        if(block instanceof com.hbm.world.structure.dependencies.materials.SlagBlock slag)return slag.fromLegacy(metadata);
         if(block instanceof com.hbm.compat.computercraft.cable.PaintableComputerCableBlock)return state.setValue(com.hbm.compat.computercraft.cable.PaintableComputerCableBlock.META,metadata); // Source plain BlockContainer/raw16; no invented rotation.
         if(block instanceof com.hbm.block.devtesters.EventTesterBlock)return state; // Source tester ignores all metadata/no transform.
         if(block instanceof com.hbm.block.devtesters.ObjTesterBlock)return state.setValue(com.hbm.block.devtesters.ObjTesterBlock.META,metadata); // Placement stores yaw but active renderer ignores it; source no rotation interface.

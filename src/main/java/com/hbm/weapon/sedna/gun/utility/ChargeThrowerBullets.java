@@ -23,7 +23,7 @@ public final class ChargeThrowerBullets {
   var point=hit.getLocation();var explosion=new ExplosionVNT(bullet.level(),point.x,point.y,point.z,heavy?15:5,bullet.getThrower());
   if(heavy){
    var slag=HbmContent.block("block_slag");if(!(slag instanceof SlagBlock sourceSlag))throw new IllegalStateException("Charge thrower requires actual source BlockSlag");
-   explosion.setBlockAllocator(new BlockAllocatorStandard()).setBlockProcessor(new BlockProcessorStandard().setNoDrop().withBlockEffect(new BlockMutatorDebris(sourceSlag.fromLegacy(1))));
+   explosion.setBlockAllocator(new BlockAllocatorStandard()).setBlockProcessor(new BlockProcessorStandard().setNoDrop().withBlockEffect(new BlockMutatorDebris(sourceSlag.defaultBlockState().setValue(SlagBlock.BROKEN,true))));
   }else explosion.setBlockAllocator(new BlockAllocatorBulkie(60,8)).setBlockProcessor(new BlockProcessorStandard()).setSFX(new ExplosionEffectWeapon(10,2.5F,1F));
   explosion.setEntityProcessor(new EntityProcessorCrossSmooth(1,bullet.damage).setupPiercing(bullet.config.armorThresholdNegation,bullet.config.armorPiercingPercent)).setPlayerProcessor(new PlayerProcessorStandard());
   if(heavy)LargeConventionalEffects.small(bullet.level(),point.x,point.y+.5,point.z);
