@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.StairBlock;
 import com.hbm.block.meteordeco.MetalFenceBlock;
 import net.minecraft.world.level.block.StainedGlassPaneBlock;
 import net.minecraft.world.level.block.entity.ChestBlockEntity;
@@ -42,8 +43,8 @@ import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
-/** Completes only new chests/panes/fences authored by an actual HBM StructureStart.
- * No inventory is read or moved, and no old/unmarked chest, pane or fence is changed. */
+/** Completes only new chests/panes/fences/stairs authored by an actual HBM StructureStart.
+ * No inventory is read or moved, and no old/unmarked block is changed. */
 @EventBusSubscriber(modid="hbm")
 public final class StructureChestPairs {
     private static final String ORIGIN="hbm:structure_chest_origin125", PENDING="hbm:structure_chest_pending125";
@@ -57,7 +58,7 @@ public final class StructureChestPairs {
 
     private static final class Work {
         final LinkedHashSet<BlockPos> positions=new LinkedHashSet<>();
-        // 已为 FULL 的结构写入沿同一个就绪队列补齐玻璃板与栅栏连接。
+        // 已为 FULL 的结构写入沿同一个就绪队列补齐连接形状。
         final LinkedHashSet<BlockPos> fullChunkConnections=new LinkedHashSet<>();
         final LinkedHashSet<Long> loadedChunks=new LinkedHashSet<>();
     }
@@ -137,7 +138,7 @@ public final class StructureChestPairs {
                 var work=WORK.computeIfAbsent(level.getLevel(),ignored->new Work());
                 work.positions.addAll(positions);work.fullChunkConnections.addAll(fullChunkConnections);
                 // A later clip may replace air with a wall (or clear a wall). Revisit only
-                // same-start newborn neighbors; unmarked pre-existing fences are excluded.
+                // same-start newborn neighbors; unmarked pre-existing blocks are excluded.
                 for(var changed:borderWrites) {
                     enqueueOwned(level.getLevel(),work,changed,origin);
                     for(var side:SIDES)enqueueOwned(level.getLevel(),work,changed.relative(side),origin);
@@ -149,8 +150,8 @@ public final class StructureChestPairs {
 
     private static boolean chest(BlockState state){return state.is(Blocks.CHEST)||state.is(Blocks.TRAPPED_CHEST);}
     private static boolean pane(BlockState state){return state.is(Blocks.GLASS_PANE)||state.getBlock() instanceof StainedGlassPaneBlock;}
-    /** 原生 FenceBlock 保留木/下界砖/真实子类自己的连接判定；金属围栏走其既有 updateShape。 */
-    private static boolean connection(BlockState state){return pane(state)||state.getBlock() instanceof FenceBlock||state.getBlock() instanceof MetalFenceBlock;}
+    /** Each native block retains its own neighbour-shape rules, including stair corners and halves. */
+    private static boolean connection(BlockState state){return pane(state)||state.getBlock() instanceof FenceBlock||state.getBlock() instanceof MetalFenceBlock||state.getBlock() instanceof StairBlock;}
     /** All changed border neighbors matter during placement; normal writes only invalidate
      * ownership when replacing a connective block. No attachment is allocated on reads. */
     public static boolean trackedWrite(BlockState previous,BlockState next){return previous!=null&&previous!=next&&(CURRENT.get()!=null||previous.getBlock()!=next.getBlock()&&connection(previous));}
