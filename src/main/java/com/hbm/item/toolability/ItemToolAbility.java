@@ -2,6 +2,7 @@ package com.hbm.item.toolability;
 
 import com.hbm.block.fluid.LegacyMaterials;
 import com.hbm.block.ore.DepthRockTool;
+import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.core.*;
 import net.minecraft.core.component.DataComponents;
@@ -13,10 +14,14 @@ import net.minecraft.world.entity.ai.attributes.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.*;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 
 /** Actual source ItemToolAbility's mining-tool slice, sharing existing CobaltPresets/Breaks rather than replacing abilities with vanilla tools. */
 public class ItemToolAbility extends DiggerItem implements SourceAbilityTool,DepthRockTool {
@@ -39,6 +44,7 @@ public class ItemToolAbility extends DiggerItem implements SourceAbilityTool,Dep
     @Override public Component getName(ItemStack stack){return Component.translatable("item."+sourceName+".name");}
     @Override public float getDestroySpeed(ItemStack stack,BlockState state){
         if(!canOperate(stack))return 1;
+        if(state.is(type.tag)||type==Type.MINER&&state.is(BlockTags.MINEABLE_WITH_SHOVEL))return getTier().getSpeed();
         String material=LegacyMaterials.of(state).name();
         boolean fast=switch(type){
             case MINER->switch(material){case "grass","iron","anvil","glass","rock","clay","sand","ground","snow","craftedSnow","crafted_snow"->true;default->false;};
@@ -57,4 +63,19 @@ public class ItemToolAbility extends DiggerItem implements SourceAbilityTool,Dep
     @Override public boolean isFoil(ItemStack stack){return stack.has(DataComponents.ENCHANTMENTS)&&!stack.get(DataComponents.ENCHANTMENTS).isEmpty()||!CobaltPresets.read(stack).active().isNone();}
     @Override public boolean canPerformAction(ItemStack stack,ItemAbility ability){return type==Type.MINER?(ability.equals(ItemAbilities.PICKAXE_DIG)||ability.equals(ItemAbilities.SHOVEL_DIG)):ability.equals(switch(type){case MINER,PICKAXE->ItemAbilities.PICKAXE_DIG;case AXE->ItemAbilities.AXE_DIG;case SHOVEL->ItemAbilities.SHOVEL_DIG;});}
     @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<Component> tooltip,TooltipFlag flag){abilities.addInformation(tooltip);if(depthRockBreaker){tooltip.add(Component.empty());tooltip.add(Component.translatable("tooltip.hbm.tool_ability.depth_rock").withStyle(net.minecraft.ChatFormatting.RED));}}
+
+    @EventBusSubscriber(modid="hbm",bus=EventBusSubscriber.Bus.MOD)
+    public static final class Components {
+        @SubscribeEvent
+        public static void modify(ModifyDefaultComponentsEvent event) {
+            event.getAllItems().forEach(item->{
+                if(item instanceof ItemToolAbility tool&&tool.type==Type.MINER) {
+                    Tool original=item.components().get(DataComponents.TOOL);
+                    var rules=new ArrayList<>(original.rules());
+                    rules.add(Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_SHOVEL,tool.getTier().getSpeed()));
+                    event.modify(item,builder->builder.set(DataComponents.TOOL,new Tool(rules,original.defaultMiningSpeed(),original.damagePerBlock())));
+                }
+            });
+        }
+    }
 }

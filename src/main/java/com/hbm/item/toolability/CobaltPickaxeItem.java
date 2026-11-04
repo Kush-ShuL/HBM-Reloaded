@@ -29,7 +29,7 @@ public final class CobaltPickaxeItem extends PickaxeItem implements com.hbm.bloc
     @Override public AvailableAbilities abilities(){return AvailableAbilities.COBALT;}
     @Override public Component getName(ItemStack stack){return Component.translatable("item.cobalt_pickaxe.name");}
     @Override public boolean canBreakRock(net.minecraft.world.level.BlockGetter level,net.minecraft.world.entity.player.Player player,ItemStack tool,BlockState rock,net.minecraft.core.BlockPos position){return false;}
-    @Override public float getDestroySpeed(ItemStack stack,BlockState state){return switch(LegacyMaterials.of(state).name()){case "iron","anvil","rock","glass"->9;default->state.is(Blocks.ICE)||state.is(BlockTags.RAILS)?9:1;};}
+    @Override public float getDestroySpeed(ItemStack stack,BlockState state){return state.is(BlockTags.MINEABLE_WITH_PICKAXE)?COBALT.getSpeed():switch(LegacyMaterials.of(state).name()){case "iron","anvil","rock","glass"->9;default->state.is(Blocks.ICE)||state.is(BlockTags.RAILS)?9:1;};}
     public boolean sourceCanHarvest(ItemStack stack,BlockState state){return CobaltPresets.read(stack).active().harvest==1||getDestroySpeed(stack,state)>1;}
     @Override public boolean isCorrectToolForDrops(ItemStack stack,BlockState state){return !state.requiresCorrectToolForDrops()||state.is(BlockTags.MINEABLE_WITH_PICKAXE)&&!state.is(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);}
     @Override public void postHurtEnemy(ItemStack stack,LivingEntity victim,LivingEntity attacker){stack.hurtAndBreak(1,attacker,EquipmentSlot.MAINHAND);}
