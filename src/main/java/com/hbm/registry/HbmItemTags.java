@@ -83,6 +83,21 @@ public final class HbmItemTags {
     public static Stream<ItemStack> items(String id) {
         return BuiltInRegistries.ITEM.getTag(key(id)).stream().flatMap(set->set.stream()).map(holder->new ItemStack(holder.value()));
     }
+    public static boolean hasItems(String id) {
+        return BuiltInRegistries.ITEM.getTag(key(id)).filter(set->set.size()>0).isPresent();
+    }
+    /** Select from the current tag membership using the configured mod order, then registry order. */
+    public static ItemStack preferredItem(String id,List<? extends String> preferredMods) {
+        var matches=items(id).toList();
+        if(matches.isEmpty()) return ItemStack.EMPTY;
+        int best=Integer.MAX_VALUE;
+        ItemStack chosen=matches.getFirst();
+        for(var stack:matches) {
+            int priority=preferredMods.indexOf(BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace());
+            if(priority>=0 && priority<best) { chosen=stack; best=priority; }
+        }
+        return chosen.copy();
+    }
     /** Material and shape descriptors construct tag keys; they never assign item membership. */
     public static String material(String shapeSymbol,String materialName) {
         var configured=HbmMaterials.byName(materialName);

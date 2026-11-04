@@ -41,11 +41,23 @@ public final class AnvilRecipeConfig{
     private static boolean flag(JsonObject object,String key,boolean fallback){return object.has(key)?object.get(key).getAsBoolean():fallback;}
     private static void put(Map<ResourceLocation,RecipeHolder<?>> values,String path,AnvilConstructionRecipe recipe){ResourceLocation id=ResourceLocation.fromNamespaceAndPath("hbm","anvil/"+path);values.put(id,new RecipeHolder<>(id,recipe));}
     private static AnvilIngredient tagInput(String tag,int count){return new AnvilIngredient(HbmItemTags.ingredient(tag),count);}
-    private static void generateMaterials(Map<ResourceLocation,RecipeHolder<?>> existing,Map<ResourceLocation,RecipeHolder<?>> generated,boolean unlock){Set<String> names=Set.copyOf(HbmItemTags.allTags());int index=0;for(NtmMaterial mat:HbmMaterials.ordered()){
+    private static void generateMaterials(Map<ResourceLocation,RecipeHolder<?>> existing,Map<ResourceLocation,RecipeHolder<?>> generated,boolean unlock){
         MaterialShape wire=HbmMaterials.shape("WIRE"),shell=HbmMaterials.shape("SHELL"),pipe=HbmMaterials.shape("PIPE"),ingot=HbmMaterials.shape("INGOT"),plate=HbmMaterials.shape("PLATE");
-        if(mat.autogen().contains(wire)&&names.contains(HbmItemTags.material(ingot.symbol(),mat.names().getFirst())))material(existing,generated,mat,"wire",tagInput(HbmItemTags.material(ingot.symbol(),mat.names().getFirst()),1),mat.make(AutogenContent.item("wire_fine"),8),unlock?1:4,157000000+index);
-        if(mat.autogen().contains(shell))material(existing,generated,mat,"shell",tagInput(HbmItemTags.material(plate.symbol(),mat.names().getFirst()),4),mat.make(AutogenContent.item("shell")),1,194000000+index);
-        if(mat.autogen().contains(pipe))material(existing,generated,mat,"pipe",tagInput(HbmItemTags.material(names.contains(HbmItemTags.material(plate.symbol(),mat.names().getFirst()))?plate.symbol():ingot.symbol(),mat.names().getFirst()),3),mat.make(AutogenContent.item("pipe")),1,201000000+index);index++;}}
+        int index=0;
+        for(NtmMaterial mat:HbmMaterials.ordered()){
+            String ingotTag=HbmItemTags.material(ingot.symbol(),mat.names().getFirst());
+            String plateTag=HbmItemTags.material(plate.symbol(),mat.names().getFirst());
+            boolean hasIngots=HbmItemTags.hasItems(ingotTag),hasPlates=HbmItemTags.hasItems(plateTag);
+            if(hasIngots&&hasPlates){
+                ItemStack output=HbmItemTags.preferredItem(plateTag,com.hbm.machine.shredder.ShredderConfig.preferredOutputMods());
+                material(existing,generated,mat,"plate",tagInput(ingotTag,1),output,unlock?1:3,140000000+index);
+            }
+            if(mat.autogen().contains(wire)&&hasIngots)material(existing,generated,mat,"wire",tagInput(ingotTag,1),mat.make(AutogenContent.item("wire_fine"),8),unlock?1:4,157000000+index);
+            if(mat.autogen().contains(shell)&&hasPlates)material(existing,generated,mat,"shell",tagInput(plateTag,4),mat.make(AutogenContent.item("shell")),1,194000000+index);
+            if(mat.autogen().contains(pipe)&&(hasPlates||hasIngots))material(existing,generated,mat,"pipe",tagInput(hasPlates?plateTag:ingotTag,3),mat.make(AutogenContent.item("pipe")),1,201000000+index);
+            index++;
+        }
+    }
     private static void material(Map<ResourceLocation,RecipeHolder<?>> existing,Map<ResourceLocation,RecipeHolder<?>> generated,NtmMaterial mat,String shape,AnvilIngredient input,ItemStack output,int tier,int order){String path="construction/material_"+shape+"/"+mat.id();ResourceLocation id=ResourceLocation.fromNamespaceAndPath("hbm","anvil/"+path);if(existing.containsKey(id))return;put(generated,path,new AnvilConstructionRecipe(List.of(input),List.of(new AnvilConstructionRecipe.Output(output,1)),tier,-1,"SMITHING",order));}
     private static AnvilIngredient nativeInput(JsonArray spec,net.minecraft.core.HolderLookup.Provider lookup)throws Exception{String kind=spec.get(0).getAsString(),name=spec.get(1).isJsonPrimitive()?spec.get(1).getAsString():"";int count=spec.size()>2?spec.get(2).getAsInt():1;if(kind.equals("tag"))return tagInput(name,count);if(kind.equals("fluid_container")||kind.equals("ingredient")){var input=GenericRecipeConfigCodec.readIngredient(spec,ALIASES,lookup);return new AnvilIngredient(input.ingredient(),input.count());}ItemStack stack=legacyStack(name,kind.equals("nbt")?0:spec.size()>3?spec.get(3).getAsInt():0);if(stack.isEmpty())throw new IllegalArgumentException("Unregistered input "+name);if(kind.equals("nbt"))return new AnvilIngredient(new com.hbm.machine.centrifuge.CentrifugeNbtIngredient(stack,spec.size()>4?TagParser.parseTag(spec.get(4).getAsString()):new CompoundTag()).toVanilla(),count);if(!kind.equals("item"))throw new IllegalArgumentException("Unknown input kind "+kind);return new AnvilIngredient(new com.hbm.machine.alloy.AlloyStackIngredient(stack).toVanilla(),count);}
     private static ItemStack legacyStack(String old,int metadata){ItemStack stack=MaterialDistributionConfig.legacyStack(ALIASES.getOrDefault(old,old),metadata);if(!stack.isEmpty()&&com.hbm.item.fluid.FluidItemContent.subtypedItems().contains(stack.getItem()))com.hbm.item.fluid.FluidItemContent.setType(stack,com.hbm.fluid.HbmFluids.fromID(metadata));if(!stack.isEmpty()&&metadata==0&&!stack.getItem().components().has(HbmHazards.LEGACY_METADATA.get()))stack.remove(HbmHazards.LEGACY_METADATA.get());return stack;}

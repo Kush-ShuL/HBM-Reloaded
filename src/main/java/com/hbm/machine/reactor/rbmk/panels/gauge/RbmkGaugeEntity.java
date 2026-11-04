@@ -1,4 +1,5 @@
 package com.hbm.machine.reactor.rbmk.panels.gauge;
+import api.hbm.redstoneoverradio.IRORInteractive;
 import com.hbm.api.computer.*;
 import com.hbm.machine.reactor.rbmk.panels.RbmkRadioPanelEntity;
 import com.hbm.world.structure.templates.radio.RTTYSystem;
@@ -18,7 +19,7 @@ public final class RbmkGaugeEntity extends RbmkRadioPanelEntity implements Compu
     public final class GaugeUnit{
         public boolean polling,active;public int color;public String label="",rtty="";public long min=0,max=100,value;public double renderValue,lastRenderValue;
         GaugeUnit(int index){color=new int[]{0x800000,0x804000,0x808000,0x000080}[index];label="Gauge "+(index+1);}
-        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);int signal=0;if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){try{signal=Integer.parseInt(channel.signal.toString());}catch(Exception ignored){}value=signal;}else if(polling)value=0;}
+        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);int signal=0;if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){try{signal=IRORInteractive.parseInt(channel.signal.toString());}catch(Exception ignored){}value=signal;}else if(polling)value=0;}
         void write(ByteBuf buffer){buffer.writeBoolean(active).writeBoolean(polling).writeInt(color);string(buffer,label);string(buffer,rtty);buffer.writeLong(min).writeLong(max).writeLong(value);}
         void read(ByteBuf buffer){active=buffer.readBoolean();polling=buffer.readBoolean();color=buffer.readInt();label=string(buffer);rtty=string(buffer);min=buffer.readLong();max=buffer.readLong();value=buffer.readLong();}
         void save(CompoundTag tag,int index){tag.putBoolean("active"+index,active);tag.putBoolean("polling"+index,polling);tag.putInt("color"+index,color);tag.putString("label"+index,label);tag.putString("rtty"+index,rtty);tag.putLong("min"+index,min);tag.putLong("max"+index,max);tag.putLong("value"+index,value);}

@@ -1,4 +1,5 @@
 package com.hbm.machine.reactor.rbmk.panels.numitron;
+import api.hbm.redstoneoverradio.IRORInteractive;
 import com.hbm.api.computer.*;
 import com.hbm.machine.reactor.rbmk.panels.RbmkRadioPanelEntity;
 import com.hbm.world.structure.templates.radio.RTTYSystem;
@@ -16,7 +17,7 @@ public final class RbmkNumitronEntity extends RbmkRadioPanelEntity implements Co
     public final class DisplayUnit{
         public boolean polling,active,leading_zeroes=true,shorten_number=true;public String label="",rtty="";public long value,active_digits=0b01111111;
         DisplayUnit(int index){label="Display "+(index+1);}
-        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);long signal=0;if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){try{signal=Long.parseLong(channel.signal.toString());}catch(Exception ignored){}value=signal;}else if(polling)value=0;}
+        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);long signal=0;if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){try{signal=IRORInteractive.parseLong(channel.signal.toString());}catch(Exception ignored){}value=signal;}else if(polling)value=0;}
         void write(ByteBuf buffer){buffer.writeBoolean(shorten_number).writeLong(active_digits).writeBoolean(leading_zeroes).writeBoolean(active).writeBoolean(polling);string(buffer,label);string(buffer,rtty);buffer.writeLong(value);}
         void read(ByteBuf buffer){shorten_number=buffer.readBoolean();active_digits=buffer.readLong();leading_zeroes=buffer.readBoolean();active=buffer.readBoolean();polling=buffer.readBoolean();label=string(buffer);rtty=string(buffer);value=buffer.readLong();}
         void save(CompoundTag tag,int i){tag.putBoolean("shorten_number"+i,shorten_number);tag.putLong("active_digits"+i,active_digits);tag.putBoolean("leading_zeroes"+i,leading_zeroes);tag.putBoolean("active"+i,active);tag.putBoolean("polling"+i,polling);tag.putString("label"+i,label);tag.putString("rtty"+i,rtty);tag.putLong("value"+i,value);}

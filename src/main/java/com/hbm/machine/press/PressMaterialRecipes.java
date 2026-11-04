@@ -5,11 +5,11 @@ import com.hbm.item.autogen.AutogenContent;
 import com.hbm.material.HbmMaterials;
 import com.hbm.material.MaterialShape;
 import com.hbm.material.NtmMaterial;
+import com.hbm.machine.shredder.ShredderConfig;
 
 import com.hbm.registry.HbmItemTags;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.WeakHashMap;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeHolder;
@@ -19,15 +19,15 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.OnDatapackSyncEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 
-/** PressRecipes.registerDefaults's original Mats.orderedList WIRE loop, installed into the native recipe manager. */
-public final class PressWireRecipes {
+/** Material plate and wire recipes are rebuilt from the current datapack's real item tags. */
+public final class PressMaterialRecipes {
     private static final Map<RecipeManager,Map<ResourceLocation,RecipeHolder<PressRecipe>>> INSTALLED=new WeakHashMap<>();
     private static boolean registered;
-    private PressWireRecipes() {}
+    private PressMaterialRecipes() {}
     public static void register() {
         if(registered) return; registered=true;
-        NeoForge.EVENT_BUS.addListener(PressWireRecipes::serverStarting);
-        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST,PressWireRecipes::datapackSync);
+        NeoForge.EVENT_BUS.addListener(PressMaterialRecipes::serverStarting);
+        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST,PressMaterialRecipes::datapackSync);
     }
     private static void serverStarting(ServerAboutToStartEvent event) { install(event.getServer().getRecipeManager()); }
     private static void datapackSync(OnDatapackSyncEvent event) {
@@ -37,26 +37,27 @@ public final class PressWireRecipes {
         if(event.getPlayer()==null || !INSTALLED.containsKey(manager)) install(manager);
     }
     private static void install(RecipeManager manager) {
-        if (PressRecipeConfig.hasReplacement()) return; // Source replacement skips registerDefaults,including WIRE.
+        if (PressRecipeConfig.hasReplacement()) return;
         var previous=INSTALLED.getOrDefault(manager,Map.of());
         Map<ResourceLocation,RecipeHolder<?>> merged=new LinkedHashMap<>();
         for(RecipeHolder<?> holder:manager.getOrderedRecipes()) if(previous.get(holder.id())!=holder) merged.put(holder.id(),holder);
         Map<ResourceLocation,RecipeHolder<PressRecipe>> generated=new LinkedHashMap<>();
-        MaterialShape wire=HbmMaterials.shape("WIRE"),ingot=HbmMaterials.shape("INGOT");
-        Set<String> registeredTags=Set.copyOf(HbmItemTags.allTags());
+        MaterialShape wire=HbmMaterials.shape("WIRE"),ingot=HbmMaterials.shape("INGOT"),plate=HbmMaterials.shape("PLATE");
         for(NtmMaterial material:HbmMaterials.ordered()) {
-            // Preserve the exact first material alias used by MaterialShapes.INGOT.make(mat),
-            // the actual native tag-existence condition, and original material order.
             String inputTag=HbmItemTags.material(ingot.symbol(),material.names().getFirst());
-            if(!material.autogen().contains(wire) || !registeredTags.contains(inputTag)) continue;
-            ResourceLocation id=ResourceLocation.fromNamespaceAndPath("hbm","press/generated_wire/"+material.id());
-            // Native datapacks may explicitly replace a generated recipe by its stable material-ID path.
-            if(merged.containsKey(id)) continue;
+            if(!HbmItemTags.hasItems(inputTag)) continue;
             var ingredient=net.minecraft.world.item.crafting.Ingredient.of(HbmItemTags.key(inputTag));
-            var recipe=new RecipeHolder<>(id,new PressRecipe(ingredient,StampType.WIRE,material.make(AutogenContent.item("wire_fine"),8)));
-            generated.put(id,recipe); merged.put(id,recipe);
+            var plateOutput=HbmItemTags.preferredItem(HbmItemTags.material(plate.symbol(),material.names().getFirst()),ShredderConfig.preferredOutputMods());
+            if(!plateOutput.isEmpty()) add(merged,generated,"plate",material,new PressRecipe(ingredient,StampType.PLATE,plateOutput));
+            if(material.autogen().contains(wire)) add(merged,generated,"wire",material,new PressRecipe(ingredient,StampType.WIRE,material.make(AutogenContent.item("wire_fine"),8)));
         }
         if(!generated.isEmpty() || !previous.isEmpty()) manager.replaceRecipes(merged.values());
         INSTALLED.put(manager,generated);
+    }
+    private static void add(Map<ResourceLocation,RecipeHolder<?>> merged,Map<ResourceLocation,RecipeHolder<PressRecipe>> generated,String shape,NtmMaterial material,PressRecipe recipe) {
+        ResourceLocation id=ResourceLocation.fromNamespaceAndPath("hbm","press/generated_"+shape+"/"+material.id());
+        if(merged.containsKey(id)) return;
+        var holder=new RecipeHolder<>(id,recipe);
+        generated.put(id,holder); merged.put(id,holder);
     }
 }

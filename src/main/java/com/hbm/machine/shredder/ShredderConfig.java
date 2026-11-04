@@ -37,7 +37,7 @@ public final class ShredderConfig {
     private static final ModConfigSpec.ConfigValue<List<? extends String>> PREFERRED_OUTPUT_MODS;
     static {
         var builder = new ModConfigSpec.Builder();
-        PREFERRED_OUTPUT_MODS = builder.comment("碎纸机同名矿粉的模组优先级，按列表从前到后选择。")
+        PREFERRED_OUTPUT_MODS = builder.comment("自动材料配方的产物模组优先级，按列表从前到后选择；适用于碎纸机矿粉与压板机、铁砧的板材。")
                 .defineListAllowEmpty("preferredOutputMod", List.of("hbm"), value -> value instanceof String);
         COMMON = builder.build();
     }

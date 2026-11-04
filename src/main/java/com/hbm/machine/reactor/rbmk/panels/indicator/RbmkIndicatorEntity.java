@@ -1,4 +1,5 @@
 package com.hbm.machine.reactor.rbmk.panels.indicator;
+import api.hbm.redstoneoverradio.IRORInteractive;
 import com.hbm.api.computer.*;
 import com.hbm.machine.reactor.rbmk.panels.RbmkRadioPanelEntity;
 import com.hbm.world.structure.templates.radio.RTTYSystem;
@@ -17,7 +18,7 @@ public final class RbmkIndicatorEntity extends RbmkRadioPanelEntity implements C
     public final class IndicatorUnit{
         public boolean polling,active,light;public int color;public String label="",rtty="";public long min,max=100;
         IndicatorUnit(int index){color=index%2==0?0xff0000:0xffff00;label="Indicator "+(index+1);}
-        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){int signal=0;try{signal=Integer.parseInt(channel.signal.toString());}catch(Exception ignored){}decideLight(signal);}else if(polling)decideLight(0);}
+        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){int signal=0;try{signal=IRORInteractive.parseInt(channel.signal.toString());}catch(Exception ignored){}decideLight(signal);}else if(polling)decideLight(0);}
         void decideLight(long value){light=min<=max?value>=min&&value<=max:value<max||value>min;}
         void write(ByteBuf buffer){buffer.writeBoolean(active).writeBoolean(polling).writeBoolean(light).writeInt(color);string(buffer,label);string(buffer,rtty);buffer.writeLong(min).writeLong(max);}
         void read(ByteBuf buffer){active=buffer.readBoolean();polling=buffer.readBoolean();light=buffer.readBoolean();color=buffer.readInt();label=string(buffer);rtty=string(buffer);min=buffer.readLong();max=buffer.readLong();}

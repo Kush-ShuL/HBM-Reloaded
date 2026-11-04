@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": { "model": "hbm:block/radio_torch_relay" },
+    "facing=up": { "model": "hbm:block/radio_torch_relay" },
+    "facing=north": { "model": "hbm:block/radio_torch_relay" },
+    "facing=south": { "model": "hbm:block/radio_torch_relay" },
+    "facing=west": { "model": "hbm:block/radio_torch_relay" },
+    "facing=east": { "model": "hbm:block/radio_torch_relay" }
+  }
+}

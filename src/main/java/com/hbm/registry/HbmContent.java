@@ -410,6 +410,7 @@ public final class HbmContent {
                     stacks.addAll(com.hbm.network.rtty.ror.RadioRorContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.network.rtty.counter.RadioCounterContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.network.rtty.logic.RadioLogicContent.creativeStacks(tab));
+                    stacks.addAll(com.hbm.network.rtty.relay.RadioRelayContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.machine.arcwelder.ArcWelderContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.network.rtty.RadioTorchContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.item.genericpart.GenericPartContent.creativeStacks(tab));

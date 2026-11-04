@@ -1,5 +1,6 @@
 package com.hbm.weapon.sedna.gun;
 
+import com.hbm.damage.IProtectiveItem;
 import com.hbm.weapon.sedna.gun.mods.XWeaponModManager;
 import com.hbm.weapon.sedna.gun.mags.IMagazine;
 import java.text.*;
@@ -10,13 +11,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
 import net.minecraft.world.Container;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
 /** Source ItemGunBaseNT state, key edges, equip/reset, wear and configurable callback graph. */
-public class ItemGunBaseNT extends Item {
+public class ItemGunBaseNT extends Item implements IProtectiveItem {
     public long[] lastShot; public double shotRand;
     public static final List<Item> secrets=new ArrayList<>();
     public final List<XWeaponModManager.ComparableStack> recognizedMods=new ArrayList<>();
@@ -36,6 +38,15 @@ public class ItemGunBaseNT extends Item {
     public ItemGunBaseNT(WeaponQuality quality,GunConfig... configs){super(new Properties().stacksTo(1));this.quality=quality;builtInDualWield=configs.length>1;configs_DNA=configs;lastShot=new long[configs.length];for(int i=0;i<configs.length;i++)configs[i].index=i;if(quality==WeaponQuality.LEGENDARY||quality==WeaponQuality.SECRET)secrets.add(this);}
     public GunConfig getConfig(ItemStack stack,int index){var config=configs_DNA[index];return stack==null?config:XWeaponModManager.eval(config,stack,O_GUNCONFIG+index,this,index);}
     public int getConfigCount(){return configs_DNA.length;}
+    @Override public float[] getCurrentDTDR(ItemStack stack,LivingEntity entity,DamageSource damage,float amount,float pierceDT,float pierce){
+        float dt=0,dr=0;
+        for(int i=0;i<getConfigCount();i++){
+            IProtectiveItem[] handlers=getConfig(stack,i).getResistanceHandlers(stack);
+            if(handlers==null)continue;
+            for(IProtectiveItem handler:handlers){float[] values=handler.getCurrentDTDR(stack,entity,damage,amount,pierceDT,pierce);dt+=values[0];dr+=values[1];}
+        }
+        return new float[]{dt,dr};
+    }
     /** X5846's six multi-config factories are all source isAkimbo renderers; receivers/modes never imply this flag. */
     public boolean isBuiltInDualWield(){return builtInDualWield;}
     public boolean supportsPistolDualWield(){return pistolDualWield&&!builtInDualWield;}

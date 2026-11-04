@@ -1,4 +1,5 @@
 package com.hbm.machine.reactor.rbmk.panels.graph;
+import api.hbm.redstoneoverradio.IRORInteractive;
 import com.hbm.api.computer.*;
 import com.hbm.machine.reactor.rbmk.panels.RbmkRadioPanelEntity;
 import com.hbm.world.structure.templates.radio.RTTYSystem;
@@ -17,7 +18,7 @@ public final class RbmkGraphEntity extends RbmkRadioPanelEntity implements Compu
     public final class GraphUnit{
         public boolean active,polling,minBound,maxBound;public String label="",rtty="";public final long[] values=new long[30];public long min,max;
         GraphUnit(int index){label="Graph "+(index+1);}
-        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){long signal=0;try{signal=Long.parseLong(channel.signal.toString());}catch(Exception ignored){}pushValue(signal);}else if(polling)pushValue(0);}
+        void update(){if(!active||rtty==null||rtty.isEmpty())return;var channel=RTTYSystem.listen(level,rtty);if(channel!=null&&channel.timeStamp<level.getGameTime()-1)channel=null;if(channel!=null&&channel.signal!=null){long signal=0;try{signal=IRORInteractive.parseLong(channel.signal.toString());}catch(Exception ignored){}pushValue(signal);}else if(polling)pushValue(0);}
         public void pushValue(long value){System.arraycopy(values,1,values,0,values.length-1);values[values.length-1]=value;}
         void write(ByteBuf buffer){buffer.writeBoolean(active).writeBoolean(polling);string(buffer,label);string(buffer,rtty);buffer.writeBoolean(minBound);if(minBound)buffer.writeLong(min);buffer.writeBoolean(maxBound);if(maxBound)buffer.writeLong(max);if(active)for(long value:values)buffer.writeLong(value);}
         void read(ByteBuf buffer){active=buffer.readBoolean();polling=buffer.readBoolean();label=string(buffer);rtty=string(buffer);minBound=buffer.readBoolean();if(minBound)min=buffer.readLong();maxBound=buffer.readBoolean();if(maxBound)max=buffer.readLong();if(active)for(int i=0;i<values.length;i++)values[i]=buffer.readLong();}

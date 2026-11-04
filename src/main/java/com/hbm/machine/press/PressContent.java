@@ -37,7 +37,7 @@ public final class PressContent {
     public static final DeferredHolder<RecipeSerializer<?>, PressRecipe.Serializer> SERIALIZER = SERIALIZERS.register("press", PressRecipe.Serializer::new);
     static { Multiblocks.addInventoryProxyBlock(BLOCK); }
     private PressContent() {}
-    public static void register(IEventBus bus) { BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus); TYPES.register(bus); SERIALIZERS.register(bus); Multiblocks.register(bus); bus.addListener(PressContent::capabilities); PressWireRecipes.register(); }
+    public static void register(IEventBus bus) { BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); MENUS.register(bus); TYPES.register(bus); SERIALIZERS.register(bus); Multiblocks.register(bus); bus.addListener(PressContent::capabilities); PressMaterialRecipes.register(); }
     private static void capabilities(RegisterCapabilitiesEvent event) { event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ENTITY.get(), (machine, side) -> side == null ? new InvWrapper(machine) : new SidedInvWrapper(machine, side)); }
     public static List<ItemStack> creativeItems() { return List.of(new ItemStack(ITEM.get())); }
 }

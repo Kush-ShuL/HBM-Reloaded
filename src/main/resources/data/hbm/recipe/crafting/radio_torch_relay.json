@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [ " G", "R ", "I " ],
+  "key": {
+    "G": { "tag": "c:dusts/glowstone" },
+    "R": { "item": "minecraft:redstone_torch" },
+    "I": { "item": "hbm:circuit_basic" }
+  },
+  "result": { "id": "hbm:radio_torch_relay", "count": 4 }
+}

@@ -100,6 +100,8 @@ public final class DamageResistanceHandler {
     public static float[] getDTDR(LivingEntity entity,DamageSource source,float amount,float pierceDT,float pierce){
         float dt=0,dr=0;
         if(entity instanceof IResistanceProvider provider){float[] values=provider.getCurrentDTDR(source,amount,pierceDT,pierce);dt+=values[0];dr+=values[1];}
+        ItemStack held=entity.getMainHandItem();
+        if(held.getItem() instanceof IProtectiveItem protective){float[] values=protective.getCurrentDTDR(held,entity,source,amount,pierceDT,pierce);dt+=values[0];dr+=values[1];}
         ArmorSet worn=new ArmorSet(worn(entity.getItemBySlot(EquipmentSlot.HEAD)),worn(entity.getItemBySlot(EquipmentSlot.CHEST)),worn(entity.getItemBySlot(EquipmentSlot.LEGS)),worn(entity.getItemBySlot(EquipmentSlot.FEET)));
         List<ResistanceStats> all=new ArrayList<>();all.add(setStats.get(worn));
         for(EquipmentSlot slot:List.of(EquipmentSlot.FEET,EquipmentSlot.LEGS,EquipmentSlot.CHEST,EquipmentSlot.HEAD))all.add(itemStats.get(worn(entity.getItemBySlot(slot))));

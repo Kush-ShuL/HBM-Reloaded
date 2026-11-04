@@ -136,14 +136,7 @@ public final class ShredderRecipes {
         put(recipes, ids, new ShredderRecipe(input.copyWithCount(1), metadata, result.copy()), ResourceLocation.fromNamespaceAndPath("hbm", "shredder/" + phase + "/" + item + "/" + metadata));
     }
     private static ItemStack preferredDust(String name) {
-        var matches = HbmItemTags.items("c:dusts/" + name).toList(); if (matches.isEmpty()) return ItemStack.EMPTY;
-        int best = Integer.MAX_VALUE; ItemStack chosen = matches.getFirst();
-        List<? extends String> preferred = ShredderConfig.preferredOutputMods();
-        for (ItemStack stack : matches) {
-            int index = preferred.indexOf(BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace());
-            if (index >= 0 && index < best) { chosen = stack; best = index; }
-        }
-        return chosen.copy();
+        return HbmItemTags.preferredItem("c:dusts/" + name,ShredderConfig.preferredOutputMods());
     }
     private static boolean isScrap(ItemStack stack) { return BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().equals("hbm:scrap"); }
     private static ItemStack registered(String id, int count) {

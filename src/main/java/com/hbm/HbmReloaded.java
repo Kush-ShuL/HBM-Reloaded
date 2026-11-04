@@ -533,6 +533,7 @@ public final class HbmReloaded {
         com.hbm.network.rtty.ror.RadioRorContent.register(modBus);
         com.hbm.network.rtty.counter.RadioCounterContent.register(modBus);
         com.hbm.network.rtty.logic.RadioLogicContent.register(modBus);
+        com.hbm.network.rtty.relay.RadioRelayContent.register(modBus);
         com.hbm.machine.arcwelder.ArcWelderContent.register(modBus);
         com.hbm.network.rtty.RadioTorchContent.register(modBus);
         com.hbm.item.genericpart.GenericPartContent.register(modBus);
