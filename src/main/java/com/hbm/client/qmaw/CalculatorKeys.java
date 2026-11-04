@@ -6,7 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.InputEvent;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.client.settings.KeyConflictContext;
 import org.lwjgl.glfw.GLFW;
@@ -30,9 +30,12 @@ public final class CalculatorKeys {
     @EventBusSubscriber(modid = "hbm", value = Dist.CLIENT)
     public static final class Events {
         @SubscribeEvent
-        public static void key(InputEvent.Key event) {
-            if (event.getAction() == GLFW.GLFW_PRESS && Minecraft.getInstance().screen == null
-                    && KEY.matches(event.getKey(), event.getScanCode())) open();
+        public static void tick(ClientTickEvent.Post event) {
+            var client = Minecraft.getInstance();
+            // Open after GLFW has dispatched the opening key's character event.
+            while (KEY.consumeClick()) {
+                if (client.screen == null) open();
+            }
         }
     }
 }

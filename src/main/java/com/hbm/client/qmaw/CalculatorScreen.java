@@ -1,5 +1,6 @@
 package com.hbm.client.qmaw;
 
+import com.hbm.client.gui.LegacyScreen;
 import com.hbm.network.rtty.autocal.script.Calculator;
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -8,13 +9,12 @@ import java.util.List;
 import java.util.Locale;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import org.lwjgl.glfw.GLFW;
 
 /** X5863 calculator/manual search, rendered with the active native Font and EditBox. */
-public final class CalculatorScreen extends Screen {
+public final class CalculatorScreen extends LegacyScreen {
     private static final int X_SIZE = 220, Y_SIZE = 50, BORDER_WIDTH = 2, MAX_HISTORY = 6, QMAW_SPACING = 7;
     private static final int BORDER_COLOR = 0xFF2d2d2d, FILL_COLOR = 0xFF3d3d3d, SELECT_COLOR = 0xFF111111;
     private record Calculation(String expression, double result) { }
@@ -25,7 +25,8 @@ public final class CalculatorScreen extends Screen {
     private final List<String> qmawResults = new ArrayList<>();
     private EditBox inputField;
     private int selectedHist = -1;
-    private String latestResult = "?", lastInput;
+    private Component latestResult = Component.literal("?");
+    private String lastInput;
 
     public CalculatorScreen() { super(Component.translatable("hbm.key.calculator")); }
 
@@ -50,6 +51,12 @@ public final class CalculatorScreen extends Screen {
     private boolean isInputEmpty() { return inputField.getValue().isEmpty(); }
     private String sanitizedInput() { return inputField.getValue().replaceAll("[^\\d+\\-*/%^!.()\\sA-Za-z]+", ""); }
 
+    private static double evaluate(String expression) {
+        double result = Calculator.evaluateExpression(expression);
+        if (!Double.isFinite(result)) throw new ArithmeticException();
+        return result;
+    }
+
     private void inputChanged(String input) {
         selectedHist = -1;
         if (qmawMode) {
@@ -71,11 +78,12 @@ public final class CalculatorScreen extends Screen {
         }
         String expression = sanitizedInput();
         if (expression.isEmpty()) {
-            latestResult = "?";
+            latestResult = Component.literal("?");
             return;
         }
-        try { latestResult = Double.toString(Calculator.evaluateExpression(expression)); }
-        catch (Exception error) { latestResult = error.toString(); }
+        try { latestResult = Component.literal(Double.toString(evaluate(expression))); }
+        catch (ArithmeticException undefined) { latestResult = Component.translatable("gui.calc.undefinedResult"); }
+        catch (RuntimeException invalid) { latestResult = Component.translatable("gui.calc.invalidExpression"); }
     }
 
     private List<String> manualEntries() { return isInputEmpty() ? qmawHistory : qmawResults; }
@@ -98,10 +106,10 @@ public final class CalculatorScreen extends Screen {
         }
         String expression = sanitizedInput();
         try {
-            double result = Calculator.evaluateExpression(expression);
+            double result = evaluate(expression);
+            String plain = new BigDecimal(result, MathContext.DECIMAL64).toPlainString();
             calcHistory.addFirst(new Calculation(expression, result));
             if (calcHistory.size() > MAX_HISTORY) calcHistory.removeLast();
-            String plain = new BigDecimal(result, MathContext.DECIMAL64).toPlainString();
             minecraft.keyboardHandler.setClipboard(plain);
             inputField.setValue(plain);
             inputField.moveCursorToEnd(false);
@@ -179,7 +187,7 @@ public final class CalculatorScreen extends Screen {
     }
 
     private void drawCalculator(GuiGraphics graphics, int x, int y) {
-        graphics.drawString(font, "=" + latestResult, x + 5, y + 32, -1, false);
+        graphics.drawString(font, Component.literal("=").append(latestResult), x + 5, y + 32, -1, false);
         for (int i = 0; i < calcHistory.size(); i++) {
             int rowY = y + 50 + (font.lineHeight + 1) * i;
             if (i == selectedHist) graphics.fill(x + 4, rowY - 1, x + X_SIZE - 5, rowY + font.lineHeight, SELECT_COLOR);
