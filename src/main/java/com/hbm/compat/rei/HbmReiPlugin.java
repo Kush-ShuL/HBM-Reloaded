@@ -13,17 +13,21 @@ import me.shedaniel.rei.api.client.registry.transfer.TransferHandlerRegistry;
 import me.shedaniel.rei.api.client.registry.transfer.simple.SimpleTransferHandler;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.entry.comparison.ItemComparatorRegistry;
+import me.shedaniel.rei.api.common.entry.comparison.EntryComparator;
 import me.shedaniel.rei.api.common.display.Display;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
+import net.minecraft.world.item.ItemStack;
 
 /** Uses the official REI vanilla-smelting category without importing its implementation module. */
 @REIPluginClient
 public final class HbmReiPlugin implements REIClientPlugin {
     private static final CategoryIdentifier<Display> SMELTING = CategoryIdentifier.of("minecraft", "plugins/smelting");
     @Override public void registerItemComparators(ItemComparatorRegistry registration) {
-        for(var pack:BatteryContent.packItems())registration.register((context,stack)->pack.getCharge(stack),pack);
-        registration.registerComponents(BatteryContent.CUBE_POWER.get(), BatteryContent.POTATO.get(), BatteryContent.MEMORY.get());
+        for(var pack:BatteryContent.packItems())registration.register((context,stack)->context.isExact()?pack.getCharge(stack):0L,pack);
+        EntryComparator<ItemStack> exact=EntryComparator.itemComponents();
+        for(var battery:java.util.List.of(BatteryContent.CUBE_POWER.get(), BatteryContent.POTATO.get(), BatteryContent.MEMORY.get()))
+            registration.register((context,stack)->context.isExact()?exact.hash(context,stack):0L,battery);
         com.hbm.registry.HbmOres.allItems().stream().map(holder -> holder.get())
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
                 .map(item -> (com.hbm.block.ore.LegacyOreItem) item)

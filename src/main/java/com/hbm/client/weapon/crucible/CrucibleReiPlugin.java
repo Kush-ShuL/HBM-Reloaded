@@ -7,5 +7,5 @@ import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
 @REIPluginClient public final class CrucibleReiPlugin implements REIClientPlugin {
  @Override public void registerEntries(EntryRegistry event){for(var stack:CrucibleContent.viewerStacks())event.addEntry(EntryStacks.of(stack));}
- @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->stack.getDamageValue(),CrucibleContent.CRUCIBLE.get());}
+ @Override public void registerItemComparators(ItemComparatorRegistry event){event.register((context,stack)->context.isExact()?stack.getDamageValue():0,CrucibleContent.CRUCIBLE.get());}
 }

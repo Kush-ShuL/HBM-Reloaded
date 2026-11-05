@@ -1,0 +1,57 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.teleporter",
+  "duration": 100,
+  "power": 100,
+  "order": 129,
+  "output_items": [
+    {
+      "pool": [
+        {
+          "stack": {
+            "id": "hbm:machine_teleporter",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "input_items": [
+    {
+      "ingredient": {
+        "tag": "c:plates/titanium"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "tag": "c:plates/dura_steel"
+      },
+      "count": 12
+    },
+    {
+      "ingredient": {
+        "tag": "hbm:wires/fine/gold"
+      },
+      "count": 32
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:entanglement_kit"
+        }
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:battery_pack_battery_lithium"
+        }
+      },
+      "count": 1
+    }
+  ]
+}

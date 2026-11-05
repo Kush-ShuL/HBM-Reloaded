@@ -32,18 +32,21 @@ public final class HbmJeiPlugin implements IModPlugin {
                 .filter(item -> item instanceof com.hbm.block.ore.LegacyOreItem ore && ore.spec().multi())
                 .map(item -> (com.hbm.block.ore.LegacyOreItem) item).forEach(item -> subtype(registration, item, item::ordinal));
         for (var battery : List.of(BatteryContent.CUBE_POWER.get(), BatteryContent.POTATO.get(), BatteryContent.MEMORY.get())) {
-            subtype(registration, battery, battery::getCharge);
+            subtype(registration, battery, battery::getCharge, true);
         }
-        for(var pack:BatteryContent.packItems())subtype(registration,pack,stack->pack.getCharge(stack));
+        for(var pack:BatteryContent.packItems())subtype(registration,pack,stack->pack.getCharge(stack),true);
         com.hbm.item.fluid.FluidItemContent.subtypedItems().forEach(item -> subtype(registration, item, stack -> com.hbm.item.fluid.FluidItemContent.type(stack).getID()));
         com.hbm.block.pipe.PipeContent.subtypeItems().forEach(item -> subtype(registration, item, HbmJeiPlugin::metadata));
         subtype(registration, com.hbm.block.pipe.PipeContent.TYPED_ITEM.get(), stack -> com.hbm.item.fluid.FluidItemContent.type(stack).getID());
     }
     private static int metadata(ItemStack stack) { return stack.getOrDefault(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(), 0); }
     private static void subtype(ISubtypeRegistration registration, net.minecraft.world.item.Item item, java.util.function.Function<ItemStack, Object> data) {
+        subtype(registration, item, data, false);
+    }
+    private static void subtype(ISubtypeRegistration registration, net.minecraft.world.item.Item item, java.util.function.Function<ItemStack, Object> data, boolean ignoreRecipeState) {
         registration.registerSubtypeInterpreter(item, new ISubtypeInterpreter<ItemStack>() {
-            @Override public Object getSubtypeData(ItemStack stack, UidContext context) { return data.apply(stack); }
-            @Override public String getLegacyStringSubtypeInfo(ItemStack stack, UidContext context) { return data.apply(stack).toString(); }
+            @Override public Object getSubtypeData(ItemStack stack, UidContext context) { return ignoreRecipeState && context == UidContext.Recipe ? 0 : data.apply(stack); }
+            @Override public String getLegacyStringSubtypeInfo(ItemStack stack, UidContext context) { return getSubtypeData(stack, context).toString(); }
         });
     }
     @Override public void registerExtraIngredients(mezz.jei.api.registration.IExtraIngredientRegistration registration) {

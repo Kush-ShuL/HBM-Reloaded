@@ -1,0 +1,42 @@
+{
+  "type": "hbm:anvil_construction",
+  "inputs": [
+    {
+      "ingredient": {
+        "type": "hbm:alloy_legacy_stack",
+        "stack": {
+          "id": "hbm:yellow_barrel",
+          "count": 1
+        }
+      },
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "stack": {
+        "id": "hbm:tank_steel",
+        "count": 1
+      },
+      "chance": 1
+    },
+    {
+      "stack": {
+        "id": "hbm:plate_lead",
+        "count": 2
+      },
+      "chance": 1
+    },
+    {
+      "stack": {
+        "id": "hbm:nuclear_waste",
+        "count": 10
+      },
+      "chance": 1
+    }
+  ],
+  "tier_lower": 3,
+  "tier_upper": -1,
+  "overlay": "RECYCLING",
+  "order": 966000000
+}
