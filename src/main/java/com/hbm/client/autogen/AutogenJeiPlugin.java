@@ -20,7 +20,7 @@ public final class AutogenJeiPlugin implements IModPlugin {
     @Override public void registerExtraIngredients(IExtraIngredientRegistration registration) { registration.addExtraIngredients(VanillaTypes.ITEM_STACK,AutogenContent.creativeStacks()); }
     @Override public void onRuntimeAvailable(mezz.jei.api.runtime.IJeiRuntime runtime) { runtime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK,AutogenContent.viewerHiddenStacks()); }
     @Override public void registerItemSubtypes(ISubtypeRegistration registration) { for(var holder:AutogenContent.all()) if(holder.get() instanceof ScrapsItem) registration.registerSubtypeInterpreter(holder.get(),new ISubtypeInterpreter<ItemStack>() {
-        @Override public Object getSubtypeData(ItemStack stack,UidContext context) { return stack.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag().toString(); }
+        @Override public Object getSubtypeData(ItemStack stack,UidContext context) { return context==UidContext.Recipe?ScrapsItem.recipeIdentity(stack):stack.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag().toString(); }
         @Override public String getLegacyStringSubtypeInfo(ItemStack stack,UidContext context) { return getSubtypeData(stack,context).toString(); }
     }); }
 }

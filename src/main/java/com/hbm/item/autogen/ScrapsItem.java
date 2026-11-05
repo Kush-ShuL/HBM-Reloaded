@@ -19,6 +19,10 @@ public final class ScrapsItem extends AutogenItem {
     public static BooleanSupplier leftShiftHeld=()->false;
     public ScrapsItem(AutogenContent.Spec spec,NtmMaterial material) { super(spec,null,material); }
     public static boolean liquid(ItemStack stack) { return stack.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag().getBoolean("liquid"); }
+    /** Recipe queries compare material and phase; the stored quantity remains specific to each stack. */
+    public static long recipeIdentity(ItemStack stack) {
+        return ((long)((ScrapsItem)stack.getItem()).material().id()<<1)|(liquid(stack)?1L:0L);
+    }
     public static MaterialStack getMaterials(ItemStack stack) {
         if(!(stack.getItem() instanceof ScrapsItem item)) return null;
         NtmMaterial material=item.material();

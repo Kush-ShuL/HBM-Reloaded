@@ -1,0 +1,30 @@
+{
+  "type": "hbm:anvil_smithing",
+  "tier": 3,
+  "result": {
+    "id": "hbm:cobalt_decorated_sword",
+    "count": 1
+  },
+  "left": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:cobalt_sword",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "right": {
+    "ingredient": {
+      "type": "hbm:alloy_legacy_stack",
+      "stack": {
+        "id": "hbm:ingot_meteorite",
+        "count": 1
+      }
+    },
+    "count": 1
+  },
+  "kind": "hot",
+  "order": 87000000
+}
