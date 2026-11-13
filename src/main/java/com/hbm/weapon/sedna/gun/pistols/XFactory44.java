@@ -27,6 +27,7 @@ public class XFactory44 {
 
 	public static Supplier<Float> GUN_HENRY_DAMAGE = PistolSettings.value("GUN_HENRY_DAMAGE", 10F);
 	public static Supplier<Float> GUN_LINCOLN_DAMAGE = PistolSettings.value("GUN_LINCOLN_DAMAGE", 20F);
+	public static Supplier<Float> GUN_COUNTER_DAMAGE = PistolSettings.value("GUN_COUNTER_DAMAGE", 50F);
 	public static Supplier<Float> GUN_HEAVY_REVOLVER_DAMAGE = PistolSettings.value("GUN_HEAVY_REVOLVER_DAMAGE", 15F);
 	public static Supplier<Float> GUN_LILMAC_DAMAGE = PistolSettings.value("GUN_LILMAC_DAMAGE", 30F);
 	public static Supplier<Float> GUN_PROTEGE_DAMAGE = PistolSettings.value("GUN_PROTEGE_DAMAGE", 30F);
@@ -41,6 +42,7 @@ public class XFactory44 {
 	public static BulletConfig m44_express;
 	public static BulletConfig m44_equestrian_pip;
 	public static BulletConfig m44_equestrian_mn7;
+	public static BulletConfig rebar;
 	
 	public static void initConfig() {}
 
@@ -59,6 +61,8 @@ public static BiConsumer<com.hbm.entity.projectile.EntityBulletBaseMK4,HitResult
 		m44_equestrian_pip = LegendaryGunFactory.m44_equestrian_pip;
 		m44_equestrian_mn7 = new BulletConfig("hbm:pistols/m44_equestrian_mn7").setItem(PistolAmmo.M44_EQUESTRIAN).setDamage(0F).setOnImpact(LAMBDA_TORPEDO)
 				.setCasing(casing44.clone().setColor(SpentCasing.COLOR_CASE_EQUESTRIAN).register("m44equestrianMn7"));
+		rebar=new BulletConfig("hbm:pistols/rebar").setItem(new GunAmmo(()->com.hbm.item.autogen.AutogenContent.item("bolt").stack(com.hbm.material.HbmMaterials.byId(30),1).getItem(),1,0))
+				.setupDamageClass(DamageClass.EXPLOSIVE).setThresholdNegation(35F).setArmorPiercing(.5F).setHeadshot(2.5F).setCasing(casing44.clone().register("rebar"));
 
 		PistolGuns.gun_henry = new ItemGunBaseNT(WeaponQuality.A_SIDE, new GunConfig()
 				.dura(300).draw(15).inspect(23).reloadSequential(true).crosshair(Crosshair.CIRCLE).smoke(Lego.LAMBDA_STANDARD_SMOKE)
@@ -80,6 +84,12 @@ public static BiConsumer<com.hbm.entity.projectile.EntityBulletBaseMK4,HitResult
 				.setupStandardConfiguration()
 				.anim(LAMBDA_HENRY_ANIMS).orchestra(PistolOrchestras.ORCHESTRA_HENRY)
 				).setDefaultAmmo(PistolAmmo.M44_JHP, 14);
+
+		PistolGuns.gun_henry_counter=new ItemGunCounter(WeaponQuality.CORRUPTED,new GunConfig()
+				.dura(30000).draw(15).inspect(23).reloadSequential(true).crosshair(Crosshair.L_CIRCUMFLEX).smoke(Lego.LAMBDA_STANDARD_SMOKE)
+				.rec(new Receiver(0).dmg(GUN_LINCOLN_DAMAGE).spreadHipfire(0F).delay(20).reload(25,11,14,8).jam(45).sound(PistolSounds.GUN_RIFLE_FIRE,1F,.75F)
+						.mag(new MagazineSingleReload(0,14).addConfigs(rebar)).offset(.75,-.0625,-.1875).setupStandardFire().recoil(LAMBDA_RECOIL_HENRY))
+				.setupStandardConfiguration().anim(LAMBDA_HENRY_ANIMS).orchestra(PistolOrchestras.ORCHESTRA_HENRY));
 
 		PistolGuns.gun_heavy_revolver = new ItemGunBaseNT(WeaponQuality.A_SIDE, new GunConfig()
 				.dura(600).draw(10).inspect(23).crosshair(Crosshair.L_CLASSIC).smoke(Lego.LAMBDA_STANDARD_SMOKE)

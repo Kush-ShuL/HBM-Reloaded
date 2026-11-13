@@ -33,9 +33,9 @@ public class ItemGunBaseNT extends Item implements IProtectiveItem {
     public Function<ItemStack,String> LAMBDA_NAME_MUTATOR;
     public final WeaponQuality quality;
     private boolean builtInDualWield,pistolDualWield;
-    public enum WeaponQuality { A_SIDE,B_SIDE,LEGENDARY,SPECIAL,UTILITY,SECRET,DEBUG }
+    public enum WeaponQuality { A_SIDE,B_SIDE,LEGENDARY,SPECIAL,UTILITY,CORRUPTED,SECRET,DEBUG }
     public enum GunState { DRAWING,IDLE,COOLDOWN,RELOADING,JAMMED }
-    public ItemGunBaseNT(WeaponQuality quality,GunConfig... configs){super(new Properties().stacksTo(1));this.quality=quality;builtInDualWield=configs.length>1;configs_DNA=configs;lastShot=new long[configs.length];for(int i=0;i<configs.length;i++)configs[i].index=i;if(quality==WeaponQuality.LEGENDARY||quality==WeaponQuality.SECRET)secrets.add(this);}
+    public ItemGunBaseNT(WeaponQuality quality,GunConfig... configs){super(new Properties().stacksTo(1));this.quality=quality;builtInDualWield=configs.length>1;configs_DNA=configs;lastShot=new long[configs.length];for(int i=0;i<configs.length;i++)configs[i].index=i;if(quality==WeaponQuality.LEGENDARY||quality==WeaponQuality.SECRET||quality==WeaponQuality.CORRUPTED)secrets.add(this);}
     public GunConfig getConfig(ItemStack stack,int index){var config=configs_DNA[index];return stack==null?config:XWeaponModManager.eval(config,stack,O_GUNCONFIG+index,this,index);}
     public int getConfigCount(){return configs_DNA.length;}
     @Override public float[] getCurrentDTDR(ItemStack stack,LivingEntity entity,DamageSource damage,float amount,float pierceDT,float pierce){
@@ -100,7 +100,7 @@ public class ItemGunBaseNT extends Item implements IProtectiveItem {
             float durability=config.getDurability(stack);if(durability>0)tooltip.add(Component.translatable("gui.weapon.condition").append(": "+Mth.clamp((int)((durability-getWear(stack,i))*100/durability),0,100)+"%"));
             for(var mod:XWeaponModManager.getUpgradeItems(stack,i))if(!mod.isEmpty())tooltip.add(mod.getHoverName().copy().withStyle(ChatFormatting.YELLOW));
         }
-        boolean blink=System.currentTimeMillis()%1000<500;ChatFormatting color=switch(quality){case A_SIDE->ChatFormatting.YELLOW;case B_SIDE->ChatFormatting.GOLD;case LEGENDARY->ChatFormatting.RED;case SPECIAL->ChatFormatting.AQUA;case UTILITY->ChatFormatting.GREEN;case SECRET->blink?ChatFormatting.DARK_RED:ChatFormatting.RED;case DEBUG->blink?ChatFormatting.YELLOW:ChatFormatting.GOLD;};
+        boolean blink=System.currentTimeMillis()%1000<500;ChatFormatting color=switch(quality){case A_SIDE->ChatFormatting.YELLOW;case B_SIDE->ChatFormatting.GOLD;case LEGENDARY->ChatFormatting.RED;case SPECIAL->ChatFormatting.AQUA;case UTILITY->ChatFormatting.GREEN;case CORRUPTED->blink?ChatFormatting.DARK_PURPLE:ChatFormatting.LIGHT_PURPLE;case SECRET->blink?ChatFormatting.DARK_RED:ChatFormatting.RED;case DEBUG->blink?ChatFormatting.YELLOW:ChatFormatting.GOLD;};
         tooltip.add(Component.translatable("gui.weapon.quality."+switch(quality){case A_SIDE->"aside";case B_SIDE->"bside";default->quality.name().toLowerCase(Locale.ROOT);}).withStyle(color));
         if(CLIENT!=null&&CLIENT.isWeaponTable()&&!recognizedMods.isEmpty()){tooltip.add(Component.translatable("gui.weapon.accepts").append(":").withStyle(ChatFormatting.RED));for(var mod:recognizedMods)tooltip.add(Component.literal("  ").append(mod.toStack().getHoverName()).withStyle(ChatFormatting.RED));}
     }

@@ -1,0 +1,8 @@
+{
+  "type": "hbm:irradiation",
+  "input": {"ingredient": {"item": "minecraft:potato"}, "count": 1},
+  "solid_output": {"id": "minecraft:poisonous_potato", "count": 1},
+  "key_kind": "item",
+  "source_key": "minecraft:potato",
+  "order": 53
+}

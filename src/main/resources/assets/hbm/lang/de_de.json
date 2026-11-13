@@ -1067,7 +1067,7 @@
   "item.ammo_standard.g10_shrapnel.name": "Kaliber 10 Schrapnell-Schrot",
   "item.ammo_standard.g10_slug.name": "Kaliber 10 Laufgeschoss",
   "item.ammo_standard.g12.name": "Kaliber 12 Schrot",
-  "item.ammo_standard.g12_anthrax.name": "Kaliber 12 Anthrax",
+  "item.ammo_standard.g12_anthrax.name": "Kaliber 12 Milzbrand",
   "item.ammo_standard.g12_bp.name": "Kaliber 12 Schwarzpulver",
   "item.ammo_standard.g12_bp_magnum.name": "Kaliber 12 Schwarzpulver Magnum",
   "item.ammo_standard.g12_bp_slug.name": "Kaliber 12 Schwarzpulver Laufgeschoss",
@@ -10863,5 +10863,15 @@
   "item.hbm.bacteria_anthrax_inert": "Inaktive Milzbrandbakterien",
   "item.hbm.bacteria_anthrax_mutated": "Mutierte Milzbrandbakterien",
   "item.hbm.briquette_peat": "Torfbrikett",
-  "item.hbm.gun_fliegerfaust": "HIMRAAL"
+  "item.hbm.gun_fliegerfaust": "HIMRAAL",
+  "chem.anthraxrecycling": "Recyclen von toten Milzbrandbakterien",
+  "chem.growinertanthrax": "Züchten von inaktiven Milzbrandbakterien",
+  "chem.growmutatedanthrax": "Züchten von mutierten Milzbrandbakterien",
+  "chem.mutateanthrax": "Milzbrandbakterien mutieren",
+  "item.satellite.asat.name": "Orbitale Anti-Satelliten Platform",
+  "item.hbm.satellite_asat": "Orbitale Anti-Satelliten Platform",
+  "item.satellite.asat_ammo.name": "Anti-Satelliten-Raketen",
+  "item.hbm.satellite_asat_ammo": "Anti-Satelliten-Raketen",
+  "tile.dirt.swamp.name": "Moorerde",
+  "block.hbm.dirt_swamp": "Moorerde"
 }

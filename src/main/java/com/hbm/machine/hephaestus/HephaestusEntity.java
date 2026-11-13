@@ -71,7 +71,7 @@ public final class HephaestusEntity extends BlockEntity implements StandardFluid
     private int heatFromBlock(ServerLevel server,int x,int y,int z){
         var block=server.getBlockState(new BlockPos(x,y,z)).getBlock();
         if(block==Blocks.LAVA)return 5; // Native still/flowing states share the actual lava block.
-        if(block==HbmWorldFluids.block("volcanic_lava_block"))return 150;
+        if(block==HbmWorldFluids.block("volcanic_lava_block")||block==HbmWorldFluids.block("rad_lava_block"))return 150;
         if(block==HbmContent.block("ore_volcano")){fissureScanTime=server.getGameTime();return 300;}
         return 0;
     }

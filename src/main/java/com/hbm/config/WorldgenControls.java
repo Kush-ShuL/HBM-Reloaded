@@ -40,6 +40,7 @@ public final class WorldgenControls {
         rule(builder,"overworld_ores","coltan_random","vein");
         rule(builder,"overworld_ores","coltan_deposit","vein");
         rule(builder,"overworld_ores","australium","vein");
+        rule(builder,"overworld_ores","dirt_swamp","vein");
         rule(builder,"deepslate_ores","ore_uranium","vein");
         rule(builder,"deepslate_ores","ore_thorium","vein");
         rule(builder,"deepslate_ores","ore_titanium","vein");

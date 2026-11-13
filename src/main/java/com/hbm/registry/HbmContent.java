@@ -121,6 +121,7 @@ public final class HbmContent {
                     stacks.addAll(HbmCreativeTabs.vanillaReplacements(tab));
                     stacks.addAll(HbmEnumItems.creativeStacks(tab));
                     stacks.addAll(com.hbm.block.swamp.SwampDirtContent.creativeStacks(tab));
+                    stacks.addAll(com.hbm.machine.trackingradar.TrackingRadarContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.sedna.ammo.FlatAmmoContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.sedna.gun.PepperboxContent.creativeStacks(tab));
                     stacks.addAll(com.hbm.weapon.specialvehicle.VehicleContent.creativeStacks(tab));
@@ -564,6 +565,7 @@ public final class HbmContent {
                         stacks.addAll(ElectricFurnaceContent.controlItems());
                         stacks.addAll(CentrifugeContent.controlItems());
                     }
+                    stacks.removeIf(stack->java.util.Set.of("machine_difurnace_off","machine_difurnace_extension","machine_difurnace_rtg_off","machine_reactor","machine_bat9000","machine_reactor_small","machine_large_turbine").contains(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath()));
                     HbmCreativeTabs.sort(stacks);
                     if (tab.equals("missile")) stacks.addAll(com.hbm.missile.custom.CustomMissileContent.creativePresets());
                     stacks.forEach(output::accept);

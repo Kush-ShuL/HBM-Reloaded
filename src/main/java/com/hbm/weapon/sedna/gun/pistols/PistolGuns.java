@@ -35,6 +35,7 @@ public final class PistolGuns {
     public static ItemGunBaseNT gun_uzi_akimbo;
     public static ItemGunBaseNT gun_henry;
     public static ItemGunBaseNT gun_henry_lincoln;
+    public static ItemGunBaseNT gun_henry_counter;
     public static ItemGunBaseNT gun_heavy_revolver;
     public static ItemGunBaseNT gun_heavy_revolver_protege;
     public static ItemGunBaseNT gun_hangman;

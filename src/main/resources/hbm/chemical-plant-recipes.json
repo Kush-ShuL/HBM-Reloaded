@@ -2532,6 +2532,37 @@
         ]
       },
       {
+        "name": "chem.anthraxrecycling",
+        "duration": 100,
+        "power": 250,
+        "named": true,
+        "inputFluid": [
+          [
+            "SALIENT",
+            250,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_dead",
+            4,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_agar",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
         "name": "chem.growinertanthrax",
         "duration": 600,
         "power": 500,
@@ -2647,22 +2678,24 @@
               ],
               1.0,
               1
-            ]
-          ],
-          [
-            "single",
+            ],
             [
-              "hbm:bacteria_anthrax_dead",
-              1,
-              0
-            ]
-          ],
-          [
-            "single",
+              [
+                "hbm:bacteria_anthrax_dead",
+                1,
+                0
+              ],
+              1.0,
+              79
+            ],
             [
-              "hbm:bacteria_anthrax_inert",
-              1,
-              0
+              [
+                "hbm:bacteria_anthrax_inert",
+                1,
+                0
+              ],
+              1.0,
+              20
             ]
           ],
           [
@@ -5238,6 +5271,37 @@
         ]
       },
       {
+        "name": "chem.anthraxrecycling",
+        "duration": 100,
+        "power": 250,
+        "named": true,
+        "inputFluid": [
+          [
+            "SALIENT",
+            250,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_dead",
+            4,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_agar",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
         "name": "chem.growinertanthrax",
         "duration": 600,
         "power": 500,
@@ -5353,22 +5417,24 @@
               ],
               1.0,
               1
-            ]
-          ],
-          [
-            "single",
+            ],
             [
-              "hbm:bacteria_anthrax_dead",
-              1,
-              0
-            ]
-          ],
-          [
-            "single",
+              [
+                "hbm:bacteria_anthrax_dead",
+                1,
+                0
+              ],
+              1.0,
+              79
+            ],
             [
-              "hbm:bacteria_anthrax_inert",
-              1,
-              0
+              [
+                "hbm:bacteria_anthrax_inert",
+                1,
+                0
+              ],
+              1.0,
+              20
             ]
           ],
           [
@@ -7954,6 +8020,37 @@
         ]
       },
       {
+        "name": "chem.anthraxrecycling",
+        "duration": 100,
+        "power": 250,
+        "named": true,
+        "inputFluid": [
+          [
+            "SALIENT",
+            250,
+            0
+          ]
+        ],
+        "inputItem": [
+          [
+            "item",
+            "hbm:bacteria_anthrax_dead",
+            4,
+            0
+          ]
+        ],
+        "outputItem": [
+          [
+            "single",
+            [
+              "hbm:bacteria_agar",
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      {
         "name": "chem.growinertanthrax",
         "duration": 600,
         "power": 500,
@@ -8069,22 +8166,24 @@
               ],
               1.0,
               1
-            ]
-          ],
-          [
-            "single",
+            ],
             [
-              "hbm:bacteria_anthrax_dead",
-              1,
-              0
-            ]
-          ],
-          [
-            "single",
+              [
+                "hbm:bacteria_anthrax_dead",
+                1,
+                0
+              ],
+              1.0,
+              79
+            ],
             [
-              "hbm:bacteria_anthrax_inert",
-              1,
-              0
+              [
+                "hbm:bacteria_anthrax_inert",
+                1,
+                0
+              ],
+              1.0,
+              20
             ]
           ],
           [

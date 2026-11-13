@@ -12,6 +12,8 @@ public final class ExposureData implements INBTSerializable<CompoundTag> {
     float digamma;
     int asbestos;
     int blackLung;
+    int anthraxTimer;
+    float anthraxLastHealth;
     final java.util.List<ContaminationEffect> contamination=new java.util.ArrayList<>();
     float radEnvironment;
     float radBuffer;
@@ -28,6 +30,8 @@ public final class ExposureData implements INBTSerializable<CompoundTag> {
         tag.putFloat("hfr_digamma",digamma);
         tag.putInt("hfr_asbestos",asbestos);
         tag.putInt("hfr_blacklung",blackLung);
+        tag.putInt("hfr_anthrax",anthraxTimer);
+        tag.putFloat("hfr_anthraxLast",anthraxLastHealth);
         tag.putInt("hfr_cont_count",contamination.size());
         for(int i=0;i<contamination.size();i++)contamination.get(i).save(tag,i);
         return tag;
@@ -39,6 +43,8 @@ public final class ExposureData implements INBTSerializable<CompoundTag> {
         if (!Float.isFinite(digamma)) digamma=0;
         asbestos = Math.max(0,tag.getInt("hfr_asbestos"));
         blackLung = Math.max(0,tag.getInt("hfr_blacklung"));
+        anthraxTimer=tag.getInt("hfr_anthrax");
+        anthraxLastHealth=tag.getFloat("hfr_anthraxLast");
         contamination.clear();
         for(int i=0;i<tag.getInt("hfr_cont_count");i++) {
             var effect=ContaminationEffect.load(tag,i);if(effect!=null)contamination.add(effect);

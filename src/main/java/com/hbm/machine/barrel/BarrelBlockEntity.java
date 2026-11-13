@@ -99,9 +99,9 @@ public class BarrelBlockEntity extends BlockEntity implements WorldlyContainer,M
     @Override public void setItem(int slot,ItemStack stack){slots[slot]=stack;if(stack.getCount()>64)stack.setCount(64);setChanged();}
     @Override public void clearContent(){Arrays.fill(slots,ItemStack.EMPTY);setChanged();}
     @Override public boolean stillValid(Player player){return com.hbm.multiblock.SourceMachineMenuRange.isValid(this,player);}
-    @Override public boolean canPlaceItem(int slot,ItemStack stack){if(slot==4){var full=FluidContainerRegistry.getFullContainer(stack,tank.getTankType());if(!full.isEmpty()&&FluidContainerRegistry.getFluidContent(full,tank.getTankType())<=tank.getMaxFill())return true;}int content=FluidContainerRegistry.getFluidContent(stack,tank.getTankType());return slot==2&&content>0&&content<=tank.getMaxFill();}
+    @Override public boolean canPlaceItem(int slot,ItemStack stack){return slot!=0||stack.getItem() instanceof com.hbm.item.fluid.FluidIdentifierItem;}
     @Override public int[] getSlotsForFace(Direction side){return new int[]{2,3,4,5};}
-    @Override public boolean canPlaceItemThroughFace(int slot,ItemStack stack,Direction side){return canPlaceItem(slot,stack);}
+    @Override public boolean canPlaceItemThroughFace(int slot,ItemStack stack,Direction side){if(slot==4){var full=FluidContainerRegistry.getFullContainer(stack,tank.getTankType());if(!full.isEmpty()&&FluidContainerRegistry.getFluidContent(full,tank.getTankType())<=tank.getMaxFill())return true;}int content=FluidContainerRegistry.getFluidContent(stack,tank.getTankType());return slot==2&&content>0&&content<=tank.getMaxFill();}
     @Override public boolean canTakeItemThroughFace(int slot,ItemStack stack,Direction side){return slot==3||slot==5;}
     @Override public long energyStored(){return 0;}
     @Override public long energyCapacity(){return 0;}

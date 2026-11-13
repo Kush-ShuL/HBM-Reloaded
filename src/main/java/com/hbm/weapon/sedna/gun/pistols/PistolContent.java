@@ -43,6 +43,7 @@ public final class PistolContent {
         ITEMS.register("gun_uzi_akimbo",()->gun("gun_uzi_akimbo"));
         ITEMS.register("gun_henry",()->gun("gun_henry"));
         ITEMS.register("gun_henry_lincoln",()->gun("gun_henry_lincoln"));
+        ITEMS.register("gun_henry_counter",()->gun("gun_henry_counter"));
         ITEMS.register("gun_heavy_revolver",()->gun("gun_heavy_revolver"));
         ITEMS.register("gun_heavy_revolver_protege",()->gun("gun_heavy_revolver_protege"));
         ITEMS.register("gun_hangman",()->gun("gun_hangman"));
@@ -60,6 +61,7 @@ case "gun_uzi" -> PistolGuns.gun_uzi;
 case "gun_uzi_akimbo" -> PistolGuns.gun_uzi_akimbo;
 case "gun_henry" -> PistolGuns.gun_henry;
 case "gun_henry_lincoln" -> PistolGuns.gun_henry_lincoln;
+case "gun_henry_counter" -> PistolGuns.gun_henry_counter;
 case "gun_heavy_revolver" -> PistolGuns.gun_heavy_revolver;
 case "gun_heavy_revolver_protege" -> PistolGuns.gun_heavy_revolver_protege;
 case "gun_hangman" -> PistolGuns.gun_hangman;
@@ -71,6 +73,6 @@ default->throw new IllegalArgumentException(name);};}
   PistolModBindings.initialize();
  });}
  public static List<ItemStack> creativeStacks(String tab){return tab.equals("weapon")?List.of(new ItemStack(PistolGuns.gun_light_revolver),new ItemStack(PistolGuns.gun_am180),new ItemStack(PistolGuns.gun_star_f),new ItemStack(PistolGuns.gun_greasegun),new ItemStack(PistolGuns.gun_lag),new ItemStack(PistolGuns.gun_uzi),new ItemStack(PistolGuns.gun_henry),new ItemStack(PistolGuns.gun_heavy_revolver)):List.of();}
- public static List<ItemStack> allStacks(){return List.of(new ItemStack(PistolGuns.gun_light_revolver),new ItemStack(PistolGuns.gun_light_revolver_atlas),new ItemStack(PistolGuns.gun_light_revolver_dani),new ItemStack(PistolGuns.gun_am180),new ItemStack(PistolGuns.gun_star_f),new ItemStack(PistolGuns.gun_star_f_akimbo),new ItemStack(PistolGuns.gun_greasegun),new ItemStack(PistolGuns.gun_lag),new ItemStack(PistolGuns.gun_uzi),new ItemStack(PistolGuns.gun_uzi_akimbo),new ItemStack(PistolGuns.gun_henry),new ItemStack(PistolGuns.gun_henry_lincoln),new ItemStack(PistolGuns.gun_heavy_revolver),new ItemStack(PistolGuns.gun_heavy_revolver_protege),new ItemStack(PistolGuns.gun_hangman),new ItemStack(PistolGuns.gun_debug));}
+ public static List<ItemStack> allStacks(){return List.of(new ItemStack(PistolGuns.gun_light_revolver),new ItemStack(PistolGuns.gun_light_revolver_atlas),new ItemStack(PistolGuns.gun_light_revolver_dani),new ItemStack(PistolGuns.gun_am180),new ItemStack(PistolGuns.gun_star_f),new ItemStack(PistolGuns.gun_star_f_akimbo),new ItemStack(PistolGuns.gun_greasegun),new ItemStack(PistolGuns.gun_lag),new ItemStack(PistolGuns.gun_uzi),new ItemStack(PistolGuns.gun_uzi_akimbo),new ItemStack(PistolGuns.gun_henry),new ItemStack(PistolGuns.gun_henry_lincoln),new ItemStack(PistolGuns.gun_henry_counter),new ItemStack(PistolGuns.gun_heavy_revolver),new ItemStack(PistolGuns.gun_heavy_revolver_protege),new ItemStack(PistolGuns.gun_hangman),new ItemStack(PistolGuns.gun_debug));}
  public static List<ItemStack> indexedItems(){var stacks=new ArrayList<ItemStack>(allStacks());stacks.add(new ItemStack(DEBUG_AMMO.get()));return stacks;}
 }

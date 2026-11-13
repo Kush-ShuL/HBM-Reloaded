@@ -68,6 +68,8 @@ public final class HbmExposure {
     public static void configure(ExposureSettings settings) { HbmExposure.settings=Objects.requireNonNull(settings); }
     public static ExposureSettings settings() { return settings; }
     public static ExposureData data(LivingEntity entity) { return entity.getData(DATA); }
+    public static void applyAnthrax(LivingEntity entity){var data=data(entity);data.anthraxTimer=Math.max(300,data.anthraxTimer);data.anthraxLastHealth=entity.getHealth();}
+    public static boolean hasAnthrax(LivingEntity entity){return entity.hasData(DATA)&&data(entity).anthraxTimer>0;}
     /** Actual shared source contamination list; medicines and decontamination machinery see the same entries. */
     public static List<ContaminationEffect> contaminationEffects(LivingEntity entity) {return data(entity).contamination;}
     public static void addContamination(LivingEntity entity,float maxRad,int duration,boolean ignoreArmor) {
@@ -92,6 +94,7 @@ public final class HbmExposure {
     /** Ghosts keep their saved doses; only reception and radiation consequences pause. */
     public static boolean spectatorRadiationExempt(LivingEntity entity) { return entity instanceof Player player&&player.isSpectator(); }
     private static void incomingRadiationDamage(LivingIncomingDamageEvent event) {
+        if(hasAnthrax(event.getEntity()))event.setAmount(event.getAmount()*1.5F);
         if(spectatorRadiationExempt(event.getEntity())&&(event.getSource().is(HbmDamageSources.radiation)||event.getSource().is(HbmDamageSources.digamma)))event.setCanceled(true);
     }
     private static void radiationEffectApplicable(MobEffectEvent.Applicable event) {
@@ -198,6 +201,7 @@ public final class HbmExposure {
     public static void incrementBlackLung(LivingEntity entity,int amount) { if(!settings.coalDust())return;setBlackLung(entity,(int)Math.min(Integer.MAX_VALUE,(long)blackLung(entity)+amount));com.hbm.disease.DiseaseVisuals.warning(entity,false); }
     private static void tick(EntityTickEvent.Post event) {
         if(!(event.getEntity() instanceof LivingEntity entity) || !(entity.level() instanceof ServerLevel level) || !entity.isAlive())return;
+        if(hasAnthrax(entity)){var dose=data(entity);float health=entity.getHealth();if(dose.anthraxLastHealth>health||dose.anthraxLastHealth==0)dose.anthraxLastHealth=health;else if(dose.anthraxLastHealth<health)entity.setHealth(dose.anthraxLastHealth);dose.anthraxTimer--;}
         boolean spectator=spectatorRadiationExempt(entity);
         float environment=0;
         float crater=spectator?0:com.hbm.bomb.nuclear.NuclearAmbientRadiation.rate(entity);

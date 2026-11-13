@@ -37,6 +37,7 @@ public final class PistolSettings {
         case "GUN_DANI_LUNAR_DAMAGE" -> java.util.List.of("damage","daniLunar");
         case "GUN_HENRY_DAMAGE" -> java.util.List.of("damage","henry");
         case "GUN_LINCOLN_DAMAGE" -> java.util.List.of("damage","lincoln");
+        case "GUN_COUNTER_DAMAGE" -> java.util.List.of("damage","counter");
         case "GUN_HEAVY_REVOLVER_DAMAGE" -> java.util.List.of("damage","heavyRevolver");
         case "GUN_LILMAC_DAMAGE" -> java.util.List.of("damage","lilmac");
         case "GUN_PROTEGE_DAMAGE" -> java.util.List.of("damage","protege");

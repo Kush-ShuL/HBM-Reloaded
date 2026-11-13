@@ -70,7 +70,7 @@ public abstract class GroundwaterPumpEntity extends BlockEntity implements Stand
     private static synchronized Set<Block> soils(){
         if(soils==null){
             var actual=new HashSet<Block>(List.of(Blocks.GRASS_BLOCK,Blocks.DIRT,Blocks.COARSE_DIRT,Blocks.PODZOL,Blocks.SAND,Blocks.RED_SAND,Blocks.MYCELIUM));
-            for(var name:List.of("waste_earth","dirt_dead","dirt_oily","sand_dirty","sand_dirty_red"))actual.add(HbmContent.block(name));
+            for(var name:List.of("waste_earth","dirt_dead","dirt_oily","sand_dirty","sand_dirty_red","dirt_swamp"))actual.add(HbmContent.block(name));
             soils=Set.copyOf(actual);
         }
         return soils;

@@ -20,6 +20,13 @@ public final class LegacyOverworldOreFeature extends Feature<NoneFeatureConfigur
         int chunkX = context.origin().getX() & ~15, chunkZ = context.origin().getZ() & ~15;
         int placed = com.hbm.config.WorldgenControls.feature("overworld_ores") ? layer(level, random, chunkX, chunkZ, false) : 0;
         if (com.hbm.config.WorldgenControls.feature("deepslate_ores") && OreWorldgen.DEEP.get() && deepMin(level) <= deepMax(level)) placed += layer(level, random, chunkX, chunkZ, true);
+        if(com.hbm.config.WorldgenControls.feature("overworld_ores")&&level.getBiome(new net.minecraft.core.BlockPos(chunkX+8,64,chunkZ+8)).is(net.neoforged.neoforge.common.Tags.Biomes.IS_SWAMP)){
+            var control=com.hbm.config.WorldgenControls.rule("overworld_ores","dirt_swamp");
+            if(control.enabled())for(int vein=0;vein<control.count(3);vein++){
+                int x=chunkX+random.nextInt(16),y=control.height(random,55,64,true),z=chunkZ+random.nextInt(16);
+                placed+=com.hbm.worldgen.dimensionores.DimensionOreVein.placeReady(level,random,x,y,z,control.size(16),com.hbm.registry.HbmContent.block("dirt_swamp").defaultBlockState(),net.minecraft.world.level.block.Blocks.DIRT);
+            }
+        }
         return placed > 0;
     }
     private static int deepMin(WorldGenLevel level) { return level.getMinBuildHeight() + OreWorldgen.DEEP_BOTTOM_OFFSET.get(); }

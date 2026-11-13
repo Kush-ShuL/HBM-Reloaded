@@ -2885,6 +2885,38 @@
         ],
         null
       ]
+    },
+    {
+      "output": [
+        "hbm:ammo_standard_g12_anthrax",
+        6,
+        0
+      ],
+      "input": [
+        null,
+        [
+          "item",
+          "hbm:bacteria_anthrax_mutated",
+          1,
+          0
+        ],
+        null,
+        null,
+        [
+          "tag",
+          "hbm:material_groups/smokeless/dusts",
+          1
+        ],
+        null,
+        null,
+        [
+          "item",
+          "hbm:casing_buckshot_advanced",
+          1,
+          0
+        ],
+        null
+      ]
     }
   ]
 }

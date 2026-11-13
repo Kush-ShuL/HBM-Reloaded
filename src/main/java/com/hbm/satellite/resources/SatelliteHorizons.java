@@ -12,6 +12,7 @@ import net.minecraft.world.entity.player.Player;
 
 /** Actual single-use Gerald/Horizons payload; never replaced with a generic nuke. */
 public final class SatelliteHorizons extends SatelliteBase {
+ @Override public boolean isTrackable(){return false;}
     public static final String CMD_FIRE="fire",CMD_CANFIRE="settarget";
     boolean used;
     @Override public String getType(){return "PAYLOAD_UNKNOWN";}

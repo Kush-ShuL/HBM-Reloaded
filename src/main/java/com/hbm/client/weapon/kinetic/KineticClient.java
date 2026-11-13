@@ -59,8 +59,10 @@ public final class KineticClient {
             XFactory12ga.g12_sub_magnum.setRenderer(SourceBulletStyles.RENDER_STANDARD_BULLET);
             XFactory12ga.g12_sub_explosive.setRenderer(SourceBulletStyles.RENDER_EXPRESS_BULLET);
             XFactory12ga.g12_sub_phosphorus.setRenderer(SourceBulletStyles.RENDER_AP_BULLET);
+            XFactory12ga.g12_anthrax.setRenderer(SourceBulletStyles.RENDER_DU_BULLET);
+            XFactory12ga.g12_sub_anthrax.setRenderer(SourceBulletStyles.RENDER_DU_BULLET);
             for (BulletConfig beam : new BulletConfig[]{XFactory12ga.g12_shredder, XFactory12ga.g12_shredder_slug,
-                    XFactory12ga.g12_shredder_flechette, XFactory12ga.g12_shredder_magnum, XFactory12ga.g12_shredder_explosive, XFactory12ga.g12_shredder_phosphorus})
+                    XFactory12ga.g12_shredder_flechette, XFactory12ga.g12_shredder_magnum, XFactory12ga.g12_shredder_explosive, XFactory12ga.g12_shredder_phosphorus,XFactory12ga.g12_shredder_anthrax})
                 beam.setRendererBeam((entity, partial) -> EnergyBeams.laser(entity, partial, 0x15, 0x15, 0x80));
         });
     }

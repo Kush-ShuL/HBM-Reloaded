@@ -32,6 +32,7 @@ public final class PistolClient {
  add(PistolGuns.gun_uzi_akimbo,new ItemRenderUziAkimbo(),event);
  add(PistolGuns.gun_henry,new ItemRenderHenry(PistolModels.henry_tex),event);
  add(PistolGuns.gun_henry_lincoln,new ItemRenderHenry(PistolModels.henry_lincoln_tex),event);
+ add(PistolGuns.gun_henry_counter,new ItemRenderHenry(net.minecraft.resources.ResourceLocation.parse("hbm:textures/models/weapons/henry_counter.png")),event);
  add(PistolGuns.gun_heavy_revolver,new ItemRenderHeavyRevolver(PistolModels.heavy_revolver_tex),event);
  add(PistolGuns.gun_heavy_revolver_protege,new ItemRenderHeavyRevolver(PistolModels.heavy_revolver_protege_tex),event);
  add(PistolGuns.gun_hangman,new ItemRenderHangman(),event);
@@ -43,6 +44,8 @@ PistolGuns.gun_light_revolver.getConfig(null,0).hud(SourceGunHudComponents.HUD_C
 PistolGuns.gun_light_revolver_atlas.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY, SourceGunHudComponents.HUD_COMPONENT_AMMO);
 PistolGuns.gun_henry.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY, SourceGunHudComponents.HUD_COMPONENT_AMMO);
 PistolGuns.gun_henry_lincoln.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY, SourceGunHudComponents.HUD_COMPONENT_AMMO);
+PistolGuns.gun_henry_counter.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY,SourceGunHudComponents.HUD_COMPONENT_AMMO);
+XFactory44.rebar.setRenderer(SourceBulletStyles.RENDER_AP_BULLET);
 PistolGuns.gun_greasegun.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY, SourceGunHudComponents.HUD_COMPONENT_AMMO);
 PistolGuns.gun_heavy_revolver.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY, SourceGunHudComponents.HUD_COMPONENT_AMMO);
 PistolGuns.gun_heavy_revolver_protege.getConfig(null,0).hud(SourceGunHudComponents.HUD_COMPONENT_DURABILITY, SourceGunHudComponents.HUD_COMPONENT_AMMO);

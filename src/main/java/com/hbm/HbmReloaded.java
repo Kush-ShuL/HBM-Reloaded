@@ -385,6 +385,7 @@ public final class HbmReloaded {
         com.hbm.machine.rtgfurnace.RtgFurnaceContent.register(modBus);
         com.hbm.machine.woodprocessing.WoodProcessingContent.register(modBus);
         com.hbm.machine.groundwater.GroundwaterPumpContent.register(modBus);
+        com.hbm.machine.trackingradar.TrackingRadarContent.register(modBus);
         com.hbm.machine.precisionassembler.PrecisionAssemblerContent.register(modBus);
         com.hbm.machine.radgen.RadGenContent.register(modBus);
         com.hbm.machine.reactorcontroller.ReactorControllerContent.register(modBus);

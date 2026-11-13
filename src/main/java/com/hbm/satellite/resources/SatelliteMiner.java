@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 
 /** Source resource satellites keep their own progress/cargo; selection uses the sole real ItemPool kernel/config. */
 public class SatelliteMiner extends SatelliteBase {
+ @Override public boolean isTrackable(){return false;}
     private static final Map<Class<? extends SatelliteMiner>,String> CARGO=new ConcurrentHashMap<>();
     static {registerCargo(SatelliteMiner.class,"POOL_SAT_MINER");}
     public double progress;

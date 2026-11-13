@@ -31,4 +31,5 @@ public final class KineticAmmo {
  public static final GunAmmo G12_MAGNUM=GunAmmo.standard(47);
  public static final GunAmmo G12_EXPLOSIVE=GunAmmo.standard(48);
  public static final GunAmmo G12_PHOSPHORUS=GunAmmo.standard(49);
+ public static final GunAmmo G12_ANTHRAX=GunAmmo.standard(96);
 }

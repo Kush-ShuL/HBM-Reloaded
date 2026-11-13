@@ -13,6 +13,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.*;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.settings.KeyConflictContext;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.lwjgl.glfw.GLFW;
@@ -21,6 +22,12 @@ import org.lwjgl.glfw.GLFW;
 public final class JetpackClient {
     public static final KeyMapping TOGGLE = new KeyMapping("hbm.key.toggleBack", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_C, "key.categories.hbm");
     @SubscribeEvent public static void keys(RegisterKeyMappingsEvent event) { event.register(TOGGLE); }
+    @SubscribeEvent public static void extensions(RegisterClientExtensionsEvent event) {
+        event.registerItem(new net.neoforged.neoforge.client.extensions.common.IClientItemExtensions() {
+            private ModularJetpackRenderer renderer;
+            @Override public net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer getCustomRenderer() { if (renderer == null) renderer = new ModularJetpackRenderer(); return renderer; }
+        }, com.hbm.equipment.jetpack.VectorJetpackContent.MODULAR.get());
+    }
     @SubscribeEvent public static void layers(EntityRenderersEvent.AddLayers event) {
         for (var skin : event.getSkins()) { PlayerRenderer renderer = event.getSkin(skin); if (renderer != null) renderer.addLayer(new JetpackLayer(renderer)); }
     }

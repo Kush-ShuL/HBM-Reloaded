@@ -86,7 +86,7 @@ public final class SourceSkyMarkers {
         }
     }
     /** RenderType clear restores defaults; restore the actual incoming sky state, also on failure. */
-    private static final class MarkerState implements AutoCloseable {
+    static final class MarkerState implements AutoCloseable {
         final net.minecraft.client.renderer.ShaderInstance shader=RenderSystem.getShader();
         final int texture=RenderSystem.getShaderTexture(0),depthFunction=GL11.glGetInteger(GL11.GL_DEPTH_FUNC);
         final float[] color=RenderSystem.getShaderColor().clone();

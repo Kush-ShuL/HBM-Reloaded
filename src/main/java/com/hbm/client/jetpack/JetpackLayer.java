@@ -21,9 +21,13 @@ public final class JetpackLayer extends RenderLayer<AbstractClientPlayer, Player
     @Override public void render(PoseStack pose, MultiBufferSource buffers, int light, AbstractClientPlayer player,
             float swing, float amount, float partial, float age, float yaw, float pitch) {
         var chest = player.getItemBySlot(EquipmentSlot.CHEST);
-        boolean attached = !(chest.getItem() instanceof SourceJetpackItem || chest.getItem() instanceof com.hbm.equipment.boostmurk.SourceWingsItem);
+        boolean attached = !(chest.getItem() instanceof SourceJetpackItem || chest.getItem() instanceof com.hbm.equipment.boostmurk.SourceWingsItem || chest.getItem() instanceof com.hbm.equipment.jetpack.ModularJetpackItem);
         ItemStack stack = attached ? ArmorModStorage.pryMod(chest, ArmorModStorage.CHEST, player.level().registryAccess()) : chest;
         if (player.isInvisible()) return;
+        if (stack.getItem() instanceof com.hbm.equipment.jetpack.ModularJetpackItem) {
+            pose.pushPose(); getParentModel().body.translateAndRotate(pose); pose.scale(1F/16, 1F/16, 1F/16);
+            ModularJetpackRenderer.renderPack(pose, buffers, light, OverlayTexture.NO_OVERLAY); pose.popPose(); return;
+        }
         if (stack.getItem() instanceof com.hbm.equipment.boostmurk.SourceWingsItem wings) {
             com.hbm.client.boostmurk.MurkWingRenderer.render(pose,buffers,light,player,stack,wings,getParentModel()); return;
         }

@@ -26,10 +26,13 @@ final class SourceSkyMarkerTypes extends RenderType {
     static final RenderType DIGAMMA=marker("digamma","hbm:textures/environment/impact/star_digamma.png");
     static final RenderType BOBMAZON=marker("bobmazon","hbm:textures/environment/impact/sat_bobmazon.png");
     private static RenderType marker(String name,String texture){
+        return marker(name,texture,true,true);
+    }
+    static RenderType marker(String name,String texture,boolean additive,boolean cull){
         return WorldEffectMeshes.register(create("hbm_source_sky_"+name,DefaultVertexFormat.POSITION_TEX_COLOR,VertexFormat.Mode.QUADS,256,false,false,CompositeState.builder()
             .setShaderState(new ShaderStateShard(ImpactClient::skyShader))
             .setTextureState(new TextureStateShard(ResourceLocation.parse(texture),false,false))
-            .setTransparencyState(SOURCE_BLEND).setCullState(CULL).setDepthTestState(LEQUAL_DEPTH_TEST)
+            .setTransparencyState(additive?SOURCE_BLEND:TRANSLUCENT_TRANSPARENCY).setCullState(cull?CULL:NO_CULL).setDepthTestState(LEQUAL_DEPTH_TEST)
             .setWriteMaskState(COLOR_WRITE).setLayeringState(SKY_DEPTH).createCompositeState(false)),"SourceSky/"+name);
     }
 }

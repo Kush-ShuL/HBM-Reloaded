@@ -14,6 +14,7 @@ public final class VectorJetpackContent {
     public static final DeferredItem<SourceJetpackItem> REGULAR = ITEMS.register("jetpack_fly", () -> new SourceJetpackItem(SourceJetpackItem.Kind.REGULAR));
     public static final DeferredItem<SourceJetpackItem> BRAKE = ITEMS.register("jetpack_break", () -> new SourceJetpackItem(SourceJetpackItem.Kind.BRAKE));
     public static final DeferredItem<SourceJetpackItem> VECTOR = ITEMS.register("jetpack_vector", () -> new SourceJetpackItem(SourceJetpackItem.Kind.VECTOR));
+    public static final DeferredItem<ModularJetpackItem> MODULAR = ITEMS.register("jetpack_modular", ModularJetpackItem::new);
     public static final DeferredItem<MedicineItem> TANK = ITEMS.register("jetpack_tank", MedicineItem::sourceJetpackTank);
     public static void register(IEventBus bus) {
         ITEMS.register(bus); JetpackNetwork.register(bus); bus.addListener(VectorJetpackContent::vanillaCreative);
@@ -22,7 +23,7 @@ public final class VectorJetpackContent {
         NeoForge.EVENT_BUS.addListener(JetpackNetwork::dimension);
     }
     private static void vanillaCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) { event.accept(REGULAR.get()); event.accept(BRAKE.get()); event.accept(VECTOR.get()); }
+        if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) { event.accept(MODULAR.get()); event.accept(REGULAR.get()); event.accept(BRAKE.get()); event.accept(VECTOR.get()); }
     }
     public static List<ItemStack> creativeStacks(String tab) { return "consumable".equals(tab) ? List.of(new ItemStack(TANK.get())) : List.of(); }
     private VectorJetpackContent() { }

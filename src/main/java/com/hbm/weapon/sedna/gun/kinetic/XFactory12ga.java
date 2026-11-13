@@ -38,6 +38,10 @@ public final class XFactory12ga {
  public static final BulletConfig g12_magnum=LegendaryGunFactory.g12_magnum;
  public static final BulletConfig g12_explosive=LegendaryGunFactory.g12_explosive;
  public static final BulletConfig g12_phosphorus=LegendaryGunFactory.g12_phosphorus;
+ public static final BulletConfig g12_anthrax=new BulletConfig("hbm:12ga/anthrax").setItem(KineticAmmo.G12_ANTHRAX).setProjectiles(8).setDamage(.5F/8).setSpread(.015F).setRicochetAngle(15)
+     .setCasing(new SpentCasing(CasingType.SHOTGUN).setColor(0x749300,SpentCasing.COLOR_CASE_12GA).setScale(.75F).register("12GA_ANTHRAX"))
+     .setOnImpact((bullet,hit)->{if(hit instanceof EntityHitResult entityHit&&entityHit.getEntity() instanceof LivingEntity living){com.hbm.exposure.HbmExposure.applyAnthrax(living);living.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.POISON,300,1));}});
+ public static BulletConfig g12_sub_anthrax,g12_shredder_anthrax;
  public static BulletConfig g12_sub,g12_shredder;
  public static BulletConfig g12_sub_slug,g12_shredder_slug;
  public static BulletConfig g12_sub_flechette,g12_shredder_flechette;
@@ -47,7 +51,10 @@ public final class XFactory12ga {
 
  public static void initConfig(){}
  public static void init(){
- BulletConfig[] all={g12_bp,g12_bp_magnum,g12_bp_slug,g12,g12_slug,g12_flechette,g12_magnum,g12_explosive,g12_phosphorus};
+ com.hbm.weapon.sedna.gun.pistols.PistolAmmo.recovery(g12_anthrax,6,6);
+ BulletConfig[] all={g12_bp,g12_bp_magnum,g12_bp_slug,g12,g12_slug,g12_flechette,g12_magnum,g12_explosive,g12_phosphorus,g12_anthrax};
+ g12_sub_anthrax=KineticImpacts.submunition("anthrax",g12_anthrax);
+ g12_shredder_anthrax=KineticImpacts.beam("anthrax",g12_anthrax,g12_sub_anthrax);
  g12_sub=KineticImpacts.submunition("standard",g12);
  g12_shredder=KineticImpacts.beam("standard",g12,g12_sub);
  g12_sub_slug=KineticImpacts.submunition("slug",g12_slug);
@@ -125,7 +132,7 @@ KineticGuns.gun_autoshotgun_shredder = new ItemGunBaseNT(WeaponQuality.B_SIDE, n
 				.dura(2_000).draw(10).inspect(33).reloadSequential(true).crosshair(Crosshair.L_CIRCLE).smoke(Lego.LAMBDA_STANDARD_SMOKE)
 				.rec(new Receiver(0)
 						.dmg(GUN_SHREDDER_DAMAGE).delay(10).auto(true).autoAfterDry(true).dryfireAfterAuto(true).reload(44).jam(19).sound(KineticSounds.GUN_SHREDDER_FIRE, 1.0F, 1.0F)
-						.mag(new MagazineBelt().addConfigs(g12_shredder, g12_shredder_slug, g12_shredder_flechette, g12_shredder_magnum, g12_shredder_explosive, g12_shredder_phosphorus))
+						.mag(new MagazineBelt().addConfigs(g12_shredder, g12_shredder_slug, g12_shredder_flechette, g12_shredder_magnum, g12_shredder_explosive, g12_shredder_phosphorus, g12_shredder_anthrax))
 						.offset(0.75, -0.125, -0.25)
 						.setupStandardFire().recoil(LAMBDA_RECOIL_AUTOSHOTGUN))
 				.setupStandardConfiguration()
