@@ -26,7 +26,7 @@ public final class JetpackLayer extends RenderLayer<AbstractClientPlayer, Player
         if (player.isInvisible()) return;
         if (stack.getItem() instanceof com.hbm.equipment.jetpack.ModularJetpackItem) {
             pose.pushPose(); getParentModel().body.translateAndRotate(pose); pose.scale(1F/16, 1F/16, 1F/16);
-            ModularJetpackRenderer.renderPack(pose, buffers, light, OverlayTexture.NO_OVERLAY); pose.popPose(); return;
+            ModularJetpackRenderer.renderPack(stack, false, pose, buffers, light, OverlayTexture.NO_OVERLAY); pose.popPose(); return;
         }
         if (stack.getItem() instanceof com.hbm.equipment.boostmurk.SourceWingsItem wings) {
             com.hbm.client.boostmurk.MurkWingRenderer.render(pose,buffers,light,player,stack,wings,getParentModel()); return;

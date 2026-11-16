@@ -43,6 +43,8 @@ public class XFactory44 {
 	public static BulletConfig m44_equestrian_pip;
 	public static BulletConfig m44_equestrian_mn7;
 	public static BulletConfig rebar;
+	public static final com.hbm.damage.IProtectiveItem COUNTER_PROTECTION_MODULE =
+			(stack,entity,damage,amount,pierceDT,pierce)->new float[]{30F,0F};
 	
 	public static void initConfig() {}
 
@@ -87,9 +89,9 @@ public static BiConsumer<com.hbm.entity.projectile.EntityBulletBaseMK4,HitResult
 
 		PistolGuns.gun_henry_counter=new ItemGunCounter(WeaponQuality.CORRUPTED,new GunConfig()
 				.dura(30000).draw(15).inspect(23).reloadSequential(true).crosshair(Crosshair.L_CIRCUMFLEX).smoke(Lego.LAMBDA_STANDARD_SMOKE)
-				.rec(new Receiver(0).dmg(GUN_LINCOLN_DAMAGE).spreadHipfire(0F).delay(20).reload(25,11,14,8).jam(45).sound(PistolSounds.GUN_RIFLE_FIRE,1F,.75F)
+				.rec(new Receiver(0).dmg(GUN_COUNTER_DAMAGE).spreadHipfire(0F).delay(20).reload(25,11,14,8).jam(45).sound(PistolSounds.GUN_RIFLE_FIRE,1F,.75F)
 						.mag(new MagazineSingleReload(0,14).addConfigs(rebar)).offset(.75,-.0625,-.1875).setupStandardFire().recoil(LAMBDA_RECOIL_HENRY))
-				.setupStandardConfiguration().anim(LAMBDA_HENRY_ANIMS).orchestra(PistolOrchestras.ORCHESTRA_HENRY));
+				.setupStandardConfiguration().resistance(COUNTER_PROTECTION_MODULE).anim(LAMBDA_HENRY_ANIMS).orchestra(PistolOrchestras.ORCHESTRA_HENRY));
 
 		PistolGuns.gun_heavy_revolver = new ItemGunBaseNT(WeaponQuality.A_SIDE, new GunConfig()
 				.dura(600).draw(10).inspect(23).crosshair(Crosshair.L_CLASSIC).smoke(Lego.LAMBDA_STANDARD_SMOKE)

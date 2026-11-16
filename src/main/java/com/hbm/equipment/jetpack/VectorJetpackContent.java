@@ -2,6 +2,8 @@ package com.hbm.equipment.jetpack;
 
 import com.hbm.item.medicine.MedicineItem;
 import java.util.List;
+import java.util.Map;
+import java.util.EnumMap;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.NeoForge;
@@ -15,6 +17,12 @@ public final class VectorJetpackContent {
     public static final DeferredItem<SourceJetpackItem> BRAKE = ITEMS.register("jetpack_break", () -> new SourceJetpackItem(SourceJetpackItem.Kind.BRAKE));
     public static final DeferredItem<SourceJetpackItem> VECTOR = ITEMS.register("jetpack_vector", () -> new SourceJetpackItem(SourceJetpackItem.Kind.VECTOR));
     public static final DeferredItem<ModularJetpackItem> MODULAR = ITEMS.register("jetpack_modular", ModularJetpackItem::new);
+    public static final Map<JetpackPartItem.Part,DeferredItem<JetpackPartItem>> PARTS = parts();
+    private static Map<JetpackPartItem.Part,DeferredItem<JetpackPartItem>> parts(){
+        var parts=new EnumMap<JetpackPartItem.Part,DeferredItem<JetpackPartItem>>(JetpackPartItem.Part.class);
+        for(var part:JetpackPartItem.Part.values())parts.put(part,ITEMS.register("jetpack_part_"+part.id(),()->new JetpackPartItem(part)));
+        return Map.copyOf(parts);
+    }
     public static final DeferredItem<MedicineItem> TANK = ITEMS.register("jetpack_tank", MedicineItem::sourceJetpackTank);
     public static void register(IEventBus bus) {
         ITEMS.register(bus); JetpackNetwork.register(bus); bus.addListener(VectorJetpackContent::vanillaCreative);
@@ -23,7 +31,7 @@ public final class VectorJetpackContent {
         NeoForge.EVENT_BUS.addListener(JetpackNetwork::dimension);
     }
     private static void vanillaCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) { event.accept(MODULAR.get()); event.accept(REGULAR.get()); event.accept(BRAKE.get()); event.accept(VECTOR.get()); }
+        if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) { event.accept(MODULAR.get()); for(var part:JetpackPartItem.Part.values())event.accept(PARTS.get(part).get()); event.accept(REGULAR.get()); event.accept(BRAKE.get()); event.accept(VECTOR.get()); }
     }
     public static List<ItemStack> creativeStacks(String tab) { return "consumable".equals(tab) ? List.of(new ItemStack(TANK.get())) : List.of(); }
     private VectorJetpackContent() { }

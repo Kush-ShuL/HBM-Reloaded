@@ -8,6 +8,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
 public final class TrackingRadarBlock extends DummyableBlock {
@@ -15,7 +17,13 @@ public final class TrackingRadarBlock extends DummyableBlock {
     @Override protected MapCodec<? extends TrackingRadarBlock> codec() { return MapCodec.unit(this); }
     @Override public int[] dimensions() { return new int[]{9, 0, 1, 1, 1, 1}; }
     @Override public int offset() { return 1; }
-    @Override public BlockEntity newBlockEntity(BlockPos pos, BlockState state) { return isCore(state) ? new TrackingRadarContent.RadarEntity(pos, state) : null; }
+    @Override public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return isCore(state)?new TrackingRadarContent.RadarEntity(pos,state)
+                :isPort(state)?new com.hbm.multiblock.proxy.SourceStandaloneProxy(pos,state):null;
+    }
+    @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level,BlockState state,BlockEntityType<T> type){
+        return level.isClientSide?createTickerHelper(type,TrackingRadarContent.ENTITY.get(),(world,pos,block,radar)->radar.clientTick()):null;
+    }
     @Override public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
         if (!level.isClientSide) {

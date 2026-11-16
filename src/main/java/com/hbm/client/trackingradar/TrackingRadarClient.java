@@ -38,7 +38,7 @@ public final class TrackingRadarClient {
                 if (context != ItemDisplayContext.THIRD_PERSON_LEFT_HAND && context != ItemDisplayContext.THIRD_PERSON_RIGHT_HAND) pose.mulPose(Axis.YP.rotationDegrees(90));
             }
             pose.scale(.5F, .5F, .5F); pose.mulPose(Axis.YP.rotationDegrees(-90));
-            TrackingRadarRenderer.common(15, pose, buffers, light, overlay); pose.popPose();
+            TrackingRadarRenderer.common(15,-45,pose,buffers,light,overlay); pose.popPose();
         }
     }
     private TrackingRadarClient() { }

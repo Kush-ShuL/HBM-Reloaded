@@ -1,5 +1,102 @@
 [
   {
+    "symbol": "machine_tracking_radar",
+    "sourceClass": "MachineTrackingRadar",
+    "sourceRegistryId": "hbm:tile.machine_tracking_radar",
+    "nativeBlock": "hbm:machine_tracking_radar",
+    "admitted": true,
+    "metadata": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        "sourceProxy": "TileEntityProxyCombo",
+        "flags": {
+          "inv": false,
+          "power": true,
+          "conductor": false,
+          "fluid": false,
+          "heat": false,
+          "metal": false
+        },
+        "factoryClass": "MachineTrackingRadar",
+        "factoryExpression": "new TileEntityProxyCombo().power()"
+      },
+      {
+        "sourceProxy": "TileEntityProxyCombo",
+        "flags": {
+          "inv": false,
+          "power": true,
+          "conductor": false,
+          "fluid": false,
+          "heat": false,
+          "metal": false
+        },
+        "factoryClass": "MachineTrackingRadar",
+        "factoryExpression": "new TileEntityProxyCombo().power()"
+      },
+      {
+        "sourceProxy": "TileEntityProxyCombo",
+        "flags": {
+          "inv": false,
+          "power": true,
+          "conductor": false,
+          "fluid": false,
+          "heat": false,
+          "metal": false
+        },
+        "factoryClass": "MachineTrackingRadar",
+        "factoryExpression": "new TileEntityProxyCombo().power()"
+      },
+      {
+        "sourceProxy": "TileEntityProxyCombo",
+        "flags": {
+          "inv": false,
+          "power": true,
+          "conductor": false,
+          "fluid": false,
+          "heat": false,
+          "metal": false
+        },
+        "factoryClass": "MachineTrackingRadar",
+        "factoryExpression": "new TileEntityProxyCombo().power()"
+      },
+      {
+        "sourceProxy": "TileEntityProxyCombo",
+        "flags": {
+          "inv": false,
+          "power": true,
+          "conductor": false,
+          "fluid": false,
+          "heat": false,
+          "metal": false
+        },
+        "factoryClass": "MachineTrackingRadar",
+        "factoryExpression": "new TileEntityProxyCombo().power()"
+      },
+      {
+        "sourceProxy": "TileEntityProxyCombo",
+        "flags": {
+          "inv": false,
+          "power": true,
+          "conductor": false,
+          "fluid": false,
+          "heat": false,
+          "metal": false
+        },
+        "factoryClass": "MachineTrackingRadar",
+        "factoryExpression": "new TileEntityProxyCombo().power()"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
     "symbol": "chimney_brick",
     "sourceClass": "MachineChimneyBrick",
     "sourceRegistryId": "hbm:tile.chimney_brick",

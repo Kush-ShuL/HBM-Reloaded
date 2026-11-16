@@ -1,0 +1,15 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.asat",
+  "duration": 1200,
+  "power": 25000,
+  "order": 351,
+  "output_items": [{"pool": [{"stack": {"id": "hbm:satellite_asat", "count": 1}}]}],
+  "input_items": [
+    {"ingredient": {"tag": "hbm:gun_parts/shells/saturnite"}, "count": 24},
+    {"ingredient": {"tag": "hbm:billets/plutonium_rg"}, "count": 12},
+    {"ingredient": {"item": "hbm:circuit_atomic_clock"}, "count": 12},
+    {"ingredient": {"item": "hbm:part_generic_lde"}, "count": 16},
+    {"ingredient": {"item": "hbm:circuit_controller_advanced"}, "count": 5}
+  ]
+}

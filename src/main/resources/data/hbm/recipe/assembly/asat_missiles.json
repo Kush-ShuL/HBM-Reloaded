@@ -1,0 +1,14 @@
+{
+  "type": "hbm:assembly",
+  "name": "ass.asatmissile",
+  "duration": 600,
+  "power": 25000,
+  "order": 352,
+  "output_items": [{"pool": [{"stack": {"id": "hbm:satellite_asat_ammo", "count": 1}}]}],
+  "input_items": [
+    {"ingredient": {"tag": "hbm:gun_parts/shells/weapon_steel"}, "count": 12},
+    {"ingredient": {"item": "hbm:rocket_fuel"}, "count": 32},
+    {"ingredient": {"item": "hbm:part_generic_alclad"}, "count": 16},
+    {"ingredient": {"item": "hbm:circuit_controller"}, "count": 1}
+  ]
+}
