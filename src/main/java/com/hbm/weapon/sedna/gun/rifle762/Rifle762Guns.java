@@ -27,6 +27,7 @@ public final class Rifle762Guns {
  public static ItemGunBaseNT gun_carbine;
  public static ItemGunBaseNT gun_minigun;
  public static ItemGunBaseNT gun_minigun_lacunae;
+ public static ItemGunBaseNT gun_minigun_hell;
  public static ItemGunBaseNT gun_minigun_dual;
  public static ItemGunBaseNT gun_mas36;
 }

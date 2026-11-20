@@ -156,6 +156,7 @@ public final class HbmReloaded {
         com.hbm.weapon.sedna.gun.legendary.LegendaryGunsContent.register(modBus,container);
         com.hbm.weapon.sedna.gun.energy.bag.AmmoBagContent.register(modBus);
         com.hbm.weapon.sedna.gun.pistols.PistolContent.register(modBus,container);
+        modBus.addListener(com.hbm.item.medicine.RedPillSwordBeam::register);
         com.hbm.weapon.sedna.gun.kinetic.KineticContent.register(modBus,container);
         com.hbm.machine.pedestal.PedestalContent.register(modBus);
         com.hbm.machine.pedestal.PedestalViewerConfig.register(container);
@@ -455,6 +456,7 @@ public final class HbmReloaded {
         com.hbm.block.dungeonspawner.DungeonSpawnerContent.register(modBus);
         com.hbm.world.structure.dependencies.industrial44.IndustrialFixturesContent.register(modBus);
         com.hbm.entity.mob.undead.UndeadSoldierContent.register(modBus);
+        com.hbm.entity.mob.mass.EntityMass.register(modBus);
         com.hbm.armor.taurun.TaurunContent.register(modBus);
         com.hbm.weapon.sedna.gun.chemthrower.ChemthrowerContent.register(modBus);
         com.hbm.machine.chemicalfactory.ChemicalFactoryContent.register(modBus);

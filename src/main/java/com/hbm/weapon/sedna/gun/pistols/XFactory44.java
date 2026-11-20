@@ -64,7 +64,7 @@ public static BiConsumer<com.hbm.entity.projectile.EntityBulletBaseMK4,HitResult
 		m44_equestrian_mn7 = new BulletConfig("hbm:pistols/m44_equestrian_mn7").setItem(PistolAmmo.M44_EQUESTRIAN).setDamage(0F).setOnImpact(LAMBDA_TORPEDO)
 				.setCasing(casing44.clone().setColor(SpentCasing.COLOR_CASE_EQUESTRIAN).register("m44equestrianMn7"));
 		rebar=new BulletConfig("hbm:pistols/rebar").setItem(new GunAmmo(()->com.hbm.item.autogen.AutogenContent.item("bolt").stack(com.hbm.material.HbmMaterials.byId(30),1).getItem(),1,0))
-				.setupDamageClass(DamageClass.EXPLOSIVE).setThresholdNegation(35F).setArmorPiercing(.5F).setHeadshot(2.5F).setCasing(casing44.clone().register("rebar"));
+				.setupDamageClass(DamageClass.EXPLOSIVE).setThresholdNegation(35F).setArmorPiercing(.5F).setHeadshot(2.5F).setCorrupted(true).setCasing(casing44.clone().register("rebar"));
 
 		PistolGuns.gun_henry = new ItemGunBaseNT(WeaponQuality.A_SIDE, new GunConfig()
 				.dura(300).draw(15).inspect(23).reloadSequential(true).crosshair(Crosshair.CIRCLE).smoke(Lego.LAMBDA_STANDARD_SMOKE)

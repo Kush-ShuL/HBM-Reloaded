@@ -15,7 +15,10 @@ import net.minecraft.world.phys.BlockHitResult;
 /** Original redstone-triggered nine-pedestal circuit, including exact whole-stack deposit/withdrawal. */
 public final class PedestalBlock extends BaseEntityBlock {
     private static final MapCodec<PedestalBlock> CODEC=simpleCodec(PedestalBlock::new);
-    public PedestalBlock(Properties properties){super(properties);}
+    public static final net.minecraft.world.level.block.state.properties.BooleanProperty TRAPPED =
+            net.minecraft.world.level.block.state.properties.BooleanProperty.create("trapped");
+    public PedestalBlock(Properties properties){super(properties);registerDefaultState(stateDefinition.any().setValue(TRAPPED,false));}
+    @Override protected void createBlockStateDefinition(net.minecraft.world.level.block.state.StateDefinition.Builder<Block,BlockState> builder){builder.add(TRAPPED);}
     @Override protected MapCodec<? extends BaseEntityBlock> codec(){return CODEC;}
     @Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return new PedestalBlockEntity(pos,state);}
     @Override protected RenderShape getRenderShape(BlockState state){return RenderShape.MODEL;}
@@ -29,7 +32,15 @@ public final class PedestalBlock extends BaseEntityBlock {
             if(!level.isClientSide){pedestal.setItem(held.copy());player.setItemInHand(hand,ItemStack.EMPTY);}return InteractionResult.sidedSuccess(level.isClientSide);
         }
         if(!pedestal.item().isEmpty()&&held.isEmpty()){
-            if(!level.isClientSide){player.setItemInHand(hand,pedestal.item().copy());pedestal.setItem(ItemStack.EMPTY);}return InteractionResult.sidedSuccess(level.isClientSide);
+            if(level instanceof net.minecraft.server.level.ServerLevel server){
+                player.setItemInHand(hand,pedestal.item().copy());pedestal.setItem(ItemStack.EMPTY);
+                if(level.getBlockState(pos).getValue(TRAPPED)){
+                    level.removeBlock(pos,false);
+                    var mass=com.hbm.entity.mob.mass.EntityMass.TYPE.get().create(server);
+                    mass.moveTo(pos.getX()+.5,Math.max(server.getMinBuildHeight()+1,pos.getY()-10),pos.getZ()+.5,0,0);
+                    server.addFreshEntity(mass);
+                }
+            }return InteractionResult.sidedSuccess(level.isClientSide);
         }
         return InteractionResult.PASS;
     }

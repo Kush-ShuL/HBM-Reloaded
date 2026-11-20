@@ -30,7 +30,7 @@ public final class RedRoomGenerator {
         else LegacyStructureLoot.requireReady(server,"POOL_RED_PEDESTAL");
         if(cracked)held.shrink(1);
         BlockPos center=pos.relative(side,-4).below(2);
-        if(black)black(server,center,side);else red(server,center);
+        if(black)black(server,center,side);else red(server,center,side);
         var bottom=pos.below();var block=SourceDoorContent.RED.get();
         var state=block.defaultBlockState().setValue(DoorBlock.FACING,side.getOpposite()).setValue(DoorBlock.HINGE,SourceDoorBlock.sourceHinge(level,bottom,side.getOpposite(),block));
         level.setBlock(bottom,state,Block.UPDATE_CLIENTS|Block.UPDATE_KNOWN_SHAPE);
@@ -62,7 +62,7 @@ public final class RedRoomGenerator {
             for(int y=1;y<=3;y++)put(level,center,x,y,z,Blocks.AIR.defaultBlockState());
         }
     }
-    private static void red(ServerLevel level,BlockPos center){
+    private static void red(ServerLevel level,BlockPos center,Direction entry){
         var random=level.random;shell(level,center,null);
         if(random.nextInt(1)==0){int side=random.nextInt(4);int[][] coordinates={{4,0,4},{-4,0,5},{0,4,2},{0,-4,3}};var c=coordinates[side];put(level,center,c[0],2,c[1],RedRooms.INNER.get().defaultBlockState().setValue(RoomBrickBlock.META,c[2]));}
         interior(level,center,false);
@@ -86,6 +86,25 @@ public final class RedRoomGenerator {
             for(String suffix:new String[]{"helmet","plate","legs","boots"})loot.add(new ItemStack(HbmContent.item(prefix+suffix)),0,0,0);loot.sync();
         }else pedestal(level,center.above(),LegacyStructureLoot.template(level,"POOL_RED_PEDESTAL",random));
         cleanup(level,center);
+        if(center.getY()>=level.getMinBuildHeight()+15)
+            level.setBlock(center.relative(entry,-4).above(2),brick(15),Block.UPDATE_ALL);
+    }
+    public static void buildShaft(ServerLevel level,BlockPos wall,Direction direction){
+        if(!direction.getAxis().isHorizontal())return;
+        var center=wall.relative(direction,4).below(12);
+        if(!level.isInWorldBounds(center)||!level.isInWorldBounds(center.above(14))
+                ||!level.hasChunksAt(center.offset(-4,0,-4),center.offset(4,14,4)))return;
+        for(int y=0;y<15;y++)for(int x=-4;x<=4;x++)for(int z=-4;z<=4;z++){
+            boolean roofOrFloor=y==0||y==14;
+            boolean edge=Math.abs(x)==4||Math.abs(z)==4;
+            if(!roofOrFloor&&edge&&y>=10&&x*direction.getStepX()+z*direction.getStepZ()==-4
+                    &&!(Math.abs(x)==4&&Math.abs(z)==4))continue;
+            put(level,center,x,y,z,roofOrFloor||edge?brick(6):Blocks.AIR.defaultBlockState());
+        }
+        level.removeBlock(wall,false);level.removeBlock(wall.below(),false);
+        var pos=center.above();
+        level.setBlock(pos,PedestalContent.BLOCK.get().defaultBlockState().setValue(PedestalBlock.TRAPPED,true),Block.UPDATE_ALL);
+        if(level.getBlockEntity(pos) instanceof PedestalBlockEntity pedestal)pedestal.setItem(new ItemStack(HbmContent.item("nothing")));
     }
     private static void black(ServerLevel level,BlockPos center,Direction opening){
         shell(level,center,opening);interior(level,center,true);

@@ -102,6 +102,10 @@ public final class DamageResistanceHandler {
         if(entity instanceof IResistanceProvider provider){float[] values=provider.getCurrentDTDR(source,amount,pierceDT,pierce);dt+=values[0];dr+=values[1];}
         ItemStack held=entity.getMainHandItem();
         if(held.getItem() instanceof IProtectiveItem protective){float[] values=protective.getCurrentDTDR(held,entity,source,amount,pierceDT,pierce);dt+=values[0];dr+=values[1];}
+        if(entity.hasEffect(com.hbm.item.medicine.MedicineEffects.ESTRADIOL)&&CATEGORY_PHYSICAL.equals(typeToCategory(source))){
+            String chest=worn(entity.getItemBySlot(EquipmentSlot.CHEST));
+            if("hbm:dieselsuit_plate".equals(chest)||"hbm:ncrpa_plate".equals(chest)||"hbm:envsuit_plate".equals(chest)){dt+=5;dr+=.05F;}
+        }
         ArmorSet worn=new ArmorSet(worn(entity.getItemBySlot(EquipmentSlot.HEAD)),worn(entity.getItemBySlot(EquipmentSlot.CHEST)),worn(entity.getItemBySlot(EquipmentSlot.LEGS)),worn(entity.getItemBySlot(EquipmentSlot.FEET)));
         List<ResistanceStats> all=new ArrayList<>();all.add(setStats.get(worn));
         for(EquipmentSlot slot:List.of(EquipmentSlot.FEET,EquipmentSlot.LEGS,EquipmentSlot.CHEST,EquipmentSlot.HEAD))all.add(itemStats.get(worn(entity.getItemBySlot(slot))));

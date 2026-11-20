@@ -43,7 +43,7 @@ public final class KineticContent {
             // Original submunitions clone the fully initialized ordinary config;
             // modern registry item suppliers become available at this lifecycle point.
             BulletConfig[] original = {XFactory12ga.g12, XFactory12ga.g12_slug, XFactory12ga.g12_flechette,
-                    XFactory12ga.g12_magnum, XFactory12ga.g12_explosive, XFactory12ga.g12_phosphorus};
+                    XFactory12ga.g12_magnum, XFactory12ga.g12_explosive, XFactory12ga.g12_phosphorus, XFactory12ga.g12_anthrax};
             BulletConfig[] sub = {XFactory12ga.g12_sub, XFactory12ga.g12_sub_slug, XFactory12ga.g12_sub_flechette,
                     XFactory12ga.g12_sub_magnum, XFactory12ga.g12_sub_explosive, XFactory12ga.g12_sub_phosphorus};
             for (int i = 0; i < sub.length; i++) {

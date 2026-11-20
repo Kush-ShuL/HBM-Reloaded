@@ -68,30 +68,5 @@
       "raw": "Schraranium"
     }
   ],
-  "memberships": [
-    {
-      "tag": "c:ores/iron",
-      "members": [
-        {
-          "id": "hbm:ore_enriched_iron"
-        }
-      ]
-    },
-    {
-      "tag": "c:ores/copper",
-      "members": [
-        {
-          "id": "hbm:ore_enriched_copper"
-        }
-      ]
-    },
-    {
-      "tag": "c:ores/gold",
-      "members": [
-        {
-          "id": "hbm:ore_enriched_gold"
-        }
-      ]
-    }
-  ]
+  "memberships": []
 }

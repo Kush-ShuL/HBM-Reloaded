@@ -14,7 +14,7 @@ public final class StrangeStoneFeature extends Feature<NoneFeatureConfiguration>
         var level=context.level();if(!RedRooms.ENABLED.get()||!level.getLevel().dimension().equals(Level.OVERWORLD))return false;
         var random=context.random();int chance=control.chance(RedRooms.CHANCE.get());if(chance==0||random.nextInt(chance)!=0)return false;
         int x=(context.origin().getX()&~15)+random.nextInt(16)+8;
-        int base=RedRooms.DEEP.get()?level.getMinBuildHeight():0;int y=control.height(random,6+base,18+base,true);
+        int base=RedRooms.DEEP.get()?level.getMinBuildHeight():0;int y=control.height(random,12+base,35+base,true);
         int z=(context.origin().getZ()&~15)+random.nextInt(16)+8;
         var pos=new BlockPos(x,y,z);if(!level.ensureCanWrite(pos))return false;
         if(!level.getBlockState(pos).is(RedRooms.DEEP.get()&&y<0?Blocks.DEEPSLATE:Blocks.STONE))return false;

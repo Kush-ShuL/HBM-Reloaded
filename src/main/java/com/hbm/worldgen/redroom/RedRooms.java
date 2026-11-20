@@ -22,7 +22,7 @@ public final class RedRooms {
     public static final ModConfigSpec SPEC;
     public static final ModConfigSpec.BooleanValue ENABLED,DEEP;
     public static final ModConfigSpec.IntValue CHANCE;
-    static {var builder=new ModConfigSpec.Builder();ENABLED=builder.define("redRoomKeyholes",true);DEEP=builder.comment("将红房间生成带移至世界底部附近，并使用深板岩外观；关闭后在 Y=6～18 的石头中生成。").define("adaptToDeepslateDepth",true);CHANCE=builder.comment("每个区块尝试一次，生成概率为 1/4；使用钥匙后才创建内部房间。").defineInRange("chanceDenominator",4,1,1000000);SPEC=builder.build();}
+    static {var builder=new ModConfigSpec.Builder();ENABLED=builder.define("redRoomKeyholes",true);DEEP=builder.comment("将红房间生成带移至世界底部附近，并使用深板岩外观；关闭后在 Y=12～35 的石头中生成。").define("adaptToDeepslateDepth",true);CHANCE=builder.comment("每个区块尝试一次，生成概率为 1/4；使用钥匙后才创建内部房间。").defineInRange("chanceDenominator",4,1,1000000);SPEC=builder.build();}
     public static void register(IEventBus bus,ModContainer container){
         ITEMS.registerSimpleBlockItem(STONE);ITEMS.registerSimpleBlockItem(INNER);ITEMS.registerSimpleBlockItem(BRICK);
         FEATURES.register("red_room_keyhole",StrangeStoneFeature::new);MODIFIERS.register("red_room_keyholes",()->RedRoomBiomeModifier.CODEC);

@@ -16,9 +16,7 @@ public final class BedrockProcessingData {
             DATA=new Gson().fromJson(new InputStreamReader(stream,StandardCharsets.UTF_8),Definitions.class);
         } catch(java.io.IOException error){throw new ExceptionInInitializerError(error);}
     }
-    public record Definitions(List<OldOre> oldOres,List<Byproduct> byproducts,List<OreType> types,List<Grade> grades){}
-    public record OldOre(String name,String oreName,int color,List<String> byproducts){}
-    public record Byproduct(String name,int color){}
+    public record Definitions(List<OreType> types,List<Grade> grades){}
     public record Output(String material,int amount){public NtmMaterial materialValue(){return material==null?null:HbmMaterials.bySymbol(material);}}
     public record OreType(String name,int light,int dark,String suffix,List<Output> outputs){}
     public record Grade(String name,int tint,String prefix,List<String> traits){}

@@ -29,6 +29,7 @@ public final class MedicineEffects {
     public static final DeferredHolder<MobEffect,MobEffect> PHOSPHORUS=add("phosphorus",true,0xFFFF00);
     public static final DeferredHolder<MobEffect,MobEffect> POTION_SICKNESS=add("potionsickness",false,0xFF8080);
     public static final DeferredHolder<MobEffect,MobEffect> DEATH=add("death",false,0x111111);
+    public static final DeferredHolder<MobEffect,MobEffect> ESTRADIOL=add("estradiol",false,0xEB2C2C);
     private MedicineEffects() {}
     private static DeferredHolder<MobEffect,MobEffect> add(String name,boolean bad,int color) {
         return EFFECTS.register(name,()->new SourceEffect(name,bad?MobEffectCategory.HARMFUL:MobEffectCategory.BENEFICIAL,color));

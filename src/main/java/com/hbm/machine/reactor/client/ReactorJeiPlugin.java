@@ -23,7 +23,7 @@ public final class ReactorJeiPlugin implements IModPlugin {
             @Override public String getLegacyStringSubtypeInfo(ItemStack stack,mezz.jei.api.ingredients.subtypes.UidContext context){return getSubtypeData(stack,context).toString();}
         });
     }
-    @Override public void registerExtraIngredients(IExtraIngredientRegistration event){var entries=new java.util.ArrayList<ItemStack>();for(var item:ReactorContent.fuelItems())entries.add(new ItemStack(item));for(var item:ReactorContent.wasteItems())for(int metadata=0;metadata<2;metadata++){var stack=new ItemStack(item);stack.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),metadata);entries.add(stack);}event.addExtraIngredients(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,entries);}
+    @Override public void registerExtraIngredients(IExtraIngredientRegistration event){var entries=new java.util.ArrayList<ItemStack>();for(var item:ReactorContent.wasteItems())for(int metadata=0;metadata<2;metadata++){var stack=new ItemStack(item);stack.set(com.hbm.hazard.HbmHazards.LEGACY_METADATA.get(),metadata);entries.add(stack);}event.addExtraIngredients(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,entries);}
     @Override public void registerCategories(IRecipeCategoryRegistration event){event.addRecipeCategories(new Category(event.getJeiHelpers().getGuiHelper()));}
     @Override public void registerRecipes(IRecipeRegistration event){var level=Minecraft.getInstance().level;if(level!=null)event.addRecipes(TYPE,BreedingRecipeConfig.recipes(level.getRecipeManager()));}
     @Override public void registerRecipeCatalysts(IRecipeCatalystRegistration event){event.addRecipeCatalysts(TYPE,ReactorContent.BREEDING_ITEM.get());}

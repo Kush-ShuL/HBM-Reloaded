@@ -6,7 +6,6 @@ import com.hbm.machine.fensu.FensuPackets;
 import com.hbm.machine.massstorage.MassStoragePackets;
 import com.hbm.machine.radar.RadarStatePacket;
 import com.hbm.machine.reactor.rbmk.console.RbmkConsoleNetwork;
-import com.hbm.machine.reactorcontroller.ReactorControllerPackets;
 import com.hbm.machine.soyuzlauncher.SoyuzLauncherSync;
 import com.hbm.missile.custom.launcher.CustomLauncherSync;
 import com.hbm.world.oldlantern.OldLanternPacket;
@@ -27,7 +26,6 @@ final class SourceLoadedTypedSnapshots {
         if (payload instanceof RbmkConsoleNetwork.Update value) return copy(server,value,RbmkConsoleNetwork.Update.CODEC);
         if (payload instanceof RadarStatePacket value) return copy(server,value,RadarStatePacket.CODEC);
         if (payload instanceof SoyuzLauncherSync value) return copy(server,value,SoyuzLauncherSync.CODEC);
-        if (payload instanceof ReactorControllerPackets.Snapshot value) return copy(server,value,ReactorControllerPackets.Snapshot.CODEC);
         if (payload instanceof TimedBalefireState value) return copy(server,value,TimedBalefireState.CODEC);
         if (payload instanceof OldLanternPacket value) return copy(server,value,OldLanternPacket.CODEC);
         if (payload instanceof GenericDoorStatePacket value) return copy(server,value,GenericDoorStatePacket.CODEC);

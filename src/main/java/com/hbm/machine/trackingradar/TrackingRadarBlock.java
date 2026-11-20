@@ -22,7 +22,9 @@ public final class TrackingRadarBlock extends DummyableBlock {
                 :isPort(state)?new com.hbm.multiblock.proxy.SourceStandaloneProxy(pos,state):null;
     }
     @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level,BlockState state,BlockEntityType<T> type){
-        return level.isClientSide?createTickerHelper(type,TrackingRadarContent.ENTITY.get(),(world,pos,block,radar)->radar.clientTick()):null;
+        return isCore(state)?createTickerHelper(type,TrackingRadarContent.ENTITY.get(),(world,pos,block,radar)->{
+            if(world instanceof net.minecraft.server.level.ServerLevel server)radar.serverTick(server);else radar.clientTick();
+        }):null;
     }
     @Override public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);

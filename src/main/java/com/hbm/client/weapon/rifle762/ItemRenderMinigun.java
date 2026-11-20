@@ -60,6 +60,7 @@ public class ItemRenderMinigun extends com.hbm.client.weapon.energy.EnergyGunRen
 		
 		LegacyGunGL.glPushMatrix();
 		LegacyGunGL.glRotated(rotate[2], 0, 0, 1);
+		shortenBarrels(stack);
 		Rifle762Models.minigun.renderPart("Barrels");
 		LegacyGunGL.glPopMatrix();
 
@@ -75,7 +76,7 @@ public class ItemRenderMinigun extends com.hbm.client.weapon.energy.EnergyGunRen
 		LegacyGunGL.glShadeModel(LegacyGunGL.GL_FLAT);
 
 		LegacyGunGL.glPushMatrix();
-		LegacyGunGL.glTranslated(0, 0, 12);
+		LegacyGunGL.glTranslated(0, 0, isShort(stack)?5:12);
 		LegacyGunGL.glRotated(90, 0, 1, 0);
 		
 		if(stack.getItem() == Rifle762Guns.gun_minigun_lacunae) {
@@ -103,11 +104,12 @@ public class ItemRenderMinigun extends com.hbm.client.weapon.energy.EnergyGunRen
 	@Override
 	public void setupInv(ItemStack stack) {
 		super.setupInv(stack);
-		double scale = 0.875D;
+		boolean shortened=isShort(stack);
+		double scale = shortened?1.125D:.875D;
 		LegacyGunGL.glScaled(scale, scale, scale);
 		LegacyGunGL.glRotated(25, 1, 0, 0);
 		LegacyGunGL.glRotated(45, 0, 1, 0);
-		LegacyGunGL.glTranslated(-0.25, 0.5, 0);
+		LegacyGunGL.glTranslated(shortened?-3.5:-.25,shortened?0:.5,0);
 	}
 
 	@Override
@@ -120,12 +122,16 @@ public class ItemRenderMinigun extends com.hbm.client.weapon.energy.EnergyGunRen
 	@Override
 	public void renderOther(ItemStack stack, ItemRenderType type, Object... data) {
 		LegacyGunGL.glEnable(LegacyGunGL.GL_LIGHTING);
+		if(type==ItemRenderType.ENTITY&&isShort(stack))LegacyGunGL.glTranslated(0,0,2);
 		
 		LegacyGunGL.glShadeModel(LegacyGunGL.GL_SMOOTH);
 		LegacyGunGL.texture(texture);
 		Rifle762Models.minigun.renderPart("Gun");
 		Rifle762Models.minigun.renderPart("Grip");
+		LegacyGunGL.glPushMatrix();
+		shortenBarrels(stack);
 		Rifle762Models.minigun.renderPart("Barrels");
+		LegacyGunGL.glPopMatrix();
 		LegacyGunGL.glShadeModel(LegacyGunGL.GL_FLAT);
 		
 		if(type == ItemRenderType.EQUIPPED) {
@@ -142,7 +148,7 @@ public class ItemRenderMinigun extends com.hbm.client.weapon.energy.EnergyGunRen
 			}
 			
 			LegacyGunGL.glPushMatrix();
-			LegacyGunGL.glTranslated(0, 0, 12.25);
+			LegacyGunGL.glTranslated(0, 0, isShort(stack)?5.125:12.25);
 			LegacyGunGL.glRotated(90, 0, 1, 0);
 			
 			if(stack.getItem() == Rifle762Guns.gun_minigun_lacunae) {
@@ -158,4 +164,11 @@ public class ItemRenderMinigun extends com.hbm.client.weapon.energy.EnergyGunRen
 			LegacyGunGL.glPopMatrix();
 		}
 	}
+    private static boolean isShort(ItemStack stack){return stack.getItem()==Rifle762Guns.gun_minigun_hell;}
+    private static void shortenBarrels(ItemStack stack){
+        if(!isShort(stack))return;
+        LegacyGunGL.glTranslated(0,0,-2);
+        LegacyGunGL.glScaled(1,1,.5);
+        LegacyGunGL.glTranslated(0,0,2);
+    }
 }

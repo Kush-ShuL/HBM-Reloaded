@@ -94,7 +94,7 @@ public final class MedicineItem extends Item {
         switch(id) {
             case "pill_iodine" -> cleanse(player);
             case "plan_c" -> cyanide(player);
-            case "pill_red" -> effect(player,MedicineEffects.DEATH,60*60*20,0);
+            case "pill_red" -> player.addEffect(new net.minecraft.world.effect.MobEffectInstance(MedicineEffects.ESTRADIOL,60*60*20,0,true,true));
             case "radx" -> effect(player,ExposureEffects.RADX,3*60*20,0);
             case "siox","pill_herbal" -> {
                 HbmExposure.setAsbestos(player,0);HbmExposure.setBlackLung(player,Math.min(HbmExposure.blackLung(player),ExposureData.MAX_BLACK_LUNG/5));

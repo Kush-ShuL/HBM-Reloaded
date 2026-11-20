@@ -28,6 +28,7 @@ public class XFactory762mm {
 	public static Supplier<Float> GUN_CARBINE_DAMAGE=Rifle762Settings.value("GUN_CARBINE_DAMAGE",15F);
 	public static Supplier<Float> GUN_CARBINE_BAYONET_DAMAGE=Rifle762Settings.value("GUN_CARBINE_BAYONET_DAMAGE",15F);
 	public static Supplier<Float> GUN_MINIGUN_DAMAGE=Rifle762Settings.value("GUN_MINIGUN_DAMAGE",6F);
+	public static Supplier<Float> GUN_MINIGUN_HELL_DAMAGE=Rifle762Settings.value("GUN_MINIGUN_HELL_DAMAGE",25F);
 	public static Supplier<Float> GUN_LACUNAE_DAMAGE=Rifle762Settings.value("GUN_LACUNAE_DAMAGE",12F);
 	public static Supplier<Float> GUN_MINIGUN_DUAL_LEFT_DAMAGE=Rifle762Settings.value("GUN_MINIGUN_DUAL_LEFT_DAMAGE",6F);
 	public static Supplier<Float> GUN_MINIGUN_DUAL_RIGHT_DAMAGE=Rifle762Settings.value("GUN_MINIGUN_DUAL_RIGHT_DAMAGE",6F);
@@ -44,6 +45,7 @@ public class XFactory762mm {
 	public static BulletConfig energy_lacunae;
 	public static BulletConfig energy_lacunae_overcharge;
 	public static BulletConfig energy_lacunae_ir;
+	public static BulletConfig hell_pellet;
 	
 	public static void initConfig(){}
 
@@ -57,10 +59,22 @@ public static BiConsumer<com.hbm.entity.projectile.EntityBulletBaseMK4,HitResult
         r762_ap=RifleBallistics.r762_ap;
         r762_du=RifleBallistics.r762_du;
         r762_he=RifleBallistics.r762_he;
+        hell_pellet=new BulletConfig("hbm:rifle762/hell_pellet")
+                .setItem(new GunAmmo(()->com.hbm.registry.HbmContent.item("nugget_lead"),1,0))
+                .setupDamageClass(DamageClass.ELECTRIC).setVel(.5F).setSpread(.02F).setThresholdNegation(25F)
+                .setArmorPiercing(.5F).setCorrupted(true).setLife(200).setCasing(r762_he.casing.clone().register("r762hell"));
 
 		energy_lacunae = new BulletConfig("hbm:rifle762/energy_lacunae").setItem(PistolAmmo.CAPACITOR).setupDamageClass(DamageClass.LASER).setBeam().setReloadCount(40).setSpread(0.0F).setLife(5).setRenderRotations(false).setOnBeamImpact(BulletConfig.LAMBDA_STANDARD_BEAM_HIT);
 		energy_lacunae_overcharge = new BulletConfig("hbm:rifle762/energy_lacunae_overcharge").setItem(PistolAmmo.CAPACITOR_OVERCHARGE).setupDamageClass(DamageClass.LASER).setBeam().setReloadCount(40).setSpread(0.0F).setLife(5).setRenderRotations(false).setDoesPenetrate(true).setOnBeamImpact(BulletConfig.LAMBDA_STANDARD_BEAM_HIT);
 		energy_lacunae_ir = new BulletConfig("hbm:rifle762/energy_lacunae_ir").setItem(PistolAmmo.CAPACITOR_IR).setupDamageClass(DamageClass.FIRE).setBeam().setReloadCount(40).setSpread(0.0F).setLife(5).setRenderRotations(false).setOnBeamImpact(com.hbm.weapon.sedna.gun.energy.EnergyBullets.INFRARED);
+
+        Rifle762Guns.gun_minigun_hell=new ItemGunBaseNT(WeaponQuality.CORRUPTED,new GunConfig()
+                .dura(500_000).draw(20).inspect(20).crosshair(Crosshair.L_CIRCLE).smoke(LAMBDA_SMOKE)
+                .rec(new Receiver(0).dmg(GUN_MINIGUN_HELL_DAMAGE).delay(2).auto(true).dry(15).spread(.01F)
+                        .sound(Rifle762Sounds.GUN_MINIGUN_FIRE,1F,1.5F).mag(new MagazineBelt().addConfigs(hell_pellet))
+                        .offset(1,-.0625*2.5,-.25).setupStandardFire().recoil(LAMBDA_RECOIL_MINIGUN))
+                .setupStandardConfiguration().resistance((stack,entity,damage,amount,pierceDT,pierce)->new float[]{30F,0F})
+                .anim(LAMBDA_MINIGUN_ANIMS).orchestra(Rifle762Orchestras.ORCHESTRA_MINIGUN));
 
 		Rifle762Guns.gun_carbine = new ItemGunBaseNT(WeaponQuality.A_SIDE, new GunConfig()
 				.dura(3_000).draw(10).inspect(31).reloadSequential(true).crosshair(Crosshair.CIRCLE).smoke(LAMBDA_SMOKE)

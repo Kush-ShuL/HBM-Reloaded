@@ -17,6 +17,8 @@ import net.minecraft.world.phys.*;
 
 /** Original MK4 ballistic configuration and standard ricochet/entity-hit callbacks. */
 public class BulletConfig {
+    public boolean corrupted;
+    public BulletConfig setCorrupted(boolean value){corrupted=value;return this;}
     public com.hbm.weapon.sedna.gun.GunAmmo ammo;
     public net.minecraft.world.item.ItemStack casingItem;
     public int casingAmount,ammoReloadCount=1;

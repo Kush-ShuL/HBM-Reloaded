@@ -70,6 +70,12 @@ public class EntityBulletBaseMK4 extends EntityThrowableInterp implements IEntit
     @Override public void setDead(){if(!isRemoved())forceTeleport();super.setDead();}
     public void forceNetworkTeleport(){forceTeleport();}
     @Override protected void onImpact(HitResult impact){
+        if(config.corrupted && level() instanceof net.minecraft.server.level.ServerLevel server && impact instanceof BlockHitResult hit){
+            var state=server.getBlockState(hit.getBlockPos());
+            if(state.is(com.hbm.worldgen.redroom.RedRooms.BRICK.get())
+                    &&state.getValue(com.hbm.worldgen.redroom.RoomBrickBlock.META)==15)
+                com.hbm.worldgen.redroom.RedRoomGenerator.buildShaft(server,hit.getBlockPos(),hit.getDirection().getOpposite());
+        }
         if(!level().isClientSide){if(config.onImpact!=null)config.onImpact.accept(this,impact);if(isRemoved()||inGround)return;if(config.onRicochet!=null)config.onRicochet.accept(this,impact);if(config.onEntityHit!=null)config.onEntityHit.accept(this,impact);}
     }
     @Override protected java.util.Optional<Vec3> entityBoxIntercept(AABB box,Vec3 start,Vec3 end){return java.util.Optional.ofNullable(com.hbm.entity.mob.crab.CyberTauBullet.sourceIntercept(box,start,end));}

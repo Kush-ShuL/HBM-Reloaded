@@ -10220,14 +10220,14 @@
             "ingredient": {
               "tag": "hbm:billets/zirconium"
             },
-            "count": 3
+            "count": 1
           }
         ],
         "outputs": [
           {
             "stack": {
               "id": "hbm:pile_rod",
-              "count": 1,
+              "count": 3,
               "components": {
                 "hbm:legacy_metadata": 2
               }

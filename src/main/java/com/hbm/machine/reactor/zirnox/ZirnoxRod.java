@@ -1,5 +1,4 @@
 package com.hbm.machine.reactor.zirnox;
-import com.hbm.machine.reactor.PlateFuelItem;
 import java.util.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -15,8 +14,8 @@ public final class ZirnoxRod extends Item {
     private final Type type;
     public ZirnoxRod(Type type){super(new Item.Properties().stacksTo(1));this.type=Objects.requireNonNull(type);}
     public Type type(){return type;}
-    public static int life(ItemStack stack){return PlateFuelItem.life(stack);}
-    public static void increment(ItemStack stack){PlateFuelItem.life(stack,life(stack)+1);}
+    public static int life(ItemStack stack){return stack.getOrDefault(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY).copyTag().getInt("life");}
+    public static void increment(ItemStack stack){net.minecraft.world.item.component.CustomData.update(net.minecraft.core.component.DataComponents.CUSTOM_DATA,stack,tag->tag.putInt("life",life(stack)+1));}
     @Override public boolean isBarVisible(ItemStack stack){return life(stack)>0;}
     @Override public int getBarWidth(ItemStack stack){return Math.round(13F-life(stack)*13F/type().maxLife);}
     @Override public int getBarColor(ItemStack stack){return Mth.hsvToRgb(Math.max(0,1F-(float)life(stack)/type().maxLife)/3F,1,1);}

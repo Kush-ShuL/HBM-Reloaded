@@ -30,6 +30,7 @@ public final class Rifle762Settings {
         case "GUN_CARBINE_DAMAGE" -> java.util.List.of("damage","carbine");
         case "GUN_CARBINE_BAYONET_DAMAGE" -> java.util.List.of("damage","carbineBayonet");
         case "GUN_MINIGUN_DAMAGE" -> java.util.List.of("damage","minigun");
+        case "GUN_MINIGUN_HELL_DAMAGE" -> java.util.List.of("damage","minigunHell");
         case "GUN_LACUNAE_DAMAGE" -> java.util.List.of("damage","lacunae");
         case "GUN_MINIGUN_DUAL_LEFT_DAMAGE" -> java.util.List.of("damage","minigunDualLeft");
         case "GUN_MINIGUN_DUAL_RIGHT_DAMAGE" -> java.util.List.of("damage","minigunDualRight");

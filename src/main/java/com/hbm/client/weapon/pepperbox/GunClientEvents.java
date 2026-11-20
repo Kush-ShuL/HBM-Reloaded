@@ -82,6 +82,9 @@ public final class GunClientEvents {
         }else ItemGunBaseNT.recoilVertical=ItemGunBaseNT.recoilHorizontal=ItemGunBaseNT.offsetVertical=ItemGunBaseNT.offsetHorizontal=0;
     }
     @SubscribeEvent public static void interact(InputEvent.InteractionKeyMappingTriggered event){
+        var wielder=Minecraft.getInstance().player;
+        if(event.isAttack() && wielder!=null && !wielder.swinging && com.hbm.item.medicine.RedPillSwordBeam.canSwing(wielder))
+            PacketDistributor.sendToServer(new com.hbm.item.medicine.RedPillSwordBeam());
         var player=Minecraft.getInstance().player;if(player==null||!(player.getMainHandItem().getItem() instanceof ItemGunBaseNT)&&!GunHands.operable(player,InteractionHand.OFF_HAND))return;
         // Preserve unrelated vanilla actions when their native key does not overlap an active gun binding.
         for(var key:GunClient.bindings())if(key.getKeyConflictContext().isActive()&&key.getKey().equals(event.getKeyMapping().getKey())){event.setCanceled(true);event.setSwingHand(false);return;}

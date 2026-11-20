@@ -19,6 +19,14 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 /** Original config-driven MK4/Beam rendering. Cluster's null callback still emits no mesh. */
 @EventBusSubscriber(modid="hbm",value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
 public final class SednaProjectileClient {
+    @SubscribeEvent public static void swordBeam(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent event){
+        event.enqueueWork(()->com.hbm.item.medicine.RedPillSwordBeam.PROJECTILE.setRenderer((bullet,partial)->{
+            double length=bullet.prevVelocity+(bullet.velocity-bullet.prevVelocity)*partial;
+            boolean orange=net.minecraft.Util.getMillis()%250<125;
+            if(length>0)com.hbm.client.weapon.pepperbox.GunBulletRenderer.renderBulletStandard(
+                    orange?0xff8000:0x0080ff,orange?0xffd0b0:0xb0d0ff,length,.0625,.03125,true);
+        }));
+    }
     @SubscribeEvent public static void register(EntityRenderersEvent.RegisterRenderers event){event.registerEntityRenderer(SednaProjectiles.BULLET.get(),ConfiguredBulletRenderer::new);event.registerEntityRenderer(SednaProjectiles.BEAM.get(),BeamRenderer::new);event.registerEntityRenderer(SednaProjectiles.COIN.get(),CoinRenderer::new);}
     public static final class ConfiguredBulletRenderer extends EntityRenderer<EntityBulletBaseMK4>{
         public ConfiguredBulletRenderer(EntityRendererProvider.Context context){super(context);shadowRadius=0;}
