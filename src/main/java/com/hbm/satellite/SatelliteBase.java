@@ -9,7 +9,11 @@ public abstract class SatelliteBase {
  protected void generateNewPositionInfo(){var random=java.util.concurrent.ThreadLocalRandom.current();posX=random.nextInt(100000);posY=random.nextInt(100000);posZ=random.nextInt(100000);}
  public String getPositionData(){return posX+"-"+posY+"-"+posZ;}
  public int targetX,targetZ;public boolean isDirty;public String tx="";public SatelliteDriveType driveInput,driveOutput;public ItemStack[] requestableSlots=new ItemStack[0];
- public int getID(){return SatelliteRegistry.idOf(getClass());}
+ private int id = -1;
+ public int getID(){
+  if (id == -1) id = SatelliteRegistry.idOf(getClass());
+  return id;
+ }
  public abstract String getType();public abstract Component[] getInfo(ServerLevel world);
  public void writeToNBT(CompoundTag nbt,HolderLookup.Provider lookup){nbt.putInt("targetX",targetX);nbt.putInt("targetZ",targetZ);nbt.putString("tx",tx);nbt.putInt("posX",posX);nbt.putInt("posY",posY);nbt.putInt("posZ",posZ);if(driveInput!=null)nbt.putInt("driveInput",driveInput.ordinal());if(driveOutput!=null)nbt.putInt("driveOutput",driveOutput.ordinal());nbt.putInt("itemCount",requestableSlots.length);var items=new ListTag();for(int i=0;i<requestableSlots.length;i++){var stack=requestableSlots[i];if(stack==null||stack.isEmpty())continue;var entry=(CompoundTag)stack.save(lookup);entry.putByte("slot",(byte)i);items.add(entry);}nbt.put("requestableSlots",items);}
  public void readFromNBT(CompoundTag nbt,HolderLookup.Provider lookup){targetX=nbt.getInt("targetX");targetZ=nbt.getInt("targetZ");tx=nbt.getString("tx");if(nbt.contains("posX")){posX=nbt.getInt("posX");posY=nbt.getInt("posY");posZ=nbt.getInt("posZ");}else generateNewPositionInfo();driveInput=nbt.contains("driveInput")?SatelliteDriveType.safe(nbt.getInt("driveInput")):null;driveOutput=nbt.contains("driveOutput")?SatelliteDriveType.safe(nbt.getInt("driveOutput")):null;requestableSlots=new ItemStack[Math.max(0,nbt.getInt("itemCount"))];java.util.Arrays.fill(requestableSlots,ItemStack.EMPTY);var items=nbt.getList("requestableSlots",Tag.TAG_COMPOUND);for(int i=0;i<items.size();i++){var entry=items.getCompound(i);int slot=entry.getByte("slot")&255;if(slot<requestableSlots.length)requestableSlots[slot]=ItemStack.parseOptional(lookup,entry);}}

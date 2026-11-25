@@ -4,6 +4,7 @@ import com.hbm.energy.*;
 import com.hbm.fluid.*;
 import com.hbm.fluid.network.*;
 import com.hbm.item.battery.*;
+import com.hbm.item.fluid.FluidIdentifier;
 import com.hbm.machine.centrifuge.OverdriveUpgradeItem;
 import com.hbm.machine.electricfurnace.FurnaceUpgradeItem;
 import com.hbm.machine.foundry.crucible.ThermalMachine;
@@ -40,7 +41,20 @@ public final class MixerEntity extends ThermalMachine implements EnergyReceiver,
  private double processingRate(MixerRecipe recipe){return recipe.inputItems().isEmpty()?1:OreProcessing.rate(slots.get(1));}
  private boolean canProcess(MixerRecipe recipe){if(recipe==null){recipeIndex=0;return false;}recipeIndex=Math.floorMod(recipeIndex,variants().size());for(int i=0;i<2;i++){var fluid=recipe.fluid(i);tanks[i].setTankType(fluid==null?HbmFluids.NONE:fluid.type);}for(int i=0;i<2;i++){var fluid=recipe.fluid(i);if(fluid!=null&&tanks[i].getFill()<fluid.fill)return false;}if(power.compareTo(BigInteger.valueOf(consumption))<0)return false;var output=recipe.outputFluids().getFirst();if((long)tanks[2].getFill()+OreProcessing.maximumCount(output.fill,processingRate(recipe))>tanks[2].getMaxFill())return false;if(!recipe.inputItems().isEmpty()&&!recipe.inputItems().getFirst().matchesProcessing(slots.get(1),false))return false;processTime=recipe.duration();return true;}
  private void process(MixerRecipe recipe,ServerLevel server){double rate=processingRate(recipe);for(int i=0;i<2;i++){var fluid=recipe.fluid(i);if(fluid!=null)tanks[i].setFill(tanks[i].getFill()-fluid.fill);}if(!recipe.inputItems().isEmpty())removeItem(1,recipe.inputItems().getFirst().count());tanks[2].setFill(tanks[2].getFill()+OreProcessing.count(recipe.outputFluids().getFirst().fill,rate,server.random));}
- @Override public boolean canPlaceItem(int slot,ItemStack stack){var recipe=selected();return recipe!=null&&!recipe.inputItems().isEmpty()&&recipe.inputItems().getFirst().matchesProcessing(stack,true);}@Override public int[] getSlotsForFace(Direction side){return new int[]{1};}
+ @Override public boolean canPlaceItem(int slot, ItemStack stack) {
+     return switch (slot) {
+         case 0 -> stack.getItem() instanceof HbmBattery;
+         case 1 -> {
+             var recipe = selected();
+             yield recipe != null && !recipe.inputItems().isEmpty()
+                     && recipe.inputItems().getFirst().matchesProcessing(stack, true);
+         }
+         case 2 -> stack.getItem() instanceof FluidIdentifier;
+         case 3, 4 -> isUpgradeItem(stack);
+         default -> false;
+     };
+ }
+ @Override public int[] getSlotsForFace(Direction side){return new int[]{1};}
  @Override public boolean stillValid(Player player){return level!=null&&level.getBlockEntity(worldPosition)==this&&player.distanceToSqr(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5)<=144;}
  @Override public boolean isLoaded(){return !isRemoved()&&level!=null&&level.hasChunkAt(worldPosition);}@Override public boolean canConnect(Direction side){return side!=null&&side!=Direction.UP;}@Override public boolean canConnect(HbmFluidType type,Direction side){return side!=null;}
  @Override public long getPower(){return power.longValueExact();}@Override public long getMaxPower(){return 10000;}@Override public void setPower(long amount){setPowerExact(BigInteger.valueOf(amount));}@Override public BigInteger getPowerExact(){return power;}@Override public BigInteger getMaxPowerExact(){return CAPACITY;}@Override public void setPowerExact(BigInteger amount){power=amount;setChanged();}

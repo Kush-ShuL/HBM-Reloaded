@@ -4,12 +4,17 @@ import com.hbm.armor.ArmorModItem;
 import com.hbm.armor.ArmorModStorage;
 import com.hbm.fluid.FillableItem;
 import com.hbm.fluid.HbmFluidType;
+import com.hbm.fluid.HbmFluids;
+import java.util.List;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
@@ -51,7 +56,21 @@ public final class ModularJetpackItem extends ArmorModItem implements FillableIt
         return tank==null?0:tank.tankSize+(isPartInstalled(stack,Part.EXTENSION_TANKS)?Part.EXTENSION_TANKS.tankSize:0);
     }
     public static boolean canOperate(ItemStack stack) { return getInstalledTank(stack)!=null&&getInstalledThruster(stack)!=null&&getFuel(stack)>0; }
-    @Override public boolean acceptsFluid(HbmFluidType type,ItemStack stack) { return getInstalledTank(stack)!=null; }
+    @Override public boolean acceptsFluid(HbmFluidType type,ItemStack stack) {
+        var tank = getInstalledTank(stack);
+        return tank != null && type == HbmFluids.fromName(tank.tankType);
+    }
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
+        var tank = getInstalledTank(stack);
+        if (tank != null) {
+            lines.add(Component.translatable("tooltip.hbm.jetpack.fuel",
+                    HbmFluids.fromName(tank.tankType).displayName(), getFuel(stack), getMaxFuel(stack))
+                    .withStyle(ChatFormatting.AQUA));
+            lines.add(Component.empty());
+        }
+        super.appendHoverText(stack, context, lines, flag);
+    }
     @Override public int tryFill(HbmFluidType type,int amount,ItemStack stack) {
         if(!acceptsFluid(type,stack))return amount;
         int fill=getFuel(stack),transferred=Math.min(amount,Math.max(0,getMaxFuel(stack)-fill));
@@ -78,7 +97,10 @@ public final class ModularJetpackItem extends ArmorModItem implements FillableIt
         }
         if(model==Part.WINGS&&!player.onGround()){
             double speed=velocity.length(),glide=Math.clamp((speed-.2)/2,0,1);
-            velocity=velocity.scale(1-glide).add(heading(player,true).scale(speed*glide)).scale(1/.95);
+            var direction = heading(player, true);
+            velocity = velocity.scale(1 - glide).add(direction.scale(speed * glide));
+            double verticalDrag = .95 + Math.max(direction.y, 0) * .15;
+            velocity = velocity.multiply(1 / .95, 1 / verticalDrag, 1 / .95);
         }
         player.setDeltaMovement(velocity);
         if(active||model==Part.WINGS&&!player.onGround())JetpackRuntime.resetFlight(player);

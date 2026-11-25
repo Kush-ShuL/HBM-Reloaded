@@ -3,7 +3,9 @@ package com.hbm.client.jetpack;
 import com.hbm.armor.ArmorModStorage;
 import com.hbm.armor.powered.SourcePoweredArmor;
 import com.hbm.armor.t51.T51Runtime;
+import com.hbm.equipment.jetpack.ModularJetpackItem;
 import com.hbm.equipment.jetpack.SourceJetpackItem;
+import com.hbm.fluid.HbmFluids;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +24,13 @@ public final class JetpackArmorBars {
             result.add(new Bar((float) ((double) powered.getCharge(stack) / powered.getMaxCharge(stack)), 0x00ff00));
         if (stack.getItem() instanceof SourceJetpackItem jetpack)
             result.add(new Bar((float) SourceJetpackItem.getFuel(stack) / jetpack.maxFuel, jetpack.sourceFuelType().getColor()));
+        if (stack.getItem() instanceof ModularJetpackItem) {
+            var tank = ModularJetpackItem.getInstalledTank(stack);
+            if (tank != null) {
+                float fuel = (float) ModularJetpackItem.getFuel(stack) / ModularJetpackItem.getMaxFuel(stack);
+                result.add(new Bar(fuel, HbmFluids.fromName(tank.tankType).getColor()));
+            }
+        }
     }
     public static void render(RenderGuiLayerEvent.Post event) {
         var mc = Minecraft.getInstance(); var player = mc.player;

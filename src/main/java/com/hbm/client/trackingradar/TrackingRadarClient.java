@@ -17,6 +17,9 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 @EventBusSubscriber(modid="hbm", value=Dist.CLIENT, bus=EventBusSubscriber.Bus.MOD)
 public final class TrackingRadarClient {
     @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers event) { event.registerBlockEntityRenderer(TrackingRadarContent.ENTITY.get(), TrackingRadarRenderer::new); }
+    @SubscribeEvent public static void screens(RegisterMenuScreensEvent event) {
+        event.register(TrackingRadarContent.MENU.get(), TrackingRadarScreen::new);
+    }
     @SubscribeEvent public static void extensions(RegisterClientExtensionsEvent event) {
         event.registerItem(new IClientItemExtensions() {
             private BlockEntityWithoutLevelRenderer renderer;

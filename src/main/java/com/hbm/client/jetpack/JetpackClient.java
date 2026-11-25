@@ -28,7 +28,6 @@ public final class JetpackClient {
             @Override public net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer getCustomRenderer() { if (renderer == null) renderer = new ModularJetpackRenderer(); return renderer; }
         };
         event.registerItem(extension, com.hbm.equipment.jetpack.VectorJetpackContent.MODULAR.get());
-        for(var part:com.hbm.equipment.jetpack.VectorJetpackContent.PARTS.values())event.registerItem(extension,part.get());
     }
     @SubscribeEvent public static void layers(EntityRenderersEvent.AddLayers event) {
         for (var skin : event.getSkins()) { PlayerRenderer renderer = event.getSkin(skin); if (renderer != null) renderer.addLayer(new JetpackLayer(renderer)); }

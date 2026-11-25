@@ -1,5 +1,4 @@
 {
-  "parent": "minecraft:builtin/entity",
-  "gui_light": "front",
-  "textures": {"particle": "hbm:item/jetpack_vector"}
+  "parent": "minecraft:item/generated",
+  "textures": {"layer0": "hbm:item/jetpack_part_extension_tanks"}
 }

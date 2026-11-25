@@ -36,9 +36,12 @@ public final class JetpackPartItem extends Item {
             Part previous=part.tankType!=null?ModularJetpackItem.getInstalledTank(pack)
                     :part.velocity>0?ModularJetpackItem.getInstalledThruster(pack)
                     :part==Part.STABILIZER||part==Part.WINGS?ModularJetpackItem.getInstalledFlightModel(pack):null;
+            if (part.tankType != null) ModularJetpackItem.setFuel(pack, 0);
             if(previous!=null){
-                var returned=new ItemStack(VectorJetpackContent.PARTS.get(previous).get());
-                if(!player.getInventory().add(returned))player.drop(returned,false);
+                if (!player.getAbilities().instabuild) {
+                    var returned = new ItemStack(VectorJetpackContent.PARTS.get(previous).get());
+                    if (!player.getInventory().add(returned)) player.drop(returned, false);
+                }
                 ModularJetpackItem.togglePart(pack,previous,false);
             }
             ModularJetpackItem.togglePart(pack,part,true);

@@ -1,7 +1,6 @@
 package com.hbm.client.jetpack;
 
 import com.hbm.client.model.*;
-import com.hbm.equipment.jetpack.JetpackPartItem;
 import com.hbm.equipment.jetpack.JetpackPartItem.Part;
 import com.hbm.equipment.jetpack.ModularJetpackItem;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -49,19 +48,18 @@ public final class ModularJetpackRenderer extends BlockEntityWithoutLevelRendere
         if (context == ItemDisplayContext.GUI) {
             pose.translate(0, 1, .5); pose.scale(1F/16, -1F/16, 1F/16); pose.translate(8, 10, 0);
             pose.mulPose(Axis.XP.rotationDegrees(-30)); pose.mulPose(Axis.YP.rotationDegrees(45)); pose.scale(-1, -1, -1);
-            pose.translate(5, -12, 0);
+            pose.scale(1.125F, 1.125F, 1.125F);
+            pose.translate(3, -13, 0);
         } else {
             if (context == ItemDisplayContext.GROUND) { pose.translate(.5, 0, .5); pose.scale(1.5F, 1.5F, 1.5F); }
             else pose.translate(.5, .25, 0);
             pose.scale(.25F, .25F, .25F);
             if (context != ItemDisplayContext.THIRD_PERSON_LEFT_HAND && context != ItemDisplayContext.THIRD_PERSON_RIGHT_HAND) pose.mulPose(Axis.YP.rotationDegrees(90));
-            pose.scale(.25F, .25F, .25F); pose.translate(0, -12, 5);
+            pose.translate(0, -6, 1);
+            pose.scale(.375F, .375F, .375F);
         }
         pose.mulPose(Axis.XP.rotationDegrees(180)); pose.translate(0, -24, 0); pose.scale(.5625F, .5625F, .5625F);
-        if(stack.getItem() instanceof JetpackPartItem component){
-            var mesh=LegacyObjModels.INSTANCE.get(Minecraft.getInstance().getResourceManager(),MODEL);
-            renderPart(mesh,component.part,context==ItemDisplayContext.GUI,pose,buffers,light,overlay);
-        }else renderPack(stack,context==ItemDisplayContext.GUI,pose,buffers,light,overlay);
+        renderPack(stack, context == ItemDisplayContext.GUI, pose, buffers, light, overlay);
         pose.popPose();
     }
 }
